@@ -11,7 +11,7 @@
 The Aqua Protocol (AQP) is a content-exchange protocol between hosts in
 peer-to-peer environments, providing both trustworthiness and
 accountability. This document describes the functions performed by the
-protocol, a Proof-Of-Concept that implements it, and it's interfaces. It
+protocol, a Proof-Of-Concept that implements it, and its interfaces. It
 also showcases other services which can be developed on top of it.
 
 ## Motivation
@@ -51,8 +51,8 @@ each revision.
 
 ### **Revision Verification Structure**
 
-Addressing: A verified data structure is identified by it's URI
-**verification_hash** and grouped by it's **genesis_hash** which are
+Addressing: A verified data structure is identified by its URI
+**verification_hash** and grouped by its **genesis_hash** which are
 linked to the first revision linked to each other.
 
 The first revision created will create a verification_hash which has a
@@ -158,9 +158,9 @@ domain_manifest_genesis_hash and the merkle_root hash together. This
 allows the page manifest itself to also be witnessed.
 
 A single revision which is witnessed, will not store the whole [Merkle
-Tree](Merkle_Tree "wikilink"), but only it's relevant path to the
+Tree](Merkle_Tree "wikilink"), but only its relevant path to the
 [Merkle Root](Merkle_Root "wikilink"). Performing a [Merkle
-Proof](Merkle_Proof "wikilink") will mean that it's revision is included
+Proof](Merkle_Proof "wikilink") will mean that its revision is included
 in the [Merkle Tree](Merkle_Tree "wikilink").
 
 | Input order | Data field                      | Description                                                                                                                                                                                                                                                                        |
@@ -411,7 +411,7 @@ Moving over to revision based verification. This allows:
 -   Single revision and range verification (you want to verify a
     specific part of the content-chain)
     -   This is useful for verification of identity claims, where
-        trusted parties have signed the claim and for the validator it's
+        trusted parties have signed the claim and for the validator it is
         sufficient to see that signature.
 -   This allows direct verification after every edit via the Guardian.
     This is the preparation in the interaction to provide services
@@ -463,7 +463,7 @@ supported maximum, the verification will fail.
 
 <!-- -->
 
--   As the file is wrapped in the verification_protocol, it's transport
+-   As the file is wrapped in the verification_protocol, its transport
     can be a fully separated concern.
 
 An alternative solution would be chunking the file into a maximum
@@ -495,13 +495,13 @@ verification_hash.
 DISCLAIMER: AQP is not a permissionless distributed ledger. It works
 with single-node deployments and does not require the witnessing part
 (which benefits from being published to a DLT) to be valuable and
-working. AQP does not have a token nor is it distributed by default.
+working. AQP does not have a token nor is AQP distributed by default.
 
 As some concepts are very similar as those used in DLT's, please refer
 to the following:
 
 A revision is similar to a block in a Blockchain structure, which has
-it's own ROOT HASH and a set of TRANSACTIONS which are included inside.
+its own ROOT HASH and a set of TRANSACTIONS which are included inside.
 Our transactions is content written into a revision.
 
 <table>
