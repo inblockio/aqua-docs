@@ -50,12 +50,20 @@ revision.
 All hashes are based on
 [SHA3-512](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf).
 This encryption standard is used to construct
-[movable content hash chain](Mobile-Content-Hash-Chain)'s, which are
+[movable hash chain](Mobile-Content-Hash-Chain)'s, which are
 serializing of data and its history in a form that can be verified, and
 independent of location. The mobile-content-hash-chain can be fully or
 partially exchanged between hosts depending on the application of the
-data. From here on, we refer the term "movable content hash chain" as
+data. From here on, we refer the term "movable hash chain" as
 "hash chain."
+
+In order to implement the AQP, we need to utilize a software that is capable of
+generating movable hash chains and facilitating actions described in the
+AQP. We call those nodes which facilitate the Aqua Protocol 'Aqua Data
+Vaults' which given their role should be implemented as a software with secure
+architecture and measures for keeping data assets safe. This is achieved
+through encryption, authentication and restrictive access to keep data private
+by default.
 
 ### Revision Verification Structure
 
@@ -70,7 +78,7 @@ hash chain.
 
 ##### Verification Hash
 **revision_verification_hash** is the hash sum over the string formed by
-concatenating
+doing the following operation
 
 ```
 revision_verification_hash = calculate_hash_sum(
@@ -94,23 +102,33 @@ The signature_hash and witness_hash are OPTIONAL.
 
 ##### Metadata
 
-| Input order | Data Field                | Input                                                                                                                                                                  |
-|-------------|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \-          | metadata_hash             | The check sum for all metadata data fields. It simplifies the hash construction and the ability to identify data corrupton in this part of the verification structure. |
-| 1           | domain_id                 | 10 digits hexadecimal randomly generated to identify the host                                                                                                          |
-| 2           | time_stamp                | time-stamp of the current revision (decimal numbers YYYYMMDDHHMMSS e.g. 20211128092608)                                                                                |
-| 3           | previous_verifiction_hash | previous_revision_verification_hash if present                                                                                                                         |
+```
+metadata_hash = calculate_hash_sum(
+    domain_id + time_stamp + previous_verification_hash
+)
+```
+
+Description:
+- metadata_hash: The check sum for all metadata data fields. It simplifies the
+  hash construction and the ability to identify data corrupton in this part of
+  the verification structure.
+- domain_id: 10 digits hexadecimal randomly generated to identify the host
+  system that runs the AQP service.
+- time_stamp: time-stamp of the current revision (decimal numbers
+  YYYYMMDDHHMMSS e.g. 20211128092608).
+- previous_verification_hash: previous_revision_verification_hash if present
 
 ##### Signature
 
-Is a cryptographic signature of a [Public-Private-Key
-Cryptography](Public-Private-Key_Cryptography "wikilink") pair. The
-protocol should be abstract, while it will support 'Method' in later
-iterations. This will allow to use different types of implementations
-like: PGP Signatures, Ethereum or Bitcoin [Wallet](Wallet "wikilink")'s.
+A signature in AQP is a cryptographic signature of a
+[PKI](https://en.wikipedia.org/wiki/Public_key_infrastructure) pair. The
+protocol should be abstract, where it will support 'Method' in later
+iterations. This will allow us to use different types of implementations such
+as: PGP signatures, Ethereum or Bitcoin
+[wallet](https://en.wikipedia.org/wiki/Cryptocurrency_wallet)'s signatures.
 
-In this specification we use the only currently implemented way of
-signing which is with an Ethereum Wallet.
+In this specification, we use the first reference implementation's signing
+method, which is via an Ethereum wallet.
 
 <table>
 <thead>
@@ -152,16 +170,24 @@ signing which is with an Ethereum Wallet.
 
 ##### Witness
 
-To complete the witnessing process, a Domain Manifest is created. This
-is a collection of all witness revision hashes within one domain. A
-[Merkle Tree](Merkle_Tree "wikilink") is used to unify all hashes of all
-revisions and is then represented by a single hash value.
+We define witnessing as the process of observing an event. A witness is judged
+by their capability to recollect and share the observed event. In other words,
+witnessing is the process of storing input data for later playback to provide
+data symmetry of an event.
+
+Witnessing allows one to undeniably prove the existence of a dataset
+(represented as a movable hash chain). To complete the witnessing process, a
+Domain Snapshot is created. This is a collection of all revision hashes within
+one domain. A
+[Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) is used to unify all
+hashes of the latest revisions of all movable hash chains within a domain into
+a single hash value.
 
 The witness_event_verification_hash is written to the [Witness
-Network](Witness_Network "wikilink"). The
+Network](Witness_Network). The
 witness_event_verification_hash is then generated by using the
-domain_manifest_genesis_hash and the merkle_root hash together. This
-allows the page manifest itself to also be witnessed.
+domain_snapshot_genesis_hash and the merkle_root hash together. This
+allows the page snapshot itself to also be witnessed.
 
 A single revision which is witnessed, will not store the whole [Merkle
 Tree](Merkle_Tree "wikilink"), but only it's relevant path to the
@@ -172,11 +198,11 @@ in the [Merkle Tree](Merkle_Tree "wikilink").
 | Input order | Data field                      | Description                                                                                                                                                                                                                                                                        |
 |-------------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \-          | witness_hash                    | The check sum for all signature data fields. It simplifies hash construction and identifies data corruption in this part of the verification structure.                                                                                                                            |
-| 1           | domain_manifest_genesis_hash    | Refers to the URI which stores the whole merkle_tree of the witness event                                                                                                                                                                                                          |
+| 1           | domain_snapshot_genesis_hash    | Refers to the URI which stores the whole merkle_tree of the witness event                                                                                                                                                                                                          |
 | 2           | merkle_root                     | The root hash of the merkle-tree. The presence of the merkle-tree allows for lazy verification to reduce required computational steps for verification by skipping the merkle-proof as both datasets can be entangled in the chain by a never revision and therefore be immutable. |
 | 3           | witness_network                 | Specifies which witness network was used to store the witness_event. The following structure shows a AQP hash chain with 3 revisions which wrote the Witness_Event_Verification_Hash into the distributed ledger.                                                                  |
 | \-          | relative-merkle-tree-proof      | Provide the relative path with all required hashes to verify the merkle_tree root from the first node which the verification_hash of the revision as a starting point.                                                                                                             |
-| \-          | witness_event_verification_hash | \[IMPLICIT\] Is NOT part of the datastructure. It is calculated by taking the sha3-512 checksum of the domain_manifest_genesis_hash and the merkle_root hash. This ensures that the domain_manifest itself will be witnessed.                                                      |
+| \-          | witness_event_verification_hash | \[IMPLICIT\] Is NOT part of the datastructure. It is calculated by taking the sha3-512 checksum of the domain_snapshot_genesis_hash and the merkle_root hash. This ensures that the domain_snapshot itself will be witnessed.                                                      |
 
 The following structure shows a AQP hash chain with 3 revisions:
 
@@ -358,7 +384,7 @@ AQP.
     -   wallet_address
     -   signature_hash
 -   witness
-    -   domain_manifest_genesis_hash
+    -   domain_snapshot_genesis_hash
     -   merkle_root
     -   witness_network
     -   transaction
