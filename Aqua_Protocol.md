@@ -11,69 +11,75 @@
 The Aqua Protocol (AQP) is a content-exchange protocol between hosts in
 peer-to-peer environments, providing both trustworthiness and
 accountability. This document describes the functions performed by the
-protocol, a Proof-Of-Concept that implements it, and it's interfaces. It
+protocol, a proof-of-concept that implements it, and its interfaces. It
 also showcases other services which can be developed on top of it.
 
 ## Motivation
 
-There is no easy or automated approach for checking if data has been
-manipulated or corrupted, is attributed to the wrong author, or is
-attributed to the wrong time. It is impossible to verify the change
-history of data and by which identity it was changed.
+In today's broadly deployed computing systems, there is no easy or
+automated approach for checking if data has been manipulated or
+corrupted, is attributed to the wrong author, or is attributed to the
+wrong time. It is impossible to verify the change history of data and by
+which identity it was changed.
 
 The Aqua Protocol (AQP) provides a foundation for creating trusted data,
 which can be quickly and easily verified. This includes the verification
-of integrity, the verification of account (who created or manipulated
-the data), and the verification of existence and time.
+of its integrity, the verification of its account (the entity who
+creates or manipulates the data), and the verification of its existence
+and timestamp.
 
-The AQP provides a globally unique resource identification (URI) for
-each chunk (revision) of verified data. A collision free address can
-exist between multiple interacting hosts, each referring to multiple
-URI's of verified data.
+In order to account data, it is necessary to track its changes. The AQP
+provides a globally unique resource identification (URI) for each
+revision of the verified data. This identifier is collision-free, and is
+referred the same way across multiple interacting hosts.
 
 The AQP is used to realize the concept of [Data
-Accounting](Data_Accounting "wikilink").
+Accounting](Data_Accounting).
 
 ## Specification
+
+To identify a revision with a unique fingerprint, we hash its content using
+the SHA3-512 hashing function which always has a 128 characters long
+output. This value can be used as a checksum to verify data integrity.
+The checksum can then be entangled in a hash-chain to create an
+immutable track record. We then calculate multiple properties associated
+with the revision, in addition to its content checksum. In the next section,
+we differentiate between REQUIRED and OPTIONAL properties for each
+revision.
 
 All hashes are based on
 [SHA3-512](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf).
 This encryption standard is used to construct
-[Mobile-Content-Hash-Chain](Mobile-Content-Hash-Chain "wikilink")'s,
-which are then fully or partially exchanged between hosts depending on
-the application of the data.
+[movable content hash chain](Mobile-Content-Hash-Chain)'s, which are
+serializing of data and its history in a form that can be verified, and
+independent of location. The mobile-content-hash-chain can be fully or
+partially exchanged between hosts depending on the application of the
+data. From here on, we refer the term "movable content hash chain" as
+"hash chain."
 
-To meter data we hash it in SHA3-512 which always has 128 characters.
-This value can be used as a check sum to verify data integrity. The
-check sum can then be entangled in a hash-chain to create an immutable
-track record. We differentiate between REQUIRED and OPTIONAL data for
-each revision.
+### Revision Verification Structure
 
-### **Revision Verification Structure**
+A verified data structure is identified by its URI **verification_hash**
+and grouped by its **genesis_hash**. The first revision created will
+create a **verification_hash** which has a special meaning and is
+referred to as the **genesis_hash**. All future revisions building upon
+that first revision will be attributed to the **genesis_hash** as a unique
+URI for grouping the revisions. This allows us to understand if two
+revisions are related without needing to verify the whole history of the
+hash chain.
 
-Addressing: A verified data structure is identified by it's URI
-**verification_hash** and grouped by it's **genesis_hash** which are
-linked to the first revision linked to each other.
+##### Verification Hash
+**revision_verification_hash** is the hash sum over the string formed by
+concatenating
 
-The first revision created will create a verification_hash which has a
-special meaning and is referred to as the genesis_hash. All future
-revisions building upon that first revision will be attributed to the
-genesis_hash as a unique URI for grouping. This allows us to understand
-if two revisions are related without needing to verify the whole history
-of the hash chain.
-
-##### Verification_Hash
-revision verification_hash **is the hash sum over the string formed by adding** 
-
-|Input Order | Hash name      | Input     |
-|------------|----------------|-----------|
-| 1          | content hash   | REQUIRED  |
-|            | \+             |           |
-| 2          | metadata hash  | REQUIRED  |
-|            | \+             |           |
-| 3          | signature hash | OPTIONAL  |
-|            | \+             |           |
-| 4          | witness hash   | OPTIONAL  |
+```
+revision_verification_hash = calculate_hash_sum(
+    content_hash + metadata_hash +
+    signature_hash + witness_hash
+)
+```
+The content_hash and metadata_hash are REQUIRED.
+The signature_hash and witness_hash are OPTIONAL.
 
 ##### Content
 
