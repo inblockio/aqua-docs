@@ -153,6 +153,9 @@ A hash chain is a linked list where each node contains the cryptographic hash
 of the previous node content. A portable hash chain is a hash chain that can be
 moved from one host to another.
 
+### Stateful Hyperlinks / Transclusions / Immutable Links
+See [Stateful Hyperlinks](https://github.com/inblockio/aqua-docs/blob/main/Stateful_Hyperlinks.md)
+
 ## Specification
 
 To identify a revision with a unique fingerprint, we hash its content using
@@ -615,7 +618,8 @@ performed and compared with the recalculated event.
 | Command-Line-Verification-Tool     | <https://github.com/inblockio/data-accounting-external-verififier> |
 | Chrome Extension Verification Tool | <https://github.com/inblockio/VerifyPage>                          |
 
-### Stateful Hyperlinks / Transclusions
+
+
 
 ## Appendix
 
@@ -714,17 +718,19 @@ verification_hash.
 
 ## Blockchain Context
 
-DISCLAIMER: AQP is not a permissionless distributed ledger. It works
-with single-node deployments and does not require the witnessing part
-(which benefits from being published to a DLT) to be valuable and
-working. AQP does not have a token nor is it distributed by default.
+DISCLAIMER: AQP is not a permissionless distributed ledger. In order for the
+AQP to be valuable and working, a single node implementation and single node
+deployments are sufficient, and do not require the witnessing part. The AQP MAY
+benefit from being published to a distributed ledger technology (DLT)) to
+achieve a witness event with high transaction security. AQP does not have a
+token nor is it distributing data by default.
 
-As some concepts are very similar as those used in DLT's, please refer
-to the following:
+As some concepts are very similar as those used in DLT's, please refer to the
+following:
 
-A revision is similar to a block in a Blockchain structure, which has
-it's own ROOT HASH and a set of TRANSACTIONS which are included inside.
-Our transactions is content written into a revision.
+A portable hash chain and its revisions are similar to a blockchain structure
+and its blocks, which has its own root hash and a set of transactions which
+are included inside.
 
 <table>
 <thead>
@@ -738,12 +744,12 @@ Our transactions is content written into a revision.
 <tr class="odd">
 <td><p>Block</p></td>
 <td><p>Revision</p></td>
-<td><p>We use content which comes from pages</p></td>
+<td></td>
 </tr>
 <tr class="even">
-<td><p>Root Hash</p></td>
-<td><p>verification_hash</p></td>
-<td><p>Also referred to as verification_hash</p></td>
+<td><p>Genesis Block</p></td>
+<td><p>Genesis Hash</p></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td><p>Transaction</p></td>
@@ -758,12 +764,12 @@ Our transactions is content written into a revision.
 </tr>
 <tr class="even">
 <td><p>Genesis Block</p></td>
-<td><p>Genesis Hash</p></td>
+<td><p>Genesis Revision</p></td>
 <td><p>Is the unique hash chain identifier</p></td>
 </tr>
 <tr class="odd">
 <td><p>Blockchain</p></td>
-<td><p><a href="Hash_Chain" title="wikilink">Hash Chain</a></p></td>
+<td><p>Hash Chain</a></p></td>
 <td><p>The hash chain is not distributed but by default only in the local PKC, therefore it is not a distributed ledger. Furthermore the PKC is missing a consensus algorithm to create a shared truth between notes.</p></td>
 </tr>
 </tbody>
