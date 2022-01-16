@@ -4,7 +4,7 @@ we present and exchange data to receive goods and services.
 
 The system for accounting provided by Luca Pacioli, the double-entry
 accounting is the foundation of our work. We present a modern
-way to do double-entry book-keeping for data.
+way to do double-entry bookkeeping for data.
 
 Data accounting is the process of metering data in a standardized unit
 of exchange, and converting it into a form which can be exchanged to

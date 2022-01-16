@@ -45,7 +45,7 @@ mathematics and accounting, it is only after the introduction of
 [personal computing devices](wikipedia:personal_computer "wikilink"),
 and later the ubiquity of [Internet](wikipedia:Internet "wikilink")
 access that made data governance an idea relevant to public affairs. The
-argument is that many people's basic privacy and property rights maybe
+argument is that many people's basic privacy and property rights may be
 challenged by people who have access to data collection and deployment
 technologies. Imminent threats such as fake news, big brother monitoring
 practices, identity thefts, and crypto currency issuance are already
@@ -63,7 +63,7 @@ kept accountable, so that it can be evaluated, and transferred with an
 objective operational framework. Knowing how to organize data in formats
 that satisfy consistent abstraction strategies, such as [Universal
 Resource Identifier](wikipedia:URI "wikilink") and [Universal Resource
-Locator](wikipedia:URL "wikilink") are important starting points in thi
+Locator](wikipedia:URL "wikilink") are important starting points in this
 field. Earlier work in data governance in a web of [hyperlinked
 media](wikipedia:Hyperlink "wikilink") can be traced back to [Project
 Xanadu](wikipedia:Project_Xanadu "wikilink") by [Ted
