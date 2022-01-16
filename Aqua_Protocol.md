@@ -1,13 +1,12 @@
-|                  |                                |
-|------------------|--------------------------------|
-| Current version: | AQP v1.1                       |
-| Author:          | Tim Bansemer                   |
-| Date:            | 30.12.2021                     |
-| Status:          | DRAFT / Experimental           |
-| Implementation:  | <https://inblock.io/micro-PKC> |
+|                  |                                            |
+|------------------|--------------------------------------------|
+| Current version: | AQP v1.1                                   |
+| Author:          | Tim Bansemer                               |
+| Date:            | 30.12.2021                                 |
+| Status:          | DRAFT / Experimental                       |
+| Implementation:  | <https://github.com/inblockio/micro-pkc>   |
 
 ## Introduction
-
 The Aqua Protocol (AQP) is a content-exchange protocol between hosts in
 peer-to-peer environments, providing both trustworthiness and
 accountability. This document describes the functions performed by the
@@ -15,6 +14,10 @@ protocol, a proof-of-concept that implements it, and its interfaces. It
 also showcases other services which can be developed on top of it.
 
 ## Motivation
+
+The goal of the AQP is to reduce costs and time for:
+* creating verifiable data
+* verifying data
 
 In today's broadly deployed computing systems, there is no easy or
 automated approach for checking if data has been manipulated or
@@ -28,6 +31,9 @@ of its integrity, the verification of its account (the entity who
 creates or manipulates the data), and the verification of its existence
 and timestamp.
 
+    The Aqua Protocol provides trustworthness to data by
+    securing data ✅ integrity, 🔏 account and ⌚ time.
+
 In order to account data, it is necessary to track its changes. The AQP
 provides a globally unique resource identification (URI) for each
 revision of the verified data. This identifier is collision-free, and is
@@ -35,6 +41,79 @@ referred the same way across multiple interacting hosts.
 
 The AQP is used to realize the concept of [Data
 Accounting](Data_Accounting).
+
+## Terminology
+
+** Account: ** We are following the Ethereum 'Account' definition. In
+general, there are two types of accounts. Externally owned accounts,
+controlled by private keys. And contract accounts, controlled by their
+contract code. [1] https://ethereum.org/en/whitepaper/#ethereum-accounts
+
+We can't prove if a person is a person or a machine. With advancements
+in AI, it will become increasingly difficult to prove that a human is a
+human. Attempts are being made [2] to increase trustworthiness of
+accounts which fall short in questions of security as they make public
+claims. Traditional know your customer (KYC) identification processes
+can provide similar "proof of being human".
+
+As this allows us to outsource the problem of identification, we only
+focus on unique accounts which is sufficiant for data accounting
+independent of humans or machines. Identity claims issued via the Aqua
+Identity Protocol (second layer protocol) will help to provide the
+context required to interact with accounts.
+
+** Revision **
+A revision is the smallest portable entity within the AQP. Multiple revisions
+form a portable hash-chain.
+
+They existed before in unsecured systems where multiple revisions form a page.
+The AQP adds the cryptographic harness to secure it.
+
+With presenting a portable hash-chain it is possible track all incremental
+changes stored in each revision to understand the history of a page and how it
+came to be.
+
+** Page ** The summary of revisions attributed to a shared origin. In AQP all
+revisions share a global URI hash to attribute them together.
+
+** Transaction Security **
+Measurement of the level of integrity assurance for a transaction.
+The higher the transaction security, the higher the cost usally becomes.
+Public Distributed Ledger systems are highly suitable for priving very high
+levels of transaction security on the cost of privacy and immutability (data
+can't be changed or deleted).
+
+** Data Vault ** Software used to store and manage data with an account. The
+software must apply a secure architecture and measures for keeping data assets
+safe. This is achieved through encryption, strong authentication and
+restrictive access to keep data private by default.
+
+See [Design Principles / Seperation of Account and
+Service](https://github.com/inblockio/aqua-docs/blob/main/Design_Principles.md#principle-separation-of-account-and-service)
+
+
+** Witness ** We define witnessing as the process of observing an event. A
+witness is judged by their capability to recollect and share the observed
+event. In other words, witnessing is the process of storing input data for
+later playback to provide data symmetry of an event.
+
+** Witness Network ** The digital service in a distributed ledger or similar
+infrastructure which provides transaction security and data-symmetry for shared
+data within the network.
+
+E.g. Ethereum can be used to store 'Witness-Events-Verification-Hashes which
+represent the global state of a Personal Knowledge Container. It is required to
+pay the witness network for it's service. In the case of Ethereum this is done
+using 'Ether'.
+
+** Portable Hash Chain ** Portable: Means it can be moved, from one domain to
+another. The files of the chains are usually quite small. Hash Chain: A hash
+chain is the successive application of a cryptographic hash function to a piece
+of data. In computer security, a hash chain is a
+method to produce many one-time keys from a single key or password. For
+non-repudiation a hash function can be applied successively to
+additional pieces of data in order to record the chronology of data's
+existence.[3]
 
 ## Specification
 
@@ -50,15 +129,15 @@ revision.
 All hashes are based on
 [SHA3-512](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf).
 This encryption standard is used to construct
-[movable hash chain](Mobile-Content-Hash-Chain)'s, which are
+[portable hash chain](Mobile-Content-Hash-Chain)'s, which are
 serializing of data and its history in a form that can be verified, and
 independent of location. The mobile-content-hash-chain can be fully or
 partially exchanged between hosts depending on the application of the
-data. From here on, we refer the term "movable hash chain" as
+data. From here on, we refer the term "portable hash chain" as
 "hash chain."
 
 In order to implement the AQP, we need to utilize a software that is capable of
-generating movable hash chains and facilitating actions described in the
+generating portable hash chains and facilitating actions described in the
 AQP. We call those nodes which facilitate the Aqua Protocol 'Aqua Data
 Vaults' which given their role should be implemented as a software with secure
 architecture and measures for keeping data assets safe. This is achieved
@@ -170,17 +249,12 @@ method, which is via an Ethereum wallet.
 
 ##### Witness
 
-We define witnessing as the process of observing an event. A witness is judged
-by their capability to recollect and share the observed event. In other words,
-witnessing is the process of storing input data for later playback to provide
-data symmetry of an event.
-
 Witnessing allows one to undeniably prove the existence of a dataset
-(represented as a movable hash chain). To complete the witnessing process, a
+(represented as a portable hash chain). To complete the witnessing process, a
 Domain Snapshot is created. This is a collection of all revision hashes within
 one domain. A
 [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) is used to unify all
-hashes of the latest revisions of all movable hash chains within a domain into
+hashes of the latest revisions of all portable hash chains within a domain into
 a single hash value.
 
 The `witness_event_verification_hash` is written to the [Witness
@@ -414,7 +488,7 @@ All hashes are recalculated in a separate client implementation, and
 compared with the ones sent via the API. If the data was not altered or
 corrupted; nor was there a difference in the process to calculate the
 hash, they will match. This will create a high level of assurance that
-the integrity and history of the movable hash chain in question has not been
+the integrity and history of the portable hash chain in question has not been
 altered.
 
 **Verification of Account**
