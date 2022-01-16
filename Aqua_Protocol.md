@@ -7,109 +7,148 @@
 | Implementation:  | <https://github.com/inblockio/micro-pkc>   |
 
 ## Introduction
+
 The Aqua Protocol (AQP) is a content-exchange protocol between hosts in
-peer-to-peer environments, providing both trustworthiness and
-accountability. This document describes the functions performed by the
-protocol, a proof-of-concept that implements it, and its interfaces. It
-also showcases other services which can be developed on top of it.
+peer-to-peer environments, providing accountability. This document describes
+the functions performed by the protocol, a link to a proof-of-concept that
+implements it, and its used interfaces. It also showcases other services which
+can be developed on top of it.
+
+The AQP is used to realize the concept of [Data Accounting](Data_Accounting).
 
 ## Motivation
 
-The goal of the AQP is to reduce costs and time for:
-* creating verifiable data
-* verifying data
+The goal of the AQP is to reduce costs and time for creating verifiable data
+and verifying data.
 
-In today's broadly deployed computing systems, there is no easy or
-automated approach for checking if data has been manipulated or
-corrupted, is attributed to the wrong author, or is attributed to the
-wrong time. It is impossible to verify the change history of data and by
-which identity it was changed.
+In today's world, there is no widely adopted trustless process of checking if
+data have been manipulated or corrupted, are attributed to the wrong author, or
+are attributed to the wrong time. Today's processes are dependent on centralized
+trusted services which retain all power over governing the data, allowing them
+to tamper the data as they see fit.
 
-The Aqua Protocol (AQP) provides a foundation for creating trusted data,
-which can be quickly and easily verified. This includes the verification
-of its integrity, the verification of its account (the entity who
-creates or manipulates the data), and the verification of its existence
-and timestamp.
+There is a full lack of transparency or ability to check if data have been
+altered via an unauthorized access. Additionally, consumers of data are
+incapable of telling if centralized service have altered the consumed data.
+This leads to a world of untrustworthy information in which we don't know how
+to conclude what is true.
+
+In a world where every piece of information is a sandcorn in a sandstorm, it has
+become impossible to navigate reality. In contrast, in a world where every
+piece of information is a fixed star in the sky for a lifetime, we are able to
+relate and make sense of the information given. The Aqua Protocol (AQP) turns
+sandcorns of information into fixed stars of information.
+
+The AQP adds a peer-to-peer layer of assurance to make it impossible to change data
+unnoticed. AQP adds an essential line of defense against attacks on data
+integrity, data theft, or misattribution. AQP is used to govern trusted data,
+which can be quickly verified. This includes the verification of its integrity
+and history (via portable hash-chains), the verification of its account (the
+entity who creates or manipulates the data), and the verification of its
+existence and timestamp.
 
     The Aqua Protocol provides trustworthness to data by
     securing data ✅ integrity, 🔏 account and ⌚ time.
 
-In order to account data, it is necessary to track its changes. The AQP
+In order to account data, it is necessary to track its history. The AQP
 provides a globally unique resource identification (URI) for each
 revision of the verified data. This identifier is collision-free, and is
 referred the same way across multiple interacting hosts.
-
-The AQP is used to realize the concept of [Data
-Accounting](Data_Accounting).
 
 ## Terminology
 
 ### Account
 
-We are following the Ethereum 'Account' definition. In
-general, there are two types of accounts. Externally owned accounts,
-controlled by private keys. And contract accounts, controlled by their
-contract code [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/#ethereum-accounts)
+We are following Ethereum's account definition:
+    In general, there are two types of accounts. Externally owned accounts,
+    controlled by private keys. And contract accounts, controlled by their
+    contract code
+-- [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/#ethereum-accounts)
 
-We can't prove if a person is a person or a machine. With advancements
+We can't prove if an account owner is a person or a machine. With advancements
 in AI, it will become increasingly difficult to prove that a human is a
-human. Attempts are being made [2] to increase trustworthiness of
-accounts which fall short in questions of security as they make public
-claims. Traditional know your customer (KYC) identification processes
-can provide similar "proof of being human".
+human. [Attempts are being made](https://www.proofofhumanity.id/) to increase
+trustworthiness of accounts which fall short in questions of privacy and
+security as they make public claims. Traditional know your customer (KYC)
+combined with the AQP and Aqua Identity Protocol (AIP) identification processes
+can provide similar "proof of being human" which can be attested to an account.
+This allows us to outsource the problem of identification, where we only focus
+on unique accounts which are sufficient for data accounting independent of
+humans or machines. Identity claims issued via the AIP will help to provide the
+context required to meaningfully interact between accounts.
 
-As this allows us to outsource the problem of identification, we only
-focus on unique accounts which is sufficiant for data accounting
-independent of humans or machines. Identity claims issued via the Aqua
-Identity Protocol (second layer protocol) will help to provide the
-context required to interact with accounts.
+For more on this topic please read the [Aqua Idenity
+Protocol](https://github.com/inblockio/aqua-docs/blob/main/Aqua_Identity_Protocol.md).
 
 ### Revision
+
 A revision is the smallest portable entity within the AQP. Multiple revisions
-form a portable hash-chain. They existed before in unsecured systems where multiple revisions form a page.
-The AQP adds the cryptographic harness to secure it. With presenting a portable hash-chain it is possible track all incremental
-changes stored in each revision to understand the history of a page and how it
-came to be. This allows us to have version control on digital assets being able to restore earlier states and to relate to them. This allows to have historical evidence of digital assets.
+form a single portable hash chain which is serialized in JSON format.
+They have existed before in unsecured systems where multiple revisions form a
+file which can be displayed as a page. The AQP adds the cryptographic harness
+to secure it. With presenting a portable hash chain it is possible to track all
+incremental changes stored in each revision to understand the history of a page
+and how it came to be. This allows us to have version control on digital assets
+being able to restore earlier states and to relate to them. This allows us to
+have historical evidence of digital assets.
 
 ### Page
 
-The summary of revisions attributed to a shared origin. In AQP all
-revisions share a global URI hash to attribute them together.
+A page is a visible representation of a file containing multiple or a single
+revision attributed to a shared origin. A page view could also be used to
+create a new revision by a used service which interfaces with the file for
+manipulation. In AQP all revisions share a global URI hash to
+attribute them together called a genesis hash.
 
 ### Transaction Security
-Measurement of the level of integrity assurance for a transaction.
-The higher the transaction security, the higher the cost usually becomes.
-Public Distributed Ledger systems are highly suitable for priving very high
-levels of transaction security on the cost of privacy and immutability (data
-can't be changed or deleted).
+
+Transaction security is an economic measure of the level of integrity assurance
+for a transaction. It is defined as the cost required to forge a transaction.
+The transaction security can be increased by cryptographic security and by strong
+replication of transactions. Public distributed ledger systems are highly suitable
+for providing very high level of transaction security at the cost of privacy
+and immutability (data can't be changed or deleted). Today, public distributed
+ledgers such as Bitcoin and Ethereum provide the highest level of transaction
+security.
+
+### Data Asset
+
+Data turns into a valuable asset if it is accounted for. In an accounted form
+it can be easily priced, exchanged or traded.
 
 ### Data Vault
-Software used to store and manage data with an account. The
-software must apply a secure architecture and measures for keeping data assets
-safe. This is achieved through encryption, strong authentication and
-restrictive access to keep data private by default.
+
+Software used to store and manage data with an account. The software must apply
+a secure architecture and measures for keeping data assets safe. This is
+achieved through encryption, strong authentication and restrictive access to
+keep data private by default.
 
 See [Design Principles / Separation of Account and
 Service](https://github.com/inblockio/aqua-docs/blob/main/Design_Principles.md#principle-separation-of-account-and-service)
 
 
 ### Witness
-We define witnessing as the process of observing an event. A
-witness is judged by their capability to recollect and share the observed
-event. In other words, witnessing is the process of storing input data for
-later playback to provide data symmetry of an event.
+
+We define witnessing as the process of observing an event. A witness is judged
+by their capability to recollect and share an observed event. In other words,
+witnessing is the process of storing input data for later playback to provide
+data symmetry around an event.
 
 ### Witness Network
+
 The digital service in a distributed ledger or similar infrastructure which
 provides transaction security and data-symmetry for shared data within the
 network.
 
-E.g. Ethereum can be used to store 'Witness-Events-Verification-Hashes which
-represent the global state of a Personal Knowledge Container. It is required to
-pay the witness network for it's service. In the case of Ethereum this is done
-using 'Ether'.
+E.g. Ethereum can be used to store a digital fingerprint of a domain snapshot
+of a data vault. A domain snapshot is the Merklized state of all witnessed hash
+chains being present in the data vault. It is required to pay the witness
+network for its service. In the case of Ethereum this is done using 'Ether'.
+This in return allows the account owner to create an 'undeniable' proof that a
+specific revision and the previous revisions within a hash chain have existed.
 
 ### Portable Hash Chain
+
 **Portable:** Means it can be moved, from one domain to another. The files of the
 chains are usually quite small.
 **Hash Chain:** A hash chain is the successive application of a cryptographic
