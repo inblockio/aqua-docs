@@ -1,7 +1,7 @@
 |                  |                                            |
 |------------------|--------------------------------------------|
 | Current version: | AQP v1.1                                   |
-| Author:          | Tim Bansemer                               |
+| Author:          | Tim Bansemer, Publius Dirac                |
 | Date:            | 30.12.2021                                 |
 | Status:          | DRAFT / Experimental                       |
 | Implementation:  | <https://github.com/inblockio/micro-pkc>   |
