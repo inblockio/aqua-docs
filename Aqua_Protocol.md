@@ -733,44 +733,60 @@ and its blocks, which has its own root hash and a set of transactions which
 are included inside.
 
 <table>
-<thead>
-<tr class="header">
-<th><p>Blockchain Term</p></th>
-<th><p>AQP Term</p></th>
-<th><p>Explanation</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Block</p></td>
-<td><p>Revision</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Genesis Block</p></td>
-<td><p>Genesis Hash</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Transaction</p></td>
-<td><p>Input Data</p></td>
-<td><p>Is the data which is inputted into the hashing function.</p>
-<ul>
-<li>Content Data</li>
-<li>Metadata Data</li>
-<li>Signature Data</li>
-<li>Witness Data</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>Genesis Block</p></td>
-<td><p>Genesis Revision</p></td>
-<td><p>Is the unique hash chain identifier</p></td>
-</tr>
-<tr class="odd">
-<td><p>Blockchain</p></td>
-<td><p>Hash Chain</a></p></td>
-<td><p>The hash chain is not distributed but by default only in the local PKC, therefore it is not a distributed ledger. Furthermore the PKC is missing a consensus algorithm to create a shared truth between notes.</p></td>
-</tr>
-</tbody>
+	<thead>
+		<tr class="header">
+			<th><p>Blockchain Term</p>
+			</th>
+			<th><p>AQP Term</p>
+			</th>
+			<th><p>Explanation</p>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<td><p>Transaction</p>
+			</td>
+			<td><p>Input Data</p>
+			</td>
+			<td><p>In a blockchain its a signed transaction. In AQP its all the input data provided to calculate the respective content slot hashes.</p>
+			</td>
+		</tr>
+		<tr class="even">
+			<td><p>Block</p>
+			</td>
+			<td><p>Revision</p>
+			</td>
+			<td><p>A block contains the Merklized list of transactions. A&nbsp;revision contains various&nbsp;hashed data inputs such as</p>
+			<ul>
+			<li>Content slots</li>
+			<li>Metadata data</li>
+			<li>Signature data</li>
+			<li>Witness data</li>
+			</ul>
+			</td>
+		</tr>
+		<tr class="odd">
+			<td><p>Genesis Block</p>
+			</td>
+			<td><p>Genesis Revision</p>
+			</td>
+			<td><p>The first object in the hash chain / block chain.</p>
+			</td>
+		</tr>
+		<tr class="even">
+			<td><p>Blockchain</p>
+			</td>
+			<td>Hash Chain</td>
+			<td>The hash chain is not distributed but by default only in the local PKC, therefore it is not a distributed ledger. Furthermore the PKC is missing a consensus algorithm to create a shared truth between notes.</td>
+		</tr>
+	</tbody>
 </table>
+
+### A side note
+
+It has not escaped our notice that the provided AQP improves the existing
+process of double-entry bookkeeping and provides a foundation for a new data
+economy. This also allows to create unforgeable invoices which can be clearly
+attributed to its sender, avoiding fraud. This is one of many other use cases,
+e.g. providing trusted news via revision-controlled journalism.
