@@ -364,6 +364,8 @@ Additional context:
 The following structure shows an AQP hash chain with 3 revisions:
 
 #### 1st Revision
+This revision features all REQUIRED (content, metadata) and all OPTIONAL
+(signature, witness) AQP data fields.
 ```json
 {
   "verification_context": {
@@ -446,6 +448,10 @@ The following structure shows an AQP hash chain with 3 revisions:
 ```
 
 #### 2nd Revision
+This revision entangles all data fields of the previous revision. As the
+calculation of the revision_verification hash depends on the revision of the
+previous revision, it is shown in verification_context.
+
 ```json
 {
   "verification_context": {
@@ -479,6 +485,8 @@ The following structure shows an AQP hash chain with 3 revisions:
 ```
 
 #### 3rd Revision
+This revision features a transclusion-hash for an immutable link to another
+revision.
 
 ```json
 {
@@ -517,64 +525,174 @@ The following structure shows an AQP hash chain with 3 revisions:
 The AQP provides 3 API endpoints which return data from a host that runs the
 AQP:
 
+### Get Hash Chain
 `/get_hash_chain_info/{identifier}?identifier=<title or genesis hash>`  
 Input:
 - `identifier_type`: the value must either be "title" or "genesis_hash"
 - `identifier`: the title or genesis_hash string, e.g. "Main Page" or "02c3c2...215d8d"
 Returns: all context for the requested hash_chain.
 
+Example:
+
+API Request:
+`/get_hash_chain_info/genesis_hash?identifier=dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26`
+
+API Response:
+```json
+{
+  "genesis_hash": "dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26",
+  "domain_id": "acfa9f682e",
+  "latest_verification_hash": "2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c",
+  "site_info": {
+    "sitename": "Personal Knowledge Container",
+    "dbname": "my_wiki",
+    "base": "http://localhost:9352/index.php/Aqua",
+    "generator": "MediaWiki 1.37.1",
+    "case": "first-letter",
+    "namespaces": {
+      "0": {
+        "case": true,
+        "title": ""
+      },
+      "1": {
+        "case": true,
+        "title": "Talk"
+      },
+      "2": {
+        "case": true,
+        "title": "User"
+      },
+      "3": {
+        "case": true,
+        "title": "User talk"
+      },
+      "4": {
+        "case": true,
+        "title": "Personal Knowledge Container"
+      },
+      "5": {
+        "case": true,
+        "title": "Personal Knowledge Container talk"
+      },
+      "6": {
+        "case": true,
+        "title": "File"
+      },
+      "7": {
+        "case": true,
+        "title": "File talk"
+      },
+      "8": {
+        "case": true,
+        "title": "MediaWiki"
+      },
+      "9": {
+        "case": true,
+        "title": "MediaWiki talk"
+      },
+      "10": {
+        "case": true,
+        "title": "Template"
+      },
+      "11": {
+        "case": true,
+        "title": "Template talk"
+      },
+      "12": {
+        "case": true,
+        "title": "Help"
+      },
+      "13": {
+        "case": true,
+        "title": "Help talk"
+      },
+      "14": {
+        "case": true,
+        "title": "Category"
+      },
+      "15": {
+        "case": true,
+        "title": "Category talk"
+      },
+      "828": {
+        "case": true,
+        "title": "Module"
+      },
+      "829": {
+        "case": true,
+        "title": "Module talk"
+      },
+      "2300": {
+        "case": true,
+        "title": "Gadget"
+      },
+      "2301": {
+        "case": true,
+        "title": "Gadget talk"
+      },
+      "2302": {
+        "case": false,
+        "title": "Gadget definition"
+      },
+      "2303": {
+        "case": false,
+        "title": "Gadget definition talk"
+      },
+      "6942": {
+        "case": true,
+        "title": "Data Accounting"
+      },
+      "6943": {
+        "case": true,
+        "title": "Data Accounting talk"
+      },
+      "-2": {
+        "case": true,
+        "title": "Media"
+      },
+      "-1": {
+        "case": true,
+        "title": "Special"
+      }
+    },
+    "version": "0.3.0"
+  },
+  "title": "Aqua",
+  "namespace": 0,
+  "chain_height": 3
+}
+```
+
+### Get Revision Hashes
 `/get_revision_hashes/{verification_hash}`
 Input:
 - `verification_hash`
 Returns: the revision requested if it exists and/or a list of any newer
 revision than the one requested.
 
+Example:
+
+API Request:
+`/get_revision_hashes/dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26`
+
+API Response:
+```json
+[
+  "dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26",
+  "f483d7746f67e7099099bcfa8ea5a93148251c598857e8fad21ce842da62794467067802ef9e818d240cd3312a3346a769f363145a87bfc1eeae19fe8d21b328",
+  "2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c"
+]
+```
+
+### Get Revision
 `/get_revision/{verification_hash}`
 Input:
 - `verification_hash`
 Returns: the revision content together with its verification data
 
-#### get_hash_chain_info data structure
+Example: See example above.
 
--   genesis_hash
--   current_revision: returns the last written verification_hash
-    representing the last revision grouped to this hash_chain.
--   domain_id
--   content: Returns e.g. header data for which interpreter to use to
-    display or process the hash_chain. e.g. xml heador with side_info
-    and namespace.
-
-### get_revision data structure
-
--   verification context
-    -   transclusion: boolean (tells the verifier to scan content for
-        sub-pages)
-    -   signature: boolean (tells the verifier to load previous
-        dependent revision)
-    -   witness: boolean (tells the verifier to load previous dependent
-        revision)
--   content
-    -   content_data
-    -   content_hash
--   metadata
-    -   domain_id
-    -   timestamp
-    -   previous_verification_hash
--   signature
-    -   signature
-    -   wallet_address
-    -   signature_hash
--   witness
-    -   domain_snapshot_genesis_hash
-    -   merkle_root
-    -   witness_network
-    -   transaction
-    -   witness_hash
--   merkle-tree-proof
-
-#### get_revision_hashes data structure
-
--   <revision_hash> or a list of <revision_hashes>
+API Request: `/get_revision/dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26`
 
 ## Verification Process
 
