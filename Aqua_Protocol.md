@@ -149,14 +149,9 @@ specific revision and the previous revisions within a hash chain have existed.
 
 ### Portable Hash Chain
 
-**Portable:** Means it can be moved, from one domain to another. The files of the
-chains are usually quite small.
-**Hash Chain:** A hash chain is the successive application of a cryptographic
-hash function to a piece of data. In computer security, a hash chain is a
-method to produce many one-time keys from a single key or password. For
-non-repudiation a hash function can be applied successively to
-additional pieces of data in order to record the chronology of data's
-existence.[3]
+A hash chain is a linked list where each node contains the cryptographic hash
+of the previous node content. A portable hash chain is a hash chain that can be
+moved from one host to another.
 
 ## Specification
 
@@ -199,8 +194,8 @@ revisions are related without needing to verify the whole history of the
 hash chain.
 
 ##### Verification Hash
-`revision_verification_hash` is the hash sum over the string formed by
-doing the following operation
+`revision_verification_hash` is the hash sum over the string formed by the
+following operation
 
 ```
 revision_verification_hash = calculate_hash_sum(
@@ -213,14 +208,36 @@ The signature_hash and witness_hash are OPTIONAL.
 
 ##### Content
 
-| Input order | Data Field                          | Input     | Input                                                                                                                                                                                         |
-|-------------|-------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \-          | Content_Hash                        | \-       | The check sum for all content data fields which simplifies hash construction and the ability to identify data corruption in this part of the verification structure.                          |
-| 1           | Text                                | REQUIRED | The string input of the visible page using UTF-8 encoding schema.                                                                                                                             |
-| 2           | Special Content: Slot: Transclusion | OPTIONAL | Holds the data of hashes-transcluded resources.                                                                                                                                               |
-| 3           | Special Content Slot: File_Hash     | OPTIONAL | A file which is transcluded into the revision. The sha3-512 checksum is written into a specific content_slot in the file. Takes the binary string of the file as input to calculate the hash. |
-| 4           | Special Content Slot: Signature     | OPTIONAL | A visible copy of the signature data for e.g. manual verification                                                                                                                             |
-| 5           | Content_Slot N                      | OPTIONAL | There are 'N' content slots.                                                                                                                                                                  |
+A content hash is the check sum for all content data fields which simplifies
+hash construction and the ability to identify data corruption in this part of
+the verification structure.
+`content_hash` is the hash sum over the string formed by following operation:
+
+```
+contentObj = {
+    "main": content,
+    "extension_key_1": content_extension_1,
+    "extension_key_2": content_extension_2,
+    ...,
+    "extension_key_n": content_extension_n,
+}
+sortedContenObj = sort_by_keys(contentObj)
+content_hash = calculate_hash_sum(
+    sortedContenObjValue_1,
+    sortedContenObjValue_2,
+    ...,
+    sortedContenObjValue_n,
+)
+```
+Description:
+- content: The string input of the visible page using UTF-8 encoding schema.
+  REQUIRED.
+- content extensions: more data MAY be encapsulated in addition to the main
+  content. These could be a file, a stateful link, or a signature. The content
+  extensions are sorted alphabetically by their key names. OPTIONAL.
+
+To see an example of `contentObj` of a revision, see the [example](#Example)
+section,
 
 ##### Metadata
 
