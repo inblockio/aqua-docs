@@ -49,7 +49,7 @@ Accounting](Data_Accounting).
 We are following the Ethereum 'Account' definition. In
 general, there are two types of accounts. Externally owned accounts,
 controlled by private keys. And contract accounts, controlled by their
-contract code. [1] https://ethereum.org/en/whitepaper/#ethereum-accounts
+contract code [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/#ethereum-accounts)
 
 We can't prove if a person is a person or a machine. With advancements
 in AI, it will become increasingly difficult to prove that a human is a
@@ -66,14 +66,10 @@ context required to interact with accounts.
 
 ### Revision
 A revision is the smallest portable entity within the AQP. Multiple revisions
-form a portable hash-chain.
-
-They existed before in unsecured systems where multiple revisions form a page.
-The AQP adds the cryptographic harness to secure it.
-
-With presenting a portable hash-chain it is possible track all incremental
+form a portable hash-chain. They existed before in unsecured systems where multiple revisions form a page.
+The AQP adds the cryptographic harness to secure it. With presenting a portable hash-chain it is possible track all incremental
 changes stored in each revision to understand the history of a page and how it
-came to be.
+came to be. This allows us to have version control on digital assets being able to restore earlier states and to relate to them. This allows to have historical evidence of digital assets.
 
 ### Page
 
@@ -82,7 +78,7 @@ revisions share a global URI hash to attribute them together.
 
 ### Transaction Security
 Measurement of the level of integrity assurance for a transaction.
-The higher the transaction security, the higher the cost usally becomes.
+The higher the transaction security, the higher the cost usually becomes.
 Public Distributed Ledger systems are highly suitable for priving very high
 levels of transaction security on the cost of privacy and immutability (data
 can't be changed or deleted).
@@ -93,7 +89,7 @@ software must apply a secure architecture and measures for keeping data assets
 safe. This is achieved through encryption, strong authentication and
 restrictive access to keep data private by default.
 
-See [Design Principles / Seperation of Account and
+See [Design Principles / Separation of Account and
 Service](https://github.com/inblockio/aqua-docs/blob/main/Design_Principles.md#principle-separation-of-account-and-service)
 
 
@@ -178,7 +174,7 @@ The signature_hash and witness_hash are OPTIONAL.
 
 ##### Content
 
-| Input order | Data Field                          | Inut     | Input                                                                                                                                                                                         |
+| Input order | Data Field                          | Input     | Input                                                                                                                                                                                         |
 |-------------|-------------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \-          | Content_Hash                        | \-       | The check sum for all content data fields which simplifies hash construction and the ability to identify data corruption in this part of the verification structure.                          |
 | 1           | Text                                | REQUIRED | The string input of the visible page using UTF-8 encoding schema.                                                                                                                             |
@@ -250,7 +246,7 @@ method, which is via an Ethereum wallet.
 <tr class="odd">
 <td><p>3</p></td>
 <td><p>Signature</p></td>
-<td><p>Cyphertext to verify against it</p></td>
+<td><p>Ciphertext to verify against it</p></td>
 </tr>
 </tbody>
 </table>
@@ -632,7 +628,7 @@ Our transactions is content written into a revision.
 <tr class="header">
 <th><p>Blockchain Term</p></th>
 <th><p>AQP Term</p></th>
-<th><p>Explaination</p></th>
+<th><p>Explanation</p></th>
 </tr>
 </thead>
 <tbody>
