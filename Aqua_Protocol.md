@@ -44,7 +44,9 @@ Accounting](Data_Accounting).
 
 ## Terminology
 
-**Account** We are following the Ethereum 'Account' definition. In
+### Account
+
+We are following the Ethereum 'Account' definition. In
 general, there are two types of accounts. Externally owned accounts,
 controlled by private keys. And contract accounts, controlled by their
 contract code. [1] https://ethereum.org/en/whitepaper/#ethereum-accounts
@@ -62,7 +64,7 @@ independent of humans or machines. Identity claims issued via the Aqua
 Identity Protocol (second layer protocol) will help to provide the
 context required to interact with accounts.
 
-**Revision**
+### Revision
 A revision is the smallest portable entity within the AQP. Multiple revisions
 form a portable hash-chain.
 
@@ -73,17 +75,20 @@ With presenting a portable hash-chain it is possible track all incremental
 changes stored in each revision to understand the history of a page and how it
 came to be.
 
-**Page** The summary of revisions attributed to a shared origin. In AQP all
+### Page
+
+The summary of revisions attributed to a shared origin. In AQP all
 revisions share a global URI hash to attribute them together.
 
-**Transaction Security**
+### Transaction Security
 Measurement of the level of integrity assurance for a transaction.
 The higher the transaction security, the higher the cost usally becomes.
 Public Distributed Ledger systems are highly suitable for priving very high
 levels of transaction security on the cost of privacy and immutability (data
 can't be changed or deleted).
 
-**Data Vault** Software used to store and manage data with an account. The
+### Data Vault
+Software used to store and manage data with an account. The
 software must apply a secure architecture and measures for keeping data assets
 safe. This is achieved through encryption, strong authentication and
 restrictive access to keep data private by default.
@@ -92,24 +97,27 @@ See [Design Principles / Seperation of Account and
 Service](https://github.com/inblockio/aqua-docs/blob/main/Design_Principles.md#principle-separation-of-account-and-service)
 
 
-**Witness** We define witnessing as the process of observing an event. A
+### Witness
+We define witnessing as the process of observing an event. A
 witness is judged by their capability to recollect and share the observed
 event. In other words, witnessing is the process of storing input data for
 later playback to provide data symmetry of an event.
 
-**Witness Network** The digital service in a distributed ledger or similar
-infrastructure which provides transaction security and data-symmetry for shared
-data within the network.
+### Witness Network
+The digital service in a distributed ledger or similar infrastructure which
+provides transaction security and data-symmetry for shared data within the
+network.
 
 E.g. Ethereum can be used to store 'Witness-Events-Verification-Hashes which
 represent the global state of a Personal Knowledge Container. It is required to
 pay the witness network for it's service. In the case of Ethereum this is done
 using 'Ether'.
 
-**Portable Hash Chain** Portable: Means it can be moved, from one domain to
-another. The files of the chains are usually quite small. Hash Chain: A hash
-chain is the successive application of a cryptographic hash function to a piece
-of data. In computer security, a hash chain is a
+### Portable Hash Chain
+**Portable:** Means it can be moved, from one domain to another. The files of the
+chains are usually quite small.
+**Hash Chain:** A hash chain is the successive application of a cryptographic
+hash function to a piece of data. In computer security, a hash chain is a
 method to produce many one-time keys from a single key or password. For
 non-repudiation a hash function can be applied successively to
 additional pieces of data in order to record the chronology of data's
