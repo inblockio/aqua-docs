@@ -31,10 +31,9 @@ very sensitive data.
 
 Concern: There is a trend in the DIF/WC3 Identity space that some
 players like to accumulate personal identifiable data (PII) inside of
-Wallets. We think this is a ill-fated direction and and there should be
-a clear separation between account and service.
-
-## Principle: Service and Account are separated.
+Wallets. We think this is a ill-fated direction and there should be
+a clear separation between account and service. Wallets should not hold
+personal identifiable data.
 
 Benefits:
 
