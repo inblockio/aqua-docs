@@ -61,9 +61,9 @@ referred the same way across multiple interacting hosts.
 ### Account
 
 We are following Ethereum's account definition:
-    In general, there are two types of accounts. Externally owned accounts,
-    controlled by private keys. And contract accounts, controlled by their
-    contract code
+> In general, there are two types of accounts. Externally owned accounts,
+> controlled by private keys. And contract accounts, controlled by their
+> contract code
 -- [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/#ethereum-accounts)
 
 In general, we can't prove if an account owner is a person or a machine. With
