@@ -10,22 +10,23 @@
 
 The Aqua Protocol (AQP) is a content-exchange protocol between hosts in
 peer-to-peer environments, providing accountability. This document describes
-the functions performed by the protocol, a link to a proof-of-concept that
-implements it, and its used interfaces. It also showcases other services which
-can be developed on top of it.
+the functions performed by the protocol, and its user interface. It also
+showcases other services which can be developed on top of the protocol.
 
 The AQP is used to realize the concept of [Data Accounting](Data_Accounting).
+The proof-of-concept implementation of the AQP can be found in [this
+page](Reference_Implementation_Architecture).
 
 ## Motivation
 
 The goal of the AQP is to reduce costs and time for creating verifiable data
 and verifying data.
 
-In today's world, there is no widely adopted trustless process of checking if
+In today's world, there are no widely adopted trustless processes of checking if
 data have been manipulated or corrupted, are attributed to the wrong author, or
 are attributed to the wrong time. Today's processes are dependent on centralized
 trusted services which retain all power over governing the data, allowing them
-to tamper the data as they see fit.
+to tamper with the data as they see fit.
 
 There is a full lack of transparency or ability to check if data have been
 altered via an unauthorized access. Additionally, consumers of data are
@@ -65,11 +66,11 @@ We are following Ethereum's account definition:
     contract code
 -- [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/#ethereum-accounts)
 
-We can't prove if an account owner is a person or a machine. With advancements
-in AI, it will become increasingly difficult to prove that a human is a
-human. [Attempts are being made](https://www.proofofhumanity.id/) to increase
-trustworthiness of accounts which fall short in questions of privacy and
-security as they make public claims. Traditional know your customer (KYC)
+In general, we can't prove if an account owner is a person or a machine. With
+advancements in AI, it will become increasingly difficult to prove that a human
+is a human. [Attempts are being made](https://www.proofofhumanity.id/) to
+increase trustworthiness of accounts which fall short in questions of privacy
+and security as they make public claims. Traditional know your customer (KYC)
 combined with the AQP and Aqua Identity Protocol (AIP) identification processes
 can provide similar "proof of being human" which can be attested to an account.
 This allows us to outsource the problem of identification, where we only focus
@@ -617,7 +618,7 @@ To verify that the witness event included in a revision is correct, a
 lookup and comparison of the `witness_event_verification_hash` on-chain is
 performed and compared with the recalculated event.
 
-**Reference Implementationrecalculate**
+**Reference Implementation**
 
 |                                    |                                                                    |
 |------------------------------------|--------------------------------------------------------------------|
