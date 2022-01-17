@@ -187,6 +187,12 @@ by default.
 
 # Revision Verification Structure
 
+A revision is RECOMMENDED to be limited to 50 Megabytes to ensure that the verification can take
+place on all imaginable clients which might have slow network connectivity, low
+memory, low cpu performance. Once a revision is verified, the next one can be
+verified. Clients with more performance will be able to parallelize the
+verification. Larger files can be chunked to be place in multiple revisions.
+
 A verified data structure is identified by its URI `verification_hash`
 and grouped by its `genesis_hash`. The first revision created will
 create a `verification_hash` which has a special meaning and is
@@ -677,28 +683,6 @@ Change in the data-structure:
         underlying architecture.
 -   Including Account as part of the verified data structure
 -   Defining maximum payload size per revision
-
-# Known Design Limitations
-
-As the content (e.g. a file) is part of a revision, it makes sense to
-investigate maximum payload per requested revision. If it exceeds the
-supported maximum, the verification will fail.
-
--   Excluding large files from transfer and using an existing
-    file-transfer protocol might be desired.
-
-<!-- -->
-
--   As the file is wrapped in the verification_protocol, it's transport
-    can be a fully separated concern.
-
-An alternative solution would be chunking the file into a maximum
-allowed payload per request, and then the reassembling the file at the
-destination. This would also allow for integrity verification as each
-content load is integrity verified anyway. This would be the logical
-segmentation of one logical revision into many smaller virtual
-revisions, which will resolve after reassembly into the logical
-verification_hash.
 
 ## Services on AQP (Not yet implemented, exploration)
 
