@@ -15,7 +15,7 @@ showcases other services which can be developed on top of the protocol.
 
 The AQP is used to realize the concept of [Data Accounting](Data_Accounting).
 The proof-of-concept implementation of the AQP can be found in [this
-page](Reference_Implementation_Architecture).
+page](Reference_Implementation_Architecture.md).
 
 ## Motivation
 
