@@ -9,24 +9,27 @@ This allows the resource to be routed via DNS and specified via the URL
 on the remote server.
 
 The limitations of URL's is that they are not expressing a specific
-state of the resource they represent. For news pages this means that the
-content of the page could have changed. E.g. two visitors of the same
-news page could see two different pages.
+state of the resource they represent. There is no way to verify if the content
+of the page is consistant with the content of the page who send a URL.
+For news pages this means that the content of the page could have changed. E.g.
+two visitors of the same news page could see two different pages.
 
-We need a better way to hyperlink so it's representing the state of the
-resource which is linked.
+We need a better way to hyperlink so it's sure, that what is linked
+is consistant across domains and users. Therefore we introduce Aqua URI's which are
+used to enable the receive to verify the state of the ressource.
 
 Goal
 ----
 
-Stateful Hyperlinks as Unique Resource Identifiers (URI's).
+Use Immutable Hyperlinks as Unique Resource Identifiers (URI's) to allow
+a consistant referenciation of ressources with the ability to verify them with the AQP.
 
 Success Criteria
 ----------------
 
-A Stateful Hyperlink schema which links to a specific state of a
-resource. Instead of a sateless hyperlink we use verification_hash as a
-URI which acts also as a checksum for the retrieved revision.
+A Immutable Hyperlink schema which links to a specific state of a
+resource. Instead of a stateless hyperlink we use verification_hash as a
+URI which acts as the checksum to verify the retrieved revision.
 
 Input
 -----
@@ -56,19 +59,22 @@ Boundary conditions
 Implementation
 --------------
 
-We create stateful hyperlinks by moving from URL's to sha3-512 hashes as
+We create Immutable Hyperlinks by moving from URL's to sha3-512 hashes as
 URI's. These URI's are globally unique and therefore collision resistant
 as the namespace is sufficiently large. By using the hashes as links we
 also refer to the state of the resource. As the hash is the
-page_verification_hash of the resource it allows to verify the integrity
+verification_hash of the resource it allows us to verify the integrity
 of the resource with it.
 
 We are referring to files with their SHA3-512 hash in this format
 \[SHA3-512\|human_readable_filename\]. Displayed is the human readable
 filename white it's stored with the full SHA3-512 hash which allows us
-to be used as Stateful-Hyperlinks.
+to be used as Immutable Hyperlinks.
 
 To allow routing between resources we can add the <domain_id> as a
 prefix to the <verification_hash> resulting in the following syntax:
 
--   example: aqua://<domain_id>/<page_verification_hash>
+`example: aqua://<domain_id>/<page_verification_hash>`
+
+Note: Implementatstion specific to aqua-PKC:
+- The verification_hash is stored in the content-slot 'transclusion hashes' with the internal links which referne the ressource.
