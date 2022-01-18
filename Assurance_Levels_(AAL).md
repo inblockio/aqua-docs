@@ -2,6 +2,8 @@ How safe are the wallets to used? - Current PKC Pilot - relating to the
 'Authentication assurance level's (AAL)' according to the World Bank
 standards:
 
+See short presentation [Aqua_PKC_-_Wallet-Security.pdf](https://github.com/inblockio/aqua-docs/files/7885411/Aqua_PKC_-_Wallet-Security.pdf)
+
 ### Level 1
 
 The Metamask wallet alone has a low (level 1 ) level of assurance.
@@ -34,8 +36,6 @@ authentication for logins after wallet-authentication see
     to each party being involved in the multi-signature event to open a
     PKC or to SIGN a verified page within the PKC or to witness a data
     set via a witness network.
-
-<!-- -->
 
 -   The mentioned security model is not dependent on the security of
     Metamask. If Metamask is hacked it will not allow to compromise the
