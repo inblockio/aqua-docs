@@ -8,50 +8,42 @@
 
 ## Introduction
 
-The Aqua Protocol (AQP) is a content-exchange protocol between hosts in
-peer-to-peer environments, providing accountability. This document describes
-the functions performed by the protocol, and its user interface. It also
-showcases other services which can be developed on top of the protocol.
-
-The AQP is used to realize the concept of [Data Accounting](Data_Accounting).
-The proof-of-concept implementation of the AQP can be found in [this
+The Aqua Protocol (AQP) is a data accountability and exchange protocol between
+hosts in peer-to-peer environments. The AQP is used to realize the goal of
+[accounting for data origin and history](Data_Accounting). The description for
+the proof-of-concept implementation of the AQP can be found in [this
 page](Reference_Implementation_Architecture.md).
 
 ## Motivation
 
-The goal of the AQP is to reduce costs and time for creating verifiable data
-and verifying data.
-
 In today's world, there are no widely adopted trustless processes of checking if
 data have been manipulated or corrupted, are attributed to the wrong author, or
 are attributed to the wrong time. Today's processes are dependent on centralized
-trusted services which retain all power over governing the data, allowing them
-to tamper with the data as they see fit.
+trusted services which retain all power over governing the data.
 
-There is a full lack of transparency or ability to check if data have been
-altered via an unauthorized access. Additionally, consumers of data are
-incapable of telling if centralized service have altered the consumed data.
-This leads to a world of untrustworthy information in which we don't know how
-to conclude what is true.
+There is a lack of transparency or ability to check if data have been altered
+by an unauthorized party. Additionally, consumers of data are incapable of
+verifying if centralized services have altered the data. This leads to a world
+of untrustworthy information in which we don't know how to conclude what is
+true.
 
-In a world where every piece of information is a sandcorn in a sandstorm, it has
+In a world where every piece of information is a grain in a sandstorm, it has
 become impossible to navigate reality. In contrast, in a world where every
 piece of information is a fixed star in the sky for a lifetime, we are able to
 relate and make sense of the information given. The Aqua Protocol (AQP) turns
-sandcorns of information into fixed stars of information.
+grains of information into fixed stars of information.
 
-The AQP adds a peer-to-peer layer of assurance to make it impossible to change data
-unnoticed. AQP adds an essential line of defense against attacks on data
-integrity, data theft, or misattribution. AQP is used to govern trusted data,
-which can be quickly verified. This includes the verification of its integrity
-and history (via portable hash-chains), the verification of its account (the
-entity who creates or manipulates the data), and the verification of its
-existence and timestamp.
+The AQP adds a peer-to-peer layer of accountability, making it impossible to
+change data unnoticed. AQP adds an essential line of defense against attacks on
+data integrity, plagiarism, or misattribution. AQP is used to govern trusted
+data, which can be quickly verified. This includes the verification of its
+integrity and history, the verification of its account (the entity who creates
+or manipulates the data), and the verification of its existence and timestamp.
 
-    The Aqua Protocol provides trustworthness to data by
+    The Aqua Protocol provides trustworthiness to data by
     securing data ✅ integrity, 🔏 account and ⌚ time.
 
-In order to account data, it is necessary to track its history. The AQP
+In order to account for data, it is necessary to track its history. The AQP
 provides a globally unique resource identification (URI) for each
 revision of the verified data. This identifier is collision-free, and is
 referred the same way across multiple interacting hosts.
@@ -78,7 +70,7 @@ on unique accounts which are sufficient for data accounting independent of
 humans or machines. Identity claims issued via the AIP will help to provide the
 context required to meaningfully interact between accounts.
 
-For more on this topic please read the [Aqua Idenity
+For more on this topic, please read the [Aqua Identity
 Protocol](https://github.com/inblockio/aqua-docs/blob/main/Aqua_Identity_Protocol.md).
 
 ### Revision
@@ -87,11 +79,11 @@ A revision is the smallest portable entity within the AQP. Multiple revisions
 form a single portable hash chain which is serialized in JSON format.
 They have existed before in unsecured systems where multiple revisions form a
 file which can be displayed as a page. The AQP adds the cryptographic harness
-to secure it. With presenting a portable hash chain it is possible to track all
-incremental changes stored in each revision to understand the history of a page
-and how it came to be. This allows us to have version control on digital assets
-being able to restore earlier states and to relate to them. This allows us to
-have historical evidence of digital assets.
+to secure it. With presenting a portable hash chain, it is possible to track
+all incremental changes stored in each revision to understand the history of a
+page and how it came to be. This allows us to have version control on digital
+assets being able to restore earlier states and to relate to them. This allows
+us to have historical evidence of digital assets.
 
 ### Page
 
@@ -138,15 +130,15 @@ data symmetry around an event.
 ### Witness Network
 
 The digital service in a distributed ledger or similar infrastructure which
-provides transaction security and data-symmetry for shared data within the
-network.
+provides transaction security and data symmetry for shared data within the
+network. An example of a witness network would be Ethereum.
 
 E.g. Ethereum can be used to store a digital fingerprint of a domain snapshot
 of a data vault. A domain snapshot is the Merklized state of all witnessed hash
 chains being present in the data vault. It is required to pay the witness
-network for its service. In the case of Ethereum this is done using 'Ether'.
+network for its service. In the case of Ethereum, this is done using 'Ether'.
 This in return allows the account owner to create an 'undeniable' proof that a
-specific revision and the previous revisions within a hash chain have existed.
+specific revision and the previous revisions within a hash chain has existed.
 
 ### Portable Hash Chain
 
@@ -171,9 +163,9 @@ revision.
 All hashes are based on
 [SHA3-512](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf).
 This encryption standard is used to construct
-[portable hash chain](Mobile-Content-Hash-Chain)'s, which are
+[portable hash chains](Mobile-Content-Hash-Chain), which are
 serializing of data and its history in a form that can be verified, and
-independent of location. The mobile-content-hash-chain can be fully or
+independent of location. The portable hash chain can be fully or
 partially exchanged between hosts depending on the application of the
 data. From here on, we refer the term "portable hash chain" as
 "hash chain."
@@ -192,7 +184,7 @@ A revision is RECOMMENDED to be limited to 50 Megabytes to ensure that the verif
 place on all imaginable clients which might have slow network connectivity, low
 memory, low cpu performance. Once a revision is verified, the next one can be
 verified. Clients with more performance will be able to parallelize the
-verification. Larger files can be chunked to be place in multiple revisions.
+verification. Larger files can be chunked to be placed in multiple revisions.
 
 A verified data structure is identified by its URI `verification_hash`
 and grouped by its `genesis_hash`. The first revision created will
@@ -315,8 +307,8 @@ a single hash value.
 
 The `witness_event_verification_hash` is written to the [Witness
 Network](Witness_Network). The
-witness_event_verification_hash is then generated by using the
-domain_snapshot_genesis_hash and the merkle_root hash together. This
+`witness_event_verification_hash` is then generated by using the
+`domain_snapshot_genesis_hash` and the `merkle_root` hash together. This
 allows the page snapshot itself to also be witnessed.
 
 A single revision which has been witnessed, will not store the whole Merkle
@@ -336,24 +328,24 @@ Description:
   construction and identifies data corruption in this part of the verification
   structure.
 - `domain_snapshot_genesis_hash`: Refers to the URI of the page which stores the
-  whole Merkle_tree of the witness event.
+  whole Merkle tree of the witness event.
 - `merkle_root`: the root hash of the Merkle tree. The presence of the
   Merkle tree allows for lazy verification to reduce required computational
   steps for verification by skipping the Merkle proof as both datasets can be
   entangled in the chain by a newer revision and therefore be immutable.
 - `witness_network`: specifies which witness network was used to store the
-  witness_event. The following structure shows an AQP hash chain with 3
-  revisions which wrote the witness_event_verification_hash into the
+  `witness_event`. The following structure shows an AQP hash chain with 3
+  revisions which wrote the `witness_event_verification_hash` into the
   witness network.
 
 Additional context:
 - relative-merkle-tree-proof: This provide the relative path with all required
   hashes to verify the Merkle tree root from the first node which the
-  verification_hash of the revision as a starting point. 
-- `witness_event_verification_hash`: \[IMPLICIT\] Is NOT part of the data
+  `verification_hash` of the revision as a starting point. 
+- `witness_event_verification_hash`: \[IMPLICIT\] Is not part of the data
   structure. It is calculated by taking the sha3-512 checksum of the
   `domain_snapshot_genesis_hash` and the `merkle_root` hash. This ensures that the
-  domain_snapshot itself will be witnessed.
+  `domain_snapshot` itself will be witnessed.
 
 
 ## Example
@@ -687,21 +679,22 @@ Change in the data-structure:
 
 ## Services on AQP (Not yet implemented, exploration)
 
-### AQP-DACS: [Domain](Domain "wikilink") Access Control System
+### AQP-DACS: [Domain](Domain) Access Control System
 
--   -   See: [Guardian](Guardian "wikilink") (Acting as like a Firewall)
+-   -   See: [Guardian](Guardian) (Acting as like a Firewall)
 
 -   AQP-NS: Name-System and Name-Registry.
-    -   See [PKC Name Resolution](PKC_Name_Resolution "wikilink")
+    -   See [PKC Name Resolution](PKC_Name_Resolution)
 
 -   AQP-SSI: Self-Sovereign-Identity Protocol for [Identity
     Claim](Identity_Claim "wikilink") management
-    -   See [Aqua Identity Protocol](Aqua_Identity_Protocol "wikilink")
+    -   See [Aqua Identity Protocol](Aqua_Identity_Protocol)
 
 -   AQP Delegated Witnessing
-    -   See [Delegated Witnessing](Delegated_Witnessing "wikilink")
+    -   See [Delegated Witnessing](Delegated_Witnessing)
 
 ## Similar Projects
+
 None of the listed projects apply the concepts of versioning to their documents,
 the concept of portable hash chains, the concept of personal data vaults for data
 management in comparison with the AQP reference implementation.
