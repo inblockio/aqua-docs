@@ -701,24 +701,25 @@ management in comparison with the AQP reference implementation.
 
 This following list is not exhaustive:
 - [Surety](http://surety.com/)
-    The oldest blockchain a-like timestamping service which is publishing to
-    the New York Times since 1995.
+    The oldest blockchain-like timestamping service which has been publishing
+    to the New York Times since 1995.
 - [OpenTimestamp](https://opentimestamps.org/)
     A free and open-source service provided by Peter Todd using the Bitcoin
-    network as a distributed cryptographic clock.
+    network as a distributed cryptographic clock. The AQP MAY use OpenTimestamp
+    as a witness network.
 - [OriginStamp](https://originstamp.com/)
     A company providing paid timestamping services for their customers.
     It looks very similar to OpenTimestamps with open-source client libraries.
 - [Factom Protocol](https://www.factomprotocol.org/)
-    A service which created an architecture with an extra layer of blockchain,
+    A service which creates an architecture with an extra layer of blockchain,
     to provide an extra layer of trusted parties while providing their own
-    token. It introduces unnecessary complexity and intermediaries as
-    dependencies compared to the AQP.
+    token. In our opinion, it introduces unnecessary complexity and
+    intermediaries as dependencies compared to the AQP.
 - [OpenAttestation](https://www.openattestation.com/)
-    An implementation of a timestamping service for certification. Used
-    for secure electronic vaccinate passes by the Singaporean government.
-    They also use the MetaMask Ethereum wallet for signing documents making it
-    the most similar project to AQP to our knowledge.
+    An implementation of a timestamping service for document certification. One
+    application of it is for secure digital vaccination certificates by the
+    Singaporean government. They use the MetaMask Ethereum wallet for signing
+    documents making it the most similar project to AQP to our knowledge.
 
 ## Blockchain Context
 
