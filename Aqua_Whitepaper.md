@@ -88,6 +88,16 @@ context required to meaningfully interact between accounts.
 For more on this topic, please read the [Aqua Identity
 Protocol](https://github.com/inblockio/aqua-docs/blob/main/Aqua_Identity_Protocol.md).
 
+### Domain
+A domain is a unique namespace attributed to an account. It allows us to manage
+services and files within that namespace creating a domain of data governance
+After granted permissions, additional accounts can be added to share control
+over a domain or singular assets. To enforce boundaries of a domain, additional
+software like the [Guardian](Guardian.md) is required.
+
+E.g. by setting up the a data vault with your account it becomes your
+domain of data governance.
+
 ### Revision
 
 A revision is the smallest portable entity within the AQP. Multiple revisions
