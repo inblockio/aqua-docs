@@ -3,7 +3,7 @@
 ## Principle Private is Default
 
 The principle default to private is that no data of the PKC [Data
-Vault](Data_Vault "wikilink") is shared without it being explicitly
+vault](Aqua_Whitepaper.md#data-vault) is shared without it being explicitly
 authorized by the associated account.
 
 ### Domain Access Levels
@@ -42,7 +42,7 @@ Benefits:
 -   Account is not compromised, as there is no password saved within the
     service with Password free login.
 
-#### [Wallet](Wallet "wikilink")'s have one job. Keep private keys safe! (Account Management)
+#### [Wallet](Aqua_Whitepaper.md#wallet)'s have one job. Keep private keys safe! (Account Management)
 
 -   Should be stupid, simple, safe!
 -   Allowed operations:
@@ -53,15 +53,15 @@ Benefits:
     associated with the account(s) managed by the wallet
 -   Takes care of key recovery mechanisms
 
-#### [Data Vault](Data_Vault "wikilink") (Service)- Has one job: keep the data safe!
+#### [Data Vault](Aqua_Whitepaper.md#data-vault) (Service)- Has one job: keep the data safe!
 
 -   [Principle: Offline
-    Capability](Principle:_Offline_Capability "wikilink") so it can run
+    Capability](Principle:_Offline_Capability) so it can run
     offline; works offline on local machine
 -   All significant actions authorized and managed though the wallet
 -   Should offer good tooling for data storage and manipulation
 -   Strong access control: By [Principle: Default is
-    Private](Principle:_Default_is_Private "wikilink") which means data
+    Private](Principle:_Default_is_Private) which means data
     is only accessible by the owner.
 -   Data is well protected
     -   The Data Vault should apply additional security features to keep
@@ -99,8 +99,8 @@ authorize access
 ## Principle: Data Portability
 
 The Principle of Data Portability means that the
-[Account](Account "wikilink") owner can instruct the Service to Export
-all data associated with the [Account](Account "wikilink") and is free
+[Account](Aqua_Whitepaper.md#account) owner can instruct the Service to Export
+all data associated with the [Account](Aqua_Whitepaper.md#account) and is free
 to move this data to a new service which is capable of importing the
 data.
 
