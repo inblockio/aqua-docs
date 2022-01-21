@@ -661,7 +661,7 @@ Moving over to revision based verification. This allows:
         sufficient to see that signature.
 -   This allows direct verification after every edit via the Guardian.
     This is the preparation in the interaction to provide services
-    through the [Guardian](Guardian).
+    through the [Guardian](Guardian.md).
 -   Changing the design to include transclusions e.g. this allows the
     verification of subpages via their stateful links /
     revision_verification_hashes
@@ -700,19 +700,19 @@ Change in the data-structure:
 
 ## Services on AQP (Not yet implemented, exploration)
 
-### AQP-DACS: [Domain](Domain) Access Control System
+### AQP-DACS: [Domain](#domain) Access Control System
 
--   -   See: [Guardian](Guardian) (Acting as like a Firewall)
+-   -   See: [Guardian](Guardian.md) (Acting as like a Firewall)
 
--   AQP-NS: Name-System and Name-Registry.
-    -   See [PKC Name Resolution](PKC_Name_Resolution)
+-   ANS: Name-System and Name-Registry.
+    -   See [Aqua Name Resolution](Aqua_Name_Resolution.md)
 
 -   AQP-SSI: Self-Sovereign-Identity Protocol for [Identity
     Claim](Aqua_Identity_Protocol.md#self-issued-identity-claims) management
     -   See [Aqua Identity Protocol](Aqua_Identity_Protocol.md)
 
 -   AQP Delegated Witnessing
-    -   See [Delegated Witnessing](Delegated_Witnessing)
+    -   See [Delegated Witnessing](Delegated_Witnessing.md)
 
 ## Similar Projects
 
