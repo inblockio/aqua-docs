@@ -63,6 +63,8 @@ A wallet is a software for protecting and managing private cryptographic keys
 done by authorization of transactions via digital signatures or by initiating
 decryption processes to access data.
 
+See [Separation of Concerns](Design_Principles.md#principle-separation-of-account-and-service).
+
 ### Account
 
 We are following Ethereum's account definition:
