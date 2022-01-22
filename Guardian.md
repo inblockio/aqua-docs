@@ -1,4 +1,4 @@
-**Context**
+# Context
 
 It is highly problematic to expose sensitive data, such as personal
 identifiable data, to the internet. The service who hosts that sensitive
@@ -11,7 +11,7 @@ vaults. To raise the bar on making attacks difficult and reducing the
 chance of leakage of information, we introduce the Guardian as a extra
 security layer to protect services like the PKC from attacks.
 
-**Summary**
+# Summary
 
 The Guardian is a software which manages the boundaries of your digital
 domain. Guardians are used to connect to secure transport networks
@@ -21,13 +21,13 @@ Guardians via trusted transport-layers to exchange data with them. As
 the Guardian connects to other Guardians, it also manages all
 connections to services in it's domain and access to those services.
 
-**Goal**
+# Goal
 
 Secure all services behind the Guardian from attacks and unauthorized
 access. Keep the data vault and it's data private and safe, while
 enabling the ability to exchange data with other Guardians.
 
-**How**
+## How
 
 Enforcement is handled on each connection and each data set so that
 services behind the Guardian are never directly exposed. This makes the
@@ -46,7 +46,7 @@ how the data is handled.
 
 This allows the Guardian to read and understand Aqua verified data. This
 allows for the implementation of a wide set of behavioral rules and
-offers the opportunity to create various 'Smart Contract' languages on
+offers the opportunity to create various 'Smart contract' languages on
 top of it.
 
 The Guardian verifies a file, reads its contents and checks it's
@@ -55,7 +55,7 @@ permitted or denied. Basic functionality for a Guardian can be compared
 with a traditional firewall, or a application firewall but is much more
 sophisticated to manage access on the data-level.
 
-### Terminology:
+# Terminology:
 
 Proving ownership over a domain by signing the domain ID with an
 self-issued identity claim which is also registered in a claim registry
@@ -63,7 +63,7 @@ to ensure nobody claims to have owned that domain before by manipulating
 the digital clock and faking an earlier owner-ship claim over the
 domain.
 
-#### **Permission Agreements** / Data Usage Agreement / Access Rights
+## **Permission Agreements** / Data Usage Agreement / Access Rights
 
 are contracts which represent the terms and conditions under which files
 and/or services are shared with other accounts and/or their digital
@@ -78,11 +78,35 @@ permission agreement is signed, the other party enters a contractual
 relationship in which they will be liable for any agreement violates
 executed from their digital domain.
 
-#### Example: Sharing a File
+# Processes
+
+## Domain Handshake
+Establish trust between two Aqua domains. For this we have Alice and Bob which
+want to establish trust between their domains. They both have a Guardian in
+place to protect their data vaults.
+
+Step 1) Alice: Create access contract:
+    I <Alice_account> want to connect from my <domain_id> to a <domain_id> controlled by <Bobs_account> with my <alice_domain_id> via the following channel: DNS/HTTPS via <alice_Guardian.domain.com>.
+Step 2) Alice: sign contract
+Step 3) Alice: SEND contract send the page via 'mail' / 'matrix' whatever to the remote PKC instance.
+Step 4) Bob: veries the contract contract and imports it
+Step 5) Bob: extend contract: I <bobs_acocunt> connect my PKC <bobs_domain_id> to your PKC <Alice_domain_id> via my Guardian_endpoint <bobs_guardian.domain2.com>.
+Step 6) Bob: sign extended contract: Bob uses his wallet to sign his extended contract.
+Step 7) Bob: send extended contract TO Alice: Bob sends his Contract to his Guardian.
+Step 8) Bob's Guardian: Verifies and sends the contract to Alice Guardian.
+Step 9) Alice Guardian:
+    Guardian verifies all data
+    Sends OK back to Bob's Guardian
+    Sends Updates contract into Alice PKC
+    Waits for Bob's Guardian to request available pages
+Step 10) Bob's Guardian requests a list of pages: ' What pages do you share with me?'
+Step 11) Alice Guardian: Returns list of accessible resources for Bob
+
+## Example: Sharing a File
 
 Target: Sharing a file with another account. Using two Aqua data vaults
-with their two guardians to manage access to them. We assume the
-guardians already have executed a handshake to enter a trusted
+with their two Guardians to manage access to them. We assume the
+Guardians already have executed a handshake to enter a trusted
 relationship. We also assume, that the file should underlay access
 basedon account restrictions and domain restrictions.
 
@@ -100,12 +124,10 @@ Alice creates an Access Permission for the whole page or for a single
 revision by creating a page with the following syntax:
 
 -   <genesis_hash>:access_contract
-    -   To give access to the whole page with all it's revisions.
-
-<!-- -->
+ -   To give access to the whole page with all it's revisions.
 
 -   <revision_hash>:access_contract
-    -   To give access to a specific revision.
+ -   To give access to a specific revision.
 
 <hr>
 
@@ -123,16 +145,14 @@ I Alice <alice-account> give access to Bob <bob-account>
 
 This contract will come into place with my <Alice-account> signature.
 
-<hr>
-
-The guardian will react to a specific syntax of pages holding contracts,
+The Guardian will react to a specific syntax of pages holding contracts,
 agreements and access rights to adjust his network access rights
 accordingly to it. Alice-Guardian will respond to the question what
 resources are shared by Bobs-Guardian with the answer that there is a
 new page available according to the access contract which now gives
 Bobs-Guardian the ability to query the content of 'My secure research'
 from Alice according to the contract. Depending on Bobs-Guardian
-setting, the guardian might automatically load the resource and forward
+setting, the Guardian might automatically load the resource and forward
 it into the post-box of Bobs Data Vault.
 
 **Example 2:** Sharing a file **with** constrains forming a **contract**
@@ -140,6 +160,8 @@ to do so.
 
 Same as 1 expect that for the contract to come into place, Bob needs to
 sign the contract from Alice containing additional constrains.
+
+---
 
 **Content of the page:**
 
@@ -151,7 +173,7 @@ I Alice <alice-account> give access to Bob <bob-account>
 
 **Under the following conditions:**
 
--   Do not share outside your domain <bobs-domain_id>
+-   Do not share outside your domain <Bobs-domain_id>
 -   Do not share with any body else (Bobs domain can't have another
     account registered to it, if there is an account registered the
     Guardian of Bob will say that Bobs domain does not fulfill the
@@ -161,7 +183,7 @@ I Alice <alice-account> give access to Bob <bob-account>
 
 For this contract to be valid, signatures of first Alice and then Bob
 need to be present. This means, after Alice signed the access contract,
-the contract is a new available resource to bob to be loaded. Bob can
+the contract is a new available resource to Bob to be loaded. Bob can
 now sign the resource in his domain and return the contract. Leading to
 the contract send back to Alice domain and being updated there. Bob now
 gets access to 'My secret research' which has been updated as well, to
@@ -172,11 +194,8 @@ Permission Templates, Complex Permissions (Groups and more)
 It is possible to apply complex permissions based on templates, or and
 connecting multiple access contracts by using
 
--   instead of this **syntax <genesis_hash>:permission_agreement**
-
-<!-- -->
-
--   **the following the syntax** <genesis_hash>:<genesis_hash-2> in
+-   instead of this syntax <genesis_hash>:permission_agreement
+-   the following the syntax <genesis_hash>:<genesis_hash-2> in
     which the <genesis_hash-2> contains a list of sub-pages with access
     contracts which can be used to apply access via permission-objects
     which are represented by the <genesis_hash-2> page object.
@@ -187,6 +206,8 @@ connecting multiple access contracts by using
 3.  The owner can decide to ACCEPT the changes. Or to include the
     changes in the HISTORY File, but not COMMIT them. Or to NOT include
     the update of the PAGE, and disregard it.
+
+---
 
 ### Specifications:
 
@@ -202,9 +223,9 @@ Therefore they can supervise the activities of services and use them as
 triggers to e.g. provide access according to a set permission without
 additional user action.
 
-  
-**Guardian Components:**
+# Guardian Components:
 
+APIs
 -   System-API to control a service via a service specific library. Each
     services will have their own control-library and control API to
     create an abstraction layer which allows for a unified control logic
@@ -225,7 +246,8 @@ additional user action.
         -   **Implementation Specific PKC:** Read special Pages used to
             give access e.g. Data Usage Agreements, Permission
             Agreements
--   **Aqua Verification Library** to be able to verify incoming and
+
+            **Aqua Verification Library** to be able to verify incoming and
     outgoing data
     -   implementation of the 'external-verifier' in e.g. GO, Typescript
         or Javascript (current)
@@ -236,7 +258,7 @@ additional user action.
     page-object level to mange imports / exports). The Guardian verifies
     incoming and outgoing data and constructs sessions based on it.
 -   Guardian Policies: Are sets of rules followed and enforced by the
-    guardian. This includes set of rules used to protect the domain from
+    Guardian. This includes set of rules used to protect the domain from
     unauthorized operations and access. Part of that are page access
     permissions which are managed by the [Data Usage
     Agre](Data_Usage_Agreement "wikilink")[ement](Data_Usage_Agreement "wikilink")s.
@@ -250,12 +272,6 @@ additional user action.
         permissioned transport layer)
     -   Schwarm Integration, Swarm Handler (As a publishing network)
 
-**Basic Guardian functionality:**
-
-  
-Building on top of that:
-
--   See [PKC Handshake](PKC_Handshake "wikilink")
 
 **Giving access to pages with one-time passwords and signatures:**
 
