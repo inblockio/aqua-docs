@@ -1,25 +1,24 @@
 # Context
 
-It is highly problematic to expose sensitive data, such as personal
-identifiable data, to the internet. The service who hosts that sensitive
-data, needs to be compromised only for a short amount of time, to leak
+It is highly problematic to expose sensitive data to the internet.
+The service hosting the sensitive data by providing access to files or service
+needs to be compromised only for a short amount of time, to leak
 all the data. Often caused by configuration mistakes or by
 vulnerabilities being present in the used technology stack.
 
 We can't effort to have leaks on personal-identifiable data in data
 vaults. To raise the bar on making attacks difficult and reducing the
 chance of leakage of information, we introduce the Guardian as a extra
-security layer to protect services like the PKC from attacks.
+security layer to protect services in an aqua domain from attacks.
 
 # Summary
 
-The Guardian is a software which manages the boundaries of your digital
-domain. Guardians are used to connect to secure transport networks
-(HTTPS, Matrix Network, Didcomm) and publishing networks (e.g.
-Swarm.eth). The Guardian is used to build trusted connections to other
-Guardians via trusted transport-layers to exchange data with them. As
-the Guardian connects to other Guardians, it also manages all
-connections to services in it's domain and access to those services.
+The Guardian is a software which manages the boundaries of your Aqua domain.
+Guardians are used to connect to secure transport networks (HTTPS, Matrix
+Network, Didcomm) and publishing networks (e.g. Swarm.eth). The Guardian is
+used to build trusted connections to other Guardians via trusted
+transport-layers to exchange data with them. It also manages all connections to
+services within the Aqua domain.
 
 # Goal
 
@@ -129,7 +128,7 @@ revision by creating a page with the following syntax:
 -   <revision_hash>:access_contract
  -   To give access to a specific revision.
 
-<hr>
+---
 
 **Content of the page:**
 
