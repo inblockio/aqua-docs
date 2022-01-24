@@ -1,3 +1,11 @@
+---
+title: "Data Accounting"
+linkTitle: "Data Accounting"
+weight: 5
+description: >
+  Introduces the concept of Data Accounting
+---
+
 We first exchanged goods, then we used means to exchange goods, such as
 shells and coins. Today we use money. We have transitioned to a world where
 we present and exchange data to receive goods and services.

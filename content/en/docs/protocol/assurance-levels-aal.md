@@ -1,3 +1,11 @@
+---
+title: "Assurance Levels (AAL)"
+linkTitle: "Assurance Levels"
+weight: 4
+description: >
+  Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation. 
+---
+
 How safe are the wallets to used? - Current PKC Pilot - relating to the
 'Authentication assurance level's (AAL)' according to the World Bank
 standards:

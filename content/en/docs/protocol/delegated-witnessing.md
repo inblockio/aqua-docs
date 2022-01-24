@@ -1,4 +1,10 @@
-# Delegated Witnessing
+---
+title: "Delegated Witnessing"
+linkTitle: "Delegated Witnessing"
+weight: 7
+description: >
+  Describes the process of sending domain snapshots to remote data vaults.
+---
 
 Describes the process of sending a domain snapshot to a remote data vault for
 witnessing. The domain snapshot is then included in the witnessing event and

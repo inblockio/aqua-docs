@@ -1,3 +1,11 @@
+---
+title: "Data Governance"
+linkTitle: "Data Governance"
+weight: 6
+description: >
+  Introduces the concept of Data Governance
+---
+
 Author: Ben Koo
 E-Mail: koo0905\[at\]gmail\[dot\]com
 Year: 2021

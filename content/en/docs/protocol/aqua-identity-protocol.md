@@ -1,3 +1,11 @@
+---
+title: "Identity Protocol"
+linkTitle: "Identity Protocol"
+weight: 2
+description: >
+  Shows how it is possible to build an identity protocol on top of Aqua using data vaults.
+---
+
 The Aqua Identity Protocol (AIP) is an experimental application protocol
 under development for Self Sovereign Identity's (SSIs) on top of the
 Aqua Protocol. This is an active field of research which is related to

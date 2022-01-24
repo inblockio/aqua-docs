@@ -1,5 +1,10 @@
-Context
-=======
+---
+title: "Immutable Hyperlinks"
+linkTitle: "Immutable Hyperlinks"
+weight: 10
+description: >
+  Shows how the Aqua URI's can be used as immutable links.
+---
 
 Traditional hyperlinks are usually
 [URL's](https://en.wikipedia.org/wiki/URL) based on the

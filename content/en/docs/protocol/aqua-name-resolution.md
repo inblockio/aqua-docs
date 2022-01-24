@@ -1,4 +1,11 @@
-# Aqua Name Resolution (ANS)
+---
+title: "Aqua Name Resolution (ANS)"
+linkTitle: "Aqua Name Resolution"
+weight: 3
+description: >
+  ANS is used to hashes of various types to human readable names
+---
+
 ANS is used to resolve hashes of various types to human readable names.
 
 The following hashes are resolved by the ANS:

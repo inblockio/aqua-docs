@@ -1,6 +1,14 @@
-# Design Principles of Aqua reference Implementation (PKC)
+---
+title: "Design Princiciples"
+linkTitle: "Design Principles"
+weight: 8
+description: >
+  Lists the deisgn principles underlaying our reference implementation
+---
 
-## Principle Private is Default
+The following design principles pertain to Aqua reference Implementation `PKC`
+
+## Private is Default
 
 The principle default to private is that no data of the PKC [Data
 vault](Aqua_Whitepaper.md#data-vault) is shared without it being explicitly
@@ -17,7 +25,7 @@ verifiable contracts which are themselves written with the Aqua Protocol
 to ensure they are forgery-proof and therefore safe. Public: Other
 Account's have access to the file or service without agreements.
 
-## Principle: Offline Capability
+## Offline Capability
 
 The PKC Data Vault follow's the principle of being able to run and be
 functional without internet connection after setup or through
@@ -27,7 +35,7 @@ This allows PKC setups to be kept offline from any internet connectivity
 while still functional. This can provide the required assurances for
 very sensitive data.
 
-## Principle: Separation of Account and Service
+## Separation of Account and Service
 
 Concern: There is a trend in the DIF/WC3 Identity space that some
 players like to accumulate personal identifiable data (PII) inside of
@@ -74,7 +82,7 @@ Benefits:
     -   [Principle: Data
         Portability](Principle:_Data_Portability "wikilink")
 
-## Principle: Signature Login
+## Signature Login
 
 We do not use passwords for login but instead we use a signature of a
 private key to authorize access to a service. This increases security

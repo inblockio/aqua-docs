@@ -1,3 +1,11 @@
+---
+title: "Reference Implementation"
+linkTitle: "Reference Implementation"
+weight: 1
+description: >
+  Explains the technologies selected for the reference implementation and why we selected them.
+---
+
 Implementation specific architecture documentation for the Aqua Data
 Vault 'Personal Knowledge Container (PKC)'. In this document you will
 find reasoning as to why certain components were chosen to build this

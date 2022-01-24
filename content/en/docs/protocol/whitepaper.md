@@ -1,3 +1,12 @@
+---
+title: Whitepaper
+linkTitle: "Whitepaper"
+weight: 1
+description: >
+  High level outline of Aqua Protocol (AQP) sepcification
+---
+
+
 |                  |                                            |
 |------------------|--------------------------------------------|
 | Current version: | Aqua Protocol v1.1 Specification           |
