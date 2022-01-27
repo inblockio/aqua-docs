@@ -1,0 +1,449 @@
+<!doctype html><html lang=en class=no-js>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=generator content="Hugo 0.88.0">
+<link rel=canonical type=text/html href=https://inblock.io/aqua-docs/docs/implementations/>
+<meta name=robots content="noindex, nofollow">
+<link rel="shortcut icon" href=/aqua-docs/favicons/favicon.ico>
+<link rel=apple-touch-icon href=/aqua-docs/favicons/apple-touch-icon-180x180.png sizes=180x180>
+<link rel=icon type=image/png href=/aqua-docs/favicons/favicon-16x16.png sizes=16x16>
+<link rel=icon type=image/png href=/aqua-docs/favicons/favicon-32x32.png sizes=32x32>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-36x36.png sizes=36x36>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-48x48.png sizes=48x48>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-72x72.png sizes=72x72>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-96x96.png sizes=96x96>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-144x144.png sizes=144x144>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-192x192.png sizes=192x192>
+<title>Implementations | AQUA Protocol</title>
+<meta name=description content="Details various software that is implementing the Aqua Protocol
+">
+<meta property="og:title" content="Implementations">
+<meta property="og:description" content="Details various software that is implementing the Aqua Protocol
+">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://inblock.io/aqua-docs/docs/implementations/"><meta property="og:site_name" content="AQUA Protocol">
+<meta itemprop=name content="Implementations">
+<meta itemprop=description content="Details various software that is implementing the Aqua Protocol
+"><meta name=twitter:card content="summary">
+<meta name=twitter:title content="Implementations">
+<meta name=twitter:description content="Details various software that is implementing the Aqua Protocol
+">
+<link rel=preload href=/aqua-docs/scss/main.min.c58ce5d45149df8e10859c3eb1022295682982407b61dc69aa80c9ba066ffb49.css as=style>
+<link href=/aqua-docs/scss/main.min.c58ce5d45149df8e10859c3eb1022295682982407b61dc69aa80c9ba066ffb49.css rel=stylesheet integrity>
+<script src=https://code.jquery.com/jquery-3.6.0.min.js integrity=sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK crossorigin=anonymous></script>
+<script src=https://unpkg.com/lunr@2.3.9/lunr.min.js integrity=sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli crossorigin=anonymous></script>
+</head>
+<body class=td-section>
+<header>
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+<a class=navbar-brand href=/aqua-docs/>
+<span class=navbar-logo><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="1.0 (4035a4f, 2020-05-01)" sodipodi:docname="logo.svg" style="enable-background:new 0 0 500 500" viewBox="0 0 500 500" id="Layer_1"><defs id="defs1204"/><sodipodi:namedview inkscape:current-layer="g2829" inkscape:window-maximized="1" inkscape:window-y="0" inkscape:window-x="0" inkscape:cy="250" inkscape:cx="242.13899" inkscape:zoom=".7919596" showgrid="false" id="namedview1202" inkscape:window-height="719" inkscape:window-width="1362" inkscape:pageshadow="2" inkscape:pageopacity="0" guidetolerance="10" gridtolerance="10" objecttolerance="10" borderopacity="1" bordercolor="#666666" pagecolor="#ffffff"/><g transform="matrix(1.6915379,0,0,1.6915379,21.321219,23.074018)" id="g2188"><g id="layer1" inkscape:label="Layer 1" style="display:inline;fill:red"><g style="fill:red" transform="matrix(0.26458333,0,0,0.26458333,86.390232,38.671175)" id="g231"><g style="fill:red" transform="matrix(23.961309,0,0,23.961309,-680.73085,-361.21096)" id="g2829"><rect ry="4.8628764" rx="4.7287874" y="6.8233423" x="12.794669" height="46.624615" width="46.624615" id="rect2196" style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke-width:.279113;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill;stop-color:#000000;stop-opacity:1"/><path d="m35.447791 10.548529-7.752305 8.627971-1.245055 6.979947-3.626219 1.600087-1.542156 5.041488h-5.559041l.750057 1.21737h4.883323l.819785 2.678266h3.940492v1.217369h-3.568028l.275568.902326 4.702601 1.600088.146883.824908h3.568031v1.217373h-3.350652l.880792 5.760781 6.747958 1.506267 7.595425-.693916-.146629-3.514199h5.817177l1.044338-1.217371h-6.48546l1.139184-1.986652 7.317805-2.439098v-1.554972h-6.382923v-1.217371h6.382923v-3.083799h4.189916l.499357-1.291453-4.689273.07408v-6.09941l-6.241679-2.439866-1.859765-3.242475 1.045622-4.459588zm16.353874 26.550662v1.217371h2.71441l.882332-1.217371zm-23.91059 5.356531-.217379-1.217373H20.0511l1.044339 1.217373zm-5.342431-4.544695L22.17618 36.693658h-4.512396l1.044339 1.217369zm13.140621-25.797784 7.668741 5.03072-.952571 4.061745 2.329642 4.061487 5.84922 2.308621v5.222206 513e-6H22.555306l1.250442-4.089431 3.716963-1.630848 1.31119-7.350877zm-.11587 5.060709-.8608.860799 4.57802 4.578018.860797-.860797zm-.132531 2.58778-.860797.860797 4.578274 4.578017.860799-.860796zm-4.120448 3.837187-.860796.8608 4.578273 4.578017.860799-.860797zm-.132529 2.588035-.860797.86105 4.578017 4.578021.860799-.860798zm-.67828 8.943015h6.382923v1.217372h-6.382919zm4.842052 4.542388h6.382923v1.217369h-6.382923zm3.93152 4.624927h3.940496l-.372721 1.217371h-3.567775zm-7.785374.146628h4.558024v1.217371h-4.558024z" style="fill:#111;fill-opacity:1;stroke:none;stroke-width:.52221px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path6155"/></g></g></g></g></svg></span><span class=font-weight-bold>AQUA Protocol</span>
+</a>
+<div class="td-navbar-nav-scroll ml-md-auto" id=main_navbar>
+<ul class="navbar-nav mt-2 mt-lg-0">
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class="nav-link active" href=/aqua-docs/docs/><span class=active>Documentation</span></a>
+</li>
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class=nav-link href=/aqua-docs/docs/contribution-guidelines/><span>Contribution</span></a>
+</li>
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class=nav-link href=/aqua-docs/community/><span>Community</span></a>
+</li>
+</ul>
+</div>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/aqua-docs/offline-search-index.26cc222a10c4b3db994fbcf04963ff99.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+</div>
+</nav>
+</header>
+<div class="container-fluid td-outer">
+<div class=td-main>
+<div class="row flex-xl-nowrap">
+<main class="col-12 col-md-9 col-xl-8 pl-md-5" role=main>
+<div class=td-content>
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href=# onclick="return print(),!1">Click here to print</a>.
+</p><p>
+<a href=/aqua-docs/docs/implementations/>Return to the regular view of this page</a>.
+</p>
+</div>
+<h1 class=title>Implementations</h1>
+<div class=lead>Details various software that is implementing the Aqua Protocol</div>
+<ul>
+<li>1: <a href=#pg-da26258e82252ffc5bd0091f9cba66b2>Reference Implementation</a></li>
+</ul>
+<div class=content>
+</div>
+</div>
+<div class=td-content>
+<h1 id=pg-da26258e82252ffc5bd0091f9cba66b2>1 - Reference Implementation</h1>
+<div class=lead>Explains the technologies selected for the reference implementation and why we selected them.</div>
+<p>Implementation specific architecture documentation for the Aqua Data
+Vault &lsquo;Personal Knowledge Container (PKC)&rsquo;. In this document you will
+find reasoning as to why certain components were chosen to build this
+prototype. We have not duplicated any vendor documentation. Please find
+the linked-list for the documentation of the components we use here:</p>
+<ul>
+<li><a href=https://docs.metamask.io/guide/>MetaMask</a></li>
+<li><a href=https://ethereum.org/en/developers/docs/>Ethereum</a></li>
+<li><a href=https://docs.docker.com/>Docker</a></li>
+<li><a href=https://www.mediawiki.org/wiki/Documentation>MediaWiki</a></li>
+<li><a href=https://github.com/inblockio/aqua-docs>MediaWiki Extension: Aqua</a></li>
+<li><a href=https://tweeki.kollabor.at/>MediaWiki Skin Tweeki</a></li>
+<li><a href=https://github.com/pelith/node-eauth-server>Pelith Eauth Server</a></li>
+<li><a href=https://nodejs.org/en/docs/>Nodejs</a></li>
+<li><a href=https://docs.github.com/en>GitHub</a></li>
+<li><a href=https://httpd.apache.org/docs/>Apache</a></li>
+<li><a href=https://nginx.org/en/docs/>Nginx</a></li>
+<li><a href=https://letsencrypt.org/docs/>Let&rsquo;s Encrypt</a></li>
+</ul>
+<p>All software components selected are open source licenses. They each
+have active developer communities behind them to secure future support
+and further development.</p>
+<h2 id=wallets--accounts>Wallets / Accounts</h2>
+<p>Why do we use Ethereum Wallets / Accounts?</p>
+<p>An identity anchor needs to be a public, private key. This allows a
+public component which we can share (public key) and a private component
+which proves ownership over that public-key. Public keys are used in
+Ethereum as accounts to receive and send transactions. Therefore the
+Ethereum ecosystem has developed standards. These have evolved to a
+larger eco-system involving wallet-providers which have built software
+and hardware wallets to securely manage those keys. We leverage one of
+the most vibrant developer communities and utilize these wallets. In our
+case they are used mainly for offline-activities (Login, Signing) which
+do not require connectivity to the Ethereum blockchain.</p>
+<h2 id=web-application-chrome-extension-metamask>Web-Application (Chrome-Extension MetaMask)</h2>
+<p>Was selected as it is one of the most advanced, widely used,
+feature-rich web-wallets. Most importantly it&rsquo;s a browser-plugin which
+allows us to interact with browser applications. MetaMask also has the
+ability to connect to a hardware wallet allowing for increased security
+and levels of assurance.</p>
+<ul>
+<li>Large User-Base 10 Million +</li>
+</ul>
+<ul>
+<li>Hardware Wallet Support (E.g. Ledger)
+<ul>
+<li>Large User-base 5 Million +</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>All related source code is open source, lot&rsquo;s of money behind it
+(future proof)</li>
+<li>SSI (Self-sovereign identity): Compatible with the DID schema
+did:ethr:&lt;wallet_address></li>
+<li>Fulfills SSI principles:
+<ul>
+<li>Controlled by user, allows for creation of new accounts / wallet
+addresses</li>
+<li>User can create new identity anchor independent of third party</li>
+<li>Can be moved between devices by users recovery key or even to a
+hardware wallet (not recommended but possible:
+<a href=https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b>https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b</a>)</li>
+</ul>
+</li>
+</ul>
+<h2 id=witness-network>Witness Network</h2>
+<p>We are using the Ethereum Network as an optional Witness Network for
+cryptographic time-stamping.</p>
+<h3 id=why-public-blockchain>Why public Blockchain?</h3>
+<p>The witness event serves the purpose of being able to prove the
+existence of a document without the ability to deny it. This requires
+censorship resistance and global coverage. The security of the network,
+it&rsquo;s distribution, and the high economical price to attack the network,
+are all good reasons why we want to use a public blockchain to publish
+highly obfuscated hashes (fingerprints). This proves the state of the
+data in a Data Vault (PKC).</p>
+<p>The MetaMask wallet is able to publish the witness event verification
+hash to the public Ethereum blockchain. This completes our third
+important layer of integrity verification, which is to prove
+cryptographic time and existence of a document by writing it&rsquo;s
+fingerprint onto the ledger. This is not done directly, but through a
+process which highly obfuscates the hash. This ensures that that there
+is no plausible attack (even if the attacker owns a powerful quantum
+computer) to match the fingerprint with any personal data.</p>
+<h2 id=data-vault>Data Vault</h2>
+<p>The Data Vault named &lsquo;Personal Knowledge Container&rsquo; is creatd by using a
+tool for containerization called &lsquo;Docker&rsquo;. This allows us to package our
+application so it can be deployed to different operating system
+environments. Docker provides the abstraction / virtualization layer.</p>
+<p>Inside Docker we containerized multiple services:</p>
+<h2 id=mediawiki-for-data-governance>MediaWiki for data governance</h2>
+<p>MediaWiki is a data governance tool which has a legacy as a
+collaboration tool. It powers Wikipedia, the largest encyclopedia in the
+world. We step into this experience, and the benefits of a feature rich,
+battle-proven application. It&rsquo;s a powerful tool to both manage and
+present data.</p>
+<p>As MediaWiki has an active and established developer community, it is
+possible to tap into existing professional service companies. Supporting
+development and any required changes within the application.</p>
+<p>MediaWiki has been modified to use workflows for data processing. This
+will allow for implementing and testing workflows and business logic
+between Personal-Knowledge-Containers.</p>
+<p>We use all the benefits of MediaWiki to manage and present data in the
+browser, while we work around one of its main limitations: Security.
+MediaWiki was never developed to have advanced security and permission
+structures, as it was built for Wikipedia - a fully public website. This
+has several implications for us.</p>
+<p>Security Practices:</p>
+<ul>
+<li>We assume that we can&rsquo;t defend against insider attacks on the same
+MediaWiki instance, therefore every user has their own instance</li>
+<li>If there is a need for a collaboration space, it is possible to
+spawn containers for multiple accounts which trust each other to
+work together on shared data</li>
+</ul>
+<ul>
+<li>If you use a hosted PKC instance, assume the provider has access to
+your data as we don&rsquo;t use homomorphic encryption nor do we have
+encryption implemented</li>
+<li>We are using typed and tested PHP (for MediaWiki Extension Data
+Accounting) to improve test coverage to increase stability and
+security of our application</li>
+</ul>
+<ul>
+<li>To securely exchange data between PKC&rsquo;s, we implement a separate
+security software called Guardian. The Guardian protects the PKC and
+manages all access according to the accounts owners set permissions.
+The Guardian is under active development. It will receive the
+highest scrutiny and attention to ensure a minimal attack surface
+while allowing trust between Guardians so data can be exchanged.</li>
+</ul>
+<ul>
+<li>The Apache WebServer present in the MediaWiki container has a
+technological dependency and needs regular updates as Apache was
+effected by critical security issues like
+<a href=https://nvd.nist.gov/vuln/detail/CVE-2021-44228>CVE-2021-44228</a></li>
+<li>Therefore we do not expose the Apache web-server to the internet by
+default and do not recommend this to ensure that there is no
+unnecessary attack surface. If an organization decides to expose the
+web-surface of a PKC to the internet, they should expect this
+instance to be compromised and leak all it&rsquo;s stored data. Therefore
+we re-emphasize: If PKC / MediaWiki is exposed to the web, there
+can&rsquo;t be any guarantee that data can be kept private. Therefore
+assume your data can be leaked on a web-facing MediaWiki instance.
+Organizations hosting PKC&rsquo;s for collaboration should do so with
+restricted firewall permissions, ensuring that the web-interface is
+only reachable for the employees authorized to see the content.</li>
+</ul>
+<h2 id=mediawiki-extension-aqua>MediaWiki Extension: Aqua</h2>
+<p>The existing ecosystem and reference implementations around MediaWiki
+allowed us to quickly prototype our reference implementation for Aqua.
+The implementation itself allowed us to further develop the protocol.
+The downsides are currently old PHP code and MediaWiki&rsquo;s legacy. In
+return we benefit from a well documented project.</p>
+<p>Looking forward we want to see other client-implementations in different
+languages independent of MediaWiki to show the potential of the Aqua
+Protocol. We hope to re-use part of the PHP code base to apply it to
+other applications, like Word-Press.</p>
+<h2 id=mediawiki-skin-choice>MediaWiki Skin Choice</h2>
+<p>Using Tweeki as a Bootstrap 4 compatible Skin for MediaWiki, we were
+able to establish contact with the chief maintainer of the extension,
+and were able to collaborate to solve various issues to improve the
+skin. We are coordinating with other parties to see how we can improve
+support for the Skin. In the future we are hoping to increase the
+maintainer base. Prospectively we want to use Tweeki as an abstraction
+layer from MediaWiki classic to Boostrap 4, and respectively Bootstrap
+5+.</p>
+<h2 id=authentication>Authentication</h2>
+<ul>
+<li>For Authentication with Web-Wallets, we use
+<a href=https://github.com/pelith/node-eauth-server>https://github.com/pelith/node-eauth-server</a> which provides us with
+an open source solution for a signature-response challenge. We then
+integrate with OAUTH2 and OIDC using existing authentication
+standards to achieve the login.</li>
+<li>The Pelith server provides us with the Signature-Challenge and is
+forwarding the access token via OAUTH2 to MediaWiki. Here we check
+if the user exists. If this is the case, access is granted.</li>
+</ul>
+<h2 id=webserver-proxy--https>WebServer-Proxy / HTTPs</h2>
+<ul>
+<li>We are using NGINX Web-Server as the proxy server. NGINX is a modern
+and the most popular (#1 since 2021 by share<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>) web-server on the
+web.</li>
+<li>We are using Let&rsquo;s Encrypt to provide secure connections via HTTPS
+if a PKC is deployed to the web. Let&rsquo;s encrypt serves over 260
+million websites according to the vendor website.<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup> provides free
+TLS Certificates for secure HTTPS connections.</li>
+<li>The NGINX Web-Proxy allows us to ensure that we can add additional
+services to the PKC and redirect the services according to our
+needs.</li>
+</ul>
+<h2 id=software-development>Software-Development</h2>
+<ul>
+<li>We use <a href=https://github.com>https://github.com</a> for software development. As we started
+with very little budget, we gratefully utilised free resources to
+develop our open source software. This allowed us to focus on being
+productive.
+<ul>
+<li>Github is owned by Microsoft and is therefore subject to US
+policies and Microsofts interests.</li>
+<li>This itself requires us to move away to be independent or at
+least host a mirror instance outside of Github. The deletion of
+a repository or losing access could harm our development process
+significantly.</li>
+</ul>
+</li>
+<li>We use GPL-V3 license on the majority of our repositories.
+<ul>
+<li>We maintain the rights on branding</li>
+<li>We maintain more restrictive rights on deployment scripts
+(service provider technologies)</li>
+</ul>
+</li>
+</ul>
+<h2 id=browser-choice>Browser Choice</h2>
+<p>We are using the Chrome-Engine as our Web-Browser of choice. It&rsquo;s the
+most dominant web-browser on the Web, and has become the quasi standard
+with many different forks creating an ecosystem around it.
+Microsoft-Edge is actually Chrome. There are non-google chrome forks
+which deserve attention, funding and support (like
+<a href=https://github.com/Eloston/ungoogled-chromium>https://github.com/Eloston/ungoogled-chromium</a>). This will provide us
+with a modern and state of the art browser architecture to work with.</p>
+<p>As Chrome is the most secure and modern base to build on, we support
+-only- chrome. Therefore we use a chrome extension to verify the content
+of an Aqua file. This extension is available for download in the Google
+Chrome App Store, or can be built from scratch following the
+instructions in our repository.<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup></p>
+<p>This allows us to provide ease of setup, as users can easily deploy the
+chrome extension without further effort by adding it from the google app
+store.</p>
+<p>We are using NPM / node.js for fast prototyping. This comes with severe
+security implications as the npm ecosystem has been prone to various
+supply-chain attacks over recent months <sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup> .</p>
+<h2 id=technology-choices-on-cryptography>Technology choices on cryptography</h2>
+<p>All cryptography used in our development is based on international NIST
+standards and follows the international understanding for internet
+security. This is consistent with the perspective of the BSI in Germany,
+but for some specific details there are no insights provided by the
+ministry.</p>
+<h3 id=hashing-algorithms-sha3-512>Hashing Algorithms (SHA3-512)</h3>
+<p>PKC uses standard Crypto (SHA3-512) winner of the National Institute of
+Standards and Technology see
+<a href=https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf>https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf</a> . We do not
+use custom encryption as this comes at the cost of unnecessary risks.</p>
+<p>This is an accepted secure and recommended standard according to <a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile">BSI -
+Technische Richtlinie – Kryptographische Algorithmen und Schlussellängen
+Seite
+42</a>.</p>
+<h3 id=merkle-tree5>Merkle Tree<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup></h3>
+<ul>
+<li>We use merkle trees to be able to witness the state of all pages /
+files in a single hash. Used to generate a unique fingerprint of a
+domain (a collection of verified data hash chain&rsquo;s within one
+domain).</li>
+<li>There is a lot of future potential in ongoing research to improve
+privacy and utility of merkle trees in the <a href=https://pkc.inblock.io/index.php/Aqua_Protocol>Aqua
+Protocol</a>
+<ul>
+<li>See related technologies and research like TAPROOT:
+<a href=https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki>https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki</a></li>
+</ul>
+</li>
+</ul>
+<h3 id=public-private-key-signatures-secp256k1>Public-Private-Key Signatures (secp256k1)</h3>
+<p>Used in combination with Ethereum Accounts. It is used for signing and
+authentication challenges.</p>
+<ul>
+<li>in ether.js
+<a href=https://github.com/ethereumjs/ethereumjs-monorepo/blob/ade4233ddffffdd146b386de701762196a8c941c/packages/util/src/signature.ts#L23-L45>cryptography/secp256k1</a>
+see
+<a href=https://github.com/ethereum/js-ethereum-cryptography/blob/b1f35053df3f0cfa132fc45d59b688ca0d62994a/src/secp256k1-compat.ts#L99-L123>implementation</a></li>
+<li>related documents of the &lsquo;Standards for Efficient Cryptography
+Group&rsquo; <a href=https://secg.org/>https://secg.org/</a> specific doc secp256k1 [<a href=https://www.secg.org/sec2-v2.pdf>Both variants
+of the same standardization process of the Standards for Efficient
+Cryptography Group 2015, See differences
+P9</a></li>
+</ul>
+<ul>
+<li>Supported by BSI secp256r1 but secp256k1 is not
+mentioned.https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-4.pdf?__blob=publicationFile&v=7
+Request for clarification was send via E-Mail on the 3rd of November
+2021 by Tim Bansemer. Answer of the BSI: Currently the BSI has no
+assessment or recommendation for secp256k1.</li>
+</ul>
+<ul>
+<li>For authentication with Metamask Ethereum wallets we currently use
+<a href=https://github.com/pelith/node-eauth-server>https://github.com/pelith/node-eauth-server</a>. We are signing a
+unique input value with ethereum.js using the personal sign method.
+Once the challenge is completed successfully we receive an OAUTH
+token from the Eauth identity provider of the pelith Eauth server.</li>
+</ul>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p><a href=https://linuxiac.com/nginx-most-popular-web-server/>https://linuxiac.com/nginx-most-popular-web-server/</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p><a href=https://letsencrypt.org/>https://letsencrypt.org/</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:3 role=doc-endnote>
+<p><a href=https://github.com/inblockio/aqua-verifypage-chrome-extension>https://github.com/inblockio/aqua-verifypage-chrome-extension</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:4 role=doc-endnote>
+<p><a href="https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software">https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software</a>&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:5 role=doc-endnote>
+<p><a href=https://en.wikipedia.org/wiki/Merkle_tree>https://en.wikipedia.org/wiki/Merkle_tree</a>&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+</main>
+</div>
+</div>
+<footer class="bg-dark py-5 row d-print-none">
+<div class="container-fluid mx-sm-5">
+<div class=row>
+<div class="col-6 col-sm-4 text-xs-center order-sm-2">
+<ul class="list-inline mb-0">
+<li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title="User mailing list" aria-label="User mailing list">
+<a class=text-white target=_blank rel=noopener href=mailto:info@inblock.io aria-label="User mailing list">
+<i class="fa fa-envelope"></i>
+</a>
+</li>
+<li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title=Twitter aria-label=Twitter>
+<a class=text-white target=_blank rel=noopener href=https://twitter.com/inblockio aria-label=Twitter>
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title=Matrix aria-label=Matrix>
+<a class=text-white target=_blank rel=noopener href=https://matrix.to/#/#aqua-community:matrix.jembawan.com aria-label=Matrix>
+<i class="fab fa-comment"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+<ul class="list-inline mb-0">
+<li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title=GitHub aria-label=GitHub>
+<a class=text-white target=_blank rel=noopener href=https://github.com/inblockio aria-label=GitHub>
+<i class="fab fa-github"></i>
+</a>
+</li>
+<li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title="Stack Overflow" aria-label="Stack Overflow">
+<a class=text-white target=_blank rel=noopener href=https://stackoverflow.com/questions/tagged/aqua aria-label="Stack Overflow">
+<i class="fab fa-stack-overflow"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+<small class=text-white>&copy; 2022 AQUA Protocol All Rights Reserved</small>
+<small class=ml-1><a href=https://aqua-protocol.org/privacy target=_blank rel=noopener>Privacy Policy</a></small>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js integrity=sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin=anonymous></script>
+<script src=/aqua-docs/js/tabpane-persist.js></script>
+<script src=/aqua-docs/js/main.min.8ab8f81ff7e1454d30024cd6f956d4d341c3a97e2a673f988065f2ee4e147922.js integrity="sha256-irj4H/fhRU0wAkzW+VbU00HDqX4qZz+YgGXy7k4UeSI=" crossorigin=anonymous></script>
+</body>
+</html>

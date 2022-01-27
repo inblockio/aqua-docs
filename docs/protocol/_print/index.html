@@ -1,0 +1,2128 @@
+<!doctype html><html lang=en class=no-js>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=generator content="Hugo 0.88.0">
+<link rel=canonical type=text/html href=https://inblock.io/aqua-docs/docs/protocol/>
+<meta name=robots content="noindex, nofollow">
+<link rel="shortcut icon" href=/aqua-docs/favicons/favicon.ico>
+<link rel=apple-touch-icon href=/aqua-docs/favicons/apple-touch-icon-180x180.png sizes=180x180>
+<link rel=icon type=image/png href=/aqua-docs/favicons/favicon-16x16.png sizes=16x16>
+<link rel=icon type=image/png href=/aqua-docs/favicons/favicon-32x32.png sizes=32x32>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-36x36.png sizes=36x36>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-48x48.png sizes=48x48>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-72x72.png sizes=72x72>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-96x96.png sizes=96x96>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-144x144.png sizes=144x144>
+<link rel=icon type=image/png href=/aqua-docs/favicons/android-192x192.png sizes=192x192>
+<title>Protocol | AQUA Protocol</title>
+<meta name=description content="Low level reference documentation of the AQUA Protocol
+">
+<meta property="og:title" content="Protocol">
+<meta property="og:description" content="Low level reference documentation of the AQUA Protocol
+">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://inblock.io/aqua-docs/docs/protocol/"><meta property="og:site_name" content="AQUA Protocol">
+<meta itemprop=name content="Protocol">
+<meta itemprop=description content="Low level reference documentation of the AQUA Protocol
+"><meta name=twitter:card content="summary">
+<meta name=twitter:title content="Protocol">
+<meta name=twitter:description content="Low level reference documentation of the AQUA Protocol
+">
+<link rel=preload href=/aqua-docs/scss/main.min.c58ce5d45149df8e10859c3eb1022295682982407b61dc69aa80c9ba066ffb49.css as=style>
+<link href=/aqua-docs/scss/main.min.c58ce5d45149df8e10859c3eb1022295682982407b61dc69aa80c9ba066ffb49.css rel=stylesheet integrity>
+<script src=https://code.jquery.com/jquery-3.6.0.min.js integrity=sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK crossorigin=anonymous></script>
+<script src=https://unpkg.com/lunr@2.3.9/lunr.min.js integrity=sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli crossorigin=anonymous></script>
+</head>
+<body class=td-section>
+<header>
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+<a class=navbar-brand href=/aqua-docs/>
+<span class=navbar-logo><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="1.0 (4035a4f, 2020-05-01)" sodipodi:docname="logo.svg" style="enable-background:new 0 0 500 500" viewBox="0 0 500 500" id="Layer_1"><defs id="defs1204"/><sodipodi:namedview inkscape:current-layer="g2829" inkscape:window-maximized="1" inkscape:window-y="0" inkscape:window-x="0" inkscape:cy="250" inkscape:cx="242.13899" inkscape:zoom=".7919596" showgrid="false" id="namedview1202" inkscape:window-height="719" inkscape:window-width="1362" inkscape:pageshadow="2" inkscape:pageopacity="0" guidetolerance="10" gridtolerance="10" objecttolerance="10" borderopacity="1" bordercolor="#666666" pagecolor="#ffffff"/><g transform="matrix(1.6915379,0,0,1.6915379,21.321219,23.074018)" id="g2188"><g id="layer1" inkscape:label="Layer 1" style="display:inline;fill:red"><g style="fill:red" transform="matrix(0.26458333,0,0,0.26458333,86.390232,38.671175)" id="g231"><g style="fill:red" transform="matrix(23.961309,0,0,23.961309,-680.73085,-361.21096)" id="g2829"><rect ry="4.8628764" rx="4.7287874" y="6.8233423" x="12.794669" height="46.624615" width="46.624615" id="rect2196" style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke-width:.279113;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill;stop-color:#000000;stop-opacity:1"/><path d="m35.447791 10.548529-7.752305 8.627971-1.245055 6.979947-3.626219 1.600087-1.542156 5.041488h-5.559041l.750057 1.21737h4.883323l.819785 2.678266h3.940492v1.217369h-3.568028l.275568.902326 4.702601 1.600088.146883.824908h3.568031v1.217373h-3.350652l.880792 5.760781 6.747958 1.506267 7.595425-.693916-.146629-3.514199h5.817177l1.044338-1.217371h-6.48546l1.139184-1.986652 7.317805-2.439098v-1.554972h-6.382923v-1.217371h6.382923v-3.083799h4.189916l.499357-1.291453-4.689273.07408v-6.09941l-6.241679-2.439866-1.859765-3.242475 1.045622-4.459588zm16.353874 26.550662v1.217371h2.71441l.882332-1.217371zm-23.91059 5.356531-.217379-1.217373H20.0511l1.044339 1.217373zm-5.342431-4.544695L22.17618 36.693658h-4.512396l1.044339 1.217369zm13.140621-25.797784 7.668741 5.03072-.952571 4.061745 2.329642 4.061487 5.84922 2.308621v5.222206 513e-6H22.555306l1.250442-4.089431 3.716963-1.630848 1.31119-7.350877zm-.11587 5.060709-.8608.860799 4.57802 4.578018.860797-.860797zm-.132531 2.58778-.860797.860797 4.578274 4.578017.860799-.860796zm-4.120448 3.837187-.860796.8608 4.578273 4.578017.860799-.860797zm-.132529 2.588035-.860797.86105 4.578017 4.578021.860799-.860798zm-.67828 8.943015h6.382923v1.217372h-6.382919zm4.842052 4.542388h6.382923v1.217369h-6.382923zm3.93152 4.624927h3.940496l-.372721 1.217371h-3.567775zm-7.785374.146628h4.558024v1.217371h-4.558024z" style="fill:#111;fill-opacity:1;stroke:none;stroke-width:.52221px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="path6155"/></g></g></g></g></svg></span><span class=font-weight-bold>AQUA Protocol</span>
+</a>
+<div class="td-navbar-nav-scroll ml-md-auto" id=main_navbar>
+<ul class="navbar-nav mt-2 mt-lg-0">
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class="nav-link active" href=/aqua-docs/docs/><span class=active>Documentation</span></a>
+</li>
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class=nav-link href=/aqua-docs/docs/contribution-guidelines/><span>Contribution</span></a>
+</li>
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class=nav-link href=/aqua-docs/community/><span>Community</span></a>
+</li>
+</ul>
+</div>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/aqua-docs/offline-search-index.26cc222a10c4b3db994fbcf04963ff99.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+</div>
+</nav>
+</header>
+<div class="container-fluid td-outer">
+<div class=td-main>
+<div class="row flex-xl-nowrap">
+<main class="col-12 col-md-9 col-xl-8 pl-md-5" role=main>
+<div class=td-content>
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href=# onclick="return print(),!1">Click here to print</a>.
+</p><p>
+<a href=/aqua-docs/docs/protocol/>Return to the regular view of this page</a>.
+</p>
+</div>
+<h1 class=title>Protocol</h1>
+<div class=lead>Low level reference documentation of the AQUA Protocol</div>
+<ul>
+<li>1: <a href=#pg-c7453ffbade8f6848f47551eecb1d321>Whitepaper</a></li>
+<li>2: <a href=#pg-6a133b0a53f9521a9a53f523bf06b0bb>Identity Protocol</a></li>
+<li>3: <a href=#pg-a6fbec1617f3ef12f99d43aba6d2750f>Aqua Name Resolution (ANS)</a></li>
+<li>4: <a href=#pg-57cc4d332b508d187cfa5fc203f9d10e>Assurance Levels (AAL)</a></li>
+<li>5: <a href=#pg-56dfcabf2dc03006f0595ecc0ac42778>Data Accounting</a></li>
+<li>6: <a href=#pg-5f892ba1004f533c9d4bee3adbf9c072>Data Governance</a></li>
+<li>7: <a href=#pg-5c72a60571f19ea9337b7db443f59abd>Delegated Witnessing</a></li>
+<li>8: <a href=#pg-10ae72889c951a4e0286e4681cf48566>Design Princiciples</a></li>
+<li>9: <a href=#pg-07cd7003343e09fcc708bbb229cd64d6>Guardian</a></li>
+<li>10: <a href=#pg-66780b2f21c94943f8daf23f4c0d34a4>Immutable Hyperlinks</a></li>
+</ul>
+<div class=content>
+<p>This section of documentation gets into specific details about the AQUA Protocol
+and is meant for those doing an implementation or contributing to the Protocol
+itself.</p>
+</div>
+</div>
+<div class=td-content>
+<h1 id=pg-c7453ffbade8f6848f47551eecb1d321>1 - Whitepaper</h1>
+<div class=lead>High level outline of Aqua Protocol (AQP) sepcification</div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Current version:</td>
+<td>Aqua Protocol v1.1 Specification</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tim Bansemer, Publius Dirac</td>
+</tr>
+<tr>
+<td>Date:</td>
+<td>30.12.2021</td>
+</tr>
+<tr>
+<td>Status:</td>
+<td>DRAFT / Experimental</td>
+</tr>
+<tr>
+<td>Implementation:</td>
+<td><a href=https://github.com/inblockio/micro-pkc>https://github.com/inblockio/micro-pkc</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id=introduction>Introduction</h2>
+<p>The Aqua Protocol (AQP) is a data accountability and exchange protocol between
+hosts in peer-to-peer environments. The AQP is used to realize the goal of
+<a href=Data_Accounting.md>accounting for data origin and history</a>. The description
+for the proof-of-concept implementation of the AQP can be found in <a href=Reference_Implementation_Architecture.md>this
+page</a>.</p>
+<h2 id=motivation>Motivation</h2>
+<p>In today&rsquo;s world, there are no widely adopted trustless processes of checking if
+data have been manipulated or corrupted, are attributed to the wrong author, or
+are attributed to the wrong time. Today&rsquo;s processes are dependent on centralized
+trusted services which retain all power over governing the data.</p>
+<p>There is a lack of transparency or ability to check if data have been altered
+by an unauthorized party. Additionally, consumers of data are incapable of
+verifying if centralized services have altered the data. This leads to a world
+of untrustworthy information in which we don&rsquo;t know how to conclude what is
+true.</p>
+<p>In a world where every piece of information is a grain in a sandstorm, it has
+become impossible to navigate reality. In contrast, in a world where every
+piece of information is a fixed star in the sky for a lifetime, we are able to
+relate and make sense of the information given. The Aqua Protocol (AQP) turns
+grains of information into fixed stars of information.</p>
+<p>The AQP adds a peer-to-peer layer of accountability, making it impossible to
+change data unnoticed. AQP adds an essential line of defense against attacks on
+data integrity, plagiarism, or misattribution. AQP is used to govern trusted
+data, which can be quickly verified. This includes the verification of its
+integrity and history, the verification of its account (the entity who creates
+or manipulates the data), and the verification of its existence and timestamp.</p>
+<pre><code>The Aqua Protocol provides trustworthiness to data by
+securing data ✅ integrity, 🔏 account and ⌚ time.
+</code></pre>
+<h1 id=referred-the-same-way-across-multiple-interacting-hosts>&#171;&#171;&#171;&lt; Updated upstream
+In order to account for data, it is necessary to track its history. The AQP
+provides a globally unique resource identification (URI) for each
+revision of the verified data. This identifier is collision-free, and is
+referred the same way across multiple interacting hosts.</h1>
+<p>In order to account data, it is necessary to track and verify its history. The
+AQP provides a globally unique resource identification (URI) for each revision
+of the verified data. This identifier is collision-free, and is referred the
+same way across multiple interacting hosts.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Stashed changes</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id=terminology>Terminology</h2>
+<h2 id=wallet>Wallet</h2>
+<p>A wallet is a software for protecting and managing private cryptographic keys
+(of private-public key pairs) which are used to govern digital assets. This is
+done by authorization of transactions via digital signatures or by initiating
+decryption processes to access data.</p>
+<p>See <a href=Design_Principles.md#principle-separation-of-account-and-service>Separation of Concerns</a>.</p>
+<h3 id=account>Account</h3>
+<p>We are following Ethereum&rsquo;s account definition:</p>
+<blockquote>
+<p>In general, there are two types of accounts. Externally owned accounts,
+controlled by private keys. And contract accounts, controlled by their
+contract code
+&ndash; <a href=https://ethereum.org/en/whitepaper/#ethereum-accounts>Ethereum Whitepaper</a></p>
+</blockquote>
+<p>In general, we can&rsquo;t prove if an account owner is a person or a machine. With
+advancements in AI, it will become increasingly difficult to prove that a human
+is a human. <a href=https://www.proofofhumanity.id/>Attempts are being made</a> to
+increase trustworthiness of accounts which fall short in questions of privacy
+and security as they make public claims. Traditional know your customer (KYC)
+combined with the AQP and Aqua Identity Protocol (AIP) identification processes
+can provide similar &ldquo;proof of being human&rdquo; which can be attested to an account.
+This allows us to outsource the problem of identification, where we only focus
+on unique accounts which are sufficient for data accounting independent of
+humans or machines. Identity claims issued via the AIP will help to provide the
+context required to meaningfully interact between accounts.</p>
+<p>For more on this topic, please read the <a href=https://github.com/inblockio/aqua-docs/blob/main/Aqua_Identity_Protocol.md>Aqua Identity
+Protocol</a>.</p>
+<h3 id=domain>Domain</h3>
+<p>A domain is a unique namespace attributed to an account. It allows us to manage
+services and files within that namespace creating a domain of data governance
+After granted permissions, additional accounts can be added to share control
+over a domain or singular assets. To enforce boundaries of a domain, additional
+software like the <a href=Guardian.md>Guardian</a> is required.</p>
+<p>E.g. by setting up the a data vault with your account it becomes your
+domain of data governance.</p>
+<h3 id=revision>Revision</h3>
+<p>A revision is the smallest portable entity within the AQP. Multiple revisions
+form a single portable hash chain which is serialized in JSON format.
+They have existed before in unsecured systems where multiple revisions form a
+file which can be displayed as a page. The AQP adds the cryptographic harness
+to secure it. With presenting a portable hash chain, it is possible to track
+all incremental changes stored in each revision to understand the history of a
+page and how it came to be. This allows us to have version control on digital
+assets being able to restore earlier states and to relate to them. This allows
+us to have historical evidence of digital assets.</p>
+<h3 id=page>Page</h3>
+<p>A page is a visible representation of a file containing multiple or a single
+revision attributed to a shared origin. A page view could also be used to
+create a new revision by a used service which interfaces with the file for
+manipulation. In AQP all revisions share a global URI hash to
+attribute them together called a genesis hash.</p>
+<h3 id=transaction-security>Transaction Security</h3>
+<p>Transaction security is an economic measure of the level of integrity assurance
+for a transaction. It is defined as the cost required to forge a transaction.
+The transaction security can be increased by cryptographic security and by strong
+replication of transactions. Public distributed ledger systems are highly suitable
+for providing very high level of transaction security at the cost of privacy
+and immutability (data can&rsquo;t be changed or deleted). Today, public distributed
+ledgers such as Bitcoin and Ethereum provide the highest level of transaction
+security.</p>
+<h3 id=data-asset>Data Asset</h3>
+<p>Data turns into a valuable asset if it is accounted for. In an accounted form
+it can be easily priced, exchanged or traded.</p>
+<h3 id=data-vault>Data Vault</h3>
+<p>Software used to store and manage data with an account. The software must apply
+a secure architecture and measures for keeping data assets safe. This is
+achieved through encryption, strong authentication and restrictive access to
+keep data private by default.</p>
+<p>See <a href=https://github.com/inblockio/aqua-docs/blob/main/Design_Principles.md#principle-separation-of-account-and-service>Design Principles / Separation of Account and
+Service</a></p>
+<h3 id=witness>Witness</h3>
+<p>We define witnessing as the process of observing an event. A witness is judged
+by their capability to recollect and share an observed event. In other words,
+witnessing is the process of storing input data for later playback to provide
+data symmetry around an event.</p>
+<h3 id=witness-network>Witness Network</h3>
+<p>The digital service in a distributed ledger or similar infrastructure which
+provides transaction security and data symmetry for shared data within the
+network. An example of a witness network would be Ethereum.</p>
+<p>E.g. Ethereum can be used to store a digital fingerprint of a domain snapshot
+of a data vault. A domain snapshot is the Merklized state of all witnessed hash
+chains being present in the data vault. It is required to pay the witness
+network for its service. In the case of Ethereum, this is done using &lsquo;Ether&rsquo;.
+This in return allows the account owner to create an &lsquo;undeniable&rsquo; proof that a
+specific revision and the previous revisions within a hash chain has existed.</p>
+<h3 id=portable-hash-chain>Portable Hash Chain</h3>
+<p>A hash chain is a linked list where each node contains the cryptographic hash
+of the previous node content. A portable hash chain is a hash chain that can be
+moved from one host to another.</p>
+<h3 id=immutable-hyperlinks--transclusions>Immutable Hyperlinks / Transclusions</h3>
+<p>See <a href=Immutable_Hyperlinks.md>Immutable Hyperlinks</a>.</p>
+<h2 id=specification>Specification</h2>
+<p>To identify a revision with a unique fingerprint, we hash its content using
+the SHA3-512 hashing function which always has a 128 characters long
+output. This value can be used as a checksum to verify data integrity.
+The checksum can then be entangled in a hash-chain to create an
+immutable track record. We then calculate multiple properties associated
+with the revision, in addition to its content checksum. In the next section,
+we differentiate between REQUIRED and OPTIONAL properties for each
+revision.</p>
+<p>All hashes are based on
+<a href=https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf>SHA3-512</a>.
+This encryption standard is used to construct <a href=#portable-hash-chain>portable hash
+chains</a>, which are serializing of data and its history in
+a form that can be verified, and independent of location. The portable hash
+chain can be fully or partially exchanged between hosts depending on the
+application of the data. From here on, we refer the term &ldquo;portable hash chain&rdquo;
+as &ldquo;hash chain.&rdquo;</p>
+<p>In order to implement the AQP, we need to utilize a software that is capable of
+generating portable hash chains and facilitating actions described in the
+AQP. We call those nodes which facilitate the Aqua Protocol &lsquo;Aqua Data
+Vaults&rsquo; which given their role should be implemented as a software with secure
+architecture and measures for keeping data assets safe. This is achieved
+through encryption, authentication and restrictive access to keep data private
+by default.</p>
+<h1 id=revision-verification-structure>Revision Verification Structure</h1>
+<p>A revision is RECOMMENDED to be limited to 50 Megabytes to ensure that the verification can take
+place on all imaginable clients which might have slow network connectivity, low
+memory, low cpu performance. Once a revision is verified, the next one can be
+verified. Clients with more performance will be able to parallelize the
+verification. Larger files can be chunked to be placed in multiple revisions.</p>
+<p>A verified data structure is identified by its URI <code>verification_hash</code>
+and grouped by its <code>genesis_hash</code>. The first revision created will
+create a <code>verification_hash</code> which has a special meaning and is
+referred to as the <code>genesis_hash</code>. All future revisions building upon
+that first revision will be attributed to the <code>genesis_hash</code> as a unique
+URI for grouping the revisions. This allows us to understand if two
+revisions are related without needing to verify the whole history of the
+hash chain.</p>
+<h2 id=verification-hash>Verification Hash</h2>
+<p><code>revision_verification_hash</code> is the hash sum over the string formed by the
+following operation</p>
+<pre tabindex=0><code>revision_verification_hash = calculate_hash_sum(
+    content_hash + metadata_hash +
+    signature_hash + witness_hash
+)
+</code></pre><p>The content_hash and metadata_hash are REQUIRED.
+The signature_hash and witness_hash are OPTIONAL.</p>
+<h2 id=content>Content</h2>
+<p>A content hash is the check sum for all content data fields which simplifies
+hash construction and the ability to identify data corruption in this part of
+the verification structure.
+<code>content_hash</code> is the hash sum over the string formed by following operation:</p>
+<pre tabindex=0><code>contentObj = {
+    &quot;main&quot;: content,
+    &quot;extension_key_1&quot;: content_extension_1,
+    &quot;extension_key_2&quot;: content_extension_2,
+    ...,
+    &quot;extension_key_n&quot;: content_extension_n,
+}
+sortedContenObj = sort_by_keys(contentObj)
+content_hash = calculate_hash_sum(
+    sortedContenObjValue_1,
+    sortedContenObjValue_2,
+    ...,
+    sortedContenObjValue_n,
+)
+</code></pre><p>Description:</p>
+<ul>
+<li>content: The string input of the visible page using UTF-8 encoding schema.
+REQUIRED.</li>
+<li>content extensions: more data MAY be encapsulated in addition to the main
+content. These could be a file, a stateful link, or a signature. The content
+extensions are sorted alphabetically by their key names. OPTIONAL.</li>
+</ul>
+<p>To see an example of <code>contentObj</code> of a revision, see the <a href=#Example>example</a>
+section,</p>
+<h2 id=metadata>Metadata</h2>
+<pre tabindex=0><code>metadata_hash = calculate_hash_sum(
+    domain_id + time_stamp + previous_verification_hash
+)
+</code></pre><p>Description:</p>
+<ul>
+<li>metadata_hash: The check sum for all metadata data fields. It simplifies the
+hash construction and the ability to identify data corrupton in this part of
+the verification structure.</li>
+<li>domain_id: 10 digits hexadecimal randomly generated to identify the host
+system that runs the AQP service.</li>
+<li>time_stamp: time-stamp of the current revision (decimal numbers
+YYYYMMDDHHMMSS e.g. 20211128092608).</li>
+<li>previous_verification_hash: previous_revision_verification_hash if present</li>
+</ul>
+<h2 id=signature>Signature</h2>
+<p>A signature in AQP is a cryptographic signature generated by public-private key
+pair. The protocol should be abstract, where it will support &lsquo;Method&rsquo; in later
+iterations. This will allow us to use different types of implementations such
+as: PGP signatures, Ethereum, or Bitcoin
+<a href=https://en.wikipedia.org/wiki/Cryptocurrency_wallet>wallet</a>&rsquo;s signatures.</p>
+<p>In this specification, we use the AQP reference implementation&rsquo;s signing
+method, which is via an Ethereum wallet.</p>
+<pre tabindex=0><code>signature_hash = calculate_hash_sum(
+    signature + public_key
+)
+</code></pre><p>The signature is generated by a wallet signing the following message:</p>
+<pre tabindex=0><code>I sign the following page verification_hash:&quot; +[0x&lt;revision_verification_hash&gt;]
+</code></pre><p>The <code>revision_verification_hash</code> MUST NOT be signed twice by the same key, to
+avoid information leakage of the private key.</p>
+<p>For example, a wallet with an address of
+<code>0xa2026582b94feb9124231fbf7b052c39218954c2</code> and a public key of
+<code>0x041518581af65749b3ddc69889df3e5d229bc8ad79279a07ddeb368ade5e1592368c5ff3b69143d7a1e7cf64f7d0774a6724e6eaf138d318d07ddc30f6081ca89a</code>
+signs the following message:</p>
+<pre tabindex=0><code>I sign the following page verification_hash:&quot; +[0x9dab72c7635043452958c4cc2902f48ef7c4ae437058280197c6a2736ab9635f799cbf190d9d07dd76589055a8ad64e61c6bebd1487994207d4cb7918b471f57]
+</code></pre><p>which results in the following signature:</p>
+<pre tabindex=0><code>0x19b5697c4541509c1add3db9fc2f678b7b80325ebffd4d945ca00db5f8b3f98a142edbf9a7faa0a0c7ec4f10ae1b64cf2ea62ce3ee73ed2e37ce916d6bd016601c
+</code></pre><h2 id=witness-1>Witness</h2>
+<p>Witnessing allows one to undeniably prove the existence of a dataset
+(represented as a portable hash chain). To complete the witnessing process, a
+Domain Snapshot is created. This is a collection of all revision hashes within
+one domain. A Merkle tree is used to unify all hashes of the latest revisions
+of all portable hash chains within a domain into a single hash value.</p>
+<p>The <code>witness_event_verification_hash</code> is written to the <a href=#witness-network>Witness
+Network</a>. The
+<code>witness_event_verification_hash</code> is then generated by using the
+<code>domain_snapshot_genesis_hash</code> and the <code>merkle_root</code> hash together. This
+allows the page snapshot itself to also be witnessed.</p>
+<p>A single revision which has been witnessed, will not store the whole Merkle
+tree, but only its relevant path to the Merkle root. Performing a Merkle proof
+means that its revision is included in the Merkle tree.</p>
+<pre tabindex=0><code>witness_hash = calculate_hash_sum(
+    domain_snapshot_genesis_hash + merkle_root +
+    witness_network + witness_event_transaction_hash
+)
+</code></pre><p>Description:</p>
+<ul>
+<li><code>witness_hash</code>: the checksum for all signature data fields. It simplifies hash
+construction and identifies data corruption in this part of the verification
+structure.</li>
+<li><code>domain_snapshot_genesis_hash</code>: Refers to the URI of the page which stores the
+whole Merkle tree of the witness event.</li>
+<li><code>merkle_root</code>: the root hash of the Merkle tree. The presence of the
+Merkle tree allows for lazy verification to reduce required computational
+steps for verification by skipping the Merkle proof as both datasets can be
+entangled in the chain by a newer revision and therefore be immutable.</li>
+<li><code>witness_network</code>: specifies which witness network was used to store the
+<code>witness_event</code>. The following structure shows an AQP hash chain with 3
+revisions which wrote the <code>witness_event_verification_hash</code> into the
+witness network.</li>
+</ul>
+<p>Additional context:</p>
+<ul>
+<li>relative-merkle-tree-proof: This provide the relative path with all required
+hashes to verify the Merkle tree root from the first node which the
+<code>verification_hash</code> of the revision as a starting point.</li>
+<li><code>witness_event_verification_hash</code>: [IMPLICIT] Is not part of the data
+structure. It is calculated by taking the sha3-512 checksum of the
+<code>domain_snapshot_genesis_hash</code> and the <code>merkle_root</code> hash. This ensures that the
+<code>domain_snapshot</code> itself will be witnessed.</li>
+</ul>
+<h2 id=example>Example</h2>
+<p>The following structure shows an AQP hash chain with 3 revisions:</p>
+<h3 id=1st-revision>1st Revision</h3>
+<p>This revision features all REQUIRED (content, metadata) and all OPTIONAL
+(signature, witness) AQP data fields.</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#000;font-weight:700>{</span>
+  <span style=color:#204a87;font-weight:700>&#34;verification_context&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;has_previous_signature&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>false</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;has_previous_witness&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>false</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;content&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;rev_id&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#0000cf;font-weight:700>358</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;content&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+      <span style=color:#204a87;font-weight:700>&#34;main&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;First revision text&#34;</span><span style=color:#000;font-weight:700>,</span>
+      <span style=color:#204a87;font-weight:700>&#34;transclusion-hashes&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span>
+    <span style=color:#000;font-weight:700>},</span>
+    <span style=color:#204a87;font-weight:700>&#34;content_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;ae188be061822074716b43925b3ffa90a03c530342be73c3440d8f022765ffebbb56c16552f13cd1ea61f876d2d892e0a73dcba5173fc47d371b4251d6c094da&#34;</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;metadata&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;domain_id&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;acfa9f682e&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;time_stamp&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;20220116090401&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;previous_verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;metadata_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;d1025fd8866d9367735d2f6617b3aa87401e08d726f311cdf834ea9540955bfc59b428676bce5d47d5fed381394ab2ed838c5eecfc9cb37313705374752c247d&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;9dab72c7635043452958c4cc2902f48ef7c4ae437058280197c6a2736ab9635f799cbf190d9d07dd76589055a8ad64e61c6bebd1487994207d4cb7918b471f57&#34;</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;signature&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;signature&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;0x19b5697c4541509c1add3db9fc2f678b7b80325ebffd4d945ca00db5f8b3f98a142edbf9a7faa0a0c7ec4f10ae1b64cf2ea62ce3ee73ed2e37ce916d6bd016601c&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;public_key&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;0x041518581af65749b3ddc69889df3e5d229bc8ad79279a07ddeb368ade5e1592368c5ff3b69143d7a1e7cf64f7d0774a6724e6eaf138d318d07ddc30f6081ca89a&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;wallet_address&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;0xa2026582b94feb9124231fbf7b052c39218954c2&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;signature_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;cc42f40c4452a25f9ea48a97b6dfba6f69dec347db5c1adf25475b0b4a5da36af3fe48bf9f7ea0dda6bbed9367dc9c82834dbf8cc7f6220fd190cdb729d3f4ec&#34;</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;witness&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;witness_event_id&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;2&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;domain_id&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;acfa9f682e&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;domain_snapshot_title&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Data Accounting:DomainSnapshot:b33afaf53ed3d245f0319d4997db2032de9d77791ae11f5125189815eef44f2fba9633bebe2e57bc5ea4b0424872ed02fa6aa9ad909f467726b536933bf715bf&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;witness_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;9707780cebcf6ed02b40bd7e6956b35ffe142a2b5f8cee15c703a652fa389eb118ef101e2f463e95663aa4013a42d9f1ce4a83eed3528b02bf98626e7599bbd8&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;domain_snapshot_genesis_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;b33afaf53ed3d245f0319d4997db2032de9d77791ae11f5125189815eef44f2fba9633bebe2e57bc5ea4b0424872ed02fa6aa9ad909f467726b536933bf715bf&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;merkle_root&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;14f26d7dc0be77afff9131c03cab39a2fa9e1270c6face3fdc35b9b4b4ac4550d048c356a4713568c42411c3e7fe3553ec7b993c9bd7da97cb976e843d7e4d29&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;witness_event_verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;witness_network&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;goerli&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;smart_contract_address&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;0x45f59310ADD88E6d23ca58A0Fa7A55BEE6d2a611&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;witness_event_transaction_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;0x5900103adc09a789fd3bd7c23dfeff1ffce41dfba0a52b525ecc032e9279eb1f&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;sender_account_address&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;0xa2026582b94feb9124231fbf7b052c39218954c2&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;source&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;default&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;structured_merkle_proof&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>[</span>
+      <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>&#34;witness_event_verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;depth&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;4&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;left_leaf&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;right_leaf&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;9dab72c7635043452958c4cc2902f48ef7c4ae437058280197c6a2736ab9635f799cbf190d9d07dd76589055a8ad64e61c6bebd1487994207d4cb7918b471f57&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;successor&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;789e508ccb23fe053b628cebc19a2d32f34e6aa21e878e8611f7c14d891625c7b2e243b3c3105b98295333b9183e5ea272a055a84ab65ad927f7fd9c27aae48e&#34;</span>
+      <span style=color:#000;font-weight:700>},</span>
+      <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>&#34;witness_event_verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;depth&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;3&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;left_leaf&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;789e508ccb23fe053b628cebc19a2d32f34e6aa21e878e8611f7c14d891625c7b2e243b3c3105b98295333b9183e5ea272a055a84ab65ad927f7fd9c27aae48e&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;right_leaf&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;c16a966333cd22ff3497875a62202874221c1dae2e74b4351d058910f8d37160be480fce9aab4ec5e725beb695509f0fd65ae581568c6f1ae25eb4f1440b287f&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;successor&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;80d7549af24e9a6bdfc32cefe0536d6528d665cc8e65859ef4cff87270f3db8d9b95aaecc167e10c9b5be9ce3ab36d8d880c3a518e1c5eb899ca9d95af24e9db&#34;</span>
+      <span style=color:#000;font-weight:700>},</span>
+      <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>&#34;witness_event_verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;depth&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;2&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;left_leaf&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;80d7549af24e9a6bdfc32cefe0536d6528d665cc8e65859ef4cff87270f3db8d9b95aaecc167e10c9b5be9ce3ab36d8d880c3a518e1c5eb899ca9d95af24e9db&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;right_leaf&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;f4e189a08b486253ea0a5cc7bf7150055e738898115c4caf00e45634d6925539d51852409d1fe9108469e9b15668b940f3369300bb27cc292d1fabc0c07cd593&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;successor&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;e227dd97e5166364483b41f058f0d176e3a50a7510299038b09ae3aef2cbafb26c787afad82563a945b433fa2d1279af3535755235ab69d6e5ab089179177c14&#34;</span>
+      <span style=color:#000;font-weight:700>},</span>
+      <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>&#34;witness_event_verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;depth&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;1&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;left_leaf&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;e227dd97e5166364483b41f058f0d176e3a50a7510299038b09ae3aef2cbafb26c787afad82563a945b433fa2d1279af3535755235ab69d6e5ab089179177c14&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;right_leaf&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;780f3eb08f24022be4463be141bcda6a33a157cd0fd44cf209312b8427ac4036637a63d239526555128a4e7f4bb588ebfdbd8a8cc7d797038e29b852a4fae26c&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;successor&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;f3bd4e82b1e3d304005a7ddf4ab940f3e4e1cf099ca1c058454c431ed3feb0674c044e53150eb5691073ba58a3491565f72f6a6c2a24562ea080b569b4496c9f&#34;</span>
+      <span style=color:#000;font-weight:700>},</span>
+      <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>&#34;witness_event_verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;depth&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;0&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;left_leaf&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;f3bd4e82b1e3d304005a7ddf4ab940f3e4e1cf099ca1c058454c431ed3feb0674c044e53150eb5691073ba58a3491565f72f6a6c2a24562ea080b569b4496c9f&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;right_leaf&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;4a0c120fbdd6219b774eb2cb2076f4050d606b621e384c3ec645be0e5dbcdac3132f1f2acb531fa5ff62429907b77cf8d29a760be3765eb4decd83949a2925f8&#34;</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;successor&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;14f26d7dc0be77afff9131c03cab39a2fa9e1270c6face3fdc35b9b4b4ac4550d048c356a4713568c42411c3e7fe3553ec7b993c9bd7da97cb976e843d7e4d29&#34;</span>
+      <span style=color:#000;font-weight:700>}</span>
+    <span style=color:#000;font-weight:700>]</span>
+  <span style=color:#000;font-weight:700>}</span>
+<span style=color:#000;font-weight:700>}</span>
+</code></pre></div><h3 id=2nd-revision>2nd Revision</h3>
+<p>This revision entangles all data fields of the previous revision. As the
+calculation of the revision_verification hash depends on the revision of the
+previous revision, it is shown in verification_context.</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#000;font-weight:700>{</span>
+  <span style=color:#204a87;font-weight:700>&#34;verification_context&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;has_previous_signature&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;has_previous_witness&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;content&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;rev_id&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#0000cf;font-weight:700>362</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;content&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+      <span style=color:#204a87;font-weight:700>&#34;main&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;First revision text&#34;</span><span style=color:#000;font-weight:700>,</span>
+      <span style=color:#204a87;font-weight:700>&#34;signature-slot&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;[\n    {\n        \&#34;user\&#34;: \&#34;0xa2026582b94feb9124231fbf7b052c39218954c2\&#34;,\n        \&#34;timestamp\&#34;: \&#34;20220116090439\&#34;\n    }\n]&#34;</span><span style=color:#000;font-weight:700>,</span>
+      <span style=color:#204a87;font-weight:700>&#34;transclusion-hashes&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span>
+    <span style=color:#000;font-weight:700>},</span>
+    <span style=color:#204a87;font-weight:700>&#34;content_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;9732084a45fd344d63687ccf9b5cd942f99ffe1debd11622b05d0cd24a2de3e5608d5f5121bdd7559c0a2d39067f9258c4f9612e44728df2e8d9026a88ed650c&#34;</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;metadata&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;domain_id&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;acfa9f682e&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;time_stamp&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;20220116090439&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;previous_verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;9dab72c7635043452958c4cc2902f48ef7c4ae437058280197c6a2736ab9635f799cbf190d9d07dd76589055a8ad64e61c6bebd1487994207d4cb7918b471f57&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;metadata_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;8df483539e2f81e64c9b9df0c7e13ae7778947b5defef860fbaed1260eade794999839bb254ea5006a5d4b6a89a37980ab576dc546d6336518d65b80bf2a5cb5&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;296347471b33f3d3c69cc6e0699d80b4cb68ffc79c3ecce96beb659fa324fab1de7a888932fbfb7c60bb8cc83c9445ce15532987a7b59440cada649681618293&#34;</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;signature&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;signature&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;public_key&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;wallet_address&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;signature_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;witness&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>null</span>
+<span style=color:#000;font-weight:700>}</span>
+</code></pre></div><h3 id=3rd-revision>3rd Revision</h3>
+<p>This revision features a transclusion-hash for an immutable link to another
+revision.</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#000;font-weight:700>{</span>
+  <span style=color:#204a87;font-weight:700>&#34;verification_context&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;has_previous_signature&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>false</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;has_previous_witness&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>false</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;content&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;rev_id&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#0000cf;font-weight:700>363</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;content&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+      <span style=color:#204a87;font-weight:700>&#34;main&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;First revision text\n\n[[File:Logo_inblockio.png]]&#34;</span><span style=color:#000;font-weight:700>,</span>
+      <span style=color:#204a87;font-weight:700>&#34;signature-slot&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;[\n    {\n        \&#34;user\&#34;: \&#34;0xa2026582b94feb9124231fbf7b052c39218954c2\&#34;,\n        \&#34;timestamp\&#34;: \&#34;20220116090439\&#34;\n    }\n]&#34;</span><span style=color:#000;font-weight:700>,</span>
+      <span style=color:#204a87;font-weight:700>&#34;transclusion-hashes&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;[{\&#34;dbkey\&#34;:\&#34;Logo_inblockio.png\&#34;,\&#34;ns\&#34;:6,\&#34;verification_hash\&#34;:\&#34;9b2b3cafb90a07433a2b61885a9e64641a99b1e9024cf53b640501d3706b142fed7bc372300973137ef9d92584fac70976c3889d5610abcfe1f187c248263a56\&#34;}]&#34;</span>
+    <span style=color:#000;font-weight:700>},</span>
+    <span style=color:#204a87;font-weight:700>&#34;content_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;14b8256ccd5fa1d883983317f92f428eadb52f699f476b9be69f14c6892b41979ff7b5b7a7a978177985d6aaa0bcfd9857a2646aedc4cbb3299373daa647814b&#34;</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;metadata&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;domain_id&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;acfa9f682e&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;time_stamp&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;20220116090556&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;previous_verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;296347471b33f3d3c69cc6e0699d80b4cb68ffc79c3ecce96beb659fa324fab1de7a888932fbfb7c60bb8cc83c9445ce15532987a7b59440cada649681618293&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;metadata_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;09688c05a83bb74bb255fb0c571cb6314b65f5b7f00750547a2c43f4959d4702ae2aec019c6fb4b0e5d23adea87fd456b0eaffc6ae271163a1fa45b4bae54230&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;b35894d74dfcf8b41ff95eed97705e1acf9081021e0d478d8645cb04b8a0b4a013ee8f7fb6e140d149f2c92f20bba984fad5535938a5e36ae6a799a18343b806&#34;</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;signature&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;signature&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;public_key&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;wallet_address&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;signature_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;witness&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>null</span>
+<span style=color:#000;font-weight:700>}</span>
+</code></pre></div><h1 id=api-endpoints>API Endpoints</h1>
+<p>The AQP provides 3 API endpoints which return data from a host that runs the
+AQP:</p>
+<h2 id=get-hash-chain>Get Hash Chain</h2>
+<p><code>/get_hash_chain_info/{identifier}?identifier=&lt;title or genesis hash></code><br>
+Input:</p>
+<ul>
+<li><code>identifier_type</code>: the value must either be &ldquo;title&rdquo; or &ldquo;genesis_hash&rdquo;</li>
+<li><code>identifier</code>: the title or genesis_hash string, e.g. &ldquo;Main Page&rdquo; or &ldquo;02c3c2&mldr;215d8d&rdquo;
+Returns: all context for the requested hash_chain.</li>
+</ul>
+<p>Example:</p>
+<p>API Request:
+<code>/get_hash_chain_info/genesis_hash?identifier=dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26</code></p>
+<p>API Response:</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#000;font-weight:700>{</span>
+  <span style=color:#204a87;font-weight:700>&#34;genesis_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26&#34;</span><span style=color:#000;font-weight:700>,</span>
+  <span style=color:#204a87;font-weight:700>&#34;domain_id&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;acfa9f682e&#34;</span><span style=color:#000;font-weight:700>,</span>
+  <span style=color:#204a87;font-weight:700>&#34;latest_verification_hash&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c&#34;</span><span style=color:#000;font-weight:700>,</span>
+  <span style=color:#204a87;font-weight:700>&#34;site_info&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>&#34;sitename&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Personal Knowledge Container&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;dbname&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;my_wiki&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;base&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;http://localhost:9352/index.php/Aqua&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;generator&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;MediaWiki 1.37.1&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;case&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;first-letter&#34;</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#204a87;font-weight:700>&#34;namespaces&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+      <span style=color:#204a87;font-weight:700>&#34;0&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>&#34;case&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;title&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;&#34;</span>
+      <span style=color:#000;font-weight:700>},</span>
+     <span style=color:#204a87;font-weight:700>&#34;6942&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>&#34;case&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#204a87;font-weight:700>&#34;title&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Data Accounting&#34;</span>
+      <span style=color:#000;font-weight:700>}</span>
+    <span style=color:#000;font-weight:700>},</span>
+    <span style=color:#204a87;font-weight:700>&#34;version&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;0.3.0&#34;</span>
+  <span style=color:#000;font-weight:700>},</span>
+  <span style=color:#204a87;font-weight:700>&#34;title&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Aqua&#34;</span><span style=color:#000;font-weight:700>,</span>
+  <span style=color:#204a87;font-weight:700>&#34;namespace&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#0000cf;font-weight:700>0</span><span style=color:#000;font-weight:700>,</span>
+  <span style=color:#204a87;font-weight:700>&#34;chain_height&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#0000cf;font-weight:700>3</span>
+<span style=color:#000;font-weight:700>}</span>
+</code></pre></div><h2 id=get-revision-hashes>Get Revision Hashes</h2>
+<p><code>/get_revision_hashes/{verification_hash}</code>
+Input:</p>
+<ul>
+<li><code>verification_hash</code>
+Returns: the revision requested if it exists and/or a list of any newer
+revision than the one requested.</li>
+</ul>
+<p>Example:</p>
+<p>API Request:
+<code>/get_revision_hashes/dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26</code></p>
+<p>API Response:</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#000;font-weight:700>[</span>
+  <span style=color:#4e9a06>&#34;dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26&#34;</span><span style=color:#000;font-weight:700>,</span>
+  <span style=color:#4e9a06>&#34;f483d7746f67e7099099bcfa8ea5a93148251c598857e8fad21ce842da62794467067802ef9e818d240cd3312a3346a769f363145a87bfc1eeae19fe8d21b328&#34;</span><span style=color:#000;font-weight:700>,</span>
+  <span style=color:#4e9a06>&#34;2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c&#34;</span>
+<span style=color:#000;font-weight:700>]</span>
+</code></pre></div><h2 id=get-revision>Get Revision</h2>
+<p><code>/get_revision/{verification_hash}</code>
+Input:</p>
+<ul>
+<li><code>verification_hash</code>
+Returns: the revision content together with its verification data</li>
+</ul>
+<p>Example: See example above.</p>
+<p>API Request: <code>/get_revision/dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26</code></p>
+<h1 id=verification-process>Verification Process</h1>
+<p>The verification process is a redo of the verification data generation
+process, and additionally a comparison of their results.</p>
+<p><strong>Verification of Content</strong></p>
+<p>All hashes are recalculated in a separate client implementation, and
+compared with the ones sent via the API. If the data was not altered or
+corrupted; nor was there a difference in the process to calculate the
+hash, they will match. This will create a high level of assurance that
+the integrity and history of the portable hash chain in question has not been
+altered.</p>
+<p><strong>Verification of Account</strong></p>
+<p>We cryptographically verify that the revision signature is indeed generated by the account specified in the verification data.</p>
+<p><strong>Verification of Time</strong></p>
+<p>To verify that the witness event included in a revision is correct, a
+lookup and comparison of the <code>witness_event_verification_hash</code> on-chain is
+performed and compared with the recalculated event.</p>
+<p><strong>Reference Implementation</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Command-Line-Verification-Tool</td>
+<td><a href=https://github.com/inblockio/aqua-verifier-js>https://github.com/inblockio/aqua-verifier-js</a></td>
+</tr>
+<tr>
+<td>Chrome Extension Verification Tool</td>
+<td><a href=https://github.com/inblockio/aqua-verifier-webextension>https://github.com/inblockio/aqua-verifier-webextension</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id=appendix>Appendix</h1>
+<p>The following content is informational and not part of the
+specification. It should help to better understand utility, context and
+services which can be built on top of AQP.</p>
+<h2 id=aqua-protocol-v11-changes>Aqua Protocol v1.1 Changes</h2>
+<p>Moving over to revision based verification. This allows:</p>
+<ul>
+<li>Bulk / in parallel verification; ensuring logarithmic verification
+times, not linear increasing verification times with longer history.
+In short: Much faster and scalable.</li>
+<li>Single revision and range verification (you want to verify a
+specific part of the content-chain)
+<ul>
+<li>This is useful for verification of identity claims, where
+trusted parties have signed the claim and for the validator it&rsquo;s
+sufficient to see that signature.</li>
+</ul>
+</li>
+<li>This allows direct verification after every edit via the Guardian.
+This is the preparation in the interaction to provide services
+through the <a href=Guardian.md>Guardian</a>.</li>
+<li>Changing the design to include transclusions e.g. this allows the
+verification of subpages via their stateful links /
+revision_verification_hashes
+<ul>
+<li>This also allows the inclusion of media files in the
+verification process</li>
+<li>You can upload pictures, PDF&rsquo;s, Word-Documents and have them
+automatically included in the aqua protocol and therefore in the
+verified data-structure</li>
+</ul>
+</li>
+<li>Introduction of verification_context which indicates if the previous
+revision has signature or witness data, or if the current revision
+has transcluded resources. This will build the correct verification
+structure before verification.</li>
+</ul>
+<p>Change in the data-structure:</p>
+<ul>
+<li>when requesting a revision this is done via the
+GetRevisionHandler.php</li>
+<li>the previous verification hash is always served as well</li>
+<li>if signature or witness data is present in the previous revision,
+there is a flag (1/0) that this revision depends on the previous
+revision</li>
+<li>transcluded resources will be added to the content hash for
+verification</li>
+</ul>
+<h2 id=data-accounting-protocol-v12-tbd>Data Accounting Protocol v1.2 [TBD]</h2>
+<ul>
+<li>Generalization of the Signature-Metadata to inform which signature
+method was used.
+<ul>
+<li>GPG Signatures</li>
+<li>BTC Wallet Signatures</li>
+<li>Ethereum Wallet Signatures</li>
+<li>Done by: Displaying method used for signing, displaying
+underlying architecture.</li>
+</ul>
+</li>
+<li>Including Account as part of the verified data structure</li>
+<li>Defining maximum payload size per revision</li>
+</ul>
+<h2 id=services-on-aqp-not-yet-implemented-exploration>Services on AQP (Not yet implemented, exploration)</h2>
+<h3 id=aqp-dacs-domaindomain-access-control-system>AQP-DACS: <a href=#domain>Domain</a> Access Control System</h3>
+<ul>
+<li>
+<ul>
+<li>See: <a href=Guardian.md>Guardian</a> (Acting as like a Firewall)</li>
+</ul>
+</li>
+<li>
+<p>ANS: Name-System and Name-Registry.</p>
+<ul>
+<li>See <a href=Aqua_Name_Resolution.md>Aqua Name Resolution</a></li>
+</ul>
+</li>
+<li>
+<p>AQP-SSI: Self-Sovereign-Identity Protocol for <a href=Aqua_Identity_Protocol.md#self-issued-identity-claims>Identity
+Claim</a> management</p>
+<ul>
+<li>See <a href=Aqua_Identity_Protocol.md>Aqua Identity Protocol</a></li>
+</ul>
+</li>
+<li>
+<p>AQP Delegated Witnessing</p>
+<ul>
+<li>See <a href=Delegated_Witnessing.md>Delegated Witnessing</a></li>
+</ul>
+</li>
+</ul>
+<h2 id=similar-projects>Similar Projects</h2>
+<p>None of the listed projects apply the concepts of versioning to their documents,
+the concept of portable hash chains, the concept of personal data vaults for data
+management in comparison with the AQP reference implementation.</p>
+<p>This following list is not exhaustive:</p>
+<ul>
+<li><a href=http://surety.com/>Surety</a>
+The oldest blockchain-like timestamping service which has been publishing
+to the New York Times since 1995.</li>
+<li><a href=https://opentimestamps.org/>OpenTimestamp</a>
+A free and open-source service provided by Peter Todd using the Bitcoin
+network as a distributed cryptographic clock. The AQP MAY use OpenTimestamp
+as a witness network.</li>
+<li><a href=https://originstamp.com/>OriginStamp</a>
+A company providing paid timestamping services for their customers.
+It looks very similar to OpenTimestamps with open-source client libraries.</li>
+<li><a href=https://www.factomprotocol.org/>Factom Protocol</a>
+A service which creates an architecture with an extra layer of blockchain,
+to provide an extra layer of trusted parties while providing their own
+token. In our opinion, it introduces unnecessary complexity and
+intermediaries as dependencies compared to the AQP.</li>
+<li><a href=https://www.openattestation.com/>OpenAttestation</a>
+An implementation of a timestamping service for document certification. One
+application of it is for secure digital vaccination certificates by the
+Singaporean government. They use the MetaMask Ethereum wallet for signing
+documents making it the most similar project to AQP to our knowledge.</li>
+</ul>
+<h2 id=blockchain-context>Blockchain Context</h2>
+<p>DISCLAIMER: AQP is not a permissionless distributed ledger. In order for the
+AQP to be valuable and working, a single node implementation and single node
+deployments are sufficient, and do not require the witnessing part. The AQP MAY
+benefit from being published to a distributed ledger technology (DLT)) to
+achieve a witness event with high transaction security. AQP does not have a
+token nor is it distributing data by default.</p>
+<p>As some concepts are very similar as those used in DLT&rsquo;s, please refer to the
+following:</p>
+<p>A portable hash chain and its revisions are similar to a blockchain structure
+and its blocks, which has its own root hash and a set of transactions which
+are included inside.</p>
+<table>
+<thead>
+<tr class=header>
+<th><p>Blockchain Term</p>
+</th>
+<th><p>AQP Term</p>
+</th>
+<th><p>Explanation</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class=odd>
+<td><p>Transaction</p>
+</td>
+<td><p>Input Data</p>
+</td>
+<td><p>In a blockchain its a signed transaction. In AQP its all the input data provided to calculate the respective content slot hashes.</p>
+</td>
+</tr>
+<tr class=even>
+<td><p>Block</p>
+</td>
+<td><p>Revision</p>
+</td>
+<td><p>A block contains the Merklized list of transactions. A&nbsp;revision contains various&nbsp;hashed data inputs such as</p>
+<ul>
+<li>Content slots</li>
+<li>Metadata data</li>
+<li>Signature data</li>
+<li>Witness data</li>
+</ul>
+</td>
+</tr>
+<tr class=odd>
+<td><p>Genesis Block</p>
+</td>
+<td><p>Genesis Revision</p>
+</td>
+<td><p>The first object in the hash chain / block chain.</p>
+</td>
+</tr>
+<tr class=even>
+<td><p>Blockchain</p>
+</td>
+<td>Hash Chain</td>
+<td>The hash chain is not distributed but by default only in the local PKC, therefore it is not a distributed ledger. Furthermore the PKC is missing a consensus algorithm to create a shared truth between notes.</td>
+</tr>
+</tbody>
+</table>
+<h3 id=a-side-note>A side note</h3>
+<p>It has not escaped our notice that the provided AQP improves the existing
+process of double-entry bookkeeping and provides a foundation for a new data
+economy. This also allows to create unforgeable invoices which can be clearly
+attributed to its sender, avoiding fraud. This is one of many other use cases,
+e.g. providing trusted news via revision-controlled journalism.</p>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-6a133b0a53f9521a9a53f523bf06b0bb>2 - Identity Protocol</h1>
+<div class=lead>Shows how it is possible to build an identity protocol on top of Aqua using data vaults.</div>
+<p>The Aqua Identity Protocol (AIP) is an experimental application protocol
+under development for Self Sovereign Identity&rsquo;s (SSIs) on top of the
+Aqua Protocol. This is an active field of research which is related to
+the work of the Decentralized-Identity-Foundation (DIF)<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> and the
+World-Wide-Web-Consortium<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>. As this is under active development,
+anything you see is experimental and subject to change. The goal is to
+provide a Self-Sovereign-Digital Identity Protocol to protect individual
+rights, freedom and the opportunity for the individual to participate in
+the digital economy.</p>
+<p>We are building on the advancements and insights for rebooting the
+web-of-trust initiative<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup> and the definition of a
+Self-Sovereign-Identity provided by Christopher Allen.<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup></p>
+<p>Given their importance we quote them here in full:</p>
+<hr>
+<h3 id=self-sovereign-identity-principles>Self-Sovereign-Identity-Principles</h3>
+<ol>
+<li><strong>Existence.</strong> Users must have an independent existence. Any
+self-sovereign identity is ultimately based on the ineffable “I”
+that’s at the heart of identity. It can never exist wholly in
+digital form. This must be the kernel of self that is upheld and
+supported. A self-sovereign identity simply makes public and
+accessible some limited aspects of the “I” that already exists.</li>
+<li><strong>Control.</strong> Users must control their identities. Subject to
+well-understood and secure algorithms that ensure the continued
+validity of an identity and its claims, the user is the ultimate
+authority on their identity. They should always be able to refer to
+it, update it, or even hide it. They must be able to choose
+celebrity or privacy as they prefer. This doesn’t mean that a user
+controls all of the claims on their identity: other users may make
+claims about a user, but they should not be central to the identity
+itself.</li>
+<li><strong>Access.</strong> Users must have access to their own data. A user must
+always be able to easily retrieve all the claims and other data
+within his identity. There must be no hidden data and no
+gatekeepers. This does not mean that a user can necessarily modify
+all the claims associated with his identity, but it does mean they
+should be aware of them. It also does not mean that users have equal
+access to others’ data, only to their own.</li>
+<li><strong>Transparency.</strong> Systems and algorithms must be transparent. The
+systems used to administer and operate a network of identities must
+be open, both in how they function and in how they are managed and
+updated. The algorithms should be free, open-source, well-known, and
+as independent as possible of any particular architecture; anyone
+should be able to examine how they work.</li>
+<li><strong>Persistence.</strong> Identities must be long-lived. Preferably,
+identities should last forever, or at least for as long as the user
+wishes. Though private keys might need to be rotated and data might
+need to be changed, the identity remains. In the fast-moving world
+of the Internet, this goal may not be entirely reasonable, so at the
+least identities should last until they’ve been outdated by newer
+identity systems. This must not contradict a “right to be
+forgotten”; a user should be able to dispose of an identity if he
+wishes and claims should be modified or removed as appropriate over
+time. To do this requires a firm separation between an identity and
+its claims: they can&rsquo;t be tied forever.</li>
+<li><strong>Portability.</strong> Information and services about identity must be
+transportable. Identities must not be held by a singular third-party
+entity, even if it&rsquo;s a trusted entity that is expected to work in
+the best interest of the user. The problem is that entities can
+disappear — and on the Internet, most eventually do. Regimes may
+change, users may move to different jurisdictions. Transportable
+identities ensure that the user remains in control of his identity
+no matter what, and can also improv an identity’s persistence over
+time.</li>
+<li><strong>Interoperability.</strong> Identities should be as widely usable as
+possible. Identities are of little value if they only work in
+limited niches. The goal of a 21st-century digital identity system
+is to make identity information widely available, crossing
+international boundaries to create global identities, without losing
+user control. Thanks to persistence and autonomy these widely
+available identities can then become continually available.</li>
+<li><strong>Consent</strong>. Users must agree to the use of their identity. Any
+identity system is built around sharing that identity and its
+claims, and an interoperable system increases the amount of sharing
+that occurs. However, sharing of data must only occur with the
+consent of the user. Though other users such as an employer, a
+credit bureau, or a friend might present claims, the user must still
+offer consent for them to become valid. Note that this consent might
+not be interactive, but it must still be deliberate and
+well-understood.</li>
+<li><strong>Minimalization.</strong> Disclosure of claims must be minimized. When
+data is disclosed, that disclosure should involve the minimum amount
+of data necessary to accomplish the task at hand. For example, if
+only a minimum age is called for, then the exact age should not be
+disclosed, and if only an age is requested, then the more precise
+date of birth should not be disclosed. This principle can be
+supported with selective disclosure, range proofs, and other
+zero-knowledge techniques, but non-correlatibility is still a very
+hard (perhaps impossible) task; the best we can do is to use
+minimalization to support privacy as best as possible.</li>
+<li><strong>Protection.</strong> The rights of users must be protected. When there is
+a conflict between the needs of the identity network and the rights
+of individual users, then the network should err on the side of
+preserving the freedoms and rights of the individuals over the needs
+of the network. To ensure this, identity authentication must occur
+through independent algorithms that are censorship-resistant and
+force-resilient and that are run in a decentralized manner.</li>
+</ol>
+<hr>
+<p>Those 10 stated principles are implemented within the Aqua Protocol and
+it&rsquo;s existing reference implementation in various degrees. They are also
+represented in the
+<a href=https://github.com/inblockio/aqua-doc/blob/main/Design_Principles.md>Design_Principles.md</a></p>
+</blockquote>
+<h1 id=architecture>Architecture</h1>
+<p>For the Aqua Identity Protocol to be implemented in accordance with the
+above statements, SSI-Principles and critical component choices from
+outside the protocol need to be made, and required tools need to be
+provided. <strong>Data Vault</strong>&rsquo;s will provide a space which is fully account
+controlled. Other architectural decisions enabling SSI can be found in
+the reference implementation PKC Architecture Documentation.</p>
+<h3 id=usage-of-data-vaults-to-protect-identity-claims>Usage of <strong>Data Vaults</strong> to protect identity claims</h3>
+<p>Pages with the namespace <account>: must be &lsquo;read and write able&rsquo; by
+<account> only by default. This is to protect the personal-identifiable
+data of the user. This data should be stored in a place where only the
+account owner has access to. This can be achieved by having the data
+stored locally on a machine the account owner has, or by using
+cryptography which requires the accounts owner explicit interaction to
+decrypt it. The content should not be decrypted on the server, but
+within the web-browser or client-application to ensure that a
+potentially compromised service-provider can&rsquo;t leak the sensitive
+information.</p>
+<ul>
+<li>Identity claims are <strong>encrypted by default</strong> and can only be
+decrypted by the account owner or other accounts explicitly given
+permission to do so.</li>
+<li>Identity claims <strong>must</strong> be given access by the account owner to
+e.g. let somebody else sign them.</li>
+</ul>
+<p>Note: There should be an extra effort by any <strong>Data Vault</strong>
+implementation to protect identity claims. It is recommended to strongly
+regulate and audit the emerging solutions to ensure a high level of
+protection for citizens.</p>
+<h3 id=self-issued-identity-claims>Self Issued Identity Claims</h3>
+<p>are used to make statements about an account to form an identity. Those
+claims can be partially revealed on demand to other parties. Those
+claims can also be protected by advancements in privacy technologies
+like Zero-Knowledge-Proofs and ongoing advancements in key management.</p>
+<p>Identity claims are sets of <a href=https://pkc.inblock.io/index.php/Verified_Data>Verified
+Data</a> which follow a
+structured data convention to claim or attest attributes to an account.
+For example, an attribute could be the year of birth of an account
+owner, or the legal name of an account owner. Claims should always be
+atomic to allow the account owner to disclose them selectivity.
+Different claims can be combined to represent a citizen ID or a
+drivers-license. Other claims can be educational certificates, like
+school certificates.</p>
+<p>Identity claims in the <a href=https://pkc.inblock.io/index.php/Aqua_Identity_Protocol>Aqua Identity
+Protocol</a> are
+<strong>always self issues</strong>. This means that the first signature on the claim
+needs to be from the private key which belongs to the account the claim
+is issued for. This proves account ownership. This means:</p>
+<ul>
+<li>All claims can only be issued from the account which they make a
+claim about. A claim belongs to it&rsquo;s origin account and can only be
+managed from it&rsquo;s address.</li>
+<li>A claim can &lsquo;accumulate trust&rsquo; by being signed by other accounts who
+support this claim.</li>
+<li>Self-issuance protects accounts against spam, and the issuance of
+fraudulent claims to an account without the knowledge of the account
+owner.</li>
+</ul>
+<h5 id=claim-attestation><strong>Claim Attestation</strong></h5>
+<p>Can be completed by a Trust Authority referring to the Identity Claim in
+collaboration with the account owner, or a referencing statement.</p>
+<p>It is possible <strong>to attest to a claim</strong> by referencing the claim&rsquo;s
+unique revision_verification hash within the attestation. This means you
+can make statements about an account or about a claim without involving
+the account owner in that process. An attestation contains a statement
+about the referenced data set, and is expected to be signed by the
+account who makes the attestation. This ensures there is clear account
+attribution. Attestations without signature should be disregarded, as
+they have no account attribution.</p>
+<hr>
+<h2 id=bspecification-for-the-aqua-identity-protocol-b><b>Specification for the Aqua Identity Protocol </b></h2>
+<p>Policies for Self-Issued-Identity-Claims:</p>
+<ul>
+<li>Syntax of Title: &lt;Account (e.g. Ethereum Wallet
+Address)>:&lt;Attribute (English Descriptive Title)></li>
+<li>Example:
+<a href=https://pkc.inblock.io/index.php/0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate>0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate</a></li>
+</ul>
+<p>The title is not protected against changes but the content of the page
+is protected.*<strong>IMPORTANT:</strong> Therefore we <strong>must</strong> compare the page
+stored <strong><account>,<attribute></strong>. Then reassemble the title to check if
+they are consistent before proceeding with further validation of the
+identity claim.</p>
+<p>Content of the page</p>
+<ul>
+<li><strong>Account:</strong> <account>
+<ul>
+<li>Is repeated to reassemble the title to check it.</li>
+</ul>
+</li>
+<li><strong>Attribute:</strong> &lt;attribute_name>
+<ul>
+<li>Is repeated to reassemble the title to check it.</li>
+</ul>
+</li>
+<li><strong>Value:</strong> Is the value of the claim. E.g. &lsquo;1889&rsquo; for a year of
+birth.
+<ul>
+<li>The first revision <strong>must</strong> be signed by the account owner to
+create a self-issued identity claim</li>
+<li>Values <strong>must</strong> not change within a hash-chain. If a value
+changes, the claim will be marked as invalid with the revision
+of the change. If a new attribute value needs to be defined for
+an account, this is done through a new claim.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>Claim issuance Process</strong></p>
+<ol>
+<li>Claim is created (based on template)</li>
+<li>Claim is signed by issuer (first revision)</li>
+<li>Claim is registered by issuer (optional, done via Claim Registry)</li>
+<li>Claim is verified by authority to accumulate trust (this might
+include the requirement to hold a revocation authority on a claim
+registered via a Claim Registry)</li>
+</ol>
+<p>Trust-Chains with Identity Claims</p>
+<p>Will build a web of trust, which can be applicable not only for public
+institutions, but also for commercial organizations and private
+entities.</p>
+<h3 id=a-trust-chain-of-identity-claims-for-educational-certificates-example>A trust chain of identity claims for educational certificates (example)</h3>
+<ol>
+<li>The certificate is issued as integrity verified data via the Aqua
+Protocol.</li>
+<li>The recipient of the certificate registers the certificate as an
+identity claim</li>
+<li>The certificate is signed after it was issued as an identity claim
+by a Trust Authority (e.g. the university professor) and the
+university directors office (director)</li>
+<li>The university professor holds trust claims from the university
+director</li>
+<li>The university director holds trust claims by the ministry of
+education</li>
+<li>The educational ministry of education holds trust claims by the
+minister president</li>
+<li>The minister president holds trust claims of a verified election</li>
+</ol>
+<p>The chain of trust is supplied by the party signing the statement.</p>
+<p><i> IMPORTANT: <strong>The authority who is given authority needs to prove
+where their authority originated</strong> <strong>when they act in the function of
+that authority.</strong></i></p>
+<ol>
+<li>E.g. the professor needs to supply the claim of the university
+entitling him</li>
+<li>E.g. the university director needs to supply the claim of the
+educational ministry</li>
+<li>E.g. the educational ministry needs to supply the claim of the
+minister president.</li>
+<li>&mldr; and so on.</li>
+</ol>
+<h1 id=verification-process>Verification Process</h1>
+<ol>
+<li>Claim is presented</li>
+<li>Claim integrity is validated
+<ol>
+<li>How can you trust the content of a claim: Claim content needs to
+be static. E.g. a given-name claim &lsquo;Jarred Maxim&rsquo; cannot change,
+even if there are many revisions to the page. If the static
+content HAS changed, the claim is INVALID or at least only valid
+until the point where it changed. In the case of such an
+information change, a new claim needs to be issued.</li>
+</ol>
+</li>
+<li>Claim registry is validated (root trust)</li>
+<li>Claim signatures are validated
+<ol>
+<li>Comparison between signature time and validity of the signing
+authority. Is the account authority still valid?</li>
+<li>lookup of authority claims from expected root trust?</li>
+</ol>
+</li>
+</ol>
+<h3 id=trust-in-signatures>Trust in Signatures</h3>
+<p>If somebody signs an identity claim, we believe they do that to</p>
+<ol>
+<li>Vouch with their account for the integrity of the presented data.
+This can be supported via an Authoritative Claim and a comment which
+gets attached to the claim itself or is issued via an Attestation.</li>
+<li>To verify the signature, we use an automated verification process.
+This is done through implementations of an Aqua-Verifier like
+<a href=https://github.com/inblockio/aqua-verifier-js>https://github.com/inblockio/aqua-verifier-js</a> or
+<a href=https://github.com/inblockio/aqua-verifypage-chrome-extension><a href=https://github.com/inblockio/aqua-VerifyPage-chrome-extension>https://github.com/inblockio/aqua-VerifyPage-chrome-extension</a></a>
+which also checks against the restrictions given by the Aqua
+Identity Protocol or/and additional defined policies.</li>
+<li>Add access rights to a claim by adding a Data Usage Agreement which
+is enforced by the Guardian. Access rights can be restricted:
+<ol>
+<li>to specific accounts</li>
+<li>to specific domain id&rsquo;s representing an instance of a Data Vault</li>
+</ol>
+</li>
+<li>Verification: The verification process considers which account it
+signed, and what was stated with the signature, or with the
+additional data added to the claim. To consider a claim valid, the
+relationship between the verifying party and the Trust Authority who
+signed it, is essential. Can the party be trusted? Why do I trust
+this party?
+<ol>
+<li>Claims can be either chained (cascaded into each other) and
+offline verified, and/or online verified against an existing
+Claim-Registry. In both cases a known trusted party account
+reference point is required for the verifying party to trust.</li>
+</ol>
+</li>
+</ol>
+<h4 id=trust-authorities><strong>Trust Authorities</strong></h4>
+<p>are accounts which have an elevated trusted position. They issue
+<a href=https://pkc.inblock.io/index.php/Authoritative_Claim>Authoritative Trust
+Claims</a> to give
+legitimacy to a self-issued identity claim.</p>
+<p>Why do you trust a professor to issue an <a href=https://pkc.inblock.io/index.php/Educational_Certificate>Educational
+Certificate</a>?</p>
+<p>Because the professor is able to provide a trust chain, represented by a
+chained <a href=https://pkc.inblock.io/index.php/Authoritative_Claim>Authoritative Trust
+Claim</a>, proving
+that he has authority to attest an <a href=https://pkc.inblock.io/index.php/Educational_Certificate>Educational
+Certificate</a>
+with his signature. With his signature, he is increasing the trust of
+the self-issued <a href=https://pkc.inblock.io/index.php/Identity_Claim>Identity
+Claim</a> to allow it to
+have practical utility.</p>
+<h3 id=claim-registries><strong>Claim Registries</strong></h3>
+<p>A claim registry in the context of the Aqua Identity Protocol is a
+global registry to allow for real-time global claim revocation and
+re-instantiation of Identity Claim&rsquo;s. This solves the problems related
+and known to certificate revocation. The Claim Registry acts like a
+global Claim Revocation List (CRL)<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup>.</p>
+<p>E.g. a drivers license can be revoked by a Trust Authority and later be
+re-instantiated after the &lsquo;Punishment for driving too fast&rsquo; is over.
+Identity claims are either valid or invalid. The Claim Registry is
+managing who can revoke / re-instantiate a registered claim.</p>
+<p>There is ongoing research and optimizations on privacy concerns to
+reduce costs for on-chain Identity Claim.</p>
+<p>Implementation in Ethereum with Smart-Contracts (Solidity). All claims
+are account bound.</p>
+<p><strong>Claim Registration Specification - Smart Contract Structure</strong></p>
+<ul>
+<li><strong>&lt;revision_verification_hash></strong> as root trust of the self-issued
+identity claim. A claim has to be a verified page, which is signed
+and timestamped. If all are present, the next page-verification hash
+entangles all of those properties and becomes the &lsquo;address&rsquo; of the
+claim. In the receipt of the publish process for the claim, there is
+an attached receipt, and by writing the receipt into the claim,
+there is also a new revision generated. This creates the second
+revision of the claim, which entangles the signature and the witness
+event with the hash-chain to make them immutable.</li>
+<li><strong><status></strong> [type:boolean] of claim
+<ul>
+<li>0 - valid</li>
+<li>1 - revoked</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p><strong><valid until></strong> [type: date DDMMYYYY]: if current date past
+expiration date, the claim is considered expired and is not accepted
+anymore</p>
+</li>
+<li>
+<p><strong>&lt; owner == sender address></strong> [type:addess] an account which
+updates the status of the claim e.g. revocation or suspension of an
+account</p>
+</li>
+<li>
+<p><strong>&lt; additional revocation authority></strong> [type:address] list of
+accounts which are authorized to update status of the claim other
+than the owner. The owner has a special right to update the list of
+revocation authorities to hold new addresses.</p>
+<hr>
+<p>EXAMPLE: Claim Registration Data [Receipt]</p>
+</li>
+</ul>
+<p>The presence of Claim Registration Data [Receipt] means that the claim
+address (verification hash) has been written to a Claim Registry on a
+Witness Network.</p>
+<p>Protocol: Aqua Identity Protocol Version 1.0</p>
+<p>Registration Event: 1</p>
+<ul>
+<li>Domain ID: e9ece84189</li>
+<li>Claim address (verification hash of self-signed claim):
+1db331add502cf1b1712468d1c3e5d66a0016a6f04885c5533619ffbb43fffb6dfa452e119d4bee7628e9792af69089d38d860a5f8d0708184bbb74b8cabdaf7</li>
+<li>
+<if bulk registration>
+- Merkle Root:
+7e9782fb8a6e749ef2ba48f8cd410b05335ba48b20ba42508efeb76add38b0f39e717e91381c8de34641af4c477c39fc169eaa0908dba25e0a54e8de615fcd00
+- Claim Snapshot Verification Hash:
+278f930a35d06d7b9d28aab37d402c147d1beffdbe53d212481c17ec686698e9469f9cf7d7d53b9a4435c4b99ca2e578b5dc5fec6c63cb802b540493fe927575
+</li>
+<li>Witness Network: goerli</li>
+<li>Claim Registry Smart Contract Address:
+0x45f59310ADD88E6d23ca58A0Fa7A55BEE6d2a611</li>
+<li>Transaction Hash:
+0xa572e8d6ef8d4a1bb3b5087680817e70bb79a0376c3a9be9e2c6b4d92df228a1
+Sender Account Address: 0xa2026582b94feb9124231fbf7b052c39218954c2
+<hr>
+</li>
+</ul>
+<h4 id=bclaim-revocation-b><b>Claim Revocation </b></h4>
+<p><strong>Traditional</strong> <strong>revocation:</strong></p>
+<ul>
+<li>Traditional strategies for certificate revocation can be
+applied.<sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup></li>
+<li>Most effective are short expiration dates where possible, due to the
+lack of effective revocation processes for certificates without
+global registries.</li>
+</ul>
+<p><strong>Using Distributed Ledgers</strong></p>
+<ul>
+<li>Done via <a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim
+Registry</a>
+(indicates the global status of an identity claim to be either valid
+or invalid)</li>
+</ul>
+<p><strong>Process:</strong></p>
+<ul>
+<li>Locally completed (within the Self-Issued Identity Claim) by
+changing the status to &lsquo;revoked&rsquo; and signing by the issuer. This
+adds a receipt to the identity claim which is displayed when
+verifying the claim. This includes the revocation transaction for
+the revocation on the
+<a href=https://pkc.inblock.io/index.php/Identity-Registry>Identity-Registry</a></li>
+<li>If there is a new claim which is succeeding the previous identity
+claim<a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim
+Registry</a>, then
+this is also noticed within the revocation receipt under
+&lsquo;Successor-Claim: <hash>.</li>
+</ul>
+<p><b>Bulk Claim Registration (Should be part of Claim Registry)</b></p>
+<ul>
+<li>To reduce costs during registration of the identity claims via a
+<a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim Registry</a>
+they can be clustered and registered together</li>
+<li>We use the
+<a href=https://pkc.inblock.io/index.php/SmartContract:Identity-Registry>SmartContract:Identity-Registry</a>
+for this. To scale our efforts we utilize a variant of the
+&lsquo;Domain-Manifest-Generator / Publisher&rsquo; which is very similar. The
+differences are in the selection of what can be published, and the
+data structure which is published to the Claim Registry instead of
+the witness smart contract.</li>
+<li>The Claim Snapshot Generator can only include ID claims of your own
+<account> namespace.</li>
+<li>The Claim Snapshot Publisher is registering all selected claims
+(select them by page name (filter required) and will populate the
+target
+<a href=https://pkc.inblock.io/index.php/SmartContract:Identity-Registry>SmartContract:Identity-Registry</a>.
+Every claim will hold the relative merkle-proof to show the path for
+it&rsquo;s registration.</li>
+</ul>
+<p>Examples for <strong>Identity Claims with Aqua:</strong></p>
+<ul>
+<li><a href=https://pkc.inblock.io/index.php/User:0xa2026582b94feb9124231fbf7b052c39218954c2>Example Identity Documents with PKC and Data
+Accounting</a></li>
+<li>Reference:Example Identity Documents (Research)</li>
+</ul>
+<h1 id=faq>FAQ</h1>
+<ol>
+<li>How to find <a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim
+Registry</a>&rsquo;s? By
+following the chain of trust of authoritative claims and validating
+them one by one.</li>
+<li>How to check if authority is still valid and how to find an
+authority registry? As before, by reading the chain of trust and
+looking up the status of the related identity claims.</li>
+<li>How to visually check authority dependencies? It is possible to
+visualize the links of links of links to represent the chain of
+trust.</li>
+</ol>
+<p>Important References:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=gWfAIYXcyH4&ab_channel=Okta">Basic intro into
+DID</a></li>
+<li><a href="https://www.youtube.com/watch?v=8c7yRTENqSc&ab_channel=DecentralizedIdentityFoundation">Basic intro into
+DIDComm</a></li>
+<li><a href=https://www.w3.org/TR/vc-data-model/#claims>W3C Verified Data
+Model</a></li>
+<li><a href=https://w3c-ccg.github.io/vc-status-rl-2020/>Revocation List 2020</a>
+A privacy-preserving mechanism for revoking Verifiable Credentials</li>
+<li><a href=https://github.com/decentralized-identity/didcomm-messaging>DIDCOMM implementations and
+use-cases</a></li>
+<li><a href=https://github.com/spruceid/didkit>DIDkit</a></li>
+</ul>
+<p>Thought leader Christopher Allen:</p>
+<ul>
+<li><a href=https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md>Self-Sovereign-Identity-Principles</a></li>
+<li><a href=https://github.com/BlockchainCommons/Gordian>A bitcoin based SSI infrastructure
+prototype</a></li>
+</ul>
+<p><references></p>
+<p>See Implementation Specific Aqua Identity Protocol Implementation in MW
+e</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p><a href=https://identity.foundation/>https://identity.foundation/</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p><a href=https://www.w3.org/>https://www.w3.org/</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:3 role=doc-endnote>
+<p><a href=https://www.weboftrust.info/>https://www.weboftrust.info/</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:4 role=doc-endnote>
+<p><a href=https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md>https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md</a>&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:5 role=doc-endnote>
+<p><a href=https://www.securew2.com/blog/certificate-revocation-crl-explained>https://www.securew2.com/blog/certificate-revocation-crl-explained</a>&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:6 role=doc-endnote>
+<p><a href=https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx>https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx</a>&#160;<a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-a6fbec1617f3ef12f99d43aba6d2750f>3 - Aqua Name Resolution (ANS)</h1>
+<div class=lead>ANS is used to hashes of various types to human readable names</div>
+<p>ANS is used to resolve hashes of various types to human readable names.</p>
+<p>The following hashes are resolved by the ANS:</p>
+<ul>
+<li>wallet-addresses to names, organisations an aliases.</li>
+<li>genesis_hashes to titles.</li>
+<li>domain_ids to registered endpoints of that domain.</li>
+</ul>
+<p>See the <a href=https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolution.tsx>reference implementation</a>.</p>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-57cc4d332b508d187cfa5fc203f9d10e>4 - Assurance Levels (AAL)</h1>
+<div class=lead>Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation.</div>
+<p>How safe are the wallets to used? - Current PKC Pilot - relating to the
+&lsquo;Authentication assurance level&rsquo;s (AAL)&rsquo; according to the World Bank
+standards:</p>
+<p>See short presentation <a href=https://github.com/inblockio/aqua-docs/files/7885411/Aqua_PKC_-_Wallet-Security.pdf>Aqua_PKC_-_Wallet-Security.pdf</a></p>
+<h3 id=level-1>Level 1</h3>
+<p>The Metamask wallet alone has a low (level 1 ) level of assurance.
+MetaMask is the most common browser blockchain wallet applications on
+the web and their developer teams strive for increased security to keep
+crypto-assets of their 10 Million+ Users safe.</p>
+<h3 id=level-2>Level 2</h3>
+<p>Metamask offers integration with Hardware-Wallets which raises the level
+of assurance by having at least 2 authentication factors (e.g., a token
+with a password or PIN) to min. level 2. The Hardware-Tokens are build
+to be temper proof.</p>
+<h3 id=level-3>Level 3</h3>
+<ul>
+<li>It is possible to integrate the different layers of security at once</li>
+</ul>
+<p>with Metamask (Password Protection) a hardware-token (temper proof) with
+PIN a one-time-password generator based on your mobile-phone
+(recommended is a hardened mobile phone which also uses biometrics for
+highest security) requires implementation of one-time-password
+authentication for logins after wallet-authentication see
+<a href=https://github.com/inblockio/micro-PKC/issues/37>https://github.com/inblockio/micro-PKC/issues/37</a></p>
+<ul>
+<li>
+<p>Other high security options allow multi-signature logins with
+smart-contracts requiring multiple parties to confirm the operation
+to be executed. This can be defined based on the smart contract to
+extreme security as each of the layers mentioned above can be added
+to each party being involved in the multi-signature event to open a
+PKC or to SIGN a verified page within the PKC or to witness a data
+set via a witness network.</p>
+</li>
+<li>
+<p>The mentioned security model is not dependent on the security of
+Metamask. If Metamask is hacked it will not allow to compromise the
+model above as the security of the private key of the hardware token
+is preserved.</p>
+</li>
+</ul>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-56dfcabf2dc03006f0595ecc0ac42778>5 - Data Accounting</h1>
+<div class=lead>Introduces the concept of Data Accounting</div>
+<p>We first exchanged goods, then we used means to exchange goods, such as
+shells and coins. Today we use money. We have transitioned to a world where
+we present and exchange data to receive goods and services.</p>
+<p>The system for accounting provided by Luca Pacioli, the double-entry
+accounting is the foundation of our work. We present a modern
+way to do double-entry bookkeeping for data.</p>
+<p>Data accounting is the process of metering data in a standardized unit
+of exchange, and converting it into a form which can be exchanged to
+provide data symmetry between accounts.</p>
+<p>The unit of exchange is not measured in a numeric value as found in cash
+systems. Data have multi-dimensional value, which means they depends on your
+perspective and your relationship to data. This determines how much this
+data-set is worth to the individual.</p>
+<p>The standard measure of exchange is a hash, representing the state of the
+data. A SHA3-512 hash always has 128 characters, regardless of the size
+of the data it is representing.</p>
+<h2 id=metering-data--anchoring-data-in-space>Metering data / anchoring data in space</h2>
+<p>To meter data, we can refer to them using a digital fingerprint, i.e. their
+hash. This allows us to refer to the data in a consistent form. The hash has
+captured sufficient entropy to be unique, so it becomes a unique resource
+locator. This ensures that it is always deterministic to what data we relate
+to.</p>
+<h2 id=accounting-data--anchoring-data-to-account>Accounting data / anchoring data to account</h2>
+<p>The second step is that the data is attributed to a specific account. This is
+achieved by using cryptographic signatures known as <a href=https://en.wikipedia.org/wiki/Public-key_cryptography>public/private key
+encryption</a>. The public
+key acts as a unique account address. It is necessary that the accounts in use
+are globally unique, so there is no realistic probability of a name collision
+between accounts. This ensures that no data is attributed by mistake to two
+accounts or more.</p>
+<h2 id=proof-of-existence--anchoring-data-to-time>Proof of existence / anchoring data to time</h2>
+<p>The last step to account data is the usage of a cryptographically secure clock,
+so we know which data were witnessed first. Data can be replicated, so the
+value lies within the social implications of the message within the published
+data. This cryptographic timestamping allows us to determine the first account
+to witness the data. The most secure witness-networks which provide a service
+for cryptographic witnessing of datasets are Bitcoin and Ethereum. The first
+known examples of partial data accounting were done by <a href=https://www.vice.com/en/article/j5nzx4/what-was-the-first-blockchain>Surety in
+1995</a> and
+<a href=https://petertodd.org/2016/opentimestamps-announcement>OpenTimestamps in
+2012</a>.</p>
+<h2 id=practical-accounting>Practical accounting</h2>
+<p>The accounting book in the data accounting age is a &lsquo;data vault&rsquo; which is
+controlled by one or multiple accounts. This allows both personal data vaults
+or organizational data vaults.</p>
+<p>A data vault is controlled by a cryptographic wallet. The vault has the
+objective to govern the data for the account owner who is associated with the
+vault.</p>
+<p>The vault provides a capability to export and import data, so it can be
+exchanged between data vaults. This allows for collaboration at scale, and the
+usage of data as a means of exchange.</p>
+<p><i>Please contribute to this article (fixing errors) by exporting it and
+sending it back with your improvement to community[at]inblock[dot]io.</i></p>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-5f892ba1004f533c9d4bee3adbf9c072>6 - Data Governance</h1>
+<div class=lead>Introduces the concept of Data Governance</div>
+<p>Author: Ben Koo
+E-Mail: koo0905[at]gmail[dot]com
+Year: 2021</p>
+<p>Data Governance identifies how to manage the value of data. A well-known
+turning point in history was the publication of <a href=wikipedia:Luca_Pacioli title=wikilink>Luca
+Pacioli</a>&rsquo;s <a href=wikipedia:Summa_de_arithmetica title=wikilink>Summa de
+arithmetica</a>. This
+encyclopedia of mathematics, had 26 pages worth of text on what we call
+<a href=wikipedia:Double-entry_bookkeeping title=wikilink>Double-entry
+bookkeeping</a>. This became
+the foundational literature for
+<a href=wikipedia:accounting title=wikilink>accounting</a>, the progenitor of using
+data to assign value to accounts, and henceforth gave birth to the
+practice of data governance.</p>
+<h1 id=accounting-as-the-foundation-of-data-governance>Accounting as the foundation of Data Governance</h1>
+<p>According to historian Jane-Gleeson White<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup><sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>, Pacioli&rsquo;s double
+entry book keeping idea influenced the development of arts, sciences,
+and capitalism. <a href=wikipedia:Double-entry_bookkeeping title=wikilink>Double-entry
+bookkeeping</a> as a
+rigorous approach to ensure data integrity, not only influenced the
+practice of the accounting profession, and it had a significant impact
+on the the formulation of <a href=wikipedia:Hamiltonian_Mechanics title=wikilink>Hamiltonian
+Mechanics</a>, which is a
+foundational theory of both classical mechanics and quantum mechanics.</p>
+<p>Sir <a href=wikipedia:William_Rowan_Hamilton title=wikilink>William Rowan
+Hamilton</a> wrote a paper<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>
+cited many many scholars to demonstrate that many ideas about complex
+algebraic manipulation that laid the foundation of scientific
+revolutions are based on the formulation of creating accountable
+mathematical formulation strategies through double entry book keeping.
+<a href=https://www.ellerman.org>David Ellerman</a> had a paper that explains the
+powers of double entry bookkeeping in sciences<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>. The notion that
+creating public addresses for transactions amongst different accounts
+has been documented as a scientific theory on Double Entry Book-keeping.
+This book can be found online<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup>:</p>
+<h1 id=digital-governance>Digital Governance</h1>
+<p>Given the intellectual roots of data governance have strong linkages to
+mathematics and accounting, it is only after the introduction of
+<a href=wikipedia:personal_computer title=wikilink>personal computing devices</a>,
+and later the ubiquity of <a href=wikipedia:Internet title=wikilink>Internet</a>
+access that made data governance an idea relevant to public affairs. The
+argument is that many people&rsquo;s basic privacy and property rights may be
+challenged by people who have access to data collection and deployment
+technologies. Imminent threats such as fake news, big brother monitoring
+practices, identity thefts, and crypto currency issuance are already
+challenging the stability of the existing social fabric. These type of
+social debates are often related to the ideas of <a href=wikipedia:Digital_governance title=wikilink>Digital
+governance</a>. At this time,
+digital governance has not yet become a mature field of study, and it
+needs to be grounded in simple principles, so that it can be
+transparently practiced with local adaptations.</p>
+<h1 id=conceptualization-of-data-governance>Conceptualization of Data Governance</h1>
+<p>Beside the notion of digital governance, data as an asset class must be
+kept accountable, so that it can be evaluated, and transferred with an
+objective operational framework. Knowing how to organize data in formats
+that satisfy consistent abstraction strategies, such as <a href=wikipedia:URI title=wikilink>Universal
+Resource Identifier</a> and <a href=wikipedia:URL title=wikilink>Universal Resource
+Locator</a> are important starting points in this
+field. Earlier work in data governance in a web of <a href=wikipedia:Hyperlink title=wikilink>hyperlinked
+media</a> can be traced back to <a href=wikipedia:Project_Xanadu title=wikilink>Project
+Xanadu</a> by <a href=wikipedia:Ted_Nelson title=wikilink>Ted
+Nelson</a>.</p>
+<p>More recent more publications in this fields are
+<a href=wikipedia:Lawrence_Lessig title=wikilink>Lessig</a>&rsquo;s <a href=https://lessig.org/product/codev2>Code
+v2</a><sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup> and soon to be published work
+of <a href=wikipedia:Alex_Pentland title=wikilink>Alex Pentland</a>&rsquo;s <a href=https://wip.mitpress.mit.edu/new-economy>Building the
+New Economy</a><sup id=fnref:7><a href=#fn:7 class=footnote-ref role=doc-noteref>7</a></sup>.</p>
+<h1 id=references>References</h1>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>J. Gleeson-White, Double Entry: How the merchants of Venice shaped
+the modern world&ndash;and how their invention could make or break the
+planet, publisher Allen & Unwin, <a href=ISBN:978-1-74175-755-2>ISBN:978-1-74175-755-2</a>, November
+2011&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p>J. Gleeson-White, SIX CAPITALS, or CAN ACCOUNTANTS SAVE THE
+PLANET?, publisher Allen & Unwin, ISBN-10:9780393246674, February
+2015&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:3 role=doc-endnote>
+<p>Hamilton, S.W.R. (1837) Theory of Conjugate Functions, or
+Algebraic Couples: with a Preliminary and Elementary Essay on
+Algebra as the Science of Pure Time, Transactions of the Royal Irish
+Academy, 17pp. 293–422.&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:4 role=doc-endnote>
+<p>David Ellerman, On Double-Entry Bookkeeping: The Mathematical
+Treatment, <a href=https://arxiv.org/pdf/1407.1898.pdf>https://arxiv.org/pdf/1407.1898.pdf</a>&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:5 role=doc-endnote>
+<p>J.C. Colt, The Science of Double Entry Book-keeping, online
+media:<a href=https://core.ac.uk/download/pdf/56693696.pdf>https://core.ac.uk/download/pdf/56693696.pdf</a>, last accessed:
+May 4th, 2021&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:6 role=doc-endnote>
+<p>L. Lessig, Code: And Other Laws of Cyberspace, Version 2.0,
+Publisher: Basic Books, 2nd Revised edition, December 2006&#160;<a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:7 role=doc-endnote>
+<p>Alex Pentland, Alexander Lipton, and Thomas Hardjono, Building the
+New Economy, MIT Press, Work in Progress,
+<a href=https://wip.mitpress.mit.edu/new-economy>https://wip.mitpress.mit.edu/new-economy</a>&#160;<a href=#fnref:7 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-5c72a60571f19ea9337b7db443f59abd>7 - Delegated Witnessing</h1>
+<div class=lead>Describes the process of sending domain snapshots to remote data vaults.</div>
+<p>Describes the process of sending a domain snapshot to a remote data vault for
+witnessing. The domain snapshot is then included in the witnessing event and
+sent back to its original data vault. This makes the domain snapshot behave
+like an ordinary portable hash chain that can be witnessed. The relative path
+of the Merkle proof is used as a prefix for all other included portable hash
+chains included in the domain snapshot.</p>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-10ae72889c951a4e0286e4681cf48566>8 - Design Princiciples</h1>
+<div class=lead>Lists the deisgn principles underlaying our reference implementation</div>
+<p>The following design principles pertain to Aqua reference Implementation <code>PKC</code></p>
+<h2 id=private-is-default>Private is Default</h2>
+<p>The principle default to private is that no data of the PKC <a href=Aqua_Whitepaper.md#data-vault>Data
+vault</a> is shared without it being explicitly
+authorized by the associated account.</p>
+<h3 id=domain-access-levels>Domain Access Levels</h3>
+<p>Levels of access are:</p>
+<p>Private: Only the account owner has access to files and services
+initialized by his account. Agreement / Permissioned access: The Account
+owner grants other Account&rsquo;s access to files or services based on
+verifiable contracts which are themselves written with the Aqua Protocol
+to ensure they are forgery-proof and therefore safe. Public: Other
+Account&rsquo;s have access to the file or service without agreements.</p>
+<h2 id=offline-capability>Offline Capability</h2>
+<p>The PKC Data Vault follow&rsquo;s the principle of being able to run and be
+functional without internet connection after setup or through
+installation based on local installation files.</p>
+<p>This allows PKC setups to be kept offline from any internet connectivity
+while still functional. This can provide the required assurances for
+very sensitive data.</p>
+<h2 id=separation-of-account-and-service>Separation of Account and Service</h2>
+<p>Concern: There is a trend in the DIF/WC3 Identity space that some
+players like to accumulate personal identifiable data (PII) inside of
+Wallets. We think this is a ill-fated direction and there should be
+a clear separation between account and service. Wallets should not hold
+personal identifiable data.</p>
+<p>Benefits:</p>
+<ul>
+<li>If the service gets hacked, no account related data is leaked if
+it&rsquo;s not stored.</li>
+<li>Account is not compromised, as there is no password saved within the
+service with Password free login.</li>
+</ul>
+<h4 id=walletaqua_whitepapermdwallets-have-one-job-keep-private-keys-safe-account-management><a href=Aqua_Whitepaper.md#wallet>Wallet</a>&rsquo;s have one job. Keep private keys safe! (Account Management)</h4>
+<ul>
+<li>Should be stupid, simple, safe!</li>
+<li>Allowed operations:
+<ul>
+<li>Signing</li>
+<li>De- / Encrypt</li>
+<li>Publishing transactions to service (e.g. witness networks)</li>
+</ul>
+</li>
+<li>Ability to choose “high level of assurance” depending on the stakes
+associated with the account(s) managed by the wallet</li>
+<li>Takes care of key recovery mechanisms</li>
+</ul>
+<h4 id=data-vaultaqua_whitepapermddata-vault-service--has-one-job-keep-the-data-safe><a href=Aqua_Whitepaper.md#data-vault>Data Vault</a> (Service)- Has one job: keep the data safe!</h4>
+<ul>
+<li><a href=Principle:_Offline_Capability>Principle: Offline
+Capability</a> so it can run
+offline; works offline on local machine</li>
+<li>All significant actions authorized and managed though the wallet</li>
+<li>Should offer good tooling for data storage and manipulation</li>
+<li>Strong access control: By <a href=Principle:_Default_is_Private>Principle: Default is
+Private</a> which means data
+is only accessible by the owner.</li>
+<li>Data is well protected
+<ul>
+<li>The Data Vault should apply additional security features to keep
+the data safe.</li>
+<li>e.g. Encryption of files / databases if service is not used.</li>
+<li>e.g. Encryption of pages with web-decryption (allowing for
+End-to-End Encryption).</li>
+</ul>
+</li>
+<li>Capabilities for sharing and publishing data</li>
+<li>Offers full Backup and Recovery mechanisms to move data freely
+<ul>
+<li><a href=Principle:_Data_Portability title=wikilink>Principle: Data
+Portability</a></li>
+</ul>
+</li>
+</ul>
+<h2 id=signature-login>Signature Login</h2>
+<p>We do not use passwords for login but instead we use a signature of a
+private key to authorize access to a service. This increases security
+and does not require the user to remember a password, creating a better
+user experience.</p>
+<p>Pros:<br>
+* Account owner uses his wallet to complete a signature challenge for
+login. With this challenge he proves that he owns the private key to a
+public key. If the public key is registered as an account at the
+service, the account is granted access.</p>
+<ul>
+<li>The password can&rsquo;t be leaked as it does not exist.</li>
+<li>Very high security</li>
+</ul>
+<p>Contra:<br>
+* Requires access to the wallet which holds the private key to
+authorize access</p>
+<ul>
+<li>Not commonly understood by users as a way to login (new process)</li>
+</ul>
+<h2 id=principle-data-portability>Principle: Data Portability</h2>
+<p>The Principle of Data Portability means that the
+<a href=Aqua_Whitepaper.md#account>Account</a> owner can instruct the Service to Export
+all data associated with the <a href=Aqua_Whitepaper.md#account>Account</a> and is free
+to move this data to a new service which is capable of importing the
+data.</p>
+<h3 id=implementation-specifics>Implementation Specifics</h3>
+<p>In PKC&rsquo;s this is guaranteed by:<br>
+* providing a Backup and restore procedure which allows to move data
+between PKC&rsquo;s and restore them in case of a required recovery.</p>
+<ul>
+<li>providing a file import and export function</li>
+<li>providing an import / export API</li>
+</ul>
+<p>Furthermore we ensure with the development of the MediaWiki Data
+Accounting Extension, that the data is still compatible with the legacy
+import / export (which means only the text not the verification data is
+imported / exported.</p>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-07cd7003343e09fcc708bbb229cd64d6>9 - Guardian</h1>
+<div class=lead>Shows access and transport layer logic used to interconnect data vaults</div>
+<h1 id=context>Context</h1>
+<p>It is highly problematic to expose sensitive data, such as personal
+identifiable data, to the internet. The service who hosts that sensitive
+data, needs to be compromised only for a short amount of time, to leak
+all the data. Often caused by configuration mistakes or by
+vulnerabilities being present in the used technology stack.</p>
+<p>We can&rsquo;t effort to have leaks on personal-identifiable data in data
+vaults. To raise the bar on making attacks difficult and reducing the
+chance of leakage of information, we introduce the Guardian as a extra
+security layer to protect services like the PKC from attacks.</p>
+<h1 id=summary>Summary</h1>
+<p>The Guardian is a software which manages the boundaries of your digital
+domain. Guardians are used to connect to secure transport networks
+(HTTPS, Matrix Network, Didcomm) and publishing networks (e.g.
+Swarm.eth). The Guardian is used to build trusted connections to other
+Guardians via trusted transport-layers to exchange data with them. As
+the Guardian connects to other Guardians, it also manages all
+connections to services in it&rsquo;s domain and access to those services.</p>
+<h1 id=goal>Goal</h1>
+<p>Secure all services behind the Guardian from attacks and unauthorized
+access. Keep the data vault and it&rsquo;s data private and safe, while
+enabling the ability to exchange data with other Guardians.</p>
+<h2 id=how>How</h2>
+<p>Enforcement is handled on each connection and each data set so that
+services behind the Guardian are never directly exposed. This makes the
+Guardian the most security sensitive component in the Aqua reference
+implementation, as we expect the Guardian to handle all incoming and
+outgoing traffic. The Guardian enjoys additional attention and effort to
+be up to it&rsquo;s task by hardening it and applying security best practices
+to ensure that it is fulfilling it&rsquo;s security promise to keep services
+behind the Guardian safe.</p>
+<p>Every transaction leaving or wanting to enter your domain will be
+supervised and checked by the Guardian. The core functionality of the
+Guardian is a library to verify the Aqua Protocol. Only if the
+verification succeeds additional steps are introduced to make decisions
+how the data is handled.</p>
+<p>This allows the Guardian to read and understand Aqua verified data. This
+allows for the implementation of a wide set of behavioral rules and
+offers the opportunity to create various &lsquo;Smart contract&rsquo; languages on
+top of it.</p>
+<p>The Guardian verifies a file, reads its contents and checks it&rsquo;s
+permissions to classify if an action is considered legal or illegal,
+permitted or denied. Basic functionality for a Guardian can be compared
+with a traditional firewall, or a application firewall but is much more
+sophisticated to manage access on the data-level.</p>
+<h1 id=terminology>Terminology:</h1>
+<p>Proving ownership over a domain by signing the domain ID with an
+self-issued identity claim which is also registered in a claim registry
+to ensure nobody claims to have owned that domain before by manipulating
+the digital clock and faking an earlier owner-ship claim over the
+domain.</p>
+<h2 id=permission-agreements--data-usage-agreement--access-rights><strong>Permission Agreements</strong> / Data Usage Agreement / Access Rights</h2>
+<p>are contracts which represent the terms and conditions under which files
+and/or services are shared with other accounts and/or their digital
+domains.</p>
+<p>By nature those Permission Agreements will be compiled through pages and
+stored as files. To form an agreement, the other party must be notified
+about new resources as they become available. For example, when we share
+a page with another account. To complete a permission agreement, the
+counter party has to sign the permission agreement or reject it. If the
+permission agreement is signed, the other party enters a contractual
+relationship in which they will be liable for any agreement violates
+executed from their digital domain.</p>
+<h1 id=processes>Processes</h1>
+<h2 id=domain-handshake>Domain Handshake</h2>
+<p>Establish trust between two Aqua domains. For this we have Alice and Bob which
+want to establish trust between their domains. They both have a Guardian in
+place to protect their data vaults.</p>
+<p>Step 1) Alice: Create access contract:
+I &lt;Alice_account> want to connect from my &lt;domain_id> to a &lt;domain_id> controlled by &lt;Bobs_account> with my &lt;alice_domain_id> via the following channel: DNS/HTTPS via &lt;alice_Guardian.domain.com>.
+Step 2) Alice: sign contract
+Step 3) Alice: SEND contract send the page via &lsquo;mail&rsquo; / &lsquo;matrix&rsquo; whatever to the remote PKC instance.
+Step 4) Bob: veries the contract contract and imports it
+Step 5) Bob: extend contract: I &lt;bobs_acocunt> connect my PKC &lt;bobs_domain_id> to your PKC &lt;Alice_domain_id> via my Guardian_endpoint &lt;bobs_guardian.domain2.com>.
+Step 6) Bob: sign extended contract: Bob uses his wallet to sign his extended contract.
+Step 7) Bob: send extended contract TO Alice: Bob sends his Contract to his Guardian.
+Step 8) Bob&rsquo;s Guardian: Verifies and sends the contract to Alice Guardian.
+Step 9) Alice Guardian:
+Guardian verifies all data
+Sends OK back to Bob&rsquo;s Guardian
+Sends Updates contract into Alice PKC
+Waits for Bob&rsquo;s Guardian to request available pages
+Step 10) Bob&rsquo;s Guardian requests a list of pages: ' What pages do you share with me?'
+Step 11) Alice Guardian: Returns list of accessible resources for Bob</p>
+<h2 id=example-sharing-a-file>Example: Sharing a File</h2>
+<p>Target: Sharing a file with another account. Using two Aqua data vaults
+with their two Guardians to manage access to them. We assume the
+Guardians already have executed a handshake to enter a trusted
+relationship. We also assume, that the file should underlay access
+basedon account restrictions and domain restrictions.</p>
+<p><strong>Example 1:</strong> Sharing a file <strong>without additional</strong> constrains with
+another account.</p>
+<p>Alice wants to share her page &lsquo;My secret research&rsquo; with Bob. Their
+Guardians have already formed a trusted connection. What Alice needs to
+do now is to add a sub-page with an immutable link under the &lsquo;My secret
+research&rsquo; page and define access. To be able to define access Alice
+needs to have a claim over the ownership over the domain she is sharing
+from.</p>
+<p>Alice creates an Access Permission for the whole page or for a single
+revision by creating a page with the following syntax:</p>
+<ul>
+<li>
+<p>&lt;genesis_hash>:access_contract</p>
+</li>
+<li>
+<p>To give access to the whole page with all it&rsquo;s revisions.</p>
+</li>
+<li>
+<p>&lt;revision_hash>:access_contract</p>
+</li>
+<li>
+<p>To give access to a specific revision.</p>
+</li>
+</ul>
+<hr>
+<p><strong>Content of the page:</strong></p>
+<p>I Alice <alice-account> give access to Bob <bob-account></p>
+<ul>
+<li>option 1: to the whole page including it&rsquo;s history &lt;genesis_hash></li>
+<li>option 2: to the following revision &lt;revision_hash>&lsquo;My secret
+research&rsquo;</li>
+</ul>
+<p><strong>Additional one-sided conditions:</strong></p>
+<ul>
+<li>This access contract expires in 7 days</li>
+</ul>
+<p>This contract will come into place with my <alice-account> signature.</p>
+<p>The Guardian will react to a specific syntax of pages holding contracts,
+agreements and access rights to adjust his network access rights
+accordingly to it. Alice-Guardian will respond to the question what
+resources are shared by Bobs-Guardian with the answer that there is a
+new page available according to the access contract which now gives
+Bobs-Guardian the ability to query the content of &lsquo;My secure research&rsquo;
+from Alice according to the contract. Depending on Bobs-Guardian
+setting, the Guardian might automatically load the resource and forward
+it into the post-box of Bobs Data Vault.</p>
+<p><strong>Example 2:</strong> Sharing a file <strong>with</strong> constrains forming a <strong>contract</strong>
+to do so.</p>
+<p>Same as 1 expect that for the contract to come into place, Bob needs to
+sign the contract from Alice containing additional constrains.</p>
+<hr>
+<p><strong>Content of the page:</strong></p>
+<p>I Alice <alice-account> give access to Bob <bob-account></p>
+<ul>
+<li>option 1: to the whole page including it&rsquo;s history &lt;genesis_hash></li>
+<li>option 2: to the following revision &lt;revision_hash>&lsquo;My secret
+research&rsquo;</li>
+</ul>
+<p><strong>Under the following conditions:</strong></p>
+<ul>
+<li>Do not share outside your domain &lt;Bobs-domain_id></li>
+<li>Do not share with any body else (Bobs domain can&rsquo;t have another
+account registered to it, if there is an account registered the
+Guardian of Bob will say that Bobs domain does not fulfill the
+requirements to establish this contract.</li>
+<li>Do not modify it.</li>
+<li>Delete it after 7 days.</li>
+</ul>
+<p>For this contract to be valid, signatures of first Alice and then Bob
+need to be present. This means, after Alice signed the access contract,
+the contract is a new available resource to Bob to be loaded. Bob can
+now sign the resource in his domain and return the contract. Leading to
+the contract send back to Alice domain and being updated there. Bob now
+gets access to &lsquo;My secret research&rsquo; which has been updated as well, to
+contain via an immutable link the access contract.</p>
+<p>Permission Templates, Complex Permissions (Groups and more)</p>
+<p>It is possible to apply complex permissions based on templates, or and
+connecting multiple access contracts by using</p>
+<ul>
+<li>instead of this syntax &lt;genesis_hash>:permission_agreement</li>
+<li>the following the syntax &lt;genesis_hash>:&lt;genesis_hash-2> in
+which the &lt;genesis_hash-2> contains a list of sub-pages with access
+contracts which can be used to apply access via permission-objects
+which are represented by the &lt;genesis_hash-2> page object.</li>
+</ul>
+<ol>
+<li>Alice wants to</li>
+<li>If the user wants to propose changes to the page, he will send an
+updated PAGE FILE to the OWNER of the PAGE.</li>
+<li>The owner can decide to ACCEPT the changes. Or to include the
+changes in the HISTORY File, but not COMMIT them. Or to NOT include
+the update of the PAGE, and disregard it.</li>
+</ol>
+<hr>
+<h3 id=specifications>Specifications:</h3>
+<p>The Guard Daemon checks if there is digital contract present in his
+domain. Those contracts set permissions for allowing a counter party to
+access a service or resource (like a file or a page, or a revision).
+It&rsquo;s also defining the constrains under which permissions access is
+given. In this case it requires the digital signature of the receiving
+party for the agreement to come into place and be valid.</p>
+<p>Guardians have administrative access to the services they manage.
+Therefore they can supervise the activities of services and use them as
+triggers to e.g. provide access according to a set permission without
+additional user action.</p>
+<h1 id=guardian-components>Guardian Components:</h1>
+<p>APIs</p>
+<ul>
+<li>System-API to control a service via a service specific library. Each
+services will have their own control-library and control API to
+create an abstraction layer which allows for a unified control logic
+in the Guardian.
+<ul>
+<li>E.g. an account is allowed to access a service</li>
+<li>E.g. a resource is shared with an account</li>
+<li>E.g. a trust relationship between two services is established
+(based on an agreement between two accounts) to exchange data</li>
+<li><strong>Implementation Specific PKC:</strong> All interactions for system
+interaction with MediaWiki / PKC
+<ul>
+<li>Execute Actions: Move, Update, Edit, Delete Pages</li>
+<li>Request send to the Guardian: Verify a specific page or a
+list of pages</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Data-API</strong> to retrieve Aqua-Data between a service and the
+Guardian, or between two Guardians.
+<ul>
+<li>Send data to import API</li>
+<li>Read data via export API
+<ul>
+<li>
+<p><strong>Implementation Specific PKC:</strong> Read special Pages used to
+give access e.g. Data Usage Agreements, Permission
+Agreements</p>
+<p><strong>Aqua Verification Library</strong> to be able to verify incoming and
+outgoing data</p>
+</li>
+</ul>
+</li>
+<li>implementation of the &lsquo;external-verifier&rsquo; in e.g. GO, Typescript
+or Javascript (current)</li>
+</ul>
+</li>
+<li>Account-Registry (Holding the list of trusted keys and the
+relationship between them)
+<ul>
+<li>This includes defined &lsquo;trusted accounts&rsquo;</li>
+</ul>
+</li>
+<li>Session-Handler/Registry (Acts like Stateful-Firewall on the
+page-object level to mange imports / exports). The Guardian verifies
+incoming and outgoing data and constructs sessions based on it.</li>
+<li>Guardian Policies: Are sets of rules followed and enforced by the
+Guardian. This includes set of rules used to protect the domain from
+unauthorized operations and access. Part of that are page access
+permissions which are managed by the <a href=Data_Usage_Agreement title=wikilink>Data Usage
+Agre</a><a href=Data_Usage_Agreement title=wikilink>ement</a>s.
+<ul>
+<li>&lt;domain_id><account>&lt;genesis_hash>&lt;revision_hash>:&lt;domain_id><account>&lt;genesis_hash>&lt;revision_hash></li>
+</ul>
+</li>
+<li>Transport Layer API&rsquo;s / Sub-Modules for connectivity to distributed
+services
+<ul>
+<li>The Guardian-to-Guardian communication handler (via DNS/HTTPS
+transport)</li>
+<li>Ethereum Integration, Ethereum Handler (As a witness Network)</li>
+<li>Matrix Integration, Matrix Handler (As a restrictive/
+permissioned transport layer)</li>
+<li>Schwarm Integration, Swarm Handler (As a publishing network)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Giving access to pages with one-time passwords and signatures:</strong></p>
+<p>If you want to give somebody access to a page without &mldr; continue.</p>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-66780b2f21c94943f8daf23f4c0d34a4>10 - Immutable Hyperlinks</h1>
+<div class=lead>Shows how the Aqua URI&rsquo;s can be used as immutable links.</div>
+<p>Traditional hyperlinks are usually
+<a href=https://en.wikipedia.org/wiki/URL>URL&rsquo;s</a> based on the
+<a href=https://en.wikipedia.org/wiki/Domain_Name_System>DNS</a> structure.</p>
+<p>This allows the resource to be routed via DNS and specified via the URL
+on the remote server.</p>
+<p>The limitations of URL&rsquo;s is that they are not expressing a specific
+state of the resource they represent. There is no way to verify if the content
+of the page is consistant with the content of the page who send a URL.
+For news pages this means that the content of the page could have changed. E.g.
+two visitors of the same news page could see two different pages.</p>
+<p>We need a better way to hyperlink so it&rsquo;s sure, that what is linked
+is consistant across domains and users. Therefore we introduce Aqua URI&rsquo;s which are
+used to enable the receive to verify the state of the ressource.</p>
+<h2 id=goal>Goal</h2>
+<p>Use Immutable Hyperlinks as Unique Resource Identifiers (URI&rsquo;s) to allow
+a consistant referenciation of ressources with the ability to verify them with the AQP.</p>
+<h2 id=success-criteria>Success Criteria</h2>
+<p>A Immutable Hyperlink schema which links to a specific state of a
+resource. Instead of a stateless hyperlink we use verification_hash as a
+URI which acts as the checksum to verify the retrieved revision.</p>
+<h2 id=input>Input</h2>
+<ul>
+<li>file upload wizard is executed with file-data and description as
+input</li>
+<li>file is stored with in the service triggering a hook leading to the
+calculation of</li>
+<li>verification_hash (calculated with the file as input for
+content_hash) which is stored in the revision_object (file or
+database)</li>
+</ul>
+<p>Output</p>
+<h6 id=heading></h6>
+<p>When linking the file it&rsquo;s displayed in the following format: [SHA3-512
+Hash|Descriptor Text]</p>
+<h2 id=boundary-conditions>Boundary conditions</h2>
+<ul>
+<li>File is too big to be hashed. We support currently up to 50 MB.</li>
+<li>File can&rsquo;t be hashed for some reason (error during the process to
+due an unexpected code execution)</li>
+<li>File is empty (has no content)</li>
+</ul>
+<h2 id=implementation>Implementation</h2>
+<p>We create Immutable Hyperlinks by moving from URL&rsquo;s to sha3-512 hashes as
+URI&rsquo;s. These URI&rsquo;s are globally unique and therefore collision resistant
+as the namespace is sufficiently large. By using the hashes as links we
+also refer to the state of the resource. As the hash is the
+verification_hash of the resource it allows us to verify the integrity
+of the resource with it.</p>
+<p>We are referring to files with their SHA3-512 hash in this format
+[SHA3-512|human_readable_filename]. Displayed is the human readable
+filename white it&rsquo;s stored with the full SHA3-512 hash which allows us
+to be used as Immutable Hyperlinks.</p>
+<p>To allow routing between resources we can add the &lt;domain_id> as a
+prefix to the &lt;verification_hash> resulting in the following syntax:</p>
+<p><code>example: aqua://&lt;domain_id>/&lt;page_verification_hash></code></p>
+<p>Note: Implementatstion specific to aqua-PKC:</p>
+<ul>
+<li>The verification_hash is stored in the content-slot &lsquo;transclusion hashes&rsquo; with the internal links which referne the ressource.</li>
+</ul>
+</div>
+</main>
+</div>
+</div>
+<footer class="bg-dark py-5 row d-print-none">
+<div class="container-fluid mx-sm-5">
+<div class=row>
+<div class="col-6 col-sm-4 text-xs-center order-sm-2">
+<ul class="list-inline mb-0">
+<li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title="User mailing list" aria-label="User mailing list">
+<a class=text-white target=_blank rel=noopener href=mailto:info@inblock.io aria-label="User mailing list">
+<i class="fa fa-envelope"></i>
+</a>
+</li>
+<li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title=Twitter aria-label=Twitter>
+<a class=text-white target=_blank rel=noopener href=https://twitter.com/inblockio aria-label=Twitter>
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title=Matrix aria-label=Matrix>
+<a class=text-white target=_blank rel=noopener href=https://matrix.to/#/#aqua-community:matrix.jembawan.com aria-label=Matrix>
+<i class="fab fa-comment"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+<ul class="list-inline mb-0">
+<li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title=GitHub aria-label=GitHub>
+<a class=text-white target=_blank rel=noopener href=https://github.com/inblockio aria-label=GitHub>
+<i class="fab fa-github"></i>
+</a>
+</li>
+<li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title="Stack Overflow" aria-label="Stack Overflow">
+<a class=text-white target=_blank rel=noopener href=https://stackoverflow.com/questions/tagged/aqua aria-label="Stack Overflow">
+<i class="fab fa-stack-overflow"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+<small class=text-white>&copy; 2022 AQUA Protocol All Rights Reserved</small>
+<small class=ml-1><a href=https://aqua-protocol.org/privacy target=_blank rel=noopener>Privacy Policy</a></small>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js integrity=sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin=anonymous></script>
+<script src=/aqua-docs/js/tabpane-persist.js></script>
+<script src=/aqua-docs/js/main.min.8ab8f81ff7e1454d30024cd6f956d4d341c3a97e2a673f988065f2ee4e147922.js integrity="sha256-irj4H/fhRU0wAkzW+VbU00HDqX4qZz+YgGXy7k4UeSI=" crossorigin=anonymous></script>
+</body>
+</html>
