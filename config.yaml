@@ -173,7 +173,7 @@ params:
         desc: "Follow inblock.io on Twitter for latest news!"
       - name: "Matrix"
         url: "https://matrix.to/#/#aqua-community:matrix.jembawan.com"
-        icon: "fab fa-comment"
+        icon: "fa fa-comment"
         desc: "Chat with other project developers on Matrix"
 
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
