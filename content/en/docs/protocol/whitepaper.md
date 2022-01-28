@@ -52,17 +52,10 @@ or manipulates the data), and the verification of its existence and timestamp.
     The Aqua Protocol provides trustworthiness to data by
     securing data ✅ integrity, 🔏 account and ⌚ time.
 
-<<<<<<< Updated upstream
-In order to account for data, it is necessary to track its history. The AQP
-provides a globally unique resource identification (URI) for each
-revision of the verified data. This identifier is collision-free, and is
-referred the same way across multiple interacting hosts.
-=======
 In order to account data, it is necessary to track and verify its history. The
 AQP provides a globally unique resource identification (URI) for each revision
 of the verified data. This identifier is collision-free, and is referred the
 same way across multiple interacting hosts.
->>>>>>> Stashed changes
 
 ## Terminology
 
