@@ -702,19 +702,18 @@ Change in the data-structure:
 
 ## Services on AQP (Not yet implemented, exploration)
 
-### AQP-DACS: [Domain](#domain) Access Control System
+- AQP-DACS: [Domain](#domain) Access Control System
+ -   See: [Guardian](Guardian.md) (Acting similar to a WebApplication-Firewall)
 
--   -   See: [Guardian](Guardian.md) (Acting as like a Firewall)
+- ANS: Name-System and Name-Registry.
+ - See [Aqua Name Resolution](Aqua_Name_Resolution.md)
 
--   ANS: Name-System and Name-Registry.
-    -   See [Aqua Name Resolution](Aqua_Name_Resolution.md)
-
--   AQP-SSI: Self-Sovereign-Identity Protocol for [Identity
+- AQP-SSI: Self-Sovereign-Identity Protocol for [Identity
     Claim](Aqua_Identity_Protocol.md#self-issued-identity-claims) management
-    -   See [Aqua Identity Protocol](Aqua_Identity_Protocol.md)
+ - See [Aqua Identity Protocol](Aqua_Identity_Protocol.md)
 
--   AQP Delegated Witnessing
-    -   See [Delegated Witnessing](Delegated_Witnessing.md)
+- AQP Delegated Witnessing
+    - See [Delegated Witnessing](Delegated_Witnessing.md)
 
 ## Similar Projects
 
