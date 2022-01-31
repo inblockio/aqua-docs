@@ -53,7 +53,7 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.f58401e3da967ba703f3b9b85b135421.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.f2862c49004449db4fb617933abdcb2d.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -401,10 +401,9 @@ witness network.</li>
 <li>relative-merkle-tree-proof: This provide the relative path with all required
 hashes to verify the Merkle tree root from the first node which the
 <code>verification_hash</code> of the revision as a starting point.</li>
-<li><code>witness_event_verification_hash</code>: [IMPLICIT] Is not part of the data
-structure. It is calculated by taking the sha3-512 checksum of the
-<code>domain_snapshot_genesis_hash</code> and the <code>merkle_root</code> hash. This ensures that the
-<code>domain_snapshot</code> itself will be witnessed.</li>
+<li><code>witness_event_verification_hash</code>: It is calculated by taking the sha3-512
+checksum of the <code>domain_snapshot_genesis_hash</code> and the <code>merkle_root</code> hash.
+This ensures that the<code>domain_snapshot</code> itself will be witnessed.</li>
 </ul>
 <h2 id=example>Example</h2>
 <p>The following structure shows an AQP hash chain with 3 revisions:</p>
