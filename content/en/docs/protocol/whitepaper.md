@@ -365,10 +365,9 @@ Additional context:
 - relative-merkle-tree-proof: This provide the relative path with all required
   hashes to verify the Merkle tree root from the first node which the
   `verification_hash` of the revision as a starting point. 
-- `witness_event_verification_hash`: \[IMPLICIT\] Is not part of the data
-  structure. It is calculated by taking the sha3-512 checksum of the
-  `domain_snapshot_genesis_hash` and the `merkle_root` hash. This ensures that the
-  `domain_snapshot` itself will be witnessed.
+- `witness_event_verification_hash`: It is calculated by taking the sha3-512
+  checksum of the `domain_snapshot_genesis_hash` and the `merkle_root` hash.
+  This ensures that the`domain_snapshot` itself will be witnessed.
 
 
 ## Example
