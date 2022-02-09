@@ -36,7 +36,7 @@ Self-Sovereign-Identity provided by Christopher Allen in shortened form here.[^4
 
 Those 10 stated principles are implemented within the Aqua Protocol and
 it's existing reference implementation in various degrees. They are also
-represented in the [Design Principles](/docs/protocol/design-principles/).
+represented in the [Design Principles](design-principles.md).
 
 
 # Architecture
