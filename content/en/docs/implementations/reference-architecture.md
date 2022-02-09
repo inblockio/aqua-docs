@@ -311,7 +311,7 @@ authentication challenges.
 <!-- -->
 
 -   Supported by BSI secp256r1 but secp256k1 is not
-    mentioned.https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-4.pdf?\_\_blob=publicationFile&v=7
+    mentioned.https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-4.pdf?__blob=publicationFile&v=7
     Request for clarification was send via E-Mail on the 3rd of November
     2021 by Tim Bansemer. Answer of the BSI: Currently the BSI has no
     assessment or recommendation for secp256k1.
