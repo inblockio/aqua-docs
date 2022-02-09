@@ -19,9 +19,9 @@ description: >
 
 The Aqua Protocol (AQP) is a data accountability and exchange protocol between
 hosts in peer-to-peer environments. The AQP is used to realize the goal of
-[accounting for data origin and history](Data_Accounting.md). The description
+[accounting for data origin and history](data-accounting.md). The description
 for the proof-of-concept implementation of the AQP can be found in [this
-page](Reference_Implementation_Architecture.md).
+page](../implementations/reference-architecture.md).
 
 ## Motivation
 
@@ -65,7 +65,7 @@ A wallet is a software for protecting and managing private cryptographic keys
 done by authorization of transactions via digital signatures or by initiating
 decryption processes to access data.
 
-See [Separation of Concerns](Design_Principles.md#principle-separation-of-account-and-service).
+See [Separation of Concerns](design-principles.md#separation-of-account-and-service).
 
 ### Account
 
@@ -88,14 +88,14 @@ humans or machines. Identity claims issued via the AIP will help to provide the
 context required to meaningfully interact between accounts.
 
 For more on this topic, please read the [Aqua Identity
-Protocol](https://github.com/inblockio/aqua-docs/blob/main/Aqua_Identity_Protocol.md).
+Protocol](aqua-identity-protocol.md).
 
 ### Domain
 A domain is a unique namespace attributed to an account. It allows us to manage
 services and files within that namespace creating a domain of data governance
 After granted permissions, additional accounts can be added to share control
 over a domain or singular assets. To enforce boundaries of a domain, additional
-software like the [Guardian](Guardian.md) is required.
+software like the [Guardian](guardian.md) is required.
 
 E.g. by setting up the a data vault with your account it becomes your
 domain of data governance.
@@ -144,7 +144,7 @@ achieved through encryption, strong authentication and restrictive access to
 keep data private by default.
 
 See [Design Principles / Separation of Account and
-Service](https://github.com/inblockio/aqua-docs/blob/main/Design_Principles.md#principle-separation-of-account-and-service)
+Service](design-principles.md#separation-of-account-and-service)
 
 
 ### Witness
@@ -174,7 +174,7 @@ of the previous node content. A portable hash chain is a hash chain that can be
 moved from one host to another.
 
 ### Immutable Hyperlinks / Transclusions
-See [Immutable Hyperlinks](Immutable_Hyperlinks.md).
+See [Immutable Hyperlinks](immutable-hyperlinks.md).
 
 ## Specification
 
@@ -662,7 +662,7 @@ Moving over to revision based verification. This allows:
         sufficient to see that signature.
 -   This allows direct verification after every edit via the Guardian.
     This is the preparation in the interaction to provide services
-    through the [Guardian](Guardian.md).
+    through the [Guardian](guardian.md).
 -   Changing the design to include transclusions e.g. this allows the
     verification of subpages via their stateful links /
     revision_verification_hashes
@@ -702,17 +702,17 @@ Change in the data-structure:
 ## Services on AQP (Not yet implemented, exploration)
 
 - AQP-DACS: [Domain](#domain) Access Control System
- -   See: [Guardian](Guardian.md) (Acting similar to a WebApplication-Firewall)
+ -   See: [Guardian](guardian.md) (Acting similar to a WebApplication-Firewall)
 
 - ANS: Name-System and Name-Registry.
- - See [Aqua Name Resolution](Aqua_Name_Resolution.md)
+ - See [Aqua Name Resolution](aqua-name-resolution.md)
 
 - AQP-SSI: Self-Sovereign-Identity Protocol for [Identity
-    Claim](Aqua_Identity_Protocol.md#self-issued-identity-claims) management
- - See [Aqua Identity Protocol](Aqua_Identity_Protocol.md)
+    Claim](aqua-identity-protocol.md#self-issued-identity-claims) management
+ - See [Aqua Identity Protocol](aqua-identity-protocol.md)
 
 - AQP Delegated Witnessing
-    - See [Delegated Witnessing](Delegated_Witnessing.md)
+    - See [Delegated Witnessing](delegated-witnessing.md)
 
 ## Similar Projects
 
