@@ -11,7 +11,7 @@ The following design principles pertain to Aqua reference Implementation `PKC`
 ## Private is Default
 
 The principle default to private is that no data of the PKC [Data
-vault](Aqua_Whitepaper.md#data-vault) is shared without it being explicitly
+vault](whitepaper.md#data-vault) is shared without it being explicitly
 authorized by the associated account.
 
 ### Domain Access Levels
@@ -50,7 +50,7 @@ Benefits:
 -   Account is not compromised, as there is no password saved within the
     service with Password free login.
 
-#### [Wallet](Aqua_Whitepaper.md#wallet)'s have one job. Keep private keys safe! (Account Management)
+#### [Wallet](whitepaper.md#wallet)'s have one job. Keep private keys safe! (Account Management)
 
 -   Should be stupid, simple, safe!
 -   Allowed operations:
@@ -61,7 +61,7 @@ Benefits:
     associated with the account(s) managed by the wallet
 -   Takes care of key recovery mechanisms
 
-#### [Data Vault](Aqua_Whitepaper.md#data-vault) (Service)- Has one job: keep the data safe!
+#### [Data Vault](whitepaper.md#data-vault) (Service)- Has one job: keep the data safe!
 
 -   [Principle: Offline
     Capability](Principle:_Offline_Capability) so it can run
@@ -107,8 +107,8 @@ authorize access
 ## Principle: Data Portability
 
 The Principle of Data Portability means that the
-[Account](Aqua_Whitepaper.md#account) owner can instruct the Service to Export
-all data associated with the [Account](Aqua_Whitepaper.md#account) and is free
+[Account](whitepaper.md#account) owner can instruct the Service to Export
+all data associated with the [Account](whitepaper.md#account) and is free
 to move this data to a new service which is capable of importing the
 data.
 
