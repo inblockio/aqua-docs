@@ -22,12 +22,12 @@
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://aqua-protocol.org/docs/protocol/design-principles/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-11T08:31:38-05:00"><meta property="og:site_name" content="AQUA Protocol">
+<meta property="article:modified_time" content="2022-02-11T08:40:25-05:00"><meta property="og:site_name" content="AQUA Protocol">
 <meta itemprop=name content="Design Princiciples">
 <meta itemprop=description content="Lists the deisgn principles underlaying our reference implementation
 ">
-<meta itemprop=dateModified content="2022-02-11T08:31:38-05:00">
-<meta itemprop=wordCount content="669">
+<meta itemprop=dateModified content="2022-02-11T08:40:25-05:00">
+<meta itemprop=wordCount content="670">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Design Princiciples">
 <meta name=twitter:description content="Lists the deisgn principles underlaying our reference implementation
@@ -56,7 +56,7 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.d24f98e1f03d5a34f21a79d234439ba6.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.128f851df41262b2f3186916b12dee64.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -67,7 +67,7 @@
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <div id=content-mobile>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.d24f98e1f03d5a34f21a79d234439ba6.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.128f851df41262b2f3186916b12dee64.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form>
@@ -173,8 +173,10 @@
 </header>
 <p>The following design principles pertain to Aqua reference Implementation <code>PKC</code></p>
 <h2 id=private-is-default>Private is Default</h2>
-<p>The principle default to private is that no data of the PKC <a href=whitepaper.md#data-vault>Data
-vault</a> is shared without it being explicitly
+<p>The principle default to private is that no data of the PKC
+<a href=/docs/protocol/whitepaper/#data-vault>Data
+vault</a>
+is shared without it being explicitly
 authorized by the associated account.</p>
 <h3 id=domain-access-levels>Domain Access Levels</h3>
 <p>Levels of access are:</p>
@@ -204,7 +206,9 @@ it&rsquo;s not stored.</li>
 <li>Account is not compromised, as there is no password saved within the
 service with Password free login.</li>
 </ul>
-<h4 id=walletwhitepapermdwallets-have-one-job-keep-private-keys-safe-account-management><a href=whitepaper.md#wallet>Wallet</a>&rsquo;s have one job. Keep private keys safe! (Account Management)</h4>
+<h4 id=walletwhitepapermdwallets-have-one-job-keep-private-keys-safe-account-management>
+<a href=/docs/protocol/whitepaper/#wallet>Wallet</a>
+&rsquo;s have one job. Keep private keys safe! (Account Management)</h4>
 <ul>
 <li>Should be stupid, simple, safe!</li>
 <li>Allowed operations:
@@ -218,15 +222,21 @@ service with Password free login.</li>
 associated with the account(s) managed by the wallet</li>
 <li>Takes care of key recovery mechanisms</li>
 </ul>
-<h4 id=data-vaultwhitepapermddata-vault-service--has-one-job-keep-the-data-safe><a href=whitepaper.md#data-vault>Data Vault</a> (Service)- Has one job: keep the data safe!</h4>
+<h4 id=data-vaultwhitepapermddata-vault-service--has-one-job-keep-the-data-safe>
+<a href=/docs/protocol/whitepaper/#data-vault>Data Vault</a>
+(Service)- Has one job: keep the data safe!</h4>
 <ul>
-<li><a href=Principle:_Offline_Capability>Principle: Offline
-Capability</a> so it can run
+<li>
+<a href=Principle:_Offline_Capability>Principle: Offline
+Capability</a>
+so it can run
 offline; works offline on local machine</li>
 <li>All significant actions authorized and managed though the wallet</li>
 <li>Should offer good tooling for data storage and manipulation</li>
-<li>Strong access control: By <a href=Principle:_Default_is_Private>Principle: Default is
-Private</a> which means data
+<li>Strong access control: By
+<a href=Principle:_Default_is_Private>Principle: Default is
+Private</a>
+which means data
 is only accessible by the owner.</li>
 <li>Data is well protected
 <ul>
@@ -240,8 +250,10 @@ End-to-End Encryption).</li>
 <li>Capabilities for sharing and publishing data</li>
 <li>Offers full Backup and Recovery mechanisms to move data freely
 <ul>
-<li><a href=Principle:_Data_Portability title=wikilink>Principle: Data
-Portability</a></li>
+<li>
+<a href=Principle:_Data_Portability title=wikilink>Principle: Data
+Portability</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -267,8 +279,11 @@ authorize access</p>
 </ul>
 <h2 id=principle-data-portability>Principle: Data Portability</h2>
 <p>The Principle of Data Portability means that the
-<a href=whitepaper.md#account>Account</a> owner can instruct the Service to Export
-all data associated with the <a href=whitepaper.md#account>Account</a> and is free
+<a href=/docs/protocol/whitepaper/#account>Account</a>
+owner can instruct the Service to Export
+all data associated with the
+<a href=/docs/protocol/whitepaper/#account>Account</a>
+and is free
 to move this data to a new service which is capable of importing the
 data.</p>
 <h3 id=implementation-specifics>Implementation Specifics</h3>
@@ -284,7 +299,7 @@ Accounting Extension, that the data is still compatible with the legacy
 import / export (which means only the text not the verification data is
 imported / exported.</p>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified February 11, 2022: <a href=https://github.com/inblockio/aqua-docs/commit/1ed8a04e4de06d7e01920098aebfe4658d24df86>whitepaper: Fix typo (1ed8a04)</a>
+Last modified February 11, 2022: <a href=https://github.com/inblockio/aqua-docs/commit/0a1fb92100cd0e59de78a9d186a771e0a916efc4>feat: Enable relative Markdown links (0a1fb92)</a>
 </div>
 </div>
 </main>

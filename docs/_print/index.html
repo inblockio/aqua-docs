@@ -50,7 +50,7 @@ implementations. AQUA is heavily under development at the moment …">
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.d24f98e1f03d5a34f21a79d234439ba6.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.128f851df41262b2f3186916b12dee64.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -160,16 +160,21 @@ itself.</p>
 </tr>
 <tr>
 <td>Implementation:</td>
-<td><a href=https://github.com/inblockio/micro-pkc>https://github.com/inblockio/micro-pkc</a></td>
+<td>
+<a href=https://github.com/inblockio/micro-pkc target=_blank>https://github.com/inblockio/micro-pkc</a>
+</td>
 </tr>
 </tbody>
 </table>
 <h2 id=introduction>Introduction</h2>
 <p>The Aqua Protocol (AQP) is a data accountability and exchange protocol between
 hosts in peer-to-peer environments. The AQP is used to realize the goal of
-<a href=data-accounting.md>accounting for data origin and history</a>. The description
-for the proof-of-concept implementation of the AQP can be found in <a href=../implementations/reference-architecture.md>this
-page</a>.</p>
+<a href=/docs/protocol/data-accounting/>accounting for data origin and history</a>
+. The description
+for the proof-of-concept implementation of the AQP can be found in
+<a href=/docs/implementations/reference-architecture/>this
+page</a>
+.</p>
 <h2 id=motivation>Motivation</h2>
 <p>In today&rsquo;s world, there are no widely adopted trustless processes of checking if
 data have been manipulated or corrupted, are attributed to the wrong author, or
@@ -204,18 +209,24 @@ same way across multiple interacting hosts.</p>
 (of private-public key pairs) which are used to govern digital assets. This is
 done by authorization of transactions via digital signatures or by initiating
 decryption processes to access data.</p>
-<p>See <a href=design-principles.md#separation-of-account-and-service>Separation of Concerns</a>.</p>
+<p>See
+<a href=/docs/protocol/design-principles/#separation-of-account-and-service>Separation of Concerns</a>
+.</p>
 <h3 id=account>Account</h3>
 <p>We are following Ethereum&rsquo;s account definition:</p>
 <blockquote>
 <p>In general, there are two types of accounts. Externally owned accounts,
 controlled by private keys. And contract accounts, controlled by their
 contract code
-&ndash; <a href=https://ethereum.org/en/whitepaper/#ethereum-accounts>Ethereum Whitepaper</a></p>
+&ndash;
+<a href=https://ethereum.org/en/whitepaper/#ethereum-accounts target=_blank>Ethereum Whitepaper</a>
+</p>
 </blockquote>
 <p>In general, we can&rsquo;t prove if an account owner is a person or a machine. With
 advancements in AI, it will become increasingly difficult to prove that a human
-is a human. <a href=https://www.proofofhumanity.id/>Attempts are being made</a> to
+is a human.
+<a href=https://www.proofofhumanity.id/ target=_blank>Attempts are being made</a>
+to
 increase trustworthiness of accounts which fall short in questions of privacy
 and security as they make public claims. Traditional know your customer (KYC)
 combined with the AQP and Aqua Identity Protocol (AIP) identification processes
@@ -224,14 +235,18 @@ This allows us to outsource the problem of identification, where we only focus
 on unique accounts which are sufficient for data accounting independent of
 humans or machines. Identity claims issued via the AIP will help to provide the
 context required to meaningfully interact between accounts.</p>
-<p>For more on this topic, please read the <a href=aqua-identity-protocol.md>Aqua Identity
-Protocol</a>.</p>
+<p>For more on this topic, please read the
+<a href=/docs/protocol/aqua-identity-protocol/>Aqua Identity
+Protocol</a>
+.</p>
 <h3 id=domain>Domain</h3>
 <p>A domain is a unique namespace attributed to an account. It allows us to manage
 services and files within that namespace creating a domain of data governance
 After granted permissions, additional accounts can be added to share control
 over a domain or singular assets. To enforce boundaries of a domain, additional
-software like the <a href=guardian.md>Guardian</a> is required.</p>
+software like the
+<a href=/docs/protocol/guardian/>Guardian</a>
+is required.</p>
 <p>E.g. by setting up the a data vault with your account it becomes your
 domain of data governance.</p>
 <h3 id=revision>Revision</h3>
@@ -267,8 +282,10 @@ it can be easily priced, exchanged or traded.</p>
 a secure architecture and measures for keeping data assets safe. This is
 achieved through encryption, strong authentication and restrictive access to
 keep data private by default.</p>
-<p>See <a href=design-principles.md#separation-of-account-and-service>Design Principles / Separation of Account and
-Service</a></p>
+<p>See
+<a href=/docs/protocol/design-principles/#separation-of-account-and-service>Design Principles / Separation of Account and
+Service</a>
+</p>
 <h3 id=witness>Witness</h3>
 <p>We define witnessing as the process of observing an event. A witness is judged
 by their capability to recollect and share an observed event. In other words,
@@ -289,7 +306,9 @@ specific revision and the previous revisions within a hash chain has existed.</p
 of the previous node content. A portable hash chain is a hash chain that can be
 moved from one host to another.</p>
 <h3 id=immutable-hyperlinks--transclusions>Immutable Hyperlinks / Transclusions</h3>
-<p>See <a href=immutable-hyperlinks.md>Immutable Hyperlinks</a>.</p>
+<p>See
+<a href=/docs/protocol/immutable-hyperlinks/>Immutable Hyperlinks</a>
+.</p>
 <h2 id=specification>Specification</h2>
 <p>To identify a revision with a unique fingerprint, we hash its content using
 the SHA3-512 hashing function which always has a 128 characters long
@@ -300,9 +319,12 @@ with the revision, in addition to its content checksum. In the next section,
 we differentiate between REQUIRED and OPTIONAL properties for each
 revision.</p>
 <p>All hashes are based on
-<a href=https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf>SHA3-512</a>.
-This encryption standard is used to construct <a href=#portable-hash-chain>portable hash
-chains</a>, which are serializing of data and its history in
+<a href=https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf target=_blank>SHA3-512</a>
+.
+This encryption standard is used to construct
+<a href=#portable-hash-chain>portable hash
+chains</a>
+, which are serializing of data and its history in
 a form that can be verified, and independent of location. The portable hash
 chain can be fully or partially exchanged between hosts depending on the
 application of the data. From here on, we refer the term &ldquo;portable hash chain&rdquo;
@@ -364,7 +386,8 @@ REQUIRED.</li>
 content. These could be a file, a stateful link, or a signature. The content
 extensions are sorted alphabetically by their key names. OPTIONAL.</li>
 </ul>
-<p>To see an example of <code>contentObj</code> of a revision, see the <a href=#Example>example</a>
+<p>To see an example of <code>contentObj</code> of a revision, see the
+<a href=#Example>example</a>
 section,</p>
 <h2 id=metadata>Metadata</h2>
 <pre tabindex=0><code>metadata_hash = calculate_hash_sum(
@@ -386,7 +409,8 @@ YYYYMMDDHHMMSS e.g. 20211128092608).</li>
 pair. The protocol should be abstract, where it will support &lsquo;Method&rsquo; in later
 iterations. This will allow us to use different types of implementations such
 as: PGP signatures, Ethereum, or Bitcoin
-<a href=https://en.wikipedia.org/wiki/Cryptocurrency_wallet>wallet</a>&rsquo;s signatures.</p>
+<a href=https://en.wikipedia.org/wiki/Cryptocurrency_wallet target=_blank>wallet</a>
+&rsquo;s signatures.</p>
 <p>In this specification, we use the AQP reference implementation&rsquo;s signing
 method, which is via an Ethereum wallet.</p>
 <pre tabindex=0><code>signature_hash = calculate_hash_sum(
@@ -409,8 +433,10 @@ signs the following message:</p>
 Domain Snapshot is created. This is a collection of all revision hashes within
 one domain. A Merkle tree is used to unify all hashes of the latest revisions
 of all portable hash chains within a domain into a single hash value.</p>
-<p>The <code>witness_event_verification_hash</code> is written to the <a href=#witness-network>Witness
-Network</a>. The
+<p>The <code>witness_event_verification_hash</code> is written to the
+<a href=#witness-network>Witness
+Network</a>
+. The
 <code>witness_event_verification_hash</code> is then generated by using the
 <code>domain_snapshot_genesis_hash</code> and the <code>merkle_root</code> hash together. This
 allows the page snapshot itself to also be witnessed.</p>
@@ -688,11 +714,15 @@ performed and compared with the recalculated event.</p>
 <tbody>
 <tr>
 <td>Command-Line-Verification-Tool</td>
-<td><a href=https://github.com/inblockio/aqua-verifier-js>https://github.com/inblockio/aqua-verifier-js</a></td>
+<td>
+<a href=https://github.com/inblockio/aqua-verifier-js target=_blank>https://github.com/inblockio/aqua-verifier-js</a>
+</td>
 </tr>
 <tr>
 <td>Chrome Extension Verification Tool</td>
-<td><a href=https://github.com/inblockio/aqua-verifier-webextension>https://github.com/inblockio/aqua-verifier-webextension</a></td>
+<td>
+<a href=https://github.com/inblockio/aqua-verifier-webextension target=_blank>https://github.com/inblockio/aqua-verifier-webextension</a>
+</td>
 </tr>
 </tbody>
 </table>
@@ -716,7 +746,9 @@ sufficient to see that signature.</li>
 </li>
 <li>This allows direct verification after every edit via the Guardian.
 This is the preparation in the interaction to provide services
-through the <a href=guardian.md>Guardian</a>.</li>
+through the
+<a href=/docs/protocol/guardian/>Guardian</a>
+.</li>
 <li>Changing the design to include transclusions e.g. this allows the
 verification of subpages via their stateful links /
 revision_verification_hashes
@@ -762,28 +794,40 @@ underlying architecture.</li>
 <h2 id=services-on-aqp-not-yet-implemented-exploration>Services on AQP (Not yet implemented, exploration)</h2>
 <ul>
 <li>
-<p>AQP-DACS: <a href=#domain>Domain</a> Access Control System</p>
+<p>AQP-DACS:
+<a href=#domain>Domain</a>
+Access Control System</p>
 </li>
 <li>
-<p>See: <a href=guardian.md>Guardian</a> (Acting similar to a WebApplication-Firewall)</p>
+<p>See:
+<a href=/docs/protocol/guardian/>Guardian</a>
+(Acting similar to a WebApplication-Firewall)</p>
 </li>
 <li>
 <p>ANS: Name-System and Name-Registry.</p>
 </li>
 <li>
-<p>See <a href=aqua-name-resolution.md>Aqua Name Resolution</a></p>
+<p>See
+<a href=/docs/protocol/aqua-name-resolution/>Aqua Name Resolution</a>
+</p>
 </li>
 <li>
-<p>AQP-SSI: Self-Sovereign-Identity Protocol for <a href=aqua-identity-protocol.md#self-issued-identity-claims>Identity
-Claim</a> management</p>
+<p>AQP-SSI: Self-Sovereign-Identity Protocol for
+<a href=/docs/protocol/aqua-identity-protocol/#self-issued-identity-claims>Identity
+Claim</a>
+management</p>
 </li>
 <li>
-<p>See <a href=aqua-identity-protocol.md>Aqua Identity Protocol</a></p>
+<p>See
+<a href=/docs/protocol/aqua-identity-protocol/>Aqua Identity Protocol</a>
+</p>
 </li>
 <li>
 <p>AQP Delegated Witnessing</p>
 <ul>
-<li>See <a href=delegated-witnessing.md>Delegated Witnessing</a></li>
+<li>See
+<a href=/docs/protocol/delegated-witnessing/>Delegated Witnessing</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -793,22 +837,27 @@ the concept of portable hash chains, the concept of personal data vaults for dat
 management in comparison with the AQP reference implementation.</p>
 <p>This following list is not exhaustive:</p>
 <ul>
-<li><a href=http://surety.com/>Surety</a>
+<li>
+<a href=http://surety.com/ target=_blank>Surety</a>
 The oldest blockchain-like timestamping service which has been publishing
 to the New York Times since 1995.</li>
-<li><a href=https://opentimestamps.org/>OpenTimestamp</a>
+<li>
+<a href=https://opentimestamps.org/ target=_blank>OpenTimestamp</a>
 A free and open-source service provided by Peter Todd using the Bitcoin
 network as a distributed cryptographic clock. The AQP MAY use OpenTimestamp
 as a witness network.</li>
-<li><a href=https://originstamp.com/>OriginStamp</a>
+<li>
+<a href=https://originstamp.com/ target=_blank>OriginStamp</a>
 A company providing paid timestamping services for their customers.
 It looks very similar to OpenTimestamps with open-source client libraries.</li>
-<li><a href=https://www.factomprotocol.org/>Factom Protocol</a>
+<li>
+<a href=https://www.factomprotocol.org/ target=_blank>Factom Protocol</a>
 A service which creates an architecture with an extra layer of blockchain,
 to provide an extra layer of trusted parties while providing their own
 token. In our opinion, it introduces unnecessary complexity and
 intermediaries as dependencies compared to the AQP.</li>
-<li><a href=https://www.openattestation.com/>OpenAttestation</a>
+<li>
+<a href=https://www.openattestation.com/ target=_blank>OpenAttestation</a>
 An implementation of a timestamping service for document certification. One
 application of it is for secure digital vaccination certificates by the
 Singaporean government. They use the MetaMask Ethereum wallet for signing
@@ -913,7 +962,9 @@ Self-Sovereign-Identity provided by Christopher Allen in shortened form here.<su
 </ol>
 <p>Those 10 stated principles are implemented within the Aqua Protocol and
 it&rsquo;s existing reference implementation in various degrees. They are also
-represented in the <a href=/docs/protocol/design-principles/>Design Principles</a>.</p>
+represented in the
+<a href=/docs/protocol/design-principles/>Design Principles</a>
+.</p>
 <h1 id=architecture>Architecture</h1>
 <p>For the Aqua Identity Protocol to be implemented in accordance with the
 above statements, SSI-Principles and critical component choices from
@@ -948,8 +999,10 @@ protection for citizens.</p>
 claims can be partially revealed on demand to other parties. Those
 claims can also be protected by advancements in privacy technologies
 like Zero-Knowledge-Proofs and ongoing advancements in key management.</p>
-<p>Identity claims are sets of <a href=https://pkc.inblock.io/index.php/Verified_Data>Verified
-Data</a> which follow a
+<p>Identity claims are sets of
+<a href=https://pkc.inblock.io/index.php/Verified_Data target=_blank>Verified
+Data</a>
+which follow a
 structured data convention to claim or attest attributes to an account.
 For example, an attribute could be the year of birth of an account
 owner, or the legal name of an account owner. Claims should always be
@@ -957,8 +1010,10 @@ atomic to allow the account owner to disclose them selectivity.
 Different claims can be combined to represent a citizen ID or a
 drivers-license. Other claims can be educational certificates, like
 school certificates.</p>
-<p>Identity claims in the <a href=https://pkc.inblock.io/index.php/Aqua_Identity_Protocol>Aqua Identity
-Protocol</a> are
+<p>Identity claims in the
+<a href=https://pkc.inblock.io/index.php/Aqua_Identity_Protocol target=_blank>Aqua Identity
+Protocol</a>
+are
 <strong>always self issues</strong>. This means that the first signature on the claim
 needs to be from the private key which belongs to the account the claim
 is issued for. This proves account ownership. This means:</p>
@@ -990,7 +1045,8 @@ they have no account attribution.</p>
 <li>Syntax of Title: &lt;Account (e.g. Ethereum Wallet
 Address)>:&lt;Attribute (English Descriptive Title)></li>
 <li>Example:
-<a href=https://pkc.inblock.io/index.php/0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate>0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate</a></li>
+<a href=https://pkc.inblock.io/index.php/0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate target=_blank>0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate</a>
+</li>
 </ul>
 <p>The title is not protected against changes but the content of the page
 is protected.*<strong>IMPORTANT:</strong> Therefore we <strong>must</strong> compare the page
@@ -1095,8 +1151,11 @@ This can be supported via an Authoritative Claim and a comment which
 gets attached to the claim itself or is issued via an Attestation.</li>
 <li>To verify the signature, we use an automated verification process.
 This is done through implementations of an Aqua-Verifier like
-<a href=https://github.com/inblockio/aqua-verifier-js>https://github.com/inblockio/aqua-verifier-js</a> or
-<a href=https://github.com/inblockio/aqua-verifypage-chrome-extension><a href=https://github.com/inblockio/aqua-VerifyPage-chrome-extension>https://github.com/inblockio/aqua-VerifyPage-chrome-extension</a></a>
+<a href=https://github.com/inblockio/aqua-verifier-js target=_blank>https://github.com/inblockio/aqua-verifier-js</a>
+or
+<a href=https://github.com/inblockio/aqua-verifypage-chrome-extension target=_blank>
+<a href=https://github.com/inblockio/aqua-VerifyPage-chrome-extension target=_blank>https://github.com/inblockio/aqua-VerifyPage-chrome-extension</a>
+</a>
 which also checks against the restrictions given by the Aqua
 Identity Protocol or/and additional defined policies.</li>
 <li>Add access rights to a claim by adding a Data Usage Agreement which
@@ -1122,19 +1181,27 @@ reference point is required for the verifying party to trust.</li>
 </ol>
 <h4 id=trust-authorities><strong>Trust Authorities</strong></h4>
 <p>are accounts which have an elevated trusted position. They issue
-<a href=https://pkc.inblock.io/index.php/Authoritative_Claim>Authoritative Trust
-Claims</a> to give
+<a href=https://pkc.inblock.io/index.php/Authoritative_Claim target=_blank>Authoritative Trust
+Claims</a>
+to give
 legitimacy to a self-issued identity claim.</p>
-<p>Why do you trust a professor to issue an <a href=https://pkc.inblock.io/index.php/Educational_Certificate>Educational
-Certificate</a>?</p>
+<p>Why do you trust a professor to issue an
+<a href=https://pkc.inblock.io/index.php/Educational_Certificate target=_blank>Educational
+Certificate</a>
+?</p>
 <p>Because the professor is able to provide a trust chain, represented by a
-chained <a href=https://pkc.inblock.io/index.php/Authoritative_Claim>Authoritative Trust
-Claim</a>, proving
-that he has authority to attest an <a href=https://pkc.inblock.io/index.php/Educational_Certificate>Educational
+chained
+<a href=https://pkc.inblock.io/index.php/Authoritative_Claim target=_blank>Authoritative Trust
+Claim</a>
+, proving
+that he has authority to attest an
+<a href=https://pkc.inblock.io/index.php/Educational_Certificate target=_blank>Educational
 Certificate</a>
 with his signature. With his signature, he is increasing the trust of
-the self-issued <a href=https://pkc.inblock.io/index.php/Identity_Claim>Identity
-Claim</a> to allow it to
+the self-issued
+<a href=https://pkc.inblock.io/index.php/Identity_Claim target=_blank>Identity
+Claim</a>
+to allow it to
 have practical utility.</p>
 <h3 id=claim-registries><strong>Claim Registries</strong></h3>
 <p>A claim registry in the context of the Aqua Identity Protocol is a
@@ -1224,7 +1291,8 @@ global registries.</li>
 </ul>
 <p><strong>Using Distributed Ledgers</strong></p>
 <ul>
-<li>Done via <a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim
+<li>Done via
+<a href=https://pkc.inblock.io/index.php/Claim_Registry target=_blank>Claim
 Registry</a>
 (indicates the global status of an identity claim to be either valid
 or invalid)</li>
@@ -1236,20 +1304,23 @@ changing the status to &lsquo;revoked&rsquo; and signing by the issuer. This
 adds a receipt to the identity claim which is displayed when
 verifying the claim. This includes the revocation transaction for
 the revocation on the
-<a href=https://pkc.inblock.io/index.php/Identity-Registry>Identity-Registry</a></li>
+<a href=https://pkc.inblock.io/index.php/Identity-Registry target=_blank>Identity-Registry</a>
+</li>
 <li>If there is a new claim which is succeeding the previous identity
-claim<a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim
-Registry</a>, then
+claim
+<a href=https://pkc.inblock.io/index.php/Claim_Registry target=_blank>Claim
+Registry</a>
+, then
 this is also noticed within the revocation receipt under
 &lsquo;Successor-Claim: <hash>.</li>
 </ul>
 <p><b>Bulk Claim Registration (Should be part of Claim Registry)</b></p>
 <ul>
 <li>To reduce costs during registration of the identity claims via a
-<a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim Registry</a>
+<a href=https://pkc.inblock.io/index.php/Claim_Registry target=_blank>Claim Registry</a>
 they can be clustered and registered together</li>
 <li>We use the
-<a href=https://pkc.inblock.io/index.php/SmartContract:Identity-Registry>SmartContract:Identity-Registry</a>
+<a href=https://pkc.inblock.io/index.php/SmartContract:Identity-Registry target=_blank>SmartContract:Identity-Registry</a>
 for this. To scale our efforts we utilize a variant of the
 &lsquo;Domain-Manifest-Generator / Publisher&rsquo; which is very similar. The
 differences are in the selection of what can be published, and the
@@ -1260,20 +1331,25 @@ the witness smart contract.</li>
 <li>The Claim Snapshot Publisher is registering all selected claims
 (select them by page name (filter required) and will populate the
 target
-<a href=https://pkc.inblock.io/index.php/SmartContract:Identity-Registry>SmartContract:Identity-Registry</a>.
+<a href=https://pkc.inblock.io/index.php/SmartContract:Identity-Registry target=_blank>SmartContract:Identity-Registry</a>
+.
 Every claim will hold the relative merkle-proof to show the path for
 it&rsquo;s registration.</li>
 </ul>
 <p>Examples for <strong>Identity Claims with Aqua:</strong></p>
 <ul>
-<li><a href=https://pkc.inblock.io/index.php/User:0xa2026582b94feb9124231fbf7b052c39218954c2>Example Identity Documents with PKC and Data
-Accounting</a></li>
+<li>
+<a href=https://pkc.inblock.io/index.php/User:0xa2026582b94feb9124231fbf7b052c39218954c2 target=_blank>Example Identity Documents with PKC and Data
+Accounting</a>
+</li>
 <li>Reference:Example Identity Documents (Research)</li>
 </ul>
 <h1 id=faq>FAQ</h1>
 <ol>
-<li>How to find <a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim
-Registry</a>&rsquo;s? By
+<li>How to find
+<a href=https://pkc.inblock.io/index.php/Claim_Registry target=_blank>Claim
+Registry</a>
+&rsquo;s? By
 following the chain of trust of authoritative claims and validating
 them one by one.</li>
 <li>How to check if authority is still valid and how to find an
@@ -1285,23 +1361,38 @@ trust.</li>
 </ol>
 <p>Important References:</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=gWfAIYXcyH4&ab_channel=Okta">Basic intro into
-DID</a></li>
-<li><a href="https://www.youtube.com/watch?v=8c7yRTENqSc&ab_channel=DecentralizedIdentityFoundation">Basic intro into
-DIDComm</a></li>
-<li><a href=https://www.w3.org/TR/vc-data-model/#claims>W3C Verified Data
-Model</a></li>
-<li><a href=https://w3c-ccg.github.io/vc-status-rl-2020/>Revocation List 2020</a>
+<li>
+<a href="https://www.youtube.com/watch?v=gWfAIYXcyH4&ab_channel=Okta" target=_blank>Basic intro into
+DID</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=8c7yRTENqSc&ab_channel=DecentralizedIdentityFoundation" target=_blank>Basic intro into
+DIDComm</a>
+</li>
+<li>
+<a href=https://www.w3.org/TR/vc-data-model/#claims target=_blank>W3C Verified Data
+Model</a>
+</li>
+<li>
+<a href=https://w3c-ccg.github.io/vc-status-rl-2020/ target=_blank>Revocation List 2020</a>
 A privacy-preserving mechanism for revoking Verifiable Credentials</li>
-<li><a href=https://github.com/decentralized-identity/didcomm-messaging>DIDCOMM implementations and
-use-cases</a></li>
-<li><a href=https://github.com/spruceid/didkit>DIDkit</a></li>
+<li>
+<a href=https://github.com/decentralized-identity/didcomm-messaging target=_blank>DIDCOMM implementations and
+use-cases</a>
+</li>
+<li>
+<a href=https://github.com/spruceid/didkit target=_blank>DIDkit</a>
+</li>
 </ul>
 <p>Thought leader Christopher Allen:</p>
 <ul>
-<li><a href=https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md>Self-Sovereign-Identity-Principles</a></li>
-<li><a href=https://github.com/BlockchainCommons/Gordian>A bitcoin based SSI infrastructure
-prototype</a></li>
+<li>
+<a href=https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md target=_blank>Self-Sovereign-Identity-Principles</a>
+</li>
+<li>
+<a href=https://github.com/BlockchainCommons/Gordian target=_blank>A bitcoin based SSI infrastructure
+prototype</a>
+</li>
 </ul>
 <p><references></p>
 <p>See Implementation Specific Aqua Identity Protocol Implementation in MW
@@ -1310,22 +1401,34 @@ e</p>
 <hr>
 <ol>
 <li id=fn:1 role=doc-endnote>
-<p><a href=https://identity.foundation/>https://identity.foundation/</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://identity.foundation/ target=_blank>https://identity.foundation/</a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:2 role=doc-endnote>
-<p><a href=https://www.w3.org/>https://www.w3.org/</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://www.w3.org/ target=_blank>https://www.w3.org/</a>
+&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:3 role=doc-endnote>
-<p><a href=https://www.weboftrust.info/>https://www.weboftrust.info/</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://www.weboftrust.info/ target=_blank>https://www.weboftrust.info/</a>
+&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:4 role=doc-endnote>
-<p><a href=https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md>https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md</a>&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md target=_blank>https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md</a>
+&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:5 role=doc-endnote>
-<p><a href=https://www.securew2.com/blog/certificate-revocation-crl-explained>https://www.securew2.com/blog/certificate-revocation-crl-explained</a>&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://www.securew2.com/blog/certificate-revocation-crl-explained target=_blank>https://www.securew2.com/blog/certificate-revocation-crl-explained</a>
+&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:6 role=doc-endnote>
-<p><a href=https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx>https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx</a>&#160;<a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx target=_blank>https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx</a>
+&#160;<a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -1340,7 +1443,9 @@ e</p>
 <li>genesis_hashes to titles.</li>
 <li>domain_ids to registered endpoints of that domain.</li>
 </ul>
-<p>See the <a href=https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts>reference implementation</a>.</p>
+<p>See the
+<a href=https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts target=_blank>reference implementation</a>
+.</p>
 </div>
 <div class=td-content style=page-break-before:always>
 <h1 id=pg-57cc4d332b508d187cfa5fc203f9d10e>2.4 - Assurance Levels (AAL)</h1>
@@ -1348,7 +1453,9 @@ e</p>
 <p>How safe are the wallets to used? - Current PKC Pilot - relating to the
 &lsquo;Authentication assurance level&rsquo;s (AAL)&rsquo; according to the World Bank
 standards:</p>
-<p>See short presentation <a href=https://github.com/inblockio/aqua-docs/files/7885411/Aqua_PKC_-_Wallet-Security.pdf>Aqua_PKC_-_Wallet-Security.pdf</a></p>
+<p>See short presentation
+<a href=https://github.com/inblockio/aqua-docs/files/7885411/Aqua_PKC_-_Wallet-Security.pdf target=_blank>Aqua_PKC_-_Wallet-Security.pdf</a>
+</p>
 <h3 id=level-1>Level 1</h3>
 <p>The Metamask wallet alone has a low (level 1 ) level of assurance.
 MetaMask is the most common browser blockchain wallet applications on
@@ -1368,7 +1475,8 @@ PIN a one-time-password generator based on your mobile-phone
 (recommended is a hardened mobile phone which also uses biometrics for
 highest security) requires implementation of one-time-password
 authentication for logins after wallet-authentication see
-<a href=https://github.com/inblockio/micro-PKC/issues/37>https://github.com/inblockio/micro-PKC/issues/37</a></p>
+<a href=https://github.com/inblockio/micro-PKC/issues/37 target=_blank>https://github.com/inblockio/micro-PKC/issues/37</a>
+</p>
 <ul>
 <li>
 <p>Other high security options allow multi-signature logins with
@@ -1414,8 +1522,10 @@ locator. This ensures that it is always deterministic to what data we relate
 to.</p>
 <h2 id=accounting-data--anchoring-data-to-account>Accounting data / anchoring data to account</h2>
 <p>The second step is that the data is attributed to a specific account. This is
-achieved by using cryptographic signatures known as <a href=https://en.wikipedia.org/wiki/Public-key_cryptography>public/private key
-encryption</a>. The public
+achieved by using cryptographic signatures known as
+<a href=https://en.wikipedia.org/wiki/Public-key_cryptography target=_blank>public/private key
+encryption</a>
+. The public
 key acts as a unique account address. It is necessary that the accounts in use
 are globally unique, so there is no realistic probability of a name collision
 between accounts. This ensures that no data is attributed by mistake to two
@@ -1427,10 +1537,13 @@ value lies within the social implications of the message within the published
 data. This cryptographic timestamping allows us to determine the first account
 to witness the data. The most secure witness-networks which provide a service
 for cryptographic witnessing of datasets are Bitcoin and Ethereum. The first
-known examples of partial data accounting were done by <a href=https://www.vice.com/en/article/j5nzx4/what-was-the-first-blockchain>Surety in
-1995</a> and
-<a href=https://petertodd.org/2016/opentimestamps-announcement>OpenTimestamps in
-2012</a>.</p>
+known examples of partial data accounting were done by
+<a href=https://www.vice.com/en/article/j5nzx4/what-was-the-first-blockchain target=_blank>Surety in
+1995</a>
+and
+<a href=https://petertodd.org/2016/opentimestamps-announcement target=_blank>OpenTimestamps in
+2012</a>
+.</p>
 <h2 id=practical-accounting>Practical accounting</h2>
 <p>The accounting book in the data accounting age is a &lsquo;data vault&rsquo; which is
 controlled by one or multiple accounts. This allows both personal data vaults
@@ -1451,33 +1564,46 @@ sending it back with your improvement to community[at]inblock[dot]io.</i></p>
 E-Mail: koo0905[at]gmail[dot]com
 Year: 2021</p>
 <p>Data Governance identifies how to manage the value of data. A well-known
-turning point in history was the publication of <a href=wikipedia:Luca_Pacioli title=wikilink>Luca
-Pacioli</a>&rsquo;s <a href=wikipedia:Summa_de_arithmetica title=wikilink>Summa de
-arithmetica</a>. This
+turning point in history was the publication of
+<a href=wikipedia:Luca_Pacioli title=wikilink>Luca
+Pacioli</a>
+&rsquo;s
+<a href=wikipedia:Summa_de_arithmetica title=wikilink>Summa de
+arithmetica</a>
+. This
 encyclopedia of mathematics, had 26 pages worth of text on what we call
 <a href=wikipedia:Double-entry_bookkeeping title=wikilink>Double-entry
-bookkeeping</a>. This became
+bookkeeping</a>
+. This became
 the foundational literature for
-<a href=wikipedia:accounting title=wikilink>accounting</a>, the progenitor of using
+<a href=wikipedia:accounting title=wikilink>accounting</a>
+, the progenitor of using
 data to assign value to accounts, and henceforth gave birth to the
 practice of data governance.</p>
 <h1 id=accounting-as-the-foundation-of-data-governance>Accounting as the foundation of Data Governance</h1>
 <p>According to historian Jane-Gleeson White<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup><sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>, Pacioli&rsquo;s double
 entry book keeping idea influenced the development of arts, sciences,
-and capitalism. <a href=wikipedia:Double-entry_bookkeeping title=wikilink>Double-entry
-bookkeeping</a> as a
+and capitalism.
+<a href=wikipedia:Double-entry_bookkeeping title=wikilink>Double-entry
+bookkeeping</a>
+as a
 rigorous approach to ensure data integrity, not only influenced the
 practice of the accounting profession, and it had a significant impact
-on the the formulation of <a href=wikipedia:Hamiltonian_Mechanics title=wikilink>Hamiltonian
-Mechanics</a>, which is a
+on the the formulation of
+<a href=wikipedia:Hamiltonian_Mechanics title=wikilink>Hamiltonian
+Mechanics</a>
+, which is a
 foundational theory of both classical mechanics and quantum mechanics.</p>
-<p>Sir <a href=wikipedia:William_Rowan_Hamilton title=wikilink>William Rowan
-Hamilton</a> wrote a paper<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>
+<p>Sir
+<a href=wikipedia:William_Rowan_Hamilton title=wikilink>William Rowan
+Hamilton</a>
+wrote a paper<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>
 cited many many scholars to demonstrate that many ideas about complex
 algebraic manipulation that laid the foundation of scientific
 revolutions are based on the formulation of creating accountable
 mathematical formulation strategies through double entry book keeping.
-<a href=https://www.ellerman.org>David Ellerman</a> had a paper that explains the
+<a href=https://www.ellerman.org target=_blank>David Ellerman</a>
+had a paper that explains the
 powers of double entry bookkeeping in sciences<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>. The notion that
 creating public addresses for transactions amongst different accounts
 has been documented as a scientific theory on Double Entry Book-keeping.
@@ -1485,16 +1611,20 @@ This book can be found online<sup id=fnref:5><a href=#fn:5 class=footnote-ref ro
 <h1 id=digital-governance>Digital Governance</h1>
 <p>Given the intellectual roots of data governance have strong linkages to
 mathematics and accounting, it is only after the introduction of
-<a href=wikipedia:personal_computer title=wikilink>personal computing devices</a>,
-and later the ubiquity of <a href=wikipedia:Internet title=wikilink>Internet</a>
+<a href=wikipedia:personal_computer title=wikilink>personal computing devices</a>
+,
+and later the ubiquity of
+<a href=wikipedia:Internet title=wikilink>Internet</a>
 access that made data governance an idea relevant to public affairs. The
 argument is that many people&rsquo;s basic privacy and property rights may be
 challenged by people who have access to data collection and deployment
 technologies. Imminent threats such as fake news, big brother monitoring
 practices, identity thefts, and crypto currency issuance are already
 challenging the stability of the existing social fabric. These type of
-social debates are often related to the ideas of <a href=wikipedia:Digital_governance title=wikilink>Digital
-governance</a>. At this time,
+social debates are often related to the ideas of
+<a href=wikipedia:Digital_governance title=wikilink>Digital
+governance</a>
+. At this time,
 digital governance has not yet become a mature field of study, and it
 needs to be grounded in simple principles, so that it can be
 transparently practiced with local adaptations.</p>
@@ -1502,18 +1632,35 @@ transparently practiced with local adaptations.</p>
 <p>Beside the notion of digital governance, data as an asset class must be
 kept accountable, so that it can be evaluated, and transferred with an
 objective operational framework. Knowing how to organize data in formats
-that satisfy consistent abstraction strategies, such as <a href=wikipedia:URI title=wikilink>Universal
-Resource Identifier</a> and <a href=wikipedia:URL title=wikilink>Universal Resource
-Locator</a> are important starting points in this
-field. Earlier work in data governance in a web of <a href=wikipedia:Hyperlink title=wikilink>hyperlinked
-media</a> can be traced back to <a href=wikipedia:Project_Xanadu title=wikilink>Project
-Xanadu</a> by <a href=wikipedia:Ted_Nelson title=wikilink>Ted
-Nelson</a>.</p>
+that satisfy consistent abstraction strategies, such as
+<a href=wikipedia:URI title=wikilink>Universal
+Resource Identifier</a>
+and
+<a href=wikipedia:URL title=wikilink>Universal Resource
+Locator</a>
+are important starting points in this
+field. Earlier work in data governance in a web of
+<a href=wikipedia:Hyperlink title=wikilink>hyperlinked
+media</a>
+can be traced back to
+<a href=wikipedia:Project_Xanadu title=wikilink>Project
+Xanadu</a>
+by
+<a href=wikipedia:Ted_Nelson title=wikilink>Ted
+Nelson</a>
+.</p>
 <p>More recent more publications in this fields are
-<a href=wikipedia:Lawrence_Lessig title=wikilink>Lessig</a>&rsquo;s <a href=https://lessig.org/product/codev2>Code
-v2</a><sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup> and soon to be published work
-of <a href=wikipedia:Alex_Pentland title=wikilink>Alex Pentland</a>&rsquo;s <a href=https://wip.mitpress.mit.edu/new-economy>Building the
-New Economy</a><sup id=fnref:7><a href=#fn:7 class=footnote-ref role=doc-noteref>7</a></sup>.</p>
+<a href=wikipedia:Lawrence_Lessig title=wikilink>Lessig</a>
+&rsquo;s
+<a href=https://lessig.org/product/codev2 target=_blank>Code
+v2</a>
+<sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup> and soon to be published work
+of
+<a href=wikipedia:Alex_Pentland title=wikilink>Alex Pentland</a>
+&rsquo;s
+<a href=https://wip.mitpress.mit.edu/new-economy target=_blank>Building the
+New Economy</a>
+<sup id=fnref:7><a href=#fn:7 class=footnote-ref role=doc-noteref>7</a></sup>.</p>
 <h1 id=references>References</h1>
 <section class=footnotes role=doc-endnotes>
 <hr>
@@ -1521,7 +1668,9 @@ New Economy</a><sup id=fnref:7><a href=#fn:7 class=footnote-ref role=doc-noteref
 <li id=fn:1 role=doc-endnote>
 <p>J. Gleeson-White, Double Entry: How the merchants of Venice shaped
 the modern world&ndash;and how their invention could make or break the
-planet, publisher Allen & Unwin, <a href=ISBN:978-1-74175-755-2>ISBN:978-1-74175-755-2</a>, November
+planet, publisher Allen & Unwin,
+<a href=ISBN:978-1-74175-755-2>ISBN:978-1-74175-755-2</a>
+, November
 2011&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:2 role=doc-endnote>
@@ -1537,11 +1686,15 @@ Academy, 17pp. 293–422.&#160;<a href=#fnref:3 class=footnote-backref role=doc-
 </li>
 <li id=fn:4 role=doc-endnote>
 <p>David Ellerman, On Double-Entry Bookkeeping: The Mathematical
-Treatment, <a href=https://arxiv.org/pdf/1407.1898.pdf>https://arxiv.org/pdf/1407.1898.pdf</a>&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+Treatment,
+<a href=https://arxiv.org/pdf/1407.1898.pdf target=_blank>https://arxiv.org/pdf/1407.1898.pdf</a>
+&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:5 role=doc-endnote>
 <p>J.C. Colt, The Science of Double Entry Book-keeping, online
-media:<a href=https://core.ac.uk/download/pdf/56693696.pdf>https://core.ac.uk/download/pdf/56693696.pdf</a>, last accessed:
+media:
+<a href=https://core.ac.uk/download/pdf/56693696.pdf target=_blank>https://core.ac.uk/download/pdf/56693696.pdf</a>
+, last accessed:
 May 4th, 2021&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:6 role=doc-endnote>
@@ -1551,7 +1704,8 @@ Publisher: Basic Books, 2nd Revised edition, December 2006&#160;<a href=#fnref:6
 <li id=fn:7 role=doc-endnote>
 <p>Alex Pentland, Alexander Lipton, and Thomas Hardjono, Building the
 New Economy, MIT Press, Work in Progress,
-<a href=https://wip.mitpress.mit.edu/new-economy>https://wip.mitpress.mit.edu/new-economy</a>&#160;<a href=#fnref:7 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<a href=https://wip.mitpress.mit.edu/new-economy target=_blank>https://wip.mitpress.mit.edu/new-economy</a>
+&#160;<a href=#fnref:7 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -1571,8 +1725,10 @@ chains included in the domain snapshot.</p>
 <div class=lead>Lists the deisgn principles underlaying our reference implementation</div>
 <p>The following design principles pertain to Aqua reference Implementation <code>PKC</code></p>
 <h2 id=private-is-default>Private is Default</h2>
-<p>The principle default to private is that no data of the PKC <a href=whitepaper.md#data-vault>Data
-vault</a> is shared without it being explicitly
+<p>The principle default to private is that no data of the PKC
+<a href=/docs/protocol/whitepaper/#data-vault>Data
+vault</a>
+is shared without it being explicitly
 authorized by the associated account.</p>
 <h3 id=domain-access-levels>Domain Access Levels</h3>
 <p>Levels of access are:</p>
@@ -1602,7 +1758,9 @@ it&rsquo;s not stored.</li>
 <li>Account is not compromised, as there is no password saved within the
 service with Password free login.</li>
 </ul>
-<h4 id=walletwhitepapermdwallets-have-one-job-keep-private-keys-safe-account-management><a href=whitepaper.md#wallet>Wallet</a>&rsquo;s have one job. Keep private keys safe! (Account Management)</h4>
+<h4 id=walletwhitepapermdwallets-have-one-job-keep-private-keys-safe-account-management>
+<a href=/docs/protocol/whitepaper/#wallet>Wallet</a>
+&rsquo;s have one job. Keep private keys safe! (Account Management)</h4>
 <ul>
 <li>Should be stupid, simple, safe!</li>
 <li>Allowed operations:
@@ -1616,15 +1774,21 @@ service with Password free login.</li>
 associated with the account(s) managed by the wallet</li>
 <li>Takes care of key recovery mechanisms</li>
 </ul>
-<h4 id=data-vaultwhitepapermddata-vault-service--has-one-job-keep-the-data-safe><a href=whitepaper.md#data-vault>Data Vault</a> (Service)- Has one job: keep the data safe!</h4>
+<h4 id=data-vaultwhitepapermddata-vault-service--has-one-job-keep-the-data-safe>
+<a href=/docs/protocol/whitepaper/#data-vault>Data Vault</a>
+(Service)- Has one job: keep the data safe!</h4>
 <ul>
-<li><a href=Principle:_Offline_Capability>Principle: Offline
-Capability</a> so it can run
+<li>
+<a href=Principle:_Offline_Capability>Principle: Offline
+Capability</a>
+so it can run
 offline; works offline on local machine</li>
 <li>All significant actions authorized and managed though the wallet</li>
 <li>Should offer good tooling for data storage and manipulation</li>
-<li>Strong access control: By <a href=Principle:_Default_is_Private>Principle: Default is
-Private</a> which means data
+<li>Strong access control: By
+<a href=Principle:_Default_is_Private>Principle: Default is
+Private</a>
+which means data
 is only accessible by the owner.</li>
 <li>Data is well protected
 <ul>
@@ -1638,8 +1802,10 @@ End-to-End Encryption).</li>
 <li>Capabilities for sharing and publishing data</li>
 <li>Offers full Backup and Recovery mechanisms to move data freely
 <ul>
-<li><a href=Principle:_Data_Portability title=wikilink>Principle: Data
-Portability</a></li>
+<li>
+<a href=Principle:_Data_Portability title=wikilink>Principle: Data
+Portability</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -1665,8 +1831,11 @@ authorize access</p>
 </ul>
 <h2 id=principle-data-portability>Principle: Data Portability</h2>
 <p>The Principle of Data Portability means that the
-<a href=whitepaper.md#account>Account</a> owner can instruct the Service to Export
-all data associated with the <a href=whitepaper.md#account>Account</a> and is free
+<a href=/docs/protocol/whitepaper/#account>Account</a>
+owner can instruct the Service to Export
+all data associated with the
+<a href=/docs/protocol/whitepaper/#account>Account</a>
+and is free
 to move this data to a new service which is capable of importing the
 data.</p>
 <h3 id=implementation-specifics>Implementation Specifics</h3>
@@ -1933,8 +2102,11 @@ incoming and outgoing data and constructs sessions based on it.</li>
 <li>Guardian Policies: Are sets of rules followed and enforced by the
 Guardian. This includes set of rules used to protect the domain from
 unauthorized operations and access. Part of that are page access
-permissions which are managed by the <a href=Data_Usage_Agreement title=wikilink>Data Usage
-Agre</a><a href=Data_Usage_Agreement title=wikilink>ement</a>s.
+permissions which are managed by the
+<a href=Data_Usage_Agreement title=wikilink>Data Usage
+Agre</a>
+<a href=Data_Usage_Agreement title=wikilink>ement</a>
+s.
 <ul>
 <li>&lt;domain_id><account>&lt;genesis_hash>&lt;revision_hash>:&lt;domain_id><account>&lt;genesis_hash>&lt;revision_hash></li>
 </ul>
@@ -1958,8 +2130,10 @@ permissioned transport layer)</li>
 <h1 id=pg-66780b2f21c94943f8daf23f4c0d34a4>2.10 - Immutable Hyperlinks</h1>
 <div class=lead>Shows how the Aqua URI&rsquo;s can be used as immutable links.</div>
 <p>Traditional hyperlinks are usually
-<a href=https://en.wikipedia.org/wiki/URL>URL&rsquo;s</a> based on the
-<a href=https://en.wikipedia.org/wiki/Domain_Name_System>DNS</a> structure.</p>
+<a href=https://en.wikipedia.org/wiki/URL target=_blank>URL&rsquo;s</a>
+based on the
+<a href=https://en.wikipedia.org/wiki/Domain_Name_System target=_blank>DNS</a>
+structure.</p>
 <p>This allows the resource to be routed via DNS and specified via the URL
 on the remote server.</p>
 <p>The limitations of URL&rsquo;s is that they are not expressing a specific
@@ -2030,18 +2204,42 @@ find reasoning as to why certain components were chosen to build this
 prototype. We have not duplicated any vendor documentation. Please find
 the linked-list for the documentation of the components we use here:</p>
 <ul>
-<li><a href=https://docs.metamask.io/guide/>MetaMask</a></li>
-<li><a href=https://ethereum.org/en/developers/docs/>Ethereum</a></li>
-<li><a href=https://docs.docker.com/>Docker</a></li>
-<li><a href=https://www.mediawiki.org/wiki/Documentation>MediaWiki</a></li>
-<li><a href=https://github.com/inblockio/aqua-docs>MediaWiki Extension: Aqua</a></li>
-<li><a href=https://tweeki.kollabor.at/>MediaWiki Skin Tweeki</a></li>
-<li><a href=https://github.com/pelith/node-eauth-server>Pelith Eauth Server</a></li>
-<li><a href=https://nodejs.org/en/docs/>Nodejs</a></li>
-<li><a href=https://docs.github.com/en>GitHub</a></li>
-<li><a href=https://httpd.apache.org/docs/>Apache</a></li>
-<li><a href=https://nginx.org/en/docs/>Nginx</a></li>
-<li><a href=https://letsencrypt.org/docs/>Let&rsquo;s Encrypt</a></li>
+<li>
+<a href=https://docs.metamask.io/guide/ target=_blank>MetaMask</a>
+</li>
+<li>
+<a href=https://ethereum.org/en/developers/docs/ target=_blank>Ethereum</a>
+</li>
+<li>
+<a href=https://docs.docker.com/ target=_blank>Docker</a>
+</li>
+<li>
+<a href=https://www.mediawiki.org/wiki/Documentation target=_blank>MediaWiki</a>
+</li>
+<li>
+<a href=https://github.com/inblockio/aqua-docs target=_blank>MediaWiki Extension: Aqua</a>
+</li>
+<li>
+<a href=https://tweeki.kollabor.at/ target=_blank>MediaWiki Skin Tweeki</a>
+</li>
+<li>
+<a href=https://github.com/pelith/node-eauth-server target=_blank>Pelith Eauth Server</a>
+</li>
+<li>
+<a href=https://nodejs.org/en/docs/ target=_blank>Nodejs</a>
+</li>
+<li>
+<a href=https://docs.github.com/en target=_blank>GitHub</a>
+</li>
+<li>
+<a href=https://httpd.apache.org/docs/ target=_blank>Apache</a>
+</li>
+<li>
+<a href=https://nginx.org/en/docs/ target=_blank>Nginx</a>
+</li>
+<li>
+<a href=https://letsencrypt.org/docs/ target=_blank>Let&rsquo;s Encrypt</a>
+</li>
 </ul>
 <p>All software components selected are open source licenses. They each
 have active developer communities behind them to secure future support
@@ -2086,7 +2284,8 @@ addresses</li>
 <li>User can create new identity anchor independent of third party</li>
 <li>Can be moved between devices by users recovery key or even to a
 hardware wallet (not recommended but possible:
-<a href=https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b>https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b</a>)</li>
+<a href=https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b target=_blank>https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b</a>
+)</li>
 </ul>
 </li>
 </ul>
@@ -2160,7 +2359,8 @@ while allowing trust between Guardians so data can be exchanged.</li>
 <li>The Apache WebServer present in the MediaWiki container has a
 technological dependency and needs regular updates as Apache was
 effected by critical security issues like
-<a href=https://nvd.nist.gov/vuln/detail/CVE-2021-44228>CVE-2021-44228</a></li>
+<a href=https://nvd.nist.gov/vuln/detail/CVE-2021-44228 target=_blank>CVE-2021-44228</a>
+</li>
 <li>Therefore we do not expose the Apache web-server to the internet by
 default and do not recommend this to ensure that there is no
 unnecessary attack surface. If an organization decides to expose the
@@ -2195,7 +2395,8 @@ layer from MediaWiki classic to Boostrap 4, and respectively Bootstrap
 <h2 id=authentication>Authentication</h2>
 <ul>
 <li>For Authentication with Web-Wallets, we use
-<a href=https://github.com/pelith/node-eauth-server>https://github.com/pelith/node-eauth-server</a> which provides us with
+<a href=https://github.com/pelith/node-eauth-server target=_blank>https://github.com/pelith/node-eauth-server</a>
+which provides us with
 an open source solution for a signature-response challenge. We then
 integrate with OAUTH2 and OIDC using existing authentication
 standards to achieve the login.</li>
@@ -2218,7 +2419,9 @@ needs.</li>
 </ul>
 <h2 id=software-development>Software-Development</h2>
 <ul>
-<li>We use <a href=https://github.com>https://github.com</a> for software development. As we started
+<li>We use
+<a href=https://github.com target=_blank>https://github.com</a>
+for software development. As we started
 with very little budget, we gratefully utilised free resources to
 develop our open source software. This allowed us to focus on being
 productive.
@@ -2245,7 +2448,8 @@ most dominant web-browser on the Web, and has become the quasi standard
 with many different forks creating an ecosystem around it.
 Microsoft-Edge is actually Chrome. There are non-google chrome forks
 which deserve attention, funding and support (like
-<a href=https://github.com/Eloston/ungoogled-chromium>https://github.com/Eloston/ungoogled-chromium</a>). This will provide us
+<a href=https://github.com/Eloston/ungoogled-chromium target=_blank>https://github.com/Eloston/ungoogled-chromium</a>
+). This will provide us
 with a modern and state of the art browser architecture to work with.</p>
 <p>As Chrome is the most secure and modern base to build on, we support
 -only- chrome. Therefore we use a chrome extension to verify the content
@@ -2267,12 +2471,15 @@ ministry.</p>
 <h3 id=hashing-algorithms-sha3-512>Hashing Algorithms (SHA3-512)</h3>
 <p>PKC uses standard Crypto (SHA3-512) winner of the National Institute of
 Standards and Technology see
-<a href=https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf>https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf</a> . We do not
+<a href=https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf target=_blank>https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf</a>
+. We do not
 use custom encryption as this comes at the cost of unnecessary risks.</p>
-<p>This is an accepted secure and recommended standard according to <a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile">BSI -
+<p>This is an accepted secure and recommended standard according to
+<a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile" target=_blank>BSI -
 Technische Richtlinie – Kryptographische Algorithmen und Schlussellängen
 Seite
-42</a>.</p>
+42</a>
+.</p>
 <h3 id=merkle-tree5>Merkle Tree<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup></h3>
 <ul>
 <li>We use merkle trees to be able to witness the state of all pages /
@@ -2280,11 +2487,13 @@ files in a single hash. Used to generate a unique fingerprint of a
 domain (a collection of verified data hash chain&rsquo;s within one
 domain).</li>
 <li>There is a lot of future potential in ongoing research to improve
-privacy and utility of merkle trees in the <a href=https://pkc.inblock.io/index.php/Aqua_Protocol>Aqua
+privacy and utility of merkle trees in the
+<a href=https://pkc.inblock.io/index.php/Aqua_Protocol target=_blank>Aqua
 Protocol</a>
 <ul>
 <li>See related technologies and research like TAPROOT:
-<a href=https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki>https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki</a></li>
+<a href=https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki target=_blank>https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -2293,14 +2502,19 @@ Protocol</a>
 authentication challenges.</p>
 <ul>
 <li>in ether.js
-<a href=https://github.com/ethereumjs/ethereumjs-monorepo/blob/ade4233ddffffdd146b386de701762196a8c941c/packages/util/src/signature.ts#L23-L45>cryptography/secp256k1</a>
+<a href=https://github.com/ethereumjs/ethereumjs-monorepo/blob/ade4233ddffffdd146b386de701762196a8c941c/packages/util/src/signature.ts#L23-L45 target=_blank>cryptography/secp256k1</a>
 see
-<a href=https://github.com/ethereum/js-ethereum-cryptography/blob/b1f35053df3f0cfa132fc45d59b688ca0d62994a/src/secp256k1-compat.ts#L99-L123>implementation</a></li>
+<a href=https://github.com/ethereum/js-ethereum-cryptography/blob/b1f35053df3f0cfa132fc45d59b688ca0d62994a/src/secp256k1-compat.ts#L99-L123 target=_blank>implementation</a>
+</li>
 <li>related documents of the &lsquo;Standards for Efficient Cryptography
-Group&rsquo; <a href=https://secg.org/>https://secg.org/</a> specific doc secp256k1 [<a href=https://www.secg.org/sec2-v2.pdf>Both variants
+Group&rsquo;
+<a href=https://secg.org/ target=_blank>https://secg.org/</a>
+specific doc secp256k1 [
+<a href=https://www.secg.org/sec2-v2.pdf target=_blank>Both variants
 of the same standardization process of the Standards for Efficient
 Cryptography Group 2015, See differences
-P9</a></li>
+P9</a>
+</li>
 </ul>
 <ul>
 <li>Supported by BSI secp256r1 but secp256k1 is not
@@ -2311,7 +2525,8 @@ assessment or recommendation for secp256k1.</li>
 </ul>
 <ul>
 <li>For authentication with Metamask Ethereum wallets we currently use
-<a href=https://github.com/pelith/node-eauth-server>https://github.com/pelith/node-eauth-server</a>. We are signing a
+<a href=https://github.com/pelith/node-eauth-server target=_blank>https://github.com/pelith/node-eauth-server</a>
+. We are signing a
 unique input value with ethereum.js using the personal sign method.
 Once the challenge is completed successfully we receive an OAUTH
 token from the Eauth identity provider of the pelith Eauth server.</li>
@@ -2320,19 +2535,29 @@ token from the Eauth identity provider of the pelith Eauth server.</li>
 <hr>
 <ol>
 <li id=fn:1 role=doc-endnote>
-<p><a href=https://linuxiac.com/nginx-most-popular-web-server/>https://linuxiac.com/nginx-most-popular-web-server/</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://linuxiac.com/nginx-most-popular-web-server/ target=_blank>https://linuxiac.com/nginx-most-popular-web-server/</a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:2 role=doc-endnote>
-<p><a href=https://letsencrypt.org/>https://letsencrypt.org/</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://letsencrypt.org/ target=_blank>https://letsencrypt.org/</a>
+&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:3 role=doc-endnote>
-<p><a href=https://github.com/inblockio/aqua-verifypage-chrome-extension>https://github.com/inblockio/aqua-verifypage-chrome-extension</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://github.com/inblockio/aqua-verifypage-chrome-extension target=_blank>https://github.com/inblockio/aqua-verifypage-chrome-extension</a>
+&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:4 role=doc-endnote>
-<p><a href="https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software">https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software</a>&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href="https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software" target=_blank>https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software</a>
+&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:5 role=doc-endnote>
-<p><a href=https://en.wikipedia.org/wiki/Merkle_tree>https://en.wikipedia.org/wiki/Merkle_tree</a>&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://en.wikipedia.org/wiki/Merkle_tree target=_blank>https://en.wikipedia.org/wiki/Merkle_tree</a>
+&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

@@ -22,12 +22,12 @@
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://aqua-protocol.org/docs/protocol/aqua-identity-protocol/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-11T08:31:38-05:00"><meta property="og:site_name" content="AQUA Protocol">
+<meta property="article:modified_time" content="2022-02-11T08:40:25-05:00"><meta property="og:site_name" content="AQUA Protocol">
 <meta itemprop=name content="Identity Protocol">
 <meta itemprop=description content="Shows how it is possible to build an identity protocol on top of Aqua using data vaults.
 ">
-<meta itemprop=dateModified content="2022-02-11T08:31:38-05:00">
-<meta itemprop=wordCount content="2426">
+<meta itemprop=dateModified content="2022-02-11T08:40:25-05:00">
+<meta itemprop=wordCount content="2439">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Identity Protocol">
 <meta name=twitter:description content="Shows how it is possible to build an identity protocol on top of Aqua using data vaults.
@@ -56,7 +56,7 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.d24f98e1f03d5a34f21a79d234439ba6.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.128f851df41262b2f3186916b12dee64.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -67,7 +67,7 @@
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <div id=content-mobile>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.d24f98e1f03d5a34f21a79d234439ba6.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.128f851df41262b2f3186916b12dee64.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form>
@@ -207,7 +207,9 @@ Self-Sovereign-Identity provided by Christopher Allen in shortened form here.<su
 </ol>
 <p>Those 10 stated principles are implemented within the Aqua Protocol and
 it&rsquo;s existing reference implementation in various degrees. They are also
-represented in the <a href=/docs/protocol/design-principles/>Design Principles</a>.</p>
+represented in the
+<a href=/docs/protocol/design-principles/>Design Principles</a>
+.</p>
 <h1 id=architecture>Architecture</h1>
 <p>For the Aqua Identity Protocol to be implemented in accordance with the
 above statements, SSI-Principles and critical component choices from
@@ -242,8 +244,10 @@ protection for citizens.</p>
 claims can be partially revealed on demand to other parties. Those
 claims can also be protected by advancements in privacy technologies
 like Zero-Knowledge-Proofs and ongoing advancements in key management.</p>
-<p>Identity claims are sets of <a href=https://pkc.inblock.io/index.php/Verified_Data>Verified
-Data</a> which follow a
+<p>Identity claims are sets of
+<a href=https://pkc.inblock.io/index.php/Verified_Data target=_blank>Verified
+Data</a>
+which follow a
 structured data convention to claim or attest attributes to an account.
 For example, an attribute could be the year of birth of an account
 owner, or the legal name of an account owner. Claims should always be
@@ -251,8 +255,10 @@ atomic to allow the account owner to disclose them selectivity.
 Different claims can be combined to represent a citizen ID or a
 drivers-license. Other claims can be educational certificates, like
 school certificates.</p>
-<p>Identity claims in the <a href=https://pkc.inblock.io/index.php/Aqua_Identity_Protocol>Aqua Identity
-Protocol</a> are
+<p>Identity claims in the
+<a href=https://pkc.inblock.io/index.php/Aqua_Identity_Protocol target=_blank>Aqua Identity
+Protocol</a>
+are
 <strong>always self issues</strong>. This means that the first signature on the claim
 needs to be from the private key which belongs to the account the claim
 is issued for. This proves account ownership. This means:</p>
@@ -284,7 +290,8 @@ they have no account attribution.</p>
 <li>Syntax of Title: &lt;Account (e.g. Ethereum Wallet
 Address)>:&lt;Attribute (English Descriptive Title)></li>
 <li>Example:
-<a href=https://pkc.inblock.io/index.php/0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate>0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate</a></li>
+<a href=https://pkc.inblock.io/index.php/0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate target=_blank>0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate</a>
+</li>
 </ul>
 <p>The title is not protected against changes but the content of the page
 is protected.*<strong>IMPORTANT:</strong> Therefore we <strong>must</strong> compare the page
@@ -389,8 +396,11 @@ This can be supported via an Authoritative Claim and a comment which
 gets attached to the claim itself or is issued via an Attestation.</li>
 <li>To verify the signature, we use an automated verification process.
 This is done through implementations of an Aqua-Verifier like
-<a href=https://github.com/inblockio/aqua-verifier-js>https://github.com/inblockio/aqua-verifier-js</a> or
-<a href=https://github.com/inblockio/aqua-verifypage-chrome-extension><a href=https://github.com/inblockio/aqua-VerifyPage-chrome-extension>https://github.com/inblockio/aqua-VerifyPage-chrome-extension</a></a>
+<a href=https://github.com/inblockio/aqua-verifier-js target=_blank>https://github.com/inblockio/aqua-verifier-js</a>
+or
+<a href=https://github.com/inblockio/aqua-verifypage-chrome-extension target=_blank>
+<a href=https://github.com/inblockio/aqua-VerifyPage-chrome-extension target=_blank>https://github.com/inblockio/aqua-VerifyPage-chrome-extension</a>
+</a>
 which also checks against the restrictions given by the Aqua
 Identity Protocol or/and additional defined policies.</li>
 <li>Add access rights to a claim by adding a Data Usage Agreement which
@@ -416,19 +426,27 @@ reference point is required for the verifying party to trust.</li>
 </ol>
 <h4 id=trust-authorities><strong>Trust Authorities</strong></h4>
 <p>are accounts which have an elevated trusted position. They issue
-<a href=https://pkc.inblock.io/index.php/Authoritative_Claim>Authoritative Trust
-Claims</a> to give
+<a href=https://pkc.inblock.io/index.php/Authoritative_Claim target=_blank>Authoritative Trust
+Claims</a>
+to give
 legitimacy to a self-issued identity claim.</p>
-<p>Why do you trust a professor to issue an <a href=https://pkc.inblock.io/index.php/Educational_Certificate>Educational
-Certificate</a>?</p>
+<p>Why do you trust a professor to issue an
+<a href=https://pkc.inblock.io/index.php/Educational_Certificate target=_blank>Educational
+Certificate</a>
+?</p>
 <p>Because the professor is able to provide a trust chain, represented by a
-chained <a href=https://pkc.inblock.io/index.php/Authoritative_Claim>Authoritative Trust
-Claim</a>, proving
-that he has authority to attest an <a href=https://pkc.inblock.io/index.php/Educational_Certificate>Educational
+chained
+<a href=https://pkc.inblock.io/index.php/Authoritative_Claim target=_blank>Authoritative Trust
+Claim</a>
+, proving
+that he has authority to attest an
+<a href=https://pkc.inblock.io/index.php/Educational_Certificate target=_blank>Educational
 Certificate</a>
 with his signature. With his signature, he is increasing the trust of
-the self-issued <a href=https://pkc.inblock.io/index.php/Identity_Claim>Identity
-Claim</a> to allow it to
+the self-issued
+<a href=https://pkc.inblock.io/index.php/Identity_Claim target=_blank>Identity
+Claim</a>
+to allow it to
 have practical utility.</p>
 <h3 id=claim-registries><strong>Claim Registries</strong></h3>
 <p>A claim registry in the context of the Aqua Identity Protocol is a
@@ -518,7 +536,8 @@ global registries.</li>
 </ul>
 <p><strong>Using Distributed Ledgers</strong></p>
 <ul>
-<li>Done via <a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim
+<li>Done via
+<a href=https://pkc.inblock.io/index.php/Claim_Registry target=_blank>Claim
 Registry</a>
 (indicates the global status of an identity claim to be either valid
 or invalid)</li>
@@ -530,20 +549,23 @@ changing the status to &lsquo;revoked&rsquo; and signing by the issuer. This
 adds a receipt to the identity claim which is displayed when
 verifying the claim. This includes the revocation transaction for
 the revocation on the
-<a href=https://pkc.inblock.io/index.php/Identity-Registry>Identity-Registry</a></li>
+<a href=https://pkc.inblock.io/index.php/Identity-Registry target=_blank>Identity-Registry</a>
+</li>
 <li>If there is a new claim which is succeeding the previous identity
-claim<a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim
-Registry</a>, then
+claim
+<a href=https://pkc.inblock.io/index.php/Claim_Registry target=_blank>Claim
+Registry</a>
+, then
 this is also noticed within the revocation receipt under
 &lsquo;Successor-Claim: <hash>.</li>
 </ul>
 <p><b>Bulk Claim Registration (Should be part of Claim Registry)</b></p>
 <ul>
 <li>To reduce costs during registration of the identity claims via a
-<a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim Registry</a>
+<a href=https://pkc.inblock.io/index.php/Claim_Registry target=_blank>Claim Registry</a>
 they can be clustered and registered together</li>
 <li>We use the
-<a href=https://pkc.inblock.io/index.php/SmartContract:Identity-Registry>SmartContract:Identity-Registry</a>
+<a href=https://pkc.inblock.io/index.php/SmartContract:Identity-Registry target=_blank>SmartContract:Identity-Registry</a>
 for this. To scale our efforts we utilize a variant of the
 &lsquo;Domain-Manifest-Generator / Publisher&rsquo; which is very similar. The
 differences are in the selection of what can be published, and the
@@ -554,20 +576,25 @@ the witness smart contract.</li>
 <li>The Claim Snapshot Publisher is registering all selected claims
 (select them by page name (filter required) and will populate the
 target
-<a href=https://pkc.inblock.io/index.php/SmartContract:Identity-Registry>SmartContract:Identity-Registry</a>.
+<a href=https://pkc.inblock.io/index.php/SmartContract:Identity-Registry target=_blank>SmartContract:Identity-Registry</a>
+.
 Every claim will hold the relative merkle-proof to show the path for
 it&rsquo;s registration.</li>
 </ul>
 <p>Examples for <strong>Identity Claims with Aqua:</strong></p>
 <ul>
-<li><a href=https://pkc.inblock.io/index.php/User:0xa2026582b94feb9124231fbf7b052c39218954c2>Example Identity Documents with PKC and Data
-Accounting</a></li>
+<li>
+<a href=https://pkc.inblock.io/index.php/User:0xa2026582b94feb9124231fbf7b052c39218954c2 target=_blank>Example Identity Documents with PKC and Data
+Accounting</a>
+</li>
 <li>Reference:Example Identity Documents (Research)</li>
 </ul>
 <h1 id=faq>FAQ</h1>
 <ol>
-<li>How to find <a href=https://pkc.inblock.io/index.php/Claim_Registry>Claim
-Registry</a>&rsquo;s? By
+<li>How to find
+<a href=https://pkc.inblock.io/index.php/Claim_Registry target=_blank>Claim
+Registry</a>
+&rsquo;s? By
 following the chain of trust of authoritative claims and validating
 them one by one.</li>
 <li>How to check if authority is still valid and how to find an
@@ -579,23 +606,38 @@ trust.</li>
 </ol>
 <p>Important References:</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=gWfAIYXcyH4&ab_channel=Okta">Basic intro into
-DID</a></li>
-<li><a href="https://www.youtube.com/watch?v=8c7yRTENqSc&ab_channel=DecentralizedIdentityFoundation">Basic intro into
-DIDComm</a></li>
-<li><a href=https://www.w3.org/TR/vc-data-model/#claims>W3C Verified Data
-Model</a></li>
-<li><a href=https://w3c-ccg.github.io/vc-status-rl-2020/>Revocation List 2020</a>
+<li>
+<a href="https://www.youtube.com/watch?v=gWfAIYXcyH4&ab_channel=Okta" target=_blank>Basic intro into
+DID</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=8c7yRTENqSc&ab_channel=DecentralizedIdentityFoundation" target=_blank>Basic intro into
+DIDComm</a>
+</li>
+<li>
+<a href=https://www.w3.org/TR/vc-data-model/#claims target=_blank>W3C Verified Data
+Model</a>
+</li>
+<li>
+<a href=https://w3c-ccg.github.io/vc-status-rl-2020/ target=_blank>Revocation List 2020</a>
 A privacy-preserving mechanism for revoking Verifiable Credentials</li>
-<li><a href=https://github.com/decentralized-identity/didcomm-messaging>DIDCOMM implementations and
-use-cases</a></li>
-<li><a href=https://github.com/spruceid/didkit>DIDkit</a></li>
+<li>
+<a href=https://github.com/decentralized-identity/didcomm-messaging target=_blank>DIDCOMM implementations and
+use-cases</a>
+</li>
+<li>
+<a href=https://github.com/spruceid/didkit target=_blank>DIDkit</a>
+</li>
 </ul>
 <p>Thought leader Christopher Allen:</p>
 <ul>
-<li><a href=https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md>Self-Sovereign-Identity-Principles</a></li>
-<li><a href=https://github.com/BlockchainCommons/Gordian>A bitcoin based SSI infrastructure
-prototype</a></li>
+<li>
+<a href=https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md target=_blank>Self-Sovereign-Identity-Principles</a>
+</li>
+<li>
+<a href=https://github.com/BlockchainCommons/Gordian target=_blank>A bitcoin based SSI infrastructure
+prototype</a>
+</li>
 </ul>
 <p><references></p>
 <p>See Implementation Specific Aqua Identity Protocol Implementation in MW
@@ -604,27 +646,39 @@ e</p>
 <hr>
 <ol>
 <li id=fn:1 role=doc-endnote>
-<p><a href=https://identity.foundation/>https://identity.foundation/</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://identity.foundation/ target=_blank>https://identity.foundation/</a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:2 role=doc-endnote>
-<p><a href=https://www.w3.org/>https://www.w3.org/</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://www.w3.org/ target=_blank>https://www.w3.org/</a>
+&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:3 role=doc-endnote>
-<p><a href=https://www.weboftrust.info/>https://www.weboftrust.info/</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://www.weboftrust.info/ target=_blank>https://www.weboftrust.info/</a>
+&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:4 role=doc-endnote>
-<p><a href=https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md>https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md</a>&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md target=_blank>https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md</a>
+&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:5 role=doc-endnote>
-<p><a href=https://www.securew2.com/blog/certificate-revocation-crl-explained>https://www.securew2.com/blog/certificate-revocation-crl-explained</a>&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://www.securew2.com/blog/certificate-revocation-crl-explained target=_blank>https://www.securew2.com/blog/certificate-revocation-crl-explained</a>
+&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:6 role=doc-endnote>
-<p><a href=https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx>https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx</a>&#160;<a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx target=_blank>https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx</a>
+&#160;<a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified February 11, 2022: <a href=https://github.com/inblockio/aqua-docs/commit/1ed8a04e4de06d7e01920098aebfe4658d24df86>whitepaper: Fix typo (1ed8a04)</a>
+Last modified February 11, 2022: <a href=https://github.com/inblockio/aqua-docs/commit/0a1fb92100cd0e59de78a9d186a771e0a916efc4>feat: Enable relative Markdown links (0a1fb92)</a>
 </div>
 </div>
 </main>

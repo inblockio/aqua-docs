@@ -53,7 +53,7 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.d24f98e1f03d5a34f21a79d234439ba6.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.128f851df41262b2f3186916b12dee64.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -87,18 +87,42 @@ find reasoning as to why certain components were chosen to build this
 prototype. We have not duplicated any vendor documentation. Please find
 the linked-list for the documentation of the components we use here:</p>
 <ul>
-<li><a href=https://docs.metamask.io/guide/>MetaMask</a></li>
-<li><a href=https://ethereum.org/en/developers/docs/>Ethereum</a></li>
-<li><a href=https://docs.docker.com/>Docker</a></li>
-<li><a href=https://www.mediawiki.org/wiki/Documentation>MediaWiki</a></li>
-<li><a href=https://github.com/inblockio/aqua-docs>MediaWiki Extension: Aqua</a></li>
-<li><a href=https://tweeki.kollabor.at/>MediaWiki Skin Tweeki</a></li>
-<li><a href=https://github.com/pelith/node-eauth-server>Pelith Eauth Server</a></li>
-<li><a href=https://nodejs.org/en/docs/>Nodejs</a></li>
-<li><a href=https://docs.github.com/en>GitHub</a></li>
-<li><a href=https://httpd.apache.org/docs/>Apache</a></li>
-<li><a href=https://nginx.org/en/docs/>Nginx</a></li>
-<li><a href=https://letsencrypt.org/docs/>Let&rsquo;s Encrypt</a></li>
+<li>
+<a href=https://docs.metamask.io/guide/ target=_blank>MetaMask</a>
+</li>
+<li>
+<a href=https://ethereum.org/en/developers/docs/ target=_blank>Ethereum</a>
+</li>
+<li>
+<a href=https://docs.docker.com/ target=_blank>Docker</a>
+</li>
+<li>
+<a href=https://www.mediawiki.org/wiki/Documentation target=_blank>MediaWiki</a>
+</li>
+<li>
+<a href=https://github.com/inblockio/aqua-docs target=_blank>MediaWiki Extension: Aqua</a>
+</li>
+<li>
+<a href=https://tweeki.kollabor.at/ target=_blank>MediaWiki Skin Tweeki</a>
+</li>
+<li>
+<a href=https://github.com/pelith/node-eauth-server target=_blank>Pelith Eauth Server</a>
+</li>
+<li>
+<a href=https://nodejs.org/en/docs/ target=_blank>Nodejs</a>
+</li>
+<li>
+<a href=https://docs.github.com/en target=_blank>GitHub</a>
+</li>
+<li>
+<a href=https://httpd.apache.org/docs/ target=_blank>Apache</a>
+</li>
+<li>
+<a href=https://nginx.org/en/docs/ target=_blank>Nginx</a>
+</li>
+<li>
+<a href=https://letsencrypt.org/docs/ target=_blank>Let&rsquo;s Encrypt</a>
+</li>
 </ul>
 <p>All software components selected are open source licenses. They each
 have active developer communities behind them to secure future support
@@ -143,7 +167,8 @@ addresses</li>
 <li>User can create new identity anchor independent of third party</li>
 <li>Can be moved between devices by users recovery key or even to a
 hardware wallet (not recommended but possible:
-<a href=https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b>https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b</a>)</li>
+<a href=https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b target=_blank>https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b</a>
+)</li>
 </ul>
 </li>
 </ul>
@@ -217,7 +242,8 @@ while allowing trust between Guardians so data can be exchanged.</li>
 <li>The Apache WebServer present in the MediaWiki container has a
 technological dependency and needs regular updates as Apache was
 effected by critical security issues like
-<a href=https://nvd.nist.gov/vuln/detail/CVE-2021-44228>CVE-2021-44228</a></li>
+<a href=https://nvd.nist.gov/vuln/detail/CVE-2021-44228 target=_blank>CVE-2021-44228</a>
+</li>
 <li>Therefore we do not expose the Apache web-server to the internet by
 default and do not recommend this to ensure that there is no
 unnecessary attack surface. If an organization decides to expose the
@@ -252,7 +278,8 @@ layer from MediaWiki classic to Boostrap 4, and respectively Bootstrap
 <h2 id=authentication>Authentication</h2>
 <ul>
 <li>For Authentication with Web-Wallets, we use
-<a href=https://github.com/pelith/node-eauth-server>https://github.com/pelith/node-eauth-server</a> which provides us with
+<a href=https://github.com/pelith/node-eauth-server target=_blank>https://github.com/pelith/node-eauth-server</a>
+which provides us with
 an open source solution for a signature-response challenge. We then
 integrate with OAUTH2 and OIDC using existing authentication
 standards to achieve the login.</li>
@@ -275,7 +302,9 @@ needs.</li>
 </ul>
 <h2 id=software-development>Software-Development</h2>
 <ul>
-<li>We use <a href=https://github.com>https://github.com</a> for software development. As we started
+<li>We use
+<a href=https://github.com target=_blank>https://github.com</a>
+for software development. As we started
 with very little budget, we gratefully utilised free resources to
 develop our open source software. This allowed us to focus on being
 productive.
@@ -302,7 +331,8 @@ most dominant web-browser on the Web, and has become the quasi standard
 with many different forks creating an ecosystem around it.
 Microsoft-Edge is actually Chrome. There are non-google chrome forks
 which deserve attention, funding and support (like
-<a href=https://github.com/Eloston/ungoogled-chromium>https://github.com/Eloston/ungoogled-chromium</a>). This will provide us
+<a href=https://github.com/Eloston/ungoogled-chromium target=_blank>https://github.com/Eloston/ungoogled-chromium</a>
+). This will provide us
 with a modern and state of the art browser architecture to work with.</p>
 <p>As Chrome is the most secure and modern base to build on, we support
 -only- chrome. Therefore we use a chrome extension to verify the content
@@ -324,12 +354,15 @@ ministry.</p>
 <h3 id=hashing-algorithms-sha3-512>Hashing Algorithms (SHA3-512)</h3>
 <p>PKC uses standard Crypto (SHA3-512) winner of the National Institute of
 Standards and Technology see
-<a href=https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf>https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf</a> . We do not
+<a href=https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf target=_blank>https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf</a>
+. We do not
 use custom encryption as this comes at the cost of unnecessary risks.</p>
-<p>This is an accepted secure and recommended standard according to <a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile">BSI -
+<p>This is an accepted secure and recommended standard according to
+<a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile" target=_blank>BSI -
 Technische Richtlinie – Kryptographische Algorithmen und Schlussellängen
 Seite
-42</a>.</p>
+42</a>
+.</p>
 <h3 id=merkle-tree5>Merkle Tree<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup></h3>
 <ul>
 <li>We use merkle trees to be able to witness the state of all pages /
@@ -337,11 +370,13 @@ files in a single hash. Used to generate a unique fingerprint of a
 domain (a collection of verified data hash chain&rsquo;s within one
 domain).</li>
 <li>There is a lot of future potential in ongoing research to improve
-privacy and utility of merkle trees in the <a href=https://pkc.inblock.io/index.php/Aqua_Protocol>Aqua
+privacy and utility of merkle trees in the
+<a href=https://pkc.inblock.io/index.php/Aqua_Protocol target=_blank>Aqua
 Protocol</a>
 <ul>
 <li>See related technologies and research like TAPROOT:
-<a href=https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki>https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki</a></li>
+<a href=https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki target=_blank>https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -350,14 +385,19 @@ Protocol</a>
 authentication challenges.</p>
 <ul>
 <li>in ether.js
-<a href=https://github.com/ethereumjs/ethereumjs-monorepo/blob/ade4233ddffffdd146b386de701762196a8c941c/packages/util/src/signature.ts#L23-L45>cryptography/secp256k1</a>
+<a href=https://github.com/ethereumjs/ethereumjs-monorepo/blob/ade4233ddffffdd146b386de701762196a8c941c/packages/util/src/signature.ts#L23-L45 target=_blank>cryptography/secp256k1</a>
 see
-<a href=https://github.com/ethereum/js-ethereum-cryptography/blob/b1f35053df3f0cfa132fc45d59b688ca0d62994a/src/secp256k1-compat.ts#L99-L123>implementation</a></li>
+<a href=https://github.com/ethereum/js-ethereum-cryptography/blob/b1f35053df3f0cfa132fc45d59b688ca0d62994a/src/secp256k1-compat.ts#L99-L123 target=_blank>implementation</a>
+</li>
 <li>related documents of the &lsquo;Standards for Efficient Cryptography
-Group&rsquo; <a href=https://secg.org/>https://secg.org/</a> specific doc secp256k1 [<a href=https://www.secg.org/sec2-v2.pdf>Both variants
+Group&rsquo;
+<a href=https://secg.org/ target=_blank>https://secg.org/</a>
+specific doc secp256k1 [
+<a href=https://www.secg.org/sec2-v2.pdf target=_blank>Both variants
 of the same standardization process of the Standards for Efficient
 Cryptography Group 2015, See differences
-P9</a></li>
+P9</a>
+</li>
 </ul>
 <ul>
 <li>Supported by BSI secp256r1 but secp256k1 is not
@@ -368,7 +408,8 @@ assessment or recommendation for secp256k1.</li>
 </ul>
 <ul>
 <li>For authentication with Metamask Ethereum wallets we currently use
-<a href=https://github.com/pelith/node-eauth-server>https://github.com/pelith/node-eauth-server</a>. We are signing a
+<a href=https://github.com/pelith/node-eauth-server target=_blank>https://github.com/pelith/node-eauth-server</a>
+. We are signing a
 unique input value with ethereum.js using the personal sign method.
 Once the challenge is completed successfully we receive an OAUTH
 token from the Eauth identity provider of the pelith Eauth server.</li>
@@ -377,19 +418,29 @@ token from the Eauth identity provider of the pelith Eauth server.</li>
 <hr>
 <ol>
 <li id=fn:1 role=doc-endnote>
-<p><a href=https://linuxiac.com/nginx-most-popular-web-server/>https://linuxiac.com/nginx-most-popular-web-server/</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://linuxiac.com/nginx-most-popular-web-server/ target=_blank>https://linuxiac.com/nginx-most-popular-web-server/</a>
+&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:2 role=doc-endnote>
-<p><a href=https://letsencrypt.org/>https://letsencrypt.org/</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://letsencrypt.org/ target=_blank>https://letsencrypt.org/</a>
+&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:3 role=doc-endnote>
-<p><a href=https://github.com/inblockio/aqua-verifypage-chrome-extension>https://github.com/inblockio/aqua-verifypage-chrome-extension</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://github.com/inblockio/aqua-verifypage-chrome-extension target=_blank>https://github.com/inblockio/aqua-verifypage-chrome-extension</a>
+&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:4 role=doc-endnote>
-<p><a href="https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software">https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software</a>&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href="https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software" target=_blank>https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software</a>
+&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 <li id=fn:5 role=doc-endnote>
-<p><a href=https://en.wikipedia.org/wiki/Merkle_tree>https://en.wikipedia.org/wiki/Merkle_tree</a>&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+<p>
+<a href=https://en.wikipedia.org/wiki/Merkle_tree target=_blank>https://en.wikipedia.org/wiki/Merkle_tree</a>
+&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

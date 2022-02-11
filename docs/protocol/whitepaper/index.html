@@ -22,12 +22,12 @@
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://aqua-protocol.org/docs/protocol/whitepaper/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-11T08:31:38-05:00"><meta property="og:site_name" content="AQUA Protocol">
+<meta property="article:modified_time" content="2022-02-11T08:40:25-05:00"><meta property="og:site_name" content="AQUA Protocol">
 <meta itemprop=name content="Whitepaper">
 <meta itemprop=description content="High level outline of Aqua Protocol (AQP) specification
 ">
-<meta itemprop=dateModified content="2022-02-11T08:31:38-05:00">
-<meta itemprop=wordCount content="3772">
+<meta itemprop=dateModified content="2022-02-11T08:40:25-05:00">
+<meta itemprop=wordCount content="3782">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Whitepaper">
 <meta name=twitter:description content="High level outline of Aqua Protocol (AQP) specification
@@ -56,7 +56,7 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.d24f98e1f03d5a34f21a79d234439ba6.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.128f851df41262b2f3186916b12dee64.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -67,7 +67,7 @@
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <div id=content-mobile>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.d24f98e1f03d5a34f21a79d234439ba6.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.128f851df41262b2f3186916b12dee64.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form>
@@ -229,16 +229,21 @@
 </tr>
 <tr>
 <td>Implementation:</td>
-<td><a href=https://github.com/inblockio/micro-pkc>https://github.com/inblockio/micro-pkc</a></td>
+<td>
+<a href=https://github.com/inblockio/micro-pkc target=_blank>https://github.com/inblockio/micro-pkc</a>
+</td>
 </tr>
 </tbody>
 </table>
 <h2 id=introduction>Introduction</h2>
 <p>The Aqua Protocol (AQP) is a data accountability and exchange protocol between
 hosts in peer-to-peer environments. The AQP is used to realize the goal of
-<a href=data-accounting.md>accounting for data origin and history</a>. The description
-for the proof-of-concept implementation of the AQP can be found in <a href=../implementations/reference-architecture.md>this
-page</a>.</p>
+<a href=/docs/protocol/data-accounting/>accounting for data origin and history</a>
+. The description
+for the proof-of-concept implementation of the AQP can be found in
+<a href=/docs/implementations/reference-architecture/>this
+page</a>
+.</p>
 <h2 id=motivation>Motivation</h2>
 <p>In today&rsquo;s world, there are no widely adopted trustless processes of checking if
 data have been manipulated or corrupted, are attributed to the wrong author, or
@@ -273,18 +278,24 @@ same way across multiple interacting hosts.</p>
 (of private-public key pairs) which are used to govern digital assets. This is
 done by authorization of transactions via digital signatures or by initiating
 decryption processes to access data.</p>
-<p>See <a href=design-principles.md#separation-of-account-and-service>Separation of Concerns</a>.</p>
+<p>See
+<a href=/docs/protocol/design-principles/#separation-of-account-and-service>Separation of Concerns</a>
+.</p>
 <h3 id=account>Account</h3>
 <p>We are following Ethereum&rsquo;s account definition:</p>
 <blockquote>
 <p>In general, there are two types of accounts. Externally owned accounts,
 controlled by private keys. And contract accounts, controlled by their
 contract code
-&ndash; <a href=https://ethereum.org/en/whitepaper/#ethereum-accounts>Ethereum Whitepaper</a></p>
+&ndash;
+<a href=https://ethereum.org/en/whitepaper/#ethereum-accounts target=_blank>Ethereum Whitepaper</a>
+</p>
 </blockquote>
 <p>In general, we can&rsquo;t prove if an account owner is a person or a machine. With
 advancements in AI, it will become increasingly difficult to prove that a human
-is a human. <a href=https://www.proofofhumanity.id/>Attempts are being made</a> to
+is a human.
+<a href=https://www.proofofhumanity.id/ target=_blank>Attempts are being made</a>
+to
 increase trustworthiness of accounts which fall short in questions of privacy
 and security as they make public claims. Traditional know your customer (KYC)
 combined with the AQP and Aqua Identity Protocol (AIP) identification processes
@@ -293,14 +304,18 @@ This allows us to outsource the problem of identification, where we only focus
 on unique accounts which are sufficient for data accounting independent of
 humans or machines. Identity claims issued via the AIP will help to provide the
 context required to meaningfully interact between accounts.</p>
-<p>For more on this topic, please read the <a href=aqua-identity-protocol.md>Aqua Identity
-Protocol</a>.</p>
+<p>For more on this topic, please read the
+<a href=/docs/protocol/aqua-identity-protocol/>Aqua Identity
+Protocol</a>
+.</p>
 <h3 id=domain>Domain</h3>
 <p>A domain is a unique namespace attributed to an account. It allows us to manage
 services and files within that namespace creating a domain of data governance
 After granted permissions, additional accounts can be added to share control
 over a domain or singular assets. To enforce boundaries of a domain, additional
-software like the <a href=guardian.md>Guardian</a> is required.</p>
+software like the
+<a href=/docs/protocol/guardian/>Guardian</a>
+is required.</p>
 <p>E.g. by setting up the a data vault with your account it becomes your
 domain of data governance.</p>
 <h3 id=revision>Revision</h3>
@@ -336,8 +351,10 @@ it can be easily priced, exchanged or traded.</p>
 a secure architecture and measures for keeping data assets safe. This is
 achieved through encryption, strong authentication and restrictive access to
 keep data private by default.</p>
-<p>See <a href=design-principles.md#separation-of-account-and-service>Design Principles / Separation of Account and
-Service</a></p>
+<p>See
+<a href=/docs/protocol/design-principles/#separation-of-account-and-service>Design Principles / Separation of Account and
+Service</a>
+</p>
 <h3 id=witness>Witness</h3>
 <p>We define witnessing as the process of observing an event. A witness is judged
 by their capability to recollect and share an observed event. In other words,
@@ -358,7 +375,9 @@ specific revision and the previous revisions within a hash chain has existed.</p
 of the previous node content. A portable hash chain is a hash chain that can be
 moved from one host to another.</p>
 <h3 id=immutable-hyperlinks--transclusions>Immutable Hyperlinks / Transclusions</h3>
-<p>See <a href=immutable-hyperlinks.md>Immutable Hyperlinks</a>.</p>
+<p>See
+<a href=/docs/protocol/immutable-hyperlinks/>Immutable Hyperlinks</a>
+.</p>
 <h2 id=specification>Specification</h2>
 <p>To identify a revision with a unique fingerprint, we hash its content using
 the SHA3-512 hashing function which always has a 128 characters long
@@ -369,9 +388,12 @@ with the revision, in addition to its content checksum. In the next section,
 we differentiate between REQUIRED and OPTIONAL properties for each
 revision.</p>
 <p>All hashes are based on
-<a href=https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf>SHA3-512</a>.
-This encryption standard is used to construct <a href=#portable-hash-chain>portable hash
-chains</a>, which are serializing of data and its history in
+<a href=https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf target=_blank>SHA3-512</a>
+.
+This encryption standard is used to construct
+<a href=#portable-hash-chain>portable hash
+chains</a>
+, which are serializing of data and its history in
 a form that can be verified, and independent of location. The portable hash
 chain can be fully or partially exchanged between hosts depending on the
 application of the data. From here on, we refer the term &ldquo;portable hash chain&rdquo;
@@ -433,7 +455,8 @@ REQUIRED.</li>
 content. These could be a file, a stateful link, or a signature. The content
 extensions are sorted alphabetically by their key names. OPTIONAL.</li>
 </ul>
-<p>To see an example of <code>contentObj</code> of a revision, see the <a href=#Example>example</a>
+<p>To see an example of <code>contentObj</code> of a revision, see the
+<a href=#Example>example</a>
 section,</p>
 <h2 id=metadata>Metadata</h2>
 <pre tabindex=0><code>metadata_hash = calculate_hash_sum(
@@ -455,7 +478,8 @@ YYYYMMDDHHMMSS e.g. 20211128092608).</li>
 pair. The protocol should be abstract, where it will support &lsquo;Method&rsquo; in later
 iterations. This will allow us to use different types of implementations such
 as: PGP signatures, Ethereum, or Bitcoin
-<a href=https://en.wikipedia.org/wiki/Cryptocurrency_wallet>wallet</a>&rsquo;s signatures.</p>
+<a href=https://en.wikipedia.org/wiki/Cryptocurrency_wallet target=_blank>wallet</a>
+&rsquo;s signatures.</p>
 <p>In this specification, we use the AQP reference implementation&rsquo;s signing
 method, which is via an Ethereum wallet.</p>
 <pre tabindex=0><code>signature_hash = calculate_hash_sum(
@@ -478,8 +502,10 @@ signs the following message:</p>
 Domain Snapshot is created. This is a collection of all revision hashes within
 one domain. A Merkle tree is used to unify all hashes of the latest revisions
 of all portable hash chains within a domain into a single hash value.</p>
-<p>The <code>witness_event_verification_hash</code> is written to the <a href=#witness-network>Witness
-Network</a>. The
+<p>The <code>witness_event_verification_hash</code> is written to the
+<a href=#witness-network>Witness
+Network</a>
+. The
 <code>witness_event_verification_hash</code> is then generated by using the
 <code>domain_snapshot_genesis_hash</code> and the <code>merkle_root</code> hash together. This
 allows the page snapshot itself to also be witnessed.</p>
@@ -757,11 +783,15 @@ performed and compared with the recalculated event.</p>
 <tbody>
 <tr>
 <td>Command-Line-Verification-Tool</td>
-<td><a href=https://github.com/inblockio/aqua-verifier-js>https://github.com/inblockio/aqua-verifier-js</a></td>
+<td>
+<a href=https://github.com/inblockio/aqua-verifier-js target=_blank>https://github.com/inblockio/aqua-verifier-js</a>
+</td>
 </tr>
 <tr>
 <td>Chrome Extension Verification Tool</td>
-<td><a href=https://github.com/inblockio/aqua-verifier-webextension>https://github.com/inblockio/aqua-verifier-webextension</a></td>
+<td>
+<a href=https://github.com/inblockio/aqua-verifier-webextension target=_blank>https://github.com/inblockio/aqua-verifier-webextension</a>
+</td>
 </tr>
 </tbody>
 </table>
@@ -785,7 +815,9 @@ sufficient to see that signature.</li>
 </li>
 <li>This allows direct verification after every edit via the Guardian.
 This is the preparation in the interaction to provide services
-through the <a href=guardian.md>Guardian</a>.</li>
+through the
+<a href=/docs/protocol/guardian/>Guardian</a>
+.</li>
 <li>Changing the design to include transclusions e.g. this allows the
 verification of subpages via their stateful links /
 revision_verification_hashes
@@ -831,28 +863,40 @@ underlying architecture.</li>
 <h2 id=services-on-aqp-not-yet-implemented-exploration>Services on AQP (Not yet implemented, exploration)</h2>
 <ul>
 <li>
-<p>AQP-DACS: <a href=#domain>Domain</a> Access Control System</p>
+<p>AQP-DACS:
+<a href=#domain>Domain</a>
+Access Control System</p>
 </li>
 <li>
-<p>See: <a href=guardian.md>Guardian</a> (Acting similar to a WebApplication-Firewall)</p>
+<p>See:
+<a href=/docs/protocol/guardian/>Guardian</a>
+(Acting similar to a WebApplication-Firewall)</p>
 </li>
 <li>
 <p>ANS: Name-System and Name-Registry.</p>
 </li>
 <li>
-<p>See <a href=aqua-name-resolution.md>Aqua Name Resolution</a></p>
+<p>See
+<a href=/docs/protocol/aqua-name-resolution/>Aqua Name Resolution</a>
+</p>
 </li>
 <li>
-<p>AQP-SSI: Self-Sovereign-Identity Protocol for <a href=aqua-identity-protocol.md#self-issued-identity-claims>Identity
-Claim</a> management</p>
+<p>AQP-SSI: Self-Sovereign-Identity Protocol for
+<a href=/docs/protocol/aqua-identity-protocol/#self-issued-identity-claims>Identity
+Claim</a>
+management</p>
 </li>
 <li>
-<p>See <a href=aqua-identity-protocol.md>Aqua Identity Protocol</a></p>
+<p>See
+<a href=/docs/protocol/aqua-identity-protocol/>Aqua Identity Protocol</a>
+</p>
 </li>
 <li>
 <p>AQP Delegated Witnessing</p>
 <ul>
-<li>See <a href=delegated-witnessing.md>Delegated Witnessing</a></li>
+<li>See
+<a href=/docs/protocol/delegated-witnessing/>Delegated Witnessing</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -862,22 +906,27 @@ the concept of portable hash chains, the concept of personal data vaults for dat
 management in comparison with the AQP reference implementation.</p>
 <p>This following list is not exhaustive:</p>
 <ul>
-<li><a href=http://surety.com/>Surety</a>
+<li>
+<a href=http://surety.com/ target=_blank>Surety</a>
 The oldest blockchain-like timestamping service which has been publishing
 to the New York Times since 1995.</li>
-<li><a href=https://opentimestamps.org/>OpenTimestamp</a>
+<li>
+<a href=https://opentimestamps.org/ target=_blank>OpenTimestamp</a>
 A free and open-source service provided by Peter Todd using the Bitcoin
 network as a distributed cryptographic clock. The AQP MAY use OpenTimestamp
 as a witness network.</li>
-<li><a href=https://originstamp.com/>OriginStamp</a>
+<li>
+<a href=https://originstamp.com/ target=_blank>OriginStamp</a>
 A company providing paid timestamping services for their customers.
 It looks very similar to OpenTimestamps with open-source client libraries.</li>
-<li><a href=https://www.factomprotocol.org/>Factom Protocol</a>
+<li>
+<a href=https://www.factomprotocol.org/ target=_blank>Factom Protocol</a>
 A service which creates an architecture with an extra layer of blockchain,
 to provide an extra layer of trusted parties while providing their own
 token. In our opinion, it introduces unnecessary complexity and
 intermediaries as dependencies compared to the AQP.</li>
-<li><a href=https://www.openattestation.com/>OpenAttestation</a>
+<li>
+<a href=https://www.openattestation.com/ target=_blank>OpenAttestation</a>
 An implementation of a timestamping service for document certification. One
 application of it is for secure digital vaccination certificates by the
 Singaporean government. They use the MetaMask Ethereum wallet for signing
@@ -952,7 +1001,7 @@ economy. This also allows to create unforgeable invoices which can be clearly
 attributed to its sender, avoiding fraud. This is one of many other use cases,
 e.g. providing trusted news via revision-controlled journalism.</p>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified February 11, 2022: <a href=https://github.com/inblockio/aqua-docs/commit/1ed8a04e4de06d7e01920098aebfe4658d24df86>whitepaper: Fix typo (1ed8a04)</a>
+Last modified February 11, 2022: <a href=https://github.com/inblockio/aqua-docs/commit/0a1fb92100cd0e59de78a9d186a771e0a916efc4>feat: Enable relative Markdown links (0a1fb92)</a>
 </div>
 </div>
 </main>
