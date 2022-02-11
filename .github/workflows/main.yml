@@ -53,4 +53,4 @@ jobs:
           exclude_assets: '.github,README.md'
           keep_files: false
           publish_branch: gh-pages
-          cname: inblock.io
+          cname: aqua-protocol.org
