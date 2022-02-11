@@ -22,16 +22,16 @@ Self-Sovereign-Identity provided by Christopher Allen in shortened form here.[^4
 
 ### Self-Sovereign-Identity-Principles
 
-1.  **Existence.** Users must have an independent existence. 
-2.  **Control.** Users must control their identities.
-3.  **Access.** Users must have access to their own data.
-4.  **Transparency.** Systems and algorithms must be transparent.
-5.  **Persistence.** Identities must be long-lived.
-6.  **Portability.** Information and services about identity must be transportable.
-7.  **Interoperability.** Identities should be as widely usable as possible.
-8.  **Consent**. Users must agree to the use of their identity.
-9.  **Minimalization.** Disclosure of claims must be minimized.
-10. **Protection.** The rights of users must be protected.
+1.  **Existence:** Users must have an independent existence. 
+2.  **Control:** Users must control their identities.
+3.  **Access:** Users must have access to their own data.
+4.  **Transparency:** Systems and algorithms must be transparent.
+5.  **Persistence:** Identities must be long-lived.
+6.  **Portability:** Information and services about identity must be transportable.
+7.  **Interoperability:** Identities should be as widely usable as possible.
+8.  **Consent:** Users must agree to the use of their identity.
+9.  **Minimization:** Disclosure of claims must be minimized.
+10. **Protection:** The rights of users must be protected.
 
 
 Those 10 stated principles are implemented within the Aqua Protocol and
@@ -55,7 +55,7 @@ Pages with the namespace <Account>: must be 'read and write able' by
 data of the user. This data should be stored in a place where only the
 account owner has access to. This can be achieved by having the data
 stored locally on a machine the account owner has, or by using
-cryptography which requires the accounts owner explicit interaction to
+cryptography which requires the account's owner explicit interaction to
 decrypt it. The content should not be decrypted on the server, but
 within the web-browser or client-application to ensure that a
 potentially compromised service-provider can't leak the sensitive
@@ -74,7 +74,7 @@ protection for citizens.
 
 ### Self Issued Identity Claims
 
-are used to make statements about an account to form an identity. Those
+These are used to make statements about an account to form an identity. Those
 claims can be partially revealed on demand to other parties. Those
 claims can also be protected by advancements in privacy technologies
 like Zero-Knowledge-Proofs and ongoing advancements in key management.
@@ -92,7 +92,7 @@ school certificates.
 Identity claims in the [Aqua Identity
 Protocol](https://pkc.inblock.io/index.php/Aqua_Identity_Protocol) are
 **always self issues**. This means that the first signature on the claim
-needs to be from the private key which belongs to the account the claim
+needs to be from the private key which belongs to the account, the claim
 is issued for. This proves account ownership. This means:
 
 -   All claims can only be issued from the account which they make a
@@ -129,8 +129,8 @@ Policies for Self-Issued-Identity-Claims:
 -   Example:
     [0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate](https://pkc.inblock.io/index.php/0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate)
 
-The title is not protected against changes but the content of the page
-is protected.\***IMPORTANT:** Therefore we **must** compare the page
+The title is not protected against changes, but the content of the page
+is protected.\***IMPORTANT:** Therefore, we **must** compare the page
 stored **<account>,<attribute>**. Then reassemble the title to check if
 they are consistent before proceeding with further validation of the
 identity claim.
@@ -175,14 +175,14 @@ entities.
     identity claim
 3.  The certificate is signed after it was issued as an identity claim
     by a Trust Authority (e.g. the university professor) and the
-    university directors office (director)
+    university director's office (director)
 4.  The university professor holds trust claims from the university
     director
 5.  The university director holds trust claims by the ministry of
     education
 6.  The educational ministry of education holds trust claims by the
-    minister president
-7.  The minister president holds trust claims of a verified election
+    minister-president
+7.  The minister-president holds trust claims of a verified election
 
 The chain of trust is supplied by the party signing the statement.
 
@@ -195,7 +195,7 @@ that authority.**</i>
 2.  E.g. the university director needs to supply the claim of the
     educational ministry
 3.  E.g. the educational ministry needs to supply the claim of the
-    minister president.
+    minister-president.
 4.  ... and so on.
 
 # Verification Process
@@ -270,7 +270,7 @@ re-instantiation of Identity Claim's. This solves the problems related
 and known to certificate revocation. The Claim Registry acts like a
 global Claim Revocation List (CRL)[^5].
 
-E.g. a drivers license can be revoked by a Trust Authority and later be
+E.g. a driver's license can be revoked by a Trust Authority and later be
 re-instantiated after the 'Punishment for driving too fast' is over.
 Identity claims are either valid or invalid. The Claim Registry is
 managing who can revoke / re-instantiate a registered claim.
@@ -301,8 +301,8 @@ are account bound.
 -   **<valid until>** \[type: date DDMMYYYY\]: if current date past
     expiration date, the claim is considered expired and is not accepted
     anymore
--   **\< owner == sender address>** \[type:addess\] an account which
-    updates the status of the claim e.g. revocation or suspension of an
+-   **\< owner == sender address>** \[type:address\] an account which
+    updates the status of the claim, e.g. revocation or suspension of an
     account
 -   **\< additional revocation authority>** \[type:address\] list of
     accounts which are authorized to update status of the claim other
@@ -357,13 +357,12 @@ Registration Event: 1
 
 -   Locally completed (within the Self-Issued Identity Claim) by
     changing the status to 'revoked' and signing by the issuer. This
-    adds a receipt to the identity claim which is displayed when
+    adds a receipt to the identity claim, which is displayed when
     verifying the claim. This includes the revocation transaction for
     the revocation on the
     [Identity-Registry](https://pkc.inblock.io/index.php/Identity-Registry)
 -   If there is a new claim which is succeeding the previous identity
-    claim[Claim
-    Registry](https://pkc.inblock.io/index.php/Claim_Registry), then
+    claim[Claim Registry](https://pkc.inblock.io/index.php/Claim_Registry), then
     this is also noticed within the revocation receipt under
     'Successor-Claim: <hash>.
 
@@ -390,14 +389,12 @@ Registration Event: 1
 
 Examples for **Identity Claims with Aqua:**
 
--   [Example Identity Documents with PKC and Data
-    Accounting](https://pkc.inblock.io/index.php/User:0xa2026582b94feb9124231fbf7b052c39218954c2)
+-   [Example Identity Documents with PKC and Data Accounting](https://pkc.inblock.io/index.php/User:0xa2026582b94feb9124231fbf7b052c39218954c2)
 -   Reference:Example Identity Documents (Research)
 
 # FAQ
 
-1.  How to find [Claim
-    Registry](https://pkc.inblock.io/index.php/Claim_Registry)'s? By
+1.  How to find [Claim Registry](https://pkc.inblock.io/index.php/Claim_Registry)'s? By
     following the chain of trust of authoritative claims and validating
     them one by one.
 2.  How to check if authority is still valid and how to find an
@@ -409,23 +406,18 @@ Examples for **Identity Claims with Aqua:**
 
 Important References:
 
--   [Basic intro into
-    DID](https://www.youtube.com/watch?v=gWfAIYXcyH4&ab_channel=Okta)
--   [Basic intro into
-    DIDComm](https://www.youtube.com/watch?v=8c7yRTENqSc&ab_channel=DecentralizedIdentityFoundation)
--   [W3C Verified Data
-    Model](https://www.w3.org/TR/vc-data-model/#claims)
+-   [Basic intro into DID](https://www.youtube.com/watch?v=gWfAIYXcyH4&ab_channel=Okta)
+-   [Basic intro into DIDComm](https://www.youtube.com/watch?v=8c7yRTENqSc&ab_channel=DecentralizedIdentityFoundation)
+-   [W3C Verified Data Model](https://www.w3.org/TR/vc-data-model/#claims)
 -   [Revocation List 2020](https://w3c-ccg.github.io/vc-status-rl-2020/)
     A privacy-preserving mechanism for revoking Verifiable Credentials
--   [DIDCOMM implementations and
-    use-cases](https://github.com/decentralized-identity/didcomm-messaging)
+-   [DIDCOMM implementations and use-cases](https://github.com/decentralized-identity/didcomm-messaging)
 -   [DIDkit](https://github.com/spruceid/didkit)
 
 Thought leader Christopher Allen:
 
 -   [Self-Sovereign-Identity-Principles](https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md)
--   [A bitcoin based SSI infrastructure
-    prototype](https://github.com/BlockchainCommons/Gordian)
+-   [A bitcoin based SSI infrastructure prototype](https://github.com/BlockchainCommons/Gordian)
 
 <references />
 
