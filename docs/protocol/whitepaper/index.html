@@ -22,11 +22,11 @@
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://aqua-protocol.org/docs/protocol/whitepaper/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-10T13:28:34+05:30"><meta property="og:site_name" content="AQUA Protocol">
+<meta property="article:modified_time" content="2022-02-09T20:57:17+05:30"><meta property="og:site_name" content="AQUA Protocol">
 <meta itemprop=name content="Whitepaper">
 <meta itemprop=description content="High level outline of Aqua Protocol (AQP) sepcification
 ">
-<meta itemprop=dateModified content="2022-02-10T13:28:34+05:30">
+<meta itemprop=dateModified content="2022-02-09T20:57:17+05:30">
 <meta itemprop=wordCount content="3772">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Whitepaper">
@@ -236,8 +236,8 @@
 <h2 id=introduction>Introduction</h2>
 <p>The Aqua Protocol (AQP) is a data accountability and exchange protocol between
 hosts in peer-to-peer environments. The AQP is used to realize the goal of
-<a href=Data_Accounting.md>accounting for data origin and history</a>. The description
-for the proof-of-concept implementation of the AQP can be found in <a href=Reference_Implementation_Architecture.md>this
+<a href=data-accounting.md>accounting for data origin and history</a>. The description
+for the proof-of-concept implementation of the AQP can be found in <a href=../implementations/reference-architecture.md>this
 page</a>.</p>
 <h2 id=motivation>Motivation</h2>
 <p>In today&rsquo;s world, there are no widely adopted trustless processes of checking if
@@ -273,7 +273,7 @@ same way across multiple interacting hosts.</p>
 (of private-public key pairs) which are used to govern digital assets. This is
 done by authorization of transactions via digital signatures or by initiating
 decryption processes to access data.</p>
-<p>See <a href=Design_Principles.md#principle-separation-of-account-and-service>Separation of Concerns</a>.</p>
+<p>See <a href=design-principles.md#separation-of-account-and-service>Separation of Concerns</a>.</p>
 <h3 id=account>Account</h3>
 <p>We are following Ethereum&rsquo;s account definition:</p>
 <blockquote>
@@ -293,14 +293,14 @@ This allows us to outsource the problem of identification, where we only focus
 on unique accounts which are sufficient for data accounting independent of
 humans or machines. Identity claims issued via the AIP will help to provide the
 context required to meaningfully interact between accounts.</p>
-<p>For more on this topic, please read the <a href=https://github.com/inblockio/aqua-docs/blob/main/Aqua_Identity_Protocol.md>Aqua Identity
+<p>For more on this topic, please read the <a href=aqua-identity-protocol.md>Aqua Identity
 Protocol</a>.</p>
 <h3 id=domain>Domain</h3>
 <p>A domain is a unique namespace attributed to an account. It allows us to manage
 services and files within that namespace creating a domain of data governance
 After granted permissions, additional accounts can be added to share control
 over a domain or singular assets. To enforce boundaries of a domain, additional
-software like the <a href=Guardian.md>Guardian</a> is required.</p>
+software like the <a href=guardian.md>Guardian</a> is required.</p>
 <p>E.g. by setting up the a data vault with your account it becomes your
 domain of data governance.</p>
 <h3 id=revision>Revision</h3>
@@ -336,7 +336,7 @@ it can be easily priced, exchanged or traded.</p>
 a secure architecture and measures for keeping data assets safe. This is
 achieved through encryption, strong authentication and restrictive access to
 keep data private by default.</p>
-<p>See <a href=https://github.com/inblockio/aqua-docs/blob/main/Design_Principles.md#principle-separation-of-account-and-service>Design Principles / Separation of Account and
+<p>See <a href=design-principles.md#separation-of-account-and-service>Design Principles / Separation of Account and
 Service</a></p>
 <h3 id=witness>Witness</h3>
 <p>We define witnessing as the process of observing an event. A witness is judged
@@ -358,7 +358,7 @@ specific revision and the previous revisions within a hash chain has existed.</p
 of the previous node content. A portable hash chain is a hash chain that can be
 moved from one host to another.</p>
 <h3 id=immutable-hyperlinks--transclusions>Immutable Hyperlinks / Transclusions</h3>
-<p>See <a href=Immutable_Hyperlinks.md>Immutable Hyperlinks</a>.</p>
+<p>See <a href=immutable-hyperlinks.md>Immutable Hyperlinks</a>.</p>
 <h2 id=specification>Specification</h2>
 <p>To identify a revision with a unique fingerprint, we hash its content using
 the SHA3-512 hashing function which always has a 128 characters long
@@ -785,7 +785,7 @@ sufficient to see that signature.</li>
 </li>
 <li>This allows direct verification after every edit via the Guardian.
 This is the preparation in the interaction to provide services
-through the <a href=Guardian.md>Guardian</a>.</li>
+through the <a href=guardian.md>Guardian</a>.</li>
 <li>Changing the design to include transclusions e.g. this allows the
 verification of subpages via their stateful links /
 revision_verification_hashes
@@ -834,25 +834,25 @@ underlying architecture.</li>
 <p>AQP-DACS: <a href=#domain>Domain</a> Access Control System</p>
 </li>
 <li>
-<p>See: <a href=Guardian.md>Guardian</a> (Acting similar to a WebApplication-Firewall)</p>
+<p>See: <a href=guardian.md>Guardian</a> (Acting similar to a WebApplication-Firewall)</p>
 </li>
 <li>
 <p>ANS: Name-System and Name-Registry.</p>
 </li>
 <li>
-<p>See <a href=Aqua_Name_Resolution.md>Aqua Name Resolution</a></p>
+<p>See <a href=aqua-name-resolution.md>Aqua Name Resolution</a></p>
 </li>
 <li>
-<p>AQP-SSI: Self-Sovereign-Identity Protocol for <a href=Aqua_Identity_Protocol.md#self-issued-identity-claims>Identity
+<p>AQP-SSI: Self-Sovereign-Identity Protocol for <a href=aqua-identity-protocol.md#self-issued-identity-claims>Identity
 Claim</a> management</p>
 </li>
 <li>
-<p>See <a href=Aqua_Identity_Protocol.md>Aqua Identity Protocol</a></p>
+<p>See <a href=aqua-identity-protocol.md>Aqua Identity Protocol</a></p>
 </li>
 <li>
 <p>AQP Delegated Witnessing</p>
 <ul>
-<li>See <a href=Delegated_Witnessing.md>Delegated Witnessing</a></li>
+<li>See <a href=delegated-witnessing.md>Delegated Witnessing</a></li>
 </ul>
 </li>
 </ul>
@@ -952,7 +952,7 @@ economy. This also allows to create unforgeable invoices which can be clearly
 attributed to its sender, avoiding fraud. This is one of many other use cases,
 e.g. providing trusted news via revision-controlled journalism.</p>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified February 10, 2022: <a href=https://github.com/inblockio/aqua-docs/commit/31ae647e4dd90fa80df181a23e190144c89d7ea1>Fix broken links aqua-name-resolution.md (#9) (31ae647)</a>
+Last modified February 9, 2022: <a href=https://github.com/inblockio/aqua-docs/commit/6f8b2431befd65909bd5c1d367bbd6ac8ab4aec1>Fix broken links whitepaper.md (6f8b243)</a>
 </div>
 </div>
 </main>
