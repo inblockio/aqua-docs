@@ -93,22 +93,22 @@ Establish trust between two Aqua domains. For this we have Alice and Bob which
 want to establish trust between their domains. They both have a Guardian in
 place to protect their data vaults.
 
-Step 1) Alice: Create access contract:
-    I <Alice_account> want to connect from my <domain_id> to a <domain_id> controlled by <Bobs_account> with my <alice_domain_id> via the following channel: DNS/HTTPS via <alice_Guardian.domain.com>.
-Step 2) Alice: sign contract
-Step 3) Alice: SEND contract send the page via 'mail' / 'matrix' whatever to the remote PKC instance.
-Step 4) Bob: veries the contract contract and imports it
-Step 5) Bob: extend contract: I <bobs_acocunt> connect my PKC <bobs_domain_id> to your PKC <Alice_domain_id> via my Guardian_endpoint <bobs_guardian.domain2.com>.
-Step 6) Bob: sign extended contract: Bob uses his wallet to sign his extended contract.
-Step 7) Bob: send extended contract TO Alice: Bob sends his Contract to his Guardian.
-Step 8) Bob's Guardian: Verifies and sends the contract to Alice Guardian.
-Step 9) Alice Guardian:
+Steps:
+1. Alice: Create access contract: I <Alice_account> want to connect from my <domain_id> to a <domain_id> controlled by <Bobs_account> with my <alice_domain_id> via the following channel: DNS/HTTPS via <alice_Guardian.domain.com>.
+2. Alice: sign contract
+3. Alice: SEND contract send the page via 'mail' / 'matrix' whatever to the remote PKC instance.
+4. Bob: veries the contract contract and imports it
+5. Bob: extend contract: I <bobs_acocunt> connect my PKC <bobs_domain_id> to your PKC <Alice_domain_id> via my Guardian_endpoint <bobs_guardian.domain2.com>.
+6. Bob: sign extended contract: Bob uses his wallet to sign his extended contract.
+7. Bob: send extended contract TO Alice: Bob sends his Contract to his Guardian.
+8. Bob's Guardian: Verifies and sends the contract to Alice Guardian.
+9. Alice Guardian:
     Guardian verifies all data
     Sends OK back to Bob's Guardian
     Sends Updates contract into Alice PKC
     Waits for Bob's Guardian to request available pages
-Step 10) Bob's Guardian requests a list of pages: ' What pages do you share with me?'
-Step 11) Alice Guardian: Returns list of accessible resources for Bob
+10. Bob's Guardian requests a list of pages: ' What pages do you share with me?'
+11. Alice Guardian: Returns list of accessible resources for Bob
 
 ## Example: Sharing a File
 
