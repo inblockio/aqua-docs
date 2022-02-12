@@ -247,7 +247,8 @@ APIs
         -   Execute Actions: Move, Update, Edit, Delete Pages
         -   Request send to the Guardian: Verify a specific page or a
             list of pages
--   **Data-API** to retrieve Aqua-Data between a service and the
+
+- **Data-API** to retrieve Aqua-Data between a service and the
     Guardian, or between two Guardians.
     -   Send data to import API
     -   Read data via export API
@@ -255,7 +256,7 @@ APIs
             give access e.g. Data Usage Agreements, Permission
             Agreements
 
-            **Aqua Verification Library** to be able to verify incoming and
+- **Aqua Verification Library** to be able to verify incoming and
     outgoing data
     -   implementation of the 'external-verifier' in e.g. GO, Typescript
         or Javascript (current)
@@ -280,7 +281,93 @@ APIs
         permissioned transport layer)
     -   Schwarm Integration, Swarm Handler (As a publishing network)
 
+# Guardian-Integration-Services
+The Guardian has a modular design to support integration with many services and
+transport layers.
 
-**Giving access to pages with one-time passwords and signatures:**
+## Web (HTTPS / DNS) Integration Goal: Have a
+handler to connect web-facing Guardians with each other in a safe way. Be able
+to run guardian procedures via two public Facing guardians which use a public
+DNS name and HTTPS to interconnect with each other. Guardian procedures are:
+Guardian handshakes to establish trust or remove trust Request or Send portable
+Hash-Chains based on access rights between each other
 
-If you want to give somebody access to a page without ... continue.
+## Ethereum Node
+
+Integration Goal: Connect to a self-hosted or remote Ethereum Node. Option 1:
+Configuration via Alchemy (Providing Keys) via Special:DataAccountingConfig
+Option 2: Implementation of Ethereum Node via ./setup --ethereum-node (provide
+container) Configuration of Connection to RPC Ethereum node via address (if in
+same network) The Wallet can be directly be connected to a local Ethereum node
+via RPC to avoid meta-data gathering of large providers, like INFURA which
+could potential track which IP address has created which Ethereum Transaction
+with which Metamask-Wallet, leading to a de-pseudonymousation of the user. ###
+Ethereum Node Handler Goal: Accelerate lookups of the Guardian via caching
+Every-time a witness contract is called, the Ethereum Node Handler will start
+to cache the all Ethereum-Witness events of that Witness-Contract and Index
+them in it's database. This will reduce access times to ms vs potential seconds
+in lookup times, making the Guardian more performant and responsive. ## Matrix
+Node Integration Goal: Connect to a self-hosted or remote synapse-server
+(MATRIX) Node. Configure a remote matrix server or a local one via Guardian.
+Implementation of Matrix-Node deployment via ./pkc setup --matrix-node (provide
+container).
+
+### Matrix Node Handler
+
+Context: We use Ethereum Wallets as Identity-Anchors as they are globally
+unique addresses (which are collision free) broadly adopted with supported
+hardware ledgers as secure hardware elements with an existing fast moving
+ecosystem for further development. They act as 'web-based' PGP-like utilities
+which do not need any Blockchain-Interaction for Signing messages and can be
+used as a valuable off-line capable identity anchor. With this step we separate
+Identity and Service; even in case of compromising the computer of the user or
+by having a breach of secrets in the Element-Client the Identity would be safe
+(in case a hardware wallet would be used). This also drastically reduces attack
+surface to phish a users credentials; as there is no Password-Login there is no
+way to steal the password to impersonate the user. All security assumptions of
+the User-Identity come back to the security of his private key. For the
+Kolibri/PKC project this is the foundation for using wallet-addresses as
+Identities to route traffic with matrix bots between PKC's. The following
+actions are required to use the Ethereum Wallet as a strong Identity Anchor
+within Matrix.
+
+This requires the following functionality:
+* Register the user via an Ethereum wallet address (successfully piloted by inblockio)
+* Detect that it is an Ethereum Wallet-Address; Verify integrity of address with the Ethereum Wallet-Address Checksum (TBD)
+* Make username not changeable (Done via Matrix settings,successfully piloted by inblockio)
+* Wallet login with Web-Wallet Metamask via OIDC (Open ID Connect) (successfully Piloted by inblockio)
+* Verify Ownership of the Wallet by doing an Element-Client side Signature Challenge to the User. Challenge resolved by signing a message with sufficient entropy to not be ever the same (to protect against leakage) with the private key via the Ethereum
+Metamask Webwallet (or a connected Hardware-Wallet)
+* Implement a User-to-User request of proof of Identity Users / Server can challenge other users to proof that they hold the private Wallet-Key by triggering the Signature Challenge to the User; After the challenge is done, the requested party is provided with all information to do a manual verification of the signature (the Message which was
+Signed, the Signature, the used method used for the signature)
+
+### Matrix-BOT
+
+Context: The Matrix-Network communicates with the PKC through the Guardian who
+will manage all access to the MediaWiki service. The Guardian uses a Matrix-Bot (to
+handle the communication) and a Matrix-Integration (to be flexible to use a
+private synapse or a remote synapse server) to interact with the Matrix Network
+as a permissioned transport layer.
+
+Referenz-Implementation:
+Suitable options for a matrix-integration are 'go-lang' or 'rust'. Guardian
+next generation Guardian will be written in Rust, so integration of security
+relevant components would be preferably in Rust and Webassambly. A central
+point to configure the guardian to connect to matrix and other services needs
+to be provided. The matrix server is connected to the guardian with a service
+bot which is able to open rooms to exchange revisions between PKC’s.
+
+Required Functionality of the Matrix-Bot:
+* open new room for user (required) - to share ressource invite / remove other
+users to/ from room (required) - to set permissions who can read
+* shared resource close room (required) - after resource share is revoked join a
+room the user is invited too (by other matrix-bot)
+*'accept invite' check for
+challenge (provided via text from remote Guardian), leave room if challenge is
+faulty and block user (required) delete? room / delete history?
+Note: Use matrix only as channel not as storage (optional) preferably the
+history of the channel is not kept
+* post content of (mediawiki API query results from the Guardian) into a room
+* (required) read content of room (send it to the Guardian for verification,
+ before it's send to the import API) (required)
+
