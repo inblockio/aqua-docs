@@ -22,14 +22,14 @@ Self-Sovereign-Identity provided by Christopher Allen in shortened form here.[^4
 
 ### Self-Sovereign-Identity-Principles
 
-1.  **Existence:** Users must have an independent existence. 
-2.  **Control:** Users must control their identities.
-3.  **Access:** Users must have access to their own data.
+1.  **Existence:** users must have an independent existence. 
+2.  **Control:** users must control their identities.
+3.  **Access:** users must have access to their own data.
 4.  **Transparency:** Systems and algorithms must be transparent.
 5.  **Persistence:** Identities must be long-lived.
 6.  **Portability:** Information and services about identity must be transportable.
 7.  **Interoperability:** Identities should be as widely usable as possible.
-8.  **Consent:** Users must agree to the use of their identity.
+8.  **Consent:** users must agree to the use of their identity.
 9.  **Minimization:** Disclosure of claims must be minimized.
 10. **Protection:** The rights of users must be protected.
 
@@ -92,7 +92,7 @@ school certificates.
 Identity claims in the [Aqua Identity
 Protocol](https://pkc.inblock.io/index.php/Aqua_Identity_Protocol) are
 **always self issues**. This means that the first signature on the claim
-needs to be from the private key which belongs to the account, the claim
+needs to be from the private key which belongs to the account, i.e. the claim
 is issued for. This proves account ownership. This means:
 
 -   All claims can only be issued from the account which they make a
@@ -362,7 +362,8 @@ Registration Event: 1
     the revocation on the
     [Identity-Registry](https://pkc.inblock.io/index.php/Identity-Registry)
 -   If there is a new claim which is succeeding the previous identity
-    claim[Claim Registry](https://pkc.inblock.io/index.php/Claim_Registry), then
+    claim[Claim 
+    Registry](https://pkc.inblock.io/index.php/Claim_Registry), then
     this is also noticed within the revocation receipt under
     'Successor-Claim: <hash>.
 
@@ -389,7 +390,8 @@ Registration Event: 1
 
 Examples for **Identity Claims with Aqua:**
 
--   [Example Identity Documents with PKC and Data Accounting](https://pkc.inblock.io/index.php/User:0xa2026582b94feb9124231fbf7b052c39218954c2)
+-   [Example Identity Documents with PKC and Data 
+    Accounting](https://pkc.inblock.io/index.php/User:0xa2026582b94feb9124231fbf7b052c39218954c2)
 -   Reference:Example Identity Documents (Research)
 
 # FAQ
