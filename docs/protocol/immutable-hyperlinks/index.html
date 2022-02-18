@@ -22,11 +22,11 @@
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://aqua-protocol.org/docs/protocol/immutable-hyperlinks/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-18T03:51:50-05:00"><meta property="og:site_name" content="AQUA Protocol">
+<meta property="article:modified_time" content="2022-02-18T05:01:16-05:00"><meta property="og:site_name" content="AQUA Protocol">
 <meta itemprop=name content="Immutable Hyperlinks">
 <meta itemprop=description content="Shows how the Aqua URI's can be used as immutable links.
 ">
-<meta itemprop=dateModified content="2022-02-18T03:51:50-05:00">
+<meta itemprop=dateModified content="2022-02-18T05:01:16-05:00">
 <meta itemprop=wordCount content="441">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Immutable Hyperlinks">
@@ -56,7 +56,7 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.6d0bab778b05d9c3756614f98dcacbae.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.069e44b3311f67cd5d980db7cb19c961.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -67,7 +67,7 @@
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <div id=content-mobile>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.6d0bab778b05d9c3756614f98dcacbae.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.069e44b3311f67cd5d980db7cb19c961.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form>
@@ -172,15 +172,15 @@ structure.</p>
 on the remote server.</p>
 <p>The limitations of URL&rsquo;s is that they are not expressing a specific
 state of the resource they represent. There is no way to verify if the content
-of the page is consistant with the content of the page who send a URL.
+of the page is consistent with the content of the page who send a URL.
 For news pages this means that the content of the page could have changed. E.g.
 two visitors of the same news page could see two different pages.</p>
 <p>We need a better way to hyperlink so it&rsquo;s sure, that what is linked
-is consistant across domains and users. Therefore we introduce Aqua URI&rsquo;s which are
-used to enable the receive to verify the state of the ressource.</p>
+is consistent across domains and users. Therefore we introduce Aqua URI&rsquo;s which are
+used to enable the receive to verify the state of the resource.</p>
 <h2 id=goal>Goal</h2>
 <p>Use Immutable Hyperlinks as Unique Resource Identifiers (URI&rsquo;s) to allow
-a consistant referenciation of ressources with the ability to verify them with the AQP.</p>
+a consistent referenciation of resources with the ability to verify them with the AQP.</p>
 <h2 id=success-criteria>Success Criteria</h2>
 <p>A Immutable Hyperlink schema which links to a specific state of a
 resource. Instead of a stateless hyperlink we use verification_hash as a
@@ -222,10 +222,10 @@ prefix to the &lt;verification_hash> resulting in the following syntax:</p>
 <p><code>example: aqua://&lt;domain_id>/&lt;page_verification_hash></code></p>
 <p>Note: Implementatstion specific to aqua-PKC:</p>
 <ul>
-<li>The verification_hash is stored in the content-slot &lsquo;transclusion hashes&rsquo; with the internal links which referne the ressource.</li>
+<li>The verification_hash is stored in the content-slot &lsquo;transclusion hashes&rsquo; with the internal links which referne the resource.</li>
 </ul>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified February 18, 2022: <a href=https://github.com/inblockio/aqua-docs/commit/e074d080eec6a5abbbf5435b9d561225d4c4f5a9>Fix typo proove (e074d08)</a>
+Last modified February 18, 2022: <a href=https://github.com/inblockio/aqua-docs/commit/badb32fc63760df66ef92a81b6812826e25bf16d>Fix all typos found by Codespell (badb32f)</a>
 </div>
 </div>
 </main>
