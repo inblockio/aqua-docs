@@ -270,7 +270,7 @@ APIs
     Guardian. This includes set of rules used to protect the domain from
     unauthorized operations and access. Part of that are page access
     permissions which are managed by the [Data Usage
-    Agre](Data_Usage_Agreement "wikilink")[ement](Data_Usage_Agreement "wikilink")s.
+    Agreements](Data_Usage_Agreement "wikilink").
     -   <domain_id><account><genesis_hash><revision_hash>:<domain_id><account><genesis_hash><revision_hash>
 -   Transport Layer API's / Sub-Modules for connectivity to distributed
     services
@@ -358,7 +358,7 @@ to be provided. The matrix server is connected to the guardian with a service
 bot which is able to open rooms to exchange revisions between PKC’s.
 
 Required Functionality of the Matrix-Bot:
-* open new room for user (required) - to share ressource invite / remove other
+* open new room for user (required) - to share resource invite / remove other
 users to/ from room (required) - to set permissions who can read
 * shared resource close room (required) - after resource share is revoked join a
 room the user is invited too (by other matrix-bot)

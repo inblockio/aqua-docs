@@ -15,19 +15,19 @@ on the remote server.
 
 The limitations of URL's is that they are not expressing a specific
 state of the resource they represent. There is no way to verify if the content
-of the page is consistant with the content of the page who send a URL.
+of the page is consistent with the content of the page who send a URL.
 For news pages this means that the content of the page could have changed. E.g.
 two visitors of the same news page could see two different pages.
 
 We need a better way to hyperlink so it's sure, that what is linked
-is consistant across domains and users. Therefore we introduce Aqua URI's which are
-used to enable the receive to verify the state of the ressource.
+is consistent across domains and users. Therefore we introduce Aqua URI's which are
+used to enable the receive to verify the state of the resource.
 
 Goal
 ----
 
 Use Immutable Hyperlinks as Unique Resource Identifiers (URI's) to allow
-a consistant referenciation of ressources with the ability to verify them with the AQP.
+a consistent referenciation of resources with the ability to verify them with the AQP.
 
 Success Criteria
 ----------------
@@ -82,4 +82,4 @@ prefix to the <verification_hash> resulting in the following syntax:
 `example: aqua://<domain_id>/<page_verification_hash>`
 
 Note: Implementatstion specific to aqua-PKC:
-- The verification_hash is stored in the content-slot 'transclusion hashes' with the internal links which referne the ressource.
+- The verification_hash is stored in the content-slot 'transclusion hashes' with the internal links which referne the resource.

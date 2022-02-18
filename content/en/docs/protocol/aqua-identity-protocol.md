@@ -301,7 +301,7 @@ are account bound.
 -   **<valid until>** \[type: date DDMMYYYY\]: if current date past
     expiration date, the claim is considered expired and is not accepted
     anymore
--   **\< owner == sender address>** \[type:addess\] an account which
+-   **\< owner == sender address>** \[type:address\] an account which
     updates the status of the claim e.g. revocation or suspension of an
     account
 -   **\< additional revocation authority>** \[type:address\] list of

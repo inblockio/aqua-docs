@@ -193,7 +193,7 @@ and were able to collaborate to solve various issues to improve the
 skin. We are coordinating with other parties to see how we can improve
 support for the Skin. In the future we are hoping to increase the
 maintainer base. Prospectively we want to use Tweeki as an abstraction
-layer from MediaWiki classic to Boostrap 4, and respectively Bootstrap
+layer from MediaWiki classic to Bootstrap 4, and respectively Bootstrap
 5+.
 
 ## Authentication

@@ -3,7 +3,7 @@ title: "Design Princiciples"
 linkTitle: "Design Principles"
 weight: 8
 description: >
-  Lists the deisgn principles underlaying our reference implementation
+  Lists the design principles underlying our reference implementation
 ---
 
 The following design principles pertain to Aqua reference Implementation `PKC`

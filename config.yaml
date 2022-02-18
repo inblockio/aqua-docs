@@ -61,7 +61,7 @@ services:
 languages:
   en:
     title: "AQUA Protocol"
-    description: "Welcome to the AQUA Protocol, a simple and novel approach to proove integrity of data, authorship, and time!"
+    description: "Welcome to the AQUA Protocol, a simple and novel approach to prove integrity of data, authorship, and time!"
     languageName: "English"
     weight: 1
 
