@@ -54,3 +54,11 @@ jobs:
           keep_files: false
           publish_branch: gh-pages
           cname: aqua-protocol.org
+  codespell:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: codespell-project/actions-codespell@master
+      with:
+        ignore_words_list: Sur,ANS
+        only_warn: 1
