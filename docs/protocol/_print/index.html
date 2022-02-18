@@ -53,7 +53,7 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.069e44b3311f67cd5d980db7cb19c961.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.9225df60ffd6f358f5b7027033a15aff.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -908,16 +908,16 @@ web-of-trust initiative<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc
 Self-Sovereign-Identity provided by Christopher Allen in shortened form here.<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup></p>
 <h3 id=self-sovereign-identity-principles>Self-Sovereign-Identity-Principles</h3>
 <ol>
-<li><strong>Existence.</strong> Users must have an independent existence.</li>
-<li><strong>Control.</strong> Users must control their identities.</li>
-<li><strong>Access.</strong> Users must have access to their own data.</li>
-<li><strong>Transparency.</strong> Systems and algorithms must be transparent.</li>
-<li><strong>Persistence.</strong> Identities must be long-lived.</li>
-<li><strong>Portability.</strong> Information and services about identity must be transportable.</li>
-<li><strong>Interoperability.</strong> Identities should be as widely usable as possible.</li>
-<li><strong>Consent</strong>. Users must agree to the use of their identity.</li>
-<li><strong>Minimalization.</strong> Disclosure of claims must be minimized.</li>
-<li><strong>Protection.</strong> The rights of users must be protected.</li>
+<li><strong>Existence:</strong> users must have an independent existence.</li>
+<li><strong>Control:</strong> users must control their identities.</li>
+<li><strong>Access:</strong> users must have access to their own data.</li>
+<li><strong>Transparency:</strong> Systems and algorithms must be transparent.</li>
+<li><strong>Persistence:</strong> Identities must be long-lived.</li>
+<li><strong>Portability:</strong> Information and services about identity must be transportable.</li>
+<li><strong>Interoperability:</strong> Identities should be as widely usable as possible.</li>
+<li><strong>Consent:</strong> users must agree to the use of their identity.</li>
+<li><strong>Minimization:</strong> Disclosure of claims must be minimized.</li>
+<li><strong>Protection:</strong> The rights of users must be protected.</li>
 </ol>
 <p>Those 10 stated principles are implemented within the Aqua Protocol and
 it&rsquo;s existing reference implementation in various degrees. They are also
@@ -937,7 +937,7 @@ the reference implementation PKC Architecture Documentation.</p>
 data of the user. This data should be stored in a place where only the
 account owner has access to. This can be achieved by having the data
 stored locally on a machine the account owner has, or by using
-cryptography which requires the accounts owner explicit interaction to
+cryptography which requires the account&rsquo;s owner explicit interaction to
 decrypt it. The content should not be decrypted on the server, but
 within the web-browser or client-application to ensure that a
 potentially compromised service-provider can&rsquo;t leak the sensitive
@@ -954,7 +954,7 @@ implementation to protect identity claims. It is recommended to strongly
 regulate and audit the emerging solutions to ensure a high level of
 protection for citizens.</p>
 <h3 id=self-issued-identity-claims>Self Issued Identity Claims</h3>
-<p>are used to make statements about an account to form an identity. Those
+<p>These are used to make statements about an account to form an identity. Those
 claims can be partially revealed on demand to other parties. Those
 claims can also be protected by advancements in privacy technologies
 like Zero-Knowledge-Proofs and ongoing advancements in key management.</p>
@@ -974,7 +974,7 @@ school certificates.</p>
 Protocol</a>
 are
 <strong>always self issues</strong>. This means that the first signature on the claim
-needs to be from the private key which belongs to the account the claim
+needs to be from the private key which belongs to the account, i.e. the claim
 is issued for. This proves account ownership. This means:</p>
 <ul>
 <li>All claims can only be issued from the account which they make a
@@ -1007,8 +1007,8 @@ Address)>:&lt;Attribute (English Descriptive Title)></li>
 <a href=https://pkc.inblock.io/index.php/0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate target=_blank>0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate</a>
 </li>
 </ul>
-<p>The title is not protected against changes but the content of the page
-is protected.*<strong>IMPORTANT:</strong> Therefore we <strong>must</strong> compare the page
+<p>The title is not protected against changes, but the content of the page
+is protected.*<strong>IMPORTANT:</strong> Therefore, we <strong>must</strong> compare the page
 stored <strong><account>,<attribute></strong>. Then reassemble the title to check if
 they are consistent before proceeding with further validation of the
 identity claim.</p>
@@ -1058,14 +1058,14 @@ Protocol.</li>
 identity claim</li>
 <li>The certificate is signed after it was issued as an identity claim
 by a Trust Authority (e.g. the university professor) and the
-university directors office (director)</li>
+university director&rsquo;s office (director)</li>
 <li>The university professor holds trust claims from the university
 director</li>
 <li>The university director holds trust claims by the ministry of
 education</li>
 <li>The educational ministry of education holds trust claims by the
-minister president</li>
-<li>The minister president holds trust claims of a verified election</li>
+minister-president</li>
+<li>The minister-president holds trust claims of a verified election</li>
 </ol>
 <p>The chain of trust is supplied by the party signing the statement.</p>
 <p><i> IMPORTANT: <strong>The authority who is given authority needs to prove
@@ -1077,7 +1077,7 @@ entitling him</li>
 <li>E.g. the university director needs to supply the claim of the
 educational ministry</li>
 <li>E.g. the educational ministry needs to supply the claim of the
-minister president.</li>
+minister-president.</li>
 <li>&mldr; and so on.</li>
 </ol>
 <h1 id=verification-process>Verification Process</h1>
@@ -1168,7 +1168,7 @@ global registry to allow for real-time global claim revocation and
 re-instantiation of Identity Claim&rsquo;s. This solves the problems related
 and known to certificate revocation. The Claim Registry acts like a
 global Claim Revocation List (CRL)<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup>.</p>
-<p>E.g. a drivers license can be revoked by a Trust Authority and later be
+<p>E.g. a driver&rsquo;s license can be revoked by a Trust Authority and later be
 re-instantiated after the &lsquo;Punishment for driving too fast&rsquo; is over.
 Identity claims are either valid or invalid. The Claim Registry is
 managing who can revoke / re-instantiate a registered claim.</p>
@@ -1202,7 +1202,7 @@ anymore</p>
 </li>
 <li>
 <p><strong>&lt; owner == sender address></strong> [type:address] an account which
-updates the status of the claim e.g. revocation or suspension of an
+updates the status of the claim, e.g. revocation or suspension of an
 account</p>
 </li>
 <li>
@@ -1260,7 +1260,7 @@ or invalid)</li>
 <ul>
 <li>Locally completed (within the Self-Issued Identity Claim) by
 changing the status to &lsquo;revoked&rsquo; and signing by the issuer. This
-adds a receipt to the identity claim which is displayed when
+adds a receipt to the identity claim, which is displayed when
 verifying the claim. This includes the revocation transaction for
 the revocation on the
 <a href=https://pkc.inblock.io/index.php/Identity-Registry target=_blank>Identity-Registry</a>
