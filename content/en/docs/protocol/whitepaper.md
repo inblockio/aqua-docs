@@ -263,6 +263,10 @@ Description:
 - content extensions: more data MAY be encapsulated in addition to the main
   content. These could be a file, a stateful link, or a signature. The content
   extensions are sorted alphabetically by their key names. OPTIONAL.
+- The `sort_by_keys` function sorts the content object elements by their keys
+  alphabetically. The JSON input MAY be a canonical JSON, in which the keys
+  order is already alphabetical, but we sort it always to ensure the order is
+  correct.
 
 To see an example of `contentObj` of a revision, see the [example](#Example)
 section,
