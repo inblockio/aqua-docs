@@ -50,7 +50,7 @@ implementations. AQUA is heavily under development at the moment …">
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.9225df60ffd6f358f5b7027033a15aff.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.0f0096d7007b5f573ae2de984bebcafc.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -385,6 +385,10 @@ REQUIRED.</li>
 <li>content extensions: more data MAY be encapsulated in addition to the main
 content. These could be a file, a stateful link, or a signature. The content
 extensions are sorted alphabetically by their key names. OPTIONAL.</li>
+<li>The <code>sort_by_keys</code> function sorts the content object elements by their keys
+alphabetically. The JSON input MAY be a canonical JSON, in which the keys
+order is already alphabetical, but we sort it always to ensure the order is
+correct.</li>
 </ul>
 <p>To see an example of <code>contentObj</code> of a revision, see the
 <a href=#Example>example</a>
