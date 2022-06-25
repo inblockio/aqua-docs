@@ -6,26 +6,12 @@ description: >
   Here's where your user finds out if your project is for them.
 ---
 
-The Overview is where your users find out about your project. Depending on the
-size of your docset, you can have a separate overview page (like this one) or
-put your overview contents in the Documentation landing page (like in the Docsy
-User Guide). 
+Welcome to the AQUA-Protocol.
 
-Try answering these questions for your user in this page:
+## What is it and Why use it?
 
-## What is it?
+AQUA is a reference implementation to enable data-accounting and with it an effective way to enable peer-to-peer trusted data-generation and exchange. This is useful to fight fake-news, deepfakes, social-engineering and more and can be used to build peer-to-peer institutions and organisations.
 
-Introduce your project, including what it does or lets you do, why you would use
-it, and its primary goal (and how it achieves it). This should be similar to
-your README description, though you can go into a little more detail here if you
-want.
+The primary goal of aqua to enable trusted and sovereign control of your digital domain. This is achieved by combining the AQUA-Protocol with a knowledge-container architecture to store your data fully locally by default.
 
-## Why use AQUA
-
-Help your user know if your project will help them. Useful information can include: 
-
-* **What is it good for?**: What types of problems does your project solve? What are the benefits of using it?
-
-* **What is it not good for?**: For example, point out situations that might intuitively seem suited for your project, but aren't for some reason. Also mention known limitations, scaling issues, or anything else that might let your users know if the project is not for them.
-
-* **What is it *not yet* good for?**: Highlight any useful features that are coming soon.
+* **What is it *not yet* good for?**: This is an implementation which is ment for exploration of new design principles and to accelerate the development of such infrastructure. This prototype is not production grade software and should be avoided to be used outside of pilots.
