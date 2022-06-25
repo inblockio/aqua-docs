@@ -3,12 +3,11 @@ title: "Overview"
 linkTitle: "Overview"
 weight: 1
 description: >
-  Here's where your user finds out if your project is for them.
 ---
 
 Welcome to the AQUA-Protocol.
 
-## What is it and Why use it?
+## What is it and why use it?
 
 AQUA is a reference implementation to enable data-accounting and with it an effective way to enable peer-to-peer trusted data-generation and exchange. This is useful to fight fake-news, deepfakes, social-engineering and more and can be used to build peer-to-peer institutions and organisations.
 
