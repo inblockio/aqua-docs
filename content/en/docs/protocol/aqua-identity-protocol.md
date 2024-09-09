@@ -3,7 +3,8 @@ title: "Identity Protocol"
 linkTitle: "Identity Protocol"
 weight: 2
 description: >
-  Shows how it is possible to build an identity protocol on top of Aqua using data vaults.
+  The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol.
+  This part of the project is in early stages and not mature.
 ---
 
 The Aqua Identity Protocol (AIP) is an experimental application protocol
