@@ -1,5 +1,5 @@
 ---
-title: "Design Princiciples"
+title: "Design Principles"
 linkTitle: "Design Principles"
 weight: 8
 description: >
