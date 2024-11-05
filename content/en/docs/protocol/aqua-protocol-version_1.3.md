@@ -10,6 +10,8 @@ Issues for improving the protocol are tracked here: https://github.com/inblockio
 
 Every revision is represented by a merkle-root hash representing a list of alphabetically ordered key-value pairs which are hashed (implementation example SHA3-512). This allows us to dynamically change the data structure without the need to introduce breaking protocol changes.
 
+  * The input data MUST NOT have dublicated keys as this would lead to non-deterministic ordering.
+
 Aqua-Chain: Is a portable hash-chain. This provides immutability for the history of the file, once signed and/or witnessed with the respective security guarantees.
 Aqua-revisions form a portable Aqua-Chain.
 
