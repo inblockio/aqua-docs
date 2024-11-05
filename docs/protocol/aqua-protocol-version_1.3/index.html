@@ -25,13 +25,13 @@ The Aqua Protocol (AQP) is a data accountability and exchange protocol between h
 Issues for improving the protocol are tracked here: https://github.com/inblockio/aqua-improvement-proposal Data Structure: Every revision is represented by a merkle-root hash representing a list of alphabetically ordered key-value pairs which are hashed (implementation example SHA3-512).">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://aqua-protocol.org/docs/protocol/aqua-protocol-version_1.3/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2024-11-05T10:53:53+01:00"><meta property="og:site_name" content="AQUA Protocol">
+<meta property="article:modified_time" content="2024-11-05T11:09:04+01:00"><meta property="og:site_name" content="AQUA Protocol">
 <meta itemprop=name content>
 <meta itemprop=description content="Aqua Protocol Version v1.3 (Writing in process, unfinished Nov. 5th, 2024) This is developer documentation.
 The Aqua Protocol (AQP) is a data accountability and exchange protocol between hosts in peer-to-peer environments. The AQP is used to realize the goal of accounting for data origin and history (data provenance). Short: A verifiable linkable data structure to attest and certify data.
 Issues for improving the protocol are tracked here: https://github.com/inblockio/aqua-improvement-proposal Data Structure: Every revision is represented by a merkle-root hash representing a list of alphabetically ordered key-value pairs which are hashed (implementation example SHA3-512).">
-<meta itemprop=dateModified content="2024-11-05T10:53:53+01:00">
-<meta itemprop=wordCount content="255">
+<meta itemprop=dateModified content="2024-11-05T11:09:04+01:00">
+<meta itemprop=wordCount content="270">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content>
 <meta name=twitter:description content="Aqua Protocol Version v1.3 (Writing in process, unfinished Nov. 5th, 2024) This is developer documentation.
@@ -61,7 +61,7 @@ Issues for improving the protocol are tracked here: https://github.com/inblockio
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.5d0b0728a3e0d90c761860d8fffdde07.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.278b4a0211f444da4a6d6cf0687684f5.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -72,7 +72,7 @@ Issues for improving the protocol are tracked here: https://github.com/inblockio
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <div id=content-mobile>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.5d0b0728a3e0d90c761860d8fffdde07.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.278b4a0211f444da4a6d6cf0687684f5.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form>
@@ -165,6 +165,9 @@ This is developer documentation.</p>
 </p>
 <h2 id=data-structure>Data Structure:</h2>
 <p>Every revision is represented by a merkle-root hash representing a list of alphabetically ordered key-value pairs which are hashed (implementation example SHA3-512). This allows us to dynamically change the data structure without the need to introduce breaking protocol changes.</p>
+<ul>
+<li>The input data MUST NOT have dublicated keys as this would lead to non-deterministic ordering.</li>
+</ul>
 <p>Aqua-Chain: Is a portable hash-chain. This provides immutability for the history of the file, once signed and/or witnessed with the respective security guarantees.
 Aqua-revisions form a portable Aqua-Chain.</p>
 <p>There are 4 Types of Revisions:</p>
@@ -182,7 +185,7 @@ Aqua-revisions form a portable Aqua-Chain.</p>
 <li>Witness-Revision example Ethereum (non-aggregated)</li>
 </ol>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified November 5, 2024: <a href=https://github.com/inblockio/aqua-docs/commit/be03a925facb52ab3e721bbc42611f20a31226eb>Basic document structure (be03a92)</a>
+Last modified November 5, 2024: <a href=https://github.com/inblockio/aqua-docs/commit/6b12b44e73f0d05c8a2109d22181ea037cde45ce>Add rule for ordering (6b12b44)</a>
 </div>
 </div>
 </main>

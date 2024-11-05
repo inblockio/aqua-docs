@@ -50,7 +50,7 @@ implementations. AQUA is heavily under development at the moment …">
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.5d0b0728a3e0d90c761860d8fffdde07.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.278b4a0211f444da4a6d6cf0687684f5.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -2303,6 +2303,9 @@ This is developer documentation.</p>
 </p>
 <h2 id=data-structure>Data Structure:</h2>
 <p>Every revision is represented by a merkle-root hash representing a list of alphabetically ordered key-value pairs which are hashed (implementation example SHA3-512). This allows us to dynamically change the data structure without the need to introduce breaking protocol changes.</p>
+<ul>
+<li>The input data MUST NOT have dublicated keys as this would lead to non-deterministic ordering.</li>
+</ul>
 <p>Aqua-Chain: Is a portable hash-chain. This provides immutability for the history of the file, once signed and/or witnessed with the respective security guarantees.
 Aqua-revisions form a portable Aqua-Chain.</p>
 <p>There are 4 Types of Revisions:</p>
