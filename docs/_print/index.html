@@ -50,7 +50,7 @@ implementations. AQUA is heavily under development at the moment …">
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.3b71baecfc3dbbeb706dccaeab6c5159.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.5d0b0728a3e0d90c761860d8fffdde07.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -2294,11 +2294,31 @@ prefix to the &lt;verification_hash> resulting in the following syntax:</p>
 </div>
 <div class=td-content style=page-break-before:always>
 <h1 id=pg-a01fb6b23f96cc59398034491a144cd8>2.11 - </h1>
-<p>Aqua Protocol Version v1.3</p>
-<p>This is a developer documentation.
-Issues for improving the protocol are tracked here:
+<h1 id=aqua-protocol-version-v13>Aqua Protocol Version v1.3</h1>
+<p>(Writing in process, unfinished Nov. 5th, 2024)
+This is developer documentation.</p>
+<p>The Aqua Protocol (AQP) is a data accountability and exchange protocol between hosts in peer-to-peer environments. The AQP is used to realize the goal of accounting for data origin and history (data provenance). Short: A verifiable linkable data structure to attest and certify data.</p>
+<p>Issues for improving the protocol are tracked here:
 <a href=https://github.com/inblockio/aqua-improvement-proposal target=_blank>https://github.com/inblockio/aqua-improvement-proposal</a>
 </p>
+<h2 id=data-structure>Data Structure:</h2>
+<p>Every revision is represented by a merkle-root hash representing a list of alphabetically ordered key-value pairs which are hashed (implementation example SHA3-512). This allows us to dynamically change the data structure without the need to introduce breaking protocol changes.</p>
+<p>Aqua-Chain: Is a portable hash-chain. This provides immutability for the history of the file, once signed and/or witnessed with the respective security guarantees.
+Aqua-revisions form a portable Aqua-Chain.</p>
+<p>There are 4 Types of Revisions:</p>
+<ul>
+<li>Content Revision: Contains the data object if wrapped by the protocol. This is used to secure the data integrity and reference the data object for provenance purposes. The content revision makes the data object referencable for signatures, witness, and link revisions.</li>
+<li>Signature Revision: Is used to cryptographically sign, we are currently supporting DID and Ethereum signatures.</li>
+<li>Witness Revision: Used to witness the Hash to prove its existence. We are supporting Ethereum by default.</li>
+<li>Link Revision (TBD): Protocol specification for how to interlink Aqua-Chains. This also includes tracking externally managed datasets which are not wrapped into the Aqua-Chain itself.</li>
+</ul>
+<p>Example:</p>
+<ol>
+<li>Content-Revision</li>
+<li>Signature-Revision example (Ethereum Wallet)</li>
+<li>Signature-Revision example (DID Example)</li>
+<li>Witness-Revision example Ethereum (non-aggregated)</li>
+</ol>
 </div>
 <div class=td-content style=page-break-before:always>
 <h1 id=pg-4e49f577f4e16801b1736ad25ffb8755>3 - Implementations</h1>
