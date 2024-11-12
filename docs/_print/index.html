@@ -50,7 +50,7 @@ implementations. AQUA is heavily under development at the moment …">
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.f6724753d506d72f2940115fc4e39409.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.1f5957f114c055cf39ea0a57f81d7783.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -2295,7 +2295,7 @@ prefix to the &lt;verification_hash> resulting in the following syntax:</p>
 <div class=td-content style=page-break-before:always>
 <h1 id=pg-a01fb6b23f96cc59398034491a144cd8>2.11 - </h1>
 <h1 id=aqua-protocol-version-v13>Aqua Protocol Version v1.3</h1>
-<p>(Writing in process, unfinished Nov. 5th, 2024)
+<p>(Writing in process, unfinished Nov. 10th, 2024)
 This is developer documentation.</p>
 <p>The Aqua Protocol (AQP) is a data accountability and exchange protocol between hosts in peer-to-peer environments. The AQP is used to realize the goal of accounting for data origin and history (data provenance). Short: A verifiable linkable data structure to attest and certify data.</p>
 <p>Issues for improving the protocol are tracked here:
@@ -2324,6 +2324,7 @@ Aqua-revisions form a portable Aqua-Chain.</p>
     &quot;0xb576b6920e9bbb3e76d69b76e5b86f60590df43e9407d7d1b359cb8e2db00ce44d4c0741cbd1ca0f1a3605d3b2b56b58c412b2040743e12a1488de519e365587&quot;: {
       &quot;previous_verification_hash&quot;: &quot;&quot;,
       &quot;domain_id&quot;: &quot;5e5a1ec586&quot;,
+      &quot;nonce: 4231256454123&quot;,
       &quot;local_timestamp&quot;: &quot;20241105093856&quot;,
       &quot;revision_type&quot;: &quot;content&quot;,
       &quot;content&quot;: &quot;MIT License\n\nCopyright (c) 2024 inblock.io\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \&quot;Software\&quot;), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n&quot;,
@@ -2394,8 +2395,75 @@ Aqua-revisions form a portable Aqua-Chain.</p>
   }
 }
 </code></pre><ol start=4>
-<li>Witness-Revision example Ethereum (non-aggregated)</li>
+<li>
+<p>A) Witness-Revision example Ethereum (non-aggregated)</p>
+</li>
+<li>
+<p>B) Witness_Revision example timestamping authority (TSA_RFC3161)
+The witness_transaction_hash contains the server certificate chain.</p>
+</li>
 </ol>
+<pre tabindex=0><code>&quot;0x0487556a32b8ba92cd579ace7062027e779295960eeb8ca7ac3908e3f379ae551953ae7bfb121f030d1f29b81dcf3dc955aebf992bcfbaee3f08487ab00416b7&quot;: {
+      &quot;previous_verification_hash&quot;: &quot;0x894ac8cfbaf9fb75aae916c3693928e7d41264e1a85d7089f0cf4bb46963c9626808d26c54709d8458c0d0a07b7c4c619bbb714884854a19195719cb36aafdb3&quot;,
+      &quot;domain_id&quot;: &quot;5e5a1ec586&quot;,
+      &quot;local_timestamp&quot;: &quot;20241105093856&quot;,
+      &quot;revision_type&quot;: &quot;witness&quot;,
+      &quot;witness_merkle_root&quot;: &quot;0x894ac8cfbaf9fb75aae916c3693928e7d41264e1a85d7089f0cf4bb46963c9626808d26c54709d8458c0d0a07b7c4c619bbb714884854a19195719cb36aafdb3&quot;,
+      &quot;witness_timestamp&quot;: 1730802112,
+      &quot;witness_network&quot;: &quot;TSA_RFC3161&quot;,
+      &quot;witness_smart_contract_address&quot;: &quot;http://timestamp.digicert.com&quot;,
+      &quot;witness_transaction_hash&quot;: &quot;MIIXNDADAgEAMIIXKwYJKoZIhvcNAQcCoIIXHDCCFxgCAQMxDzANBglghkgBZQMEAgEFADCBgAYLKoZIhvcNAQkQAQSgcQRvMG0CAQEGCWCGSAGG/WwHATAxMA0GCWCGSAFlAwQCAQUABCCTBEhaD6VdOi5gn3u8SaeQkdv+K/NaF2wp1bgZTwtD6QIRAOElWROJ1gGaqFGFbGLLv/UYDzIwMjQxMTA1MTAyMTUyWgIGAZL72FgOoIITAzCCBrwwggSkoAMCAQICEAuuZrxaun+Vh8b56QTjMwQwDQYJKoZIhvcNAQELBQAwYzELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDkRpZ2lDZXJ0LCBJbmMuMTswOQYDVQQDEzJEaWdpQ2VydCBUcnVzdGVkIEc0IFJTQTQwOTYgU0hBMjU2IFRpbWVTdGFtcGluZyBDQTAeFw0yNDA5MjYwMDAwMDBaFw0zNTExMjUyMzU5NTlaMEIxCzAJBgNVBAYTAlVTMREwDwYDVQQKEwhEaWdpQ2VydDEgMB4GA1UEAxMXRGlnaUNlcnQgVGltZXN0YW1wIDIwMjQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQC+anOf9pUhq5Ywultt5lmjtej9kR8YxIg7apnjpcH9CjAgQxK+CMR0Rne/i+utMeV5bUlYYSuuM4vQngvQepVHVzNLO9RDnEXvPghCaft0djvKKO+hDu6ObS7rJcXa/UKvNminKQPTv/1+kBPgHGlP28mgmoCw/xi6FG9+Un1h4eN6zh926SxMe6We2r1Z6VFZj75MU/HNmtsgtFjKfITLutLWUdAoWle+jYZ49+wxGE1/UXjWfISDmHuI5e/6+NfQrxGFSKx+rDdNMsePW6FLrphfYtk/FLihp/feun0eV+pIF496OVh4R1TvjQYpAztJpVIfdNsEvxHofBf1BWkadc+Up0Th8EifkEEWdX4rA/FE1Q0rqViTbLVZIqi6viEk3RIySho1XyHLIAOJfXG5PEppc3XYeBH7xa6VTZ3rOHNeiYnY+V4j1XbJ+Z9dI8ZhqcaDHOoj5KGg4YuiYx3eYm33aebsyF6eD9MF5IDbPgjvwmnAalNEeJPvIeoGJXaeBQjIK13SlnzODdLtuThALhGtyconcVuPI8AaiCaiJnfdzUcb3dWnqUnjXkRFwLtsVAxFvGqsxUA2Jq/WTjbnNjIUzIs3ITVC6VBKAOlb2u29Vwgfta8b2ypi6n2PzP0nVepsFk8nlcuWfyZLzBaZ0MucEdeBiXL+nUOGhCjl+QIDAQABo4IBizCCAYcwDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwFgYDVR0lAQH/BAwwCgYIKwYBBQUHAwgwIAYDVR0gBBkwFzAIBgZngQwBBAIwCwYJYIZIAYb9bAcBMB8GA1UdIwQYMBaAFLoW2W1NhS9zKXaaL3WMaiCPnshvMB0GA1UdDgQWBBSfVywDdw4oFZBmpWNe7k+SH3agWzBaBgNVHR8EUzBRME+gTaBLhklodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vRGlnaUNlcnRUcnVzdGVkRzRSU0E0MDk2U0hBMjU2VGltZVN0YW1waW5nQ0EuY3JsMIGQBggrBgEFBQcBAQSBgzCBgDAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQuY29tMFgGCCsGAQUFBzAChkxodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vRGlnaUNlcnRUcnVzdGVkRzRSU0E0MDk2U0hBMjU2VGltZVN0YW1waW5nQ0EuY3J0MA0GCSqGSIb3DQEBCwUAA4ICAQA9rR4fdplb4ziEEkfZQ5H2EdubTggd0ShPz9Pce4FLJl6reNKLkZd5Y/vEIqFWKt4oKcKz7wZmXa5VgW9B76k9NJxUl4JlKwyjUkKhk3aYx7D8vi2mpU1tKlY71AYXB8wTLrQeh83pXnWwwsxc1Mt+FWqz57yFq6laICtKjPICYYf/qgxACHTvypGHrC8k1TqCeHk6u4I/VBQC9VK7iSpU5wlWjNlHlFFv/M93748YTeoXU/fFa9hWJQkuzG2+B7+bMDvmgF8VlJt1qQcl7YFUMYgZU1WM6nyw23vT6QSgwX5Pq2m0xQ2V6FJHu8z4LXe/371k5QrN9FQBhLLISZi2yemW0P8ZZfx4zvSWzVXpAb9k4Hpvpi6bUe8iK6WonUSV6yPlMwerwJZP/Gtbu3CKldMnn+LmmRTkTXpFIEB06nXZrDwhCGED+8RsWQSIXZpuG4WLFQOhtloDRWGoCwwc6ZpPddOFkM2LlTbMcqFSzm4cd0boGhBq7vkqI1uHRz6Fq1IX7TaRQuR+0BGOzISkcqwXu7nMpFu3mgrlgbAW+BzikRVQ3K2YHcGkiKjA4gi4OA/kz1YCsdhIBHXqBzR0/Zd2QwQ/l4Gxftt/8wY3grcc/nS//TVkej9nmUYu83BDtccHHXKibMs/yXHhDXNkoPIdynhVAku7aRZOwqw6pDCCBq4wggSWoAMCAQICEAc2N7ckVHzYR6z9KGYqXlswDQYJKoZIhvcNAQELBQAwYjELMAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3LmRpZ2ljZXJ0LmNvbTEhMB8GA1UEAxMYRGlnaUNlcnQgVHJ1c3RlZCBSb290IEc0MB4XDTIyMDMyMzAwMDAwMFoXDTM3MDMyMjIzNTk1OVowYzELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDkRpZ2lDZXJ0LCBJbmMuMTswOQYDVQQDEzJEaWdpQ2VydCBUcnVzdGVkIEc0IFJTQTQwOTYgU0hBMjU2IFRpbWVTdGFtcGluZyBDQTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAMaGNQZJs8E9cklRVcclA8TykTepl1Gh1tKD0Z5Mom2gsMyD+Vr2EaFEFUJfpIjzaPp985yJC3+dH54PMx9QEwsmc5Zt+FeoAn39Q7SE2hHxc7Gz7iuAhIoiGN/r2j3EF3+rGSs+QtxnjupRPfDWVtTnKC3r07G1decfBmWNlCnT2exp39mQh0YAe9tEQYncfGpXevA3eZ9drMvohGS0UvJ2R/dhgxndX7RUCyFobjchu0CsX7LeSn3O9TkSZ+8OpWNs5KbFHc02DVzV5huowWR0QKfAcsW6Th+xtVhNef7Xj3OTrCw54qVI1vCwMROpVymWJy71h6aPTnYVVSZwmCZ/oBpHIEPjQ2OAe3VuJyWQmDo4EbP29p7mO1vsgd4iFNmCKseSv6De4z6ic/rnH1pslPJSlRErWHRAKKtzQ87fSqEcazjFKfPKqpZzQmiftkaznTqj1QPgv/CiPMpC3BhIfxQ0z9JMq++bPf4OuGQq+nUoJEHtQr8FnGZJUlD0UfM2SU2LINIsVzV5K6jzRWC8I41Y99xh3pP+OcD5sjClTNfpmEpYPtMDiP6zj9NeS3YSUZPJjAw7W4oiqMEmCPkUEBIDfV8ju2TjY+Cm4T72wnSyPx4JduyrXUZ14mCjWAkBKAAOhFTuzuldyF4wEr1GnrXTdrnSDmuZDNIztM2xAgMBAAGjggFdMIIBWTASBgNVHRMBAf8ECDAGAQH/AgEAMB0GA1UdDgQWBBS6FtltTYUvcyl2mi91jGogj57IbzAfBgNVHSMEGDAWgBTs1+OC0nFdZEzfLmc/57qYrhwPTzAOBgNVHQ8BAf8EBAMCAYYwEwYDVR0lBAwwCgYIKwYBBQUHAwgwdwYIKwYBBQUHAQEEazBpMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wQQYIKwYBBQUHMAKGNWh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRydXN0ZWRSb290RzQuY3J0MEMGA1UdHwQ8MDowOKA2oDSGMmh0dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRydXN0ZWRSb290RzQuY3JsMCAGA1UdIAQZMBcwCAYGZ4EMAQQCMAsGCWCGSAGG/WwHATANBgkqhkiG9w0BAQsFAAOCAgEAfVmOwJO2b5ipRCIBfmbW2CFC4bAYLhBNE88wU86/GPvHUF3iSyn7cIoNqilp/GnBzx0H6T5gyNgL5Vxb122H+oQgJTQxZ822EpZvxFBMYh0MCIKoFr2pVs8Vc40BIiXOlWk/R3f7cnQU1/+rT4osequFzUNf7WC2qk+RZp4snuCKrOX9jLxkJodskr2dfNBwCnzvqLx1T7pa96kQsl3p/yhUifDVinF2ZdrM8HKjI/rAJ4JErpknG6skHibBt94q6/aesXmZgaNWhqsKRcnfxI2g55j7+6adcq/Ex8HBanHZxhOACcS2n82HhyS7T6NJuXdmkfFynOlLAlKnN36TU6w7HQhJD5TNOXrd/yVjmScsPT9rp/Fmw0HNT7ZAmyEhQNC3EyTN3B14OuSereU0cZLXJmvkOHOrpgFPvT87eK1MrfvElXvtCl8zOYdBeHo46Zzh3SP9HSjTx/no8Zhf+yvYfvJGnXUsHicsJttvFXseGYs2uJPU5vIXmVnKcPA3v5gA3yAWTyf7YGcWoWa63VXAOimGsJigK+2VQbc61RWYMbRiCQ8KvYHZE/6/pNHzV9m8BPqC3jLfBInwAM1dwvnQI38AC+R2AibZ8GV2QqYphwlHK+Z/GqSFD/yYlvZVVCsfgPrA8g4r5db7qS9EFUrnEw4d2zc4GqEr9u3WfPwwggWNMIIEdaADAgECAhAOmxiO+dAt5+/bUOIIQBhaMA0GCSqGSIb3DQEBDAUAMGUxCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5jb20xJDAiBgNVBAMTG0RpZ2lDZXJ0IEFzc3VyZWQgSUQgUm9vdCBDQTAeFw0yMjA4MDEwMDAwMDBaFw0zMTExMDkyMzU5NTlaMGIxCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5jb20xITAfBgNVBAMTGERpZ2lDZXJ0IFRydXN0ZWQgUm9vdCBHNDCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAL/mkHNo3rvkXUo8MCIwaTPswqclLskhPfKK2FnC4SmnPVirdprNrnsbhA3EMB/zG6Q4FutWxpdtHauyefLKEdLkX9YFPFIPUh/GnhWlfr6fqVcWWVVyr2iTcMKyunWZanMylNEQRBAu34LzB4TmdDttceItDBvuINXJIB1jKS3O7F5OyJP4IWGbNOsFxl7sWxq868nPzaw0QF+xembud8hIqGZXV59UWI4MK7dPpzDZVu7Ke13jrclPXuU15zHL2pNe3I6PgNq2kZhAkHnDeMe2scS1ahg4AxCN2NQ3pC4FfYj1gj4QkXCrVYJBMtfbBHMqbpEBfCFM1LyuGwN1XXhm2ToxRJozQL8I11pJpMLmqaBn3aQnvKFPObURWBf3JFxGj2T3wWmIdph2PVldQnaHiZdpekjw4KISG2aadMreSx7nDmOu5tTvkpI6nj3cAORFJYm2mkQZK37AlLTSYW3rM9nF30sEAMx9HJXDj/chsrIRt7t/8tWMcCxBYKqxYxhElRp2Yn72gLD76GSmM9GJB+G9t+ZDpBi4pncB4Q+UDCEdslQpJYls5Q5SUUd0viastkF13nqsX40/ybzTQRESW+UQUOsxxcpyFiIJ33xMdT9j7CFfxCBRa2+xq4aLT8LWRV+dIPyhHsXAj6KxfgommfXkaS+YHS312amyHeUbAgMBAAGjggE6MIIBNjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBTs1+OC0nFdZEzfLmc/57qYrhwPTzAfBgNVHSMEGDAWgBRF66Kv9JLLgjEtUYunpyGd823IDzAOBgNVHQ8BAf8EBAMCAYYweQYIKwYBBQUHAQEEbTBrMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wQwYIKwYBBQUHMAKGN2h0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEFzc3VyZWRJRFJvb3RDQS5jcnQwRQYDVR0fBD4wPDA6oDigNoY0aHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0QXNzdXJlZElEUm9vdENBLmNybDARBgNVHSAECjAIMAYGBFUdIAAwDQYJKoZIhvcNAQEMBQADggEBAHCgv0NcVec4X6CjdBs9thbX979XB72arKGHLOyFXqkauyL4hxppVCLtpIh3bb0aFPQTSnovLbc47/T/gLn4offyct4kvFIDyE7QKt76LVbP+fT3rDB6mouyXtTP0UNEm0Mh65ZyoUi0mcudT6cGAxN3J0TU53/oWajwvy8LpunyNDzs9wPHh6jSTEAZNUZqaVSwuKFWjuyk1T3osdz9HNj0d1pcVIxv76FQPfx2CWiEn2/K2yCNNWAcAgPLILCsWKAOQGPFmCLBsln1VWvPJ6tsds5vIy30fnFqI2si/xK4VC0nftg62fC2h5b9W9FcrBjDTZ9ztwGpn1eqXijiuZQxggN2MIIDcgIBATB3MGMxCzAJBgNVBAYTAlVTMRcwFQYDVQQKEw5EaWdpQ2VydCwgSW5jLjE7MDkGA1UEAxMyRGlnaUNlcnQgVHJ1c3RlZCBHNCBSU0E0MDk2IFNIQTI1NiBUaW1lU3RhbXBpbmcgQ0ECEAuuZrxaun+Vh8b56QTjMwQwDQYJYIZIAWUDBAIBBQCggdEwGgYJKoZIhvcNAQkDMQ0GCyqGSIb3DQEJEAEEMBwGCSqGSIb3DQEJBTEPFw0yNDExMDUxMDIxNTJaMCsGCyqGSIb3DQEJEAIMMRwwGjAYMBYEFNvThe5i29I+e+T2cUhQhyTVhltFMC8GCSqGSIb3DQEJBDEiBCBqnp9d4ut1iCHhH0nTV9klQFwaZupe+t7WGdOSG8USWjA3BgsqhkiG9w0BCRACLzEoMCYwJDAiBCB2dp+o8mMvH0MLOiMwrtZWdf7Xc9sF1mW5BZOYQ4+a2zANBgkqhkiG9w0BAQEFAASCAgCkgGrtYCHm1el+X2YZpGCxfx+yvbPvocWCC0MApvZXTY9ZdaxQ6ttOHfDA0I6mV1ogCwR48X9J+zkU55amkIbR8APAGpQnOXmnjtWvXVUPYR7JRLTz+ncUm/LbmRya4u8iZKP175DrZnlxJzfUtf5zD02k5WZjh2p+4w/SR+m1hdeQzGaD687ur//i6JK4wWeT7ObwFCN0aiiCw/tGmpFtFjeOk+jAOunlF64PTPd1VM1IM7xYcK8ReYxk0zYs92H8Rf3b0CNoY0PNXS1Bze3qKp+yfwWtAcuXvb1ut/U6XqzF8QuWbu89svO1n0bCLIHhcwNuXomCY3KEKoouAy+EJ0cKFq1IIcePLZzipKTv892FfmvOl2fy8GF30CAHnVvVYgiwE+l+tZVn4J8HjiypAFltTl76iW6FsyyjL0W0JfqFuMd5bULoUNZR86DeTOjRAWJN7iGdy+TGMR9SZ/s2IJeOjKbLIzI7/CizCAkksPC6VjfPQOV+jrzRfiQkgx6J8YRJ4DH3xTgvthxhc2mFDgGDPmFTqRJ8xv7hj9zMvyiNQlNLYiVVVGI9m55ZfufWnncCt7FPNxKIDL8+pAkOfXWy3+jshcqat+V1JjHGn2KoXvUNojqeuTkVB17wLdEkHK61nKoRSTxyl4LZCf8OHb1ffsHSEvkVVqCHvYm73A==&quot;,
+      &quot;witness_sender_account_address&quot;: &quot;DigiCert&quot;,
+      &quot;witness_merkle_proof&quot;: &quot;[{\&quot;depth\&quot;:\&quot;0\&quot;,\&quot;left_leaf\&quot;:\&quot;0x894ac8cfbaf9fb75aae916c3693928e7d41264e1a85d7089f0cf4bb46963c9626808d26c54709d8458c0d0a07b7c4c619bbb714884854a19195719cb36aafdb3\&quot;,\&quot;right_leaf\&quot;:null,\&quot;successor\&quot;:\&quot;0x894ac8cfbaf9fb75aae916c3693928e7d41264e1a85d7089f0cf4bb46963c9626808d26c54709d8458c0d0a07b7c4c619bbb714884854a19195719cb36aafdb3\&quot;}]&quot;,
+      &quot;leaves&quot;: [
+        &quot;8f68acdd2ccbe8f0088d78438a411af9fcde4259f85a7ff28a0cd4f543ca3b139e24282d39170fe446526f015d5e227eafaead6e73a91f7e3df73b5e3e6a02fb&quot;,
+        &quot;78501ae4b82221563c51de71890ac8bad9d7bc608d8a094a512408785b4f39b3d3b8cea2a292326735ee19918a8c4919711d59661f4923117db8d2eaa2516e80&quot;,
+        &quot;f90837f8515c0def443cb512ee9dfaf8919722467d4019aaf63c13603600903202e8bf21304de25caafc61925b96e024c77c8f0e3223f00c724f524a12cebe95&quot;,
+        &quot;13aa6a0a8800b4d8adeea104f8328bb1b5035276e2522a561c48d3db628263e26093426b35626dbd43b8198a15c6b017609d9fe4f9506f167a7997f80fd71859&quot;,
+        &quot;9df7e7c5741d4373d29f576f3b0e894dacc4feda2cbed0b165a89c7ed3997f29482a5ac1f3f95ed34be0690b53f41d687334e132e80041563b15442380033a01&quot;,
+        &quot;065c9da00b8c0e1d6f165ec946431b88f3a0d5764f9d3d3a5994a095122c81da3d0f3719d1ef712adf47effcea88ea1a2c7e6dbea7d71f0ae70ec388ed646995&quot;,
+        &quot;a2ad3cedcedf8c9ae6ebbb0adde1863bf45247dcc51c14edea7fe4524b06f8ea7cba97f6da77641b537384bae53fa042bb43e377a2e98e71158c99e78185c6b3&quot;,
+        &quot;41bb7271d1596fa17fa5ffcec141eb787d56c79c897ecc6cc83cda650171988e5cfd04e9b878f57d5bcc6f1054cd6162d271d06635b43011ad6785d6f0536b6e&quot;,
+        &quot;6fe1ebd64bfcefda3b61ad5db9b450013e998b511384a9b671fe4c8809fe1f9868a5669bb6211e14346c8af55a41abd02994c73c52ced299d7e23fccd8a4cb13&quot;,
+        &quot;e875b9b6fb0e609b72c6e303701abc3035e160ac541f0b7d542e8f1c354f957fb1d09518e02c6600d9b7e4e4a2591e7754cb60c4869153751bd49e231cdeb1ee&quot;,
+        &quot;078df46bfe5b9db36854c62a053fc68c80a074ce9c13aef0f22e41f266583f1558a37bf56ec2346e34ac125a7aded5534d9506e624774680f128c817770d0370&quot;
+      ]
+    }
+  }
+</code></pre><h1 id=drafts>Drafts</h1>
+<ol start=5>
+<li>Linkage
+url: path to ressource.
+remote expect-aqua-chain: boolean
+expect aqua-chain, if false: expect hash to be file-hash or content addressed storage.
+require-in-depth-verification: if false, in depth verification will only draw a warning for not verifing or not be able to load the resource, if true, it will cause a critical verification error.</li>
+</ol>
+<ul>
+<li>load and hash ressource (pull in with copy, pull in without copy). Restriction: only single files allowed. Possible to embedd remote content.
+{
+&ldquo;revision_type&rdquo;: &ldquo;link (when linking to other aqua-chain) / reference (when referencing an external source)&rdquo;,
+&ldquo;expect:aqua-chain&rdquo;: &ldquo;true / false&rdquo;,
+&ldquo;required-indepth-verification: &ldquo;true / false&rdquo;,
+&ldquo;ressource-hash&rdquo;: &ldquo;078df46bfe5b9db36854c62a053fc68c80a074ce9c13aef0f22e41f266583f1558a37bf56ec2346e34ac125a7aded5534d9506e624774680f128c817770d0370&rdquo;,
+&ldquo;url&rdquo;: &ldquo;FQDN/path: full network-path to ressource / local: ABSOLUTE or RELATIVE path to the aquafier directly
+}</li>
+</ul>
+<h1 id=backlog>Backlog</h1>
+<p>Future capabilities:</p>
+<p>Content links with external file tracking:
+6. Bit-Torrent file support (public files) referencing only the magnet link with the data requered for a torrent tool to load the data.
+7. Git-File support to track a repository.
+8. Generlised external-file-storage integration (write basic own implementation).
+9. X-API integration: E.g. load the JSON and embedd data strucutre of a single tween via API (TBD: how to solve media pull in pictures and videos). Solve by content addressed storage implementation for large media files: pictures, video.
+10. Website download (offline archiving) with local storing but externally storage management.</p>
+<p>Support basic statements with a md-text-editor, form.
+Type: Contract, requires in-depth-verification.</p>
+<p>Aggregator: Timestamping at maximum.</p>
+<p>When timestamping an aqua-chain receive a mutable flag on the revision which is timestamp. LOCKING it (do not allow new revisions until unlocked / unflagged). Idea: End-revisions, are not allowed to be extended.</p>
+<p>Topic: Witness Contract:
+API Read function?
+Verifier needs to have a hard conviction of whats our truth. ONE SMART contract, if not we could fall into the trap that somebody changes a witness revision to a different contract and it still would be valid. &ndash;> Is this a problem?</p>
+<p>CRITIQUE and option (OPTIMIZATION): In depth verification (secure every field) vs shadllow verification (just hash the whole JSON file structure with one hash (root hash).</p>
 </div>
 <div class=td-content style=page-break-before:always>
 <h1 id=pg-4e49f577f4e16801b1736ad25ffb8755>3 - Implementations</h1>
