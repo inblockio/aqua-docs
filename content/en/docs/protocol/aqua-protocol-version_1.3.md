@@ -1,6 +1,6 @@
 # Aqua Protocol Version v1.3
 (Writing in process, unfinished Nov. 10th, 2024)
-This is developer documentation.
+This is a developer documentation.
 
 The Aqua Protocol (AQP) is a data accountability and exchange protocol between hosts in peer-to-peer environments. The AQP is used to realize the goal of accounting for data origin and history (data provenance). Short: A verifiable linkable data structure to attest and certify data.
 
@@ -24,6 +24,8 @@ There are 4 Types of Revisions:
 Example:
 
 1. Content-Revision
+
+
 ```
 {
   "revisions": {
@@ -140,35 +142,59 @@ The witness_transaction_hash contains the server certificate chain.
 # Drafts
 
 5. Linkage
-url: path to ressource.
+
+Restriction: The linked resource MUST be an Aqua-Chain or MAY contain content addressed files (BitTorrent, IPFS, Swarm, any content that is verifiable by hash).
+
+url: path to ressource
 remote expect-aqua-chain: boolean
-  expect aqua-chain, if false: expect hash to be file-hash or content addressed storage.
+  expect type: aqua-chain / bittorrent / ipfs - the type of the linked resources.
   require-in-depth-verification: if false, in depth verification will only draw a warning for not verifing or not be able to load the resource, if true, it will cause a critical verification error.
 
 * load and hash ressource (pull in with copy, pull in without copy). Restriction: only single files allowed. Possible to embedd remote content.
 {
   "revision_type": "link (when linking to other aqua-chain) / reference (when referencing an external source)",
-  "expect:aqua-chain": "true / false",
+  "expect type": "aqua / bittorent / ipfs"
   "required-indepth-verification: "true / false",
-  "ressource-hash": "078df46bfe5b9db36854c62a053fc68c80a074ce9c13aef0f22e41f266583f1558a37bf56ec2346e34ac125a7aded5534d9506e624774680f128c817770d0370",
+  "verification-hash": "078df46bfe5b9db36854c62a053fc68c80a074ce9c13aef0f22e41f266583f1558a37bf56ec2346e34ac125a7aded5534d9506e624774680f128c817770d0370",
   "url": "FQDN/path: full network-path to ressource / local: ABSOLUTE or RELATIVE path to the aquafier directly
 }
+
+Requirements:
+* Remote data needs to be verifiable (stateful)
+* This means the ressource must be loadable to hash it for verification
+ 
+* Aqua chains MAY support various content addressed storage solutions including: BitTorrent, IPFS, Swarm, any content that is verifiable by hash, these are specifc link types
+* Content revisions MUST indicate if its an internal or externally tracked file object
+* MIME type of the file  (?)
+* Filepath + SHA3 Hash
+
+How to load external resources / Summery: "how to draw the world in":
+
+* Verifier has its own content storage to store resources which have been loaded for verification.
+* This content storage is content hashed (which means same files are not stored files)
+* If content references an externally linked file, then the file is loaded and stored when verifying the aqua-chain
+* A file is always looked up in the local content storage first by hash, before its loaded from the URL
+
+Object which is referenced needs to be persistant and verifiable.
+Verifiable ressources must be: available (available), hashed, type defined
+
+Discussion:
+* Using JSON-LD https://json-ld.org/ ?
+* No, to many aspects which are not needed, Aqua chain focuses on verifiability
 
 # Backlog
 
 Future capabilities:
 
-Content links with external file tracking:
+Content links with external file tracking (and specific tools to interact):
 6. Bit-Torrent file support (public files) referencing only the magnet link with the data requered for a torrent tool to load the data.
 7. Git-File support to track a repository.
 8. Generlised external-file-storage integration (write basic own implementation).
-9. X-API integration: E.g. load the JSON and embedd data strucutre of a single tween via API (TBD: how to solve media pull in pictures and videos). Solve by content addressed storage implementation for large media files: pictures, video.
-10. Website download (offline archiving) with local storing but externally storage management.
+9. X-API integration: E.g. load the JSON and embedd data strucutre of a single tweet via API (TBD: how to solve media pull in pictures and videos). Solve by content addressed storage implementation for large media files: pictures, video, others.
+10. Archive.org / Website download (offline archiving) with local storing but externally storage management.
 
 Support basic statements with a md-text-editor, form.
 Type: Contract, requires in-depth-verification.
-
-
 
 Aggregator: Timestamping at maximum.
 
@@ -178,4 +204,20 @@ Topic: Witness Contract:
 API Read function?
 Verifier needs to have a hard conviction of whats our truth. ONE SMART contract, if not we could fall into the trap that somebody changes a witness revision to a different contract and it still would be valid. --> Is this a problem?
 
-CRITIQUE and option (OPTIMIZATION): In depth verification (secure every field) vs shadllow verification (just hash the whole JSON file structure with one hash (root hash).
+Discussion:
+
+Optimizations:
+
+Different Hashing machanism
+* https://crypto.stackexchange.com/questions/31674/what-advantages-does-keccak-sha-3-have-over-blake2 i can't find a strong reason for preferring sha3
+* tl; dr: blake2 didn't win nist because it's too similar to sha2. on the other hand, sha2 has been proven to stay even after decades, so being similar to it is actually a feature, not bug. but this is an argument from the author of blake2, which is biased
+* Potentially using blake3 (optimized) which seems to be up to 15x faster
+* What are the security considerations / drawbacks
+
+
+Discussion "removing internally tracked files / content revisions":
+* Remove Content revision with wrapping
+* Track files with a local storage deamon -> only have their hash, receive files by hash, store them by hash
+* Storage service and hasher service always come togather
+* Possible to extend the aqua-verifier to support other storage implementations via shared interface (?)
+* Track matadata of file with DB or with an extra file containing the sha3 hash and URL how to receive the file (?)RITIQUE and option (OPTIMIZATION): In depth verification (secure every field) vs shadllow verification (just hash the whole JSON file structure with one hash (root hash).
