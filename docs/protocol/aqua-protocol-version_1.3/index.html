@@ -17,24 +17,24 @@
 <title>AQUA Protocol</title>
 <meta name=description content="Aqua Protocol Version v1.3
 (Writing in process, unfinished Nov. 10th, 2024)
-This is developer documentation.
+This is a developer documentation.
 The Aqua Protocol (AQP) is a data …">
 <meta property="og:title" content>
-<meta property="og:description" content="Aqua Protocol Version v1.3 (Writing in process, unfinished Nov. 10th, 2024) This is developer documentation.
+<meta property="og:description" content="Aqua Protocol Version v1.3 (Writing in process, unfinished Nov. 10th, 2024) This is a developer documentation.
 The Aqua Protocol (AQP) is a data accountability and exchange protocol between hosts in peer-to-peer environments. The AQP is used to realize the goal of accounting for data origin and history (data provenance). Short: A verifiable linkable data structure to attest and certify data.
 Issues for improving the protocol are tracked here: https://github.com/inblockio/aqua-improvement-proposal Data Structure: Every revision is represented by a merkle-root hash representing a list of alphabetically ordered key-value pairs which are hashed (implementation example SHA3-512).">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://aqua-protocol.org/docs/protocol/aqua-protocol-version_1.3/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2024-11-12T13:48:05+01:00"><meta property="og:site_name" content="AQUA Protocol">
+<meta property="article:modified_time" content="2024-11-26T12:41:37+01:00"><meta property="og:site_name" content="AQUA Protocol">
 <meta itemprop=name content>
-<meta itemprop=description content="Aqua Protocol Version v1.3 (Writing in process, unfinished Nov. 10th, 2024) This is developer documentation.
+<meta itemprop=description content="Aqua Protocol Version v1.3 (Writing in process, unfinished Nov. 10th, 2024) This is a developer documentation.
 The Aqua Protocol (AQP) is a data accountability and exchange protocol between hosts in peer-to-peer environments. The AQP is used to realize the goal of accounting for data origin and history (data provenance). Short: A verifiable linkable data structure to attest and certify data.
 Issues for improving the protocol are tracked here: https://github.com/inblockio/aqua-improvement-proposal Data Structure: Every revision is represented by a merkle-root hash representing a list of alphabetically ordered key-value pairs which are hashed (implementation example SHA3-512).">
-<meta itemprop=dateModified content="2024-11-12T13:48:05+01:00">
-<meta itemprop=wordCount content="914">
+<meta itemprop=dateModified content="2024-11-26T12:41:37+01:00">
+<meta itemprop=wordCount content="1296">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content>
-<meta name=twitter:description content="Aqua Protocol Version v1.3 (Writing in process, unfinished Nov. 10th, 2024) This is developer documentation.
+<meta name=twitter:description content="Aqua Protocol Version v1.3 (Writing in process, unfinished Nov. 10th, 2024) This is a developer documentation.
 The Aqua Protocol (AQP) is a data accountability and exchange protocol between hosts in peer-to-peer environments. The AQP is used to realize the goal of accounting for data origin and history (data provenance). Short: A verifiable linkable data structure to attest and certify data.
 Issues for improving the protocol are tracked here: https://github.com/inblockio/aqua-improvement-proposal Data Structure: Every revision is represented by a merkle-root hash representing a list of alphabetically ordered key-value pairs which are hashed (implementation example SHA3-512).">
 <link rel=preload href=/scss/main.min.c7581b97517af3dfb060b54c742fbbb65823c23616b2698f77c8bc85362525bd.css as=style>
@@ -61,7 +61,7 @@ Issues for improving the protocol are tracked here: https://github.com/inblockio
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.1f5957f114c055cf39ea0a57f81d7783.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.06260436412c3343267fa4b33cb45991.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -72,7 +72,7 @@ Issues for improving the protocol are tracked here: https://github.com/inblockio
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <div id=content-mobile>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.1f5957f114c055cf39ea0a57f81d7783.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.06260436412c3343267fa4b33cb45991.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form>
@@ -88,7 +88,9 @@ Issues for improving the protocol are tracked here: https://github.com/inblockio
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docsprotocol-li>
 <a href=/docs/protocol/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsprotocol><span>Protocol</span></a>
 <ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsprotocolwhitepaper-li>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsprotocolaqua_protocol_v1_2-li>
+<a href=/docs/protocol/aqua_protocol_v1_2/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsprotocolaqua_protocol_v1_2><span>Aqua Protocol Version 1.2</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsprotocolwhitepaper-li>
 <a href=/docs/protocol/whitepaper/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsprotocolwhitepaper><span>Whitepaper</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsprotocolaqua-identity-protocol-li>
 <a href=/docs/protocol/aqua-identity-protocol/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsprotocolaqua-identity-protocol><span>Identity Protocol</span></a>
@@ -158,7 +160,7 @@ Issues for improving the protocol are tracked here: https://github.com/inblockio
 </header>
 <h1 id=aqua-protocol-version-v13>Aqua Protocol Version v1.3</h1>
 <p>(Writing in process, unfinished Nov. 10th, 2024)
-This is developer documentation.</p>
+This is a developer documentation.</p>
 <p>The Aqua Protocol (AQP) is a data accountability and exchange protocol between hosts in peer-to-peer environments. The AQP is used to realize the goal of accounting for data origin and history (data provenance). Short: A verifiable linkable data structure to attest and certify data.</p>
 <p>Issues for improving the protocol are tracked here:
 <a href=https://github.com/inblockio/aqua-improvement-proposal target=_blank>https://github.com/inblockio/aqua-improvement-proposal</a>
@@ -294,30 +296,68 @@ The witness_transaction_hash contains the server certificate chain.</p>
   }
 </code></pre><h1 id=drafts>Drafts</h1>
 <ol start=5>
-<li>Linkage
-url: path to ressource.
-remote expect-aqua-chain: boolean
-expect aqua-chain, if false: expect hash to be file-hash or content addressed storage.
-require-in-depth-verification: if false, in depth verification will only draw a warning for not verifing or not be able to load the resource, if true, it will cause a critical verification error.</li>
+<li>Linkage</li>
 </ol>
+<p>Restriction: The linked resource MUST be an Aqua-Chain or MAY contain content addressed files (BitTorrent, IPFS, Swarm, any content that is verifiable by hash).</p>
+<p>url: path to ressource
+remote expect-aqua-chain: boolean
+expect type: aqua-chain / bittorrent / ipfs - the type of the linked resources.
+require-in-depth-verification: if false, in depth verification will only draw a warning for not verifing or not be able to load the resource, if true, it will cause a critical verification error.</p>
 <ul>
 <li>load and hash ressource (pull in with copy, pull in without copy). Restriction: only single files allowed. Possible to embedd remote content.
 {
 &ldquo;revision_type&rdquo;: &ldquo;link (when linking to other aqua-chain) / reference (when referencing an external source)&rdquo;,
-&ldquo;expect:aqua-chain&rdquo;: &ldquo;true / false&rdquo;,
+&ldquo;expect type&rdquo;: &ldquo;aqua / bittorent / ipfs&rdquo;
 &ldquo;required-indepth-verification: &ldquo;true / false&rdquo;,
-&ldquo;ressource-hash&rdquo;: &ldquo;078df46bfe5b9db36854c62a053fc68c80a074ce9c13aef0f22e41f266583f1558a37bf56ec2346e34ac125a7aded5534d9506e624774680f128c817770d0370&rdquo;,
+&ldquo;verification-hash&rdquo;: &ldquo;078df46bfe5b9db36854c62a053fc68c80a074ce9c13aef0f22e41f266583f1558a37bf56ec2346e34ac125a7aded5534d9506e624774680f128c817770d0370&rdquo;,
 &ldquo;url&rdquo;: &ldquo;FQDN/path: full network-path to ressource / local: ABSOLUTE or RELATIVE path to the aquafier directly
 }</li>
 </ul>
+<p>Requirements:</p>
+<ul>
+<li>
+<p>Remote data needs to be verifiable (stateful)</p>
+</li>
+<li>
+<p>This means the ressource must be loadable to hash it for verification</p>
+</li>
+<li>
+<p>Aqua chains MAY support various content addressed storage solutions including: BitTorrent, IPFS, Swarm, any content that is verifiable by hash, these are specifc link types</p>
+</li>
+<li>
+<p>Content revisions MUST indicate if its an internal or externally tracked file object</p>
+</li>
+<li>
+<p>MIME type of the file (?)</p>
+</li>
+<li>
+<p>Filepath + SHA3 Hash</p>
+</li>
+</ul>
+<p>How to load external resources / Summery: &ldquo;how to draw the world in&rdquo;:</p>
+<ul>
+<li>Verifier has its own content storage to store resources which have been loaded for verification.</li>
+<li>This content storage is content hashed (which means same files are not stored files)</li>
+<li>If content references an externally linked file, then the file is loaded and stored when verifying the aqua-chain</li>
+<li>A file is always looked up in the local content storage first by hash, before its loaded from the URL</li>
+</ul>
+<p>Object which is referenced needs to be persistant and verifiable.
+Verifiable ressources must be: available (available), hashed, type defined</p>
+<p>Discussion:</p>
+<ul>
+<li>Using JSON-LD
+<a href=https://json-ld.org/ target=_blank>https://json-ld.org/</a>
+?</li>
+<li>No, to many aspects which are not needed, Aqua chain focuses on verifiability</li>
+</ul>
 <h1 id=backlog>Backlog</h1>
 <p>Future capabilities:</p>
-<p>Content links with external file tracking:
+<p>Content links with external file tracking (and specific tools to interact):
 6. Bit-Torrent file support (public files) referencing only the magnet link with the data requered for a torrent tool to load the data.
 7. Git-File support to track a repository.
 8. Generlised external-file-storage integration (write basic own implementation).
-9. X-API integration: E.g. load the JSON and embedd data strucutre of a single tween via API (TBD: how to solve media pull in pictures and videos). Solve by content addressed storage implementation for large media files: pictures, video.
-10. Website download (offline archiving) with local storing but externally storage management.</p>
+9. X-API integration: E.g. load the JSON and embedd data strucutre of a single tweet via API (TBD: how to solve media pull in pictures and videos). Solve by content addressed storage implementation for large media files: pictures, video, others.
+10. Archive.org / Website download (offline archiving) with local storing but externally storage management.</p>
 <p>Support basic statements with a md-text-editor, form.
 Type: Contract, requires in-depth-verification.</p>
 <p>Aggregator: Timestamping at maximum.</p>
@@ -325,9 +365,27 @@ Type: Contract, requires in-depth-verification.</p>
 <p>Topic: Witness Contract:
 API Read function?
 Verifier needs to have a hard conviction of whats our truth. ONE SMART contract, if not we could fall into the trap that somebody changes a witness revision to a different contract and it still would be valid. &ndash;> Is this a problem?</p>
-<p>CRITIQUE and option (OPTIMIZATION): In depth verification (secure every field) vs shadllow verification (just hash the whole JSON file structure with one hash (root hash).</p>
+<p>Discussion:</p>
+<p>Optimizations:</p>
+<p>Different Hashing machanism</p>
+<ul>
+<li>
+<a href=https://crypto.stackexchange.com/questions/31674/what-advantages-does-keccak-sha-3-have-over-blake2 target=_blank>https://crypto.stackexchange.com/questions/31674/what-advantages-does-keccak-sha-3-have-over-blake2</a>
+i can&rsquo;t find a strong reason for preferring sha3</li>
+<li>tl; dr: blake2 didn&rsquo;t win nist because it&rsquo;s too similar to sha2. on the other hand, sha2 has been proven to stay even after decades, so being similar to it is actually a feature, not bug. but this is an argument from the author of blake2, which is biased</li>
+<li>Potentially using blake3 (optimized) which seems to be up to 15x faster</li>
+<li>What are the security considerations / drawbacks</li>
+</ul>
+<p>Discussion &ldquo;removing internally tracked files / content revisions&rdquo;:</p>
+<ul>
+<li>Remove Content revision with wrapping</li>
+<li>Track files with a local storage deamon -> only have their hash, receive files by hash, store them by hash</li>
+<li>Storage service and hasher service always come togather</li>
+<li>Possible to extend the aqua-verifier to support other storage implementations via shared interface (?)</li>
+<li>Track matadata of file with DB or with an extra file containing the sha3 hash and URL how to receive the file (?)RITIQUE and option (OPTIMIZATION): In depth verification (secure every field) vs shadllow verification (just hash the whole JSON file structure with one hash (root hash).</li>
+</ul>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified November 12, 2024: <a href=https://github.com/inblockio/aqua-docs/commit/8917a171bbdfb53137512ae8dd7a1a43afc53b5a>adding more draft to v1.3 (8917a17)</a>
+Last modified November 26, 2024: <a href=https://github.com/inblockio/aqua-docs/commit/591cdb59b8dd2f9c843c267eb6dabf4e4b3c9851>Adding placeholder for version 1.2 documentation (591cdb5)</a>
 </div>
 </div>
 </main>

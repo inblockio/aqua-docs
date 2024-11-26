@@ -3,7 +3,6 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=generator content="Hugo 0.88.0">
-<link rel=alternate type=text/html href=https://aqua-protocol.org/docs/protocol/_print/>
 <meta name=robots content="index, follow">
 <link rel="shortcut icon" href=/favicons/favicon.ico>
 <link rel=apple-touch-icon href=/favicons/apple-touch-icon-180x180.png sizes=180x180>
@@ -15,26 +14,30 @@
 <link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
-<title>Protocol | AQUA Protocol</title>
-<meta name=description content="Low level reference documentation of the AQUA Protocol
+<title>Aqua Protocol Version 1.2 | AQUA Protocol</title>
+<meta name=description content="Specificaiton of Aqua Protocol with example implementaiton
 ">
-<meta property="og:title" content="Protocol">
-<meta property="og:description" content="Low level reference documentation of the AQUA Protocol
+<meta property="og:title" content="Aqua Protocol Version 1.2">
+<meta property="og:description" content="Specificaiton of Aqua Protocol with example implementaiton
 ">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://aqua-protocol.org/docs/protocol/"><meta property="og:site_name" content="AQUA Protocol">
-<meta itemprop=name content="Protocol">
-<meta itemprop=description content="Low level reference documentation of the AQUA Protocol
-"><meta name=twitter:card content="summary">
-<meta name=twitter:title content="Protocol">
-<meta name=twitter:description content="Low level reference documentation of the AQUA Protocol
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://aqua-protocol.org/docs/protocol/aqua_protocol_v1_2/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2024-11-26T12:41:37+01:00"><meta property="og:site_name" content="AQUA Protocol">
+<meta itemprop=name content="Aqua Protocol Version 1.2">
+<meta itemprop=description content="Specificaiton of Aqua Protocol with example implementaiton
+">
+<meta itemprop=dateModified content="2024-11-26T12:41:37+01:00">
+<meta itemprop=wordCount content="23">
+<meta itemprop=keywords content><meta name=twitter:card content="summary">
+<meta name=twitter:title content="Aqua Protocol Version 1.2">
+<meta name=twitter:description content="Specificaiton of Aqua Protocol with example implementaiton
 ">
 <link rel=preload href=/scss/main.min.c7581b97517af3dfb060b54c742fbbb65823c23616b2698f77c8bc85362525bd.css as=style>
 <link href=/scss/main.min.c7581b97517af3dfb060b54c742fbbb65823c23616b2698f77c8bc85362525bd.css rel=stylesheet integrity>
 <script src=https://code.jquery.com/jquery-3.6.0.min.js integrity=sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK crossorigin=anonymous></script>
 <script src=https://unpkg.com/lunr@2.3.9/lunr.min.js integrity=sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli crossorigin=anonymous></script>
 </head>
-<body class=td-section>
+<body class=td-page>
 <header>
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
 <a class=navbar-brand href=/>
@@ -78,10 +81,10 @@
 <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsoverview-li>
 <a href=/docs/overview/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsoverview><span>Overview</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docsprotocol-li>
-<a href=/docs/protocol/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id=m-docsprotocol><span class=td-sidebar-nav-active-item>Protocol</span></a>
+<a href=/docs/protocol/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsprotocol><span>Protocol</span></a>
 <ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsprotocolaqua_protocol_v1_2-li>
-<a href=/docs/protocol/aqua_protocol_v1_2/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsprotocolaqua_protocol_v1_2><span>Aqua Protocol Version 1.2</span></a>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docsprotocolaqua_protocol_v1_2-li>
+<a href=/docs/protocol/aqua_protocol_v1_2/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-docsprotocolaqua_protocol_v1_2><span class=td-sidebar-nav-active-item>Aqua Protocol Version 1.2</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsprotocolwhitepaper-li>
 <a href=/docs/protocol/whitepaper/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsprotocolwhitepaper><span>Whitepaper</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsprotocolaqua-identity-protocol-li>
@@ -124,10 +127,10 @@
 </aside>
 <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-<a href=https://github.com/inblockio/aqua-docs/tree/main/content/en/docs/protocol/_index.md class=td-page-meta--view target=_blank rel=noopener><i class="fa fa-file-alt fa-fw"></i> View page source</a>
-<a href=https://github.com/inblockio/aqua-docs/edit/main/content/en/docs/protocol/_index.md class=td-page-meta--edit target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Edit This Page</a>
+<a href=https://github.com/inblockio/aqua-docs/tree/main/content/en/docs/protocol/aqua_protocol_v1_2.md class=td-page-meta--view target=_blank rel=noopener><i class="fa fa-file-alt fa-fw"></i> View page source</a>
+<a href=https://github.com/inblockio/aqua-docs/edit/main/content/en/docs/protocol/aqua_protocol_v1_2.md class=td-page-meta--edit target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Edit This Page</a>
 <a id=print href=https://aqua-protocol.org/docs/protocol/_print/><i class="fa fa-print fa-fw"></i> Print Page</a>
-<a href="https://github.com/inblockio/aqua-docs/new/main/content/en/docs/protocol/_index.md?filename=change-me.md&value=---%0Atitle%3A+%22Long+Page+Title%22%0AlinkTitle%3A+%22Short+Nav+Title%22%0Aweight%3A+100%0Adescription%3A+%3E-%0A+++++Page+description+for+heading+and+indexes.%0A---%0A%0A%23%23+Heading%0A%0AEdit+this+template+to+create+your+new+page.%0A%0A%2A+Give+it+a+good+name%2C+ending+in+%60.md%60+-+e.g.+%60getting-started.md%60%0A%2A+Edit+the+%22front+matter%22+section+at+the+top+of+the+page+%28weight+controls+how+its+ordered+amongst+other+pages+in+the+same+directory%3B+lowest+number+first%29.%0A%2A+Add+a+good+commit+message+at+the+bottom+of+the+page+%28%3C80+characters%3B+use+the+extended+description+field+for+more+detail%29.%0A%2A+Create+a+new+branch+so+you+can+preview+your+new+file+and+request+a+review+via+Pull+Request.%0A" class=td-page-meta--child target=_blank rel=noopener>
+<a href="https://github.com/inblockio/aqua-docs/new/main/content/en/docs/protocol/aqua_protocol_v1_2.md?filename=change-me.md&value=---%0Atitle%3A+%22Long+Page+Title%22%0AlinkTitle%3A+%22Short+Nav+Title%22%0Aweight%3A+100%0Adescription%3A+%3E-%0A+++++Page+description+for+heading+and+indexes.%0A---%0A%0A%23%23+Heading%0A%0AEdit+this+template+to+create+your+new+page.%0A%0A%2A+Give+it+a+good+name%2C+ending+in+%60.md%60+-+e.g.+%60getting-started.md%60%0A%2A+Edit+the+%22front+matter%22+section+at+the+top+of+the+page+%28weight+controls+how+its+ordered+amongst+other+pages+in+the+same+directory%3B+lowest+number+first%29.%0A%2A+Add+a+good+commit+message+at+the+bottom+of+the+page+%28%3C80+characters%3B+use+the+extended+description+field+for+more+detail%29.%0A%2A+Create+a+new+branch+so+you+can+preview+your+new+file+and+request+a+review+via+Pull+Request.%0A" class=td-page-meta--child target=_blank rel=noopener>
 <i class="fa fa-edit fa-fw"></i> Create Page
 </a>
 </div>
@@ -138,94 +141,55 @@
 <li class=breadcrumb-item>
 <a href=https://aqua-protocol.org/docs/>Documentation</a>
 </li>
-<li class="breadcrumb-item active" aria-current=page>
+<li class=breadcrumb-item>
 <a href=https://aqua-protocol.org/docs/protocol/>Protocol</a>
+</li>
+<li class="breadcrumb-item active" aria-current=page>
+<a href=https://aqua-protocol.org/docs/protocol/aqua_protocol_v1_2/>Aqua Protocol Version 1.2</a>
 </li>
 </ol>
 </nav>
 <div class=td-content>
-<h1>Protocol</h1>
-<div class=lead>Low level reference documentation of the AQUA Protocol</div>
+<h1>Aqua Protocol Version 1.2</h1>
+<div class=lead>Specificaiton of Aqua Protocol with example implementaiton</div>
 <header class=article-meta>
 </header>
-<p>This section of documentation gets into specific details about the AQUA Protocol
-and is meant for those doing an implementation or contributing to the Protocol
-itself.</p>
-<div class=section-index>
-<hr class=panel-line>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/aqua_protocol_v1_2/>Aqua Protocol Version 1.2</a>
-</h5>
-<p>Specificaiton of Aqua Protocol with example implementaiton</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/whitepaper/>Whitepaper</a>
-</h5>
-<p>High level outline of Aqua Protocol (AQP) specification</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/aqua-identity-protocol/>Identity Protocol</a>
-</h5>
-<p>The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/aqua-name-resolution/>Aqua Name Resolution (ANS)</a>
-</h5>
-<p>ANS is used to hashes of various types to human readable names</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/assurance-levels-aal/>Assurance Levels (AAL)</a>
-</h5>
-<p>Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation.</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/data-accounting/>Data Accounting</a>
-</h5>
-<p>Introduces the concept of Data Accounting</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/data-governance/>Data Governance</a>
-</h5>
-<p>Introduces the concept of Data Governance</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/delegated-witnessing/>Delegated Witnessing</a>
-</h5>
-<p>Describes the process of sending domain snapshots to remote data vaults.</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/design-principles/>Design Principles</a>
-</h5>
-<p>Lists the design principles underlying our reference implementation</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/guardian/>Guardian</a>
-</h5>
-<p>Shows access and transport layer logic used to interconnect data vaults</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/immutable-hyperlinks/>Immutable Hyperlinks</a>
-</h5>
-<p>Shows how the Aqua URI&rsquo;s can be used as immutable links.</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/protocol/aqua-protocol-version_1.3/></a>
-</h5>
-<p></p>
-</div>
-</div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Current version:</td>
+<td>Aqua Protocol v1.2 Specification</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tim Bansemer, Publius Dirac</td>
+</tr>
+<tr>
+<td>Date:</td>
+<td>26.11.2024</td>
+</tr>
+<tr>
+<td>Status:</td>
+<td>DRAFT / Experimental</td>
+</tr>
+<tr>
+<td>Implementation:</td>
+<td>
+<a href=https://github.com/inblockio/micro-pkc target=_blank>https://github.com/inblockio/micro-pkc</a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id=introduction>Introduction</h2>
+<p>TBD</p>
+<h2 id=specification>Specification</h2>
+<p>TBD</p>
 <div class="text-muted mt-5 pt-3 border-top">
 Last modified November 26, 2024: <a href=https://github.com/inblockio/aqua-docs/commit/591cdb59b8dd2f9c843c267eb6dabf4e4b3c9851>Adding placeholder for version 1.2 documentation (591cdb5)</a>
 </div>
