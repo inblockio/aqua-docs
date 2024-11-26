@@ -50,7 +50,7 @@ implementations. AQUA is heavily under development at the moment …">
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.06260436412c3343267fa4b33cb45991.json data-offline-search-base-href=/ data-offline-search-max-results=25>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.4226a541ade78191ccaa3861c2be3b0d.json data-offline-search-base-href=/ data-offline-search-max-results=25>
 </div>
 </nav>
 </header>
@@ -174,8 +174,74 @@ itself.</p>
 </tbody>
 </table>
 <h2 id=introduction>Introduction</h2>
-<p>TBD</p>
-<h2 id=specification>Specification</h2>
+<p>Please find version 1.1 here [LINK TBD].</p>
+<p>Major changes to version 1.1:</p>
+<p>Change the way how verification of siganture and witness events work. They are now part of the currently written revision and always force that a new revision which is created. Verification hashes for signatures and witness events are included into the new forced written revision. This was necessary to avoid unresolvable conflicts which could be created by divergant forks of an aqua-chain in two distinct containers after sharing the original chain.</p>
+<p>Version 1.2 was used to pilot and prototype the aqua-guardian. A security compontent being used to exchange data between two or more aqua-containers (Personal-knowledge-containers) by doing access control and policy enforcement for data acccess agreements.</p>
+<h2 id=system-components>System Components</h2>
+<h3 id=core-components>Core Components</h3>
+<ul>
+<li><strong>Aquafier</strong>: A software component that enriches files with cryptographic metadata for verification according to the Aqua protocol.</li>
+<li><strong>Aqua Verifier</strong>: An automatic verification tool to validate aqua-chains.</li>
+</ul>
+<h3 id=prototype-implementations>Prototype Implementations</h3>
+<h4 id=cli-tools-aquafier--verifier>CLI Tools (Aquafier + Verifier)</h4>
+<ul>
+<li><strong>Languages</strong>: JavaScript (v1.2, v1.3), Rust (v1.2)</li>
+<li><strong>Description</strong>: A command-line tool allowing users to create and verify aqua-chains.</li>
+<li><strong>Status</strong>: Active development, pilots completed, v1.3 ongoing development</li>
+<li><strong>Links</strong>:
+<ul>
+<li>
+<a href=#>Rust Version</a>
+(TBD)</li>
+<li>
+<a href=#>JavaScript/TypeScript Version</a>
+(TBD)</li>
+</ul>
+</li>
+</ul>
+<h4 id=chrome-extension-name-resolution-v12>Chrome Extension (Name-Resolution v1.2)</h4>
+<ul>
+<li><strong>Description</strong>: A Chrome web extension that enables:
+<ul>
+<li>Automatic verification of pages on a visited PKC.</li>
+<li>Offline verification of aqua-chains stored in the extension.</li>
+<li>Resolution of wallet addresses to names.</li>
+</ul>
+</li>
+<li><strong>Link</strong>:
+<a href=#>Chrome Extension</a>
+(TBD)</li>
+</ul>
+<h4 id=pkc-personal-knowledge-container>PKC (Personal Knowledge Container)</h4>
+<ul>
+<li><strong>Description</strong>: A MediaWiki-enhanced version designed to turn pages into aqua-chains with full integration of core Aqua functionalities (hash-chains, signing, witnessing with aggregation function, and verifiable links).</li>
+<li><strong>Status</strong>: Pilot completed with local feature completeness.</li>
+<li><strong>Link</strong>:
+<a href=#>PKC</a>
+(TBD)</li>
+</ul>
+<h4 id=aqua-container-focused-on-doku-sign-use-case>Aqua-Container (Focused on Doku-Sign Use Case)</h4>
+<ul>
+<li><strong>Description</strong>: A Rust implementation for creating, verifying, and managing aqua-files.</li>
+<li><strong>Link</strong>:
+<ul>
+<li>
+<a href=#>Rust Version</a>
+(TBD)</li>
+<li>
+<a href=#>React, TypeScript/JavaScript</a>
+(TBD)</li>
+</ul>
+</li>
+</ul>
+<h4 id=guardian>Guardian</h4>
+<ul>
+<li><strong>Description</strong>: A security enforcement point for verifying, transporting, and managing access for aqua-files.</li>
+<li><strong>Status</strong>: Pilot completed with PKC serving as an aqua-file storage.</li>
+</ul>
+<h2 id=version-12-protocol-specification>Version 1.2 Protocol Specification</h2>
 <p>TBD</p>
 </div>
 <div class=td-content style=page-break-before:always>
