@@ -1,0 +1,25 @@
+{
+  "id": "protocol/whitepaper",
+  "title": "Whitepaper",
+  "description": "High level outline of Aqua Protocol (AQP) specification\n",
+  "source": "@site/docs/protocol/whitepaper.md",
+  "sourceDirName": "protocol",
+  "slug": "/protocol/whitepaper",
+  "permalink": "/docs/next/protocol/whitepaper",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/docs/protocol/whitepaper.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Whitepaper",
+    "linkTitle": "Whitepaper",
+    "weight": 1,
+    "description": "High level outline of Aqua Protocol (AQP) specification\n"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Immutable Hyperlinks",
+    "permalink": "/docs/next/protocol/immutable-hyperlinks"
+  }
+}

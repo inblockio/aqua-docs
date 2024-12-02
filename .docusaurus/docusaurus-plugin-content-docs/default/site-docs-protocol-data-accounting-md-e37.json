@@ -1,0 +1,29 @@
+{
+  "id": "protocol/data-accounting",
+  "title": "Data Accounting",
+  "description": "Introduces the concept of Data Accounting\n",
+  "source": "@site/docs/protocol/data-accounting.md",
+  "sourceDirName": "protocol",
+  "slug": "/protocol/data-accounting",
+  "permalink": "/docs/next/protocol/data-accounting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/docs/protocol/data-accounting.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Data Accounting",
+    "linkTitle": "Data Accounting",
+    "weight": 5,
+    "description": "Introduces the concept of Data Accounting\n"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Assurance Levels (AAL)",
+    "permalink": "/docs/next/protocol/assurance-levels-aal"
+  },
+  "next": {
+    "title": "Data Governance",
+    "permalink": "/docs/next/protocol/data-governance"
+  }
+}

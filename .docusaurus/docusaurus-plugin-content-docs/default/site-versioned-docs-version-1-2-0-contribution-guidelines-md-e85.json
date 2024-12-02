@@ -1,0 +1,33 @@
+{
+  "id": "contribution-guidelines",
+  "title": "Contribution Guidelines",
+  "description": "",
+  "source": "@site/versioned_docs/version-1.2.0/contribution-guidelines.md",
+  "sourceDirName": ".",
+  "slug": "/contribution-guidelines",
+  "permalink": "/docs/1.2.0/contribution-guidelines",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/contribution-guidelines.md",
+  "tags": [],
+  "version": "1.2.0",
+  "frontMatter": {
+    "title": "Contribution Guidelines",
+    "linkTitle": "Contribution",
+    "weight": 20,
+    "menu": {
+      "main": {
+        "weight": 20
+      }
+    }
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Aqua Protocol Version 1.2",
+    "permalink": "/docs/1.2.0/aqua_protocol"
+  },
+  "next": {
+    "title": "Documentation",
+    "permalink": "/docs/1.2.0/intro"
+  }
+}

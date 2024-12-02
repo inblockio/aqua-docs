@@ -1,0 +1,169 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": false,
+          "path": "/docs/next",
+          "mainDocId": "contribution-guidelines",
+          "docs": [
+            {
+              "id": "contribution-guidelines",
+              "path": "/docs/next/contribution-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "implementations/reference-architecture",
+              "path": "/docs/next/implementations/reference-architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/next/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/aqua_protocol_v1_2",
+              "path": "/docs/next/protocol/aqua_protocol_v1_2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/aqua-identity-protocol",
+              "path": "/docs/next/protocol/aqua-identity-protocol",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/aqua-name-resolution",
+              "path": "/docs/next/protocol/aqua-name-resolution",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/aqua-protocol-version_1.3",
+              "path": "/docs/next/protocol/aqua-protocol-version_1.3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/assurance-levels-aal",
+              "path": "/docs/next/protocol/assurance-levels-aal",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/data-accounting",
+              "path": "/docs/next/protocol/data-accounting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/data-governance",
+              "path": "/docs/next/protocol/data-governance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/delegated-witnessing",
+              "path": "/docs/next/protocol/delegated-witnessing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/design-principles",
+              "path": "/docs/next/protocol/design-principles",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/guardian",
+              "path": "/docs/next/protocol/guardian",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/immutable-hyperlinks",
+              "path": "/docs/next/protocol/immutable-hyperlinks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/whitepaper",
+              "path": "/docs/next/protocol/whitepaper",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/next/contribution-guidelines",
+                "label": "contribution-guidelines"
+              }
+            }
+          }
+        },
+        {
+          "name": "1.3.0",
+          "label": "1.3.0",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "aqua-protocol-version",
+          "docs": [
+            {
+              "id": "aqua-protocol-version",
+              "path": "/docs/aqua-protocol-version",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "contribution-guidelines",
+              "path": "/docs/contribution-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/aqua-protocol-version",
+                "label": "aqua-protocol-version"
+              }
+            }
+          }
+        },
+        {
+          "name": "1.2.0",
+          "label": "1.2.0",
+          "isLast": false,
+          "path": "/docs/1.2.0",
+          "mainDocId": "aqua_protocol",
+          "docs": [
+            {
+              "id": "aqua_protocol",
+              "path": "/docs/1.2.0/aqua_protocol",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "contribution-guidelines",
+              "path": "/docs/1.2.0/contribution-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/1.2.0/intro",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/1.2.0/aqua_protocol",
+                "label": "aqua_protocol"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

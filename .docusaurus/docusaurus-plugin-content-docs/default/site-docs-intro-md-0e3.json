@@ -1,0 +1,33 @@
+{
+  "id": "intro",
+  "title": "Documentation",
+  "description": "The following are documentation used to understand the AQUA Protocol and it's",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/next/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Documentation",
+    "linkTitle": "Documentation",
+    "weight": 10,
+    "menu": {
+      "main": {
+        "weight": 10
+      }
+    }
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Reference Implementation",
+    "permalink": "/docs/next/implementations/reference-architecture"
+  },
+  "next": {
+    "title": "Identity Protocol",
+    "permalink": "/docs/next/protocol/aqua-identity-protocol"
+  }
+}

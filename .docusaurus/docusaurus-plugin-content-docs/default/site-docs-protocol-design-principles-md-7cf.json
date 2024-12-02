@@ -1,0 +1,29 @@
+{
+  "id": "protocol/design-principles",
+  "title": "Design Principles",
+  "description": "Lists the design principles underlying our reference implementation\n",
+  "source": "@site/docs/protocol/design-principles.md",
+  "sourceDirName": "protocol",
+  "slug": "/protocol/design-principles",
+  "permalink": "/docs/next/protocol/design-principles",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/docs/protocol/design-principles.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Design Principles",
+    "linkTitle": "Design Principles",
+    "weight": 8,
+    "description": "Lists the design principles underlying our reference implementation\n"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Delegated Witnessing",
+    "permalink": "/docs/next/protocol/delegated-witnessing"
+  },
+  "next": {
+    "title": "Guardian",
+    "permalink": "/docs/next/protocol/guardian"
+  }
+}

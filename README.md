@@ -1,38 +1,41 @@
-Aqua Docs
-=========
+# Website
 
-This documentation gives context to the Aqua Protocol. 
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-- [https://aqua-protocol.org](https://aqua-protocol.org)
-
----
-
-## Deploying To Server
-
-1. Install Hugo static site generator:
-
-- [Install Hugo](https://gohugo.io/getting-started/installing/)
-
-2. Install webserver of choice. configure certs, etc...
-3. Configure webserver to point at HTML directory `aqua-protocol.org/`
-4. Clone this repo
+### Installation
 
 ```
-$ git clone https://github.com/inblockio/aqua-docs/ aqua-docs
+$ yarn
 ```
 
-5. Build the HTML site
+### Local Development
 
 ```
-$ cd aqua-docs
-$ hugo -d ../path/to/aqua-protocol.org/
+$ yarn start
 ```
 
-Site should be compiled and viewable.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
----
+### Build
 
-Build with following technologies:
+```
+$ yarn build
+```
 
-- [Hugo](https://gohugo.io)
-- [Docsy Theme](https://example.docsy.dev/)
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

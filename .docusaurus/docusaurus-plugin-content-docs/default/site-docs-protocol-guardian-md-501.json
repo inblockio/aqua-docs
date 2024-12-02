@@ -1,0 +1,29 @@
+{
+  "id": "protocol/guardian",
+  "title": "Guardian",
+  "description": "Shows access and transport layer logic used to interconnect data vaults\n",
+  "source": "@site/docs/protocol/guardian.md",
+  "sourceDirName": "protocol",
+  "slug": "/protocol/guardian",
+  "permalink": "/docs/next/protocol/guardian",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/docs/protocol/guardian.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Guardian",
+    "linkTitle": "Guardian",
+    "weight": 9,
+    "description": "Shows access and transport layer logic used to interconnect data vaults\n"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Design Principles",
+    "permalink": "/docs/next/protocol/design-principles"
+  },
+  "next": {
+    "title": "Immutable Hyperlinks",
+    "permalink": "/docs/next/protocol/immutable-hyperlinks"
+  }
+}

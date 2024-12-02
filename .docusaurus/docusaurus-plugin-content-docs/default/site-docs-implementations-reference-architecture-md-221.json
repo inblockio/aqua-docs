@@ -1,0 +1,29 @@
+{
+  "id": "implementations/reference-architecture",
+  "title": "Reference Implementation",
+  "description": "Explains the technologies selected for the reference implementation and why we selected them.\n",
+  "source": "@site/docs/implementations/reference-architecture.md",
+  "sourceDirName": "implementations",
+  "slug": "/implementations/reference-architecture",
+  "permalink": "/docs/next/implementations/reference-architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/docs/implementations/reference-architecture.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Reference Implementation",
+    "linkTitle": "Reference Implementation",
+    "weight": 1,
+    "description": "Explains the technologies selected for the reference implementation and why we selected them.\n"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Contribution Guidelines",
+    "permalink": "/docs/next/contribution-guidelines"
+  },
+  "next": {
+    "title": "Documentation",
+    "permalink": "/docs/next/intro"
+  }
+}

@@ -1,0 +1,22 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+
+.action_link a{
+  color: #72a1e5;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.action_link a:hover{
+  color: #3176d9;
+}

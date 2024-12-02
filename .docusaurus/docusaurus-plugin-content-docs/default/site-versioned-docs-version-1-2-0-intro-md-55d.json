@@ -1,0 +1,29 @@
+{
+  "id": "intro",
+  "title": "Documentation",
+  "description": "The following are documentation used to understand the AQUA Protocol and it's",
+  "source": "@site/versioned_docs/version-1.2.0/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/1.2.0/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/intro.md",
+  "tags": [],
+  "version": "1.2.0",
+  "frontMatter": {
+    "title": "Documentation",
+    "linkTitle": "Documentation",
+    "weight": 10,
+    "menu": {
+      "main": {
+        "weight": 10
+      }
+    }
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Contribution Guidelines",
+    "permalink": "/docs/1.2.0/contribution-guidelines"
+  }
+}

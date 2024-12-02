@@ -1,0 +1,29 @@
+{
+  "id": "protocol/aqua-name-resolution",
+  "title": "Aqua Name Resolution (ANS)",
+  "description": "ANS is used to hashes of various types to human readable names\n",
+  "source": "@site/docs/protocol/aqua-name-resolution.md",
+  "sourceDirName": "protocol",
+  "slug": "/protocol/aqua-name-resolution",
+  "permalink": "/docs/next/protocol/aqua-name-resolution",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/docs/protocol/aqua-name-resolution.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Aqua Name Resolution (ANS)",
+    "linkTitle": "Name Resolution",
+    "weight": 3,
+    "description": "ANS is used to hashes of various types to human readable names\n"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Identity Protocol",
+    "permalink": "/docs/next/protocol/aqua-identity-protocol"
+  },
+  "next": {
+    "title": "Aqua Protocol Version v1.3",
+    "permalink": "/docs/next/protocol/aqua-protocol-version_1.3"
+  }
+}
