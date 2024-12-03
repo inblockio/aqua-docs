@@ -45,7 +45,24 @@ attribute them together called a genesis hash.
 
 
 
+### Witness
 
+We define witnessing as the process of observing an event. A witness is judged
+by their capability to recollect and share an observed event. In other words,
+witnessing is the process of storing input data for later playback to provide
+data symmetry around an event.
 
-##
+### Witness Network
+
+The digital service in a distributed ledger or similar infrastructure which
+provides transaction security and data symmetry for shared data within the
+network. An example of a witness network would be Ethereum.
+
+E.g. Ethereum can be used to store a digital fingerprint of a domain snapshot
+of a data vault. A domain snapshot is the Merklized state of all witnessed hash
+chains being present in the data vault. It is required to pay the witness
+network for its service. In the case of Ethereum, this is done using 'Ether'.
+This in return allows the account owner to create an 'undeniable' proof that a
+specific revision and the previous revisions within a hash chain has existed.
+
 

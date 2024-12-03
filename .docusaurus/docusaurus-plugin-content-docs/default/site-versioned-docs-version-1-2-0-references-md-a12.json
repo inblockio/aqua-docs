@@ -1,29 +1,22 @@
 {
   "id": "references",
-  "title": "Refernces",
-  "description": "Encrption",
+  "title": "References",
+  "description": "Signature",
   "source": "@site/versioned_docs/version-1.2.0/references.md",
   "sourceDirName": ".",
   "slug": "/references",
-  "permalink": "/docs/1.2.0/references",
+  "permalink": "/docs/references",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/references.md",
   "tags": [],
   "version": "1.2.0",
   "frontMatter": {
-    "title": "Refernces",
-    "linkTitle": "references",
-    "weight": 10,
-    "menu": {
-      "main": {
-        "weight": 10
-      }
-    }
+    "title": "References"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Contribution Guidelines",
-    "permalink": "/docs/1.2.0/contribution-guidelines"
+    "permalink": "/docs/contribution-guidelines"
   }
 }

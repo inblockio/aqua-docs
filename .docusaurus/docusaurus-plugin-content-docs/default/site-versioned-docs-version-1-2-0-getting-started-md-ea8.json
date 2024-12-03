@@ -5,7 +5,7 @@
   "source": "@site/versioned_docs/version-1.2.0/getting-started.md",
   "sourceDirName": ".",
   "slug": "/getting-started",
-  "permalink": "/docs/1.2.0/getting-started",
+  "permalink": "/docs/getting-started",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/getting-started.md",
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Prologue",
-    "permalink": "/docs/1.2.0/prologue"
+    "permalink": "/docs/prologue"
   },
   "next": {
     "title": "Introduction",
-    "permalink": "/docs/1.2.0/Components/intro"
+    "permalink": "/docs/Components/intro"
   }
 }

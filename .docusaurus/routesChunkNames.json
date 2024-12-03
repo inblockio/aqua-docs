@@ -242,7 +242,7 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-welcomed-9-f-ffb"
   },
-  "/docs-748": {
+  "/docs-ad3": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
@@ -258,49 +258,6 @@
   "/docs/1.1.0/intro-02d": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-1-1-0-intro-50-a-f31"
-  },
-  "/docs/1.2.0-433": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---docs-1-2-030-b-949"
-  },
-  "/docs/1.2.0-45d": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
-  },
-  "/docs/1.2.0/Components/container-d6b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-1-2-0-components-container-032-e00"
-  },
-  "/docs/1.2.0/Components/guardian-4fc": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-1-2-0-components-guardian-4-bb-18e"
-  },
-  "/docs/1.2.0/Components/intro-b0f": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-1-2-0-components-introf-8-e-e1b"
-  },
-  "/docs/1.2.0/Components/pkc-8cf": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-1-2-0-components-pkce-25-771"
-  },
-  "/docs/1.2.0/Components/verifier-d75": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-1-2-0-components-verifier-44-a-0d5"
-  },
-  "/docs/1.2.0/contribution-guidelines-f68": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-1-2-0-contribution-guidelinese-85-4ee"
-  },
-  "/docs/1.2.0/getting-started-04d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-1-2-0-getting-startedea-8-008"
-  },
-  "/docs/1.2.0/prologue-dcb": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-1-2-0-prologue-20-a-171"
-  },
-  "/docs/1.2.0/references-55f": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-1-2-0-referencesa-12-de7"
   },
   "/docs/next-f00": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
@@ -369,24 +326,48 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-next-protocol-whitepaperad-4-d53"
   },
-  "/docs-9b7": {
+  "/docs-f03": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-1ec": {
+  "/docs-143": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/docs/aqua_protocol-87e": {
+  "/docs/Components/container-507": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-aqua-protocolba-1-cda"
+    "content": "content---docs-components-container-032-bce"
   },
-  "/docs/contribution-guidelines-c79": {
+  "/docs/Components/guardian-9a2": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-contribution-guidelinesd-25-c37"
+    "content": "content---docs-components-guardian-4-bb-1bc"
   },
-  "/docs/intro-572": {
+  "/docs/Components/intro-c51": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-intro-38-d-f62"
+    "content": "content---docs-components-introf-8-e-13e"
+  },
+  "/docs/Components/pkc-106": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-components-pkce-25-b4f"
+  },
+  "/docs/Components/verifier-e8d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-components-verifier-44-a-3fe"
+  },
+  "/docs/contribution-guidelines-5f6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-contribution-guidelinese-85-873"
+  },
+  "/docs/getting-started-797": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-getting-startedea-8-693"
+  },
+  "/docs/prologue-306": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-prologue-20-a-0b4"
+  },
+  "/docs/references-1e4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-referencesa-12-5a4"
   },
   "/-e5f": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",

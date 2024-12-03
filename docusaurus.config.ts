@@ -99,7 +99,7 @@ const config: Config = {
           items: [
             {
               label: 'Docs',
-              to: '/docs/aqua-protocol-version',
+              to: '/docs/prologue',
             },
           ],
         },

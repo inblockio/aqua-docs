@@ -5,7 +5,7 @@
   "source": "@site/versioned_docs/version-1.2.0/contribution-guidelines.md",
   "sourceDirName": ".",
   "slug": "/contribution-guidelines",
-  "permalink": "/docs/1.2.0/contribution-guidelines",
+  "permalink": "/docs/contribution-guidelines",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/contribution-guidelines.md",
@@ -24,10 +24,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Verifier",
-    "permalink": "/docs/1.2.0/Components/verifier"
+    "permalink": "/docs/Components/verifier"
   },
   "next": {
-    "title": "Refernces",
-    "permalink": "/docs/1.2.0/references"
+    "title": "References",
+    "permalink": "/docs/references"
   }
 }
