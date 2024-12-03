@@ -32,11 +32,16 @@ The container is built using the same libraries that are used to build the cli.T
 check it over [here](https://github.com/inblockio/aqua-verifier-rs) 
 
 
-
 ## Aqua PKC
 
 
-## Aqua guardian
 
+## Aqua guardian
+A security gateway to exchange Aqua-Chains and enforce policies of Aqua-Contracts. It provides secure connectivity between Guardians and verifies the integrity of the Aqua storage containers.
+
+:::warning
+The aqua guardian still uses aqua-protocol version 1 this makes it incompatible with Aqua container and Aqua cli
+:::
 
 ## Aqua verifier (chrome-extension)
+This is a chrome 

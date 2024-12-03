@@ -1,7 +1,7 @@
 {
   "id": "prologue",
   "title": "Prologue",
-  "description": "The Aqua Protocol (AQP) is a data accountability and exchange protocol between hosts in peer-to-peer environments. The AQP is used to realize the goal of accounting for data origin and history (data provenance). Short: A verifiable linkable data structure to attest and certify data.",
+  "description": "Introduction",
   "source": "@site/versioned_docs/version-1.2.0/prologue.md",
   "sourceDirName": ".",
   "slug": "/prologue",
