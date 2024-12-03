@@ -5,7 +5,7 @@
   "source": "@site/versioned_docs/version-1.2.0/prologue.md",
   "sourceDirName": ".",
   "slug": "/prologue",
-  "permalink": "/docs/1.2.0/prologue",
+  "permalink": "/docs/prologue",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/prologue.md",
@@ -26,6 +26,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "Getting Started",
-    "permalink": "/docs/1.2.0/getting-started"
+    "permalink": "/docs/getting-started"
   }
 }

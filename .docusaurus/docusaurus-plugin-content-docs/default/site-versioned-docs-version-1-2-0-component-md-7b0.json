@@ -5,7 +5,7 @@
   "source": "@site/versioned_docs/version-1.2.0/component.md",
   "sourceDirName": ".",
   "slug": "/component",
-  "permalink": "/docs/1.2.0/component",
+  "permalink": "/docs/component",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/component.md",
@@ -24,10 +24,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Getting Started",
-    "permalink": "/docs/1.2.0/getting-started"
+    "permalink": "/docs/getting-started"
   },
   "next": {
     "title": "Contribution Guidelines",
-    "permalink": "/docs/1.2.0/contribution-guidelines"
+    "permalink": "/docs/contribution-guidelines"
   }
 }
