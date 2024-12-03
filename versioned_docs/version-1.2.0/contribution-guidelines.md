@@ -6,3 +6,5 @@ menu:
   main:
     weight: 20
 ---
+
+The project primarily uses Javascript and Rust.

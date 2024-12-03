@@ -1,0 +1,28 @@
+{
+  "id": "getting-started",
+  "title": "Getting Started",
+  "description": "Data Structure:",
+  "source": "@site/versioned_docs/version-1.2.0/getting-started.md",
+  "sourceDirName": ".",
+  "slug": "/getting-started",
+  "permalink": "/docs/1.2.0/getting-started",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/getting-started.md",
+  "tags": [],
+  "version": "1.2.0",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Getting Started",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Prologue",
+    "permalink": "/docs/1.2.0/prologue"
+  },
+  "next": {
+    "title": "Components",
+    "permalink": "/docs/1.2.0/component"
+  }
+}

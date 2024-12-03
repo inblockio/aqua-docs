@@ -2,15 +2,15 @@
   "id": "aqua-protocol-version",
   "title": "Prologue",
   "description": "(Writing in process, unfinished Nov. 10th, 2024)",
-  "source": "@site/versioned_docs/version-1.3.0/aqua-protocol-version.md",
+  "source": "@site/versioned_docs/version-1.2.0/aqua-protocol-version.md",
   "sourceDirName": ".",
   "slug": "/aqua-protocol-version",
-  "permalink": "/docs/aqua-protocol-version",
+  "permalink": "/docs/1.2.0/aqua-protocol-version",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/inblockio/versioned_docs/version-1.3.0/aqua-protocol-version.md",
+  "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/aqua-protocol-version.md",
   "tags": [],
-  "version": "1.3.0",
+  "version": "1.2.0",
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Prologue",
@@ -26,6 +26,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "Getting Started",
-    "permalink": "/docs/getting-started"
+    "permalink": "/docs/1.2.0/getting-started"
   }
 }

@@ -1,0 +1,29 @@
+{
+  "id": "references",
+  "title": "Refernces",
+  "description": "Encrption",
+  "source": "@site/versioned_docs/version-1.2.0/references.md",
+  "sourceDirName": ".",
+  "slug": "/references",
+  "permalink": "/docs/1.2.0/references",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/references.md",
+  "tags": [],
+  "version": "1.2.0",
+  "frontMatter": {
+    "title": "Refernces",
+    "linkTitle": "references",
+    "weight": 10,
+    "menu": {
+      "main": {
+        "weight": 10
+      }
+    }
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Contribution Guidelines",
+    "permalink": "/docs/1.2.0/contribution-guidelines"
+  }
+}

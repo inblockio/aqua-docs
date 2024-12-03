@@ -109,19 +109,36 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '540'),
+    component: ComponentCreator('/docs', 'd13'),
     routes: [
       {
+        path: '/docs/1.1.0',
+        component: ComponentCreator('/docs/1.1.0', '201'),
+        routes: [
+          {
+            path: '/docs/1.1.0',
+            component: ComponentCreator('/docs/1.1.0', '3d5'),
+            routes: [
+              {
+                path: '/docs/1.1.0/intro',
+                component: ComponentCreator('/docs/1.1.0/intro', '02d'),
+                exact: true
+              }
+            ]
+          }
+        ]
+      },
+      {
         path: '/docs/1.2.0',
-        component: ComponentCreator('/docs/1.2.0', 'd0c'),
+        component: ComponentCreator('/docs/1.2.0', '2b3'),
         routes: [
           {
             path: '/docs/1.2.0',
-            component: ComponentCreator('/docs/1.2.0', 'cbe'),
+            component: ComponentCreator('/docs/1.2.0', '59a'),
             routes: [
               {
-                path: '/docs/1.2.0/aqua_protocol',
-                component: ComponentCreator('/docs/1.2.0/aqua_protocol', '237'),
+                path: '/docs/1.2.0/component',
+                component: ComponentCreator('/docs/1.2.0/component', 'd39'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -132,8 +149,20 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/1.2.0/intro',
-                component: ComponentCreator('/docs/1.2.0/intro', '62c'),
+                path: '/docs/1.2.0/getting-started',
+                component: ComponentCreator('/docs/1.2.0/getting-started', '04d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/1.2.0/prologue',
+                component: ComponentCreator('/docs/1.2.0/prologue', 'dcb'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/1.2.0/references',
+                component: ComponentCreator('/docs/1.2.0/references', '55f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -245,15 +274,15 @@ export default [
       },
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '23e'),
+        component: ComponentCreator('/docs', '9b7'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '86c'),
+            component: ComponentCreator('/docs', '1ec'),
             routes: [
               {
-                path: '/docs/aqua-protocol-version',
-                component: ComponentCreator('/docs/aqua-protocol-version', '1ae'),
+                path: '/docs/aqua_protocol',
+                component: ComponentCreator('/docs/aqua_protocol', '87e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

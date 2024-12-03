@@ -1,7 +1,7 @@
 {
   "id": "contribution-guidelines",
   "title": "Contribution Guidelines",
-  "description": "",
+  "description": "The project primarily uses Javascript and Rust.",
   "source": "@site/versioned_docs/version-1.2.0/contribution-guidelines.md",
   "sourceDirName": ".",
   "slug": "/contribution-guidelines",
@@ -23,11 +23,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Aqua Protocol Version 1.2",
-    "permalink": "/docs/1.2.0/aqua_protocol"
+    "title": "Components",
+    "permalink": "/docs/1.2.0/component"
   },
   "next": {
-    "title": "Documentation",
-    "permalink": "/docs/1.2.0/intro"
+    "title": "Refernces",
+    "permalink": "/docs/1.2.0/references"
   }
 }

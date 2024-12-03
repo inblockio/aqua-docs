@@ -1,0 +1,24 @@
+{
+  "id": "getting_started",
+  "title": "getting_started",
+  "description": "",
+  "source": "@site/versioned_docs/version-1.3.0/getting_started.md",
+  "sourceDirName": ".",
+  "slug": "/getting_started",
+  "permalink": "/docs/getting_started",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/versioned_docs/version-1.3.0/getting_started.md",
+  "tags": [],
+  "version": "1.3.0",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Contribution Guidelines",
+    "permalink": "/docs/contribution-guidelines"
+  },
+  "next": {
+    "title": "Documentation",
+    "permalink": "/docs/intro"
+  }
+}

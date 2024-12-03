@@ -1,0 +1,24 @@
+{
+  "id": "intro",
+  "title": "Introduction",
+  "description": "V 1.1.0",
+  "source": "@site/versioned_docs/version-1.1.0/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/1.1.0/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/versioned_docs/version-1.1.0/intro.md",
+  "tags": [],
+  "version": "1.1.0",
+  "frontMatter": {
+    "title": "Introduction",
+    "linkTitle": "Introduction",
+    "weight": 10,
+    "menu": {
+      "main": {
+        "weight": 10
+      }
+    }
+  }
+}
