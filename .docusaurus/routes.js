@@ -109,7 +109,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '748'),
+    component: ComponentCreator('/docs', 'ad3'),
     routes: [
       {
         path: '/docs/1.1.0',
@@ -123,72 +123,6 @@ export default [
                 path: '/docs/1.1.0/intro',
                 component: ComponentCreator('/docs/1.1.0/intro', '02d'),
                 exact: true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        path: '/docs/1.2.0',
-        component: ComponentCreator('/docs/1.2.0', '433'),
-        routes: [
-          {
-            path: '/docs/1.2.0',
-            component: ComponentCreator('/docs/1.2.0', '45d'),
-            routes: [
-              {
-                path: '/docs/1.2.0/Components/container',
-                component: ComponentCreator('/docs/1.2.0/Components/container', 'd6b'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/1.2.0/Components/guardian',
-                component: ComponentCreator('/docs/1.2.0/Components/guardian', '4fc'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/1.2.0/Components/intro',
-                component: ComponentCreator('/docs/1.2.0/Components/intro', 'b0f'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/1.2.0/Components/pkc',
-                component: ComponentCreator('/docs/1.2.0/Components/pkc', '8cf'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/1.2.0/Components/verifier',
-                component: ComponentCreator('/docs/1.2.0/Components/verifier', 'd75'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/1.2.0/contribution-guidelines',
-                component: ComponentCreator('/docs/1.2.0/contribution-guidelines', 'f68'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/1.2.0/getting-started',
-                component: ComponentCreator('/docs/1.2.0/getting-started', '04d'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/1.2.0/prologue',
-                component: ComponentCreator('/docs/1.2.0/prologue', 'dcb'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/1.2.0/references',
-                component: ComponentCreator('/docs/1.2.0/references', '55f'),
-                exact: true,
-                sidebar: "tutorialSidebar"
               }
             ]
           }
@@ -298,27 +232,63 @@ export default [
       },
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '9b7'),
+        component: ComponentCreator('/docs', 'f03'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '1ec'),
+            component: ComponentCreator('/docs', '143'),
             routes: [
               {
-                path: '/docs/aqua_protocol',
-                component: ComponentCreator('/docs/aqua_protocol', '87e'),
+                path: '/docs/Components/container',
+                component: ComponentCreator('/docs/Components/container', '507'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Components/guardian',
+                component: ComponentCreator('/docs/Components/guardian', '9a2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Components/intro',
+                component: ComponentCreator('/docs/Components/intro', 'c51'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Components/pkc',
+                component: ComponentCreator('/docs/Components/pkc', '106'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Components/verifier',
+                component: ComponentCreator('/docs/Components/verifier', 'e8d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/contribution-guidelines',
-                component: ComponentCreator('/docs/contribution-guidelines', 'c79'),
+                component: ComponentCreator('/docs/contribution-guidelines', '5f6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '572'),
+                path: '/docs/getting-started',
+                component: ComponentCreator('/docs/getting-started', '797'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/prologue',
+                component: ComponentCreator('/docs/prologue', '306'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/references',
+                component: ComponentCreator('/docs/references', '1e4'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

@@ -86,7 +86,7 @@ export default {
           "items": [
             {
               "label": "Docs",
-              "to": "/docs/aqua-protocol-version"
+              "to": "/docs/prologue"
             }
           ]
         },
