@@ -1,0 +1,33 @@
+{
+  "id": "component/component",
+  "title": "Components",
+  "description": "1. Aqua cli",
+  "source": "@site/versioned_docs/version-1.2.0/component/component.md",
+  "sourceDirName": "component",
+  "slug": "/component/",
+  "permalink": "/docs/1.2.0/component/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/component/component.md",
+  "tags": [],
+  "version": "1.2.0",
+  "frontMatter": {
+    "title": "Components",
+    "linkTitle": "components.",
+    "weight": 10,
+    "menu": {
+      "main": {
+        "weight": 10
+      }
+    }
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/docs/1.2.0/getting-started"
+  },
+  "next": {
+    "title": "Contribution Guidelines",
+    "permalink": "/docs/1.2.0/contribution-guidelines"
+  }
+}

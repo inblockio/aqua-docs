@@ -137,8 +137,28 @@
           "mainDocId": "prologue",
           "docs": [
             {
-              "id": "component",
-              "path": "/docs/1.2.0/component",
+              "id": "Components/container",
+              "path": "/docs/1.2.0/Components/container",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Components/guardian",
+              "path": "/docs/1.2.0/Components/guardian",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Components/intro",
+              "path": "/docs/1.2.0/Components/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Components/pkc",
+              "path": "/docs/1.2.0/Components/pkc",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Components/verifier",
+              "path": "/docs/1.2.0/Components/verifier",
               "sidebar": "tutorialSidebar"
             },
             {

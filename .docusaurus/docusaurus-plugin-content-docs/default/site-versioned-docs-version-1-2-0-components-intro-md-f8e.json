@@ -1,0 +1,28 @@
+{
+  "id": "Components/intro",
+  "title": "Introduction",
+  "description": "1. Aqua cli",
+  "source": "@site/versioned_docs/version-1.2.0/Components/intro.md",
+  "sourceDirName": "Components",
+  "slug": "/Components/intro",
+  "permalink": "/docs/1.2.0/Components/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/Components/intro.md",
+  "tags": [],
+  "version": "1.2.0",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Introduction",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/docs/1.2.0/getting-started"
+  },
+  "next": {
+    "title": "Container",
+    "permalink": "/docs/1.2.0/Components/container"
+  }
+}

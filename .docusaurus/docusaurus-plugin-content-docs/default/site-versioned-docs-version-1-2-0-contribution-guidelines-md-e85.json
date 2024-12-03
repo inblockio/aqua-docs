@@ -23,8 +23,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Components",
-    "permalink": "/docs/1.2.0/component"
+    "title": "Verifier",
+    "permalink": "/docs/1.2.0/Components/verifier"
   },
   "next": {
     "title": "Refernces",
