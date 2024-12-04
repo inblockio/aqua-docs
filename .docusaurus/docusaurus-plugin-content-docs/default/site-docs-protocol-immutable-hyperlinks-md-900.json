@@ -5,7 +5,7 @@
   "source": "@site/docs/protocol/immutable-hyperlinks.md",
   "sourceDirName": "protocol",
   "slug": "/protocol/immutable-hyperlinks",
-  "permalink": "/docs/next/protocol/immutable-hyperlinks",
+  "permalink": "/docs/protocol/immutable-hyperlinks",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/protocol/immutable-hyperlinks.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Guardian",
-    "permalink": "/docs/next/protocol/guardian"
+    "permalink": "/docs/protocol/guardian"
   },
   "next": {
     "title": "Whitepaper",
-    "permalink": "/docs/next/protocol/whitepaper"
+    "permalink": "/docs/protocol/whitepaper"
   }
 }

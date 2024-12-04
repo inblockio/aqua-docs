@@ -5,7 +5,7 @@
   "source": "@site/docs/protocol/data-accounting.md",
   "sourceDirName": "protocol",
   "slug": "/protocol/data-accounting",
-  "permalink": "/docs/next/protocol/data-accounting",
+  "permalink": "/docs/protocol/data-accounting",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/protocol/data-accounting.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Assurance Levels (AAL)",
-    "permalink": "/docs/next/protocol/assurance-levels-aal"
+    "permalink": "/docs/protocol/assurance-levels-aal"
   },
   "next": {
     "title": "Data Governance",
-    "permalink": "/docs/next/protocol/data-governance"
+    "permalink": "/docs/protocol/data-governance"
   }
 }

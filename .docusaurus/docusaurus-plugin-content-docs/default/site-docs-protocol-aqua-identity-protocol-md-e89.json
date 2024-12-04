@@ -5,7 +5,7 @@
   "source": "@site/docs/protocol/aqua-identity-protocol.md",
   "sourceDirName": "protocol",
   "slug": "/protocol/aqua-identity-protocol",
-  "permalink": "/docs/next/protocol/aqua-identity-protocol",
+  "permalink": "/docs/protocol/aqua-identity-protocol",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/protocol/aqua-identity-protocol.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Documentation",
-    "permalink": "/docs/next/intro"
+    "permalink": "/docs/intro"
   },
   "next": {
     "title": "Aqua Name Resolution (ANS)",
-    "permalink": "/docs/next/protocol/aqua-name-resolution"
+    "permalink": "/docs/protocol/aqua-name-resolution"
   }
 }

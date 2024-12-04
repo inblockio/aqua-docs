@@ -5,7 +5,7 @@
   "source": "@site/versioned_docs/version-1.2.0/Components/pkc.md",
   "sourceDirName": "Components",
   "slug": "/Components/pkc",
-  "permalink": "/docs/Components/pkc",
+  "permalink": "/docs/v2/Components/pkc",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/Components/pkc.md",
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Guardian",
-    "permalink": "/docs/Components/guardian"
+    "permalink": "/docs/v2/Components/guardian"
   },
   "next": {
-    "title": "Verifier",
-    "permalink": "/docs/Components/verifier"
+    "title": "aqua-cli-javascript",
+    "permalink": "/docs/v2/Components/verifier/aqua-cli-javascript"
   }
 }

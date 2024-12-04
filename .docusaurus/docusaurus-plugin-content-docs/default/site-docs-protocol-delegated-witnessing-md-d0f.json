@@ -5,7 +5,7 @@
   "source": "@site/docs/protocol/delegated-witnessing.md",
   "sourceDirName": "protocol",
   "slug": "/protocol/delegated-witnessing",
-  "permalink": "/docs/next/protocol/delegated-witnessing",
+  "permalink": "/docs/protocol/delegated-witnessing",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/protocol/delegated-witnessing.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Data Governance",
-    "permalink": "/docs/next/protocol/data-governance"
+    "permalink": "/docs/protocol/data-governance"
   },
   "next": {
     "title": "Design Principles",
-    "permalink": "/docs/next/protocol/design-principles"
+    "permalink": "/docs/protocol/design-principles"
   }
 }

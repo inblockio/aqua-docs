@@ -5,7 +5,7 @@
   "source": "@site/docs/protocol/whitepaper.md",
   "sourceDirName": "protocol",
   "slug": "/protocol/whitepaper",
-  "permalink": "/docs/next/protocol/whitepaper",
+  "permalink": "/docs/protocol/whitepaper",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/protocol/whitepaper.md",
@@ -20,6 +20,6 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Immutable Hyperlinks",
-    "permalink": "/docs/next/protocol/immutable-hyperlinks"
+    "permalink": "/docs/protocol/immutable-hyperlinks"
   }
 }

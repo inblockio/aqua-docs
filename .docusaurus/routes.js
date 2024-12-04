@@ -109,19 +109,19 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'ad3'),
+    component: ComponentCreator('/docs', '7a9'),
     routes: [
       {
-        path: '/docs/1.1.0',
-        component: ComponentCreator('/docs/1.1.0', '201'),
+        path: '/docs/v1',
+        component: ComponentCreator('/docs/v1', '49c'),
         routes: [
           {
-            path: '/docs/1.1.0',
-            component: ComponentCreator('/docs/1.1.0', '3d5'),
+            path: '/docs/v1',
+            component: ComponentCreator('/docs/v1', '253'),
             routes: [
               {
-                path: '/docs/1.1.0/intro',
-                component: ComponentCreator('/docs/1.1.0/intro', '02d'),
+                path: '/docs/v1/intro',
+                component: ComponentCreator('/docs/v1/intro', '5ea'),
                 exact: true
               }
             ]
@@ -129,100 +129,82 @@ export default [
         ]
       },
       {
-        path: '/docs/next',
-        component: ComponentCreator('/docs/next', 'f00'),
+        path: '/docs/v2',
+        component: ComponentCreator('/docs/v2', 'ff0'),
         routes: [
           {
-            path: '/docs/next',
-            component: ComponentCreator('/docs/next', 'f0d'),
+            path: '/docs/v2',
+            component: ComponentCreator('/docs/v2', 'f90'),
             routes: [
               {
-                path: '/docs/next/contribution-guidelines',
-                component: ComponentCreator('/docs/next/contribution-guidelines', '559'),
+                path: '/docs/v2/Components/containers/aquafier',
+                component: ComponentCreator('/docs/v2/Components/containers/aquafier', 'ab9'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/next/implementations/reference-architecture',
-                component: ComponentCreator('/docs/next/implementations/reference-architecture', '010'),
+                path: '/docs/v2/Components/containers/media-wiki',
+                component: ComponentCreator('/docs/v2/Components/containers/media-wiki', 'c0f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/next/intro',
-                component: ComponentCreator('/docs/next/intro', 'ad0'),
+                path: '/docs/v2/Components/guardian',
+                component: ComponentCreator('/docs/v2/Components/guardian', 'c59'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/next/protocol/aqua_protocol_v1_2',
-                component: ComponentCreator('/docs/next/protocol/aqua_protocol_v1_2', '98c'),
+                path: '/docs/v2/Components/intro',
+                component: ComponentCreator('/docs/v2/Components/intro', 'a55'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/next/protocol/aqua-identity-protocol',
-                component: ComponentCreator('/docs/next/protocol/aqua-identity-protocol', '02b'),
+                path: '/docs/v2/Components/verifier/',
+                component: ComponentCreator('/docs/v2/Components/verifier/', 'c54'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/next/protocol/aqua-name-resolution',
-                component: ComponentCreator('/docs/next/protocol/aqua-name-resolution', '9ec'),
+                path: '/docs/v2/Components/verifier/aqua-cli-javascript',
+                component: ComponentCreator('/docs/v2/Components/verifier/aqua-cli-javascript', 'a2a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/next/protocol/aqua-protocol-version_1.3',
-                component: ComponentCreator('/docs/next/protocol/aqua-protocol-version_1.3', '40c'),
+                path: '/docs/v2/Components/verifier/aqua-cli-rust',
+                component: ComponentCreator('/docs/v2/Components/verifier/aqua-cli-rust', '0ac'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/next/protocol/assurance-levels-aal',
-                component: ComponentCreator('/docs/next/protocol/assurance-levels-aal', 'dd5'),
+                path: '/docs/v2/Components/verifier/webextension',
+                component: ComponentCreator('/docs/v2/Components/verifier/webextension', '36f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/next/protocol/data-accounting',
-                component: ComponentCreator('/docs/next/protocol/data-accounting', 'd49'),
+                path: '/docs/v2/contribution-guidelines',
+                component: ComponentCreator('/docs/v2/contribution-guidelines', 'a7d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/next/protocol/data-governance',
-                component: ComponentCreator('/docs/next/protocol/data-governance', '8de'),
+                path: '/docs/v2/getting-started',
+                component: ComponentCreator('/docs/v2/getting-started', '192'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/next/protocol/delegated-witnessing',
-                component: ComponentCreator('/docs/next/protocol/delegated-witnessing', '9e8'),
+                path: '/docs/v2/prologue',
+                component: ComponentCreator('/docs/v2/prologue', 'd96'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/next/protocol/design-principles',
-                component: ComponentCreator('/docs/next/protocol/design-principles', '46b'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/next/protocol/guardian',
-                component: ComponentCreator('/docs/next/protocol/guardian', '1b3'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/next/protocol/immutable-hyperlinks',
-                component: ComponentCreator('/docs/next/protocol/immutable-hyperlinks', '47e'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/next/protocol/whitepaper',
-                component: ComponentCreator('/docs/next/protocol/whitepaper', 'c61'),
+                path: '/docs/v2/references',
+                component: ComponentCreator('/docs/v2/references', '241'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -232,63 +214,99 @@ export default [
       },
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'f03'),
+        component: ComponentCreator('/docs', 'cc4'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '143'),
+            component: ComponentCreator('/docs', 'd49'),
             routes: [
               {
-                path: '/docs/Components/container',
-                component: ComponentCreator('/docs/Components/container', '507'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/Components/guardian',
-                component: ComponentCreator('/docs/Components/guardian', '9a2'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/Components/intro',
-                component: ComponentCreator('/docs/Components/intro', 'c51'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/Components/pkc',
-                component: ComponentCreator('/docs/Components/pkc', '106'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/Components/verifier',
-                component: ComponentCreator('/docs/Components/verifier', 'e8d'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
                 path: '/docs/contribution-guidelines',
-                component: ComponentCreator('/docs/contribution-guidelines', '5f6'),
+                component: ComponentCreator('/docs/contribution-guidelines', '2a1'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/getting-started',
-                component: ComponentCreator('/docs/getting-started', '797'),
+                path: '/docs/implementations/reference-architecture',
+                component: ComponentCreator('/docs/implementations/reference-architecture', '81f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/prologue',
-                component: ComponentCreator('/docs/prologue', '306'),
+                path: '/docs/intro',
+                component: ComponentCreator('/docs/intro', '61d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/references',
-                component: ComponentCreator('/docs/references', '1e4'),
+                path: '/docs/protocol/aqua_protocol_v1_2',
+                component: ComponentCreator('/docs/protocol/aqua_protocol_v1_2', '538'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/protocol/aqua-identity-protocol',
+                component: ComponentCreator('/docs/protocol/aqua-identity-protocol', '8fd'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/protocol/aqua-name-resolution',
+                component: ComponentCreator('/docs/protocol/aqua-name-resolution', '409'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/protocol/aqua-protocol-version_1.3',
+                component: ComponentCreator('/docs/protocol/aqua-protocol-version_1.3', 'b06'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/protocol/assurance-levels-aal',
+                component: ComponentCreator('/docs/protocol/assurance-levels-aal', '9b6'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/protocol/data-accounting',
+                component: ComponentCreator('/docs/protocol/data-accounting', '619'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/protocol/data-governance',
+                component: ComponentCreator('/docs/protocol/data-governance', '039'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/protocol/delegated-witnessing',
+                component: ComponentCreator('/docs/protocol/delegated-witnessing', 'dd1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/protocol/design-principles',
+                component: ComponentCreator('/docs/protocol/design-principles', 'e3e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/protocol/guardian',
+                component: ComponentCreator('/docs/protocol/guardian', 'b7a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/protocol/immutable-hyperlinks',
+                component: ComponentCreator('/docs/protocol/immutable-hyperlinks', 'bc9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/protocol/whitepaper',
+                component: ComponentCreator('/docs/protocol/whitepaper', '07b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

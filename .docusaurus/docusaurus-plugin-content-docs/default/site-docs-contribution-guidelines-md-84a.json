@@ -5,7 +5,7 @@
   "source": "@site/docs/contribution-guidelines.md",
   "sourceDirName": ".",
   "slug": "/contribution-guidelines",
-  "permalink": "/docs/next/contribution-guidelines",
+  "permalink": "/docs/contribution-guidelines",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/contribution-guidelines.md",
@@ -24,6 +24,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "Reference Implementation",
-    "permalink": "/docs/next/implementations/reference-architecture"
+    "permalink": "/docs/implementations/reference-architecture"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/protocol/design-principles.md",
   "sourceDirName": "protocol",
   "slug": "/protocol/design-principles",
-  "permalink": "/docs/next/protocol/design-principles",
+  "permalink": "/docs/protocol/design-principles",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/protocol/design-principles.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Delegated Witnessing",
-    "permalink": "/docs/next/protocol/delegated-witnessing"
+    "permalink": "/docs/protocol/delegated-witnessing"
   },
   "next": {
     "title": "Guardian",
-    "permalink": "/docs/next/protocol/guardian"
+    "permalink": "/docs/protocol/guardian"
   }
 }

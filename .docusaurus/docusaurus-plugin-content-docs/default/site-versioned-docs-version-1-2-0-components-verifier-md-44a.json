@@ -5,7 +5,7 @@
   "source": "@site/versioned_docs/version-1.2.0/Components/verifier.md",
   "sourceDirName": "Components",
   "slug": "/Components/verifier",
-  "permalink": "/docs/Components/verifier",
+  "permalink": "/docs/v2/Components/verifier",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/Components/verifier.md",
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Personal Knowledge Container",
-    "permalink": "/docs/Components/pkc"
+    "permalink": "/docs/v2/Components/pkc"
   },
   "next": {
     "title": "Contribution Guidelines",
-    "permalink": "/docs/contribution-guidelines"
+    "permalink": "/docs/v2/contribution-guidelines"
   }
 }

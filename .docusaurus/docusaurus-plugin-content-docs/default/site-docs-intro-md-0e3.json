@@ -5,7 +5,7 @@
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",
-  "permalink": "/docs/next/intro",
+  "permalink": "/docs/intro",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/intro.md",
@@ -24,10 +24,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Reference Implementation",
-    "permalink": "/docs/next/implementations/reference-architecture"
+    "permalink": "/docs/implementations/reference-architecture"
   },
   "next": {
     "title": "Identity Protocol",
-    "permalink": "/docs/next/protocol/aqua-identity-protocol"
+    "permalink": "/docs/protocol/aqua-identity-protocol"
   }
 }

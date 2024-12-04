@@ -5,7 +5,7 @@
   "source": "@site/docs/implementations/reference-architecture.md",
   "sourceDirName": "implementations",
   "slug": "/implementations/reference-architecture",
-  "permalink": "/docs/next/implementations/reference-architecture",
+  "permalink": "/docs/implementations/reference-architecture",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/implementations/reference-architecture.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Contribution Guidelines",
-    "permalink": "/docs/next/contribution-guidelines"
+    "permalink": "/docs/contribution-guidelines"
   },
   "next": {
     "title": "Documentation",
-    "permalink": "/docs/next/intro"
+    "permalink": "/docs/intro"
   }
 }

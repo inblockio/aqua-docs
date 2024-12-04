@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -41,6 +41,22 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/inblockio',
+          versions: {
+            current: {
+              label: 'Current',
+              path: '', // Current version root
+            },
+            '1.1.0': {
+              label: 'v1',
+              path: 'v1',
+              banner: 'none',
+            },
+            '1.2.0': {
+              label: 'v2',
+              path: 'v2',
+              banner: 'none',
+            },
+          }
         },
         blog: {
           showReadingTime: true,

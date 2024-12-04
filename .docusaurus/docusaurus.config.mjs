@@ -27,7 +27,23 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.ts",
-          "editUrl": "https://github.com/inblockio"
+          "editUrl": "https://github.com/inblockio",
+          "versions": {
+            "current": {
+              "label": "Current",
+              "path": ""
+            },
+            "1.1.0": {
+              "label": "v1",
+              "path": "v1",
+              "banner": "none"
+            },
+            "1.2.0": {
+              "label": "v2",
+              "path": "v2",
+              "banner": "none"
+            }
+          }
         },
         "blog": {
           "showReadingTime": true,

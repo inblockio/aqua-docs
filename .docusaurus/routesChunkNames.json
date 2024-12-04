@@ -242,132 +242,144 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-welcomed-9-f-ffb"
   },
-  "/docs-ad3": {
+  "/docs-7a9": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs/1.1.0-201": {
+  "/docs/v1-49c": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---docs-1-1-061-e-696"
+    "__props": "__props---docs-v-18-f-5-796"
   },
-  "/docs/1.1.0-3d5": {
+  "/docs/v1-253": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/docs/1.1.0/intro-02d": {
+  "/docs/v1/intro-5ea": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-1-1-0-intro-50-a-f31"
+    "content": "content---docs-v-1-intro-50-a-a61"
   },
-  "/docs/next-f00": {
+  "/docs/v2-ff0": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---docs-nextbf-1-ba7"
+    "__props": "__props---docs-v-2-b-3-c-42d"
   },
-  "/docs/next-f0d": {
+  "/docs/v2-f90": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/docs/next/contribution-guidelines-559": {
+  "/docs/v2/Components/containers/aquafier-ab9": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-contribution-guidelines-84-a-58e"
+    "content": "content---docs-v-2-components-containers-aquafier-742-7d7"
   },
-  "/docs/next/implementations/reference-architecture-010": {
+  "/docs/v2/Components/containers/media-wiki-c0f": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-implementations-reference-architecture-221-a39"
+    "content": "content---docs-v-2-components-containers-media-wiki-58-f-1ee"
   },
-  "/docs/next/intro-ad0": {
+  "/docs/v2/Components/guardian-c59": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-intro-0-e-3-e8b"
+    "content": "content---docs-v-2-components-guardian-4-bb-f9d"
   },
-  "/docs/next/protocol/aqua_protocol_v1_2-98c": {
+  "/docs/v2/Components/intro-a55": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-aqua-protocol-v-1-219-f-364"
+    "content": "content---docs-v-2-components-introf-8-e-581"
   },
-  "/docs/next/protocol/aqua-identity-protocol-02b": {
+  "/docs/v2/Components/verifier/-c54": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-aqua-identity-protocole-89-574"
+    "content": "content---docs-v-2-components-verifier-6-ad-6be"
   },
-  "/docs/next/protocol/aqua-name-resolution-9ec": {
+  "/docs/v2/Components/verifier/aqua-cli-javascript-a2a": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-aqua-name-resolution-0-fb-eec"
+    "content": "content---docs-v-2-components-verifier-aqua-cli-javascript-1-ef-e85"
   },
-  "/docs/next/protocol/aqua-protocol-version_1.3-40c": {
+  "/docs/v2/Components/verifier/aqua-cli-rust-0ac": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-aqua-protocol-version-1-3-d-81-67a"
+    "content": "content---docs-v-2-components-verifier-aqua-cli-rustcd-5-874"
   },
-  "/docs/next/protocol/assurance-levels-aal-dd5": {
+  "/docs/v2/Components/verifier/webextension-36f": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-assurance-levels-aal-08-a-f1a"
+    "content": "content---docs-v-2-components-verifier-webextension-121-97b"
   },
-  "/docs/next/protocol/data-accounting-d49": {
+  "/docs/v2/contribution-guidelines-a7d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-data-accountinge-37-9dd"
+    "content": "content---docs-v-2-contribution-guidelinese-85-f9a"
   },
-  "/docs/next/protocol/data-governance-8de": {
+  "/docs/v2/getting-started-192": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-data-governance-6-e-0-e67"
+    "content": "content---docs-v-2-getting-startedea-8-18d"
   },
-  "/docs/next/protocol/delegated-witnessing-9e8": {
+  "/docs/v2/prologue-d96": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-delegated-witnessingd-0-f-1aa"
+    "content": "content---docs-v-2-prologue-20-a-246"
   },
-  "/docs/next/protocol/design-principles-46b": {
+  "/docs/v2/references-241": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-design-principles-7-cf-986"
+    "content": "content---docs-v-2-referencesa-12-161"
   },
-  "/docs/next/protocol/guardian-1b3": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-guardian-501-df3"
-  },
-  "/docs/next/protocol/immutable-hyperlinks-47e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-immutable-hyperlinks-900-587"
-  },
-  "/docs/next/protocol/whitepaper-c61": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-next-protocol-whitepaperad-4-d53"
-  },
-  "/docs-f03": {
+  "/docs-cc4": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-143": {
+  "/docs-d49": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/docs/Components/container-507": {
+  "/docs/contribution-guidelines-2a1": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-components-container-032-bce"
+    "content": "content---docs-contribution-guidelines-84-a-1ec"
   },
-  "/docs/Components/guardian-9a2": {
+  "/docs/implementations/reference-architecture-81f": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-components-guardian-4-bb-1bc"
+    "content": "content---docs-implementations-reference-architecture-221-b7d"
   },
-  "/docs/Components/intro-c51": {
+  "/docs/intro-61d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-components-introf-8-e-13e"
+    "content": "content---docs-intro-0-e-3-be1"
   },
-  "/docs/Components/pkc-106": {
+  "/docs/protocol/aqua_protocol_v1_2-538": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-components-pkce-25-b4f"
+    "content": "content---docs-protocol-aqua-protocol-v-1-219-f-b83"
   },
-  "/docs/Components/verifier-e8d": {
+  "/docs/protocol/aqua-identity-protocol-8fd": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-components-verifier-44-a-3fe"
+    "content": "content---docs-protocol-aqua-identity-protocole-89-825"
   },
-  "/docs/contribution-guidelines-5f6": {
+  "/docs/protocol/aqua-name-resolution-409": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-contribution-guidelinese-85-873"
+    "content": "content---docs-protocol-aqua-name-resolution-0-fb-090"
   },
-  "/docs/getting-started-797": {
+  "/docs/protocol/aqua-protocol-version_1.3-b06": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-getting-startedea-8-693"
+    "content": "content---docs-protocol-aqua-protocol-version-1-3-d-81-45f"
   },
-  "/docs/prologue-306": {
+  "/docs/protocol/assurance-levels-aal-9b6": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-prologue-20-a-0b4"
+    "content": "content---docs-protocol-assurance-levels-aal-08-a-98f"
   },
-  "/docs/references-1e4": {
+  "/docs/protocol/data-accounting-619": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-referencesa-12-5a4"
+    "content": "content---docs-protocol-data-accountinge-37-0ea"
+  },
+  "/docs/protocol/data-governance-039": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-protocol-data-governance-6-e-0-29c"
+  },
+  "/docs/protocol/delegated-witnessing-dd1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-protocol-delegated-witnessingd-0-f-6de"
+  },
+  "/docs/protocol/design-principles-e3e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-protocol-design-principles-7-cf-db9"
+  },
+  "/docs/protocol/guardian-b7a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-protocol-guardian-501-08a"
+  },
+  "/docs/protocol/immutable-hyperlinks-bc9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-protocol-immutable-hyperlinks-900-ae8"
+  },
+  "/docs/protocol/whitepaper-07b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-protocol-whitepaperad-4-fac"
   },
   "/-e5f": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",

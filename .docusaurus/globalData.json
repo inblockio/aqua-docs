@@ -5,84 +5,84 @@
       "versions": [
         {
           "name": "current",
-          "label": "Next",
+          "label": "Current",
           "isLast": false,
-          "path": "/docs/next",
+          "path": "/docs",
           "mainDocId": "contribution-guidelines",
           "docs": [
             {
               "id": "contribution-guidelines",
-              "path": "/docs/next/contribution-guidelines",
+              "path": "/docs/contribution-guidelines",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "implementations/reference-architecture",
-              "path": "/docs/next/implementations/reference-architecture",
+              "path": "/docs/implementations/reference-architecture",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/docs/next/intro",
+              "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/aqua_protocol_v1_2",
-              "path": "/docs/next/protocol/aqua_protocol_v1_2",
+              "path": "/docs/protocol/aqua_protocol_v1_2",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/aqua-identity-protocol",
-              "path": "/docs/next/protocol/aqua-identity-protocol",
+              "path": "/docs/protocol/aqua-identity-protocol",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/aqua-name-resolution",
-              "path": "/docs/next/protocol/aqua-name-resolution",
+              "path": "/docs/protocol/aqua-name-resolution",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/aqua-protocol-version_1.3",
-              "path": "/docs/next/protocol/aqua-protocol-version_1.3",
+              "path": "/docs/protocol/aqua-protocol-version_1.3",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/assurance-levels-aal",
-              "path": "/docs/next/protocol/assurance-levels-aal",
+              "path": "/docs/protocol/assurance-levels-aal",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/data-accounting",
-              "path": "/docs/next/protocol/data-accounting",
+              "path": "/docs/protocol/data-accounting",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/data-governance",
-              "path": "/docs/next/protocol/data-governance",
+              "path": "/docs/protocol/data-governance",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/delegated-witnessing",
-              "path": "/docs/next/protocol/delegated-witnessing",
+              "path": "/docs/protocol/delegated-witnessing",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/design-principles",
-              "path": "/docs/next/protocol/design-principles",
+              "path": "/docs/protocol/design-principles",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/guardian",
-              "path": "/docs/next/protocol/guardian",
+              "path": "/docs/protocol/guardian",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/immutable-hyperlinks",
-              "path": "/docs/next/protocol/immutable-hyperlinks",
+              "path": "/docs/protocol/immutable-hyperlinks",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "protocol/whitepaper",
-              "path": "/docs/next/protocol/whitepaper",
+              "path": "/docs/protocol/whitepaper",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -90,7 +90,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/next/contribution-guidelines",
+                "path": "/docs/contribution-guidelines",
                 "label": "contribution-guidelines"
               }
             }
@@ -98,54 +98,69 @@
         },
         {
           "name": "1.2.0",
-          "label": "1.2.0",
+          "label": "v2",
           "isLast": true,
-          "path": "/docs",
+          "path": "/docs/v2",
           "mainDocId": "prologue",
           "docs": [
             {
-              "id": "Components/container",
-              "path": "/docs/Components/container",
+              "id": "Components/containers/aquafier",
+              "path": "/docs/v2/Components/containers/aquafier",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Components/containers/media-wiki",
+              "path": "/docs/v2/Components/containers/media-wiki",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Components/guardian",
-              "path": "/docs/Components/guardian",
+              "path": "/docs/v2/Components/guardian",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Components/intro",
-              "path": "/docs/Components/intro",
+              "path": "/docs/v2/Components/intro",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Components/pkc",
-              "path": "/docs/Components/pkc",
+              "id": "Components/verifier/aqua-cli-javascript",
+              "path": "/docs/v2/Components/verifier/aqua-cli-javascript",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Components/verifier",
-              "path": "/docs/Components/verifier",
+              "id": "Components/verifier/aqua-cli-rust",
+              "path": "/docs/v2/Components/verifier/aqua-cli-rust",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Components/verifier/verifier",
+              "path": "/docs/v2/Components/verifier/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Components/verifier/webextension",
+              "path": "/docs/v2/Components/verifier/webextension",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "contribution-guidelines",
-              "path": "/docs/contribution-guidelines",
+              "path": "/docs/v2/contribution-guidelines",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "getting-started",
-              "path": "/docs/getting-started",
+              "path": "/docs/v2/getting-started",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "prologue",
-              "path": "/docs/prologue",
+              "path": "/docs/v2/prologue",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "references",
-              "path": "/docs/references",
+              "path": "/docs/v2/references",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -153,7 +168,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/prologue",
+                "path": "/docs/v2/prologue",
                 "label": "prologue"
               }
             }
@@ -161,14 +176,14 @@
         },
         {
           "name": "1.1.0",
-          "label": "1.1.0",
+          "label": "v1",
           "isLast": false,
-          "path": "/docs/1.1.0",
+          "path": "/docs/v1",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "intro",
-              "path": "/docs/1.1.0/intro"
+              "path": "/docs/v1/intro"
             }
           ],
           "draftIds": [],

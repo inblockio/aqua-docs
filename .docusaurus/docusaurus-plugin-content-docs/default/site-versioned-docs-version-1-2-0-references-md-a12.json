@@ -5,7 +5,7 @@
   "source": "@site/versioned_docs/version-1.2.0/references.md",
   "sourceDirName": ".",
   "slug": "/references",
-  "permalink": "/docs/references",
+  "permalink": "/docs/v2/references",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/versioned_docs/version-1.2.0/references.md",
@@ -17,6 +17,6 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Contribution Guidelines",
-    "permalink": "/docs/contribution-guidelines"
+    "permalink": "/docs/v2/contribution-guidelines"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/protocol/guardian.md",
   "sourceDirName": "protocol",
   "slug": "/protocol/guardian",
-  "permalink": "/docs/next/protocol/guardian",
+  "permalink": "/docs/protocol/guardian",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/protocol/guardian.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Design Principles",
-    "permalink": "/docs/next/protocol/design-principles"
+    "permalink": "/docs/protocol/design-principles"
   },
   "next": {
     "title": "Immutable Hyperlinks",
-    "permalink": "/docs/next/protocol/immutable-hyperlinks"
+    "permalink": "/docs/protocol/immutable-hyperlinks"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/protocol/assurance-levels-aal.md",
   "sourceDirName": "protocol",
   "slug": "/protocol/assurance-levels-aal",
-  "permalink": "/docs/next/protocol/assurance-levels-aal",
+  "permalink": "/docs/protocol/assurance-levels-aal",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/protocol/assurance-levels-aal.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Aqua Protocol Version 1.2",
-    "permalink": "/docs/next/protocol/aqua_protocol_v1_2"
+    "permalink": "/docs/protocol/aqua_protocol_v1_2"
   },
   "next": {
     "title": "Data Accounting",
-    "permalink": "/docs/next/protocol/data-accounting"
+    "permalink": "/docs/protocol/data-accounting"
   }
 }

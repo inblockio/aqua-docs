@@ -5,7 +5,7 @@
   "source": "@site/docs/protocol/aqua-name-resolution.md",
   "sourceDirName": "protocol",
   "slug": "/protocol/aqua-name-resolution",
-  "permalink": "/docs/next/protocol/aqua-name-resolution",
+  "permalink": "/docs/protocol/aqua-name-resolution",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/inblockio/docs/protocol/aqua-name-resolution.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Identity Protocol",
-    "permalink": "/docs/next/protocol/aqua-identity-protocol"
+    "permalink": "/docs/protocol/aqua-identity-protocol"
   },
   "next": {
     "title": "Aqua Protocol Version v1.3",
-    "permalink": "/docs/next/protocol/aqua-protocol-version_1.3"
+    "permalink": "/docs/protocol/aqua-protocol-version_1.3"
   }
 }
