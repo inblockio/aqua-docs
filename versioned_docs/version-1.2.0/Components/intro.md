@@ -5,7 +5,7 @@ sidebar_position: 1
 
 
 ### 1. Aqua cli
-Aqua cli is a command line utility.
+Aqua cli is a command line utility.That enables you to create aqua chains, verify aqua chains, witness and sign aqua chains.
 There are two command line utilities.
 <ul>
 <li>A rust implmentation [here](https://github.com/inblockio/aqua-verifier-rs)</li>
