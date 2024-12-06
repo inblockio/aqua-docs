@@ -1,7 +1,7 @@
 {
   "id": "contribution-guidelines",
   "title": "Contribution Guidelines",
-  "description": "The project primarily uses Javascript and Rust.",
+  "description": "Contribution Guide for Rust and JavaScript/TypeScript Aqua Projects",
   "source": "@site/versioned_docs/version-1.2.0/contribution-guidelines.md",
   "sourceDirName": ".",
   "slug": "/contribution-guidelines",
