@@ -109,16 +109,21 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '7a9'),
+    component: ComponentCreator('/docs', '6aa'),
     routes: [
       {
         path: '/docs/v1',
-        component: ComponentCreator('/docs/v1', '49c'),
+        component: ComponentCreator('/docs/v1', '93b'),
         routes: [
           {
             path: '/docs/v1',
-            component: ComponentCreator('/docs/v1', '253'),
+            component: ComponentCreator('/docs/v1', '49d'),
             routes: [
+              {
+                path: '/docs/v1/guardian',
+                component: ComponentCreator('/docs/v1/guardian', 'f85'),
+                exact: true
+              },
               {
                 path: '/docs/v1/intro',
                 component: ComponentCreator('/docs/v1/intro', '5ea'),
@@ -130,11 +135,11 @@ export default [
       },
       {
         path: '/docs/v2',
-        component: ComponentCreator('/docs/v2', 'ff0'),
+        component: ComponentCreator('/docs/v2', '4e6'),
         routes: [
           {
             path: '/docs/v2',
-            component: ComponentCreator('/docs/v2', 'f90'),
+            component: ComponentCreator('/docs/v2', '631'),
             routes: [
               {
                 path: '/docs/v2/Components/containers/aquafier',
@@ -145,12 +150,6 @@ export default [
               {
                 path: '/docs/v2/Components/containers/media-wiki',
                 component: ComponentCreator('/docs/v2/Components/containers/media-wiki', 'c0f'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/v2/Components/guardian',
-                component: ComponentCreator('/docs/v2/Components/guardian', 'c59'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

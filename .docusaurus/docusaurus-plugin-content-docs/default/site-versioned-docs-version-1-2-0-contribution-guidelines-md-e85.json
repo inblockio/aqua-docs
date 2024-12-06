@@ -23,8 +23,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Guardian",
-    "permalink": "/docs/v2/Components/guardian"
+    "title": "Personal Knowledge Container",
+    "permalink": "/docs/v2/Components/containers/media-wiki"
   },
   "next": {
     "title": "References",

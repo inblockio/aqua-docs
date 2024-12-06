@@ -114,11 +114,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Components/guardian",
-              "path": "/docs/v2/Components/guardian",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "Components/intro",
               "path": "/docs/v2/Components/intro",
               "sidebar": "tutorialSidebar"
@@ -179,8 +174,12 @@
           "label": "v1",
           "isLast": false,
           "path": "/docs/v1",
-          "mainDocId": "intro",
+          "mainDocId": "guardian",
           "docs": [
+            {
+              "id": "guardian",
+              "path": "/docs/v1/guardian"
+            },
             {
               "id": "intro",
               "path": "/docs/v1/intro"

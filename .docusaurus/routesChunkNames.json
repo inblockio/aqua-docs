@@ -242,28 +242,32 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-welcomed-9-f-ffb"
   },
-  "/docs-7a9": {
+  "/docs-6aa": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs/v1-49c": {
+  "/docs/v1-93b": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-v-18-f-5-796"
   },
-  "/docs/v1-253": {
+  "/docs/v1-49d": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/v1/guardian-f85": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-guardian-776-766"
   },
   "/docs/v1/intro-5ea": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-v-1-intro-50-a-a61"
   },
-  "/docs/v2-ff0": {
+  "/docs/v2-4e6": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-v-2-b-3-c-42d"
   },
-  "/docs/v2-f90": {
+  "/docs/v2-631": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/v2/Components/containers/aquafier-ab9": {
@@ -273,10 +277,6 @@
   "/docs/v2/Components/containers/media-wiki-c0f": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-v-2-components-containers-media-wiki-58-f-1ee"
-  },
-  "/docs/v2/Components/guardian-c59": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-v-2-components-guardian-4-bb-f9d"
   },
   "/docs/v2/Components/intro-a55": {
     "__comp": "__comp---theme-doc-item-178-a40",
