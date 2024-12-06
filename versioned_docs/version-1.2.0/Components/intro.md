@@ -30,6 +30,8 @@ check it over [here](https://github.com/inblockio/aqua-verifier-rs)
 
 ## Aqua PKC
 
+The personal knowldge container is/was a prototype implementation of the aqua protocol v1.1.
+To learn more about pkc check version 1.1 docs.
 
 
 ## Aqua guardian
@@ -43,4 +45,4 @@ The aqua guardian still uses aqua-protocol version 1.1 this makes it incompatibl
 ## Aqua verifier (chrome-extension)
 This is a chrome extension that can be used to verify aqua chain.It can be installed from [here](https://chromewebstore.google.com/detail/verifypage/gadnjidhhadchnegnpadkibmjlgihiaj)
 
-This is the easiest and fastest way to verify an aqua chain.
+This is the easiest and fastest way to get started with aqua protocol.
