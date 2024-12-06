@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 
 ## Data Structure:
-This are the basics to get you started but for thorough understandin have a look at references section to  get a thorough understanding for example what is a witness, how are witness hash created.
+This are the basics to get you started but for a thorough understanding one done with the sections below have a look at references section to  get a thorough understanding for example what is a witness, wtness network and how are witness hash created.
 
 The aqua chain structure can be broken into a the following components : 
 

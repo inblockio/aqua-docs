@@ -37,8 +37,10 @@ A security gateway to exchange Aqua-Chains and enforce policies of Aqua-Contract
 
 to learn 
 :::warning
-The aqua guardian still uses aqua-protocol version 1 this makes it incompatible with Aqua container and Aqua cli
+The aqua guardian still uses aqua-protocol version 1.1 this makes it incompatible with protocol 1.2 and all tools that use protocol 1.2 for example Aqua container and Aqua cli
 :::
 
 ## Aqua verifier (chrome-extension)
-This is a chrome extension that can be used to verify aqua chain.[here](https://chromewebstore.google.com/detail/verifypage/gadnjidhhadchnegnpadkibmjlgihiaj)
+This is a chrome extension that can be used to verify aqua chain.It can be installed from [here](https://chromewebstore.google.com/detail/verifypage/gadnjidhhadchnegnpadkibmjlgihiaj)
+
+This is the easiest and fastest way to verify an aqua chain.
