@@ -4,7 +4,9 @@ sidebar_position: 2
 ---
 
 ## Data Structure:
-The aqua chain structure can be broken into a the following components :
+This are the basics to get you started but for thorough understandin have a look at references section to  get a thorough understanding for example what is a witness, how are witness hash created.
+
+The aqua chain structure can be broken into a the following components : 
 
 
 ### Revision
