@@ -242,26 +242,78 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-welcomed-9-f-ffb"
   },
-  "/docs-6aa": {
+  "/docs-813": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs/v1-93b": {
+  "/docs/v1-585": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-v-18-f-5-796"
   },
-  "/docs/v1-49d": {
+  "/docs/v1-f9d": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/docs/v1/guardian-f85": {
+  "/docs/v1/contribution-guidelines-f63": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-v-1-guardian-776-766"
+    "content": "content---docs-v-1-contribution-guidelines-70-f-d54"
   },
-  "/docs/v1/intro-5ea": {
+  "/docs/v1/implementations/reference-architecture-e30": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-implementations-reference-architecture-3-d-2-833"
+  },
+  "/docs/v1/intro-216": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-v-1-intro-50-a-a61"
+  },
+  "/docs/v1/protocol/aqua_protocol_v1_2-2e2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-aqua-protocol-v-1-20-a-9-7ac"
+  },
+  "/docs/v1/protocol/aqua-identity-protocol-e26": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-aqua-identity-protocolc-9-b-c96"
+  },
+  "/docs/v1/protocol/aqua-name-resolution-59e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-aqua-name-resolutionbd-8-0ca"
+  },
+  "/docs/v1/protocol/aqua-protocol-version_1.3-6f2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-aqua-protocol-version-1-3-c-83-123"
+  },
+  "/docs/v1/protocol/assurance-levels-aal-9a1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-assurance-levels-aald-0-e-ffe"
+  },
+  "/docs/v1/protocol/data-accounting-fef": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-data-accountinga-61-76c"
+  },
+  "/docs/v1/protocol/data-governance-d2a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-data-governance-0-c-1-76c"
+  },
+  "/docs/v1/protocol/delegated-witnessing-2f1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-delegated-witnessing-526-59a"
+  },
+  "/docs/v1/protocol/design-principles-888": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-design-principles-794-d5c"
+  },
+  "/docs/v1/protocol/guardian-647": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-guardian-4-ac-aff"
+  },
+  "/docs/v1/protocol/immutable-hyperlinks-fc0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-immutable-hyperlinks-0-f-3-b3f"
+  },
+  "/docs/v1/protocol/whitepaper-31f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-v-1-protocol-whitepaper-076-5f5"
   },
   "/docs/v2-4e6": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",

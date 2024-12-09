@@ -1,7 +1,7 @@
 {
   "id": "intro",
-  "title": "Introduction",
-  "description": "V 1.1.0",
+  "title": "Overview",
+  "description": "",
   "source": "@site/versioned_docs/version-1.1.0/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",
@@ -11,14 +11,17 @@
   "editUrl": "https://github.com/inblockio/versioned_docs/version-1.1.0/intro.md",
   "tags": [],
   "version": "1.1.0",
+  "sidebarPosition": 1,
   "frontMatter": {
-    "title": "Introduction",
-    "linkTitle": "Introduction",
-    "weight": 10,
-    "menu": {
-      "main": {
-        "weight": 10
-      }
-    }
+    "title": "Overview",
+    "linkTitle": "Overview",
+    "weight": 1,
+    "sidebar_position": 1,
+    "description": ""
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Contribution Guidelines",
+    "permalink": "/docs/v1/contribution-guidelines"
   }
 }

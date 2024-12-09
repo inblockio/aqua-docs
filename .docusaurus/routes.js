@@ -109,25 +109,105 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '6aa'),
+    component: ComponentCreator('/docs', '813'),
     routes: [
       {
         path: '/docs/v1',
-        component: ComponentCreator('/docs/v1', '93b'),
+        component: ComponentCreator('/docs/v1', '585'),
         routes: [
           {
             path: '/docs/v1',
-            component: ComponentCreator('/docs/v1', '49d'),
+            component: ComponentCreator('/docs/v1', 'f9d'),
             routes: [
               {
-                path: '/docs/v1/guardian',
-                component: ComponentCreator('/docs/v1/guardian', 'f85'),
-                exact: true
+                path: '/docs/v1/contribution-guidelines',
+                component: ComponentCreator('/docs/v1/contribution-guidelines', 'f63'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/implementations/reference-architecture',
+                component: ComponentCreator('/docs/v1/implementations/reference-architecture', 'e30'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/v1/intro',
-                component: ComponentCreator('/docs/v1/intro', '5ea'),
-                exact: true
+                component: ComponentCreator('/docs/v1/intro', '216'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/aqua_protocol_v1_2',
+                component: ComponentCreator('/docs/v1/protocol/aqua_protocol_v1_2', '2e2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/aqua-identity-protocol',
+                component: ComponentCreator('/docs/v1/protocol/aqua-identity-protocol', 'e26'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/aqua-name-resolution',
+                component: ComponentCreator('/docs/v1/protocol/aqua-name-resolution', '59e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/aqua-protocol-version_1.3',
+                component: ComponentCreator('/docs/v1/protocol/aqua-protocol-version_1.3', '6f2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/assurance-levels-aal',
+                component: ComponentCreator('/docs/v1/protocol/assurance-levels-aal', '9a1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/data-accounting',
+                component: ComponentCreator('/docs/v1/protocol/data-accounting', 'fef'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/data-governance',
+                component: ComponentCreator('/docs/v1/protocol/data-governance', 'd2a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/delegated-witnessing',
+                component: ComponentCreator('/docs/v1/protocol/delegated-witnessing', '2f1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/design-principles',
+                component: ComponentCreator('/docs/v1/protocol/design-principles', '888'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/guardian',
+                component: ComponentCreator('/docs/v1/protocol/guardian', '647'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/immutable-hyperlinks',
+                component: ComponentCreator('/docs/v1/protocol/immutable-hyperlinks', 'fc0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/v1/protocol/whitepaper',
+                component: ComponentCreator('/docs/v1/protocol/whitepaper', '31f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               }
             ]
           }

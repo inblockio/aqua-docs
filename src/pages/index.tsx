@@ -20,7 +20,7 @@ function HomepageHeader() {
           A simple and novel approach to prove integrity of data, authorship, and time!
         </p>
         <div className={styles.buttons}>
-          <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/docs/prologue">
+          <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/docs/v2/prologue">
             <span>Documentation</span>
             <FaArrowAltCircleRight />
           </a>

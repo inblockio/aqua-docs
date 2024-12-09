@@ -174,19 +174,93 @@
           "label": "v1",
           "isLast": false,
           "path": "/docs/v1",
-          "mainDocId": "guardian",
+          "mainDocId": "intro",
           "docs": [
             {
-              "id": "guardian",
-              "path": "/docs/v1/guardian"
+              "id": "contribution-guidelines",
+              "path": "/docs/v1/contribution-guidelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "implementations/reference-architecture",
+              "path": "/docs/v1/implementations/reference-architecture",
+              "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/docs/v1/intro"
+              "path": "/docs/v1/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/aqua_protocol_v1_2",
+              "path": "/docs/v1/protocol/aqua_protocol_v1_2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/aqua-identity-protocol",
+              "path": "/docs/v1/protocol/aqua-identity-protocol",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/aqua-name-resolution",
+              "path": "/docs/v1/protocol/aqua-name-resolution",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/aqua-protocol-version_1.3",
+              "path": "/docs/v1/protocol/aqua-protocol-version_1.3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/assurance-levels-aal",
+              "path": "/docs/v1/protocol/assurance-levels-aal",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/data-accounting",
+              "path": "/docs/v1/protocol/data-accounting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/data-governance",
+              "path": "/docs/v1/protocol/data-governance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/delegated-witnessing",
+              "path": "/docs/v1/protocol/delegated-witnessing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/design-principles",
+              "path": "/docs/v1/protocol/design-principles",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/guardian",
+              "path": "/docs/v1/protocol/guardian",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/immutable-hyperlinks",
+              "path": "/docs/v1/protocol/immutable-hyperlinks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "protocol/whitepaper",
+              "path": "/docs/v1/protocol/whitepaper",
+              "sidebar": "tutorialSidebar"
             }
           ],
           "draftIds": [],
-          "sidebars": {}
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/v1/intro",
+                "label": "intro"
+              }
+            }
+          }
         }
       ],
       "breadcrumbs": true
