@@ -2,6 +2,7 @@
 title: "Data Accounting"
 linkTitle: "Data Accounting"
 weight: 5
+sidebar_position: 6
 description: >
   Introduces the concept of Data Accounting
 ---

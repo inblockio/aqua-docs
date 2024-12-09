@@ -11,16 +11,18 @@
   "editUrl": "https://github.com/inblockio/docs/protocol/assurance-levels-aal.md",
   "tags": [],
   "version": "current",
+  "sidebarPosition": 5,
   "frontMatter": {
     "title": "Assurance Levels (AAL)",
     "linkTitle": "Assurance Levels",
     "weight": 4,
+    "sidebar_position": 5,
     "description": "Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation. \n"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Aqua Protocol Version 1.2",
-    "permalink": "/docs/protocol/aqua_protocol_v1_2"
+    "title": "Aqua Name Resolution (ANS)",
+    "permalink": "/docs/protocol/aqua-name-resolution"
   },
   "next": {
     "title": "Data Accounting",

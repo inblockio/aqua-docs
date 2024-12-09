@@ -11,16 +11,18 @@
   "editUrl": "https://github.com/inblockio/docs/protocol/aqua-identity-protocol.md",
   "tags": [],
   "version": "current",
+  "sidebarPosition": 3,
   "frontMatter": {
     "title": "Identity Protocol",
     "linkTitle": "Identity Protocol",
     "weight": 2,
+    "sidebar_position": 3,
     "description": "The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.\n"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Documentation",
-    "permalink": "/docs/intro"
+    "title": "Whitepaper",
+    "permalink": "/docs/protocol/whitepaper"
   },
   "next": {
     "title": "Aqua Name Resolution (ANS)",

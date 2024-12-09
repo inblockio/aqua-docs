@@ -2,6 +2,7 @@
 title: "Aqua Name Resolution (ANS)"
 linkTitle: "Name Resolution"
 weight: 3
+sidebar_position: 4
 description: >
   ANS is used to hashes of various types to human readable names
 ---

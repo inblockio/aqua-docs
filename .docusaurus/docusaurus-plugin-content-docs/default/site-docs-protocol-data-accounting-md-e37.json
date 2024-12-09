@@ -11,10 +11,12 @@
   "editUrl": "https://github.com/inblockio/docs/protocol/data-accounting.md",
   "tags": [],
   "version": "current",
+  "sidebarPosition": 6,
   "frontMatter": {
     "title": "Data Accounting",
     "linkTitle": "Data Accounting",
     "weight": 5,
+    "sidebar_position": 6,
     "description": "Introduces the concept of Data Accounting\n"
   },
   "sidebar": "tutorialSidebar",

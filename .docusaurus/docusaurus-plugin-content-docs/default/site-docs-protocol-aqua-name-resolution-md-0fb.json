@@ -11,10 +11,12 @@
   "editUrl": "https://github.com/inblockio/docs/protocol/aqua-name-resolution.md",
   "tags": [],
   "version": "current",
+  "sidebarPosition": 4,
   "frontMatter": {
     "title": "Aqua Name Resolution (ANS)",
     "linkTitle": "Name Resolution",
     "weight": 3,
+    "sidebar_position": 4,
     "description": "ANS is used to hashes of various types to human readable names\n"
   },
   "sidebar": "tutorialSidebar",
@@ -23,7 +25,7 @@
     "permalink": "/docs/protocol/aqua-identity-protocol"
   },
   "next": {
-    "title": "Aqua Protocol Version v1.3",
-    "permalink": "/docs/protocol/aqua-protocol-version_1.3"
+    "title": "Assurance Levels (AAL)",
+    "permalink": "/docs/protocol/assurance-levels-aal"
   }
 }

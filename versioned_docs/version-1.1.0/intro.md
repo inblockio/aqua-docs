@@ -5,7 +5,6 @@ weight: 1
 sidebar_position: 1
 description: >
 
-
 ---
 
 We develop the AQUA-Protocol to increase trust and digital sovereignty for individuals and organizations.

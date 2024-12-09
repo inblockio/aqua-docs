@@ -2,6 +2,7 @@
 title: "Assurance Levels (AAL)"
 linkTitle: "Assurance Levels"
 weight: 4
+sidebar_position: 5
 description: >
   Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation. 
 ---

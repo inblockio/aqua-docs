@@ -11,10 +11,12 @@
   "editUrl": "https://github.com/inblockio/docs/protocol/data-governance.md",
   "tags": [],
   "version": "current",
+  "sidebarPosition": 7,
   "frontMatter": {
     "title": "Data Governance",
     "linkTitle": "Data Governance",
     "weight": 6,
+    "sidebar_position": 7,
     "description": "Introduces the concept of Data Governance\n"
   },
   "sidebar": "tutorialSidebar",
@@ -23,7 +25,7 @@
     "permalink": "/docs/protocol/data-accounting"
   },
   "next": {
-    "title": "Delegated Witnessing",
-    "permalink": "/docs/protocol/delegated-witnessing"
+    "title": "Aqua Protocol Version v1.3",
+    "permalink": "/docs/protocol/aqua-protocol-version_1.3"
   }
 }

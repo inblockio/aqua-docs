@@ -11,15 +11,21 @@
   "editUrl": "https://github.com/inblockio/docs/protocol/whitepaper.md",
   "tags": [],
   "version": "current",
+  "sidebarPosition": 2,
   "frontMatter": {
     "title": "Whitepaper",
     "linkTitle": "Whitepaper",
     "weight": 1,
+    "sidebar_position": 2,
     "description": "High level outline of Aqua Protocol (AQP) specification\n"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Immutable Hyperlinks",
-    "permalink": "/docs/protocol/immutable-hyperlinks"
+    "title": "Documentation",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Identity Protocol",
+    "permalink": "/docs/protocol/aqua-identity-protocol"
   }
 }
