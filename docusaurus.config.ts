@@ -95,6 +95,7 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'right',
           label: 'Documentation',
+          href: "/docs/v2/prologue"
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
