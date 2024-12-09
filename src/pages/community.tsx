@@ -15,11 +15,9 @@ export default function Community(): JSX.Element {
     <Layout
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      {/* <HomepageHeader /> */}
       <div className={clsx(styles.quote)}>
-        <p>
-          The AQUA Protocol is an emerging open-source protocol for data verification which is built with modern cryptographic standards. The AQUA Protocol is not and does not require a blockchain!
-        </p>
+        <h1>Community</h1>
       </div>
       <div className={clsx(styles.quote_2)}>
         <p>
@@ -28,9 +26,6 @@ export default function Community(): JSX.Element {
           as in <i>cryptography</i>!
         </p>
       </div>
-      <main>
-        <HomepageFeatures />
-      </main>
     </Layout>
   );
 }
