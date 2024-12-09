@@ -192,11 +192,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "protocol/aqua_protocol_v1_2",
-              "path": "/docs/v1/protocol/aqua_protocol_v1_2",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "protocol/aqua-identity-protocol",
               "path": "/docs/v1/protocol/aqua-identity-protocol",
               "sidebar": "tutorialSidebar"
@@ -204,11 +199,6 @@
             {
               "id": "protocol/aqua-name-resolution",
               "path": "/docs/v1/protocol/aqua-name-resolution",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "protocol/aqua-protocol-version_1.3",
-              "path": "/docs/v1/protocol/aqua-protocol-version_1.3",
               "sidebar": "tutorialSidebar"
             },
             {

@@ -2,6 +2,7 @@
 title: "Identity Protocol"
 linkTitle: "Identity Protocol"
 weight: 2
+sidebar_position: 2
 description: >
   The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol.
   This part of the project is in early stages and not mature.

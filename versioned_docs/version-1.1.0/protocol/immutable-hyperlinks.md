@@ -2,6 +2,7 @@
 title: "Immutable Hyperlinks"
 linkTitle: "Immutable Hyperlinks"
 weight: 10
+sidebar_position: 10
 description: >
   Shows how the Aqua URI's can be used as immutable links.
 ---

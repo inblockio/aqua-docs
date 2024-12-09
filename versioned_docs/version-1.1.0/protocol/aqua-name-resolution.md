@@ -1,12 +1,13 @@
 ---
-title: "Aqua Name Resolution (ANS)"
+title: "Name Resolution"
 linkTitle: "Name Resolution"
 weight: 3
+sidebar_position: 3
 description: >
   ANS is used to hashes of various types to human readable names
 ---
 
-ANS is used to resolve hashes of various types to human readable names.
+Aqua Name Resolution (ANS) is used to resolve hashes of various types to human readable names.
 
 The following hashes are resolved by the ANS:
 * wallet-addresses to names, organisations an aliases.

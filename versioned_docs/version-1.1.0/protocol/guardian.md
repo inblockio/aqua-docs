@@ -2,6 +2,7 @@
 title: "Guardian"
 linkTitle: "Guardian"
 weight: 9
+sidebar_position: 9
 description: >
   Shows access and transport layer logic used to interconnect data vaults
 ---

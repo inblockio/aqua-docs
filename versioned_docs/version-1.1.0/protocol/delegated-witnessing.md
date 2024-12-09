@@ -2,6 +2,7 @@
 title: "Delegated Witnessing"
 linkTitle: "Delegated Witnessing"
 weight: 7
+sidebar_position: 7
 description: >
   Describes the process of sending domain snapshots to remote data vaults.
 ---

@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
-    exact: true
-  },
-  {
     path: '/blog',
     component: ComponentCreator('/blog', 'b2f'),
     exact: true
@@ -109,15 +74,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '813'),
+    component: ComponentCreator('/docs', '279'),
     routes: [
       {
         path: '/docs/v1',
-        component: ComponentCreator('/docs/v1', '585'),
+        component: ComponentCreator('/docs/v1', '3c7'),
         routes: [
           {
             path: '/docs/v1',
-            component: ComponentCreator('/docs/v1', 'f9d'),
+            component: ComponentCreator('/docs/v1', '730'),
             routes: [
               {
                 path: '/docs/v1/contribution-guidelines',
@@ -138,12 +103,6 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/protocol/aqua_protocol_v1_2',
-                component: ComponentCreator('/docs/v1/protocol/aqua_protocol_v1_2', '2e2'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
                 path: '/docs/v1/protocol/aqua-identity-protocol',
                 component: ComponentCreator('/docs/v1/protocol/aqua-identity-protocol', 'e26'),
                 exact: true,
@@ -152,12 +111,6 @@ export default [
               {
                 path: '/docs/v1/protocol/aqua-name-resolution',
                 component: ComponentCreator('/docs/v1/protocol/aqua-name-resolution', '59e'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/v1/protocol/aqua-protocol-version_1.3',
-                component: ComponentCreator('/docs/v1/protocol/aqua-protocol-version_1.3', '6f2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

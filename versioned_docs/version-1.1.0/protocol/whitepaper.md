@@ -2,6 +2,7 @@
 title: Whitepaper
 linkTitle: "Whitepaper"
 weight: 1
+sidebar_position: 1
 description: >
   High level outline of Aqua Protocol (AQP) specification
 ---

@@ -2,6 +2,7 @@
 title: "Data Governance"
 linkTitle: "Data Governance"
 weight: 6
+sidebar_position: 6
 description: >
   Introduces the concept of Data Governance
 ---

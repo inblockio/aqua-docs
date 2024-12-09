@@ -2,6 +2,7 @@
 title: "Design Principles"
 linkTitle: "Design Principles"
 weight: 8
+sidebar_position: 8
 description: >
   Lists the design principles underlying our reference implementation
 ---
