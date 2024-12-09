@@ -21,7 +21,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Contribution Guidelines",
-    "permalink": "/docs/v1/contribution-guidelines"
+    "title": "Reference Implementation",
+    "permalink": "/docs/v1/Implementations/reference-architecture"
   }
 }

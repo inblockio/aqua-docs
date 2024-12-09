@@ -177,11 +177,6 @@
           "mainDocId": "intro",
           "docs": [
             {
-              "id": "contribution-guidelines",
-              "path": "/docs/v1/contribution-guidelines",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "Implementations/reference-architecture",
               "path": "/docs/v1/Implementations/reference-architecture",
               "sidebar": "tutorialSidebar"
