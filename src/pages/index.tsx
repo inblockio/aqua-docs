@@ -7,8 +7,9 @@ import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 import { FaArrowAltCircleRight, FaGithub } from 'react-icons/fa';
+import { CgCommunity } from 'react-icons/cg';
 
-function HomepageHeader() {
+export function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -23,6 +24,10 @@ function HomepageHeader() {
           <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/docs/v2/prologue">
             <span>Documentation</span>
             <FaArrowAltCircleRight />
+          </a>
+          <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/docs/v2/prologue">
+            <span>Community</span>
+            <CgCommunity />
           </a>
           <a className={clsx(styles.btn, styles.btn_lg, styles.btn_dark)} href="https://github.com/inblockio">
             <span>Source Code</span>
