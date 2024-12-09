@@ -97,7 +97,11 @@ const config: Config = {
           label: 'Documentation',
           href: "/docs/v2/prologue"
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: '/community',
+          label: 'Community',
+          position: 'right',
+        },
         {
           href: 'https://github.com/inblockio',
           label: 'GitHub',

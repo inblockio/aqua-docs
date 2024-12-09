@@ -25,7 +25,7 @@ export function HomepageHeader() {
             <span>Documentation</span>
             <FaArrowAltCircleRight />
           </a>
-          <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/docs/v2/prologue">
+          <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/community">
             <span>Community</span>
             <CgCommunity />
           </a>
