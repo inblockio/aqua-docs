@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    exact: true
+  },
+  {
     path: '/blog',
     component: ComponentCreator('/blog', 'b2f'),
     exact: true
@@ -74,15 +109,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '279'),
+    component: ComponentCreator('/docs', '00d'),
     routes: [
       {
         path: '/docs/v1',
-        component: ComponentCreator('/docs/v1', '3c7'),
+        component: ComponentCreator('/docs/v1', '367'),
         routes: [
           {
             path: '/docs/v1',
-            component: ComponentCreator('/docs/v1', '730'),
+            component: ComponentCreator('/docs/v1', 'f87'),
             routes: [
               {
                 path: '/docs/v1/contribution-guidelines',
@@ -91,8 +126,8 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/implementations/reference-architecture',
-                component: ComponentCreator('/docs/v1/implementations/reference-architecture', 'e30'),
+                path: '/docs/v1/Implementations/reference-architecture',
+                component: ComponentCreator('/docs/v1/Implementations/reference-architecture', 'dc6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -103,62 +138,62 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/protocol/aqua-identity-protocol',
-                component: ComponentCreator('/docs/v1/protocol/aqua-identity-protocol', 'e26'),
+                path: '/docs/v1/Protocol/aqua-identity-protocol',
+                component: ComponentCreator('/docs/v1/Protocol/aqua-identity-protocol', '87f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/protocol/aqua-name-resolution',
-                component: ComponentCreator('/docs/v1/protocol/aqua-name-resolution', '59e'),
+                path: '/docs/v1/Protocol/aqua-name-resolution',
+                component: ComponentCreator('/docs/v1/Protocol/aqua-name-resolution', '796'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/protocol/assurance-levels-aal',
-                component: ComponentCreator('/docs/v1/protocol/assurance-levels-aal', '9a1'),
+                path: '/docs/v1/Protocol/assurance-levels-aal',
+                component: ComponentCreator('/docs/v1/Protocol/assurance-levels-aal', '1e4'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/protocol/data-accounting',
-                component: ComponentCreator('/docs/v1/protocol/data-accounting', 'fef'),
+                path: '/docs/v1/Protocol/data-accounting',
+                component: ComponentCreator('/docs/v1/Protocol/data-accounting', 'e49'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/protocol/data-governance',
-                component: ComponentCreator('/docs/v1/protocol/data-governance', 'd2a'),
+                path: '/docs/v1/Protocol/data-governance',
+                component: ComponentCreator('/docs/v1/Protocol/data-governance', '60d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/protocol/delegated-witnessing',
-                component: ComponentCreator('/docs/v1/protocol/delegated-witnessing', '2f1'),
+                path: '/docs/v1/Protocol/delegated-witnessing',
+                component: ComponentCreator('/docs/v1/Protocol/delegated-witnessing', 'ee0'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/protocol/design-principles',
-                component: ComponentCreator('/docs/v1/protocol/design-principles', '888'),
+                path: '/docs/v1/Protocol/design-principles',
+                component: ComponentCreator('/docs/v1/Protocol/design-principles', 'da7'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/protocol/guardian',
-                component: ComponentCreator('/docs/v1/protocol/guardian', '647'),
+                path: '/docs/v1/Protocol/guardian',
+                component: ComponentCreator('/docs/v1/Protocol/guardian', 'eb3'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/protocol/immutable-hyperlinks',
-                component: ComponentCreator('/docs/v1/protocol/immutable-hyperlinks', 'fc0'),
+                path: '/docs/v1/Protocol/immutable-hyperlinks',
+                component: ComponentCreator('/docs/v1/Protocol/immutable-hyperlinks', 'd31'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/v1/protocol/whitepaper',
-                component: ComponentCreator('/docs/v1/protocol/whitepaper', '31f'),
+                path: '/docs/v1/Protocol/whitepaper',
+                component: ComponentCreator('/docs/v1/Protocol/whitepaper', '5f6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
