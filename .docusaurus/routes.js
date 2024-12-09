@@ -109,7 +109,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '3fa'),
+    component: ComponentCreator('/docs', 'ef7'),
     routes: [
       {
         path: '/docs/v1',
@@ -275,18 +275,12 @@ export default [
       },
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'cc4'),
+        component: ComponentCreator('/docs', '1b3'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'd49'),
+            component: ComponentCreator('/docs', '125'),
             routes: [
-              {
-                path: '/docs/contribution-guidelines',
-                component: ComponentCreator('/docs/contribution-guidelines', '2a1'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
               {
                 path: '/docs/implementations/reference-architecture',
                 component: ComponentCreator('/docs/implementations/reference-architecture', '81f'),

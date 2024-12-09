@@ -242,7 +242,7 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-welcomed-9-f-ffb"
   },
-  "/docs-3fa": {
+  "/docs-ef7": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
@@ -354,16 +354,12 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-v-2-referencesa-12-161"
   },
-  "/docs-cc4": {
+  "/docs-1b3": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-d49": {
+  "/docs-125": {
     "__comp": "__comp---theme-doc-roota-94-67a"
-  },
-  "/docs/contribution-guidelines-2a1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-contribution-guidelines-84-a-1ec"
   },
   "/docs/implementations/reference-architecture-81f": {
     "__comp": "__comp---theme-doc-item-178-a40",

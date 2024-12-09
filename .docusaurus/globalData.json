@@ -8,13 +8,8 @@
           "label": "Current",
           "isLast": false,
           "path": "/docs",
-          "mainDocId": "contribution-guidelines",
+          "mainDocId": "implementations/reference-architecture",
           "docs": [
-            {
-              "id": "contribution-guidelines",
-              "path": "/docs/contribution-guidelines",
-              "sidebar": "tutorialSidebar"
-            },
             {
               "id": "implementations/reference-architecture",
               "path": "/docs/implementations/reference-architecture",
@@ -90,8 +85,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/contribution-guidelines",
-                "label": "contribution-guidelines"
+                "path": "/docs/implementations/reference-architecture",
+                "label": "implementations/reference-architecture"
               }
             }
           }

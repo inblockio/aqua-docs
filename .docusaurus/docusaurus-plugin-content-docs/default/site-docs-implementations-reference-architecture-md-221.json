@@ -18,10 +18,6 @@
     "description": "Explains the technologies selected for the reference implementation and why we selected them.\n"
   },
   "sidebar": "tutorialSidebar",
-  "previous": {
-    "title": "Contribution Guidelines",
-    "permalink": "/docs/contribution-guidelines"
-  },
   "next": {
     "title": "Documentation",
     "permalink": "/docs/intro"
