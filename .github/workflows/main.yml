@@ -12,29 +12,29 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Git checkout
-        uses: actions/checkout@v2
-        with:
-          submodules: recursive  # Fetch the Docsy theme
-          fetch-depth: 1         # Fetch all history for .GitInfo and .Lastmod
+        uses: actions/checkout@v3
+        # with:
+        #   submodules: recursive  # Fetch the Docsy theme
+        #   fetch-depth: 1         # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: "0.88.0"
-          extended: true
+      # - name: Setup hugo
+      #   uses: peaceiris/actions-hugo@v2
+      #   with:
+      #     hugo-version: "0.88.0"
+      #     extended: true
 
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '20'
 
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+      # - name: Cache dependencies
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: ~/.npm
+      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-node-
 
       - run: |
           if [ -e package-lock.json ]; then
@@ -57,7 +57,7 @@ jobs:
   codespell:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - uses: codespell-project/actions-codespell@master
       with:
         ignore_words_list: Sur,ANS
