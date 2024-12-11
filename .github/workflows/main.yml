@@ -52,7 +52,7 @@ jobs:
           publish_dir: ./build
           exclude_assets: '.github,README.md'
           keep_files: false
-          publish_branch: gh-pages
+          publish_branch: docusaurus
           cname: aqua-protocol.org
   codespell:
     runs-on: ubuntu-latest
