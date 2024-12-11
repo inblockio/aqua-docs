@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-1.1.0 docs-doc-page docs-doc-id-Protocol/aqua-identity-protocol" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Identity Protocol | AQUA Protocol</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://aqua-protocol.org/featured-background.png"><meta data-rh="true" name="twitter:image" content="https://aqua-protocol.org/featured-background.png"><meta data-rh="true" property="og:url" content="https://aqua-protocol.org/docs/v1/Protocol/aqua-identity-protocol"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="1.1.0"><meta data-rh="true" name="docusaurus_tag" content="docs-default-1.1.0"><meta data-rh="true" name="docsearch:version" content="1.1.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-1.1.0"><meta data-rh="true" property="og:title" content="Identity Protocol | AQUA Protocol"><meta data-rh="true" name="description" content="The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.
+"><meta data-rh="true" property="og:description" content="The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.
+"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://aqua-protocol.org/docs/v1/Protocol/aqua-identity-protocol"><link data-rh="true" rel="alternate" href="https://aqua-protocol.org/docs/v1/Protocol/aqua-identity-protocol" hreflang="en"><link data-rh="true" rel="alternate" href="https://aqua-protocol.org/docs/v1/Protocol/aqua-identity-protocol" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="AQUA Protocol RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="AQUA Protocol Atom Feed"><link rel="stylesheet" href="/assets/css/styles.22d6e792.css">
+<script src="/assets/js/runtime~main.0c77d60b.js" defer="defer"></script>
+<script src="/assets/js/main.0f2cd2d9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/favicons/android-192x192.png" alt="Aqua Protocol" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/favicons/android-192x192.png" alt="Aqua Protocol" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aqua Protocol</b></a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/docs/v1/Protocol/aqua-identity-protocol">v1</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/implementations/reference-architecture">Current</a></li><li><a class="dropdown__link" href="/docs/v2/prologue">v2</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/docs/v1/Protocol/aqua-identity-protocol">v1</a></li></ul></div></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/docs/v2/prologue">Documentation</a><a class="navbar__item navbar__link" href="/community">Community</a><a href="https://github.com/inblockio" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/v1/intro">Overview</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/v1/Implementations/reference-architecture">Implementations</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/v1/Protocol/whitepaper">Protocol</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/whitepaper">Whitepaper</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/v1/Protocol/aqua-identity-protocol">Identity Protocol</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/aqua-name-resolution">Name Resolution</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/assurance-levels-aal">Assurance Levels (AAL)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/data-accounting">Data Accounting</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/data-governance">Data Governance</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/delegated-witnessing">Delegated Witnessing</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/design-principles">Design Principles</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/guardian">Guardian</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/immutable-hyperlinks">Immutable Hyperlinks</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Protocol</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Identity Protocol</span><meta itemprop="position" content="2"></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: v1</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Identity Protocol</h1></header><p>The Aqua Identity Protocol (AIP) is an experimental application protocol
+under development for Self Sovereign Identity&#x27;s (SSIs) on top of the
+Aqua Protocol. This is an active field of research which is related to
+the work of the Decentralized-Identity-Foundation (DIF)[^1] and the
+World-Wide-Web-Consortium[^2]. As this is under active development,
+anything you see is experimental and subject to change. The goal is to
+provide a Self-Sovereign-Digital Identity Protocol to protect individual
+rights, freedom and the opportunity for the individual to participate in
+the digital economy.</p>
+<p>We are building on the advancements and insights for rebooting the
+web-of-trust initiative[^3] and the definition of a
+Self-Sovereign-Identity provided by Christopher Allen in shortened form here.[^4]</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="self-sovereign-identity-principles">Self-Sovereign-Identity-Principles<a href="#self-sovereign-identity-principles" class="hash-link" aria-label="Direct link to Self-Sovereign-Identity-Principles" title="Direct link to Self-Sovereign-Identity-Principles">​</a></h3>
+<ol>
+<li><strong>Existence:</strong> users must have an independent existence.</li>
+<li><strong>Control:</strong> users must control their identities.</li>
+<li><strong>Access:</strong> users must have access to their own data.</li>
+<li><strong>Transparency:</strong> Systems and algorithms must be transparent.</li>
+<li><strong>Persistence:</strong> Identities must be long-lived.</li>
+<li><strong>Portability:</strong> Information and services about identity must be transportable.</li>
+<li><strong>Interoperability:</strong> Identities should be as widely usable as possible.</li>
+<li><strong>Consent:</strong> users must agree to the use of their identity.</li>
+<li><strong>Minimization:</strong> Disclosure of claims must be minimized.</li>
+<li><strong>Protection:</strong> The rights of users must be protected.</li>
+</ol>
+<p>Those 10 stated principles are implemented within the Aqua Protocol and
+it&#x27;s existing reference implementation in various degrees. They are also
+represented in the <a href="/docs/v1/Protocol/design-principles">Design Principles</a>.</p>
+<h1>Architecture</h1>
+<p>For the Aqua Identity Protocol to be implemented in accordance with the
+above statements, SSI-Principles and critical component choices from
+outside the protocol need to be made, and required tools need to be
+provided. <strong>Data Vault</strong>&#x27;s will provide a space which is fully account
+controlled. Other architectural decisions enabling SSI can be found in
+the reference implementation PKC Architecture Documentation.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="usage-of-data-vaults-to-protect-identity-claims">Usage of <strong>Data Vaults</strong> to protect identity claims<a href="#usage-of-data-vaults-to-protect-identity-claims" class="hash-link" aria-label="Direct link to usage-of-data-vaults-to-protect-identity-claims" title="Direct link to usage-of-data-vaults-to-protect-identity-claims">​</a></h3>
+<p>Pages with the namespace <code>&lt;Account&gt;</code>: must be &#x27;read and write able&#x27; by
+<code>&lt;Account&gt;</code> only by default. This is to protect the personal-identifiable
+data of the user. This data should be stored in a place where only the
+account owner has access to. This can be achieved by having the data
+stored locally on a machine the account owner has, or by using
+cryptography which requires the account&#x27;s owner explicit interaction to
+decrypt it. The content should not be decrypted on the server, but
+within the web-browser or client-application to ensure that a
+potentially compromised service-provider can&#x27;t leak the sensitive
+information.</p>
+<ul>
+<li>Identity claims are <strong>encrypted by default</strong> and can only be
+decrypted by the account owner or other accounts explicitly given
+permission to do so.</li>
+<li>Identity claims <strong>must</strong> be given access by the account owner to
+e.g. let somebody else sign them.</li>
+</ul>
+<p>Note: There should be an extra effort by any <strong>Data Vault</strong>
+implementation to protect identity claims. It is recommended to strongly
+regulate and audit the emerging solutions to ensure a high level of
+protection for citizens.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="self-issued-identity-claims">Self Issued Identity Claims<a href="#self-issued-identity-claims" class="hash-link" aria-label="Direct link to Self Issued Identity Claims" title="Direct link to Self Issued Identity Claims">​</a></h3>
+<p>These are used to make statements about an account to form an identity. Those
+claims can be partially revealed on demand to other parties. Those
+claims can also be protected by advancements in privacy technologies
+like Zero-Knowledge-Proofs and ongoing advancements in key management.</p>
+<p>Identity claims are sets of <a href="https://pkc.inblock.io/index.php/Verified_Data" target="_blank" rel="noopener noreferrer">Verified
+Data</a> which follow a
+structured data convention to claim or attest attributes to an account.
+For example, an attribute could be the year of birth of an account
+owner, or the legal name of an account owner. Claims should always be
+atomic to allow the account owner to disclose them selectivity.
+Different claims can be combined to represent a citizen ID or a
+drivers-license. Other claims can be educational certificates, like
+school certificates.</p>
+<p>Identity claims in the <a href="https://pkc.inblock.io/index.php/Aqua_Identity_Protocol" target="_blank" rel="noopener noreferrer">Aqua Identity
+Protocol</a> are
+<strong>always self issues</strong>. This means that the first signature on the claim
+needs to be from the private key which belongs to the account, i.e. the claim
+is issued for. This proves account ownership. This means:</p>
+<ul>
+<li>All claims can only be issued from the account which they make a
+claim about. A claim belongs to it&#x27;s origin account and can only be
+managed from it&#x27;s address.</li>
+<li>A claim can &#x27;accumulate trust&#x27; by being signed by other accounts who
+support this claim.</li>
+<li>Self-issuance protects accounts against spam, and the issuance of
+fraudulent claims to an account without the knowledge of the account
+owner.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="claim-attestation"><strong>Claim Attestation</strong><a href="#claim-attestation" class="hash-link" aria-label="Direct link to claim-attestation" title="Direct link to claim-attestation">​</a></h5>
+<p>Can be completed by a Trust Authority referring to the Identity Claim in
+collaboration with the account owner, or a referencing statement.</p>
+<p>It is possible <strong>to attest to a claim</strong> by referencing the claim&#x27;s
+unique revision_verification hash within the attestation. This means you
+can make statements about an account or about a claim without involving
+the account owner in that process. An attestation contains a statement
+about the referenced data set, and is expected to be signed by the
+account who makes the attestation. This ensures there is clear account
+attribution. Attestations without signature should be disregarded, as
+they have no account attribution.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="specification-for-the-aqua-identity-protocol"><strong>Specification for the Aqua Identity Protocol</strong><a href="#specification-for-the-aqua-identity-protocol" class="hash-link" aria-label="Direct link to specification-for-the-aqua-identity-protocol" title="Direct link to specification-for-the-aqua-identity-protocol">​</a></h2>
+<p>Policies for Self-Issued-Identity-Claims:</p>
+<ul>
+<li>Syntax of Title: <code>&lt;Account (e.g. Ethereum Wallet Address)&gt;</code>:<code>&lt;Attribute (English Descriptive Title)&gt;</code></li>
+<li>Example:
+<a href="https://pkc.inblock.io/index.php/0xa2026582b94feb9124231fbf7b052c39218954c2:Birthdate" target="_blank" rel="noopener noreferrer">0xa2026582b94feb9124231fbf7b052c39218954c2<!-- -->:Birthdate</a></li>
+</ul>
+<p>The title is not protected against changes, but the content of the page
+is protected.<strong>IMPORTANT:</strong> Therefore, we <strong>must</strong> compare the page
+stored <strong><code>&lt;Account&gt;</code>,<code>&lt;attribute&gt;</code></strong>. Then reassemble the title to check if
+they are consistent before proceeding with further validation of the
+identity claim.</p>
+<p>Content of the page</p>
+<ul>
+<li><strong>Account:</strong> <code>&lt;Account&gt;</code>
+<ul>
+<li>Is repeated to reassemble the title to check it.</li>
+</ul>
+</li>
+<li><strong>Attribute:</strong> <code>&lt;attribute_name&gt;</code>
+<ul>
+<li>Is repeated to reassemble the title to check it.</li>
+</ul>
+</li>
+<li><strong>Value:</strong> Is the value of the claim. E.g. &#x27;1889&#x27; for a year of
+birth.<!-- -->
+<ul>
+<li>The first revision <strong>must</strong> be signed by the account owner to
+create a self-issued identity claim</li>
+<li>Values <strong>must</strong> not change within a hash-chain. If a value
+changes, the claim will be marked as invalid with the revision
+of the change. If a new attribute value needs to be defined for
+an account, this is done through a new claim.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>Claim issuance Process</strong></p>
+<ol>
+<li>Claim is created (based on template)</li>
+<li>Claim is signed by issuer (first revision)</li>
+<li>Claim is registered by issuer (optional, done via Claim Registry)</li>
+<li>Claim is verified by authority to accumulate trust (this might
+include the requirement to hold a revocation authority on a claim
+registered via a Claim Registry)</li>
+</ol>
+<p>Trust-Chains with Identity Claims</p>
+<p>Will build a web of trust, which can be applicable not only for public
+institutions, but also for commercial organizations and private
+entities.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="a-trust-chain-of-identity-claims-for-educational-certificates-example">A trust chain of identity claims for educational certificates (example)<a href="#a-trust-chain-of-identity-claims-for-educational-certificates-example" class="hash-link" aria-label="Direct link to A trust chain of identity claims for educational certificates (example)" title="Direct link to A trust chain of identity claims for educational certificates (example)">​</a></h3>
+<ol>
+<li>The certificate is issued as integrity verified data via the Aqua
+Protocol.</li>
+<li>The recipient of the certificate registers the certificate as an
+identity claim</li>
+<li>The certificate is signed after it was issued as an identity claim
+by a Trust Authority (e.g. the university professor) and the
+university director&#x27;s office (director)</li>
+<li>The university professor holds trust claims from the university
+director</li>
+<li>The university director holds trust claims by the ministry of
+education</li>
+<li>The educational ministry of education holds trust claims by the
+minister-president</li>
+<li>The minister-president holds trust claims of a verified election</li>
+</ol>
+<p>The chain of trust is supplied by the party signing the statement.</p>
+<p><em>IMPORTANT: <strong>The authority who is given authority needs to prove
+where their authority originated</strong> <strong>when they act in the function of
+that authority.</strong></em></p>
+<ol>
+<li>E.g. the professor needs to supply the claim of the university
+entitling him</li>
+<li>E.g. the university director needs to supply the claim of the
+educational ministry</li>
+<li>E.g. the educational ministry needs to supply the claim of the
+minister-president.</li>
+<li>... and so on.</li>
+</ol>
+<h1>Verification Process</h1>
+<ol>
+<li>Claim is presented</li>
+<li>Claim integrity is validated<!-- -->
+<ol>
+<li>How can you trust the content of a claim: Claim content needs to
+be static. E.g. a given-name claim &#x27;Jarred Maxim&#x27; cannot change,
+even if there are many revisions to the page. If the static
+content HAS changed, the claim is INVALID or at least only valid
+until the point where it changed. In the case of such an
+information change, a new claim needs to be issued.</li>
+</ol>
+</li>
+<li>Claim registry is validated (root trust)</li>
+<li>Claim signatures are validated<!-- -->
+<ol>
+<li>Comparison between signature time and validity of the signing
+authority. Is the account authority still valid?</li>
+<li>lookup of authority claims from expected root trust?</li>
+</ol>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="trust-in-signatures">Trust in Signatures<a href="#trust-in-signatures" class="hash-link" aria-label="Direct link to Trust in Signatures" title="Direct link to Trust in Signatures">​</a></h3>
+<p>If somebody signs an identity claim, we believe they do that to</p>
+<ol>
+<li>Vouch with their account for the integrity of the presented data.
+This can be supported via an Authoritative Claim and a comment which
+gets attached to the claim itself or is issued via an Attestation.</li>
+<li>To verify the signature, we use an automated verification process.
+This is done through implementations of an Aqua-Verifier like
+<a href="https://github.com/inblockio/aqua-verifier-js" target="_blank" rel="noopener noreferrer">https://github.com/inblockio/aqua-verifier-js</a> or
+<a href="https://github.com/inblockio/aqua-verifypage-chrome-extension" target="_blank" rel="noopener noreferrer">https://github.com/inblockio/aqua-VerifyPage-chrome-extension</a>
+which also checks against the restrictions given by the Aqua
+Identity Protocol or/and additional defined policies.</li>
+<li>Add access rights to a claim by adding a Data Usage Agreement which
+is enforced by the Guardian. Access rights can be restricted:<!-- -->
+<ol>
+<li>to specific accounts</li>
+<li>to specific domain id&#x27;s representing an instance of a Data Vault</li>
+</ol>
+</li>
+<li>Verification: The verification process considers which account it
+signed, and what was stated with the signature, or with the
+additional data added to the claim. To consider a claim valid, the
+relationship between the verifying party and the Trust Authority who
+signed it, is essential. Can the party be trusted? Why do I trust
+this party?<!-- -->
+<ol>
+<li>Claims can be either chained (cascaded into each other) and
+offline verified, and/or online verified against an existing
+Claim-Registry. In both cases a known trusted party account
+reference point is required for the verifying party to trust.</li>
+</ol>
+</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="trust-authorities"><strong>Trust Authorities</strong><a href="#trust-authorities" class="hash-link" aria-label="Direct link to trust-authorities" title="Direct link to trust-authorities">​</a></h4>
+<p>are accounts which have an elevated trusted position. They issue
+<a href="https://pkc.inblock.io/index.php/Authoritative_Claim" target="_blank" rel="noopener noreferrer">Authoritative Trust
+Claims</a> to give
+legitimacy to a self-issued identity claim.</p>
+<p>Why do you trust a professor to issue an <a href="https://pkc.inblock.io/index.php/Educational_Certificate" target="_blank" rel="noopener noreferrer">Educational
+Certificate</a>?</p>
+<p>Because the professor is able to provide a trust chain, represented by a
+chained <a href="https://pkc.inblock.io/index.php/Authoritative_Claim" target="_blank" rel="noopener noreferrer">Authoritative Trust
+Claim</a>, proving
+that he has authority to attest an <a href="https://pkc.inblock.io/index.php/Educational_Certificate" target="_blank" rel="noopener noreferrer">Educational
+Certificate</a>
+with his signature. With his signature, he is increasing the trust of
+the self-issued <a href="https://pkc.inblock.io/index.php/Identity_Claim" target="_blank" rel="noopener noreferrer">Identity
+Claim</a> to allow it to
+have practical utility.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="claim-registries"><strong>Claim Registries</strong><a href="#claim-registries" class="hash-link" aria-label="Direct link to claim-registries" title="Direct link to claim-registries">​</a></h3>
+<p>A claim registry in the context of the Aqua Identity Protocol is a
+global registry to allow for real-time global claim revocation and
+re-instantiation of Identity Claim&#x27;s. This solves the problems related
+and known to certificate revocation. The Claim Registry acts like a
+global Claim Revocation List (CRL)[^5].</p>
+<p>E.g. a driver&#x27;s license can be revoked by a Trust Authority and later be
+re-instantiated after the &#x27;Punishment for driving too fast&#x27; is over.
+Identity claims are either valid or invalid. The Claim Registry is
+managing who can revoke / re-instantiate a registered claim.</p>
+<p>There is ongoing research and optimizations on privacy concerns to
+reduce costs for on-chain Identity Claim.</p>
+<p>Implementation in Ethereum with Smart-Contracts (Solidity). All claims
+are account bound.</p>
+<p><strong>Claim Registration Specification - Smart Contract Structure</strong></p>
+<ul>
+<li><strong><code>&lt;revision_verification_hash&gt;</code></strong> as root trust of the self-issued
+identity claim. A claim has to be a verified page, which is signed
+and timestamped. If all are present, the next page-verification hash
+entangles all of those properties and becomes the &#x27;address&#x27; of the
+claim. In the receipt of the publish process for the claim, there is
+an attached receipt, and by writing the receipt into the claim,
+there is also a new revision generated. This creates the second
+revision of the claim, which entangles the signature and the witness
+event with the hash-chain to make them immutable.</li>
+<li><strong><code>&lt;status&gt;</code></strong> [type<!-- -->:boolean<!-- -->] of claim<!-- -->
+<ul>
+<li>0 - valid</li>
+<li>1 - revoked</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong><code>&lt;valid until&gt;</code></strong> [type: date DDMMYYYY]: if current date past
+expiration date, the claim is considered expired and is not accepted
+anymore</li>
+<li><strong><code>&lt;owner == sender address&gt;</code></strong> [type<!-- -->:address<!-- -->] an account which
+updates the status of the claim, e.g. revocation or suspension of an
+account</li>
+<li><strong><code>&lt;additional revocation authority&gt;</code></strong> [type<!-- -->:address<!-- -->] list of
+accounts which are authorized to update status of the claim other
+than the owner. The owner has a special right to update the list of
+revocation authorities to hold new addresses.</li>
+</ul>
+<hr>
+<p>EXAMPLE: Claim Registration Data [Receipt]</p>
+<p>The presence of Claim Registration Data [Receipt] means that the claim
+address (verification hash) has been written to a Claim Registry on a
+Witness Network.</p>
+<p>Protocol: Aqua Identity Protocol Version 1.0</p>
+<p>Registration Event: 1</p>
+<ul>
+<li>Domain ID: e9ece84189</li>
+<li>Claim address (verification hash of self-signed claim):
+1db331add502cf1b1712468d1c3e5d66a0016a6f04885c5533619ffbb43fffb6dfa452e119d4bee7628e9792af69089d38d860a5f8d0708184bbb74b8cabdaf7</li>
+<li><code>&lt;if bulk registration&gt;</code>
+<ul>
+<li>Merkle Root:
+7e9782fb8a6e749ef2ba48f8cd410b05335ba48b20ba42508efeb76add38b0f39e717e91381c8de34641af4c477c39fc169eaa0908dba25e0a54e8de615fcd00</li>
+<li>Claim Snapshot Verification Hash:
+278f930a35d06d7b9d28aab37d402c147d1beffdbe53d212481c17ec686698e9469f9cf7d7d53b9a4435c4b99ca2e578b5dc5fec6c63cb802b540493fe927575</li>
+</ul>
+</li>
+<li>Witness Network: goerli</li>
+<li>Claim Registry Smart Contract Address:
+0x45f59310ADD88E6d23ca58A0Fa7A55BEE6d2a611</li>
+<li>Transaction Hash:
+0xa572e8d6ef8d4a1bb3b5087680817e70bb79a0376c3a9be9e2c6b4d92df228a1
+Sender Account Address: 0xa2026582b94feb9124231fbf7b052c39218954c2<!-- -->
+<hr>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="claim-revocation"><strong>Claim Revocation</strong><a href="#claim-revocation" class="hash-link" aria-label="Direct link to claim-revocation" title="Direct link to claim-revocation">​</a></h4>
+<p><strong>Traditional</strong> <strong>revocation:</strong></p>
+<ul>
+<li>Traditional strategies for certificate revocation can be
+applied.[^6]</li>
+<li>Most effective are short expiration dates where possible, due to the
+lack of effective revocation processes for certificates without
+global registries.</li>
+</ul>
+<p><strong>Using Distributed Ledgers</strong></p>
+<ul>
+<li>Done via <a href="https://pkc.inblock.io/index.php/Claim_Registry" target="_blank" rel="noopener noreferrer">Claim
+Registry</a>
+(indicates the global status of an identity claim to be either valid
+or invalid)</li>
+</ul>
+<p><strong>Process:</strong></p>
+<ul>
+<li>Locally completed (within the Self-Issued Identity Claim) by
+changing the status to &#x27;revoked&#x27; and signing by the issuer. This
+adds a receipt to the identity claim, which is displayed when
+verifying the claim. This includes the revocation transaction for
+the revocation on the
+<a href="https://pkc.inblock.io/index.php/Identity-Registry" target="_blank" rel="noopener noreferrer">Identity-Registry</a></li>
+<li>If there is a new claim which is succeeding the previous identity
+claim<a href="https://pkc.inblock.io/index.php/Claim_Registry" target="_blank" rel="noopener noreferrer">Claim
+Registry</a>, then
+this is also noticed within the revocation receipt under
+&#x27;Successor-Claim: <code>&lt;hash&gt;</code>.</li>
+</ul>
+<b>Bulk Claim Registration (Should be part of Claim Registry)</b>
+<ul>
+<li>To reduce costs during registration of the identity claims via a
+<a href="https://pkc.inblock.io/index.php/Claim_Registry" target="_blank" rel="noopener noreferrer">Claim Registry</a>
+they can be clustered and registered together</li>
+<li>We use the
+<a href="https://pkc.inblock.io/index.php/SmartContract:Identity-Registry" target="_blank" rel="noopener noreferrer">SmartContract<!-- -->:Identity-Registry</a>
+for this. To scale our efforts we utilize a variant of the
+&#x27;Domain-Manifest-Generator / Publisher&#x27; which is very similar. The
+differences are in the selection of what can be published, and the
+data structure which is published to the Claim Registry instead of
+the witness smart contract.</li>
+<li>The Claim Snapshot Generator can only include ID claims of your own
+<code>&lt;Account&gt;</code> namespace.</li>
+<li>The Claim Snapshot Publisher is registering all selected claims
+(select them by page name (filter required) and will populate the
+target
+<a href="https://pkc.inblock.io/index.php/SmartContract:Identity-Registry" target="_blank" rel="noopener noreferrer">SmartContract<!-- -->:Identity-Registry</a>.
+Every claim will hold the relative merkle-proof to show the path for
+it&#x27;s registration.</li>
+</ul>
+<p>Examples for <strong>Identity Claims with Aqua:</strong></p>
+<ul>
+<li><a href="https://pkc.inblock.io/index.php/User:0xa2026582b94feb9124231fbf7b052c39218954c2" target="_blank" rel="noopener noreferrer">Example Identity Documents with PKC and Data
+Accounting</a></li>
+<li>Reference<!-- -->:Example<!-- --> Identity Documents (Research)</li>
+</ul>
+<h1>FAQ</h1>
+<ol>
+<li>How to find <a href="https://pkc.inblock.io/index.php/Claim_Registry" target="_blank" rel="noopener noreferrer">Claim
+Registry</a>&#x27;s? By
+following the chain of trust of authoritative claims and validating
+them one by one.</li>
+<li>How to check if authority is still valid and how to find an
+authority registry? As before, by reading the chain of trust and
+looking up the status of the related identity claims.</li>
+<li>How to visually check authority dependencies? It is possible to
+visualize the links of links of links to represent the chain of
+trust.</li>
+</ol>
+<p>Important References:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=gWfAIYXcyH4&amp;ab_channel=Okta" target="_blank" rel="noopener noreferrer">Basic intro into
+DID</a></li>
+<li><a href="https://www.youtube.com/watch?v=8c7yRTENqSc&amp;ab_channel=DecentralizedIdentityFoundation" target="_blank" rel="noopener noreferrer">Basic intro into
+DIDComm</a></li>
+<li><a href="https://www.w3.org/TR/vc-data-model/#claims" target="_blank" rel="noopener noreferrer">W3C Verified Data
+Model</a></li>
+<li><a href="https://w3c-ccg.github.io/vc-status-rl-2020/" target="_blank" rel="noopener noreferrer">Revocation List 2020</a>
+A privacy-preserving mechanism for revoking Verifiable Credentials</li>
+<li><a href="https://github.com/decentralized-identity/didcomm-messaging" target="_blank" rel="noopener noreferrer">DIDCOMM implementations and
+use-cases</a></li>
+<li><a href="https://github.com/spruceid/didkit" target="_blank" rel="noopener noreferrer">DIDkit</a></li>
+</ul>
+<p>Thought leader Christopher Allen:</p>
+<ul>
+<li><a href="https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md" target="_blank" rel="noopener noreferrer">Self-Sovereign-Identity-Principles</a></li>
+<li><a href="https://github.com/BlockchainCommons/Gordian" target="_blank" rel="noopener noreferrer">A bitcoin based SSI infrastructure
+prototype</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h3>
+<p>See Implementation Specific Aqua Identity Protocol Implementation in MWe</p>
+<ol>
+<li>
+<p><a href="https://identity.foundation/" target="_blank" rel="noopener noreferrer">Identity Foundation</a></p>
+</li>
+<li>
+<p><a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer">W3C (World Wide Web Consortium)</a></p>
+</li>
+<li>
+<p><a href="https://www.weboftrust.info/" target="_blank" rel="noopener noreferrer">Web of Trust</a></p>
+</li>
+<li>
+<p><a href="https://github.com/WebOfTrustInfo/self-sovereign-identity/blob/master/self-sovereign-identity-principles.md" target="_blank" rel="noopener noreferrer">Self-Sovereign Identity Principles - GitHub</a></p>
+</li>
+<li>
+<p><a href="https://www.securew2.com/blog/certificate-revocation-crl-explained" target="_blank" rel="noopener noreferrer">Certificate Revocation (CRL) Explained - SecureW2</a></p>
+</li>
+<li>
+<p><a href="https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx" target="_blank" rel="noopener noreferrer">PKI Certificate Revocation Process Explained - TechNet</a></p>
+</li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/inblockio/versioned_docs/version-1.1.0/Protocol/aqua-identity-protocol.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/v1/Protocol/whitepaper"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Whitepaper</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/v1/Protocol/aqua-name-resolution"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Name Resolution</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#self-sovereign-identity-principles" class="table-of-contents__link toc-highlight">Self-Sovereign-Identity-Principles</a></li><li><a href="#usage-of-data-vaults-to-protect-identity-claims" class="table-of-contents__link toc-highlight">Usage of <strong>Data Vaults</strong> to protect identity claims</a></li><li><a href="#self-issued-identity-claims" class="table-of-contents__link toc-highlight">Self Issued Identity Claims</a></li><li><a href="#specification-for-the-aqua-identity-protocol" class="table-of-contents__link toc-highlight"><strong>Specification for the Aqua Identity Protocol</strong></a><ul><li><a href="#a-trust-chain-of-identity-claims-for-educational-certificates-example" class="table-of-contents__link toc-highlight">A trust chain of identity claims for educational certificates (example)</a></li><li><a href="#trust-in-signatures" class="table-of-contents__link toc-highlight">Trust in Signatures</a></li><li><a href="#claim-registries" class="table-of-contents__link toc-highlight"><strong>Claim Registries</strong></a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/v2/prologue">Docs</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://matrix.to/#/#aqua-community:matrix.jembawan.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Matrix<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aqua" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/inblockio" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/inblockio" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">© 2024 AQUA Protocol. All right reserved.</div></div></div></footer></div>
+</body>
+</html>

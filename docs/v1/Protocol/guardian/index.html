@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-1.1.0 docs-doc-page docs-doc-id-Protocol/guardian" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Guardian | AQUA Protocol</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://aqua-protocol.org/featured-background.png"><meta data-rh="true" name="twitter:image" content="https://aqua-protocol.org/featured-background.png"><meta data-rh="true" property="og:url" content="https://aqua-protocol.org/docs/v1/Protocol/guardian"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="1.1.0"><meta data-rh="true" name="docusaurus_tag" content="docs-default-1.1.0"><meta data-rh="true" name="docsearch:version" content="1.1.0"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-1.1.0"><meta data-rh="true" property="og:title" content="Guardian | AQUA Protocol"><meta data-rh="true" name="description" content="Shows access and transport layer logic used to interconnect data vaults
+"><meta data-rh="true" property="og:description" content="Shows access and transport layer logic used to interconnect data vaults
+"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://aqua-protocol.org/docs/v1/Protocol/guardian"><link data-rh="true" rel="alternate" href="https://aqua-protocol.org/docs/v1/Protocol/guardian" hreflang="en"><link data-rh="true" rel="alternate" href="https://aqua-protocol.org/docs/v1/Protocol/guardian" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="AQUA Protocol RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="AQUA Protocol Atom Feed"><link rel="stylesheet" href="/assets/css/styles.22d6e792.css">
+<script src="/assets/js/runtime~main.0c77d60b.js" defer="defer"></script>
+<script src="/assets/js/main.0f2cd2d9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/favicons/android-192x192.png" alt="Aqua Protocol" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/favicons/android-192x192.png" alt="Aqua Protocol" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aqua Protocol</b></a><div class="navbar__item dropdown dropdown--hoverable"><a aria-current="page" class="navbar__link active" aria-haspopup="true" aria-expanded="false" role="button" href="/docs/v1/Protocol/guardian">v1</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs/implementations/reference-architecture">Current</a></li><li><a class="dropdown__link" href="/docs/v2/prologue">v2</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/docs/v1/Protocol/guardian">v1</a></li></ul></div></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/docs/v2/prologue">Documentation</a><a class="navbar__item navbar__link" href="/community">Community</a><a href="https://github.com/inblockio" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/v1/intro">Overview</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/v1/Implementations/reference-architecture">Implementations</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/v1/Protocol/whitepaper">Protocol</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/whitepaper">Whitepaper</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/aqua-identity-protocol">Identity Protocol</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/aqua-name-resolution">Name Resolution</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/assurance-levels-aal">Assurance Levels (AAL)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/data-accounting">Data Accounting</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/data-governance">Data Governance</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/delegated-witnessing">Delegated Witnessing</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/design-principles">Design Principles</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/v1/Protocol/guardian">Guardian</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/v1/Protocol/immutable-hyperlinks">Immutable Hyperlinks</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Protocol</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Guardian</span><meta itemprop="position" content="2"></li></ul></nav><span class="theme-doc-version-badge badge badge--secondary">Version: v1</span><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Context</h1></header>
+<p>It is highly problematic to expose sensitive data, such as personal
+identifiable data, to the internet. The service who hosts that sensitive
+data, needs to be compromised only for a short amount of time, to leak
+all the data. Often caused by configuration mistakes or by
+vulnerabilities being present in the used technology stack.</p>
+<p>We can&#x27;t effort to have leaks on personal-identifiable data in data
+vaults. To raise the bar on making attacks difficult and reducing the
+chance of leakage of information, we introduce the Guardian as a extra
+security layer to protect services like the PKC from attacks.</p>
+<h1>Summary</h1>
+<p>The Guardian is a software which manages the boundaries of your digital
+domain. Guardians are used to connect to secure transport networks
+(HTTPS, Matrix Network, Didcomm) and publishing networks (e.g.
+Swarm.eth). The Guardian is used to build trusted connections to other
+Guardians via trusted transport-layers to exchange data with them. As
+the Guardian connects to other Guardians, it also manages all
+connections to services in it&#x27;s domain and access to those services.</p>
+<h1>Goal</h1>
+<p>Secure all services behind the Guardian from attacks and unauthorized
+access. Keep the data vault and it&#x27;s data private and safe, while
+enabling the ability to exchange data with other Guardians.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how">How<a href="#how" class="hash-link" aria-label="Direct link to How" title="Direct link to How">​</a></h2>
+<p>Enforcement is handled on each connection and each data set so that
+services behind the Guardian are never directly exposed. This makes the
+Guardian the most security sensitive component in the Aqua reference
+implementation, as we expect the Guardian to handle all incoming and
+outgoing traffic. The Guardian enjoys additional attention and effort to
+be up to it&#x27;s task by hardening it and applying security best practices
+to ensure that it is fulfilling it&#x27;s security promise to keep services
+behind the Guardian safe.</p>
+<p>Every transaction leaving or wanting to enter your domain will be
+supervised and checked by the Guardian. The core functionality of the
+Guardian is a library to verify the Aqua Protocol. Only if the
+verification succeeds additional steps are introduced to make decisions
+how the data is handled.</p>
+<p>This allows the Guardian to read and understand Aqua verified data. This
+allows for the implementation of a wide set of behavioral rules and
+offers the opportunity to create various &#x27;Smart contract&#x27; languages on
+top of it.</p>
+<p>The Guardian verifies a file, reads its contents and checks it&#x27;s
+permissions to classify if an action is considered legal or illegal,
+permitted or denied. Basic functionality for a Guardian can be compared
+with a traditional firewall, or a application firewall but is much more
+sophisticated to manage access on the data-level.</p>
+<h1>Terminology:</h1>
+<p>Proving ownership over a domain by signing the domain ID with an
+self-issued identity claim which is also registered in a claim registry
+to ensure nobody claims to have owned that domain before by manipulating
+the digital clock and faking an earlier owner-ship claim over the
+domain.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="permission-agreements--data-usage-agreement--access-rights"><strong>Permission Agreements</strong> / Data Usage Agreement / Access Rights<a href="#permission-agreements--data-usage-agreement--access-rights" class="hash-link" aria-label="Direct link to permission-agreements--data-usage-agreement--access-rights" title="Direct link to permission-agreements--data-usage-agreement--access-rights">​</a></h2>
+<p>are contracts which represent the terms and conditions under which files
+and/or services are shared with other accounts and/or their digital
+domains.</p>
+<p>By nature those Permission Agreements will be compiled through pages and
+stored as files. To form an agreement, the other party must be notified
+about new resources as they become available. For example, when we share
+a page with another account. To complete a permission agreement, the
+counter party has to sign the permission agreement or reject it. If the
+permission agreement is signed, the other party enters a contractual
+relationship in which they will be liable for any agreement violates
+executed from their digital domain.</p>
+<h1>Processes</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="domain-handshake">Domain Handshake<a href="#domain-handshake" class="hash-link" aria-label="Direct link to Domain Handshake" title="Direct link to Domain Handshake">​</a></h2>
+<p>Establish trust between two Aqua domains. For this we have Alice and Bob which
+want to establish trust between their domains. They both have a Guardian in
+place to protect their data vaults.</p>
+<p>Steps:</p>
+<ol>
+<li>Alice: Create access contract: I <code>&lt;Alice_account&gt;</code> want to connect from my <code>&lt;domain_id&gt;</code> to a <code>&lt;domain_id&gt;</code> controlled by <code>&lt;Bobs_account&gt;</code> with my <code>&lt;Alice_domain_id&gt;</code> via the following channel: DNS/HTTPS via <code>alice_Guardian.domain.com</code>.</li>
+<li>Alice: sign contract</li>
+<li>Alice: SEND contract send the page via &#x27;mail&#x27; / &#x27;matrix&#x27; whatever to the remote PKC instance.</li>
+<li>Bob: veries the contract contract and imports it</li>
+<li>Bob: extend contract: I <code>&lt;bobs_account&gt;</code> connect my PKC <code>&lt;bobs_domain_id&gt;</code> to your PKC <code>&lt;Alice_domain_id&gt;</code> via my Guardian_endpoint <code>&lt;bobs_guardian.domain2.com&gt;</code>.</li>
+<li>Bob: sign extended contract: Bob uses his wallet to sign his extended contract.</li>
+<li>Bob: send extended contract TO Alice: Bob sends his Contract to his Guardian.</li>
+<li>Bob&#x27;s Guardian: Verifies and sends the contract to Alice Guardian.</li>
+<li>Alice Guardian:
+Guardian verifies all data
+Sends OK back to Bob&#x27;s Guardian
+Sends Updates contract into Alice PKC
+Waits for Bob&#x27;s Guardian to request available pages</li>
+<li>Bob&#x27;s Guardian requests a list of pages: &#x27; What pages do you share with me?&#x27;</li>
+<li>Alice Guardian: Returns list of accessible resources for Bob</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="example-sharing-a-file">Example: Sharing a File<a href="#example-sharing-a-file" class="hash-link" aria-label="Direct link to Example: Sharing a File" title="Direct link to Example: Sharing a File">​</a></h2>
+<p>Target: Sharing a file with another account. Using two Aqua data vaults
+with their two Guardians to manage access to them. We assume the
+Guardians already have executed a handshake to enter a trusted
+relationship. We also assume, that the file should underlay access
+basedon account restrictions and domain restrictions.</p>
+<p><strong>Example 1:</strong> Sharing a file <strong>without additional</strong> constrains with
+another account.</p>
+<p>Alice wants to share her page &#x27;My secret research&#x27; with Bob. Their
+Guardians have already formed a trusted connection. What Alice needs to
+do now is to add a sub-page with an immutable link under the &#x27;My secret
+research&#x27; page and define access. To be able to define access Alice
+needs to have a claim over the ownership over the domain she is sharing
+from.</p>
+<p>Alice creates an Access Permission for the whole page or for a single
+revision by creating a page with the following syntax:</p>
+<ul>
+<li>
+<p><code>&lt;genesis_hash&gt;</code>:access_contract</p>
+</li>
+<li>
+<p>To give access to the whole page with all it&#x27;s revisions.</p>
+</li>
+<li>
+<p><code>&lt;revision_hash&gt;</code>:access_contract</p>
+</li>
+<li>
+<p>To give access to a specific revision.</p>
+</li>
+</ul>
+<hr>
+<p><strong>Content of the page:</strong></p>
+<p>I Alice <code>&lt;alice-account&gt;</code> give access to Bob <code>&lt;bob-account&gt;</code></p>
+<ul>
+<li>option 1: to the whole page including it&#x27;s history <code>&lt;genesis_hash&gt;</code></li>
+<li>option 2: to the following revision <code>&lt;revision_hash&gt;</code>&#x27;My secret
+research&#x27;</li>
+</ul>
+<p><strong>Additional one-sided conditions:</strong></p>
+<ul>
+<li>This access contract expires in 7 days</li>
+</ul>
+<p>This contract will come into place with my <code>&lt;alice-account&gt;</code> signature.</p>
+<p>The Guardian will react to a specific syntax of pages holding contracts,
+agreements and access rights to adjust his network access rights
+accordingly to it. Alice-Guardian will respond to the question what
+resources are shared by Bobs-Guardian with the answer that there is a
+new page available according to the access contract which now gives
+Bobs-Guardian the ability to query the content of &#x27;My secure research&#x27;
+from Alice according to the contract. Depending on Bobs-Guardian
+setting, the Guardian might automatically load the resource and forward
+it into the post-box of Bobs Data Vault.</p>
+<p><strong>Example 2:</strong> Sharing a file <strong>with</strong> constrains forming a <strong>contract</strong>
+to do so.</p>
+<p>Same as 1 expect that for the contract to come into place, Bob needs to
+sign the contract from Alice containing additional constrains.</p>
+<hr>
+<p><strong>Content of the page:</strong></p>
+<p>I Alice <code>&lt;alice-account&gt;</code> give access to Bob <code>&lt;bob-account&gt;</code></p>
+<ul>
+<li>option 1: to the whole page including it&#x27;s history <code>&lt;genesis_hash&gt;</code></li>
+<li>option 2: to the following revision <code>&lt;revision_hash&gt;</code>&#x27;My secret
+research&#x27;</li>
+</ul>
+<p><strong>Under the following conditions:</strong></p>
+<ul>
+<li>Do not share outside your domain <code>&lt;Bobs-domain_id&gt;</code></li>
+<li>Do not share with any body else (Bobs domain can&#x27;t have another
+account registered to it, if there is an account registered the
+Guardian of Bob will say that Bobs domain does not fulfill the
+requirements to establish this contract.</li>
+<li>Do not modify it.</li>
+<li>Delete it after 7 days.</li>
+</ul>
+<p>For this contract to be valid, signatures of first Alice and then Bob
+need to be present. This means, after Alice signed the access contract,
+the contract is a new available resource to Bob to be loaded. Bob can
+now sign the resource in his domain and return the contract. Leading to
+the contract send back to Alice domain and being updated there. Bob now
+gets access to &#x27;My secret research&#x27; which has been updated as well, to
+contain via an immutable link the access contract.</p>
+<p>Permission Templates, Complex Permissions (Groups and more)</p>
+<p>It is possible to apply complex permissions based on templates, or and
+connecting multiple access contracts by using</p>
+<ul>
+<li>instead of this syntax <code>&lt;genesis_hash&gt;</code>:permission_agreement</li>
+<li>the following the syntax <code>&lt;genesis_hash&gt;</code>:<code>&lt;genesis_hash-2&gt;</code> in
+which the <code>&lt;genesis_hash-2&gt;</code> contains a list of sub-pages with access
+contracts which can be used to apply access via permission-objects
+which are represented by the <code>&lt;genesis_hash-2&gt;</code> page object.</li>
+</ul>
+<ol>
+<li>Alice wants to</li>
+<li>If the user wants to propose changes to the page, he will send an
+updated PAGE FILE to the OWNER of the PAGE.</li>
+<li>The owner can decide to ACCEPT the changes. Or to include the
+changes in the HISTORY File, but not COMMIT them. Or to NOT include
+the update of the PAGE, and disregard it.</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="specifications">Specifications:<a href="#specifications" class="hash-link" aria-label="Direct link to Specifications:" title="Direct link to Specifications:">​</a></h3>
+<p>The Guard Daemon checks if there is digital contract present in his
+domain. Those contracts set permissions for allowing a counter party to
+access a service or resource (like a file or a page, or a revision).
+It&#x27;s also defining the constrains under which permissions access is
+given. In this case it requires the digital signature of the receiving
+party for the agreement to come into place and be valid.</p>
+<p>Guardians have administrative access to the services they manage.
+Therefore they can supervise the activities of services and use them as
+triggers to e.g. provide access according to a set permission without
+additional user action.</p>
+<h1>Guardian Components:</h1>
+<p>APIs</p>
+<ul>
+<li>
+<p>System-API to control a service via a service specific library. Each
+services will have their own control-library and control API to
+create an abstraction layer which allows for a unified control logic
+in the Guardian.</p>
+<ul>
+<li>E.g. an account is allowed to access a service</li>
+<li>E.g. a resource is shared with an account</li>
+<li>E.g. a trust relationship between two services is established
+(based on an agreement between two accounts) to exchange data</li>
+<li><strong>Implementation Specific PKC:</strong> All interactions for system
+interaction with MediaWiki / PKC<!-- -->
+<ul>
+<li>Execute Actions: Move, Update, Edit, Delete Pages</li>
+<li>Request send to the Guardian: Verify a specific page or a
+list of pages</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Data-API</strong> to retrieve Aqua-Data between a service and the
+Guardian, or between two Guardians.</p>
+<ul>
+<li>Send data to import API</li>
+<li>Read data via export API<!-- -->
+<ul>
+<li><strong>Implementation Specific PKC:</strong> Read special Pages used to
+give access e.g. Data Usage Agreements, Permission
+Agreements</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Aqua Verification Library</strong> to be able to verify incoming and
+outgoing data</p>
+<ul>
+<li>implementation of the &#x27;external-verifier&#x27; in e.g. GO, Typescript
+or Javascript (current)</li>
+</ul>
+</li>
+<li>
+<p>Account-Registry (Holding the list of trusted keys and the
+relationship between them)</p>
+<ul>
+<li>This includes defined &#x27;trusted accounts&#x27;</li>
+</ul>
+</li>
+<li>
+<p>Session-Handler/Registry (Acts like Stateful-Firewall on the
+page-object level to mange imports / exports). The Guardian verifies
+incoming and outgoing data and constructs sessions based on it.</p>
+</li>
+<li>
+<p>Guardian Policies: Are sets of rules followed and enforced by the
+Guardian. This includes set of rules used to protect the domain from
+unauthorized operations and access. Part of that are page access
+permissions which are managed by the <a title="wikilink" href="/docs/v1/Protocol/Data_Usage_Agreement">Data Usage
+Agreements</a>.</p>
+<ul>
+<li><code>&lt;domain_id&gt;&lt;account&gt;&lt;genesis_hash&gt;&lt;revision_hash&gt;</code>:<code>&lt;domain_id&gt;&lt;account&gt;&lt;genesis_hash&gt;&lt;revision_hash&gt;</code></li>
+</ul>
+</li>
+<li>
+<p>Transport Layer API&#x27;s / Sub-Modules for connectivity to distributed
+services</p>
+<ul>
+<li>The Guardian-to-Guardian communication handler (via DNS/HTTPS
+transport)</li>
+<li>Ethereum Integration, Ethereum Handler (As a witness Network)</li>
+<li>Matrix Integration, Matrix Handler (As a restrictive/
+permissioned transport layer)</li>
+<li>Schwarm Integration, Swarm Handler (As a publishing network)</li>
+</ul>
+</li>
+</ul>
+<h1>Guardian-Integration-Services</h1>
+<p>The Guardian has a modular design to support integration with many services and
+transport layers.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="web-https--dns-integration-goal-have-a">Web (HTTPS / DNS) Integration Goal: Have a<a href="#web-https--dns-integration-goal-have-a" class="hash-link" aria-label="Direct link to Web (HTTPS / DNS) Integration Goal: Have a" title="Direct link to Web (HTTPS / DNS) Integration Goal: Have a">​</a></h2>
+<p>handler to connect web-facing Guardians with each other in a safe way. Be able
+to run guardian procedures via two public Facing guardians which use a public
+DNS name and HTTPS to interconnect with each other. Guardian procedures are:
+Guardian handshakes to establish trust or remove trust Request or Send portable
+Hash-Chains based on access rights between each other</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ethereum-node">Ethereum Node<a href="#ethereum-node" class="hash-link" aria-label="Direct link to Ethereum Node" title="Direct link to Ethereum Node">​</a></h2>
+<p>Integration Goal: Connect to a self-hosted or remote Ethereum Node. Option 1:
+Configuration via Alchemy (Providing Keys) via Special<!-- -->:DataAccountingConfig<!-- -->
+Option 2: Implementation of Ethereum Node via ./setup --ethereum-node (provide
+container) Configuration of Connection to RPC Ethereum node via address (if in
+same network) The Wallet can be directly be connected to a local Ethereum node
+via RPC to avoid meta-data gathering of large providers, like INFURA which
+could potential track which IP address has created which Ethereum Transaction
+with which Metamask-Wallet, leading to a de-pseudonymousation of the user. ###
+Ethereum Node Handler Goal: Accelerate lookups of the Guardian via caching
+Every-time a witness contract is called, the Ethereum Node Handler will start
+to cache the all Ethereum-Witness events of that Witness-Contract and Index
+them in it&#x27;s database. This will reduce access times to ms vs potential seconds
+in lookup times, making the Guardian more performant and responsive. ## Matrix
+Node Integration Goal: Connect to a self-hosted or remote synapse-server
+(MATRIX) Node. Configure a remote matrix server or a local one via Guardian.
+Implementation of Matrix-Node deployment via ./pkc setup --matrix-node (provide
+container).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="matrix-node-handler">Matrix Node Handler<a href="#matrix-node-handler" class="hash-link" aria-label="Direct link to Matrix Node Handler" title="Direct link to Matrix Node Handler">​</a></h3>
+<p>Context: We use Ethereum Wallets as Identity-Anchors as they are globally
+unique addresses (which are collision free) broadly adopted with supported
+hardware ledgers as secure hardware elements with an existing fast moving
+ecosystem for further development. They act as &#x27;web-based&#x27; PGP-like utilities
+which do not need any Blockchain-Interaction for Signing messages and can be
+used as a valuable off-line capable identity anchor. With this step we separate
+Identity and Service; even in case of compromising the computer of the user or
+by having a breach of secrets in the Element-Client the Identity would be safe
+(in case a hardware wallet would be used). This also drastically reduces attack
+surface to phish a users credentials; as there is no Password-Login there is no
+way to steal the password to impersonate the user. All security assumptions of
+the User-Identity come back to the security of his private key. For the
+Kolibri/PKC project this is the foundation for using wallet-addresses as
+Identities to route traffic with matrix bots between PKC&#x27;s. The following
+actions are required to use the Ethereum Wallet as a strong Identity Anchor
+within Matrix.</p>
+<p>This requires the following functionality:</p>
+<ul>
+<li>Register the user via an Ethereum wallet address (successfully piloted by inblockio)</li>
+<li>Detect that it is an Ethereum Wallet-Address; Verify integrity of address with the Ethereum Wallet-Address Checksum (TBD)</li>
+<li>Make username not changeable (Done via Matrix settings,successfully piloted by inblockio)</li>
+<li>Wallet login with Web-Wallet Metamask via OIDC (Open ID Connect) (successfully Piloted by inblockio)</li>
+<li>Verify Ownership of the Wallet by doing an Element-Client side Signature Challenge to the User. Challenge resolved by signing a message with sufficient entropy to not be ever the same (to protect against leakage) with the private key via the Ethereum
+Metamask Webwallet (or a connected Hardware-Wallet)</li>
+<li>Implement a User-to-User request of proof of Identity Users / Server can challenge other users to proof that they hold the private Wallet-Key by triggering the Signature Challenge to the User; After the challenge is done, the requested party is provided with all information to do a manual verification of the signature (the Message which was
+Signed, the Signature, the used method used for the signature)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="matrix-bot">Matrix-BOT<a href="#matrix-bot" class="hash-link" aria-label="Direct link to Matrix-BOT" title="Direct link to Matrix-BOT">​</a></h3>
+<p>Context: The Matrix-Network communicates with the PKC through the Guardian who
+will manage all access to the MediaWiki service. The Guardian uses a Matrix-Bot (to
+handle the communication) and a Matrix-Integration (to be flexible to use a
+private synapse or a remote synapse server) to interact with the Matrix Network
+as a permissioned transport layer.</p>
+<p>Referenz-Implementation:
+Suitable options for a matrix-integration are &#x27;go-lang&#x27; or &#x27;rust&#x27;. Guardian
+next generation Guardian will be written in Rust, so integration of security
+relevant components would be preferably in Rust and Webassambly. A central
+point to configure the guardian to connect to matrix and other services needs
+to be provided. The matrix server is connected to the guardian with a service
+bot which is able to open rooms to exchange revisions between PKC’s.</p>
+<p>Required Functionality of the Matrix-Bot:</p>
+<ul>
+<li>open new room for user (required) - to share resource invite / remove other
+users to/ from room (required) - to set permissions who can read</li>
+<li>shared resource close room (required) - after resource share is revoked join a
+room the user is invited too (by other matrix-bot)
+*&#x27;accept invite&#x27; check for
+challenge (provided via text from remote Guardian), leave room if challenge is
+faulty and block user (required) delete? room / delete history?
+Note: Use matrix only as channel not as storage (optional) preferably the
+history of the channel is not kept</li>
+<li>post content of (mediawiki API query results from the Guardian) into a room</li>
+<li>(required) read content of room (send it to the Guardian for verification,
+before it&#x27;s send to the import API) (required)</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/inblockio/versioned_docs/version-1.1.0/Protocol/guardian.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/v1/Protocol/design-principles"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Design Principles</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/v1/Protocol/immutable-hyperlinks"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Immutable Hyperlinks</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#how" class="table-of-contents__link toc-highlight">How</a></li><li><a href="#permission-agreements--data-usage-agreement--access-rights" class="table-of-contents__link toc-highlight"><strong>Permission Agreements</strong> / Data Usage Agreement / Access Rights</a></li><li><a href="#domain-handshake" class="table-of-contents__link toc-highlight">Domain Handshake</a></li><li><a href="#example-sharing-a-file" class="table-of-contents__link toc-highlight">Example: Sharing a File</a><ul><li><a href="#specifications" class="table-of-contents__link toc-highlight">Specifications:</a></li></ul></li><li><a href="#web-https--dns-integration-goal-have-a" class="table-of-contents__link toc-highlight">Web (HTTPS / DNS) Integration Goal: Have a</a></li><li><a href="#ethereum-node" class="table-of-contents__link toc-highlight">Ethereum Node</a><ul><li><a href="#matrix-node-handler" class="table-of-contents__link toc-highlight">Matrix Node Handler</a></li><li><a href="#matrix-bot" class="table-of-contents__link toc-highlight">Matrix-BOT</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/v2/prologue">Docs</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://matrix.to/#/#aqua-community:matrix.jembawan.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Matrix<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/aqua" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/inblockio" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/inblockio" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">© 2024 AQUA Protocol. All right reserved.</div></div></div></footer></div>
+</body>
+</html>
