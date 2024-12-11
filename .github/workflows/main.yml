@@ -46,13 +46,13 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/docusaurus' }}
+        if: ${{ github.ref == 'refs/heads/gh-pages-docusaurus' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           exclude_assets: '.github,README.md'
           keep_files: false
-          publish_branch: docusaurus
+          publish_branch: gh-pages-docusaurus
           cname: aqua-protocol.org
   codespell:
     runs-on: ubuntu-latest
