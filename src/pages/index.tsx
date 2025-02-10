@@ -18,7 +18,8 @@ export function HomepageHeader() {
           Welcome to the AQUA Protocol!
         </Heading>
         <p className="hero__subtitle">
-          A simple and novel approach to prove integrity of data, authorship, and time!
+          Notarize & Verify in seconds using Aqua notarization software.
+          An open, private and decentralised solution for notarization!
         </p>
         <div className={styles.buttons}>
           <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/docs/v2/prologue">
