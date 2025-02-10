@@ -19,11 +19,11 @@ const FeatureList: FeatureItem[] = [
     icon: <FaAppStoreIos size={'40px'} />,
     description: (
       <>
-        Personal Knowledge Container (PKC) is the reference implementation of AQUA Protocol.
+        Aquafier is a reference implementation of AQUA Protocol. Upload, verify and notarize any file.
       </>
     ),
-    link: "https://pkc.inblock.io/",
-    linkLabel: "Try PKC now",
+    link: "https://aquafier.inblock.io/",
+    linkLabel: "Try Aquafier now",
   },
   {
     title: 'Contributions welcome!',
