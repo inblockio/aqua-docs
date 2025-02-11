@@ -3,7 +3,7 @@ name: Deploy Docusaurus
 on:
   push:
     branches:
-      - docusaurus  # Trigger the workflow when pushing to main
+      - docusaurus  # Trigger the workflow when pushing to 'docusaurus' branch
 
 jobs:
   deploy:
@@ -13,15 +13,31 @@ jobs:
       - name: Checkout docusaurus branch
         uses: actions/checkout@v3
         with:
-          fetch-depth: 1  # Only fetch latest commit
+          fetch-depth: 1  # Only fetch the latest commit
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install dependencies
         run: |
-          npm install
+          if [ -e package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
 
-      - name: Build Docusaurus
-        run: |
-          npm run build
+      - name: Build Docusaurus site
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

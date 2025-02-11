@@ -15,7 +15,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Aquafier Demo Test',
+    title: 'Aquafier Demo',
     icon: <FaAppStoreIos size={'40px'} />,
     description: (
       <>
