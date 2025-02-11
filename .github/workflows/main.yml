@@ -49,7 +49,7 @@ jobs:
         if: ${{ github.ref == 'refs/heads/gh-pages-docusaurus' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./
           exclude_assets: '.github,README.md'
           keep_files: false
           publish_branch: gh-pages-docusaurus
