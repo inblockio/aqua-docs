@@ -1,0 +1,33 @@
+name: Deploy Docusaurus
+
+on:
+  push:
+    branches:
+      - docusaurus  # Trigger the workflow when pushing to main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1  # Only fetch latest commit
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Build Docusaurus
+        run: |
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build  # Docusaurus outputs static files to 'build/'
+          publish_branch: gh-pages-docusaurus  # Push to this branch
+          cname: aqua-protocol.org
+          keep_files: true  # Optional: Keep old files
