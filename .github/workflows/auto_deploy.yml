@@ -27,7 +27,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Docusaurus outputs static files to 'build/'
+          publish_dir: ./build  # Docusaurus outputs static files to 'build/'
           publish_branch: gh-pages-docusaurus  # Push to this branch
           cname: aqua-protocol.org
-          keep_files: true  # Optional: Keep old files
+          keep_files: false  # Optional: Keep old files
