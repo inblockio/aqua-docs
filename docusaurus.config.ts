@@ -56,6 +56,11 @@ const config: Config = {
               path: 'v2',
               banner: 'none',
             },
+            '1.3.2': {
+              label: 'v1.3.2',
+              path: '1.3.2',
+              banner: 'none',
+            },
           }
         },
         blog: {
