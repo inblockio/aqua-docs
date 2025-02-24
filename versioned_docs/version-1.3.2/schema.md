@@ -5,11 +5,7 @@ menu:
     weight: 10
 ---
 
-Below is the documentation for the schema based on the provided JSON content. It outlines the four types of revisions (`file`, `content`, `signature`, and `witness`) and their respective properties.
-
-
-
-# Schema Documentation
+Below is the documentation for the schema based on the provided JSON content. It outlines the four types of revisions (`file`, `content`, `signature`, `witness` and `form`) and their respective properties.
 
 This schema defines a structure for managing revisions of a file, including its content, signatures, and witness records. Each revision is uniquely identified by a hash and contains metadata specific to its type.
 
