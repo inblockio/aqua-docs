@@ -3,14 +3,14 @@ name: Deploy Docusaurus
 on:
   push:
     branches:
-      - docusaurus  # Trigger the workflow when pushing to 'docusaurus' branch
+      - main  # Trigger the workflow when pushing to 'main' branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout docusaurus branch
+      - name: Checkout main branch
         uses: actions/checkout@v3
         with:
           fetch-depth: 1  # Only fetch the latest commit
