@@ -2,6 +2,19 @@
 
 Check out aqua docs [here](https://aqua-protocol.org/docs)
 
+Contribution:
+- To add a new page you go to the versioned docs folder and select the version you want to add to.
+- Creaste a new page "My new page.md"
+- If you want to give a page a specific title use the title metadata tag
+```markdown
+---
+title: "Version 3.2"
+menu:
+  main:
+    weight: 10
+---
+```
+
 ## GitHub Actions
 Any changes pushed to main-branch will trigger an automatic build and publishing to https://aqua-protocol.org/docs.
 
