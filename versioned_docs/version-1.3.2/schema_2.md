@@ -1,37 +1,54 @@
 ---
-title: "Schema"
+title: "Schema (v3.2)"
 menu:
   main:
     weight: 10
 ---
 
-The shema documentation below outlines the five types of revisions (`file`, `content`, `signature`, `witness` and `form`) and their respective properties.
+The shema documentation below outlines the five types of revisions (`file`, `content`, `signature`, `witness`,`link` and `form`) and their respective properties.
 
 This schema defines a structure for managing revisions of a file, including its content, signatures, and witness records. Each revision is uniquely identified by a hash and contains metadata specific to its type.
 
 
 ## Revisions
 
-The `revisions` object contains all revisions, each identified by a unique hash. There are four types of revisions:
+The `revisions` is identified by a unique hash which is also used to verify the integrity of the revision. 
+It also acts as a globally unique identifier for the revision enabling usage as a name-system.
 
-1. **File Revision**
+There are different types of revisions:
+
+1. **Content Revision**
 2. **Signature Revision**
 3. **Witness Revision**
-4. **Content Revision**
+4. **Link Revision**
+5. **Form Revision**
 
-Each revision type has specific properties, as described below.
+Each revision type has specific properties, as described below. 
+They also share specific properties which are common to all revisions. These are:
+- **`previous_verification_hash`**: (String) The hash of the previous revision in the chain. Empty for the first revision.
+- **`local_timestamp`**: (String) The UTC timestamp of the revision in `YYYYMMDDHHMMSS` format.
+- **`revision_type`**: (String) The type of revision.
+- **`version`**: (String) The schema version and hashing method used.
 
+The hashing method is currently SHA256 and the schema version is `https://https://https://aqua-protocol.org/docs/v3/schema_2`.
+There are two methdos which are used:
+- Scalar: which is a simple hash of the stringified revision object. This is the default method for performance reasons.
+- Tree: the revision object sorts it key-values alphabetically and then creates a merkle tree of all the values. 
+  This allows a more granular verification. This is used for e.g. selective disclosure.
 
-### 1. File Revision
+### 1. Content Revision
 
-A **File Revision** represents the initial or updated state of a file. It includes metadata about the file and its hash.
+A **Content Revision** represents the initial or updated state of a file which is secured by the Aqua-Protocol. It includes metadata about the file: its hash and index.
+The index is a mutable part of the datastructure, it allows to update file location and the services which handels the file.
 
 #### Properties:
-- **`previous_verification_hash`**: (String) The hash of the previous revision in the chain. Empty for the first revision.
-- **`local_timestamp`**: (String) The timestamp of the revision in `YYYYMMDDHHMMSS` format.
-- **`revision_type`**: (String) The type of revision, always `"file"` for this type.
+- **`previous_verification_hash`**: (String) The hash of the previous revision in the chain. Empty for the first revision (genesis revision).
+- **`local_timestamp`**: (String) The UTC timestamp of the revision in `YYYYMMDDHHMMSS` format. 
+  Its a local timestamp of the server running the aqua-service. For cryptographically secured timestamps the witness revision is used.
+- **`revision_type`**: (String) The type of revision, always `"content"` for this type.
 - **`file_hash`**: (String) The hash of the file content.
-- **`file_nonce`**: (String) A unique nonce associated with the file.
+- **`file_nonce`**: (String) A unique nonce associated with the file. 
+  This is used to ensure that additional entropy is added to the hash to make it globallyunique.
 - **`version`**: (String) The schema version and hashing method used.
 
 #### Example:
@@ -42,7 +59,7 @@ A **File Revision** represents the initial or updated state of a file. It includ
   "revision_type": "file",
   "file_hash": "bd2e8e2a1b3c5d008e1d43ecb11105f42c5ad4e05922bab98981840b636c661e",
   "file_nonce": "65eddd0e16a995170dbef8feaf86a7928678426f20a309bb6627887915c04efb",
-  "version": "aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
+  "version": "https://https://https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
 }
 ```
 
@@ -57,7 +74,8 @@ A **Signature Revision** represents a digital signature applied to a file revisi
 - **`signature`**: (String) The digital signature.
 - **`signature_public_key`**: (String) The public key of the signer.
 - **`signature_wallet_address`**: (String) The wallet address of the signer.
-- **`signature_type`**: (String) The type of signature (e.g., `"ethereum:eip-191"`).
+- **`signature_type`**: (String) The type of signature (e.g., `"ethereum:eip-191"`). 
+  This allows for different signature types to be added to Aqua Protocol.
 - **`version`**: (String) The schema version and hashing method used.
 
 #### Example:
@@ -70,7 +88,7 @@ A **Signature Revision** represents a digital signature applied to a file revisi
   "signature_public_key": "0x0380a77a1a6d59be5c10d7ee5e10def79283938bb8a60025d0fe5404e650e8ccc1",
   "signature_wallet_address": "0x568a94a8f0f3dc0b245b853bef572075c1df5c50",
   "signature_type": "ethereum:eip-191",
-  "version": "aqua-protocol.org/docs/schema/v1.3.2 | SHA256 | Method: scalar"
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
 }
 ```
 
@@ -97,7 +115,7 @@ A **Witness Revision** represents a record of a witness event, such as a blockch
   "previous_verification_hash": "0x115d8604f5c689602b7703ce5f4c1ba59a731c9c1a3798cbd2d205df1e772ebd",
   "local_timestamp": "20250224154506",
   "revision_type": "witness",
-  "version": "aqua-protocol.org/docs/schema/v1.3.2 | SHA256 | Method: scalar",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
   "witness_merkle_root": "0x115d8604f5c689602b7703ce5f4c1ba59a731c9c1a3798cbd2d205df1e772ebd",
   "witness_timestamp": 1740411910,
   "witness_network": "sepolia",
@@ -132,7 +150,7 @@ A **Content Revision** represents the actual content of a file. It includes the 
   "content": "GNU GENERAL PUBLIC LICENSE...",
   "file_hash": "bd7aec058dde7038fa2e88607ca870bd88da53e6fc32d6c0f8674b59419c061b",
   "file_nonce": "2da1dc9f782e9f489c35cbd01413399f7c8ac14b3deea6c428b2380dbc7af725",
-  "version": "aqua-protocol.org/docs/schema/v1.3.2 | SHA256 | Method: scalar"
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
 }
 ```
 
@@ -211,7 +229,7 @@ Below is a complete example on how Aquatree looks like
       "revision_type": "file",
       "file_hash": "bd2e8e2a1b3c5d008e1d43ecb11105f42c5ad4e05922bab98981840b636c661e",
       "file_nonce": "65eddd0e16a995170dbef8feaf86a7928678426f20a309bb6627887915c04efb",
-      "version": "aqua-protocol.org/docs/schema/v1.3.2 | SHA256 | Method: scalar"
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
     },
     "0x115d8604f5c689602b7703ce5f4c1ba59a731c9c1a3798cbd2d205df1e772ebd": {
       "previous_verification_hash": "0xe2922c4c80060a035fa7ace36ed7d9e32aa901382b5651e9f68354bc1bc9edb4",
@@ -221,13 +239,13 @@ Below is a complete example on how Aquatree looks like
       "signature_public_key": "0x0380a77a1a6d59be5c10d7ee5e10def79283938bb8a60025d0fe5404e650e8ccc1",
       "signature_wallet_address": "0x568a94a8f0f3dc0b245b853bef572075c1df5c50",
       "signature_type": "ethereum:eip-191",
-      "version": "aqua-protocol.org/docs/schema/v1.3.2 | SHA256 | Method: scalar"
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
     },
     "0x121a8e95204fafdd18fb1ea1287c278693f48b28d88e341f86e3c336e9731eab": {
       "previous_verification_hash": "0x115d8604f5c689602b7703ce5f4c1ba59a731c9c1a3798cbd2d205df1e772ebd",
       "local_timestamp": "20250224154506",
       "revision_type": "witness",
-      "version": "aqua-protocol.org/docs/schema/v1.3.2 | SHA256 | Method: scalar",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
       "witness_merkle_root": "0x115d8604f5c689602b7703ce5f4c1ba59a731c9c1a3798cbd2d205df1e772ebd",
       "witness_timestamp": 1740411910,
       "witness_network": "sepolia",
@@ -245,7 +263,7 @@ Below is a complete example on how Aquatree looks like
       "content": "GNU GENERAL PUBLIC LICENSE...",
       "file_hash": "bd7aec058dde7038fa2e88607ca870bd88da53e6fc32d6c0f8674b59419c061b",
       "file_nonce": "2da1dc9f782e9f489c35cbd01413399f7c8ac14b3deea6c428b2380dbc7af725",
-      "version": "aqua-protocol.org/docs/schema/v1.3.2 | SHA256 | Method: scalar"
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
     }
   },
   "file_index": {

@@ -5,7 +5,11 @@ menu:
     weight: 10
 ---
 
-## REST API Specification for Aqua-Protocol (Version 3.2-1)
+## REST API Specification for Aqua-Protocol Version 3
+
+REST APIs are used to interact with the Aqua-Protocol in Client-Server applications.
+This includes data syncing and exchange operations between different aqua-services.
+Early versions of this API where prototypes within the PKC-Guardian project.
 
 ## Base URL
 /aqua/v3/
