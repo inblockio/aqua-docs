@@ -1,5 +1,5 @@
 ---
-title: "Version 1.3.2"
+title: "Aqua Protocol Version 3"
 menu:
   main:
     weight: 10
@@ -7,5 +7,4 @@ menu:
 
 The following are documentation used to understand the AQUA Protocol and it's
 implementations. AQUA is heavily under development at the moment and is evolving
-rapidly.
 rapidly.
