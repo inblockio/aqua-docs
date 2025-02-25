@@ -39,7 +39,7 @@ menu:
 
 ### 1. Get Aqua Tree Latest
 - **Method**: `GET`
-- **Path**: `/trees/{revisionHash}/latest`
+- **Path**: `/trees/:revisionHash/latest`
 - **Description**: Retrieves all latest revision hashes across all branches of the tree starting from the genesis hash.
 - **Query Params**:
   - `includeMetadata` (boolean, default: `false`): Include full revision details.
@@ -73,7 +73,7 @@ Status Codes:
 
 ## Get Aqua Tree Branch
 - **Method**: `GET`
-- **Path**: `/trees/{revisionHash}/branch`
+- **Path**: `/trees/:revisionHash/branch`
 - **Description**: Retrieves the branch from the specified hash back to the genesis hash (backward traversal only).
 - **Query Params**:
   - `page` (int, optional, default: `1`): Pagination page.
@@ -107,7 +107,7 @@ Status Codes:
 
 ## Get Aqua Tree Revision
 - **Method**: `GET`
-- **Path**: `/trees/{revisionHash}`
+- **Path**: `/trees/:revisionHash`
 - **Description**: Retrieves details of a specific revision.
 - **Response**:
   ```json
@@ -286,7 +286,7 @@ Integrity: Return the file’s hash in the response headers (e.g., Content-MD5 o
 Efficiency: Stream the file content to handle large sizes without loading everything into memory.
 
 - **Method**: `GET`
-- **Path**: `/files/{fileHash}`
+- **Path**: `/files/:fileHash`
 - **Description**: Retrieves the file object associated with the specified file hash. Supports large files via streaming and partial content delivery.
 - **Query Params**:
   - None required; optional params like `download` (boolean) could be added later for forcing downloads vs. inline display.
@@ -334,7 +334,7 @@ Efficiency: Stream the file content to handle large sizes without loading everyt
   - Large files are streamed to avoid memory overload; range support enables resumable downloads.
 
 Explanation
-- **Path**: /files/{fileHash} keeps it intuitive and consistent with /trees/{revisionHash}.
+- **Path**: /files/:fileHash keeps it intuitive and consistent with /trees/:revisionHash.
 - **Range Support**: Using the Range header and 206 Partial Content status allows clients to fetch large files in chunks, critical for scalability and reliability (e.g., resuming interrupted downloads).
 - **Integrity**: The X-File-Hash header echoes the file’s hash back, letting clients confirm the delivered content matches the request. This is lightweight and leverages standard HTTP practices.
 - **Streaming**: The response body is streamed, ensuring the server can handle large files without buffering everything in memory.
