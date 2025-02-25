@@ -1,0 +1,49 @@
+name: Deploy Docusaurus
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow when pushing to 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1  # Only fetch the latest commit
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: |
+          if [ -e package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Build Docusaurus site
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build  # Docusaurus outputs static files to 'build/'
+          publish_branch: gh-pages-docusaurus  # Push to this branch
+          cname: aqua-protocol.org
+          keep_files: false  # Optional: Keep old files

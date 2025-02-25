@@ -1,38 +1,27 @@
-Aqua Docs
-=========
+# Aqua Docs
 
-This documentation gives context to the Aqua Protocol. 
+Check out aqua docs [here](https://aqua-protocol.org/docs)
 
-- [https://aqua-protocol.org](https://aqua-protocol.org)
-
+Contribution:
+- To add a new page you go to the versioned docs folder and select the version you want to add to.
+- Creaste a new page "My new page.md"
+- If you want to give a page a specific title use the title metadata tag
+```markdown
 ---
-
-## Deploying To Server
-
-1. Install Hugo static site generator:
-
-- [Install Hugo](https://gohugo.io/getting-started/installing/)
-
-2. Install webserver of choice. configure certs, etc...
-3. Configure webserver to point at HTML directory `aqua-protocol.org/`
-4. Clone this repo
-
-```
-$ git clone https://github.com/inblockio/aqua-docs/ aqua-docs
-```
-
-5. Build the HTML site
-
-```
-$ cd aqua-docs
-$ hugo -d ../path/to/aqua-protocol.org/
-```
-
-Site should be compiled and viewable.
-
+title: "Version 3.2"
+menu:
+  main:
+    weight: 10
 ---
+```
 
-Build with following technologies:
+## GitHub Actions
+Any changes pushed to main-branch will trigger an automatic build and publishing to https://aqua-protocol.org/docs.
 
-- [Hugo](https://gohugo.io)
-- [Docsy Theme](https://example.docsy.dev/)
+## Local Build & Installation
+If you want to run it locally for testing you can do:
+
+```bash
+npm i & npm start & npm run build
+```
+This will start up a local test-instance on localhost:3000
