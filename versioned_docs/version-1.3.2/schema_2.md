@@ -266,3 +266,7 @@ Below is a complete example on how Aquatree looks like
 ```
 
 The above is a comprehensive overview of the schema and its components. 
+
+## Open Todos for the Schema
+- Add documentation for linked revisions
+- Add documentation for form revisions
