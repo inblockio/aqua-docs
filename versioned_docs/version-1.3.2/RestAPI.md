@@ -1,5 +1,5 @@
 ---
-title: "Aqua Protocol Version 3"
+title: "Rest API"
 menu:
   main:
     weight: 10
@@ -8,7 +8,7 @@ menu:
 ## REST API Specification for Aqua-Protocol (Version 3.2-1)
 
 ## Base URL
-/aqua/v3.2-1/
+/aqua/v3/
 
 
 ## Authentication
