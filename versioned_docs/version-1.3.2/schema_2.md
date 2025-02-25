@@ -42,7 +42,7 @@ A **File Revision** represents the initial or updated state of a file. It includ
   "revision_type": "file",
   "file_hash": "bd2e8e2a1b3c5d008e1d43ecb11105f42c5ad4e05922bab98981840b636c661e",
   "file_nonce": "65eddd0e16a995170dbef8feaf86a7928678426f20a309bb6627887915c04efb",
-  "version": "aqua-protocol.org/docs/schema/v1.3.2 | SHA256 | Method: scalar"
+  "version": "aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
 }
 ```
 

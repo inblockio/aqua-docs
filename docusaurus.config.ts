@@ -57,8 +57,8 @@ const config: Config = {
               banner: 'none',
             },
             '1.3.2': {
-              label: 'v1.3.2',
-              path: '1.3.2',
+              label: 'v3',
+              path: 'v3',
               banner: 'none',
             },
           }
