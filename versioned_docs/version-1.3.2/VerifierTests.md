@@ -1,5 +1,5 @@
 ---
-title: "Verifier Tests | Schema Version: 3.2"
+title: "Verifier Tests"
 menu:
   main:
     weight: 10
