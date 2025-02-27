@@ -7,34 +7,42 @@ menu:
 
 The shema documentation below outlines the five types of revisions (`file`, `content`, `signature`, `witness`,`link` and `form`) and their respective properties.
 
-This schema defines a structure for managing revisions of a file, including its content, signatures, and witness records. Each revision is uniquely identified by a hash and contains metadata specific to its type.
-
+This schema defines a structure for atomic revisions of aqua secured files.
+Each revision is uniquely identified by a hash and contains metadata specific to its type.
 
 ## Revisions
 
-The `revisions` is identified by a unique hash which is also used to verify the integrity of the revision. 
-It also acts as a globally unique identifier for the revision enabling usage as a name-system.
+The `revision` is identified by a unique hash which is also used to verify the integrity of the revision. 
+It acts as a globally unique identifier. Unique identifiers are used as unique references to link revisions together or to perform operations on them (transport, access control, etc.).
 
-There are different types of revisions:
+There are four main types of revisions:
 
 1. **Content Revision**
+  1.1 **Form Revision** (a special type of content revision for layer 2 applications)
 2. **Signature Revision**
 3. **Witness Revision**
 4. **Link Revision**
-5. **Form Revision**
 
-Each revision type has specific properties, as described below. 
-They also share specific properties which are common to all revisions. These are:
+All revision types share properties which are common forming a hash-chain. These are:
 - **`previous_verification_hash`**: (String) The hash of the previous revision in the chain. Empty for the first revision.
 - **`local_timestamp`**: (String) The UTC timestamp of the revision in `YYYYMMDDHHMMSS` format.
 - **`revision_type`**: (String) The type of revision.
 - **`version`**: (String) The schema version and hashing method used.
 
-The hashing method is currently SHA256 and the schema version is `https://https://https://aqua-protocol.org/docs/v3/schema_2`.
-There are two methdos which are used:
-- Scalar: which is a simple hash of the stringified revision object. This is the default method for performance reasons.
-- Tree: the revision object sorts it key-values alphabetically and then creates a merkle tree of all the values. 
+In addition each revision type has specific properties outlined below.
+
+### Hashing Method
+The hashing method used is SHA256.
+
+There are two hashing methods used:
+- **`Scalar`**: which is a simple hash of the stringified revision object. This is the default method for performance reasons.
+- **`Tree`**: the revision object sorts it key-values alphabetically and then creates a merkle tree of all the values. 
   This allows a more granular verification. This is used for e.g. selective disclosure.
+
+### Hash Security
+The system is designed to allow for the hash algorithm to be exchangable.
+Same applies to any other cryptographic cyphers being used (e.g. signatures) to ensure post-quantum security.
+Any type is modular, allowing for new subtypes to be introduced with different cyphers.
 
 ### 1. Content Revision
 
@@ -56,7 +64,7 @@ The index is a mutable part of the datastructure, it allows to update file locat
 {
   "previous_verification_hash": "",
   "local_timestamp": "20250224154438",
-  "revision_type": "file",
+  "revision_type": "content",
   "file_hash": "bd2e8e2a1b3c5d008e1d43ecb11105f42c5ad4e05922bab98981840b636c661e",
   "file_nonce": "65eddd0e16a995170dbef8feaf86a7928678426f20a309bb6627887915c04efb",
   "version": "https://https://https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
