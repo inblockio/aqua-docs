@@ -69,3 +69,12 @@ These tests ensure consistency across `revisions`, `file_index`, `tree`, and `tr
   - A revision referenced by revision type `link` MUST exist and be valid in the pool of all verified revisions.  
   - Implementations MUST reject links to invalid or missing revisions and throw an revision not found error.
 
+- **RL-03: Loop Detection**  
+  - Implementations MUST have a loop detection mechanism.
+
+- **RL-04: Fork Detection**  
+  - Implementations MUST have a fork detection mechanism to output deterministic results.
+
+- **RL-05: Timestamp Order**  
+  - Implementations MUST have a timestamp plausibility check accross revisions for local timestamps 
+  - Implementations MUST have a timestamp plausibility check for cryptographic timestamps (Witness events)
