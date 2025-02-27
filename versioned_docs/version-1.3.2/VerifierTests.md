@@ -26,19 +26,19 @@ These tests ensure each revision object in `revisions` is independently valid. T
   - Implementations MUST reject revisions missing these fields or containing empty strings for `local_timestamp`, `revision_type`, or `version`.  
   - `local_timestamp` MUST be in YYYYMMDDHHMMSS format and MUST represent a valid UTC time after 2020-01-01 00:00:00.  
 
-- **RV-04: File Revision Integrity**  
+- **RV-03: File Revision Integrity**  
   - A `revision_type` of `"file"` MUST include `file_hash` and `file_nonce`.  
   - The `file_hash` MUST equal the SHA256 hash of either:  
     - The referenced file content concatenated with `file_nonce`, OR  
     - The OPTIONAL `content` field (serialized file data) concatenated with `file_nonce`, if present.  
   - Implementations MUST reject revisions where `file_hash` does not match either computation.  
 
-- **RV-05: Signature Verification | Signature Type: ethereum:eip-191**  
+- **RV-04: Signature Verification | Signature Type: ethereum:eip-191**  
   - A `revision_type` of `"signature"` MUST include `signature`, `signature_public_key`, and `signature_wallet_address`.  
   - The `signature` MUST validate against `previous_verification_hash` using `signature_public_key` per `signature_type` `"ethereum:eip-191"` (secp256k1 curve).  
   - Implementations MUST reject invalid signatures.  
 
-- **RV-06: Witness Verification | Witness (Ethereum)**  
+- **RV-05: Witness Verification | Witness (Ethereum)**  
   - A `revision_type` of `"witness"` MUST include `witness_network`, `witness_address`, and `witness_smart_contract_address`.  
   - `witness_network` MUST be one of: `"mainnet"`, `"sepolia"`, `"nostr"`, or `"TSA_RFC3161"`. Other values MUST be rejected.  
   - `witness_merkle_root`, if present, MUST be the valid Merkle root hash derived from `witness_merkle_proof`.  
@@ -48,13 +48,13 @@ These tests ensure each revision object in `revisions` is independently valid. T
   - `witness_merkle_proof`, if present, MUST be a valid Merkle proof including `previous_verification_hash` as a leaf.  
   - Implementations MUST reject witness revisions failing these checks.  
 
-- **RV-08: Signature Type Restriction**  
+- **RV-06: Signature Type Restriction**  
   - `signature_type` MUST be one of: `"ethereum:eip-191"` or `"did_key"` for signature revisions. Other values MUST be rejected.  
 
-- **RV-09: Witness Type Restriction**  
+- **RV-07: Witness Type Restriction**  
   - `witness_network` MUST be one of: `"mainnet"`, `"sepolia"`, `"nostr"`, or `"TSA_RFC3161"` for witness revisions. Other values MUST be rejected.  
 
-- **RV-10: Indexed Content Verification**  
+- **RV-08: Indexed Content Verification**  
   - Each key in `file_index` MUST be a valid `file_hash` from a revision with `revision_type` `"file"`.  
   - Implementations MUST reject `file_index` entries referencing invalid or nonexistent `file_hash` values.  
 
