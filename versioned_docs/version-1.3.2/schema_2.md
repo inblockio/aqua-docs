@@ -64,7 +64,7 @@ The index is a mutable part of the datastructure, it allows to update file locat
 {
   "previous_verification_hash": "",
   "local_timestamp": "20250224154438",
-  "revision_type": "content",
+  "revision_type": "file",
   "file_hash": "bd2e8e2a1b3c5d008e1d43ecb11105f42c5ad4e05922bab98981840b636c661e",
   "file_nonce": "65eddd0e16a995170dbef8feaf86a7928678426f20a309bb6627887915c04efb",
   "version": "https://https://https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
@@ -177,9 +177,9 @@ A **Witness Revision** represents a record of a witness event, such as a blockch
 }
 ```
 
-### 4. Content Revision
+### 4. File Revision
 
-A **Content Revision** represents the actual content of a file. It includes the file's content, hash, and nonce.
+A **File Revision** includes the file's content or reference, hash and nonce.
 
 #### Properties:
 - **`previous_verification_hash`**: (String) The hash of the previous revision in the chain.
