@@ -71,6 +71,47 @@ The index is a mutable part of the datastructure, it allows to update file locat
 }
 ```
 
+### 1.1 Form Revision
+
+Form revisions are a special type of content revision for layer 2 applications.
+They are used to create a form that can be signed by the user. 
+
+Native Layer 2 applications are aqua identity and aqua access control.
+The tree verification structure allows for selective disclosure of the form data.
+
+#### Example:
+```json
+"revisions": {
+    "0xd9bc7c36e7b28c6d97c8389881b90e1df163b067b11c69139bf4f24498d5cf92": {
+      "previous_verification_hash": "",
+      "local_timestamp": "20250228211940",
+      "revision_type": "form",
+      "file_hash": "2a3b63fabff884365782f5457c68491852cf8f3cbf9a9ca4bfffb1da8f295407",
+      "file_nonce": "9d68ebcc6b09d3c854c09efec4f872be85deabe436dbae3baa00d4a176b02167",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+      "forms_type": "identity_claim",
+      "forms_name": "John",
+      "forms_surname": "Doe",
+      "forms_email": "john.doe@example.com",
+      "forms_date_of_birth": "1995-10-15",
+      "forms_wallet_address": "0x1234567890abcdef",
+      "leaves": [
+        "1bea26961b7276cb64c432e67852ec2ce634c20c96192036f6da1fd8adfc9168",
+        "ff0edef64dcdf6aafed912534f11d228a88ef6a3f9ef0e5dcd659a131e1a130b",
+        "3b5abc4d1a21b05caa891be0650cf25cea133ddb939b1c45a8282bcab686545a",
+        "dcb7cfdf2bae4a7e558e58dc9a26bc2627f35f2097c38b3e1493693ed3495239",
+        "5122dde9b24bdd39f3eb20f64c18e6a960b6a3320c7cfb7707b8e7de581cc7f2",
+        "28d88a09468f136c21475a121b53c626d1c29902a076b7e94c8a77aaa2a45b37",
+        "15a1e4c78fa31877be47fa99afee32bd426d6bf74c5297f0d1d706b987c528bd",
+        "15df50012dddb9f5b7157aa4dc227b3e1452c19232443ac2b388eeb07a94ec43",
+        "74e6c3c9476b3547c42b157edd3a61571fef4b1b109c8a0170fd146008d639d3",
+        "d781acf7ba880ecae581ffd8debcb4f5cb430bc2f237e27a6098471a9f7ffa60",
+        "43fcaef3dc4b2a2d0550543b638048edcfb710da9276da109a9e011ed1a53ed1",
+        "39ccd407bb105ed3be74df4a546d9b10c4f6c80e48b559102b04fa2b29aa83b4"
+      ]
+    }
+```
+
 ### 2. Signature Revision
 
 A **Signature Revision** represents a digital signature applied to a file revision. It includes the signature, public key, and wallet address of the signer.
