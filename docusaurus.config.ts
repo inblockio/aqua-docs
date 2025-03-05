@@ -42,11 +42,7 @@ const config: Config = {
           editUrl:
             'https://github.com/inblockio',
           versions: {
-            current: {
-              label: 'Current',
-              path: '', // Current version root
-            },
-            '1.1.0': {
+           '1.1.0': {
               label: 'v1',
               path: 'v1',
               banner: 'none',
@@ -100,7 +96,7 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'right',
           label: 'Documentation',
-          href: "/docs/v2/prologue"
+          href: "/docs/v3/intro"
         },
         {
           href: '/community',
