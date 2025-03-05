@@ -121,7 +121,7 @@ const config: Config = {
           items: [
             {
               label: 'Docs',
-              to: '/docs/v2/prologue',
+              to: '/docs/v3/intro',
             },
           ],
         },
