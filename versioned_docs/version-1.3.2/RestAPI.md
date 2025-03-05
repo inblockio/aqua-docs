@@ -5,7 +5,7 @@ menu:
     weight: 10
 ---
 
-## REST API Specification for Aqua-Protocol Version 3 [TEST UPDATE DEPLOY]
+## REST API Specification for Aqua-Protocol Version 3
 
 REST APIs are used to interact with the Aqua-Protocol in Client-Server applications.
 This includes data syncing and exchange operations between different aqua-services.
