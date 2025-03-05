@@ -22,7 +22,7 @@ export function HomepageHeader() {
           An open, private and decentralised solution for notarization!
         </p>
         <div className={styles.buttons}>
-          <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/docs/v2/prologue">
+          <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/docs/v3/intro">
             <span>Documentation</span>
             <FaArrowAltCircleRight />
           </a>
