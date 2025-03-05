@@ -1,5 +1,5 @@
 ---
-title: "AquaIdentity"
+title: "Aqua Identity"
 ---
 
 # Aqua Identity

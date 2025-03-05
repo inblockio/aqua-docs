@@ -1,8 +1,5 @@
 ---
 title: "Verifier Tests"
-menu:
-  main:
-    weight: 10
 ---
 
 ## Overview
