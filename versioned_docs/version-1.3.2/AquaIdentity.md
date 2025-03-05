@@ -1,25 +1,21 @@
----
-title: "Aqua Identity"
----
 # Aqua Identity
-Aqua Identity uses the Aqua-Protocol to provide trusted identity claims and attestations using the Aqua Protocol.
-The Aqua Identity is a layer two application, as it assumes all layer one verification checks have been successfully completed.
-Aqua Identity validity checks MUST be done after all atomic verification checks
-and all relational verification checks have been successfully completed.
 
-## Self authenticated identity claim
-Are the foundational building blocks to the aqua identity system. Any claim starts with a self authenticated identity claim.
+**Aqua Identity** leverages the Aqua Protocol to deliver trusted identity claims and attestations within a secure, decentralized framework. Operating as a layer-two application, it builds upon the foundational verifications completed at layer one, ensuring a robust and reliable identity management system. For an Aqua Identity to be considered valid, all prerequisite atomic and relational verification checks must be successfully completed prior to its issuance. **Atomic verification** refers to the validation of a single revision’s content, ensuring all required checks (e.g., data integrity, format compliance) are met. **Relational verification** examines the relationships between revisions, confirming plausibility of timestamps, consistency of revision hashes (e.g., matching the expected `previous_verification_hash`), and availability of linked resources.
 
-### Verification Conditions:
-For an Identity Claim to be valid, it MUST to be signd by the by the claim issuer.
-Only the owner of the wallet, can issue claims about the wallet.
+## Self-Authenticated Identity Claims
 
+Self-authenticated identity claims form the cornerstone of the Aqua Identity system. These claims originate from individuals asserting their own identity attributes, serving as the initial step in establishing a verifiable identity.
 
-## Example:
-Example JSON input (dictonary for forms):
+### Verification Conditions
+To ensure the validity of a self-authenticated identity claim, the following conditions must be met:
+- **Signature Requirement**: The claim MUST be cryptographically signed by the issuer, who is the owner of the associated wallet.
+- **Ownership Restriction**: Only the wallet owner is authorized to issue claims pertaining to that wallet, ensuring authenticity and accountability.
 
+## Example: Self-Authenticated Identity Claim
 
-```json
+Below is an example of a self-authenticated identity claim represented as a JSON dictionary, encapsulating key personal attributes:
+
+```
 {
     "type": "identity_claim",
     "name": "John",
@@ -30,15 +26,14 @@ Example JSON input (dictonary for forms):
 }
 ```
 
-The JSON is wrapped into an aqua-revision using the "form" type with a tree verification structure.
-The tree verification structure allows for selective disclosure of attributes.
-Allowing the removal of attributes when presenting the claim to third parties without the ability to verify the remaining datastructure.
+This JSON structure is encapsulated within an **Aqua revision** of type `"form"`, utilizing a tree-based verification structure. The tree structure enables **selective disclosure**, allowing the claimant to remove values from specific keys before sharing with third parties, without compromising the ability to verify the remaining fields. This ensures privacy while maintaining the integrity of the claim’s data structure.
 
+### Aqua Revision Example
+The following demonstrates how the identity claim is wrapped into an Aqua revision, including a signature for authentication:
 
-The example shows a valid identity claim with multiple attributes.
-
-```json
-"revisions": {
+```
+{
+    "revisions": {
         "0x5721891d757ee81ab3cd00442293f3808a99e676d2d1bda03cda26bae23daed1": {
             "previous_verification_hash": "",
             "local_timestamp": "20250228083859",
@@ -77,13 +72,20 @@ The example shows a valid identity claim with multiple attributes.
             "signature_type": "ethereum:eip-191",
             "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
         }
+    }
+}
 ```
 
-## Attestation
+This example illustrates a fully formed identity claim with multiple attributes, cryptographically signed to ensure authenticity and integrity.
 
-The input JSON for the aqua form revision:
+## Attestations
 
-``` json
+Attestations enhance the trustworthiness of self-authenticated identity claims by introducing third-party validation. An attestation is issued by an attester who verifies the accuracy of the claim’s attributes against a reliable source, such as a government-issued ID.
+
+### Example: Attestation Input JSON
+Below is an example of the input JSON for an attestation within an Aqua form revision:
+
+```
 {
     "type": "identity_attestation",
     "identity_claim_id": "0x5721891d757ee81ab3cd00442293f3808a99e676d2d1bda03cda26bae23daed1",
@@ -91,25 +93,25 @@ The input JSON for the aqua form revision:
     "surname": "Doe",
     "email": "john.doe@example.com",
     "date_of_birth": "1995-10-15",
-    "context": "I verified the attributes against a government issued ID.
-                I hereby attest that the above information is true and correct to the best of my knowledge.",
+    "context": "I verified the attributes against a government-issued ID. I hereby attest that the above information is true and correct to the best of my knowledge.",
     "wallet_address": "0x6b2f22390c318107e95c58c90a66afaf7ef06853"
 }
 ```
 
-## Verification Conditions:
+### Verification Conditions
+For an attestation to be valid, it MUST satisfy the following requirements:
+- **`forms_type`**: Must be set to `"identity_attestation"`.
+- **`forms_identity_claim_id`**: Must reference the revision hash of the associated identity claim.
+- **`forms_wallet_address`**: Must correspond to the wallet address of the attester.
+- **`forms_context`**: Optional but recommended field providing additional context about the attestation process (e.g., verification method or source), enhancing transparency and trust.
+- **Attribute Overlap**: Must include at least one attribute with an identical key-value pair to the referenced identity claim, ensuring consistency.
 
-The following attributes MUST be present:
-- form_type: identity_attestation
-- form_identity_claim_id: revision hash of referenced identity claim
-- form_wallet_address: must be wallet address of the attester
-- form_context: optional to provide context of the attestation
-- Must have at least one attribute which is identitcal in key value to the identity_claim it references
+### Aqua Revision for Attestation
+The attestation is formalized within an Aqua revision, including both the form and its cryptographic signature:
 
-The Aqua revisions form & signature:
-
-``` json
-"revisions": {
+```
+{
+    "revisions": {
         "0xcd5acfd60283091769c765b05add4fe7bfc6471174264af523de96305d367e46": {
             "previous_verification_hash": "",
             "local_timestamp": "20250228100501",
@@ -152,10 +154,14 @@ The Aqua revisions form & signature:
             "signature_type": "ethereum:eip-191",
             "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
         }
+    }
+}
 ```
-Attesters are in the role, to attest the validity of self authenticted identity claims.
 
+Attesters play a critical role in the Aqua Identity ecosystem, validating self-authenticated claims to enhance their credibility and utility.
 
-Example project:
+## Example Project
 
-https://github.com/inblockio/aqua-identity
+For a practical implementation, refer to the open-source project:
+
+[**Aqua Identity on GitHub**](https://github.com/inblockio/aqua-identity)
