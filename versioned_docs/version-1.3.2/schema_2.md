@@ -14,8 +14,8 @@ It acts as a globally unique identifier. Unique identifiers are used as unique r
 
 There are four main types of revisions:
 
-1. **Content Revision**
-  1.1 **Form Revision** (a special type of content revision for layer 2 applications)
+1. **Content Revision**  
+1.1 **Form Revision** (a special type of content revision for layer 2 applications)
 2. **Signature Revision**
 3. **Witness Revision**
 4. **Link Revision**
