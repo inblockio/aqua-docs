@@ -4,8 +4,11 @@ menu:
   main:
     weight: 10
 ---
-
-Aqua Identity uses the Aqua-Protocol to provide trusted identity claims and attestations using Aqua-Forms and Signatures.
+# Aqua Identity
+Aqua Identity uses the Aqua-Protocol to provide trusted identity claims and attestations using the Aqua Protocol.
+The Aqua Identity is a layer two application, as it assumes all layer one verification checks have been successfully completed.
+Aqua Identity validity checks MUST be done after all atomic verification checks
+and all relational verification checks have been successfully completed.
 
 ## Self authenticated identity claim
 Are the foundational building blocks to the aqua identity system. Any claim starts with a self authenticated identity claim.
