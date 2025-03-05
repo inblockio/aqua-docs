@@ -1,8 +1,5 @@
 ---
 title: "Aqua Identity"
-menu:
-  main:
-    weight: 10
 ---
 # Aqua Identity
 Aqua Identity uses the Aqua-Protocol to provide trusted identity claims and attestations using the Aqua Protocol.
@@ -104,10 +101,10 @@ The input JSON for the aqua form revision:
 
 The following attributes MUST be present:
 - form_type: identity_attestation
-- form_identity_claim_id <revision hash of referenced identity claim>
-- form_wallet_address <must be wallet address of the attester>
+- form_identity_claim_id: revision hash of referenced identity claim
+- form_wallet_address: must be wallet address of the attester
+- form_context: optional to provide context of the attestation
 - Must have at least one attribute which is identitcal in key value to the identity_claim it references
-- form_context <optional to provide context of the attestation>
 
 The Aqua revisions form & signature:
 
