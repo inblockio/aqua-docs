@@ -1,3 +1,7 @@
+---
+title: AquaIdentity
+---
+
 # Aqua Identity
 
 **Aqua Identity** leverages the Aqua Protocol to deliver trusted identity claims and attestations within a secure, decentralized framework. Operating as a layer-two application, it builds upon the foundational verifications completed at layer one, ensuring a robust and reliable identity management system. For an Aqua Identity to be considered valid, all prerequisite atomic and relational verification checks must be successfully completed prior to its issuance. **Atomic verification** refers to the validation of a single revision’s content, ensuring all required checks (e.g., data integrity, format compliance) are met. **Relational verification** examines the relationships between revisions, confirming plausibility of timestamps, consistency of revision hashes (e.g., matching the expected `previous_verification_hash`), and availability of linked resources.
