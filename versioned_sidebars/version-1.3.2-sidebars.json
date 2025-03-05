@@ -24,6 +24,11 @@
       "type": "doc",
       "id": "AquaIdentity",
       "label": "Aqua Identity"
+    },
+    {
+      "type": "doc",
+      "id": "Access Control",
+      "label": "Access Control"
     }
   ]
 }
