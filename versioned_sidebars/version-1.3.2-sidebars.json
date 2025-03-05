@@ -7,8 +7,8 @@
     },
     {
       "type": "doc",
-      "id": "RestAPI",
-      "label": "REST API"
+      "id": "schema_2",
+      "label": "Schema Reference"
     },
     {
       "type": "doc",
@@ -17,8 +17,8 @@
     },
     {
       "type": "doc",
-      "id": "schema_2",
-      "label": "Schema Reference"
+      "id": "RestAPI",
+      "label": "REST API"
     },
     {
       "type": "doc",
