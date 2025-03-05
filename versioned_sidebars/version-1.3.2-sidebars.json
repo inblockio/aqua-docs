@@ -19,6 +19,11 @@
       "type": "doc",
       "id": "schema_2",
       "label": "Schema Reference"
+    },
+    {
+      "type": "doc",
+      "id": "Aqua-Identity.md",
+      "label": "Schema Reference"
     }
   ]
 }
