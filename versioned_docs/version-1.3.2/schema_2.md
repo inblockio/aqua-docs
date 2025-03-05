@@ -1,8 +1,5 @@
 ---
 title: "Schema (v3.2)"
-menu:
-  main:
-    weight: 10
 ---
 
 The shema documentation below outlines the five types of revisions (`file`, `content`, `signature`, `witness`,`link` and `form`) and their respective properties.
