@@ -1,7 +1,6 @@
 ---
 title: "Aqua Protocol Version 3"
 ---
-### Aqua Protocol Version 3
 **Welcome to Aqua: A Cryptographic Trust Protocol for Decentralized Data Integrity**
 
 The Aqua Protocol is a foundational framework for building distributed trust networks. By leveraging hash-chains, cryptographic signatures, and Ethereum-based timestamping, Aqua enables scalable, trustless verification of data integrity and provenance without reliance on centralized authorities. It empowers developers and innovators to create applications that certify, attest, and secure data in an open, private and decentralized way.
