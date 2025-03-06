@@ -8,7 +8,7 @@ The wavs instance will run the aqua-library / rust api calls to verify the aqua-
 If tests pass, the payment is executed.
 
 Flow:
-![Flow](/static/docs_pics/Escrow_Gateway_Aqua.png)
+![Escrow Gateway Aqua](/docs_pics/Escrow_Gateway_Aqua.png)
 
 Example of a check:
 ![Check](https://mycurrencyexchange.com/wp-content/uploads/2020/06/parts-of-a-check-1024x516.jpg)
