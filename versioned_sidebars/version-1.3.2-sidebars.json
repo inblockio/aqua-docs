@@ -30,5 +30,10 @@
       "id": "AccessControl",
       "label": "Access Control"
     }
+    {
+      "type": "doc",
+      "id": "Checks",
+      "label": "Use-Case Checks"
+    }
   ]
 }
