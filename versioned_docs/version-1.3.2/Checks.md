@@ -7,6 +7,8 @@ We use the https://github.com/Lay3rLabs/wavs-demos as a gateway to do all verifi
 The wavs instance will run the aqua-library / rust api calls to verify the aqua-json object.
 If tests pass, the payment is executed.
 
+Github: https://github.com/inblockio/aqua-checks
+
 Flow:
 ![Escrow Gateway Aqua](/docs_pics/Escrow_Gateway_Aqua.png)
 
