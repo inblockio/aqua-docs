@@ -28,14 +28,14 @@ The system mimics a traditional cheque:
 ### 1. Create the Initial Aqua Form (Sender)
 The sender defines the payment in an Aqua JSON object:
 
-###json
+´´´json
 {
   "sender": "0xbdc64c49bf736cfe1b8233b083d3d632f26feb27",
   "receiver": "",
   "amount": "0.3",
   "currency": "ETH"
 }
-###
+´´´
 
 - **`sender`**: Ethereum address of the payer.
 - **`receiver`**: Left blank initially (filled by the receiver later).
@@ -48,14 +48,14 @@ The sender signs the JSON using an Ethereum EIP-191 signature. This is appended 
 ### 3. Receiver Updates the Form
 The receiver adds their address to the JSON:
 
-###json
+´´´json
 {
   "sender": "0xbdc64c49bf736cfe1b8233b083d3d632f26feb27",
   "receiver": "0x4a79b0d4b8feda7af5902da2d15d73a7e5fdefd4",
   "amount": "0.3",
   "currency": "ETH"
 }
-###
+´´´
 
 ### 4. Receiver Signs the Form
 The receiver signs the updated JSON, also using EIP-191, completing the cheque.
@@ -105,7 +105,7 @@ curl -X POST https://wavs-instance.example.com/verify \
 
 Aqua tracks changes and signatures in a revision tree. Below is an example of a fully signed cheque:
 
-###json
+´´´json
 {
   "revisions": {
     "0xd453ccae56945ce381f1adb57feef37ba77e215604fe078faa2d9527159c9c76": {
@@ -148,7 +148,7 @@ Aqua tracks changes and signatures in a revision tree. Below is an example of a 
     "children": []
   }
 }
-###
+´´´
 
 ### Verification Rules
 - **`forms_sender`**, **`forms_amount`**, and **`forms_currency`** must match between revisions.
