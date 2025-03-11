@@ -19,7 +19,7 @@ export function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">
           Notarize & Verify in seconds using Aqua notarization software.
-          An open, private and decentralised solution for notarization!
+          An open, private and decentralised solution for data governance!
         </p>
         <div className={styles.buttons}>
           <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/docs/v3/intro">
@@ -45,11 +45,11 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="A private peer to peer trust protocol fot data governance.">
       <HomepageHeader />
       <div className={clsx(styles.quote)}>
         <p>
-          The AQUA Protocol is an emerging open-source protocol for data verification which is built with modern cryptographic standards. The AQUA Protocol is not and does not require a blockchain!
+          The AQUA Protocol is a privacy preserving, open-source protocol for data verification which is built with modern cryptographic standards. The AQUA Protocol is not and does not require a blockchain!
         </p>
       </div>
       <div className={clsx(styles.quote_2)}>
