@@ -31,7 +31,7 @@ export default function Community(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="A peer to peer trust protocol to govern data.">
       <div className={clsx(styles.quote)}>
         <h1>Join the AQUA Protocol community</h1>
       </div>
