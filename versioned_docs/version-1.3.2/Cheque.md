@@ -93,11 +93,12 @@ The system assumes two user-facing views interacting with the WAVs gateway:
   3. Handle the response (success triggers payout; failure returns an error).
 
 **Example API Call** (hypothetical):
-###bash
+```bash
 curl -X POST https://wavs-instance.example.com/verify \
   -H "Content-Type: application/json" \
   -d '{"aqua_json": <signed_json>}'
-###
+```
+
 
 ---
 
