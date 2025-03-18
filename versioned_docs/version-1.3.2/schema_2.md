@@ -59,6 +59,7 @@ The index is a mutable part of the datastructure, it allows to update file locat
 #### Example:
 ```json
 {
+"0xd9bc7c36e7b28c6d97c8389881b90e1df163b067b11c69139bf4f24498d5cf92": {
   "previous_verification_hash": "",
   "local_timestamp": "20250224154438",
   "revision_type": "file",
@@ -189,14 +190,13 @@ A **File Revision** includes the file's content or reference, hash and nonce.
 
 #### Example:
 ```json
-{
-  "previous_verification_hash": "0x121a8e95204fafdd18fb1ea1287c278693f48b28d88e341f86e3c336e9731eab",
-  "local_timestamp": "20250224154548",
-  "revision_type": "file",
-  "content": "GNU GENERAL PUBLIC LICENSE...",
-  "file_hash": "bd7aec058dde7038fa2e88607ca870bd88da53e6fc32d6c0f8674b59419c061b",
-  "file_nonce": "2da1dc9f782e9f489c35cbd01413399f7c8ac14b3deea6c428b2380dbc7af725",
-  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
+    "0x2438975974cfcf054c45046dd3c96a3531da4a2086ba762867c350abe7e2283c": {
+      "previous_verification_hash": "",
+      "local_timestamp": "20250318210601",
+      "revision_type": "file",
+      "file_hash": "7f66f8fb0cab00b1591388938cb8ab29c517246bfd9886168361969dd001b9f0",
+      "file_nonce": "41ab7e208c9102fb8fed703e4bda01b41bca6f6510b0c182856919c68849ab92",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
 }
 ```
 
@@ -329,7 +329,7 @@ Below is a complete example on how Aquatree looks like
 }
 ```
 
-The above is a comprehensive overview of the schema and its components. 
+The above is a comprehensive overview of the schema and its components.
 
 ## Open Todos for the Schema
 - Add documentation for linked revisions
