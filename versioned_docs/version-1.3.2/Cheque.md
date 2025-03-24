@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # A Payment Infrastructure Prototype
 
 This prototype implements a paper-cheque equivalent using the **Aqua Protocol** for offline data verification, **WAVs** as a gateway for distributed computation and on-chain triggers, and a **smart contract** to manage funds securely. It enables a sender to issue a "cheque" and a receiver to cash it out via cryptographic signatures and verification.

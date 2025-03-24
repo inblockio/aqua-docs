@@ -16,24 +16,89 @@
       "label": "Verifier Tests"
     },
     {
-      "type": "doc",
-      "id": "RestAPI",
-      "label": "REST API"
+      "type": "category",
+      "label": "Developer Tools",
+      "items": [
+        {
+          "type": "doc",
+          "id": "RestAPI",
+          "label": "REST API"
+        },
+        {
+          "type": "doc",
+          "id": "cli-tool",
+          "label": "CLI Tool"
+        },
+        {
+          "type": "category",
+          "label": "SDK",
+          "items": [
+            {
+              "type": "doc",
+              "id": "sdk/getting-started",
+              "label": "Getting Started"
+            },
+            {
+              "type": "doc",
+              "id": "sdk/core-concepts",
+              "label": "Core Concepts"
+            },
+            {
+              "type": "category",
+              "label": "API Reference",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "sdk/api/signing",
+                  "label": "Signing"  
+                },
+                {
+                  "type": "doc",
+                  "id": "sdk/api/verification",
+                  "label": "Verification"
+                },
+                {
+                  "type": "doc",
+                  "id": "sdk/api/witnessing",
+                  "label": "Witnessing"
+                },
+                {
+                  "type": "doc",
+                  "id": "sdk/api/chainable",
+                  "label": "Chainable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-      "type": "doc",
-      "id": "AquaIdentity",
-      "label": "Aqua Identity"
+      "type": "category",
+      "label": "Security & Identity",
+      "items": [
+        {
+          "type": "doc",
+          "id": "AquaIdentity",
+          "label": "Aqua Identity"
+        },
+        {
+          "type": "doc",
+          "id": "AccessControl",
+          "label": "Access Control"
+        }
+      ]
     },
     {
-      "type": "doc",
-      "id": "AccessControl",
-      "label": "Access Control"
-    },
-    {
-      "type": "doc",
-      "id": "Cheque",
-      "label": "Use-Case Cheque"
+      "type": "category",
+      "label": "Use Cases",
+      "items": [
+        {
+          "type": "doc",
+          "id": "Cheque",
+          "label": "Digital Cheque"
+        }
+      ]
     }
   ]
 }
