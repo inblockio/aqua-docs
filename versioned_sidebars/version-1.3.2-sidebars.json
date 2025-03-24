@@ -61,11 +61,6 @@
                   "type": "doc",
                   "id": "sdk/api/witnessing",
                   "label": "Witnessing"
-                },
-                {
-                  "type": "doc",
-                  "id": "sdk/api/chainable",
-                  "label": "Chainable"
                 }
               ]
             }
