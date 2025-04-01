@@ -50,7 +50,7 @@
                 {
                   "type": "doc",
                   "id": "sdk/api/signing",
-                  "label": "Signing"  
+                  "label": "Signing"
                 },
                 {
                   "type": "doc",
@@ -91,7 +91,7 @@
         {
           "type": "doc",
           "id": "Cheque",
-          "label": "Digital Cheque"
+          "label": "WAVS integration: Digital Cheque"
         }
       ]
     }
