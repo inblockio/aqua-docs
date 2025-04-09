@@ -45,7 +45,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="A private peer to peer trust protocol fot data governance.">
+      description="A private peer to peer trust protocol for data governance.">
       <HomepageHeader />
       <div className={clsx(styles.quote)}>
         <p>
