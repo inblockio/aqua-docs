@@ -22,8 +22,11 @@ The system mimics a traditional cheque:
 ### Flow Diagram
 ![Escrow Gateway Aqua](/docs_pics/Escrow_Gateway_Aqua.png)
 
+Another flow:
+![Cheque Flow Aqua - Wavs](/docs_pics/Flow_Cheque.jpg)
+
 ### Example cheque
-![Paper cheque Example](https://mycurrencyexchange.com/wp-content/uploads/2020/06/parts-of-a-cheque-1024x516.jpg)
+![Paper cheque Example](/docs_pics/Cheque_Filled_Example.png)
 
 ---
 
