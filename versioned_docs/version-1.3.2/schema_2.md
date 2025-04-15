@@ -9,12 +9,12 @@ Each revision is uniquely identified by a hash and contains metadata specific to
 
 ## Revisions
 
-The `revision` is identified by a unique hash which is also used to verify the integrity of the revision. 
+The `revision` is identified by a unique hash which is also used to verify the integrity of the revision.
 It acts as a globally unique identifier. Unique identifiers are used as unique references to link revisions together or to perform operations on them (transport, access control, etc.).
 
 There are four main types of revisions:
 
-1. **Content Revision**  
+1. **Content Revision**
 1.1 **Form Revision** (a special type of content revision for layer 2 applications)
 2. **Signature Revision**
 3. **Witness Revision**
@@ -29,11 +29,12 @@ All revision types share properties which are common forming a hash-chain. These
 In addition each revision type has specific properties outlined below.
 
 ### Hashing Method
-The hashing method used is SHA256.
+The hashing method used is SHA256. The revision object sorts all key-values as 'Canonical JSON'
+this ensures no whitespaces, sorted keys, no floating-point ambiguity and unicode normalization.
 
 There are two hashing methods used:
-- **`Scalar`**: which is a simple hash of the stringified revision object. This is the default method for performance reasons.
-- **`Tree`**: the revision object sorts it key-values alphabetically and then creates a merkle tree of all the values. 
+- **`Scalar`**: Is a simple hash of the stringified revision object. This is the default method for performance reasons.
+- **`Tree`**: Creates a merkle tree of all the values.
   This allows a more granular verification. This is used for e.g. selective disclosure.
 
 ### Hash Security
