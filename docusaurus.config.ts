@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'AQUA Protocol',
-  tagline: 'Notarize & Verify in seconds using Aqua notarization software.',
+  tagline: 'Account & Verify data in seconds using Aqua Protocol.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
