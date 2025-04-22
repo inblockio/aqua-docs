@@ -128,14 +128,10 @@ const config: Config = {
         {
           title: 'Community',
           items: [
-            {
-              label: 'Matrix',
-              href: 'https://matrix.to/#/#aqua-community:matrix.jembawan.com',
-            },
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/aqua',
-            },
+            //{
+            //  label: 'Matrix',
+            //  href: 'https://matrix.org',
+            //},
             {
               label: 'X',
               href: 'https://github.com/inblockio',
