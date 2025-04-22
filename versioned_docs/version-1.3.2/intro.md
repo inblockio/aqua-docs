@@ -14,11 +14,12 @@ Aqua serves as a versatile building block for a wide range of applications, incl
 
 #### What’s Been Built (Prototypes)
 The potential of Aqua is being explored through practical implementations:
-- **Federated Wiki Infrastructure**: A notarized wiki system with built-in trust (PKC, https://pkc.inblock.io, Protocol v1.2).
+- **Federated Wiki Infrastructure**: A notarized wiki system with built-in trust (PKC, https://github.com/inblockio/aqua-pkc, Protocol v1.2).
 - **Chrome Extension for Verification**: A tool for name resolution and AquaTree validation (Aqua Verifier, https://chromewebstore.google.com/detail/aqua-verifier/gadnjidhhadchnegnpadkibmjlgihiaj, Protocol v1.2).
 - **Firewall-Like Systems**: Automated access control enforcement integrated with Aqua ("Guardian," Protocol v1.2).
 - **Document Signing Service**: A platform for signing and verifying files ("Aquafier," https://aquafier.inblock.io, transitioning from v1.2 to v3).
 - **Decentralized Identity Solution**: A new approach to identity management (Aqua Identity, https://github.com/inblockio/aqua-identity).
+Please request a demo with us via demo@inblock.io.
 
 #### The Vision of Aqua
 Aqua is still evolving, and we’re discovering the full scope of this powerful protocol. Here’s how we see it:
