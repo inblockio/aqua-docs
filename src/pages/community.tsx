@@ -26,7 +26,7 @@ const ListItem = ({ icon, title, link, description }: { icon: ReactNode, title: 
   )
 }
 
-export default function Community(): JSX.Element {
+export default function Community() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
@@ -41,7 +41,7 @@ export default function Community(): JSX.Element {
         </p>
       </div>
       <div className={communityStyles.container}>
-        <div className={clsx(communityStyles.column, communityStyles.learnConnect)}>
+        {/* <div className={clsx(communityStyles.column, communityStyles.learnConnect)}>
           <h2 className={communityStyles.title}>Learn and Connect</h2>
           <p className={communityStyles.twoLines}>
             Using or want to use AQUA Protocol? Find out more here:
@@ -67,7 +67,7 @@ export default function Community(): JSX.Element {
               description={'Chat with other project developers on Matrix'}
             />
           </div>
-        </div>
+        </div> */}
         <div className={clsx(communityStyles.column, communityStyles.developContribute)}>
           <h2 className={communityStyles.title}>Develop and Contribute</h2>
           <p className={communityStyles.twoLines}>If you want to get more involved by contributing to AQUA Protocol, join us here:</p>
@@ -78,7 +78,7 @@ export default function Community(): JSX.Element {
               link={'https://github.com/inblockio'}
               description={'AQUA development takes place here!'}
             />
-            <ListItem
+            {/* <ListItem
               icon={<BsStackOverflow size={"40px"} />}
               title={'Stack Overflow'}
               link={'https://stackoverflow.com/questions/tagged/aqua'}
@@ -89,7 +89,7 @@ export default function Community(): JSX.Element {
               title={'Contribution Guidelines'}
               link={'/docs/v2/contribution-guidelines'}
               description={'You can find out how to contribute here '}
-            />
+            /> */}
           </div>
         </div>
       </div>

@@ -26,10 +26,10 @@ export function HomepageHeader() {
             <span>Documentation</span>
             <FaArrowAltCircleRight />
           </a>
-          <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/community">
+          {/* <a className={clsx(styles.btn, styles.btn_lg, styles.btn_light)} href="/community">
             <span>Community</span>
             <CgCommunity />
-          </a>
+          </a> */}
           <a className={clsx(styles.btn, styles.btn_lg, styles.btn_dark)} href="https://github.com/inblockio">
             <span>Source Code</span>
             <FaGithub />
@@ -40,7 +40,7 @@ export function HomepageHeader() {
   );
 }
 
-export default function Home(): JSX.Element {
+export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
