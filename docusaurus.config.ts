@@ -41,10 +41,11 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/inblockio',
+          lastVersion: '1.3.2',
           versions: {
-           '1.1.0': {
-              label: 'v1',
-              path: 'v1',
+            '1.3.2': {
+              label: 'v3',
+              path: 'v3',
               banner: 'none',
             },
             '1.2.0': {
@@ -52,9 +53,9 @@ const config: Config = {
               path: 'v2',
               banner: 'none',
             },
-            '1.3.2': {
-              label: 'v3',
-              path: 'v3',
+            '1.1.0': {
+              label: 'v1',
+              path: 'v1',
               banner: 'none',
             },
           }
