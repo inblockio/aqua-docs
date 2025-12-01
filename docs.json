@@ -32,18 +32,18 @@
           {
             "group": "Use Cases",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "use_cases/introduction",
+              "use_cases/supply_chain",
+              "use_cases/identity_attestation"
+              
             ]
           },
           {
             "group": "Development tools",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "dev_tools/aqua_sdk",
+              "dev_tools/aquafier_api",
+              "dev_tools/aqua_cli"
             ]
           }
         ]
@@ -54,16 +54,19 @@
           {
             "group": "API documentation",
             "pages": [
-              "api-reference/introduction"
+              "schema_reference/introduction"
             ]
           },
           {
-            "group": "Aquafier Endpoints",
+            "group": "Aqua Protocol Terms Schema",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "schema_reference/aqua_tree",
+              "schema_reference/revision",
+              "schema_reference/witness_revision",
+              "schema_reference/signing_revision",
+              "schema_reference/link_revision",
+              "schema_reference/template_revision",
+              "schema_reference/object_revision"
             ]
           }
         ]
