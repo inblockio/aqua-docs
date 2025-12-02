@@ -1,94 +1,269 @@
 ---
 title: 'Development'
-description: 'Preview changes locally to update your docs'
+description: 'Ensure to Go through Quickstart before reading this'
+icon: "code"
 ---
 
+
+## Good to have
+Signing and witnessing option depend on different things.
+
+There are 3 Signing methods that are supported
+1. DID Signature
+2. Etherium Signature
+3. P12 Signature
+
+
+<Accordion title="DID Signature.">
+ To generate a DID Signature you need a did key.
+ You can generate one using js and the library `digitalcredentials/did-method-key`
+ You can oalso get one online using tools like https://hub.ebsi.eu/tools/did-generator
+  
+</Accordion>
+
+<Accordion title="Etherium Signature.">
+Two ways of generating an Ethereum signature are supported.
+1. Have metamask wallet browser extension set up in your default browser.
+2. store a wallet mnemonic in a credentails.json file.
+
+Check the specific tool ie SDK or cli on how to use credentials.json or pass in the credentials
+</Accordion>
+
+<Accordion title="P12 Signature">
+To generate a P12 Signature you need a password and content.
+For development you can generate one using iopenssl for production get a trusted certificate.
+
+for development
+
+```bash
+# Generate a private key
+openssl genrsa -out private.key 2048
+
+# Create a certificate signing request
+openssl req -new -key private.key -out certificate.csr
+## For some systems you need to specify the configured
+### openssl req -new -key private.key -out certificate.csr -config "C:\Program Files\Git\usr\ssl\openssl.cnf"
+
+# Generate a self-signed certificate (valid for 365 days)
+openssl x509 -req -days 365 -in certificate.csr -signkey private.key -out certificate.crt
+
+# Create the P12 file (you'll be prompted for a password)
+openssl pkcs12 -export -out certificate.p12 -inkey private.key -in certificate.crt
+
+```
+Once you have the P12 file, you need to convert it to base64 for the `p12_content` field:
+
+
+```bash
+# Convert P12 to base64 string
+base64 -i certificate.p12 -o certificate.txt
+# On Linux: base64 certificate.p12 > certificate.txt
+```
+
+If you need a certificate trusted by others:
+
+1. Purchase from a Certificate Authority (CA)
+ * DigiCert, Sectigo, GlobalSign, etc.
+ * Request a "Code Signing Certificate" or "Document Signing Certificate"
+ * They'll provide a P12/PFX file
+
+2. Some CAs provide P12 directly, others give you:
+  *  A certificate (.crt/.cer)
+  *  A private key (.key)
+  *  Intermediate certificates
+  
+  If separate, combine them: 
+
+  ```bash
+  openssl pkcs12 -export -out certificate.p12 \
+      -inkey privatekey.key \
+      -in certificate.crt \
+      -certfile intermediate.crt
+  ```
+</Accordion>
+
+
+There are 3 Witness methods that are supported
+1. TSA Witness
+2. Etherium Witness
+3. NOSTR Witness
+
+
+
+
+<Accordion title="TSA Witness.">
+You will need Time stamping Authority url.
+Here are some Free Public TSA Services urls: 
+```bash
+##DigiCert
+http://timestamp.digicert.com
+
+## Sectigo (Comodo)
+http://timestamp.sectigo.com
+http://timestamp.comodoca.com
+
+## GlobalSign
+http://timestamp.globalsign.com/scripts/timstamp.dll
+http://timestamp.globalsign.com/tsa/r6advanced1
+
+## Entrust 
+http://timestamp.entrust.net/TSS/RFC3161sha2TS
+
+
+```
+  
+</Accordion>
+
+<Accordion title="Etherium Witness.">
+Two ways of generating an Ethereum signature are supported.
+1. Have metamask wallet browser extension set up in your default browser.
+2. store a wallet mnemonic in a credentails.json file.
+
+Check the specific tool ie SDK or cli on how to use credentials.json or pass in the credentials
+
+For  verification of witness you will need an alchemy key, follow the instruction here on how to generate one
+https://www.alchemy.com/docs/how-to-create-access-keys
+</Accordion>
+
+
+<Accordion title="Nostr Witness.">
+You will need a nostr secreat key to generate a Nostr Witness.
+How to get a Nostr screate key 
+ * Download any Nostr app (Damus, Amethyst, Primal, etc.)
+ * Choose "Create new account" (Or Login to your account)
+ * The app will generate a key pair for you
+ * Your secret key starts with `nsec1...`
+
+Or you can use a web-based key generator
+ * Visit sites like nostr.com or nostrtool.com
+ * Click "Generate Keys"
+</Accordion>
+
+
+
+## JS SDK use
 <Info>
   **Prerequisites**:
   - Node.js version 19 or higher
-  - A docs repository with a `docs.json` file
+  - A project with the latest `aqua sdk` installed.
 </Info>
 
-Follow these steps to install and run Mintlify on your operating system.
+
+
+
+Follow these steps to notarize a file, then sign it and finaly witness it.
+<Note>This example are based on v3 of the protocol</Note>
 
 <Steps>
-<Step title="Install the Mintlify CLI">
+<Step title="Generate an Aqua tree">
 
-```bash
-npm i -g mint
+```Typescript
+    // first step create a file object of the file you want to notarize
+    let testFileContent = readFile("./test.txt")
+
+    let aquaFileObject: FileObject = {
+        fileName: "text.txt",
+        fileContent: testFileContent ? testFileContent : "",
+        path: "./text.txt"
+    }
+    
+    // intialize the js library
+    let aquafier = new Aquafier();
+    let genesisRevisionResult = await aquafier.createGenesisRevision(aquaFileObject);
+    if (genesisRevisionResult.isOk()) {
+      // continue  with the aqua tree you just generated
+    }else{
+      console.erorr(`An error occured`)
+    }
 ```
 </Step>
 
-<Step title="Preview locally">
+<Step title="Sign An Aqua tree">
 
-Navigate to your docs directory where your `docs.json` file is located, and run the following command:
 
-```bash
-mint dev
+```Typescript
+// create AquaTreeWrapper object
+// at time you might need to specify a revision to sign 
+// by default just pass in an empty string
+
+  let aqua_wrapper: AquaTreeWrapper = {
+    aquaTree: genesisRevisionResult.data.aquaTree!!,
+    fileObject: aquaFileObject,
+    revision: "",
+  };
+  let signedResult = await aquafier.signAquaTree(aqua_wrapper, "metamask", creds, true);
+
+  if (signedResult.isOk()) {
+    //proceed with your code 
+  }else{
+    // throw an error or log the error
+  }
 ```
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+</Step>
+
+
+<Step title="Witness An Aqua tree">
+
+
+```Typescript
+
+// create AquaTreeWrapper object
+// at time you might need to specify a revision to Witness 
+// by default just pass in an empty string
+
+    let aqua_wrapper_2: AquaTreeWrapper = {
+      aquaTree: genesisRevisionResult.data.aquaTree!!,
+      fileObject: aquaFileObject,
+      revision: "",
+    };
+
+    let witnessResult = await aquafier.witnessAquaTree(aqua_wrapper_2, "eth", "sepolia", "metamask", creds, true);
+
+    if (witnessResult.isOk()) {
+
+        console.log("Witnessing successful: \n", JSON.stringify(witnessResult.data, null, 4));
+
+    }else{
+        // throw an error or log the error
+    }
+```
+
 
 </Step>
+
+
 </Steps>
 
-## Custom ports
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. For example, to run Mintlify on port 3333, use this command:
 
-```bash
-mint dev --port 3333
+## Aqua tree  verification
+At any point you may want to verify an aqua tree.
+
+```Typescript
+
+// fetch the aqua tree from sytesm files or db or state
+// let aquaTree = 
+
+// ensure the file object is created just like above when notarizing
+// verification ensures the file is as was when the the aqua tree was generated
+
+// intialize the js library
+    let aquafier = new Aquafier();
+    
+ // Verify the aqua tree
+
+                let verificationResults = await aquafier.verifyAquaTree(aquaTree, [aquaFileObject],
+                    creds
+                );
+
+                if (verificationResults.isOk()) {
+                    console.log("Successful result: \n", JSON.stringify(verificationResults.data, null, 4));
+                }
+                else {
+                    console.log("Failed verification data: \n", JSON.stringify(verificationResults.data, null, 4));
+                }
 ```
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
 
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
-
-## Mintlify versions
-
-Please note that each CLI release is associated with a specific version of Mintlify. If your local preview does not align with the production version, please update the CLI:
-
-```bash
-npm mint update
-```
-
-## Validating links
-
-The CLI can assist with validating links in your documentation. To identify any broken links, use the following command:
-
-```bash
-mint broken-links
-```
-
-## Deployment
-
-If the deployment is successful, you should see the following:
-
-<Frame>
-  <img src="/images/checks-passed.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
-</Frame>
-
-## Code formatting
-
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of the CLI: `npm remove -g mint`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall the CLI: `npm i -g mint`
-  </Accordion>
-
-  <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the `~/.mintlify` folder. Then run `mint dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in the latest CLI version? Check out the [CLI changelog](https://www.npmjs.com/package/mintlify?activeTab=versions).
+<Tip>Want to check put the full examples visit https://github.com/inblockio/aqua-js-sdk/tree/master/examples </Tip>
