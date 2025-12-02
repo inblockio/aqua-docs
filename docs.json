@@ -36,7 +36,6 @@
               "use_cases/introduction",
               "use_cases/supply_chain",
               "use_cases/identity_attestation"
-              
             ]
           },
           {
@@ -62,12 +61,18 @@
             "group": "Aqua Protocol Terms Schema",
             "pages": [
               "schema_reference/aqua_tree",
-              "schema_reference/revision",
-              "schema_reference/witness_revision",
-              "schema_reference/signing_revision",
-              "schema_reference/link_revision",
-              "schema_reference/template_revision",
-              "schema_reference/object_revision"
+              "schema_reference/file_index",
+              {
+                "group": "Revision",
+                "pages": [
+                  "schema_reference/revision",
+                  "schema_reference/witness_revision",
+                  "schema_reference/signing_revision",
+                  "schema_reference/link_revision",
+                  "schema_reference/template_revision",
+                  "schema_reference/object_revision"
+                ]
+              }
             ]
           }
         ]
@@ -93,15 +98,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
