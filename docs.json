@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Aqua Protocol Documentation",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#E55B1F",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "aqua-logo.svg",
   "navigation": {
     "tabs": [
       {
