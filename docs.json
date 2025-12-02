@@ -22,11 +22,12 @@
             ]
           },
           {
-            "group": "Previous Versions",
+            "group": "Aqua Versions",
             "pages": [
               "previous_versions/version-1",
               "previous_versions/version-2",
-              "previous_versions/version-3"
+              "previous_versions/version-3",
+              "previous_versions/version-4"
             ]
           },
           {
