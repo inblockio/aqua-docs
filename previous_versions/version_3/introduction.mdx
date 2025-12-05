@@ -1,4 +1,302 @@
+---
+title: "Aqua Protocol v3"
+description: "Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK"
+---
 
+# Aqua Protocol v3
 
+Aqua Protocol v3 is a mature version of the protocol with a comprehensive JavaScript/TypeScript SDK. It provides a robust framework for creating verifiable revision chains with support for files, forms, signatures, witnesses, and links.
 
-to read about v4 visit /schema_reference/introduction
+## Overview
+
+Version 3 represents a stable, production-ready implementation of the Aqua Protocol specifically designed for JavaScript/TypeScript environments. It offers:
+
+- **Cross-Platform Support**: Node.js, Web browsers, and React Native
+- **Type Safety**: Full TypeScript support with comprehensive type definitions
+- **Flexible Revision Types**: File, Form, Signature, Witness, and Link revisions
+- **Multiple Signing Methods**: CLI, MetaMask, DID, and P12 certificate signing
+- **Multi-Network Witnessing**: Ethereum (mainnet, Sepolia, Holesky), Nostr, and TSA
+- **Tree Structure**: Native support for revision trees and path mapping
+
+## Version Identifier
+
+```
+https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar/tree
+```
+
+## Core Components
+
+### AquaTree Structure
+
+The AquaTree is the core data structure in v3:
+
+```typescript
+interface AquaTree {
+  revisions: Revisions      // Map of revision hash to revision data
+  file_index: FileIndex     // Map of file hash to filename
+  tree?: RevisionTree       // Tree structure representation
+  treeMapping?: TreeMapping // Path mappings for navigation
+}
+```
+
+### Revision Types
+
+V3 supports five types of revisions:
+
+1. **File Revision** - Store file metadata and content hashes
+2. **Form Revision** - Store structured form data with key-value pairs
+3. **Signature Revision** - Add cryptographic signatures
+4. **Witness Revision** - Timestamp via blockchain or TSA
+5. **Link Revision** - Connect to other AquaTree chains
+
+## Key Features
+
+### 1. Dual Mode Support
+
+**Scalar Mode**: Direct hash computation
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
+```
+
+**Tree Mode**: Merkle tree-based with leaves
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree"
+leaves: ["hash1", "hash2", "hash3", ...]
+```
+
+### 2. Platform Flexibility
+
+```typescript
+// Node.js
+import Aquafier from 'aqua-js-sdk';
+
+// Web Browser
+import Aquafier from 'aqua-js-sdk/web';
+
+// React Native
+import Aquafier from 'aqua-js-sdk/react-native';
+```
+
+### 3. Comprehensive Signing
+
+- **CLI Signing**: Uses mnemonic phrase
+- **MetaMask**: Browser extension integration
+- **DID**: Decentralized identifiers with JWS
+- **P12**: Certificate-based signing
+- **Inline**: Pre-computed signatures
+
+### 4. Multi-Network Witnessing
+
+- **Ethereum**: Mainnet, Sepolia, Holesky testnets
+- **Nostr**: Decentralized social network
+- **TSA**: RFC 3161 timestamp authorities
+
+### 5. Content Flexibility
+
+File content can be:
+- **Text**: HTML, plain text, JSON
+- **Binary**: Images, PDFs, any file type (as Uint8Array)
+- **Forms**: Key-value structured data
+- **Links**: References to other AquaTrees
+
+## Quick Start Example
+
+```typescript
+import Aquafier, { FileObject } from 'aqua-js-sdk';
+
+// Initialize Aquafier
+const aquafier = new Aquafier();
+
+// Create file object
+const fileObject: FileObject = {
+  fileName: "document.txt",
+  fileContent: "Important document content",
+  path: "/documents/document.txt"
+};
+
+// Create genesis revision
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  console.error("Error creating revision");
+  result.logs.forEach(log => console.log(log));
+  return;
+}
+
+// Access the AquaTree
+const aquaTree = result.data.aquaTree;
+
+// Sign the revision
+const signResult = await aquafier.signRevision(
+  aquaTree,
+  "cli",  // or "metamask", "did", "p12"
+  credentials
+);
+
+// Witness to blockchain
+const witnessResult = await aquafier.witnessRevision(
+  signResult.data.aquaTree,
+  "eth",  // or "nostr", "tsa"
+  witnessConfig
+);
+
+// Save aquaTree JSON for storage/transmission
+const json = JSON.stringify(witnessResult.data.aquaTree);
+```
+
+## Architecture
+
+### Revision Chain Structure
+
+```
+Genesis Revision (File/Form)
+    ↓ previous_verification_hash
+Signature Revision
+    ↓ previous_verification_hash
+Witness Revision
+    ↓ previous_verification_hash
+New Content Revision
+    ↓ previous_verification_hash
+...
+```
+
+### Tree Branching
+
+V3 supports tree structures for branching revisions:
+
+```
+        Genesis
+           ↓
+      Signature
+         /  \
+    Branch A  Branch B
+       ↓        ↓
+    Update 1  Update 2
+```
+
+## Common Fields
+
+All revisions share these core fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `previous_verification_hash` | string | Hash of previous revision (empty for genesis) |
+| `local_timestamp` | string | ISO 8601 timestamp |
+| `revision_type` | string | Type: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version and method identifier |
+
+## Installation
+
+```bash
+npm install aqua-js-sdk
+```
+
+### Requirements
+
+- Node.js v20.9.0 or later
+- TypeScript 5.3+ (optional, for type checking)
+
+### Peer Dependencies
+
+- `ethers` ^6.7.1 (for Ethereum operations)
+- `react-native-fs` (optional, for React Native)
+- `@react-native-async-storage/async-storage` (optional, for React Native)
+
+## Use Cases
+
+### Document Notarization
+```
+Document → Sign (Author) → Witness (Ethereum) → Verifiable Proof
+```
+
+### Form Data Accountability
+```
+Form Submission → Sign (User) → Witness → Audit Trail
+```
+
+### Multi-Party Approval
+```
+Document → Sign (Party 1) → Sign (Party 2) → Witness → Approved
+```
+
+### Supply Chain Tracking
+```
+Event 1 → Link to Event 2 → Link to Event 3 → Complete Chain
+```
+
+### Content Versioning
+```
+Version 1 → Update → Version 2 → Update → Version 3 → History
+```
+
+## Verification
+
+V3 includes comprehensive verification capabilities:
+
+```typescript
+// Verify entire chain
+const verification = await aquafier.verifyRevisionChain(aquaTree);
+
+// Check results
+verification.verificationGraphData.forEach(node => {
+  console.log(`${node.revisionType}: ${node.isValidationSuccessful ? '✓' : '✗'}`);
+});
+```
+
+## Key Differences from v4
+
+| Feature | v3 | v4 |
+|---------|----|----|
+| Language | JavaScript/TypeScript | Rust (with WASM support) |
+| Template System | No formal templates | Template revisions with JSON Schema |
+| Signature Types | 4 types (CLI, MetaMask, DID, P12) | 3 types (RSA, EIP-191, DID:JWS) |
+| Version Format | URL with embedded method | URL only, method as field |
+| Form Support | Native form revision type | Forms as object revisions with templates |
+| Platform Focus | Web/Node.js/React Native | Cross-platform with WASM |
+
+## Migration Considerations
+
+### From v3 to v4
+
+- **Breaking Changes**: Schema structure differs significantly
+- **No Direct Migration**: v3 and v4 chains are not directly compatible
+- **Use Case**: Continue using v3 for JavaScript-first projects
+- **Future**: v4 offers more structure and cross-platform consistency
+
+### When to Use v3
+
+- Existing JavaScript/TypeScript projects
+- React Native applications
+- Need for form revision type
+- Mature, stable implementation required
+- Quick prototyping and development
+
+### When to Use v4
+
+- New projects requiring maximum interoperability
+- Need for formal schema validation
+- Rust or multi-language environments
+- WASM compilation for web
+- Template-based data structures
+
+## Community and Support
+
+- **GitHub**: [aqua-verifier-js-lib](https://github.com/inblockio/aqua-verifier-js-lib)
+- **Issues**: Report bugs and request features on GitHub
+- **Documentation**: Examples in `/examples` directory
+
+## Next Steps
+
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts and terminology
+- [Tooling](/previous_versions/version_3/tooling) - SDK usage and API reference
+- [Schema Reference](/previous_versions/version_3/schema) - Detailed revision specifications
+- [Examples](https://github.com/inblockio/aqua-verifier-js-lib/tree/main/examples) - Code examples
+
+## Version History
+
+- **3.2.1**: Current stable release
+- **3.2.0**: React Native support added
+- **3.1.x**: Performance improvements
+- **3.0.0**: Major release with TypeScript rewrite
+
+For detailed changelog, see the [GitHub releases](https://github.com/inblockio/aqua-verifier-js-lib/releases).

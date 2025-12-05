@@ -1,4 +1,784 @@
 ---
-title: "Concepts"
-description: 'Tools to use'
+title: "Tooling & SDK"
+description: "Aqua JS SDK API reference and usage guide"
 ---
+
+# Aqua Protocol v3 - Tooling & SDK
+
+The Aqua JS SDK (aqua-js-sdk) is a comprehensive TypeScript library for working with Aqua Protocol v3. It provides a complete API for creating, signing, witnessing, and verifying revision chains across multiple platforms.
+
+## Installation
+
+```bash
+npm install aqua-js-sdk
+```
+
+### Platform-Specific Imports
+
+```typescript
+// Node.js (default)
+import Aquafier from 'aqua-js-sdk';
+
+// Web Browser
+import Aquafier from 'aqua-js-sdk/web';
+
+// React Native
+import Aquafier from 'aqua-js-sdk/react-native';
+```
+
+## Core API
+
+### Aquafier Class
+
+The main class providing all Aqua Protocol operations.
+
+#### Constructor
+
+```typescript
+const aquafier = new Aquafier();
+```
+
+No configuration needed for initialization.
+
+---
+
+### Creating Revisions
+
+#### createGenesisRevision()
+
+Creates the first revision in a new AquaTree.
+
+**Signature:**
+```typescript
+async createGenesisRevision(
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `fileObject`: File data to create revision from
+- `isForm`: If true, creates form revision (default: false)
+- `enableContent`: Include file content in revision (default: false)
+- `enableScalar`: Use scalar method instead of tree (default: true)
+
+**Returns:**
+- Success: `AquaOperationData` with new AquaTree
+- Failure: Array of error logs
+
+**Example:**
+```typescript
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer, // Uint8Array or string
+  path: "/documents/contract.pdf"
+};
+
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  result.data.logData.forEach(log => console.error(log));
+  return;
+}
+
+const aquaTree = result.data.aquaTree;
+```
+
+#### createNewRevision()
+
+Adds a new file/form revision to an existing AquaTree.
+
+**Signature:**
+```typescript
+async createNewRevision(
+  aquaTree: AquaTree,
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Example:**
+```typescript
+const result = await aquafier.createNewRevision(
+  existingAquaTree,
+  updatedFileObject,
+  false,  // not a form
+  false,  // don't embed content
+  true    // use scalar method
+);
+```
+
+---
+
+### Signing Revisions
+
+#### signRevision()
+
+Signs the latest revision in an AquaTree.
+
+**Signature:**
+```typescript
+async signRevision(
+  aquaTree: AquaTree,
+  signType: SignType,
+  credentials?: CredentialsData,
+  inlineOptions?: InlineSignerOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `signType`: One of `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"`
+- `credentials`: Credentials for CLI, DID, or P12 signing
+- `inlineOptions`: Pre-computed signature for inline mode
+
+**Sign Types:**
+
+##### CLI Signing
+Uses BIP39 mnemonic to derive wallet and sign.
+
+```typescript
+const credentials: CredentialsData = {
+  mnemonic: "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "cli",
+  credentials
+);
+```
+
+##### MetaMask Signing
+Opens MetaMask for user to sign (browser only).
+
+```typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask"
+);
+```
+
+**React Native MetaMask:**
+```typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask",
+  undefined,
+  {
+    deepLinkUrl: "metamask://",
+    callbackUrl: "myapp://metamask-callback",
+    onDeepLinkReady: (url) => {
+      // Open MetaMask app
+      Linking.openURL(url);
+    }
+  }
+);
+```
+
+##### DID Signing
+Signs with Decentralized Identifier.
+
+```typescript
+const credentials: CredentialsData = {
+  did_key: "your-did-key-here",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "did",
+  credentials
+);
+```
+
+##### P12 Certificate Signing
+Signs with P12 certificate.
+
+```typescript
+const credentials: CredentialsData = {
+  p12_password: "certificate-password",
+  p12_content: "base64-encoded-p12-content",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "p12",
+  credentials
+);
+```
+
+##### Inline Signing
+Use pre-computed signature.
+
+```typescript
+const inlineOptions: InlineSignerOptions = {
+  walletAddress: "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  signature: "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f..."
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "inline",
+  undefined,
+  inlineOptions
+);
+```
+
+---
+
+### Witnessing Revisions
+
+#### witnessRevision()
+
+Timestamps a revision via blockchain or TSA.
+
+**Signature:**
+```typescript
+async witnessRevision(
+  aquaTree: AquaTree,
+  witnessType: WitnessType,
+  witnessConfig: WitnessConfig,
+  credentials?: CredentialsData,
+  witnessPlatform?: WitnessPlatformType,
+  inlineOptions?: InlineWitnessOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `witnessType`: `"eth"`, `"nostr"`, or `"tsa"`
+- `witnessConfig`: Network and contract configuration
+- `credentials`: Credentials for signing transaction
+- `witnessPlatform`: `"cli"` or `"metamask"` (Ethereum only)
+- `inlineOptions`: Pre-computed transaction (inline mode)
+
+#### Ethereum Witnessing
+
+**Configuration:**
+```typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // or "mainnet", "holesky"
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+const credentials: CredentialsData = {
+  mnemonic: "your mnemonic here",
+  // ...
+};
+```
+
+**CLI Method** (uses mnemonic):
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+```
+
+**MetaMask Method** (prompts user):
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  undefined,
+  "metamask"
+);
+```
+
+#### Nostr Witnessing
+
+```typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // not used for Nostr
+  smartContractAddress: ""     // not used for Nostr
+};
+
+const credentials: CredentialsData = {
+  nostr_sk: "your-nostr-secret-key",
+  // ...
+};
+
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "nostr",
+  witnessConfig,
+  credentials
+);
+```
+
+#### TSA Witnessing
+
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "tsa",
+  witnessConfig
+);
+```
+
+---
+
+### Linking Revisions
+
+#### linkRevision()
+
+Creates a link revision connecting to other AquaTrees.
+
+**Signature:**
+```typescript
+async linkRevision(
+  aquaTree: AquaTree,
+  linkedAquaTrees: AquaTree[],
+  linkType?: string
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Example:**
+```typescript
+const result = await aquafier.linkRevision(
+  mainAquaTree,
+  [dependency1Tree, dependency2Tree, dependency3Tree],
+  "dependencies"
+);
+```
+
+---
+
+### Verification
+
+#### verifyRevisionChain()
+
+Verifies an entire AquaTree chain.
+
+**Signature:**
+```typescript
+async verifyRevisionChain(
+  aquaTree: AquaTree,
+  credentials?: CredentialsData
+): Promise<VerificationGraphData>
+```
+
+**Parameters:**
+- `aquaTree`: Tree to verify
+- `credentials`: Optional, for Ethereum witness lookup
+
+**Returns:**
+- `VerificationGraphData`: Graph structure with verification results
+
+**Example:**
+```typescript
+const verificationResult = await aquafier.verifyRevisionChain(aquaTree, credentials);
+
+// Check overall success
+if (verificationResult.isValidationSuccessful) {
+  console.log("✓ Chain is valid");
+} else {
+  console.log("✗ Chain validation failed");
+}
+
+// Traverse verification graph
+function printResults(node: VerificationGraphData, depth = 0) {
+  const indent = "  ".repeat(depth);
+  const status = node.isValidationSuccessful ? "✓" : "✗";
+  console.log(`${indent}${status} ${node.revisionType}`);
+
+  node.verificationGraphData.forEach(child => printResults(child, depth + 1));
+}
+
+printResults(verificationResult);
+```
+
+#### verifyFormRevision()
+
+Verifies form-specific data.
+
+**Signature:**
+```typescript
+async verifyFormRevision(
+  aquaTree: AquaTree,
+  formData: FormData
+): Promise<FormVerificationResponseData>
+```
+
+---
+
+### Utility Methods
+
+#### removeLastRevision()
+
+Removes the most recent revision from an AquaTree.
+
+**Signature:**
+```typescript
+removeLastRevision(
+  aquaTree: AquaTree
+): Result<AquaOperationData, LogData[]>
+```
+
+**Example:**
+```typescript
+const result = aquafier.removeLastRevision(aquaTree);
+
+if (result.isOk) {
+  const updatedTree = result.data.aquaTree;
+  console.log("Revision removed successfully");
+}
+```
+
+#### checkIfFileAlreadyNotarized()
+
+Checks if a file has already been notarized.
+
+**Signature:**
+```typescript
+checkIfFileAlreadyNotarized(
+  aquaTree: AquaTree,
+  fileObject: FileObject
+): boolean
+```
+
+#### fetchFilesToBeRead()
+
+Gets list of files that need content loaded.
+
+**Signature:**
+```typescript
+fetchFilesToBeRead(aquaTree: AquaTree): string[]
+```
+
+---
+
+## Type Reference
+
+### Core Types
+
+```typescript
+interface FileObject {
+  fileName: string
+  fileContent: string | AquaTree | Uint8Array | Record<string, string> | object
+  path: string
+  fileSize?: number
+}
+
+interface AquaTree {
+  revisions: Revisions
+  file_index: FileIndex
+  tree?: RevisionTree
+  treeMapping?: TreeMapping
+}
+
+interface Revision {
+  previous_verification_hash: string
+  local_timestamp: string
+  revision_type: RevisionType
+  version: string
+  // ... type-specific fields
+}
+
+type RevisionType = "file" | "witness" | "signature" | "form" | "link"
+type SignType = "metamask" | "cli" | "did" | "p12" | "inline"
+type WitnessType = "tsa" | "eth" | "nostr"
+type WitnessNetwork = "sepolia" | "mainnet" | "holesky"
+```
+
+### Result Type
+
+```typescript
+type Result<T, E> =
+  | { isOk: true; isErr: false; data: T }
+  | { isOk: false; isErr: true; data: E }
+```
+
+### Configuration Types
+
+```typescript
+interface CredentialsData {
+  mnemonic: string
+  nostr_sk: string
+  did_key: string
+  alchemy_key: string
+  witness_eth_network: string
+  witness_method: string
+  p12_password?: string
+  p12_content?: string
+}
+
+interface WitnessConfig {
+  witnessEventVerificationHash: string
+  witnessNetwork: WitnessNetwork
+  smartContractAddress: string
+}
+```
+
+---
+
+## Platform-Specific Notes
+
+### Node.js
+
+Full functionality available:
+- All signing methods
+- All witnessing methods
+- File system access
+- HTTP server for MetaMask callback
+
+```typescript
+import Aquafier from 'aqua-js-sdk';
+import fs from 'fs';
+
+const aquafier = new Aquafier();
+
+// Read file from disk
+const fileContent = fs.readFileSync('document.pdf');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: fileContent,
+  path: './document.pdf'
+};
+```
+
+### Web Browser
+
+Most functionality available:
+- MetaMask signing (primary method)
+- DID signing
+- Ethereum witnessing via MetaMask
+- Nostr, TSA witnessing
+
+**Limitations:**
+- No P12 signing (requires file system)
+- No CLI signing with mnemonic (security risk in browser)
+
+```typescript
+import Aquafier from 'aqua-js-sdk/web';
+
+const aquafier = new Aquafier();
+
+// File from input element
+const file = document.getElementById('fileInput').files[0];
+const arrayBuffer = await file.arrayBuffer();
+
+const fileObject = {
+  fileName: file.name,
+  fileContent: new Uint8Array(arrayBuffer),
+  path: file.name
+};
+```
+
+### React Native
+
+Most functionality with platform adaptations:
+- MetaMask via deep linking
+- DID signing
+- Limited witnessing
+
+**Limitations:**
+- No local HTTP server
+- MetaMask requires custom deep linking
+- File system needs react-native-fs
+
+```typescript
+import Aquafier from 'aqua-js-sdk/react-native';
+import RNFS from 'react-native-fs';
+
+const aquafier = new Aquafier();
+
+// Read file
+const fileContent = await RNFS.readFile(filePath, 'base64');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: Buffer.from(fileContent, 'base64'),
+  path: filePath
+};
+```
+
+---
+
+## Complete Workflow Examples
+
+### Document Notarization
+
+```typescript
+// 1. Create genesis
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer,
+  path: "/contracts/contract.pdf"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign with CLI
+const credentials: CredentialsData = {
+  mnemonic: process.env.MNEMONIC,
+  // ... other fields
+};
+
+result = await aquafier.signRevision(aquaTree, "cli", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness to Ethereum
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: Object.keys(aquaTree.revisions)[Object.keys(aquaTree.revisions).length - 1],
+  witnessNetwork: "sepolia",
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+
+// 4. Save
+fs.writeFileSync('contract.aqua.json', JSON.stringify(aquaTree, null, 2));
+```
+
+### Multi-Party Approval
+
+```typescript
+// Party 1: Create and sign
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+result = await aquafier.signRevision(aquaTree, "cli", party1Credentials);
+aquaTree = result.data.aquaTree;
+
+// Send aquaTree to Party 2
+
+// Party 2: Add signature
+result = await aquafier.signRevision(aquaTree, "metamask");
+aquaTree = result.data.aquaTree;
+
+// Send back to Party 1
+
+// Party 1: Witness
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  party1Credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+```
+
+### Form Submission with Verification
+
+```typescript
+// 1. Create form genesis
+const formData = {
+  name: "John Doe",
+  email: "john@example.com",
+  status: "pending"
+};
+
+const fileObject: FileObject = {
+  fileName: "application.json",
+  fileContent: formData,
+  path: "/forms/application.json"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject, true);  // isForm=true
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign
+result = await aquafier.signRevision(aquaTree, "did", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness
+result = await aquafier.witnessRevision(aquaTree, "nostr", witnessConfig, credentials);
+aquaTree = result.data.aquaTree;
+
+// 4. Verify form
+const verifyResult = await aquafier.verifyFormRevision(aquaTree, formData);
+console.log("Form valid:", verifyResult.isOk);
+```
+
+---
+
+## Error Handling
+
+All methods return `Result<T, E>` type. Always check for errors:
+
+```typescript
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  // Handle error
+  console.error("Failed to create genesis:");
+  result.data.forEach(log => {
+    console.error(`[${log.logType}] ${log.log}`);
+  });
+  return;
+}
+
+// Success
+const aquaTree = result.data.aquaTree;
+```
+
+---
+
+## Best Practices
+
+1. **Always verify results**: Check `isErr` before using data
+2. **Store credentials securely**: Never commit mnemonic/keys
+3. **Use environment variables**: Store sensitive data in `.env`
+4. **Validate inputs**: Check file sizes and formats before processing
+5. **Handle logs**: Display or log all LogData for debugging
+6. **Test on testnets**: Use Sepolia/Holesky before mainnet
+7. **Save AquaTrees**: Persist JSON after each operation
+8. **Verify chains**: Run verification after receiving AquaTrees
+
+---
+
+## Testing
+
+Create `credentials.json` for testing:
+
+```json
+{
+  "mnemonic": "your test mnemonic",
+  "nostr_sk": "your nostr secret key",
+  "did_key": "your did key",
+  "alchemy_key": "your alchemy api key",
+  "witness_eth_network": "sepolia",
+  "witness_method": "cli"
+}
+```
+
+Run tests:
+```bash
+npm test
+```
+
+Run specific test file:
+```bash
+npm test -- ./tests/aquafier.test.ts
+```
+
+---
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Getting started
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts
+- [Schema Reference](/previous_versions/version_3/schema) - Revision specifications
+- [GitHub Repository](https://github.com/inblockio/aqua-verifier-js-lib) - Source code and examples

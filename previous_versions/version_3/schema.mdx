@@ -1,0 +1,577 @@
+---
+title: "Schema Reference"
+description: "Detailed schema specifications for Aqua Protocol v3 revisions"
+---
+
+# Aqua Protocol v3 - Schema Reference
+
+This document provides comprehensive technical specifications for all revision types in Aqua Protocol v3. Each revision type has specific fields and validation rules.
+
+## Version String Format
+
+```
+https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: {scalar|tree}
+```
+
+**Components:**
+- Protocol URL: `https://aqua-protocol.org/docs/v3/schema_2`
+- Hash Algorithm: `SHA256`
+- Canonicalization Method: `scalar` or `tree`
+
+## Common Fields
+
+All revisions share these mandatory fields:
+
+| Field | Type | Description | Validation |
+|-------|------|-------------|------------|
+| `previous_verification_hash` | string | Hash of previous revision | Empty string for genesis, otherwise 64-char hex with `0x` prefix |
+| `local_timestamp` | string | ISO 8601 timestamp | Valid ISO 8601 format: `YYYY-MM-DDTHH:mm:ss` |
+| `revision_type` | string | Type of revision | One of: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version and method | Must match format above |
+
+---
+
+## File Revision
+
+Represents a file with metadata and optional content.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision hash (empty for genesis) |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"file"` |
+| `version` | string | Yes | Protocol version string |
+| `file_hash` | string | Yes | SHA256 hash of file content (hex with `0x`) |
+| `file_nonce` | string | Yes | Random 16-byte nonce (hex with `0x`) |
+| `content` | string/Uint8Array | No | Optional file content |
+| `leaves` | string[] | Conditional | Required if `Method: tree`, array of leaf hashes |
+
+### Genesis File Revision (Scalar)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c"
+}
+```
+
+### Genesis File Revision (Tree)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "leaves": [
+    "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
+  ]
+}
+```
+
+### With Content
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "content": "This is the file content as a string"
+}
+```
+
+### Validation Rules
+
+1. `file_hash` must match SHA256 of file content
+2. `file_nonce` must be exactly 16 bytes (32 hex chars + `0x`)
+3. If `Method: tree`, `leaves` array must be present
+4. If `Method: scalar`, `leaves` must be absent
+5. `content` is optional but if present, hash must match `file_hash`
+
+---
+
+## Form Revision
+
+Stores structured key-value data.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision hash (empty for genesis) |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"form"` |
+| `version` | string | Yes | Protocol version string |
+| `file_hash` | string | Yes | SHA256 hash of form data |
+| `file_nonce` | string | Yes | Random 16-byte nonce |
+| `content` | object | Yes | Form data as key-value pairs |
+| `leaves` | string[] | Conditional | Required if `Method: tree` |
+
+### Example (Scalar)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  }
+}
+```
+
+### Example (Tree)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  },
+  "leaves": [
+    "0x...",  // SHA256("name:John Doe")
+    "0x...",  // SHA256("email:john@example.com")
+    "0x...",  // SHA256("organization:Example Corp")
+    "0x..."   // SHA256("role:Developer")
+  ]
+}
+```
+
+### Leaf Computation (Tree Mode)
+
+For each key-value pair in `content`:
+```typescript
+leaf_hash = SHA256(`${key}:${value}`)
+```
+
+### Validation Rules
+
+1. `content` must be a valid JSON object
+2. All values in `content` must be strings
+3. `file_hash` must match hash of canonicalized content
+4. If `Method: tree`, number of leaves must match number of keys in content
+
+---
+
+## Signature Revision
+
+Adds cryptographic signature to verify authenticity.
+
+### Common Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Hash of revision being signed |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"signature"` |
+| `version` | string | Yes | Protocol version string |
+| `signature_type` | string | Yes | Type: `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"` |
+
+### CLI / MetaMask Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | string | Yes | Hex-encoded signature (65 bytes for ECDSA) |
+| `signature_wallet_address` | string | Yes | Ethereum address (EIP-55 checksummed) |
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "cli",
+  "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c",
+  "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+}
+```
+
+### DID Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | object | Yes | JWS (JSON Web Signature) object |
+
+**Signature Object Structure:**
+```typescript
+{
+  payload: string;       // Base64url-encoded payload
+  signatures: [{
+    protected: string;   // Base64url-encoded protected header
+    signature: string;   // Base64url-encoded signature
+  }]
+}
+```
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "did",
+  "signature": {
+    "payload": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19",
+    "signatures": [{
+      "protected": "eyJhbGciOiJFZERTQSJ9",
+      "signature": "kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ"
+    }]
+  }
+}
+```
+
+### P12 Certificate Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | string | Yes | Hex-encoded signature |
+| `signature_public_key` | string | Yes | Hex-encoded DER public key |
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "p12",
+  "signature": "0x...",
+  "signature_public_key": "0x308201a2300d06092a864886f70d01010105000382018f..."
+}
+```
+
+### Inline Signature
+
+Same as CLI/MetaMask but with pre-computed signature.
+
+### Validation Rules
+
+1. Signature must be verifiable using provided credentials
+2. For CLI/MetaMask: Address must be recoverable from signature
+3. For DID: JWS must be valid and verifiable
+4. For P12: Signature must verify with public key
+5. Signature must be computed over `previous_verification_hash`
+
+---
+
+## Witness Revision
+
+Anchors revision to blockchain or timestamping service.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Hash being witnessed |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"witness"` |
+| `version` | string | Yes | Protocol version string |
+| `witness_merkle_root` | string | Yes | Root hash of Merkle tree |
+| `witness_timestamp` | number | Yes | Unix timestamp from witness service |
+| `witness_network` | string | Yes | Network: `"mainnet"`, `"sepolia"`, `"holesky"`, `"tsa"`, `"nostr"` |
+| `witness_smart_contract_address` | string | Conditional | Required for Ethereum |
+| `witness_transaction_hash` | string | Yes | Transaction or event hash |
+| `witness_sender_account_address` | string | Conditional | Required for Ethereum |
+| `witness_merkle_proof` | string[] | Yes | Merkle proof (empty for single witness) |
+
+### Ethereum Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xdef456...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "sepolia",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "witness_sender_account_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  "witness_merkle_proof": []
+}
+```
+
+### Batched Witness Example
+
+Multiple revisions witnessed in single transaction:
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xroot...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "mainnet",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081...",
+  "witness_sender_account_address": "0x742d35Cc...",
+  "witness_merkle_proof": [
+    "0xsibling_hash_1",
+    "0xsibling_hash_2",
+    "0xsibling_hash_3"
+  ]
+}
+```
+
+### Nostr Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "nostr",
+  "witness_smart_contract_address": "",
+  "witness_transaction_hash": "nevent1qqsw...",
+  "witness_sender_account_address": "npub1...",
+  "witness_merkle_proof": []
+}
+```
+
+### TSA Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "tsa",
+  "witness_smart_contract_address": "https://timestamp.digicert.com",
+  "witness_transaction_hash": "base64_tsa_response",
+  "witness_sender_account_address": "",
+  "witness_merkle_proof": []
+}
+```
+
+### Validation Rules
+
+1. For single witness: `witness_merkle_proof` must be empty array
+2. For single witness: `witness_merkle_root` equals `previous_verification_hash`
+3. For batched: Merkle proof must verify back to `witness_merkle_root`
+4. Transaction must exist and be confirmed on specified network
+5. `witness_timestamp` should match blockchain/service timestamp
+6. For Ethereum: Contract address and sender address required
+
+---
+
+## Link Revision
+
+Connects to other AquaTree chains.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision in this chain |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"link"` |
+| `version` | string | Yes | Protocol version string |
+| `link_type` | string | No | Application-specific link type |
+| `link_verification_hashes` | string[] | Yes | Array of hashes from other chains |
+| `link_file_hashes` | string[] | No | Corresponding file hashes |
+
+### Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:03:00",
+  "revision_type": "link",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "link_type": "dependencies",
+  "link_verification_hashes": [
+    "0x111222333444555666777888999000aaabbbcccdddeeefff000111222333444",
+    "0x222333444555666777888999000aaabbbcccdddeeefff000111222333444555",
+    "0x333444555666777888999000aaabbbcccdddeeefff000111222333444555666"
+  ],
+  "link_file_hashes": [
+    "0xfileHash1...",
+    "0xfileHash2...",
+    "0xfileHash3..."
+  ]
+}
+```
+
+### Validation Rules
+
+1. `link_verification_hashes` must be non-empty array
+2. Each hash in array must be valid revision hash
+3. If `link_file_hashes` present, must have same length as `link_verification_hashes`
+4. Referenced revisions should exist (optional strict validation)
+
+---
+
+## Hash Computation
+
+### Scalar Method
+
+1. Serialize revision as canonical JSON (sorted keys)
+2. Compute SHA256 hash of serialized string
+3. Prefix with `0x`
+
+```typescript
+const canonical = JSON.stringify(sortKeys(revision));
+const hash = "0x" + sha256(canonical).toString('hex');
+```
+
+### Tree Method
+
+1. Extract leaves array from revision
+2. Build Merkle tree from leaves
+3. Root hash becomes verification hash
+
+```typescript
+const leaves = revision.leaves;
+const tree = new MerkleTree(leaves, sha256);
+const hash = "0x" + tree.getRoot().toString('hex');
+```
+
+---
+
+## AquaTree Storage Format
+
+Complete AquaTree structure for storage/transmission:
+
+```json
+{
+  "revisions": {
+    "0xgenesis_hash": {
+      "previous_verification_hash": "",
+      "local_timestamp": "2024-01-01T12:00:00",
+      "revision_type": "file",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "file_hash": "0x...",
+      "file_nonce": "0x..."
+    },
+    "0xsignature_hash": {
+      "previous_verification_hash": "0xgenesis_hash",
+      "local_timestamp": "2024-01-01T12:01:00",
+      "revision_type": "signature",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "signature_type": "cli",
+      "signature": "0x...",
+      "signature_wallet_address": "0x..."
+    },
+    "0xwitness_hash": {
+      "previous_verification_hash": "0xsignature_hash",
+      "local_timestamp": "2024-01-01T12:02:00",
+      "revision_type": "witness",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "witness_merkle_root": "0x...",
+      "witness_timestamp": 1704110520,
+      "witness_network": "sepolia",
+      "witness_smart_contract_address": "0x...",
+      "witness_transaction_hash": "0x...",
+      "witness_sender_account_address": "0x...",
+      "witness_merkle_proof": []
+    }
+  },
+  "file_index": {
+    "0xfile_hash": "document.pdf"
+  },
+  "tree": {
+    "hash": "0xgenesis_hash",
+    "children": [
+      {
+        "hash": "0xsignature_hash",
+        "children": [
+          {
+            "hash": "0xwitness_hash",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "treeMapping": {
+    "paths": {
+      "0xgenesis_hash": ["0xgenesis_hash"],
+      "0xsignature_hash": ["0xgenesis_hash", "0xsignature_hash"],
+      "0xwitness_hash": ["0xgenesis_hash", "0xsignature_hash", "0xwitness_hash"]
+    },
+    "latestHash": "0xwitness_hash"
+  }
+}
+```
+
+---
+
+## Field Constraints
+
+### Hashes
+- Format: Lowercase hexadecimal with `0x` prefix
+- Length: 64 characters (32 bytes) + 2-char prefix = 66 total
+- Example: `0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08`
+
+### Timestamps
+- Format: ISO 8601
+- Pattern: `YYYY-MM-DDTHH:mm:ss`
+- Example: `2024-01-01T12:00:00`
+
+### Ethereum Addresses
+- Format: EIP-55 checksummed
+- Length: 42 characters (20 bytes + 0x)
+- Mixed case for checksum
+- Example: `0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8`
+
+### Nonces
+- Length: Exactly 16 bytes (32 hex chars + 0x)
+- Format: Lowercase hexadecimal with `0x` prefix
+- Example: `0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c`
+
+---
+
+## Version Compatibility
+
+- **v3.2.x**: Current version, fully compatible
+- **v3.1.x**: Compatible, minor improvements
+- **v3.0.x**: Compatible, initial TypeScript release
+- **v2.x**: Not compatible, different schema
+
+---
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Getting started
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts
+- [Tooling](/previous_versions/version_3/tooling) - SDK API reference
