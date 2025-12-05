@@ -1,64 +1,170 @@
-name: GitHub Pages
-on: 
+name: Documentation Quality Checks
+
+on:
   push:
     branches:
-      - docusaurus
+      - main
+      - mintlify_docs
   pull_request:
+    branches:
+      - main
 
 jobs:
-  deploy:
-    runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+  # Spell checking
+  codespell:
+    name: Spell Check
+    runs-on: ubuntu-latest
     steps:
-      - name: Git checkout
-        uses: actions/checkout@v3
-        # with:
-        #   submodules: recursive  # Fetch the Docsy theme
-        #   fetch-depth: 1         # Fetch all history for .GitInfo and .Lastmod
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # - name: Setup hugo
-      #   uses: peaceiris/actions-hugo@v2
-      #   with:
-      #     hugo-version: "0.88.0"
-      #     extended: true
+      - name: Run codespell
+        uses: codespell-project/actions-codespell@master
+        with:
+          # Ignore common technical terms and abbreviations
+          ignore_words_list: Sur,ANS,Aqua,aqua,Nostr,nostr,TSA,RSA,ECDSA,Ethereum,ethereum,Merkle,merkle,SHA,WASM,wasm,SDK,CLI,API,JSON,JWT,DID,EIP,FIPS,Mintlify,mintlify,Docusaurus,docusaurus,MetaMask,metamask,Sepolia,sepolia,Holesky,holesky,aquafier,Aquafier,AquaTree,RevisionType,lifecycle,Github,github
+          only_warn: 1
+          skip: "*.json,*.lock,*.yml,*.yaml,.git,node_modules,_site,build"
 
-      - name: Setup Node
-        uses: actions/setup-node@v2
+  # Markdown linting
+  markdown-lint:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run markdownlint
+        uses: nosborn/github-action-markdown-cli@v3.3.0
+        with:
+          files: .
+          config_file: ".markdownlint.json"
+          ignore_files: "node_modules/**,_site/**,build/**,.github/**"
+          # Don't fail on warnings, just report them
+          dot: true
+
+  # Validate JSON files
+  json-validation:
+    name: Validate JSON Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+      - name: Validate docs.json
+        run: |
+          echo "Validating docs.json..."
+          node -e "JSON.parse(require('fs').readFileSync('docs.json', 'utf8'))"
+          echo "✓ docs.json is valid"
 
-      - run: |
-          if [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
-      - run: npm run build
+      - name: Validate all JSON files
+        run: |
+          echo "Validating all JSON files..."
+          find . -name "*.json" -not -path "./node_modules/*" -not -path "./_site/*" -not -path "./build/*" | while read file; do
+            echo "Checking $file"
+            node -e "JSON.parse(require('fs').readFileSync('$file', 'utf8'))" || exit 1
+          done
+          echo "✓ All JSON files are valid"
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/gh-pages-docusaurus' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          exclude_assets: '.github,README.md'
-          keep_files: false
-          publish_branch: gh-pages-docusaurus
-          cname: aqua-protocol.org
-  codespell:
+  # Check for broken internal links
+  link-check:
+    name: Check Links
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: codespell-project/actions-codespell@master
-      with:
-        ignore_words_list: Sur,ANS
-        only_warn: 1
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check for broken internal links
+        run: |
+          echo "Checking for broken internal links in MDX files..."
+
+          # Simple check for internal links that might be broken
+          # This checks if referenced files exist
+          find . -name "*.mdx" -not -path "./node_modules/*" -not -path "./_site/*" | while read file; do
+            echo "Checking links in $file"
+            # Extract markdown links [text](/path) and check if files exist
+            # This is a basic check - for comprehensive link checking, use a dedicated tool
+            grep -oP '\]\(/[^)]+\)' "$file" 2>/dev/null | sed 's/](\///' | sed 's/).*//' | while read link; do
+              if [[ "$link" == *".mdx"* ]] || [[ "$link" == *".md"* ]]; then
+                if [ ! -f "$link" ] && [ ! -f "${link}.mdx" ] && [ ! -f "${link}.md" ]; then
+                  echo "⚠ Warning: Potentially broken link in $file: $link"
+                fi
+              fi
+            done
+          done
+          echo "✓ Link check complete"
+
+  # Documentation structure check
+  structure-check:
+    name: Documentation Structure
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify documentation structure
+        run: |
+          echo "Verifying documentation structure..."
+
+          # Check if required files exist
+          required_files=("docs.json" "README.md")
+          for file in "${required_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "❌ Missing required file: $file"
+              exit 1
+            fi
+          done
+
+          # Check if key directories exist
+          required_dirs=("schema_reference" "use_cases" "dev_tools" "previous_versions")
+          for dir in "${required_dirs[@]}"; do
+            if [ ! -d "$dir" ]; then
+              echo "❌ Missing required directory: $dir"
+              exit 1
+            fi
+          done
+
+          echo "✓ Documentation structure is valid"
+
+      - name: Check for frontmatter in MDX files
+        run: |
+          echo "Checking MDX files have proper frontmatter..."
+
+          find . -name "*.mdx" -not -path "./node_modules/*" -not -path "./_site/*" | while read file; do
+            if ! head -n 5 "$file" | grep -q "^---$"; then
+              echo "⚠ Warning: $file may be missing frontmatter"
+            fi
+          done
+
+          echo "✓ Frontmatter check complete"
+
+  # Summary job
+  quality-summary:
+    name: Quality Check Summary
+    runs-on: ubuntu-latest
+    needs: [codespell, markdown-lint, json-validation, link-check, structure-check]
+    if: always()
+    steps:
+      - name: Check results
+        run: |
+          echo "Quality Check Summary:"
+          echo "✓ Spell check: ${{ needs.codespell.result }}"
+          echo "✓ Markdown lint: ${{ needs.markdown-lint.result }}"
+          echo "✓ JSON validation: ${{ needs.json-validation.result }}"
+          echo "✓ Link check: ${{ needs.link-check.result }}"
+          echo "✓ Structure check: ${{ needs.structure-check.result }}"
