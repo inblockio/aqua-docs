@@ -67,7 +67,8 @@
             "pages": [
               "use_cases/introduction",
               "use_cases/supply_chain",
-              "use_cases/identity_attestation"
+              "use_cases/identity_attestation",
+              "use_cases/document_verification"
             ]
           },
           {
