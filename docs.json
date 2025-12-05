@@ -24,10 +24,41 @@
           {
             "group": "Aqua Versions",
             "pages": [
-              "previous_versions/version-1",
-              "previous_versions/version-2",
-              "previous_versions/version-3",
-              "previous_versions/version-4"
+              {
+                "group": "Version (v1.0 - depracated)",
+                "pages": [
+                  "previous_versions/version_1/introduction",
+                  "previous_versions/version_1/concepts",
+                  "previous_versions/version_1/whitepaper",
+                  "previous_versions/version_1/idenity_protocol",
+                  "previous_versions/version_1/name_resolution",
+                  "previous_versions/version_1/assurance_levels",
+                  "previous_versions/version_1/data_accounting",
+                  "previous_versions/version_1/data_governance",
+                  "previous_versions/version_1/delegated_witnessing",
+                  "previous_versions/version_1/design_principles",
+                  "previous_versions/version_1/guardian",
+                  "previous_versions/version_1/immutable_hyperlinks"
+                ]
+              },
+              {
+                "group": "Version (v2.0 - depracated)",
+                "pages": [
+                  "previous_versions/version_2/introduction",
+                  "previous_versions/version_2/concepts",
+                  "previous_versions/version_2/tooling"
+                ]
+              },
+              {
+                "group": "Version (v3.0 - current)",
+                "pages": [
+                  "previous_versions/version_3/introduction",
+                  "previous_versions/version_3/concepts",
+                  "previous_versions/version_3/tooling"
+                ]
+              },
+              "previous_versions/version_4/version_4"
+             
             ]
           },
           {

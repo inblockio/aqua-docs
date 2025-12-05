@@ -1,0 +1,8 @@
+ {
+    "permissions": {
+      "additionalDirectories": [
+        "C:\\Users\\ADMIN\\Desktop\\Development\\Rust\\aqua-rs-sdk",
+        "C:\\Users\\ADMIN\\Desktop\\Development\\Projects\\aqua-docs"
+      ]
+    }
+  }

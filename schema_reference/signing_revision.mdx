@@ -1,0 +1,352 @@
+---
+title: "Signature Revision"
+description: "Schema specification for Signature Revisions in Aqua Protocol v4"
+---
+
+# Signature Revision
+
+A Signature Revision adds cryptographic proof of authenticity and authorship to a revision chain. It references a previous revision and includes a digital signature that can be verified using the associated public key or address. Aqua Protocol v4 supports three signature types: RSA, Ethereum (EIP-191), and DID-based signatures.
+
+## Overview
+
+Signature revisions provide:
+- **Authentication**: Proof that a specific entity created or approved the previous revision
+- **Integrity**: Assurance that the signed revision hasn't been tampered with
+- **Non-repudiation**: The signer cannot deny having signed the revision
+- **Flexibility**: Support for multiple cryptographic signature schemes
+
+## Schema Structure
+
+### Common Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_revision` | string | Yes | Hash reference to the revision being signed |
+| `revision_type` | string | Yes | Always `"signature"` for signature revisions |
+| `nonce` | string | Yes | Random 16-byte hex string for uniqueness |
+| `local_timestamp` | number | Yes | Unix timestamp when the signature was created |
+| `version` | string | Yes | Protocol version: `"https://aqua-protocol.org/docs/v4/schema"` |
+| `method` | string | Yes | Canonicalization method: `"scalar"` (typical) or `"tree"` |
+| `hash_type` | string | Yes | Hash algorithm: `"FIPS_202-SHA3-256"` |
+| `signature` | object | Yes | Signature value object (varies by signature type) |
+
+### Signature Value Object
+
+The `signature` field is an object with different structures depending on the signature type.
+
+## Signature Types
+
+### 1. RSA Signature
+
+Uses RSA public-key cryptography with PKCS#1 v1.5 padding.
+
+#### Structure
+```json
+{
+  "signature_type": "rsa",
+  "signature": "0x...",
+  "public_key": "0x..."
+}
+```
+
+#### Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `signature_type` | string | Must be `"rsa"` |
+| `signature` | string | Hex-encoded RSA signature (256 bytes for RSA-2048, 512 bytes for RSA-4096) |
+| `public_key` | string | Hex-encoded DER-encoded RSA public key (200-600 bytes) |
+
+#### Validation Rules
+- Signature must be 256 bytes (RSA-2048) or 512 bytes (RSA-4096)
+- Public key must be DER-encoded and between 200-600 bytes
+- Both fields must be lowercase hex strings prefixed with `0x`
+
+#### Example
+```json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "signature",
+  "nonce": "0x9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b",
+  "local_timestamp": 1704067200,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "signature": {
+    "signature_type": "rsa",
+    "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d",
+    "public_key": "0x308201a2300d06092a864886f70d01010105000382018f003082018a0282018100c9c4d8e3f7a1b5c9d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e00203010001"
+  }
+}
+```
+
+---
+
+### 2. Ethereum (EIP-191) Signature
+
+Uses Ethereum's personal sign method (EIP-191) with ECDSA on the secp256k1 curve.
+
+#### Structure
+```json
+{
+  "signature_type": "ethereum:eip-191",
+  "signature": "0x...",
+  "signature_wallet_address": "0x..."
+}
+```
+
+#### Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `signature_type` | string | Must be `"ethereum:eip-191"` |
+| `signature` | string | Hex-encoded ECDSA signature (65 bytes: r=32, s=32, v=1) |
+| `signature_wallet_address` | string | EIP-55 checksummed Ethereum address (20 bytes) |
+
+#### Validation Rules
+- Signature must be exactly 65 bytes
+- Wallet address must be a valid EIP-55 checksummed address
+- Both fields must be hex strings prefixed with `0x`
+- Address checksum must be validated
+
+#### Example
+```json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "signature",
+  "nonce": "0x1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e",
+  "local_timestamp": 1704070800,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "signature": {
+    "signature_type": "ethereum:eip-191",
+    "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c",
+    "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+  }
+}
+```
+
+**Note**: The `signature_wallet_address` must use proper EIP-55 checksumming (mixed case).
+
+---
+
+### 3. DID JWS Signature
+
+Uses Decentralized Identifiers (DIDs) with JSON Web Signatures (JWS).
+
+#### Structure
+```json
+{
+  "signature_type": "did:jws",
+  "jws": "eyJ...",
+  "did": "did:key:..."
+}
+```
+
+#### Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `signature_type` | string | Must be `"did:jws"` |
+| `jws` | string | Compact JWS (JSON Web Signature) |
+| `did` | string | Decentralized Identifier of the signer |
+
+#### Validation Rules
+- JWS must be in compact serialization format (three base64url-encoded parts separated by dots)
+- DID must be a valid DID string (e.g., `did:key:z6Mk...`, `did:web:example.com`)
+- The DID document must be resolvable to verify the signature
+
+#### Example
+```json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "signature",
+  "nonce": "0x5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a",
+  "local_timestamp": 1704074400,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "signature": {
+    "signature_type": "did:jws",
+    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ",
+    "did": "did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK"
+  }
+}
+```
+
+---
+
+## What Gets Signed
+
+The signature is computed over the **hash of the previous revision**, not the revision itself.
+
+### Signing Process
+
+1. Compute the hash of the `previous_revision`
+2. For Ethereum: Add EIP-191 prefix (`\x19Ethereum Signed Message:\n32`)
+3. Sign the hash using the appropriate method
+4. Create the signature revision with the signature value
+5. Compute the hash of the signature revision
+
+### Example Signing Flow
+
+```
+Object Revision ’ Compute Hash ’ Sign Hash ’ Signature Revision
+     “
+0x3f8a7b2c... (previous_revision in signature)
+```
+
+## Validation Rules
+
+A Signature Revision is valid if:
+
+1. **Structure**: Contains all required fields with correct types
+2. **Revision Type**: The `revision_type` is exactly `"signature"`
+3. **Previous Revision**: References a valid existing revision
+4. **Signature Type**: One of `"rsa"`, `"ethereum:eip-191"`, or `"did:jws"`
+5. **Signature Format**: Matches the requirements for the specific signature type
+6. **No Unknown Fields**: The signature object contains only recognized fields
+7. **Signature Verification**: The signature can be cryptographically verified
+   - For RSA: Verify using the provided public key
+   - For EIP-191: Recover address from signature and compare to `signature_wallet_address`
+   - For DID:JWS: Resolve DID and verify JWS signature
+
+## Multiple Signatures
+
+To add multiple signatures to the same revision:
+
+```
+Object Revision
+    “
+Signature 1 (Alice signs object)
+    “
+Signature 2 (Bob signs Signature 1)
+    “
+Signature 3 (Carol signs Signature 2)
+```
+
+Each signature revision signs the previous revision, creating a chain of signatures.
+
+### Multi-Party Signing
+
+For independent multi-party signing (all signing the same object):
+
+```
+        Object Revision
+         ™    “    ˜
+Signature A  Signature B  Signature C
+         ˜    “    ™
+        Link Revision
+```
+
+Use a Link Revision to combine multiple independent signature branches.
+
+## Common Use Cases
+
+### 1. Document Signing
+Sign file object revisions to prove authorship:
+```
+File Object ’ Signature (Author) ’ Witness (Timestamp)
+```
+
+### 2. Approval Workflows
+Multiple parties sign in sequence:
+```
+Document ’ Sign (Creator) ’ Sign (Reviewer) ’ Sign (Approver)
+```
+
+### 3. Notarization
+Professional notary signs an object:
+```
+Object ’ Signature (Notary's RSA key) ’ Witness (Blockchain)
+```
+
+### 4. Smart Contract Interaction
+Ethereum wallet signs for on-chain verification:
+```
+Claim ’ Signature (EIP-191) ’ Submit to Smart Contract
+```
+
+### 5. Decentralized Identity
+DID-based signatures for verifiable credentials:
+```
+Credential ’ Signature (Issuer's DID) ’ Holder stores
+```
+
+## Implementation Notes
+
+### Creating a Signature Revision
+
+1. Identify the revision to sign
+2. Compute its hash (the `previous_revision` value)
+3. Prepare the message to sign (hash, with any required prefixes)
+4. Generate the signature using chosen method
+5. Construct the signature revision object
+6. Validate the signature can be verified
+7. Compute and store the signature revision hash
+
+### Verifying a Signature Revision
+
+#### RSA Verification
+```
+1. Extract public_key from signature object
+2. Extract signature bytes
+3. Reconstruct signed message (hash of previous_revision)
+4. Verify signature using RSA public key
+```
+
+#### EIP-191 Verification
+```
+1. Reconstruct EIP-191 message: "\x19Ethereum Signed Message:\n32" + hash
+2. Recover address from signature
+3. Compare recovered address to signature_wallet_address
+```
+
+#### DID:JWS Verification
+```
+1. Resolve DID to get DID document
+2. Extract verification method (public key)
+3. Verify JWS signature using verification method
+4. Validate JWS payload matches revision data
+```
+
+## Security Considerations
+
+### 1. Key Management
+- RSA: Protect private key files, use strong key sizes (e2048 bits)
+- EIP-191: Secure wallet seed phrases/private keys
+- DID: Maintain DID document security and key rotation policies
+
+### 2. Signature Reuse
+- Each signature should sign a unique revision
+- Nonces prevent replay attacks
+
+### 3. Timestamp Validation
+- Check `local_timestamp` is reasonable (not far future/past)
+- Compare with witness timestamps for consistency
+
+### 4. Address Validation
+- For EIP-191: Always validate EIP-55 checksum
+- Reject non-checksummed addresses
+
+### 5. DID Resolution
+- Ensure DID resolver is trustworthy
+- Cache DID documents appropriately
+- Handle resolution failures gracefully
+
+## Relationship with Other Revisions
+
+- **Object Revisions**: Typically what gets signed first
+- **Witness Revisions**: Often follow signatures to add timestamping
+- **Link Revisions**: Can combine multiple signature branches
+- **Template Revisions**: Can also be signed, though less common
+
+## See Also
+
+- [Object Revision](/schema_reference/object_revision) - What typically gets signed
+- [Witness Revision](/schema_reference/witness_revision) - Add timestamps after signing
+- [Link Revision](/schema_reference/link_revision) - Combine signature branches
+- [EIP-191 Specification](https://eips.ethereum.org/EIPS/eip-191) - Ethereum signing standard
+- [DID Core Specification](https://www.w3.org/TR/did-core/) - Decentralized Identifiers
+- [JWS Specification](https://www.rfc-editor.org/rfc/rfc7515) - JSON Web Signatures
