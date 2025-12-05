@@ -1,8 +1,415 @@
 ---
-title: "Aqua Protocol "
-description: "Good to know, basic terminology"
+title: "Aqua Protocol Schema Reference "
+description: "Complete technical reference for Aqua Protocol v4"
 ---
 
-Aqua protocol generates a json file as ouput when notarizing a file.
-This JSON output is composed of two objects `revision` and `file index`.
-The root JSON object is referred to as an Aqua tree.
+
+This section provides the complete technical specification for Aqua Protocol v4. Here you'll find detailed documentation on data structures, revision types, validation rules, and implementation requirements.
+
+## What is Aqua Protocol?
+
+Aqua Protocol is a cryptographic protocol for creating verifiable, timestamped chains of revisions with signatures and blockchain anchoring. It enables:
+
+- **Tamper-Proof Records**: Cryptographic hashes ensure any modification is detectable
+- **Multi-Party Signatures**: Multiple parties can sign revisions for authentication
+- **Blockchain Timestamping**: Anchor revisions to Ethereum, Nostr, or TSA for provable timestamps
+- **Provenance Tracking**: Link revisions to track data flow and transformations
+- **Template Validation**: Enforce data schemas with JSON Schema
+
+## Core Data Structure
+
+When you notarize content with Aqua Protocol, the output is a JSON file called an **Aqua Tree**.
+
+### Aqua Tree Structure
+
+```json
+{
+  "revisions": {
+    "0xhash1...": { /* revision object */ },
+    "0xhash2...": { /* revision object */ }
+  },
+  "file_index": {
+    "0xcontenthash1...": "document.pdf",
+    "0xcontenthash2...": "image.png"
+  }
+}
+```
+
+The Aqua Tree contains two primary components:
+
+- **[Revisions](/schema_reference/revision)**: Map of verification hashes to revision objects
+- **[File Index](/schema_reference/file_index)**: Map of content hashes to filenames
+
+See the [Aqua Tree documentation](/schema_reference/aqua_tree) for complete details.
+
+## Revision Types
+
+Aqua Protocol v4 defines five revision types, each serving a specific purpose:
+
+### 1. Object Revision
+**Purpose**: Store data content (documents, files, structured data)
+
+**Use for**:
+- Genesis revisions (first revision in a chain)
+- Document updates and modifications
+- Data snapshots
+
+**Learn more**: [Object Revision Reference](/schema_reference/object_revision)
+
+### 2. Template Revision
+**Purpose**: Define data schemas and validation rules
+
+**Use for**:
+- Enforcing data structure with JSON Schema
+- Creating reusable data models
+- Validating object revision content
+
+**Learn more**: [Template Revision Reference](/schema_reference/template_revision)
+
+### 3. Signature Revision
+**Purpose**: Add cryptographic signatures for authentication
+
+**Use for**:
+- Proving authorship and authorization
+- Multi-party approval workflows
+- Non-repudiation
+
+**Signature Types**:
+- **RSA**: Traditional RSA signatures
+- **EIP-191**: Ethereum-style signatures
+- **DID:JWS**: Decentralized identifier signatures
+
+**Learn more**: [Signature Revision Reference](/schema_reference/signing_revision)
+
+### 4. Witness Revision
+**Purpose**: Anchor revisions to blockchain for timestamping
+
+**Use for**:
+- Proving existence at specific time
+- Creating tamper-proof timestamps
+- Regulatory compliance
+
+**Networks Supported**:
+- Ethereum (mainnet, Sepolia, Holesky)
+- Nostr
+- TSA (RFC 3161 Timestamping Authorities)
+
+**Learn more**: [Witness Revision Reference](/schema_reference/witness_revision)
+
+### 5. Link Revision
+**Purpose**: Connect to other Aqua Trees
+
+**Use for**:
+- Referencing dependencies
+- Building composite documents
+- Creating provenance graphs
+
+**Learn more**: [Link Revision Reference](/schema_reference/link_revision)
+
+## Common Revision Fields
+
+All revision types share these common fields:
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `revision_type` | string | Yes | Hash identifying the revision type |
+| `nonce` | string | Yes | Random 16-byte hex string for uniqueness |
+| `local_timestamp` | number | Yes | Unix timestamp when revision was created |
+| `version` | string | Yes | Protocol version: `https://aqua-protocol.org/docs/v4/schema` |
+| `method` | string | Yes | Canonicalization method: `"scalar"` or `"tree"` |
+| `hash_type` | string | Yes | Hash algorithm: `"FIPS_202-SHA3-256"` |
+| `previous_hash` | string | No | Hash of previous revision (absent in genesis) |
+
+Additional fields depend on the specific revision type.
+
+## Canonicalization Methods
+
+Aqua Protocol v4 supports two methods for computing revision hashes:
+
+### Scalar Method
+**Best for**: Simple, straightforward hashing
+
+```json
+{
+  "method": "scalar",
+  // Content hashed as-is
+}
+```
+
+The entire revision is serialized and hashed directly.
+
+### Tree Method
+**Best for**: Selective disclosure, large content
+
+```json
+{
+  "method": "tree",
+  "leaves": [
+    "0xleaf1hash...",
+    "0xleaf2hash..."
+  ]
+}
+```
+
+Content is broken into leaves, each hashed separately, then combined in a Merkle tree.
+
+## Verification Hash
+
+Each revision has a **verification hash** computed from its canonical form using SHA3-256:
+
+```
+verification_hash = SHA3-256(canonical_revision_json)
+```
+
+This hash serves as:
+- Unique identifier for the revision
+- Key in the revisions map
+- Reference in `previous_hash` fields
+- Proof of integrity
+
+## Revision Chains
+
+Revisions form chains through `previous_hash` references:
+
+```
+Genesis (no previous_hash)
+    ↓
+Revision A (previous_hash → Genesis)
+    ↓
+Signature B (previous_hash → Revision A)
+    ↓
+Witness C (previous_hash → Signature B)
+```
+
+### Genesis Revision
+
+The first revision in a chain:
+- Has no `previous_hash` field (or `previous_hash: null`)
+- Typically an object or template revision
+- Establishes the chain's starting point
+
+### Subsequent Revisions
+
+All revisions after genesis:
+- Must have `previous_hash` pointing to an existing revision
+- Build upon the chain's history
+- Can be any revision type
+
+## Example: Complete Aqua Tree
+
+Here's a minimal example showing a document with signature and witness:
+
+```json
+{
+  "revisions": {
+    "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e": {
+      "revision_type": "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e",
+      "nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+      "local_timestamp": 1704067200,
+      "version": "https://aqua-protocol.org/docs/v4/schema",
+      "method": "scalar",
+      "hash_type": "FIPS_202-SHA3-256",
+      "payload": {
+        "payload_type": "application/pdf",
+        "hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+        "hash_type": "FIPS_202-SHA3-256",
+        "descriptor": "Contract Document"
+      }
+    },
+    "0x8e5b2f9c4d3a1e7b6c8f9d0e2a5b3c4d1e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b": {
+      "revision_type": "0x8e5b2f9c4d3a1e7b6c8f9d0e2a5b3c4d1e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b",
+      "nonce": "0x1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d",
+      "local_timestamp": 1704067260,
+      "version": "https://aqua-protocol.org/docs/v4/schema",
+      "method": "scalar",
+      "hash_type": "FIPS_202-SHA3-256",
+      "previous_hash": "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e",
+      "signature_type": "eip191",
+      "signature": "0x8c9d0e1f...",
+      "wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+    },
+    "0x1c3e5a7b9d2f4e6a8c0b1d3f5e7a9c2b4d6e8f0a1c3e5a7b9d2f4e6a8c0b1d3f": {
+      "revision_type": "0x1c3e5a7b9d2f4e6a8c0b1d3f5e7a9c2b4d6e8f0a1c3e5a7b9d2f4e6a8c0b1d3f",
+      "nonce": "0x2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e",
+      "local_timestamp": 1704067320,
+      "version": "https://aqua-protocol.org/docs/v4/schema",
+      "method": "scalar",
+      "hash_type": "FIPS_202-SHA3-256",
+      "previous_hash": "0x8e5b2f9c4d3a1e7b6c8f9d0e2a5b3c4d1e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b",
+      "merkle_root": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+      "timestamp": 1704067320,
+      "network": "sepolia",
+      "smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "transaction_hash": "0x3b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9",
+      "sender_account_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+      "merkle_proof": []
+    }
+  },
+  "file_index": {
+    "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08": "contract.pdf"
+  }
+}
+```
+
+This tree contains:
+1. **Object Revision** (genesis): Document content hash
+2. **Signature Revision**: EIP-191 signature from wallet
+3. **Witness Revision**: Ethereum Sepolia timestamp
+
+## Built-in Templates
+
+Aqua Protocol v4 includes several built-in templates:
+
+| Template | Purpose | Hash |
+|----------|---------|------|
+| **Object** | Generic object revision | `0x742b74c87ccd7bfc...` |
+| **Template** | Template definition | `0x9c2f4e6a8c0b1d3f...` |
+| **Signature** | Signature revision | `0x8e5b2f9c4d3a1e7b...` |
+| **Witness** | Witness revision | `0x1c3e5a7b9d2f4e6a...` |
+| **Link** | Link revision | `0x4a6c8e0b2d4f6a8c...` |
+| **File** | File content | `0x5b7d9f1a3c5e7b9d...` |
+| **Domain** | Domain name | `0x6c8e0b2d4f6a8c0b...` |
+| **Email** | Email address | `0x7d9f1a3c5e7b9d2f...` |
+
+Each built-in template has a specific hash that serves as its `revision_type` identifier.
+
+## Hash Format
+
+All hashes in Aqua Protocol v4 use consistent formatting:
+
+- **Algorithm**: SHA3-256 (FIPS 202)
+- **Format**: Hex string prefixed with `0x`
+- **Length**: 66 characters (`0x` + 64 hex digits)
+- **Example**: `0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08`
+
+## Timestamp Format
+
+Timestamps use Unix epoch format:
+
+- **Type**: Integer (seconds since January 1, 1970 UTC)
+- **Example**: `1704067200` = January 1, 2024 00:00:00 UTC
+
+## Validation Rules
+
+An Aqua Tree is valid if:
+
+1. **All revisions have valid hashes**: Computed hash matches the key
+2. **Previous hashes exist**: All `previous_hash` values reference existing revisions (except genesis)
+3. **No cycles**: Following `previous_hash` eventually reaches genesis
+4. **Signatures verify**: All signature revisions have valid cryptographic signatures
+5. **Templates validate**: Object revisions with templates match their schema
+6. **Witnesses exist**: Witness revisions reference valid blockchain transactions
+
+## Schema Version
+
+All revisions in Aqua Protocol v4 use:
+
+```json
+{
+  "version": "https://aqua-protocol.org/docs/v4/schema"
+}
+```
+
+This identifies the protocol version and schema specification.
+
+## Implementation Guidelines
+
+### Creating Revisions
+
+1. **Generate nonce**: Create random 16-byte hex string
+2. **Set timestamp**: Use current Unix timestamp
+3. **Add content**: Include revision-specific fields
+4. **Set previous_hash**: Reference prior revision (if not genesis)
+5. **Compute hash**: Canonicalize and hash the revision
+6. **Use hash as key**: Store in revisions map with hash as key
+
+### Verifying Chains
+
+1. **Find genesis**: Locate revision with no `previous_hash`
+2. **Traverse chain**: Follow `previous_hash` references
+3. **Verify hashes**: Recompute and compare each verification hash
+4. **Check signatures**: Validate all cryptographic signatures
+5. **Verify witnesses**: Check blockchain transactions
+6. **Validate templates**: Ensure object data matches schemas
+
+## File Storage
+
+Aqua Trees are typically stored as JSON files:
+
+```bash
+document.aqua.json
+contract-2024-01-01.aqua.json
+```
+
+The `.aqua.json` extension identifies Aqua Protocol files.
+
+## Use Cases
+
+Aqua Protocol v4 schema supports diverse applications:
+
+- **Document Notarization**: Legal documents, contracts, agreements
+- **Supply Chain**: Product tracking, provenance verification
+- **Credentials**: Diplomas, certificates, licenses
+- **Data Integrity**: Scientific data, audit logs, compliance records
+- **Multi-Party Workflows**: Approvals, reviews, collaborative editing
+
+## Navigation
+
+Explore the detailed specifications for each component:
+
+<CardGroup cols={2}>
+  <Card title="Aqua Tree" icon="tree" href="/schema_reference/aqua_tree">
+    Root data structure containing revisions and file index
+  </Card>
+
+  <Card title="File Index" icon="folder" href="/schema_reference/file_index">
+    Mapping content hashes to filenames
+  </Card>
+
+  <Card title="Revision Types" icon="code-branch" href="/schema_reference/revision">
+    Overview of all revision types
+  </Card>
+
+  <Card title="Object Revision" icon="file" href="/schema_reference/object_revision">
+    Store document and data content
+  </Card>
+
+  <Card title="Template Revision" icon="table" href="/schema_reference/template_revision">
+    Define schemas with JSON Schema
+  </Card>
+
+  <Card title="Signature Revision" icon="signature" href="/schema_reference/signing_revision">
+    Add cryptographic signatures
+  </Card>
+
+  <Card title="Witness Revision" icon="clock" href="/schema_reference/witness_revision">
+    Blockchain timestamping
+  </Card>
+
+  <Card title="Link Revision" icon="link" href="/schema_reference/link_revision">
+    Connect to other Aqua Trees
+  </Card>
+</CardGroup>
+
+## Additional Resources
+
+- [Quick Start Guide](/quickstart) - Get started with Aqua Protocol
+- [Version 4 Introduction](/previous_versions/version_4/version_4) - Overview of v4 features
+- [Use Cases](/use_cases/introduction) - Real-world applications
+- [Aqua SDK](/dev_tools/aqua_sdk) - Rust SDK for implementation
+- [Aqua CLI](/dev_tools/aqua_cli) - Command-line tool
+
+## Version History
+
+**Current Version**: 4.0.0 (Beta)
+
+Aqua Protocol v4 introduces:
+- Template system with JSON Schema validation
+- Enhanced revision type system
+- Improved canonicalization methods
+- Better support for complex data structures
+
+For previous versions, see:
+- [Version 3 Documentation](/previous_versions/version_3/introduction) - JavaScript SDK (Stable)
+- [Version 2 Documentation](/previous_versions/version_2/introduction) - Legacy
+- [Version 1 Documentation](/previous_versions/version_1/introduction) - Legacy
