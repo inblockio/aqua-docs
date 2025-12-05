@@ -27,33 +27,61 @@ aqua-rs-sdk = { git = "https://github.com/inblockio/aqua-verifier-rs" }
 ## Quick Example
 
 ```rust
-use aqua_rs_sdk::*;
+    use aqua_rs_sdk::primitives::Method;
+    use aqua_rs_sdk::schema::file_data::FileData;
+    use aqua_rs_sdk::Aquafier;
+    use std::path::PathBuf;
 
-// Create a new object revision
-let object_revision = ObjectRevision {
-    revision_type: RevisionType::hash("document"),
-    nonce: generate_nonce(),
-    local_timestamp: current_timestamp(),
-    version: AQUA_V4_SCHEMA.to_string(),
-    method: Method::Scalar,
-    hash_type: HashType::SHA3_256,
-    payload: Payload {
-        payload_type: "application/pdf".to_string(),
-        hash: hash_content(&document_bytes),
-        hash_type: HashType::SHA3_256,
-        descriptor: "Contract Document".to_string(),
-    },
-    previous_hash: None,
-};
+    #[tokio::main]
+    async fn main() -> Result<(), Box<dyn std::error::Error>> {
+        println!("Creating Aqua chain...");
 
-// Sign the revision
-let signature = sign_revision(&object_revision, &signing_key)?;
+        // Read file content
+        let filename = "test.txt".to_string();
+        let file_content = tokio::fs::read(&filename).await?;
 
-// Witness on blockchain
-let witness = witness_revision(&signature, EthereumNetwork::Sepolia)?;
+        // Create file data
+        let file_data = FileData::new(
+            filename.clone(),
+            file_content,
+            PathBuf::from(format!("./{}", filename)),
+        );
 
-// Verify the complete chain
-let is_valid = verify_chain(&aqua_chain)?;
+        // Initialize Aquafier
+        let aquafier = Aquafier::new(None, None);
+
+        // Create genesis revision (notarize the file)
+        let result = aquafier.create_genesis_revision(file_data, Method::Scalar);
+
+        match result {
+            Ok(tree) => {
+                println!("✓ Aqua chain created successfully!");
+                println!("{}", serde_json::to_string_pretty(&tree)?);
+
+                println!("\nYou can now:");
+                println!("- Add a signature revision");
+                println!("- Witness on blockchain");
+                println!("- Verify the chain");
+
+                // Sign the revision
+                // let signature = sign_revision(&object_revision, &signing_key)?;
+
+                // Witness on blockchain
+                // let witness = witness_revision(&signature, EthereumNetwork::Sepolia)?;
+
+                // Verify the complete chain
+                // let is_valid = verify_chain(&aqua_chain)?;
+
+            }
+            Err(e) => {
+                eprintln!("Error: {:#?}", e);
+            }
+        }
+
+        Ok(())
+    }
+
+
 ```
 
 ## Use Cases
