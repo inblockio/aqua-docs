@@ -192,8 +192,8 @@ The signature is computed over the **hash of the previous revision**, not the re
 ### Example Signing Flow
 
 ```
-Object Revision ’ Compute Hash ’ Sign Hash ’ Signature Revision
-     “
+Object Revision => Compute Hash => Sign Hash => Signature Revision
+     |
 0x3f8a7b2c... (previous_revision in signature)
 ```
 
@@ -218,11 +218,11 @@ To add multiple signatures to the same revision:
 
 ```
 Object Revision
-    “
+    |
 Signature 1 (Alice signs object)
-    “
+    |
 Signature 2 (Bob signs Signature 1)
-    “
+    |
 Signature 3 (Carol signs Signature 2)
 ```
 
@@ -234,9 +234,9 @@ For independent multi-party signing (all signing the same object):
 
 ```
         Object Revision
-         ™    “    ˜
+      |        |            |
 Signature A  Signature B  Signature C
-         ˜    “    ™
+         |    |    |
         Link Revision
 ```
 
@@ -247,31 +247,31 @@ Use a Link Revision to combine multiple independent signature branches.
 ### 1. Document Signing
 Sign file object revisions to prove authorship:
 ```
-File Object ’ Signature (Author) ’ Witness (Timestamp)
+File Object => Signature (Author) => Witness (Timestamp)
 ```
 
 ### 2. Approval Workflows
 Multiple parties sign in sequence:
 ```
-Document ’ Sign (Creator) ’ Sign (Reviewer) ’ Sign (Approver)
+Document => Sign (Creator) => Sign (Reviewer) => Sign (Approver)
 ```
 
 ### 3. Notarization
 Professional notary signs an object:
 ```
-Object ’ Signature (Notary's RSA key) ’ Witness (Blockchain)
+Object => Signature (Notary's RSA key) => Witness (Blockchain)
 ```
 
 ### 4. Smart Contract Interaction
 Ethereum wallet signs for on-chain verification:
 ```
-Claim ’ Signature (EIP-191) ’ Submit to Smart Contract
+Claim => Signature (EIP-191) => Submit to Smart Contract
 ```
 
 ### 5. Decentralized Identity
 DID-based signatures for verifiable credentials:
 ```
-Credential ’ Signature (Issuer's DID) ’ Holder stores
+Credential => Signature (Issuer's DID) => Holder stores
 ```
 
 ## Implementation Notes
