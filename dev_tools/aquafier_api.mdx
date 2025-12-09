@@ -1,0 +1,150 @@
+---
+title: 'Aquafier API'
+description: ' A http API for notarization and verification '
+icon: "code"
+---
+
+
+Aquafier is a web-based reference implementation of Aqua Protocol v3, providing a user-friendly interface and HTTP API for digital content signing, provenance verification, and integrity validation. It demonstrates how Aqua Protocol features can be integrated into modern web applications.
+
+## Overview
+
+Aquafier combines a Fastify backend with React frontend to deliver a complete solution for document notarization and verification. It's designed as both a production tool and a reference implementation for developers building Aqua-based applications.
+
+## Features
+
+- **Digital Content Signing**: Sign documents and data with multiple signature methods
+- **Provenance Verification**: Track and verify document history and authenticity
+- **Integrity Validation**: Cryptographically verify document integrity
+- **Web Interface**: User-friendly React interface for non-technical users
+- **HTTP API**: RESTful API for programmatic access
+- **Multi-Party Workflows**: Support for documents requiring multiple signatures
+
+## Technology Stack
+
+**Backend**:
+- Fastify (Node.js web framework)
+- Prisma ORM
+- PostgreSQL database
+- Aqua JavaScript SDK (v3)
+
+**Frontend**:
+- React with TypeScript
+- Chakra UI components
+- End-to-end testing with Playwright
+
+## Hosted Instances
+
+**Production**: [aquafier.inblock.io](https://aquafier.inblock.io/)
+- Stable production environment
+- For live document notarization and verification
+
+**Development/Testing**: [dev.inblock.io](https://dev.inblock.io/)
+- Testing environment for new features
+- Use for development and experimentation
+
+## Use Cases
+
+- **Document Notarization**: Notarize legal documents, contracts, and agreements
+- **Certificate Issuance**: Issue verifiable certificates and credentials
+- **Multi-Party Signing**: Collect signatures from multiple parties
+- **Audit Trail Creation**: Build immutable audit trails for compliance
+- **Proof of Concept**: Demonstrate Aqua Protocol capabilities
+- **API Integration**: Integrate notarization into existing systems
+
+## API Access
+
+Aquafier provides a RESTful HTTP API for programmatic access. Developers can integrate notarization and verification into their applications without building infrastructure from scratch.
+
+Common API operations:
+- Create genesis revisions
+- Add signatures to existing chains
+- Witness chains on blockchain
+- Verify chain integrity
+- Retrieve chain history
+
+## Development
+
+Aquafier-JS is open source and can be self-hosted for custom deployments.
+
+### Requirements
+- Docker and Docker Compose
+- PostgreSQL database
+- Node.js environment
+
+### Deployment
+
+Deploy using Docker Compose:
+
+```bash
+# Prepare environment file
+cp deployment/.env.sample .env
+
+# Start services
+docker compose -f deployment/docker-compose-prod.yml up -d
+```
+
+**Deployment Options**:
+- **Local**: No proxy, exposed ports for development
+- **Dev**: With Let's Encrypt SSL and DNS
+- **Prod**: Production configuration with SSL
+
+### Configuration
+
+Key environment variables:
+
+```bash
+# Database
+DATABASE_URL=postgres://user:password@host:port/database
+
+# Server
+HOST=0.0.0.0
+PORT=3000
+
+# Frontend/Backend URLs (for proxy)
+FRONTEND_URL=https://your-domain.com
+BACKEND_URL=https://api.your-domain.com
+
+# Twilio (optional, for SMS verification)
+TWILIO_ACCOUNT_SID=your_sid
+TWILIO_AUTH_TOKEN=your_token
+```
+
+## Architecture
+
+Aquafier's modular architecture makes it suitable as a foundation for custom applications:
+
+- **API Layer**: RESTful endpoints for all Aqua operations
+- **Service Layer**: Business logic for chain management
+- **Data Layer**: Prisma ORM with PostgreSQL
+- **Storage**: File system or S3-compatible storage
+- **Backup**: Automated backup with configurable retention
+
+## Protocol Version
+
+**Aqua Protocol v3**: Aquafier implements the stable JavaScript SDK
+
+For v3 technical details:
+- [Version 3 Introduction](/previous_versions/version_3/introduction)
+- [Version 3 Concepts](/previous_versions/version_3/concepts)
+- [Version 3 SDK](/previous_versions/version_3/tooling)
+
+## Repository
+
+**GitHub**: [github.com/inblockio/aquafier-js](https://github.com/inblockio/aquafier-js)
+
+## Development Team
+
+- Tim Bansemer - Project Manager
+- Arthur Kamau - Developer
+- Dalmas Nyaboga Ogembo - Developer
+- Florian Zeps - DevOps
+
+## Getting Started
+
+1. Visit [aquafier.inblock.io](https://aquafier.inblock.io/) to use the hosted version
+2. Try the [dev environment](https://dev.inblock.io/) for testing
+3. Explore the API documentation for programmatic integration
+4. Check the [GitHub repository](https://github.com/inblockio/aquafier-js) for self-hosting
+
+For building custom applications, consider using the [Aqua JavaScript SDK](/previous_versions/version_3/tooling) directly or the [Aqua Rust SDK](/dev_tools/aqua_sdk) for v4 features.
