@@ -1,0 +1,11 @@
+# Git files
+     .git
+     .gitignore
+     .github
+     # Node modules
+     node_modules
+     npm-debug.log
+     # Environment files
+
+Makefile
+README.md
