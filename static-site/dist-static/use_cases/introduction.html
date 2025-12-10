@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Use Cases\Introduction - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Use Cases\Introduction</span></div>
+
+        <div class="content">
+          <h1>Aqua Protocol Use Cases</h1>
+
+Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.
+
+<h2 id="why-aqua-protocol">Why Aqua Protocol?</h2>
+
+Traditional systems for tracking data provenance, verifying authenticity, and maintaining audit trails rely on centralized databases and trusted intermediaries. These approaches introduce:
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Single points of failure</strong>: Centralized systems can be compromised, taken offline, or manipulated</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Trust requirements</strong>: Users must trust the intermediary to maintain integrity</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Limited verification</strong>: Third parties cannot independently verify authenticity</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Vendor lock-in</strong>: Data is trapped in proprietary systems</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>High costs</strong>: Intermediaries charge fees for verification services</li></ol></ul>
+
+Aqua Protocol solves these problems through:
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Decentralized verification</strong>: Anyone can verify data integrity cryptographically</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Mathematical certainty</strong>: Cryptographic proofs replace trust requirements</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Immutable history</strong>: Complete audit trails that cannot be altered</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Open standards</strong>: Platform-agnostic verification using standard algorithms</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Cost efficiency</strong>: Reduced reliance on intermediaries and manual processes</li></ol></ul>
+
+<h2 id="core-capabilities">Core Capabilities</h2>
+
+<h3 id="tamper-proof-records">Tamper-Proof Records</h3>
+Once data is recorded in an Aqua chain, modifications become immediately detectable. Cryptographic hashes ensure that any change to content, timestamps, or signatures invalidates the chain, providing mathematical proof of tampering.
+
+<h3 id="blockchain-timestamping">Blockchain Timestamping</h3>
+Every critical revision can be anchored to Ethereum, Nostr, or TSA timestamping services. This provides cryptographic proof of when data existed, eliminating disputes about timing and preventing backdating.
+
+<h3 id="multi-party-signatures">Multi-Party Signatures</h3>
+Multiple parties can cryptographically sign revisions, establishing non-repudiation and accountability. Each signature is independently verifiable, proving who authorized what and when.
+
+<h3 id="provenance-tracking">Provenance Tracking</h3>
+Link revisions create relationships between chains, enabling complex provenance graphs. Track how data flows through systems, who touched it, and what transformations occurred.
+
+<h3 id="template-based-validation">Template-Based Validation</h3>
+Version 4's template system enforces data schemas with JSON Schema validation, ensuring consistent structure across revisions while maintaining cryptographic integrity.
+
+<h2 id="application-domains">Application Domains</h2>
+
+<h3 id="legal-and-compliance">Legal and Compliance</h3>
+Legal documents, contracts, evidence, regulatory filings, and compliance records require guaranteed integrity and provable timestamps. Aqua Protocol provides:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Non-repudiation through cryptographic signatures</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Defensible timestamps via blockchain anchoring</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Complete audit trails for investigations</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Chain of custody for evidence</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Regulatory compliance documentation</li></ol></ul>
+
+<h3 id="supply-chain-and-logistics">Supply Chain and Logistics</h3>
+Products moving through complex supply chains need provenance tracking from origin to destination. Aqua Protocol enables:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>End-to-end traceability from raw materials to consumer</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Multi-party coordination across manufacturers, distributors, and retailers</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Authenticity verification to prevent counterfeits</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Regulatory compliance for food, pharmaceuticals, and other regulated goods</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Efficient recalls with precise product tracking</li></ol></ul>
+
+<h3 id="identity-and-credentials">Identity and Credentials</h3>
+Educational institutions, professional organizations, and governments issue credentials that need verification. Aqua Protocol provides:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Instant verification of diplomas, certificates, and licenses</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Revocation capability when credentials expire or are withdrawn</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Portable credentials that individuals control</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Elimination of credential fraud</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Reduced verification costs and time</li></ol></ul>
+
+<h3 id="financial-services">Financial Services</h3>
+Financial institutions require immutable audit trails for transactions, statements, and regulatory reports. Aqua Protocol offers:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Tamper-proof financial records</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Provable submission timing for regulatory filings</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Multi-party approval workflows for transactions</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Audit-ready documentation for compliance</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Fraud prevention through verification</li></ol></ul>
+
+<h3 id="healthcare">Healthcare</h3>
+Patient records, clinical trial data, and medical device tracking demand integrity and privacy. Aqua Protocol enables:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verifiable medical records that patients control</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Clinical trial data integrity for regulatory approval</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Medical device tracking and recall management</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>HIPAA-compliant audit trails</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Secure sharing between healthcare providers</li></ol></ul>
+
+<h3 id="intellectual-property">Intellectual Property</h3>
+Patents, copyrights, trade secrets, and creative works benefit from provable timestamps. Aqua Protocol provides:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Proof of creation date for prior art disputes</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Version tracking for creative works</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Licensing and royalty audit trails</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Collaborative creation with attribution</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Protection against IP theft</li></ol></ul>
+
+<h2 id="industry-specific-solutions">Industry-Specific Solutions</h2>
+
+<h3 id="manufacturing">Manufacturing</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Bill of materials with cryptographic proof</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Quality control inspection records</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Product genealogy from components to finished goods</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Supplier certification verification</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Warranty claim documentation</li></ol></ul>
+
+<h3 id="real-estate">Real Estate</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Property title chains with verified transfers</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Lease agreements with multi-party signatures</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Inspection reports with tamper-proof timestamps</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Escrow milestone documentation</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Regulatory compliance for transactions</li></ol></ul>
+
+<h3 id="energy-and-utilities">Energy and Utilities</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Renewable energy certificate tracking</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Carbon credit provenance verification</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Utility meter reading audit trails</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Regulatory compliance documentation</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Asset maintenance history</li></ol></ul>
+
+<h3 id="government-and-public-sector">Government and Public Sector</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Passport and identity document verification</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Professional license tracking</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Permit and certification issuance</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Public records integrity</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Voting and election audit trails</li></ol></ul>
+
+<h2 id="technical-flexibility">Technical Flexibility</h2>
+
+Aqua Protocol adapts to diverse requirements through:
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Multiple revision types</strong>: Objects, templates, signatures, witnesses, and links</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Flexible signing methods</strong>: RSA, Ethereum EIP-191, DID:JWS, and more</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Choice of witnesses</strong>: Ethereum (mainnet, testnets), Nostr, TSA</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Scalar or tree methods</strong>: Optimize for simplicity or selective disclosure</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Cross-platform SDKs</strong>: Rust with WASM, JavaScript/TypeScript for any environment</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Template customization</strong>: Define domain-specific schemas with JSON Schema</li></ol></ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+Explore the detailed use cases below to understand how Aqua Protocol applies to your specific domain:
+
+<div  class="card">
+      <h3 class="card-title"></h3>
+      <p class="card-description"><Card title="Document Verification" icon="file-check" href="/use_cases/document-verification">
+    Ensure document authenticity and integrity with cryptographic verification. Learn how legal firms, businesses, educational institutions, and government agencies use Aqua Protocol for tamper-proof document management.</p>
+    </div>
+
+  <a href="/use_cases/supply-chain.html" class="card">
+      <h3 class="card-title">Supply Chain Tracking</h3>
+      <p class="card-description">Track products through the supply chain with end-to-end transparency. Discover how food, pharmaceutical, manufacturing, and logistics companies implement provenance verification.</p>
+    </a>
+
+  <a href="/use_cases/identity-attestation.html" class="card">
+      <h3 class="card-title">Identity Attestation</h3>
+      <p class="card-description">Implement secure identity verification and credential attestation. Explore how credentials, certifications, and identity documents gain instant verifiability.</p>
+    </a>
+
+  <a href="/use_cases/examples.html" class="card">
+      <h3 class="card-title">Examples & Tutorials</h3>
+      <p class="card-description">Practical examples and step-by-step tutorials for building with Aqua Protocol. Get hands-on experience implementing real-world use cases.</p>
+    </a>
+</CardGroup>
+
+<h2 id="common-patterns">Common Patterns</h2>
+
+Regardless of industry, Aqua Protocol implementations typically follow these patterns:
+
+<h3 id="1-genesis-creation">1. Genesis Creation</h3>
+Start by creating the initial revision with core data:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Document content, product information, or credential details</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Relevant metadata (timestamps, identifiers, classifications)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Template reference for structured data validation</li></ol></ul>
+
+<h3 id="2-multi-party-signatures">2. Multi-Party Signatures</h3>
+Collect signatures from relevant parties:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Creator signs to establish authenticity</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Reviewers sign to indicate approval</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Authorities sign for official endorsement</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Each signature adds non-repudiation</li></ol></ul>
+
+<h3 id="3-blockchain-witnessing">3. Blockchain Witnessing</h3>
+Anchor critical revisions to blockchain:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Provides tamper-proof timestamps</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Prevents backdating of revisions</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enables independent verification</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Satisfies regulatory requirements</li></ol></ul>
+
+<h3 id="4-provenance-linking">4. Provenance Linking</h3>
+Connect related chains:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Link components to assemblies</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Reference supporting documents</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Establish dependencies between datasets</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Create complex verification graphs</li></ol></ul>
+
+<h3 id="5-long-term-verification">5. Long-Term Verification</h3>
+Maintain verifiability over time:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Store Aqua chains separately from content</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Distribute chains to all stakeholders</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Periodically verify chain integrity</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Update verification tools as needed</li></ol></ul>
+
+<h2 id="benefits-across-all-use-cases">Benefits Across All Use Cases</h2>
+
+<h3 id="trust-without-intermediaries">Trust Without Intermediaries</h3>
+Cryptographic verification replaces trust in centralized authorities. Anyone can independently verify authenticity, reducing costs and increasing accessibility.
+
+<h3 id="regulatory-compliance">Regulatory Compliance</h3>
+Immutable audit trails satisfy regulators across industries. From SOX compliance in finance to HIPAA in healthcare, Aqua Protocol provides defensible documentation.
+
+<h3 id="cost-reduction">Cost Reduction</h3>
+Automated verification eliminates manual processes, reduces fraud losses, speeds up operations, and removes intermediary fees.
+
+<h3 id="enhanced-security">Enhanced Security</h3>
+Cryptographic primitives (SHA3-256, ECDSA) provide security that cannot be achieved with traditional databases. Even system administrators cannot forge valid chains.
+
+<h3 id="future-proof-design">Future-Proof Design</h3>
+Protocol versioning, extensible revision types, and blockchain-agnostic witnessing ensure Aqua chains remain verifiable as technology evolves.
+
+<h2 id="next-steps">Next Steps</h2>
+
+Ready to implement Aqua Protocol for your use case?
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Review the detailed use case documentation above</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Check out the <a href="/quick-start.html" class="font-medium text-primary hover:underline">Quick Start Guide</a> for hands-on implementation</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Explore the <a href="/schema_reference/introduction.html" class="font-medium text-primary hover:underline">Schema Reference</a> for technical specifications</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Choose your SDK: <a href="/previous_versions/version_4/introduction.html" class="font-medium text-primary hover:underline">Rust (v4)</a> or <a href="/previous_versions/version_3/introduction.html" class="font-medium text-primary hover:underline">JavaScript (v3)</a></li></ol></ul>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#why-aqua-protocol" class="toc-link" style="">Why Aqua Protocol?</a>
+<a href="#core-capabilities" class="toc-link" style="">Core Capabilities</a>
+<a href="#application-domains" class="toc-link" style="">Application Domains</a>
+<a href="#industry-specific-solutions" class="toc-link" style="">Industry-Specific Solutions</a>
+<a href="#technical-flexibility" class="toc-link" style="">Technical Flexibility</a>
+<a href="#getting-started" class="toc-link" style="">Getting Started</a>
+<a href="#common-patterns" class="toc-link" style="">Common Patterns</a>
+<a href="#benefits-across-all-use-cases" class="toc-link" style="">Benefits Across All Use Cases</a>
+<a href="#next-steps" class="toc-link" style="">Next Steps</a>
+<a href="#tamper-proof-records" class="toc-link" style="padding-left: 0.75rem;">Tamper-Proof Records</a>
+<a href="#blockchain-timestamping" class="toc-link" style="padding-left: 0.75rem;">Blockchain Timestamping</a>
+<a href="#multi-party-signatures" class="toc-link" style="padding-left: 0.75rem;">Multi-Party Signatures</a>
+<a href="#provenance-tracking" class="toc-link" style="padding-left: 0.75rem;">Provenance Tracking</a>
+<a href="#template-based-validation" class="toc-link" style="padding-left: 0.75rem;">Template-Based Validation</a>
+<a href="#legal-and-compliance" class="toc-link" style="padding-left: 0.75rem;">Legal and Compliance</a>
+<a href="#supply-chain-and-logistics" class="toc-link" style="padding-left: 0.75rem;">Supply Chain and Logistics</a>
+<a href="#identity-and-credentials" class="toc-link" style="padding-left: 0.75rem;">Identity and Credentials</a>
+<a href="#financial-services" class="toc-link" style="padding-left: 0.75rem;">Financial Services</a>
+<a href="#healthcare" class="toc-link" style="padding-left: 0.75rem;">Healthcare</a>
+<a href="#intellectual-property" class="toc-link" style="padding-left: 0.75rem;">Intellectual Property</a>
+<a href="#manufacturing" class="toc-link" style="padding-left: 0.75rem;">Manufacturing</a>
+<a href="#real-estate" class="toc-link" style="padding-left: 0.75rem;">Real Estate</a>
+<a href="#energy-and-utilities" class="toc-link" style="padding-left: 0.75rem;">Energy and Utilities</a>
+<a href="#government-and-public-sector" class="toc-link" style="padding-left: 0.75rem;">Government and Public Sector</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#supply-chain-tracking" class="toc-link" style="padding-left: 0.75rem;">Supply Chain Tracking</a>
+<a href="#identity-attestation" class="toc-link" style="padding-left: 0.75rem;">Identity Attestation</a>
+<a href="#examples-tutorials" class="toc-link" style="padding-left: 0.75rem;">Examples & Tutorials</a>
+<a href="#1-genesis-creation" class="toc-link" style="padding-left: 0.75rem;">1. Genesis Creation</a>
+<a href="#2-multi-party-signatures" class="toc-link" style="padding-left: 0.75rem;">2. Multi-Party Signatures</a>
+<a href="#3-blockchain-witnessing" class="toc-link" style="padding-left: 0.75rem;">3. Blockchain Witnessing</a>
+<a href="#4-provenance-linking" class="toc-link" style="padding-left: 0.75rem;">4. Provenance Linking</a>
+<a href="#5-long-term-verification" class="toc-link" style="padding-left: 0.75rem;">5. Long-Term Verification</a>
+<a href="#trust-without-intermediaries" class="toc-link" style="padding-left: 0.75rem;">Trust Without Intermediaries</a>
+<a href="#regulatory-compliance" class="toc-link" style="padding-left: 0.75rem;">Regulatory Compliance</a>
+<a href="#cost-reduction" class="toc-link" style="padding-left: 0.75rem;">Cost Reduction</a>
+<a href="#enhanced-security" class="toc-link" style="padding-left: 0.75rem;">Enhanced Security</a>
+<a href="#future-proof-design" class="toc-link" style="padding-left: 0.75rem;">Future-Proof Design</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

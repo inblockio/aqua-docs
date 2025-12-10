@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schema Reference\Witness Revision - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Schema Reference\Witness Revision</span></div>
+
+        <div class="content">
+          <h1>Witness Revision</h1>
+
+A Witness Revision provides cryptographic proof that a revision existed at a specific point in time. It anchors revision hashes to external systems like blockchains (Ethereum), decentralized networks (Nostr), or Trusted Timestamping Authorities (TSA). This creates an immutable, verifiable timestamp that cannot be backdated.
+
+<h2 id="overview">Overview</h2>
+
+Witness revisions provide:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Timestamping</strong>: Cryptographic proof of when a revision existed</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Immutability</strong>: Blockchain or TSA anchoring prevents backdating</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Verifiability</strong>: Anyone can verify the witness independently</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Batch Efficiency</strong>: Multiple revisions can be witnessed in a single transaction via Merkle trees</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Decentralization</strong>: Uses public blockchains or decentralized networks</li></ol></ul>
+
+<h2 id="schema-structure">Schema Structure</h2>
+
+<h3 id="common-fields">Common Fields</h3>
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_revision</code> | string | Yes | Hash reference to the revision being witnessed |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">revision_type</code> | string | Yes | Always <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"witness"</code> for witness revisions |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">nonce</code> | string | Yes | Random 16-byte hex string for uniqueness |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">local_timestamp</code> | number | Yes | Unix timestamp when the witness was created locally |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">version</code> | string | Yes | Protocol version: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"https://aqua-protocol.org/docs/v4/schema"</code> |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">method</code> | string | Yes | Canonicalization method: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"scalar"</code> (typical) or <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"tree"</code> |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">hash_type</code> | string | Yes | Hash algorithm: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"FIPS_202-SHA3-256"</code> |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">witness</code> | object | Yes | Witness value object containing proof details |
+
+<h3 id="witness-value-object">Witness Value Object</h3>
+
+The <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">witness</code> field contains details about the witnessing transaction:
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">merkle_proof</code> | array | Yes | Array of hex strings forming the Merkle proof path |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">sender_account_address</code> | string | Yes | Address that submitted the witness transaction |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">transaction_hash</code> | string | Yes | Transaction hash on the blockchain or network |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">smart_contract_address</code> | string | Yes | Address of the witness contract (or endpoint URL) |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">network</code> | string | Yes | Network identifier: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"mainnet"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"sepolia"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"holesky"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"tsa"</code>, or <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"nostr"</code> |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">merkle_root</code> | string | Yes | Root hash of the Merkle tree stored on-chain |
+| <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">timestamp</code> | number | Yes | Unix timestamp from the blockchain/network |
+
+<h2 id="network-types">Network Types</h2>
+
+<h3 id="1-ethereum-networks">1. Ethereum Networks</h3>
+
+#### Mainnet
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Network</strong>: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"mainnet"</code></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Purpose</strong>: Production witnessing on Ethereum mainnet</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Cost</strong>: Higher gas fees</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Security</strong>: Maximum security and permanence</li></ol></ul>
+
+#### Sepolia (Testnet)
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Network</strong>: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"sepolia"</code></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Purpose</strong>: Testing and development</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Cost</strong>: Free testnet ETH</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Security</strong>: Testnet only, subject to resets</li></ol></ul>
+
+#### Holesky (Testnet)
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Network</strong>: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"holesky"</code></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Purpose</strong>: Testing and development</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Cost</strong>: Free testnet ETH</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Security</strong>: Testnet only, newer Ethereum testnet</li></ol></ul>
+
+<h3 id="2-trusted-timestamping-authority-tsa">2. Trusted Timestamping Authority (TSA)</h3>
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Network</strong>: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"tsa"</code></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Purpose</strong>: RFC 3161 compliant timestamping</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Provider</strong>: DigiCert or other TSA services</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Verification</strong>: Via TSA public certificates</li></ol></ul>
+
+<h3 id="3-nostr">3. Nostr</h3>
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Network</strong>: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"nostr"</code></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Purpose</strong>: Decentralized social network timestamping</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Verification</strong>: Via Nostr relays and events</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Cost</strong>: Typically free</li></ol></ul>
+
+<h2 id="example">Example</h2>
+
+<h3 id="ethereum-witness-sepolia">Ethereum Witness (Sepolia)</h3>
+
+``<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "witness",
+  "nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "local_timestamp": 1704067200,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "witness": {
+    "merkle_proof": [
+      "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+      "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+      "0x567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234"
+    ],
+    "sender_account_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+    "transaction_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+    "smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "network": "sepolia",
+    "merkle_root": "0xa3bf4f1b2b0b822cd15d6c15b0f00a089f86d081884c7d659a2feaa0c55ad015",
+    "timestamp": 1704067250
+  }
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="single-revision-witness">Single Revision Witness</h3>
+
+When witnessing a single revision (no batching), the Merkle proof is empty:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "witness",
+  "nonce": "0x9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b",
+  "local_timestamp": 1704070800,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "witness": {
+    "merkle_proof": [],
+    "sender_account_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+    "transaction_hash": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d",
+    "smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "network": "mainnet",
+    "merkle_root": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+    "timestamp": 1704070850
+  }
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Note</strong>: When </code>merkle_proof<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> is empty, </code>merkle_root<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> equals </code>previous_revision<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">.
+
+<h2 id="merkle-tree-batching">Merkle Tree Batching</h2>
+
+To reduce costs, multiple revisions can be witnessed in a single transaction using Merkle trees.
+
+<h3 id="process">Process</h3>
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Collect Revisions</strong>: Gather multiple revision hashes to witness</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Build Merkle Tree</strong>: Create a Merkle tree from the revision hashes</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Submit Root</strong>: Submit only the Merkle root to the blockchain</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Generate Proofs</strong>: For each revision, generate its Merkle proof</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Create Witnesses</strong>: Create witness revisions with proofs</li></ol>
+
+<h3 id="example-witnessing-4-revisions">Example: Witnessing 4 Revisions</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+Revision Hashes:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Rev1: 0xaaaa...</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Rev2: 0xbbbb...</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Rev3: 0xcccc...</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Rev4: 0xdddd...</li></ol></ul>
+
+Merkle Tree:
+           Root
+          /    \
+       H12      H34
+      /  \     /  \
+    Rev1 Rev2 Rev3 Rev4
+
+Submit to blockchain: Root hash only
+
+Witness for Rev1:
+  merkle_proof: [H12's sibling (Rev2), H12's parent's sibling (H34)]
+  merkle_root: Root
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="proof-verification">Proof Verification</h3>
+
+To verify a revision was witnessed:
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Start with revision hash</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Apply Merkle proof hashes (sibling hashes)</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Compute up the tree to get root</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify computed root matches </code>merkle_root<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify </code>merkle_root<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> is on blockchain at </code>transaction_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+
+<h2 id="validation-rules">Validation Rules</h2>
+
+A Witness Revision is valid if:
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Structure</strong>: Contains all required fields with correct types</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Revision Type</strong>: The </code>revision_type<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> is exactly </code>"witness"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Previous Revision</strong>: References a valid existing revision</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Network</strong>: One of the supported network values</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Timestamp Consistency</strong>:</li></ol>
+   - </code>witness.timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> should be close to </code>local_timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+   - Both should be reasonable (not far in future)
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Merkle Proof</strong>: If present, must be valid array of hex strings</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Transaction Verification</strong>: The </code>transaction_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> exists on the specified </code>network<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Merkle Root Verification</strong>: If batched, Merkle proof must lead to merkle_root</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>On-Chain Verification</strong>: The </code>merkle_root<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> is stored at the </code>smart_contract_address<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> in the transaction</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Address Format</strong>: All addresses must be valid hex strings</li></ol>
+
+<h2 id="witness-smart-contract">Witness Smart Contract</h2>
+
+<h3 id="ethereum-contract-interface">Ethereum Contract Interface</h3>
+
+The witness contract typically has a method like:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">solidity
+function witness(bytes32 merkleRoot) public returns (bool)
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="verification-process">Verification Process</h3>
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Query blockchain for transaction at </code>transaction_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify transaction called the </code>smart_contract_address<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Extract the witnessed value (merkle_root) from transaction data</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify it matches the </code>merkle_root<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> in the witness revision</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Check transaction timestamp matches </code>timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> field</li></ol>
+
+<h2 id="common-use-cases">Common Use Cases</h2>
+
+<h3 id="1-document-notarization">1. Document Notarization</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+Document Object → Signature → Witness (Ethereum)
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+Proves the document existed and was signed at a specific time.
+
+<h3 id="2-batch-processing">2. Batch Processing</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+100 Documents → Compute Hashes → Build Merkle Tree → Single Witness Transaction
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+Economical witnessing of many documents at once.
+
+<h3 id="3-legal-evidence">3. Legal Evidence</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+Evidence Object → Signature (Parties) → Witness (Mainnet)
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+Creates tamper-proof timestamp for legal proceedings.
+
+<h3 id="4-supply-chain">4. Supply Chain</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+Shipment Event → Witness (Every checkpoint) → Audit Trail
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+Immutable record of supply chain events.
+
+<h3 id="5-credential-issuance">5. Credential Issuance</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+VC Issuance → Signature (Issuer) → Witness (Public verification)
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+Publicly verifiable credential issuance timestamps.
+
+<h2 id="timestamp-interpretation">Timestamp Interpretation</h2>
+
+<h3 id="local-timestamp">local_timestamp</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Created by client when preparing witness revision</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Not trusted (can be manipulated)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Used for user display and rough ordering</li></ol></ul>
+
+<h3 id="witness-timestamp">witness.timestamp</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Provided by blockchain/TSA</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Trusted (immutable on-chain)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Authoritative time proof</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Should be used for verification and legal purposes</li></ol></ul>
+
+<strong>Best Practice</strong>: Always use </code>witness.timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> for critical timestamp verification.
+
+<h2 id="cost-considerations">Cost Considerations</h2>
+
+<h3 id="ethereum">Ethereum</h3>
+
+| Network | Cost | When to Use |
+|---------|------|-------------|
+| Mainnet | ~$5-50 per transaction | Production, legal, high-value |
+| Sepolia | Free (testnet) | Development, testing |
+| Holesky | Free (testnet) | Development, testing |
+
+<strong>Gas Optimization</strong>: Batch multiple witnesses into one transaction using Merkle trees.
+
+<h3 id="tsa">TSA</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Typically $0.10-1.00 per timestamp</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Good for compliance requirements</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>RFC 3161 standard</li></ol></ul>
+
+<h3 id="nostr">Nostr</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Free (decentralized network)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Lower trust than blockchain</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Good for social proof</li></ol></ul>
+
+<h2 id="implementation-notes">Implementation Notes</h2>
+
+<h3 id="creating-a-witness-revision">Creating a Witness Revision</h3>
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Identify the revision(s) to witness</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Choose network (mainnet, sepolia, etc.)</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>If batching, build Merkle tree</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Submit transaction to blockchain</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Wait for transaction confirmation</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Extract transaction details</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Generate Merkle proofs (if batched)</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Create witness revision(s)</li></ol>
+
+<h3 id="verifying-a-witness-revision">Verifying a Witness Revision</h3>
+
+#### Single Revision (No Batching)
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify merkle_proof is empty</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify merkle_root equals previous_revision</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Query blockchain for transaction_hash</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify transaction exists and is confirmed</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Extract witnessed value from transaction</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify it matches merkle_root</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Check transaction timestamp</li></ol>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+#### Batched Revision
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify merkle_proof is non-empty</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Compute Merkle root using proof and previous_revision</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify computed root matches merkle_root</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Query blockchain for transaction_hash</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify merkle_root is stored on-chain</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Validate transaction timestamp</li></ol>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="error-handling">Error Handling</h3>
+
+Common issues and solutions:
+
+| Issue | Solution |
+|-------|----------|
+| Transaction not found | Wait longer (may not be confirmed yet) |
+| Wrong network | Check transaction on correct network |
+| Merkle proof invalid | Regenerate proof from original tree |
+| Timestamp mismatch | Check blockchain time vs local time |
+| Gas estimation failed | Check wallet balance and gas price |
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<h3 id="1-network-selection">1. Network Selection</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Use mainnet for production/legal purposes</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Use testnets only for development</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Consider compliance requirements</li></ol></ul>
+
+<h3 id="2-confirmation-depth">2. Confirmation Depth</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Wait for sufficient confirmations (6+ for mainnet)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>More confirmations = higher security</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Balance security vs speed requirements</li></ol></ul>
+
+<h3 id="3-merkle-proof-storage">3. Merkle Proof Storage</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Store proofs securely</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Without proof, batched witness can't be verified</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Consider proof backup strategies</li></ol></ul>
+
+<h3 id="4-timestamp-trust">4. Timestamp Trust</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Trust blockchain timestamp over local_timestamp</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Account for block time variability</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Consider block reorganizations</li></ol></ul>
+
+<h3 id="5-cost-management">5. Cost Management</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Batch witnesses to reduce costs</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Monitor gas prices</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Use appropriate network for use case</li></ol></ul>
+
+<h2 id="advanced-topics">Advanced Topics</h2>
+
+<h3 id="multi-network-witnessing">Multi-Network Witnessing</h3>
+
+Witness the same revision on multiple networks for redundancy:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+Object → Signature → Witness (Ethereum) → Witness (Nostr) → Witness (TSA)
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+Each witness provides independent proof.
+
+<h3 id="periodic-re-witnessing">Periodic Re-Witnessing</h3>
+
+For long-term preservation, periodically re-witness important revisions:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+2024: Object → Witness (Mainnet)
+2025: Link to Object → Witness (Mainnet)
+2026: Link to 2025 → Witness (Mainnet)
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="cross-chain-verification">Cross-Chain Verification</h3>
+
+Witness on multiple blockchains for increased trust:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+Object → Witness (Ethereum Mainnet) → Witness (Polygon) → Witness (Arbitrum)
+</code>``
+
+<h2 id="relationship-with-other-revisions">Relationship with Other Revisions</h2>
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Object Revisions</strong>: Primary target for witnessing</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Signature Revisions</strong>: Often witnessed after signing</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Link Revisions</strong>: Can be witnessed to prove connection timestamp</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Template Revisions</strong>: Rarely witnessed (they're standalone)</li></ol></ul>
+
+<h2 id="see-also">See Also</h2>
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/object_revision.html" class="font-medium text-primary hover:underline">Object Revision</a> - What typically gets witnessed</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/signing_revision.html" class="font-medium text-primary hover:underline">Signature Revision</a> - Often combined with witnessing</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="https://www.rfc-editor.org/rfc/rfc3161" class="font-medium text-primary hover:underline">RFC 3161 - Timestamping</a> - TSA standard</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="https://ethereum.org/en/developers/docs/smart-contracts/" class="font-medium text-primary hover:underline">Ethereum Smart Contracts</a> - On-chain witnessing</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="https://en.wikipedia.org/wiki/Merkle_tree" class="font-medium text-primary hover:underline">Merkle Trees</a> - Batch witnessing structure</li></ol></ul>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#overview" class="toc-link" style="">Overview</a>
+<a href="#schema-structure" class="toc-link" style="">Schema Structure</a>
+<a href="#network-types" class="toc-link" style="">Network Types</a>
+<a href="#example" class="toc-link" style="">Example</a>
+<a href="#merkle-tree-batching" class="toc-link" style="">Merkle Tree Batching</a>
+<a href="#validation-rules" class="toc-link" style="">Validation Rules</a>
+<a href="#witness-smart-contract" class="toc-link" style="">Witness Smart Contract</a>
+<a href="#common-use-cases" class="toc-link" style="">Common Use Cases</a>
+<a href="#timestamp-interpretation" class="toc-link" style="">Timestamp Interpretation</a>
+<a href="#cost-considerations" class="toc-link" style="">Cost Considerations</a>
+<a href="#implementation-notes" class="toc-link" style="">Implementation Notes</a>
+<a href="#security-considerations" class="toc-link" style="">Security Considerations</a>
+<a href="#advanced-topics" class="toc-link" style="">Advanced Topics</a>
+<a href="#relationship-with-other-revisions" class="toc-link" style="">Relationship with Other Revisions</a>
+<a href="#see-also" class="toc-link" style="">See Also</a>
+<a href="#common-fields" class="toc-link" style="padding-left: 0.75rem;">Common Fields</a>
+<a href="#witness-value-object" class="toc-link" style="padding-left: 0.75rem;">Witness Value Object</a>
+<a href="#1-ethereum-networks" class="toc-link" style="padding-left: 0.75rem;">1. Ethereum Networks</a>
+<a href="#2-trusted-timestamping-authority-tsa" class="toc-link" style="padding-left: 0.75rem;">2. Trusted Timestamping Authority (TSA)</a>
+<a href="#3-nostr" class="toc-link" style="padding-left: 0.75rem;">3. Nostr</a>
+<a href="#ethereum-witness-sepolia" class="toc-link" style="padding-left: 0.75rem;">Ethereum Witness (Sepolia)</a>
+<a href="#single-revision-witness" class="toc-link" style="padding-left: 0.75rem;">Single Revision Witness</a>
+<a href="#process" class="toc-link" style="padding-left: 0.75rem;">Process</a>
+<a href="#example-witnessing-4-revisions" class="toc-link" style="padding-left: 0.75rem;">Example: Witnessing 4 Revisions</a>
+<a href="#proof-verification" class="toc-link" style="padding-left: 0.75rem;">Proof Verification</a>
+<a href="#ethereum-contract-interface" class="toc-link" style="padding-left: 0.75rem;">Ethereum Contract Interface</a>
+<a href="#verification-process" class="toc-link" style="padding-left: 0.75rem;">Verification Process</a>
+<a href="#1-document-notarization" class="toc-link" style="padding-left: 0.75rem;">1. Document Notarization</a>
+<a href="#2-batch-processing" class="toc-link" style="padding-left: 0.75rem;">2. Batch Processing</a>
+<a href="#3-legal-evidence" class="toc-link" style="padding-left: 0.75rem;">3. Legal Evidence</a>
+<a href="#4-supply-chain" class="toc-link" style="padding-left: 0.75rem;">4. Supply Chain</a>
+<a href="#5-credential-issuance" class="toc-link" style="padding-left: 0.75rem;">5. Credential Issuance</a>
+<a href="#local-timestamp" class="toc-link" style="padding-left: 0.75rem;">local_timestamp</a>
+<a href="#witness-timestamp" class="toc-link" style="padding-left: 0.75rem;">witness.timestamp</a>
+<a href="#ethereum" class="toc-link" style="padding-left: 0.75rem;">Ethereum</a>
+<a href="#tsa" class="toc-link" style="padding-left: 0.75rem;">TSA</a>
+<a href="#nostr" class="toc-link" style="padding-left: 0.75rem;">Nostr</a>
+<a href="#creating-a-witness-revision" class="toc-link" style="padding-left: 0.75rem;">Creating a Witness Revision</a>
+<a href="#verifying-a-witness-revision" class="toc-link" style="padding-left: 0.75rem;">Verifying a Witness Revision</a>
+<a href="#error-handling" class="toc-link" style="padding-left: 0.75rem;">Error Handling</a>
+<a href="#1-network-selection" class="toc-link" style="padding-left: 0.75rem;">1. Network Selection</a>
+<a href="#2-confirmation-depth" class="toc-link" style="padding-left: 0.75rem;">2. Confirmation Depth</a>
+<a href="#3-merkle-proof-storage" class="toc-link" style="padding-left: 0.75rem;">3. Merkle Proof Storage</a>
+<a href="#4-timestamp-trust" class="toc-link" style="padding-left: 0.75rem;">4. Timestamp Trust</a>
+<a href="#5-cost-management" class="toc-link" style="padding-left: 0.75rem;">5. Cost Management</a>
+<a href="#multi-network-witnessing" class="toc-link" style="padding-left: 0.75rem;">Multi-Network Witnessing</a>
+<a href="#periodic-re-witnessing" class="toc-link" style="padding-left: 0.75rem;">Periodic Re-Witnessing</a>
+<a href="#cross-chain-verification" class="toc-link" style="padding-left: 0.75rem;">Cross-Chain Verification</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

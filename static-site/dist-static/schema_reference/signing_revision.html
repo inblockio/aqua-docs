@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schema Reference\Signing Revision - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Schema Reference\Signing Revision</span></div>
+
+        <div class="content">
+          <h1>Signature Revision</h1>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">A Signature Revision adds cryptographic proof of authenticity and authorship to a revision chain. It references a previous revision and includes a digital signature that can be verified using the associated public key or address. Aqua Protocol v4 supports three signature types: RSA, Ethereum (EIP-191), and DID-based signatures.</p>
+<h2 id="overview">Overview</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Signature revisions provide: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Authentication</strong>: Proof that a specific entity created or approved the previous revision</li> <li><strong>Integrity</strong>: Assurance that the signed revision hasn't been tampered with</li> <li><strong>Non-repudiation</strong>: The signer cannot deny having signed the revision</li> <li><strong>Flexibility</strong>: Support for multiple cryptographic signature schemes</li> </ol></ul> <h2 id="schema-structure">Schema Structure</h2></p>
+<h3 id="common-fields">Common Fields</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">| Field | Type | Required | Description | |-------|------|----------|-------------| | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_revision</code> | string | Yes | Hash reference to the revision being signed | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">revision_type</code> | string | Yes | Always <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"signature"</code> for signature revisions | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">nonce</code> | string | Yes | Random 16-byte hex string for uniqueness | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">local_timestamp</code> | number | Yes | Unix timestamp when the signature was created | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">version</code> | string | Yes | Protocol version: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"https://aqua-protocol.org/docs/v4/schema"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">method</code> | string | Yes | Canonicalization method: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"scalar"</code> (typical) or <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"tree"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">hash_type</code> | string | Yes | Hash algorithm: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"FIPS_202-SHA3-256"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature</code> | object | Yes | Signature value object (varies by signature type) |</p>
+<h3 id="signature-value-object">Signature Value Object</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">The <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature</code> field is an object with different structures depending on the signature type.</p>
+<h2 id="signature-types">Signature Types</h2>
+<h3 id="1-rsa-signature">1. RSA Signature</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Uses RSA public-key cryptography with PKCS#1 v1.5 padding.</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### Structure</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;signature_type&quot;: &quot;rsa&quot;,
+  &quot;signature&quot;: &quot;0x...&quot;,
+  &quot;public_key&quot;: &quot;0x...&quot;
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### Fields</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">| Field | Type | Description | |-------|------|-------------| | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature_type</code> | string | Must be <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"rsa"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature</code> | string | Hex-encoded RSA signature (256 bytes for RSA-2048, 512 bytes for RSA-4096) | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">public_key</code> | string | Hex-encoded DER-encoded RSA public key (200-600 bytes) |</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### Validation Rules <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Signature must be 256 bytes (RSA-2048) or 512 bytes (RSA-4096)</li> <li>Public key must be DER-encoded and between 200-600 bytes</li> <li>Both fields must be lowercase hex strings prefixed with <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">0x</code></li> </ol></ul> #### Example</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_revision&quot;: &quot;0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a&quot;,
+  &quot;revision_type&quot;: &quot;signature&quot;,
+  &quot;nonce&quot;: &quot;0x9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b&quot;,
+  &quot;local_timestamp&quot;: 1704067200,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v4/schema&quot;,
+  &quot;method&quot;: &quot;scalar&quot;,
+  &quot;hash_type&quot;: &quot;FIPS_202-SHA3-256&quot;,
+  &quot;signature&quot;: {
+    &quot;signature_type&quot;: &quot;rsa&quot;,
+    &quot;signature&quot;: &quot;0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d&quot;,
+    &quot;public_key&quot;: &quot;0x308201a2300d06092a864886f70d01010105000382018f003082018a0282018100c9c4d8e3f7a1b5c9d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e00203010001&quot;
+  }
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">---</p>
+<h3 id="2-ethereum-eip-191-signature">2. Ethereum (EIP-191) Signature</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Uses Ethereum's personal sign method (EIP-191) with ECDSA on the secp256k1 curve.</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### Structure</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;signature_type&quot;: &quot;ethereum:eip-191&quot;,
+  &quot;signature&quot;: &quot;0x...&quot;,
+  &quot;signature_wallet_address&quot;: &quot;0x...&quot;
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### Fields</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">| Field | Type | Description | |-------|------|-------------| | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature_type</code> | string | Must be <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"ethereum:eip-191"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature</code> | string | Hex-encoded ECDSA signature (65 bytes: r=32, s=32, v=1) | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature_wallet_address</code> | string | EIP-55 checksummed Ethereum address (20 bytes) |</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### Validation Rules <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Signature must be exactly 65 bytes</li> <li>Wallet address must be a valid EIP-55 checksummed address</li> <li>Both fields must be hex strings prefixed with <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">0x</code></li> <li>Address checksum must be validated</li> </ol></ul> #### Example</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_revision&quot;: &quot;0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a&quot;,
+  &quot;revision_type&quot;: &quot;signature&quot;,
+  &quot;nonce&quot;: &quot;0x1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e&quot;,
+  &quot;local_timestamp&quot;: 1704070800,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v4/schema&quot;,
+  &quot;method&quot;: &quot;scalar&quot;,
+  &quot;hash_type&quot;: &quot;FIPS_202-SHA3-256&quot;,
+  &quot;signature&quot;: {
+    &quot;signature_type&quot;: &quot;ethereum:eip-191&quot;,
+    &quot;signature&quot;: &quot;0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c&quot;,
+    &quot;signature_wallet_address&quot;: &quot;0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8&quot;
+  }
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Note</strong>: The <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature_wallet_address</code> must use proper EIP-55 checksumming (mixed case).</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">---</p>
+<h3 id="3-did-jws-signature">3. DID JWS Signature</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Uses Decentralized Identifiers (DIDs) with JSON Web Signatures (JWS).</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### Structure</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;signature_type&quot;: &quot;did:jws&quot;,
+  &quot;jws&quot;: &quot;eyJ...&quot;,
+  &quot;did&quot;: &quot;did:key:...&quot;
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### Fields</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">| Field | Type | Description | |-------|------|-------------| | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature_type</code> | string | Must be <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"did:jws"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">jws</code> | string | Compact JWS (JSON Web Signature) | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">did</code> | string | Decentralized Identifier of the signer |</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### Validation Rules <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>JWS must be in compact serialization format (three base64url-encoded parts separated by dots)</li> <li>DID must be a valid DID string (e.g., <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">did:key:z6Mk...</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">did:web:example.com</code>)</li> <li>The DID document must be resolvable to verify the signature</li> </ol></ul> #### Example</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_revision&quot;: &quot;0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a&quot;,
+  &quot;revision_type&quot;: &quot;signature&quot;,
+  &quot;nonce&quot;: &quot;0x5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a&quot;,
+  &quot;local_timestamp&quot;: 1704074400,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v4/schema&quot;,
+  &quot;method&quot;: &quot;scalar&quot;,
+  &quot;hash_type&quot;: &quot;FIPS_202-SHA3-256&quot;,
+  &quot;signature&quot;: {
+    &quot;signature_type&quot;: &quot;did:jws&quot;,
+    &quot;jws&quot;: &quot;eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ&quot;,
+    &quot;did&quot;: &quot;did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK&quot;
+  }
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">---</p>
+<h2 id="what-gets-signed">What Gets Signed</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">The signature is computed over the <strong>hash of the previous revision</strong>, not the revision itself.</p>
+<h3 id="signing-process">Signing Process</h3>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Compute the hash of the <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_revision</code></li>
+<li>For Ethereum: Add EIP-191 prefix (<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">\x19Ethereum Signed Message:\n32</code>)</li>
+<li>Sign the hash using the appropriate method</li>
+<li>Create the signature revision with the signature value</li>
+<li>Compute the hash of the signature revision</li>
+</ol>
+<h3 id="example-signing-flow">Example Signing Flow</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Object Revision =&gt; Compute Hash =&gt; Sign Hash =&gt; Signature Revision
+     |
+0x3f8a7b2c... (previous_revision in signature)</code></pre>
+<h2 id="validation-rules">Validation Rules</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">A Signature Revision is valid if:</p>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Structure</strong>: Contains all required fields with correct types</li>
+<li><strong>Revision Type</strong>: The <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">revision_type</code> is exactly <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"signature"</code></li>
+<li><strong>Previous Revision</strong>: References a valid existing revision</li>
+<li><strong>Signature Type</strong>: One of <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"rsa"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"ethereum:eip-191"</code>, or <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"did:jws"</code></li>
+<li><strong>Signature Format</strong>: Matches the requirements for the specific signature type</li>
+<li><strong>No Unknown Fields</strong>: The signature object contains only recognized fields</li>
+<li><strong>Signature Verification</strong>: The signature can be cryptographically verified</li>
+</ol>   - For RSA: Verify using the provided public key
+   - For EIP-191: Recover address from signature and compare to <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature_wallet_address</code>
+   - For DID:JWS: Resolve DID and verify JWS signature
+<h2 id="multiple-signatures">Multiple Signatures</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">To add multiple signatures to the same revision:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Object Revision
+    |
+Signature 1 (Alice signs object)
+    |
+Signature 2 (Bob signs Signature 1)
+    |
+Signature 3 (Carol signs Signature 2)</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Each signature revision signs the previous revision, creating a chain of signatures.</p>
+<h3 id="multi-party-signing">Multi-Party Signing</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">For independent multi-party signing (all signing the same object):</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Object Revision
+      |        |            |
+Signature A  Signature B  Signature C
+         |    |    |
+        Link Revision</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Use a Link Revision to combine multiple independent signature branches.</p>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<h3 id="1-document-signing">1. Document Signing</h3>
+Sign file object revisions to prove authorship:
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">File Object =&gt; Signature (Author) =&gt; Witness (Timestamp)</code></pre>
+<h3 id="2-approval-workflows">2. Approval Workflows</h3>
+Multiple parties sign in sequence:
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Document =&gt; Sign (Creator) =&gt; Sign (Reviewer) =&gt; Sign (Approver)</code></pre>
+<h3 id="3-notarization">3. Notarization</h3>
+Professional notary signs an object:
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Object =&gt; Signature (Notary&#039;s RSA key) =&gt; Witness (Blockchain)</code></pre>
+<h3 id="4-smart-contract-interaction">4. Smart Contract Interaction</h3>
+Ethereum wallet signs for on-chain verification:
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Claim =&gt; Signature (EIP-191) =&gt; Submit to Smart Contract</code></pre>
+<h3 id="5-decentralized-identity">5. Decentralized Identity</h3>
+DID-based signatures for verifiable credentials:
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Credential =&gt; Signature (Issuer&#039;s DID) =&gt; Holder stores</code></pre>
+<h2 id="implementation-notes">Implementation Notes</h2>
+<h3 id="creating-a-signature-revision">Creating a Signature Revision</h3>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Identify the revision to sign</li>
+<li>Compute its hash (the <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_revision</code> value)</li>
+<li>Prepare the message to sign (hash, with any required prefixes)</li>
+<li>Generate the signature using chosen method</li>
+<li>Construct the signature revision object</li>
+<li>Validate the signature can be verified</li>
+<li>Compute and store the signature revision hash</li>
+</ol>
+<h3 id="verifying-a-signature-revision">Verifying a Signature Revision</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### RSA Verification</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">1. Extract public_key from signature object
+2. Extract signature bytes
+3. Reconstruct signed message (hash of previous_revision)
+4. Verify signature using RSA public key</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### EIP-191 Verification</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">1. Reconstruct EIP-191 message: &quot;\x19Ethereum Signed Message:\n32&quot; + hash
+2. Recover address from signature
+3. Compare recovered address to signature_wallet_address</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### DID:JWS Verification</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">1. Resolve DID to get DID document
+2. Extract verification method (public key)
+3. Verify JWS signature using verification method
+4. Validate JWS payload matches revision data</code></pre>
+<h2 id="security-considerations">Security Considerations</h2>
+<h3 id="1-key-management">1. Key Management</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>RSA: Protect private key files, use strong key sizes (e2048 bits)</li>
+<li>EIP-191: Secure wallet seed phrases/private keys</li>
+<li>DID: Maintain DID document security and key rotation policies</li>
+</ol></ul>
+<h3 id="2-signature-reuse">2. Signature Reuse</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Each signature should sign a unique revision</li>
+<li>Nonces prevent replay attacks</li>
+</ol></ul>
+<h3 id="3-timestamp-validation">3. Timestamp Validation</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Check <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">local_timestamp</code> is reasonable (not far future/past)</li>
+<li>Compare with witness timestamps for consistency</li>
+</ol></ul>
+<h3 id="4-address-validation">4. Address Validation</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>For EIP-191: Always validate EIP-55 checksum</li>
+<li>Reject non-checksummed addresses</li>
+</ol></ul>
+<h3 id="5-did-resolution">5. DID Resolution</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Ensure DID resolver is trustworthy</li>
+<li>Cache DID documents appropriately</li>
+<li>Handle resolution failures gracefully</li>
+</ol></ul>
+<h2 id="relationship-with-other-revisions">Relationship with Other Revisions</h2>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Object Revisions</strong>: Typically what gets signed first</li>
+<li><strong>Witness Revisions</strong>: Often follow signatures to add timestamping</li>
+<li><strong>Link Revisions</strong>: Can combine multiple signature branches</li>
+<li><strong>Template Revisions</strong>: Can also be signed, though less common</li>
+</ol></ul>
+<h2 id="see-also">See Also</h2>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/object_revision.html" class="font-medium text-primary hover:underline">Object Revision</a> - What typically gets signed</li>
+<li><a href="/schema_reference/witness_revision.html" class="font-medium text-primary hover:underline">Witness Revision</a> - Add timestamps after signing</li>
+<li><a href="/schema_reference/link_revision.html" class="font-medium text-primary hover:underline">Link Revision</a> - Combine signature branches</li>
+<li><a href="https://eips.ethereum.org/EIPS/eip-191" class="font-medium text-primary hover:underline">EIP-191 Specification</a> - Ethereum signing standard</li>
+<li><a href="https://www.w3.org/TR/did-core/" class="font-medium text-primary hover:underline">DID Core Specification</a> - Decentralized Identifiers</li>
+<li><a href="https://www.rfc-editor.org/rfc/rfc7515" class="font-medium text-primary hover:underline">JWS Specification</a> - JSON Web Signatures</li>
+</ol></ul>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#overview" class="toc-link" style="">Overview</a>
+<a href="#schema-structure" class="toc-link" style="">Schema Structure</a>
+<a href="#signature-types" class="toc-link" style="">Signature Types</a>
+<a href="#what-gets-signed" class="toc-link" style="">What Gets Signed</a>
+<a href="#validation-rules" class="toc-link" style="">Validation Rules</a>
+<a href="#multiple-signatures" class="toc-link" style="">Multiple Signatures</a>
+<a href="#common-use-cases" class="toc-link" style="">Common Use Cases</a>
+<a href="#implementation-notes" class="toc-link" style="">Implementation Notes</a>
+<a href="#security-considerations" class="toc-link" style="">Security Considerations</a>
+<a href="#relationship-with-other-revisions" class="toc-link" style="">Relationship with Other Revisions</a>
+<a href="#see-also" class="toc-link" style="">See Also</a>
+<a href="#common-fields" class="toc-link" style="padding-left: 0.75rem;">Common Fields</a>
+<a href="#signature-value-object" class="toc-link" style="padding-left: 0.75rem;">Signature Value Object</a>
+<a href="#1-rsa-signature" class="toc-link" style="padding-left: 0.75rem;">1. RSA Signature</a>
+<a href="#2-ethereum-eip-191-signature" class="toc-link" style="padding-left: 0.75rem;">2. Ethereum (EIP-191) Signature</a>
+<a href="#3-did-jws-signature" class="toc-link" style="padding-left: 0.75rem;">3. DID JWS Signature</a>
+<a href="#signing-process" class="toc-link" style="padding-left: 0.75rem;">Signing Process</a>
+<a href="#example-signing-flow" class="toc-link" style="padding-left: 0.75rem;">Example Signing Flow</a>
+<a href="#multi-party-signing" class="toc-link" style="padding-left: 0.75rem;">Multi-Party Signing</a>
+<a href="#1-document-signing" class="toc-link" style="padding-left: 0.75rem;">1. Document Signing</a>
+<a href="#2-approval-workflows" class="toc-link" style="padding-left: 0.75rem;">2. Approval Workflows</a>
+<a href="#3-notarization" class="toc-link" style="padding-left: 0.75rem;">3. Notarization</a>
+<a href="#4-smart-contract-interaction" class="toc-link" style="padding-left: 0.75rem;">4. Smart Contract Interaction</a>
+<a href="#5-decentralized-identity" class="toc-link" style="padding-left: 0.75rem;">5. Decentralized Identity</a>
+<a href="#creating-a-signature-revision" class="toc-link" style="padding-left: 0.75rem;">Creating a Signature Revision</a>
+<a href="#verifying-a-signature-revision" class="toc-link" style="padding-left: 0.75rem;">Verifying a Signature Revision</a>
+<a href="#1-key-management" class="toc-link" style="padding-left: 0.75rem;">1. Key Management</a>
+<a href="#2-signature-reuse" class="toc-link" style="padding-left: 0.75rem;">2. Signature Reuse</a>
+<a href="#3-timestamp-validation" class="toc-link" style="padding-left: 0.75rem;">3. Timestamp Validation</a>
+<a href="#4-address-validation" class="toc-link" style="padding-left: 0.75rem;">4. Address Validation</a>
+<a href="#5-did-resolution" class="toc-link" style="padding-left: 0.75rem;">5. DID Resolution</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

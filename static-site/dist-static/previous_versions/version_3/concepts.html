@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previous Versions\Version 3\Concepts - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Previous Versions\Version 3\Concepts</span></div>
+
+        <div class="content">
+          <h1>Aqua Protocol v3 Concepts</h1>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Understanding the core concepts of Aqua Protocol v3 is essential for effectively using the SDK and building applications. This guide covers the fundamental ideas, terminology, and patterns used throughout the protocol.</p>
+<h2 id="aquatree">AquaTree</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">The <strong>AquaTree</strong> is the primary data structure in v3. It represents a complete, self-contained collection of revisions with their relationships and metadata.</p>
+<h3 id="structure">Structure</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">interface AquaTree {
+  revisions: Revisions      // All revisions indexed by hash
+  file_index: FileIndex     // Maps file hashes to filenames
+  tree?: RevisionTree       // Tree structure of revisions
+  treeMapping?: TreeMapping // Path mappings for navigation
+}</code></pre>
+<h3 id="components">Components</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### 1. Revisions A flat map of all revisions, keyed by their verification hash:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;0xabc123...&quot;: {
+    previous_verification_hash: &quot;0xdef456...&quot;,
+    local_timestamp: &quot;2024-01-01T12:00:00&quot;,
+    revision_type: &quot;file&quot;,
+    // ... other fields
+  },
+  &quot;0xdef456...&quot;: {
+    // ... another revision
+  }
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### 2. File Index Maps file content hashes to filenames for reference:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;0xfile_hash_1&quot;: &quot;document.pdf&quot;,
+  &quot;0xfile_hash_2&quot;: &quot;image.png&quot;
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### 3. Tree Structure (Optional) Hierarchical representation showing parent-child relationships:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  hash: &quot;0xabc123...&quot;,  // Root revision
+  children: [
+    {
+      hash: &quot;0xdef456...&quot;,
+      children: [...]
+    }
+  ]
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### 4. Tree Mapping (Optional) Path information for each revision:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  paths: {
+    &quot;0xabc123&quot;: [&quot;0xroot&quot;, &quot;0xabc123&quot;],
+    &quot;0xdef456&quot;: [&quot;0xroot&quot;, &quot;0xabc123&quot;, &quot;0xdef456&quot;]
+  },
+  latestHash: &quot;0xdef456...&quot;  // Most recent revision
+}</code></pre>
+<h2 id="revisions">Revisions</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">A <strong>Revision</strong> is a single entry in the AquaTree representing an operation or state change.</p>
+<h3 id="common-fields">Common Fields</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">All revisions share these base fields:</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">| Field | Type | Description | |-------|------|-------------| | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_verification_hash</code> | string | Hash linking to previous revision (empty string for genesis) | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">local_timestamp</code> | string | ISO 8601 timestamp when revision was created | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">revision_type</code> | string | One of: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"file"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"form"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"signature"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"witness"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"link"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">version</code> | string | Protocol version with method: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">https://aqua-protocol.org/docs/v3/schema_2 \| SHA256 \| Method: scalar/tree</code> |</p>
+<h3 id="genesis-revision">Genesis Revision</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">The <strong>genesis revision</strong> is the first revision in a chain: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_verification_hash</code> is an empty string <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">""</code></li> <li>Typically a file or form revision</li> <li>Establishes the initial state</li> </ol></ul> <h3 id="verification-hash">Verification Hash</h3></p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Each revision has a unique <strong>verification hash</strong> computed from its canonical form:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">hash = SHA256(canonicalized_revision_data)</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">This hash serves as: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Unique identifier for the revision</li> <li>Key in the revisions map</li> <li>Reference in <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_verification_hash</code> fields</li> </ol></ul> <h2 id="revision-types">Revision Types</h2></p>
+<h3 id="1-file-revision">1. File Revision</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Stores file metadata and optionally content.</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Purpose</strong>: Document file presence and content integrity</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Fields</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">file_hash</code>: SHA256 hash of file content</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">file_nonce</code>: Random nonce for uniqueness</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">content</code>: Optional file content (text or binary)</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">leaves</code>: Array of hashes (tree mode only)</li> </ol></ul> <strong>Example</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_verification_hash&quot;: &quot;&quot;,
+  &quot;local_timestamp&quot;: &quot;2024-01-01T12:00:00&quot;,
+  &quot;revision_type&quot;: &quot;file&quot;,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar&quot;,
+  &quot;file_hash&quot;: &quot;0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08&quot;,
+  &quot;file_nonce&quot;: &quot;0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c&quot;
+}</code></pre>
+<h3 id="2-form-revision">2. Form Revision</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Stores structured key-value data.</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Purpose</strong>: Capture form submissions, structured data, or metadata</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Fields</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">file_hash</code>: Hash of form data</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">file_nonce</code>: Random nonce</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">content</code>: Form data as key-value object</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">leaves</code>: Array of hashes (tree mode only)</li> </ol></ul> <strong>Example</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_verification_hash&quot;: &quot;&quot;,
+  &quot;local_timestamp&quot;: &quot;2024-01-01T12:00:00&quot;,
+  &quot;revision_type&quot;: &quot;form&quot;,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree&quot;,
+  &quot;file_hash&quot;: &quot;0xabc123...&quot;,
+  &quot;file_nonce&quot;: &quot;0x123abc...&quot;,
+  &quot;content&quot;: {
+    &quot;name&quot;: &quot;John Doe&quot;,
+    &quot;email&quot;: &quot;john@example.com&quot;,
+    &quot;status&quot;: &quot;approved&quot;
+  },
+  &quot;leaves&quot;: [&quot;0x...&quot;, &quot;0x...&quot;, &quot;0x...&quot;]
+}</code></pre>
+<h3 id="3-signature-revision">3. Signature Revision</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Adds cryptographic signature to prove authenticity.</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Purpose</strong>: Authenticate revisions and establish authorship</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Fields</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature</code>: Signature value (format depends on type)</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature_type</code>: One of <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"cli"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"metamask"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"did"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"p12"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"inline"</code></li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature_wallet_address</code>: Ethereum address (for cli/metamask)</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">signature_public_key</code>: Public key (for p12)</li> </ol></ul> <strong>Example (MetaMask)</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_verification_hash&quot;: &quot;0xabc123...&quot;,
+  &quot;local_timestamp&quot;: &quot;2024-01-01T12:01:00&quot;,
+  &quot;revision_type&quot;: &quot;signature&quot;,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar&quot;,
+  &quot;signature_type&quot;: &quot;metamask&quot;,
+  &quot;signature&quot;: &quot;0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f...&quot;,
+  &quot;signature_wallet_address&quot;: &quot;0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8&quot;
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Example (DID)</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_verification_hash&quot;: &quot;0xabc123...&quot;,
+  &quot;local_timestamp&quot;: &quot;2024-01-01T12:01:00&quot;,
+  &quot;revision_type&quot;: &quot;signature&quot;,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar&quot;,
+  &quot;signature_type&quot;: &quot;did&quot;,
+  &quot;signature&quot;: {
+    &quot;payload&quot;: &quot;eyJhbGciOi...&quot;,
+    &quot;signatures&quot;: [{
+      &quot;protected&quot;: &quot;eyJhbGci...&quot;,
+      &quot;signature&quot;: &quot;...&quot;
+    }]
+  }
+}</code></pre>
+<h3 id="4-witness-revision">4. Witness Revision</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Anchors revision to external timestamping service.</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Purpose</strong>: Prove existence at specific time via blockchain or TSA</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Fields</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">witness_merkle_root</code>: Root hash of Merkle tree</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">witness_timestamp</code>: Unix timestamp from witness service</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">witness_network</code>: Network used (<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"mainnet"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"sepolia"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"holesky"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"tsa"</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"nostr"</code>)</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">witness_smart_contract_address</code>: Contract address (Ethereum)</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">witness_transaction_hash</code>: Transaction hash</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">witness_sender_account_address</code>: Account that witnessed</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">witness_merkle_proof</code>: Merkle proof array</li> </ol></ul> <strong>Example (Ethereum)</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_verification_hash&quot;: &quot;0xabc123...&quot;,
+  &quot;local_timestamp&quot;: &quot;2024-01-01T12:02:00&quot;,
+  &quot;revision_type&quot;: &quot;witness&quot;,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar&quot;,
+  &quot;witness_merkle_root&quot;: &quot;0xdef456...&quot;,
+  &quot;witness_timestamp&quot;: 1704110520,
+  &quot;witness_network&quot;: &quot;sepolia&quot;,
+  &quot;witness_smart_contract_address&quot;: &quot;0x5FbDB2315678afecb367f032d93F642f64180aa3&quot;,
+  &quot;witness_transaction_hash&quot;: &quot;0x9f86d081...&quot;,
+  &quot;witness_sender_account_address&quot;: &quot;0x742d35Cc...&quot;,
+  &quot;witness_merkle_proof&quot;: []
+}</code></pre>
+<h3 id="5-link-revision">5. Link Revision</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Connects to other AquaTree chains.</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Purpose</strong>: Establish relationships between separate chains</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Fields</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">link_type</code>: Type of link relationship (application-specific)</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">link_verification_hashes</code>: Array of hashes from other chains</li> <li><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">link_file_hashes</code>: Array of corresponding file hashes</li> </ol></ul> <strong>Example</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_verification_hash&quot;: &quot;0xabc123...&quot;,
+  &quot;local_timestamp&quot;: &quot;2024-01-01T12:03:00&quot;,
+  &quot;revision_type&quot;: &quot;link&quot;,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar&quot;,
+  &quot;link_type&quot;: &quot;dependency&quot;,
+  &quot;link_verification_hashes&quot;: [
+    &quot;0x111...&quot;,
+    &quot;0x222...&quot;,
+    &quot;0x333...&quot;
+  ],
+  &quot;link_file_hashes&quot;: [
+    &quot;0xaaa...&quot;,
+    &quot;0xbbb...&quot;,
+    &quot;0xccc...&quot;
+  ]
+}</code></pre>
+<h2 id="methods-scalar-vs-tree">Methods: Scalar vs Tree</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">V3 supports two canonicalization methods, specified in the version string.</p>
+<h3 id="scalar-method">Scalar Method</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Format</strong>: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">Method: scalar</code></p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>How it works</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Revision is serialized as-is</li> <li>Hash computed directly from canonical JSON</li> <li>Simple, straightforward</li> </ol></ul> <strong>When to use</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Small revisions</li> <li>Simple file/form data</li> <li>Quick operations</li> </ol></ul> <strong>Example</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">version: &quot;https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar&quot;
+// No leaves field</code></pre>
+<h3 id="tree-method">Tree Method</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Format</strong>: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">Method: tree</code></p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>How it works</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Content broken into key-value leaves</li> <li>Each leaf hashed individually</li> <li>Merkle tree constructed from leaves</li> <li>Root becomes the verification hash</li> </ol></ul> <strong>When to use</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Large files or forms</li> <li>Selective disclosure needed</li> <li>Proof of specific fields</li> </ol></ul> <strong>Example</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">version: &quot;https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree&quot;
+leaves: [
+  &quot;0xhash_of_key_value_1&quot;,
+  &quot;0xhash_of_key_value_2&quot;,
+  &quot;0xhash_of_key_value_3&quot;
+]</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Leaf Generation</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">// For form data: { &quot;name&quot;: &quot;John&quot;, &quot;email&quot;: &quot;john@example.com&quot; }
+leaves = [
+  SHA256(&quot;name:John&quot;),
+  SHA256(&quot;email:john@example.com&quot;)
+]</code></pre>
+<h2 id="chains-and-trees">Chains and Trees</h2>
+<h3 id="linear-chain">Linear Chain</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Simple sequence of revisions:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Genesis � Signature � Witness � Update � Signature � Witness</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Each revision references the previous one.</p>
+<h3 id="branching-tree">Branching Tree</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Multiple paths from a common ancestor:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Genesis
+               �
+          Signature
+             /  \
+        Branch A  Branch B
+           �        �
+        Update 1  Update 2</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">V3 supports branching, allowing parallel development paths.</p>
+<h3 id="path-mapping">Path Mapping</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">The <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">treeMapping</code> provides paths to each revision:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  paths: {
+    &quot;genesis_hash&quot;: [&quot;genesis_hash&quot;],
+    &quot;sig_hash&quot;: [&quot;genesis_hash&quot;, &quot;sig_hash&quot;],
+    &quot;branch_a_hash&quot;: [&quot;genesis_hash&quot;, &quot;sig_hash&quot;, &quot;branch_a_hash&quot;],
+    &quot;branch_b_hash&quot;: [&quot;genesis_hash&quot;, &quot;sig_hash&quot;, &quot;branch_b_hash&quot;]
+  },
+  latestHash: &quot;branch_a_hash&quot;  // Longest path
+}</code></pre>
+<h2 id="file-object">File Object</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Input format for creating revisions:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">interface FileObject {
+  fileName: string           // Display name
+  fileContent: string |      // Text content
+                AquaTree |   // Linked tree
+                Uint8Array | // Binary data
+                Record&lt;string, string&gt; | // Form data
+                object       // Structured data
+  path: string              // File path
+  fileSize?: number         // Size in bytes
+}</code></pre>
+<h3 id="content-types">Content Types</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Text</strong>: Plain text, HTML, JSON</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  fileName: &quot;doc.txt&quot;,
+  fileContent: &quot;Hello World&quot;,
+  path: &quot;/docs/doc.txt&quot;
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Binary</strong>: Images, PDFs, any binary file</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  fileName: &quot;image.png&quot;,
+  fileContent: new Uint8Array([...]),
+  path: &quot;/images/image.png&quot;
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Form</strong>: Key-value structured data</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  fileName: &quot;form.json&quot;,
+  fileContent: {
+    &quot;field1&quot;: &quot;value1&quot;,
+    &quot;field2&quot;: &quot;value2&quot;
+  },
+  path: &quot;/forms/form.json&quot;
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Link</strong>: Reference to another AquaTree</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  fileName: &quot;linked.json&quot;,
+  fileContent: anotherAquaTree,
+  path: &quot;/links/linked.json&quot;
+}</code></pre>
+<h2 id="verification-graph">Verification Graph</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Result of verification includes a graph structure:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">interface VerificationGraphData {
+  hash: string
+  previous_verification_hash: string
+  timestamp: string
+  isValidationSuccessful: boolean
+  revisionType: RevisionType
+  info: RevisionGraphInfo  // Type-specific details
+  verificationGraphData: VerificationGraphData[]      // Children
+  linkVerificationGraphData: VerificationGraphData[]  // Links
+}</code></pre>
+<h3 id="traversing-the-graph">Traversing the Graph</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">function printVerification(graph: VerificationGraphData, depth = 0) {
+  const indent = &quot;  &quot;.repeat(depth);
+  const status = graph.isValidationSuccessful ? &quot;&quot; : &quot;&quot;;
+  console.log(`${indent}${status} ${graph.revisionType} (${graph.hash.slice(0, 10)}...)`);
+
+  // Traverse children
+  graph.verificationGraphData.forEach(child =&gt; {
+    printVerification(child, depth + 1);
+  });
+
+  // Traverse links
+  graph.linkVerificationGraphData.forEach(link =&gt; {
+    console.log(`${indent}  � Linked:`);
+    printVerification(link, depth + 2);
+  });
+}</code></pre>
+<h2 id="credentials">Credentials</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Configuration for signing and witnessing:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">interface CredentialsData {
+  mnemonic: string             // BIP39 mnemonic for CLI signing
+  nostr_sk: string             // Nostr secret key
+  did_key: string              // DID key for DID signing
+  alchemy_key: string          // Alchemy API key for verification
+  witness_eth_network: string  // &quot;mainnet&quot;, &quot;sepolia&quot;, &quot;holesky&quot;
+  witness_method: string       // &quot;cli&quot; or &quot;metamask&quot;
+  p12_password?: string        // P12 certificate password
+  p12_content?: string         // P12 certificate content
+}</code></pre>
+<h2 id="logging">Logging</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">V3 uses typed logging throughout:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">enum LogType {
+  SUCCESS = &quot;success&quot;,
+  INFO = &quot;info&quot;,
+  ERROR = &quot;error&quot;,
+  WARNING = &quot;warning&quot;,
+  HINT = &quot;hint&quot;,
+  DEBUGDATA = &quot;debug_data&quot;,
+  // ... revision types with emojis
+  FILE = &quot;file&quot;,      // =�
+  LINK = &quot;link&quot;,      // =
+  SIGNATURE = &quot;signature&quot;,  // =
+  WITNESS = &quot;witness&quot;,      // =@
+  FORM = &quot;form&quot;            // =�
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Each operation returns logs for debugging and user feedback.</p>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="1-genesis-patterns">1. Genesis Patterns</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Single File</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">File Genesis � Sign � Witness</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Form Data</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Form Genesis � Sign � Witness</code></pre>
+<h3 id="2-update-patterns">2. Update Patterns</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Content Update</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">... � New File Revision � Sign � Witness</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Multi-Party</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">... � Sign (Party 1) � Sign (Party 2) � Witness</code></pre>
+<h3 id="3-linking-patterns">3. Linking Patterns</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Dependencies</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Main Document � Link (to dependencies) � Sign � Witness</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Aggregation</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Component 1 
+Component 2 � Aggregation Link � Sign � Witness
+Component 3 </code></pre>
+<h3 id="4-verification-patterns">4. Verification Patterns</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Full Chain</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">const result = await aquafier.verifyRevisionChain(aquaTree);</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Specific Revision</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">const revision = aquaTree.revisions[specificHash];
+// Manually verify hash computation</code></pre>
+<h3 id="5-storage-patterns">5. Storage Patterns</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Database</strong>: Store serialized AquaTree JSON</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">const json = JSON.stringify(aquaTree);
+db.save(documentId, json);</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>File System</strong>: Save as .aqua.json file</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">fs.writeFileSync(&#039;document.aqua.json&#039;, JSON.stringify(aquaTree, null, 2));</code></pre>
+<h2 id="common-patterns">Common Patterns</h2>
+<h3 id="document-lifecycle">Document Lifecycle</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">1. Create � File Genesis
+2. Review � Sign (Reviewer)
+3. Approve � Sign (Approver)
+4. Timestamp � Witness (Ethereum)
+5. Archive � Store AquaTree
+6. Verify � Check entire chain</code></pre>
+<h3 id="multi-document-project">Multi-Document Project</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">1. Create each document � Individual AquaTrees
+2. Link together � Link Revision in main tree
+3. Sign project � Sign main tree
+4. Witness � Witness main tree
+5. All documents timestamped through link</code></pre>
+<h2 id="see-also">See Also</h2>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/previous_versions/version_3/introduction.html" class="font-medium text-primary hover:underline">Introduction</a> - Overview and quick start</li>
+<li><a href="/previous_versions/version_3/tooling.html" class="font-medium text-primary hover:underline">Tooling</a> - SDK API reference</li>
+<li><a href="/previous_versions/version_3/schema.html" class="font-medium text-primary hover:underline">Schema Reference</a> - Detailed specifications</li>
+</ol></ul>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#aquatree" class="toc-link" style="">AquaTree</a>
+<a href="#revisions" class="toc-link" style="">Revisions</a>
+<a href="#revision-types" class="toc-link" style="">Revision Types</a>
+<a href="#methods-scalar-vs-tree" class="toc-link" style="">Methods: Scalar vs Tree</a>
+<a href="#chains-and-trees" class="toc-link" style="">Chains and Trees</a>
+<a href="#file-object" class="toc-link" style="">File Object</a>
+<a href="#verification-graph" class="toc-link" style="">Verification Graph</a>
+<a href="#credentials" class="toc-link" style="">Credentials</a>
+<a href="#logging" class="toc-link" style="">Logging</a>
+<a href="#best-practices" class="toc-link" style="">Best Practices</a>
+<a href="#common-patterns" class="toc-link" style="">Common Patterns</a>
+<a href="#see-also" class="toc-link" style="">See Also</a>
+<a href="#structure" class="toc-link" style="padding-left: 0.75rem;">Structure</a>
+<a href="#components" class="toc-link" style="padding-left: 0.75rem;">Components</a>
+<a href="#common-fields" class="toc-link" style="padding-left: 0.75rem;">Common Fields</a>
+<a href="#genesis-revision" class="toc-link" style="padding-left: 0.75rem;">Genesis Revision</a>
+<a href="#verification-hash" class="toc-link" style="padding-left: 0.75rem;">Verification Hash</a>
+<a href="#1-file-revision" class="toc-link" style="padding-left: 0.75rem;">1. File Revision</a>
+<a href="#2-form-revision" class="toc-link" style="padding-left: 0.75rem;">2. Form Revision</a>
+<a href="#3-signature-revision" class="toc-link" style="padding-left: 0.75rem;">3. Signature Revision</a>
+<a href="#4-witness-revision" class="toc-link" style="padding-left: 0.75rem;">4. Witness Revision</a>
+<a href="#5-link-revision" class="toc-link" style="padding-left: 0.75rem;">5. Link Revision</a>
+<a href="#scalar-method" class="toc-link" style="padding-left: 0.75rem;">Scalar Method</a>
+<a href="#tree-method" class="toc-link" style="padding-left: 0.75rem;">Tree Method</a>
+<a href="#linear-chain" class="toc-link" style="padding-left: 0.75rem;">Linear Chain</a>
+<a href="#branching-tree" class="toc-link" style="padding-left: 0.75rem;">Branching Tree</a>
+<a href="#path-mapping" class="toc-link" style="padding-left: 0.75rem;">Path Mapping</a>
+<a href="#content-types" class="toc-link" style="padding-left: 0.75rem;">Content Types</a>
+<a href="#traversing-the-graph" class="toc-link" style="padding-left: 0.75rem;">Traversing the Graph</a>
+<a href="#1-genesis-patterns" class="toc-link" style="padding-left: 0.75rem;">1. Genesis Patterns</a>
+<a href="#2-update-patterns" class="toc-link" style="padding-left: 0.75rem;">2. Update Patterns</a>
+<a href="#3-linking-patterns" class="toc-link" style="padding-left: 0.75rem;">3. Linking Patterns</a>
+<a href="#4-verification-patterns" class="toc-link" style="padding-left: 0.75rem;">4. Verification Patterns</a>
+<a href="#5-storage-patterns" class="toc-link" style="padding-left: 0.75rem;">5. Storage Patterns</a>
+<a href="#document-lifecycle" class="toc-link" style="padding-left: 0.75rem;">Document Lifecycle</a>
+<a href="#multi-document-project" class="toc-link" style="padding-left: 0.75rem;">Multi-Document Project</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

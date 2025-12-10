@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previous Versions\Version 3\Schema - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Previous Versions\Version 3\Schema</span></div>
+
+        <div class="content">
+          <h1>Aqua Protocol v3 - Schema Reference</h1>
+
+This document provides comprehensive technical specifications for all revision types in Aqua Protocol v3. Each revision type has specific fields and validation rules.
+
+<h2 id="version-string-format">Version String Format</h2>
+
+``<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: {scalar|tree}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Components:</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Protocol URL: </code>https://aqua-protocol.org/docs/v3/schema_2<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Hash Algorithm: </code>SHA256<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Canonicalization Method: </code>scalar<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> or </code>tree<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol></ul>
+
+<h2 id="common-fields">Common Fields</h2>
+
+All revisions share these mandatory fields:
+
+| Field | Type | Description | Validation |
+|-------|------|-------------|------------|
+| </code>previous_verification_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Hash of previous revision | Empty string for genesis, otherwise 64-char hex with </code>0x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> prefix |
+| </code>local_timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | ISO 8601 timestamp | Valid ISO 8601 format: </code>YYYY-MM-DDTHH:mm:ss<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> |
+| </code>revision_type<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Type of revision | One of: </code>"file"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"form"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"signature"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"witness"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"link"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> |
+| </code>version<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Protocol version and method | Must match format above |
+
+---
+
+<h2 id="file-revision">File Revision</h2>
+
+Represents a file with metadata and optional content.
+
+<h3 id="fields">Fields</h3>
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| </code>previous_verification_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Previous revision hash (empty for genesis) |
+| </code>local_timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | ISO 8601 timestamp |
+| </code>revision_type<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Must be </code>"file"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> |
+| </code>version<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Protocol version string |
+| </code>file_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | SHA256 hash of file content (hex with </code>0x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">) |
+| </code>file_nonce<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Random 16-byte nonce (hex with </code>0x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">) |
+| </code>content<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string/Uint8Array | No | Optional file content |
+| </code>leaves<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string[] | Conditional | Required if </code>Method: tree<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, array of leaf hashes |
+
+<h3 id="genesis-file-revision-scalar">Genesis File Revision (Scalar)</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="genesis-file-revision-tree">Genesis File Revision (Tree)</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "leaves": [
+    "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
+  ]
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="with-content">With Content</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "content": "This is the file content as a string"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="validation-rules">Validation Rules</h3>
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>file_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> must match SHA256 of file content</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>file_nonce<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> must be exactly 16 bytes (32 hex chars + </code>0x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">)</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>If </code>Method: tree<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>leaves<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> array must be present</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>If </code>Method: scalar<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>leaves<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> must be absent</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>content<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> is optional but if present, hash must match </code>file_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+
+---
+
+<h2 id="form-revision">Form Revision</h2>
+
+Stores structured key-value data.
+
+<h3 id="fields">Fields</h3>
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| </code>previous_verification_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Previous revision hash (empty for genesis) |
+| </code>local_timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | ISO 8601 timestamp |
+| </code>revision_type<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Must be </code>"form"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> |
+| </code>version<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Protocol version string |
+| </code>file_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | SHA256 hash of form data |
+| </code>file_nonce<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Random 16-byte nonce |
+| </code>content<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | object | Yes | Form data as key-value pairs |
+| </code>leaves<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string[] | Conditional | Required if </code>Method: tree<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> |
+
+<h3 id="example-scalar">Example (Scalar)</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  }
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="example-tree">Example (Tree)</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  },
+  "leaves": [
+    "0x...",  // SHA256("name:John Doe")
+    "0x...",  // SHA256("email:john@example.com")
+    "0x...",  // SHA256("organization:Example Corp")
+    "0x..."   // SHA256("role:Developer")
+  ]
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="leaf-computation-tree-mode">Leaf Computation (Tree Mode)</h3>
+
+For each key-value pair in </code>content<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">:
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+leaf_hash = SHA256(</code>${key}:${value}<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">)
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="validation-rules">Validation Rules</h3>
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>content<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> must be a valid JSON object</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>All values in </code>content<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> must be strings</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>file_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> must match hash of canonicalized content</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>If </code>Method: tree<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, number of leaves must match number of keys in content</li></ol>
+
+---
+
+<h2 id="signature-revision">Signature Revision</h2>
+
+Adds cryptographic signature to verify authenticity.
+
+<h3 id="common-fields">Common Fields</h3>
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| </code>previous_verification_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Hash of revision being signed |
+| </code>local_timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | ISO 8601 timestamp |
+| </code>revision_type<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Must be </code>"signature"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> |
+| </code>version<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Protocol version string |
+| </code>signature_type<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Type: </code>"cli"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"metamask"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"did"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"p12"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"inline"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> |
+
+<h3 id="cli-metamask-signature">CLI / MetaMask Signature</h3>
+
+<strong>Additional Fields:</strong>
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| </code>signature<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Hex-encoded signature (65 bytes for ECDSA) |
+| </code>signature_wallet_address<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Ethereum address (EIP-55 checksummed) |
+
+<strong>Example:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "cli",
+  "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c",
+  "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="did-signature">DID Signature</h3>
+
+<strong>Additional Fields:</strong>
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| </code>signature<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | object | Yes | JWS (JSON Web Signature) object |
+
+<strong>Signature Object Structure:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+{
+  payload: string;       // Base64url-encoded payload
+  signatures: [{
+    protected: string;   // Base64url-encoded protected header
+    signature: string;   // Base64url-encoded signature
+  }]
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Example:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "did",
+  "signature": {
+    "payload": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19",
+    "signatures": [{
+      "protected": "eyJhbGciOiJFZERTQSJ9",
+      "signature": "kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ"
+    }]
+  }
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="p12-certificate-signature">P12 Certificate Signature</h3>
+
+<strong>Additional Fields:</strong>
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| </code>signature<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Hex-encoded signature |
+| </code>signature_public_key<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Hex-encoded DER public key |
+
+<strong>Example:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "p12",
+  "signature": "0x...",
+  "signature_public_key": "0x308201a2300d06092a864886f70d01010105000382018f..."
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="inline-signature">Inline Signature</h3>
+
+Same as CLI/MetaMask but with pre-computed signature.
+
+<h3 id="validation-rules">Validation Rules</h3>
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Signature must be verifiable using provided credentials</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>For CLI/MetaMask: Address must be recoverable from signature</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>For DID: JWS must be valid and verifiable</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>For P12: Signature must verify with public key</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Signature must be computed over </code>previous_verification_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+
+---
+
+<h2 id="witness-revision">Witness Revision</h2>
+
+Anchors revision to blockchain or timestamping service.
+
+<h3 id="fields">Fields</h3>
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| </code>previous_verification_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Hash being witnessed |
+| </code>local_timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | ISO 8601 timestamp |
+| </code>revision_type<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Must be </code>"witness"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> |
+| </code>version<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Protocol version string |
+| </code>witness_merkle_root<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Root hash of Merkle tree |
+| </code>witness_timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | number | Yes | Unix timestamp from witness service |
+| </code>witness_network<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Network: </code>"mainnet"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"sepolia"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"holesky"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"tsa"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"nostr"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> |
+| </code>witness_smart_contract_address<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Conditional | Required for Ethereum |
+| </code>witness_transaction_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Transaction or event hash |
+| </code>witness_sender_account_address<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Conditional | Required for Ethereum |
+| </code>witness_merkle_proof<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string[] | Yes | Merkle proof (empty for single witness) |
+
+<h3 id="ethereum-witness-example">Ethereum Witness Example</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xdef456...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "sepolia",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "witness_sender_account_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  "witness_merkle_proof": []
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="batched-witness-example">Batched Witness Example</h3>
+
+Multiple revisions witnessed in single transaction:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xroot...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "mainnet",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081...",
+  "witness_sender_account_address": "0x742d35Cc...",
+  "witness_merkle_proof": [
+    "0xsibling_hash_1",
+    "0xsibling_hash_2",
+    "0xsibling_hash_3"
+  ]
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="nostr-witness-example">Nostr Witness Example</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "nostr",
+  "witness_smart_contract_address": "",
+  "witness_transaction_hash": "nevent1qqsw...",
+  "witness_sender_account_address": "npub1...",
+  "witness_merkle_proof": []
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="tsa-witness-example">TSA Witness Example</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "tsa",
+  "witness_smart_contract_address": "https://timestamp.digicert.com",
+  "witness_transaction_hash": "base64_tsa_response",
+  "witness_sender_account_address": "",
+  "witness_merkle_proof": []
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="validation-rules">Validation Rules</h3>
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>For single witness: </code>witness_merkle_proof<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> must be empty array</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>For single witness: </code>witness_merkle_root<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> equals </code>previous_verification_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>For batched: Merkle proof must verify back to </code>witness_merkle_root<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Transaction must exist and be confirmed on specified network</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>witness_timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> should match blockchain/service timestamp</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>For Ethereum: Contract address and sender address required</li></ol>
+
+---
+
+<h2 id="link-revision">Link Revision</h2>
+
+Connects to other AquaTree chains.
+
+<h3 id="fields">Fields</h3>
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| </code>previous_verification_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Previous revision in this chain |
+| </code>local_timestamp<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | ISO 8601 timestamp |
+| </code>revision_type<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Must be </code>"link"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> |
+| </code>version<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | Yes | Protocol version string |
+| </code>link_type<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string | No | Application-specific link type |
+| </code>link_verification_hashes<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string[] | Yes | Array of hashes from other chains |
+| </code>link_file_hashes<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | string[] | No | Corresponding file hashes |
+
+<h3 id="example">Example</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:03:00",
+  "revision_type": "link",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "link_type": "dependencies",
+  "link_verification_hashes": [
+    "0x111222333444555666777888999000aaabbbcccdddeeefff000111222333444",
+    "0x222333444555666777888999000aaabbbcccdddeeefff000111222333444555",
+    "0x333444555666777888999000aaabbbcccdddeeefff000111222333444555666"
+  ],
+  "link_file_hashes": [
+    "0xfileHash1...",
+    "0xfileHash2...",
+    "0xfileHash3..."
+  ]
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="validation-rules">Validation Rules</h3>
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>link_verification_hashes<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> must be non-empty array</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Each hash in array must be valid revision hash</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>If </code>link_file_hashes<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> present, must have same length as </code>link_verification_hashes<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Referenced revisions should exist (optional strict validation)</li></ol>
+
+---
+
+<h2 id="hash-computation">Hash Computation</h2>
+
+<h3 id="scalar-method">Scalar Method</h3>
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Serialize revision as canonical JSON (sorted keys)</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Compute SHA256 hash of serialized string</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Prefix with </code>0x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const canonical = JSON.stringify(sortKeys(revision));
+const hash = "0x" + sha256(canonical).toString('hex');
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="tree-method">Tree Method</h3>
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Extract leaves array from revision</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Build Merkle tree from leaves</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Root hash becomes verification hash</li></ol>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const leaves = revision.leaves;
+const tree = new MerkleTree(leaves, sha256);
+const hash = "0x" + tree.getRoot().toString('hex');
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h2 id="aquatree-storage-format">AquaTree Storage Format</h2>
+
+Complete AquaTree structure for storage/transmission:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "revisions": {
+    "0xgenesis_hash": {
+      "previous_verification_hash": "",
+      "local_timestamp": "2024-01-01T12:00:00",
+      "revision_type": "file",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "file_hash": "0x...",
+      "file_nonce": "0x..."
+    },
+    "0xsignature_hash": {
+      "previous_verification_hash": "0xgenesis_hash",
+      "local_timestamp": "2024-01-01T12:01:00",
+      "revision_type": "signature",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "signature_type": "cli",
+      "signature": "0x...",
+      "signature_wallet_address": "0x..."
+    },
+    "0xwitness_hash": {
+      "previous_verification_hash": "0xsignature_hash",
+      "local_timestamp": "2024-01-01T12:02:00",
+      "revision_type": "witness",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "witness_merkle_root": "0x...",
+      "witness_timestamp": 1704110520,
+      "witness_network": "sepolia",
+      "witness_smart_contract_address": "0x...",
+      "witness_transaction_hash": "0x...",
+      "witness_sender_account_address": "0x...",
+      "witness_merkle_proof": []
+    }
+  },
+  "file_index": {
+    "0xfile_hash": "document.pdf"
+  },
+  "tree": {
+    "hash": "0xgenesis_hash",
+    "children": [
+      {
+        "hash": "0xsignature_hash",
+        "children": [
+          {
+            "hash": "0xwitness_hash",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "treeMapping": {
+    "paths": {
+      "0xgenesis_hash": ["0xgenesis_hash"],
+      "0xsignature_hash": ["0xgenesis_hash", "0xsignature_hash"],
+      "0xwitness_hash": ["0xgenesis_hash", "0xsignature_hash", "0xwitness_hash"]
+    },
+    "latestHash": "0xwitness_hash"
+  }
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h2 id="field-constraints">Field Constraints</h2>
+
+<h3 id="hashes">Hashes</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Format: Lowercase hexadecimal with </code>0x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> prefix</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Length: 64 characters (32 bytes) + 2-char prefix = 66 total</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Example: </code>0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol></ul>
+
+<h3 id="timestamps">Timestamps</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Format: ISO 8601</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Pattern: </code>YYYY-MM-DDTHH:mm:ss<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Example: </code>2024-01-01T12:00:00<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol></ul>
+
+<h3 id="ethereum-addresses">Ethereum Addresses</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Format: EIP-55 checksummed</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Length: 42 characters (20 bytes + 0x)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Mixed case for checksum</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Example: </code>0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol></ul>
+
+<h3 id="nonces">Nonces</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Length: Exactly 16 bytes (32 hex chars + 0x)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Format: Lowercase hexadecimal with </code>0x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> prefix</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Example: </code>0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c`</li></ol></ul>
+
+---
+
+<h2 id="version-compatibility">Version Compatibility</h2>
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>v3.2.x</strong>: Current version, fully compatible</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>v3.1.x</strong>: Compatible, minor improvements</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>v3.0.x</strong>: Compatible, initial TypeScript release</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>v2.x</strong>: Not compatible, different schema</li></ol></ul>
+
+---
+
+<h2 id="see-also">See Also</h2>
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/previous_versions/version_3/introduction.html" class="font-medium text-primary hover:underline">Introduction</a> - Getting started</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/previous_versions/version_3/concepts.html" class="font-medium text-primary hover:underline">Concepts</a> - Core concepts</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/previous_versions/version_3/tooling.html" class="font-medium text-primary hover:underline">Tooling</a> - SDK API reference</li></ol></ul>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#version-string-format" class="toc-link" style="">Version String Format</a>
+<a href="#common-fields" class="toc-link" style="">Common Fields</a>
+<a href="#file-revision" class="toc-link" style="">File Revision</a>
+<a href="#form-revision" class="toc-link" style="">Form Revision</a>
+<a href="#signature-revision" class="toc-link" style="">Signature Revision</a>
+<a href="#witness-revision" class="toc-link" style="">Witness Revision</a>
+<a href="#link-revision" class="toc-link" style="">Link Revision</a>
+<a href="#hash-computation" class="toc-link" style="">Hash Computation</a>
+<a href="#aquatree-storage-format" class="toc-link" style="">AquaTree Storage Format</a>
+<a href="#field-constraints" class="toc-link" style="">Field Constraints</a>
+<a href="#version-compatibility" class="toc-link" style="">Version Compatibility</a>
+<a href="#see-also" class="toc-link" style="">See Also</a>
+<a href="#fields" class="toc-link" style="padding-left: 0.75rem;">Fields</a>
+<a href="#genesis-file-revision-scalar" class="toc-link" style="padding-left: 0.75rem;">Genesis File Revision (Scalar)</a>
+<a href="#genesis-file-revision-tree" class="toc-link" style="padding-left: 0.75rem;">Genesis File Revision (Tree)</a>
+<a href="#with-content" class="toc-link" style="padding-left: 0.75rem;">With Content</a>
+<a href="#validation-rules" class="toc-link" style="padding-left: 0.75rem;">Validation Rules</a>
+<a href="#fields" class="toc-link" style="padding-left: 0.75rem;">Fields</a>
+<a href="#example-scalar" class="toc-link" style="padding-left: 0.75rem;">Example (Scalar)</a>
+<a href="#example-tree" class="toc-link" style="padding-left: 0.75rem;">Example (Tree)</a>
+<a href="#leaf-computation-tree-mode" class="toc-link" style="padding-left: 0.75rem;">Leaf Computation (Tree Mode)</a>
+<a href="#validation-rules" class="toc-link" style="padding-left: 0.75rem;">Validation Rules</a>
+<a href="#common-fields" class="toc-link" style="padding-left: 0.75rem;">Common Fields</a>
+<a href="#cli-metamask-signature" class="toc-link" style="padding-left: 0.75rem;">CLI / MetaMask Signature</a>
+<a href="#did-signature" class="toc-link" style="padding-left: 0.75rem;">DID Signature</a>
+<a href="#p12-certificate-signature" class="toc-link" style="padding-left: 0.75rem;">P12 Certificate Signature</a>
+<a href="#inline-signature" class="toc-link" style="padding-left: 0.75rem;">Inline Signature</a>
+<a href="#validation-rules" class="toc-link" style="padding-left: 0.75rem;">Validation Rules</a>
+<a href="#fields" class="toc-link" style="padding-left: 0.75rem;">Fields</a>
+<a href="#ethereum-witness-example" class="toc-link" style="padding-left: 0.75rem;">Ethereum Witness Example</a>
+<a href="#batched-witness-example" class="toc-link" style="padding-left: 0.75rem;">Batched Witness Example</a>
+<a href="#nostr-witness-example" class="toc-link" style="padding-left: 0.75rem;">Nostr Witness Example</a>
+<a href="#tsa-witness-example" class="toc-link" style="padding-left: 0.75rem;">TSA Witness Example</a>
+<a href="#validation-rules" class="toc-link" style="padding-left: 0.75rem;">Validation Rules</a>
+<a href="#fields" class="toc-link" style="padding-left: 0.75rem;">Fields</a>
+<a href="#example" class="toc-link" style="padding-left: 0.75rem;">Example</a>
+<a href="#validation-rules" class="toc-link" style="padding-left: 0.75rem;">Validation Rules</a>
+<a href="#scalar-method" class="toc-link" style="padding-left: 0.75rem;">Scalar Method</a>
+<a href="#tree-method" class="toc-link" style="padding-left: 0.75rem;">Tree Method</a>
+<a href="#hashes" class="toc-link" style="padding-left: 0.75rem;">Hashes</a>
+<a href="#timestamps" class="toc-link" style="padding-left: 0.75rem;">Timestamps</a>
+<a href="#ethereum-addresses" class="toc-link" style="padding-left: 0.75rem;">Ethereum Addresses</a>
+<a href="#nonces" class="toc-link" style="padding-left: 0.75rem;">Nonces</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

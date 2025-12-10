@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schema Reference\Aqua Tree - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Schema Reference\Aqua Tree</span></div>
+
+        <div class="content">
+          <p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">The <strong>Aqua Tree</strong> is the primary data structure in Aqua Protocol. It serves as the container for all revisions, their relationships, and associated metadata. An Aqua Tree represents a complete, self-contained unit that can be stored, transmitted, and verified independently.  <h2 id="why-tree-and-not-chain">Why "Tree" and Not "Chain"?</h2>  The term "tree" is intentional. While revisions form chains through their <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_hash</code> references, the structure supports <strong>branching</strong> where a single revision can have multiple children. This creates a tree topology rather than a simple linear chain.  ``<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> Genesis Revision       |   Revision A     /    \ Rev B    Rev C  ← Branching creates a tree   |        | Rev D    Rev E </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">  <h2 id="structure">Structure</h2>  An Aqua Tree consists of two primary components:  <h3 id="core-fields">Core Fields</h3>  | Field | Type | Required | Description | |-------|------|----------|-------------| | </code>revisions<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | Object | Yes | Map of revision hashes to revision objects | | </code>file_index<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> | Object | Yes | Map of content hashes to filenames |  <h3 id="complete-structure">Complete Structure</h3>  </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json {   "revisions": {     "0xabc123...": {       "revision_type": "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e",       "nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",       "local_timestamp": 1704067200,       "version": "https://aqua-protocol.org/docs/v4/schema",       // ... revision-specific fields     },     "0xdef456...": {       // ... another revision     }   },   "file_index": {     "0xe1bcaa92b0ea2f0eb1f046ca4fc877f26726e5bec8b1a5cf25504a29bc4e0f28": "document.pdf",     "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08": "contract.txt"   } } </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">  <h2 id="revisions-map">Revisions Map</h2>  The </code>revisions<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> field is an object where: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Keys</strong>: Verification hashes of revisions (hex strings prefixed with </code>0x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">)</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Values</strong>: Complete revision objects</li></ol></ul>  Each revision is indexed by its verification hash, which is computed from the revision's canonical form. This allows O(1) lookup of any revision by its hash.  <h3 id="revision-hash-as-key">Revision Hash as Key</h3>  </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json {   "revisions": {     "0xabc123...": { /<em> revision object </em>/ },     "0xdef456...": { /<em> revision object </em>/ }   } } </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">  The hash serves as: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Unique identifier for the revision</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Key for efficient lookups</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Reference in </code>previous_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> fields to build the chain</li></ol></ul>  <h2 id="file-index">File Index</h2>  The </code>file_index<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> maps content hashes to human-readable filenames. This provides context about what content each hash represents.  See the <a href="/schema_reference/file_index.html" class="font-medium text-primary hover:underline">File Index documentation</a> for detailed information.  <h2 id="complete-example">Complete Example</h2>  Here's a minimal Aqua Tree with a genesis object revision and a signature:  </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json {   "revisions": {     "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e": {       "revision_type": "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e",       "nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",       "local_timestamp": 1704067200,       "version": "https://aqua-protocol.org/docs/v4/schema",       "method": "scalar",       "hash_type": "FIPS_202-SHA3-256",       "payload": {         "payload_type": "text/plain",         "hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",         "hash_type": "FIPS_202-SHA3-256",         "descriptor": "Initial Document"       }     },     "0xsig123...": {       "revision_type": "0x8e5b2f9c4d3a1e7b6c8f9d0e2a5b3c4d1e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b",       "nonce": "0x1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d",       "local_timestamp": 1704067260,       "version": "https://aqua-protocol.org/docs/v4/schema",       "method": "scalar",       "hash_type": "FIPS_202-SHA3-256",       "previous_hash": "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e",       "signature_type": "eip191",       "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c901",       "wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"     }   },   "file_index": {     "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08": "document.txt"   } } </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">  <h2 id="navigating-the-tree">Navigating the Tree</h2>  <h3 id="finding-the-genesis-revision">Finding the Genesis Revision</h3>  The genesis revision has no </code>previous_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> field or has </code>previous_hash: null<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">. To find it:  </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript const genesis = Object.values(aquaTree.revisions).find(   rev => !rev.previous_hash ); </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">  <h3 id="following-the-chain">Following the Chain</h3>  To traverse from genesis to latest:  </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript function getChain(aquaTree, startHash) {   const chain = [];   let current = aquaTree.revisions[startHash];    while (current) {     chain.push(current);      // Find child (revision that references this one)     const childHash = Object.keys(aquaTree.revisions).find(hash =>       aquaTree.revisions[hash].previous_hash === currentHash     );      current = childHash ? aquaTree.revisions[childHash] : null;   }    return chain; } </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">  <h3 id="finding-all-branches">Finding All Branches</h3>  For trees with branches:  </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript function findChildren(aquaTree, parentHash) {   return Object.entries(aquaTree.revisions)     .filter(([_, rev]) => rev.previous_hash === parentHash)     .map(([hash, rev]) => ({ hash, revision: rev })); } </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">  <h2 id="storage-and-transmission">Storage and Transmission</h2>  <h3 id="file-storage">File Storage</h3>  Aqua Trees are typically stored as JSON files with </code>.aqua.json<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> extension:  </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash document.aqua.json contract-2024-01-01.aqua.json </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">  <h3 id="size-considerations">Size Considerations</h3>  <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Each revision: ~200-500 bytes (depending on type and content)</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Typical Aqua Tree: 1-10 KB for simple documents</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Large trees with many revisions: Up to several MB</li></ol></ul>  <h3 id="compression">Compression</h3>  For large trees, consider gzip compression:  </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash gzip document.aqua.json <h1>Results in document.aqua.json.gz</h1> </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">  <h2 id="validation">Validation</h2>  An Aqua Tree is valid if:  <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>All revisions have valid hashes</strong>: Each revision's hash matches its computed verification hash</li></ol> <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Previous hashes reference existing revisions</strong>: All </code>previous_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> values point to revisions in the tree (except genesis)</li></ol> <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>No circular references</strong>: Following </code>previous_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> links eventually reaches genesis</li></ol> <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Signatures are valid</strong>: All signature revisions have valid cryptographic signatures</li></ol> <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>File index matches</strong>: All hashes in file_index correspond to content referenced in revisions</li></ol>  <h2 id="use-cases">Use Cases</h2>  <h3 id="document-management">Document Management</h3>  Store a document's complete revision history: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Genesis: Initial document creation</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Updates: Each modification as new object revision</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Signatures: Approvals from stakeholders</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Witnesses: Blockchain timestamps for legal proof</li></ol></ul>  <h3 id="multi-document-projects">Multi-Document Projects</h3>  Use link revisions to connect related Aqua Trees: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Main project tree links to component trees</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Each component has its own revision history</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verification cascades through linked trees</li></ol></ul>  <h3 id="credential-issuance">Credential Issuance</h3>  Issue verifiable credentials: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Genesis: Credential data (degree, certificate, license)</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Signature: Issuing authority signs</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Witness: Blockchain timestamp for verification</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>File index: Maps credential hash to recipient identifier</li></ol></ul>  <h2 id="performance-considerations">Performance Considerations</h2>  <h3 id="lookup-performance">Lookup Performance</h3>  <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Hash-based lookup: O(1)</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Finding children: O(n) where n is number of revisions</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Full chain traversal: O(m) where m is chain length</li></ol></ul>  <h3 id="optimization-strategies">Optimization Strategies</h3>  For large trees: <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Index children separately</strong>: Maintain a </code>children` map for each revision</li></ol> <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Cache traversals</strong>: Store pre-computed chain paths</li></ol> <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Lazy loading</strong>: Load only needed revisions for verification</li></ol> <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Prune old revisions</strong>: Archive historical revisions separately</li></ol>  <h2 id="related-documentation">Related Documentation</h2>  <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/revision.html" class="font-medium text-primary hover:underline">Revision Types</a> - Overview of all revision types</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/object_revision.html" class="font-medium text-primary hover:underline">Object Revision</a> - Genesis and data revisions</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/signing_revision.html" class="font-medium text-primary hover:underline">Signature Revision</a> - Cryptographic signatures</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/witness_revision.html" class="font-medium text-primary hover:underline">Witness Revision</a> - Blockchain anchoring</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/link_revision.html" class="font-medium text-primary hover:underline">Link Revision</a> - Connecting trees</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/file_index.html" class="font-medium text-primary hover:underline">File Index</a> - Content hash mapping</li></ol></ul></p>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#why-tree-and-not-chain" class="toc-link" style="">Why "Tree" and Not "Chain"?</a>
+<a href="#structure" class="toc-link" style="">Structure</a>
+<a href="#revisions-map" class="toc-link" style="">Revisions Map</a>
+<a href="#file-index" class="toc-link" style="">File Index</a>
+<a href="#complete-example" class="toc-link" style="">Complete Example</a>
+<a href="#navigating-the-tree" class="toc-link" style="">Navigating the Tree</a>
+<a href="#storage-and-transmission" class="toc-link" style="">Storage and Transmission</a>
+<a href="#validation" class="toc-link" style="">Validation</a>
+<a href="#use-cases" class="toc-link" style="">Use Cases</a>
+<a href="#performance-considerations" class="toc-link" style="">Performance Considerations</a>
+<a href="#related-documentation" class="toc-link" style="">Related Documentation</a>
+<a href="#core-fields" class="toc-link" style="padding-left: 0.75rem;">Core Fields</a>
+<a href="#complete-structure" class="toc-link" style="padding-left: 0.75rem;">Complete Structure</a>
+<a href="#revision-hash-as-key" class="toc-link" style="padding-left: 0.75rem;">Revision Hash as Key</a>
+<a href="#finding-the-genesis-revision" class="toc-link" style="padding-left: 0.75rem;">Finding the Genesis Revision</a>
+<a href="#following-the-chain" class="toc-link" style="padding-left: 0.75rem;">Following the Chain</a>
+<a href="#finding-all-branches" class="toc-link" style="padding-left: 0.75rem;">Finding All Branches</a>
+<a href="#file-storage" class="toc-link" style="padding-left: 0.75rem;">File Storage</a>
+<a href="#size-considerations" class="toc-link" style="padding-left: 0.75rem;">Size Considerations</a>
+<a href="#compression" class="toc-link" style="padding-left: 0.75rem;">Compression</a>
+<a href="#document-management" class="toc-link" style="padding-left: 0.75rem;">Document Management</a>
+<a href="#multi-document-projects" class="toc-link" style="padding-left: 0.75rem;">Multi-Document Projects</a>
+<a href="#credential-issuance" class="toc-link" style="padding-left: 0.75rem;">Credential Issuance</a>
+<a href="#lookup-performance" class="toc-link" style="padding-left: 0.75rem;">Lookup Performance</a>
+<a href="#optimization-strategies" class="toc-link" style="padding-left: 0.75rem;">Optimization Strategies</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schema Reference\Template Revision - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Schema Reference\Template Revision</span></div>
+
+        <div class="content">
+          <h1>Template Revision</h1>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">A Template Revision defines the structure and validation rules for Object Revisions. Templates use JSON Schema to specify what data fields are required, their types, formats, and constraints. Template revisions are standalone (they don't have a <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_revision</code> field) and are referenced by object revisions via their hash.</p>
+<h2 id="overview">Overview</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Template revisions serve as the "type system" for Aqua Protocol. They: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Define schemas using JSON Schema (Draft 2020-12)</li> <li>Are immutable once created (identified by their hash)</li> <li>Can be reused by multiple object revisions</li> <li>Optionally reference code implementations</li> <li>Enable validation and type safety</li> </ol></ul> <h2 id="schema-structure">Schema Structure</h2></p>
+<h3 id="fields">Fields</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">| Field | Type | Required | Description | |-------|------|----------|-------------| | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">revision_type</code> | string | Yes | Always <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"template"</code> for template revisions | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">nonce</code> | string | Yes | Random 16-byte hex string for uniqueness | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">local_timestamp</code> | number | Yes | Unix timestamp when the template was created | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">version</code> | string | Yes | Protocol version: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"https://aqua-protocol.org/docs/v4/schema"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">method</code> | string | Yes | Canonicalization method: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"scalar"</code> or <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"tree"</code> (typically <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"scalar"</code>) | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">hash_type</code> | string | Yes | Hash algorithm: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"FIPS_202-SHA3-256"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">schema</code> | object | Yes | JSON Schema (Draft 2020-12) that validates object payloads | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">code_revision_ref</code> | string | No | Optional hash reference to code that implements this template |</p>
+<h3 id="field-details">Field Details</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### revision_type <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Value</strong>: Always <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"template"</code></li> <li><strong>Purpose</strong>: Identifies this as a template revision</li> <li><strong>Note</strong>: Unlike object revisions, this is a string constant, not a hash reference</li> </ol></ul> #### schema <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Format</strong>: Valid JSON Schema (Draft 2020-12 specification)</li> <li><strong>Purpose</strong>: Defines validation rules for object revision payloads</li> <li><strong>Required fields in schema</strong>:</li> </ol></ul>  - <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">$schema</code>: Should be <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"https://json-schema.org/draft/2020-12/schema"</code>   - <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">type</code>: Typically <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"object"</code>   - <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">properties</code>: Defines the payload structure   - <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">required</code>: Lists mandatory fields   - <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">additionalProperties</code>: Usually <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">false</code> for strict validation</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### code_revision_ref <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Format</strong>: Hex string reference to another revision (optional)</li> <li><strong>Purpose</strong>: Links to executable code or scripts that work with this template</li> <li><strong>Use case</strong>: For templates that need associated processing logic</li> <li><strong>Example</strong>: Reference to smart contract code, validation scripts, or transformation functions</li> </ol></ul> <h2 id="examples">Examples</h2></p>
+<h3 id="example-1-file-template">Example 1: File Template</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">A template for storing file metadata:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;revision_type&quot;: &quot;template&quot;,
+  &quot;nonce&quot;: &quot;0x2ba6a8b9b987cf8c3567f72871812ae9&quot;,
+  &quot;local_timestamp&quot;: 1762266013,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v4/schema&quot;,
+  &quot;method&quot;: &quot;scalar&quot;,
+  &quot;hash_type&quot;: &quot;FIPS_202-SHA3-256&quot;,
+  &quot;schema&quot;: {
+    &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;properties&quot;: {
+      &quot;payload_type&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;maxLength&quot;: 128
+      },
+      &quot;hash&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;pattern&quot;: &quot;^0x[0-9a-f]{64,128}$&quot;
+      },
+      &quot;hash_type&quot;: {
+        &quot;description&quot;: &quot;Hash function identifier&quot;,
+        &quot;anyOf&quot;: [
+          {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;const&quot;: &quot;FIPS_202-SHA3-256&quot;
+          },
+          {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;minLength&quot;: 1,
+            &quot;maxLength&quot;: 128
+          }
+        ]
+      },
+      &quot;descriptor&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;maxLength&quot;: 140
+      }
+    },
+    &quot;required&quot;: [
+      &quot;payload_type&quot;,
+      &quot;hash&quot;,
+      &quot;hash_type&quot;,
+      &quot;descriptor&quot;
+    ],
+    &quot;additionalProperties&quot;: false
+  }
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Hash of this template</strong>: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e</code></p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">This hash is what object revisions use in their <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">revision_type</code> field to reference this template.</p>
+<h3 id="example-2-domain-claim-template">Example 2: Domain Claim Template</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">A template for domain ownership claims:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;revision_type&quot;: &quot;template&quot;,
+  &quot;nonce&quot;: &quot;0x0da37dc1685f4d78a87c9462b0e87685&quot;,
+  &quot;local_timestamp&quot;: 1762817552,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v4/schema&quot;,
+  &quot;method&quot;: &quot;scalar&quot;,
+  &quot;hash_type&quot;: &quot;FIPS_202-SHA3-256&quot;,
+  &quot;schema&quot;: {
+    &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;properties&quot;: {
+      &quot;domain&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;format&quot;: &quot;idn-hostname&quot;
+      },
+      &quot;wallet_address&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;pattern&quot;: &quot;^0x[0-9a-fA-F]{40}$&quot;
+      }
+    },
+    &quot;required&quot;: [
+      &quot;domain&quot;,
+      &quot;wallet_address&quot;
+    ],
+    &quot;additionalProperties&quot;: false
+  }
+}</code></pre>
+<h3 id="example-3-email-claim-template">Example 3: Email Claim Template</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">A template for email verification claims:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;revision_type&quot;: &quot;template&quot;,
+  &quot;nonce&quot;: &quot;0x5c8f9a1b2d3e4f5a6b7c8d9e0f1a2b3c&quot;,
+  &quot;local_timestamp&quot;: 1762820000,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v4/schema&quot;,
+  &quot;method&quot;: &quot;scalar&quot;,
+  &quot;hash_type&quot;: &quot;FIPS_202-SHA3-256&quot;,
+  &quot;schema&quot;: {
+    &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;properties&quot;: {
+      &quot;email&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;format&quot;: &quot;email&quot;
+      },
+      &quot;wallet_address&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;pattern&quot;: &quot;^0x[0-9a-fA-F]{40}$&quot;
+      },
+      &quot;verified_at&quot;: {
+        &quot;type&quot;: &quot;integer&quot;,
+        &quot;description&quot;: &quot;Unix timestamp of verification&quot;
+      }
+    },
+    &quot;required&quot;: [
+      &quot;email&quot;,
+      &quot;wallet_address&quot;
+    ],
+    &quot;additionalProperties&quot;: false
+  }
+}</code></pre>
+<h3 id="example-4-template-with-code-reference">Example 4: Template with Code Reference</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">A template that references associated code:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;revision_type&quot;: &quot;template&quot;,
+  &quot;nonce&quot;: &quot;0x7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a&quot;,
+  &quot;local_timestamp&quot;: 1762825000,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v4/schema&quot;,
+  &quot;method&quot;: &quot;scalar&quot;,
+  &quot;hash_type&quot;: &quot;FIPS_202-SHA3-256&quot;,
+  &quot;schema&quot;: {
+    &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,
+    &quot;type&quot;: &quot;object&quot;,
+    &quot;properties&quot;: {
+      &quot;calculation_type&quot;: {
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;enum&quot;: [&quot;sum&quot;, &quot;average&quot;, &quot;weighted&quot;]
+      },
+      &quot;values&quot;: {
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;number&quot;
+        }
+      }
+    },
+    &quot;required&quot;: [&quot;calculation_type&quot;, &quot;values&quot;],
+    &quot;additionalProperties&quot;: false
+  },
+  &quot;code_revision_ref&quot;: &quot;0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a&quot;
+}</code></pre>
+<h2 id="built-in-templates">Built-in Templates</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">The Aqua RS SDK provides several built-in templates with pre-computed hashes:</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">| Template | Purpose | Hash Reference | |----------|---------|----------------| | File | File metadata storage | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e</code> | | Domain | Domain ownership claims | (computed at runtime) | | Email | Email verification | (computed at runtime) | | Name | Name claims | (computed at runtime) | | Phone | Phone verification | (computed at runtime) | | Attestation | General attestations | (computed at runtime) |</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">These templates are defined in the SDK at <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">src/schema/templates/</code> and can be used directly without creating new template revisions.</p>
+<h2 id="json-schema-features">JSON Schema Features</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Template schemas support all JSON Schema Draft 2020-12 features:</p>
+<h3 id="type-validation">Type Validation</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;type&quot;: &quot;string&quot;  // or &quot;number&quot;, &quot;integer&quot;, &quot;boolean&quot;, &quot;array&quot;, &quot;object&quot;, &quot;null&quot;
+}</code></pre>
+<h3 id="format-validation">Format Validation</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;type&quot;: &quot;string&quot;,
+  &quot;format&quot;: &quot;email&quot;  // or &quot;date&quot;, &quot;date-time&quot;, &quot;uri&quot;, &quot;hostname&quot;, etc.
+}</code></pre>
+<h3 id="pattern-matching">Pattern Matching</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;type&quot;: &quot;string&quot;,
+  &quot;pattern&quot;: &quot;^0x[0-9a-f]{40}$&quot;
+}</code></pre>
+<h3 id="length-constraints">Length Constraints</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;type&quot;: &quot;string&quot;,
+  &quot;minLength&quot;: 1,
+  &quot;maxLength&quot;: 100
+}</code></pre>
+<h3 id="numeric-constraints">Numeric Constraints</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;type&quot;: &quot;number&quot;,
+  &quot;minimum&quot;: 0,
+  &quot;maximum&quot;: 100,
+  &quot;multipleOf&quot;: 0.01
+}</code></pre>
+<h3 id="array-constraints">Array Constraints</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;type&quot;: &quot;array&quot;,
+  &quot;items&quot;: { &quot;type&quot;: &quot;string&quot; },
+  &quot;minItems&quot;: 1,
+  &quot;maxItems&quot;: 10,
+  &quot;uniqueItems&quot;: true
+}</code></pre>
+<h3 id="enumerations">Enumerations</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;type&quot;: &quot;string&quot;,
+  &quot;enum&quot;: [&quot;option1&quot;, &quot;option2&quot;, &quot;option3&quot;]
+}</code></pre>
+<h3 id="conditional-schemas">Conditional Schemas</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;anyOf&quot;: [
+    { &quot;type&quot;: &quot;string&quot;, &quot;const&quot;: &quot;FIPS_202-SHA3-256&quot; },
+    { &quot;type&quot;: &quot;string&quot;, &quot;minLength&quot;: 1 }
+  ]
+}</code></pre>
+<h2 id="validation-rules">Validation Rules</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">A Template Revision is valid if:</p>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Structure</strong>: Contains all required fields with correct types</li>
+<li><strong>Revision Type</strong>: The <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">revision_type</code> field is exactly <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"template"</code></li>
+<li><strong>Version</strong>: Matches <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"https://aqua-protocol.org/docs/v4/schema"</code></li>
+<li><strong>Schema</strong>: Is a valid JSON Schema (Draft 2020-12)</li>
+<li><strong>Schema Root</strong>: The schema should define an object type at the root level</li>
+<li><strong>No Previous Revision</strong>: Templates never have a <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_revision</code> field</li>
+<li><strong>Code Reference</strong>: If present, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">code_revision_ref</code> must be a valid hash reference</li>
+<li><strong>Hash Verification</strong>: The computed hash can be verified</li>
+</ol>
+<h2 id="template-lifecycle">Template Lifecycle</h2>
+<h3 id="1-creation">1. Creation</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Create JSON Schema � Generate Template Revision � Compute Hash</code></pre>
+<h3 id="2-publication">2. Publication</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Template Hash � Used by Object Revisions � Enables Validation</code></pre>
+<h3 id="3-reuse">3. Reuse</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Multiple Objects � Reference Same Template � Consistent Validation</code></pre>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="1-use-descriptive-property-names">1. Use Descriptive Property Names</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;properties&quot;: {
+    &quot;email_address&quot;: { &quot;type&quot;: &quot;string&quot;, &quot;format&quot;: &quot;email&quot; },
+    &quot;verified_at_timestamp&quot;: { &quot;type&quot;: &quot;integer&quot; }
+  }
+}</code></pre>
+<h3 id="2-always-set-additionalproperties">2. Always Set additionalProperties</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;additionalProperties&quot;: false  // Strict validation
+}</code></pre>
+<h3 id="3-include-descriptions">3. Include Descriptions</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;properties&quot;: {
+    &quot;status&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;Current verification status: pending, verified, or rejected&quot;
+    }
+  }
+}</code></pre>
+<h3 id="4-use-appropriate-constraints">4. Use Appropriate Constraints</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;email&quot;: {
+    &quot;type&quot;: &quot;string&quot;,
+    &quot;format&quot;: &quot;email&quot;,
+    &quot;maxLength&quot;: 254  // RFC 5321 limit
+  }
+}</code></pre>
+<h3 id="5-plan-for-forward-compatibility">5. Plan for Forward Compatibility</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Avoid overly restrictive patterns</li>
+<li>Use <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">anyOf</code> for accepting multiple formats</li>
+<li>Consider optional fields for future extensions</li>
+</ol></ul>
+<h2 id="relationship-with-other-revisions">Relationship with Other Revisions</h2>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Object Revisions</strong>: Reference templates via their <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">revision_type</code> field</li>
+<li><strong>Code Revisions</strong>: Can be referenced via <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">code_revision_ref</code> (optional)</li>
+<li><strong>No Chaining</strong>: Templates don't form chains; they're standalone definitions</li>
+</ol></ul>
+<h2 id="implementation-notes">Implementation Notes</h2>
+<h3 id="creating-a-template">Creating a Template</h3>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Design your JSON Schema based on your data requirements</li>
+<li>Validate the schema itself is valid JSON Schema</li>
+<li>Create the template revision structure</li>
+<li>Generate a random nonce</li>
+<li>Compute the template hash</li>
+<li>Store the hash for use in object revisions</li>
+</ol>
+<h3 id="using-a-template">Using a Template</h3>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Reference the template hash in the object's <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">revision_type</code></li>
+<li>Ensure payload conforms to the template schema</li>
+<li>Validate payload against schema before creating object revision</li>
+</ol>
+<h3 id="template-validation">Template Validation</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">When validating an object against a template:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">1. Retrieve template by hash
+2. Extract JSON Schema from template
+3. Validate object payload against schema
+4. Check validation result</code></pre>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<h3 id="document-templates">Document Templates</h3>
+Define structure for document metadata, file hashes, and descriptors.
+<h3 id="credential-templates">Credential Templates</h3>
+Specify required fields for verifiable credentials (email, domain, phone, etc.).
+<h3 id="data-exchange-templates">Data Exchange Templates</h3>
+Standardize data formats for interoperability between systems.
+<h3 id="smart-contract-templates">Smart Contract Templates</h3>
+Link templates to on-chain contract code for decentralized validation.
+<h2 id="see-also">See Also</h2>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/object_revision.html" class="font-medium text-primary hover:underline">Object Revision</a> - Use templates to validate objects</li>
+<li><a href="https://json-schema.org/draft/2020-12/json-schema-core.html" class="font-medium text-primary hover:underline">JSON Schema Specification</a> - Full JSON Schema documentation</li>
+</ol></ul>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#overview" class="toc-link" style="">Overview</a>
+<a href="#schema-structure" class="toc-link" style="">Schema Structure</a>
+<a href="#examples" class="toc-link" style="">Examples</a>
+<a href="#built-in-templates" class="toc-link" style="">Built-in Templates</a>
+<a href="#json-schema-features" class="toc-link" style="">JSON Schema Features</a>
+<a href="#validation-rules" class="toc-link" style="">Validation Rules</a>
+<a href="#template-lifecycle" class="toc-link" style="">Template Lifecycle</a>
+<a href="#best-practices" class="toc-link" style="">Best Practices</a>
+<a href="#relationship-with-other-revisions" class="toc-link" style="">Relationship with Other Revisions</a>
+<a href="#implementation-notes" class="toc-link" style="">Implementation Notes</a>
+<a href="#common-use-cases" class="toc-link" style="">Common Use Cases</a>
+<a href="#see-also" class="toc-link" style="">See Also</a>
+<a href="#fields" class="toc-link" style="padding-left: 0.75rem;">Fields</a>
+<a href="#field-details" class="toc-link" style="padding-left: 0.75rem;">Field Details</a>
+<a href="#example-1-file-template" class="toc-link" style="padding-left: 0.75rem;">Example 1: File Template</a>
+<a href="#example-2-domain-claim-template" class="toc-link" style="padding-left: 0.75rem;">Example 2: Domain Claim Template</a>
+<a href="#example-3-email-claim-template" class="toc-link" style="padding-left: 0.75rem;">Example 3: Email Claim Template</a>
+<a href="#example-4-template-with-code-reference" class="toc-link" style="padding-left: 0.75rem;">Example 4: Template with Code Reference</a>
+<a href="#type-validation" class="toc-link" style="padding-left: 0.75rem;">Type Validation</a>
+<a href="#format-validation" class="toc-link" style="padding-left: 0.75rem;">Format Validation</a>
+<a href="#pattern-matching" class="toc-link" style="padding-left: 0.75rem;">Pattern Matching</a>
+<a href="#length-constraints" class="toc-link" style="padding-left: 0.75rem;">Length Constraints</a>
+<a href="#numeric-constraints" class="toc-link" style="padding-left: 0.75rem;">Numeric Constraints</a>
+<a href="#array-constraints" class="toc-link" style="padding-left: 0.75rem;">Array Constraints</a>
+<a href="#enumerations" class="toc-link" style="padding-left: 0.75rem;">Enumerations</a>
+<a href="#conditional-schemas" class="toc-link" style="padding-left: 0.75rem;">Conditional Schemas</a>
+<a href="#1-creation" class="toc-link" style="padding-left: 0.75rem;">1. Creation</a>
+<a href="#2-publication" class="toc-link" style="padding-left: 0.75rem;">2. Publication</a>
+<a href="#3-reuse" class="toc-link" style="padding-left: 0.75rem;">3. Reuse</a>
+<a href="#1-use-descriptive-property-names" class="toc-link" style="padding-left: 0.75rem;">1. Use Descriptive Property Names</a>
+<a href="#2-always-set-additionalproperties" class="toc-link" style="padding-left: 0.75rem;">2. Always Set additionalProperties</a>
+<a href="#3-include-descriptions" class="toc-link" style="padding-left: 0.75rem;">3. Include Descriptions</a>
+<a href="#4-use-appropriate-constraints" class="toc-link" style="padding-left: 0.75rem;">4. Use Appropriate Constraints</a>
+<a href="#5-plan-for-forward-compatibility" class="toc-link" style="padding-left: 0.75rem;">5. Plan for Forward Compatibility</a>
+<a href="#creating-a-template" class="toc-link" style="padding-left: 0.75rem;">Creating a Template</a>
+<a href="#using-a-template" class="toc-link" style="padding-left: 0.75rem;">Using a Template</a>
+<a href="#template-validation" class="toc-link" style="padding-left: 0.75rem;">Template Validation</a>
+<a href="#document-templates" class="toc-link" style="padding-left: 0.75rem;">Document Templates</a>
+<a href="#credential-templates" class="toc-link" style="padding-left: 0.75rem;">Credential Templates</a>
+<a href="#data-exchange-templates" class="toc-link" style="padding-left: 0.75rem;">Data Exchange Templates</a>
+<a href="#smart-contract-templates" class="toc-link" style="padding-left: 0.75rem;">Smart Contract Templates</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

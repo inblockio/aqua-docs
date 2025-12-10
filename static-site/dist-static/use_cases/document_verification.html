@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Use Cases\Document Verification - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Use Cases\Document Verification</span></div>
+
+        <div class="content">
+          <h1>Document Verification</h1>
+
+Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.
+
+<h2 id="core-capabilities">Core Capabilities</h2>
+
+<h3 id="tamper-proof-verification">Tamper-Proof Verification</h3>
+Once a document is notarized in the Aqua Protocol, any modification becomes immediately detectable. The cryptographic hash of the document content is stored in the revision chain, making it mathematically impossible to alter without detection.
+
+<h3 id="timestamp-authentication">Timestamp Authentication</h3>
+Every document revision receives a blockchain-anchored timestamp, providing cryptographic proof of when the document was created or modified. This eliminates disputes about document timelines.
+
+<h3 id="permanent-audit-trails">Permanent Audit Trails</h3>
+All document revisions, signatures, and witnesses are permanently recorded in an immutable chain. This creates a complete history of the document lifecycle that can be independently verified.
+
+<h3 id="decentralized-validation">Decentralized Validation</h3>
+Verification happens cryptographically without requiring trust in intermediaries. Anyone with the document and its Aqua chain can independently verify authenticity and integrity.
+
+<h2 id="use-cases-by-industry">Use Cases by Industry</h2>
+
+<h3 id="legal-documents">Legal Documents</h3>
+
+<strong>Contract Authenticity</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Prove when contracts were signed</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify that contract terms haven't been altered</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Establish non-repudiation through digital signatures</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Maintain chain of custody for legal proceedings</li></ol></ul>
+
+<strong>Evidence Preservation</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Create tamper-proof records of digital evidence</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Timestamp evidence collection</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Maintain audit trails for admissibility</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Prove evidence integrity in court</li></ol></ul>
+
+<strong>Notary Services</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Provide remote notarization with cryptographic proof</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Replace traditional notary stamps with blockchain anchoring</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enable verifiable notarization across jurisdictions</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Reduce costs while increasing security</li></ol></ul>
+
+<strong>Legal Compliance</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Demonstrate compliance with document retention policies</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Prove regulatory filings were submitted on time</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Maintain auditable records for investigations</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Satisfy e-discovery requirements</li></ol></ul>
+
+<h3 id="business-applications">Business Applications</h3>
+
+<strong>Invoice Verification</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Authenticate invoices to prevent fraud</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Track invoice approvals and modifications</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Provide proof of invoice delivery and receipt</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enable automated payment processing with verified invoices</li></ol></ul>
+
+<strong>Purchase Orders</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify PO authenticity between trading partners</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Track PO modifications and approvals</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Prevent unauthorized changes</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Create audit trails for procurement compliance</li></ol></ul>
+
+<strong>Financial Records</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Ensure integrity of financial statements</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Track modifications to accounting records</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Satisfy auditor requirements for record verification</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Maintain SOX compliance with immutable audit logs</li></ol></ul>
+
+<strong>Regulatory Reporting</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Prove timely submission of regulatory reports</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Demonstrate report integrity over time</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Satisfy audit requirements</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Reduce compliance costs</li></ol></ul>
+
+<h3 id="educational-credentials">Educational Credentials</h3>
+
+<strong>Diploma Authentication</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Provide instant verification of degree authenticity</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Eliminate diploma mills and fraudulent credentials</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enable employers to verify qualifications</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Reduce verification costs and time</li></ol></ul>
+
+<strong>Transcript Integrity</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Prevent transcript tampering</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Allow secure sharing with third parties</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Maintain permanent academic records</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enable credential portability across institutions</li></ol></ul>
+
+<strong>Certificate Validation</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify professional certifications</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Track certificate expiration dates</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enable certificate revocation when needed</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Support continuing education tracking</li></ol></ul>
+
+<strong>Academic Records</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Create verifiable lifetime learning records</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enable secure transcript sharing</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Support credential stacking and micro-credentials</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Facilitate credit transfers between institutions</li></ol></ul>
+
+<h3 id="government-documents">Government Documents</h3>
+
+<strong>Identity Documents</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Authenticate passports and ID cards</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enable remote identity verification</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Prevent identity fraud</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Support digital identity systems</li></ol></ul>
+
+<strong>License Verification</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify professional licenses instantly</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Track license renewals and expirations</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enable license portability across jurisdictions</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Support automated compliance checking</li></ol></ul>
+
+<strong>Permits and Certifications</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Authenticate building permits</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify safety certifications</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Track permit modifications</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enable instant permit validation by inspectors</li></ol></ul>
+
+<strong>Official Records</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Ensure integrity of government records</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enable citizen verification of official documents</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Maintain transparent government operations</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Prevent records tampering</li></ol></ul>
+
+<h2 id="key-benefits">Key Benefits</h2>
+
+<h3 id="eliminate-single-points-of-failure">Eliminate Single Points of Failure</h3>
+Traditional document verification systems rely on centralized databases that can fail, be hacked, or become unavailable. Aqua Protocol's decentralized approach distributes verification capability, ensuring documents can always be verified even if specific systems are offline.
+
+<h3 id="maintain-document-provenance">Maintain Document Provenance</h3>
+Every document modification is recorded with cryptographic proof of who made the change, when it occurred, and what was changed. This complete provenance trail answers questions about document history definitively.
+
+<h3 id="cryptographic-verification">Cryptographic Verification</h3>
+Verification relies on mathematical certainty rather than trust. Hashes, signatures, and blockchain anchors provide proof that can't be forged, even by system administrators.
+
+<h3 id="no-trusted-intermediaries-required">No Trusted Intermediaries Required</h3>
+Unlike traditional notary or verification services, Aqua Protocol enables anyone to verify document authenticity independently. This reduces costs and increases accessibility.
+
+<h3 id="regulatory-compliance">Regulatory Compliance</h3>
+Industries requiring regulatory compliance benefit from maintained audit trails:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Legal firms</strong>: Demonstrate evidence integrity and chain of custody</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Financial institutions</strong>: Satisfy SOX, GDPR, and financial regulations</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Healthcare providers</strong>: Maintain HIPAA-compliant document trails</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Educational institutions</strong>: Provide verifiable credentials that meet accreditation standards</li></ol></ul>
+
+<h3 id="cost-reduction">Cost Reduction</h3>
+Automated verification reduces manual processes, eliminates middlemen, speeds up verification times, and prevents fraud losses.
+
+<h2 id="how-it-works">How It Works</h2>
+
+<h3 id="1-document-notarization">1. Document Notarization</h3>
+When a document is first notarized:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>The document content is hashed using SHA3-256</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>A genesis revision is created with the document hash</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>The revision is signed by the document creator</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>The signature is witnessed on a blockchain</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>All data is stored in an immutable Aqua chain</li></ol></ul>
+
+<h3 id="2-document-updates">2. Document Updates</h3>
+When a document is modified:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>A new revision is created referencing the previous revision</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>The new content hash is recorded</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>The update is signed by authorized parties</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>The signature is witnessed for timestamp proof</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>The revision chain grows, maintaining complete history</li></ol></ul>
+
+<h3 id="3-multi-party-signing">3. Multi-Party Signing</h3>
+For documents requiring multiple signatures:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Each party adds their signature as a new revision</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Signatures reference the document revision being signed</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Order of signing is preserved in the chain</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>All signatures receive blockchain timestamps</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Final witness anchors the complete signing process</li></ol></ul>
+
+<h3 id="4-verification">4. Verification</h3>
+Anyone can verify a document by:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Computing the hash of the document content</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Comparing it to the hash in the revision chain</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verifying all signatures cryptographically</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Checking blockchain witness timestamps</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Validating the entire revision chain integrity</li></ol></ul>
+
+<h2 id="real-world-scenarios">Real-World Scenarios</h2>
+
+<h3 id="scenario-1-legal-contract-management">Scenario 1: Legal Contract Management</h3>
+
+<strong>Challenge</strong>: A law firm needs to manage contracts with guaranteed integrity and provable signing timestamps for multiple parties.
+
+<strong>Solution</strong>:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Contract is notarized when drafted, creating the genesis revision</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Each party reviews and signs, adding signature revisions</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Final contract is witnessed on Ethereum mainnet</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>All parties receive the complete Aqua chain</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Years later, if disputed, the contract's integrity and signing timeline can be cryptographically proven</li></ol></ul>
+
+<strong>Benefits</strong>: Non-repudiation, tamper-proof records, defensible timestamps, reduced notary costs
+
+<h3 id="scenario-2-academic-credential-verification">Scenario 2: Academic Credential Verification</h3>
+
+<strong>Challenge</strong>: Universities issue thousands of diplomas, and employers need to verify credentials quickly without calling the registrar.
+
+<strong>Solution</strong>:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>University notarizes each diploma as it's issued</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Diploma includes an Aqua chain with the university's signature</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>University witnesses the batch of diplomas on blockchain</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Employers scan QR code or receive Aqua chain from candidate</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verification happens instantly using Aqua verification tools</li></ol></ul>
+
+<strong>Benefits</strong>: Instant verification, eliminated fraud, reduced administrative burden, improved candidate experience
+
+<h3 id="scenario-3-financial-audit-trail">Scenario 3: Financial Audit Trail</h3>
+
+<strong>Challenge</strong>: A public company must maintain auditable financial records that prove compliance with regulations.
+
+<strong>Solution</strong>:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Financial statements are notarized each quarter</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>CFO signs the statement, adding signature revision</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>External auditor witnesses the statement on blockchain</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Audit trail is preserved permanently</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Regulators can verify statement integrity independently</li></ol></ul>
+
+<strong>Benefits</strong>: Regulatory compliance, reduced audit costs, defensible records, fraud prevention
+
+<h3 id="scenario-4-government-permit-issuance">Scenario 4: Government Permit Issuance</h3>
+
+<strong>Challenge</strong>: Building department issues permits that need to be verified by inspectors, contractors, and the public.
+
+<strong>Solution</strong>:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Permit applications are notarized when submitted</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Permit approvals are signed by authorized officials</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Approved permits are witnessed on blockchain</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>QR codes on physical permits link to Aqua chains</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Anyone can verify permit authenticity and status</li></ol></ul>
+
+<strong>Benefits</strong>: Fraud prevention, instant verification, public transparency, reduced administrative overhead
+
+<h2 id="integration-patterns">Integration Patterns</h2>
+
+<h3 id="document-management-systems">Document Management Systems</h3>
+Integrate Aqua Protocol into existing DMS platforms to automatically notarize important documents. When documents are finalized, trigger Aqua notarization via SDK.
+
+<h3 id="e-signature-platforms">E-Signature Platforms</h3>
+Enhance e-signature solutions with blockchain-anchored timestamps and cryptographic verification. Each signature becomes a verifiable revision in the Aqua chain.
+
+<h3 id="crm-and-business-systems">CRM and Business Systems</h3>
+Add document verification to CRM, ERP, or custom business applications. Automatically notarize quotes, proposals, contracts, and invoices as they're generated.
+
+<h3 id="educational-systems">Educational Systems</h3>
+Integrate with student information systems to automatically notarize transcripts, diplomas, and certificates as they're issued.
+
+<h3 id="government-systems">Government Systems</h3>
+Add Aqua Protocol to permit, license, and registration systems to provide instant verification capability to citizens and businesses.
+
+<h2 id="best-practices">Best Practices</h2>
+
+<h3 id="initial-notarization">Initial Notarization</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Notarize documents as early as possible in their lifecycle</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Include relevant metadata (document type, parties, purpose)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Use appropriate method (scalar for small docs, tree for large)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Sign immediately after creation to establish authorship</li></ol></ul>
+
+<h3 id="multi-party-documents">Multi-Party Documents</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Establish signing order and communicate to all parties</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Each party should verify previous signatures before adding theirs</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Witness after all signatures are collected</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Distribute complete Aqua chain to all parties</li></ol></ul>
+
+<h3 id="long-term-storage">Long-Term Storage</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Store Aqua chains separately from documents</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Back up chains to multiple locations</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Include Aqua chain with document when transmitting</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Test verification periodically</li></ol></ul>
+
+<h3 id="verification">Verification</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Always verify documents received from third parties</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Check entire revision chain, not just the latest revision</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verify blockchain witnesses for important documents</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Validate signatures match expected signers</li></ol></ul>
+
+<h3 id="privacy-considerations">Privacy Considerations</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Aqua chains don't contain document content by default</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Share chains carefully as they prove document existence</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Use private blockchains if public witnessing is problematic</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Consider what metadata is included in revisions</li></ol></ul>
+
+<h2 id="technical-advantages">Technical Advantages</h2>
+
+<h3 id="cryptographic-security">Cryptographic Security</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>SHA3-256 hashing provides computational infeasibility of collision attacks</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>ECDSA signatures (65 bytes) provide 128-bit security level</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Blockchain anchoring makes backdating mathematically impossible</li></ol></ul>
+
+<h3 id="scalability">Scalability</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Document verification is O(n) where n is number of revisions</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Merkle tree mode enables selective disclosure of large documents</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Batch witnessing reduces blockchain transaction costs</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Verification can happen offline after initial chain retrieval</li></ol></ul>
+
+<h3 id="interoperability">Interoperability</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>JSON-based format enables easy integration</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Multiple SDK options (Rust, JavaScript/TypeScript)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Platform-agnostic verification</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Standard cryptographic primitives</li></ol></ul>
+
+<h3 id="future-proof">Future-Proof</h3>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Protocol versioning supports evolution</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Blockchain-agnostic witness mechanism</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Multiple signature algorithm support</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Extensible revision types</li></ol></ul>
+
+<h2 id="common-questions">Common Questions</h2>
+
+<strong>Q: What if the blockchain network goes offline?</strong>
+A: Verification of existing documents still works using cryptographic verification of signatures and hashes. Only new witnessing requires blockchain access. Historical witnesses remain provable through transaction records.
+
+<strong>Q: How long are documents stored?</strong>
+A: Aqua Protocol stores only hashes and metadata, not document content. Document storage is separate and managed by users. Aqua chains are small (kilobytes) and can be stored indefinitely.
+
+<strong>Q: Can witnesses be trusted?</strong>
+A: Blockchain witnesses provide cryptographic proof of timestamp. As long as the blockchain network is secure and decentralized, witnesses cannot be backdated or falsified.
+
+<strong>Q: What about privacy?</strong>
+A: By default, only document hashes are stored on-chain, not content. The document itself remains private. Share Aqua chains carefully as they prove document existence at specific times.
+
+<strong>Q: How do I revoke a document?</strong>
+A: Add a revocation revision to the chain. The document history remains (for audit purposes), but new revisions can indicate revoked status.
+
+<h2 id="see-also">See Also</h2>
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/use_cases/supply-chain.html" class="font-medium text-primary hover:underline">Supply Chain Tracking</a> - Apply similar verification to supply chain events</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/use_cases/identity-attestation.html" class="font-medium text-primary hover:underline">Identity Attestation</a> - Verify identity credentials</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/quick-start.html" class="font-medium text-primary hover:underline">Quick Start</a> - Get started with document verification</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/introduction.html" class="font-medium text-primary hover:underline">Schema Reference</a> - Technical specifications</li></ol></ul>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#core-capabilities" class="toc-link" style="">Core Capabilities</a>
+<a href="#use-cases-by-industry" class="toc-link" style="">Use Cases by Industry</a>
+<a href="#key-benefits" class="toc-link" style="">Key Benefits</a>
+<a href="#how-it-works" class="toc-link" style="">How It Works</a>
+<a href="#real-world-scenarios" class="toc-link" style="">Real-World Scenarios</a>
+<a href="#integration-patterns" class="toc-link" style="">Integration Patterns</a>
+<a href="#best-practices" class="toc-link" style="">Best Practices</a>
+<a href="#technical-advantages" class="toc-link" style="">Technical Advantages</a>
+<a href="#common-questions" class="toc-link" style="">Common Questions</a>
+<a href="#see-also" class="toc-link" style="">See Also</a>
+<a href="#tamper-proof-verification" class="toc-link" style="padding-left: 0.75rem;">Tamper-Proof Verification</a>
+<a href="#timestamp-authentication" class="toc-link" style="padding-left: 0.75rem;">Timestamp Authentication</a>
+<a href="#permanent-audit-trails" class="toc-link" style="padding-left: 0.75rem;">Permanent Audit Trails</a>
+<a href="#decentralized-validation" class="toc-link" style="padding-left: 0.75rem;">Decentralized Validation</a>
+<a href="#legal-documents" class="toc-link" style="padding-left: 0.75rem;">Legal Documents</a>
+<a href="#business-applications" class="toc-link" style="padding-left: 0.75rem;">Business Applications</a>
+<a href="#educational-credentials" class="toc-link" style="padding-left: 0.75rem;">Educational Credentials</a>
+<a href="#government-documents" class="toc-link" style="padding-left: 0.75rem;">Government Documents</a>
+<a href="#eliminate-single-points-of-failure" class="toc-link" style="padding-left: 0.75rem;">Eliminate Single Points of Failure</a>
+<a href="#maintain-document-provenance" class="toc-link" style="padding-left: 0.75rem;">Maintain Document Provenance</a>
+<a href="#cryptographic-verification" class="toc-link" style="padding-left: 0.75rem;">Cryptographic Verification</a>
+<a href="#no-trusted-intermediaries-required" class="toc-link" style="padding-left: 0.75rem;">No Trusted Intermediaries Required</a>
+<a href="#regulatory-compliance" class="toc-link" style="padding-left: 0.75rem;">Regulatory Compliance</a>
+<a href="#cost-reduction" class="toc-link" style="padding-left: 0.75rem;">Cost Reduction</a>
+<a href="#1-document-notarization" class="toc-link" style="padding-left: 0.75rem;">1. Document Notarization</a>
+<a href="#2-document-updates" class="toc-link" style="padding-left: 0.75rem;">2. Document Updates</a>
+<a href="#3-multi-party-signing" class="toc-link" style="padding-left: 0.75rem;">3. Multi-Party Signing</a>
+<a href="#4-verification" class="toc-link" style="padding-left: 0.75rem;">4. Verification</a>
+<a href="#scenario-1-legal-contract-management" class="toc-link" style="padding-left: 0.75rem;">Scenario 1: Legal Contract Management</a>
+<a href="#scenario-2-academic-credential-verification" class="toc-link" style="padding-left: 0.75rem;">Scenario 2: Academic Credential Verification</a>
+<a href="#scenario-3-financial-audit-trail" class="toc-link" style="padding-left: 0.75rem;">Scenario 3: Financial Audit Trail</a>
+<a href="#scenario-4-government-permit-issuance" class="toc-link" style="padding-left: 0.75rem;">Scenario 4: Government Permit Issuance</a>
+<a href="#document-management-systems" class="toc-link" style="padding-left: 0.75rem;">Document Management Systems</a>
+<a href="#e-signature-platforms" class="toc-link" style="padding-left: 0.75rem;">E-Signature Platforms</a>
+<a href="#crm-and-business-systems" class="toc-link" style="padding-left: 0.75rem;">CRM and Business Systems</a>
+<a href="#educational-systems" class="toc-link" style="padding-left: 0.75rem;">Educational Systems</a>
+<a href="#government-systems" class="toc-link" style="padding-left: 0.75rem;">Government Systems</a>
+<a href="#initial-notarization" class="toc-link" style="padding-left: 0.75rem;">Initial Notarization</a>
+<a href="#multi-party-documents" class="toc-link" style="padding-left: 0.75rem;">Multi-Party Documents</a>
+<a href="#long-term-storage" class="toc-link" style="padding-left: 0.75rem;">Long-Term Storage</a>
+<a href="#verification" class="toc-link" style="padding-left: 0.75rem;">Verification</a>
+<a href="#privacy-considerations" class="toc-link" style="padding-left: 0.75rem;">Privacy Considerations</a>
+<a href="#cryptographic-security" class="toc-link" style="padding-left: 0.75rem;">Cryptographic Security</a>
+<a href="#scalability" class="toc-link" style="padding-left: 0.75rem;">Scalability</a>
+<a href="#interoperability" class="toc-link" style="padding-left: 0.75rem;">Interoperability</a>
+<a href="#future-proof" class="toc-link" style="padding-left: 0.75rem;">Future-Proof</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

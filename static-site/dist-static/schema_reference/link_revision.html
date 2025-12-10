@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schema Reference\Link Revision - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Schema Reference\Link Revision</span></div>
+
+        <div class="content">
+          <h1>Link Revision</h1>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">A Link Revision creates verifiable connections between separate revision chains. It allows you to establish relationships, dependencies, or references between different objects, effectively creating a graph structure of interconnected chains. Link revisions are essential for composing complex data structures and maintaining provenance across multiple chains.</p>
+<h2 id="overview">Overview</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Link revisions enable: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Chain Composition</strong>: Connect multiple independent chains together</li> <li><strong>Dependency Tracking</strong>: Express that one chain depends on others</li> <li><strong>Multi-Party Collaboration</strong>: Combine contributions from different parties</li> <li><strong>Provenance Graphs</strong>: Build complex data relationship structures</li> <li><strong>Verification Aggregation</strong>: Group related chains for batch verification</li> </ol></ul> <h2 id="schema-structure">Schema Structure</h2></p>
+<h3 id="fields">Fields</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">| Field | Type | Required | Description | |-------|------|----------|-------------| | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_revision</code> | string | Yes | Hash reference to the previous revision in this chain | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">revision_type</code> | string | Yes | Always <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"link"</code> for link revisions | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">nonce</code> | string | Yes | Random 16-byte hex string for uniqueness | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">local_timestamp</code> | number | Yes | Unix timestamp when the link was created | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">version</code> | string | Yes | Protocol version: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"https://aqua-protocol.org/docs/v4/schema"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">method</code> | string | Yes | Canonicalization method: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"scalar"</code> (typical) or <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"tree"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">hash_type</code> | string | Yes | Hash algorithm: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"FIPS_202-SHA3-256"</code> | | <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">link_verification_hashes</code> | array | Yes | Array of revision hashes being linked to |</p>
+<h3 id="field-details">Field Details</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### link_verification_hashes <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Type</strong>: Array of hex strings</li> <li><strong>Format</strong>: Each element is a lowercase hex string prefixed with <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">0x</code></li> <li><strong>Purpose</strong>: References to other revision chains</li> <li><strong>Minimum</strong>: Can be empty array (though typically contains at least one link)</li> <li><strong>Maximum</strong>: No strict limit, but practical limits depend on implementation</li> <li><strong>Order</strong>: Order may be significant depending on use case</li> </ol></ul> <h2 id="example">Example</h2></p>
+<h3 id="basic-link-revision">Basic Link Revision</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Linking to two other chains:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_revision&quot;: &quot;0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a&quot;,
+  &quot;revision_type&quot;: &quot;link&quot;,
+  &quot;nonce&quot;: &quot;0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f&quot;,
+  &quot;local_timestamp&quot;: 1704067200,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v4/schema&quot;,
+  &quot;method&quot;: &quot;scalar&quot;,
+  &quot;hash_type&quot;: &quot;FIPS_202-SHA3-256&quot;,
+  &quot;link_verification_hashes&quot;: [
+    &quot;0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef&quot;,
+    &quot;0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890&quot;
+  ]
+}</code></pre>
+<h3 id="single-link">Single Link</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Linking to a single chain:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_revision&quot;: &quot;0x9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f&quot;,
+  &quot;revision_type&quot;: &quot;link&quot;,
+  &quot;nonce&quot;: &quot;0x5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a&quot;,
+  &quot;local_timestamp&quot;: 1704070800,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v4/schema&quot;,
+  &quot;method&quot;: &quot;scalar&quot;,
+  &quot;hash_type&quot;: &quot;FIPS_202-SHA3-256&quot;,
+  &quot;link_verification_hashes&quot;: [
+    &quot;0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d&quot;
+  ]
+}</code></pre>
+<h3 id="multiple-links-aggregation">Multiple Links (Aggregation)</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Aggregating many chains:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;previous_revision&quot;: &quot;0x1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c&quot;,
+  &quot;revision_type&quot;: &quot;link&quot;,
+  &quot;nonce&quot;: &quot;0xa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6&quot;,
+  &quot;local_timestamp&quot;: 1704074400,
+  &quot;version&quot;: &quot;https://aqua-protocol.org/docs/v4/schema&quot;,
+  &quot;method&quot;: &quot;scalar&quot;,
+  &quot;hash_type&quot;: &quot;FIPS_202-SHA3-256&quot;,
+  &quot;link_verification_hashes&quot;: [
+    &quot;0x1111111111111111111111111111111111111111111111111111111111111111&quot;,
+    &quot;0x2222222222222222222222222222222222222222222222222222222222222222&quot;,
+    &quot;0x3333333333333333333333333333333333333333333333333333333333333333&quot;,
+    &quot;0x4444444444444444444444444444444444444444444444444444444444444444&quot;,
+    &quot;0x5555555555555555555555555555555555555555555555555555555555555555&quot;
+  ]
+}</code></pre>
+<h2 id="validation-rules">Validation Rules</h2>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">A Link Revision is valid if:</p>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Structure</strong>: Contains all required fields with correct types</li>
+<li><strong>Revision Type</strong>: The <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">revision_type</code> is exactly <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">"link"</code></li>
+<li><strong>Previous Revision</strong>: References a valid existing revision</li>
+<li><strong>Link Array</strong>: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">link_verification_hashes</code> is a valid array</li>
+<li><strong>Link Format</strong>: Each element in the array is a valid hex string with <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">0x</code> prefix</li>
+<li><strong>Link Targets</strong>: Each referenced revision should exist and be verifiable (optional strict validation)</li>
+<li><strong>No Duplicates</strong>: Typically shouldn't contain duplicate hashes (application-specific)</li>
+<li><strong>Hash Verification</strong>: The computed hash of the link revision is correct</li>
+</ol>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<h3 id="1-document-dependencies">1. Document Dependencies</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Link a document to its source materials:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Contract Document (Object)
+    �
+Link � [Reference Doc 1, Reference Doc 2, Reference Doc 3]</code></pre>
+<h3 id="2-multi-party-signing">2. Multi-Party Signing</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Combine independent signatures:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Document (Object)
+    �
+Signature (Alice)    Signature (Bob)    Signature (Carol)
+    �                    �                    �
+                        4                    
+                         �
+                    Link Revision
+                         �
+                   Witness (Timestamp all)</code></pre>
+<h3 id="3-bill-of-materials">3. Bill of Materials</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Link a product to its components:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Product Object
+    �
+Link � [Component 1 Chain, Component 2 Chain, Component 3 Chain]</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Each component has its own provenance chain.</p>
+<h3 id="4-credential-bundling">4. Credential Bundling</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Group related credentials:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Profile Object
+    �
+Link � [Email Credential, Domain Credential, GitHub Credential]</code></pre>
+<h3 id="5-supply-chain-aggregation">5. Supply Chain Aggregation</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Combine supply chain events:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Shipment Tracking
+    �
+Link � [Manufacturer Chain, Shipper Chain, Customs Chain]
+    �
+Final Delivery Confirmation</code></pre>
+<h3 id="6-academic-citation">6. Academic Citation</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Link a paper to cited works:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Research Paper (Object)
+    �
+Link � [Citation 1 Chain, Citation 2 Chain, ..., Citation N Chain]</code></pre>
+<h3 id="7-version-history">7. Version History</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Link to previous versions:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Document v3 (Object)
+    �
+Link � [Document v1 Final, Document v2 Final]</code></pre>
+<h3 id="8-approval-workflow-merge">8. Approval Workflow Merge</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Merge parallel approval processes:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Document Draft
+          �          �
+    Review A      Review B
+    Approve A     Approve B
+         �          �
+         Link Revision
+              �
+        Final Version</code></pre>
+<h2 id="link-patterns">Link Patterns</h2>
+<h3 id="pattern-1-linear-dependency-chain">Pattern 1: Linear Dependency Chain</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Object A � Link � [Object B] � Link � [Object C]</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Each object depends on the previous one.</p>
+<h3 id="pattern-2-star-pattern-aggregation">Pattern 2: Star Pattern (Aggregation)</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Link Revision
+       /  |  |  |  \
+      /   |  |  |   \
+    A     B  C  D     E</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">One link revision references multiple chains.</p>
+<h3 id="pattern-3-tree-pattern">Pattern 3: Tree Pattern</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Root Object
+               �
+           Link [A, B]
+          �          �
+    Link [A1, A2]   Link [B1, B2]</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Hierarchical structure using links.</p>
+<h3 id="pattern-4-graph-pattern">Pattern 4: Graph Pattern</h3>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">A � Link � [B, C]
+    B � Link � [C, D]
+    C � Link � [A, E]</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Complex graph with cycles and multiple connections.</p>
+<h2 id="implementation-notes">Implementation Notes</h2>
+<h3 id="creating-a-link-revision">Creating a Link Revision</h3>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Identify the chains to link</li>
+<li>Get the head (latest) revision hash from each chain</li>
+<li>Collect hashes into <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">link_verification_hashes</code> array</li>
+<li>Determine the <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_revision</code> for this link</li>
+<li>Generate nonce and timestamp</li>
+<li>Create the link revision structure</li>
+<li>Compute and verify the hash</li>
+</ol>
+<h3 id="verifying-a-link-revision">Verifying a Link Revision</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### Basic Verification</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">1. Verify link revision structure
+2. Validate each hash in link_verification_hashes
+3. Compute link revision hash</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">#### Deep Verification</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">1. Perform basic verification
+2. For each linked hash:
+   a. Retrieve the referenced revision
+   b. Verify the referenced revision chain
+   c. Check signatures and witnesses
+3. Validate all linked chains</code></pre>
+<h3 id="link-resolution">Link Resolution</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">When traversing links:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">1. Start with link revision
+2. Extract link_verification_hashes
+3. For each hash:
+   a. Resolve to actual revision
+   b. Load revision chain
+   c. Verify chain integrity
+4. Build complete relationship graph</code></pre>
+<h2 id="advanced-topics">Advanced Topics</h2>
+<h3 id="cyclic-references">Cyclic References</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Links can create cycles:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Chain A � Link � [Chain B]
+Chain B � Link � [Chain A]</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Handling</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Detect cycles during traversal</li> <li>Use visited set to prevent infinite loops</li> <li>Cycles may be valid depending on use case</li> </ol></ul> <h3 id="temporal-ordering">Temporal Ordering</h3></p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Links create a temporal relationship:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Link created at timestamp T references chains that existed before T</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Validation</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Linked revisions should have timestamps < link timestamp</li> <li>Prevents linking to "future" revisions</li> </ol></ul> <h3 id="partial-vs-complete-references">Partial vs Complete References</h3></p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Complete Reference</strong>: Link to final revision of a chain</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Link � [Complete Chain A, Complete Chain B]</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Partial Reference</strong>: Link to intermediate revision</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Link � [Chain A @ Revision 5, Chain B @ Revision 3]</code></pre>
+<h3 id="link-updates">Link Updates</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">To update links over time:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Object
+  �
+Link v1 � [A, B]
+  �
+Link v2 � [A, B, C]  (adds C)
+  �
+Link v3 � [A, C]  (removes B)</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Each link revision chains to the previous, tracking changes.</p>
+<h3 id="link-metadata">Link Metadata</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">While the standard link revision doesn't include metadata, you can add it by:</p>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Creating an object revision with link metadata</li>
+<li>Following it with a link revision</li>
+</ol>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Object (metadata: &quot;This links dependencies&quot;)
+  �
+Link � [Dep1, Dep2, Dep3]</code></pre>
+<h2 id="relationship-with-other-revisions">Relationship with Other Revisions</h2>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Object Revisions</strong>: Can be linked, and can precede link revisions</li>
+<li><strong>Signature Revisions</strong>: Can be linked (e.g., aggregating signatures)</li>
+<li><strong>Witness Revisions</strong>: Can be linked, or can follow link revisions</li>
+<li><strong>Template Revisions</strong>: Typically not linked (they're standalone)</li>
+</ol></ul>
+<h2 id="security-considerations">Security Considerations</h2>
+<h3 id="1-link-validation">1. Link Validation</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Verify Existence</strong>: Ensure linked revisions actually exist before creating link <strong>Verify Integrity</strong>: Validate linked chains are not corrupted</p>
+<h3 id="2-circular-dependencies">2. Circular Dependencies</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Detection</strong>: Implement cycle detection in verification <strong>Policy</strong>: Decide if cycles are allowed in your application</p>
+<h3 id="3-link-spam">3. Link Spam</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Prevention</strong>: Validate that links are meaningful and authorized <strong>Rate Limiting</strong>: Prevent excessive linking in systems</p>
+<h3 id="4-temporal-consistency">4. Temporal Consistency</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Timestamp Checking</strong>: Ensure links don't reference "future" revisions <strong>Causality</strong>: Maintain causal ordering of events</p>
+<h3 id="5-authorization">5. Authorization</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Link Permission</strong>: Verify the creator has rights to link to target chains <strong>Privacy</strong>: Linking may reveal relationships between otherwise private chains</p>
+<h2 id="performance-considerations">Performance Considerations</h2>
+<h3 id="link-depth">Link Depth</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Deep link hierarchies impact verification time:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Object � Link (10 chains) � Each chain has Link (5 chains)
+Total: 1 + 10 + 50 = 61 chains to verify</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Optimization</strong>: Cache verified chains, use lazy loading</p>
+<h3 id="link-width">Link Width</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Wide links (many references) increase storage and bandwidth:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Link � [1000 chains]</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Optimization</strong>: Paginate links, use link batching</p>
+<h3 id="verification-strategy">Verification Strategy</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Lazy</strong>: Only verify linked chains when accessed <strong>Eager</strong>: Verify all linked chains upfront <strong>Selective</strong>: Verify critical paths only</p>
+<h2 id="comparison-with-other-approaches">Comparison with Other Approaches</h2>
+<h3 id="vs-direct-references">vs Direct References</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Direct Reference</strong> (in object payload):</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;payload&quot;: {
+    &quot;dependencies&quot;: [&quot;0xabc...&quot;, &quot;0xdef...&quot;]
+  }
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Link Revision</strong>:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">{
+  &quot;link_verification_hashes&quot;: [&quot;0xabc...&quot;, &quot;0xdef...&quot;]
+}</code></pre>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Advantages of Link Revision</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Explicit in protocol (not application-specific)</li> <li>Verifiable without parsing payload</li> <li>Consistent structure across applications</li> <li>Can be signed and witnessed separately</li> </ol></ul> <h3 id="vs-witness-batching">vs Witness Batching</h3></p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Witness Batching</strong>: Uses Merkle tree for efficient blockchain anchoring <strong>Link Revision</strong>: Creates explicit relationships between chains</p>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Key Difference</strong>: Witness is about timestamping, Link is about relationships.</p>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="1-use-descriptive-ordering">1. Use Descriptive Ordering</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Order links meaningfully:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">[&quot;primary_source&quot;, &quot;secondary_source&quot;, &quot;tertiary_source&quot;]</code></pre>
+<h3 id="2-link-to-stable-points">2. Link to Stable Points</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Link to revisions that are finalized (signed/witnessed):</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Object � Sign � Witness � [Link to this witnessed revision]</code></pre>
+<h3 id="3-document-link-semantics">3. Document Link Semantics</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Precede link with an object explaining the relationships:</p>
+<pre class="p-4 rounded-lg bg-gray-900 overflow-x-auto my-6"><code class="text-gray-100">Object (description: &quot;These are the project dependencies&quot;)
+  �
+Link � [Dependency chains]</code></pre>
+<h3 id="4-consider-verification-cost">4. Consider Verification Cost</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Limit link depth and width for practical verification times.</p>
+<h3 id="5-use-links-for-cross-chain-only">5. Use Links for Cross-Chain Only</h3>
+<p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Don't use links for intra-chain references (use <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">previous_revision</code> instead).</p>
+<h2 id="see-also">See Also</h2>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/object_revision.html" class="font-medium text-primary hover:underline">Object Revision</a> - Often linked</li>
+<li><a href="/schema_reference/signing_revision.html" class="font-medium text-primary hover:underline">Signature Revision</a> - Can aggregate via links</li>
+<li><a href="/schema_reference/witness_revision.html" class="font-medium text-primary hover:underline">Witness Revision</a> - Often follows links</li>
+<li><a href="https://en.wikipedia.org/wiki/Graph_theory" class="font-medium text-primary hover:underline">Graph Theory</a> - Mathematical foundation for link structures</li>
+</ol></ul>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#overview" class="toc-link" style="">Overview</a>
+<a href="#schema-structure" class="toc-link" style="">Schema Structure</a>
+<a href="#example" class="toc-link" style="">Example</a>
+<a href="#validation-rules" class="toc-link" style="">Validation Rules</a>
+<a href="#common-use-cases" class="toc-link" style="">Common Use Cases</a>
+<a href="#link-patterns" class="toc-link" style="">Link Patterns</a>
+<a href="#implementation-notes" class="toc-link" style="">Implementation Notes</a>
+<a href="#advanced-topics" class="toc-link" style="">Advanced Topics</a>
+<a href="#relationship-with-other-revisions" class="toc-link" style="">Relationship with Other Revisions</a>
+<a href="#security-considerations" class="toc-link" style="">Security Considerations</a>
+<a href="#performance-considerations" class="toc-link" style="">Performance Considerations</a>
+<a href="#comparison-with-other-approaches" class="toc-link" style="">Comparison with Other Approaches</a>
+<a href="#best-practices" class="toc-link" style="">Best Practices</a>
+<a href="#see-also" class="toc-link" style="">See Also</a>
+<a href="#fields" class="toc-link" style="padding-left: 0.75rem;">Fields</a>
+<a href="#field-details" class="toc-link" style="padding-left: 0.75rem;">Field Details</a>
+<a href="#basic-link-revision" class="toc-link" style="padding-left: 0.75rem;">Basic Link Revision</a>
+<a href="#single-link" class="toc-link" style="padding-left: 0.75rem;">Single Link</a>
+<a href="#multiple-links-aggregation" class="toc-link" style="padding-left: 0.75rem;">Multiple Links (Aggregation)</a>
+<a href="#1-document-dependencies" class="toc-link" style="padding-left: 0.75rem;">1. Document Dependencies</a>
+<a href="#2-multi-party-signing" class="toc-link" style="padding-left: 0.75rem;">2. Multi-Party Signing</a>
+<a href="#3-bill-of-materials" class="toc-link" style="padding-left: 0.75rem;">3. Bill of Materials</a>
+<a href="#4-credential-bundling" class="toc-link" style="padding-left: 0.75rem;">4. Credential Bundling</a>
+<a href="#5-supply-chain-aggregation" class="toc-link" style="padding-left: 0.75rem;">5. Supply Chain Aggregation</a>
+<a href="#6-academic-citation" class="toc-link" style="padding-left: 0.75rem;">6. Academic Citation</a>
+<a href="#7-version-history" class="toc-link" style="padding-left: 0.75rem;">7. Version History</a>
+<a href="#8-approval-workflow-merge" class="toc-link" style="padding-left: 0.75rem;">8. Approval Workflow Merge</a>
+<a href="#pattern-1-linear-dependency-chain" class="toc-link" style="padding-left: 0.75rem;">Pattern 1: Linear Dependency Chain</a>
+<a href="#pattern-2-star-pattern-aggregation" class="toc-link" style="padding-left: 0.75rem;">Pattern 2: Star Pattern (Aggregation)</a>
+<a href="#pattern-3-tree-pattern" class="toc-link" style="padding-left: 0.75rem;">Pattern 3: Tree Pattern</a>
+<a href="#pattern-4-graph-pattern" class="toc-link" style="padding-left: 0.75rem;">Pattern 4: Graph Pattern</a>
+<a href="#creating-a-link-revision" class="toc-link" style="padding-left: 0.75rem;">Creating a Link Revision</a>
+<a href="#verifying-a-link-revision" class="toc-link" style="padding-left: 0.75rem;">Verifying a Link Revision</a>
+<a href="#link-resolution" class="toc-link" style="padding-left: 0.75rem;">Link Resolution</a>
+<a href="#cyclic-references" class="toc-link" style="padding-left: 0.75rem;">Cyclic References</a>
+<a href="#temporal-ordering" class="toc-link" style="padding-left: 0.75rem;">Temporal Ordering</a>
+<a href="#partial-vs-complete-references" class="toc-link" style="padding-left: 0.75rem;">Partial vs Complete References</a>
+<a href="#link-updates" class="toc-link" style="padding-left: 0.75rem;">Link Updates</a>
+<a href="#link-metadata" class="toc-link" style="padding-left: 0.75rem;">Link Metadata</a>
+<a href="#1-link-validation" class="toc-link" style="padding-left: 0.75rem;">1. Link Validation</a>
+<a href="#2-circular-dependencies" class="toc-link" style="padding-left: 0.75rem;">2. Circular Dependencies</a>
+<a href="#3-link-spam" class="toc-link" style="padding-left: 0.75rem;">3. Link Spam</a>
+<a href="#4-temporal-consistency" class="toc-link" style="padding-left: 0.75rem;">4. Temporal Consistency</a>
+<a href="#5-authorization" class="toc-link" style="padding-left: 0.75rem;">5. Authorization</a>
+<a href="#link-depth" class="toc-link" style="padding-left: 0.75rem;">Link Depth</a>
+<a href="#link-width" class="toc-link" style="padding-left: 0.75rem;">Link Width</a>
+<a href="#verification-strategy" class="toc-link" style="padding-left: 0.75rem;">Verification Strategy</a>
+<a href="#vs-direct-references" class="toc-link" style="padding-left: 0.75rem;">vs Direct References</a>
+<a href="#vs-witness-batching" class="toc-link" style="padding-left: 0.75rem;">vs Witness Batching</a>
+<a href="#1-use-descriptive-ordering" class="toc-link" style="padding-left: 0.75rem;">1. Use Descriptive Ordering</a>
+<a href="#2-link-to-stable-points" class="toc-link" style="padding-left: 0.75rem;">2. Link to Stable Points</a>
+<a href="#3-document-link-semantics" class="toc-link" style="padding-left: 0.75rem;">3. Document Link Semantics</a>
+<a href="#4-consider-verification-cost" class="toc-link" style="padding-left: 0.75rem;">4. Consider Verification Cost</a>
+<a href="#5-use-links-for-cross-chain-only" class="toc-link" style="padding-left: 0.75rem;">5. Use Links for Cross-Chain Only</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

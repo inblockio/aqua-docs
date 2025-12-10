@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quickstart - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link active">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Quickstart</span></div>
+
+        <div class="content">
+          <p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.  <h2 id="choose-your-sdk">Choose Your SDK</h2>  <Tabs>   <Tab title="JavaScript/TypeScript (v3)">     <strong>Stable</strong> - Production-ready SDK for Node.js, Web, and React Native      Best for: Web applications, existing JavaScript projects   </Tab>    <Tab title="Rust (v4)">     <strong>Beta</strong> - Template system, WASM support, cross-platform      Best for: New projects, performance-critical applications   </Tab>     </Tabs>  ---  <h2 id="javascript-typescript-quick-start-v3">JavaScript/TypeScript Quick Start (v3)</h2>  <Info> <strong>Prerequisites</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Node.js version 19 or higher</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>npm, yarn, or pnpm package manager</li></ol></ul> </Info>  <div class="callout callout-note">       <svg class="callout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>       <div class="callout-content">We recommend using TypeScript to enjoy type definitions and better development experience.</div>     </div>  <Steps>   <Step title="Install the SDK">     Create a new project or add to an existing one:      ``<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash     # Create new project (optional)     mkdir my-aqua-project     cd my-aqua-project     npm init -y      # Install Aqua SDK     npm install aqua-js-sdk      # For TypeScript projects, also install type support     npm install --save-dev typescript @types/node     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   </Step>    <Step title="Create Your First Aqua Chain">     Create a file called </code>index.ts<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> (or </code>index.js<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">):      </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript     import Aquafier, { FileObject } from 'aqua-js-sdk';      async function main() {         // Initialize Aquafier         const aquafier = new Aquafier();          // Create a file object to notarize         const fileObject: FileObject = {             fileName: "hello.txt",             fileContent: "Hello, Aqua Protocol!",             path: "./hello.txt"         };          // Create genesis revision (notarize the file)         console.log("Creating Aqua chain...");         const result = await aquafier.createGenesisRevision(fileObject);          if (result.isOk()) {             console.log("✓ Success! Aqua chain created.");             console.log("Aqua Tree:", JSON.stringify(result.data.aquaTree, null, 2));              // The aquaTree contains your notarized file             const aquaTree = result.data.aquaTree;             console.log("\nYou can now:");             console.log("- Sign this chain");             console.log("- Witness it on blockchain");             console.log("- Verify it anytime");         } else {             console.error("✗ Error:", result.error);         }     }      main().catch(console.error);     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   </Step>    <Step title="Run Your Code">     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash     # For TypeScript     npx tsx index.ts      # Or compile and run     npx tsc index.ts     node index.js      # For plain JavaScript     node index.js     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">      You should see output showing your Aqua chain was created successfully!   </Step>    <Step title="Next: Add a Signature (Optional)">     Extend your code to add a cryptographic signature:      </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript     // ... after creating genesis ...      if (result.isOk()) {         const aquaTree = result.data.aquaTree;          // Sign with MetaMask (will prompt in browser)         const wrapper = {             aquaTree: aquaTree,             fileObject: fileObject,             revision: ""         };          console.log("\nAdding signature...");         const signedResult = await aquafier.signAquaTree(             wrapper,             "metamask",  // or "cli", "did", "p12"             {},          // credentials             true         // auto-increment         );          if (signedResult.isOk()) {             console.log("✓ Signature added!");         }     }     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   </Step> </Steps>  ---  <h2 id="rust-quick-start-v4">Rust Quick Start (v4)</h2>  <Info> <strong>Prerequisites</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Rust 1.70 or higher</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Cargo package manager</li></ol></ul> </Info>  <Steps>   <Step title="Create a New Project">     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash     # Create a new Rust binary project     cargo new my-aqua-project     cd my-aqua-project      # Or for a library     cargo new --lib my-aqua-lib     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   </Step>    <Step title="Add Aqua SDK Dependency">     Add the Aqua SDK to your </code>Cargo.toml<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">:      </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">toml     [dependencies]     aqua-rs-sdk = { git = "https://github.com/inblockio/aqua-verifier-rs" }     tokio = { version = "1", features = ["full"] }     serde_json = "1.0"     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   </Step>    <Step title="Create Your First Aqua Chain">     Update </code>src/main.rs<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">:      </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">rust     use aqua_rs_sdk::primitives::Method;     use aqua_rs_sdk::schema::file_data::FileData;     use aqua_rs_sdk::Aquafier;     use std::path::PathBuf;      #[tokio::main]     async fn main() -> Result<(), Box<dyn std::error::Error>> {         println!("Creating Aqua chain...");          // Read file content         let filename = "test.txt".to_string();         let file_content = tokio::fs::read(&filename).await?;          // Create file data         let file_data = FileData::new(             filename.clone(),             file_content,             PathBuf::from(format!("./{}", filename)),         );          // Initialize Aquafier         let aquafier = Aquafier::new(None, None);          // Create genesis revision (notarize the file)         let result = aquafier.create_genesis_revision(file_data, Method::Scalar);          match result {             Ok(tree) => {                 println!("✓ Aqua chain created successfully!");                 println!("{}", serde_json::to_string_pretty(&tree)?);                  println!("\nYou can now:");                 println!("- Add a signature revision");                 println!("- Witness on blockchain");                 println!("- Verify the chain");             }             Err(e) => {                 eprintln!("Error: {:#?}", e);             }         }          Ok(())     }     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   </Step>    <Step title="Build and Run">     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash     cargo build     cargo run     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">      You should see confirmation that your object revision was created!   </Step> </Steps>  ---  <h2 id="cli-tool-quick-start">CLI Tool Quick Start</h2>  <Info> <strong>Prerequisites</strong>: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Rust and Cargo installed</li></ol></ul> </Info>  <Steps>   <Step title="Install the CLI">     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash     # Clone and build     git clone https://github.com/inblockio/aqua-cli-rs     cd aqua-cli-rs     cargo build --release      # The binary will be at target/release/aqua-cli     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   </Step>    <Step title="Verify an Aqua Chain">     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash     ./target/release/aqua-cli verify --file chain.aqua.json     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   </Step>    <Step title="Get Help">     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash     ./target/release/aqua-cli --help     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   </Step> </Steps>  See the <a href="/dev_tools/aqua_cli.html" class="font-medium text-primary hover:underline">CLI documentation</a> for more commands.  ---  <h2 id="troubleshooting">Troubleshooting</h2>  <AccordionGroup>   <Accordion title="Node.js: Module not found error">     <strong>Issue</strong>: </code>Cannot find module 'aqua-js-sdk'<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">      <strong>Solutions</strong>:     1. Ensure you ran </code>npm install aqua-js-sdk<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">     2. Check you're in the correct directory with </code>package.json<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">     3. Try deleting </code>node_modules<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> and </code>package-lock.json<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, then run </code>npm install<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> again     4. For TypeScript, ensure you have </code>@types/node<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> installed   </Accordion>    <Accordion title="TypeScript: Type errors">     <strong>Issue</strong>: TypeScript compilation errors      <strong>Solutions</strong>:     1. Ensure you have TypeScript installed: </code>npm install --save-dev typescript<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">     2. Create or update </code>tsconfig.json<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">:        </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json        {          "compilerOptions": {            "target": "ES2020",            "module": "commonjs",            "esModuleInterop": true,            "strict": true          }        }        </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">     3. Use </code>tsx<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> for direct TypeScript execution: </code>npm install --save-dev tsx<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   </Accordion>    <Accordion title="Rust: Compilation errors">     <strong>Issue</strong>: Build fails with dependency errors      <strong>Solutions</strong>:     1. Update Rust: </code>rustup update<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">     2. Clean and rebuild: </code>cargo clean && cargo build<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">     3. Check you're using Rust 1.70 or higher: </code>rustc --version<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">     4. Ensure your </code>Cargo.toml<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> has the correct repository URL   </Accordion>    <Accordion title="MetaMask: Not detecting in Node.js">     <strong>Issue</strong>: MetaMask signing doesn't work      <strong>Solution</strong>: MetaMask works in browser environments only. For Node.js:     - Use CLI signing with mnemonic in </code>credentials.json`     - Or use DID or P12 signing methods     - See <a href="/development.html" class="font-medium text-primary hover:underline">Development Guide</a> for details   </Accordion>    <Accordion title="Witnessing: Network errors">     <strong>Issue</strong>: Ethereum witness fails      <strong>Solutions</strong>:     1. Ensure you have ETH in your wallet (testnet ETH for Sepolia/Holesky)     2. Get testnet ETH from faucets:        - Sepolia: <a href="https://sepoliafaucet.com" class="font-medium text-primary hover:underline">sepoliafaucet.com</a>        - Holesky: <a href="https://holesky-faucet.pk910.de" class="font-medium text-primary hover:underline">holesky-faucet.pk910.de</a>     3. Check network connectivity     4. Verify your Alchemy API key is correct   </Accordion> </AccordionGroup>   ---  <h2 id="what-you-ve-learned">What You've Learned</h2>  Congratulations! You've created your first Aqua chain. Here's what you accomplished:  ✅ Installed an Aqua SDK (JavaScript or Rust)<br/> ✅ Created a genesis revision (notarized data)<br/> ✅ Understood the basic Aqua workflow<br/> ✅ Ready to add signatures and witnesses<br/>  <h2 id="next-steps">Next Steps</h2>  Now that you have the basics, dive deeper into Aqua Protocol's features:  <div  class="card">       <h3 class="card-title"></h3>       <p class="card-description"><Card title="Signing Revisions" icon="signature" href="/schema_reference/signing_revision">     Add cryptographic signatures with RSA, Ethereum, or DID methods</p>     </div>    <a href="/schema_reference/witness_revision.html" class="card">       <h3 class="card-title">Witnessing</h3>       <p class="card-description">Anchor your chains to Ethereum, TSA, or Nostr for timestamps</p>     </a>    <a href="/schema_reference/link_revision.html" class="card">       <h3 class="card-title">Linking Chains</h3>       <p class="card-description">Connect multiple Aqua Trees to build complex provenance graphs</p>     </a>    <a href="/schema_reference/template_revision.html" class="card">       <h3 class="card-title">Using Templates</h3>       <p class="card-description">Define data schemas with JSON Schema validation (v4 only)</p>     </a>    <a href="/development.html" class="card">       <h3 class="card-title">Development Guide</h3>       <p class="card-description">Complete guide for signing methods, witnessing, and advanced usage</p>     </a>    <a href="/schema_reference/introduction.html" class="card">       <h3 class="card-title">Schema Reference</h3>       <p class="card-description">Detailed technical specifications for all revision types</p>     </a>    <a href="/use_cases/introduction.html" class="card">       <h3 class="card-title">Use Cases</h3>       <p class="card-description">Explore real-world applications and implementation patterns</p>     </a>    <a href="https://github.com/inblockio/aqua-examples" class="card">       <h3 class="card-title">Examples</h3>       <p class="card-description">Browse complete working examples in multiple languages</p>     </a> </CardGroup>  <h2 id="complete-workflow-example">Complete Workflow Example</h2>  Want to see the full workflow including signing and witnessing?  <Tabs>   <Tab title="JavaScript">     Check out the <a href="https://github.com/inblockio/aqua-js-sdk/tree/master/examples" class="font-medium text-primary hover:underline">complete JavaScript example</a> in the SDK repository.   </Tab>    <Tab title="Rust">     Check out the <a href="/dev_tools/aqua_sdk.html" class="font-medium text-primary hover:underline">Rust SDK documentation</a> for complete examples.   </Tab> </Tabs>  <h2 id="try-aquafier">Try Aquafier</h2>  Not ready to code yet? Try our web-based demo:  <div  class="card">       <h3 class="card-title"></h3>       <p class="card-description"><Card title="Aquafier Demo" icon="globe" href="https://aquafier.inblock.io">     Upload and notarize files through a web interface</p>     </div>    <a href="https://dev.inblock.io" class="card">       <h3 class="card-title">Test Environment</h3>       <p class="card-description">Experiment safely in the development environment</p>     </a> </CardGroup>  <h2 id="get-help">Get Help</h2>  <div  class="card">       <h3 class="card-title"></h3>       <p class="card-description"><Card title="GitHub Issues" icon="github" href="https://github.com/inblockio">     Report bugs or ask questions on GitHub</p>     </div>    <a href="mailto:info@inblock.io.html" class="card">       <h3 class="card-title">Email Support</h3>       <p class="card-description">Contact our team for assistance</p>     </a>    <a href="/.html" class="card">       <h3 class="card-title">Documentation</h3>       <p class="card-description">Browse comprehensive guides and references</p>     </a>    <a href="https://github.com/inblockio/aqua-examples/discussions" class="card">       <h3 class="card-title">Community</h3>       <p class="card-description">Join discussions with other developers</p>     </a> </CardGroup>  ---  <div class="callout callout-note">       <svg class="callout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>       <div class="callout-content"><strong>Ready to build?</strong> Start with the <a href="/development.html" class="font-medium text-primary hover:underline">Development Guide</a> for detailed instructions on signing, witnessing, and advanced features.</div>     </div></p>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#choose-your-sdk" class="toc-link" style="">Choose Your SDK</a>
+<a href="#javascript-typescript-quick-start-v3" class="toc-link" style="">JavaScript/TypeScript Quick Start (v3)</a>
+<a href="#rust-quick-start-v4" class="toc-link" style="">Rust Quick Start (v4)</a>
+<a href="#cli-tool-quick-start" class="toc-link" style="">CLI Tool Quick Start</a>
+<a href="#troubleshooting" class="toc-link" style="">Troubleshooting</a>
+<a href="#what-you-ve-learned" class="toc-link" style="">What You've Learned</a>
+<a href="#next-steps" class="toc-link" style="">Next Steps</a>
+<a href="#complete-workflow-example" class="toc-link" style="">Complete Workflow Example</a>
+<a href="#try-aquafier" class="toc-link" style="">Try Aquafier</a>
+<a href="#get-help" class="toc-link" style="">Get Help</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#witnessing" class="toc-link" style="padding-left: 0.75rem;">Witnessing</a>
+<a href="#linking-chains" class="toc-link" style="padding-left: 0.75rem;">Linking Chains</a>
+<a href="#using-templates" class="toc-link" style="padding-left: 0.75rem;">Using Templates</a>
+<a href="#development-guide" class="toc-link" style="padding-left: 0.75rem;">Development Guide</a>
+<a href="#schema-reference" class="toc-link" style="padding-left: 0.75rem;">Schema Reference</a>
+<a href="#use-cases" class="toc-link" style="padding-left: 0.75rem;">Use Cases</a>
+<a href="#examples" class="toc-link" style="padding-left: 0.75rem;">Examples</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#test-environment" class="toc-link" style="padding-left: 0.75rem;">Test Environment</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#email-support" class="toc-link" style="padding-left: 0.75rem;">Email Support</a>
+<a href="#documentation" class="toc-link" style="padding-left: 0.75rem;">Documentation</a>
+<a href="#community" class="toc-link" style="padding-left: 0.75rem;">Community</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

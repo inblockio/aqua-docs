@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Development - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link active">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Development</span></div>
+
+        <div class="content">
+          <h1>Development Guide</h1>
+
+This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.
+
+<div class="callout callout-note">
+      <svg class="callout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      <div class="callout-content"><strong>Prerequisites</strong>: We recommend completing the <a href="/quickstart.html" class="font-medium text-primary hover:underline">Quick Start Guide</a> before diving into development details.</div>
+    </div>
+
+<h2 id="choose-your-sdk">Choose Your SDK</h2>
+
+Aqua Protocol offers SDKs for different use cases:
+
+<div  class="card">
+      <h3 class="card-title"></h3>
+      <p class="card-description"><Card title="Rust SDK (v4)" icon="rust" href="/dev_tools/aqua_sdk">
+    <strong>Beta</strong> - Template system, WASM support, cross-platform
+
+    Best for: New projects, performance-critical applications</p>
+    </div>
+
+  <a href="/previous_versions/version_3/tooling.html" class="card">
+      <h3 class="card-title">JavaScript SDK (v3)</h3>
+      <p class="card-description"><strong>Stable</strong> - Production-ready, Node.js/Web/React Native
+
+    Best for: Web applications, existing JavaScript projects</p>
+    </a>
+
+  <a href="/dev_tools/aqua_cli.html" class="card">
+      <h3 class="card-title">CLI Tool (v4)</h3>
+      <p class="card-description">Command-line tool for quick operations
+
+    Best for: Testing, CI/CD, scripting</p>
+    </a>
+
+  <a href="/dev_tools/aquafier_api.html" class="card">
+      <h3 class="card-title">Aquafier API (v3)</h3>
+      <p class="card-description">Web-based API for notarization
+
+    Best for: No-code integration, demos</p>
+    </a>
+</CardGroup>
+
+<h2 id="signing-methods">Signing Methods</h2>
+
+Aqua Protocol supports multiple signature types for different use cases:
+
+| Method | Protocol Version | Use Case | Trust Model |
+|--------|-----------------|----------|-------------|
+| <strong>DID (JWS)</strong> | v3, v4 | Decentralized identities | W3C DID standard |
+| <strong>Ethereum (EIP-191)</strong> | v3, v4 | Blockchain-native apps | Ethereum addresses |
+| <strong>RSA</strong> | v4 only | Traditional PKI | Certificate authorities |
+| <strong>P12 Certificates</strong> | v3 only | Enterprise/legal docs | Certificate authorities |
+
+
+<h3 id="signing-setup-details">Signing Setup Details</h3>
+
+<Accordion title="DID Signature (W3C Decentralized Identifiers)">
+<strong>What you need</strong>: A DID key pair
+
+<strong>How to generate</strong>:
+
+<strong>Option 1: Using JavaScript</strong>
+``<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash
+npm install @digitalcredentials/did-method-key
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">javascript
+import { Ed25519VerificationKey2020 } from '@digitalcredentials/ed25519-verification-key-2020';
+import { X25519KeyAgreementKey2020 } from '@digitalcredentials/x25519-key-agreement-key-2020';
+
+const keyPair = await Ed25519VerificationKey2020.generate();
+const did = </code>did:key:${keyPair.publicKeyMultibase}<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">;
+console.log('DID:', did);
+console.log('Private Key:', keyPair.privateKeyMultibase);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Option 2: Online Generator</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Visit <a href="https://hub.ebsi.eu/tools/did-generator" class="font-medium text-primary hover:underline">EBSI DID Generator</a></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Click "Generate Keys"</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Save your DID and private key securely</li></ol></ul>
+
+<strong>Protocol Support</strong>: v3, v4
+</Accordion>
+
+<Accordion title="Ethereum Signature (EIP-191)">
+<strong>What you need</strong>: Ethereum wallet with private key or mnemonic
+
+<strong>Two supported methods</strong>:
+
+<strong>1. MetaMask Browser Extension</strong> (Recommended for development)
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Install <a href="https://metamask.io/" class="font-medium text-primary hover:underline">MetaMask</a> in your browser</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Create or import a wallet</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>The SDK will prompt for signature when needed</li></ol></ul>
+
+<strong>2. Mnemonic/Private Key in Credentials File</strong>
+
+Create a </code>credentials.json<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> file:
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "mnemonic": "your twelve word mnemonic phrase here...",
+  "wallet_address": "0xYourEthereumAddress"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+Or with private key:
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "private_key": "0xYourPrivateKeyHex",
+  "wallet_address": "0xYourEthereumAddress"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<div class="callout callout-warning">
+      <svg class="callout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+      <div class="callout-content"><strong>Security</strong>: Never commit credentials.json to version control! Add it to </code>.gitignore<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">.</div>
+    </div>
+
+Check your SDK documentation (<a href="/dev_tools/aqua_sdk.html" class="font-medium text-primary hover:underline">Rust SDK</a> | <a href="/previous_versions/version_3/tooling.html" class="font-medium text-primary hover:underline">JavaScript SDK</a>) for how to pass credentials.
+
+<strong>Protocol Support</strong>: v3, v4
+</Accordion>
+
+<Accordion title="RSA Signature (v4 only)">
+<strong>What you need</strong>: RSA key pair (2048-bit or higher)
+
+<strong>Generate RSA keys</strong>:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash
+<h1>Generate private key (2048-bit)</h1>
+openssl genrsa -out private.pem 2048
+
+<h1>Extract public key</h1>
+openssl rsa -in private.pem -pubout -out public.pem
+
+<h1>View keys</h1>
+cat private.pem
+cat public.pem
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>For production</strong>: Use keys from your organization's PKI infrastructure or certificate authority.
+
+<strong>Protocol Support</strong>: v4 only
+</Accordion>
+
+<Accordion title="P12 Certificate Signature (v3 only)">
+<strong>What you need</strong>: PKCS#12 certificate file (.p12/.pfx) with password
+
+<strong>For Development</strong> (self-signed certificate):
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash
+<h1>Generate private key</h1>
+openssl genrsa -out private.key 2048
+
+<h1>Create certificate signing request</h1>
+openssl req -new -key private.key -out certificate.csr
+
+<h1>For Windows/Git Bash, specify config:</h1>
+<h1>openssl req -new -key private.key -out certificate.csr -config "C:\Program Files\Git\usr\ssl\openssl.cnf"</h1>
+
+<h1>Generate self-signed certificate (valid for 365 days)</h1>
+openssl x509 -req -days 365 -in certificate.csr -signkey private.key -out certificate.crt
+
+<h1>Create P12 file (you'll be prompted for export password)</h1>
+openssl pkcs12 -export -out certificate.p12 -inkey private.key -in certificate.crt
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Convert to Base64</strong> (required for SDK):
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash
+<h1>macOS/Linux</h1>
+base64 -i certificate.p12 -o certificate_base64.txt
+
+<h1>Windows (PowerShell)</h1>
+[Convert]::ToBase64String([IO.File]::ReadAllBytes("certificate.p12")) | Out-File certificate_base64.txt
+
+<h1>Linux alternative</h1>
+base64 certificate.p12 > certificate_base64.txt
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>For Production</strong> (trusted certificate):
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Purchase from Certificate Authority</strong>:</li></ol>
+   - DigiCert, Sectigo, GlobalSign, etc.
+   - Request "Code Signing" or "Document Signing" certificate
+   - They'll provide a .p12/.pfx file directly
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>If you receive separate files</strong> (.crt + .key + intermediate):</li></ol>
+   </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash
+   openssl pkcs12 -export -out certificate.p12 \
+       -inkey privatekey.key \
+       -in certificate.crt \
+       -certfile intermediate.crt
+   </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Usage in SDK</strong>:
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "p12_content": "base64_encoded_p12_content_here",
+  "p12_password": "your_export_password"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Protocol Support</strong>: v3 only
+</Accordion>
+
+<h2 id="witnessing-methods">Witnessing Methods</h2>
+
+Witnessing anchors your Aqua revisions to external timestamping services for provable timestamps:
+
+| Method | Networks | Cost | Verification |
+|--------|----------|------|--------------|
+| <strong>Ethereum</strong> | Mainnet, Sepolia, Holesky | Gas fees (testnet: free) | Blockchain explorer |
+| <strong>TSA</strong> | RFC 3161 services | Free (public TSAs) | TSA verification |
+| <strong>Nostr</strong> | Nostr relays | Free | Nostr event verification |
+
+<h3 id="witnessing-setup-details">Witnessing Setup Details</h3>
+
+<Accordion title="TSA Witness (Time-Stamp Authority - RFC 3161)">
+<strong>What you need</strong>: A TSA service URL
+
+<strong>Free Public TSA Services</strong>:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash
+<h1>DigiCert</h1>
+http://timestamp.digicert.com
+
+<h1>Sectigo (formerly Comodo)</h1>
+http://timestamp.sectigo.com
+http://timestamp.comodoca.com
+
+<h1>GlobalSign</h1>
+http://timestamp.globalsign.com/scripts/timstamp.dll
+http://timestamp.globalsign.com/tsa/r6advanced1
+
+<h1>Entrust</h1>
+http://timestamp.entrust.net/TSS/RFC3161sha2TS
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Usage</strong>: Simply provide the TSA URL to your SDK when witnessing.
+
+<strong>Benefits</strong>:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>No blockchain required</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Widely accepted standard (RFC 3161)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Free for most public TSAs</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Instant timestamps</li></ol></ul>
+
+<strong>Protocol Support</strong>: v3, v4
+</Accordion>
+
+<Accordion title="Ethereum Witness">
+<strong>What you need</strong>:
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Ethereum wallet (MetaMask or mnemonic/private key)</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>ETH for gas fees (mainnet) or testnet ETH (Sepolia/Holesky)</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Alchemy API key for witness verification</li></ol>
+
+<strong>Networks Supported</strong>:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Mainnet</strong>: Production use, requires real ETH for gas</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Sepolia</strong>: Testnet, free test ETH from faucets</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Holesky</strong>: Testnet, free test ETH from faucets</li></ol></ul>
+
+<strong>Wallet Setup</strong> (same as signing):
+
+<strong>Option 1: MetaMask</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Install <a href="https://metamask.io/" class="font-medium text-primary hover:underline">MetaMask</a></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Ensure you're on the correct network (mainnet/sepolia/holesky)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Have sufficient ETH for gas fees</li></ol></ul>
+
+<strong>Option 2: Credentials File</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "mnemonic": "your twelve word mnemonic phrase here...",
+  "wallet_address": "0xYourEthereumAddress"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Get Test ETH</strong> (for testnets):
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Sepolia: <a href="https://sepoliafaucet.com" class="font-medium text-primary hover:underline">sepoliafaucet.com</a></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Holesky: <a href="https://holesky-faucet.pk910.de" class="font-medium text-primary hover:underline">holesky-faucet.pk910.de</a></li></ol></ul>
+
+<strong>Alchemy API Key</strong> (for verification):
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Visit <a href="https://www.alchemy.com/" class="font-medium text-primary hover:underline">alchemy.com</a></li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Create free account</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Create new app</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Copy API key</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="https://www.alchemy.com/docs/how-to-create-access-keys" class="font-medium text-primary hover:underline">Detailed guide</a></li></ol>
+
+<strong>Protocol Support</strong>: v3, v4
+</Accordion>
+
+<Accordion title="Nostr Witness">
+<strong>What you need</strong>: Nostr secret key (nsec)
+
+<strong>How to get a Nostr key</strong>:
+
+<strong>Option 1: Nostr Client App</strong>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Download a Nostr app:</li></ol>
+   - <a href="https://damus.io/" class="font-medium text-primary hover:underline">Damus</a> (iOS)
+   - <a href="https://github.com/vitorpamplona/amethyst" class="font-medium text-primary hover:underline">Amethyst</a> (Android)
+   - <a href="https://primal.net/" class="font-medium text-primary hover:underline">Primal</a> (Web/Mobile)
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Create new account or log in</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>App generates a key pair automatically</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Your secret key starts with </code>nsec1...<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Save it securely</strong> - you'll need it for witnessing</li></ol>
+
+<strong>Option 2: Web Generator</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Visit <a href="https://nostr.com" class="font-medium text-primary hover:underline">nostr.com</a> or <a href="https://nostrtool.com" class="font-medium text-primary hover:underline">nostrtool.com</a></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Click "Generate Keys"</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Save your secret key (</code>nsec1...<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">)</li></ol></ul>
+
+<div class="callout callout-warning">
+      <svg class="callout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+      <div class="callout-content"><strong>Security</strong>: Your Nostr secret key is permanent. Anyone with it can post as you on Nostr relays. Keep it secure!</div>
+    </div>
+
+<strong>Benefits</strong>:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Fully decentralized (no blockchain fees)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Censorship-resistant</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Fast propagation across relays</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Free to use</li></ol></ul>
+
+<strong>Protocol Support</strong>: v3, v4
+</Accordion>
+
+
+
+<h2 id="javascript-sdk-usage-v3">JavaScript SDK Usage (v3)</h2>
+
+<Info>
+<strong>Prerequisites</strong>:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Node.js version 19 or higher</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Install aqua-js-sdk: </code>npm install aqua-js-sdk<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol></ul>
+</Info>
+
+<h3 id="complete-workflow-example">Complete Workflow Example</h3>
+
+Follow these steps to notarize a file, sign it, and witness it using the JavaScript SDK (v3):
+
+<Steps>
+<Step title="Create Genesis Revision">
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+import Aquafier, { FileObject } from 'aqua-js-sdk';
+import { readFileSync } from 'fs';
+
+// Read file content
+const testFileContent = readFileSync("./test.txt", 'utf-8');
+
+// Create file object
+const aquaFileObject: FileObject = {
+    fileName: "test.txt",
+    fileContent: testFileContent,
+    path: "./test.txt"
+};
+
+// Initialize Aquafier
+const aquafier = new Aquafier();
+
+// Create genesis revision (notarize the file)
+const genesisResult = await aquafier.createGenesisRevision(aquaFileObject);
+
+if (genesisResult.isOk()) {
+    console.log("Genesis created successfully!");
+    console.log("Aqua Tree:", genesisResult.data.aquaTree);
+} else {
+    console.error("Error creating genesis:", genesisResult.error);
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+</Step>
+
+<Step title="Sign the Aqua Tree">
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+import { AquaTreeWrapper, CredentialsData } from 'aqua-js-sdk';
+
+// Prepare credentials (for MetaMask, can be empty object)
+const creds: CredentialsData = {};
+
+// Or for CLI signing with mnemonic:
+// const creds: CredentialsData = {
+//     mnemonic: "your twelve word mnemonic here",
+//     wallet_address: "0xYourAddress"
+// };
+
+// Create wrapper (empty string for revision means sign latest)
+const aquaWrapper: AquaTreeWrapper = {
+    aquaTree: genesisResult.data.aquaTree,
+    fileObject: aquaFileObject,
+    revision: ""  // Sign latest revision
+};
+
+// Sign with MetaMask (or use "cli", "did", "p12")
+const signedResult = await aquafier.signAquaTree(
+    aquaWrapper,
+    "metamask",  // Signature type
+    creds,
+    true         // Auto-increment
+);
+
+if (signedResult.isOk()) {
+    console.log("Signature added successfully!");
+} else {
+    console.error("Signing failed:", signedResult.error);
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+</Step>
+
+<Step title="Witness on Blockchain">
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+// Update wrapper with signed tree
+const witnessWrapper: AquaTreeWrapper = {
+    aquaTree: signedResult.data.aquaTree,
+    fileObject: aquaFileObject,
+    revision: ""  // Witness latest revision
+};
+
+// Witness on Ethereum Sepolia testnet
+const witnessResult = await aquafier.witnessAquaTree(
+    witnessWrapper,
+    "eth",        // Witness type (eth, tsa, or nostr)
+    "sepolia",    // Network (sepolia, mainnet, holesky)
+    "metamask",   // Signing method
+    creds,
+    true          // Auto-increment
+);
+
+if (witnessResult.isOk()) {
+    console.log("Witnessing successful!");
+    console.log("Transaction:", witnessResult.data.witness_transaction_hash);
+} else {
+    console.error("Witnessing failed:", witnessResult.error);
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+</Step>
+
+<Step title="Verify the Aqua Tree">
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+// Fetch aqua tree from storage, database, or state
+const aquaTree = witnessResult.data.aquaTree;
+
+// Prepare credentials for verification (needs Alchemy key for Ethereum witness)
+const verifyCreds: CredentialsData = {
+    alchemy_key: "your_alchemy_api_key"
+};
+
+// Verify the complete tree
+const verificationResult = await aquafier.verifyAquaTree(
+    aquaTree,
+    [aquaFileObject],  // Array of file objects
+    verifyCreds
+);
+
+if (verificationResult.isOk()) {
+    console.log("✓ Verification successful!");
+    console.log("Details:", JSON.stringify(verificationResult.data, null, 2));
+} else {
+    console.log("✗ Verification failed!");
+    console.log("Details:", JSON.stringify(verificationResult.data, null, 2));
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+</Step>
+</Steps>
+
+<h3 id="more-examples">More Examples</h3>
+
+<div  class="card">
+      <h3 class="card-title"></h3>
+      <p class="card-description"><Card title="Complete Examples" icon="github" href="https://github.com/inblockio/aqua-js-sdk/tree/master/examples">
+    Browse full working examples in the repository</p>
+    </div>
+
+  <a href="/previous_versions/version_3/tooling.html" class="card">
+      <h3 class="card-title">API Documentation</h3>
+      <p class="card-description">Detailed API reference for JavaScript SDK</p>
+    </a>
+</CardGroup>
+
+<h2 id="rust-sdk-usage-v4">Rust SDK Usage (v4)</h2>
+
+<Info>
+<strong>Prerequisites</strong>:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Rust 1.70 or higher</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Add to Cargo.toml: </code>aqua-rs-sdk = { git = "https://github.com/inblockio/aqua-verifier-rs" }<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol></ul>
+</Info>
+
+<h3 id="quick-example">Quick Example</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">rust
+use aqua_rs_sdk::primitives::Method;
+use aqua_rs_sdk::schema::file_data::FileData;
+use aqua_rs_sdk::Aquafier;
+use std::path::PathBuf;
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    // Read file content
+    let filename = "test.txt".to_string();
+    let file_content = tokio::fs::read(&filename).await?;
+
+    // Create file data
+    let file_data = FileData::new(
+        filename.clone(),
+        file_content,
+        PathBuf::from(format!("./{}", filename)),
+    );
+
+    // Initialize Aquafier
+    let aquafier = Aquafier::new(None, None);
+
+    // Create genesis revision (notarize the file)
+    let result = aquafier.create_genesis_revision(file_data, Method::Scalar);
+
+    match result {
+        Ok(tree) => {
+            println!("✓ Aqua chain created successfully!");
+            println!("{}", serde_json::to_string_pretty(&tree)?);
+        }
+        Err(e) => {
+            eprintln!("Error: {:#?}", e);
+        }
+    }
+
+    Ok(())
+}
+</code>``
+
+<h3 id="more-resources">More Resources</h3>
+
+<div  class="card">
+      <h3 class="card-title"></h3>
+      <p class="card-description"><Card title="Rust SDK Guide" icon="rust" href="/dev_tools/aqua_sdk">
+    Complete guide for the Rust SDK</p>
+    </div>
+
+  <a href="/schema_reference/introduction.html" class="card">
+      <h3 class="card-title">Schema Reference</h3>
+      <p class="card-description">v4 protocol specifications</p>
+    </a>
+</CardGroup>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<div  class="card">
+      <h3 class="card-title"></h3>
+      <p class="card-description"><Card title="Use Cases" icon="lightbulb" href="/use_cases/introduction">
+    Explore real-world applications</p>
+    </div>
+
+  <a href="/quickstart.html" class="card">
+      <h3 class="card-title">Quick Start</h3>
+      <p class="card-description">Build your first Aqua application</p>
+    </a>
+
+  <a href="https://github.com/inblockio/aqua-examples" class="card">
+      <h3 class="card-title">Examples Repository</h3>
+      <p class="card-description">Browse complete examples</p>
+    </a>
+
+  <a href="mailto:info@inblock.io.html" class="card">
+      <h3 class="card-title">Get Support</h3>
+      <p class="card-description">Need help? Contact our team</p>
+    </a>
+</CardGroup>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#choose-your-sdk" class="toc-link" style="">Choose Your SDK</a>
+<a href="#signing-methods" class="toc-link" style="">Signing Methods</a>
+<a href="#witnessing-methods" class="toc-link" style="">Witnessing Methods</a>
+<a href="#javascript-sdk-usage-v3" class="toc-link" style="">JavaScript SDK Usage (v3)</a>
+<a href="#rust-sdk-usage-v4" class="toc-link" style="">Rust SDK Usage (v4)</a>
+<a href="#next-steps" class="toc-link" style="">Next Steps</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#javascript-sdk-v3" class="toc-link" style="padding-left: 0.75rem;">JavaScript SDK (v3)</a>
+<a href="#cli-tool-v4" class="toc-link" style="padding-left: 0.75rem;">CLI Tool (v4)</a>
+<a href="#aquafier-api-v3" class="toc-link" style="padding-left: 0.75rem;">Aquafier API (v3)</a>
+<a href="#signing-setup-details" class="toc-link" style="padding-left: 0.75rem;">Signing Setup Details</a>
+<a href="#witnessing-setup-details" class="toc-link" style="padding-left: 0.75rem;">Witnessing Setup Details</a>
+<a href="#complete-workflow-example" class="toc-link" style="padding-left: 0.75rem;">Complete Workflow Example</a>
+<a href="#more-examples" class="toc-link" style="padding-left: 0.75rem;">More Examples</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#api-documentation" class="toc-link" style="padding-left: 0.75rem;">API Documentation</a>
+<a href="#quick-example" class="toc-link" style="padding-left: 0.75rem;">Quick Example</a>
+<a href="#more-resources" class="toc-link" style="padding-left: 0.75rem;">More Resources</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#schema-reference" class="toc-link" style="padding-left: 0.75rem;">Schema Reference</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#quick-start" class="toc-link" style="padding-left: 0.75rem;">Quick Start</a>
+<a href="#examples-repository" class="toc-link" style="padding-left: 0.75rem;">Examples Repository</a>
+<a href="#get-support" class="toc-link" style="padding-left: 0.75rem;">Get Support</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

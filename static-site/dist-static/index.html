@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link active">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb">
+      <span>Getting started</span>
+    </div>
+
+        <div class="content">
+          <p class="leading-7 text-gray-700 dark:text-gray-300 mb-4"><strong>Aqua Protocol</strong> is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.  <div class="callout callout-note">       <svg class="callout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>       <div class="callout-content"><strong>Powered by Cryptography, Not Blockchain</strong>  Aqua Protocol is made possible by crypto—as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.  <span class="badge badge-green"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Account & Verify Data in Seconds</span></div>     </div>    <h2 id="what-is-aqua-protocol">What is Aqua Protocol?</h2>  The Aqua Protocol is a foundational framework for building distributed trust networks. By leveraging hash-chains, cryptographic signatures, and optional blockchain timestamping, Aqua enables scalable, trustless verification of data integrity and provenance. It empowers developers and innovators to create applications that certify, attest, and secure data in an open and decentralized way.  <a href="/quickstart.html" class="card">       <h3 class="card-title">Core Idea</h3>       <p class="card-description">Building trust through cryptographic proof and verifiable data structures.</p>     </a>  Trust can be built by relying on hashing and encryption mechanisms or by delegating to a mutually trusted party. Aqua Protocol handles both scenarios, giving you flexibility in how you establish and verify trust.    <h2 id="how-it-works">How It Works</h2>  At its core, Aqua creates portable hash-chains—called <strong>AquaTrees</strong>—that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.  <h3 id="key-features">Key Features</h3>  <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Tamper-Proof Records</strong>: Cryptographic hashes ensure any modification is immediately detectable</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Multi-Party Signatures</strong>: Collect signatures from multiple parties for authentication and non-repudiation</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Blockchain Timestamping</strong>: Optional anchoring to Ethereum, Nostr, or TSA for provable timestamps</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Portable Verification</strong>: AquaTrees can be exchanged, stored, and verified anywhere</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Privacy-Preserving</strong>: Only hashes are stored on-chain, keeping your data private</li></ol></ul>  <h2 id="try-aquafier">Try Aquafier</h2>  Want to see Aqua Protocol in action? Try <strong>Aquafier</strong>, our reference implementation that lets you upload, verify, and notarize any file:  <div  class="card">       <h3 class="card-title"></h3>       <p class="card-description"><Card     title="Aquafier (Production)"     icon="globe"     href="https://aquafier.inblock.io"   >     Try the live demo - upload and notarize files instantly</p>     </div>    <a href="https://dev.inblock.io" class="card">       <h3 class="card-title">Aquafier (Testing)</h3>       <p class="card-description">Experiment in the development environment</p>     </a> </CardGroup>  <h2 id="getting-started">Getting Started</h2>  <div class="callout callout-tip">       <svg class="callout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>       <div class="callout-content">New to Aqua Protocol? Here are the best places to start:</div>     </div>  <div  class="card">       <h3 class="card-title"></h3>       <p class="card-description"><Card     title="Quick Start Guide"     icon="rocket"     href="/quickstart"   >     Get up and running with Aqua Protocol in minutes</p>     </div>    <a href="/schema_reference/introduction.html" class="card">       <h3 class="card-title">Understand the Schema</h3>       <p class="card-description">Learn about the components that make up the protocol</p>     </a>    <a href="https://github.com/inblockio/aqua-examples" class="card">       <h3 class="card-title">Explore Examples</h3>       <p class="card-description">Browse curated examples in different programming languages</p>     </a>    <a href="/dev_tools/aqua_sdk.html" class="card">       <h3 class="card-title">Developer Tools</h3>       <p class="card-description">Get started with our SDK, CLI, and development tools</p>     </a>    <a href="/use_cases/introduction.html" class="card">       <h3 class="card-title">Use Cases</h3>       <p class="card-description">Discover real-world applications and implementation patterns</p>     </a>    <a href="https://github.com/inblockio" class="card">       <h3 class="card-title">View the Code</h3>       <p class="card-description">Dive into the source code and contribute</p>     </a> </CardGroup>  <h2 id="the-vision-of-aqua">The Vision of Aqua</h2>  Aqua Protocol is still evolving, and we're discovering the full scope of its potential. Here's what Aqua represents:  <div  class="card">       <h3 class="card-title"></h3>       <p class="card-description"><Card     title="An Open Framework"     icon="book-open"   >     Enabling private, decentralized solutions for general data notarization and verification</p>     </div>    <div  class="card">       <h3 class="card-title">A Verifiable Data Structure</h3>       <p class="card-description">Linking and certifying data with cryptographic precision through AquaTrees</p>     </div>    <div  class="card">       <h3 class="card-title">A Protocol for Provenance</h3>       <p class="card-description">Ensuring clear attribution and integrity of data origins across systems</p>     </div>    <div  class="card">       <h3 class="card-title">A Foundation for Trust</h3>       <p class="card-description">Powering distributed networks where trust is built-in, not assumed</p>     </div> </CardGroup>  <h2 id="current-version">Current Version</h2>  <strong>Aqua Protocol v4</strong> (Beta) - Built with Rust, featuring: <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Template system with JSON Schema validation</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Enhanced revision types and canonicalization</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Cross-platform support via WASM</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Improved scalability and flexibility</li></ol></ul>  <strong>Aqua Protocol v3</strong> (Stable) - Production-ready JavaScript/TypeScript SDK  <div class="callout callout-note">       <svg class="callout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>       <div class="callout-content">We're excited to see where this journey takes us and invite you to explore, build, and contribute to the future of decentralized trust with Aqua Protocol!</div>     </div>  <h2 id="community-contributions">Community & Contributions</h2>  Aqua Protocol is open source and community-driven. We welcome:  <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Feedback</strong>: Share your thoughts and suggestions</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Bug Reports</strong>: Help us improve by reporting issues</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Code Contributions</strong>: Submit pull requests and improvements</li></ol></ul> <ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Documentation</strong>: Help make Aqua more accessible</li></ol></ul>  <div  class="card">       <h3 class="card-title"></h3>       <p class="card-description"><Card     title="GitHub Repositories"     icon="github"     href="https://github.com/inblockio"   >     Browse our open-source code and contribute</p>     </div>    <a href="https://github.com/inblockio/aqua-examples" class="card">       <h3 class="card-title">Example Projects</h3>       <p class="card-description">Explore complete examples and implementation patterns</p>     </a>    <a href="https://x.com/inblockio" class="card">       <h3 class="card-title">Follow Updates</h3>       <p class="card-description">Stay updated with announcements and progress</p>     </a>    <a href="mailto:info@inblock.io.html" class="card">       <h3 class="card-title">Get Support</h3>       <p class="card-description">Need help? Reach out to our team</p>     </a> </CardGroup>  <h2 id="next-steps">Next Steps</h2>  Ready to dive deeper?  <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Start Building</strong>: Follow the <a href="/quickstart.html" class="font-medium text-primary hover:underline">Quick Start Guide</a> to create your first Aqua chain</li></ol> <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Understand the Protocol</strong>: Read the <a href="/schema_reference/introduction.html" class="font-medium text-primary hover:underline">Schema Reference</a> for technical details</li></ol> <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Explore Use Cases</strong>: See how others are using Aqua in <a href="/use_cases/introduction.html" class="font-medium text-primary hover:underline">real-world applications</a></li></ol> <ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Join the Community</strong>: Connect with developers on <a href="https://github.com/inblockio" class="font-medium text-primary hover:underline">GitHub</a></li></ol>  ---  <div class="callout callout-note">       <svg class="callout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>       <div class="callout-content"><strong>Need Help?</strong>  Email us at <a href="mailto:info@inblock.io.html" class="font-medium text-primary hover:underline">info@inblock.io</a> to talk to our team, or open an issue on GitHub for technical questions.</div>     </div></p>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#what-is-aqua-protocol" class="toc-link" style="">What is Aqua Protocol?</a>
+<a href="#how-it-works" class="toc-link" style="">How It Works</a>
+<a href="#try-aquafier" class="toc-link" style="">Try Aquafier</a>
+<a href="#getting-started" class="toc-link" style="">Getting Started</a>
+<a href="#the-vision-of-aqua" class="toc-link" style="">The Vision of Aqua</a>
+<a href="#current-version" class="toc-link" style="">Current Version</a>
+<a href="#community-contributions" class="toc-link" style="">Community & Contributions</a>
+<a href="#next-steps" class="toc-link" style="">Next Steps</a>
+<a href="#core-idea" class="toc-link" style="padding-left: 0.75rem;">Core Idea</a>
+<a href="#key-features" class="toc-link" style="padding-left: 0.75rem;">Key Features</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#aquafier-testing" class="toc-link" style="padding-left: 0.75rem;">Aquafier (Testing)</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#understand-the-schema" class="toc-link" style="padding-left: 0.75rem;">Understand the Schema</a>
+<a href="#explore-examples" class="toc-link" style="padding-left: 0.75rem;">Explore Examples</a>
+<a href="#developer-tools" class="toc-link" style="padding-left: 0.75rem;">Developer Tools</a>
+<a href="#use-cases" class="toc-link" style="padding-left: 0.75rem;">Use Cases</a>
+<a href="#view-the-code" class="toc-link" style="padding-left: 0.75rem;">View the Code</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#a-verifiable-data-structure" class="toc-link" style="padding-left: 0.75rem;">A Verifiable Data Structure</a>
+<a href="#a-protocol-for-provenance" class="toc-link" style="padding-left: 0.75rem;">A Protocol for Provenance</a>
+<a href="#a-foundation-for-trust" class="toc-link" style="padding-left: 0.75rem;">A Foundation for Trust</a>
+<a href="#" class="toc-link" style="padding-left: 0.75rem;"></a>
+<a href="#example-projects" class="toc-link" style="padding-left: 0.75rem;">Example Projects</a>
+<a href="#follow-updates" class="toc-link" style="padding-left: 0.75rem;">Follow Updates</a>
+<a href="#get-support" class="toc-link" style="padding-left: 0.75rem;">Get Support</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

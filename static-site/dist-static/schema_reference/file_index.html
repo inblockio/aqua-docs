@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schema Reference\File Index - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Schema Reference\File Index</span></div>
+
+        <div class="content">
+          <h1>File Index</h1>
+
+The <strong>File Index</strong> is a component of the Aqua Tree that maps content hashes to human-readable filenames. It provides context about what each hash represents, making Aqua Trees more understandable and navigable.
+
+<h2 id="purpose">Purpose</h2>
+
+When content is hashed (documents, images, data files), the resulting hash is a cryptographic string that provides no information about the original content. The file index solves this by maintaining a mapping between:
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Content hashes</strong>: SHA3-256 hashes of file content</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Filenames</strong>: Human-readable names that describe the content</li></ol></ul>
+
+This enables users and applications to understand what content each hash represents without needing to store or transmit the actual content.
+
+<h2 id="structure">Structure</h2>
+
+The file index is a simple key-value object:
+
+``<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "file_index": {
+    "0xe1bcaa92b0ea2f0eb1f046ca4fc877f26726e5bec8b1a5cf25504a29bc4e0f28": "document.pdf",
+    "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08": "test.txt",
+    "0x3b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9": "image.png"
+  }
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="field-format">Field Format</h3>
+
+| Component | Description | Format |
+|-----------|-------------|--------|
+| <strong>Key</strong> | Content hash | Hex string prefixed with </code>0x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, typically 64 characters (SHA3-256) |
+| <strong>Value</strong> | Filename | String, typically includes file extension |
+
+<h2 id="hash-sources">Hash Sources</h2>
+
+File index entries can reference hashes from several sources:
+
+<h3 id="1-object-revision-payloads">1. Object Revision Payloads</h3>
+
+When an object revision contains content:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "revisions": {
+    "0xrev_hash...": {
+      "payload": {
+        "hash": "0xe1bcaa92b0ea2f0eb1f046ca4fc877f26726e5bec8b1a5cf25504a29bc4e0f28",
+        "payload_type": "application/pdf",
+        "descriptor": "Contract Document"
+      }
+    }
+  },
+  "file_index": {
+    "0xe1bcaa92b0ea2f0eb1f046ca4fc877f26726e5bec8b1a5cf25504a29bc4e0f28": "contract.pdf"
+  }
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="2-linked-external-trees">2. Linked External Trees</h3>
+
+When link revisions reference other Aqua Trees:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "revisions": {
+    "0xlink_hash...": {
+      "revision_type": "0x1c3e5a7b9d2f4e6a8c0b1d3f5e7a9c2b4d6e8f0a1c3e5a7b9d2f4e6a8c0b1d3f",
+      "links": [
+        {
+          "verification_hash": "0xexternal_tree_hash...",
+          "content_hash": "0x3b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9"
+        }
+      ]
+    }
+  },
+  "file_index": {
+    "0x3b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9": "component_tree.aqua.json"
+  }
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="3-template-content">3. Template Content</h3>
+
+When template revisions define schemas:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "file_index": {
+    "0xtemplate_hash...": "user_credential_schema.json"
+  }
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h2 id="complete-example">Complete Example</h2>
+
+Here's a complete Aqua Tree showing how file_index integrates:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "revisions": {
+    "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e": {
+      "revision_type": "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e",
+      "nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+      "local_timestamp": 1704067200,
+      "version": "https://aqua-protocol.org/docs/v4/schema",
+      "method": "scalar",
+      "hash_type": "FIPS_202-SHA3-256",
+      "payload": {
+        "payload_type": "application/pdf",
+        "hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+        "hash_type": "FIPS_202-SHA3-256",
+        "descriptor": "Sales Contract"
+      }
+    },
+    "0xsig_hash...": {
+      "revision_type": "0x8e5b2f9c4d3a1e7b6c8f9d0e2a5b3c4d1e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b",
+      "previous_hash": "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e",
+      "signature_type": "eip191",
+      "signature": "0x...",
+      "wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+    }
+  },
+  "file_index": {
+    "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08": "sales_contract_2024.pdf"
+  }
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h2 id="benefits">Benefits</h2>
+
+<h3 id="1-human-readability">1. Human Readability</h3>
+
+Users can understand what content is in the tree without decoding hashes:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+"file_index": {
+  "0xabc...": "proposal.docx",
+  "0xdef...": "budget.xlsx",
+  "0x123...": "diagram.png"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+Instead of just seeing cryptographic hashes, users see meaningful filenames.
+
+<h3 id="2-content-discovery">2. Content Discovery</h3>
+
+Applications can list available content:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const filenames = Object.values(aquaTree.file_index);
+console.log("Available files:", filenames);
+// Output: ["proposal.docx", "budget.xlsx", "diagram.png"]
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="3-reverse-lookup">3. Reverse Lookup</h3>
+
+Find the hash for a known filename:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+function findHashByFilename(aquaTree, filename) {
+  return Object.entries(aquaTree.file_index)
+    .find(([_, name]) => name === filename)?.[0];
+}
+
+const hash = findHashByFilename(tree, "contract.pdf");
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="4-linked-tree-context">4. Linked Tree Context</h3>
+
+When trees link to external trees, the file index identifies them:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+"file_index": {
+  "0xhash1...": "main_document.pdf",
+  "0xhash2...": "appendix_a.aqua.json",  // External tree
+  "0xhash3...": "appendix_b.aqua.json"   // External tree
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h2 id="best-practices">Best Practices</h2>
+
+<h3 id="descriptive-filenames">Descriptive Filenames</h3>
+
+Use clear, descriptive names with appropriate extensions:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+// Good
+"file_index": {
+  "0xabc...": "employment_contract_john_doe_2024.pdf",
+  "0xdef...": "diploma_computer_science_2024.pdf"
+}
+
+// Avoid
+"file_index": {
+  "0xabc...": "file1.dat",
+  "0xdef...": "doc.bin"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="include-extensions">Include Extensions</h3>
+
+Always include file extensions to indicate content type:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+"file_index": {
+  "0xabc...": "document.pdf",      // PDF document
+  "0xdef...": "image.png",          // PNG image
+  "0x123...": "data.json",          // JSON data
+  "0x456...": "archive.zip",        // Compressed archive
+  "0x789...": "video.mp4"           // Video file
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="unique-names">Unique Names</h3>
+
+Ensure filenames are unique within a tree to avoid ambiguity:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+// Good - unique names
+"file_index": {
+  "0xabc...": "contract_v1.pdf",
+  "0xdef...": "contract_v2.pdf"
+}
+
+// Avoid - duplicate names
+"file_index": {
+  "0xabc...": "contract.pdf",
+  "0xdef...": "contract.pdf"  // Ambiguous!
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="external-tree-naming">External Tree Naming</h3>
+
+For linked external trees, use the </code>.aqua.json<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> extension:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+"file_index": {
+  "0xhash...": "component_a.aqua.json",
+  "0xhash...": "dependency_b.aqua.json"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h2 id="optional-nature">Optional Nature</h2>
+
+While the file index is a standard component of Aqua Trees, entries are <strong>optional</strong>:
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Not all hashes need file index entries</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>The tree remains valid without file_index</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Applications can function using hashes alone</li></ol></ul>
+
+However, including file index entries significantly improves usability.
+
+<h2 id="validation">Validation</h2>
+
+The file index should be validated for:
+
+<h3 id="1-hash-format">1. Hash Format</h3>
+
+All keys must be valid hex strings:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+function isValidHash(hash: string): boolean {
+  return /^0x[0-9a-fA-F]{64}$/.test(hash);
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="2-referenced-hashes">2. Referenced Hashes</h3>
+
+Hashes in file_index should appear in revisions:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+function validateFileIndex(aquaTree) {
+  const referencedHashes = new Set();
+
+  // Collect all content hashes from revisions
+  Object.values(aquaTree.revisions).forEach(rev => {
+    if (rev.payload?.hash) {
+      referencedHashes.add(rev.payload.hash);
+    }
+    if (rev.links) {
+      rev.links.forEach(link => referencedHashes.add(link.content_hash));
+    }
+  });
+
+  // Check file_index entries
+  for (const hash of Object.keys(aquaTree.file_index)) {
+    if (!referencedHashes.has(hash)) {
+      console.warn(</code>Orphaned file_index entry: ${hash}<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">);
+    }
+  }
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="3-filename-validity">3. Filename Validity</h3>
+
+Filenames should not contain invalid characters:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+function isValidFilename(filename: string): boolean {
+  // Avoid: null bytes, path separators, control characters
+  return !/[\x00\/\\]/.test(filename);
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h2 id="use-cases">Use Cases</h2>
+
+<h3 id="document-management-systems">Document Management Systems</h3>
+
+Track document names across revisions:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+"file_index": {
+  "0xv1...": "proposal_draft_v1.docx",
+  "0xv2...": "proposal_draft_v2.docx",
+  "0xfinal...": "proposal_final.docx"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="multi-file-projects">Multi-File Projects</h3>
+
+Reference multiple files in a project:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+"file_index": {
+  "0xreadme...": "README.md",
+  "0xcode...": "main.rs",
+  "0xconfig...": "config.toml",
+  "0xdocs...": "documentation.pdf"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="supply-chain-tracking">Supply Chain Tracking</h3>
+
+Identify product-related documents:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+"file_index": {
+  "0xcert...": "organic_certification.pdf",
+  "0xinspect...": "quality_inspection_report.pdf",
+  "0xship...": "shipping_manifest.pdf"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="credential-systems">Credential Systems</h3>
+
+Map credential hashes to recipient identifiers:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+"file_index": {
+  "0xdiploma...": "diploma_john_doe_2024.pdf",
+  "0xtranscript...": "transcript_john_doe_2024.pdf"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h2 id="storage-considerations">Storage Considerations</h2>
+
+<h3 id="size-impact">Size Impact</h3>
+
+Each file index entry adds approximately 100-150 bytes:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>64-character hash: ~66 bytes</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Filename: 20-50 bytes typical</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>JSON overhead: ~20 bytes</li></ol></ul>
+
+For large trees, this is minimal compared to revision data.
+
+<h3 id="compression">Compression</h3>
+
+File index compresses well with gzip due to repetitive patterns:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Hash prefixes (</code>0x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Common file extensions (</code>.pdf<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>.json`)</li></ol></ul>
+
+<h2 id="related-documentation">Related Documentation</h2>
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/aqua_tree.html" class="font-medium text-primary hover:underline">Aqua Tree</a> - Complete tree structure</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/object_revision.html" class="font-medium text-primary hover:underline">Object Revision</a> - Revisions containing content hashes</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/link_revision.html" class="font-medium text-primary hover:underline">Link Revision</a> - Linking to external trees</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/schema_reference/template_revision.html" class="font-medium text-primary hover:underline">Template Revision</a> - Schema definitions</li></ol></ul>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#purpose" class="toc-link" style="">Purpose</a>
+<a href="#structure" class="toc-link" style="">Structure</a>
+<a href="#hash-sources" class="toc-link" style="">Hash Sources</a>
+<a href="#complete-example" class="toc-link" style="">Complete Example</a>
+<a href="#benefits" class="toc-link" style="">Benefits</a>
+<a href="#best-practices" class="toc-link" style="">Best Practices</a>
+<a href="#optional-nature" class="toc-link" style="">Optional Nature</a>
+<a href="#validation" class="toc-link" style="">Validation</a>
+<a href="#use-cases" class="toc-link" style="">Use Cases</a>
+<a href="#storage-considerations" class="toc-link" style="">Storage Considerations</a>
+<a href="#related-documentation" class="toc-link" style="">Related Documentation</a>
+<a href="#field-format" class="toc-link" style="padding-left: 0.75rem;">Field Format</a>
+<a href="#1-object-revision-payloads" class="toc-link" style="padding-left: 0.75rem;">1. Object Revision Payloads</a>
+<a href="#2-linked-external-trees" class="toc-link" style="padding-left: 0.75rem;">2. Linked External Trees</a>
+<a href="#3-template-content" class="toc-link" style="padding-left: 0.75rem;">3. Template Content</a>
+<a href="#1-human-readability" class="toc-link" style="padding-left: 0.75rem;">1. Human Readability</a>
+<a href="#2-content-discovery" class="toc-link" style="padding-left: 0.75rem;">2. Content Discovery</a>
+<a href="#3-reverse-lookup" class="toc-link" style="padding-left: 0.75rem;">3. Reverse Lookup</a>
+<a href="#4-linked-tree-context" class="toc-link" style="padding-left: 0.75rem;">4. Linked Tree Context</a>
+<a href="#descriptive-filenames" class="toc-link" style="padding-left: 0.75rem;">Descriptive Filenames</a>
+<a href="#include-extensions" class="toc-link" style="padding-left: 0.75rem;">Include Extensions</a>
+<a href="#unique-names" class="toc-link" style="padding-left: 0.75rem;">Unique Names</a>
+<a href="#external-tree-naming" class="toc-link" style="padding-left: 0.75rem;">External Tree Naming</a>
+<a href="#1-hash-format" class="toc-link" style="padding-left: 0.75rem;">1. Hash Format</a>
+<a href="#2-referenced-hashes" class="toc-link" style="padding-left: 0.75rem;">2. Referenced Hashes</a>
+<a href="#3-filename-validity" class="toc-link" style="padding-left: 0.75rem;">3. Filename Validity</a>
+<a href="#document-management-systems" class="toc-link" style="padding-left: 0.75rem;">Document Management Systems</a>
+<a href="#multi-file-projects" class="toc-link" style="padding-left: 0.75rem;">Multi-File Projects</a>
+<a href="#supply-chain-tracking" class="toc-link" style="padding-left: 0.75rem;">Supply Chain Tracking</a>
+<a href="#credential-systems" class="toc-link" style="padding-left: 0.75rem;">Credential Systems</a>
+<a href="#size-impact" class="toc-link" style="padding-left: 0.75rem;">Size Impact</a>
+<a href="#compression" class="toc-link" style="padding-left: 0.75rem;">Compression</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

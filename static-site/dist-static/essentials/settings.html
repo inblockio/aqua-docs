@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essentials\Settings - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Essentials\Settings</span></div>
+
+        <div class="content">
+          <p class="leading-7 text-gray-700 dark:text-gray-300 mb-4">Every Mintlify site needs a <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">docs.json</code> file with the core configuration settings. Learn more about the <a href="#properties" class="font-medium text-primary hover:underline">properties</a> below.  <h2 id="properties">Properties</h2>  <ResponseField name="name" type="string" required> Name of your project. Used for the global title.  Example: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">mintlify</code>  </ResponseField>  <ResponseField name="navigation" type="Navigation[]" required>   An array of groups with all the pages within that group   <Expandable title="Navigation">     <ResponseField name="group" type="string">     The name of the group.      Example: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">Settings</code>      </ResponseField>     <ResponseField name="pages" type="string[]">     The relative paths to the markdown files that will serve as pages.      Example: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">["customization", "page"]</code>      </ResponseField>    </Expandable> </ResponseField>  <ResponseField name="logo" type="string or object">   Path to logo image or object with path to "light" and "dark" mode logo images   <Expandable title="Logo">     <ResponseField name="light" type="string">       Path to the logo in light mode     </ResponseField>     <ResponseField name="dark" type="string">       Path to the logo in dark mode     </ResponseField>     <ResponseField name="href" type="string" default="/">       Where clicking on the logo links you to     </ResponseField>   </Expandable> </ResponseField>  <ResponseField name="favicon" type="string">   Path to the favicon image </ResponseField>  <ResponseField name="colors" type="Colors">   Hex color codes for your global theme   <Expandable title="Colors">     <ResponseField name="primary" type="string" required>       The primary color. Used for most often for highlighted content, section       headers, accents, in light mode     </ResponseField>     <ResponseField name="light" type="string">       The primary color for dark mode. Used for most often for highlighted       content, section headers, accents, in dark mode     </ResponseField>     <ResponseField name="dark" type="string">       The primary color for important buttons     </ResponseField>     <ResponseField name="background" type="object">       The color of the background in both light and dark mode       <Expandable title="Object">         <ResponseField name="light" type="string" required>           The hex color code of the background in light mode         </ResponseField>         <ResponseField name="dark" type="string" required>           The hex color code of the background in dark mode         </ResponseField>       </Expandable>     </ResponseField>   </Expandable> </ResponseField>  <ResponseField name="topbarLinks" type="TopbarLink[]">   Array of <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">name</code>s and <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">url</code>s of links you want to include in the topbar   <Expandable title="TopbarLink">     <ResponseField name="name" type="string">     The name of the button.      Example: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">Contact us</code>     </ResponseField>     <ResponseField name="url" type="string">     The url once you click on the button. Example: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">https://mintlify.com/docs</code>     </ResponseField>    </Expandable> </ResponseField>  <ResponseField name="topbarCtaButton" type="Call to Action">   <Expandable title="Topbar Call to Action">     <ResponseField name="type" type={'"link" or "github"'} default="link">     Link shows a button. GitHub shows the repo information at the url provided including the number of GitHub stars.     </ResponseField>     <ResponseField name="url" type="string">     If <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">link</code>: What the button links to.          If <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">github</code>: Link to the repository to load GitHub information from.     </ResponseField>     <ResponseField name="name" type="string">     Text inside the button. Only required if <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">type</code> is a <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">link</code>.     </ResponseField>    </Expandable> </ResponseField>  <ResponseField name="versions" type="string[]">   Array of version names. Only use this if you want to show different versions   of docs with a dropdown in the navigation bar. </ResponseField>  <ResponseField name="anchors" type="Anchor[]">   An array of the anchors, includes the <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">icon</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">color</code>, and <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">url</code>.   <Expandable title="Anchor">     <ResponseField name="icon" type="string">     The <a href="https://fontawesome.com/search?q=heart" class="font-medium text-primary hover:underline">Font Awesome</a> icon used to feature the anchor.      Example: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">comments</code>     </ResponseField>     <ResponseField name="name" type="string">     The name of the anchor label.      Example: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">Community</code>     </ResponseField>     <ResponseField name="url" type="string">       The start of the URL that marks what pages go in the anchor. Generally, this is the name of the folder you put your pages in.     </ResponseField>     <ResponseField name="color" type="string">       The hex color of the anchor icon background. Can also be a gradient if you pass an object with the properties <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">from</code> and <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">to</code> that are each a hex color.     </ResponseField>     <ResponseField name="version" type="string">       Used if you want to hide an anchor until the correct docs version is selected.     </ResponseField>     <ResponseField name="isDefaultHidden" type="boolean" default="false">       Pass <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">true</code> if you want to hide the anchor until you directly link someone to docs inside it.     </ResponseField>     <ResponseField name="iconType" default="duotone" type="string">       One of: "brands", "duotone", "light", "sharp-solid", "solid", or "thin"     </ResponseField>    </Expandable> </ResponseField>  <ResponseField name="topAnchor" type="Object">   Override the default configurations for the top-most anchor.   <Expandable title="Object">     <ResponseField name="name" default="Documentation" type="string">       The name of the top-most anchor     </ResponseField>     <ResponseField name="icon" default="book-open" type="string">       Font Awesome icon.     </ResponseField>     <ResponseField name="iconType" default="duotone" type="string">       One of: "brands", "duotone", "light", "sharp-solid", "solid", or "thin"     </ResponseField>   </Expandable> </ResponseField>  <ResponseField name="tabs" type="Tabs[]">   An array of navigational tabs.   <Expandable title="Tabs">     <ResponseField name="name" type="string">       The name of the tab label.     </ResponseField>     <ResponseField name="url" type="string">       The start of the URL that marks what pages go in the tab. Generally, this       is the name of the folder you put your pages in.     </ResponseField>   </Expandable> </ResponseField>  <ResponseField name="api" type="API">   Configuration for API settings. Learn more about API pages at <a href="/api-playground/demo.html" class="font-medium text-primary hover:underline">API Components</a>.   <Expandable title="API">     <ResponseField name="baseUrl" type="string">       The base url for all API endpoints. If <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">baseUrl</code> is an array, it will enable for multiple base url       options that the user can toggle.     </ResponseField>      <ResponseField name="auth" type="Auth">       <Expandable title="Auth">         <ResponseField name="method" type='"bearer" | "basic" | "key"'>           The authentication strategy used for all API endpoints.         </ResponseField>         <ResponseField name="name" type="string">         The name of the authentication parameter used in the API playground.          If method is <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">basic</code>, the format should be <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">[usernameName]:[passwordName]</code>         </ResponseField>         <ResponseField name="inputPrefix" type="string">         The default value that's designed to be a prefix for the authentication input field.          E.g. If an <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">inputPrefix</code> of <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">AuthKey</code> would inherit the default input result of the authentication field as <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">AuthKey</code>.         </ResponseField>       </Expandable>     </ResponseField>      <ResponseField name="playground" type="Playground">       Configurations for the API playground        <Expandable title="Playground">         <ResponseField name="mode" default="show" type='"show" | "simple" | "hide"'>           Whether the playground is showing, hidden, or only displaying the endpoint with no added user interactivity <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">simple</code>            Learn more at the <a href="/api-playground/demo.html" class="font-medium text-primary hover:underline">playground guides</a>         </ResponseField>       </Expandable>     </ResponseField>      <ResponseField name="maintainOrder" type="boolean">       Enabling this flag ensures that key ordering in OpenAPI pages matches the key ordering defined in the OpenAPI file.        <div class="callout callout-warning">       <svg class="callout-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>       <div class="callout-content">This behavior will soon be enabled by default, at which point this field will be deprecated.</div>     </div>     </ResponseField>    </Expandable> </ResponseField>  <ResponseField name="openapi" type="string | string[]">   A string or an array of strings of URL(s) or relative path(s) pointing to your   OpenAPI file.      Examples:   <CodeGroup>     ``<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json Absolute     "openapi": "https://example.com/openapi.json"     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json Relative     "openapi": "/openapi.json"     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json Multiple     "openapi": ["https://example.com/openapi1.json", "/openapi2.json", "/openapi3.json"]     </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   </CodeGroup>  </ResponseField>  <ResponseField name="footerSocials" type="FooterSocials">   An object of social media accounts where the key:property pair represents the social media platform and the account url.      Example:    </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json   {     "x": "https://x.com/mintlify",     "website": "https://mintlify.com"   }   </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">   <Expandable title="FooterSocials">     <ResponseField name="[key]" type="string">     One of the following values </code>website<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>facebook<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>discord<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>slack<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>github<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>linkedin<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>instagram<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>hacker-news<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">          Example: </code>x<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">     </ResponseField>     <ResponseField name="property" type="string">     The URL to the social platform.          Example: </code>https://x.com/mintlify<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">     </ResponseField>   </Expandable> </ResponseField>  <ResponseField name="feedback" type="Feedback">   Configurations to enable feedback buttons    <Expandable title="Feedback">     <ResponseField name="suggestEdit" type="boolean" default="false">     Enables a button to allow users to suggest edits via pull requests     </ResponseField>     <ResponseField name="raiseIssue" type="boolean" default="false">     Enables a button to allow users to raise an issue about the documentation     </ResponseField>   </Expandable> </ResponseField>  <ResponseField name="modeToggle" type="ModeToggle">   Customize the dark mode toggle.   <Expandable title="ModeToggle">     <ResponseField name="default" type={'"light" or "dark"'}>       Set if you always want to show light or dark mode for new users. When not       set, we default to the same mode as the user's operating system.     </ResponseField>     <ResponseField name="isHidden" type="boolean" default="false">       Set to true to hide the dark/light mode toggle. You can combine </code>isHidden<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> with </code>default<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> to force your docs to only use light or dark mode. For example:              <CodeGroup>       </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json Only Dark Mode       "modeToggle": {         "default": "dark",         "isHidden": true       }       </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">        </code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json Only Light Mode       "modeToggle": {         "default": "light",         "isHidden": true       }       </code>``       </CodeGroup>      </ResponseField>    </Expandable> </ResponseField>  <ResponseField name="backgroundImage" type="string">   A background image to be displayed behind every page. See example with   <a href="https://infisical.com/docs" class="font-medium text-primary hover:underline">Infisical</a> and <a href="https://frpc.io" class="font-medium text-primary hover:underline">FRPC</a>. </ResponseField></p>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#properties" class="toc-link" style="">Properties</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

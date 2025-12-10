@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previous Versions\Version 2\Concepts - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Previous Versions\Version 2\Concepts</span></div>
+
+        <div class="content">
+          <h2 id="data-structure">Data Structure:</h2>
+This are the basics to get you started but for a thorough understanding one done with the sections below have a look at references section to  get a thorough understanding for example what is a witness, wtness network and how are witness hash created.
+
+The aqua chain structure can be broken into a the following components : 
+
+
+<h3 id="revision">Revision</h3>
+
+A revision is the smallest portable entity within the AQP. Multiple revisions
+form a single portable hash chain which is serialized in JSON format.
+They have existed before in unsecured systems where multiple revisions form a
+file which can be displayed as a page. The AQP adds the cryptographic harness
+to secure it. With presenting a portable hash chain, it is possible to track
+all incremental changes stored in each revision to understand the history of a
+page and how it came to be. This allows us to have version control on digital
+assets being able to restore earlier states and to relate to them. This allows
+us to have historical evidence of digital assets.
+<br/>
+
+Every revision is represented by a merkle-root hash representing a list of alphabetically ordered key-value pairs which are hashed (implementation example SHA3-512). This allows us to dynamically change the data structure without the need to introduce breaking protocol changes.
+
+  * The input data MUST NOT have dublicated keys as this would lead to non-deterministic ordering.
+
+Aqua-Chain: Is a portable hash-chain. This provides immutability for the history of the file, once signed and/or witnessed with the respective security guarantees.
+Aqua-revisions form a portable Aqua-Chain.
+
+There are 4 Types of Revisions:
+  * Content Revision: Contains the data object(the data/file encoded to base 64).This is used to secure the data integrity and reference the data object for provenance purposes. 
+  * Signature Revision: Is used to cryptographically sign, we are currently supporting  Ethereum signatures.
+  * Witness Revision: Used to witness the Hash to prove its existence. We are supporting Ethereum by default.
+  * Metadata Revision: used to ensure content revision is valid.
+
+
+
+<h3 id="page">Page</h3>
+
+A page is a visible representation of a file containing multiple or a single
+revision attributed to a shared origin. A page view could also be used to
+create a new revision by a used service which interfaces with the file for
+manipulation. In AQP all revisions share a global URI hash to
+attribute them together called a genesis hash.
+
+
+
+<h3 id="witness">Witness</h3>
+
+We define witnessing as the process of observing an event. A witness is judged
+by their capability to recollect and share an observed event. In other words,
+witnessing is the process of storing input data for later playback to provide
+data symmetry around an event.
+
+<h3 id="witness-network">Witness Network</h3>
+
+The digital service in a distributed ledger or similar infrastructure which
+provides transaction security and data symmetry for shared data within the
+network. An example of a witness network would be Ethereum.
+
+E.g. Ethereum can be used to store a digital fingerprint of a domain snapshot
+of a data vault. A domain snapshot is the Merklized state of all witnessed hash
+chains being present in the data vault. It is required to pay the witness
+network for its service. In the case of Ethereum, this is done using 'Ether'.
+This in return allows the account owner to create an 'undeniable' proof that a
+specific revision and the previous revisions within a hash chain has existed.
+
+
+<h3 id="signature">Signature</h3>
+
+A signature in AQP is a cryptographic signature generated by public-private key pair. The protocol should be abstract, where it will support ‘Method’ in later iterations. This will allow us to use different types of implementations such as: <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">PGP signatures</code>, <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">Ethereum</code>, or <code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">Bitcoin wallet ’s</code> signatures.
+
+In this specification, we use the AQP reference implementation’s signing method, which is via an Ethereum wallet.
+
+``<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">js
+signature_hash = calculate_hash_sum(
+    signature + public_key
+)
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+The signature is generated by a wallet signing the following message:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+I sign the following page verification_hash:" +[0x0x9dab72<revision_verification_hash>]
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+
+<h3 id="wallet">Wallet</h3>
+A wallet is a software for protecting and managing private cryptographic keys
+(of private-public key pairs) which are used to govern digital assets. This is
+done by authorization of transactions via digital signatures or by initiating
+decryption processes to access data.
+
+See <a href="design-principles.md#separation-of-account-and-service.html" class="font-medium text-primary hover:underline">Separation of Concerns</a>.
+
+<h3 id="account">Account</h3>
+
+We are following Ethereum's account definition:
+> In general, there are two types of accounts. Externally owned accounts,
+> controlled by private keys. And contract accounts, controlled by their
+> contract code
+-- <a href="https://ethereum.org/en/whitepaper/#ethereum-accounts" class="font-medium text-primary hover:underline">Ethereum Whitepaper</a>
+
+In general, we can't prove if an account owner is a person or a machine. With
+advancements in AI, it will become increasingly difficult to prove that a human
+is a human. <a href="https://www.proofofhumanity.id/" class="font-medium text-primary hover:underline">Attempts are being made</a> to
+increase trustworthiness of accounts which fall short in questions of privacy
+and security as they make public claims. Traditional know your customer (KYC)
+combined with the AQP and Aqua Identity Protocol (AIP) identification processes
+can provide similar "proof of being human" which can be attested to an account.
+This allows us to outsource the problem of identification, where we only focus
+on unique accounts which are sufficient for data accounting independent of
+humans or machines. Identity claims issued via the AIP will help to provide the
+context required to meaningfully interact between accounts.
+
+For more on this topic, please read the <a href="aqua-identity-protocol.md.html" class="font-medium text-primary hover:underline">Aqua Identity
+Protocol</a>.
+
+<h3 id="domain">Domain</h3>
+A domain is a unique namespace attributed to an account. It allows us to manage
+services and files within that namespace creating a domain of data governance
+After granted permissions, additional accounts can be added to share control
+over a domain or singular assets. To enforce boundaries of a domain, additional
+software like the <a href="guardian.md.html" class="font-medium text-primary hover:underline">Guardian</a> is required.
+
+E.g. by setting up the a data vault with your account it becomes your
+domain of data governance.
+
+
+
+<h3 id="transaction-security">Transaction Security</h3>
+
+Transaction security is an economic measure of the level of integrity assurance
+for a transaction. It is defined as the cost required to forge a transaction.
+The transaction security can be increased by cryptographic security and by strong
+replication of transactions. Public distributed ledger systems are highly suitable
+for providing very high level of transaction security at the cost of privacy
+and immutability (data can't be changed or deleted). Today, public distributed
+ledgers such as Bitcoin and Ethereum provide the highest level of transaction
+security.
+
+<h3 id="data-asset">Data Asset</h3>
+
+Data turns into a valuable asset if it is accounted for. In an accounted form
+it can be easily priced, exchanged or traded.
+
+<h3 id="data-vault">Data Vault</h3>
+
+Software used to store and manage data with an account. The software must apply
+a secure architecture and measures for keeping data assets safe. This is
+achieved through encryption, strong authentication and restrictive access to
+keep data private by default.
+
+See <a href="design-principles.md#separation-of-account-and-service.html" class="font-medium text-primary hover:underline">Design Principles / Separation of Account and
+Service</a>
+
+
+
+<h3 id="metadata">Metadata</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+metadata_hash = calculate_hash_sum(
+    domain_id + time_stamp + previous_verification_hash
+)
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+Description:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>metadata_hash: The check sum for all metadata data fields. It simplifies the</li></ol></ul>
+  hash construction and the ability to identify data corrupton in this part of
+  the verification structure.
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>domain_id: 10 digits hexadecimal randomly generated to identify the host</li></ol></ul>
+  system that runs the AQP service.
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>time_stamp: time-stamp of the current revision (decimal numbers</li></ol></ul>
+  YYYYMMDDHHMMSS e.g. 20211128092608).
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>previous_verification_hash: previous_revision_verification_hash if present</li></ol></ul>
+
+
+
+<h3 id="witness">Witness</h3>
+
+Witnessing allows one to undeniably prove the existence of a dataset
+(represented as a portable hash chain). To complete the witnessing process, a
+Domain Snapshot is created. This is a collection of all revision hashes within
+one domain. A Merkle tree is used to unify all hashes of the latest revisions
+of all portable hash chains within a domain into a single hash value.
+
+The </code>witness_event_verification_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> is written to the <a href="#witness-network" class="font-medium text-primary hover:underline">Witness
+Network</a>. The
+</code>witness_event_verification_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> is then generated by using the
+</code>domain_snapshot_genesis_hash<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> and the </code>merkle_root<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> hash together. This
+allows the page snapshot itself to also be witnessed.
+
+A single revision which has been witnessed, will not store the whole Merkle
+tree, but only its relevant path to the Merkle root. Performing a Merkle proof
+means that its revision is included in the Merkle tree.
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+witness_hash = calculate_hash_sum(
+    domain_snapshot_genesis_hash + merkle_root +
+    witness_network + witness_event_transaction_hash
+)
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+
+<h3 id="witness-network">Witness network</h3>
+We are using the Ethereum Network as an optional Witness Network for
+cryptographic time-stamping.
+
+<h3 id="encryption">Encryption</h3>
+according to wikipedia
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+In cryptography, encryption (more specifically, encoding) is the process of transforming information in a way that, ideally, only authorized parties can decode. This process converts the original representation of the information, known as plaintext, into an alternative form known as ciphertext. Despite its goal, encryption does not itself prevent interference but denies the intelligible content to a would-be interceptor.
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="hash">Hash</h3>
+according to investopedia
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+A hash is a mathematical function that converts an input of arbitrary length into an encrypted output of a fixed length. Thus, regardless of the original amount of data or file size involved, its unique hash will always be the same size. Moreover, secure hashes cannot be "reverse-engineered" to get the input from the hashed output, at least with current technology.
+
+If you use a specific function on the same data, its hash will be identical, so you can validate that the data is the same (i.e., unaltered) if you already know its hash. A different function would deliver a different hash.
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="verification-process">Verification Process</h3>
+
+The verification process is a redo of the verification data generation
+process, and additionally a comparison of their results.
+
+<strong>Verification of Content</strong>
+
+All hashes are recalculated in a separate client implementation, and
+compared with the ones sent via the API. If the data was not altered or
+corrupted; nor was there a difference in the process to calculate the
+hash, they will match. This will create a high level of assurance that
+the integrity and history of the portable hash chain in question has not been
+altered.
+
+<strong>Verification of Account</strong>
+
+We cryptographically verify that the revision signature is indeed generated by the account specified in the verification data.
+
+<strong>Verification of Time</strong>
+
+To verify that the witness event included in a revision is correct, a
+lookup and comparison of the </code>witness_event_verification_hash` on-chain is
+performed and compared with the recalculated event.
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#data-structure" class="toc-link" style="">Data Structure:</a>
+<a href="#revision" class="toc-link" style="padding-left: 0.75rem;">Revision</a>
+<a href="#page" class="toc-link" style="padding-left: 0.75rem;">Page</a>
+<a href="#witness" class="toc-link" style="padding-left: 0.75rem;">Witness</a>
+<a href="#witness-network" class="toc-link" style="padding-left: 0.75rem;">Witness Network</a>
+<a href="#signature" class="toc-link" style="padding-left: 0.75rem;">Signature</a>
+<a href="#wallet" class="toc-link" style="padding-left: 0.75rem;">Wallet</a>
+<a href="#account" class="toc-link" style="padding-left: 0.75rem;">Account</a>
+<a href="#domain" class="toc-link" style="padding-left: 0.75rem;">Domain</a>
+<a href="#transaction-security" class="toc-link" style="padding-left: 0.75rem;">Transaction Security</a>
+<a href="#data-asset" class="toc-link" style="padding-left: 0.75rem;">Data Asset</a>
+<a href="#data-vault" class="toc-link" style="padding-left: 0.75rem;">Data Vault</a>
+<a href="#metadata" class="toc-link" style="padding-left: 0.75rem;">Metadata</a>
+<a href="#witness" class="toc-link" style="padding-left: 0.75rem;">Witness</a>
+<a href="#witness-network" class="toc-link" style="padding-left: 0.75rem;">Witness network</a>
+<a href="#encryption" class="toc-link" style="padding-left: 0.75rem;">Encryption</a>
+<a href="#hash" class="toc-link" style="padding-left: 0.75rem;">Hash</a>
+<a href="#verification-process" class="toc-link" style="padding-left: 0.75rem;">Verification Process</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>

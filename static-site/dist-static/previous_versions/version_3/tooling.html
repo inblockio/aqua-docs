@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previous Versions\Version 3\Tooling - Aqua Protocol Documentation</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="top-nav-left">
+      <a href="/index.html" class="top-nav-logo">
+        <img src="/logo/aqua-logo.png" alt="Aqua Protocol Documentation" />
+        <span>Aqua Protocol Documentation</span>
+      </a>
+    </div>
+
+    <div class="top-nav-right">
+      <div class="top-nav-search">
+        <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" placeholder="Search..." />
+        <span style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; color: #9ca3af;">Ctrl K</span>
+      </div>
+
+      <a href="mailto:info@inblock.io" class="top-nav-link">Support</a>
+
+      
+      <a href="https://dev.inblock.io/app" class="top-nav-button">
+        Checkout Aquafier
+      </a>
+      
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      
+    <div class="sidebar-tabs">
+      
+        <button class="sidebar-tab active" data-tab="0">
+          Guides
+        </button>
+      
+        <button class="sidebar-tab " data-tab="1">
+          API/Schema reference (v4.0)
+        </button>
+      
+    </div>
+  
+      <div class="sidebar-content">
+        <div class="sidebar-section"><div class="sidebar-section-title">Guides</div><div class="sidebar-group-title">Getting started</div><a href="/index.html" class="sidebar-link">Index</a><a href="/quickstart.html" class="sidebar-link">Quickstart</a><a href="/development.html" class="sidebar-link">Development</a><button class="sidebar-group-toggle">Aqua Versions<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v1.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_1/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_1/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_1/whitepaper.html" class="sidebar-link">Whitepaper</a><a href="/previous_versions/version_1/idenity_protocol.html" class="sidebar-link">Idenity Protocol</a><a href="/previous_versions/version_1/name_resolution.html" class="sidebar-link">Name Resolution</a><a href="/previous_versions/version_1/assurance_levels.html" class="sidebar-link">Assurance Levels</a><a href="/previous_versions/version_1/data_accounting.html" class="sidebar-link">Data Accounting</a><a href="/previous_versions/version_1/data_governance.html" class="sidebar-link">Data Governance</a><a href="/previous_versions/version_1/delegated_witnessing.html" class="sidebar-link">Delegated Witnessing</a><a href="/previous_versions/version_1/design_principles.html" class="sidebar-link">Design Principles</a><a href="/previous_versions/version_1/guardian.html" class="sidebar-link">Guardian</a><a href="/previous_versions/version_1/immutable_hyperlinks.html" class="sidebar-link">Immutable Hyperlinks</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v2.0 - depracated)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_2/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_2/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_2/tooling.html" class="sidebar-link">Tooling</a></div></div><div class="sidebar-nested"><button class="sidebar-group-toggle">Version (v3.0 - current)<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/previous_versions/version_3/introduction.html" class="sidebar-link">Introduction</a><a href="/previous_versions/version_3/concepts.html" class="sidebar-link">Concepts</a><a href="/previous_versions/version_3/schema.html" class="sidebar-link">Schema</a><a href="/previous_versions/version_3/tooling.html" class="sidebar-link">Tooling</a></div></div><a href="/previous_versions/version_4/version_4.html" class="sidebar-link">Version 4</a></div><div class="sidebar-group-title">Use Cases</div><a href="/use_cases/introduction.html" class="sidebar-link">Introduction</a><a href="/use_cases/supply_chain.html" class="sidebar-link">Supply Chain</a><a href="/use_cases/identity_attestation.html" class="sidebar-link">Identity Attestation</a><a href="/use_cases/document_verification.html" class="sidebar-link">Document Verification</a><div class="sidebar-group-title">Development tools</div><a href="/dev_tools/aqua_sdk.html" class="sidebar-link">Aqua Sdk</a><a href="/dev_tools/aquafier_api.html" class="sidebar-link">Aquafier Api</a><a href="/dev_tools/aqua_cli.html" class="sidebar-link">Aqua Cli</a></div><div class="sidebar-section"><div class="sidebar-section-title">API/Schema reference (v4.0)</div><div class="sidebar-group-title">API documentation</div><a href="/schema_reference/introduction.html" class="sidebar-link">Introduction</a><button class="sidebar-group-toggle">Aqua Protocol Terms Schema<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/aqua_tree.html" class="sidebar-link">Aqua Tree</a><a href="/schema_reference/file_index.html" class="sidebar-link">File Index</a><div class="sidebar-nested"><button class="sidebar-group-toggle">Revision<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><div class="sidebar-group-content"><a href="/schema_reference/revision.html" class="sidebar-link">Revision</a><a href="/schema_reference/witness_revision.html" class="sidebar-link">Witness Revision</a><a href="/schema_reference/signing_revision.html" class="sidebar-link">Signing Revision</a><a href="/schema_reference/link_revision.html" class="sidebar-link">Link Revision</a><a href="/schema_reference/template_revision.html" class="sidebar-link">Template Revision</a><a href="/schema_reference/object_revision.html" class="sidebar-link">Object Revision</a></div></div></div></div>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <div class="content-container">
+        <div class="breadcrumb"><a href="/index.html">Home</a><span class="breadcrumb-separator">›</span><span>Previous Versions\Version 3\Tooling</span></div>
+
+        <div class="content">
+          <h1>Aqua Protocol v3 - Tooling & SDK</h1>
+
+The Aqua JS SDK (aqua-js-sdk) is a comprehensive TypeScript library for working with Aqua Protocol v3. It provides a complete API for creating, signing, witnessing, and verifying revision chains across multiple platforms.
+
+<h2 id="installation">Installation</h2>
+
+``<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash
+npm install aqua-js-sdk
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="platform-specific-imports">Platform-Specific Imports</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+// Node.js (default)
+import Aquafier from 'aqua-js-sdk';
+
+// Web Browser
+import Aquafier from 'aqua-js-sdk/web';
+
+// React Native
+import Aquafier from 'aqua-js-sdk/react-native';
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h2 id="core-api">Core API</h2>
+
+<h3 id="aquafier-class">Aquafier Class</h3>
+
+The main class providing all Aqua Protocol operations.
+
+#### Constructor
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const aquafier = new Aquafier();
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+No configuration needed for initialization.
+
+---
+
+<h3 id="creating-revisions">Creating Revisions</h3>
+
+#### createGenesisRevision()
+
+Creates the first revision in a new AquaTree.
+
+<strong>Signature:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+async createGenesisRevision(
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Parameters:</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>fileObject<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: File data to create revision from</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>isForm<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: If true, creates form revision (default: false)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>enableContent<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: Include file content in revision (default: false)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>enableScalar<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: Use scalar method instead of tree (default: true)</li></ol></ul>
+
+<strong>Returns:</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Success: </code>AquaOperationData<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> with new AquaTree</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Failure: Array of error logs</li></ol></ul>
+
+<strong>Example:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer, // Uint8Array or string
+  path: "/documents/contract.pdf"
+};
+
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  result.data.logData.forEach(log => console.error(log));
+  return;
+}
+
+const aquaTree = result.data.aquaTree;
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+#### createNewRevision()
+
+Adds a new file/form revision to an existing AquaTree.
+
+<strong>Signature:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+async createNewRevision(
+  aquaTree: AquaTree,
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Example:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const result = await aquafier.createNewRevision(
+  existingAquaTree,
+  updatedFileObject,
+  false,  // not a form
+  false,  // don't embed content
+  true    // use scalar method
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h3 id="signing-revisions">Signing Revisions</h3>
+
+#### signRevision()
+
+Signs the latest revision in an AquaTree.
+
+<strong>Signature:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+async signRevision(
+  aquaTree: AquaTree,
+  signType: SignType,
+  credentials?: CredentialsData,
+  inlineOptions?: InlineSignerOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Parameters:</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>signType<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: One of </code>"cli"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"metamask"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"did"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"p12"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"inline"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>credentials<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: Credentials for CLI, DID, or P12 signing</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>inlineOptions<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: Pre-computed signature for inline mode</li></ol></ul>
+
+<strong>Sign Types:</strong>
+
+##### CLI Signing
+Uses BIP39 mnemonic to derive wallet and sign.
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const credentials: CredentialsData = {
+  mnemonic: "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "cli",
+  credentials
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+##### MetaMask Signing
+Opens MetaMask for user to sign (browser only).
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask"
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>React Native MetaMask:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask",
+  undefined,
+  {
+    deepLinkUrl: "metamask://",
+    callbackUrl: "myapp://metamask-callback",
+    onDeepLinkReady: (url) => {
+      // Open MetaMask app
+      Linking.openURL(url);
+    }
+  }
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+##### DID Signing
+Signs with Decentralized Identifier.
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const credentials: CredentialsData = {
+  did_key: "your-did-key-here",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "did",
+  credentials
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+##### P12 Certificate Signing
+Signs with P12 certificate.
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const credentials: CredentialsData = {
+  p12_password: "certificate-password",
+  p12_content: "base64-encoded-p12-content",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "p12",
+  credentials
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+##### Inline Signing
+Use pre-computed signature.
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const inlineOptions: InlineSignerOptions = {
+  walletAddress: "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  signature: "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f..."
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "inline",
+  undefined,
+  inlineOptions
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h3 id="witnessing-revisions">Witnessing Revisions</h3>
+
+#### witnessRevision()
+
+Timestamps a revision via blockchain or TSA.
+
+<strong>Signature:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+async witnessRevision(
+  aquaTree: AquaTree,
+  witnessType: WitnessType,
+  witnessConfig: WitnessConfig,
+  credentials?: CredentialsData,
+  witnessPlatform?: WitnessPlatformType,
+  inlineOptions?: InlineWitnessOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Parameters:</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>witnessType<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: </code>"eth"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, </code>"nostr"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">, or </code>"tsa"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>witnessConfig<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: Network and contract configuration</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>credentials<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: Credentials for signing transaction</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>witnessPlatform<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: </code>"cli"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> or </code>"metamask"<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> (Ethereum only)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>inlineOptions<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: Pre-computed transaction (inline mode)</li></ol></ul>
+
+#### Ethereum Witnessing
+
+<strong>Configuration:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // or "mainnet", "holesky"
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+const credentials: CredentialsData = {
+  mnemonic: "your mnemonic here",
+  // ...
+};
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>CLI Method</strong> (uses mnemonic):
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>MetaMask Method</strong> (prompts user):
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  undefined,
+  "metamask"
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+#### Nostr Witnessing
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // not used for Nostr
+  smartContractAddress: ""     // not used for Nostr
+};
+
+const credentials: CredentialsData = {
+  nostr_sk: "your-nostr-secret-key",
+  // ...
+};
+
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "nostr",
+  witnessConfig,
+  credentials
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+#### TSA Witnessing
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "tsa",
+  witnessConfig
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h3 id="linking-revisions">Linking Revisions</h3>
+
+#### linkRevision()
+
+Creates a link revision connecting to other AquaTrees.
+
+<strong>Signature:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+async linkRevision(
+  aquaTree: AquaTree,
+  linkedAquaTrees: AquaTree[],
+  linkType?: string
+): Promise<Result<AquaOperationData, LogData[]>>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Example:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const result = await aquafier.linkRevision(
+  mainAquaTree,
+  [dependency1Tree, dependency2Tree, dependency3Tree],
+  "dependencies"
+);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h3 id="verification">Verification</h3>
+
+#### verifyRevisionChain()
+
+Verifies an entire AquaTree chain.
+
+<strong>Signature:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+async verifyRevisionChain(
+  aquaTree: AquaTree,
+  credentials?: CredentialsData
+): Promise<VerificationGraphData>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Parameters:</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>aquaTree<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: Tree to verify</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>credentials<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: Optional, for Ethereum witness lookup</li></ol></ul>
+
+<strong>Returns:</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li></code>VerificationGraphData<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">: Graph structure with verification results</li></ol></ul>
+
+<strong>Example:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const verificationResult = await aquafier.verifyRevisionChain(aquaTree, credentials);
+
+// Check overall success
+if (verificationResult.isValidationSuccessful) {
+  console.log("✓ Chain is valid");
+} else {
+  console.log("✗ Chain validation failed");
+}
+
+// Traverse verification graph
+function printResults(node: VerificationGraphData, depth = 0) {
+  const indent = "  ".repeat(depth);
+  const status = node.isValidationSuccessful ? "✓" : "✗";
+  console.log(</code>${indent}${status} ${node.revisionType}<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">);
+
+  node.verificationGraphData.forEach(child => printResults(child, depth + 1));
+}
+
+printResults(verificationResult);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+#### verifyFormRevision()
+
+Verifies form-specific data.
+
+<strong>Signature:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+async verifyFormRevision(
+  aquaTree: AquaTree,
+  formData: FormData
+): Promise<FormVerificationResponseData>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h3 id="utility-methods">Utility Methods</h3>
+
+#### removeLastRevision()
+
+Removes the most recent revision from an AquaTree.
+
+<strong>Signature:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+removeLastRevision(
+  aquaTree: AquaTree
+): Result<AquaOperationData, LogData[]>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<strong>Example:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const result = aquafier.removeLastRevision(aquaTree);
+
+if (result.isOk) {
+  const updatedTree = result.data.aquaTree;
+  console.log("Revision removed successfully");
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+#### checkIfFileAlreadyNotarized()
+
+Checks if a file has already been notarized.
+
+<strong>Signature:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+checkIfFileAlreadyNotarized(
+  aquaTree: AquaTree,
+  fileObject: FileObject
+): boolean
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+#### fetchFilesToBeRead()
+
+Gets list of files that need content loaded.
+
+<strong>Signature:</strong>
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+fetchFilesToBeRead(aquaTree: AquaTree): string[]
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h2 id="type-reference">Type Reference</h2>
+
+<h3 id="core-types">Core Types</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+interface FileObject {
+  fileName: string
+  fileContent: string | AquaTree | Uint8Array | Record<string, string> | object
+  path: string
+  fileSize?: number
+}
+
+interface AquaTree {
+  revisions: Revisions
+  file_index: FileIndex
+  tree?: RevisionTree
+  treeMapping?: TreeMapping
+}
+
+interface Revision {
+  previous_verification_hash: string
+  local_timestamp: string
+  revision_type: RevisionType
+  version: string
+  // ... type-specific fields
+}
+
+type RevisionType = "file" | "witness" | "signature" | "form" | "link"
+type SignType = "metamask" | "cli" | "did" | "p12" | "inline"
+type WitnessType = "tsa" | "eth" | "nostr"
+type WitnessNetwork = "sepolia" | "mainnet" | "holesky"
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="result-type">Result Type</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+type Result<T, E> =
+  | { isOk: true; isErr: false; data: T }
+  | { isOk: false; isErr: true; data: E }
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="configuration-types">Configuration Types</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+interface CredentialsData {
+  mnemonic: string
+  nostr_sk: string
+  did_key: string
+  alchemy_key: string
+  witness_eth_network: string
+  witness_method: string
+  p12_password?: string
+  p12_content?: string
+}
+
+interface WitnessConfig {
+  witnessEventVerificationHash: string
+  witnessNetwork: WitnessNetwork
+  smartContractAddress: string
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h2 id="platform-specific-notes">Platform-Specific Notes</h2>
+
+<h3 id="node-js">Node.js</h3>
+
+Full functionality available:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>All signing methods</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>All witnessing methods</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>File system access</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>HTTP server for MetaMask callback</li></ol></ul>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+import Aquafier from 'aqua-js-sdk';
+import fs from 'fs';
+
+const aquafier = new Aquafier();
+
+// Read file from disk
+const fileContent = fs.readFileSync('document.pdf');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: fileContent,
+  path: './document.pdf'
+};
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="web-browser">Web Browser</h3>
+
+Most functionality available:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>MetaMask signing (primary method)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>DID signing</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Ethereum witnessing via MetaMask</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Nostr, TSA witnessing</li></ol></ul>
+
+<strong>Limitations:</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>No P12 signing (requires file system)</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>No CLI signing with mnemonic (security risk in browser)</li></ol></ul>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+import Aquafier from 'aqua-js-sdk/web';
+
+const aquafier = new Aquafier();
+
+// File from input element
+const file = document.getElementById('fileInput').files[0];
+const arrayBuffer = await file.arrayBuffer();
+
+const fileObject = {
+  fileName: file.name,
+  fileContent: new Uint8Array(arrayBuffer),
+  path: file.name
+};
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="react-native">React Native</h3>
+
+Most functionality with platform adaptations:
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>MetaMask via deep linking</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>DID signing</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>Limited witnessing</li></ol></ul>
+
+<strong>Limitations:</strong>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>No local HTTP server</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>MetaMask requires custom deep linking</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li>File system needs react-native-fs</li></ol></ul>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+import Aquafier from 'aqua-js-sdk/react-native';
+import RNFS from 'react-native-fs';
+
+const aquafier = new Aquafier();
+
+// Read file
+const fileContent = await RNFS.readFile(filePath, 'base64');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: Buffer.from(fileContent, 'base64'),
+  path: filePath
+};
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h2 id="complete-workflow-examples">Complete Workflow Examples</h2>
+
+<h3 id="document-notarization">Document Notarization</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+// 1. Create genesis
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer,
+  path: "/contracts/contract.pdf"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign with CLI
+const credentials: CredentialsData = {
+  mnemonic: process.env.MNEMONIC,
+  // ... other fields
+};
+
+result = await aquafier.signRevision(aquaTree, "cli", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness to Ethereum
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: Object.keys(aquaTree.revisions)[Object.keys(aquaTree.revisions).length - 1],
+  witnessNetwork: "sepolia",
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+
+// 4. Save
+fs.writeFileSync('contract.aqua.json', JSON.stringify(aquaTree, null, 2));
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="multi-party-approval">Multi-Party Approval</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+// Party 1: Create and sign
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+result = await aquafier.signRevision(aquaTree, "cli", party1Credentials);
+aquaTree = result.data.aquaTree;
+
+// Send aquaTree to Party 2
+
+// Party 2: Add signature
+result = await aquafier.signRevision(aquaTree, "metamask");
+aquaTree = result.data.aquaTree;
+
+// Send back to Party 1
+
+// Party 1: Witness
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  party1Credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+<h3 id="form-submission-with-verification">Form Submission with Verification</h3>
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+// 1. Create form genesis
+const formData = {
+  name: "John Doe",
+  email: "john@example.com",
+  status: "pending"
+};
+
+const fileObject: FileObject = {
+  fileName: "application.json",
+  fileContent: formData,
+  path: "/forms/application.json"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject, true);  // isForm=true
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign
+result = await aquafier.signRevision(aquaTree, "did", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness
+result = await aquafier.witnessRevision(aquaTree, "nostr", witnessConfig, credentials);
+aquaTree = result.data.aquaTree;
+
+// 4. Verify form
+const verifyResult = await aquafier.verifyFormRevision(aquaTree, formData);
+console.log("Form valid:", verifyResult.isOk);
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h2 id="error-handling">Error Handling</h2>
+
+All methods return </code>Result<T, E><code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> type. Always check for errors:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">typescript
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  // Handle error
+  console.error("Failed to create genesis:");
+  result.data.forEach(log => {
+    console.error(</code>[${log.logType}] ${log.log}<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">);
+  });
+  return;
+}
+
+// Success
+const aquaTree = result.data.aquaTree;
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+---
+
+<h2 id="best-practices">Best Practices</h2>
+
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Always verify results</strong>: Check </code>isErr<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> before using data</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Store credentials securely</strong>: Never commit mnemonic/keys</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Use environment variables</strong>: Store sensitive data in </code>.env<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"></li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Validate inputs</strong>: Check file sizes and formats before processing</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Handle logs</strong>: Display or log all LogData for debugging</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Test on testnets</strong>: Use Sepolia/Holesky before mainnet</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Save AquaTrees</strong>: Persist JSON after each operation</li></ol>
+<ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><strong>Verify chains</strong>: Run verification after receiving AquaTrees</li></ol>
+
+---
+
+<h2 id="testing">Testing</h2>
+
+Create </code>credentials.json<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200"> for testing:
+
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">json
+{
+  "mnemonic": "your test mnemonic",
+  "nostr_sk": "your nostr secret key",
+  "did_key": "your did key",
+  "alchemy_key": "your alchemy api key",
+  "witness_eth_network": "sepolia",
+  "witness_method": "cli"
+}
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+Run tests:
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash
+npm test
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">
+
+Run specific test file:
+</code>`<code class="bg-gray-100 dark:bg-gray-800 rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-gray-900 dark:text-gray-200">bash
+npm test -- ./tests/aquafier.test.ts
+</code>``
+
+---
+
+<h2 id="see-also">See Also</h2>
+
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/previous_versions/version_3/introduction.html" class="font-medium text-primary hover:underline">Introduction</a> - Getting started</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/previous_versions/version_3/concepts.html" class="font-medium text-primary hover:underline">Concepts</a> - Core concepts</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="/previous_versions/version_3/schema.html" class="font-medium text-primary hover:underline">Schema Reference</a> - Revision specifications</li></ol></ul>
+<ul class="my-6 ml-6 list-disc [&>li]:mt-2 text-gray-700 dark:text-gray-300"><ol class="my-6 ml-6 list-decimal [&>li]:mt-2 text-gray-700 dark:text-gray-300"><li><a href="https://github.com/inblockio/aqua-verifier-js-lib" class="font-medium text-primary hover:underline">GitHub Repository</a> - Source code and examples</li></ol></ul>
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      
+      <aside class="toc-wrapper">
+        <div class="toc">
+          <div class="toc-title">On this page</div>
+          <a href="#installation" class="toc-link" style="">Installation</a>
+<a href="#core-api" class="toc-link" style="">Core API</a>
+<a href="#type-reference" class="toc-link" style="">Type Reference</a>
+<a href="#platform-specific-notes" class="toc-link" style="">Platform-Specific Notes</a>
+<a href="#complete-workflow-examples" class="toc-link" style="">Complete Workflow Examples</a>
+<a href="#error-handling" class="toc-link" style="">Error Handling</a>
+<a href="#best-practices" class="toc-link" style="">Best Practices</a>
+<a href="#testing" class="toc-link" style="">Testing</a>
+<a href="#see-also" class="toc-link" style="">See Also</a>
+<a href="#platform-specific-imports" class="toc-link" style="padding-left: 0.75rem;">Platform-Specific Imports</a>
+<a href="#aquafier-class" class="toc-link" style="padding-left: 0.75rem;">Aquafier Class</a>
+<a href="#creating-revisions" class="toc-link" style="padding-left: 0.75rem;">Creating Revisions</a>
+<a href="#signing-revisions" class="toc-link" style="padding-left: 0.75rem;">Signing Revisions</a>
+<a href="#witnessing-revisions" class="toc-link" style="padding-left: 0.75rem;">Witnessing Revisions</a>
+<a href="#linking-revisions" class="toc-link" style="padding-left: 0.75rem;">Linking Revisions</a>
+<a href="#verification" class="toc-link" style="padding-left: 0.75rem;">Verification</a>
+<a href="#utility-methods" class="toc-link" style="padding-left: 0.75rem;">Utility Methods</a>
+<a href="#core-types" class="toc-link" style="padding-left: 0.75rem;">Core Types</a>
+<a href="#result-type" class="toc-link" style="padding-left: 0.75rem;">Result Type</a>
+<a href="#configuration-types" class="toc-link" style="padding-left: 0.75rem;">Configuration Types</a>
+<a href="#node-js" class="toc-link" style="padding-left: 0.75rem;">Node.js</a>
+<a href="#web-browser" class="toc-link" style="padding-left: 0.75rem;">Web Browser</a>
+<a href="#react-native" class="toc-link" style="padding-left: 0.75rem;">React Native</a>
+<a href="#document-notarization" class="toc-link" style="padding-left: 0.75rem;">Document Notarization</a>
+<a href="#multi-party-approval" class="toc-link" style="padding-left: 0.75rem;">Multi-Party Approval</a>
+<a href="#form-submission-with-verification" class="toc-link" style="padding-left: 0.75rem;">Form Submission with Verification</a>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (mobileBtn && sidebar) {
+      mobileBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth < 769) {
+          if (!sidebar.contains(e.target) && !mobileBtn.contains(e.target)) {
+            sidebar.classList.remove('open');
+          }
+        }
+      });
+    }
+
+    // Sidebar tabs switching
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    sidebarTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        sidebarTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all sections
+        sidebarSections.forEach(section => section.style.display = 'none');
+        // Show corresponding section
+        if (sidebarSections[index]) {
+          sidebarSections[index].style.display = 'block';
+        }
+      });
+    });
+
+    // Collapsible sidebar groups
+    const groupToggles = document.querySelectorAll('.sidebar-group-toggle');
+    groupToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('collapsed');
+        const content = toggle.nextElementSibling;
+        if (content && content.classList.contains('sidebar-group-content')) {
+          content.classList.toggle('collapsed');
+        }
+      });
+    });
+
+    // Table of Contents - Active link highlighting
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const headings = document.querySelectorAll('.content h2, .content h3');
+
+    function updateActiveTOCLink() {
+      let current = '';
+      headings.forEach(heading => {
+        const rect = heading.getBoundingClientRect();
+        if (rect.top < 150) {
+          current = heading.id;
+        }
+      });
+
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    if (headings.length > 0) {
+      window.addEventListener('scroll', updateActiveTOCLink);
+      updateActiveTOCLink();
+    }
+
+    // Initialize - hide all sections except first
+    if (sidebarSections.length > 1) {
+      sidebarSections.forEach((section, index) => {
+        if (index !== 0) section.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>
