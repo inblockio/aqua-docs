@@ -1,0 +1,555 @@
+---
+title: 'Development Guide'
+description: 'Complete guide for developing with Aqua Protocol'
+icon: "code"
+---
+
+# Development Guide
+
+This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.
+
+<Callout type="info">
+**Prerequisites**: We recommend completing the [Quick Start Guide](/quickstart) before diving into development details.
+</Callout>
+
+## Choose Your SDK
+
+Aqua Protocol offers SDKs for different use cases:
+
+<CardGrid cols={2}>
+  <Card title="Rust SDK (v4)" icon="rust" href="/dev_tools/aqua_sdk">
+    **Beta** - Template system, WASM support, cross-platform
+
+    Best for: New projects, performance-critical applications
+  </Card>
+
+  <Card title="JavaScript SDK (v3)" icon="js" href="/previous_versions/version_3/tooling">
+    **Stable** - Production-ready, Node.js/Web/React Native
+
+    Best for: Web applications, existing JavaScript projects
+  </Card>
+
+  <Card title="CLI Tool (v4)" icon="terminal" href="/dev_tools/aqua_cli">
+    Command-line tool for quick operations
+
+    Best for: Testing, CI/CD, scripting
+  </Card>
+
+  <Card title="Aquafier API (v3)" icon="globe" href="/dev_tools/aquafier_api">
+    Web-based API for notarization
+
+    Best for: No-code integration, demos
+  </Card>
+</CardGrid>
+
+## Signing Methods
+
+Aqua Protocol supports multiple signature types for different use cases:
+
+| Method | Protocol Version | Use Case | Trust Model |
+|--------|-----------------|----------|-------------|
+| **DID (JWS)** | v3, v4 | Decentralized identities | W3C DID standard |
+| **Ethereum (EIP-191)** | v3, v4 | Blockchain-native apps | Ethereum addresses |
+| **RSA** | v4 only | Traditional PKI | Certificate authorities |
+| **P12 Certificates** | v3 only | Enterprise/legal docs | Certificate authorities |
+
+
+### Signing Setup Details
+
+<Accordion title="DID Signature (W3C Decentralized Identifiers)">
+**What you need**: A DID key pair
+
+**How to generate**:
+
+**Option 1: Using JavaScript**
+```bash
+npm install @digitalcredentials/did-method-key
+```
+
+```javascript
+import { Ed25519VerificationKey2020 } from '@digitalcredentials/ed25519-verification-key-2020';
+import { X25519KeyAgreementKey2020 } from '@digitalcredentials/x25519-key-agreement-key-2020';
+
+const keyPair = await Ed25519VerificationKey2020.generate();
+const did = `did:key:${keyPair.publicKeyMultibase}`;
+console.log('DID:', did);
+console.log('Private Key:', keyPair.privateKeyMultibase);
+```
+
+**Option 2: Online Generator**
+- Visit [EBSI DID Generator](https://hub.ebsi.eu/tools/did-generator)
+- Click "Generate Keys"
+- Save your DID and private key securely
+
+**Protocol Support**: v3, v4
+</Accordion>
+
+<Accordion title="Ethereum Signature (EIP-191)">
+**What you need**: Ethereum wallet with private key or mnemonic
+
+**Two supported methods**:
+
+**1. MetaMask Browser Extension** (Recommended for development)
+- Install [MetaMask](https://metamask.io/) in your browser
+- Create or import a wallet
+- The SDK will prompt for signature when needed
+
+**2. Mnemonic/Private Key in Credentials File**
+
+Create a `credentials.json` file:
+```json
+{
+  "mnemonic": "your twelve word mnemonic phrase here...",
+  "wallet_address": "0xYourEthereumAddress"
+}
+```
+
+Or with private key:
+```json
+{
+  "private_key": "0xYourPrivateKeyHex",
+  "wallet_address": "0xYourEthereumAddress"
+}
+```
+
+<Callout type="warning">
+**Security**: Never commit credentials.json to version control! Add it to `.gitignore`.
+</Callout>
+
+Check your SDK documentation ([Rust SDK](/dev_tools/aqua_sdk) | [JavaScript SDK](/previous_versions/version_3/tooling)) for how to pass credentials.
+
+**Protocol Support**: v3, v4
+</Accordion>
+
+<Accordion title="RSA Signature (v4 only)">
+**What you need**: RSA key pair (2048-bit or higher)
+
+**Generate RSA keys**:
+
+```bash
+# Generate private key (2048-bit)
+openssl genrsa -out private.pem 2048
+
+# Extract public key
+openssl rsa -in private.pem -pubout -out public.pem
+
+# View keys
+cat private.pem
+cat public.pem
+```
+
+**For production**: Use keys from your organization's PKI infrastructure or certificate authority.
+
+**Protocol Support**: v4 only
+</Accordion>
+
+<Accordion title="P12 Certificate Signature (v3 only)">
+**What you need**: PKCS#12 certificate file (.p12/.pfx) with password
+
+**For Development** (self-signed certificate):
+
+```bash
+# Generate private key
+openssl genrsa -out private.key 2048
+
+# Create certificate signing request
+openssl req -new -key private.key -out certificate.csr
+
+# For Windows/Git Bash, specify config:
+# openssl req -new -key private.key -out certificate.csr -config "C:\Program Files\Git\usr\ssl\openssl.cnf"
+
+# Generate self-signed certificate (valid for 365 days)
+openssl x509 -req -days 365 -in certificate.csr -signkey private.key -out certificate.crt
+
+# Create P12 file (you'll be prompted for export password)
+openssl pkcs12 -export -out certificate.p12 -inkey private.key -in certificate.crt
+```
+
+**Convert to Base64** (required for SDK):
+```bash
+# macOS/Linux
+base64 -i certificate.p12 -o certificate_base64.txt
+
+# Windows (PowerShell)
+[Convert]::ToBase64String([IO.File]::ReadAllBytes("certificate.p12")) | Out-File certificate_base64.txt
+
+# Linux alternative
+base64 certificate.p12 > certificate_base64.txt
+```
+
+**For Production** (trusted certificate):
+
+1. **Purchase from Certificate Authority**:
+   - DigiCert, Sectigo, GlobalSign, etc.
+   - Request "Code Signing" or "Document Signing" certificate
+   - They'll provide a .p12/.pfx file directly
+
+2. **If you receive separate files** (.crt + .key + intermediate):
+   ```bash
+   openssl pkcs12 -export -out certificate.p12 \
+       -inkey privatekey.key \
+       -in certificate.crt \
+       -certfile intermediate.crt
+   ```
+
+**Usage in SDK**:
+```json
+{
+  "p12_content": "base64_encoded_p12_content_here",
+  "p12_password": "your_export_password"
+}
+```
+
+**Protocol Support**: v3 only
+</Accordion>
+
+## Witnessing Methods
+
+Witnessing anchors your Aqua revisions to external timestamping services for provable timestamps:
+
+| Method | Networks | Cost | Verification |
+|--------|----------|------|--------------|
+| **Ethereum** | Mainnet, Sepolia, Holesky | Gas fees (testnet: free) | Blockchain explorer |
+| **TSA** | RFC 3161 services | Free (public TSAs) | TSA verification |
+| **Nostr** | Nostr relays | Free | Nostr event verification |
+
+### Witnessing Setup Details
+
+<Accordion title="TSA Witness (Time-Stamp Authority - RFC 3161)">
+**What you need**: A TSA service URL
+
+**Free Public TSA Services**:
+
+```bash
+# DigiCert
+http://timestamp.digicert.com
+
+# Sectigo (formerly Comodo)
+http://timestamp.sectigo.com
+http://timestamp.comodoca.com
+
+# GlobalSign
+http://timestamp.globalsign.com/scripts/timstamp.dll
+http://timestamp.globalsign.com/tsa/r6advanced1
+
+# Entrust
+http://timestamp.entrust.net/TSS/RFC3161sha2TS
+```
+
+**Usage**: Simply provide the TSA URL to your SDK when witnessing.
+
+**Benefits**:
+- No blockchain required
+- Widely accepted standard (RFC 3161)
+- Free for most public TSAs
+- Instant timestamps
+
+**Protocol Support**: v3, v4
+</Accordion>
+
+<Accordion title="Ethereum Witness">
+**What you need**:
+1. Ethereum wallet (MetaMask or mnemonic/private key)
+2. ETH for gas fees (mainnet) or testnet ETH (Sepolia/Holesky)
+3. Alchemy API key for witness verification
+
+**Networks Supported**:
+- **Mainnet**: Production use, requires real ETH for gas
+- **Sepolia**: Testnet, free test ETH from faucets
+- **Holesky**: Testnet, free test ETH from faucets
+
+**Wallet Setup** (same as signing):
+
+**Option 1: MetaMask**
+- Install [MetaMask](https://metamask.io/)
+- Ensure you're on the correct network (mainnet/sepolia/holesky)
+- Have sufficient ETH for gas fees
+
+**Option 2: Credentials File**
+```json
+{
+  "mnemonic": "your twelve word mnemonic phrase here...",
+  "wallet_address": "0xYourEthereumAddress"
+}
+```
+
+**Get Test ETH** (for testnets):
+- Sepolia: [sepoliafaucet.com](https://sepoliafaucet.com)
+- Holesky: [holesky-faucet.pk910.de](https://holesky-faucet.pk910.de)
+
+**Alchemy API Key** (for verification):
+1. Visit [alchemy.com](https://www.alchemy.com/)
+2. Create free account
+3. Create new app
+4. Copy API key
+5. [Detailed guide](https://www.alchemy.com/docs/how-to-create-access-keys)
+
+**Protocol Support**: v3, v4
+</Accordion>
+
+<Accordion title="Nostr Witness">
+**What you need**: Nostr secret key (nsec)
+
+**How to get a Nostr key**:
+
+**Option 1: Nostr Client App**
+1. Download a Nostr app:
+   - [Damus](https://damus.io/) (iOS)
+   - [Amethyst](https://github.com/vitorpamplona/amethyst) (Android)
+   - [Primal](https://primal.net/) (Web/Mobile)
+2. Create new account or log in
+3. App generates a key pair automatically
+4. Your secret key starts with `nsec1...`
+5. **Save it securely** - you'll need it for witnessing
+
+**Option 2: Web Generator**
+- Visit [nostr.com](https://nostr.com) or [nostrtool.com](https://nostrtool.com)
+- Click "Generate Keys"
+- Save your secret key (`nsec1...`)
+
+<Callout type="warning">
+**Security**: Your Nostr secret key is permanent. Anyone with it can post as you on Nostr relays. Keep it secure!
+</Callout>
+
+**Benefits**:
+- Fully decentralized (no blockchain fees)
+- Censorship-resistant
+- Fast propagation across relays
+- Free to use
+
+**Protocol Support**: v3, v4
+</Accordion>
+
+
+
+## JavaScript SDK Usage (v3)
+
+<Callout type="info">
+**Prerequisites**:
+- Node.js version 19 or higher
+- Install aqua-js-sdk: `npm install aqua-js-sdk`
+</Callout>
+
+### Complete Workflow Example
+
+Follow these steps to notarize a file, sign it, and witness it using the JavaScript SDK (v3):
+
+<Steps>
+<Step title="Create Genesis Revision">
+
+```typescript
+import Aquafier, { FileObject } from 'aqua-js-sdk';
+import { readFileSync } from 'fs';
+
+// Read file content
+const testFileContent = readFileSync("./test.txt", 'utf-8');
+
+// Create file object
+const aquaFileObject: FileObject = {
+    fileName: "test.txt",
+    fileContent: testFileContent,
+    path: "./test.txt"
+};
+
+// Initialize Aquafier
+const aquafier = new Aquafier();
+
+// Create genesis revision (notarize the file)
+const genesisResult = await aquafier.createGenesisRevision(aquaFileObject);
+
+if (genesisResult.isOk()) {
+    console.log("Genesis created successfully!");
+    console.log("Aqua Tree:", genesisResult.data.aquaTree);
+} else {
+    console.error("Error creating genesis:", genesisResult.error);
+}
+```
+</Step>
+
+<Step title="Sign the Aqua Tree">
+
+```typescript
+import { AquaTreeWrapper, CredentialsData } from 'aqua-js-sdk';
+
+// Prepare credentials (for MetaMask, can be empty object)
+const creds: CredentialsData = {};
+
+// Or for CLI signing with mnemonic:
+// const creds: CredentialsData = {
+//     mnemonic: "your twelve word mnemonic here",
+//     wallet_address: "0xYourAddress"
+// };
+
+// Create wrapper (empty string for revision means sign latest)
+const aquaWrapper: AquaTreeWrapper = {
+    aquaTree: genesisResult.data.aquaTree,
+    fileObject: aquaFileObject,
+    revision: ""  // Sign latest revision
+};
+
+// Sign with MetaMask (or use "cli", "did", "p12")
+const signedResult = await aquafier.signAquaTree(
+    aquaWrapper,
+    "metamask",  // Signature type
+    creds,
+    true         // Auto-increment
+);
+
+if (signedResult.isOk()) {
+    console.log("Signature added successfully!");
+} else {
+    console.error("Signing failed:", signedResult.error);
+}
+```
+</Step>
+
+<Step title="Witness on Blockchain">
+
+```typescript
+// Update wrapper with signed tree
+const witnessWrapper: AquaTreeWrapper = {
+    aquaTree: signedResult.data.aquaTree,
+    fileObject: aquaFileObject,
+    revision: ""  // Witness latest revision
+};
+
+// Witness on Ethereum Sepolia testnet
+const witnessResult = await aquafier.witnessAquaTree(
+    witnessWrapper,
+    "eth",        // Witness type (eth, tsa, or nostr)
+    "sepolia",    // Network (sepolia, mainnet, holesky)
+    "metamask",   // Signing method
+    creds,
+    true          // Auto-increment
+);
+
+if (witnessResult.isOk()) {
+    console.log("Witnessing successful!");
+    console.log("Transaction:", witnessResult.data.witness_transaction_hash);
+} else {
+    console.error("Witnessing failed:", witnessResult.error);
+}
+```
+</Step>
+
+<Step title="Verify the Aqua Tree">
+
+```typescript
+// Fetch aqua tree from storage, database, or state
+const aquaTree = witnessResult.data.aquaTree;
+
+// Prepare credentials for verification (needs Alchemy key for Ethereum witness)
+const verifyCreds: CredentialsData = {
+    alchemy_key: "your_alchemy_api_key"
+};
+
+// Verify the complete tree
+const verificationResult = await aquafier.verifyAquaTree(
+    aquaTree,
+    [aquaFileObject],  // Array of file objects
+    verifyCreds
+);
+
+if (verificationResult.isOk()) {
+    console.log("✓ Verification successful!");
+    console.log("Details:", JSON.stringify(verificationResult.data, null, 2));
+} else {
+    console.log("✗ Verification failed!");
+    console.log("Details:", JSON.stringify(verificationResult.data, null, 2));
+}
+```
+</Step>
+</Steps>
+
+### More Examples
+
+<CardGrid cols={2}>
+  <Card title="Complete Examples" icon="github" href="https://github.com/inblockio/aqua-js-sdk/tree/master/examples">
+    Browse full working examples in the repository
+  </Card>
+
+  <Card title="API Documentation" icon="book" href="/previous_versions/version_3/tooling">
+    Detailed API reference for JavaScript SDK
+  </Card>
+</CardGrid>
+
+## Rust SDK Usage (v4)
+
+<Callout type="info">
+**Prerequisites**:
+- Rust 1.70 or higher
+- Add to Cargo.toml: `aqua-rs-sdk = { git = "https://github.com/inblockio/aqua-verifier-rs" }`
+</Callout>
+
+### Quick Example
+
+```rust
+use aqua_rs_sdk::primitives::Method;
+use aqua_rs_sdk::schema::file_data::FileData;
+use aqua_rs_sdk::Aquafier;
+use std::path::PathBuf;
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    // Read file content
+    let filename = "test.txt".to_string();
+    let file_content = tokio::fs::read(&filename).await?;
+
+    // Create file data
+    let file_data = FileData::new(
+        filename.clone(),
+        file_content,
+        PathBuf::from(format!("./{}", filename)),
+    );
+
+    // Initialize Aquafier
+    let aquafier = Aquafier::new(None, None);
+
+    // Create genesis revision (notarize the file)
+    let result = aquafier.create_genesis_revision(file_data, Method::Scalar);
+
+    match result {
+        Ok(tree) => {
+            println!("✓ Aqua chain created successfully!");
+            println!("{}", serde_json::to_string_pretty(&tree)?);
+        }
+        Err(e) => {
+            eprintln!("Error: {:#?}", e);
+        }
+    }
+
+    Ok(())
+}
+```
+
+### More Resources
+
+<CardGrid cols={2}>
+  <Card title="Rust SDK Guide" icon="rust" href="/dev_tools/aqua_sdk">
+    Complete guide for the Rust SDK
+  </Card>
+
+  <Card title="Schema Reference" icon="book" href="/schema_reference/introduction">
+    v4 protocol specifications
+  </Card>
+</CardGrid>
+
+## Next Steps
+
+<CardGrid cols={2}>
+  <Card title="Use Cases" icon="lightbulb" href="/use_cases/introduction">
+    Explore real-world applications
+  </Card>
+
+  <Card title="Quick Start" icon="rocket" href="/quickstart">
+    Build your first Aqua application
+  </Card>
+
+  <Card title="Examples Repository" icon="code" href="https://github.com/inblockio/aqua-examples">
+    Browse complete examples
+  </Card>
+
+  <Card title="Get Support" icon="life-ring" href="mailto:info@inblock.io">
+    Need help? Contact our team
+  </Card>
+</CardGrid>

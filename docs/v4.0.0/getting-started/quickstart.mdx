@@ -1,0 +1,479 @@
+---
+title: "Quick Start"
+description: "Get started with Aqua Protocol in minutes"
+icon: "rocket"
+---
+
+
+
+This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.
+
+## Choose Your SDK
+
+<Tabs defaultValue="javascript-typescript--v3-">
+  <TabsList>
+    <TabsTrigger value="javascript-typescript--v3-">JavaScript/TypeScript (v3)</TabsTrigger>
+    <TabsTrigger value="rust--v4-">Rust (v4)</TabsTrigger>
+  </TabsList>
+  <TabsContent value="javascript-typescript--v3-">
+
+    **Stable** - Production-ready SDK for Node.js, Web, and React Native
+
+    Best for: Web applications, existing JavaScript projects
+  
+  </TabsContent>
+  <TabsContent value="rust--v4-">
+
+    **Beta** - Template system, WASM support, cross-platform
+
+    Best for: New projects, performance-critical applications
+  
+  </TabsContent>
+</Tabs>
+
+---
+
+## JavaScript/TypeScript Quick Start (v3)
+
+<Callout type="info">
+**Prerequisites**:
+- Node.js version 19 or higher
+- npm, yarn, or pnpm package manager
+</Callout>
+
+<Callout type="info">
+We recommend using TypeScript to enjoy type definitions and better development experience.
+</Callout>
+
+<Steps>
+  <Step title="Install the SDK">
+    Create a new project or add to an existing one:
+
+    ```bash
+    # Create new project (optional)
+    mkdir my-aqua-project
+    cd my-aqua-project
+    npm init -y
+
+    # Install Aqua SDK
+    npm install aqua-js-sdk
+
+    # For TypeScript projects, also install type support
+    npm install --save-dev typescript @types/node
+    ```
+  </Step>
+
+  <Step title="Create Your First Aqua Chain">
+    Create a file called `index.ts` (or `index.js`):
+
+    ```typescript
+    import Aquafier, { FileObject } from 'aqua-js-sdk';
+
+    async function main() {
+        // Initialize Aquafier
+        const aquafier = new Aquafier();
+
+        // Create a file object to notarize
+        const fileObject: FileObject = {
+            fileName: "hello.txt",
+            fileContent: "Hello, Aqua Protocol!",
+            path: "./hello.txt"
+        };
+
+        // Create genesis revision (notarize the file)
+        console.log("Creating Aqua chain...");
+        const result = await aquafier.createGenesisRevision(fileObject);
+
+        if (result.isOk()) {
+            console.log("✓ Success! Aqua chain created.");
+            console.log("Aqua Tree:", JSON.stringify(result.data.aquaTree, null, 2));
+
+            // The aquaTree contains your notarized file
+            const aquaTree = result.data.aquaTree;
+            console.log("\nYou can now:");
+            console.log("- Sign this chain");
+            console.log("- Witness it on blockchain");
+            console.log("- Verify it anytime");
+        } else {
+            console.error("✗ Error:", result.error);
+        }
+    }
+
+    main().catch(console.error);
+    ```
+  </Step>
+
+  <Step title="Run Your Code">
+    ```bash
+    # For TypeScript
+    npx tsx index.ts
+
+    # Or compile and run
+    npx tsc index.ts
+    node index.js
+
+    # For plain JavaScript
+    node index.js
+    ```
+
+    You should see output showing your Aqua chain was created successfully!
+  </Step>
+
+  <Step title="Next: Add a Signature (Optional)">
+    Extend your code to add a cryptographic signature:
+
+    ```typescript
+    // ... after creating genesis ...
+
+    if (result.isOk()) {
+        const aquaTree = result.data.aquaTree;
+
+        // Sign with MetaMask (will prompt in browser)
+        const wrapper = {
+            aquaTree: aquaTree,
+            fileObject: fileObject,
+            revision: ""
+        };
+
+        console.log("\nAdding signature...");
+        const signedResult = await aquafier.signAquaTree(
+            wrapper,
+            "metamask",  // or "cli", "did", "p12"
+            {},          // credentials
+            true         // auto-increment
+        );
+
+        if (signedResult.isOk()) {
+            console.log("✓ Signature added!");
+        }
+    }
+    ```
+  </Step>
+</Steps>
+
+---
+
+## Rust Quick Start (v4)
+
+<Callout type="info">
+**Prerequisites**:
+- Rust 1.70 or higher
+- Cargo package manager
+</Callout>
+
+<Steps>
+  <Step title="Create a New Project">
+    ```bash
+    # Create a new Rust binary project
+    cargo new my-aqua-project
+    cd my-aqua-project
+
+    # Or for a library
+    cargo new --lib my-aqua-lib
+    ```
+  </Step>
+
+  <Step title="Add Aqua SDK Dependency">
+    Add the Aqua SDK to your `Cargo.toml`:
+
+    ```toml
+    [dependencies]
+    aqua-rs-sdk = { git = "https://github.com/inblockio/aqua-verifier-rs" }
+    tokio = { version = "1", features = ["full"] }
+    serde_json = "1.0"
+    ```
+  </Step>
+
+  <Step title="Create Your First Aqua Chain">
+    Update `src/main.rs`:
+
+    ```rust
+    use aqua_rs_sdk::primitives::Method;
+    use aqua_rs_sdk::schema::file_data::FileData;
+    use aqua_rs_sdk::Aquafier;
+    use std::path::PathBuf;
+
+    #[tokio::main]
+    async fn main() -> Result<(), Box<dyn std::error::Error>> {
+        println!("Creating Aqua chain...");
+
+        // Read file content
+        let filename = "test.txt".to_string();
+        let file_content = tokio::fs::read(&filename).await?;
+
+        // Create file data
+        let file_data = FileData::new(
+            filename.clone(),
+            file_content,
+            PathBuf::from(format!("./{}", filename)),
+        );
+
+        // Initialize Aquafier
+        let aquafier = Aquafier::new(None, None);
+
+        // Create genesis revision (notarize the file)
+        let result = aquafier.create_genesis_revision(file_data, Method::Scalar);
+
+        match result {
+            Ok(tree) => {
+                println!("✓ Aqua chain created successfully!");
+                println!("{}", serde_json::to_string_pretty(&tree)?);
+
+                println!("\nYou can now:");
+                println!("- Add a signature revision");
+                println!("- Witness on blockchain");
+                println!("- Verify the chain");
+            }
+            Err(e) => {
+                eprintln!("Error: {:#?}", e);
+            }
+        }
+
+        Ok(())
+    }
+    ```
+  </Step>
+
+  <Step title="Build and Run">
+    ```bash
+    cargo build
+    cargo run
+    ```
+
+    You should see confirmation that your object revision was created!
+  </Step>
+</Steps>
+
+---
+
+## CLI Tool Quick Start
+
+<Callout type="info">
+**Prerequisites**:
+- Rust and Cargo installed
+</Callout>
+
+<Steps>
+  <Step title="Install the CLI">
+    ```bash
+    # Clone and build
+    git clone https://github.com/inblockio/aqua-cli-rs
+    cd aqua-cli-rs
+    cargo build --release
+
+    # The binary will be at target/release/aqua-cli
+    ```
+  </Step>
+
+  <Step title="Verify an Aqua Chain">
+    ```bash
+    ./target/release/aqua-cli verify --file chain.aqua.json
+    ```
+  </Step>
+
+  <Step title="Get Help">
+    ```bash
+    ./target/release/aqua-cli --help
+    ```
+  </Step>
+</Steps>
+
+See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
+
+---
+
+## Troubleshooting
+
+<Accordion type="single" collapsible>
+  <AccordionItem value="item-spc8a4fl5">
+    <AccordionTrigger>Node.js: Module not found error</AccordionTrigger>
+    <AccordionContent>
+
+    **Issue**: `Cannot find module 'aqua-js-sdk'`
+
+    **Solutions**:
+    1. Ensure you ran `npm install aqua-js-sdk`
+    2. Check you're in the correct directory with `package.json`
+    3. Try deleting `node_modules` and `package-lock.json`, then run `npm install` again
+    4. For TypeScript, ensure you have `@types/node` installed
+  
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-jj34kzxf3">
+    <AccordionTrigger>TypeScript: Type errors</AccordionTrigger>
+    <AccordionContent>
+
+    **Issue**: TypeScript compilation errors
+
+    **Solutions**:
+    1. Ensure you have TypeScript installed: `npm install --save-dev typescript`
+    2. Create or update `tsconfig.json`:
+       ```json
+       {
+         "compilerOptions": {
+           "target": "ES2020",
+           "module": "commonjs",
+           "esModuleInterop": true,
+           "strict": true
+         }
+       }
+       ```
+    3. Use `tsx` for direct TypeScript execution: `npm install --save-dev tsx`
+  
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-q3g20ipyn">
+    <AccordionTrigger>Rust: Compilation errors</AccordionTrigger>
+    <AccordionContent>
+
+    **Issue**: Build fails with dependency errors
+
+    **Solutions**:
+    1. Update Rust: `rustup update`
+    2. Clean and rebuild: `cargo clean && cargo build`
+    3. Check you're using Rust 1.70 or higher: `rustc --version`
+    4. Ensure your `Cargo.toml` has the correct repository URL
+  
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-dk5tfa9wb">
+    <AccordionTrigger>MetaMask: Not detecting in Node.js</AccordionTrigger>
+    <AccordionContent>
+
+    **Issue**: MetaMask signing doesn't work
+
+    **Solution**: MetaMask works in browser environments only. For Node.js:
+    - Use CLI signing with mnemonic in `credentials.json`
+    - Or use DID or P12 signing methods
+    - See [Development Guide](/development) for details
+  
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-2rsctjdsz">
+    <AccordionTrigger>Witnessing: Network errors</AccordionTrigger>
+    <AccordionContent>
+
+    **Issue**: Ethereum witness fails
+
+    **Solutions**:
+    1. Ensure you have ETH in your wallet (testnet ETH for Sepolia/Holesky)
+    2. Get testnet ETH from faucets:
+       - Sepolia: [sepoliafaucet.com](https://sepoliafaucet.com)
+       - Holesky: [holesky-faucet.pk910.de](https://holesky-faucet.pk910.de)
+    3. Check network connectivity
+    4. Verify your Alchemy API key is correct
+  
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
+
+
+---
+
+## What You've Learned
+
+Congratulations! You've created your first Aqua chain. Here's what you accomplished:
+
+✅ Installed an Aqua SDK (JavaScript or Rust)<br/>
+✅ Created a genesis revision (notarized data)<br/>
+✅ Understood the basic Aqua workflow<br/>
+✅ Ready to add signatures and witnesses<br/>
+
+## Next Steps
+
+Now that you have the basics, dive deeper into Aqua Protocol's features:
+
+<CardGrid cols={2}>
+  <Card title="Signing Revisions" icon="signature" href="/schema_reference/signing_revision">
+    Add cryptographic signatures with RSA, Ethereum, or DID methods
+  </Card>
+
+  <Card title="Witnessing" icon="clock" href="/schema_reference/witness_revision">
+    Anchor your chains to Ethereum, TSA, or Nostr for timestamps
+  </Card>
+
+  <Card title="Linking Chains" icon="link" href="/schema_reference/link_revision">
+    Connect multiple Aqua Trees to build complex provenance graphs
+  </Card>
+
+  <Card title="Using Templates" icon="table" href="/schema_reference/template_revision">
+    Define data schemas with JSON Schema validation (v4 only)
+  </Card>
+
+  <Card title="Development Guide" icon="code" href="/development">
+    Complete guide for signing methods, witnessing, and advanced usage
+  </Card>
+
+  <Card title="Schema Reference" icon="book" href="/schema_reference/introduction">
+    Detailed technical specifications for all revision types
+  </Card>
+
+  <Card title="Use Cases" icon="lightbulb" href="/use_cases/introduction">
+    Explore real-world applications and implementation patterns
+  </Card>
+
+  <Card title="Examples" icon="github" href="https://github.com/inblockio/aqua-examples">
+    Browse complete working examples in multiple languages
+  </Card>
+</CardGrid>
+
+## Complete Workflow Example
+
+Want to see the full workflow including signing and witnessing?
+
+<Tabs defaultValue="javascript">
+  <TabsList>
+    <TabsTrigger value="javascript">JavaScript</TabsTrigger>
+    <TabsTrigger value="rust">Rust</TabsTrigger>
+  </TabsList>
+  <TabsContent value="javascript">
+
+    Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
+  
+  </TabsContent>
+  <TabsContent value="rust">
+
+    Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
+  
+  </TabsContent>
+</Tabs>
+
+## Try Aquafier
+
+Not ready to code yet? Try our web-based demo:
+
+<CardGrid cols={2}>
+  <Card title="Aquafier Demo" icon="globe" href="https://aquafier.inblock.io">
+    Upload and notarize files through a web interface
+  </Card>
+
+  <Card title="Test Environment" icon="flask" href="https://dev.inblock.io">
+    Experiment safely in the development environment
+  </Card>
+</CardGrid>
+
+## Get Help
+
+<CardGrid cols={2}>
+  <Card title="GitHub Issues" icon="github" href="https://github.com/inblockio">
+    Report bugs or ask questions on GitHub
+  </Card>
+
+  <Card title="Email Support" icon="envelope" href="mailto:info@inblock.io">
+    Contact our team for assistance
+  </Card>
+
+  <Card title="Documentation" icon="book" href="/">
+    Browse comprehensive guides and references
+  </Card>
+
+  <Card title="Community" icon="users" href="https://github.com/inblockio/aqua-examples/discussions">
+    Join discussions with other developers
+  </Card>
+</CardGrid>
+
+---
+
+<Callout type="info">
+**Ready to build?** Start with the [Development Guide](/development) for detailed instructions on signing, witnessing, and advanced features.
+</Callout>

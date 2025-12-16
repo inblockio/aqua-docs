@@ -1,0 +1,441 @@
+---
+title: "Template Revision"
+description: "Schema specification for Template Revisions in Aqua Protocol v4"
+---
+
+# Template Revision
+
+A Template Revision defines the structure and validation rules for Object Revisions. Templates use JSON Schema to specify what data fields are required, their types, formats, and constraints. Template revisions are standalone (they don't have a `previous_revision` field) and are referenced by object revisions via their hash.
+
+## Overview
+
+Template revisions serve as the "type system" for Aqua Protocol. They:
+- Define schemas using JSON Schema (Draft 2020-12)
+- Are immutable once created (identified by their hash)
+- Can be reused by multiple object revisions
+- Optionally reference code implementations
+- Enable validation and type safety
+
+## Schema Structure
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `revision_type` | string | Yes | Always `"template"` for template revisions |
+| `nonce` | string | Yes | Random 16-byte hex string for uniqueness |
+| `local_timestamp` | number | Yes | Unix timestamp when the template was created |
+| `version` | string | Yes | Protocol version: `"https://aqua-protocol.org/docs/v4/schema"` |
+| `method` | string | Yes | Canonicalization method: `"scalar"` or `"tree"` (typically `"scalar"`) |
+| `hash_type` | string | Yes | Hash algorithm: `"FIPS_202-SHA3-256"` |
+| `schema` | object | Yes | JSON Schema (Draft 2020-12) that validates object payloads |
+| `code_revision_ref` | string | No | Optional hash reference to code that implements this template |
+
+### Field Details
+
+#### revision_type
+- **Value**: Always `"template"`
+- **Purpose**: Identifies this as a template revision
+- **Note**: Unlike object revisions, this is a string constant, not a hash reference
+
+#### schema
+- **Format**: Valid JSON Schema (Draft 2020-12 specification)
+- **Purpose**: Defines validation rules for object revision payloads
+- **Required fields in schema**:
+  - `$schema`: Should be `"https://json-schema.org/draft/2020-12/schema"`
+  - `type`: Typically `"object"`
+  - `properties`: Defines the payload structure
+  - `required`: Lists mandatory fields
+  - `additionalProperties`: Usually `false` for strict validation
+
+#### code_revision_ref
+- **Format**: Hex string reference to another revision (optional)
+- **Purpose**: Links to executable code or scripts that work with this template
+- **Use case**: For templates that need associated processing logic
+- **Example**: Reference to smart contract code, validation scripts, or transformation functions
+
+## Examples
+
+### Example 1: File Template
+
+A template for storing file metadata:
+
+```json
+{
+  "revision_type": "template",
+  "nonce": "0x2ba6a8b9b987cf8c3567f72871812ae9",
+  "local_timestamp": 1762266013,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "payload_type": {
+        "type": "string",
+        "maxLength": 128
+      },
+      "hash": {
+        "type": "string",
+        "pattern": "^0x[0-9a-f]{64,128}$"
+      },
+      "hash_type": {
+        "description": "Hash function identifier",
+        "anyOf": [
+          {
+            "type": "string",
+            "const": "FIPS_202-SHA3-256"
+          },
+          {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        ]
+      },
+      "descriptor": {
+        "type": "string",
+        "maxLength": 140
+      }
+    },
+    "required": [
+      "payload_type",
+      "hash",
+      "hash_type",
+      "descriptor"
+    ],
+    "additionalProperties": false
+  }
+}
+```
+
+**Hash of this template**: `0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e`
+
+This hash is what object revisions use in their `revision_type` field to reference this template.
+
+### Example 2: Domain Claim Template
+
+A template for domain ownership claims:
+
+```json
+{
+  "revision_type": "template",
+  "nonce": "0x0da37dc1685f4d78a87c9462b0e87685",
+  "local_timestamp": 1762817552,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "domain": {
+        "type": "string",
+        "format": "idn-hostname"
+      },
+      "wallet_address": {
+        "type": "string",
+        "pattern": "^0x[0-9a-fA-F]{40}$"
+      }
+    },
+    "required": [
+      "domain",
+      "wallet_address"
+    ],
+    "additionalProperties": false
+  }
+}
+```
+
+### Example 3: Email Claim Template
+
+A template for email verification claims:
+
+```json
+{
+  "revision_type": "template",
+  "nonce": "0x5c8f9a1b2d3e4f5a6b7c8d9e0f1a2b3c",
+  "local_timestamp": 1762820000,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "email": {
+        "type": "string",
+        "format": "email"
+      },
+      "wallet_address": {
+        "type": "string",
+        "pattern": "^0x[0-9a-fA-F]{40}$"
+      },
+      "verified_at": {
+        "type": "integer",
+        "description": "Unix timestamp of verification"
+      }
+    },
+    "required": [
+      "email",
+      "wallet_address"
+    ],
+    "additionalProperties": false
+  }
+}
+```
+
+### Example 4: Template with Code Reference
+
+A template that references associated code:
+
+```json
+{
+  "revision_type": "template",
+  "nonce": "0x7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "local_timestamp": 1762825000,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "calculation_type": {
+        "type": "string",
+        "enum": ["sum", "average", "weighted"]
+      },
+      "values": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        }
+      }
+    },
+    "required": ["calculation_type", "values"],
+    "additionalProperties": false
+  },
+  "code_revision_ref": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a"
+}
+```
+
+## Built-in Templates
+
+The Aqua RS SDK provides several built-in templates with pre-computed hashes:
+
+| Template | Purpose | Hash Reference |
+|----------|---------|----------------|
+| File | File metadata storage | `0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e` |
+| Domain | Domain ownership claims | (computed at runtime) |
+| Email | Email verification | (computed at runtime) |
+| Name | Name claims | (computed at runtime) |
+| Phone | Phone verification | (computed at runtime) |
+| Attestation | General attestations | (computed at runtime) |
+
+These templates are defined in the SDK at `src/schema/templates/` and can be used directly without creating new template revisions.
+
+## JSON Schema Features
+
+Template schemas support all JSON Schema Draft 2020-12 features:
+
+### Type Validation
+```json
+{
+  "type": "string"  // or "number", "integer", "boolean", "array", "object", "null"
+}
+```
+
+### Format Validation
+```json
+{
+  "type": "string",
+  "format": "email"  // or "date", "date-time", "uri", "hostname", etc.
+}
+```
+
+### Pattern Matching
+```json
+{
+  "type": "string",
+  "pattern": "^0x[0-9a-f]{40}$"
+}
+```
+
+### Length Constraints
+```json
+{
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 100
+}
+```
+
+### Numeric Constraints
+```json
+{
+  "type": "number",
+  "minimum": 0,
+  "maximum": 100,
+  "multipleOf": 0.01
+}
+```
+
+### Array Constraints
+```json
+{
+  "type": "array",
+  "items": { "type": "string" },
+  "minItems": 1,
+  "maxItems": 10,
+  "uniqueItems": true
+}
+```
+
+### Enumerations
+```json
+{
+  "type": "string",
+  "enum": ["option1", "option2", "option3"]
+}
+```
+
+### Conditional Schemas
+```json
+{
+  "anyOf": [
+    { "type": "string", "const": "FIPS_202-SHA3-256" },
+    { "type": "string", "minLength": 1 }
+  ]
+}
+```
+
+## Validation Rules
+
+A Template Revision is valid if:
+
+1. **Structure**: Contains all required fields with correct types
+2. **Revision Type**: The `revision_type` field is exactly `"template"`
+3. **Version**: Matches `"https://aqua-protocol.org/docs/v4/schema"`
+4. **Schema**: Is a valid JSON Schema (Draft 2020-12)
+5. **Schema Root**: The schema should define an object type at the root level
+6. **No Previous Revision**: Templates never have a `previous_revision` field
+7. **Code Reference**: If present, `code_revision_ref` must be a valid hash reference
+8. **Hash Verification**: The computed hash can be verified
+
+## Template Lifecycle
+
+### 1. Creation
+```
+Create JSON Schema � Generate Template Revision � Compute Hash
+```
+
+### 2. Publication
+```
+Template Hash � Used by Object Revisions � Enables Validation
+```
+
+### 3. Reuse
+```
+Multiple Objects � Reference Same Template � Consistent Validation
+```
+
+## Best Practices
+
+### 1. Use Descriptive Property Names
+```json
+{
+  "properties": {
+    "email_address": { "type": "string", "format": "email" },
+    "verified_at_timestamp": { "type": "integer" }
+  }
+}
+```
+
+### 2. Always Set additionalProperties
+```json
+{
+  "additionalProperties": false  // Strict validation
+}
+```
+
+### 3. Include Descriptions
+```json
+{
+  "properties": {
+    "status": {
+      "type": "string",
+      "description": "Current verification status: pending, verified, or rejected"
+    }
+  }
+}
+```
+
+### 4. Use Appropriate Constraints
+```json
+{
+  "email": {
+    "type": "string",
+    "format": "email",
+    "maxLength": 254  // RFC 5321 limit
+  }
+}
+```
+
+### 5. Plan for Forward Compatibility
+- Avoid overly restrictive patterns
+- Use `anyOf` for accepting multiple formats
+- Consider optional fields for future extensions
+
+## Relationship with Other Revisions
+
+- **Object Revisions**: Reference templates via their `revision_type` field
+- **Code Revisions**: Can be referenced via `code_revision_ref` (optional)
+- **No Chaining**: Templates don't form chains; they're standalone definitions
+
+## Implementation Notes
+
+### Creating a Template
+
+1. Design your JSON Schema based on your data requirements
+2. Validate the schema itself is valid JSON Schema
+3. Create the template revision structure
+4. Generate a random nonce
+5. Compute the template hash
+6. Store the hash for use in object revisions
+
+### Using a Template
+
+1. Reference the template hash in the object's `revision_type`
+2. Ensure payload conforms to the template schema
+3. Validate payload against schema before creating object revision
+
+### Template Validation
+
+When validating an object against a template:
+
+```
+1. Retrieve template by hash
+2. Extract JSON Schema from template
+3. Validate object payload against schema
+4. Check validation result
+```
+
+## Common Use Cases
+
+### Document Templates
+Define structure for document metadata, file hashes, and descriptors.
+
+### Credential Templates
+Specify required fields for verifiable credentials (email, domain, phone, etc.).
+
+### Data Exchange Templates
+Standardize data formats for interoperability between systems.
+
+### Smart Contract Templates
+Link templates to on-chain contract code for decentralized validation.
+
+## See Also
+
+- [Object Revision](/schema_reference/object_revision) - Use templates to validate objects
+- [JSON Schema Specification](https://json-schema.org/draft/2020-12/json-schema-core.html) - Full JSON Schema documentation
