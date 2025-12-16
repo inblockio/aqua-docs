@@ -36,13 +36,14 @@ This guide will get you up and running with Aqua Protocol quickly. You'll create
 ## JavaScript/TypeScript Quick Start (v3)
 
 <Callout type="info">
-**Prerequisites**:
-- Node.js version 19 or higher
-- npm, yarn, or pnpm package manager
+  ### Prerequisites
+  - Node.js version 19 or higher
+  - npm, yarn, or pnpm package manager
+
 </Callout>
 
 <Callout type="info">
-We recommend using TypeScript to enjoy type definitions and better development experience.
+  We recommend using TypeScript to enjoy type definitions and better development experience.
 </Callout>
 
 <Steps>
@@ -156,9 +157,9 @@ We recommend using TypeScript to enjoy type definitions and better development e
 ## Rust Quick Start (v4)
 
 <Callout type="info">
-**Prerequisites**:
-- Rust 1.70 or higher
-- Cargo package manager
+  ### Prerequisites
+  - Rust 1.70 or higher
+  - Cargo package manager
 </Callout>
 
 <Steps>
@@ -285,9 +286,7 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
 ## Troubleshooting
 
 <Accordion type="single" collapsible>
-  <AccordionItem value="item-spc8a4fl5">
-    <AccordionTrigger>Node.js: Module not found error</AccordionTrigger>
-    <AccordionContent>
+  <AccordionItem title="Node.js: Module not found error" defaultOpen>
 
     **Issue**: `Cannot find module 'aqua-js-sdk'`
 
@@ -297,11 +296,8 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
     3. Try deleting `node_modules` and `package-lock.json`, then run `npm install` again
     4. For TypeScript, ensure you have `@types/node` installed
   
-    </AccordionContent>
   </AccordionItem>
-  <AccordionItem value="item-jj34kzxf3">
-    <AccordionTrigger>TypeScript: Type errors</AccordionTrigger>
-    <AccordionContent>
+  <AccordionItem title="TypeScript: Type errors" defaultOpen>
 
     **Issue**: TypeScript compilation errors
 
@@ -320,11 +316,8 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
        ```
     3. Use `tsx` for direct TypeScript execution: `npm install --save-dev tsx`
   
-    </AccordionContent>
   </AccordionItem>
-  <AccordionItem value="item-q3g20ipyn">
-    <AccordionTrigger>Rust: Compilation errors</AccordionTrigger>
-    <AccordionContent>
+  <AccordionItem title="Rust: Compilation errors" defaultOpen>
 
     **Issue**: Build fails with dependency errors
 
@@ -334,11 +327,8 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
     3. Check you're using Rust 1.70 or higher: `rustc --version`
     4. Ensure your `Cargo.toml` has the correct repository URL
   
-    </AccordionContent>
   </AccordionItem>
-  <AccordionItem value="item-dk5tfa9wb">
-    <AccordionTrigger>MetaMask: Not detecting in Node.js</AccordionTrigger>
-    <AccordionContent>
+  <AccordionItem title="MetaMask: Not detecting in Node.js" defaultOpen>
 
     **Issue**: MetaMask signing doesn't work
 
@@ -347,11 +337,8 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
     - Or use DID or P12 signing methods
     - See [Development Guide](/development) for details
   
-    </AccordionContent>
   </AccordionItem>
-  <AccordionItem value="item-2rsctjdsz">
-    <AccordionTrigger>Witnessing: Network errors</AccordionTrigger>
-    <AccordionContent>
+  <AccordionItem title="Witnessing: Network errors" defaultOpen>
 
     **Issue**: Ethereum witness fails
 
@@ -363,7 +350,6 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
     3. Check network connectivity
     4. Verify your Alchemy API key is correct
   
-    </AccordionContent>
   </AccordionItem>
 </Accordion>
 
