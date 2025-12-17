@@ -1,0 +1,135 @@
+---
+title: "Version v4 (beta)"
+description: 'Concepts, protocol structure, and getting started with Aqua Protocol v4'
+sidebar_position: 4
+icon: git-commit-horizontal
+---
+
+# Aqua Protocol v4
+
+Aqua Protocol v4 is the latest version of the protocol, introducing significant improvements in structure, flexibility, and capabilities. This version is currently in beta.
+
+## Overview
+
+Aqua Protocol v4 provides a robust framework for creating cryptographically verifiable chains of revisions. Each revision in a chain can represent different types of operations, from storing data to signing, witnessing, and linking to other chains.
+
+## Core Concepts
+
+### Revisions
+
+A revision is the fundamental unit in Aqua Protocol. There are five types of revisions in v4:
+
+1. **Object Revision** - Stores data with an associated template
+2. **Template Revision** - Defines the schema for object revisions
+3. **Signature Revision** - Adds cryptographic signatures to verify authenticity
+4. **Witness Revision** - Provides timestamped proof of existence via blockchain
+5. **Link Revision** - Creates verifiable connections to other revision chains
+
+### Revision Chains
+
+Revisions form chains by referencing previous revisions through cryptographic hashes. The first revision in a chain is called the "genesis revision" and has no previous revision reference.
+
+### Methods
+
+Aqua Protocol v4 supports two canonicalization methods:
+
+- **scalar**: Direct JSON canonicalization (default for most use cases)
+- **tree**: Merkle tree-based canonicalization for large datasets
+
+### Hash Types
+
+Currently, v4 supports:
+- **FIPS_202-SHA3-256**: SHA-3 256-bit hashing algorithm
+
+## Common Fields
+
+All revision types share these common fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `version` | string | Protocol version URL: `https://aqua-protocol.org/docs/v4/schema` |
+| `revision_type` | string/RevisionLink | Type identifier for the revision |
+| `nonce` | string | Random 16-byte hex string (prefixed with `0x`) for uniqueness |
+| `local_timestamp` | number | Unix timestamp when the revision was created |
+| `method` | string | Canonicalization method: `"scalar"` or `"tree"` |
+| `hash_type` | string | Hashing algorithm: `"FIPS_202-SHA3-256"` |
+| `previous_revision` | string | Hash reference to the previous revision (optional for genesis) |
+
+## Schema Structure
+
+The v4 schema is designed to be:
+
+- **Extensible**: New revision types can be added without breaking existing chains
+- **Verifiable**: Every revision can be independently verified through hash computation
+- **Composable**: Chains can link to other chains, creating complex data structures
+- **Flexible**: Templates allow custom data structures while maintaining validation
+
+## Key Improvements from Previous Versions
+
+### 1. Unified Revision Structure
+All revision types follow a consistent structure with common fields, making implementation and validation simpler.
+
+### 2. Template-Based Validation
+Object revisions reference templates via hash, ensuring data conformity to predefined schemas.
+
+### 3. Multiple Signature Types
+Support for RSA, Ethereum (EIP-191), and DID-based signatures provides flexibility for different use cases.
+
+### 4. Enhanced Witnessing
+Improved witness structure with detailed transaction information and merkle proof support.
+
+### 5. Explicit Linking
+Link revisions create verifiable connections between separate revision chains.
+
+## Getting Started
+
+To understand the v4 schema in detail, visit the [Schema Reference](/schema_reference/introduction) section, where each revision type is documented with examples and field specifications.
+
+## Tooling
+
+### Aqua RS SDK
+
+The official Rust SDK for Aqua Protocol v4 provides:
+- Type-safe revision creation and validation
+- Cryptographic operations (signing, hashing)
+- Witnessing capabilities (Ethereum, Nostr, TSA)
+- WASM compilation for web applications
+
+**Repository**: [github.com/inblockio/aqua-rs-sdk](https://github.com/inblockio/aqua-rs-sdk)
+
+**Installation:**
+```bash
+# For Rust projects
+cargo add aqua-rs-sdk
+
+# For WASM builds
+wasm-pack build --target web --no-default-features --features wasm
+```
+
+### CLI Tools
+
+Command-line utilities built on the v4 SDK enable:
+- Creating and validating revision chains
+- Signing revisions with various methods
+- Witnessing to blockchain networks
+- Verifying complete chains
+
+## Use Cases
+
+Aqua Protocol v4 is designed for:
+
+- **Document Integrity**: Verifiable audit trails for documents and data
+- **Supply Chain**: Tracking provenance and authenticity
+- **Digital Identity**: Self-sovereign identity with verifiable credentials
+- **Notarization**: Timestamped proof of existence
+- **Data Provenance**: Complete history tracking with cryptographic guarantees
+- **Decentralized Attestations**: Peer-to-peer verification without central authorities
+
+## Next Steps
+
+- Explore the [Schema Reference](/schema_reference/introduction) to understand each revision type
+- Review example revision chains in the SDK repository
+- Try the CLI tools to create your first revision chain
+- Read about specific use cases and implementation patterns
+
+For questions or feedback about v4, please visit the [Aqua Protocol GitHub repository](https://github.com/inblockio).

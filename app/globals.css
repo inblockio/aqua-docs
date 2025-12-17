@@ -1,0 +1,409 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+@import "katex/dist/katex.min.css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.55 0.22 264.376);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  /* Updated dark theme to match Vercel/Mintlify documentation aesthetic */
+  --background: oklch(0.09 0 0);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.12 0 0);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.12 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.65 0.25 264.376);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.18 0 0);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.18 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.18 0 0);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.55 0.22 27.325);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.22 0 0);
+  --input: oklch(0.22 0 0);
+  --ring: oklch(0.65 0.25 264.376);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.09 0 0);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.65 0.25 264.376);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.18 0 0);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.22 0 0);
+  --sidebar-ring: oklch(0.65 0.25 264.376);
+
+  /* Added custom tokens for code blocks */
+  --code: oklch(0.75 0.15 264.376);
+  --code-bg: oklch(0.12 0 0);
+  --code-fg: oklch(0.92 0 0);
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Added code color tokens */
+  --color-code: var(--code);
+  --color-code-bg: var(--code-bg);
+  --color-code-fg: var(--code-fg);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Always reserve space for scrollbar to prevent layout shift */
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* Link styling - primary color, no underline until hover */
+  main .prose a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+  }
+
+  main .prose a:hover {
+    text-decoration: none !important;
+    color: var(--color-primary);
+  }
+
+  /* Prose links in documentation */
+  .prose a {
+    color: var(--color-primary);
+    text-decoration: none !important;
+    font-weight: 500;
+  }
+
+  .prose a:hover {
+    text-decoration: none !important;
+    color: var(--color-primary);
+  }
+
+  /* Sidebar links - no underline on hover */
+  aside a {
+    text-decoration: none;
+  }
+
+  aside a:hover {
+    text-decoration: none;
+  }
+
+  /* Card and ImageCard links - never underline */
+  .image-card-link,
+  .card-link {
+    text-decoration: none !important;
+  }
+
+  .image-card-link:hover,
+  .card-link:hover {
+    text-decoration: none !important;
+  }
+
+  .image-card-link *,
+  .card-link * {
+    text-decoration: none !important;
+  }
+
+  /* Custom scrollbar styling for body only */
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: oklch(0.12 0 0);
+    /* Darker background */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: oklch(0.25 0 0);
+    /* Darker thumb */
+    border-radius: 6px;
+    border: 2px solid oklch(0.12 0 0);
+    /* Match track for spacing */
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.35 0 0);
+    /* Lighter on hover */
+  }
+
+  /* Firefox scrollbar for body only */
+  body {
+    scrollbar-width: 6px;
+    scrollbar-color: oklch(0.25 0 0) oklch(0.12 0 0);
+  }
+
+  /* Sidebar scrollbar styling - thin and subtle */
+  aside::-webkit-scrollbar,
+  aside *::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  aside::-webkit-scrollbar-track,
+  aside *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  aside::-webkit-scrollbar-thumb,
+  aside *::-webkit-scrollbar-thumb {
+    background: oklch(0.7 0 0 / 0.3);
+    border-radius: 4px;
+  }
+
+  aside::-webkit-scrollbar-thumb:hover,
+  aside *::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.6 0 0 / 0.5);
+  }
+
+  /* Dark mode sidebar scrollbar */
+  .dark aside::-webkit-scrollbar-thumb,
+  .dark aside *::-webkit-scrollbar-thumb {
+    background: oklch(0.5 0 0 / 0.3);
+  }
+
+  .dark aside::-webkit-scrollbar-thumb:hover,
+  .dark aside *::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.6 0 0 / 0.5);
+  }
+
+  /* Firefox sidebar scrollbar */
+  aside,
+  aside * {
+    scrollbar-width: thin;
+    scrollbar-color: oklch(0.7 0 0 / 0.3) transparent;
+  }
+
+  .dark aside,
+  .dark aside * {
+    scrollbar-color: oklch(0.5 0 0 / 0.3) transparent;
+  }
+
+  /* Light mode syntax highlighting - VS Code Light+ theme */
+  .token-comment {
+    color: #008000;
+    font-style: italic;
+  }
+
+  .token-string {
+    color: #a31515;
+  }
+
+  .token-keyword {
+    color: #0000ff;
+    font-weight: 600;
+  }
+
+  .token-number {
+    color: #098658;
+  }
+
+  .token-function {
+    color: #795e26;
+  }
+
+  .token-operator {
+    color: #000000;
+  }
+
+  .token-property {
+    color: #001080;
+  }
+
+  .token-punctuation {
+    color: #000000;
+  }
+
+  .token-text {
+    color: #000000;
+  }
+
+  /* Dark mode syntax highlighting - VS Code Dark+ theme */
+  .dark .token-comment {
+    color: #6a9955;
+  }
+
+  .dark .token-string {
+    color: #ce9178;
+  }
+
+  .dark .token-keyword {
+    color: #569cd6;
+  }
+
+  .dark .token-number {
+    color: #b5cea8;
+  }
+
+  .dark .token-function {
+    color: #dcdcaa;
+  }
+
+  .dark .token-operator {
+    color: #d4d4d4;
+  }
+
+  .dark .token-property {
+    color: #9cdcfe;
+  }
+
+  .dark .token-punctuation {
+    color: #d4d4d4;
+  }
+
+  .dark .token-text {
+    color: #d4d4d4;
+  }
+}
+
+
+pre code {
+  background: none;
+  border: none;
+}
+
+/* Heading styles - lighter weight and reduced margins */
+.prose h1 {
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose h2 {
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose h3 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose h4 {
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose h5 {
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose h6 {
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph styles - reduced margins */
+.prose p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Prevent layout shift when dialog opens */
+/* html {
+  scrollbar-gutter: stable;
+} */
+
+
+html body[data-scroll-locked] {
+  overflow: visible !important;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}

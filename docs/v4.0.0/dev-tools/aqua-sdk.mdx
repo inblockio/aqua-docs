@@ -1,0 +1,110 @@
+---
+title: 'Aqua SDK'
+description: 'A library for use in a code base for  notarization and verification'
+icon: "code"
+---
+This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/quickstart)
+The Aqua SDK is a Rust library that provides the core functionality for creating, signing, witnessing, and verifying Aqua Protocol chains. It supports Aqua Protocol v4 and includes WebAssembly (WASM) bindings for cross-platform compatibility.
+
+## Features
+
+- **Create Aqua Chains**: Build revision chains with objects, templates, signatures, witnesses, and links
+- **Template System**: Define and validate structured data using JSON Schema
+- **Multiple Signature Methods**: Support for RSA, Ethereum EIP-191, and DID:JWS signatures
+- **Blockchain Witnessing**: Anchor revisions to Ethereum (mainnet, Sepolia, Holesky), Nostr, or TSA
+- **Chain Verification**: Cryptographically verify complete revision chains
+- **Cross-Platform**: WASM support enables use in web browsers, Node.js, and native applications
+
+## Installation
+
+Add the SDK to your Rust project:
+
+```toml cargo.toml
+[dependencies]
+aqua-rs-sdk = { git = "https://github.com/inblockio/aqua-verifier-rs" }
+```
+
+## Quick Example
+
+```rust main.rs
+    use aqua_rs_sdk::primitives::Method;
+    use aqua_rs_sdk::schema::file_data::FileData;
+    use aqua_rs_sdk::Aquafier;
+    use std::path::PathBuf;
+
+    #[tokio::main]
+    async fn main() -> Result<(), Box<dyn std::error::Error>> {
+        println!("Creating Aqua chain...");
+
+        // Read file content
+        let filename = "test.txt".to_string();
+        let file_content = tokio::fs::read(&filename).await?;
+
+        // Create file data
+        let file_data = FileData::new(
+            filename.clone(),
+            file_content,
+            PathBuf::from(format!("./{}", filename)),
+        );
+
+        // Initialize Aquafier
+        let aquafier = Aquafier::new(None, None);
+
+        // Create genesis revision (notarize the file)
+        let result = aquafier.create_genesis_revision(file_data, Method::Scalar);
+
+        match result {
+            Ok(tree) => {
+                println!("✓ Aqua chain created successfully!");
+                println!("{}", serde_json::to_string_pretty(&tree)?);
+
+                println!("\nYou can now:");
+                println!("- Add a signature revision");
+                println!("- Witness on blockchain");
+                println!("- Verify the chain");
+
+                // Sign the revision
+                // let signature = sign_revision(&object_revision, &signing_key)?;
+
+                // Witness on blockchain
+                // let witness = witness_revision(&signature, EthereumNetwork::Sepolia)?;
+
+                // Verify the complete chain
+                // let is_valid = verify_chain(&aqua_chain)?;
+
+            }
+            Err(e) => {
+                eprintln!("Error: {:#?}", e);
+            }
+        }
+
+        Ok(())
+    }
+
+
+```
+
+## Use Cases
+
+- **Application Integration**: Embed Aqua Protocol directly into your Rust applications
+- **Custom Tools**: Build specialized tools for specific workflows
+- **Smart Contracts**: Integrate with blockchain applications using WASM
+- **Web Applications**: Use WASM bindings to run in browsers
+- **Server Applications**: Build backend services with native Rust performance
+
+## Repository
+
+**GitHub**: [github.com/inblockio/aqua-verifier-rs](https://github.com/inblockio/aqua-rs-sdk)
+
+## Documentation
+
+For detailed API documentation, examples, and guides:
+- [Version 4 Introduction](/previous_versions/version_4/version_4)
+- [Schema Reference](/schema_reference/introduction)
+- [API Documentation](https://docs.rs/aqua-rs-sdk)
+
+## Version
+
+**Current Version**: 4.0.0 (Beta)
+
+The SDK implements Aqua Protocol v4 with the template system and enhanced revision types. For production-stable implementations, consider the [JavaScript SDK (v3)](/previous_versions/version_3/tooling).

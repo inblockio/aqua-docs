@@ -1,0 +1,123 @@
+---
+title: "Identity Attestation"
+description: "Establish trust with verifiable self-sovereign identity claims and attestations"
+---
+
+The Aqua Protocol enables a robust **Self-Sovereign Identity (SSI)** framework where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. By leveraging cryptographic proofs and decentralized trust chains, Aqua allows users to own their data while enabling third parties to verify specific attributes with certainty.
+
+## Core Capabilities
+
+### Self-Sovereign Identity (SSI)
+Users have full control over their identities. Identity claims are **self-issued** first, proving account ownership, and then enriched by **attestations** from trusted authorities. This ensures that the user is always the central point of their identity graph.
+
+### Verifiable Attestations
+Third parties (Trust Authorities) can sign attestations that validate a user's specific claims (e.g., "Over 18", "Accredited Investor", "University Graduate"). These attestations are cryptographically linked to the user's identity chain and the authority's trust chain.
+
+### Trust Chains
+Trust is transitive and transparent. A verifier doesn't just trust a claim; they verify the entire chain of authority. For example, a diploma is trusted because it's signed by a University, which is accredited by an Education Ministry, which is recognized by the Government.
+
+### Selective Disclosure & Privacy
+Users can share specific attestations (e.g., "I am over 21") without revealing their entire identity or unrelated personal data. Data Vaults protect sensitive claims, ensuring they are only decrypted for authorized verifiers.
+
+## Use Cases by Industry
+
+### Education & Academia
+
+**Digital Diplomas & Transcripts**
+- Universities issue tamper-proof degree certificates.
+- Students can instantly prove graduation to employers.
+- Prevents credential fraud and "diploma mills".
+- Enables portable academic records across institutions.
+
+**Professional Certifications**
+- Licensing boards attest to professional status (e.g., Medical License, Bar Association).
+- Real-time verification of valid/active status.
+- Automated expiry and renewal tracking.
+
+### Government & Legal
+
+**Digital ID & Passports**
+- Governments issue digital complements to physical IDs.
+- Citizens use digital wallets to prove citizenship or residency.
+- Streamlined visa and border entry processes.
+
+**Notary & Witnessing**
+- Notaries attest to the identity of a signer on a document.
+- Creates a cryptographic link between the person, the document, and the notary.
+- Replaces physical stamps with digital signatures.
+
+### Financial Services
+
+**KYC/AML Compliance**
+- Banks perform "Know Your Customer" checks once and issue a reusable attestation.
+- Users share this attestation with other services to onboard instantly without re-submitting documents.
+- Reduces compliance costs and friction.
+
+**Accredited Investor Status**
+- Financial institutions attest that a user meets investment criteria.
+- Allows participation in regulated private equity or tokens.
+
+### Digital Services & Web3
+
+**Sybil Resistance**
+- Verify that an account belongs to a unique human without collecting personal data.
+- "Proof of Humanity" or "Social Login" attestations.
+- Prevents bot spam and manipulation in DAOs and communities.
+
+**Reputation & Social Proof**
+- Platforms attest to a user's reputation score or history.
+- Enables portable reputation across different marketplaces and communities.
+
+## Key Benefits
+
+### User Privacy & Control
+Users store their own data in encrypted Data Vaults. They grant access only when necessary and can revoke it at any time. No centralized "honey pot" of user data to hack.
+
+### Fraud Reduction
+Cryptographic signatures make it impossible to forge attestations. 
+
+### Interoperability
+Built on standard cryptographic primitives, allowing identity claims to be used across different platforms, wallets, and services that support the Aqua Protocol.
+
+### Reduced Friction
+"Verify once, use everywhere." Users don't need to repeatedly upload passport photos or utility bills. One verified attestation can be reused across multiple services.
+
+## How It Works
+
+### 1. Claim Creation (Self-Issuance)
+The user creates a **Self-Issued Identity Claim**.
+- Example: "I claim my name is Alice."
+- This claim is signed by Alice's private key, establishing ownership of the claim.
+- It serves as the "subject" for future attestations.
+
+### 2. Attestation
+A **Trust Authority** (e.g., a University) verifies the claim off-chain (by checking real documents) and then issues an **Attestation**.
+- The Authority signs a statement referencing Alice's self-issued claim hash.
+- "I, University X, attest that the claim [Hash] by Alice is true."
+- This attestation is recorded in the Authority's Aqua chain.
+
+### 3. Verification & Trust Chains
+A relying party (e.g., an Employer) verifies the diploma.
+- They check Alice's claim.
+- They verify the University's signature on the attestation.
+- They verify the University's authority (e.g., by checking a "Ministry of Education" attestation on the University's identity).
+- If the chain of trust is valid, the diploma is accepted.
+
+
+## Real-World Scenario: The "Trust Chain"
+
+Consider verifying a **University Degree**:
+
+1.  **The Graduate (Alice)**: Creates a self-issued claim for her degree.
+2.  **The Professor**: Signs an attestation for Alice's grade/completion.
+3.  **The Department Head**: Attests to the Professor's employment.
+4.  **The University**: Attests to the Department Head's role.
+5.  **The Ministry of Education**: Attests to the University's accreditation.
+
+When an employer verifies Alice's degree, they trace this path back to a root of trust they recognize (e.g., the Ministry of Education), ensuring the credential is legitimate without needing to call the university.
+
+## See Also
+
+- [Document Verification](/use_cases/document-verification) - Verify the integrity of files and contracts.
+- [Supply Chain Tracking](/use_cases/supply-chain) - Trace provenance of physical goods.
+- [Aqua CLI](/dev_tools/aqua_cli) - Tools for issuing and verifying claims.

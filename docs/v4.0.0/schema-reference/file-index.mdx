@@ -1,0 +1,384 @@
+---
+title: "File Index"
+description: "Mapping content hashes to human-readable filenames"
+sidebar_position: 2
+---
+
+# File Index
+
+The **File Index** is a component of the Aqua Tree that maps content hashes to human-readable filenames. It provides context about what each hash represents, making Aqua Trees more understandable and navigable.
+
+## Purpose
+
+When content is hashed (documents, images, data files), the resulting hash is a cryptographic string that provides no information about the original content. The file index solves this by maintaining a mapping between:
+
+- **Content hashes**: SHA3-256 hashes of file content
+- **Filenames**: Human-readable names that describe the content
+
+This enables users and applications to understand what content each hash represents without needing to store or transmit the actual content.
+
+## Structure
+
+The file index is a simple key-value object:
+
+```json
+{
+  "file_index": {
+    "0xe1bcaa92b0ea2f0eb1f046ca4fc877f26726e5bec8b1a5cf25504a29bc4e0f28": "document.pdf",
+    "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08": "test.txt",
+    "0x3b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9": "image.png"
+  }
+}
+```
+
+### Field Format
+
+| Component | Description | Format |
+|-----------|-------------|--------|
+| **Key** | Content hash | Hex string prefixed with `0x`, typically 64 characters (SHA3-256) |
+| **Value** | Filename | String, typically includes file extension |
+
+## Hash Sources
+
+File index entries can reference hashes from several sources:
+
+### 1. Object Revision Payloads
+
+When an object revision contains content:
+
+```json
+{
+  "revisions": {
+    "0xrev_hash...": {
+      "payload": {
+        "hash": "0xe1bcaa92b0ea2f0eb1f046ca4fc877f26726e5bec8b1a5cf25504a29bc4e0f28",
+        "payload_type": "application/pdf",
+        "descriptor": "Contract Document"
+      }
+    }
+  },
+  "file_index": {
+    "0xe1bcaa92b0ea2f0eb1f046ca4fc877f26726e5bec8b1a5cf25504a29bc4e0f28": "contract.pdf"
+  }
+}
+```
+
+### 2. Linked External Trees
+
+When link revisions reference other Aqua Trees:
+
+```json
+{
+  "revisions": {
+    "0xlink_hash...": {
+      "revision_type": "0x1c3e5a7b9d2f4e6a8c0b1d3f5e7a9c2b4d6e8f0a1c3e5a7b9d2f4e6a8c0b1d3f",
+      "links": [
+        {
+          "verification_hash": "0xexternal_tree_hash...",
+          "content_hash": "0x3b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9"
+        }
+      ]
+    }
+  },
+  "file_index": {
+    "0x3b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9": "component_tree.aqua.json"
+  }
+}
+```
+
+### 3. Template Content
+
+When template revisions define schemas:
+
+```json
+{
+  "file_index": {
+    "0xtemplate_hash...": "user_credential_schema.json"
+  }
+}
+```
+
+## Complete Example
+
+Here's a complete Aqua Tree showing how file_index integrates:
+
+```json
+{
+  "revisions": {
+    "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e": {
+      "revision_type": "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e",
+      "nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+      "local_timestamp": 1704067200,
+      "version": "https://aqua-protocol.org/docs/v4/schema",
+      "method": "scalar",
+      "hash_type": "FIPS_202-SHA3-256",
+      "payload": {
+        "payload_type": "application/pdf",
+        "hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+        "hash_type": "FIPS_202-SHA3-256",
+        "descriptor": "Sales Contract"
+      }
+    },
+    "0xsig_hash...": {
+      "revision_type": "0x8e5b2f9c4d3a1e7b6c8f9d0e2a5b3c4d1e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b",
+      "previous_hash": "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e",
+      "signature_type": "eip191",
+      "signature": "0x...",
+      "wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+    }
+  },
+  "file_index": {
+    "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08": "sales_contract_2024.pdf"
+  }
+}
+```
+
+## Benefits
+
+### 1. Human Readability
+
+Users can understand what content is in the tree without decoding hashes:
+
+```json
+"file_index": {
+  "0xabc...": "proposal.docx",
+  "0xdef...": "budget.xlsx",
+  "0x123...": "diagram.png"
+}
+```
+
+Instead of just seeing cryptographic hashes, users see meaningful filenames.
+
+### 2. Content Discovery
+
+Applications can list available content:
+
+```typescript
+const filenames = Object.values(aquaTree.file_index);
+console.log("Available files:", filenames);
+// Output: ["proposal.docx", "budget.xlsx", "diagram.png"]
+```
+
+### 3. Reverse Lookup
+
+Find the hash for a known filename:
+
+```typescript
+function findHashByFilename(aquaTree, filename) {
+  return Object.entries(aquaTree.file_index)
+    .find(([_, name]) => name === filename)?.[0];
+}
+
+const hash = findHashByFilename(tree, "contract.pdf");
+```
+
+### 4. Linked Tree Context
+
+When trees link to external trees, the file index identifies them:
+
+```json
+"file_index": {
+  "0xhash1...": "main_document.pdf",
+  "0xhash2...": "appendix_a.aqua.json",  // External tree
+  "0xhash3...": "appendix_b.aqua.json"   // External tree
+}
+```
+
+## Best Practices
+
+### Descriptive Filenames
+
+Use clear, descriptive names with appropriate extensions:
+
+```json
+// Good
+"file_index": {
+  "0xabc...": "employment_contract_john_doe_2024.pdf",
+  "0xdef...": "diploma_computer_science_2024.pdf"
+}
+
+// Avoid
+"file_index": {
+  "0xabc...": "file1.dat",
+  "0xdef...": "doc.bin"
+}
+```
+
+### Include Extensions
+
+Always include file extensions to indicate content type:
+
+```json
+"file_index": {
+  "0xabc...": "document.pdf",      // PDF document
+  "0xdef...": "image.png",          // PNG image
+  "0x123...": "data.json",          // JSON data
+  "0x456...": "archive.zip",        // Compressed archive
+  "0x789...": "video.mp4"           // Video file
+}
+```
+
+### Unique Names
+
+Ensure filenames are unique within a tree to avoid ambiguity:
+
+```json
+// Good - unique names
+"file_index": {
+  "0xabc...": "contract_v1.pdf",
+  "0xdef...": "contract_v2.pdf"
+}
+
+// Avoid - duplicate names
+"file_index": {
+  "0xabc...": "contract.pdf",
+  "0xdef...": "contract.pdf"  // Ambiguous!
+}
+```
+
+### External Tree Naming
+
+For linked external trees, use the `.aqua.json` extension:
+
+```json
+"file_index": {
+  "0xhash...": "component_a.aqua.json",
+  "0xhash...": "dependency_b.aqua.json"
+}
+```
+
+## Optional Nature
+
+While the file index is a standard component of Aqua Trees, entries are **optional**:
+
+- Not all hashes need file index entries
+- The tree remains valid without file_index
+- Applications can function using hashes alone
+
+However, including file index entries significantly improves usability.
+
+## Validation
+
+The file index should be validated for:
+
+### 1. Hash Format
+
+All keys must be valid hex strings:
+
+```typescript
+function isValidHash(hash: string): boolean {
+  return /^0x[0-9a-fA-F]{64}$/.test(hash);
+}
+```
+
+### 2. Referenced Hashes
+
+Hashes in file_index should appear in revisions:
+
+```typescript
+function validateFileIndex(aquaTree) {
+  const referencedHashes = new Set();
+
+  // Collect all content hashes from revisions
+  Object.values(aquaTree.revisions).forEach(rev => {
+    if (rev.payload?.hash) {
+      referencedHashes.add(rev.payload.hash);
+    }
+    if (rev.links) {
+      rev.links.forEach(link => referencedHashes.add(link.content_hash));
+    }
+  });
+
+  // Check file_index entries
+  for (const hash of Object.keys(aquaTree.file_index)) {
+    if (!referencedHashes.has(hash)) {
+      console.warn(`Orphaned file_index entry: ${hash}`);
+    }
+  }
+}
+```
+
+### 3. Filename Validity
+
+Filenames should not contain invalid characters:
+
+```typescript
+function isValidFilename(filename: string): boolean {
+  // Avoid: null bytes, path separators, control characters
+  return !/[\x00\/\\]/.test(filename);
+}
+```
+
+## Use Cases
+
+### Document Management Systems
+
+Track document names across revisions:
+
+```json
+"file_index": {
+  "0xv1...": "proposal_draft_v1.docx",
+  "0xv2...": "proposal_draft_v2.docx",
+  "0xfinal...": "proposal_final.docx"
+}
+```
+
+### Multi-File Projects
+
+Reference multiple files in a project:
+
+```json
+"file_index": {
+  "0xreadme...": "README.md",
+  "0xcode...": "main.rs",
+  "0xconfig...": "config.toml",
+  "0xdocs...": "documentation.pdf"
+}
+```
+
+### Supply Chain Tracking
+
+Identify product-related documents:
+
+```json
+"file_index": {
+  "0xcert...": "organic_certification.pdf",
+  "0xinspect...": "quality_inspection_report.pdf",
+  "0xship...": "shipping_manifest.pdf"
+}
+```
+
+### Credential Systems
+
+Map credential hashes to recipient identifiers:
+
+```json
+"file_index": {
+  "0xdiploma...": "diploma_john_doe_2024.pdf",
+  "0xtranscript...": "transcript_john_doe_2024.pdf"
+}
+```
+
+## Storage Considerations
+
+### Size Impact
+
+Each file index entry adds approximately 100-150 bytes:
+- 64-character hash: ~66 bytes
+- Filename: 20-50 bytes typical
+- JSON overhead: ~20 bytes
+
+For large trees, this is minimal compared to revision data.
+
+### Compression
+
+File index compresses well with gzip due to repetitive patterns:
+- Hash prefixes (`0x`)
+- Common file extensions (`.pdf`, `.json`)
+
+## Related Documentation
+
+- [Aqua Tree](/schema_reference/aqua_tree) - Complete tree structure
+- [Object Revision](/schema_reference/object_revision) - Revisions containing content hashes
+- [Link Revision](/schema_reference/link_revision) - Linking to external trees
+- [Template Revision](/schema_reference/template_revision) - Schema definitions

@@ -1,0 +1,130 @@
+{
+  "$schema": "./lib/config.types.ts",
+  "site": {
+    "title": "Aqua Protocol Documentation",
+    "description": "Account & verify data in seconds using cryptographic proof",
+    "url": "https://docs.aquaprotocol.org",
+    "baseUrl": "/",
+    "language": "en",
+    "organizationName": "inblock.io",
+    "projectName": "aqua-protocol",
+    "activeVersion": "v4.0.0",
+    "logo": "/logo/aqua-logo.png",
+    "favicon": "/logo/aqua-logo.png"
+  },
+  "theme": {
+    "primaryColor": "#E55B1F",
+    "defaultMode": "system",
+    "respectPrefersColorScheme": true
+  },
+  "navigation": {
+    "showSidebar": true,
+    "collapsibleSidebar": true,
+    "showBreadcrumbs": true,
+    "showTableOfContents": true,
+    "tocPosition": "right",
+    "tocMaxDepth": 3
+  },
+  "social": {
+    "github": "https://github.com/inblockio",
+    "twitter": "https://x.com/inblockio",
+    "linkedin": "https://www.linkedin.com/company/inblock-io",
+    "custom": [
+      {
+        "label": "Aquafier",
+        "href": "https://dev.inblock.io/app"
+      }
+    ]
+  },
+  "search": {
+    "enabled": false,
+    "placeholder": "Search documentation...",
+    "provider": "meilisearch",
+    "meilisearch": {
+      "host": "http://localhost:7700",
+      "apiKey": "aSampleMasterKey",
+      "indexName": "aqua-docs"
+    }
+  },
+  "analytics": {
+    "googleAnalytics": "",
+    "plausible": ""
+  },
+  "footer": {
+    "copyright": "Copyright © 2024 inblock.io. All rights reserved.",
+    "links": [
+      {
+        "title": "Documentation",
+        "items": [
+          {
+            "label": "Getting Started",
+            "href": "/docs/v4.0.0/getting-started/quickstart"
+          },
+          {
+            "label": "Schema Reference",
+            "href": "/docs/v4.0.0/schema-reference/introduction"
+          },
+          {
+            "label": "Use Cases",
+            "href": "/docs/v4.0.0/use-cases/introduction"
+          }
+        ]
+      },
+      {
+        "title": "Community",
+        "items": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/inblockio"
+          },
+          {
+            "label": "Twitter",
+            "href": "https://x.com/inblockio"
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/inblock-io"
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "items": [
+          {
+            "label": "Aquafier",
+            "href": "https://aquafier.inblock.io"
+          },
+          {
+            "label": "Dev Environment",
+            "href": "https://dev.inblock.io"
+          },
+          {
+            "label": "Contact",
+            "href": "mailto:info@inblock.io"
+          }
+        ]
+      }
+    ]
+  },
+  "banner": {
+    "enabled": true,
+    "message": "🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.",
+    "type": "info",
+    "dismissible": true
+  },
+  "features": {
+    "editUrl": "https://github.com/inblockio/aqua-docs/edit/main/docs",
+    "showLastUpdated": true,
+    "showReadingTime": true,
+    "showAuthors": false,
+    "showTags": true,
+    "versioning": true,
+    "i18n": false
+  },
+  "env": {
+    "API_BASE_URL": "https://api.aquaprotocol.org",
+    "API_VERSION": "v4",
+    "AQUAFIER_URL": "https://aquafier.inblock.io",
+    "AQUAFIER_DEV_URL": "https://dev.inblock.io"
+  }
+}
