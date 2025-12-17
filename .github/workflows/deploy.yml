@@ -23,17 +23,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: 'yarn'
 
       - name: Install dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
 
       - name: Validate documentation structure
         run: |
@@ -47,7 +40,7 @@ jobs:
           echo "✓ Documentation structure validated"
 
       - name: Run linting
-        run: npm run lint
+        run: yarn lint
         continue-on-error: true
 
   deploy:
@@ -69,22 +62,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: 'yarn'
 
       - name: Install dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
 
       - name: Build Next.js documentation
         run: |
           echo "Building Next.js documentation..."
-          npm run build
+          yarn build
           echo "✓ Build completed"
         env:
           NODE_ENV: production
