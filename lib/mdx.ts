@@ -223,7 +223,8 @@ export async function getAllDocs(version = "v1.0.0"): Promise<Doc[]> {
             const categoryConfig = categoryConfigs.get(folderPath)
             if (categoryConfig) {
               doc.categoryLabel = categoryConfig.label
-              doc.categoryPosition = categoryConfig.position
+              // Use position if available, otherwise fall back to sidebar_position
+              doc.categoryPosition = categoryConfig.position ?? categoryConfig.sidebar_position
               doc.categoryCollapsible = categoryConfig.collapsible
               doc.categoryCollapsed = categoryConfig.collapsed
               doc.categoryIcon = categoryConfig.icon
@@ -279,6 +280,30 @@ function buildSidebarStructure(docs: Doc[]): {
   const rootGroups: Record<string, SidebarGroup> = {}
   const standalone: Doc[] = []
 
+  // First pass: collect category metadata from all docs to build complete folder structure
+  const categoryMetadata = new Map<string, {
+    label?: string
+    position?: number
+    icon?: string
+    collapsible?: boolean
+    collapsed?: boolean
+  }>()
+
+  docs.forEach((doc) => {
+    const pathParts = doc.filePath.split("/")
+    const folderPath = pathParts.length > 1 ? pathParts.slice(0, -1).join("/") : ""
+
+    if (folderPath && doc.categoryLabel) {
+      categoryMetadata.set(folderPath, {
+        label: doc.categoryLabel,
+        position: doc.categoryPosition,
+        icon: doc.categoryIcon,
+        collapsible: doc.categoryCollapsible,
+        collapsed: doc.categoryCollapsed
+      })
+    }
+  })
+
   docs.forEach((doc) => {
     const pathParts = doc.filePath.split("/")
     const isIndexFile = doc.filePath.endsWith("/index") ||
@@ -301,7 +326,8 @@ function buildSidebarStructure(docs: Doc[]): {
         }
       }
       if (isIndexFile) {
-        rootGroups[groupName].position = doc.meta.sidebar_position ?? 999
+        // Use categoryPosition if available (from _category_.json), otherwise sidebar_position from frontmatter
+        rootGroups[groupName].position = doc.categoryPosition ?? doc.meta.sidebar_position ?? 999
         rootGroups[groupName].icon = doc.categoryIcon
       } else {
         rootGroups[groupName].items.push(doc)
@@ -319,27 +345,37 @@ function buildSidebarStructure(docs: Doc[]): {
         currentPath = currentPath ? `${currentPath}/${folder}` : folder
         const folderLabel = folder.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
 
+        // Get metadata for this specific folder path
+        const metadata = categoryMetadata.get(currentPath)
+
         if (!currentLevel[folder]) {
           currentLevel[folder] = {
-            label: doc.categoryLabel && i === folderParts.length - 1 ? doc.categoryLabel : folderLabel,
+            label: metadata?.label ?? folderLabel,
             path: currentPath,
-            icon: doc.categoryIcon,
+            icon: metadata?.icon,
             items: [],
-            position: doc.categoryPosition ?? 999,
-            collapsible: doc.categoryCollapsible ?? true,
-            defaultCollapsed: doc.categoryCollapsed ?? false,
+            position: metadata?.position ?? 999,
+            collapsible: metadata?.collapsible ?? true,
+            defaultCollapsed: metadata?.collapsed ?? false,
             children: {}
           }
         }
 
         if (i === folderParts.length - 1) {
           if (isIndexFile) {
-            currentLevel[folder].position = doc.categoryPosition ?? doc.meta.sidebar_position ?? 999
+            // Update position, label, and icon if this is the index file for this folder
+            currentLevel[folder].position = doc.categoryPosition ?? doc.meta.sidebar_position ?? currentLevel[folder].position
             if (doc.categoryLabel) {
               currentLevel[folder].label = doc.categoryLabel
             }
             if (doc.categoryIcon) {
               currentLevel[folder].icon = doc.categoryIcon
+            }
+            if (doc.categoryCollapsible !== undefined) {
+              currentLevel[folder].collapsible = doc.categoryCollapsible
+            }
+            if (doc.categoryCollapsed !== undefined) {
+              currentLevel[folder].defaultCollapsed = doc.categoryCollapsed
             }
           } else {
             currentLevel[folder].items.push(doc)

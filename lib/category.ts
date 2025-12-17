@@ -4,6 +4,7 @@ import path from "path"
 export interface CategoryConfig {
   label?: string
   position?: number
+  sidebar_position?: number  // Alternative naming for position
   link?: {
     type: "generated-index" | "doc"
     slug?: string
