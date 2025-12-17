@@ -1,10 +1,17 @@
 import { redirect } from "next/navigation"
-import { getAllDocs } from "@/lib/mdx"
+import { getAllDocs, getVersions } from "@/lib/mdx"
 
 interface PageProps {
   params: Promise<{
     version: string
   }>
+}
+
+export async function generateStaticParams() {
+  const versions = getVersions()
+  return versions.map((version) => ({
+    version,
+  }))
 }
 
 export default async function VersionIndexPage({ params }: PageProps) {

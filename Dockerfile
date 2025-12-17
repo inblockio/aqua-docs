@@ -4,14 +4,17 @@ FROM node:20-alpine
 # Set working directory
 WORKDIR /app
 
-# Install Mintlify CLI globally
-RUN npm install -g mintlify@latest
+# Copy package files
+COPY package*.json ./
 
-# Copy the documentation files
+# Install dependencies
+RUN npm ci
+
+# Copy the rest of the application
 COPY . .
 
-# Expose the default Mintlify dev server port
-EXPOSE 3050
+# Expose the Next.js dev server port
+EXPOSE 3000
 
-# Run mint dev with host 0.0.0.0 to allow external connections
-CMD ["mintlify", "dev", "--host", "0.0.0.0", "--port", "3050"]
+# Run Next.js dev server
+CMD ["npm", "run", "dev"]

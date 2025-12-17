@@ -1,22 +1,25 @@
 version: '3.8'
 
 services:
-  mintlify-docs:
+  aqua-docs:
     build: .
     container_name: aqua-docs
     ports:
-      - "3050:3050"
+      - "3000:3000"
     volumes:
       # Mount the current directory to enable live reloading
       - .:/app
       # Exclude node_modules to avoid conflicts
       - /app/node_modules
+      # Exclude .next to avoid conflicts
+      - /app/.next
     restart: unless-stopped
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
+      - WATCHPACK_POLLING=true  # Enable polling for file changes in Docker
     # Optional: Add healthcheck
     healthcheck:
-      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3050"]
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000"]
       interval: 30s
       timeout: 10s
       retries: 3
