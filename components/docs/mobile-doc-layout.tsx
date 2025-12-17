@@ -80,7 +80,7 @@ export function MobileDocLayout({ header, sidebar, content, toc, config }: Mobil
               {/* Content */}
               {content}
 
-              
+
             </div>
           </div>
 
@@ -88,13 +88,13 @@ export function MobileDocLayout({ header, sidebar, content, toc, config }: Mobil
           {toc}
         </div>
 
-         {/* Footer */}
-              <Footer />
+        {/* Footer */}
+        <Footer />
 
       </main>
 
 
-     
+
     </div>
   )
 }

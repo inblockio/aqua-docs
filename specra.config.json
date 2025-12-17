@@ -37,7 +37,7 @@
     ]
   },
   "search": {
-    "enabled": true,
+    "enabled": false,
     "placeholder": "Search documentation...",
     "provider": "meilisearch",
     "meilisearch": {

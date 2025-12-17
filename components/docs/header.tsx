@@ -54,7 +54,7 @@ export function Header({ currentVersion, versions, onMenuClick, config }: Header
                 </span>
               </div>
             )}
-            {/* <span className="font-semibold text-lg text-foreground">{config.site.title}</span> */}
+            <span className="font-semibold text-lg text-foreground">Aqua Protocol</span>
           </Link>
         </div>
 
