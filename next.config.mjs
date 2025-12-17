@@ -19,8 +19,8 @@ const isProd = process.env.NODE_ENV === 'production'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: isProd ? "export" : "standalone", // Exporting to static html
-  basePath: isProd ? "/mint-test" : "",
-  assetPrefix: isProd ? "/mint-test/" : "",
+  // basePath: isProd ? "/mint-test" : "",
+  // assetPrefix: isProd ? "/mint-test/" : "",
   typescript: {
     ignoreBuildErrors: true,
   },

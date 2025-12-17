@@ -23,5 +23,6 @@ export function getAssetPath(path: string) {
   }
   
   // In development or no basePath, just add leading slash
-  return `/${normalizedPath}`;
+  // return `/${normalizedPath}`;
+  return path
 }
