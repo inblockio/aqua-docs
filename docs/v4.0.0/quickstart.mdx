@@ -2,6 +2,7 @@
 title: "Quick Start"
 description: "Get started with Aqua Protocol in minutes"
 icon: "rocket"
+sidebar_position: 2
 ---
 
 
@@ -30,11 +31,11 @@ This guide will get you up and running with Aqua Protocol quickly. You'll create
 
 ## JavaScript/TypeScript Quick Start (v3)
 
-<Info>
+<Callout type="info">
 **Prerequisites**:
 - Node.js version 19 or higher
 - npm, yarn, or pnpm package manager
-</Info>
+</Callout >
 
 <Note>
 We recommend using TypeScript to enjoy type definitions and better development experience.
@@ -150,11 +151,11 @@ We recommend using TypeScript to enjoy type definitions and better development e
 
 ## Rust Quick Start (v4)
 
-<Info>
+<Callout type="info">
 **Prerequisites**:
 - Rust 1.70 or higher
 - Cargo package manager
-</Info>
+</Callout>
 
 <Steps>
   <Step title="Create a New Project">
@@ -243,10 +244,10 @@ We recommend using TypeScript to enjoy type definitions and better development e
 
 ## CLI Tool Quick Start
 
-<Info>
+<Callout type="info">
 **Prerequisites**:
 - Rust and Cargo installed
-</Info>
+</Callout>
 
 <Steps>
   <Step title="Install the CLI">
@@ -279,8 +280,8 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
 
 ## Troubleshooting
 
-<AccordionGroup>
-  <Accordion title="Node.js: Module not found error">
+<Accordion Group>
+  <AccordionItem  title="Node.js: Module not found error">
     **Issue**: `Cannot find module 'aqua-js-sdk'`
 
     **Solutions**:
@@ -288,9 +289,9 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
     2. Check you're in the correct directory with `package.json`
     3. Try deleting `node_modules` and `package-lock.json`, then run `npm install` again
     4. For TypeScript, ensure you have `@types/node` installed
-  </Accordion>
+  </AccordionItem >
 
-  <Accordion title="TypeScript: Type errors">
+  <AccordionItem  title="TypeScript: Type errors">
     **Issue**: TypeScript compilation errors
 
     **Solutions**:
@@ -307,9 +308,9 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
        }
        ```
     3. Use `tsx` for direct TypeScript execution: `npm install --save-dev tsx`
-  </Accordion>
+  </AccordionItem >
 
-  <Accordion title="Rust: Compilation errors">
+  <AccordionItem  title="Rust: Compilation errors">
     **Issue**: Build fails with dependency errors
 
     **Solutions**:
@@ -317,18 +318,18 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
     2. Clean and rebuild: `cargo clean && cargo build`
     3. Check you're using Rust 1.70 or higher: `rustc --version`
     4. Ensure your `Cargo.toml` has the correct repository URL
-  </Accordion>
+  </AccordionItem >
 
-  <Accordion title="MetaMask: Not detecting in Node.js">
+  <AccordionItem  title="MetaMask: Not detecting in Node.js">
     **Issue**: MetaMask signing doesn't work
 
     **Solution**: MetaMask works in browser environments only. For Node.js:
     - Use CLI signing with mnemonic in `credentials.json`
     - Or use DID or P12 signing methods
     - See [Development Guide](/development) for details
-  </Accordion>
+  </AccordionItem >
 
-  <Accordion title="Witnessing: Network errors">
+  <AccordionItem  title="Witnessing: Network errors">
     **Issue**: Ethereum witness fails
 
     **Solutions**:
@@ -338,8 +339,8 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
        - Holesky: [holesky-faucet.pk910.de](https://holesky-faucet.pk910.de)
     3. Check network connectivity
     4. Verify your Alchemy API key is correct
-  </Accordion>
-</AccordionGroup>
+  </AccordionItem >
+</Accordion>
 
 
 ---
@@ -357,7 +358,7 @@ Congratulations! You've created your first Aqua chain. Here's what you accomplis
 
 Now that you have the basics, dive deeper into Aqua Protocol's features:
 
-<CardGroup cols={2}>
+<CardGrid  cols={2}>
   <Card title="Signing Revisions" icon="signature" href="/schema_reference/signing_revision">
     Add cryptographic signatures with RSA, Ethereum, or DID methods
   </Card>
@@ -389,7 +390,7 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
   <Card title="Examples" icon="github" href="https://github.com/inblockio/aqua-examples">
     Browse complete working examples in multiple languages
   </Card>
-</CardGroup>
+</CardGrid >
 
 ## Complete Workflow Example
 
@@ -409,7 +410,7 @@ Want to see the full workflow including signing and witnessing?
 
 Not ready to code yet? Try our web-based demo:
 
-<CardGroup cols={2}>
+<CardGrid  cols={2}>
   <Card title="Aquafier Demo" icon="globe" href="https://aquafier.inblock.io">
     Upload and notarize files through a web interface
   </Card>
@@ -417,11 +418,11 @@ Not ready to code yet? Try our web-based demo:
   <Card title="Test Environment" icon="flask" href="https://dev.inblock.io">
     Experiment safely in the development environment
   </Card>
-</CardGroup>
+</CardGrid >
 
 ## Get Help
 
-<CardGroup cols={2}>
+<CardGrid  cols={2}>
   <Card title="GitHub Issues" icon="github" href="https://github.com/inblockio">
     Report bugs or ask questions on GitHub
   </Card>
@@ -437,10 +438,10 @@ Not ready to code yet? Try our web-based demo:
   <Card title="Community" icon="users" href="https://github.com/inblockio/aqua-examples/discussions">
     Join discussions with other developers
   </Card>
-</CardGroup>
+</CardGrid >
 
 ---
 
-<Note>
+<Callout type="note" >
 **Ready to build?** Start with the [Development Guide](/development) for detailed instructions on signing, witnessing, and advanced features.
-</Note>
+</Callout  >

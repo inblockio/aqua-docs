@@ -10,7 +10,7 @@
     "projectName": "aqua-protocol",
     "activeVersion": "v4.0.0",
     "logo": "/logo/aqua-logo.png",
-    "favicon": "/favicon.svg"
+    "favicon": "/logo/aqua-logo.png"
   },
   "theme": {
     "primaryColor": "#E55B1F",
