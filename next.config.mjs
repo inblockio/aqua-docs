@@ -18,6 +18,7 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // Exporting to static html
   typescript: {
     ignoreBuildErrors: true,
   },

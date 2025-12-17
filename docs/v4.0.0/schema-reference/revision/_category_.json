@@ -1,7 +1,6 @@
 {
   "label": "Revision Types",
-  "position": 3,
+  "sidebar_position": 4,
   "collapsible": true,
-  "collapsed": false,
-  "icon": "folder"
+  "collapsed": true
 }

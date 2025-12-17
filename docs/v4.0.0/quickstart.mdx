@@ -1,30 +1,29 @@
 ---
 title: "Quick Start"
-description: "Get started with Aqua Protocol in minutes"
+description: "This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain."
 icon: "rocket"
 sidebar_position: 2
 ---
 
-
-
-This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.
-
 ## Choose Your SDK
 
-<Tabs>
-  <Tab title="JavaScript/TypeScript (v3)">
+<Tabs defaultValue="js">
+  <TabsList>
+      <TabsTrigger value="js">JavaScript/TypeScript (v3)</TabsTrigger>
+      <TabsTrigger value="rust">Rust (V4)</TabsTrigger>
+  </TabsList>
+
+  <TabsContent value="js">
     **Stable** - Production-ready SDK for Node.js, Web, and React Native
 
     Best for: Web applications, existing JavaScript projects
-  </Tab>
+  </TabsContent>
 
-  <Tab title="Rust (v4)">
+  <TabsContent value="rust">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
-  </Tab>
-
-  
+  </TabsContent>
 </Tabs>
 
 ---
@@ -32,14 +31,14 @@ This guide will get you up and running with Aqua Protocol quickly. You'll create
 ## JavaScript/TypeScript Quick Start (v3)
 
 <Callout type="info">
-**Prerequisites**:
+### Prerequisites
 - Node.js version 19 or higher
 - npm, yarn, or pnpm package manager
 </Callout >
 
-<Note>
+<Callout type="note">
 We recommend using TypeScript to enjoy type definitions and better development experience.
-</Note>
+</Callout>
 
 <Steps>
   <Step title="Install the SDK">
@@ -152,9 +151,11 @@ We recommend using TypeScript to enjoy type definitions and better development e
 ## Rust Quick Start (v4)
 
 <Callout type="info">
-**Prerequisites**:
+
+### Prerequisites
 - Rust 1.70 or higher
 - Cargo package manager
+
 </Callout>
 
 <Steps>
@@ -245,7 +246,7 @@ We recommend using TypeScript to enjoy type definitions and better development e
 ## CLI Tool Quick Start
 
 <Callout type="info">
-**Prerequisites**:
+### Prerequisites
 - Rust and Cargo installed
 </Callout>
 
@@ -396,14 +397,19 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
 
 Want to see the full workflow including signing and witnessing?
 
-<Tabs>
-  <Tab title="JavaScript">
-    Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
-  </Tab>
+<Tabs defaultValue="js">
+  <TabsList>
+    <TabsTrigger value="js">Javascript</TabsTrigger>
+    <TabsTrigger value="rust">Rust</TabsTrigger>
+  </TabsList>
 
-  <Tab title="Rust">
+  <TabsContent value="js">
+    Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
+  </TabsContent>
+
+  <TabsContent value="rust">
     Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
-  </Tab>
+  </TabsContent>
 </Tabs>
 
 ## Try Aquafier
@@ -415,7 +421,7 @@ Not ready to code yet? Try our web-based demo:
     Upload and notarize files through a web interface
   </Card>
 
-  <Card title="Test Environment" icon="flask" href="https://dev.inblock.io">
+  <Card title="Test Environment" icon="bug-off" href="https://dev.inblock.io">
     Experiment safely in the development environment
   </Card>
 </CardGrid >
@@ -427,7 +433,7 @@ Not ready to code yet? Try our web-based demo:
     Report bugs or ask questions on GitHub
   </Card>
 
-  <Card title="Email Support" icon="envelope" href="mailto:info@inblock.io">
+  <Card title="Email Support" icon="mail" href="mailto:info@inblock.io">
     Contact our team for assistance
   </Card>
 

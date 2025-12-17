@@ -1,15 +1,12 @@
 ---
 title: 'Development Guide'
-description: 'Complete guide for developing with Aqua Protocol'
+description: "This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage."
 icon: "code"
+sidebar_position: 3
 ---
 
-# Development Guide
-
-This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.
-
-<Callout type="info">
-**Prerequisites**: We recommend completing the [Quick Start Guide](/quickstart) before diving into development details.
+<Callout type="info" title="Prerequisites">
+We recommend completing the [Quick Start Guide](/quickstart) before diving into development details.
 </Callout>
 
 ## Choose Your SDK
@@ -17,13 +14,13 @@ This guide covers everything you need to develop applications with Aqua Protocol
 Aqua Protocol offers SDKs for different use cases:
 
 <CardGrid cols={2}>
-  <Card title="Rust SDK (v4)" icon="rust" href="/dev_tools/aqua_sdk">
+  <Card title="Rust SDK (v4)" icon="code" href="/dev_tools/aqua_sdk">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
   </Card>
 
-  <Card title="JavaScript SDK (v3)" icon="js" href="/previous_versions/version_3/tooling">
+  <Card title="JavaScript SDK (v3)" icon="code" href="/previous_versions/version_3/tooling">
     **Stable** - Production-ready, Node.js/Web/React Native
 
     Best for: Web applications, existing JavaScript projects
@@ -112,13 +109,14 @@ Or with private key:
 }
 ```
 
-<Callout type="warning">
-**Security**: Never commit credentials.json to version control! Add it to `.gitignore`.
+<Callout type="warning" title="Security">
+Never commit credentials.json to version control! Add it to `.gitignore`.
 </Callout>
 
 Check your SDK documentation ([Rust SDK](/dev_tools/aqua_sdk) | [JavaScript SDK](/previous_versions/version_3/tooling)) for how to pass credentials.
 
 **Protocol Support**: v3, v4
+
 </Accordion>
 
 <Accordion title="RSA Signature (v4 only)">
@@ -179,12 +177,12 @@ base64 certificate.p12 > certificate_base64.txt
 
 **For Production** (trusted certificate):
 
-1. **Purchase from Certificate Authority**:
+ **1. Purchase from Certificate Authority**:
    - DigiCert, Sectigo, GlobalSign, etc.
    - Request "Code Signing" or "Document Signing" certificate
    - They'll provide a .p12/.pfx file directly
 
-2. **If you receive separate files** (.crt + .key + intermediate):
+**2. If you receive separate files** (.crt + .key + intermediate):
    ```bash
    openssl pkcs12 -export -out certificate.p12 \
        -inkey privatekey.key \
@@ -307,8 +305,8 @@ http://timestamp.entrust.net/TSS/RFC3161sha2TS
 - Click "Generate Keys"
 - Save your secret key (`nsec1...`)
 
-<Callout type="warning">
-**Security**: Your Nostr secret key is permanent. Anyone with it can post as you on Nostr relays. Keep it secure!
+<Callout type="warning" title="Security">
+Your Nostr secret key is permanent. Anyone with it can post as you on Nostr relays. Keep it secure!
 </Callout>
 
 **Benefits**:
@@ -324,8 +322,7 @@ http://timestamp.entrust.net/TSS/RFC3161sha2TS
 
 ## JavaScript SDK Usage (v3)
 
-<Callout type="info">
-**Prerequisites**:
+<Callout type="info" title="Prerequisites">
 - Node.js version 19 or higher
 - Install aqua-js-sdk: `npm install aqua-js-sdk`
 </Callout>
@@ -475,8 +472,7 @@ if (verificationResult.isOk()) {
 
 ## Rust SDK Usage (v4)
 
-<Callout type="info">
-**Prerequisites**:
+<Callout type="info" title="Prerequisites">
 - Rust 1.70 or higher
 - Add to Cargo.toml: `aqua-rs-sdk = { git = "https://github.com/inblockio/aqua-verifier-rs" }`
 </Callout>
@@ -525,7 +521,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ### More Resources
 
 <CardGrid cols={2}>
-  <Card title="Rust SDK Guide" icon="rust" href="/dev_tools/aqua_sdk">
+  <Card title="Rust SDK Guide" icon="code" href="/dev_tools/aqua_sdk">
     Complete guide for the Rust SDK
   </Card>
 
@@ -549,7 +545,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     Browse complete examples
   </Card>
 
-  <Card title="Get Support" icon="life-ring" href="mailto:info@inblock.io">
+  <Card title="Get Support" icon="mail" href="mailto:info@inblock.io">
     Need help? Contact our team
   </Card>
 </CardGrid>

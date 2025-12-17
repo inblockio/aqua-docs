@@ -6,9 +6,10 @@ import { Info, AlertTriangle, CheckCircle2, XCircle, Lightbulb } from "lucide-re
 interface CalloutProps {
   children: ReactNode
   type?: "info" | "warning" | "success" | "error" | "tip" | "note" | "danger"
+  title?: string
 }
 
-export function Callout({ children, type = "info" }: CalloutProps) {
+export function Callout({ children, type = "info", title }: CalloutProps) {
   const configs = {
     info: {
       icon: Info,
@@ -65,7 +66,7 @@ export function Callout({ children, type = "info" }: CalloutProps) {
   const Icon = config.icon
 
   // Extract title from strong/bold text if present
-  let title = config.defaultTitle
+  let _title = title || config.defaultTitle
   let content = children
 
   if (children && typeof children === "object") {
@@ -100,7 +101,7 @@ export function Callout({ children, type = "info" }: CalloutProps) {
         <Icon className={`h-5 w-5 ${config.iconClassName}`} />
       </div>
       <div className="flex-1 space-y-0">
-        <div className={`font-semibold text-sm ${config.titleClassName}`}>{title}</div>
+        <div className={`font-semibold text-sm ${config.titleClassName}`}>{_title}</div>
         <div className="text-sm leading-relaxed [&>p]:mb-0 [&>p]:text-current">{content}</div>
       </div>
     </div>

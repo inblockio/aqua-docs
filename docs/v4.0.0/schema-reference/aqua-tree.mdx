@@ -1,6 +1,7 @@
 ---
 title: "Aqua Tree"
 description: "The root data structure containing revisions and metadata"
+sidebar_position: 1
 ---
 
 
@@ -10,7 +11,7 @@ The **Aqua Tree** is the primary data structure in Aqua Protocol. It serves as t
 
 The term "tree" is intentional. While revisions form chains through their `previous_hash` references, the structure supports **branching** where a single revision can have multiple children. This creates a tree topology rather than a simple linear chain.
 
-```
+```txt
 Genesis Revision
       |
   Revision A
@@ -89,6 +90,7 @@ See the [File Index documentation](/schema_reference/file_index) for detailed in
 Here's a minimal Aqua Tree with a genesis object revision and a signature:
 
 ```json
+
 {
   "revisions": {
     "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e": {
@@ -122,6 +124,7 @@ Here's a minimal Aqua Tree with a genesis object revision and a signature:
     "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08": "document.txt"
   }
 }
+
 ```
 
 ## Navigating the Tree
