@@ -8,6 +8,7 @@ import { ThemeToggle } from "./theme-toggle"
 import { SearchModal } from "./search-modal"
 import { useState, useEffect } from "react"
 import type { SpecraConfig } from "@/lib/config"
+import { getAssetPath } from "@/lib/utils"
 
 interface HeaderProps {
   currentVersion: string
@@ -45,7 +46,7 @@ export function Header({ currentVersion, versions, onMenuClick, config }: Header
           </button>
           <Link href="/" className="flex items-center gap-2">
             {config.site.logo ? (
-              <img src={config.site.logo} alt={config.site.title} className="h-8 w-auto" />
+              <img src={getAssetPath(config.site.logo)} alt={config.site.title} className="h-8 w-auto" />
             ) : (
               <div className="h-8 w-8 rounded-xl bg-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">
@@ -53,7 +54,7 @@ export function Header({ currentVersion, versions, onMenuClick, config }: Header
                 </span>
               </div>
             )}
-            <span className="font-semibold text-lg text-foreground">{config.site.title}</span>
+            {/* <span className="font-semibold text-lg text-foreground">{config.site.title}</span> */}
           </Link>
         </div>
 

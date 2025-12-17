@@ -15,10 +15,12 @@ try {
 } catch (error) {
   console.warn("Could not load redirects.json:", error.message)
 }
-
+const isProd = process.env.NODE_ENV === 'production'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export', // Exporting to static html
+  basePath: "/mint-test",
+  assetPrefix: '/mint-test/',
   typescript: {
     ignoreBuildErrors: true,
   },

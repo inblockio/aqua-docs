@@ -87,6 +87,9 @@ jobs:
           mintlify build
           echo "✓ Build completed"
 
+      - name: Add .nojekyll
+        run: touch ./out/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

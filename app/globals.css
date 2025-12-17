@@ -155,7 +155,7 @@
   }
 
   main .prose a:hover {
-    text-decoration: underline;
+    text-decoration: none !important;
     color: var(--color-primary);
   }
 
@@ -167,7 +167,7 @@
   }
 
   .prose a:hover {
-    text-decoration: underline !important;
+    text-decoration: none !important;
     color: var(--color-primary);
   }
 

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Shield, Fingerprint, Lock, Github, Twitter, Linkedin, ExternalLink } from "lucide-react"
 import { getConfig } from "@/lib/config"
 import { Footer } from "@/components/docs/footer"
+import { getAssetPath } from "@/lib/utils"
 
 export default function HomePage() {
   // Server component - can use getConfig directly
@@ -16,7 +17,7 @@ export default function HomePage() {
         <div className="container flex h-16 items-center justify-between px-6 mx-auto">
           <Link href="/" className="flex items-center gap-2">
             {config.site.logo ? (
-              <img src={config.site.logo} alt={config.site.title} className="h-8 w-auto" />
+              <img src={getAssetPath(config.site.logo ?? "")} alt={config.site.title} className="h-8 w-auto" />
             ) : (
               <div className="h-8 w-8 rounded-xl bg-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">A</span>
@@ -28,9 +29,13 @@ export default function HomePage() {
             <Link href={docsUrl} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Documentation
             </Link>
-            <Link href={config.social.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
-              <Github className="h-5 w-5" />
-            </Link>
+            {
+              config?.social?.github ? (
+                <Link href={config.social.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                  <Github className="h-5 w-5" />
+                </Link>
+              ) : null
+            }
             <Button asChild>
               <Link href={docsUrl}>Get Started</Link>
             </Button>
@@ -58,12 +63,16 @@ export default function HomePage() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href={config.env.AQUAFIER_URL} target="_blank" rel="noopener noreferrer">
-                Try Aquafier
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+            {
+              config?.env?.AQUAFIER_URL ? (
+                <Button asChild size="lg" variant="outline">
+                  <Link href={config.env.AQUAFIER_URL} target="_blank" rel="noopener noreferrer">
+                    Try Aquafier
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              ) : null
+            }
           </div>
         </div>
 
@@ -109,18 +118,26 @@ export default function HomePage() {
               that lets you upload, verify, and notarize any file in seconds.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-              <Button asChild size="lg" variant="default">
-                <Link href={config.env.AQUAFIER_URL} target="_blank" rel="noopener noreferrer">
-                  Aquafier Production
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href={config.env.AQUAFIER_DEV_URL} target="_blank" rel="noopener noreferrer">
-                  Development Environment
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              {
+                config?.env?.AQUAFIER_URL ? (
+                  <Button asChild size="lg" variant="default">
+                    <Link href={config.env.AQUAFIER_URL} target="_blank" rel="noopener noreferrer">
+                      Aquafier Production
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                ) : null
+              }
+              {
+                config?.env?.AQUAFIER_DEV_URL ? (
+                  <Button asChild size="lg" variant="outline">
+                    <Link href={config.env.AQUAFIER_DEV_URL} target="_blank" rel="noopener noreferrer">
+                      Development Environment
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                ) : null
+              }
             </div>
           </div>
         </div>
@@ -132,24 +149,36 @@ export default function HomePage() {
             Aqua Protocol is open source and community-driven. Connect with developers and stay updated.
           </p>
           <div className="flex items-center justify-center gap-4 pt-4">
-            <Button asChild variant="outline" size="lg">
-              <Link href={config.social.github} target="_blank" rel="noopener noreferrer">
-                <Github className="mr-2 h-5 w-5" />
-                GitHub
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link href={config.social.twitter} target="_blank" rel="noopener noreferrer">
-                <Twitter className="mr-2 h-5 w-5" />
-                Twitter
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link href={config.social.linkedin} target="_blank" rel="noopener noreferrer">
-                <Linkedin className="mr-2 h-5 w-5" />
-                LinkedIn
-              </Link>
-            </Button>
+            {
+              config?.social?.github ? (
+                <Button asChild variant="outline" size="lg">
+                  <Link href={config.social.github} target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-5 w-5" />
+                    GitHub
+                  </Link>
+                </Button>
+              ) : null
+            }
+            {
+              config?.social?.twitter ? (
+                <Button asChild variant="outline" size="lg">
+                  <Link href={config.social.twitter} target="_blank" rel="noopener noreferrer">
+                    <Twitter className="mr-2 h-5 w-5" />
+                    Twitter
+                  </Link>
+                </Button>
+              ) : null
+            }
+            {
+              config?.social?.linkedin ? (
+                <Button asChild variant="outline" size="lg">
+                  <Link href={config.social.linkedin} target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="mr-2 h-5 w-5" />
+                    LinkedIn
+                  </Link>
+                </Button>
+              ) : null
+            }
           </div>
         </div>
       </main>

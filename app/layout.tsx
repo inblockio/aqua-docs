@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { getConfig } from "@/lib/config"
 import "./globals.css"
+import { getAssetPath } from "@/lib/utils"
  
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -19,25 +20,12 @@ export const metadata: Metadata = {
   generator: "v0.app",
   metadataBase: config.site.url ? new URL(config.site.url) : undefined,
   icons: {
-    icon: config.site.favicon ? [
+    icon: getAssetPath(config.site.favicon ?? "") ? [
       {
-        url: config.site.favicon,
+        url: getAssetPath(config.site.favicon ?? ""),
       },
-    ] : [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    ] : [],
+    apple: getAssetPath("/apple-icon.png"),
   },
   openGraph: {
     title: config.site.title,
