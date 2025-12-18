@@ -2,6 +2,7 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import { getAllCategoryConfigs } from "./category"
+import { sortSidebarItems, sortSidebarGroups, buildSidebarStructure, type SidebarGroup } from "./sidebar-utils"
 
 const DOCS_DIR = path.join(process.cwd(), "docs")
 
@@ -46,17 +47,6 @@ export interface Doc {
   categoryCollapsible?: boolean  // Collapsible from _category_.json
   categoryCollapsed?: boolean  // Default collapsed state from _category_.json
   categoryIcon?: string  // Icon from _category_.json
-}
-
-export interface SidebarGroup {
-  label: string
-  path: string
-  icon?: string
-  items: Doc[]
-  position: number
-  collapsible: boolean
-  defaultCollapsed: boolean
-  children: Record<string, SidebarGroup>
 }
 
 export interface TocItem {
@@ -273,126 +263,6 @@ export async function getAllDocs(version = "v1.0.0"): Promise<Doc[]> {
 //     next: currentIndex < allDocs.length - 1 ? allDocs[currentIndex + 1] : undefined,
 //   }
 // }
-function buildSidebarStructure(docs: Doc[]): {
-  rootGroups: Record<string, SidebarGroup>
-  standalone: Doc[]
-} {
-  const rootGroups: Record<string, SidebarGroup> = {}
-  const standalone: Doc[] = []
-
-  // First pass: collect category metadata from all docs to build complete folder structure
-  const categoryMetadata = new Map<string, {
-    label?: string
-    position?: number
-    icon?: string
-    collapsible?: boolean
-    collapsed?: boolean
-  }>()
-
-  docs.forEach((doc) => {
-    const pathParts = doc.filePath.split("/")
-    const folderPath = pathParts.length > 1 ? pathParts.slice(0, -1).join("/") : ""
-
-    if (folderPath && doc.categoryLabel) {
-      categoryMetadata.set(folderPath, {
-        label: doc.categoryLabel,
-        position: doc.categoryPosition,
-        icon: doc.categoryIcon,
-        collapsible: doc.categoryCollapsible,
-        collapsed: doc.categoryCollapsed
-      })
-    }
-  })
-
-  docs.forEach((doc) => {
-    const pathParts = doc.filePath.split("/")
-    const isIndexFile = doc.filePath.endsWith("/index") ||
-      doc.filePath === "index" ||
-      (pathParts.length > 1 && doc.slug === pathParts.slice(0, -1).join("/"))
-
-    const customGroup = doc.meta.sidebar || doc.meta.group
-
-    if (customGroup) {
-      const groupName = customGroup.charAt(0).toUpperCase() + customGroup.slice(1)
-      if (!rootGroups[groupName]) {
-        rootGroups[groupName] = {
-          label: groupName,
-          path: customGroup,
-          items: [],
-          position: 999,
-          collapsible: doc.categoryCollapsible ?? true,
-          defaultCollapsed: doc.categoryCollapsed ?? false,
-          children: {}
-        }
-      }
-      if (isIndexFile) {
-        // Use categoryPosition if available (from _category_.json), otherwise sidebar_position from frontmatter
-        rootGroups[groupName].position = doc.categoryPosition ?? doc.meta.sidebar_position ?? 999
-        rootGroups[groupName].icon = doc.categoryIcon
-      } else {
-        rootGroups[groupName].items.push(doc)
-      }
-      return
-    }
-
-    if (pathParts.length > 1) {
-      const folderParts = pathParts.slice(0, -1)
-      let currentLevel = rootGroups
-      let currentPath = ""
-
-      for (let i = 0; i < folderParts.length; i++) {
-        const folder = folderParts[i]
-        currentPath = currentPath ? `${currentPath}/${folder}` : folder
-        const folderLabel = folder.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
-
-        // Get metadata for this specific folder path
-        const metadata = categoryMetadata.get(currentPath)
-
-        if (!currentLevel[folder]) {
-          currentLevel[folder] = {
-            label: metadata?.label ?? folderLabel,
-            path: currentPath,
-            icon: metadata?.icon,
-            items: [],
-            position: metadata?.position ?? 999,
-            collapsible: metadata?.collapsible ?? true,
-            defaultCollapsed: metadata?.collapsed ?? false,
-            children: {}
-          }
-        }
-
-        if (i === folderParts.length - 1) {
-          if (isIndexFile) {
-            // Update position, label, and icon if this is the index file for this folder
-            currentLevel[folder].position = doc.categoryPosition ?? doc.meta.sidebar_position ?? currentLevel[folder].position
-            if (doc.categoryLabel) {
-              currentLevel[folder].label = doc.categoryLabel
-            }
-            if (doc.categoryIcon) {
-              currentLevel[folder].icon = doc.categoryIcon
-            }
-            if (doc.categoryCollapsible !== undefined) {
-              currentLevel[folder].collapsible = doc.categoryCollapsible
-            }
-            if (doc.categoryCollapsed !== undefined) {
-              currentLevel[folder].defaultCollapsed = doc.categoryCollapsed
-            }
-          } else {
-            currentLevel[folder].items.push(doc)
-          }
-        }
-
-        currentLevel = currentLevel[folder].children
-      }
-    } else {
-      if (!isIndexFile) {
-        standalone.push(doc)
-      }
-    }
-  })
-
-  return { rootGroups, standalone }
-}
 
 // Flatten the sidebar structure into a linear order
 function flattenSidebarOrder(
@@ -401,39 +271,45 @@ function flattenSidebarOrder(
 ): Doc[] {
   const flatDocs: Doc[] = []
 
-  // Sort items by sidebar_position
-  const sortItems = (items: Doc[]) => {
-    return [...items].sort((a, b) => (a.meta.sidebar_position ?? 999) - (b.meta.sidebar_position ?? 999))
-  }
-
-  // Sort groups by position
-  const sortGroups = (groups: Record<string, SidebarGroup>) => {
-    return Object.entries(groups).sort(([, a], [, b]) => a.position - b.position)
-  }
-
-  // Recursively flatten groups
+  // Recursively flatten groups - intermix folders and files by position
   const flattenGroup = (group: SidebarGroup) => {
-    const sortedChildren = sortGroups(group.children)
-    const sortedItems = sortItems(group.items)
+    const sortedChildren = sortSidebarGroups(group.children)
+    const sortedItems = sortSidebarItems(group.items)
 
-    // Add nested child groups first
-    sortedChildren.forEach(([, childGroup]) => {
-      flattenGroup(childGroup)
-    })
+    // Merge child groups and items, then sort by position
+    const merged: Array<{type: 'group', group: SidebarGroup, position: number} | {type: 'item', doc: Doc, position: number}> = [
+      ...sortedChildren.map(([, childGroup]) => ({
+        type: 'group' as const,
+        group: childGroup,
+        position: childGroup.position
+      })),
+      ...sortedItems.map((doc) => ({
+        type: 'item' as const,
+        doc,
+        position: doc.meta.sidebar_position ?? doc.meta.order ?? 999
+      }))
+    ]
 
-    // Then add items in this group
-    sortedItems.forEach((doc) => {
-      flatDocs.push(doc)
+    // Sort by position
+    merged.sort((a, b) => a.position - b.position)
+
+    // Process in sorted order
+    merged.forEach((item) => {
+      if (item.type === 'group') {
+        flattenGroup(item.group)
+      } else {
+        flatDocs.push(item.doc)
+      }
     })
   }
 
   // Add standalone items first
-  sortItems(standalone).forEach((doc) => {
+  sortSidebarItems(standalone).forEach((doc) => {
     flatDocs.push(doc)
   })
 
   // Then add all grouped items
-  const sortedRootGroups = sortGroups(rootGroups)
+  const sortedRootGroups = sortSidebarGroups(rootGroups)
   sortedRootGroups.forEach(([, group]) => {
     flattenGroup(group)
   })
