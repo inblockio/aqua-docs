@@ -1,14 +1,14 @@
 1:"$Sreact.fragment"
 2:"$Sreact.suspense"
-3:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/96bfccf8ab4674df.js"],"MobileDocLayout"]
-4:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/96bfccf8ab4674df.js"],"Header"]
-5:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/96bfccf8ab4674df.js"],"Sidebar"]
-36:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/96bfccf8ab4674df.js"],"SearchHighlight"]
-37:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/96bfccf8ab4674df.js"],""]
-bd:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/96bfccf8ab4674df.js"],"TableOfContents"]
-be:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/96bfccf8ab4674df.js"],"MdxHotReload"]
-bf:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/96bfccf8ab4674df.js"],"HotReloadIndicator"]
-c0:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/96bfccf8ab4674df.js"],"DevModeBadge"]
+3:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
+4:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
+5:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
+36:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
+37:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
+bd:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
+be:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
+bf:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
+c0:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
 c1:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
 6:T1ef1,
 
@@ -5526,7 +5526,7 @@ For v3 technical details:
 4. Check the [GitHub repository](https://github.com/inblockio/aquafier-js) for self-hosting
 
 For building custom applications, consider using the [Aqua JavaScript SDK](/previous_versions/version_3/tooling) directly or the [Aqua Rust SDK](/dev_tools/aqua_sdk) for v4 features.
-1a:T3204,
+1a:T4217,
 # Link Revision
 
 A Link Revision creates verifiable connections between separate revision chains. It allows you to establish relationships, dependencies, or references between different objects, effectively creating a graph structure of interconnected chains. Link revisions are essential for composing complex data structures and maintaining provenance across multiple chains.
@@ -5648,37 +5648,68 @@ A Link Revision is valid if:
 
 Link a document to its source materials:
 
-```
-Contract Document (Object)
-    �
-Link � [Reference Doc 1, Reference Doc 2, Reference Doc 3]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Contract[Contract Document - Object]
+      Link[Link Revision]
+      Ref1[Reference Doc 1]
+      Ref2[Reference Doc 2]
+      Ref3[Reference Doc 3]
+
+      Contract --> Link
+      Link -.->|references| Ref1
+      Link -.->|references| Ref2
+      Link -.->|references| Ref3
+  `}
+  caption="Document dependencies using link revision"
+/>
 
 ### 2. Multi-Party Signing
 
 Combine independent signatures:
 
-```
-Document (Object)
-    �
-Signature (Alice)    Signature (Bob)    Signature (Carol)
-    �                    �                    �
-                        4                    
-                         �
-                    Link Revision
-                         �
-                   Witness (Timestamp all)
-```
+<Mermaid
+  chart={`
+    graph TD
+      Doc[Document Object]
+      SigA[Signature - Alice]
+      SigB[Signature - Bob]
+      SigC[Signature - Carol]
+      Link[Link Revision]
+      Witness[Witness - Timestamp all]
+
+      Doc --> SigA
+      Doc --> SigB
+      Doc --> SigC
+      SigA --> Link
+      SigB --> Link
+      SigC --> Link
+      Link --> Witness
+  `}
+  caption="Multi-party signing with link revision"
+/>
 
 ### 3. Bill of Materials
 
 Link a product to its components:
 
-```
-Product Object
-    �
-Link � [Component 1 Chain, Component 2 Chain, Component 3 Chain]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Product[Product Object]
+      Link[Link Revision]
+      Comp1[Component 1 Chain]
+      Comp2[Component 2 Chain]
+      Comp3[Component 3 Chain]
+
+      Product --> Link
+      Link -.->|references| Comp1
+      Link -.->|references| Comp2
+      Link -.->|references| Comp3
+  `}
+  caption="Bill of materials with component chains"
+/>
 
 Each component has its own provenance chain.
 
@@ -5686,99 +5717,213 @@ Each component has its own provenance chain.
 
 Group related credentials:
 
-```
-Profile Object
-    �
-Link � [Email Credential, Domain Credential, GitHub Credential]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Profile[Profile Object]
+      Link[Link Revision]
+      Email[Email Credential]
+      Domain[Domain Credential]
+      GitHub[GitHub Credential]
+
+      Profile --> Link
+      Link -.->|references| Email
+      Link -.->|references| Domain
+      Link -.->|references| GitHub
+  `}
+  caption="Credential bundling with link revision"
+/>
 
 ### 5. Supply Chain Aggregation
 
 Combine supply chain events:
 
-```
-Shipment Tracking
-    �
-Link � [Manufacturer Chain, Shipper Chain, Customs Chain]
-    �
-Final Delivery Confirmation
-```
+<Mermaid
+  chart={`
+    graph TD
+      Tracking[Shipment Tracking]
+      Link[Link Revision]
+      Manufacturer[Manufacturer Chain]
+      Shipper[Shipper Chain]
+      Customs[Customs Chain]
+      Final[Final Delivery Confirmation]
+
+      Tracking --> Link
+      Link -.->|references| Manufacturer
+      Link -.->|references| Shipper
+      Link -.->|references| Customs
+      Link --> Final
+  `}
+  caption="Supply chain aggregation"
+/>
 
 ### 6. Academic Citation
 
 Link a paper to cited works:
 
-```
-Research Paper (Object)
-    �
-Link � [Citation 1 Chain, Citation 2 Chain, ..., Citation N Chain]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Paper[Research Paper - Object]
+      Link[Link Revision]
+      Cite1[Citation 1 Chain]
+      Cite2[Citation 2 Chain]
+      CiteN[Citation N Chain]
+
+      Paper --> Link
+      Link -.->|references| Cite1
+      Link -.->|references| Cite2
+      Link -.->|references| CiteN
+  `}
+  caption="Academic citation with link revision"
+/>
 
 ### 7. Version History
 
 Link to previous versions:
 
-```
-Document v3 (Object)
-    �
-Link � [Document v1 Final, Document v2 Final]
-```
+<Mermaid
+  chart={`
+    graph TD
+      V3[Document v3 - Object]
+      Link[Link Revision]
+      V1[Document v1 Final]
+      V2[Document v2 Final]
+
+      V3 --> Link
+      Link -.->|references| V1
+      Link -.->|references| V2
+  `}
+  caption="Version history with link revision"
+/>
 
 ### 8. Approval Workflow Merge
 
 Merge parallel approval processes:
 
-```
-         Document Draft
-          �          �
-    Review A      Review B
-    Approve A     Approve B
-         �          �
-         Link Revision
-              �
-        Final Version
-```
+<Mermaid
+  chart={`
+    graph TD
+      Draft[Document Draft]
+      ReviewA[Review A]
+      ReviewB[Review B]
+      ApproveA[Approve A]
+      ApproveB[Approve B]
+      Link[Link Revision]
+      Final[Final Version]
+
+      Draft --> ReviewA
+      Draft --> ReviewB
+      ReviewA --> ApproveA
+      ReviewB --> ApproveB
+      ApproveA --> Link
+      ApproveB --> Link
+      Link --> Final
+  `}
+  caption="Approval workflow merge with link revision"
+/>
 
 ## Link Patterns
 
 ### Pattern 1: Linear Dependency Chain
 
-```
-Object A � Link � [Object B] � Link � [Object C]
-```
+<Mermaid
+  chart={`
+    graph LR
+      A[Object A]
+      LinkAB[Link]
+      B[Object B]
+      LinkBC[Link]
+      C[Object C]
+
+      A --> LinkAB
+      LinkAB -.->|references| B
+      B --> LinkBC
+      LinkBC -.->|references| C
+  `}
+  caption="Linear dependency chain"
+/>
 
 Each object depends on the previous one.
 
 ### Pattern 2: Star Pattern (Aggregation)
 
-```
-        Link Revision
-       /  |  |  |  \
-      /   |  |  |   \
-    A     B  C  D     E
-```
+<Mermaid
+  chart={`
+    graph TD
+      Link[Link Revision]
+      A[Chain A]
+      B[Chain B]
+      C[Chain C]
+      D[Chain D]
+      E[Chain E]
+
+      Link -.->|references| A
+      Link -.->|references| B
+      Link -.->|references| C
+      Link -.->|references| D
+      Link -.->|references| E
+  `}
+  caption="Star pattern - one link references multiple chains"
+/>
 
 One link revision references multiple chains.
 
 ### Pattern 3: Tree Pattern
 
-```
-           Root Object
-               �
-           Link [A, B]
-          �          �
-    Link [A1, A2]   Link [B1, B2]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Root[Root Object]
+      Link1[Link to A, B]
+      LinkA[Link to A1, A2]
+      LinkB[Link to B1, B2]
+      A1[A1]
+      A2[A2]
+      B1[B1]
+      B2[B2]
+
+      Root --> Link1
+      Link1 -.-> LinkA
+      Link1 -.-> LinkB
+      LinkA -.->|references| A1
+      LinkA -.->|references| A2
+      LinkB -.->|references| B1
+      LinkB -.->|references| B2
+  `}
+  caption="Tree pattern - hierarchical structure using links"
+/>
 
 Hierarchical structure using links.
 
 ### Pattern 4: Graph Pattern
 
-```
-    A � Link � [B, C]
-    B � Link � [C, D]
-    C � Link � [A, E]
-```
+<Mermaid
+  chart={`
+    graph TD
+      A[A]
+      B[B]
+      C[C]
+      D[D]
+      E[E]
+      LinkA[Link from A]
+      LinkB[Link from B]
+      LinkC[Link from C]
+
+      A --> LinkA
+      LinkA -.->|references| B
+      LinkA -.->|references| C
+
+      B --> LinkB
+      LinkB -.->|references| C
+      LinkB -.->|references| D
+
+      C --> LinkC
+      LinkC -.->|references| A
+      LinkC -.->|references| E
+  `}
+  caption="Graph pattern - complex graph with cycles and multiple connections"
+/>
 
 Complex graph with cycles and multiple connections.
 
@@ -5833,10 +5978,21 @@ When traversing links:
 
 Links can create cycles:
 
-```
-Chain A � Link � [Chain B]
-Chain B � Link � [Chain A]
-```
+<Mermaid
+  chart={`
+    graph LR
+      A[Chain A]
+      LinkA[Link from A]
+      B[Chain B]
+      LinkB[Link from B]
+
+      A --> LinkA
+      LinkA -.->|references| B
+      B --> LinkB
+      LinkB -.->|references| A
+  `}
+  caption="Cyclic references between chains"
+/>
 
 **Handling**:
 - Detect cycles during traversal
@@ -5859,27 +6015,32 @@ Link created at timestamp T references chains that existed before T
 
 **Complete Reference**: Link to final revision of a chain
 ```
-Link � [Complete Chain A, Complete Chain B]
+Link → [Complete Chain A, Complete Chain B]
 ```
 
 **Partial Reference**: Link to intermediate revision
 ```
-Link � [Chain A @ Revision 5, Chain B @ Revision 3]
+Link → [Chain A @ Revision 5, Chain B @ Revision 3]
 ```
 
 ### Link Updates
 
 To update links over time:
 
-```
-Object
-  �
-Link v1 � [A, B]
-  �
-Link v2 � [A, B, C]  (adds C)
-  �
-Link v3 � [A, C]  (removes B)
-```
+<Mermaid
+  chart={`
+    graph TD
+      Obj[Object]
+      Link1[Link v1 - references A, B]
+      Link2[Link v2 - references A, B, C]
+      Link3[Link v3 - references A, C]
+
+      Obj --> Link1
+      Link1 --> Link2
+      Link2 --> Link3
+  `}
+  caption="Link updates tracking changes over time"
+/>
 
 Each link revision chains to the previous, tracking changes.
 
@@ -5890,11 +6051,22 @@ While the standard link revision doesn't include metadata, you can add it by:
 1. Creating an object revision with link metadata
 2. Following it with a link revision
 
-```
-Object (metadata: "This links dependencies")
-  �
-Link � [Dep1, Dep2, Dep3]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Obj[Object - metadata: 'This links dependencies']
+      Link[Link Revision]
+      Dep1[Dep1]
+      Dep2[Dep2]
+      Dep3[Dep3]
+
+      Obj --> Link
+      Link -.->|references| Dep1
+      Link -.->|references| Dep2
+      Link -.->|references| Dep3
+  `}
+  caption="Link metadata using object revision"
+/>
 
 ## Relationship with Other Revisions
 
@@ -5937,7 +6109,7 @@ Link � [Dep1, Dep2, Dep3]
 Deep link hierarchies impact verification time:
 
 ```
-Object � Link (10 chains) � Each chain has Link (5 chains)
+Object → Link (10 chains) → Each chain has Link (5 chains)
 Total: 1 + 10 + 50 = 61 chains to verify
 ```
 
@@ -5948,7 +6120,7 @@ Total: 1 + 10 + 50 = 61 chains to verify
 Wide links (many references) increase storage and bandwidth:
 
 ```
-Link � [1000 chains]
+Link → [1000 chains]
 ```
 
 **Optimization**: Paginate links, use link batching
@@ -6004,18 +6176,38 @@ Order links meaningfully:
 ### 2. Link to Stable Points
 
 Link to revisions that are finalized (signed/witnessed):
-```
-Object � Sign � Witness � [Link to this witnessed revision]
-```
+
+<Mermaid
+  chart={`
+    graph LR
+      Obj[Object]
+      Sign[Sign]
+      Witness[Witness]
+      Link[Link references this witnessed revision]
+
+      Obj --> Sign
+      Sign --> Witness
+      Witness -.-> Link
+  `}
+  caption="Linking to stable, witnessed revisions"
+/>
 
 ### 3. Document Link Semantics
 
 Precede link with an object explaining the relationships:
-```
-Object (description: "These are the project dependencies")
-  �
-Link � [Dependency chains]
-```
+
+<Mermaid
+  chart={`
+    graph TD
+      Obj[Object - description: 'These are the project dependencies']
+      Link[Link Revision]
+      Deps[Dependency chains]
+
+      Obj --> Link
+      Link -.->|references| Deps
+  `}
+  caption="Documenting link semantics with object metadata"
+/>
 
 ### 4. Consider Verification Cost
 
@@ -6031,7 +6223,7 @@ Don't use links for intra-chain references (use `previous_revision` instead).
 - [Signature Revision](/schema_reference/signing_revision) - Can aggregate via links
 - [Witness Revision](/schema_reference/witness_revision) - Often follows links
 - [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) - Mathematical foundation for link structures
-1b:T3204,
+1b:T4217,
 # Link Revision
 
 A Link Revision creates verifiable connections between separate revision chains. It allows you to establish relationships, dependencies, or references between different objects, effectively creating a graph structure of interconnected chains. Link revisions are essential for composing complex data structures and maintaining provenance across multiple chains.
@@ -6153,37 +6345,68 @@ A Link Revision is valid if:
 
 Link a document to its source materials:
 
-```
-Contract Document (Object)
-    �
-Link � [Reference Doc 1, Reference Doc 2, Reference Doc 3]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Contract[Contract Document - Object]
+      Link[Link Revision]
+      Ref1[Reference Doc 1]
+      Ref2[Reference Doc 2]
+      Ref3[Reference Doc 3]
+
+      Contract --> Link
+      Link -.->|references| Ref1
+      Link -.->|references| Ref2
+      Link -.->|references| Ref3
+  `}
+  caption="Document dependencies using link revision"
+/>
 
 ### 2. Multi-Party Signing
 
 Combine independent signatures:
 
-```
-Document (Object)
-    �
-Signature (Alice)    Signature (Bob)    Signature (Carol)
-    �                    �                    �
-                        4                    
-                         �
-                    Link Revision
-                         �
-                   Witness (Timestamp all)
-```
+<Mermaid
+  chart={`
+    graph TD
+      Doc[Document Object]
+      SigA[Signature - Alice]
+      SigB[Signature - Bob]
+      SigC[Signature - Carol]
+      Link[Link Revision]
+      Witness[Witness - Timestamp all]
+
+      Doc --> SigA
+      Doc --> SigB
+      Doc --> SigC
+      SigA --> Link
+      SigB --> Link
+      SigC --> Link
+      Link --> Witness
+  `}
+  caption="Multi-party signing with link revision"
+/>
 
 ### 3. Bill of Materials
 
 Link a product to its components:
 
-```
-Product Object
-    �
-Link � [Component 1 Chain, Component 2 Chain, Component 3 Chain]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Product[Product Object]
+      Link[Link Revision]
+      Comp1[Component 1 Chain]
+      Comp2[Component 2 Chain]
+      Comp3[Component 3 Chain]
+
+      Product --> Link
+      Link -.->|references| Comp1
+      Link -.->|references| Comp2
+      Link -.->|references| Comp3
+  `}
+  caption="Bill of materials with component chains"
+/>
 
 Each component has its own provenance chain.
 
@@ -6191,99 +6414,213 @@ Each component has its own provenance chain.
 
 Group related credentials:
 
-```
-Profile Object
-    �
-Link � [Email Credential, Domain Credential, GitHub Credential]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Profile[Profile Object]
+      Link[Link Revision]
+      Email[Email Credential]
+      Domain[Domain Credential]
+      GitHub[GitHub Credential]
+
+      Profile --> Link
+      Link -.->|references| Email
+      Link -.->|references| Domain
+      Link -.->|references| GitHub
+  `}
+  caption="Credential bundling with link revision"
+/>
 
 ### 5. Supply Chain Aggregation
 
 Combine supply chain events:
 
-```
-Shipment Tracking
-    �
-Link � [Manufacturer Chain, Shipper Chain, Customs Chain]
-    �
-Final Delivery Confirmation
-```
+<Mermaid
+  chart={`
+    graph TD
+      Tracking[Shipment Tracking]
+      Link[Link Revision]
+      Manufacturer[Manufacturer Chain]
+      Shipper[Shipper Chain]
+      Customs[Customs Chain]
+      Final[Final Delivery Confirmation]
+
+      Tracking --> Link
+      Link -.->|references| Manufacturer
+      Link -.->|references| Shipper
+      Link -.->|references| Customs
+      Link --> Final
+  `}
+  caption="Supply chain aggregation"
+/>
 
 ### 6. Academic Citation
 
 Link a paper to cited works:
 
-```
-Research Paper (Object)
-    �
-Link � [Citation 1 Chain, Citation 2 Chain, ..., Citation N Chain]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Paper[Research Paper - Object]
+      Link[Link Revision]
+      Cite1[Citation 1 Chain]
+      Cite2[Citation 2 Chain]
+      CiteN[Citation N Chain]
+
+      Paper --> Link
+      Link -.->|references| Cite1
+      Link -.->|references| Cite2
+      Link -.->|references| CiteN
+  `}
+  caption="Academic citation with link revision"
+/>
 
 ### 7. Version History
 
 Link to previous versions:
 
-```
-Document v3 (Object)
-    �
-Link � [Document v1 Final, Document v2 Final]
-```
+<Mermaid
+  chart={`
+    graph TD
+      V3[Document v3 - Object]
+      Link[Link Revision]
+      V1[Document v1 Final]
+      V2[Document v2 Final]
+
+      V3 --> Link
+      Link -.->|references| V1
+      Link -.->|references| V2
+  `}
+  caption="Version history with link revision"
+/>
 
 ### 8. Approval Workflow Merge
 
 Merge parallel approval processes:
 
-```
-         Document Draft
-          �          �
-    Review A      Review B
-    Approve A     Approve B
-         �          �
-         Link Revision
-              �
-        Final Version
-```
+<Mermaid
+  chart={`
+    graph TD
+      Draft[Document Draft]
+      ReviewA[Review A]
+      ReviewB[Review B]
+      ApproveA[Approve A]
+      ApproveB[Approve B]
+      Link[Link Revision]
+      Final[Final Version]
+
+      Draft --> ReviewA
+      Draft --> ReviewB
+      ReviewA --> ApproveA
+      ReviewB --> ApproveB
+      ApproveA --> Link
+      ApproveB --> Link
+      Link --> Final
+  `}
+  caption="Approval workflow merge with link revision"
+/>
 
 ## Link Patterns
 
 ### Pattern 1: Linear Dependency Chain
 
-```
-Object A � Link � [Object B] � Link � [Object C]
-```
+<Mermaid
+  chart={`
+    graph LR
+      A[Object A]
+      LinkAB[Link]
+      B[Object B]
+      LinkBC[Link]
+      C[Object C]
+
+      A --> LinkAB
+      LinkAB -.->|references| B
+      B --> LinkBC
+      LinkBC -.->|references| C
+  `}
+  caption="Linear dependency chain"
+/>
 
 Each object depends on the previous one.
 
 ### Pattern 2: Star Pattern (Aggregation)
 
-```
-        Link Revision
-       /  |  |  |  \
-      /   |  |  |   \
-    A     B  C  D     E
-```
+<Mermaid
+  chart={`
+    graph TD
+      Link[Link Revision]
+      A[Chain A]
+      B[Chain B]
+      C[Chain C]
+      D[Chain D]
+      E[Chain E]
+
+      Link -.->|references| A
+      Link -.->|references| B
+      Link -.->|references| C
+      Link -.->|references| D
+      Link -.->|references| E
+  `}
+  caption="Star pattern - one link references multiple chains"
+/>
 
 One link revision references multiple chains.
 
 ### Pattern 3: Tree Pattern
 
-```
-           Root Object
-               �
-           Link [A, B]
-          �          �
-    Link [A1, A2]   Link [B1, B2]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Root[Root Object]
+      Link1[Link to A, B]
+      LinkA[Link to A1, A2]
+      LinkB[Link to B1, B2]
+      A1[A1]
+      A2[A2]
+      B1[B1]
+      B2[B2]
+
+      Root --> Link1
+      Link1 -.-> LinkA
+      Link1 -.-> LinkB
+      LinkA -.->|references| A1
+      LinkA -.->|references| A2
+      LinkB -.->|references| B1
+      LinkB -.->|references| B2
+  `}
+  caption="Tree pattern - hierarchical structure using links"
+/>
 
 Hierarchical structure using links.
 
 ### Pattern 4: Graph Pattern
 
-```
-    A � Link � [B, C]
-    B � Link � [C, D]
-    C � Link � [A, E]
-```
+<Mermaid
+  chart={`
+    graph TD
+      A[A]
+      B[B]
+      C[C]
+      D[D]
+      E[E]
+      LinkA[Link from A]
+      LinkB[Link from B]
+      LinkC[Link from C]
+
+      A --> LinkA
+      LinkA -.->|references| B
+      LinkA -.->|references| C
+
+      B --> LinkB
+      LinkB -.->|references| C
+      LinkB -.->|references| D
+
+      C --> LinkC
+      LinkC -.->|references| A
+      LinkC -.->|references| E
+  `}
+  caption="Graph pattern - complex graph with cycles and multiple connections"
+/>
 
 Complex graph with cycles and multiple connections.
 
@@ -6338,10 +6675,21 @@ When traversing links:
 
 Links can create cycles:
 
-```
-Chain A � Link � [Chain B]
-Chain B � Link � [Chain A]
-```
+<Mermaid
+  chart={`
+    graph LR
+      A[Chain A]
+      LinkA[Link from A]
+      B[Chain B]
+      LinkB[Link from B]
+
+      A --> LinkA
+      LinkA -.->|references| B
+      B --> LinkB
+      LinkB -.->|references| A
+  `}
+  caption="Cyclic references between chains"
+/>
 
 **Handling**:
 - Detect cycles during traversal
@@ -6364,27 +6712,32 @@ Link created at timestamp T references chains that existed before T
 
 **Complete Reference**: Link to final revision of a chain
 ```
-Link � [Complete Chain A, Complete Chain B]
+Link → [Complete Chain A, Complete Chain B]
 ```
 
 **Partial Reference**: Link to intermediate revision
 ```
-Link � [Chain A @ Revision 5, Chain B @ Revision 3]
+Link → [Chain A @ Revision 5, Chain B @ Revision 3]
 ```
 
 ### Link Updates
 
 To update links over time:
 
-```
-Object
-  �
-Link v1 � [A, B]
-  �
-Link v2 � [A, B, C]  (adds C)
-  �
-Link v3 � [A, C]  (removes B)
-```
+<Mermaid
+  chart={`
+    graph TD
+      Obj[Object]
+      Link1[Link v1 - references A, B]
+      Link2[Link v2 - references A, B, C]
+      Link3[Link v3 - references A, C]
+
+      Obj --> Link1
+      Link1 --> Link2
+      Link2 --> Link3
+  `}
+  caption="Link updates tracking changes over time"
+/>
 
 Each link revision chains to the previous, tracking changes.
 
@@ -6395,11 +6748,22 @@ While the standard link revision doesn't include metadata, you can add it by:
 1. Creating an object revision with link metadata
 2. Following it with a link revision
 
-```
-Object (metadata: "This links dependencies")
-  �
-Link � [Dep1, Dep2, Dep3]
-```
+<Mermaid
+  chart={`
+    graph TD
+      Obj[Object - metadata: 'This links dependencies']
+      Link[Link Revision]
+      Dep1[Dep1]
+      Dep2[Dep2]
+      Dep3[Dep3]
+
+      Obj --> Link
+      Link -.->|references| Dep1
+      Link -.->|references| Dep2
+      Link -.->|references| Dep3
+  `}
+  caption="Link metadata using object revision"
+/>
 
 ## Relationship with Other Revisions
 
@@ -6442,7 +6806,7 @@ Link � [Dep1, Dep2, Dep3]
 Deep link hierarchies impact verification time:
 
 ```
-Object � Link (10 chains) � Each chain has Link (5 chains)
+Object → Link (10 chains) → Each chain has Link (5 chains)
 Total: 1 + 10 + 50 = 61 chains to verify
 ```
 
@@ -6453,7 +6817,7 @@ Total: 1 + 10 + 50 = 61 chains to verify
 Wide links (many references) increase storage and bandwidth:
 
 ```
-Link � [1000 chains]
+Link → [1000 chains]
 ```
 
 **Optimization**: Paginate links, use link batching
@@ -6509,18 +6873,38 @@ Order links meaningfully:
 ### 2. Link to Stable Points
 
 Link to revisions that are finalized (signed/witnessed):
-```
-Object � Sign � Witness � [Link to this witnessed revision]
-```
+
+<Mermaid
+  chart={`
+    graph LR
+      Obj[Object]
+      Sign[Sign]
+      Witness[Witness]
+      Link[Link references this witnessed revision]
+
+      Obj --> Sign
+      Sign --> Witness
+      Witness -.-> Link
+  `}
+  caption="Linking to stable, witnessed revisions"
+/>
 
 ### 3. Document Link Semantics
 
 Precede link with an object explaining the relationships:
-```
-Object (description: "These are the project dependencies")
-  �
-Link � [Dependency chains]
-```
+
+<Mermaid
+  chart={`
+    graph TD
+      Obj[Object - description: 'These are the project dependencies']
+      Link[Link Revision]
+      Deps[Dependency chains]
+
+      Obj --> Link
+      Link -.->|references| Deps
+  `}
+  caption="Documenting link semantics with object metadata"
+/>
 
 ### 4. Consider Verification Cost
 
@@ -11708,14 +12092,14 @@ A: Verification of existing chains works offline using cryptographic signatures.
 - [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
 - [Quick Start](/quick-start) - Get started with supply chain tracking
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-0:{"buildId":"vLAt4wI9_MMQkVFkoGl20","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$L3",null,{"header":["$","$L4",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$L5",null,{"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$6","reading_time":5,"word_count":888},"content":"$7","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$8","reading_time":5,"word_count":820},"content":"$9"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$a","reading_time":7,"word_count":1258},"content":"$b"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$c","reading_time":5,"word_count":941},"content":"$d","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$e","reading_time":9,"word_count":1674},"content":"$f"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$10","reading_time":8,"word_count":1476},"content":"$11","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$12","reading_time":4,"word_count":686},"content":"$13"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$14","reading_time":3,"word_count":410},"content":"$15","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$16","reading_time":2,"word_count":391},"content":"$17","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$18","reading_time":3,"word_count":566},"content":"$19","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$1a","reading_time":9,"word_count":1643},"content":"$1b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$1c","reading_time":6,"word_count":1048},"content":"$1d","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$1e","reading_time":3,"word_count":460},"content":"$1f","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$20","reading_time":7,"word_count":1393},"content":"$21","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$22","reading_time":7,"word_count":1369},"content":"$23","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$24","reading_time":9,"word_count":1682},"content":"$25","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$26","reading_time":10,"word_count":1863},"content":"$27","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$28","reading_time":5,"word_count":865},"content":"$29","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$2a","reading_time":7,"word_count":1216},"content":"$2b","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$2c","reading_time":12,"word_count":2274},"content":"$2d","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"}],"version":"v4.0.0","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"content":"$L2e","toc":"$L2f","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"$L30","$L31","$L32"]}],["$L33","$L34"],"$L35"]}],"loading":null,"isPartial":false}
+0:{"buildId":"f7Rw9MN96lWwKeLwI0wT_","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$L3",null,{"header":["$","$L4",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$L5",null,{"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$6","reading_time":5,"word_count":888},"content":"$7","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$8","reading_time":5,"word_count":820},"content":"$9"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$a","reading_time":7,"word_count":1258},"content":"$b"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$c","reading_time":5,"word_count":941},"content":"$d","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$e","reading_time":9,"word_count":1674},"content":"$f"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$10","reading_time":8,"word_count":1476},"content":"$11","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$12","reading_time":4,"word_count":686},"content":"$13"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$14","reading_time":3,"word_count":410},"content":"$15","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$16","reading_time":2,"word_count":391},"content":"$17","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$18","reading_time":3,"word_count":566},"content":"$19","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$1a","reading_time":11,"word_count":2009},"content":"$1b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$1c","reading_time":6,"word_count":1048},"content":"$1d","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$1e","reading_time":3,"word_count":460},"content":"$1f","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$20","reading_time":7,"word_count":1393},"content":"$21","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$22","reading_time":7,"word_count":1369},"content":"$23","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$24","reading_time":9,"word_count":1682},"content":"$25","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$26","reading_time":10,"word_count":1863},"content":"$27","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$28","reading_time":5,"word_count":865},"content":"$29","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$2a","reading_time":7,"word_count":1216},"content":"$2b","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$2c","reading_time":12,"word_count":2274},"content":"$2d","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"}],"version":"v4.0.0","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"content":"$L2e","toc":"$L2f","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"$L30","$L31","$L32"]}],["$L33","$L34"],"$L35"]}],"loading":null,"isPartial":false}
 2e:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L36",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v4.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L37",null,{"href":"/docs/v4.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v4.0.0/use-cases",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","$L37",null,{"href":"/docs/v4.0.0/use-cases","className":"hover:text-foreground transition-colors","children":"Use Cases"}]]}],["$","div","/docs/v4.0.0/use-cases/document-verification",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Document Verification"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Document Verification"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail."}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[10," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":[["$","h2",null,{"id":"core-capabilities","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Core Capabilities"}],"\n",["$","h3",null,{"id":"tamper-proof-verification","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Tamper-Proof Verification"}],"\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b","\n","$L6c","\n","$L6d","\n","$L6e","\n","$L6f","\n","$L70","\n","$L71","\n","$L72","\n","$L73","\n","$L74","\n","$L75","\n","$L76","\n","$L77","\n","$L78","\n","$L79","\n","$L7a","\n","$L7b","\n","$L7c","\n","$L7d","\n","$L7e","\n","$L7f","\n","$L80","\n","$L81","\n","$L82","\n","$L83","\n","$L84","\n","$L85","\n","$L86","\n","$L87","\n","$L88","\n","$L89","\n","$L8a","\n","$L8b","\n","$L8c","\n","$L8d","\n","$L8e","\n","$L8f","\n","$L90","\n","$L91","\n","$L92","\n","$L93","\n","$L94","\n","$L95","\n","$L96","\n","$L97","\n","$L98","\n","$L99","\n","$L9a","\n","$L9b","\n","$L9c","\n","$L9d","\n","$L9e","\n","$L9f","\n","$La0","\n","$La1","\n","$La2","\n","$La3","\n","$La4","\n","$La5","\n","$La6","\n","$La7","\n","$La8","\n","$La9","\n","$Laa","\n","$Lab","\n","$Lac","\n","$Lad","\n","$Lae","\n","$Laf","\n","$Lb0","\n","$Lb1","\n","$Lb2","\n","$Lb3","\n","$Lb4","\n","$Lb5","\n","$Lb6","\n","$Lb7","\n","$Lb8","\n","$Lb9","\n","$Lba"]}],"$undefined","$Lbb","$Lbc"]}]
 2f:["$","$Lbd",null,{"items":[{"id":"core-capabilities","title":"Core Capabilities","level":2},{"id":"tamper-proof-verification","title":"Tamper-Proof Verification","level":3},{"id":"timestamp-authentication","title":"Timestamp Authentication","level":3},{"id":"permanent-audit-trails","title":"Permanent Audit Trails","level":3},{"id":"decentralized-validation","title":"Decentralized Validation","level":3},{"id":"use-cases-by-industry","title":"Use Cases by Industry","level":2},{"id":"legal-documents","title":"Legal Documents","level":3},{"id":"business-applications","title":"Business Applications","level":3},{"id":"educational-credentials","title":"Educational Credentials","level":3},{"id":"government-documents","title":"Government Documents","level":3},{"id":"key-benefits","title":"Key Benefits","level":2},{"id":"eliminate-single-points-of-failure","title":"Eliminate Single Points of Failure","level":3},{"id":"maintain-document-provenance","title":"Maintain Document Provenance","level":3},{"id":"cryptographic-verification","title":"Cryptographic Verification","level":3},{"id":"no-trusted-intermediaries-required","title":"No Trusted Intermediaries Required","level":3},{"id":"regulatory-compliance","title":"Regulatory Compliance","level":3},{"id":"cost-reduction","title":"Cost Reduction","level":3},{"id":"how-it-works","title":"How It Works","level":2},{"id":"1-document-notarization","title":"1. Document Notarization","level":3},{"id":"2-document-updates","title":"2. Document Updates","level":3},{"id":"3-multi-party-signing","title":"3. Multi-Party Signing","level":3},{"id":"4-verification","title":"4. Verification","level":3},{"id":"real-world-scenarios","title":"Real-World Scenarios","level":2},{"id":"scenario-1-legal-contract-management","title":"Scenario 1: Legal Contract Management","level":3},{"id":"scenario-2-academic-credential-verification","title":"Scenario 2: Academic Credential Verification","level":3},{"id":"scenario-3-financial-audit-trail","title":"Scenario 3: Financial Audit Trail","level":3},{"id":"scenario-4-government-permit-issuance","title":"Scenario 4: Government Permit Issuance","level":3},{"id":"integration-patterns","title":"Integration Patterns","level":2},{"id":"document-management-systems","title":"Document Management Systems","level":3},{"id":"e-signature-platforms","title":"E-Signature Platforms","level":3},{"id":"crm-and-business-systems","title":"CRM and Business Systems","level":3},{"id":"educational-systems","title":"Educational Systems","level":3},{"id":"government-systems","title":"Government Systems","level":3},{"id":"best-practices","title":"Best Practices","level":2},{"id":"initial-notarization","title":"Initial Notarization","level":3},{"id":"multi-party-documents","title":"Multi-Party Documents","level":3},{"id":"long-term-storage","title":"Long-Term Storage","level":3},{"id":"verification","title":"Verification","level":3},{"id":"privacy-considerations","title":"Privacy Considerations","level":3},{"id":"technical-advantages","title":"Technical Advantages","level":2},{"id":"cryptographic-security","title":"Cryptographic Security","level":3},{"id":"scalability","title":"Scalability","level":3},{"id":"interoperability","title":"Interoperability","level":3},{"id":"future-proof","title":"Future-Proof","level":3},{"id":"common-questions","title":"Common Questions","level":2},{"id":"see-also","title":"See Also","level":2}],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}]
 30:["$","$Lbe",null,{}]
 31:["$","$Lbf",null,{}]
 32:["$","$Lc0",null,{}]
 33:["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true}]
-34:["$","script","script-1",{"src":"/_next/static/chunks/96bfccf8ab4674df.js","async":true}]
+34:["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true}]
 35:["$","$Lc1",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@c2"}]}]
 38:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Once a document is notarized in the Aqua Protocol, any modification becomes immediately detectable. The cryptographic hash of the document content is stored in the revision chain, making it mathematically impossible to alter without detection."}]
 39:["$","h3",null,{"id":"timestamp-authentication","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Timestamp Authentication"}]
