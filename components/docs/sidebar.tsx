@@ -6,6 +6,7 @@ import { ChevronRight, ChevronDown, FolderOpen } from "lucide-react"
 import { useState } from "react"
 import type { SpecraConfig } from "@/lib/config"
 import { Icon } from "./icon"
+import { sortSidebarItems, sortSidebarGroups } from "@/lib/sidebar-utils"
 
 interface DocItem {
   title: string
@@ -145,23 +146,10 @@ export function Sidebar({ docs, version, onLinkClick, config }: SidebarProps) {
     setCollapsed((prev) => ({ ...prev, [section]: !prev[section] }))
   }
 
-  // Sort items within groups
-  const sortItems = (items: DocItem[]) => {
-    return items.sort((a, b) => (a.sidebar_position ?? 999) - (b.sidebar_position ?? 999))
-  }
-
-  // Sort standalone items
-  standalone.sort((a, b) => (a.sidebar_position ?? 999) - (b.sidebar_position ?? 999))
-
-  // Sort groups by position
-  const sortGroups = (groups: Record<string, SidebarGroup>) => {
-    return Object.entries(groups).sort(([, a], [, b]) => a.position - b.position)
-  }
-
   // Recursive component to render nested groups
   const renderGroup = (groupKey: string, group: SidebarGroup, depth: number = 0) => {
-    const sortedItems = sortItems([...group.items])
-    const sortedChildren = sortGroups(group.children)
+    const sortedItems = sortSidebarItems(group.items)
+    const sortedChildren = sortSidebarGroups(group.children)
     const hasChildren = sortedChildren.length > 0
     const hasItems = sortedItems.length > 0
     const hasContent = hasChildren || hasItems
@@ -223,37 +211,59 @@ export function Sidebar({ docs, version, onLinkClick, config }: SidebarProps) {
         {/* Children (shown when not collapsed) */}
         {!isCollapsed && hasContent && (
           <div className="ml-4 space-y-1">
-            {/* Render nested child groups first */}
-            {sortedChildren.map(([childKey, childGroup]) =>
-              renderGroup(`${groupKey}/${childKey}`, childGroup, depth + 1)
-            )}
-            {/* Then render items in this group */}
-            {sortedItems.map((doc) => {
-              const href = `/docs/${version}/${doc.slug}`
-              const isActive = pathname === href
+            {/* Merge and sort both child groups and items by position */}
+            {(() => {
+              // Create a unified list with type indicators
+              const merged: Array<{type: 'group', key: string, group: SidebarGroup, position: number} | {type: 'item', doc: DocItem, position: number}> = [
+                ...sortedChildren.map(([childKey, childGroup]) => ({
+                  type: 'group' as const,
+                  key: childKey,
+                  group: childGroup,
+                  position: childGroup.position
+                })),
+                ...sortedItems.map((doc) => ({
+                  type: 'item' as const,
+                  doc,
+                  position: doc.sidebar_position ?? doc.meta?.sidebar_position ?? doc.meta?.order ?? 999
+                }))
+              ]
 
-              return (
-                <Link
-                  key={`grouped-${doc.slug}`}
-                  href={href}
-                  onClick={onLinkClick}
-                  className={`flex items-center gap-2 px-3 py-2 text-sm rounded-md transition-colors ${isActive
-                    ? "bg-primary/10 text-primary font-medium"
-                    : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
-                    }`}
-                >
-                  {doc.meta?.icon && <Icon icon={doc.meta.icon} size={16} className="shrink-0" />}
-                  {doc.title}
-                </Link>
-              )
-            })}
+              // Sort by position
+              merged.sort((a, b) => a.position - b.position)
+
+              // Render in sorted order
+              return merged.map((item) => {
+                if (item.type === 'group') {
+                  return renderGroup(`${groupKey}/${item.key}`, item.group, depth + 1)
+                } else {
+                  const href = `/docs/${version}/${item.doc.slug}`
+                  const isActive = pathname === href
+
+                  return (
+                    <Link
+                      key={`grouped-${item.doc.slug}`}
+                      href={href}
+                      onClick={onLinkClick}
+                      className={`flex items-center gap-2 px-3 py-2 text-sm rounded-md transition-colors ${isActive
+                        ? "bg-primary/10 text-primary font-medium"
+                        : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                        }`}
+                    >
+                      {item.doc.meta?.icon && <Icon icon={item.doc.meta.icon} size={16} className="shrink-0" />}
+                      {item.doc.title}
+                    </Link>
+                  )
+                }
+              })
+            })()}
           </div>
         )}
       </div>
     )
   }
 
-  const sortedRootGroups = sortGroups(rootGroups)
+  const sortedRootGroups = sortSidebarGroups(rootGroups)
+  const sortedStandalone = sortSidebarItems(standalone)
 
   return (
     <aside className="w-64 shrink-0 sticky top-24 self-start">
@@ -261,7 +271,7 @@ export function Sidebar({ docs, version, onLinkClick, config }: SidebarProps) {
         <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">Documentation</h2>
         <nav className="space-y-1 pr-4">
           {/* Standalone pages (not in folders) */}
-          {standalone.length > 0 && standalone.map((doc) => {
+          {sortedStandalone.length > 0 && sortedStandalone.map((doc) => {
             const href = `/docs/${version}/${doc.slug}`
             const isActive = pathname === href
 

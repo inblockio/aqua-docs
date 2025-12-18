@@ -8,6 +8,7 @@ import { remarkCodeMeta } from "@/lib/remark-code-meta"
 import rehypeSlug from "rehype-slug"
 import { mdxComponents } from "./mdx-components"
 import { getConfig, processContentWithEnv } from "@/lib/config"
+import { sortSidebarItems } from "@/lib/sidebar-utils"
 
 interface CategoryIndexProps {
   categoryPath: string
@@ -38,12 +39,8 @@ export function CategoryIndex({ categoryPath, version, allDocs, title, descripti
     return "";
   };
 
-  // Sort by sidebar_position
-  const sortedDocs = childDocs.sort((a, b) => {
-    const orderA = a.meta.sidebar_position ?? a.meta.order ?? 999
-    const orderB = b.meta.sidebar_position ?? b.meta.order ?? 999
-    return orderA - orderB
-  })
+  // Sort by sidebar_position using unified sorting function
+  const sortedDocs = sortSidebarItems(childDocs)
 
   return (
     <div className="flex-1 min-w-0">
