@@ -74,7 +74,6 @@ jobs:
           echo "✓ Build completed"
         env:
           NODE_ENV: production
-          NEXT_PUBLIC_BASE_PATH: /mint-test
 
       - name: Add .nojekyll
         run: touch ./out/.nojekyll
