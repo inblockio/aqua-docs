@@ -1,15 +1,14 @@
 1:"$Sreact.fragment"
 2:"$Sreact.suspense"
-3:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
-4:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
-5:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
-22:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
-23:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
-3e:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
-3f:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
-40:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
-41:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
-42:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLoading"]
+4:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayoutWrapper"]
+5:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"Header"]
+20:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayout"]
+23:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TableOfContents"]
+24:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"MdxHotReload"]
+25:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"HotReloadIndicator"]
+26:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DevModeBadge"]
+27:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
 6:Td09,
 We first exchanged goods, then we used means to exchange goods, such as
 shells and coins. Today we use money. We have transitioned to a world where
@@ -4744,39 +4743,251 @@ process of double-entry bookkeeping and provides a foundation for a new data
 economy. This also allows to create unforgeable invoices which can be clearly
 attributed to its sender, avoiding fraud. This is one of many other use cases,
 e.g. providing trusted news via revision-controlled journalism.
-0:{"buildId":"k8-fwt2fbTlxLBvWFtXyi","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$L3",null,{"header":["$","$L4",null,{"currentVersion":"v1.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$L5",null,{"docs":[{"slug":"data-accounting","filePath":"data-accounting","title":"Data Accounting","meta":{"title":"Data Accounting","linkTitle":"Data Accounting","weight":5,"sidebar_position":5,"description":"Introduces the concept of Data Accounting\n","content":"$6","reading_time":3,"word_count":525},"content":"$7"},{"slug":"data-governance","filePath":"data-governance","title":"Data Governance","meta":{"title":"Data Governance","linkTitle":"Data Governance","weight":6,"sidebar_position":6,"description":"Introduces the concept of Data Governance\n","content":"$8","reading_time":4,"word_count":643},"content":"$9"},{"slug":"delegated-witnessing","filePath":"delegated-witnessing","title":"Delegated Witnessing","meta":{"title":"Delegated Witnessing","linkTitle":"Delegated Witnessing","weight":7,"sidebar_position":7,"description":"Describes the process of sending domain snapshots to remote data vaults.\n","content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n","reading_time":1,"word_count":73},"content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n"},{"slug":"design-principles","filePath":"design-principles","title":"Design Principles","meta":{"title":"Design Principles","linkTitle":"Design Principles","weight":8,"sidebar_position":8,"description":"Lists the design principles underlying our reference implementation\n","content":"$a","reading_time":4,"word_count":704},"content":"$b"},{"slug":"guardian","filePath":"guardian","title":"Guardian","meta":{"title":"Guardian","linkTitle":"Guardian","weight":9,"sidebar_position":9,"description":"Shows access and transport layer logic used to interconnect data vaults\n","content":"$c","reading_time":15,"word_count":2811},"content":"$d"},{"slug":"immutable-hyperlinks","filePath":"immutable-hyperlinks","title":"Immutable Hyperlinks","meta":{"title":"Immutable Hyperlinks","linkTitle":"Immutable Hyperlinks","weight":10,"sidebar_position":10,"description":"Shows how the Aqua URI's can be used as immutable links.\n","content":"$e","reading_time":3,"word_count":454},"content":"$f"},{"slug":"assurance-levels","filePath":"assurance-levels","title":"Assurance Levels (AAL)","meta":{"title":"Assurance Levels (AAL)","linkTitle":"Assurance Levels","description":"Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation. \n","content":"$10","reading_time":2,"word_count":285},"content":"$11"},{"slug":"concepts","filePath":"concepts","title":"Concepts ","meta":{"title":"Concepts ","description":"Explains the technologies selected for the reference implementation and why we selected them.","content":"$12","reading_time":11,"word_count":2055},"content":"$13"},{"slug":"identity-protocol","filePath":"identity-protocol","title":"Identity Protocol","meta":{"title":"Identity Protocol","description":"The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.\n","content":"$14","reading_time":13,"word_count":2566},"content":"$15"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol Version 1","meta":{"title":"Aqua Protocol Version 1","description":"An overview of verision 1 of the Aqua protocol","content":"$16","reading_time":5,"word_count":872},"content":"$17"},{"slug":"name-resolution","filePath":"name-resolution","title":"Aqua Name Resolution (ANS)","meta":{"title":"Aqua Name Resolution (ANS)","description":"ANS is used to hashes of various types to human readable names","content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n","reading_time":1,"word_count":44},"content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n"},{"slug":"whitepaper","filePath":"whitepaper","title":"Whitepaper","meta":{"title":"Whitepaper","linkTitle":"Whitepaper","description":"High level outline of Aqua Protocol (AQP) specification","content":"$18","reading_time":20,"word_count":3993},"content":"$19"}],"version":"v1.0.0","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"content":"$L1a","toc":"$L1b","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"$L1c","$L1d","$L1e"]}],["$L1f","$L20"],"$L21"]}],"loading":null,"isPartial":false}
-1a:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L22",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v1.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L23",null,{"href":"/docs/v1.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v1.0.0/design-principles",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Design Principles"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Design Principles"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"Lists the design principles underlying our reference implementation\n"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[4," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":[["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The following design principles pertain to Aqua reference Implementation ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"PKC"}]]}],"\n",["$","h2",null,{"id":"private-is-default","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Private is Default"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The principle default to private is that no data of the PKC ",["$","a",null,{"href":"whitepaper.md#data-vault","className":"text-primary hover:underline font-medium","children":"Data\nvault"}]," is shared without it being explicitly\nauthorized by the associated account."]}],"\n",["$","h3",null,{"id":"domain-access-levels","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Domain Access Levels"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Levels of access are:"}],"\n","$L24","\n","$L25","\n","$L26","\n","$L27","\n","$L28","\n","$L29","\n","$L2a","\n","$L2b","\n","$L2c","\n","$L2d","\n","$L2e","\n","$L2f","\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b"]}],"$undefined","$L3c","$L3d"]}]
-1b:["$","$L3e",null,{"items":[{"id":"private-is-default","title":"Private is Default","level":2},{"id":"domain-access-levels","title":"Domain Access Levels","level":3},{"id":"offline-capability","title":"Offline Capability","level":2},{"id":"separation-of-account-and-service","title":"Separation of Account and Service","level":2},{"id":"signature-login","title":"Signature Login","level":2},{"id":"principle-data-portability","title":"Principle: Data Portability","level":2},{"id":"implementation-specifics","title":"Implementation Specifics","level":3}],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}]
-1c:["$","$L3f",null,{}]
-1d:["$","$L40",null,{}]
-1e:["$","$L41",null,{}]
-1f:["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true}]
-20:["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true}]
-21:["$","$L42",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@43"}]}]
-24:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Private: Only the account owner has access to files and services\ninitialized by his account. Agreement / Permissioned access: The Account\nowner grants other Account's access to files or services based on\nverifiable contracts which are themselves written with the Aqua Protocol\nto ensure they are forgery-proof and therefore safe. Public: Other\nAccount's have access to the file or service without agreements."}]
-25:["$","h2",null,{"id":"offline-capability","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Offline Capability"}]
-26:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The PKC Data Vault follow's the principle of being able to run and be\nfunctional without internet connection after setup or through\ninstallation based on local installation files."}]
-27:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"This allows PKC setups to be kept offline from any internet connectivity\nwhile still functional. This can provide the required assurances for\nvery sensitive data."}]
-28:["$","h2",null,{"id":"separation-of-account-and-service","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Separation of Account and Service"}]
-29:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Concern: There is a trend in the DIF/WC3 Identity space that some\nplayers like to accumulate personal identifiable data (PII) inside of\nWallets. We think this is a ill-fated direction and there should be\na clear separation between account and service. Wallets should not hold\npersonal identifiable data."}]
-2a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Benefits:"}]
-2b:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"If the service gets hacked, no account related data is leaked if\nit's not stored."}],"\n",["$","li",null,{"className":"leading-7","children":"Account is not compromised, as there is no password saved within the\nservice with Password free login."}],"\n"]}]
-2c:["$","h4",null,{"id":"wallets-have-one-job-keep-private-keys-safe-account-management","children":[["$","a",null,{"href":"whitepaper.md#wallet","className":"text-primary hover:underline font-medium","children":"Wallet"}],"'s have one job. Keep private keys safe! (Account Management)"]}]
-2d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Should be stupid, simple, safe!"}],"\n",["$","li",null,{"className":"leading-7","children":["Allowed operations:","\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Signing"}],"\n",["$","li",null,{"className":"leading-7","children":"De- / Encrypt"}],"\n",["$","li",null,{"className":"leading-7","children":"Publishing transactions to service (e.g. witness networks)"}],"\n"]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":"Ability to choose “high level of assurance” depending on the stakes\nassociated with the account(s) managed by the wallet"}],"\n",["$","li",null,{"className":"leading-7","children":"Takes care of key recovery mechanisms"}],"\n"]}]
-2e:["$","h4",null,{"id":"data-vault-service--has-one-job-keep-the-data-safe","children":[["$","a",null,{"href":"whitepaper.md#data-vault","className":"text-primary hover:underline font-medium","children":"Data Vault"}]," (Service)- Has one job: keep the data safe!"]}]
-2f:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"Principle:_Offline_Capability","className":"text-primary hover:underline font-medium","children":"Principle: Offline\nCapability"}]," so it can run\noffline; works offline on local machine"]}],"\n",["$","li",null,{"className":"leading-7","children":"All significant actions authorized and managed though the wallet"}],"\n",["$","li",null,{"className":"leading-7","children":"Should offer good tooling for data storage and manipulation"}],"\n",["$","li",null,{"className":"leading-7","children":["Strong access control: By ",["$","a",null,{"href":"Principle:_Default_is_Private","className":"text-primary hover:underline font-medium","children":"Principle: Default is\nPrivate"}]," which means data\nis only accessible by the owner."]}],"\n",["$","li",null,{"className":"leading-7","children":["Data is well protected","\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"The Data Vault should apply additional security features to keep\nthe data safe."}],"\n",["$","li",null,{"className":"leading-7","children":"e.g. Encryption of files / databases if service is not used."}],"\n",["$","li",null,{"className":"leading-7","children":"e.g. Encryption of pages with web-decryption (allowing for\nEnd-to-End Encryption)."}],"\n"]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":"Capabilities for sharing and publishing data"}],"\n",["$","li",null,{"className":"leading-7","children":["Offers full Backup and Recovery mechanisms to move data freely","\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"Principle:_Data_Portability","className":"text-primary hover:underline font-medium","children":"Principle: Data\nPortability"}]}],"\n"]}],"\n"]}],"\n"]}]
-30:["$","h2",null,{"id":"signature-login","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Signature Login"}]
-31:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"We do not use passwords for login but instead we use a signature of a\nprivate key to authorize access to a service. This increases security\nand does not require the user to remember a password, creating a better\nuser experience."}]
-32:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["Pros:",["$","br",null,{}],"\n","* Account owner uses his wallet to complete a signature challenge for\nlogin. With this challenge he proves that he owns the private key to a\npublic key. If the public key is registered as an account at the\nservice, the account is granted access."]}]
-33:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"The password can't be leaked as it does not exist."}],"\n",["$","li",null,{"className":"leading-7","children":"Very high security"}],"\n"]}]
-34:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["Contra:",["$","br",null,{}],"\n","* Requires access to the wallet which holds the private key to\nauthorize access"]}]
-35:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Not commonly understood by users as a way to login (new process)"}],"\n"]}]
-36:["$","h2",null,{"id":"principle-data-portability","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Principle: Data Portability"}]
-37:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The Principle of Data Portability means that the\n",["$","a",null,{"href":"whitepaper.md#account","className":"text-primary hover:underline font-medium","children":"Account"}]," owner can instruct the Service to Export\nall data associated with the ",["$","a",null,{"href":"whitepaper.md#account","className":"text-primary hover:underline font-medium","children":"Account"}]," and is free\nto move this data to a new service which is capable of importing the\ndata."]}]
-38:["$","h3",null,{"id":"implementation-specifics","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Implementation Specifics"}]
-39:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["In PKC's this is guaranteed by:",["$","br",null,{}],"\n","* providing a Backup and restore procedure which allows to move data\nbetween PKC's and restore them in case of a required recovery."]}]
-3a:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"providing a file import and export function"}],"\n",["$","li",null,{"className":"leading-7","children":"providing an import / export API"}],"\n"]}]
-3b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Furthermore we ensure with the development of the MediaWiki Data\nAccounting Extension, that the data is still compatible with the legacy\nimport / export (which means only the text not the verification data is\nimported / exported."}]
-3c:["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v1.0.0/design-principles.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":[["$","path","1couwa",{"d":"M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","1y4qbx",{"d":"M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"}],"$undefined"]}],"Edit this page"]}],["$","a",null,{"href":"https://github.com/inblockio/issues/new","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-external-link h-4 w-4","children":[["$","path","1q9fwt",{"d":"M15 3h6v6"}],["$","path","gplh6r",{"d":"M10 14 21 3"}],["$","path","a6xqqp",{"d":"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"}],"$undefined"]}],"Report an issue"]}]]}]
-3d:["$","div",null,{"className":"mt-12 pt-8 border-t border-border grid grid-cols-2 gap-4","children":[["$","$L23",null,{"href":"/docs/v1.0.0/delegated-witnessing","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Previous"}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Delegated Witnessing"}]]}],["$","$L23",null,{"href":"/docs/v1.0.0/guardian","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all text-right","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center justify-end gap-2 text-sm text-muted-foreground","children":[["$","span",null,{"children":"Next"}],["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Guardian"}]]}]]}]
-43:null
+0:{"buildId":"_ePiRrooneby3ghoRNSHI","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","$L3",null,{}],"children":[["$","$L4",null,{"header":["$","$L5",null,{"currentVersion":"v1.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"docs":[{"slug":"data-accounting","filePath":"data-accounting","title":"Data Accounting","meta":{"title":"Data Accounting","linkTitle":"Data Accounting","weight":5,"sidebar_position":5,"description":"Introduces the concept of Data Accounting\n","content":"$6","reading_time":3,"word_count":525},"content":"$7"},{"slug":"data-governance","filePath":"data-governance","title":"Data Governance","meta":{"title":"Data Governance","linkTitle":"Data Governance","weight":6,"sidebar_position":6,"description":"Introduces the concept of Data Governance\n","content":"$8","reading_time":4,"word_count":643},"content":"$9"},{"slug":"delegated-witnessing","filePath":"delegated-witnessing","title":"Delegated Witnessing","meta":{"title":"Delegated Witnessing","linkTitle":"Delegated Witnessing","weight":7,"sidebar_position":7,"description":"Describes the process of sending domain snapshots to remote data vaults.\n","content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n","reading_time":1,"word_count":73},"content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n"},{"slug":"design-principles","filePath":"design-principles","title":"Design Principles","meta":{"title":"Design Principles","linkTitle":"Design Principles","weight":8,"sidebar_position":8,"description":"Lists the design principles underlying our reference implementation\n","content":"$a","reading_time":4,"word_count":704},"content":"$b"},{"slug":"guardian","filePath":"guardian","title":"Guardian","meta":{"title":"Guardian","linkTitle":"Guardian","weight":9,"sidebar_position":9,"description":"Shows access and transport layer logic used to interconnect data vaults\n","content":"$c","reading_time":15,"word_count":2811},"content":"$d"},{"slug":"immutable-hyperlinks","filePath":"immutable-hyperlinks","title":"Immutable Hyperlinks","meta":{"title":"Immutable Hyperlinks","linkTitle":"Immutable Hyperlinks","weight":10,"sidebar_position":10,"description":"Shows how the Aqua URI's can be used as immutable links.\n","content":"$e","reading_time":3,"word_count":454},"content":"$f"},{"slug":"assurance-levels","filePath":"assurance-levels","title":"Assurance Levels (AAL)","meta":{"title":"Assurance Levels (AAL)","linkTitle":"Assurance Levels","description":"Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation. \n","content":"$10","reading_time":2,"word_count":285},"content":"$11"},{"slug":"concepts","filePath":"concepts","title":"Concepts ","meta":{"title":"Concepts ","description":"Explains the technologies selected for the reference implementation and why we selected them.","content":"$12","reading_time":11,"word_count":2055},"content":"$13"},{"slug":"identity-protocol","filePath":"identity-protocol","title":"Identity Protocol","meta":{"title":"Identity Protocol","description":"The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.\n","content":"$14","reading_time":13,"word_count":2566},"content":"$15"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol Version 1","meta":{"title":"Aqua Protocol Version 1","description":"An overview of verision 1 of the Aqua protocol","content":"$16","reading_time":5,"word_count":872},"content":"$17"},{"slug":"name-resolution","filePath":"name-resolution","title":"Aqua Name Resolution (ANS)","meta":{"title":"Aqua Name Resolution (ANS)","description":"ANS is used to hashes of various types to human readable names","content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n","reading_time":1,"word_count":44},"content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n"},{"slug":"whitepaper","filePath":"whitepaper","title":"Whitepaper","meta":{"title":"Whitepaper","linkTitle":"Whitepaper","description":"High level outline of Aqua Protocol (AQP) specification","content":"$18","reading_time":20,"word_count":3993},"content":"$19"}],"version":"v1.0.0","content":"$L1a","toc":"$L1b","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"$L1c","$L1d","$L1e"]}],null,"$L1f"]}],"loading":null,"isPartial":false}
+21:T1238,
+The following design principles pertain to Aqua reference Implementation `PKC`
+
+## Private is Default
+
+The principle default to private is that no data of the PKC [Data
+vault](whitepaper.md#data-vault) is shared without it being explicitly
+authorized by the associated account.
+
+### Domain Access Levels
+
+Levels of access are:
+
+Private: Only the account owner has access to files and services
+initialized by his account. Agreement / Permissioned access: The Account
+owner grants other Account's access to files or services based on
+verifiable contracts which are themselves written with the Aqua Protocol
+to ensure they are forgery-proof and therefore safe. Public: Other
+Account's have access to the file or service without agreements.
+
+## Offline Capability
+
+The PKC Data Vault follow's the principle of being able to run and be
+functional without internet connection after setup or through
+installation based on local installation files.
+
+This allows PKC setups to be kept offline from any internet connectivity
+while still functional. This can provide the required assurances for
+very sensitive data.
+
+## Separation of Account and Service
+
+Concern: There is a trend in the DIF/WC3 Identity space that some
+players like to accumulate personal identifiable data (PII) inside of
+Wallets. We think this is a ill-fated direction and there should be
+a clear separation between account and service. Wallets should not hold
+personal identifiable data.
+
+Benefits:
+
+-   If the service gets hacked, no account related data is leaked if
+    it's not stored.
+-   Account is not compromised, as there is no password saved within the
+    service with Password free login.
+
+#### [Wallet](whitepaper.md#wallet)'s have one job. Keep private keys safe! (Account Management)
+
+-   Should be stupid, simple, safe!
+-   Allowed operations:
+    -   Signing
+    -   De- / Encrypt
+    -   Publishing transactions to service (e.g. witness networks)
+-   Ability to choose “high level of assurance” depending on the stakes
+    associated with the account(s) managed by the wallet
+-   Takes care of key recovery mechanisms
+
+#### [Data Vault](whitepaper.md#data-vault) (Service)- Has one job: keep the data safe!
+
+-   [Principle: Offline
+    Capability](Principle:_Offline_Capability) so it can run
+    offline; works offline on local machine
+-   All significant actions authorized and managed though the wallet
+-   Should offer good tooling for data storage and manipulation
+-   Strong access control: By [Principle: Default is
+    Private](Principle:_Default_is_Private) which means data
+    is only accessible by the owner.
+-   Data is well protected
+    -   The Data Vault should apply additional security features to keep
+        the data safe.
+    -   e.g. Encryption of files / databases if service is not used.
+    -   e.g. Encryption of pages with web-decryption (allowing for
+        End-to-End Encryption).
+-   Capabilities for sharing and publishing data
+-   Offers full Backup and Recovery mechanisms to move data freely
+    -   [Principle: Data
+        Portability](Principle:_Data_Portability "wikilink")
+
+## Signature Login
+
+We do not use passwords for login but instead we use a signature of a
+private key to authorize access to a service. This increases security
+and does not require the user to remember a password, creating a better
+user experience.
+
+Pros:  
+\* Account owner uses his wallet to complete a signature challenge for
+login. With this challenge he proves that he owns the private key to a
+public key. If the public key is registered as an account at the
+service, the account is granted access.
+
+-   The password can't be leaked as it does not exist.
+-   Very high security
+
+Contra:  
+\* Requires access to the wallet which holds the private key to
+authorize access
+
+-   Not commonly understood by users as a way to login (new process)
+
+## Principle: Data Portability
+
+The Principle of Data Portability means that the
+[Account](whitepaper.md#account) owner can instruct the Service to Export
+all data associated with the [Account](whitepaper.md#account) and is free
+to move this data to a new service which is capable of importing the
+data.
+
+### Implementation Specifics
+
+In PKC's this is guaranteed by:  
+\* providing a Backup and restore procedure which allows to move data
+between PKC's and restore them in case of a required recovery.
+
+-   providing a file import and export function
+-   providing an import / export API
+
+Furthermore we ensure with the development of the MediaWiki Data
+Accounting Extension, that the data is still compatible with the legacy
+import / export (which means only the text not the verification data is
+imported / exported.
+22:T1238,
+The following design principles pertain to Aqua reference Implementation `PKC`
+
+## Private is Default
+
+The principle default to private is that no data of the PKC [Data
+vault](whitepaper.md#data-vault) is shared without it being explicitly
+authorized by the associated account.
+
+### Domain Access Levels
+
+Levels of access are:
+
+Private: Only the account owner has access to files and services
+initialized by his account. Agreement / Permissioned access: The Account
+owner grants other Account's access to files or services based on
+verifiable contracts which are themselves written with the Aqua Protocol
+to ensure they are forgery-proof and therefore safe. Public: Other
+Account's have access to the file or service without agreements.
+
+## Offline Capability
+
+The PKC Data Vault follow's the principle of being able to run and be
+functional without internet connection after setup or through
+installation based on local installation files.
+
+This allows PKC setups to be kept offline from any internet connectivity
+while still functional. This can provide the required assurances for
+very sensitive data.
+
+## Separation of Account and Service
+
+Concern: There is a trend in the DIF/WC3 Identity space that some
+players like to accumulate personal identifiable data (PII) inside of
+Wallets. We think this is a ill-fated direction and there should be
+a clear separation between account and service. Wallets should not hold
+personal identifiable data.
+
+Benefits:
+
+-   If the service gets hacked, no account related data is leaked if
+    it's not stored.
+-   Account is not compromised, as there is no password saved within the
+    service with Password free login.
+
+#### [Wallet](whitepaper.md#wallet)'s have one job. Keep private keys safe! (Account Management)
+
+-   Should be stupid, simple, safe!
+-   Allowed operations:
+    -   Signing
+    -   De- / Encrypt
+    -   Publishing transactions to service (e.g. witness networks)
+-   Ability to choose “high level of assurance” depending on the stakes
+    associated with the account(s) managed by the wallet
+-   Takes care of key recovery mechanisms
+
+#### [Data Vault](whitepaper.md#data-vault) (Service)- Has one job: keep the data safe!
+
+-   [Principle: Offline
+    Capability](Principle:_Offline_Capability) so it can run
+    offline; works offline on local machine
+-   All significant actions authorized and managed though the wallet
+-   Should offer good tooling for data storage and manipulation
+-   Strong access control: By [Principle: Default is
+    Private](Principle:_Default_is_Private) which means data
+    is only accessible by the owner.
+-   Data is well protected
+    -   The Data Vault should apply additional security features to keep
+        the data safe.
+    -   e.g. Encryption of files / databases if service is not used.
+    -   e.g. Encryption of pages with web-decryption (allowing for
+        End-to-End Encryption).
+-   Capabilities for sharing and publishing data
+-   Offers full Backup and Recovery mechanisms to move data freely
+    -   [Principle: Data
+        Portability](Principle:_Data_Portability "wikilink")
+
+## Signature Login
+
+We do not use passwords for login but instead we use a signature of a
+private key to authorize access to a service. This increases security
+and does not require the user to remember a password, creating a better
+user experience.
+
+Pros:  
+\* Account owner uses his wallet to complete a signature challenge for
+login. With this challenge he proves that he owns the private key to a
+public key. If the public key is registered as an account at the
+service, the account is granted access.
+
+-   The password can't be leaked as it does not exist.
+-   Very high security
+
+Contra:  
+\* Requires access to the wallet which holds the private key to
+authorize access
+
+-   Not commonly understood by users as a way to login (new process)
+
+## Principle: Data Portability
+
+The Principle of Data Portability means that the
+[Account](whitepaper.md#account) owner can instruct the Service to Export
+all data associated with the [Account](whitepaper.md#account) and is free
+to move this data to a new service which is capable of importing the
+data.
+
+### Implementation Specifics
+
+In PKC's this is guaranteed by:  
+\* providing a Backup and restore procedure which allows to move data
+between PKC's and restore them in case of a required recovery.
+
+-   providing a file import and export function
+-   providing an import / export API
+
+Furthermore we ensure with the development of the MediaWiki Data
+Accounting Extension, that the data is still compatible with the legacy
+import / export (which means only the text not the verification data is
+imported / exported.
+1a:["$","$L20",null,{"meta":{"title":"Design Principles","linkTitle":"Design Principles","weight":8,"sidebar_position":8,"description":"Lists the design principles underlying our reference implementation\n","content":"$21","reading_time":4,"word_count":704},"content":"$22","previousDoc":{"title":"Delegated Witnessing","slug":"delegated-witnessing"},"nextDoc":{"title":"Guardian","slug":"guardian"},"version":"v1.0.0","slug":"design-principles","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}]
+1b:["$","$L23",null,{"items":[{"id":"private-is-default","title":"Private is Default","level":2},{"id":"domain-access-levels","title":"Domain Access Levels","level":3},{"id":"offline-capability","title":"Offline Capability","level":2},{"id":"separation-of-account-and-service","title":"Separation of Account and Service","level":2},{"id":"signature-login","title":"Signature Login","level":2},{"id":"principle-data-portability","title":"Principle: Data Portability","level":2},{"id":"implementation-specifics","title":"Implementation Specifics","level":3}],"config":"$1a:props:config"}]
+1c:["$","$L24",null,{}]
+1d:["$","$L25",null,{}]
+1e:["$","$L26",null,{}]
+1f:["$","$L27",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@28"}]}]
+28:null

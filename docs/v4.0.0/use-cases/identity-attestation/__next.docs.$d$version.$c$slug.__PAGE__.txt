@@ -1,15 +1,14 @@
 1:"$Sreact.fragment"
 2:"$Sreact.suspense"
-3:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
-4:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
-5:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
-36:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
-37:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
-70:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
-71:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
-72:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
-73:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
-74:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLoading"]
+4:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayoutWrapper"]
+5:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"Header"]
+34:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayout"]
+37:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TableOfContents"]
+38:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"MdxHotReload"]
+39:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"HotReloadIndicator"]
+3a:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DevModeBadge"]
+3b:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
 6:T1ef1,
 
 The **Aqua Tree** is the primary data structure in Aqua Protocol. It serves as the container for all revisions, their relationships, and associated metadata. An Aqua Tree represents a complete, self-contained unit that can be stored, transmitted, and verified independently.
@@ -522,7 +521,7 @@ For large trees:
 - [Signature Revision](/schema_reference/signing_revision) - Cryptographic signatures
 - [Witness Revision](/schema_reference/witness_revision) - Blockchain anchoring
 - [Link Revision](/schema_reference/link_revision) - Connecting trees
-- [File Index](/schema_reference/file_index) - Content hash mapping8:T1b1f,
+- [File Index](/schema_reference/file_index) - Content hash mapping8:T1b19,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -530,7 +529,7 @@ For large trees:
 <Callout type="info">
 **Powered by Cryptography, Not Blockchain**
 
-Aqua Protocol is made possible by crypto—as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
+Aqua Protocol is made possible by crypto as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
 
 <Badge icon="circle-check" color="green">
  Account & Verify Data in Seconds
@@ -557,7 +556,7 @@ Trust can be built by relying on hashing and encryption mechanisms or by delegat
 
 ## How It Works
 
-At its core, Aqua creates portable hash-chains—called **AquaTrees**—that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
+At its core, Aqua creates portable hash-chains called **AquaTrees** that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
 
 ### Key Features
 
@@ -736,7 +735,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-9:T1b1f,
+9:T1b19,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -744,7 +743,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 <Callout type="info">
 **Powered by Cryptography, Not Blockchain**
 
-Aqua Protocol is made possible by crypto—as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
+Aqua Protocol is made possible by crypto as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
 
 <Badge icon="circle-check" color="green">
  Account & Verify Data in Seconds
@@ -771,7 +770,7 @@ Trust can be built by relying on hashing and encryption mechanisms or by delegat
 
 ## How It Works
 
-At its core, Aqua creates portable hash-chains—called **AquaTrees**—that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
+At its core, Aqua creates portable hash-chains called **AquaTrees** that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
 
 ### Key Features
 
@@ -950,26 +949,21 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-a:T2f93,
+a:T2e36,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
-  <TabsList>
-      <TabsTrigger value="js">JavaScript/TypeScript (v3)</TabsTrigger>
-      <TabsTrigger value="rust">Rust (V4)</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     **Stable** - Production-ready SDK for Node.js, Web, and React Native
 
     Best for: Web applications, existing JavaScript projects
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ---
@@ -1344,18 +1338,13 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
 Want to see the full workflow including signing and witnessing?
 
 <Tabs defaultValue="js">
-  <TabsList>
-    <TabsTrigger value="js">Javascript</TabsTrigger>
-    <TabsTrigger value="rust">Rust</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ## Try Aquafier
@@ -1397,26 +1386,21 @@ Not ready to code yet? Try our web-based demo:
 <Callout type="note" >
 **Ready to build?** Start with the [Development Guide](/development) for detailed instructions on signing, witnessing, and advanced features.
 </Callout  >
-b:T2f93,
+b:T2e36,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
-  <TabsList>
-      <TabsTrigger value="js">JavaScript/TypeScript (v3)</TabsTrigger>
-      <TabsTrigger value="rust">Rust (V4)</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     **Stable** - Production-ready SDK for Node.js, Web, and React Native
 
     Best for: Web applications, existing JavaScript projects
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ---
@@ -1791,18 +1775,13 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
 Want to see the full workflow including signing and witnessing?
 
 <Tabs defaultValue="js">
-  <TabsList>
-    <TabsTrigger value="js">Javascript</TabsTrigger>
-    <TabsTrigger value="rust">Rust</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ## Try Aquafier
@@ -7406,12 +7385,12 @@ To verify an object revision:
 - [Signature Revision](/schema_reference/signing_revision) - Sign object revisions
 - [Witness Revision](/schema_reference/witness_revision) - Add timestamped proof
 - [Link Revision](/schema_reference/link_revision) - Connect to other chains
-1e:T1185,
+1e:T1183,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose—either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -7506,12 +7485,12 @@ Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic an
 
 
 
-```1f:T1185,
+```1f:T1183,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose—either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -12092,69 +12071,249 @@ A: Verification of existing chains works offline using cryptographic signatures.
 - [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
 - [Quick Start](/quick-start) - Get started with supply chain tracking
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-0:{"buildId":"k8-fwt2fbTlxLBvWFtXyi","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$L3",null,{"header":["$","$L4",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$L5",null,{"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$6","reading_time":5,"word_count":888},"content":"$7","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$8","reading_time":5,"word_count":820},"content":"$9"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$a","reading_time":7,"word_count":1258},"content":"$b"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$c","reading_time":5,"word_count":941},"content":"$d","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$e","reading_time":9,"word_count":1674},"content":"$f"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$10","reading_time":8,"word_count":1476},"content":"$11","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$12","reading_time":4,"word_count":686},"content":"$13"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$14","reading_time":3,"word_count":410},"content":"$15","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$16","reading_time":2,"word_count":391},"content":"$17","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$18","reading_time":3,"word_count":566},"content":"$19","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$1a","reading_time":11,"word_count":2009},"content":"$1b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$1c","reading_time":6,"word_count":1048},"content":"$1d","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$1e","reading_time":3,"word_count":460},"content":"$1f","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$20","reading_time":7,"word_count":1393},"content":"$21","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$22","reading_time":7,"word_count":1369},"content":"$23","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$24","reading_time":9,"word_count":1682},"content":"$25","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$26","reading_time":10,"word_count":1863},"content":"$27","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$28","reading_time":5,"word_count":865},"content":"$29","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$2a","reading_time":7,"word_count":1216},"content":"$2b","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$2c","reading_time":12,"word_count":2274},"content":"$2d","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"}],"version":"v4.0.0","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"content":"$L2e","toc":"$L2f","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"$L30","$L31","$L32"]}],["$L33","$L34"],"$L35"]}],"loading":null,"isPartial":false}
-2e:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L36",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v4.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L37",null,{"href":"/docs/v4.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v4.0.0/use-cases",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","$L37",null,{"href":"/docs/v4.0.0/use-cases","className":"hover:text-foreground transition-colors","children":"Use Cases"}]]}],["$","div","/docs/v4.0.0/use-cases/identity-attestation",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Identity Attestation"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Identity Attestation"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"Establish trust with verifiable self-sovereign identity claims and attestations"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[5," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":[["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The Aqua Protocol enables a robust ",["$","strong",null,{"children":"Self-Sovereign Identity (SSI)"}]," framework where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. By leveraging cryptographic proofs and decentralized trust chains, Aqua allows users to own their data while enabling third parties to verify specific attributes with certainty."]}],"\n",["$","h2",null,{"id":"core-capabilities","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Core Capabilities"}],"\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b","\n","$L6c","\n","$L6d"]}],"$undefined","$L6e","$L6f"]}]
-2f:["$","$L70",null,{"items":[{"id":"core-capabilities","title":"Core Capabilities","level":2},{"id":"self-sovereign-identity-ssi","title":"Self-Sovereign Identity (SSI)","level":3},{"id":"verifiable-attestations","title":"Verifiable Attestations","level":3},{"id":"trust-chains","title":"Trust Chains","level":3},{"id":"selective-disclosure--privacy","title":"Selective Disclosure & Privacy","level":3},{"id":"use-cases-by-industry","title":"Use Cases by Industry","level":2},{"id":"education--academia","title":"Education & Academia","level":3},{"id":"government--legal","title":"Government & Legal","level":3},{"id":"financial-services","title":"Financial Services","level":3},{"id":"digital-services--web3","title":"Digital Services & Web3","level":3},{"id":"key-benefits","title":"Key Benefits","level":2},{"id":"user-privacy--control","title":"User Privacy & Control","level":3},{"id":"fraud-reduction","title":"Fraud Reduction","level":3},{"id":"interoperability","title":"Interoperability","level":3},{"id":"reduced-friction","title":"Reduced Friction","level":3},{"id":"how-it-works","title":"How It Works","level":2},{"id":"1-claim-creation-self-issuance","title":"1. Claim Creation (Self-Issuance)","level":3},{"id":"2-attestation","title":"2. Attestation","level":3},{"id":"3-verification--trust-chains","title":"3. Verification & Trust Chains","level":3},{"id":"real-world-scenario-the-trust-chain","title":"Real-World Scenario: The \"Trust Chain\"","level":2},{"id":"see-also","title":"See Also","level":2}],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}]
-30:["$","$L71",null,{}]
-31:["$","$L72",null,{}]
-32:["$","$L73",null,{}]
-33:["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true}]
-34:["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true}]
-35:["$","$L74",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@75"}]}]
-38:["$","h3",null,{"id":"self-sovereign-identity-ssi","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Self-Sovereign Identity (SSI)"}]
-39:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["Users have full control over their identities. Identity claims are ",["$","strong",null,{"children":"self-issued"}]," first, proving account ownership, and then enriched by ",["$","strong",null,{"children":"attestations"}]," from trusted authorities. This ensures that the user is always the central point of their identity graph."]}]
-3a:["$","h3",null,{"id":"verifiable-attestations","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Verifiable Attestations"}]
-3b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Third parties (Trust Authorities) can sign attestations that validate a user's specific claims (e.g., \"Over 18\", \"Accredited Investor\", \"University Graduate\"). These attestations are cryptographically linked to the user's identity chain and the authority's trust chain."}]
-3c:["$","h3",null,{"id":"trust-chains","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Trust Chains"}]
-3d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Trust is transitive and transparent. A verifier doesn't just trust a claim; they verify the entire chain of authority. For example, a diploma is trusted because it's signed by a University, which is accredited by an Education Ministry, which is recognized by the Government."}]
-3e:["$","h3",null,{"id":"selective-disclosure--privacy","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Selective Disclosure & Privacy"}]
-3f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Users can share specific attestations (e.g., \"I am over 21\") without revealing their entire identity or unrelated personal data. Data Vaults protect sensitive claims, ensuring they are only decrypted for authorized verifiers."}]
-40:["$","h2",null,{"id":"use-cases-by-industry","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Use Cases by Industry"}]
-41:["$","h3",null,{"id":"education--academia","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Education & Academia"}]
-42:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Digital Diplomas & Transcripts"}]}]
-43:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Universities issue tamper-proof degree certificates."}],"\n",["$","li",null,{"className":"leading-7","children":"Students can instantly prove graduation to employers."}],"\n",["$","li",null,{"className":"leading-7","children":"Prevents credential fraud and \"diploma mills\"."}],"\n",["$","li",null,{"className":"leading-7","children":"Enables portable academic records across institutions."}],"\n"]}]
-44:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Professional Certifications"}]}]
-45:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Licensing boards attest to professional status (e.g., Medical License, Bar Association)."}],"\n",["$","li",null,{"className":"leading-7","children":"Real-time verification of valid/active status."}],"\n",["$","li",null,{"className":"leading-7","children":"Automated expiry and renewal tracking."}],"\n"]}]
-46:["$","h3",null,{"id":"government--legal","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Government & Legal"}]
-47:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Digital ID & Passports"}]}]
-48:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Governments issue digital complements to physical IDs."}],"\n",["$","li",null,{"className":"leading-7","children":"Citizens use digital wallets to prove citizenship or residency."}],"\n",["$","li",null,{"className":"leading-7","children":"Streamlined visa and border entry processes."}],"\n"]}]
-49:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Notary & Witnessing"}]}]
-4a:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Notaries attest to the identity of a signer on a document."}],"\n",["$","li",null,{"className":"leading-7","children":"Creates a cryptographic link between the person, the document, and the notary."}],"\n",["$","li",null,{"className":"leading-7","children":"Replaces physical stamps with digital signatures."}],"\n"]}]
-4b:["$","h3",null,{"id":"financial-services","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Financial Services"}]
-4c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"KYC/AML Compliance"}]}]
-4d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Banks perform \"Know Your Customer\" checks once and issue a reusable attestation."}],"\n",["$","li",null,{"className":"leading-7","children":"Users share this attestation with other services to onboard instantly without re-submitting documents."}],"\n",["$","li",null,{"className":"leading-7","children":"Reduces compliance costs and friction."}],"\n"]}]
-4e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Accredited Investor Status"}]}]
-4f:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Financial institutions attest that a user meets investment criteria."}],"\n",["$","li",null,{"className":"leading-7","children":"Allows participation in regulated private equity or tokens."}],"\n"]}]
-50:["$","h3",null,{"id":"digital-services--web3","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Digital Services & Web3"}]
-51:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Sybil Resistance"}]}]
-52:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Verify that an account belongs to a unique human without collecting personal data."}],"\n",["$","li",null,{"className":"leading-7","children":"\"Proof of Humanity\" or \"Social Login\" attestations."}],"\n",["$","li",null,{"className":"leading-7","children":"Prevents bot spam and manipulation in DAOs and communities."}],"\n"]}]
-53:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Reputation & Social Proof"}]}]
-54:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Platforms attest to a user's reputation score or history."}],"\n",["$","li",null,{"className":"leading-7","children":"Enables portable reputation across different marketplaces and communities."}],"\n"]}]
-55:["$","h2",null,{"id":"key-benefits","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Key Benefits"}]
-56:["$","h3",null,{"id":"user-privacy--control","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"User Privacy & Control"}]
-57:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Users store their own data in encrypted Data Vaults. They grant access only when necessary and can revoke it at any time. No centralized \"honey pot\" of user data to hack."}]
-58:["$","h3",null,{"id":"fraud-reduction","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Fraud Reduction"}]
-59:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Cryptographic signatures make it impossible to forge attestations."}]
-5a:["$","h3",null,{"id":"interoperability","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Interoperability"}]
-5b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Built on standard cryptographic primitives, allowing identity claims to be used across different platforms, wallets, and services that support the Aqua Protocol."}]
-5c:["$","h3",null,{"id":"reduced-friction","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Reduced Friction"}]
-5d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"\"Verify once, use everywhere.\" Users don't need to repeatedly upload passport photos or utility bills. One verified attestation can be reused across multiple services."}]
-5e:["$","h2",null,{"id":"how-it-works","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"How It Works"}]
-5f:["$","h3",null,{"id":"1-claim-creation-self-issuance","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"1. Claim Creation (Self-Issuance)"}]
-60:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The user creates a ",["$","strong",null,{"children":"Self-Issued Identity Claim"}],"."]}]
-61:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Example: \"I claim my name is Alice.\""}],"\n",["$","li",null,{"className":"leading-7","children":"This claim is signed by Alice's private key, establishing ownership of the claim."}],"\n",["$","li",null,{"className":"leading-7","children":"It serves as the \"subject\" for future attestations."}],"\n"]}]
-62:["$","h3",null,{"id":"2-attestation","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"2. Attestation"}]
-63:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["A ",["$","strong",null,{"children":"Trust Authority"}]," (e.g., a University) verifies the claim off-chain (by checking real documents) and then issues an ",["$","strong",null,{"children":"Attestation"}],"."]}]
-64:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"The Authority signs a statement referencing Alice's self-issued claim hash."}],"\n",["$","li",null,{"className":"leading-7","children":"\"I, University X, attest that the claim [Hash] by Alice is true.\""}],"\n",["$","li",null,{"className":"leading-7","children":"This attestation is recorded in the Authority's Aqua chain."}],"\n"]}]
-65:["$","h3",null,{"id":"3-verification--trust-chains","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"3. Verification & Trust Chains"}]
-66:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"A relying party (e.g., an Employer) verifies the diploma."}]
-67:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"They check Alice's claim."}],"\n",["$","li",null,{"className":"leading-7","children":"They verify the University's signature on the attestation."}],"\n",["$","li",null,{"className":"leading-7","children":"They verify the University's authority (e.g., by checking a \"Ministry of Education\" attestation on the University's identity)."}],"\n",["$","li",null,{"className":"leading-7","children":"If the chain of trust is valid, the diploma is accepted."}],"\n"]}]
-68:["$","h2",null,{"id":"real-world-scenario-the-trust-chain","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Real-World Scenario: The \"Trust Chain\""}]
-69:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["Consider verifying a ",["$","strong",null,{"children":"University Degree"}],":"]}]
-6a:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"The Graduate (Alice)"}],": Creates a self-issued claim for her degree."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"The Professor"}],": Signs an attestation for Alice's grade/completion."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"The Department Head"}],": Attests to the Professor's employment."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"The University"}],": Attests to the Department Head's role."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"The Ministry of Education"}],": Attests to the University's accreditation."]}],"\n"]}]
-6b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"When an employer verifies Alice's degree, they trace this path back to a root of trust they recognize (e.g., the Ministry of Education), ensuring the credential is legitimate without needing to call the university."}]
-6c:["$","h2",null,{"id":"see-also","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"See Also"}]
-6d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/use_cases/document-verification","className":"text-primary hover:underline font-medium","children":"Document Verification"}]," - Verify the integrity of files and contracts."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/use_cases/supply-chain","className":"text-primary hover:underline font-medium","children":"Supply Chain Tracking"}]," - Trace provenance of physical goods."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/dev_tools/aqua_cli","className":"text-primary hover:underline font-medium","children":"Aqua CLI"}]," - Tools for issuing and verifying claims."]}],"\n"]}]
-6e:["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v4.0.0/use-cases/identity-attestation.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":[["$","path","1couwa",{"d":"M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","1y4qbx",{"d":"M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"}],"$undefined"]}],"Edit this page"]}],["$","a",null,{"href":"https://github.com/inblockio/issues/new","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-external-link h-4 w-4","children":[["$","path","1q9fwt",{"d":"M15 3h6v6"}],["$","path","gplh6r",{"d":"M10 14 21 3"}],["$","path","a6xqqp",{"d":"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"}],"$undefined"]}],"Report an issue"]}]]}]
-6f:["$","div",null,{"className":"mt-12 pt-8 border-t border-border grid grid-cols-2 gap-4","children":[["$","$L37",null,{"href":"/docs/v4.0.0/use-cases/document-verification","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Previous"}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Document Verification"}]]}],["$","$L37",null,{"href":"/docs/v4.0.0/use-cases/introduction","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all text-right","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center justify-end gap-2 text-sm text-muted-foreground","children":[["$","span",null,{"children":"Next"}],["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Aqua Protocol Use Cases"}]]}]]}]
-75:null
+0:{"buildId":"_ePiRrooneby3ghoRNSHI","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","$L3",null,{}],"children":[["$","$L4",null,{"header":["$","$L5",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$6","reading_time":5,"word_count":888},"content":"$7","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$8","reading_time":5,"word_count":823},"content":"$9"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$a","reading_time":7,"word_count":1244},"content":"$b"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$c","reading_time":5,"word_count":941},"content":"$d","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$e","reading_time":9,"word_count":1674},"content":"$f"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$10","reading_time":8,"word_count":1476},"content":"$11","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$12","reading_time":4,"word_count":686},"content":"$13"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$14","reading_time":3,"word_count":410},"content":"$15","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$16","reading_time":2,"word_count":391},"content":"$17","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$18","reading_time":3,"word_count":566},"content":"$19","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$1a","reading_time":11,"word_count":2009},"content":"$1b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$1c","reading_time":6,"word_count":1048},"content":"$1d","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$1e","reading_time":3,"word_count":461},"content":"$1f","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$20","reading_time":7,"word_count":1393},"content":"$21","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$22","reading_time":7,"word_count":1369},"content":"$23","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$24","reading_time":9,"word_count":1682},"content":"$25","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$26","reading_time":10,"word_count":1863},"content":"$27","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$28","reading_time":5,"word_count":865},"content":"$29","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$2a","reading_time":7,"word_count":1216},"content":"$2b","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$2c","reading_time":12,"word_count":2274},"content":"$2d","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"}],"version":"v4.0.0","content":"$L2e","toc":"$L2f","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"$L30","$L31","$L32"]}],null,"$L33"]}],"loading":null,"isPartial":false}
+35:T1791,
+The Aqua Protocol enables a robust **Self-Sovereign Identity (SSI)** framework where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. By leveraging cryptographic proofs and decentralized trust chains, Aqua allows users to own their data while enabling third parties to verify specific attributes with certainty.
+
+## Core Capabilities
+
+### Self-Sovereign Identity (SSI)
+Users have full control over their identities. Identity claims are **self-issued** first, proving account ownership, and then enriched by **attestations** from trusted authorities. This ensures that the user is always the central point of their identity graph.
+
+### Verifiable Attestations
+Third parties (Trust Authorities) can sign attestations that validate a user's specific claims (e.g., "Over 18", "Accredited Investor", "University Graduate"). These attestations are cryptographically linked to the user's identity chain and the authority's trust chain.
+
+### Trust Chains
+Trust is transitive and transparent. A verifier doesn't just trust a claim; they verify the entire chain of authority. For example, a diploma is trusted because it's signed by a University, which is accredited by an Education Ministry, which is recognized by the Government.
+
+### Selective Disclosure & Privacy
+Users can share specific attestations (e.g., "I am over 21") without revealing their entire identity or unrelated personal data. Data Vaults protect sensitive claims, ensuring they are only decrypted for authorized verifiers.
+
+## Use Cases by Industry
+
+### Education & Academia
+
+**Digital Diplomas & Transcripts**
+- Universities issue tamper-proof degree certificates.
+- Students can instantly prove graduation to employers.
+- Prevents credential fraud and "diploma mills".
+- Enables portable academic records across institutions.
+
+**Professional Certifications**
+- Licensing boards attest to professional status (e.g., Medical License, Bar Association).
+- Real-time verification of valid/active status.
+- Automated expiry and renewal tracking.
+
+### Government & Legal
+
+**Digital ID & Passports**
+- Governments issue digital complements to physical IDs.
+- Citizens use digital wallets to prove citizenship or residency.
+- Streamlined visa and border entry processes.
+
+**Notary & Witnessing**
+- Notaries attest to the identity of a signer on a document.
+- Creates a cryptographic link between the person, the document, and the notary.
+- Replaces physical stamps with digital signatures.
+
+### Financial Services
+
+**KYC/AML Compliance**
+- Banks perform "Know Your Customer" checks once and issue a reusable attestation.
+- Users share this attestation with other services to onboard instantly without re-submitting documents.
+- Reduces compliance costs and friction.
+
+**Accredited Investor Status**
+- Financial institutions attest that a user meets investment criteria.
+- Allows participation in regulated private equity or tokens.
+
+### Digital Services & Web3
+
+**Sybil Resistance**
+- Verify that an account belongs to a unique human without collecting personal data.
+- "Proof of Humanity" or "Social Login" attestations.
+- Prevents bot spam and manipulation in DAOs and communities.
+
+**Reputation & Social Proof**
+- Platforms attest to a user's reputation score or history.
+- Enables portable reputation across different marketplaces and communities.
+
+## Key Benefits
+
+### User Privacy & Control
+Users store their own data in encrypted Data Vaults. They grant access only when necessary and can revoke it at any time. No centralized "honey pot" of user data to hack.
+
+### Fraud Reduction
+Cryptographic signatures make it impossible to forge attestations. 
+
+### Interoperability
+Built on standard cryptographic primitives, allowing identity claims to be used across different platforms, wallets, and services that support the Aqua Protocol.
+
+### Reduced Friction
+"Verify once, use everywhere." Users don't need to repeatedly upload passport photos or utility bills. One verified attestation can be reused across multiple services.
+
+## How It Works
+
+### 1. Claim Creation (Self-Issuance)
+The user creates a **Self-Issued Identity Claim**.
+- Example: "I claim my name is Alice."
+- This claim is signed by Alice's private key, establishing ownership of the claim.
+- It serves as the "subject" for future attestations.
+
+### 2. Attestation
+A **Trust Authority** (e.g., a University) verifies the claim off-chain (by checking real documents) and then issues an **Attestation**.
+- The Authority signs a statement referencing Alice's self-issued claim hash.
+- "I, University X, attest that the claim [Hash] by Alice is true."
+- This attestation is recorded in the Authority's Aqua chain.
+
+### 3. Verification & Trust Chains
+A relying party (e.g., an Employer) verifies the diploma.
+- They check Alice's claim.
+- They verify the University's signature on the attestation.
+- They verify the University's authority (e.g., by checking a "Ministry of Education" attestation on the University's identity).
+- If the chain of trust is valid, the diploma is accepted.
+
+
+## Real-World Scenario: The "Trust Chain"
+
+Consider verifying a **University Degree**:
+
+1.  **The Graduate (Alice)**: Creates a self-issued claim for her degree.
+2.  **The Professor**: Signs an attestation for Alice's grade/completion.
+3.  **The Department Head**: Attests to the Professor's employment.
+4.  **The University**: Attests to the Department Head's role.
+5.  **The Ministry of Education**: Attests to the University's accreditation.
+
+When an employer verifies Alice's degree, they trace this path back to a root of trust they recognize (e.g., the Ministry of Education), ensuring the credential is legitimate without needing to call the university.
+
+## See Also
+
+- [Document Verification](/use_cases/document-verification) - Verify the integrity of files and contracts.
+- [Supply Chain Tracking](/use_cases/supply-chain) - Trace provenance of physical goods.
+- [Aqua CLI](/dev_tools/aqua_cli) - Tools for issuing and verifying claims.
+36:T1791,
+The Aqua Protocol enables a robust **Self-Sovereign Identity (SSI)** framework where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. By leveraging cryptographic proofs and decentralized trust chains, Aqua allows users to own their data while enabling third parties to verify specific attributes with certainty.
+
+## Core Capabilities
+
+### Self-Sovereign Identity (SSI)
+Users have full control over their identities. Identity claims are **self-issued** first, proving account ownership, and then enriched by **attestations** from trusted authorities. This ensures that the user is always the central point of their identity graph.
+
+### Verifiable Attestations
+Third parties (Trust Authorities) can sign attestations that validate a user's specific claims (e.g., "Over 18", "Accredited Investor", "University Graduate"). These attestations are cryptographically linked to the user's identity chain and the authority's trust chain.
+
+### Trust Chains
+Trust is transitive and transparent. A verifier doesn't just trust a claim; they verify the entire chain of authority. For example, a diploma is trusted because it's signed by a University, which is accredited by an Education Ministry, which is recognized by the Government.
+
+### Selective Disclosure & Privacy
+Users can share specific attestations (e.g., "I am over 21") without revealing their entire identity or unrelated personal data. Data Vaults protect sensitive claims, ensuring they are only decrypted for authorized verifiers.
+
+## Use Cases by Industry
+
+### Education & Academia
+
+**Digital Diplomas & Transcripts**
+- Universities issue tamper-proof degree certificates.
+- Students can instantly prove graduation to employers.
+- Prevents credential fraud and "diploma mills".
+- Enables portable academic records across institutions.
+
+**Professional Certifications**
+- Licensing boards attest to professional status (e.g., Medical License, Bar Association).
+- Real-time verification of valid/active status.
+- Automated expiry and renewal tracking.
+
+### Government & Legal
+
+**Digital ID & Passports**
+- Governments issue digital complements to physical IDs.
+- Citizens use digital wallets to prove citizenship or residency.
+- Streamlined visa and border entry processes.
+
+**Notary & Witnessing**
+- Notaries attest to the identity of a signer on a document.
+- Creates a cryptographic link between the person, the document, and the notary.
+- Replaces physical stamps with digital signatures.
+
+### Financial Services
+
+**KYC/AML Compliance**
+- Banks perform "Know Your Customer" checks once and issue a reusable attestation.
+- Users share this attestation with other services to onboard instantly without re-submitting documents.
+- Reduces compliance costs and friction.
+
+**Accredited Investor Status**
+- Financial institutions attest that a user meets investment criteria.
+- Allows participation in regulated private equity or tokens.
+
+### Digital Services & Web3
+
+**Sybil Resistance**
+- Verify that an account belongs to a unique human without collecting personal data.
+- "Proof of Humanity" or "Social Login" attestations.
+- Prevents bot spam and manipulation in DAOs and communities.
+
+**Reputation & Social Proof**
+- Platforms attest to a user's reputation score or history.
+- Enables portable reputation across different marketplaces and communities.
+
+## Key Benefits
+
+### User Privacy & Control
+Users store their own data in encrypted Data Vaults. They grant access only when necessary and can revoke it at any time. No centralized "honey pot" of user data to hack.
+
+### Fraud Reduction
+Cryptographic signatures make it impossible to forge attestations. 
+
+### Interoperability
+Built on standard cryptographic primitives, allowing identity claims to be used across different platforms, wallets, and services that support the Aqua Protocol.
+
+### Reduced Friction
+"Verify once, use everywhere." Users don't need to repeatedly upload passport photos or utility bills. One verified attestation can be reused across multiple services.
+
+## How It Works
+
+### 1. Claim Creation (Self-Issuance)
+The user creates a **Self-Issued Identity Claim**.
+- Example: "I claim my name is Alice."
+- This claim is signed by Alice's private key, establishing ownership of the claim.
+- It serves as the "subject" for future attestations.
+
+### 2. Attestation
+A **Trust Authority** (e.g., a University) verifies the claim off-chain (by checking real documents) and then issues an **Attestation**.
+- The Authority signs a statement referencing Alice's self-issued claim hash.
+- "I, University X, attest that the claim [Hash] by Alice is true."
+- This attestation is recorded in the Authority's Aqua chain.
+
+### 3. Verification & Trust Chains
+A relying party (e.g., an Employer) verifies the diploma.
+- They check Alice's claim.
+- They verify the University's signature on the attestation.
+- They verify the University's authority (e.g., by checking a "Ministry of Education" attestation on the University's identity).
+- If the chain of trust is valid, the diploma is accepted.
+
+
+## Real-World Scenario: The "Trust Chain"
+
+Consider verifying a **University Degree**:
+
+1.  **The Graduate (Alice)**: Creates a self-issued claim for her degree.
+2.  **The Professor**: Signs an attestation for Alice's grade/completion.
+3.  **The Department Head**: Attests to the Professor's employment.
+4.  **The University**: Attests to the Department Head's role.
+5.  **The Ministry of Education**: Attests to the University's accreditation.
+
+When an employer verifies Alice's degree, they trace this path back to a root of trust they recognize (e.g., the Ministry of Education), ensuring the credential is legitimate without needing to call the university.
+
+## See Also
+
+- [Document Verification](/use_cases/document-verification) - Verify the integrity of files and contracts.
+- [Supply Chain Tracking](/use_cases/supply-chain) - Trace provenance of physical goods.
+- [Aqua CLI](/dev_tools/aqua_cli) - Tools for issuing and verifying claims.
+2e:["$","$L34",null,{"meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$35","reading_time":5,"word_count":865},"content":"$36","previousDoc":{"title":"Document Verification","slug":"use-cases/document-verification"},"nextDoc":{"title":"Aqua Protocol Use Cases","slug":"use-cases/introduction"},"version":"v4.0.0","slug":"use-cases/identity-attestation","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}]
+2f:["$","$L37",null,{"items":[{"id":"core-capabilities","title":"Core Capabilities","level":2},{"id":"self-sovereign-identity-ssi","title":"Self-Sovereign Identity (SSI)","level":3},{"id":"verifiable-attestations","title":"Verifiable Attestations","level":3},{"id":"trust-chains","title":"Trust Chains","level":3},{"id":"selective-disclosure--privacy","title":"Selective Disclosure & Privacy","level":3},{"id":"use-cases-by-industry","title":"Use Cases by Industry","level":2},{"id":"education--academia","title":"Education & Academia","level":3},{"id":"government--legal","title":"Government & Legal","level":3},{"id":"financial-services","title":"Financial Services","level":3},{"id":"digital-services--web3","title":"Digital Services & Web3","level":3},{"id":"key-benefits","title":"Key Benefits","level":2},{"id":"user-privacy--control","title":"User Privacy & Control","level":3},{"id":"fraud-reduction","title":"Fraud Reduction","level":3},{"id":"interoperability","title":"Interoperability","level":3},{"id":"reduced-friction","title":"Reduced Friction","level":3},{"id":"how-it-works","title":"How It Works","level":2},{"id":"1-claim-creation-self-issuance","title":"1. Claim Creation (Self-Issuance)","level":3},{"id":"2-attestation","title":"2. Attestation","level":3},{"id":"3-verification--trust-chains","title":"3. Verification & Trust Chains","level":3},{"id":"real-world-scenario-the-trust-chain","title":"Real-World Scenario: The \"Trust Chain\"","level":2},{"id":"see-also","title":"See Also","level":2}],"config":"$2e:props:config"}]
+30:["$","$L38",null,{}]
+31:["$","$L39",null,{}]
+32:["$","$L3a",null,{}]
+33:["$","$L3b",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@3c"}]}]
+3c:null

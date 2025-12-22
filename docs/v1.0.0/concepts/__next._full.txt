@@ -1,20 +1,26 @@
 1:"$Sreact.fragment"
-2:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-3:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-5:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
-6:"$Sreact.suspense"
-8:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"ViewportBoundary"]
-a:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"MetadataBoundary"]
-c:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-:HL["/_next/static/chunks/8a80e7184ad3a13f.css","style"]
-:HL["/_next/static/chunks/ec0800f16b1ae8cd.css","style"]
+2:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"ConfigProvider"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TabProvider"]
+4:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+5:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+6:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"VersionNotFound"]
+a:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+:HL["/_next/static/chunks/a06cf6f745569492.css","style"]
+:HL["/_next/static/chunks/b0e9cc9922d4f147.css","style"]
 :HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"P":null,"b":"k8-fwt2fbTlxLBvWFtXyi","c":["","docs","v1.0.0","concepts"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v1.0.0","d"],{"children":[["slug","concepts","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/8a80e7184ad3a13f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/ec0800f16b1ae8cd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L4",[["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true,"nonce":"$undefined"}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],{},null,false,false]},[["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}],[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$L8",null,{"children":"$@9"}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":"$@b"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$c",[]],"S":true}
-d:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
-e:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
-f:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
-10:Td09,
+0:{"P":null,"b":"_ePiRrooneby3ghoRNSHI","c":["","docs","v1.0.0","concepts"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v1.0.0","d"],{"children":[["slug","concepts","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/b0e9cc9922d4f147.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/eb22c92016909501.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/d07752feff0a7168.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L7",{},null,false,false]},["$L8",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+c:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
+d:"$Sreact.suspense"
+f:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"ViewportBoundary"]
+11:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"MetadataBoundary"]
+7:["$","$1","c",{"children":["$Lb",null,["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]]}]
+8:["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}]
+9:["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$d",null,{"name":"Next.Metadata","children":"$L12"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+13:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLoading"]
+14:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayoutWrapper"]
+15:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"Header"]
+16:Td09,
 We first exchanged goods, then we used means to exchange goods, such as
 shells and coins. Today we use money. We have transitioned to a world where
 we present and exchange data to receive goods and services.
@@ -83,7 +89,7 @@ usage of data as a means of exchange.
 
 *Please contribute to this article (fixing errors) by exporting it and
 sending it back with your improvement to community\[at\]inblock\[dot\]io.*
-11:Td09,
+17:Td09,
 We first exchanged goods, then we used means to exchange goods, such as
 shells and coins. Today we use money. We have transitioned to a world where
 we present and exchange data to receive goods and services.
@@ -152,7 +158,7 @@ usage of data as a means of exchange.
 
 *Please contribute to this article (fixing errors) by exporting it and
 sending it back with your improvement to community\[at\]inblock\[dot\]io.*
-12:T14c2,
+18:T14c2,
 Author: Ben Koo
 E-Mail: koo0905\[at\]gmail\[dot\]com
 Year: 2021
@@ -259,7 +265,7 @@ New Economy](https://wip.mitpress.mit.edu/new-economy)[^7].
 [^7]: Alex Pentland, Alexander Lipton, and Thomas Hardjono, Building the
     New Economy, MIT Press, Work in Progress,
     [https://wip.mitpress.mit.edu/new-economy](https://wip.mitpress.mit.edu/new-economy)
-13:T14c2,
+19:T14c2,
 Author: Ben Koo
 E-Mail: koo0905\[at\]gmail\[dot\]com
 Year: 2021
@@ -366,7 +372,7 @@ New Economy](https://wip.mitpress.mit.edu/new-economy)[^7].
 [^7]: Alex Pentland, Alexander Lipton, and Thomas Hardjono, Building the
     New Economy, MIT Press, Work in Progress,
     [https://wip.mitpress.mit.edu/new-economy](https://wip.mitpress.mit.edu/new-economy)
-14:T1238,
+1a:T1238,
 The following design principles pertain to Aqua reference Implementation `PKC`
 
 ## Private is Default
@@ -486,7 +492,7 @@ Furthermore we ensure with the development of the MediaWiki Data
 Accounting Extension, that the data is still compatible with the legacy
 import / export (which means only the text not the verification data is
 imported / exported.
-15:T1238,
+1b:T1238,
 The following design principles pertain to Aqua reference Implementation `PKC`
 
 ## Private is Default
@@ -606,7 +612,7 @@ Furthermore we ensure with the development of the MediaWiki Data
 Accounting Extension, that the data is still compatible with the legacy
 import / export (which means only the text not the verification data is
 imported / exported.
-16:T47c9,
+1c:T47c9,
 # Context
 
 It is highly problematic to expose sensitive data, such as personal
@@ -972,7 +978,7 @@ history of the channel is not kept
 * (required) read content of room (send it to the Guardian for verification,
  before it's send to the import API) (required)
 
-17:T47c9,
+1d:T47c9,
 # Context
 
 It is highly problematic to expose sensitive data, such as personal
@@ -1338,7 +1344,7 @@ history of the channel is not kept
 * (required) read content of room (send it to the Guardian for verification,
  before it's send to the import API) (required)
 
-18:Tb92,
+1e:Tb92,
 Traditional hyperlinks are usually
 [URL's](https://en.wikipedia.org/wiki/URL) based on the
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) structure.
@@ -1416,7 +1422,7 @@ prefix to the `<verification_hash>` resulting in the following syntax:
 
 Note: Implementatstion specific to aqua-PKC:
 - The verification_hash is stored in the content-slot 'transclusion hashes' with the internal links which referne the resource.
-19:Tb92,
+1f:Tb92,
 Traditional hyperlinks are usually
 [URL's](https://en.wikipedia.org/wiki/URL) based on the
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) structure.
@@ -1494,7 +1500,7 @@ prefix to the `<verification_hash>` resulting in the following syntax:
 
 Note: Implementatstion specific to aqua-PKC:
 - The verification_hash is stored in the content-slot 'transclusion hashes' with the internal links which referne the resource.
-1a:T7e3,
+20:T7e3,
 How safe are the wallets to used? - Current PKC Pilot - relating to the
 'Authentication assurance level's (AAL)' according to the World Bank
 standards:
@@ -1538,7 +1544,7 @@ authentication for logins after wallet-authentication see
     Metamask. If Metamask is hacked it will not allow to compromise the
     model above as the security of the private key of the hardware token
     is preserved.
-1b:T7e3,
+21:T7e3,
 How safe are the wallets to used? - Current PKC Pilot - relating to the
 'Authentication assurance level's (AAL)' according to the World Bank
 standards:
@@ -1582,7 +1588,7 @@ authentication for logins after wallet-authentication see
     Metamask. If Metamask is hacked it will not allow to compromise the
     model above as the security of the private key of the hardware token
     is preserved.
-1c:T3c92,
+22:T3c92,
 Implementation specific architecture documentation for the Aqua Data
 Vault 'Personal Knowledge Container (PKC)'. In this document you will
 find reasoning as to why certain components were chosen to build this
@@ -1914,7 +1920,7 @@ authentication challenges.
 
 5. [Merkle Tree - Wikipedia](https://en.wikipedia.org/wiki/Merkle_tree)
 
-1d:T3c92,
+23:T3c92,
 Implementation specific architecture documentation for the Aqua Data
 Vault 'Personal Knowledge Container (PKC)'. In this document you will
 find reasoning as to why certain components were chosen to build this
@@ -2246,7 +2252,7 @@ authentication challenges.
 
 5. [Merkle Tree - Wikipedia](https://en.wikipedia.org/wiki/Merkle_tree)
 
-1e:T4e17,
+24:T4e17,
 The Aqua Identity Protocol (AIP) is an experimental application protocol
 under development for Self Sovereign Identity's (SSIs) on top of the
 Aqua Protocol. This is an active field of research which is related to
@@ -2683,7 +2689,7 @@ See Implementation Specific Aqua Identity Protocol Implementation in MWe
 
 6. [PKI Certificate Revocation Process Explained - TechNet](https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx)
 
-1f:T4e17,
+25:T4e17,
 The Aqua Identity Protocol (AIP) is an experimental application protocol
 under development for Self Sovereign Identity's (SSIs) on top of the
 Aqua Protocol. This is an active field of research which is related to
@@ -3120,7 +3126,7 @@ See Implementation Specific Aqua Identity Protocol Implementation in MWe
 
 6. [PKI Certificate Revocation Process Explained - TechNet](https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx)
 
-20:T174e,
+26:T174e,
 
 
 
@@ -3156,7 +3162,7 @@ This technology enables various applications by offering a peer-to-peer-publishi
 This Protocol and prototype allow for the practical exploration this how this can redefine our collective sense-making by providing a rational process for forming a truth by consensus between trusted peers. This allows for the practical exploration of digital, participatory collaboration at scale, as the AQUA-Protocol can account for contributions that are currently not measurable in monetary value while those contributions provide value to society and/or nature. It seems possible to envision a different economy where data becomes a multi-dimensional currency that allows us to make better-informed decisions. It can inform us to have a greater choice in how we participate economically as service providers and/or consumers.
 
 * **What is it *not yet* good for?**: This is an experimental protocol with a pilot implementation, which is meant for the exploration of new design principles to improve digital sovereignty and trust. This prototype is not production-grade software and should not be used outside of experimental applications. The prototype does currently (Dec'22) not include a transport layer.
-21:T174e,
+27:T174e,
 
 
 
@@ -3192,7 +3198,7 @@ This technology enables various applications by offering a peer-to-peer-publishi
 This Protocol and prototype allow for the practical exploration this how this can redefine our collective sense-making by providing a rational process for forming a truth by consensus between trusted peers. This allows for the practical exploration of digital, participatory collaboration at scale, as the AQUA-Protocol can account for contributions that are currently not measurable in monetary value while those contributions provide value to society and/or nature. It seems possible to envision a different economy where data becomes a multi-dimensional currency that allows us to make better-informed decisions. It can inform us to have a greater choice in how we participate economically as service providers and/or consumers.
 
 * **What is it *not yet* good for?**: This is an experimental protocol with a pilot implementation, which is meant for the exploration of new design principles to improve digital sovereignty and trust. This prototype is not production-grade software and should not be used outside of experimental applications. The prototype does currently (Dec'22) not include a transport layer.
-22:T94e5,
+28:T94e5,
 
 |                  |                                            |
 |------------------|--------------------------------------------|
@@ -3970,7 +3976,7 @@ process of double-entry bookkeeping and provides a foundation for a new data
 economy. This also allows to create unforgeable invoices which can be clearly
 attributed to its sender, avoiding fraud. This is one of many other use cases,
 e.g. providing trusted news via revision-controlled journalism.
-23:T94e5,
+29:T94e5,
 
 |                  |                                            |
 |------------------|--------------------------------------------|
@@ -4748,67 +4754,682 @@ process of double-entry bookkeeping and provides a foundation for a new data
 economy. This also allows to create unforgeable invoices which can be clearly
 attributed to its sender, avoiding fraud. This is one of many other use cases,
 e.g. providing trusted news via revision-controlled journalism.
-4:["$","$6",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$Ld",null,{"header":["$","$Le",null,{"currentVersion":"v1.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$Lf",null,{"docs":[{"slug":"data-accounting","filePath":"data-accounting","title":"Data Accounting","meta":{"title":"Data Accounting","linkTitle":"Data Accounting","weight":5,"sidebar_position":5,"description":"Introduces the concept of Data Accounting\n","content":"$10","reading_time":3,"word_count":525},"content":"$11"},{"slug":"data-governance","filePath":"data-governance","title":"Data Governance","meta":{"title":"Data Governance","linkTitle":"Data Governance","weight":6,"sidebar_position":6,"description":"Introduces the concept of Data Governance\n","content":"$12","reading_time":4,"word_count":643},"content":"$13"},{"slug":"delegated-witnessing","filePath":"delegated-witnessing","title":"Delegated Witnessing","meta":{"title":"Delegated Witnessing","linkTitle":"Delegated Witnessing","weight":7,"sidebar_position":7,"description":"Describes the process of sending domain snapshots to remote data vaults.\n","content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n","reading_time":1,"word_count":73},"content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n"},{"slug":"design-principles","filePath":"design-principles","title":"Design Principles","meta":{"title":"Design Principles","linkTitle":"Design Principles","weight":8,"sidebar_position":8,"description":"Lists the design principles underlying our reference implementation\n","content":"$14","reading_time":4,"word_count":704},"content":"$15"},{"slug":"guardian","filePath":"guardian","title":"Guardian","meta":{"title":"Guardian","linkTitle":"Guardian","weight":9,"sidebar_position":9,"description":"Shows access and transport layer logic used to interconnect data vaults\n","content":"$16","reading_time":15,"word_count":2811},"content":"$17"},{"slug":"immutable-hyperlinks","filePath":"immutable-hyperlinks","title":"Immutable Hyperlinks","meta":{"title":"Immutable Hyperlinks","linkTitle":"Immutable Hyperlinks","weight":10,"sidebar_position":10,"description":"Shows how the Aqua URI's can be used as immutable links.\n","content":"$18","reading_time":3,"word_count":454},"content":"$19"},{"slug":"assurance-levels","filePath":"assurance-levels","title":"Assurance Levels (AAL)","meta":{"title":"Assurance Levels (AAL)","linkTitle":"Assurance Levels","description":"Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation. \n","content":"$1a","reading_time":2,"word_count":285},"content":"$1b"},{"slug":"concepts","filePath":"concepts","title":"Concepts ","meta":{"title":"Concepts ","description":"Explains the technologies selected for the reference implementation and why we selected them.","content":"$1c","reading_time":11,"word_count":2055},"content":"$1d"},{"slug":"identity-protocol","filePath":"identity-protocol","title":"Identity Protocol","meta":{"title":"Identity Protocol","description":"The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.\n","content":"$1e","reading_time":13,"word_count":2566},"content":"$1f"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol Version 1","meta":{"title":"Aqua Protocol Version 1","description":"An overview of verision 1 of the Aqua protocol","content":"$20","reading_time":5,"word_count":872},"content":"$21"},{"slug":"name-resolution","filePath":"name-resolution","title":"Aqua Name Resolution (ANS)","meta":{"title":"Aqua Name Resolution (ANS)","description":"ANS is used to hashes of various types to human readable names","content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n","reading_time":1,"word_count":44},"content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n"},{"slug":"whitepaper","filePath":"whitepaper","title":"Whitepaper","meta":{"title":"Whitepaper","linkTitle":"Whitepaper","description":"High level outline of Aqua Protocol (AQP) specification","content":"$22","reading_time":20,"word_count":3993},"content":"$23"}],"version":"v1.0.0","config":"$4:props:children:0:props:header:props:config"}],"content":"$L24","toc":"$L25","config":"$4:props:children:0:props:header:props:config"}],"$L26","$L27","$L28"]}]
-29:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
-2a:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
-2b:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
-2c:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
-25:["$","$L29",null,{"items":[{"id":"wallets--accounts","title":"Wallets / Accounts","level":2},{"id":"web-application-chrome-extension-metamask","title":"Web-Application (Chrome-Extension MetaMask)","level":2},{"id":"witness-network","title":"Witness Network","level":2},{"id":"why-public-blockchain","title":"Why public Blockchain?","level":3},{"id":"data-vault","title":"Data Vault","level":2},{"id":"mediawiki-for-data-governance","title":"MediaWiki for data governance","level":2},{"id":"mediawiki-extension-aqua","title":"MediaWiki Extension: Aqua","level":2},{"id":"mediawiki-skin-choice","title":"MediaWiki Skin Choice","level":2},{"id":"authentication","title":"Authentication","level":2},{"id":"webserver-proxy--https","title":"WebServer-Proxy / HTTPs","level":2},{"id":"software-development","title":"Software-Development","level":2},{"id":"browser-choice","title":"Browser Choice","level":2},{"id":"technology-choices-on-cryptography","title":"Technology choices on cryptography","level":2},{"id":"hashing-algorithms-sha3-512","title":"Hashing Algorithms (SHA3-512)","level":3},{"id":"merkle-tree5","title":"Merkle Tree[^5]","level":3},{"id":"public-private-key-signatures-secp256k1","title":"Public-Private-Key Signatures (secp256k1)","level":3}],"config":"$4:props:children:0:props:header:props:config"}]
-26:["$","$L2a",null,{}]
-27:["$","$L2b",null,{}]
-28:["$","$L2c",null,{}]
-2d:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
-2e:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
-24:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L2d",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v1.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L2e",null,{"href":"/docs/v1.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v1.0.0/concepts",{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Concepts "}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Concepts "}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"Explains the technologies selected for the reference implementation and why we selected them."}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[11," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":"$L2f"}],"$undefined",["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v1.0.0/concepts.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":[["$","path","1couwa",{"d":"M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","1y4qbx",{"d":"M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"}],"$undefined"]}],"Edit this page"]}],["$","a",null,{"href":"https://github.com/inblockio/issues/new","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":["$L30","Report an issue"]}]]}],"$L31"]}]
-30:["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-external-link h-4 w-4","children":[["$","path","1q9fwt",{"d":"M15 3h6v6"}],["$","path","gplh6r",{"d":"M10 14 21 3"}],["$","path","a6xqqp",{"d":"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"}],"$undefined"]}]
-31:["$","div",null,{"className":"mt-12 pt-8 border-t border-border grid grid-cols-2 gap-4","children":[["$","$L2e",null,{"href":"/docs/v1.0.0/assurance-levels","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Previous"}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Assurance Levels (AAL)"}]]}],["$","$L2e",null,{"href":"/docs/v1.0.0/identity-protocol","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all text-right","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center justify-end gap-2 text-sm text-muted-foreground","children":[["$","span",null,{"children":"Next"}],["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Identity Protocol"}]]}]]}]
-2f:[["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Implementation specific architecture documentation for the Aqua Data\nVault 'Personal Knowledge Container (PKC)'. In this document you will\nfind reasoning as to why certain components were chosen to build this\nprototype. We have not duplicated any vendor documentation. Please find\nthe linked-list for the documentation of the components we use here:"}],"\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://docs.metamask.io/guide/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"MetaMask"}]}],"\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://ethereum.org/en/developers/docs/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Ethereum"}]}],"\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://docs.docker.com/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Docker"}]}],"\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://www.mediawiki.org/wiki/Documentation","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"MediaWiki"}]}],"\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://github.com/inblockio/aqua-docs","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"MediaWiki Extension: Aqua"}]}],"\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://tweeki.kollabor.at/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"MediaWiki Skin Tweeki"}]}],"\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://github.com/pelith/node-eauth-server","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Pelith Eauth Server"}]}],"\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://nodejs.org/en/docs/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Nodejs"}]}],"\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://docs.github.com/en","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]}],"\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://httpd.apache.org/docs/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Apache"}]}],"\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://nginx.org/en/docs/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Nginx"}]}],"\n",["$","li",null,{"className":"leading-7","children":["$","a",null,{"href":"https://letsencrypt.org/docs/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Let's Encrypt"}]}],"\n"]}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"All software components selected are open source licenses. They each\nhave active developer communities behind them to secure future support\nand further development."}],"\n",["$","h2",null,{"id":"wallets--accounts","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Wallets / Accounts"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Why do we use Ethereum Wallets / Accounts?"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"An identity anchor needs to be a public, private key. This allows a\npublic component which we can share (public key) and a private component\nwhich proves ownership over that public-key. Public keys are used in\nEthereum as accounts to receive and send transactions. Therefore the\nEthereum ecosystem has developed standards. These have evolved to a\nlarger eco-system involving wallet-providers which have built software\nand hardware wallets to securely manage those keys. We leverage one of\nthe most vibrant developer communities and utilize these wallets. In our\ncase they are used mainly for offline-activities (Login, Signing) which\ndo not require connectivity to the Ethereum blockchain."}],"\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e"]
-32:["$","h2",null,{"id":"web-application-chrome-extension-metamask","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Web-Application (Chrome-Extension MetaMask)"}]
-33:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Was selected as it is one of the most advanced, widely used,\nfeature-rich web-wallets. Most importantly it's a browser-plugin which\nallows us to interact with browser applications. MetaMask also has the\nability to connect to a hardware wallet allowing for increased security\nand levels of assurance."}]
-34:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Large User-Base 10 Million +"}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Hardware Wallet Support (E.g. Ledger)"}],"\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Large User-base 5 Million +"}],"\n"]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"All related source code is open source, lot's of money behind it\n(future proof)"}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["SSI (Self-sovereign identity): Compatible with the DID schema\ndid:ethr:",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"<wallet_address>"}]]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Fulfills SSI principles:"}],"\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Controlled by user, allows for creation of new accounts / wallet\naddresses"}],"\n",["$","li",null,{"className":"leading-7","children":"User can create new identity anchor independent of third party"}],"\n",["$","li",null,{"className":"leading-7","children":["Can be moved between devices by users recovery key or even to a\nhardware wallet (not recommended but possible:\n",["$","a",null,{"href":"https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b"}],")"]}],"\n"]}],"\n"]}],"\n"]}]
-35:["$","h2",null,{"id":"witness-network","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Witness Network"}]
-36:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"We are using the Ethereum Network as an optional Witness Network for\ncryptographic time-stamping."}]
-37:["$","h3",null,{"id":"why-public-blockchain","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Why public Blockchain?"}]
-38:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The witness event serves the purpose of being able to prove the\nexistence of a document without the ability to deny it. This requires\ncensorship resistance and global coverage. The security of the network,\nit's distribution, and the high economical price to attack the network,\nare all good reasons why we want to use a public blockchain to publish\nhighly obfuscated hashes (fingerprints). This proves the state of the\ndata in a Data Vault (PKC)."}]
-39:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The MetaMask wallet is able to publish the witness event verification\nhash to the public Ethereum blockchain. This completes our third\nimportant layer of integrity verification, which is to prove\ncryptographic time and existence of a document by writing it's\nfingerprint onto the ledger. This is not done directly, but through a\nprocess which highly obfuscates the hash. This ensures that that there\nis no plausible attack (even if the attacker owns a powerful quantum\ncomputer) to match the fingerprint with any personal data."}]
-3a:["$","h2",null,{"id":"data-vault","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Data Vault"}]
-3b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The Data Vault named 'Personal Knowledge Container' is creatd by using a\ntool for containerization called 'Docker'. This allows us to package our\napplication so it can be deployed to different operating system\nenvironments. Docker provides the abstraction / virtualization layer."}]
-3c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Inside Docker we containerized multiple services:"}]
-3d:["$","h2",null,{"id":"mediawiki-for-data-governance","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"MediaWiki for data governance"}]
-3e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"MediaWiki is a data governance tool which has a legacy as a\ncollaboration tool. It powers Wikipedia, the largest encyclopedia in the\nworld. We step into this experience, and the benefits of a feature rich,\nbattle-proven application. It's a powerful tool to both manage and\npresent data."}]
-3f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"As MediaWiki has an active and established developer community, it is\npossible to tap into existing professional service companies. Supporting\ndevelopment and any required changes within the application."}]
-40:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"MediaWiki has been modified to use workflows for data processing. This\nwill allow for implementing and testing workflows and business logic\nbetween Personal-Knowledge-Containers."}]
-41:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"We use all the benefits of MediaWiki to manage and present data in the\nbrowser, while we work around one of its main limitations: Security.\nMediaWiki was never developed to have advanced security and permission\nstructures, as it was built for Wikipedia - a fully public website. This\nhas several implications for us."}]
-42:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Security Practices:"}]
-43:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"We assume that we can't defend against insider attacks on the same\nMediaWiki instance, therefore every user has their own instance"}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"If there is a need for a collaboration space, it is possible to\nspawn containers for multiple accounts which trust each other to\nwork together on shared data"}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"If you use a hosted PKC instance, assume the provider has access to\nyour data as we don't use homomorphic encryption nor do we have\nencryption implemented"}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"We are using typed and tested PHP (for MediaWiki Extension Data\nAccounting) to improve test coverage to increase stability and\nsecurity of our application"}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"To securely exchange data between PKC's, we implement a separate\nsecurity software called Guardian. The Guardian protects the PKC and\nmanages all access according to the accounts owners set permissions.\nThe Guardian is under active development. It will receive the\nhighest scrutiny and attention to ensure a minimal attack surface\nwhile allowing trust between Guardians so data can be exchanged."}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The Apache WebServer present in the MediaWiki container has a\ntechnological dependency and needs regular updates as Apache was\neffected by critical security issues like\n",["$","a",null,{"href":"https://nvd.nist.gov/vuln/detail/CVE-2021-44228","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"CVE-2021-44228"}]]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Therefore we do not expose the Apache web-server to the internet by\ndefault and do not recommend this to ensure that there is no\nunnecessary attack surface. If an organization decides to expose the\nweb-surface of a PKC to the internet, they should expect this\ninstance to be compromised and leak all it's stored data. Therefore\nwe re-emphasize: If PKC / MediaWiki is exposed to the web, there\ncan't be any guarantee that data can be kept private. Therefore\nassume your data can be leaked on a web-facing MediaWiki instance.\nOrganizations hosting PKC's for collaboration should do so with\nrestricted firewall permissions, ensuring that the web-interface is\nonly reachable for the employees authorized to see the content."}],"\n"]}],"\n"]}]
-44:["$","h2",null,{"id":"mediawiki-extension-aqua","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"MediaWiki Extension: Aqua"}]
-45:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The existing ecosystem and reference implementations around MediaWiki\nallowed us to quickly prototype our reference implementation for Aqua.\nThe implementation itself allowed us to further develop the protocol.\nThe downsides are currently old PHP code and MediaWiki's legacy. In\nreturn we benefit from a well documented project."}]
-46:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Looking forward we want to see other client-implementations in different\nlanguages independent of MediaWiki to show the potential of the Aqua\nProtocol. We hope to re-use part of the PHP code base to apply it to\nother applications, like Word-Press."}]
-47:["$","h2",null,{"id":"mediawiki-skin-choice","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"MediaWiki Skin Choice"}]
-48:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Using Tweeki as a Bootstrap 4 compatible Skin for MediaWiki, we were\nable to establish contact with the chief maintainer of the extension,\nand were able to collaborate to solve various issues to improve the\nskin. We are coordinating with other parties to see how we can improve\nsupport for the Skin. In the future we are hoping to increase the\nmaintainer base. Prospectively we want to use Tweeki as an abstraction\nlayer from MediaWiki classic to Bootstrap 4, and respectively Bootstrap\n5+."}]
-49:["$","h2",null,{"id":"authentication","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Authentication"}]
-4a:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["For Authentication with Web-Wallets, we use\n",["$","a",null,{"href":"https://github.com/pelith/node-eauth-server","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://github.com/pelith/node-eauth-server"}]," which provides us with\nan open source solution for a signature-response challenge. We then\nintegrate with OAUTH2 and OIDC using existing authentication\nstandards to achieve the login."]}],"\n",["$","li",null,{"className":"leading-7","children":"The Pelith server provides us with the Signature-Challenge and is\nforwarding the access token via OAUTH2 to MediaWiki. Here we check\nif the user exists. If this is the case, access is granted."}],"\n"]}]
-4b:["$","h2",null,{"id":"webserver-proxy--https","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"WebServer-Proxy / HTTPs"}]
-4c:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"We are using NGINX Web-Server as the proxy server. NGINX is a modern\nand the most popular (#1 since 2021 by share[^1]) web-server on the\nweb."}],"\n",["$","li",null,{"className":"leading-7","children":"We are using Let's Encrypt to provide secure connections via HTTPS\nif a PKC is deployed to the web. Let's encrypt serves over 260\nmillion websites according to the vendor website.[^2] provides free\nTLS Certificates for secure HTTPS connections."}],"\n",["$","li",null,{"className":"leading-7","children":"The NGINX Web-Proxy allows us to ensure that we can add additional\nservices to the PKC and redirect the services according to our\nneeds."}],"\n"]}]
-4d:["$","h2",null,{"id":"software-development","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Software-Development"}]
-4e:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["We use ",["$","a",null,{"href":"https://github.com","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://github.com"}]," for software development. As we started\nwith very little budget, we gratefully utilised free resources to\ndevelop our open source software. This allowed us to focus on being\nproductive.","\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Github is owned by Microsoft and is therefore subject to US\npolicies and Microsofts interests."}],"\n",["$","li",null,{"className":"leading-7","children":"This itself requires us to move away to be independent or at\nleast host a mirror instance outside of Github. The deletion of\na repository or losing access could harm our development process\nsignificantly."}],"\n"]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["We use GPL-V3 license on the majority of our repositories.","\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"We maintain the rights on branding"}],"\n",["$","li",null,{"className":"leading-7","children":"We maintain more restrictive rights on deployment scripts\n(service provider technologies)"}],"\n"]}],"\n"]}],"\n"]}]
-4f:["$","h2",null,{"id":"browser-choice","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Browser Choice"}]
-50:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["We are using the Chrome-Engine as our Web-Browser of choice. It's the\nmost dominant web-browser on the Web, and has become the quasi standard\nwith many different forks creating an ecosystem around it.\nMicrosoft-Edge is actually Chrome. There are non-google chrome forks\nwhich deserve attention, funding and support (like\n",["$","a",null,{"href":"https://github.com/Eloston/ungoogled-chromium","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://github.com/Eloston/ungoogled-chromium"}],"). This will provide us\nwith a modern and state of the art browser architecture to work with."]}]
-51:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"As Chrome is the most secure and modern base to build on, we support\n-only- chrome. Therefore we use a chrome extension to verify the content\nof an Aqua file. This extension is available for download in the Google\nChrome App Store, or can be built from scratch following the\ninstructions in our repository.[^3]"}]
-52:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"This allows us to provide ease of setup, as users can easily deploy the\nchrome extension without further effort by adding it from the google app\nstore."}]
-53:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"We are using NPM / node.js for fast prototyping. This comes with severe\nsecurity implications as the npm ecosystem has been prone to various\nsupply-chain attacks over recent months [^4] ."}]
-54:["$","h2",null,{"id":"technology-choices-on-cryptography","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Technology choices on cryptography"}]
-55:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"All cryptography used in our development is based on international NIST\nstandards and follows the international understanding for internet\nsecurity. This is consistent with the perspective of the BSI in Germany,\nbut for some specific details there are no insights provided by the\nministry."}]
-56:["$","h3",null,{"id":"hashing-algorithms-sha3-512","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Hashing Algorithms (SHA3-512)"}]
-57:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["PKC uses standard Crypto (SHA3-512) winner of the National Institute of\nStandards and Technology see\n",["$","a",null,{"href":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf"}]," . We do not\nuse custom encryption as this comes at the cost of unnecessary risks."]}]
-58:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["This is an accepted secure and recommended standard according to ",["$","a",null,{"href":"https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"BSI -\nTechnische Richtlinie – Kryptographische Algorithmen und Schlussellängen\nSeite\n42"}],"."]}]
-59:["$","h3",null,{"id":"merkle-tree5","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Merkle Tree[^5]"}]
-5a:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"We use merkle trees to be able to witness the state of all pages /\nfiles in a single hash. Used to generate a unique fingerprint of a\ndomain (a collection of verified data hash chain's within one\ndomain)."}],"\n",["$","li",null,{"className":"leading-7","children":["There is a lot of future potential in ongoing research to improve\nprivacy and utility of merkle trees in the ",["$","a",null,{"href":"https://pkc.inblock.io/index.php/Aqua_Protocol","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Aqua\nProtocol"}],"\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["See related technologies and research like TAPROOT:\n",["$","a",null,{"href":"https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki"}]]}],"\n"]}],"\n"]}],"\n"]}]
-5b:["$","h3",null,{"id":"public-private-key-signatures-secp256k1","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Public-Private-Key Signatures (secp256k1)"}]
-5c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Used in combination with Ethereum Accounts. It is used for signing and\nauthentication challenges."}]
-5d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["in ether.js\n",["$","a",null,{"href":"https://github.com/ethereumjs/ethereumjs-monorepo/blob/ade4233ddffffdd146b386de701762196a8c941c/packages/util/src/signature.ts#L23-L45","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"cryptography/secp256k1"}],"\nsee\n",["$","a",null,{"href":"https://github.com/ethereum/js-ethereum-cryptography/blob/b1f35053df3f0cfa132fc45d59b688ca0d62994a/src/secp256k1-compat.ts#L99-L123","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"implementation"}]]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["related documents of the 'Standards for Efficient Cryptography\nGroup' ",["$","a",null,{"href":"https://secg.org","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://secg.org"}]," specific doc secp256k1 ",["$","a",null,{"href":"https://www.secg.org/sec2-v2.pdf","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Both variants\nof the same standardization process of the Standards for Efficient\nCryptography Group 2015, See differences\nP9"}]]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["Supported by BSI secp256r1 but secp256k1 is not\nmentioned.",["$","a",null,{"href":"https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-4.pdf?__blob=publicationFile&v=7","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-4.pdf?__blob=publicationFile&v=7"}],"\nRequest for clarification was send via E-Mail on the 3rd of November\n2021 by Tim Bansemer. Answer of the BSI: Currently the BSI has no\nassessment or recommendation for secp256k1."]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["For authentication with Metamask Ethereum wallets we currently use\n",["$","a",null,{"href":"https://github.com/pelith/node-eauth-server","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://github.com/pelith/node-eauth-server"}],". We are signing a\nunique input value with ethereum.js using the personal sign method.\nOnce the challenge is completed successfully we receive an OAUTH\ntoken from the Eauth identity provider of the pelith Eauth server."]}],"\n"]}],"\n"]}]
-5e:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","a",null,{"href":"https://linuxiac.com/nginx-most-popular-web-server/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"NGINX: Most Popular Web Server"}]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","a",null,{"href":"https://letsencrypt.org/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Let's Encrypt"}]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","a",null,{"href":"https://github.com/inblockio/aqua-verifypage-chrome-extension","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Aqua Verify Page Chrome Extension - GitHub"}]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","a",null,{"href":"https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"NPM Supply Chain Attack"}]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","a",null,{"href":"https://en.wikipedia.org/wiki/Merkle_tree","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Merkle Tree - Wikipedia"}]}],"\n"]}],"\n"]}]
-9:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-5f:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"IconMark"]
-b:[["$","title","0",{"children":"Concepts  | Aqua Protocol Documentation"}],["$","meta","1",{"name":"description","content":"Explains the technologies selected for the reference implementation and why we selected them."}],["$","meta","2",{"name":"generator","content":"v0.app"}],["$","link","3",{"rel":"canonical","href":"https://docs.aquaprotocol.org/docs/v1.0.0/concepts"}],["$","meta","4",{"property":"og:title","content":"Concepts "}],["$","meta","5",{"property":"og:description","content":"Explains the technologies selected for the reference implementation and why we selected them."}],["$","meta","6",{"property":"og:url","content":"https://docs.aquaprotocol.org/docs/v1.0.0/concepts"}],["$","meta","7",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Concepts "}],["$","meta","12",{"name":"twitter:description","content":"Explains the technologies selected for the reference implementation and why we selected them."}],["$","link","13",{"rel":"icon","href":"/logo/aqua-logo.png"}],["$","link","14",{"rel":"apple-touch-icon","href":"/apple-icon.png"}],["$","$L5f","15",{}]]
-7:null
+b:["$","$d",null,{"fallback":["$","$L13",null,{}],"children":[["$","$L14",null,{"header":["$","$L15",null,{"currentVersion":"v1.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"data-accounting","filePath":"data-accounting","title":"Data Accounting","meta":{"title":"Data Accounting","linkTitle":"Data Accounting","weight":5,"sidebar_position":5,"description":"Introduces the concept of Data Accounting\n","content":"$16","reading_time":3,"word_count":525},"content":"$17"},{"slug":"data-governance","filePath":"data-governance","title":"Data Governance","meta":{"title":"Data Governance","linkTitle":"Data Governance","weight":6,"sidebar_position":6,"description":"Introduces the concept of Data Governance\n","content":"$18","reading_time":4,"word_count":643},"content":"$19"},{"slug":"delegated-witnessing","filePath":"delegated-witnessing","title":"Delegated Witnessing","meta":{"title":"Delegated Witnessing","linkTitle":"Delegated Witnessing","weight":7,"sidebar_position":7,"description":"Describes the process of sending domain snapshots to remote data vaults.\n","content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n","reading_time":1,"word_count":73},"content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n"},{"slug":"design-principles","filePath":"design-principles","title":"Design Principles","meta":{"title":"Design Principles","linkTitle":"Design Principles","weight":8,"sidebar_position":8,"description":"Lists the design principles underlying our reference implementation\n","content":"$1a","reading_time":4,"word_count":704},"content":"$1b"},{"slug":"guardian","filePath":"guardian","title":"Guardian","meta":{"title":"Guardian","linkTitle":"Guardian","weight":9,"sidebar_position":9,"description":"Shows access and transport layer logic used to interconnect data vaults\n","content":"$1c","reading_time":15,"word_count":2811},"content":"$1d"},{"slug":"immutable-hyperlinks","filePath":"immutable-hyperlinks","title":"Immutable Hyperlinks","meta":{"title":"Immutable Hyperlinks","linkTitle":"Immutable Hyperlinks","weight":10,"sidebar_position":10,"description":"Shows how the Aqua URI's can be used as immutable links.\n","content":"$1e","reading_time":3,"word_count":454},"content":"$1f"},{"slug":"assurance-levels","filePath":"assurance-levels","title":"Assurance Levels (AAL)","meta":{"title":"Assurance Levels (AAL)","linkTitle":"Assurance Levels","description":"Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation. \n","content":"$20","reading_time":2,"word_count":285},"content":"$21"},{"slug":"concepts","filePath":"concepts","title":"Concepts ","meta":{"title":"Concepts ","description":"Explains the technologies selected for the reference implementation and why we selected them.","content":"$22","reading_time":11,"word_count":2055},"content":"$23"},{"slug":"identity-protocol","filePath":"identity-protocol","title":"Identity Protocol","meta":{"title":"Identity Protocol","description":"The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.\n","content":"$24","reading_time":13,"word_count":2566},"content":"$25"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol Version 1","meta":{"title":"Aqua Protocol Version 1","description":"An overview of verision 1 of the Aqua protocol","content":"$26","reading_time":5,"word_count":872},"content":"$27"},{"slug":"name-resolution","filePath":"name-resolution","title":"Aqua Name Resolution (ANS)","meta":{"title":"Aqua Name Resolution (ANS)","description":"ANS is used to hashes of various types to human readable names","content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n","reading_time":1,"word_count":44},"content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n"},{"slug":"whitepaper","filePath":"whitepaper","title":"Whitepaper","meta":{"title":"Whitepaper","linkTitle":"Whitepaper","description":"High level outline of Aqua Protocol (AQP) specification","content":"$28","reading_time":20,"word_count":3993},"content":"$29"}],"version":"v1.0.0","content":"$L2a","toc":"$L2b","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L2c","$L2d","$L2e"]}]
+2f:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayout"]
+32:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TableOfContents"]
+33:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"MdxHotReload"]
+34:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"HotReloadIndicator"]
+35:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DevModeBadge"]
+30:T3c92,
+Implementation specific architecture documentation for the Aqua Data
+Vault 'Personal Knowledge Container (PKC)'. In this document you will
+find reasoning as to why certain components were chosen to build this
+prototype. We have not duplicated any vendor documentation. Please find
+the linked-list for the documentation of the components we use here:
+
+-   [MetaMask](https://docs.metamask.io/guide/)
+-   [Ethereum](https://ethereum.org/en/developers/docs/)
+-   [Docker](https://docs.docker.com/)
+-   [MediaWiki](https://www.mediawiki.org/wiki/Documentation)
+-   [MediaWiki Extension: Aqua](https://github.com/inblockio/aqua-docs)
+-   [MediaWiki Skin Tweeki](https://tweeki.kollabor.at/)
+-   [Pelith Eauth Server](https://github.com/pelith/node-eauth-server)
+-   [Nodejs](https://nodejs.org/en/docs/)
+-   [GitHub](https://docs.github.com/en)
+-   [Apache](https://httpd.apache.org/docs/)
+-   [Nginx](https://nginx.org/en/docs/)
+-   [Let's Encrypt](https://letsencrypt.org/docs/)
+
+
+
+
+All software components selected are open source licenses. They each
+have active developer communities behind them to secure future support
+and further development.
+
+## Wallets / Accounts
+
+Why do we use Ethereum Wallets / Accounts?
+
+An identity anchor needs to be a public, private key. This allows a
+public component which we can share (public key) and a private component
+which proves ownership over that public-key. Public keys are used in
+Ethereum as accounts to receive and send transactions. Therefore the
+Ethereum ecosystem has developed standards. These have evolved to a
+larger eco-system involving wallet-providers which have built software
+and hardware wallets to securely manage those keys. We leverage one of
+the most vibrant developer communities and utilize these wallets. In our
+case they are used mainly for offline-activities (Login, Signing) which
+do not require connectivity to the Ethereum blockchain.
+
+## Web-Application (Chrome-Extension MetaMask)
+
+Was selected as it is one of the most advanced, widely used,
+feature-rich web-wallets. Most importantly it's a browser-plugin which
+allows us to interact with browser applications. MetaMask also has the
+ability to connect to a hardware wallet allowing for increased security
+and levels of assurance.
+
+-   Large User-Base 10 Million +
+
+ 
+
+-   Hardware Wallet Support (E.g. Ledger)
+    -   Large User-base 5 Million +
+
+ 
+
+-   All related source code is open source, lot's of money behind it
+    (future proof)
+-   SSI (Self-sovereign identity): Compatible with the DID schema
+    did:ethr:`<wallet_address>`
+-   Fulfills SSI principles:
+    -   Controlled by user, allows for creation of new accounts / wallet
+        addresses
+    -   User can create new identity anchor independent of third party
+    -   Can be moved between devices by users recovery key or even to a
+        hardware wallet (not recommended but possible:
+        https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b)
+
+## Witness Network
+
+We are using the Ethereum Network as an optional Witness Network for
+cryptographic time-stamping.
+
+### Why public Blockchain?
+
+The witness event serves the purpose of being able to prove the
+existence of a document without the ability to deny it. This requires
+censorship resistance and global coverage. The security of the network,
+it's distribution, and the high economical price to attack the network,
+are all good reasons why we want to use a public blockchain to publish
+highly obfuscated hashes (fingerprints). This proves the state of the
+data in a Data Vault (PKC).
+
+The MetaMask wallet is able to publish the witness event verification
+hash to the public Ethereum blockchain. This completes our third
+important layer of integrity verification, which is to prove
+cryptographic time and existence of a document by writing it's
+fingerprint onto the ledger. This is not done directly, but through a
+process which highly obfuscates the hash. This ensures that that there
+is no plausible attack (even if the attacker owns a powerful quantum
+computer) to match the fingerprint with any personal data.
+
+## Data Vault
+
+The Data Vault named 'Personal Knowledge Container' is creatd by using a
+tool for containerization called 'Docker'. This allows us to package our
+application so it can be deployed to different operating system
+environments. Docker provides the abstraction / virtualization layer.
+
+Inside Docker we containerized multiple services:
+
+## MediaWiki for data governance
+
+MediaWiki is a data governance tool which has a legacy as a
+collaboration tool. It powers Wikipedia, the largest encyclopedia in the
+world. We step into this experience, and the benefits of a feature rich,
+battle-proven application. It's a powerful tool to both manage and
+present data.
+
+As MediaWiki has an active and established developer community, it is
+possible to tap into existing professional service companies. Supporting
+development and any required changes within the application.
+
+MediaWiki has been modified to use workflows for data processing. This
+will allow for implementing and testing workflows and business logic
+between Personal-Knowledge-Containers.
+
+We use all the benefits of MediaWiki to manage and present data in the
+browser, while we work around one of its main limitations: Security.
+MediaWiki was never developed to have advanced security and permission
+structures, as it was built for Wikipedia - a fully public website. This
+has several implications for us.
+
+Security Practices:
+
+-   We assume that we can't defend against insider attacks on the same
+    MediaWiki instance, therefore every user has their own instance
+-   If there is a need for a collaboration space, it is possible to
+    spawn containers for multiple accounts which trust each other to
+    work together on shared data
+
+ 
+
+-   If you use a hosted PKC instance, assume the provider has access to
+    your data as we don't use homomorphic encryption nor do we have
+    encryption implemented
+-   We are using typed and tested PHP (for MediaWiki Extension Data
+    Accounting) to improve test coverage to increase stability and
+    security of our application
+
+ 
+
+-   To securely exchange data between PKC's, we implement a separate
+    security software called Guardian. The Guardian protects the PKC and
+    manages all access according to the accounts owners set permissions.
+    The Guardian is under active development. It will receive the
+    highest scrutiny and attention to ensure a minimal attack surface
+    while allowing trust between Guardians so data can be exchanged.
+
+ 
+
+-   The Apache WebServer present in the MediaWiki container has a
+    technological dependency and needs regular updates as Apache was
+    effected by critical security issues like
+    [CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228)
+-   Therefore we do not expose the Apache web-server to the internet by
+    default and do not recommend this to ensure that there is no
+    unnecessary attack surface. If an organization decides to expose the
+    web-surface of a PKC to the internet, they should expect this
+    instance to be compromised and leak all it's stored data. Therefore
+    we re-emphasize: If PKC / MediaWiki is exposed to the web, there
+    can't be any guarantee that data can be kept private. Therefore
+    assume your data can be leaked on a web-facing MediaWiki instance.
+    Organizations hosting PKC's for collaboration should do so with
+    restricted firewall permissions, ensuring that the web-interface is
+    only reachable for the employees authorized to see the content.
+
+## MediaWiki Extension: Aqua
+
+The existing ecosystem and reference implementations around MediaWiki
+allowed us to quickly prototype our reference implementation for Aqua.
+The implementation itself allowed us to further develop the protocol.
+The downsides are currently old PHP code and MediaWiki's legacy. In
+return we benefit from a well documented project.
+
+Looking forward we want to see other client-implementations in different
+languages independent of MediaWiki to show the potential of the Aqua
+Protocol. We hope to re-use part of the PHP code base to apply it to
+other applications, like Word-Press.
+
+## MediaWiki Skin Choice
+
+Using Tweeki as a Bootstrap 4 compatible Skin for MediaWiki, we were
+able to establish contact with the chief maintainer of the extension,
+and were able to collaborate to solve various issues to improve the
+skin. We are coordinating with other parties to see how we can improve
+support for the Skin. In the future we are hoping to increase the
+maintainer base. Prospectively we want to use Tweeki as an abstraction
+layer from MediaWiki classic to Bootstrap 4, and respectively Bootstrap
+5+.
+
+## Authentication
+
+-   For Authentication with Web-Wallets, we use
+    [https://github.com/pelith/node-eauth-server](https://github.com/pelith/node-eauth-server) which provides us with
+    an open source solution for a signature-response challenge. We then
+    integrate with OAUTH2 and OIDC using existing authentication
+    standards to achieve the login.
+-   The Pelith server provides us with the Signature-Challenge and is
+    forwarding the access token via OAUTH2 to MediaWiki. Here we check
+    if the user exists. If this is the case, access is granted.
+
+## WebServer-Proxy / HTTPs
+
+-   We are using NGINX Web-Server as the proxy server. NGINX is a modern
+    and the most popular (#1 since 2021 by share[^1]) web-server on the
+    web.
+-   We are using Let's Encrypt to provide secure connections via HTTPS
+    if a PKC is deployed to the web. Let's encrypt serves over 260
+    million websites according to the vendor website.[^2] provides free
+    TLS Certificates for secure HTTPS connections.
+-   The NGINX Web-Proxy allows us to ensure that we can add additional
+    services to the PKC and redirect the services according to our
+    needs.
+
+## Software-Development
+
+-   We use [https://github.com](https://github.com) for software development. As we started
+    with very little budget, we gratefully utilised free resources to
+    develop our open source software. This allowed us to focus on being
+    productive.
+    -   Github is owned by Microsoft and is therefore subject to US
+        policies and Microsofts interests.
+    -   This itself requires us to move away to be independent or at
+        least host a mirror instance outside of Github. The deletion of
+        a repository or losing access could harm our development process
+        significantly.
+-   We use GPL-V3 license on the majority of our repositories.
+    -   We maintain the rights on branding
+    -   We maintain more restrictive rights on deployment scripts
+        (service provider technologies)
+
+## Browser Choice
+
+We are using the Chrome-Engine as our Web-Browser of choice. It's the
+most dominant web-browser on the Web, and has become the quasi standard
+with many different forks creating an ecosystem around it.
+Microsoft-Edge is actually Chrome. There are non-google chrome forks
+which deserve attention, funding and support (like
+[https://github.com/Eloston/ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium)). This will provide us
+with a modern and state of the art browser architecture to work with.
+
+As Chrome is the most secure and modern base to build on, we support
+-only- chrome. Therefore we use a chrome extension to verify the content
+of an Aqua file. This extension is available for download in the Google
+Chrome App Store, or can be built from scratch following the
+instructions in our repository.[^3]
+
+This allows us to provide ease of setup, as users can easily deploy the
+chrome extension without further effort by adding it from the google app
+store.
+
+We are using NPM / node.js for fast prototyping. This comes with severe
+security implications as the npm ecosystem has been prone to various
+supply-chain attacks over recent months [^4] .
+
+## Technology choices on cryptography
+
+All cryptography used in our development is based on international NIST
+standards and follows the international understanding for internet
+security. This is consistent with the perspective of the BSI in Germany,
+but for some specific details there are no insights provided by the
+ministry.
+
+### Hashing Algorithms (SHA3-512)
+
+PKC uses standard Crypto (SHA3-512) winner of the National Institute of
+Standards and Technology see
+[https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf) . We do not
+use custom encryption as this comes at the cost of unnecessary risks.
+
+This is an accepted secure and recommended standard according to [BSI -
+Technische Richtlinie – Kryptographische Algorithmen und Schlussellängen
+Seite
+42](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile).
+
+### Merkle Tree[^5]
+
+-   We use merkle trees to be able to witness the state of all pages /
+    files in a single hash. Used to generate a unique fingerprint of a
+    domain (a collection of verified data hash chain's within one
+    domain).
+-   There is a lot of future potential in ongoing research to improve
+    privacy and utility of merkle trees in the [Aqua
+    Protocol](https://pkc.inblock.io/index.php/Aqua_Protocol)
+    -   See related technologies and research like TAPROOT:
+        [https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki](https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki)
+
+### Public-Private-Key Signatures (secp256k1)
+
+Used in combination with Ethereum Accounts. It is used for signing and
+authentication challenges.
+
+-   in ether.js
+    [cryptography/secp256k1](https://github.com/ethereumjs/ethereumjs-monorepo/blob/ade4233ddffffdd146b386de701762196a8c941c/packages/util/src/signature.ts#L23-L45)
+    see
+    [implementation](https://github.com/ethereum/js-ethereum-cryptography/blob/b1f35053df3f0cfa132fc45d59b688ca0d62994a/src/secp256k1-compat.ts#L99-L123)
+-   related documents of the 'Standards for Efficient Cryptography
+    Group' [https://secg.org](https://secg.org) specific doc secp256k1 [Both variants
+    of the same standardization process of the Standards for Efficient
+    Cryptography Group 2015, See differences
+    P9](https://www.secg.org/sec2-v2.pdf)
+
+
+
+-   Supported by BSI secp256r1 but secp256k1 is not
+    mentioned.https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-4.pdf?__blob=publicationFile&v=7
+    Request for clarification was send via E-Mail on the 3rd of November
+    2021 by Tim Bansemer. Answer of the BSI: Currently the BSI has no
+    assessment or recommendation for secp256k1.
+
+
+
+-   For authentication with Metamask Ethereum wallets we currently use
+    [https://github.com/pelith/node-eauth-server](https://github.com/pelith/node-eauth-server). We are signing a
+    unique input value with ethereum.js using the personal sign method.
+    Once the challenge is completed successfully we receive an OAUTH
+    token from the Eauth identity provider of the pelith Eauth server.
+
+1. [NGINX: Most Popular Web Server](https://linuxiac.com/nginx-most-popular-web-server/)
+
+2. [Let's Encrypt](https://letsencrypt.org/)
+
+3. [Aqua Verify Page Chrome Extension - GitHub](https://github.com/inblockio/aqua-verifypage-chrome-extension)
+
+4. [NPM Supply Chain Attack](https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software)
+
+5. [Merkle Tree - Wikipedia](https://en.wikipedia.org/wiki/Merkle_tree)
+
+31:T3c92,
+Implementation specific architecture documentation for the Aqua Data
+Vault 'Personal Knowledge Container (PKC)'. In this document you will
+find reasoning as to why certain components were chosen to build this
+prototype. We have not duplicated any vendor documentation. Please find
+the linked-list for the documentation of the components we use here:
+
+-   [MetaMask](https://docs.metamask.io/guide/)
+-   [Ethereum](https://ethereum.org/en/developers/docs/)
+-   [Docker](https://docs.docker.com/)
+-   [MediaWiki](https://www.mediawiki.org/wiki/Documentation)
+-   [MediaWiki Extension: Aqua](https://github.com/inblockio/aqua-docs)
+-   [MediaWiki Skin Tweeki](https://tweeki.kollabor.at/)
+-   [Pelith Eauth Server](https://github.com/pelith/node-eauth-server)
+-   [Nodejs](https://nodejs.org/en/docs/)
+-   [GitHub](https://docs.github.com/en)
+-   [Apache](https://httpd.apache.org/docs/)
+-   [Nginx](https://nginx.org/en/docs/)
+-   [Let's Encrypt](https://letsencrypt.org/docs/)
+
+
+
+
+All software components selected are open source licenses. They each
+have active developer communities behind them to secure future support
+and further development.
+
+## Wallets / Accounts
+
+Why do we use Ethereum Wallets / Accounts?
+
+An identity anchor needs to be a public, private key. This allows a
+public component which we can share (public key) and a private component
+which proves ownership over that public-key. Public keys are used in
+Ethereum as accounts to receive and send transactions. Therefore the
+Ethereum ecosystem has developed standards. These have evolved to a
+larger eco-system involving wallet-providers which have built software
+and hardware wallets to securely manage those keys. We leverage one of
+the most vibrant developer communities and utilize these wallets. In our
+case they are used mainly for offline-activities (Login, Signing) which
+do not require connectivity to the Ethereum blockchain.
+
+## Web-Application (Chrome-Extension MetaMask)
+
+Was selected as it is one of the most advanced, widely used,
+feature-rich web-wallets. Most importantly it's a browser-plugin which
+allows us to interact with browser applications. MetaMask also has the
+ability to connect to a hardware wallet allowing for increased security
+and levels of assurance.
+
+-   Large User-Base 10 Million +
+
+ 
+
+-   Hardware Wallet Support (E.g. Ledger)
+    -   Large User-base 5 Million +
+
+ 
+
+-   All related source code is open source, lot's of money behind it
+    (future proof)
+-   SSI (Self-sovereign identity): Compatible with the DID schema
+    did:ethr:`<wallet_address>`
+-   Fulfills SSI principles:
+    -   Controlled by user, allows for creation of new accounts / wallet
+        addresses
+    -   User can create new identity anchor independent of third party
+    -   Can be moved between devices by users recovery key or even to a
+        hardware wallet (not recommended but possible:
+        https://kryptonitelex.medium.com/how-to-transfer-your-metamask-to-a-ledger-hardware-wallet-bcece7d5567b)
+
+## Witness Network
+
+We are using the Ethereum Network as an optional Witness Network for
+cryptographic time-stamping.
+
+### Why public Blockchain?
+
+The witness event serves the purpose of being able to prove the
+existence of a document without the ability to deny it. This requires
+censorship resistance and global coverage. The security of the network,
+it's distribution, and the high economical price to attack the network,
+are all good reasons why we want to use a public blockchain to publish
+highly obfuscated hashes (fingerprints). This proves the state of the
+data in a Data Vault (PKC).
+
+The MetaMask wallet is able to publish the witness event verification
+hash to the public Ethereum blockchain. This completes our third
+important layer of integrity verification, which is to prove
+cryptographic time and existence of a document by writing it's
+fingerprint onto the ledger. This is not done directly, but through a
+process which highly obfuscates the hash. This ensures that that there
+is no plausible attack (even if the attacker owns a powerful quantum
+computer) to match the fingerprint with any personal data.
+
+## Data Vault
+
+The Data Vault named 'Personal Knowledge Container' is creatd by using a
+tool for containerization called 'Docker'. This allows us to package our
+application so it can be deployed to different operating system
+environments. Docker provides the abstraction / virtualization layer.
+
+Inside Docker we containerized multiple services:
+
+## MediaWiki for data governance
+
+MediaWiki is a data governance tool which has a legacy as a
+collaboration tool. It powers Wikipedia, the largest encyclopedia in the
+world. We step into this experience, and the benefits of a feature rich,
+battle-proven application. It's a powerful tool to both manage and
+present data.
+
+As MediaWiki has an active and established developer community, it is
+possible to tap into existing professional service companies. Supporting
+development and any required changes within the application.
+
+MediaWiki has been modified to use workflows for data processing. This
+will allow for implementing and testing workflows and business logic
+between Personal-Knowledge-Containers.
+
+We use all the benefits of MediaWiki to manage and present data in the
+browser, while we work around one of its main limitations: Security.
+MediaWiki was never developed to have advanced security and permission
+structures, as it was built for Wikipedia - a fully public website. This
+has several implications for us.
+
+Security Practices:
+
+-   We assume that we can't defend against insider attacks on the same
+    MediaWiki instance, therefore every user has their own instance
+-   If there is a need for a collaboration space, it is possible to
+    spawn containers for multiple accounts which trust each other to
+    work together on shared data
+
+ 
+
+-   If you use a hosted PKC instance, assume the provider has access to
+    your data as we don't use homomorphic encryption nor do we have
+    encryption implemented
+-   We are using typed and tested PHP (for MediaWiki Extension Data
+    Accounting) to improve test coverage to increase stability and
+    security of our application
+
+ 
+
+-   To securely exchange data between PKC's, we implement a separate
+    security software called Guardian. The Guardian protects the PKC and
+    manages all access according to the accounts owners set permissions.
+    The Guardian is under active development. It will receive the
+    highest scrutiny and attention to ensure a minimal attack surface
+    while allowing trust between Guardians so data can be exchanged.
+
+ 
+
+-   The Apache WebServer present in the MediaWiki container has a
+    technological dependency and needs regular updates as Apache was
+    effected by critical security issues like
+    [CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228)
+-   Therefore we do not expose the Apache web-server to the internet by
+    default and do not recommend this to ensure that there is no
+    unnecessary attack surface. If an organization decides to expose the
+    web-surface of a PKC to the internet, they should expect this
+    instance to be compromised and leak all it's stored data. Therefore
+    we re-emphasize: If PKC / MediaWiki is exposed to the web, there
+    can't be any guarantee that data can be kept private. Therefore
+    assume your data can be leaked on a web-facing MediaWiki instance.
+    Organizations hosting PKC's for collaboration should do so with
+    restricted firewall permissions, ensuring that the web-interface is
+    only reachable for the employees authorized to see the content.
+
+## MediaWiki Extension: Aqua
+
+The existing ecosystem and reference implementations around MediaWiki
+allowed us to quickly prototype our reference implementation for Aqua.
+The implementation itself allowed us to further develop the protocol.
+The downsides are currently old PHP code and MediaWiki's legacy. In
+return we benefit from a well documented project.
+
+Looking forward we want to see other client-implementations in different
+languages independent of MediaWiki to show the potential of the Aqua
+Protocol. We hope to re-use part of the PHP code base to apply it to
+other applications, like Word-Press.
+
+## MediaWiki Skin Choice
+
+Using Tweeki as a Bootstrap 4 compatible Skin for MediaWiki, we were
+able to establish contact with the chief maintainer of the extension,
+and were able to collaborate to solve various issues to improve the
+skin. We are coordinating with other parties to see how we can improve
+support for the Skin. In the future we are hoping to increase the
+maintainer base. Prospectively we want to use Tweeki as an abstraction
+layer from MediaWiki classic to Bootstrap 4, and respectively Bootstrap
+5+.
+
+## Authentication
+
+-   For Authentication with Web-Wallets, we use
+    [https://github.com/pelith/node-eauth-server](https://github.com/pelith/node-eauth-server) which provides us with
+    an open source solution for a signature-response challenge. We then
+    integrate with OAUTH2 and OIDC using existing authentication
+    standards to achieve the login.
+-   The Pelith server provides us with the Signature-Challenge and is
+    forwarding the access token via OAUTH2 to MediaWiki. Here we check
+    if the user exists. If this is the case, access is granted.
+
+## WebServer-Proxy / HTTPs
+
+-   We are using NGINX Web-Server as the proxy server. NGINX is a modern
+    and the most popular (#1 since 2021 by share[^1]) web-server on the
+    web.
+-   We are using Let's Encrypt to provide secure connections via HTTPS
+    if a PKC is deployed to the web. Let's encrypt serves over 260
+    million websites according to the vendor website.[^2] provides free
+    TLS Certificates for secure HTTPS connections.
+-   The NGINX Web-Proxy allows us to ensure that we can add additional
+    services to the PKC and redirect the services according to our
+    needs.
+
+## Software-Development
+
+-   We use [https://github.com](https://github.com) for software development. As we started
+    with very little budget, we gratefully utilised free resources to
+    develop our open source software. This allowed us to focus on being
+    productive.
+    -   Github is owned by Microsoft and is therefore subject to US
+        policies and Microsofts interests.
+    -   This itself requires us to move away to be independent or at
+        least host a mirror instance outside of Github. The deletion of
+        a repository or losing access could harm our development process
+        significantly.
+-   We use GPL-V3 license on the majority of our repositories.
+    -   We maintain the rights on branding
+    -   We maintain more restrictive rights on deployment scripts
+        (service provider technologies)
+
+## Browser Choice
+
+We are using the Chrome-Engine as our Web-Browser of choice. It's the
+most dominant web-browser on the Web, and has become the quasi standard
+with many different forks creating an ecosystem around it.
+Microsoft-Edge is actually Chrome. There are non-google chrome forks
+which deserve attention, funding and support (like
+[https://github.com/Eloston/ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium)). This will provide us
+with a modern and state of the art browser architecture to work with.
+
+As Chrome is the most secure and modern base to build on, we support
+-only- chrome. Therefore we use a chrome extension to verify the content
+of an Aqua file. This extension is available for download in the Google
+Chrome App Store, or can be built from scratch following the
+instructions in our repository.[^3]
+
+This allows us to provide ease of setup, as users can easily deploy the
+chrome extension without further effort by adding it from the google app
+store.
+
+We are using NPM / node.js for fast prototyping. This comes with severe
+security implications as the npm ecosystem has been prone to various
+supply-chain attacks over recent months [^4] .
+
+## Technology choices on cryptography
+
+All cryptography used in our development is based on international NIST
+standards and follows the international understanding for internet
+security. This is consistent with the perspective of the BSI in Germany,
+but for some specific details there are no insights provided by the
+ministry.
+
+### Hashing Algorithms (SHA3-512)
+
+PKC uses standard Crypto (SHA3-512) winner of the National Institute of
+Standards and Technology see
+[https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf) . We do not
+use custom encryption as this comes at the cost of unnecessary risks.
+
+This is an accepted secure and recommended standard according to [BSI -
+Technische Richtlinie – Kryptographische Algorithmen und Schlussellängen
+Seite
+42](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile).
+
+### Merkle Tree[^5]
+
+-   We use merkle trees to be able to witness the state of all pages /
+    files in a single hash. Used to generate a unique fingerprint of a
+    domain (a collection of verified data hash chain's within one
+    domain).
+-   There is a lot of future potential in ongoing research to improve
+    privacy and utility of merkle trees in the [Aqua
+    Protocol](https://pkc.inblock.io/index.php/Aqua_Protocol)
+    -   See related technologies and research like TAPROOT:
+        [https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki](https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki)
+
+### Public-Private-Key Signatures (secp256k1)
+
+Used in combination with Ethereum Accounts. It is used for signing and
+authentication challenges.
+
+-   in ether.js
+    [cryptography/secp256k1](https://github.com/ethereumjs/ethereumjs-monorepo/blob/ade4233ddffffdd146b386de701762196a8c941c/packages/util/src/signature.ts#L23-L45)
+    see
+    [implementation](https://github.com/ethereum/js-ethereum-cryptography/blob/b1f35053df3f0cfa132fc45d59b688ca0d62994a/src/secp256k1-compat.ts#L99-L123)
+-   related documents of the 'Standards for Efficient Cryptography
+    Group' [https://secg.org](https://secg.org) specific doc secp256k1 [Both variants
+    of the same standardization process of the Standards for Efficient
+    Cryptography Group 2015, See differences
+    P9](https://www.secg.org/sec2-v2.pdf)
+
+
+
+-   Supported by BSI secp256r1 but secp256k1 is not
+    mentioned.https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116-4.pdf?__blob=publicationFile&v=7
+    Request for clarification was send via E-Mail on the 3rd of November
+    2021 by Tim Bansemer. Answer of the BSI: Currently the BSI has no
+    assessment or recommendation for secp256k1.
+
+
+
+-   For authentication with Metamask Ethereum wallets we currently use
+    [https://github.com/pelith/node-eauth-server](https://github.com/pelith/node-eauth-server). We are signing a
+    unique input value with ethereum.js using the personal sign method.
+    Once the challenge is completed successfully we receive an OAUTH
+    token from the Eauth identity provider of the pelith Eauth server.
+
+1. [NGINX: Most Popular Web Server](https://linuxiac.com/nginx-most-popular-web-server/)
+
+2. [Let's Encrypt](https://letsencrypt.org/)
+
+3. [Aqua Verify Page Chrome Extension - GitHub](https://github.com/inblockio/aqua-verifypage-chrome-extension)
+
+4. [NPM Supply Chain Attack](https://duckduckgo.com/?q=npm+supply+chain+attack&ia=software)
+
+5. [Merkle Tree - Wikipedia](https://en.wikipedia.org/wiki/Merkle_tree)
+
+2a:["$","$L2f",null,{"meta":{"title":"Concepts ","description":"Explains the technologies selected for the reference implementation and why we selected them.","content":"$30","reading_time":11,"word_count":2055},"content":"$31","previousDoc":{"title":"Assurance Levels (AAL)","slug":"assurance-levels"},"nextDoc":{"title":"Identity Protocol","slug":"identity-protocol"},"version":"v1.0.0","slug":"concepts","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+2b:["$","$L32",null,{"items":[{"id":"wallets--accounts","title":"Wallets / Accounts","level":2},{"id":"web-application-chrome-extension-metamask","title":"Web-Application (Chrome-Extension MetaMask)","level":2},{"id":"witness-network","title":"Witness Network","level":2},{"id":"why-public-blockchain","title":"Why public Blockchain?","level":3},{"id":"data-vault","title":"Data Vault","level":2},{"id":"mediawiki-for-data-governance","title":"MediaWiki for data governance","level":2},{"id":"mediawiki-extension-aqua","title":"MediaWiki Extension: Aqua","level":2},{"id":"mediawiki-skin-choice","title":"MediaWiki Skin Choice","level":2},{"id":"authentication","title":"Authentication","level":2},{"id":"webserver-proxy--https","title":"WebServer-Proxy / HTTPs","level":2},{"id":"software-development","title":"Software-Development","level":2},{"id":"browser-choice","title":"Browser Choice","level":2},{"id":"technology-choices-on-cryptography","title":"Technology choices on cryptography","level":2},{"id":"hashing-algorithms-sha3-512","title":"Hashing Algorithms (SHA3-512)","level":3},{"id":"merkle-tree5","title":"Merkle Tree[^5]","level":3},{"id":"public-private-key-signatures-secp256k1","title":"Public-Private-Key Signatures (secp256k1)","level":3}],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+2c:["$","$L33",null,{}]
+2d:["$","$L34",null,{}]
+2e:["$","$L35",null,{}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+36:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"IconMark"]
+e:null
+12:[["$","title","0",{"children":"Concepts  | Aqua Protocol"}],["$","meta","1",{"name":"description","content":"Explains the technologies selected for the reference implementation and why we selected them."}],["$","link","2",{"rel":"canonical","href":"https://aqua-protocol.org/docs/v1.0.0/concepts"}],["$","meta","3",{"property":"og:title","content":"Concepts "}],["$","meta","4",{"property":"og:description","content":"Explains the technologies selected for the reference implementation and why we selected them."}],["$","meta","5",{"property":"og:url","content":"https://aqua-protocol.org/docs/v1.0.0/concepts"}],["$","meta","6",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Concepts "}],["$","meta","11",{"name":"twitter:description","content":"Explains the technologies selected for the reference implementation and why we selected them."}],["$","link","12",{"rel":"icon","href":"/mint-test/logo/aqua-logo.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/mint-test/apple-icon.png"}],["$","$L36","14",{}]]

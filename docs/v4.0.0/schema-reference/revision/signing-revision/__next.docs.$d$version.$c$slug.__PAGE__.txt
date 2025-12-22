@@ -1,16 +1,14 @@
 1:"$Sreact.fragment"
 2:"$Sreact.suspense"
-3:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
-4:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
-5:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
-36:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
-37:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
-a0:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
-a1:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
-a2:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
-a3:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
-a4:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
-aa:I[222506,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"CodeBlock"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLoading"]
+4:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayoutWrapper"]
+5:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"Header"]
+34:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayout"]
+37:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TableOfContents"]
+38:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"MdxHotReload"]
+39:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"HotReloadIndicator"]
+3a:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DevModeBadge"]
+3b:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
 6:T1ef1,
 
 The **Aqua Tree** is the primary data structure in Aqua Protocol. It serves as the container for all revisions, their relationships, and associated metadata. An Aqua Tree represents a complete, self-contained unit that can be stored, transmitted, and verified independently.
@@ -523,7 +521,7 @@ For large trees:
 - [Signature Revision](/schema_reference/signing_revision) - Cryptographic signatures
 - [Witness Revision](/schema_reference/witness_revision) - Blockchain anchoring
 - [Link Revision](/schema_reference/link_revision) - Connecting trees
-- [File Index](/schema_reference/file_index) - Content hash mapping8:T1b1f,
+- [File Index](/schema_reference/file_index) - Content hash mapping8:T1b19,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -531,7 +529,7 @@ For large trees:
 <Callout type="info">
 **Powered by Cryptography, Not Blockchain**
 
-Aqua Protocol is made possible by crypto—as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
+Aqua Protocol is made possible by crypto as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
 
 <Badge icon="circle-check" color="green">
  Account & Verify Data in Seconds
@@ -558,7 +556,7 @@ Trust can be built by relying on hashing and encryption mechanisms or by delegat
 
 ## How It Works
 
-At its core, Aqua creates portable hash-chains—called **AquaTrees**—that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
+At its core, Aqua creates portable hash-chains called **AquaTrees** that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
 
 ### Key Features
 
@@ -737,7 +735,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-9:T1b1f,
+9:T1b19,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -745,7 +743,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 <Callout type="info">
 **Powered by Cryptography, Not Blockchain**
 
-Aqua Protocol is made possible by crypto—as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
+Aqua Protocol is made possible by crypto as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
 
 <Badge icon="circle-check" color="green">
  Account & Verify Data in Seconds
@@ -772,7 +770,7 @@ Trust can be built by relying on hashing and encryption mechanisms or by delegat
 
 ## How It Works
 
-At its core, Aqua creates portable hash-chains—called **AquaTrees**—that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
+At its core, Aqua creates portable hash-chains called **AquaTrees** that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
 
 ### Key Features
 
@@ -951,26 +949,21 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-a:T2f93,
+a:T2e36,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
-  <TabsList>
-      <TabsTrigger value="js">JavaScript/TypeScript (v3)</TabsTrigger>
-      <TabsTrigger value="rust">Rust (V4)</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     **Stable** - Production-ready SDK for Node.js, Web, and React Native
 
     Best for: Web applications, existing JavaScript projects
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ---
@@ -1345,18 +1338,13 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
 Want to see the full workflow including signing and witnessing?
 
 <Tabs defaultValue="js">
-  <TabsList>
-    <TabsTrigger value="js">Javascript</TabsTrigger>
-    <TabsTrigger value="rust">Rust</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ## Try Aquafier
@@ -1398,26 +1386,21 @@ Not ready to code yet? Try our web-based demo:
 <Callout type="note" >
 **Ready to build?** Start with the [Development Guide](/development) for detailed instructions on signing, witnessing, and advanced features.
 </Callout  >
-b:T2f93,
+b:T2e36,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
-  <TabsList>
-      <TabsTrigger value="js">JavaScript/TypeScript (v3)</TabsTrigger>
-      <TabsTrigger value="rust">Rust (V4)</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     **Stable** - Production-ready SDK for Node.js, Web, and React Native
 
     Best for: Web applications, existing JavaScript projects
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ---
@@ -1792,18 +1775,13 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
 Want to see the full workflow including signing and witnessing?
 
 <Tabs defaultValue="js">
-  <TabsList>
-    <TabsTrigger value="js">Javascript</TabsTrigger>
-    <TabsTrigger value="rust">Rust</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ## Try Aquafier
@@ -7407,12 +7385,12 @@ To verify an object revision:
 - [Signature Revision](/schema_reference/signing_revision) - Sign object revisions
 - [Witness Revision](/schema_reference/witness_revision) - Add timestamped proof
 - [Link Revision](/schema_reference/link_revision) - Connect to other chains
-1e:T1185,
+1e:T1183,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose—either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -7507,12 +7485,12 @@ Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic an
 
 
 
-```1f:T1185,
+```1f:T1183,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose—either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -12093,35 +12071,70 @@ A: Verification of existing chains works offline using cryptographic signatures.
 - [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
 - [Quick Start](/quick-start) - Get started with supply chain tracking
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-0:{"buildId":"k8-fwt2fbTlxLBvWFtXyi","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$L3",null,{"header":["$","$L4",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$L5",null,{"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$6","reading_time":5,"word_count":888},"content":"$7","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$8","reading_time":5,"word_count":820},"content":"$9"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$a","reading_time":7,"word_count":1258},"content":"$b"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$c","reading_time":5,"word_count":941},"content":"$d","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$e","reading_time":9,"word_count":1674},"content":"$f"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$10","reading_time":8,"word_count":1476},"content":"$11","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$12","reading_time":4,"word_count":686},"content":"$13"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$14","reading_time":3,"word_count":410},"content":"$15","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$16","reading_time":2,"word_count":391},"content":"$17","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$18","reading_time":3,"word_count":566},"content":"$19","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$1a","reading_time":11,"word_count":2009},"content":"$1b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$1c","reading_time":6,"word_count":1048},"content":"$1d","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$1e","reading_time":3,"word_count":460},"content":"$1f","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$20","reading_time":7,"word_count":1393},"content":"$21","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$22","reading_time":7,"word_count":1369},"content":"$23","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$24","reading_time":9,"word_count":1682},"content":"$25","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$26","reading_time":10,"word_count":1863},"content":"$27","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$28","reading_time":5,"word_count":865},"content":"$29","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$2a","reading_time":7,"word_count":1216},"content":"$2b","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$2c","reading_time":12,"word_count":2274},"content":"$2d","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"}],"version":"v4.0.0","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"content":"$L2e","toc":"$L2f","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"$L30","$L31","$L32"]}],["$L33","$L34"],"$L35"]}],"loading":null,"isPartial":false}
-2e:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L36",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v4.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L37",null,{"href":"/docs/v4.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v4.0.0/schema-reference",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","$L37",null,{"href":"/docs/v4.0.0/schema-reference","className":"hover:text-foreground transition-colors","children":"Schema Reference"}]]}],["$","div","/docs/v4.0.0/schema-reference/revision",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","$L37",null,{"href":"/docs/v4.0.0/schema-reference/revision","className":"hover:text-foreground transition-colors","children":"Revision"}]]}],["$","div","/docs/v4.0.0/schema-reference/revision/signing-revision",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Signature Revision"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Signature Revision"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"Schema specification for Signature Revisions in Aqua Protocol v4"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[7," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-6 text-foreground","children":"Signature Revision"}],"\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b","\n","$L6c","\n","$L6d","\n","$L6e","\n","$L6f","\n","$L70","\n","$L71","\n","$L72","\n","$L73","\n","$L74","\n","$L75","\n","$L76","\n","$L77","\n","$L78","\n","$L79","\n","$L7a","\n","$L7b","\n","$L7c","\n","$L7d","\n","$L7e","\n","$L7f","\n","$L80","\n","$L81","\n","$L82","\n","$L83","\n","$L84","\n","$L85","\n","$L86","\n","$L87","\n","$L88","\n","$L89","\n","$L8a","\n","$L8b","\n","$L8c","\n","$L8d","\n","$L8e","\n","$L8f","\n","$L90","\n","$L91","\n","$L92","\n","$L93","\n","$L94","\n","$L95","\n","$L96","\n","$L97","\n","$L98","\n","$L99","\n","$L9a","\n","$L9b","\n","$L9c","\n","$L9d"]}],"$undefined","$L9e","$L9f"]}]
-2f:["$","$La0",null,{"items":[{"id":"overview","title":"Overview","level":2},{"id":"schema-structure","title":"Schema Structure","level":2},{"id":"common-fields","title":"Common Fields","level":3},{"id":"signature-value-object","title":"Signature Value Object","level":3},{"id":"signature-types","title":"Signature Types","level":2},{"id":"1-rsa-signature","title":"1. RSA Signature","level":3},{"id":"2-ethereum-eip-191-signature","title":"2. Ethereum (EIP-191) Signature","level":3},{"id":"3-did-jws-signature","title":"3. DID JWS Signature","level":3},{"id":"what-gets-signed","title":"What Gets Signed","level":2},{"id":"signing-process","title":"Signing Process","level":3},{"id":"example-signing-flow","title":"Example Signing Flow","level":3},{"id":"validation-rules","title":"Validation Rules","level":2},{"id":"multiple-signatures","title":"Multiple Signatures","level":2},{"id":"multi-party-signing","title":"Multi-Party Signing","level":3},{"id":"common-use-cases","title":"Common Use Cases","level":2},{"id":"1-document-signing","title":"1. Document Signing","level":3},{"id":"2-approval-workflows","title":"2. Approval Workflows","level":3},{"id":"3-notarization","title":"3. Notarization","level":3},{"id":"4-smart-contract-interaction","title":"4. Smart Contract Interaction","level":3},{"id":"5-decentralized-identity","title":"5. Decentralized Identity","level":3},{"id":"implementation-notes","title":"Implementation Notes","level":2},{"id":"creating-a-signature-revision","title":"Creating a Signature Revision","level":3},{"id":"verifying-a-signature-revision","title":"Verifying a Signature Revision","level":3},{"id":"security-considerations","title":"Security Considerations","level":2},{"id":"1-key-management","title":"1. Key Management","level":3},{"id":"2-signature-reuse","title":"2. Signature Reuse","level":3},{"id":"3-timestamp-validation","title":"3. Timestamp Validation","level":3},{"id":"4-address-validation","title":"4. Address Validation","level":3},{"id":"5-did-resolution","title":"5. DID Resolution","level":3},{"id":"relationship-with-other-revisions","title":"Relationship with Other Revisions","level":2},{"id":"see-also","title":"See Also","level":2}],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}]
-30:["$","$La1",null,{}]
-31:["$","$La2",null,{}]
-32:["$","$La3",null,{}]
-33:["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true}]
-34:["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true}]
-35:["$","$La4",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@a5"}]}]
-38:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"A Signature Revision adds cryptographic proof of authenticity and authorship to a revision chain. It references a previous revision and includes a digital signature that can be verified using the associated public key or address. Aqua Protocol v4 supports three signature types: RSA, Ethereum (EIP-191), and DID-based signatures."}]
-39:["$","h2",null,{"id":"overview","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Overview"}]
-3a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Signature revisions provide:"}]
-3b:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Authentication"}],": Proof that a specific entity created or approved the previous revision"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Integrity"}],": Assurance that the signed revision hasn't been tampered with"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Non-repudiation"}],": The signer cannot deny having signed the revision"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Flexibility"}],": Support for multiple cryptographic signature schemes"]}],"\n"]}]
-3c:["$","h2",null,{"id":"schema-structure","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Schema Structure"}]
-3d:["$","h3",null,{"id":"common-fields","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Common Fields"}]
-3e:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Required"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_revision"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hash reference to the revision being signed"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Always ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"signature\""}]," for signature revisions"]}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"nonce"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Random 16-byte hex string for uniqueness"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"number"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Unix timestamp when the signature was created"}]]}],"$La6","$La7","$La8","$La9"]}]]}]}]
-3f:["$","h3",null,{"id":"signature-value-object","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Signature Value Object"}]
-40:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature"}]," field is an object with different structures depending on the signature type."]}]
-41:["$","h2",null,{"id":"signature-types","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Signature Types"}]
-42:["$","h3",null,{"id":"1-rsa-signature","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"1. RSA Signature"}]
-43:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Uses RSA public-key cryptography with PKCS#1 v1.5 padding."}]
-44:["$","h4",null,{"id":"structure","children":"Structure"}]
-45:["$","$Laa",null,{"code":"{\n  \"signature_type\": \"rsa\",\n  \"signature\": \"0x...\",\n  \"public_key\": \"0x...\"\n}","language":"json"}]
-46:["$","h4",null,{"id":"fields","children":"Fields"}]
-47:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Must be ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"rsa\""}]]}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hex-encoded RSA signature (256 bytes for RSA-2048, 512 bytes for RSA-4096)"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"public_key"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hex-encoded DER-encoded RSA public key (200-600 bytes)"}]]}]]}]]}]}]
-48:["$","h4",null,{"id":"validation-rules","children":"Validation Rules"}]
-49:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Signature must be 256 bytes (RSA-2048) or 512 bytes (RSA-4096)"}],"\n",["$","li",null,{"className":"leading-7","children":"Public key must be DER-encoded and between 200-600 bytes"}],"\n",["$","li",null,{"className":"leading-7","children":["Both fields must be lowercase hex strings prefixed with ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x"}]]}],"\n"]}]
-4a:["$","h4",null,{"id":"example","children":"Example"}]
-ab:T5bd,{
+0:{"buildId":"_ePiRrooneby3ghoRNSHI","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","$L3",null,{}],"children":[["$","$L4",null,{"header":["$","$L5",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$6","reading_time":5,"word_count":888},"content":"$7","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$8","reading_time":5,"word_count":823},"content":"$9"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$a","reading_time":7,"word_count":1244},"content":"$b"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$c","reading_time":5,"word_count":941},"content":"$d","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$e","reading_time":9,"word_count":1674},"content":"$f"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$10","reading_time":8,"word_count":1476},"content":"$11","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$12","reading_time":4,"word_count":686},"content":"$13"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$14","reading_time":3,"word_count":410},"content":"$15","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$16","reading_time":2,"word_count":391},"content":"$17","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$18","reading_time":3,"word_count":566},"content":"$19","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$1a","reading_time":11,"word_count":2009},"content":"$1b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$1c","reading_time":6,"word_count":1048},"content":"$1d","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$1e","reading_time":3,"word_count":461},"content":"$1f","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$20","reading_time":7,"word_count":1393},"content":"$21","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$22","reading_time":7,"word_count":1369},"content":"$23","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$24","reading_time":9,"word_count":1682},"content":"$25","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$26","reading_time":10,"word_count":1863},"content":"$27","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$28","reading_time":5,"word_count":865},"content":"$29","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$2a","reading_time":7,"word_count":1216},"content":"$2b","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$2c","reading_time":12,"word_count":2274},"content":"$2d","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"}],"version":"v4.0.0","content":"$L2e","toc":"$L2f","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"$L30","$L31","$L32"]}],null,"$L33"]}],"loading":null,"isPartial":false}
+35:T2eb6,
+# Signature Revision
+
+A Signature Revision adds cryptographic proof of authenticity and authorship to a revision chain. It references a previous revision and includes a digital signature that can be verified using the associated public key or address. Aqua Protocol v4 supports three signature types: RSA, Ethereum (EIP-191), and DID-based signatures.
+
+## Overview
+
+Signature revisions provide:
+- **Authentication**: Proof that a specific entity created or approved the previous revision
+- **Integrity**: Assurance that the signed revision hasn't been tampered with
+- **Non-repudiation**: The signer cannot deny having signed the revision
+- **Flexibility**: Support for multiple cryptographic signature schemes
+
+## Schema Structure
+
+### Common Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_revision` | string | Yes | Hash reference to the revision being signed |
+| `revision_type` | string | Yes | Always `"signature"` for signature revisions |
+| `nonce` | string | Yes | Random 16-byte hex string for uniqueness |
+| `local_timestamp` | number | Yes | Unix timestamp when the signature was created |
+| `version` | string | Yes | Protocol version: `"https://aqua-protocol.org/docs/v4/schema"` |
+| `method` | string | Yes | Canonicalization method: `"scalar"` (typical) or `"tree"` |
+| `hash_type` | string | Yes | Hash algorithm: `"FIPS_202-SHA3-256"` |
+| `signature` | object | Yes | Signature value object (varies by signature type) |
+
+### Signature Value Object
+
+The `signature` field is an object with different structures depending on the signature type.
+
+## Signature Types
+
+### 1. RSA Signature
+
+Uses RSA public-key cryptography with PKCS#1 v1.5 padding.
+
+#### Structure
+```json
+{
+  "signature_type": "rsa",
+  "signature": "0x...",
+  "public_key": "0x..."
+}
+```
+
+#### Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `signature_type` | string | Must be `"rsa"` |
+| `signature` | string | Hex-encoded RSA signature (256 bytes for RSA-2048, 512 bytes for RSA-4096) |
+| `public_key` | string | Hex-encoded DER-encoded RSA public key (200-600 bytes) |
+
+#### Validation Rules
+- Signature must be 256 bytes (RSA-2048) or 512 bytes (RSA-4096)
+- Public key must be DER-encoded and between 200-600 bytes
+- Both fields must be lowercase hex strings prefixed with `0x`
+
+#### Example
+```json
+{
   "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
   "revision_type": "signature",
   "nonce": "0x9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b",
@@ -12134,93 +12147,631 @@ ab:T5bd,{
     "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d",
     "public_key": "0x308201a2300d06092a864886f70d01010105000382018f003082018a0282018100c9c4d8e3f7a1b5c9d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e00203010001"
   }
-}4b:["$","$Laa",null,{"code":"$ab","language":"json"}]
-4c:["$","hr",null,{}]
-4d:["$","h3",null,{"id":"2-ethereum-eip-191-signature","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"2. Ethereum (EIP-191) Signature"}]
-4e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Uses Ethereum's personal sign method (EIP-191) with ECDSA on the secp256k1 curve."}]
-4f:["$","h4",null,{"id":"structure-1","children":"Structure"}]
-50:["$","$Laa",null,{"code":"{\n  \"signature_type\": \"ethereum:eip-191\",\n  \"signature\": \"0x...\",\n  \"signature_wallet_address\": \"0x...\"\n}","language":"json"}]
-51:["$","h4",null,{"id":"fields-1","children":"Fields"}]
-52:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Must be ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"ethereum:eip-191\""}]]}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hex-encoded ECDSA signature (65 bytes: r=32, s=32, v=1)"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature_wallet_address"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"EIP-55 checksummed Ethereum address (20 bytes)"}]]}]]}]]}]}]
-53:["$","h4",null,{"id":"validation-rules-1","children":"Validation Rules"}]
-54:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Signature must be exactly 65 bytes"}],"\n",["$","li",null,{"className":"leading-7","children":"Wallet address must be a valid EIP-55 checksummed address"}],"\n",["$","li",null,{"className":"leading-7","children":["Both fields must be hex strings prefixed with ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x"}]]}],"\n",["$","li",null,{"className":"leading-7","children":"Address checksum must be validated"}],"\n"]}]
-55:["$","h4",null,{"id":"example-1","children":"Example"}]
-56:["$","$Laa",null,{"code":"{\n  \"previous_revision\": \"0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a\",\n  \"revision_type\": \"signature\",\n  \"nonce\": \"0x1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e\",\n  \"local_timestamp\": 1704070800,\n  \"version\": \"https://aqua-protocol.org/docs/v4/schema\",\n  \"method\": \"scalar\",\n  \"hash_type\": \"FIPS_202-SHA3-256\",\n  \"signature\": {\n    \"signature_type\": \"ethereum:eip-191\",\n    \"signature\": \"0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c\",\n    \"signature_wallet_address\": \"0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8\"\n  }\n}","language":"json"}]
-57:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Note"}],": The ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature_wallet_address"}]," must use proper EIP-55 checksumming (mixed case)."]}]
-58:["$","hr",null,{}]
-59:["$","h3",null,{"id":"3-did-jws-signature","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"3. DID JWS Signature"}]
-5a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Uses Decentralized Identifiers (DIDs) with JSON Web Signatures (JWS)."}]
-5b:["$","h4",null,{"id":"structure-2","children":"Structure"}]
-5c:["$","$Laa",null,{"code":"{\n  \"signature_type\": \"did:jws\",\n  \"jws\": \"eyJ...\",\n  \"did\": \"did:key:...\"\n}","language":"json"}]
-5d:["$","h4",null,{"id":"fields-2","children":"Fields"}]
-5e:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Must be ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"did:jws\""}]]}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"jws"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Compact JWS (JSON Web Signature)"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"did"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Decentralized Identifier of the signer"}]]}]]}]]}]}]
-5f:["$","h4",null,{"id":"validation-rules-2","children":"Validation Rules"}]
-60:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"JWS must be in compact serialization format (three base64url-encoded parts separated by dots)"}],"\n",["$","li",null,{"className":"leading-7","children":["DID must be a valid DID string (e.g., ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"did:key:z6Mk..."}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"did:web:example.com"}],")"]}],"\n",["$","li",null,{"className":"leading-7","children":"The DID document must be resolvable to verify the signature"}],"\n"]}]
-61:["$","h4",null,{"id":"example-2","children":"Example"}]
-62:["$","$Laa",null,{"code":"{\n  \"previous_revision\": \"0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a\",\n  \"revision_type\": \"signature\",\n  \"nonce\": \"0x5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a\",\n  \"local_timestamp\": 1704074400,\n  \"version\": \"https://aqua-protocol.org/docs/v4/schema\",\n  \"method\": \"scalar\",\n  \"hash_type\": \"FIPS_202-SHA3-256\",\n  \"signature\": {\n    \"signature_type\": \"did:jws\",\n    \"jws\": \"eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ\",\n    \"did\": \"did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK\"\n  }\n}","language":"json"}]
-63:["$","hr",null,{}]
-64:["$","h2",null,{"id":"what-gets-signed","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"What Gets Signed"}]
-65:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The signature is computed over the ",["$","strong",null,{"children":"hash of the previous revision"}],", not the revision itself."]}]
-66:["$","h3",null,{"id":"signing-process","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Signing Process"}]
-67:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["Compute the hash of the ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_revision"}]]}],"\n",["$","li",null,{"className":"leading-7","children":["For Ethereum: Add EIP-191 prefix (",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\\x19Ethereum Signed Message:\\n32"}],")"]}],"\n",["$","li",null,{"className":"leading-7","children":"Sign the hash using the appropriate method"}],"\n",["$","li",null,{"className":"leading-7","children":"Create the signature revision with the signature value"}],"\n",["$","li",null,{"className":"leading-7","children":"Compute the hash of the signature revision"}],"\n"]}]
-68:["$","h3",null,{"id":"example-signing-flow","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Example Signing Flow"}]
-69:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Object Revision => Compute Hash => Sign Hash => Signature Revision\n     |\n0x3f8a7b2c... (previous_revision in signature)\n"}]
-6a:["$","h2",null,{"id":"validation-rules-3","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Validation Rules"}]
-6b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"A Signature Revision is valid if:"}]
-6c:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Structure"}],": Contains all required fields with correct types"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Revision Type"}],": The ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_type"}]," is exactly ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"signature\""}]]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Previous Revision"}],": References a valid existing revision"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Signature Type"}],": One of ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"rsa\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"ethereum:eip-191\""}],", or ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"did:jws\""}]]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Signature Format"}],": Matches the requirements for the specific signature type"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"No Unknown Fields"}],": The signature object contains only recognized fields"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Signature Verification"}],": The signature can be cryptographically verified","\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"For RSA: Verify using the provided public key"}],"\n",["$","li",null,{"className":"leading-7","children":["For EIP-191: Recover address from signature and compare to ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature_wallet_address"}]]}],"\n",["$","li",null,{"className":"leading-7","children":"For DID:JWS: Resolve DID and verify JWS signature"}],"\n"]}],"\n"]}],"\n"]}]
-6d:["$","h2",null,{"id":"multiple-signatures","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Multiple Signatures"}]
-6e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"To add multiple signatures to the same revision:"}]
-6f:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Object Revision\n    |\nSignature 1 (Alice signs object)\n    |\nSignature 2 (Bob signs Signature 1)\n    |\nSignature 3 (Carol signs Signature 2)\n"}]
-70:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Each signature revision signs the previous revision, creating a chain of signatures."}]
-71:["$","h3",null,{"id":"multi-party-signing","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Multi-Party Signing"}]
-72:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"For independent multi-party signing (all signing the same object):"}]
-73:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"        Object Revision\n      |        |            |\nSignature A  Signature B  Signature C\n         |    |    |\n        Link Revision\n"}]
-74:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Use a Link Revision to combine multiple independent signature branches."}]
-75:["$","h2",null,{"id":"common-use-cases","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Common Use Cases"}]
-76:["$","h3",null,{"id":"1-document-signing","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"1. Document Signing"}]
-77:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Sign file object revisions to prove authorship:"}]
-78:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"File Object => Signature (Author) => Witness (Timestamp)\n"}]
-79:["$","h3",null,{"id":"2-approval-workflows","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"2. Approval Workflows"}]
-7a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Multiple parties sign in sequence:"}]
-7b:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Document => Sign (Creator) => Sign (Reviewer) => Sign (Approver)\n"}]
-7c:["$","h3",null,{"id":"3-notarization","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"3. Notarization"}]
-7d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Professional notary signs an object:"}]
-7e:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Object => Signature (Notary's RSA key) => Witness (Blockchain)\n"}]
-7f:["$","h3",null,{"id":"4-smart-contract-interaction","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"4. Smart Contract Interaction"}]
-80:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Ethereum wallet signs for on-chain verification:"}]
-81:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Claim => Signature (EIP-191) => Submit to Smart Contract\n"}]
-82:["$","h3",null,{"id":"5-decentralized-identity","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"5. Decentralized Identity"}]
-83:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"DID-based signatures for verifiable credentials:"}]
-84:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Credential => Signature (Issuer's DID) => Holder stores\n"}]
-85:["$","h2",null,{"id":"implementation-notes","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Implementation Notes"}]
-86:["$","h3",null,{"id":"creating-a-signature-revision","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Creating a Signature Revision"}]
-87:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Identify the revision to sign"}],"\n",["$","li",null,{"className":"leading-7","children":["Compute its hash (the ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_revision"}]," value)"]}],"\n",["$","li",null,{"className":"leading-7","children":"Prepare the message to sign (hash, with any required prefixes)"}],"\n",["$","li",null,{"className":"leading-7","children":"Generate the signature using chosen method"}],"\n",["$","li",null,{"className":"leading-7","children":"Construct the signature revision object"}],"\n",["$","li",null,{"className":"leading-7","children":"Validate the signature can be verified"}],"\n",["$","li",null,{"className":"leading-7","children":"Compute and store the signature revision hash"}],"\n"]}]
-88:["$","h3",null,{"id":"verifying-a-signature-revision","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Verifying a Signature Revision"}]
-89:["$","h4",null,{"id":"rsa-verification","children":"RSA Verification"}]
-8a:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"1. Extract public_key from signature object\n2. Extract signature bytes\n3. Reconstruct signed message (hash of previous_revision)\n4. Verify signature using RSA public key\n"}]
-8b:["$","h4",null,{"id":"eip-191-verification","children":"EIP-191 Verification"}]
-8c:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"1. Reconstruct EIP-191 message: \"\\x19Ethereum Signed Message:\\n32\" + hash\n2. Recover address from signature\n3. Compare recovered address to signature_wallet_address\n"}]
-8d:["$","h4",null,{"id":"didjws-verification","children":"DID:JWS Verification"}]
-8e:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"1. Resolve DID to get DID document\n2. Extract verification method (public key)\n3. Verify JWS signature using verification method\n4. Validate JWS payload matches revision data\n"}]
-8f:["$","h2",null,{"id":"security-considerations","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Security Considerations"}]
-90:["$","h3",null,{"id":"1-key-management","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"1. Key Management"}]
-91:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"RSA: Protect private key files, use strong key sizes (e2048 bits)"}],"\n",["$","li",null,{"className":"leading-7","children":"EIP-191: Secure wallet seed phrases/private keys"}],"\n",["$","li",null,{"className":"leading-7","children":"DID: Maintain DID document security and key rotation policies"}],"\n"]}]
-92:["$","h3",null,{"id":"2-signature-reuse","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"2. Signature Reuse"}]
-93:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Each signature should sign a unique revision"}],"\n",["$","li",null,{"className":"leading-7","children":"Nonces prevent replay attacks"}],"\n"]}]
-94:["$","h3",null,{"id":"3-timestamp-validation","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"3. Timestamp Validation"}]
-95:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["Check ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]," is reasonable (not far future/past)"]}],"\n",["$","li",null,{"className":"leading-7","children":"Compare with witness timestamps for consistency"}],"\n"]}]
-96:["$","h3",null,{"id":"4-address-validation","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"4. Address Validation"}]
-97:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"For EIP-191: Always validate EIP-55 checksum"}],"\n",["$","li",null,{"className":"leading-7","children":"Reject non-checksummed addresses"}],"\n"]}]
-98:["$","h3",null,{"id":"5-did-resolution","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"5. DID Resolution"}]
-99:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Ensure DID resolver is trustworthy"}],"\n",["$","li",null,{"className":"leading-7","children":"Cache DID documents appropriately"}],"\n",["$","li",null,{"className":"leading-7","children":"Handle resolution failures gracefully"}],"\n"]}]
-9a:["$","h2",null,{"id":"relationship-with-other-revisions","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Relationship with Other Revisions"}]
-9b:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Object Revisions"}],": Typically what gets signed first"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Witness Revisions"}],": Often follow signatures to add timestamping"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Link Revisions"}],": Can combine multiple signature branches"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Template Revisions"}],": Can also be signed, though less common"]}],"\n"]}]
-9c:["$","h2",null,{"id":"see-also","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"See Also"}]
-9d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/schema_reference/object_revision","className":"text-primary hover:underline font-medium","children":"Object Revision"}]," - What typically gets signed"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/schema_reference/witness_revision","className":"text-primary hover:underline font-medium","children":"Witness Revision"}]," - Add timestamps after signing"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/schema_reference/link_revision","className":"text-primary hover:underline font-medium","children":"Link Revision"}]," - Combine signature branches"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"https://eips.ethereum.org/EIPS/eip-191","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"EIP-191 Specification"}]," - Ethereum signing standard"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"https://www.w3.org/TR/did-core/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"DID Core Specification"}]," - Decentralized Identifiers"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"https://www.rfc-editor.org/rfc/rfc7515","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"JWS Specification"}]," - JSON Web Signatures"]}],"\n"]}]
-9e:["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v4.0.0/schema-reference/revision/signing-revision.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":[["$","path","1couwa",{"d":"M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","1y4qbx",{"d":"M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"}],"$undefined"]}],"Edit this page"]}],["$","a",null,{"href":"https://github.com/inblockio/issues/new","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-external-link h-4 w-4","children":[["$","path","1q9fwt",{"d":"M15 3h6v6"}],["$","path","gplh6r",{"d":"M10 14 21 3"}],["$","path","a6xqqp",{"d":"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"}],"$undefined"]}],"Report an issue"]}]]}]
-9f:["$","div",null,{"className":"mt-12 pt-8 border-t border-border grid grid-cols-2 gap-4","children":[["$","$L37",null,{"href":"/docs/v4.0.0/schema-reference/revision/revision","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Previous"}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Aqua Protocol Revisions"}]]}],["$","$L37",null,{"href":"/docs/v4.0.0/schema-reference/revision/template-revision","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all text-right","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center justify-end gap-2 text-sm text-muted-foreground","children":[["$","span",null,{"children":"Next"}],["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Template Revision"}]]}]]}]
-a5:null
-a6:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"version"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Protocol version: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"https://aqua-protocol.org/docs/v4/schema\""}]]}]]}]
-a7:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"method"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Canonicalization method: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"scalar\""}]," (typical) or ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"tree\""}]]}]]}]
-a8:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"hash_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Hash algorithm: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"FIPS_202-SHA3-256\""}]]}]]}]
-a9:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"object"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Signature value object (varies by signature type)"}]]}]
+}
+```
+
+---
+
+### 2. Ethereum (EIP-191) Signature
+
+Uses Ethereum's personal sign method (EIP-191) with ECDSA on the secp256k1 curve.
+
+#### Structure
+```json
+{
+  "signature_type": "ethereum:eip-191",
+  "signature": "0x...",
+  "signature_wallet_address": "0x..."
+}
+```
+
+#### Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `signature_type` | string | Must be `"ethereum:eip-191"` |
+| `signature` | string | Hex-encoded ECDSA signature (65 bytes: r=32, s=32, v=1) |
+| `signature_wallet_address` | string | EIP-55 checksummed Ethereum address (20 bytes) |
+
+#### Validation Rules
+- Signature must be exactly 65 bytes
+- Wallet address must be a valid EIP-55 checksummed address
+- Both fields must be hex strings prefixed with `0x`
+- Address checksum must be validated
+
+#### Example
+```json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "signature",
+  "nonce": "0x1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e",
+  "local_timestamp": 1704070800,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "signature": {
+    "signature_type": "ethereum:eip-191",
+    "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c",
+    "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+  }
+}
+```
+
+**Note**: The `signature_wallet_address` must use proper EIP-55 checksumming (mixed case).
+
+---
+
+### 3. DID JWS Signature
+
+Uses Decentralized Identifiers (DIDs) with JSON Web Signatures (JWS).
+
+#### Structure
+```json
+{
+  "signature_type": "did:jws",
+  "jws": "eyJ...",
+  "did": "did:key:..."
+}
+```
+
+#### Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `signature_type` | string | Must be `"did:jws"` |
+| `jws` | string | Compact JWS (JSON Web Signature) |
+| `did` | string | Decentralized Identifier of the signer |
+
+#### Validation Rules
+- JWS must be in compact serialization format (three base64url-encoded parts separated by dots)
+- DID must be a valid DID string (e.g., `did:key:z6Mk...`, `did:web:example.com`)
+- The DID document must be resolvable to verify the signature
+
+#### Example
+```json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "signature",
+  "nonce": "0x5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a",
+  "local_timestamp": 1704074400,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "signature": {
+    "signature_type": "did:jws",
+    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ",
+    "did": "did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK"
+  }
+}
+```
+
+---
+
+## What Gets Signed
+
+The signature is computed over the **hash of the previous revision**, not the revision itself.
+
+### Signing Process
+
+1. Compute the hash of the `previous_revision`
+2. For Ethereum: Add EIP-191 prefix (`\x19Ethereum Signed Message:\n32`)
+3. Sign the hash using the appropriate method
+4. Create the signature revision with the signature value
+5. Compute the hash of the signature revision
+
+### Example Signing Flow
+
+```
+Object Revision => Compute Hash => Sign Hash => Signature Revision
+     |
+0x3f8a7b2c... (previous_revision in signature)
+```
+
+## Validation Rules
+
+A Signature Revision is valid if:
+
+1. **Structure**: Contains all required fields with correct types
+2. **Revision Type**: The `revision_type` is exactly `"signature"`
+3. **Previous Revision**: References a valid existing revision
+4. **Signature Type**: One of `"rsa"`, `"ethereum:eip-191"`, or `"did:jws"`
+5. **Signature Format**: Matches the requirements for the specific signature type
+6. **No Unknown Fields**: The signature object contains only recognized fields
+7. **Signature Verification**: The signature can be cryptographically verified
+   - For RSA: Verify using the provided public key
+   - For EIP-191: Recover address from signature and compare to `signature_wallet_address`
+   - For DID:JWS: Resolve DID and verify JWS signature
+
+## Multiple Signatures
+
+To add multiple signatures to the same revision:
+
+```
+Object Revision
+    |
+Signature 1 (Alice signs object)
+    |
+Signature 2 (Bob signs Signature 1)
+    |
+Signature 3 (Carol signs Signature 2)
+```
+
+Each signature revision signs the previous revision, creating a chain of signatures.
+
+### Multi-Party Signing
+
+For independent multi-party signing (all signing the same object):
+
+```
+        Object Revision
+      |        |            |
+Signature A  Signature B  Signature C
+         |    |    |
+        Link Revision
+```
+
+Use a Link Revision to combine multiple independent signature branches.
+
+## Common Use Cases
+
+### 1. Document Signing
+Sign file object revisions to prove authorship:
+```
+File Object => Signature (Author) => Witness (Timestamp)
+```
+
+### 2. Approval Workflows
+Multiple parties sign in sequence:
+```
+Document => Sign (Creator) => Sign (Reviewer) => Sign (Approver)
+```
+
+### 3. Notarization
+Professional notary signs an object:
+```
+Object => Signature (Notary's RSA key) => Witness (Blockchain)
+```
+
+### 4. Smart Contract Interaction
+Ethereum wallet signs for on-chain verification:
+```
+Claim => Signature (EIP-191) => Submit to Smart Contract
+```
+
+### 5. Decentralized Identity
+DID-based signatures for verifiable credentials:
+```
+Credential => Signature (Issuer's DID) => Holder stores
+```
+
+## Implementation Notes
+
+### Creating a Signature Revision
+
+1. Identify the revision to sign
+2. Compute its hash (the `previous_revision` value)
+3. Prepare the message to sign (hash, with any required prefixes)
+4. Generate the signature using chosen method
+5. Construct the signature revision object
+6. Validate the signature can be verified
+7. Compute and store the signature revision hash
+
+### Verifying a Signature Revision
+
+#### RSA Verification
+```
+1. Extract public_key from signature object
+2. Extract signature bytes
+3. Reconstruct signed message (hash of previous_revision)
+4. Verify signature using RSA public key
+```
+
+#### EIP-191 Verification
+```
+1. Reconstruct EIP-191 message: "\x19Ethereum Signed Message:\n32" + hash
+2. Recover address from signature
+3. Compare recovered address to signature_wallet_address
+```
+
+#### DID:JWS Verification
+```
+1. Resolve DID to get DID document
+2. Extract verification method (public key)
+3. Verify JWS signature using verification method
+4. Validate JWS payload matches revision data
+```
+
+## Security Considerations
+
+### 1. Key Management
+- RSA: Protect private key files, use strong key sizes (e2048 bits)
+- EIP-191: Secure wallet seed phrases/private keys
+- DID: Maintain DID document security and key rotation policies
+
+### 2. Signature Reuse
+- Each signature should sign a unique revision
+- Nonces prevent replay attacks
+
+### 3. Timestamp Validation
+- Check `local_timestamp` is reasonable (not far future/past)
+- Compare with witness timestamps for consistency
+
+### 4. Address Validation
+- For EIP-191: Always validate EIP-55 checksum
+- Reject non-checksummed addresses
+
+### 5. DID Resolution
+- Ensure DID resolver is trustworthy
+- Cache DID documents appropriately
+- Handle resolution failures gracefully
+
+## Relationship with Other Revisions
+
+- **Object Revisions**: Typically what gets signed first
+- **Witness Revisions**: Often follow signatures to add timestamping
+- **Link Revisions**: Can combine multiple signature branches
+- **Template Revisions**: Can also be signed, though less common
+
+## See Also
+
+- [Object Revision](/schema_reference/object_revision) - What typically gets signed
+- [Witness Revision](/schema_reference/witness_revision) - Add timestamps after signing
+- [Link Revision](/schema_reference/link_revision) - Combine signature branches
+- [EIP-191 Specification](https://eips.ethereum.org/EIPS/eip-191) - Ethereum signing standard
+- [DID Core Specification](https://www.w3.org/TR/did-core/) - Decentralized Identifiers
+- [JWS Specification](https://www.rfc-editor.org/rfc/rfc7515) - JSON Web Signatures
+36:T2eb6,
+# Signature Revision
+
+A Signature Revision adds cryptographic proof of authenticity and authorship to a revision chain. It references a previous revision and includes a digital signature that can be verified using the associated public key or address. Aqua Protocol v4 supports three signature types: RSA, Ethereum (EIP-191), and DID-based signatures.
+
+## Overview
+
+Signature revisions provide:
+- **Authentication**: Proof that a specific entity created or approved the previous revision
+- **Integrity**: Assurance that the signed revision hasn't been tampered with
+- **Non-repudiation**: The signer cannot deny having signed the revision
+- **Flexibility**: Support for multiple cryptographic signature schemes
+
+## Schema Structure
+
+### Common Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_revision` | string | Yes | Hash reference to the revision being signed |
+| `revision_type` | string | Yes | Always `"signature"` for signature revisions |
+| `nonce` | string | Yes | Random 16-byte hex string for uniqueness |
+| `local_timestamp` | number | Yes | Unix timestamp when the signature was created |
+| `version` | string | Yes | Protocol version: `"https://aqua-protocol.org/docs/v4/schema"` |
+| `method` | string | Yes | Canonicalization method: `"scalar"` (typical) or `"tree"` |
+| `hash_type` | string | Yes | Hash algorithm: `"FIPS_202-SHA3-256"` |
+| `signature` | object | Yes | Signature value object (varies by signature type) |
+
+### Signature Value Object
+
+The `signature` field is an object with different structures depending on the signature type.
+
+## Signature Types
+
+### 1. RSA Signature
+
+Uses RSA public-key cryptography with PKCS#1 v1.5 padding.
+
+#### Structure
+```json
+{
+  "signature_type": "rsa",
+  "signature": "0x...",
+  "public_key": "0x..."
+}
+```
+
+#### Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `signature_type` | string | Must be `"rsa"` |
+| `signature` | string | Hex-encoded RSA signature (256 bytes for RSA-2048, 512 bytes for RSA-4096) |
+| `public_key` | string | Hex-encoded DER-encoded RSA public key (200-600 bytes) |
+
+#### Validation Rules
+- Signature must be 256 bytes (RSA-2048) or 512 bytes (RSA-4096)
+- Public key must be DER-encoded and between 200-600 bytes
+- Both fields must be lowercase hex strings prefixed with `0x`
+
+#### Example
+```json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "signature",
+  "nonce": "0x9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b",
+  "local_timestamp": 1704067200,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "signature": {
+    "signature_type": "rsa",
+    "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d",
+    "public_key": "0x308201a2300d06092a864886f70d01010105000382018f003082018a0282018100c9c4d8e3f7a1b5c9d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6a0b4c8d2e6f0a4b8c2d6e00203010001"
+  }
+}
+```
+
+---
+
+### 2. Ethereum (EIP-191) Signature
+
+Uses Ethereum's personal sign method (EIP-191) with ECDSA on the secp256k1 curve.
+
+#### Structure
+```json
+{
+  "signature_type": "ethereum:eip-191",
+  "signature": "0x...",
+  "signature_wallet_address": "0x..."
+}
+```
+
+#### Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `signature_type` | string | Must be `"ethereum:eip-191"` |
+| `signature` | string | Hex-encoded ECDSA signature (65 bytes: r=32, s=32, v=1) |
+| `signature_wallet_address` | string | EIP-55 checksummed Ethereum address (20 bytes) |
+
+#### Validation Rules
+- Signature must be exactly 65 bytes
+- Wallet address must be a valid EIP-55 checksummed address
+- Both fields must be hex strings prefixed with `0x`
+- Address checksum must be validated
+
+#### Example
+```json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "signature",
+  "nonce": "0x1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e",
+  "local_timestamp": 1704070800,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "signature": {
+    "signature_type": "ethereum:eip-191",
+    "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c",
+    "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+  }
+}
+```
+
+**Note**: The `signature_wallet_address` must use proper EIP-55 checksumming (mixed case).
+
+---
+
+### 3. DID JWS Signature
+
+Uses Decentralized Identifiers (DIDs) with JSON Web Signatures (JWS).
+
+#### Structure
+```json
+{
+  "signature_type": "did:jws",
+  "jws": "eyJ...",
+  "did": "did:key:..."
+}
+```
+
+#### Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `signature_type` | string | Must be `"did:jws"` |
+| `jws` | string | Compact JWS (JSON Web Signature) |
+| `did` | string | Decentralized Identifier of the signer |
+
+#### Validation Rules
+- JWS must be in compact serialization format (three base64url-encoded parts separated by dots)
+- DID must be a valid DID string (e.g., `did:key:z6Mk...`, `did:web:example.com`)
+- The DID document must be resolvable to verify the signature
+
+#### Example
+```json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "signature",
+  "nonce": "0x5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a",
+  "local_timestamp": 1704074400,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "signature": {
+    "signature_type": "did:jws",
+    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ",
+    "did": "did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK"
+  }
+}
+```
+
+---
+
+## What Gets Signed
+
+The signature is computed over the **hash of the previous revision**, not the revision itself.
+
+### Signing Process
+
+1. Compute the hash of the `previous_revision`
+2. For Ethereum: Add EIP-191 prefix (`\x19Ethereum Signed Message:\n32`)
+3. Sign the hash using the appropriate method
+4. Create the signature revision with the signature value
+5. Compute the hash of the signature revision
+
+### Example Signing Flow
+
+```
+Object Revision => Compute Hash => Sign Hash => Signature Revision
+     |
+0x3f8a7b2c... (previous_revision in signature)
+```
+
+## Validation Rules
+
+A Signature Revision is valid if:
+
+1. **Structure**: Contains all required fields with correct types
+2. **Revision Type**: The `revision_type` is exactly `"signature"`
+3. **Previous Revision**: References a valid existing revision
+4. **Signature Type**: One of `"rsa"`, `"ethereum:eip-191"`, or `"did:jws"`
+5. **Signature Format**: Matches the requirements for the specific signature type
+6. **No Unknown Fields**: The signature object contains only recognized fields
+7. **Signature Verification**: The signature can be cryptographically verified
+   - For RSA: Verify using the provided public key
+   - For EIP-191: Recover address from signature and compare to `signature_wallet_address`
+   - For DID:JWS: Resolve DID and verify JWS signature
+
+## Multiple Signatures
+
+To add multiple signatures to the same revision:
+
+```
+Object Revision
+    |
+Signature 1 (Alice signs object)
+    |
+Signature 2 (Bob signs Signature 1)
+    |
+Signature 3 (Carol signs Signature 2)
+```
+
+Each signature revision signs the previous revision, creating a chain of signatures.
+
+### Multi-Party Signing
+
+For independent multi-party signing (all signing the same object):
+
+```
+        Object Revision
+      |        |            |
+Signature A  Signature B  Signature C
+         |    |    |
+        Link Revision
+```
+
+Use a Link Revision to combine multiple independent signature branches.
+
+## Common Use Cases
+
+### 1. Document Signing
+Sign file object revisions to prove authorship:
+```
+File Object => Signature (Author) => Witness (Timestamp)
+```
+
+### 2. Approval Workflows
+Multiple parties sign in sequence:
+```
+Document => Sign (Creator) => Sign (Reviewer) => Sign (Approver)
+```
+
+### 3. Notarization
+Professional notary signs an object:
+```
+Object => Signature (Notary's RSA key) => Witness (Blockchain)
+```
+
+### 4. Smart Contract Interaction
+Ethereum wallet signs for on-chain verification:
+```
+Claim => Signature (EIP-191) => Submit to Smart Contract
+```
+
+### 5. Decentralized Identity
+DID-based signatures for verifiable credentials:
+```
+Credential => Signature (Issuer's DID) => Holder stores
+```
+
+## Implementation Notes
+
+### Creating a Signature Revision
+
+1. Identify the revision to sign
+2. Compute its hash (the `previous_revision` value)
+3. Prepare the message to sign (hash, with any required prefixes)
+4. Generate the signature using chosen method
+5. Construct the signature revision object
+6. Validate the signature can be verified
+7. Compute and store the signature revision hash
+
+### Verifying a Signature Revision
+
+#### RSA Verification
+```
+1. Extract public_key from signature object
+2. Extract signature bytes
+3. Reconstruct signed message (hash of previous_revision)
+4. Verify signature using RSA public key
+```
+
+#### EIP-191 Verification
+```
+1. Reconstruct EIP-191 message: "\x19Ethereum Signed Message:\n32" + hash
+2. Recover address from signature
+3. Compare recovered address to signature_wallet_address
+```
+
+#### DID:JWS Verification
+```
+1. Resolve DID to get DID document
+2. Extract verification method (public key)
+3. Verify JWS signature using verification method
+4. Validate JWS payload matches revision data
+```
+
+## Security Considerations
+
+### 1. Key Management
+- RSA: Protect private key files, use strong key sizes (e2048 bits)
+- EIP-191: Secure wallet seed phrases/private keys
+- DID: Maintain DID document security and key rotation policies
+
+### 2. Signature Reuse
+- Each signature should sign a unique revision
+- Nonces prevent replay attacks
+
+### 3. Timestamp Validation
+- Check `local_timestamp` is reasonable (not far future/past)
+- Compare with witness timestamps for consistency
+
+### 4. Address Validation
+- For EIP-191: Always validate EIP-55 checksum
+- Reject non-checksummed addresses
+
+### 5. DID Resolution
+- Ensure DID resolver is trustworthy
+- Cache DID documents appropriately
+- Handle resolution failures gracefully
+
+## Relationship with Other Revisions
+
+- **Object Revisions**: Typically what gets signed first
+- **Witness Revisions**: Often follow signatures to add timestamping
+- **Link Revisions**: Can combine multiple signature branches
+- **Template Revisions**: Can also be signed, though less common
+
+## See Also
+
+- [Object Revision](/schema_reference/object_revision) - What typically gets signed
+- [Witness Revision](/schema_reference/witness_revision) - Add timestamps after signing
+- [Link Revision](/schema_reference/link_revision) - Combine signature branches
+- [EIP-191 Specification](https://eips.ethereum.org/EIPS/eip-191) - Ethereum signing standard
+- [DID Core Specification](https://www.w3.org/TR/did-core/) - Decentralized Identifiers
+- [JWS Specification](https://www.rfc-editor.org/rfc/rfc7515) - JSON Web Signatures
+2e:["$","$L34",null,{"meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$35","reading_time":7,"word_count":1393},"content":"$36","previousDoc":{"title":"Aqua Protocol Revisions","slug":"schema-reference/revision/revision"},"nextDoc":{"title":"Template Revision","slug":"schema-reference/revision/template-revision"},"version":"v4.0.0","slug":"schema-reference/revision/signing-revision","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}]
+2f:["$","$L37",null,{"items":[{"id":"overview","title":"Overview","level":2},{"id":"schema-structure","title":"Schema Structure","level":2},{"id":"common-fields","title":"Common Fields","level":3},{"id":"signature-value-object","title":"Signature Value Object","level":3},{"id":"signature-types","title":"Signature Types","level":2},{"id":"1-rsa-signature","title":"1. RSA Signature","level":3},{"id":"2-ethereum-eip-191-signature","title":"2. Ethereum (EIP-191) Signature","level":3},{"id":"3-did-jws-signature","title":"3. DID JWS Signature","level":3},{"id":"what-gets-signed","title":"What Gets Signed","level":2},{"id":"signing-process","title":"Signing Process","level":3},{"id":"example-signing-flow","title":"Example Signing Flow","level":3},{"id":"validation-rules","title":"Validation Rules","level":2},{"id":"multiple-signatures","title":"Multiple Signatures","level":2},{"id":"multi-party-signing","title":"Multi-Party Signing","level":3},{"id":"common-use-cases","title":"Common Use Cases","level":2},{"id":"1-document-signing","title":"1. Document Signing","level":3},{"id":"2-approval-workflows","title":"2. Approval Workflows","level":3},{"id":"3-notarization","title":"3. Notarization","level":3},{"id":"4-smart-contract-interaction","title":"4. Smart Contract Interaction","level":3},{"id":"5-decentralized-identity","title":"5. Decentralized Identity","level":3},{"id":"implementation-notes","title":"Implementation Notes","level":2},{"id":"creating-a-signature-revision","title":"Creating a Signature Revision","level":3},{"id":"verifying-a-signature-revision","title":"Verifying a Signature Revision","level":3},{"id":"security-considerations","title":"Security Considerations","level":2},{"id":"1-key-management","title":"1. Key Management","level":3},{"id":"2-signature-reuse","title":"2. Signature Reuse","level":3},{"id":"3-timestamp-validation","title":"3. Timestamp Validation","level":3},{"id":"4-address-validation","title":"4. Address Validation","level":3},{"id":"5-did-resolution","title":"5. DID Resolution","level":3},{"id":"relationship-with-other-revisions","title":"Relationship with Other Revisions","level":2},{"id":"see-also","title":"See Also","level":2}],"config":"$2e:props:config"}]
+30:["$","$L38",null,{}]
+31:["$","$L39",null,{}]
+32:["$","$L3a",null,{}]
+33:["$","$L3b",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@3c"}]}]
+3c:null

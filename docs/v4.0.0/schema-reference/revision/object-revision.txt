@@ -1,20 +1,27 @@
 1:"$Sreact.fragment"
-2:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-3:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-5:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
-6:"$Sreact.suspense"
-8:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"ViewportBoundary"]
-a:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"MetadataBoundary"]
-c:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-:HL["/_next/static/chunks/8a80e7184ad3a13f.css","style"]
-:HL["/_next/static/chunks/ec0800f16b1ae8cd.css","style"]
+2:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"ConfigProvider"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TabProvider"]
+4:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+5:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+6:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"VersionNotFound"]
+b:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+:HL["/_next/static/chunks/a06cf6f745569492.css","style"]
+:HL["/_next/static/chunks/b0e9cc9922d4f147.css","style"]
 :HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"P":null,"b":"k8-fwt2fbTlxLBvWFtXyi","c":["","docs","v4.0.0","schema-reference","revision","object-revision"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v4.0.0","d"],{"children":[["slug","schema-reference/revision/object-revision","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/8a80e7184ad3a13f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/ec0800f16b1ae8cd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L4",[["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true,"nonce":"$undefined"}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],{},null,false,false]},[["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}],[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$L8",null,{"children":"$@9"}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":"$@b"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$c",[]],"S":true}
-d:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
-e:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
-f:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
-10:T1ef1,
+0:{"P":null,"b":"_ePiRrooneby3ghoRNSHI","c":["","docs","v4.0.0","schema-reference","revision","object-revision"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v4.0.0","d"],{"children":[["slug","schema-reference/revision/object-revision","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/b0e9cc9922d4f147.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/eb22c92016909501.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/d07752feff0a7168.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":"$L7","templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L8",{},null,false,false]},["$L9",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$La",false]],"m":"$undefined","G":["$b",[]],"S":true}
+d:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"ViewportBoundary"]
+12:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"MetadataBoundary"]
+7:["$","$L5",null,{}]
+8:["$","$1","c",{"children":["$Lc",null,["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}]
+9:["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}]
+a:["$","$1","h",{"children":[null,["$","$L10",null,{"children":"$L11"}],["$","div",null,{"hidden":true,"children":["$","$L12",null,{"children":["$","$e",null,{"name":"Next.Metadata","children":"$L13"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+14:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLoading"]
+15:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayoutWrapper"]
+16:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"Header"]
+17:T1ef1,
 
 The **Aqua Tree** is the primary data structure in Aqua Protocol. It serves as the container for all revisions, their relationships, and associated metadata. An Aqua Tree represents a complete, self-contained unit that can be stored, transmitted, and verified independently.
 
@@ -270,7 +277,7 @@ For large trees:
 - [Signature Revision](/schema_reference/signing_revision) - Cryptographic signatures
 - [Witness Revision](/schema_reference/witness_revision) - Blockchain anchoring
 - [Link Revision](/schema_reference/link_revision) - Connecting trees
-- [File Index](/schema_reference/file_index) - Content hash mapping11:T1ef1,
+- [File Index](/schema_reference/file_index) - Content hash mapping18:T1ef1,
 
 The **Aqua Tree** is the primary data structure in Aqua Protocol. It serves as the container for all revisions, their relationships, and associated metadata. An Aqua Tree represents a complete, self-contained unit that can be stored, transmitted, and verified independently.
 
@@ -526,7 +533,7 @@ For large trees:
 - [Signature Revision](/schema_reference/signing_revision) - Cryptographic signatures
 - [Witness Revision](/schema_reference/witness_revision) - Blockchain anchoring
 - [Link Revision](/schema_reference/link_revision) - Connecting trees
-- [File Index](/schema_reference/file_index) - Content hash mapping12:T1b1f,
+- [File Index](/schema_reference/file_index) - Content hash mapping19:T1b19,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -534,7 +541,7 @@ For large trees:
 <Callout type="info">
 **Powered by Cryptography, Not Blockchain**
 
-Aqua Protocol is made possible by crypto—as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
+Aqua Protocol is made possible by crypto as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
 
 <Badge icon="circle-check" color="green">
  Account & Verify Data in Seconds
@@ -561,7 +568,7 @@ Trust can be built by relying on hashing and encryption mechanisms or by delegat
 
 ## How It Works
 
-At its core, Aqua creates portable hash-chains—called **AquaTrees**—that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
+At its core, Aqua creates portable hash-chains called **AquaTrees** that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
 
 ### Key Features
 
@@ -740,7 +747,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-13:T1b1f,
+1a:T1b19,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -748,7 +755,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 <Callout type="info">
 **Powered by Cryptography, Not Blockchain**
 
-Aqua Protocol is made possible by crypto—as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
+Aqua Protocol is made possible by crypto as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
 
 <Badge icon="circle-check" color="green">
  Account & Verify Data in Seconds
@@ -775,7 +782,7 @@ Trust can be built by relying on hashing and encryption mechanisms or by delegat
 
 ## How It Works
 
-At its core, Aqua creates portable hash-chains—called **AquaTrees**—that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
+At its core, Aqua creates portable hash-chains called **AquaTrees** that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
 
 ### Key Features
 
@@ -954,26 +961,21 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-14:T2f93,
+1b:T2e36,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
-  <TabsList>
-      <TabsTrigger value="js">JavaScript/TypeScript (v3)</TabsTrigger>
-      <TabsTrigger value="rust">Rust (V4)</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     **Stable** - Production-ready SDK for Node.js, Web, and React Native
 
     Best for: Web applications, existing JavaScript projects
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ---
@@ -1348,18 +1350,13 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
 Want to see the full workflow including signing and witnessing?
 
 <Tabs defaultValue="js">
-  <TabsList>
-    <TabsTrigger value="js">Javascript</TabsTrigger>
-    <TabsTrigger value="rust">Rust</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ## Try Aquafier
@@ -1401,26 +1398,21 @@ Not ready to code yet? Try our web-based demo:
 <Callout type="note" >
 **Ready to build?** Start with the [Development Guide](/development) for detailed instructions on signing, witnessing, and advanced features.
 </Callout  >
-15:T2f93,
+1c:T2e36,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
-  <TabsList>
-      <TabsTrigger value="js">JavaScript/TypeScript (v3)</TabsTrigger>
-      <TabsTrigger value="rust">Rust (V4)</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     **Stable** - Production-ready SDK for Node.js, Web, and React Native
 
     Best for: Web applications, existing JavaScript projects
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ---
@@ -1795,18 +1787,13 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
 Want to see the full workflow including signing and witnessing?
 
 <Tabs defaultValue="js">
-  <TabsList>
-    <TabsTrigger value="js">Javascript</TabsTrigger>
-    <TabsTrigger value="rust">Rust</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ## Try Aquafier
@@ -1848,7 +1835,7 @@ Not ready to code yet? Try our web-based demo:
 <Callout type="note" >
 **Ready to build?** Start with the [Development Guide](/development) for detailed instructions on signing, witnessing, and advanced features.
 </Callout  >
-16:T240c,
+1d:T240c,
 # File Index
 
 The **File Index** is a component of the Aqua Tree that maps content hashes to human-readable filenames. It provides context about what each hash represents, making Aqua Trees more understandable and navigable.
@@ -2227,7 +2214,7 @@ File index compresses well with gzip due to repetitive patterns:
 - [Object Revision](/schema_reference/object_revision) - Revisions containing content hashes
 - [Link Revision](/schema_reference/link_revision) - Linking to external trees
 - [Template Revision](/schema_reference/template_revision) - Schema definitions
-17:T240c,
+1e:T240c,
 # File Index
 
 The **File Index** is a component of the Aqua Tree that maps content hashes to human-readable filenames. It provides context about what each hash represents, making Aqua Trees more understandable and navigable.
@@ -2606,7 +2593,7 @@ File index compresses well with gzip due to repetitive patterns:
 - [Object Revision](/schema_reference/object_revision) - Revisions containing content hashes
 - [Link Revision](/schema_reference/link_revision) - Linking to external trees
 - [Template Revision](/schema_reference/template_revision) - Schema definitions
-18:T3a85,
+1f:T3a85,
 <Callout type="info" title="Prerequisites">
 We recommend completing the [Quick Start Guide](/quickstart) before diving into development details.
 </Callout>
@@ -3150,7 +3137,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
   <Card title="Get Support" icon="mail" href="mailto:info@inblock.io">
     Need help? Contact our team
   </Card>
-</CardGrid>19:T3a85,
+</CardGrid>20:T3a85,
 <Callout type="info" title="Prerequisites">
 We recommend completing the [Quick Start Guide](/quickstart) before diving into development details.
 </Callout>
@@ -3694,7 +3681,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
   <Card title="Get Support" icon="mail" href="mailto:info@inblock.io">
     Need help? Contact our team
   </Card>
-</CardGrid>1a:T348e,
+</CardGrid>21:T348e,
 
 This section provides the complete technical specification for Aqua Protocol v4. Here you'll find detailed documentation on data structures, revision types, validation rules, and implementation requirements.
 
@@ -4105,7 +4092,7 @@ For previous versions, see:
 - [Version 3 Documentation](/previous_versions/version_3/introduction) - JavaScript SDK (Stable)
 - [Version 2 Documentation](/previous_versions/version_2/introduction) - Legacy
 - [Version 1 Documentation](/previous_versions/version_1/introduction) - Legacy
-1b:T348e,
+22:T348e,
 
 This section provides the complete technical specification for Aqua Protocol v4. Here you'll find detailed documentation on data structures, revision types, validation rules, and implementation requirements.
 
@@ -4516,7 +4503,7 @@ For previous versions, see:
 - [Version 3 Documentation](/previous_versions/version_3/introduction) - JavaScript SDK (Stable)
 - [Version 2 Documentation](/previous_versions/version_2/introduction) - Legacy
 - [Version 1 Documentation](/previous_versions/version_1/introduction) - Legacy
-1c:T13d0,
+23:T13d0,
 # Aqua Protocol v4
 
 Aqua Protocol v4 is the latest version of the protocol, introducing significant improvements in structure, flexibility, and capabilities. This version is currently in beta.
@@ -4645,7 +4632,7 @@ Aqua Protocol v4 is designed for:
 - Read about specific use cases and implementation patterns
 
 For questions or feedback about v4, please visit the [Aqua Protocol GitHub repository](https://github.com/inblockio).
-1d:T13d0,
+24:T13d0,
 # Aqua Protocol v4
 
 Aqua Protocol v4 is the latest version of the protocol, introducing significant improvements in structure, flexibility, and capabilities. This version is currently in beta.
@@ -4774,7 +4761,7 @@ Aqua Protocol v4 is designed for:
 - Read about specific use cases and implementation patterns
 
 For questions or feedback about v4, please visit the [Aqua Protocol GitHub repository](https://github.com/inblockio).
-1e:Tca8,
+25:Tca8,
 
 The Aqua CLI is a command-line tool for creating, signing, witnessing, and verifying Aqua Protocol chains. Built with Rust, it provides a simple interface for working with Aqua chains without writing code.
 
@@ -4902,7 +4889,7 @@ For more information about Aqua Protocol v4:
 **Current Version**: 4.0.0
 
 Built using the [Aqua Rust SDK](/dev_tools/aqua_sdk) for Aqua Protocol v4 support.
-1f:Tca8,
+26:Tca8,
 
 The Aqua CLI is a command-line tool for creating, signing, witnessing, and verifying Aqua Protocol chains. Built with Rust, it provides a simple interface for working with Aqua chains without writing code.
 
@@ -5030,7 +5017,7 @@ For more information about Aqua Protocol v4:
 **Current Version**: 4.0.0
 
 Built using the [Aqua Rust SDK](/dev_tools/aqua_sdk) for Aqua Protocol v4 support.
-20:Tefa,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/quickstart)
+27:Tefa,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/quickstart)
 The Aqua SDK is a Rust library that provides the core functionality for creating, signing, witnessing, and verifying Aqua Protocol chains. It supports Aqua Protocol v4 and includes WebAssembly (WASM) bindings for cross-platform compatibility.
 
 ## Features
@@ -5135,7 +5122,7 @@ For detailed API documentation, examples, and guides:
 **Current Version**: 4.0.0 (Beta)
 
 The SDK implements Aqua Protocol v4 with the template system and enhanced revision types. For production-stable implementations, consider the [JavaScript SDK (v3)](/previous_versions/version_3/tooling).
-21:Tefa,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/quickstart)
+28:Tefa,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/quickstart)
 The Aqua SDK is a Rust library that provides the core functionality for creating, signing, witnessing, and verifying Aqua Protocol chains. It supports Aqua Protocol v4 and includes WebAssembly (WASM) bindings for cross-platform compatibility.
 
 ## Features
@@ -5240,7 +5227,7 @@ For detailed API documentation, examples, and guides:
 **Current Version**: 4.0.0 (Beta)
 
 The SDK implements Aqua Protocol v4 with the template system and enhanced revision types. For production-stable implementations, consider the [JavaScript SDK (v3)](/previous_versions/version_3/tooling).
-22:T1289,
+29:T1289,
 
 Aquafier is a web-based reference implementation of Aqua Protocol v3, providing a user-friendly interface and HTTP API for digital content signing, provenance verification, and integrity validation. It demonstrates how Aqua Protocol features can be integrated into modern web applications.
 
@@ -5385,7 +5372,7 @@ For v3 technical details:
 4. Check the [GitHub repository](https://github.com/inblockio/aquafier-js) for self-hosting
 
 For building custom applications, consider using the [Aqua JavaScript SDK](/previous_versions/version_3/tooling) directly or the [Aqua Rust SDK](/dev_tools/aqua_sdk) for v4 features.
-23:T1289,
+2a:T1289,
 
 Aquafier is a web-based reference implementation of Aqua Protocol v3, providing a user-friendly interface and HTTP API for digital content signing, provenance verification, and integrity validation. It demonstrates how Aqua Protocol features can be integrated into modern web applications.
 
@@ -5530,7 +5517,7 @@ For v3 technical details:
 4. Check the [GitHub repository](https://github.com/inblockio/aquafier-js) for self-hosting
 
 For building custom applications, consider using the [Aqua JavaScript SDK](/previous_versions/version_3/tooling) directly or the [Aqua Rust SDK](/dev_tools/aqua_sdk) for v4 features.
-24:T4217,
+2b:T4217,
 # Link Revision
 
 A Link Revision creates verifiable connections between separate revision chains. It allows you to establish relationships, dependencies, or references between different objects, effectively creating a graph structure of interconnected chains. Link revisions are essential for composing complex data structures and maintaining provenance across multiple chains.
@@ -6227,7 +6214,7 @@ Don't use links for intra-chain references (use `previous_revision` instead).
 - [Signature Revision](/schema_reference/signing_revision) - Can aggregate via links
 - [Witness Revision](/schema_reference/witness_revision) - Often follows links
 - [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) - Mathematical foundation for link structures
-25:T4217,
+2c:T4217,
 # Link Revision
 
 A Link Revision creates verifiable connections between separate revision chains. It allows you to establish relationships, dependencies, or references between different objects, effectively creating a graph structure of interconnected chains. Link revisions are essential for composing complex data structures and maintaining provenance across multiple chains.
@@ -6924,7 +6911,7 @@ Don't use links for intra-chain references (use `previous_revision` instead).
 - [Signature Revision](/schema_reference/signing_revision) - Can aggregate via links
 - [Witness Revision](/schema_reference/witness_revision) - Often follows links
 - [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) - Mathematical foundation for link structures
-26:T2073,
+2d:T2073,
 # Object Revision
 
 An Object Revision is the primary data-carrying revision type in Aqua Protocol v4. It stores arbitrary structured data that conforms to a template schema. Object revisions are typically the first revision in a chain (genesis) or follow other object revisions.
@@ -7167,7 +7154,7 @@ To verify an object revision:
 - [Signature Revision](/schema_reference/signing_revision) - Sign object revisions
 - [Witness Revision](/schema_reference/witness_revision) - Add timestamped proof
 - [Link Revision](/schema_reference/link_revision) - Connect to other chains
-27:T2073,
+2e:T2073,
 # Object Revision
 
 An Object Revision is the primary data-carrying revision type in Aqua Protocol v4. It stores arbitrary structured data that conforms to a template schema. Object revisions are typically the first revision in a chain (genesis) or follow other object revisions.
@@ -7410,12 +7397,12 @@ To verify an object revision:
 - [Signature Revision](/schema_reference/signing_revision) - Sign object revisions
 - [Witness Revision](/schema_reference/witness_revision) - Add timestamped proof
 - [Link Revision](/schema_reference/link_revision) - Connect to other chains
-28:T1185,
+2f:T1183,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose—either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -7510,12 +7497,12 @@ Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic an
 
 
 
-```29:T1185,
+```30:T1183,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose—either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -7610,7 +7597,7 @@ Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic an
 
 
 
-```2a:T2eb6,
+```31:T2eb6,
 # Signature Revision
 
 A Signature Revision adds cryptographic proof of authenticity and authorship to a revision chain. It references a previous revision and includes a digital signature that can be verified using the associated public key or address. Aqua Protocol v4 supports three signature types: RSA, Ethereum (EIP-191), and DID-based signatures.
@@ -7958,7 +7945,7 @@ Credential => Signature (Issuer's DID) => Holder stores
 - [EIP-191 Specification](https://eips.ethereum.org/EIPS/eip-191) - Ethereum signing standard
 - [DID Core Specification](https://www.w3.org/TR/did-core/) - Decentralized Identifiers
 - [JWS Specification](https://www.rfc-editor.org/rfc/rfc7515) - JSON Web Signatures
-2b:T2eb6,
+32:T2eb6,
 # Signature Revision
 
 A Signature Revision adds cryptographic proof of authenticity and authorship to a revision chain. It references a previous revision and includes a digital signature that can be verified using the associated public key or address. Aqua Protocol v4 supports three signature types: RSA, Ethereum (EIP-191), and DID-based signatures.
@@ -8306,7 +8293,7 @@ Credential => Signature (Issuer's DID) => Holder stores
 - [EIP-191 Specification](https://eips.ethereum.org/EIPS/eip-191) - Ethereum signing standard
 - [DID Core Specification](https://www.w3.org/TR/did-core/) - Decentralized Identifiers
 - [JWS Specification](https://www.rfc-editor.org/rfc/rfc7515) - JSON Web Signatures
-2c:T2c8d,
+33:T2c8d,
 # Template Revision
 
 A Template Revision defines the structure and validation rules for Object Revisions. Templates use JSON Schema to specify what data fields are required, their types, formats, and constraints. Template revisions are standalone (they don't have a `previous_revision` field) and are referenced by object revisions via their hash.
@@ -8743,7 +8730,7 @@ Link templates to on-chain contract code for decentralized validation.
 
 - [Object Revision](/schema_reference/object_revision) - Use templates to validate objects
 - [JSON Schema Specification](https://json-schema.org/draft/2020-12/json-schema-core.html) - Full JSON Schema documentation
-2d:T2c8d,
+34:T2c8d,
 # Template Revision
 
 A Template Revision defines the structure and validation rules for Object Revisions. Templates use JSON Schema to specify what data fields are required, their types, formats, and constraints. Template revisions are standalone (they don't have a `previous_revision` field) and are referenced by object revisions via their hash.
@@ -9180,7 +9167,7 @@ Link templates to on-chain contract code for decentralized validation.
 
 - [Object Revision](/schema_reference/object_revision) - Use templates to validate objects
 - [JSON Schema Specification](https://json-schema.org/draft/2020-12/json-schema-core.html) - Full JSON Schema documentation
-2e:T334e,
+35:T334e,
 # Witness Revision
 
 A Witness Revision provides cryptographic proof that a revision existed at a specific point in time. It anchors revision hashes to external systems like blockchains (Ethereum), decentralized networks (Nostr), or Trusted Timestamping Authorities (TSA). This creates an immutable, verifiable timestamp that cannot be backdated.
@@ -9593,7 +9580,7 @@ Object → Witness (Ethereum Mainnet) → Witness (Polygon) → Witness (Arbitru
 - [RFC 3161 - Timestamping](https://www.rfc-editor.org/rfc/rfc3161) - TSA standard
 - [Ethereum Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/) - On-chain witnessing
 - [Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree) - Batch witnessing structure
-2f:T334e,
+36:T334e,
 # Witness Revision
 
 A Witness Revision provides cryptographic proof that a revision existed at a specific point in time. It anchors revision hashes to external systems like blockchains (Ethereum), decentralized networks (Nostr), or Trusted Timestamping Authorities (TSA). This creates an immutable, verifiable timestamp that cannot be backdated.
@@ -10006,7 +9993,7 @@ Object → Witness (Ethereum Mainnet) → Witness (Polygon) → Witness (Arbitru
 - [RFC 3161 - Timestamping](https://www.rfc-editor.org/rfc/rfc3161) - TSA standard
 - [Ethereum Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/) - On-chain witnessing
 - [Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree) - Batch witnessing structure
-30:T362b,
+37:T362b,
 ## Core Capabilities
 
 ### Tamper-Proof Verification
@@ -10336,7 +10323,7 @@ A: Add a revocation revision to the chain. The document history remains (for aud
 - [Identity Attestation](/use_cases/identity-attestation) - Verify identity credentials
 - [Quick Start](/quick-start) - Get started with document verification
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-31:T362b,
+38:T362b,
 ## Core Capabilities
 
 ### Tamper-Proof Verification
@@ -10666,7 +10653,7 @@ A: Add a revocation revision to the chain. The document history remains (for aud
 - [Identity Attestation](/use_cases/identity-attestation) - Verify identity credentials
 - [Quick Start](/quick-start) - Get started with document verification
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-32:T1791,
+39:T1791,
 The Aqua Protocol enables a robust **Self-Sovereign Identity (SSI)** framework where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. By leveraging cryptographic proofs and decentralized trust chains, Aqua allows users to own their data while enabling third parties to verify specific attributes with certainty.
 
 ## Core Capabilities
@@ -10785,7 +10772,7 @@ When an employer verifies Alice's degree, they trace this path back to a root of
 - [Document Verification](/use_cases/document-verification) - Verify the integrity of files and contracts.
 - [Supply Chain Tracking](/use_cases/supply-chain) - Trace provenance of physical goods.
 - [Aqua CLI](/dev_tools/aqua_cli) - Tools for issuing and verifying claims.
-33:T1791,
+3a:T1791,
 The Aqua Protocol enables a robust **Self-Sovereign Identity (SSI)** framework where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. By leveraging cryptographic proofs and decentralized trust chains, Aqua allows users to own their data while enabling third parties to verify specific attributes with certainty.
 
 ## Core Capabilities
@@ -10904,7 +10891,7 @@ When an employer verifies Alice's degree, they trace this path back to a root of
 - [Document Verification](/use_cases/document-verification) - Verify the integrity of files and contracts.
 - [Supply Chain Tracking](/use_cases/supply-chain) - Trace provenance of physical goods.
 - [Aqua CLI](/dev_tools/aqua_cli) - Tools for issuing and verifying claims.
-34:T2693,
+3b:T2693,
 ## Why Aqua Protocol?
 
 Traditional systems for tracking data provenance, verifying authenticity, and maintaining audit trails rely on centralized databases and trusted intermediaries. These approaches introduce:
@@ -11116,7 +11103,7 @@ Ready to implement Aqua Protocol for your use case?
 - Check out the [Quick Start Guide](/quick-start) for hands-on implementation
 - Explore the [Schema Reference](/schema_reference/introduction) for technical specifications
 - Choose your SDK: [Rust (v4)](/previous_versions/version_4/introduction) or [JavaScript (v3)](/previous_versions/version_3/introduction)
-35:T2693,
+3c:T2693,
 ## Why Aqua Protocol?
 
 Traditional systems for tracking data provenance, verifying authenticity, and maintaining audit trails rely on centralized databases and trusted intermediaries. These approaches introduce:
@@ -11328,7 +11315,7 @@ Ready to implement Aqua Protocol for your use case?
 - Check out the [Quick Start Guide](/quick-start) for hands-on implementation
 - Explore the [Schema Reference](/schema_reference/introduction) for technical specifications
 - Choose your SDK: [Rust (v4)](/previous_versions/version_4/introduction) or [JavaScript (v3)](/previous_versions/version_3/introduction)
-36:T40fa,
+3d:T40fa,
 # Supply Chain Tracking
 
 Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded with immutable timestamps, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
@@ -11712,7 +11699,7 @@ A: Verification of existing chains works offline using cryptographic signatures.
 - [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
 - [Quick Start](/quick-start) - Get started with supply chain tracking
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-37:T40fa,
+3e:T40fa,
 # Supply Chain Tracking
 
 Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded with immutable timestamps, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
@@ -12096,85 +12083,504 @@ A: Verification of existing chains works offline using cryptographic signatures.
 - [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
 - [Quick Start](/quick-start) - Get started with supply chain tracking
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-4:["$","$6",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$Ld",null,{"header":["$","$Le",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$Lf",null,{"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$10","reading_time":5,"word_count":888},"content":"$11","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$12","reading_time":5,"word_count":820},"content":"$13"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$14","reading_time":7,"word_count":1258},"content":"$15"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$16","reading_time":5,"word_count":941},"content":"$17","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$18","reading_time":9,"word_count":1674},"content":"$19"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$1a","reading_time":8,"word_count":1476},"content":"$1b","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$1c","reading_time":4,"word_count":686},"content":"$1d"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$1e","reading_time":3,"word_count":410},"content":"$1f","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$20","reading_time":2,"word_count":391},"content":"$21","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$22","reading_time":3,"word_count":566},"content":"$23","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$24","reading_time":11,"word_count":2009},"content":"$25","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$26","reading_time":6,"word_count":1048},"content":"$27","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$28","reading_time":3,"word_count":460},"content":"$29","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$2a","reading_time":7,"word_count":1393},"content":"$2b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$2c","reading_time":7,"word_count":1369},"content":"$2d","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$2e","reading_time":9,"word_count":1682},"content":"$2f","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$30","reading_time":10,"word_count":1863},"content":"$31","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$32","reading_time":5,"word_count":865},"content":"$33","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$34","reading_time":7,"word_count":1216},"content":"$35","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$36","reading_time":12,"word_count":2274},"content":"$37","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"}],"version":"v4.0.0","config":"$4:props:children:0:props:header:props:config"}],"content":"$L38","toc":"$L39","config":"$4:props:children:0:props:header:props:config"}],"$L3a","$L3b","$L3c"]}]
-3d:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
-3e:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
-3f:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
-40:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
-39:["$","$L3d",null,{"items":[{"id":"overview","title":"Overview","level":2},{"id":"schema-structure","title":"Schema Structure","level":2},{"id":"fields","title":"Fields","level":3},{"id":"field-details","title":"Field Details","level":3},{"id":"methods","title":"Methods","level":2},{"id":"scalar-method","title":"Scalar Method","level":3},{"id":"tree-method","title":"Tree Method","level":3},{"id":"examples","title":"Examples","level":2},{"id":"example-1-genesis-object-revision-file","title":"Example 1: Genesis Object Revision (File)","level":3},{"id":"example-2-subsequent-object-revision-domain-claim","title":"Example 2: Subsequent Object Revision (Domain Claim)","level":3},{"id":"example-3-object-with-tree-method","title":"Example 3: Object with Tree Method","level":3},{"id":"validation-rules","title":"Validation Rules","level":2},{"id":"common-use-cases","title":"Common Use Cases","level":2},{"id":"document-storage","title":"Document Storage","level":3},{"id":"identity-claims","title":"Identity Claims","level":3},{"id":"credential-data","title":"Credential Data","level":3},{"id":"relationship-with-other-revisions","title":"Relationship with Other Revisions","level":2},{"id":"implementation-notes","title":"Implementation Notes","level":2},{"id":"creating-an-object-revision","title":"Creating an Object Revision","level":3},{"id":"verifying-an-object-revision","title":"Verifying an Object Revision","level":3},{"id":"see-also","title":"See Also","level":2}],"config":"$4:props:children:0:props:header:props:config"}]
-3a:["$","$L3e",null,{}]
-3b:["$","$L3f",null,{}]
-3c:["$","$L40",null,{}]
-41:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
-42:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
-38:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L41",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v4.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L42",null,{"href":"/docs/v4.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v4.0.0/schema-reference",{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","$L42",null,{"href":"/docs/v4.0.0/schema-reference","className":"hover:text-foreground transition-colors","children":"Schema Reference"}]]}],["$","div","/docs/v4.0.0/schema-reference/revision",{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","$L42",null,{"href":"/docs/v4.0.0/schema-reference/revision","className":"hover:text-foreground transition-colors","children":"Revision"}]]}],["$","div","/docs/v4.0.0/schema-reference/revision/object-revision",{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Object Revision"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Object Revision"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"Schema specification for Object Revisions in Aqua Protocol v4"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[6," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":"$L43"}],"$undefined",["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":["$L44","$L45"]}],"$L46"]}]
-44:["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v4.0.0/schema-reference/revision/object-revision.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":[["$","path","1couwa",{"d":"M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","1y4qbx",{"d":"M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"}],"$undefined"]}],"Edit this page"]}]
-45:["$","a",null,{"href":"https://github.com/inblockio/issues/new","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-external-link h-4 w-4","children":[["$","path","1q9fwt",{"d":"M15 3h6v6"}],["$","path","gplh6r",{"d":"M10 14 21 3"}],["$","path","a6xqqp",{"d":"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"}],"$undefined"]}],"Report an issue"]}]
-46:["$","div",null,{"className":"mt-12 pt-8 border-t border-border grid grid-cols-2 gap-4","children":[["$","$L42",null,{"href":"/docs/v4.0.0/schema-reference/revision/link-revision","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Previous"}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Link Revision"}]]}],["$","$L42",null,{"href":"/docs/v4.0.0/schema-reference/revision/revision","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all text-right","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center justify-end gap-2 text-sm text-muted-foreground","children":[["$","span",null,{"children":"Next"}],["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Aqua Protocol Revisions"}]]}]]}]
-43:[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-6 text-foreground","children":"Object Revision"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"An Object Revision is the primary data-carrying revision type in Aqua Protocol v4. It stores arbitrary structured data that conforms to a template schema. Object revisions are typically the first revision in a chain (genesis) or follow other object revisions."}],"\n",["$","h2",null,{"id":"overview","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Overview"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Object revisions serve as containers for application data. Each object revision:"}],"\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["References a template (via ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_type"}]," field) that defines its schema"]}],"\n",["$","li",null,{"className":"leading-7","children":["Contains a ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"payload"}]," with the actual data"]}],"\n",["$","li",null,{"className":"leading-7","children":["Can be the genesis revision (no ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_revision"}],") or link to a previous revision"]}],"\n",["$","li",null,{"className":"leading-7","children":"Must conform to the validation rules defined by its template"}],"\n"]}],"\n",["$","h2",null,{"id":"schema-structure","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Schema Structure"}],"\n",["$","h3",null,{"id":"fields","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Fields"}],"\n",["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Required"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_revision"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Conditional"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Hash reference to the previous revision. ",["$","strong",null,{"children":"Optional for genesis revisions"}],", ","$L47"]}]]}],"$L48","$L49","$L4a","$L4b","$L4c","$L4d","$L4e"]}]]}]}],"\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b","\n","$L6c","\n","$L6d","\n","$L6e","\n","$L6f","\n","$L70","\n","$L71","\n","$L72","\n","$L73","\n","$L74","\n","$L75","\n","$L76","\n","$L77","\n","$L78","\n","$L79","\n","$L7a","\n","$L7b","\n","$L7c","\n","$L7d","\n","$L7e","\n","$L7f","\n","$L80","\n","$L81","\n","$L82","\n","$L83"]
-84:I[222506,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"CodeBlock"]
-47:["$","strong",null,{"children":"Required for subsequent revisions"}]
-48:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hash reference to the template that defines the payload schema"}]]}]
-49:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"nonce"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Random 16-byte hex string (e.g., ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x2ba6a8b9b987cf8c3567f72871812ae9"}],") for uniqueness"]}]]}]
-4a:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"number"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Unix timestamp (seconds since epoch) when the revision was created"}]]}]
-4b:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"version"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Protocol version: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"https://aqua-protocol.org/docs/v4/schema\""}]]}]]}]
-4c:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"method"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Canonicalization method: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"scalar\""}]," or ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"tree\""}]]}]]}]
-4d:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"hash_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Hash algorithm: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"FIPS_202-SHA3-256\""}]]}]]}]
-4e:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"payload"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"object"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"The actual data, must conform to the referenced template schema"}]]}]
-4f:["$","h3",null,{"id":"field-details","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Field Details"}]
-50:["$","h4",null,{"id":"previous_revision","children":"previous_revision"}]
-51:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Format"}],": Lowercase hex string prefixed with ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x"}]," (e.g., ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x3f8a..."}],")"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Length"}],": Variable (typically 64 characters for SHA3-256 hashes)"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Omitted"}],": Only in genesis revisions (the first revision in a chain)"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Purpose"}],": Creates the chain linkage and ensures revision ordering"]}],"\n"]}]
-52:["$","h4",null,{"id":"revision_type","children":"revision_type"}]
-53:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Format"}],": Hash reference pointing to a Template Revision"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Purpose"}],": Identifies which template validates this object's payload"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Example"}],": ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x1234abcd..."}]," (hash of a template revision)"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Validation"}],": The template's schema must validate the payload"]}],"\n"]}]
-54:["$","h4",null,{"id":"payload","children":"payload"}]
-55:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Type"}],": JSON object"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Validation"}],": Must conform to the JSON Schema defined in the referenced template"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Flexibility"}],": Can contain any structured data as long as it matches the template"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Size"}],": Depends on the method:","\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"scalar"}],": Entire payload is hashed directly"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"tree"}],": Payload is broken into leaves for merkle tree construction"]}],"\n"]}],"\n"]}],"\n"]}]
-56:["$","h2",null,{"id":"methods","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Methods"}]
-57:["$","h3",null,{"id":"scalar-method","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scalar Method"}]
-58:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"scalar"}]," method treats the entire object as a single unit. The payload is serialized, canonicalized, and hashed as one block."]}]
-59:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Best for:"}]}]
-5a:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Small to medium-sized objects"}],"\n",["$","li",null,{"className":"leading-7","children":"When you need to verify the entire object at once"}],"\n",["$","li",null,{"className":"leading-7","children":"Simple use cases"}],"\n"]}]
-5b:["$","h3",null,{"id":"tree-method","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Tree Method"}]
-5c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"tree"}]," method breaks the payload into leaves using JSON pointers, creating a merkle tree structure."]}]
-5d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Best for:"}]}]
-5e:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Large objects where partial verification is needed"}],"\n",["$","li",null,{"className":"leading-7","children":"When you want to prove specific fields without revealing the entire object"}],"\n",["$","li",null,{"className":"leading-7","children":"Advanced use cases requiring selective disclosure"}],"\n"]}]
-5f:["$","h2",null,{"id":"examples","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Examples"}]
-60:["$","h3",null,{"id":"example-1-genesis-object-revision-file","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Example 1: Genesis Object Revision (File)"}]
-61:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"This is a genesis revision (first in chain) using the File template:"}]
-62:["$","$L84",null,{"code":"{\n  \"revision_type\": \"0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e\",\n  \"nonce\": \"0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c\",\n  \"local_timestamp\": 1704067200,\n  \"version\": \"https://aqua-protocol.org/docs/v4/schema\",\n  \"method\": \"scalar\",\n  \"hash_type\": \"FIPS_202-SHA3-256\",\n  \"payload\": {\n    \"payload_type\": \"application/pdf\",\n    \"hash\": \"0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08\",\n    \"hash_type\": \"FIPS_202-SHA3-256\",\n    \"descriptor\": \"Important Contract Document\"\n  }\n}","language":"json","filename":"$undefined"}]
-63:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Note"}],": No ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_revision"}]," field because this is a genesis revision."]}]
-64:["$","h3",null,{"id":"example-2-subsequent-object-revision-domain-claim","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Example 2: Subsequent Object Revision (Domain Claim)"}]
-65:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"This revision follows another revision in the chain:"}]
-66:["$","$L84",null,{"code":"{\n  \"previous_revision\": \"0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a\",\n  \"revision_type\": \"0x8b3e4c7d9f1a2b5c6e8f0a3b4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3\",\n  \"nonce\": \"0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f\",\n  \"local_timestamp\": 1704070800,\n  \"version\": \"https://aqua-protocol.org/docs/v4/schema\",\n  \"method\": \"scalar\",\n  \"hash_type\": \"FIPS_202-SHA3-256\",\n  \"payload\": {\n    \"domain\": \"example.com\",\n    \"wallet_address\": \"0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8\"\n  }\n}","language":"json","filename":"$undefined"}]
-67:["$","h3",null,{"id":"example-3-object-with-tree-method","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Example 3: Object with Tree Method"}]
-68:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Using the tree method for a larger object:"}]
-69:["$","$L84",null,{"code":"{\n  \"previous_revision\": \"0x1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b\",\n  \"revision_type\": \"0x4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a\",\n  \"nonce\": \"0x9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b\",\n  \"local_timestamp\": 1704074400,\n  \"version\": \"https://aqua-protocol.org/docs/v4/schema\",\n  \"method\": \"tree\",\n  \"hash_type\": \"FIPS_202-SHA3-256\",\n  \"payload\": {\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"phone\": \"+1234567890\",\n    \"address\": {\n      \"street\": \"123 Main St\",\n      \"city\": \"Anytown\",\n      \"country\": \"USA\"\n    },\n    \"metadata\": {\n      \"created\": \"2024-01-01\",\n      \"verified\": true\n    }\n  }\n}","language":"json","filename":"$undefined"}]
-6a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"With tree method"}],": Each field (using JSON pointers like ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"/name"}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"/email"}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"/address/city"}],") becomes a leaf in the merkle tree."]}]
-6b:["$","h2",null,{"id":"validation-rules","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Validation Rules"}]
-6c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"An Object Revision is valid if:"}]
-6d:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Structure"}],": Contains all required fields with correct types"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Version"}],": The ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"version"}]," field matches ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"https://aqua-protocol.org/docs/v4/schema\""}]]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Method"}],": The ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"method"}]," is either ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"scalar\""}]," or ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"tree\""}]]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Hash Type"}],": The ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"hash_type"}]," is a recognized algorithm (e.g., ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"FIPS_202-SHA3-256\""}],")"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Nonce"}],": Is a valid 16-byte hex string prefixed with ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x"}]]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Timestamp"}],": Is a valid Unix timestamp"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Previous Revision"}],":","\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Must be absent for genesis revisions"}],"\n",["$","li",null,{"className":"leading-7","children":"Must be present and valid for non-genesis revisions"}],"\n",["$","li",null,{"className":"leading-7","children":"Must reference an existing revision"}],"\n"]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Revision Type"}],": Must reference a valid template revision"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Payload"}],": Must conform to the JSON Schema defined in the referenced template"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Hash Verification"}],": The computed hash matches what's expected"]}],"\n"]}]
-6e:["$","h2",null,{"id":"common-use-cases","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Common Use Cases"}]
-6f:["$","h3",null,{"id":"document-storage","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Document Storage"}]
-70:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Store file metadata with hash references:"}]
-71:["$","$L84",null,{"code":"{\n  \"payload\": {\n    \"payload_type\": \"application/pdf\",\n    \"hash\": \"0x...\",\n    \"hash_type\": \"FIPS_202-SHA3-256\",\n    \"descriptor\": \"Legal Agreement 2024\"\n  }\n}","language":"json","filename":"$undefined"}]
-72:["$","h3",null,{"id":"identity-claims","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Identity Claims"}]
-73:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Store verifiable claims about entities:"}]
-74:["$","$L84",null,{"code":"{\n  \"payload\": {\n    \"domain\": \"company.com\",\n    \"wallet_address\": \"0x742d35Cc...\"\n  }\n}","language":"json","filename":"$undefined"}]
-75:["$","h3",null,{"id":"credential-data","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Credential Data"}]
-76:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Store structured credential information:"}]
-77:["$","$L84",null,{"code":"{\n  \"payload\": {\n    \"credential_type\": \"EmailVerification\",\n    \"subject\": \"user@example.com\",\n    \"issuer\": \"0x...\",\n    \"issued_at\": 1704067200\n  }\n}","language":"json","filename":"$undefined"}]
-78:["$","h2",null,{"id":"relationship-with-other-revisions","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Relationship with Other Revisions"}]
-79:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"After creating an Object Revision, you typically:"}]
-7a:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Sign it"}]," - Add a Signature Revision to prove authenticity"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Witness it"}]," - Add a Witness Revision for timestamped proof"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Update it"}]," - Create a new Object Revision that references this one"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Link it"}]," - Create a Link Revision to connect to other chains"]}],"\n"]}]
-7b:["$","h2",null,{"id":"implementation-notes","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Implementation Notes"}]
-7c:["$","h3",null,{"id":"creating-an-object-revision","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Creating an Object Revision"}]
-7d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"When implementing object revision creation:"}]
-7e:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Validate payload against the template schema first"}],"\n",["$","li",null,{"className":"leading-7","children":"Generate a random 16-byte nonce"}],"\n",["$","li",null,{"className":"leading-7","children":"Capture the current timestamp"}],"\n",["$","li",null,{"className":"leading-7","children":["Include ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_revision"}]," only if not genesis"]}],"\n",["$","li",null,{"className":"leading-7","children":"Serialize according to the chosen method"}],"\n",["$","li",null,{"className":"leading-7","children":"Compute the hash for verification"}],"\n"]}]
-7f:["$","h3",null,{"id":"verifying-an-object-revision","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Verifying an Object Revision"}]
-80:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"To verify an object revision:"}]
-81:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Check all required fields are present"}],"\n",["$","li",null,{"className":"leading-7","children":"Validate field types and formats"}],"\n",["$","li",null,{"className":"leading-7","children":"Verify the referenced template exists"}],"\n",["$","li",null,{"className":"leading-7","children":"Validate payload against template schema"}],"\n",["$","li",null,{"className":"leading-7","children":"Recompute the hash and compare"}],"\n",["$","li",null,{"className":"leading-7","children":["If not genesis, verify ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_revision"}]," exists and is valid"]}],"\n"]}]
-82:["$","h2",null,{"id":"see-also","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"See Also"}]
-83:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/schema_reference/template_revision","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Template Revision"}]," - Defines the schema for object payloads"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/schema_reference/signing_revision","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Signature Revision"}]," - Sign object revisions"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/schema_reference/witness_revision","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Witness Revision"}]," - Add timestamped proof"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/schema_reference/link_revision","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Link Revision"}]," - Connect to other chains"]}],"\n"]}]
-9:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-85:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"IconMark"]
-b:[["$","title","0",{"children":"Object Revision | Aqua Protocol Documentation"}],["$","meta","1",{"name":"description","content":"Schema specification for Object Revisions in Aqua Protocol v4"}],["$","meta","2",{"name":"generator","content":"v0.app"}],["$","link","3",{"rel":"canonical","href":"https://docs.aquaprotocol.org/docs/v4.0.0/schema-reference/revision/object-revision"}],["$","meta","4",{"property":"og:title","content":"Object Revision"}],["$","meta","5",{"property":"og:description","content":"Schema specification for Object Revisions in Aqua Protocol v4"}],["$","meta","6",{"property":"og:url","content":"https://docs.aquaprotocol.org/docs/v4.0.0/schema-reference/revision/object-revision"}],["$","meta","7",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Object Revision"}],["$","meta","12",{"name":"twitter:description","content":"Schema specification for Object Revisions in Aqua Protocol v4"}],["$","link","13",{"rel":"icon","href":"/logo/aqua-logo.png"}],["$","link","14",{"rel":"apple-touch-icon","href":"/apple-icon.png"}],["$","$L85","15",{}]]
-7:null
+c:["$","$e",null,{"fallback":["$","$L14",null,{}],"children":[["$","$L15",null,{"header":["$","$L16",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$17","reading_time":5,"word_count":888},"content":"$18","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$19","reading_time":5,"word_count":823},"content":"$1a"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$1b","reading_time":7,"word_count":1244},"content":"$1c"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$1d","reading_time":5,"word_count":941},"content":"$1e","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$1f","reading_time":9,"word_count":1674},"content":"$20"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$21","reading_time":8,"word_count":1476},"content":"$22","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$23","reading_time":4,"word_count":686},"content":"$24"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$25","reading_time":3,"word_count":410},"content":"$26","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$27","reading_time":2,"word_count":391},"content":"$28","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$29","reading_time":3,"word_count":566},"content":"$2a","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$2b","reading_time":11,"word_count":2009},"content":"$2c","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$2d","reading_time":6,"word_count":1048},"content":"$2e","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$2f","reading_time":3,"word_count":461},"content":"$30","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$31","reading_time":7,"word_count":1393},"content":"$32","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$33","reading_time":7,"word_count":1369},"content":"$34","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$35","reading_time":9,"word_count":1682},"content":"$36","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$37","reading_time":10,"word_count":1863},"content":"$38","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$39","reading_time":5,"word_count":865},"content":"$3a","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$3b","reading_time":7,"word_count":1216},"content":"$3c","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$3d","reading_time":12,"word_count":2274},"content":"$3e","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"}],"version":"v4.0.0","content":"$L3f","toc":"$L40","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L41","$L42","$L43"]}]
+44:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayout"]
+47:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TableOfContents"]
+48:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"MdxHotReload"]
+49:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"HotReloadIndicator"]
+4a:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DevModeBadge"]
+45:T2073,
+# Object Revision
+
+An Object Revision is the primary data-carrying revision type in Aqua Protocol v4. It stores arbitrary structured data that conforms to a template schema. Object revisions are typically the first revision in a chain (genesis) or follow other object revisions.
+
+## Overview
+
+Object revisions serve as containers for application data. Each object revision:
+- References a template (via `revision_type` field) that defines its schema
+- Contains a `payload` with the actual data
+- Can be the genesis revision (no `previous_revision`) or link to a previous revision
+- Must conform to the validation rules defined by its template
+
+## Schema Structure
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_revision` | string | Conditional | Hash reference to the previous revision. **Optional for genesis revisions**, **Required for subsequent revisions** |
+| `revision_type` | string | Yes | Hash reference to the template that defines the payload schema |
+| `nonce` | string | Yes | Random 16-byte hex string (e.g., `0x2ba6a8b9b987cf8c3567f72871812ae9`) for uniqueness |
+| `local_timestamp` | number | Yes | Unix timestamp (seconds since epoch) when the revision was created |
+| `version` | string | Yes | Protocol version: `"https://aqua-protocol.org/docs/v4/schema"` |
+| `method` | string | Yes | Canonicalization method: `"scalar"` or `"tree"` |
+| `hash_type` | string | Yes | Hash algorithm: `"FIPS_202-SHA3-256"` |
+| `payload` | object | Yes | The actual data, must conform to the referenced template schema |
+
+### Field Details
+
+#### previous_revision
+- **Format**: Lowercase hex string prefixed with `0x` (e.g., `0x3f8a...`)
+- **Length**: Variable (typically 64 characters for SHA3-256 hashes)
+- **Omitted**: Only in genesis revisions (the first revision in a chain)
+- **Purpose**: Creates the chain linkage and ensures revision ordering
+
+#### revision_type
+- **Format**: Hash reference pointing to a Template Revision
+- **Purpose**: Identifies which template validates this object's payload
+- **Example**: `0x1234abcd...` (hash of a template revision)
+- **Validation**: The template's schema must validate the payload
+
+#### payload
+- **Type**: JSON object
+- **Validation**: Must conform to the JSON Schema defined in the referenced template
+- **Flexibility**: Can contain any structured data as long as it matches the template
+- **Size**: Depends on the method:
+  - `scalar`: Entire payload is hashed directly
+  - `tree`: Payload is broken into leaves for merkle tree construction
+
+## Methods
+
+### Scalar Method
+
+The `scalar` method treats the entire object as a single unit. The payload is serialized, canonicalized, and hashed as one block.
+
+**Best for:**
+- Small to medium-sized objects
+- When you need to verify the entire object at once
+- Simple use cases
+
+### Tree Method
+
+The `tree` method breaks the payload into leaves using JSON pointers, creating a merkle tree structure.
+
+**Best for:**
+- Large objects where partial verification is needed
+- When you want to prove specific fields without revealing the entire object
+- Advanced use cases requiring selective disclosure
+
+## Examples
+
+### Example 1: Genesis Object Revision (File)
+
+This is a genesis revision (first in chain) using the File template:
+
+```json
+{
+  "revision_type": "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e",
+  "nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "local_timestamp": 1704067200,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "payload": {
+    "payload_type": "application/pdf",
+    "hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+    "hash_type": "FIPS_202-SHA3-256",
+    "descriptor": "Important Contract Document"
+  }
+}
+```
+
+**Note**: No `previous_revision` field because this is a genesis revision.
+
+### Example 2: Subsequent Object Revision (Domain Claim)
+
+This revision follows another revision in the chain:
+
+```json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "0x8b3e4c7d9f1a2b5c6e8f0a3b4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3",
+  "nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "local_timestamp": 1704070800,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "payload": {
+    "domain": "example.com",
+    "wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+  }
+}
+```
+
+### Example 3: Object with Tree Method
+
+Using the tree method for a larger object:
+
+```json
+{
+  "previous_revision": "0x1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b",
+  "revision_type": "0x4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a",
+  "nonce": "0x9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b",
+  "local_timestamp": 1704074400,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "tree",
+  "hash_type": "FIPS_202-SHA3-256",
+  "payload": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "phone": "+1234567890",
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "country": "USA"
+    },
+    "metadata": {
+      "created": "2024-01-01",
+      "verified": true
+    }
+  }
+}
+```
+
+**With tree method**: Each field (using JSON pointers like `/name`, `/email`, `/address/city`) becomes a leaf in the merkle tree.
+
+## Validation Rules
+
+An Object Revision is valid if:
+
+1. **Structure**: Contains all required fields with correct types
+2. **Version**: The `version` field matches `"https://aqua-protocol.org/docs/v4/schema"`
+3. **Method**: The `method` is either `"scalar"` or `"tree"`
+4. **Hash Type**: The `hash_type` is a recognized algorithm (e.g., `"FIPS_202-SHA3-256"`)
+5. **Nonce**: Is a valid 16-byte hex string prefixed with `0x`
+6. **Timestamp**: Is a valid Unix timestamp
+7. **Previous Revision**:
+   - Must be absent for genesis revisions
+   - Must be present and valid for non-genesis revisions
+   - Must reference an existing revision
+8. **Revision Type**: Must reference a valid template revision
+9. **Payload**: Must conform to the JSON Schema defined in the referenced template
+10. **Hash Verification**: The computed hash matches what's expected
+
+## Common Use Cases
+
+### Document Storage
+Store file metadata with hash references:
+```json
+{
+  "payload": {
+    "payload_type": "application/pdf",
+    "hash": "0x...",
+    "hash_type": "FIPS_202-SHA3-256",
+    "descriptor": "Legal Agreement 2024"
+  }
+}
+```
+
+### Identity Claims
+Store verifiable claims about entities:
+```json
+{
+  "payload": {
+    "domain": "company.com",
+    "wallet_address": "0x742d35Cc..."
+  }
+}
+```
+
+### Credential Data
+Store structured credential information:
+```json
+{
+  "payload": {
+    "credential_type": "EmailVerification",
+    "subject": "user@example.com",
+    "issuer": "0x...",
+    "issued_at": 1704067200
+  }
+}
+```
+
+## Relationship with Other Revisions
+
+After creating an Object Revision, you typically:
+
+1. **Sign it** - Add a Signature Revision to prove authenticity
+2. **Witness it** - Add a Witness Revision for timestamped proof
+3. **Update it** - Create a new Object Revision that references this one
+4. **Link it** - Create a Link Revision to connect to other chains
+
+## Implementation Notes
+
+### Creating an Object Revision
+
+When implementing object revision creation:
+
+1. Validate payload against the template schema first
+2. Generate a random 16-byte nonce
+3. Capture the current timestamp
+4. Include `previous_revision` only if not genesis
+5. Serialize according to the chosen method
+6. Compute the hash for verification
+
+### Verifying an Object Revision
+
+To verify an object revision:
+
+1. Check all required fields are present
+2. Validate field types and formats
+3. Verify the referenced template exists
+4. Validate payload against template schema
+5. Recompute the hash and compare
+6. If not genesis, verify `previous_revision` exists and is valid
+
+## See Also
+
+- [Template Revision](/schema_reference/template_revision) - Defines the schema for object payloads
+- [Signature Revision](/schema_reference/signing_revision) - Sign object revisions
+- [Witness Revision](/schema_reference/witness_revision) - Add timestamped proof
+- [Link Revision](/schema_reference/link_revision) - Connect to other chains
+46:T2073,
+# Object Revision
+
+An Object Revision is the primary data-carrying revision type in Aqua Protocol v4. It stores arbitrary structured data that conforms to a template schema. Object revisions are typically the first revision in a chain (genesis) or follow other object revisions.
+
+## Overview
+
+Object revisions serve as containers for application data. Each object revision:
+- References a template (via `revision_type` field) that defines its schema
+- Contains a `payload` with the actual data
+- Can be the genesis revision (no `previous_revision`) or link to a previous revision
+- Must conform to the validation rules defined by its template
+
+## Schema Structure
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_revision` | string | Conditional | Hash reference to the previous revision. **Optional for genesis revisions**, **Required for subsequent revisions** |
+| `revision_type` | string | Yes | Hash reference to the template that defines the payload schema |
+| `nonce` | string | Yes | Random 16-byte hex string (e.g., `0x2ba6a8b9b987cf8c3567f72871812ae9`) for uniqueness |
+| `local_timestamp` | number | Yes | Unix timestamp (seconds since epoch) when the revision was created |
+| `version` | string | Yes | Protocol version: `"https://aqua-protocol.org/docs/v4/schema"` |
+| `method` | string | Yes | Canonicalization method: `"scalar"` or `"tree"` |
+| `hash_type` | string | Yes | Hash algorithm: `"FIPS_202-SHA3-256"` |
+| `payload` | object | Yes | The actual data, must conform to the referenced template schema |
+
+### Field Details
+
+#### previous_revision
+- **Format**: Lowercase hex string prefixed with `0x` (e.g., `0x3f8a...`)
+- **Length**: Variable (typically 64 characters for SHA3-256 hashes)
+- **Omitted**: Only in genesis revisions (the first revision in a chain)
+- **Purpose**: Creates the chain linkage and ensures revision ordering
+
+#### revision_type
+- **Format**: Hash reference pointing to a Template Revision
+- **Purpose**: Identifies which template validates this object's payload
+- **Example**: `0x1234abcd...` (hash of a template revision)
+- **Validation**: The template's schema must validate the payload
+
+#### payload
+- **Type**: JSON object
+- **Validation**: Must conform to the JSON Schema defined in the referenced template
+- **Flexibility**: Can contain any structured data as long as it matches the template
+- **Size**: Depends on the method:
+  - `scalar`: Entire payload is hashed directly
+  - `tree`: Payload is broken into leaves for merkle tree construction
+
+## Methods
+
+### Scalar Method
+
+The `scalar` method treats the entire object as a single unit. The payload is serialized, canonicalized, and hashed as one block.
+
+**Best for:**
+- Small to medium-sized objects
+- When you need to verify the entire object at once
+- Simple use cases
+
+### Tree Method
+
+The `tree` method breaks the payload into leaves using JSON pointers, creating a merkle tree structure.
+
+**Best for:**
+- Large objects where partial verification is needed
+- When you want to prove specific fields without revealing the entire object
+- Advanced use cases requiring selective disclosure
+
+## Examples
+
+### Example 1: Genesis Object Revision (File)
+
+This is a genesis revision (first in chain) using the File template:
+
+```json
+{
+  "revision_type": "0x742b74c87ccd7bfc76eaec416027a0bc039b59b9c2d452ea55a5c0e9b0e3f08e",
+  "nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "local_timestamp": 1704067200,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "payload": {
+    "payload_type": "application/pdf",
+    "hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+    "hash_type": "FIPS_202-SHA3-256",
+    "descriptor": "Important Contract Document"
+  }
+}
+```
+
+**Note**: No `previous_revision` field because this is a genesis revision.
+
+### Example 2: Subsequent Object Revision (Domain Claim)
+
+This revision follows another revision in the chain:
+
+```json
+{
+  "previous_revision": "0x3f8a7b2c9d1e4f5a6b8c0d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+  "revision_type": "0x8b3e4c7d9f1a2b5c6e8f0a3b4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3",
+  "nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "local_timestamp": 1704070800,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "hash_type": "FIPS_202-SHA3-256",
+  "payload": {
+    "domain": "example.com",
+    "wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+  }
+}
+```
+
+### Example 3: Object with Tree Method
+
+Using the tree method for a larger object:
+
+```json
+{
+  "previous_revision": "0x1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b",
+  "revision_type": "0x4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a",
+  "nonce": "0x9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b",
+  "local_timestamp": 1704074400,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "tree",
+  "hash_type": "FIPS_202-SHA3-256",
+  "payload": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "phone": "+1234567890",
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "country": "USA"
+    },
+    "metadata": {
+      "created": "2024-01-01",
+      "verified": true
+    }
+  }
+}
+```
+
+**With tree method**: Each field (using JSON pointers like `/name`, `/email`, `/address/city`) becomes a leaf in the merkle tree.
+
+## Validation Rules
+
+An Object Revision is valid if:
+
+1. **Structure**: Contains all required fields with correct types
+2. **Version**: The `version` field matches `"https://aqua-protocol.org/docs/v4/schema"`
+3. **Method**: The `method` is either `"scalar"` or `"tree"`
+4. **Hash Type**: The `hash_type` is a recognized algorithm (e.g., `"FIPS_202-SHA3-256"`)
+5. **Nonce**: Is a valid 16-byte hex string prefixed with `0x`
+6. **Timestamp**: Is a valid Unix timestamp
+7. **Previous Revision**:
+   - Must be absent for genesis revisions
+   - Must be present and valid for non-genesis revisions
+   - Must reference an existing revision
+8. **Revision Type**: Must reference a valid template revision
+9. **Payload**: Must conform to the JSON Schema defined in the referenced template
+10. **Hash Verification**: The computed hash matches what's expected
+
+## Common Use Cases
+
+### Document Storage
+Store file metadata with hash references:
+```json
+{
+  "payload": {
+    "payload_type": "application/pdf",
+    "hash": "0x...",
+    "hash_type": "FIPS_202-SHA3-256",
+    "descriptor": "Legal Agreement 2024"
+  }
+}
+```
+
+### Identity Claims
+Store verifiable claims about entities:
+```json
+{
+  "payload": {
+    "domain": "company.com",
+    "wallet_address": "0x742d35Cc..."
+  }
+}
+```
+
+### Credential Data
+Store structured credential information:
+```json
+{
+  "payload": {
+    "credential_type": "EmailVerification",
+    "subject": "user@example.com",
+    "issuer": "0x...",
+    "issued_at": 1704067200
+  }
+}
+```
+
+## Relationship with Other Revisions
+
+After creating an Object Revision, you typically:
+
+1. **Sign it** - Add a Signature Revision to prove authenticity
+2. **Witness it** - Add a Witness Revision for timestamped proof
+3. **Update it** - Create a new Object Revision that references this one
+4. **Link it** - Create a Link Revision to connect to other chains
+
+## Implementation Notes
+
+### Creating an Object Revision
+
+When implementing object revision creation:
+
+1. Validate payload against the template schema first
+2. Generate a random 16-byte nonce
+3. Capture the current timestamp
+4. Include `previous_revision` only if not genesis
+5. Serialize according to the chosen method
+6. Compute the hash for verification
+
+### Verifying an Object Revision
+
+To verify an object revision:
+
+1. Check all required fields are present
+2. Validate field types and formats
+3. Verify the referenced template exists
+4. Validate payload against template schema
+5. Recompute the hash and compare
+6. If not genesis, verify `previous_revision` exists and is valid
+
+## See Also
+
+- [Template Revision](/schema_reference/template_revision) - Defines the schema for object payloads
+- [Signature Revision](/schema_reference/signing_revision) - Sign object revisions
+- [Witness Revision](/schema_reference/witness_revision) - Add timestamped proof
+- [Link Revision](/schema_reference/link_revision) - Connect to other chains
+3f:["$","$L44",null,{"meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$45","reading_time":6,"word_count":1048},"content":"$46","previousDoc":{"title":"Link Revision","slug":"schema-reference/revision/link-revision"},"nextDoc":{"title":"Aqua Protocol Revisions","slug":"schema-reference/revision/revision"},"version":"v4.0.0","slug":"schema-reference/revision/object-revision","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+40:["$","$L47",null,{"items":[{"id":"overview","title":"Overview","level":2},{"id":"schema-structure","title":"Schema Structure","level":2},{"id":"fields","title":"Fields","level":3},{"id":"field-details","title":"Field Details","level":3},{"id":"methods","title":"Methods","level":2},{"id":"scalar-method","title":"Scalar Method","level":3},{"id":"tree-method","title":"Tree Method","level":3},{"id":"examples","title":"Examples","level":2},{"id":"example-1-genesis-object-revision-file","title":"Example 1: Genesis Object Revision (File)","level":3},{"id":"example-2-subsequent-object-revision-domain-claim","title":"Example 2: Subsequent Object Revision (Domain Claim)","level":3},{"id":"example-3-object-with-tree-method","title":"Example 3: Object with Tree Method","level":3},{"id":"validation-rules","title":"Validation Rules","level":2},{"id":"common-use-cases","title":"Common Use Cases","level":2},{"id":"document-storage","title":"Document Storage","level":3},{"id":"identity-claims","title":"Identity Claims","level":3},{"id":"credential-data","title":"Credential Data","level":3},{"id":"relationship-with-other-revisions","title":"Relationship with Other Revisions","level":2},{"id":"implementation-notes","title":"Implementation Notes","level":2},{"id":"creating-an-object-revision","title":"Creating an Object Revision","level":3},{"id":"verifying-an-object-revision","title":"Verifying an Object Revision","level":3},{"id":"see-also","title":"See Also","level":2}],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+41:["$","$L48",null,{}]
+42:["$","$L49",null,{}]
+43:["$","$L4a",null,{}]
+11:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+4b:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"IconMark"]
+f:null
+13:[["$","title","0",{"children":"Object Revision | Aqua Protocol"}],["$","meta","1",{"name":"description","content":"Schema specification for Object Revisions in Aqua Protocol v4"}],["$","link","2",{"rel":"canonical","href":"https://aqua-protocol.org/docs/v4.0.0/schema-reference/revision/object-revision"}],["$","meta","3",{"property":"og:title","content":"Object Revision"}],["$","meta","4",{"property":"og:description","content":"Schema specification for Object Revisions in Aqua Protocol v4"}],["$","meta","5",{"property":"og:url","content":"https://aqua-protocol.org/docs/v4.0.0/schema-reference/revision/object-revision"}],["$","meta","6",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Object Revision"}],["$","meta","11",{"name":"twitter:description","content":"Schema specification for Object Revisions in Aqua Protocol v4"}],["$","link","12",{"rel":"icon","href":"/mint-test/logo/aqua-logo.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/mint-test/apple-icon.png"}],["$","$L4b","14",{}]]

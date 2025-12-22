@@ -1,16 +1,14 @@
 1:"$Sreact.fragment"
 2:"$Sreact.suspense"
-3:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
-4:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
-5:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
-22:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
-23:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
-bb:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
-bc:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
-bd:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
-be:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
-bf:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
-c1:I[222506,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"CodeBlock"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLoading"]
+4:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayoutWrapper"]
+5:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"Header"]
+20:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayout"]
+23:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TableOfContents"]
+24:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"MdxHotReload"]
+25:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"HotReloadIndicator"]
+26:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DevModeBadge"]
+27:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
 6:Td09,
 We first exchanged goods, then we used means to exchange goods, such as
 shells and coins. Today we use money. We have transitioned to a world where
@@ -4745,105 +4743,386 @@ process of double-entry bookkeeping and provides a foundation for a new data
 economy. This also allows to create unforgeable invoices which can be clearly
 attributed to its sender, avoiding fraud. This is one of many other use cases,
 e.g. providing trusted news via revision-controlled journalism.
-0:{"buildId":"k8-fwt2fbTlxLBvWFtXyi","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$L3",null,{"header":["$","$L4",null,{"currentVersion":"v1.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$L5",null,{"docs":[{"slug":"data-accounting","filePath":"data-accounting","title":"Data Accounting","meta":{"title":"Data Accounting","linkTitle":"Data Accounting","weight":5,"sidebar_position":5,"description":"Introduces the concept of Data Accounting\n","content":"$6","reading_time":3,"word_count":525},"content":"$7"},{"slug":"data-governance","filePath":"data-governance","title":"Data Governance","meta":{"title":"Data Governance","linkTitle":"Data Governance","weight":6,"sidebar_position":6,"description":"Introduces the concept of Data Governance\n","content":"$8","reading_time":4,"word_count":643},"content":"$9"},{"slug":"delegated-witnessing","filePath":"delegated-witnessing","title":"Delegated Witnessing","meta":{"title":"Delegated Witnessing","linkTitle":"Delegated Witnessing","weight":7,"sidebar_position":7,"description":"Describes the process of sending domain snapshots to remote data vaults.\n","content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n","reading_time":1,"word_count":73},"content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n"},{"slug":"design-principles","filePath":"design-principles","title":"Design Principles","meta":{"title":"Design Principles","linkTitle":"Design Principles","weight":8,"sidebar_position":8,"description":"Lists the design principles underlying our reference implementation\n","content":"$a","reading_time":4,"word_count":704},"content":"$b"},{"slug":"guardian","filePath":"guardian","title":"Guardian","meta":{"title":"Guardian","linkTitle":"Guardian","weight":9,"sidebar_position":9,"description":"Shows access and transport layer logic used to interconnect data vaults\n","content":"$c","reading_time":15,"word_count":2811},"content":"$d"},{"slug":"immutable-hyperlinks","filePath":"immutable-hyperlinks","title":"Immutable Hyperlinks","meta":{"title":"Immutable Hyperlinks","linkTitle":"Immutable Hyperlinks","weight":10,"sidebar_position":10,"description":"Shows how the Aqua URI's can be used as immutable links.\n","content":"$e","reading_time":3,"word_count":454},"content":"$f"},{"slug":"assurance-levels","filePath":"assurance-levels","title":"Assurance Levels (AAL)","meta":{"title":"Assurance Levels (AAL)","linkTitle":"Assurance Levels","description":"Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation. \n","content":"$10","reading_time":2,"word_count":285},"content":"$11"},{"slug":"concepts","filePath":"concepts","title":"Concepts ","meta":{"title":"Concepts ","description":"Explains the technologies selected for the reference implementation and why we selected them.","content":"$12","reading_time":11,"word_count":2055},"content":"$13"},{"slug":"identity-protocol","filePath":"identity-protocol","title":"Identity Protocol","meta":{"title":"Identity Protocol","description":"The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.\n","content":"$14","reading_time":13,"word_count":2566},"content":"$15"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol Version 1","meta":{"title":"Aqua Protocol Version 1","description":"An overview of verision 1 of the Aqua protocol","content":"$16","reading_time":5,"word_count":872},"content":"$17"},{"slug":"name-resolution","filePath":"name-resolution","title":"Aqua Name Resolution (ANS)","meta":{"title":"Aqua Name Resolution (ANS)","description":"ANS is used to hashes of various types to human readable names","content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n","reading_time":1,"word_count":44},"content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n"},{"slug":"whitepaper","filePath":"whitepaper","title":"Whitepaper","meta":{"title":"Whitepaper","linkTitle":"Whitepaper","description":"High level outline of Aqua Protocol (AQP) specification","content":"$18","reading_time":20,"word_count":3993},"content":"$19"}],"version":"v1.0.0","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"content":"$L1a","toc":"$L1b","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"$L1c","$L1d","$L1e"]}],["$L1f","$L20"],"$L21"]}],"loading":null,"isPartial":false}
-1a:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L22",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v1.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L23",null,{"href":"/docs/v1.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v1.0.0/whitepaper",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Whitepaper"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Whitepaper"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"High level outline of Aqua Protocol (AQP) specification"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[20," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":[["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Current version:"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Aqua Protocol v1.1 Specification"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Author:"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Tim Bansemer, Publius Dirac"}]]}],"$L24","$L25","$L26"]}]]}]}],"\n","$L27","\n","$L28","\n","$L29","\n","$L2a","\n","$L2b","\n","$L2c","\n","$L2d","\n","$L2e","\n","$L2f","\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b","\n","$L6c","\n","$L6d","\n","$L6e","\n","$L6f","\n","$L70","\n","$L71","\n","$L72","\n","$L73","\n","$L74","\n","$L75","\n","$L76","\n","$L77","\n","$L78","\n","$L79","\n","$L7a","\n","$L7b","\n","$L7c","\n","$L7d","\n","$L7e","\n","$L7f","\n","$L80","\n","$L81","\n","$L82","\n","$L83","\n","$L84","\n","$L85","\n","$L86","\n","$L87","\n","$L88","\n","$L89","\n","$L8a","\n","$L8b","\n","$L8c","\n","$L8d","\n","$L8e","\n","$L8f","\n","$L90","\n","$L91","\n","$L92","\n","$L93","\n","$L94","\n","$L95","\n","$L96","\n","$L97","\n","$L98","\n","$L99","\n","$L9a","\n","$L9b","\n","$L9c","\n","$L9d","\n","$L9e","\n","$L9f","\n","$La0","\n","$La1","\n","$La2","\n","$La3","\n","$La4","\n","$La5","\n","$La6","\n","$La7","\n","$La8","\n","$La9","\n","$Laa","\n","$Lab","\n","$Lac","\n","$Lad","\n","$Lae","\n","$Laf","\n","$Lb0","\n","$Lb1","\n","$Lb2","\n","$Lb3","\n","$Lb4","\n","$Lb5","\n","$Lb6","\n","$Lb7","\n","$Lb8"]}],"$undefined","$Lb9","$Lba"]}]
-1b:["$","$Lbb",null,{"items":[{"id":"introduction","title":"Introduction","level":2},{"id":"motivation","title":"Motivation","level":2},{"id":"terminology","title":"Terminology","level":2},{"id":"wallet","title":"Wallet","level":2},{"id":"account","title":"Account","level":3},{"id":"domain","title":"Domain","level":3},{"id":"revision","title":"Revision","level":3},{"id":"page","title":"Page","level":3},{"id":"transaction-security","title":"Transaction Security","level":3},{"id":"data-asset","title":"Data Asset","level":3},{"id":"data-vault","title":"Data Vault","level":3},{"id":"witness","title":"Witness","level":3},{"id":"witness-network","title":"Witness Network","level":3},{"id":"portable-hash-chain","title":"Portable Hash Chain","level":3},{"id":"immutable-hyperlinks--transclusions","title":"Immutable Hyperlinks / Transclusions","level":3},{"id":"specification","title":"Specification","level":2},{"id":"verification-hash","title":"Verification Hash","level":2},{"id":"content","title":"Content","level":2},{"id":"metadata","title":"Metadata","level":2},{"id":"signature","title":"Signature","level":2},{"id":"witness","title":"Witness","level":2},{"id":"example","title":"Example","level":2},{"id":"1st-revision","title":"1st Revision","level":3},{"id":"2nd-revision","title":"2nd Revision","level":3},{"id":"3rd-revision","title":"3rd Revision","level":3},{"id":"get-hash-chain","title":"Get Hash Chain","level":2},{"id":"get-revision-hashes","title":"Get Revision Hashes","level":2},{"id":"get-revision","title":"Get Revision","level":2},{"id":"aqua-protocol-v11-changes","title":"Aqua Protocol v1.1 Changes","level":2},{"id":"data-accounting-protocol-v12-tbd","title":"Data Accounting Protocol v1.2 \\[TBD\\]","level":2},{"id":"services-on-aqp-not-yet-implemented-exploration","title":"Services on AQP (Not yet implemented, exploration)","level":2},{"id":"similar-projects","title":"Similar Projects","level":2},{"id":"blockchain-context","title":"Blockchain Context","level":2},{"id":"a-side-note","title":"A side note","level":3}],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}]
-1c:["$","$Lbc",null,{}]
-1d:["$","$Lbd",null,{}]
-1e:["$","$Lbe",null,{}]
-1f:["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true}]
-20:["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true}]
-21:["$","$Lbf",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@c0"}]}]
-24:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Date:"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"30.12.2021"}]]}]
-25:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Status:"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"DRAFT / Experimental"}]]}]
-26:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Implementation:"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","a",null,{"href":"https://github.com/inblockio/micro-pkc","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://github.com/inblockio/micro-pkc"}]}]]}]
-27:["$","h2",null,{"id":"introduction","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Introduction"}]
-28:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The Aqua Protocol (AQP) is a data accountability and exchange protocol between\nhosts in peer-to-peer environments. The AQP is used to realize the goal of\n",["$","a",null,{"href":"data-accounting.md","className":"text-primary hover:underline font-medium","children":"accounting for data origin and history"}],". The description\nfor the proof-of-concept implementation of the AQP can be found in ",["$","a",null,{"href":"../implementations/reference-architecture.md","className":"text-primary hover:underline font-medium","children":"this\npage"}],"."]}]
-29:["$","h2",null,{"id":"motivation","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Motivation"}]
-2a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"In today's world, there are no widely adopted trustless processes of checking if\ndata have been manipulated or corrupted, are attributed to the wrong author, or\nare attributed to the wrong time. Today's processes are dependent on centralized\ntrusted services which retain all power over governing the data."}]
-2b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"There is a lack of transparency or ability to check if data have been altered\nby an unauthorized party. Additionally, consumers of data are incapable of\nverifying if centralized services have altered the data. This leads to a world\nof untrustworthy information in which we don't know how to conclude what is\ntrue."}]
-2c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"In a world where every piece of information is a grain in a sandstorm, it has\nbecome impossible to navigate reality. In contrast, in a world where every\npiece of information is a fixed star in the sky for a lifetime, we are able to\nrelate and make sense of the information given. The Aqua Protocol (AQP) turns\ngrains of information into fixed stars of information."}]
-2d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The AQP adds a peer-to-peer layer of accountability, making it impossible to\nchange data unnoticed. AQP adds an essential line of defense against attacks on\ndata integrity, plagiarism, or misattribution. AQP is used to govern trusted\ndata, which can be quickly verified. This includes the verification of its\nintegrity and history, the verification of its account (the entity who creates\nor manipulates the data), and the verification of its existence and timestamp."}]
-2e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The Aqua Protocol provides trustworthiness to data by\nsecuring data ✅ integrity, 🔏 account and ⌚ time."}]
-2f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"In order to account data, it is necessary to track and verify its history. The\nAQP provides a globally unique resource identification (URI) for each revision\nof the verified data. This identifier is collision-free, and is referred the\nsame way across multiple interacting hosts."}]
-30:["$","h2",null,{"id":"terminology","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Terminology"}]
-31:["$","h2",null,{"id":"wallet","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Wallet"}]
-32:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"A wallet is a software for protecting and managing private cryptographic keys\n(of private-public key pairs) which are used to govern digital assets. This is\ndone by authorization of transactions via digital signatures or by initiating\ndecryption processes to access data."}]
-33:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["See ",["$","a",null,{"href":"design-principles.md#separation-of-account-and-service","className":"text-primary hover:underline font-medium","children":"Separation of Concerns"}],"."]}]
-34:["$","h3",null,{"id":"account","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Account"}]
-35:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"We are following Ethereum's account definition:"}]
-36:["$","blockquote",null,{"className":"border-l-4 border-primary/50 bg-muted/30 pl-4 pr-4 py-3 my-6 rounded-r-lg","children":["$","div",null,{"className":"text-muted-foreground italic [&>p]:mb-0","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["In general, there are two types of accounts. Externally owned accounts,\ncontrolled by private keys. And contract accounts, controlled by their\ncontract code\n-- ",["$","a",null,{"href":"https://ethereum.org/en/whitepaper/#ethereum-accounts","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Ethereum Whitepaper"}]]}],"\n"]}]}]
-37:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["In general, we can't prove if an account owner is a person or a machine. With\nadvancements in AI, it will become increasingly difficult to prove that a human\nis a human. ",["$","a",null,{"href":"https://www.proofofhumanity.id/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Attempts are being made"}]," to\nincrease trustworthiness of accounts which fall short in questions of privacy\nand security as they make public claims. Traditional know your customer (KYC)\ncombined with the AQP and Aqua Identity Protocol (AIP) identification processes\ncan provide similar \"proof of being human\" which can be attested to an account.\nThis allows us to outsource the problem of identification, where we only focus\non unique accounts which are sufficient for data accounting independent of\nhumans or machines. Identity claims issued via the AIP will help to provide the\ncontext required to meaningfully interact between accounts."]}]
-38:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["For more on this topic, please read the ",["$","a",null,{"href":"aqua-identity-protocol.md","className":"text-primary hover:underline font-medium","children":"Aqua Identity\nProtocol"}],"."]}]
-39:["$","h3",null,{"id":"domain","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Domain"}]
-3a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["A domain is a unique namespace attributed to an account. It allows us to manage\nservices and files within that namespace creating a domain of data governance\nAfter granted permissions, additional accounts can be added to share control\nover a domain or singular assets. To enforce boundaries of a domain, additional\nsoftware like the ",["$","a",null,{"href":"guardian.md","className":"text-primary hover:underline font-medium","children":"Guardian"}]," is required."]}]
-3b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"E.g. by setting up the a data vault with your account it becomes your\ndomain of data governance."}]
-3c:["$","h3",null,{"id":"revision","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Revision"}]
-3d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"A revision is the smallest portable entity within the AQP. Multiple revisions\nform a single portable hash chain which is serialized in JSON format.\nThey have existed before in unsecured systems where multiple revisions form a\nfile which can be displayed as a page. The AQP adds the cryptographic harness\nto secure it. With presenting a portable hash chain, it is possible to track\nall incremental changes stored in each revision to understand the history of a\npage and how it came to be. This allows us to have version control on digital\nassets being able to restore earlier states and to relate to them. This allows\nus to have historical evidence of digital assets."}]
-3e:["$","h3",null,{"id":"page","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Page"}]
-3f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"A page is a visible representation of a file containing multiple or a single\nrevision attributed to a shared origin. A page view could also be used to\ncreate a new revision by a used service which interfaces with the file for\nmanipulation. In AQP all revisions share a global URI hash to\nattribute them together called a genesis hash."}]
-40:["$","h3",null,{"id":"transaction-security","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Transaction Security"}]
-41:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Transaction security is an economic measure of the level of integrity assurance\nfor a transaction. It is defined as the cost required to forge a transaction.\nThe transaction security can be increased by cryptographic security and by strong\nreplication of transactions. Public distributed ledger systems are highly suitable\nfor providing very high level of transaction security at the cost of privacy\nand immutability (data can't be changed or deleted). Today, public distributed\nledgers such as Bitcoin and Ethereum provide the highest level of transaction\nsecurity."}]
-42:["$","h3",null,{"id":"data-asset","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Data Asset"}]
-43:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Data turns into a valuable asset if it is accounted for. In an accounted form\nit can be easily priced, exchanged or traded."}]
-44:["$","h3",null,{"id":"data-vault","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Data Vault"}]
-45:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Software used to store and manage data with an account. The software must apply\na secure architecture and measures for keeping data assets safe. This is\nachieved through encryption, strong authentication and restrictive access to\nkeep data private by default."}]
-46:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["See ",["$","a",null,{"href":"design-principles.md#separation-of-account-and-service","className":"text-primary hover:underline font-medium","children":"Design Principles / Separation of Account and\nService"}]]}]
-47:["$","h3",null,{"id":"witness","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Witness"}]
-48:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"We define witnessing as the process of observing an event. A witness is judged\nby their capability to recollect and share an observed event. In other words,\nwitnessing is the process of storing input data for later playback to provide\ndata symmetry around an event."}]
-49:["$","h3",null,{"id":"witness-network","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Witness Network"}]
-4a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The digital service in a distributed ledger or similar infrastructure which\nprovides transaction security and data symmetry for shared data within the\nnetwork. An example of a witness network would be Ethereum."}]
-4b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"E.g. Ethereum can be used to store a digital fingerprint of a domain snapshot\nof a data vault. A domain snapshot is the Merklized state of all witnessed hash\nchains being present in the data vault. It is required to pay the witness\nnetwork for its service. In the case of Ethereum, this is done using 'Ether'.\nThis in return allows the account owner to create an 'undeniable' proof that a\nspecific revision and the previous revisions within a hash chain has existed."}]
-4c:["$","h3",null,{"id":"portable-hash-chain","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Portable Hash Chain"}]
-4d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"A hash chain is a linked list where each node contains the cryptographic hash\nof the previous node content. A portable hash chain is a hash chain that can be\nmoved from one host to another."}]
-4e:["$","h3",null,{"id":"immutable-hyperlinks--transclusions","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Immutable Hyperlinks / Transclusions"}]
-4f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["See ",["$","a",null,{"href":"immutable-hyperlinks.md","className":"text-primary hover:underline font-medium","children":"Immutable Hyperlinks"}],"."]}]
-50:["$","h2",null,{"id":"specification","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Specification"}]
-51:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"To identify a revision with a unique fingerprint, we hash its content using\nthe SHA3-512 hashing function which always has a 128 characters long\noutput. This value can be used as a checksum to verify data integrity.\nThe checksum can then be entangled in a hash-chain to create an\nimmutable track record. We then calculate multiple properties associated\nwith the revision, in addition to its content checksum. In the next section,\nwe differentiate between REQUIRED and OPTIONAL properties for each\nrevision."}]
-52:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["All hashes are based on\n",["$","a",null,{"href":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"SHA3-512"}],".\nThis encryption standard is used to construct ",["$","a",null,{"href":"#portable-hash-chain","className":"text-primary hover:underline font-medium","children":"portable hash\nchains"}],", which are serializing of data and its history in\na form that can be verified, and independent of location. The portable hash\nchain can be fully or partially exchanged between hosts depending on the\napplication of the data. From here on, we refer the term \"portable hash chain\"\nas \"hash chain.\""]}]
-53:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"In order to implement the AQP, we need to utilize a software that is capable of\ngenerating portable hash chains and facilitating actions described in the\nAQP. We call those nodes which facilitate the Aqua Protocol 'Aqua Data\nVaults' which given their role should be implemented as a software with secure\narchitecture and measures for keeping data assets safe. This is achieved\nthrough encryption, authentication and restrictive access to keep data private\nby default."}]
-54:["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-6 text-foreground","children":"Revision Verification Structure"}]
-55:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"A revision is RECOMMENDED to be limited to 50 Megabytes to ensure that the verification can take\nplace on all imaginable clients which might have slow network connectivity, low\nmemory, low cpu performance. Once a revision is verified, the next one can be\nverified. Clients with more performance will be able to parallelize the\nverification. Larger files can be chunked to be placed in multiple revisions."}]
-56:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["A verified data structure is identified by its URI ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"verification_hash"}],"\nand grouped by its ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"genesis_hash"}],". The first revision created will\ncreate a ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"verification_hash"}]," which has a special meaning and is\nreferred to as the ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"genesis_hash"}],". All future revisions building upon\nthat first revision will be attributed to the ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"genesis_hash"}]," as a unique\nURI for grouping the revisions. This allows us to understand if two\nrevisions are related without needing to verify the whole history of the\nhash chain."]}]
-57:["$","h2",null,{"id":"verification-hash","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Verification Hash"}]
-58:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_verification_hash"}]," is the hash sum over the string formed by the\nfollowing operation"]}]
-59:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_verification_hash = calculate_hash_sum(\n    content_hash + metadata_hash +\n    signature_hash + witness_hash\n)\n"}]
-5a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The content_hash and metadata_hash are REQUIRED.\nThe signature_hash and witness_hash are OPTIONAL."}]
-5b:["$","h2",null,{"id":"content","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Content"}]
-5c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["A content hash is the check sum for all content data fields which simplifies\nhash construction and the ability to identify data corruption in this part of\nthe verification structure.\n",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"content_hash"}]," is the hash sum over the string formed by following operation:"]}]
-5d:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"contentObj = {\n    \"main\": content,\n    \"extension_key_1\": content_extension_1,\n    \"extension_key_2\": content_extension_2,\n    ...,\n    \"extension_key_n\": content_extension_n,\n}\nsortedContenObj = sort_by_keys(contentObj)\ncontent_hash = calculate_hash_sum(\n    sortedContenObjValue_1,\n    sortedContenObjValue_2,\n    ...,\n    sortedContenObjValue_n,\n)\n"}]
-5e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Description:"}]
-5f:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"content: The string input of the visible page using UTF-8 encoding schema.\nREQUIRED."}],"\n",["$","li",null,{"className":"leading-7","children":"content extensions: more data MAY be encapsulated in addition to the main\ncontent. These could be a file, a stateful link, or a signature. The content\nextensions are sorted alphabetically by their key names. OPTIONAL."}],"\n",["$","li",null,{"className":"leading-7","children":["The ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"sort_by_keys"}]," function sorts the content object elements by their keys\nalphabetically. The JSON input MAY be a canonical JSON, in which the keys\norder is already alphabetical, but we sort it always to ensure the order is\ncorrect."]}],"\n"]}]
-60:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["To see an example of ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"contentObj"}]," of a revision, see the ",["$","a",null,{"href":"#Example","className":"text-primary hover:underline font-medium","children":"example"}],"\nsection,"]}]
-61:["$","h2",null,{"id":"metadata","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Metadata"}]
-62:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"metadata_hash = calculate_hash_sum(\n    domain_id + time_stamp + previous_verification_hash\n)\n"}]
-63:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Description:"}]
-64:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"metadata_hash: The check sum for all metadata data fields. It simplifies the\nhash construction and the ability to identify data corrupton in this part of\nthe verification structure."}],"\n",["$","li",null,{"className":"leading-7","children":"domain_id: 10 digits hexadecimal randomly generated to identify the host\nsystem that runs the AQP service."}],"\n",["$","li",null,{"className":"leading-7","children":"time_stamp: time-stamp of the current revision (decimal numbers\nYYYYMMDDHHMMSS e.g. 20211128092608)."}],"\n",["$","li",null,{"className":"leading-7","children":"previous_verification_hash: previous_revision_verification_hash if present"}],"\n"]}]
-65:["$","h2",null,{"id":"signature","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Signature"}]
-66:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["A signature in AQP is a cryptographic signature generated by public-private key\npair. The protocol should be abstract, where it will support 'Method' in later\niterations. This will allow us to use different types of implementations such\nas: PGP signatures, Ethereum, or Bitcoin\n",["$","a",null,{"href":"https://en.wikipedia.org/wiki/Cryptocurrency_wallet","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"wallet"}],"'s signatures."]}]
-67:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"In this specification, we use the AQP reference implementation's signing\nmethod, which is via an Ethereum wallet."}]
-68:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature_hash = calculate_hash_sum(\n    signature + public_key\n)\n"}]
-69:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The signature is generated by a wallet signing the following message:"}]
-6a:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"I sign the following page verification_hash:\" +[0x<revision_verification_hash>]\n"}]
-6b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_verification_hash"}]," MUST NOT be signed twice by the same key, to\navoid information leakage of the private key."]}]
-6c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["For example, a wallet with an address of\n",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0xa2026582b94feb9124231fbf7b052c39218954c2"}]," and a public key of\n",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x041518581af65749b3ddc69889df3e5d229bc8ad79279a07ddeb368ade5e1592368c5ff3b69143d7a1e7cf64f7d0774a6724e6eaf138d318d07ddc30f6081ca89a"}],"\nsigns the following message:"]}]
-6d:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"I sign the following page verification_hash:\" +[0x9dab72c7635043452958c4cc2902f48ef7c4ae437058280197c6a2736ab9635f799cbf190d9d07dd76589055a8ad64e61c6bebd1487994207d4cb7918b471f57]\n"}]
-6e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"which results in the following signature:"}]
-6f:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x19b5697c4541509c1add3db9fc2f678b7b80325ebffd4d945ca00db5f8b3f98a142edbf9a7faa0a0c7ec4f10ae1b64cf2ea62ce3ee73ed2e37ce916d6bd016601c\n"}]
-70:["$","h2",null,{"id":"witness-1","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Witness"}]
-71:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Witnessing allows one to undeniably prove the existence of a dataset\n(represented as a portable hash chain). To complete the witnessing process, a\nDomain Snapshot is created. This is a collection of all revision hashes within\none domain. A Merkle tree is used to unify all hashes of the latest revisions\nof all portable hash chains within a domain into a single hash value."}]
-72:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["The ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_event_verification_hash"}]," is written to the ",["$","a",null,{"href":"#witness-network","className":"text-primary hover:underline font-medium","children":"Witness\nNetwork"}],". The\n",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_event_verification_hash"}]," is then generated by using the\n",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"domain_snapshot_genesis_hash"}]," and the ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"merkle_root"}]," hash together. This\nallows the page snapshot itself to also be witnessed."]}]
-73:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"A single revision which has been witnessed, will not store the whole Merkle\ntree, but only its relevant path to the Merkle root. Performing a Merkle proof\nmeans that its revision is included in the Merkle tree."}]
-74:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_hash = calculate_hash_sum(\n    domain_snapshot_genesis_hash + merkle_root +\n    witness_network + witness_event_transaction_hash\n)\n"}]
-75:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Description:"}]
-76:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_hash"}],": the checksum for all signature data fields. It simplifies hash\nconstruction and identifies data corruption in this part of the verification\nstructure."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"domain_snapshot_genesis_hash"}],": Refers to the URI of the page which stores the\nwhole Merkle tree of the witness event."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"merkle_root"}],": the root hash of the Merkle tree. The presence of the\nMerkle tree allows for lazy verification to reduce required computational\nsteps for verification by skipping the Merkle proof as both datasets can be\nentangled in the chain by a newer revision and therefore be immutable."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_network"}],": specifies which witness network was used to store the\n",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_event"}],". The following structure shows an AQP hash chain with 3\nrevisions which wrote the ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_event_verification_hash"}]," into the\nwitness network."]}],"\n"]}]
-77:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Additional context:"}]
-78:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["relative-merkle-tree-proof: This provide the relative path with all required\nhashes to verify the Merkle tree root from the first node which the\n",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"verification_hash"}]," of the revision as a starting point."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_event_verification_hash"}],": It is calculated by taking the sha3-512\nchecksum of the ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"domain_snapshot_genesis_hash"}]," and the ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"merkle_root"}]," hash.\nThis ensures that the",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"domain_snapshot"}]," itself will be witnessed."]}],"\n"]}]
-79:["$","h2",null,{"id":"example","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Example"}]
-7a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The following structure shows an AQP hash chain with 3 revisions:"}]
-7b:["$","h3",null,{"id":"1st-revision","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"1st Revision"}]
-7c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"This revision features all REQUIRED (content, metadata) and all OPTIONAL\n(signature, witness) AQP data fields."}]
-c2:T1779,{
+0:{"buildId":"_ePiRrooneby3ghoRNSHI","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","$L3",null,{}],"children":[["$","$L4",null,{"header":["$","$L5",null,{"currentVersion":"v1.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"docs":[{"slug":"data-accounting","filePath":"data-accounting","title":"Data Accounting","meta":{"title":"Data Accounting","linkTitle":"Data Accounting","weight":5,"sidebar_position":5,"description":"Introduces the concept of Data Accounting\n","content":"$6","reading_time":3,"word_count":525},"content":"$7"},{"slug":"data-governance","filePath":"data-governance","title":"Data Governance","meta":{"title":"Data Governance","linkTitle":"Data Governance","weight":6,"sidebar_position":6,"description":"Introduces the concept of Data Governance\n","content":"$8","reading_time":4,"word_count":643},"content":"$9"},{"slug":"delegated-witnessing","filePath":"delegated-witnessing","title":"Delegated Witnessing","meta":{"title":"Delegated Witnessing","linkTitle":"Delegated Witnessing","weight":7,"sidebar_position":7,"description":"Describes the process of sending domain snapshots to remote data vaults.\n","content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n","reading_time":1,"word_count":73},"content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n"},{"slug":"design-principles","filePath":"design-principles","title":"Design Principles","meta":{"title":"Design Principles","linkTitle":"Design Principles","weight":8,"sidebar_position":8,"description":"Lists the design principles underlying our reference implementation\n","content":"$a","reading_time":4,"word_count":704},"content":"$b"},{"slug":"guardian","filePath":"guardian","title":"Guardian","meta":{"title":"Guardian","linkTitle":"Guardian","weight":9,"sidebar_position":9,"description":"Shows access and transport layer logic used to interconnect data vaults\n","content":"$c","reading_time":15,"word_count":2811},"content":"$d"},{"slug":"immutable-hyperlinks","filePath":"immutable-hyperlinks","title":"Immutable Hyperlinks","meta":{"title":"Immutable Hyperlinks","linkTitle":"Immutable Hyperlinks","weight":10,"sidebar_position":10,"description":"Shows how the Aqua URI's can be used as immutable links.\n","content":"$e","reading_time":3,"word_count":454},"content":"$f"},{"slug":"assurance-levels","filePath":"assurance-levels","title":"Assurance Levels (AAL)","meta":{"title":"Assurance Levels (AAL)","linkTitle":"Assurance Levels","description":"Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation. \n","content":"$10","reading_time":2,"word_count":285},"content":"$11"},{"slug":"concepts","filePath":"concepts","title":"Concepts ","meta":{"title":"Concepts ","description":"Explains the technologies selected for the reference implementation and why we selected them.","content":"$12","reading_time":11,"word_count":2055},"content":"$13"},{"slug":"identity-protocol","filePath":"identity-protocol","title":"Identity Protocol","meta":{"title":"Identity Protocol","description":"The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.\n","content":"$14","reading_time":13,"word_count":2566},"content":"$15"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol Version 1","meta":{"title":"Aqua Protocol Version 1","description":"An overview of verision 1 of the Aqua protocol","content":"$16","reading_time":5,"word_count":872},"content":"$17"},{"slug":"name-resolution","filePath":"name-resolution","title":"Aqua Name Resolution (ANS)","meta":{"title":"Aqua Name Resolution (ANS)","description":"ANS is used to hashes of various types to human readable names","content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n","reading_time":1,"word_count":44},"content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n"},{"slug":"whitepaper","filePath":"whitepaper","title":"Whitepaper","meta":{"title":"Whitepaper","linkTitle":"Whitepaper","description":"High level outline of Aqua Protocol (AQP) specification","content":"$18","reading_time":20,"word_count":3993},"content":"$19"}],"version":"v1.0.0","content":"$L1a","toc":"$L1b","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"$L1c","$L1d","$L1e"]}],null,"$L1f"]}],"loading":null,"isPartial":false}
+21:T94e5,
+
+|                  |                                            |
+|------------------|--------------------------------------------|
+| Current version: | Aqua Protocol v1.1 Specification           |
+| Author:          | Tim Bansemer, Publius Dirac                |
+| Date:            | 30.12.2021                                 |
+| Status:          | DRAFT / Experimental                       |
+| Implementation:  | [https://github.com/inblockio/micro-pkc](https://github.com/inblockio/micro-pkc)   |
+
+## Introduction
+
+The Aqua Protocol (AQP) is a data accountability and exchange protocol between
+hosts in peer-to-peer environments. The AQP is used to realize the goal of
+[accounting for data origin and history](data-accounting.md). The description
+for the proof-of-concept implementation of the AQP can be found in [this
+page](../implementations/reference-architecture.md).
+
+## Motivation
+
+In today's world, there are no widely adopted trustless processes of checking if
+data have been manipulated or corrupted, are attributed to the wrong author, or
+are attributed to the wrong time. Today's processes are dependent on centralized
+trusted services which retain all power over governing the data.
+
+There is a lack of transparency or ability to check if data have been altered
+by an unauthorized party. Additionally, consumers of data are incapable of
+verifying if centralized services have altered the data. This leads to a world
+of untrustworthy information in which we don't know how to conclude what is
+true.
+
+In a world where every piece of information is a grain in a sandstorm, it has
+become impossible to navigate reality. In contrast, in a world where every
+piece of information is a fixed star in the sky for a lifetime, we are able to
+relate and make sense of the information given. The Aqua Protocol (AQP) turns
+grains of information into fixed stars of information.
+
+The AQP adds a peer-to-peer layer of accountability, making it impossible to
+change data unnoticed. AQP adds an essential line of defense against attacks on
+data integrity, plagiarism, or misattribution. AQP is used to govern trusted
+data, which can be quickly verified. This includes the verification of its
+integrity and history, the verification of its account (the entity who creates
+or manipulates the data), and the verification of its existence and timestamp.
+
+    The Aqua Protocol provides trustworthiness to data by
+    securing data ✅ integrity, 🔏 account and ⌚ time.
+
+In order to account data, it is necessary to track and verify its history. The
+AQP provides a globally unique resource identification (URI) for each revision
+of the verified data. This identifier is collision-free, and is referred the
+same way across multiple interacting hosts.
+
+## Terminology
+
+## Wallet
+A wallet is a software for protecting and managing private cryptographic keys
+(of private-public key pairs) which are used to govern digital assets. This is
+done by authorization of transactions via digital signatures or by initiating
+decryption processes to access data.
+
+See [Separation of Concerns](design-principles.md#separation-of-account-and-service).
+
+### Account
+
+We are following Ethereum's account definition:
+> In general, there are two types of accounts. Externally owned accounts,
+> controlled by private keys. And contract accounts, controlled by their
+> contract code
+-- [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/#ethereum-accounts)
+
+In general, we can't prove if an account owner is a person or a machine. With
+advancements in AI, it will become increasingly difficult to prove that a human
+is a human. [Attempts are being made](https://www.proofofhumanity.id/) to
+increase trustworthiness of accounts which fall short in questions of privacy
+and security as they make public claims. Traditional know your customer (KYC)
+combined with the AQP and Aqua Identity Protocol (AIP) identification processes
+can provide similar "proof of being human" which can be attested to an account.
+This allows us to outsource the problem of identification, where we only focus
+on unique accounts which are sufficient for data accounting independent of
+humans or machines. Identity claims issued via the AIP will help to provide the
+context required to meaningfully interact between accounts.
+
+For more on this topic, please read the [Aqua Identity
+Protocol](aqua-identity-protocol.md).
+
+### Domain
+A domain is a unique namespace attributed to an account. It allows us to manage
+services and files within that namespace creating a domain of data governance
+After granted permissions, additional accounts can be added to share control
+over a domain or singular assets. To enforce boundaries of a domain, additional
+software like the [Guardian](guardian.md) is required.
+
+E.g. by setting up the a data vault with your account it becomes your
+domain of data governance.
+
+### Revision
+
+A revision is the smallest portable entity within the AQP. Multiple revisions
+form a single portable hash chain which is serialized in JSON format.
+They have existed before in unsecured systems where multiple revisions form a
+file which can be displayed as a page. The AQP adds the cryptographic harness
+to secure it. With presenting a portable hash chain, it is possible to track
+all incremental changes stored in each revision to understand the history of a
+page and how it came to be. This allows us to have version control on digital
+assets being able to restore earlier states and to relate to them. This allows
+us to have historical evidence of digital assets.
+
+### Page
+
+A page is a visible representation of a file containing multiple or a single
+revision attributed to a shared origin. A page view could also be used to
+create a new revision by a used service which interfaces with the file for
+manipulation. In AQP all revisions share a global URI hash to
+attribute them together called a genesis hash.
+
+### Transaction Security
+
+Transaction security is an economic measure of the level of integrity assurance
+for a transaction. It is defined as the cost required to forge a transaction.
+The transaction security can be increased by cryptographic security and by strong
+replication of transactions. Public distributed ledger systems are highly suitable
+for providing very high level of transaction security at the cost of privacy
+and immutability (data can't be changed or deleted). Today, public distributed
+ledgers such as Bitcoin and Ethereum provide the highest level of transaction
+security.
+
+### Data Asset
+
+Data turns into a valuable asset if it is accounted for. In an accounted form
+it can be easily priced, exchanged or traded.
+
+### Data Vault
+
+Software used to store and manage data with an account. The software must apply
+a secure architecture and measures for keeping data assets safe. This is
+achieved through encryption, strong authentication and restrictive access to
+keep data private by default.
+
+See [Design Principles / Separation of Account and
+Service](design-principles.md#separation-of-account-and-service)
+
+
+### Witness
+
+We define witnessing as the process of observing an event. A witness is judged
+by their capability to recollect and share an observed event. In other words,
+witnessing is the process of storing input data for later playback to provide
+data symmetry around an event.
+
+### Witness Network
+
+The digital service in a distributed ledger or similar infrastructure which
+provides transaction security and data symmetry for shared data within the
+network. An example of a witness network would be Ethereum.
+
+E.g. Ethereum can be used to store a digital fingerprint of a domain snapshot
+of a data vault. A domain snapshot is the Merklized state of all witnessed hash
+chains being present in the data vault. It is required to pay the witness
+network for its service. In the case of Ethereum, this is done using 'Ether'.
+This in return allows the account owner to create an 'undeniable' proof that a
+specific revision and the previous revisions within a hash chain has existed.
+
+### Portable Hash Chain
+
+A hash chain is a linked list where each node contains the cryptographic hash
+of the previous node content. A portable hash chain is a hash chain that can be
+moved from one host to another.
+
+### Immutable Hyperlinks / Transclusions
+See [Immutable Hyperlinks](immutable-hyperlinks.md).
+
+## Specification
+
+To identify a revision with a unique fingerprint, we hash its content using
+the SHA3-512 hashing function which always has a 128 characters long
+output. This value can be used as a checksum to verify data integrity.
+The checksum can then be entangled in a hash-chain to create an
+immutable track record. We then calculate multiple properties associated
+with the revision, in addition to its content checksum. In the next section,
+we differentiate between REQUIRED and OPTIONAL properties for each
+revision.
+
+All hashes are based on
+[SHA3-512](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf).
+This encryption standard is used to construct [portable hash
+chains](#portable-hash-chain), which are serializing of data and its history in
+a form that can be verified, and independent of location. The portable hash
+chain can be fully or partially exchanged between hosts depending on the
+application of the data. From here on, we refer the term "portable hash chain"
+as "hash chain."
+
+In order to implement the AQP, we need to utilize a software that is capable of
+generating portable hash chains and facilitating actions described in the
+AQP. We call those nodes which facilitate the Aqua Protocol 'Aqua Data
+Vaults' which given their role should be implemented as a software with secure
+architecture and measures for keeping data assets safe. This is achieved
+through encryption, authentication and restrictive access to keep data private
+by default.
+
+# Revision Verification Structure
+
+A revision is RECOMMENDED to be limited to 50 Megabytes to ensure that the verification can take
+place on all imaginable clients which might have slow network connectivity, low
+memory, low cpu performance. Once a revision is verified, the next one can be
+verified. Clients with more performance will be able to parallelize the
+verification. Larger files can be chunked to be placed in multiple revisions.
+
+A verified data structure is identified by its URI `verification_hash`
+and grouped by its `genesis_hash`. The first revision created will
+create a `verification_hash` which has a special meaning and is
+referred to as the `genesis_hash`. All future revisions building upon
+that first revision will be attributed to the `genesis_hash` as a unique
+URI for grouping the revisions. This allows us to understand if two
+revisions are related without needing to verify the whole history of the
+hash chain.
+
+## Verification Hash
+`revision_verification_hash` is the hash sum over the string formed by the
+following operation
+
+```
+revision_verification_hash = calculate_hash_sum(
+    content_hash + metadata_hash +
+    signature_hash + witness_hash
+)
+```
+The content_hash and metadata_hash are REQUIRED.
+The signature_hash and witness_hash are OPTIONAL.
+
+## Content
+
+A content hash is the check sum for all content data fields which simplifies
+hash construction and the ability to identify data corruption in this part of
+the verification structure.
+`content_hash` is the hash sum over the string formed by following operation:
+
+```
+contentObj = {
+    "main": content,
+    "extension_key_1": content_extension_1,
+    "extension_key_2": content_extension_2,
+    ...,
+    "extension_key_n": content_extension_n,
+}
+sortedContenObj = sort_by_keys(contentObj)
+content_hash = calculate_hash_sum(
+    sortedContenObjValue_1,
+    sortedContenObjValue_2,
+    ...,
+    sortedContenObjValue_n,
+)
+```
+Description:
+- content: The string input of the visible page using UTF-8 encoding schema.
+  REQUIRED.
+- content extensions: more data MAY be encapsulated in addition to the main
+  content. These could be a file, a stateful link, or a signature. The content
+  extensions are sorted alphabetically by their key names. OPTIONAL.
+- The `sort_by_keys` function sorts the content object elements by their keys
+  alphabetically. The JSON input MAY be a canonical JSON, in which the keys
+  order is already alphabetical, but we sort it always to ensure the order is
+  correct.
+
+To see an example of `contentObj` of a revision, see the [example](#Example)
+section,
+
+## Metadata
+
+```
+metadata_hash = calculate_hash_sum(
+    domain_id + time_stamp + previous_verification_hash
+)
+```
+
+Description:
+- metadata_hash: The check sum for all metadata data fields. It simplifies the
+  hash construction and the ability to identify data corrupton in this part of
+  the verification structure.
+- domain_id: 10 digits hexadecimal randomly generated to identify the host
+  system that runs the AQP service.
+- time_stamp: time-stamp of the current revision (decimal numbers
+  YYYYMMDDHHMMSS e.g. 20211128092608).
+- previous_verification_hash: previous_revision_verification_hash if present
+
+## Signature
+
+A signature in AQP is a cryptographic signature generated by public-private key
+pair. The protocol should be abstract, where it will support 'Method' in later
+iterations. This will allow us to use different types of implementations such
+as: PGP signatures, Ethereum, or Bitcoin
+[wallet](https://en.wikipedia.org/wiki/Cryptocurrency_wallet)'s signatures.
+
+In this specification, we use the AQP reference implementation's signing
+method, which is via an Ethereum wallet.
+
+```
+signature_hash = calculate_hash_sum(
+    signature + public_key
+)
+```
+
+The signature is generated by a wallet signing the following message:
+
+```
+I sign the following page verification_hash:" +[0x<revision_verification_hash>]
+```
+
+The `revision_verification_hash` MUST NOT be signed twice by the same key, to
+avoid information leakage of the private key.
+
+For example, a wallet with an address of
+`0xa2026582b94feb9124231fbf7b052c39218954c2` and a public key of
+`0x041518581af65749b3ddc69889df3e5d229bc8ad79279a07ddeb368ade5e1592368c5ff3b69143d7a1e7cf64f7d0774a6724e6eaf138d318d07ddc30f6081ca89a`
+signs the following message:
+```
+I sign the following page verification_hash:" +[0x9dab72c7635043452958c4cc2902f48ef7c4ae437058280197c6a2736ab9635f799cbf190d9d07dd76589055a8ad64e61c6bebd1487994207d4cb7918b471f57]
+```
+which results in the following signature:
+```
+0x19b5697c4541509c1add3db9fc2f678b7b80325ebffd4d945ca00db5f8b3f98a142edbf9a7faa0a0c7ec4f10ae1b64cf2ea62ce3ee73ed2e37ce916d6bd016601c
+```
+
+## Witness
+
+Witnessing allows one to undeniably prove the existence of a dataset
+(represented as a portable hash chain). To complete the witnessing process, a
+Domain Snapshot is created. This is a collection of all revision hashes within
+one domain. A Merkle tree is used to unify all hashes of the latest revisions
+of all portable hash chains within a domain into a single hash value.
+
+The `witness_event_verification_hash` is written to the [Witness
+Network](#witness-network). The
+`witness_event_verification_hash` is then generated by using the
+`domain_snapshot_genesis_hash` and the `merkle_root` hash together. This
+allows the page snapshot itself to also be witnessed.
+
+A single revision which has been witnessed, will not store the whole Merkle
+tree, but only its relevant path to the Merkle root. Performing a Merkle proof
+means that its revision is included in the Merkle tree.
+
+```
+witness_hash = calculate_hash_sum(
+    domain_snapshot_genesis_hash + merkle_root +
+    witness_network + witness_event_transaction_hash
+)
+```
+
+Description:
+- `witness_hash`: the checksum for all signature data fields. It simplifies hash
+  construction and identifies data corruption in this part of the verification
+  structure.
+- `domain_snapshot_genesis_hash`: Refers to the URI of the page which stores the
+  whole Merkle tree of the witness event.
+- `merkle_root`: the root hash of the Merkle tree. The presence of the
+  Merkle tree allows for lazy verification to reduce required computational
+  steps for verification by skipping the Merkle proof as both datasets can be
+  entangled in the chain by a newer revision and therefore be immutable.
+- `witness_network`: specifies which witness network was used to store the
+  `witness_event`. The following structure shows an AQP hash chain with 3
+  revisions which wrote the `witness_event_verification_hash` into the
+  witness network.
+
+Additional context:
+- relative-merkle-tree-proof: This provide the relative path with all required
+  hashes to verify the Merkle tree root from the first node which the
+  `verification_hash` of the revision as a starting point. 
+- `witness_event_verification_hash`: It is calculated by taking the sha3-512
+  checksum of the `domain_snapshot_genesis_hash` and the `merkle_root` hash.
+  This ensures that the`domain_snapshot` itself will be witnessed.
+
+
+## Example
+The following structure shows an AQP hash chain with 3 revisions:
+
+### 1st Revision
+This revision features all REQUIRED (content, metadata) and all OPTIONAL
+(signature, witness) AQP data fields.
+```json
+{
   "verification_context": {
     "has_previous_signature": false,
     "has_previous_witness": false
@@ -4920,10 +5199,16 @@ c2:T1779,{
       }
     ]
   }
-}7d:["$","$Lc1",null,{"code":"$c2","language":"json"}]
-7e:["$","h3",null,{"id":"2nd-revision","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"2nd Revision"}]
-7f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"This revision entangles all data fields of the previous revision. As the\ncalculation of the revision_verification hash depends on the revision of the\nprevious revision, it is shown in verification_context."}]
-c3:T4d9,{
+}
+```
+
+### 2nd Revision
+This revision entangles all data fields of the previous revision. As the
+calculation of the revision_verification hash depends on the revision of the
+previous revision, it is shown in verification_context.
+
+```json
+{
   "verification_context": {
     "has_previous_signature": true,
     "has_previous_witness": true
@@ -4951,10 +5236,15 @@ c3:T4d9,{
     "signature_hash": ""
   },
   "witness": null
-}80:["$","$Lc1",null,{"code":"$c3","language":"json"}]
-81:["$","h3",null,{"id":"3rd-revision","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"3rd Revision"}]
-82:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"This revision features a transclusion-hash for an immutable link to another\nrevision."}]
-c4:T5c2,{
+}
+```
+
+### 3rd Revision
+This revision features a transclusion-hash for an immutable link to another
+revision.
+
+```json
+{
   "verification_context": {
     "has_previous_signature": false,
     "has_previous_witness": false
@@ -4982,62 +5272,1038 @@ c4:T5c2,{
     "signature_hash": ""
   },
   "witness": null
-}83:["$","$Lc1",null,{"code":"$c4","language":"json"}]
-84:["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-6 text-foreground","children":"API Endpoints"}]
-85:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The AQP provides 3 API endpoints which return data from a host that runs the\nAQP:"}]
-86:["$","h2",null,{"id":"get-hash-chain","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Get Hash Chain"}]
-87:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"/get_hash_chain_info/{identifier}?identifier=<title or genesis hash>"}],["$","br",null,{}],"\n","Input:"]}]
-88:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"identifier_type"}],": the value must either be \"title\" or \"genesis_hash\""]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"identifier"}],": the title or genesis_hash string, e.g. \"Main Page\" or \"02c3c2...215d8d\"\nReturns: all context for the requested hash_chain."]}],"\n"]}]
-89:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Example:"}]
-8a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["API Request:\n",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"/get_hash_chain_info/genesis_hash?identifier=dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26"}]]}]
-8b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"API Response:"}]
-8c:["$","$Lc1",null,{"code":"{\n  \"genesis_hash\": \"dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26\",\n  \"domain_id\": \"acfa9f682e\",\n  \"latest_verification_hash\": \"2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c\",\n  \"site_info\": {\n    \"sitename\": \"Personal Knowledge Container\",\n    \"dbname\": \"my_wiki\",\n    \"base\": \"http://localhost:9352/index.php/Aqua\",\n    \"generator\": \"MediaWiki 1.37.1\",\n    \"case\": \"first-letter\",\n    \"namespaces\": {\n      \"0\": {\n        \"case\": true,\n        \"title\": \"\"\n      },\n     \"6942\": {\n        \"case\": true,\n        \"title\": \"Data Accounting\"\n      }\n    },\n    \"version\": \"0.3.0\"\n  },\n  \"title\": \"Aqua\",\n  \"namespace\": 0,\n  \"chain_height\": 3\n}","language":"json"}]
-8d:["$","h2",null,{"id":"get-revision-hashes","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Get Revision Hashes"}]
-8e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"/get_revision_hashes/{verification_hash}"}],"\nInput:"]}]
-8f:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"verification_hash"}],"\nReturns: the revision requested if it exists and/or a list of any newer\nrevision than the one requested."]}],"\n"]}]
-90:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Example:"}]
-91:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["API Request:\n",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"/get_revision_hashes/dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26"}]]}]
-92:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"API Response:"}]
-93:["$","$Lc1",null,{"code":"[\n  \"dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26\",\n  \"f483d7746f67e7099099bcfa8ea5a93148251c598857e8fad21ce842da62794467067802ef9e818d240cd3312a3346a769f363145a87bfc1eeae19fe8d21b328\",\n  \"2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c\"\n]","language":"json"}]
-94:["$","h2",null,{"id":"get-revision","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Get Revision"}]
-95:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"/get_revision/{verification_hash}"}],"\nInput:"]}]
-96:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"verification_hash"}],"\nReturns: the revision content together with its verification data"]}],"\n"]}]
-97:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Example: See example above."}]
-98:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["API Request: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"/get_revision/dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26"}]]}]
-99:["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-6 text-foreground","children":"Verification Process"}]
-9a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The verification process is a redo of the verification data generation\nprocess, and additionally a comparison of their results."}]
-9b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Verification of Content"}]}]
-9c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"All hashes are recalculated in a separate client implementation, and\ncompared with the ones sent via the API. If the data was not altered or\ncorrupted; nor was there a difference in the process to calculate the\nhash, they will match. This will create a high level of assurance that\nthe integrity and history of the portable hash chain in question has not been\naltered."}]
-9d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Verification of Account"}]}]
-9e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"We cryptographically verify that the revision signature is indeed generated by the account specified in the verification data."}]
-9f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Verification of Time"}]}]
-a0:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["To verify that the witness event included in a revision is correct, a\nlookup and comparison of the ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_event_verification_hash"}]," on-chain is\nperformed and compared with the recalculated event."]}]
-a1:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Reference Implementation"}]}]
-a2:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Command-Line-Verification-Tool"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","a",null,{"href":"https://github.com/inblockio/aqua-verifier-js","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://github.com/inblockio/aqua-verifier-js"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Chrome Extension Verification Tool"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","a",null,{"href":"https://github.com/inblockio/aqua-verifier-webextension","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"https://github.com/inblockio/aqua-verifier-webextension"}]}]]}]]}]]}]}]
-a3:["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-6 text-foreground","children":"Appendix"}]
-a4:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The following content is informational and not part of the\nspecification. It should help to better understand utility, context and\nservices which can be built on top of AQP."}]
-a5:["$","h2",null,{"id":"aqua-protocol-v11-changes","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Aqua Protocol v1.1 Changes"}]
-a6:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Moving over to revision based verification. This allows:"}]
-a7:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Bulk / in parallel verification; ensuring logarithmic verification\ntimes, not linear increasing verification times with longer history.\nIn short: Much faster and scalable."}],"\n",["$","li",null,{"className":"leading-7","children":["Single revision and range verification (you want to verify a\nspecific part of the content-chain)","\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"This is useful for verification of identity claims, where\ntrusted parties have signed the claim and for the validator it's\nsufficient to see that signature."}],"\n"]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["This allows direct verification after every edit via the Guardian.\nThis is the preparation in the interaction to provide services\nthrough the ",["$","a",null,{"href":"guardian.md","className":"text-primary hover:underline font-medium","children":"Guardian"}],"."]}],"\n",["$","li",null,{"className":"leading-7","children":["Changing the design to include transclusions e.g. this allows the\nverification of subpages via their stateful links /\nrevision_verification_hashes","\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"This also allows the inclusion of media files in the\nverification process"}],"\n",["$","li",null,{"className":"leading-7","children":"You can upload pictures, PDF's, Word-Documents and have them\nautomatically included in the aqua protocol and therefore in the\nverified data-structure"}],"\n"]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":"Introduction of verification_context which indicates if the previous\nrevision has signature or witness data, or if the current revision\nhas transcluded resources. This will build the correct verification\nstructure before verification."}],"\n"]}]
-a8:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Change in the data-structure:"}]
-a9:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"when requesting a revision this is done via the\nGetRevisionHandler.php"}],"\n",["$","li",null,{"className":"leading-7","children":"the previous verification hash is always served as well"}],"\n",["$","li",null,{"className":"leading-7","children":"if signature or witness data is present in the previous revision,\nthere is a flag (1/0) that this revision depends on the previous\nrevision"}],"\n",["$","li",null,{"className":"leading-7","children":"transcluded resources will be added to the content hash for\nverification"}],"\n"]}]
-aa:["$","h2",null,{"id":"data-accounting-protocol-v12-tbd","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Data Accounting Protocol v1.2 [TBD]"}]
-ab:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["Generalization of the Signature-Metadata to inform which signature\nmethod was used.","\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"GPG Signatures"}],"\n",["$","li",null,{"className":"leading-7","children":"BTC Wallet Signatures"}],"\n",["$","li",null,{"className":"leading-7","children":"Ethereum Wallet Signatures"}],"\n",["$","li",null,{"className":"leading-7","children":"Done by: Displaying method used for signing, displaying\nunderlying architecture."}],"\n"]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":"Including Account as part of the verified data structure"}],"\n",["$","li",null,{"className":"leading-7","children":"Defining maximum payload size per revision"}],"\n"]}]
-ac:["$","h2",null,{"id":"services-on-aqp-not-yet-implemented-exploration","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Services on AQP (Not yet implemented, exploration)"}]
-ad:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["AQP-DACS: ",["$","a",null,{"href":"#domain","className":"text-primary hover:underline font-medium","children":"Domain"}]," Access Control System"]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["See: ",["$","a",null,{"href":"guardian.md","className":"text-primary hover:underline font-medium","children":"Guardian"}]," (Acting similar to a WebApplication-Firewall)"]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"ANS: Name-System and Name-Registry."}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["See ",["$","a",null,{"href":"aqua-name-resolution.md","className":"text-primary hover:underline font-medium","children":"Aqua Name Resolution"}]]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["AQP-SSI: Self-Sovereign-Identity Protocol for ",["$","a",null,{"href":"aqua-identity-protocol.md#self-issued-identity-claims","className":"text-primary hover:underline font-medium","children":"Identity\nClaim"}]," management"]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["See ",["$","a",null,{"href":"aqua-identity-protocol.md","className":"text-primary hover:underline font-medium","children":"Aqua Identity Protocol"}]]}],"\n"]}],"\n",["$","li",null,{"className":"leading-7","children":["\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"AQP Delegated Witnessing"}],"\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["See ",["$","a",null,{"href":"delegated-witnessing.md","className":"text-primary hover:underline font-medium","children":"Delegated Witnessing"}]]}],"\n"]}],"\n"]}],"\n"]}]
-ae:["$","h2",null,{"id":"similar-projects","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Similar Projects"}]
-af:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"None of the listed projects apply the concepts of versioning to their documents,\nthe concept of portable hash chains, the concept of personal data vaults for data\nmanagement in comparison with the AQP reference implementation."}]
-b0:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"This following list is not exhaustive:"}]
-b1:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"http://surety.com/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Surety"}],"\nThe oldest blockchain-like timestamping service which has been publishing\nto the New York Times since 1995."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"https://opentimestamps.org/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"OpenTimestamp"}],"\nA free and open-source service provided by Peter Todd using the Bitcoin\nnetwork as a distributed cryptographic clock. The AQP MAY use OpenTimestamp\nas a witness network."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"https://originstamp.com/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"OriginStamp"}],"\nA company providing paid timestamping services for their customers.\nIt looks very similar to OpenTimestamps with open-source client libraries."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"https://www.factomprotocol.org/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Factom Protocol"}],"\nA service which creates an architecture with an extra layer of blockchain,\nto provide an extra layer of trusted parties while providing their own\ntoken. In our opinion, it introduces unnecessary complexity and\nintermediaries as dependencies compared to the AQP."]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"https://www.openattestation.com/","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"OpenAttestation"}],"\nAn implementation of a timestamping service for document certification. One\napplication of it is for secure digital vaccination certificates by the\nSingaporean government. They use the MetaMask Ethereum wallet for signing\ndocuments making it the most similar project to AQP to our knowledge."]}],"\n"]}]
-b2:["$","h2",null,{"id":"blockchain-context","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Blockchain Context"}]
-b3:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"DISCLAIMER: AQP is not a permissionless distributed ledger. In order for the\nAQP to be valuable and working, a single node implementation and single node\ndeployments are sufficient, and do not require the witnessing part. The AQP MAY\nbenefit from being published to a distributed ledger technology (DLT)) to\nachieve a witness event with high transaction security. AQP does not have a\ntoken nor is it distributing data by default."}]
-b4:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"As some concepts are very similar as those used in DLT's, please refer to the\nfollowing:"}]
-b5:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"A portable hash chain and its revisions are similar to a blockchain structure\nand its blocks, which has its own root hash and a set of transactions which\nare included inside."}]
-b6:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":["$","strong",null,{"children":"Blockchain Term"}]}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":["$","strong",null,{"children":"AQP Term"}]}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":["$","strong",null,{"children":"Explanation"}]}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","strong",null,{"children":"Transaction"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","strong",null,{"children":"Input Data"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"In a blockchain, it's a signed transaction. In AQP, it's all the input data provided to calculate the respective content slot hashes."}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","strong",null,{"children":"Block"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","strong",null,{"children":"Revision"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"A block contains the Merklized list of transactions. A revision contains various hashed data inputs such as:"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"- Content slots"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"- Metadata data"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"- Signature data"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"- Witness data"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","strong",null,{"children":"Genesis Block"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","strong",null,{"children":"Genesis Revision"}]}],"$Lc5"]}],"$Lc6"]}]]}]}]
-b7:["$","h3",null,{"id":"a-side-note","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"A side note"}]
-b8:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"It has not escaped our notice that the provided AQP improves the existing\nprocess of double-entry bookkeeping and provides a foundation for a new data\neconomy. This also allows to create unforgeable invoices which can be clearly\nattributed to its sender, avoiding fraud. This is one of many other use cases,\ne.g. providing trusted news via revision-controlled journalism."}]
-b9:["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v1.0.0/whitepaper.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":[["$","path","1couwa",{"d":"M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","1y4qbx",{"d":"M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"}],"$undefined"]}],"Edit this page"]}],["$","a",null,{"href":"https://github.com/inblockio/issues/new","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-external-link h-4 w-4","children":[["$","path","1q9fwt",{"d":"M15 3h6v6"}],["$","path","gplh6r",{"d":"M10 14 21 3"}],["$","path","a6xqqp",{"d":"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"}],"$undefined"]}],"Report an issue"]}]]}]
-ba:["$","div",null,{"className":"mt-12 pt-8 border-t border-border grid grid-cols-2 gap-4","children":[["$","$L23",null,{"href":"/docs/v1.0.0/name-resolution","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Previous"}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Aqua Name Resolution (ANS)"}]]}],["$","div",null,{}]]}]
-c0:null
-c5:["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"The first object in the hash chain/blockchain."}]
-c6:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","strong",null,{"children":"Blockchain"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","strong",null,{"children":"Hash Chain"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"The hash chain is not distributed but resides by default only in the local PKC. It is not a distributed ledger and lacks a consensus algorithm to create a shared truth between nodes."}]]}]
+}
+```
+
+# API Endpoints
+
+The AQP provides 3 API endpoints which return data from a host that runs the
+AQP:
+
+## Get Hash Chain
+`/get_hash_chain_info/{identifier}?identifier=<title or genesis hash>`  
+Input:
+- `identifier_type`: the value must either be "title" or "genesis_hash"
+- `identifier`: the title or genesis_hash string, e.g. "Main Page" or "02c3c2...215d8d"
+Returns: all context for the requested hash_chain.
+
+Example:
+
+API Request:
+`/get_hash_chain_info/genesis_hash?identifier=dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26`
+
+API Response:
+```json
+{
+  "genesis_hash": "dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26",
+  "domain_id": "acfa9f682e",
+  "latest_verification_hash": "2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c",
+  "site_info": {
+    "sitename": "Personal Knowledge Container",
+    "dbname": "my_wiki",
+    "base": "http://localhost:9352/index.php/Aqua",
+    "generator": "MediaWiki 1.37.1",
+    "case": "first-letter",
+    "namespaces": {
+      "0": {
+        "case": true,
+        "title": ""
+      },
+     "6942": {
+        "case": true,
+        "title": "Data Accounting"
+      }
+    },
+    "version": "0.3.0"
+  },
+  "title": "Aqua",
+  "namespace": 0,
+  "chain_height": 3
+}
+```
+
+## Get Revision Hashes
+`/get_revision_hashes/{verification_hash}`
+Input:
+- `verification_hash`
+Returns: the revision requested if it exists and/or a list of any newer
+revision than the one requested.
+
+Example:
+
+API Request:
+`/get_revision_hashes/dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26`
+
+API Response:
+```json
+[
+  "dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26",
+  "f483d7746f67e7099099bcfa8ea5a93148251c598857e8fad21ce842da62794467067802ef9e818d240cd3312a3346a769f363145a87bfc1eeae19fe8d21b328",
+  "2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c"
+]
+```
+
+## Get Revision
+`/get_revision/{verification_hash}`
+Input:
+- `verification_hash`
+Returns: the revision content together with its verification data
+
+Example: See example above.
+
+API Request: `/get_revision/dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26`
+
+# Verification Process
+
+The verification process is a redo of the verification data generation
+process, and additionally a comparison of their results.
+
+**Verification of Content**
+
+All hashes are recalculated in a separate client implementation, and
+compared with the ones sent via the API. If the data was not altered or
+corrupted; nor was there a difference in the process to calculate the
+hash, they will match. This will create a high level of assurance that
+the integrity and history of the portable hash chain in question has not been
+altered.
+
+**Verification of Account**
+
+We cryptographically verify that the revision signature is indeed generated by the account specified in the verification data.
+
+**Verification of Time**
+
+To verify that the witness event included in a revision is correct, a
+lookup and comparison of the `witness_event_verification_hash` on-chain is
+performed and compared with the recalculated event.
+
+**Reference Implementation**
+
+|                                    |                                                                    |
+|------------------------------------|--------------------------------------------------------------------|
+| Command-Line-Verification-Tool     | [https://github.com/inblockio/aqua-verifier-js](https://github.com/inblockio/aqua-verifier-js) |
+| Chrome Extension Verification Tool | [https://github.com/inblockio/aqua-verifier-webextension](https://github.com/inblockio/aqua-verifier-webextension) |
+
+
+
+
+# Appendix
+
+The following content is informational and not part of the
+specification. It should help to better understand utility, context and
+services which can be built on top of AQP.
+
+## Aqua Protocol v1.1 Changes
+
+Moving over to revision based verification. This allows:
+
+-   Bulk / in parallel verification; ensuring logarithmic verification
+    times, not linear increasing verification times with longer history.
+    In short: Much faster and scalable.
+-   Single revision and range verification (you want to verify a
+    specific part of the content-chain)
+    -   This is useful for verification of identity claims, where
+        trusted parties have signed the claim and for the validator it's
+        sufficient to see that signature.
+-   This allows direct verification after every edit via the Guardian.
+    This is the preparation in the interaction to provide services
+    through the [Guardian](guardian.md).
+-   Changing the design to include transclusions e.g. this allows the
+    verification of subpages via their stateful links /
+    revision_verification_hashes
+    -   This also allows the inclusion of media files in the
+        verification process
+    -   You can upload pictures, PDF's, Word-Documents and have them
+        automatically included in the aqua protocol and therefore in the
+        verified data-structure
+-   Introduction of verification_context which indicates if the previous
+    revision has signature or witness data, or if the current revision
+    has transcluded resources. This will build the correct verification
+    structure before verification.
+
+Change in the data-structure:
+
+-   when requesting a revision this is done via the
+    GetRevisionHandler.php
+-   the previous verification hash is always served as well
+-   if signature or witness data is present in the previous revision,
+    there is a flag (1/0) that this revision depends on the previous
+    revision
+-   transcluded resources will be added to the content hash for
+    verification
+
+## Data Accounting Protocol v1.2 \[TBD\]
+
+-   Generalization of the Signature-Metadata to inform which signature
+    method was used.
+    -   GPG Signatures
+    -   BTC Wallet Signatures
+    -   Ethereum Wallet Signatures
+    -   Done by: Displaying method used for signing, displaying
+        underlying architecture.
+-   Including Account as part of the verified data structure
+-   Defining maximum payload size per revision
+
+## Services on AQP (Not yet implemented, exploration)
+
+- AQP-DACS: [Domain](#domain) Access Control System
+ -   See: [Guardian](guardian.md) (Acting similar to a WebApplication-Firewall)
+
+- ANS: Name-System and Name-Registry.
+ - See [Aqua Name Resolution](aqua-name-resolution.md)
+
+- AQP-SSI: Self-Sovereign-Identity Protocol for [Identity
+    Claim](aqua-identity-protocol.md#self-issued-identity-claims) management
+ - See [Aqua Identity Protocol](aqua-identity-protocol.md)
+
+- AQP Delegated Witnessing
+    - See [Delegated Witnessing](delegated-witnessing.md)
+
+## Similar Projects
+
+None of the listed projects apply the concepts of versioning to their documents,
+the concept of portable hash chains, the concept of personal data vaults for data
+management in comparison with the AQP reference implementation.
+
+This following list is not exhaustive:
+- [Surety](http://surety.com/)
+    The oldest blockchain-like timestamping service which has been publishing
+    to the New York Times since 1995.
+- [OpenTimestamp](https://opentimestamps.org/)
+    A free and open-source service provided by Peter Todd using the Bitcoin
+    network as a distributed cryptographic clock. The AQP MAY use OpenTimestamp
+    as a witness network.
+- [OriginStamp](https://originstamp.com/)
+    A company providing paid timestamping services for their customers.
+    It looks very similar to OpenTimestamps with open-source client libraries.
+- [Factom Protocol](https://www.factomprotocol.org/)
+    A service which creates an architecture with an extra layer of blockchain,
+    to provide an extra layer of trusted parties while providing their own
+    token. In our opinion, it introduces unnecessary complexity and
+    intermediaries as dependencies compared to the AQP.
+- [OpenAttestation](https://www.openattestation.com/)
+    An implementation of a timestamping service for document certification. One
+    application of it is for secure digital vaccination certificates by the
+    Singaporean government. They use the MetaMask Ethereum wallet for signing
+    documents making it the most similar project to AQP to our knowledge.
+
+## Blockchain Context
+
+DISCLAIMER: AQP is not a permissionless distributed ledger. In order for the
+AQP to be valuable and working, a single node implementation and single node
+deployments are sufficient, and do not require the witnessing part. The AQP MAY
+benefit from being published to a distributed ledger technology (DLT)) to
+achieve a witness event with high transaction security. AQP does not have a
+token nor is it distributing data by default.
+
+As some concepts are very similar as those used in DLT's, please refer to the
+following:
+
+A portable hash chain and its revisions are similar to a blockchain structure
+and its blocks, which has its own root hash and a set of transactions which
+are included inside.
+
+| **Blockchain Term** | **AQP Term**       | **Explanation**                                                                                                                                                                       |
+|----------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Transaction**      | **Input Data**    | In a blockchain, it's a signed transaction. In AQP, it's all the input data provided to calculate the respective content slot hashes.                                                 |
+| **Block**            | **Revision**      | A block contains the Merklized list of transactions. A revision contains various hashed data inputs such as:                                                                          |
+|                      |                    | - Content slots                                                                                                                                                                       |
+|                      |                    | - Metadata data                                                                                                                                                                       |
+|                      |                    | - Signature data                                                                                                                                                                      |
+|                      |                    | - Witness data                                                                                                                                                                        |
+| **Genesis Block**    | **Genesis Revision** | The first object in the hash chain/blockchain.                                                                                                                                         |
+| **Blockchain**       | **Hash Chain**    | The hash chain is not distributed but resides by default only in the local PKC. It is not a distributed ledger and lacks a consensus algorithm to create a shared truth between nodes. |
+
+
+### A side note
+
+It has not escaped our notice that the provided AQP improves the existing
+process of double-entry bookkeeping and provides a foundation for a new data
+economy. This also allows to create unforgeable invoices which can be clearly
+attributed to its sender, avoiding fraud. This is one of many other use cases,
+e.g. providing trusted news via revision-controlled journalism.
+22:T94e5,
+
+|                  |                                            |
+|------------------|--------------------------------------------|
+| Current version: | Aqua Protocol v1.1 Specification           |
+| Author:          | Tim Bansemer, Publius Dirac                |
+| Date:            | 30.12.2021                                 |
+| Status:          | DRAFT / Experimental                       |
+| Implementation:  | [https://github.com/inblockio/micro-pkc](https://github.com/inblockio/micro-pkc)   |
+
+## Introduction
+
+The Aqua Protocol (AQP) is a data accountability and exchange protocol between
+hosts in peer-to-peer environments. The AQP is used to realize the goal of
+[accounting for data origin and history](data-accounting.md). The description
+for the proof-of-concept implementation of the AQP can be found in [this
+page](../implementations/reference-architecture.md).
+
+## Motivation
+
+In today's world, there are no widely adopted trustless processes of checking if
+data have been manipulated or corrupted, are attributed to the wrong author, or
+are attributed to the wrong time. Today's processes are dependent on centralized
+trusted services which retain all power over governing the data.
+
+There is a lack of transparency or ability to check if data have been altered
+by an unauthorized party. Additionally, consumers of data are incapable of
+verifying if centralized services have altered the data. This leads to a world
+of untrustworthy information in which we don't know how to conclude what is
+true.
+
+In a world where every piece of information is a grain in a sandstorm, it has
+become impossible to navigate reality. In contrast, in a world where every
+piece of information is a fixed star in the sky for a lifetime, we are able to
+relate and make sense of the information given. The Aqua Protocol (AQP) turns
+grains of information into fixed stars of information.
+
+The AQP adds a peer-to-peer layer of accountability, making it impossible to
+change data unnoticed. AQP adds an essential line of defense against attacks on
+data integrity, plagiarism, or misattribution. AQP is used to govern trusted
+data, which can be quickly verified. This includes the verification of its
+integrity and history, the verification of its account (the entity who creates
+or manipulates the data), and the verification of its existence and timestamp.
+
+    The Aqua Protocol provides trustworthiness to data by
+    securing data ✅ integrity, 🔏 account and ⌚ time.
+
+In order to account data, it is necessary to track and verify its history. The
+AQP provides a globally unique resource identification (URI) for each revision
+of the verified data. This identifier is collision-free, and is referred the
+same way across multiple interacting hosts.
+
+## Terminology
+
+## Wallet
+A wallet is a software for protecting and managing private cryptographic keys
+(of private-public key pairs) which are used to govern digital assets. This is
+done by authorization of transactions via digital signatures or by initiating
+decryption processes to access data.
+
+See [Separation of Concerns](design-principles.md#separation-of-account-and-service).
+
+### Account
+
+We are following Ethereum's account definition:
+> In general, there are two types of accounts. Externally owned accounts,
+> controlled by private keys. And contract accounts, controlled by their
+> contract code
+-- [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/#ethereum-accounts)
+
+In general, we can't prove if an account owner is a person or a machine. With
+advancements in AI, it will become increasingly difficult to prove that a human
+is a human. [Attempts are being made](https://www.proofofhumanity.id/) to
+increase trustworthiness of accounts which fall short in questions of privacy
+and security as they make public claims. Traditional know your customer (KYC)
+combined with the AQP and Aqua Identity Protocol (AIP) identification processes
+can provide similar "proof of being human" which can be attested to an account.
+This allows us to outsource the problem of identification, where we only focus
+on unique accounts which are sufficient for data accounting independent of
+humans or machines. Identity claims issued via the AIP will help to provide the
+context required to meaningfully interact between accounts.
+
+For more on this topic, please read the [Aqua Identity
+Protocol](aqua-identity-protocol.md).
+
+### Domain
+A domain is a unique namespace attributed to an account. It allows us to manage
+services and files within that namespace creating a domain of data governance
+After granted permissions, additional accounts can be added to share control
+over a domain or singular assets. To enforce boundaries of a domain, additional
+software like the [Guardian](guardian.md) is required.
+
+E.g. by setting up the a data vault with your account it becomes your
+domain of data governance.
+
+### Revision
+
+A revision is the smallest portable entity within the AQP. Multiple revisions
+form a single portable hash chain which is serialized in JSON format.
+They have existed before in unsecured systems where multiple revisions form a
+file which can be displayed as a page. The AQP adds the cryptographic harness
+to secure it. With presenting a portable hash chain, it is possible to track
+all incremental changes stored in each revision to understand the history of a
+page and how it came to be. This allows us to have version control on digital
+assets being able to restore earlier states and to relate to them. This allows
+us to have historical evidence of digital assets.
+
+### Page
+
+A page is a visible representation of a file containing multiple or a single
+revision attributed to a shared origin. A page view could also be used to
+create a new revision by a used service which interfaces with the file for
+manipulation. In AQP all revisions share a global URI hash to
+attribute them together called a genesis hash.
+
+### Transaction Security
+
+Transaction security is an economic measure of the level of integrity assurance
+for a transaction. It is defined as the cost required to forge a transaction.
+The transaction security can be increased by cryptographic security and by strong
+replication of transactions. Public distributed ledger systems are highly suitable
+for providing very high level of transaction security at the cost of privacy
+and immutability (data can't be changed or deleted). Today, public distributed
+ledgers such as Bitcoin and Ethereum provide the highest level of transaction
+security.
+
+### Data Asset
+
+Data turns into a valuable asset if it is accounted for. In an accounted form
+it can be easily priced, exchanged or traded.
+
+### Data Vault
+
+Software used to store and manage data with an account. The software must apply
+a secure architecture and measures for keeping data assets safe. This is
+achieved through encryption, strong authentication and restrictive access to
+keep data private by default.
+
+See [Design Principles / Separation of Account and
+Service](design-principles.md#separation-of-account-and-service)
+
+
+### Witness
+
+We define witnessing as the process of observing an event. A witness is judged
+by their capability to recollect and share an observed event. In other words,
+witnessing is the process of storing input data for later playback to provide
+data symmetry around an event.
+
+### Witness Network
+
+The digital service in a distributed ledger or similar infrastructure which
+provides transaction security and data symmetry for shared data within the
+network. An example of a witness network would be Ethereum.
+
+E.g. Ethereum can be used to store a digital fingerprint of a domain snapshot
+of a data vault. A domain snapshot is the Merklized state of all witnessed hash
+chains being present in the data vault. It is required to pay the witness
+network for its service. In the case of Ethereum, this is done using 'Ether'.
+This in return allows the account owner to create an 'undeniable' proof that a
+specific revision and the previous revisions within a hash chain has existed.
+
+### Portable Hash Chain
+
+A hash chain is a linked list where each node contains the cryptographic hash
+of the previous node content. A portable hash chain is a hash chain that can be
+moved from one host to another.
+
+### Immutable Hyperlinks / Transclusions
+See [Immutable Hyperlinks](immutable-hyperlinks.md).
+
+## Specification
+
+To identify a revision with a unique fingerprint, we hash its content using
+the SHA3-512 hashing function which always has a 128 characters long
+output. This value can be used as a checksum to verify data integrity.
+The checksum can then be entangled in a hash-chain to create an
+immutable track record. We then calculate multiple properties associated
+with the revision, in addition to its content checksum. In the next section,
+we differentiate between REQUIRED and OPTIONAL properties for each
+revision.
+
+All hashes are based on
+[SHA3-512](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf).
+This encryption standard is used to construct [portable hash
+chains](#portable-hash-chain), which are serializing of data and its history in
+a form that can be verified, and independent of location. The portable hash
+chain can be fully or partially exchanged between hosts depending on the
+application of the data. From here on, we refer the term "portable hash chain"
+as "hash chain."
+
+In order to implement the AQP, we need to utilize a software that is capable of
+generating portable hash chains and facilitating actions described in the
+AQP. We call those nodes which facilitate the Aqua Protocol 'Aqua Data
+Vaults' which given their role should be implemented as a software with secure
+architecture and measures for keeping data assets safe. This is achieved
+through encryption, authentication and restrictive access to keep data private
+by default.
+
+# Revision Verification Structure
+
+A revision is RECOMMENDED to be limited to 50 Megabytes to ensure that the verification can take
+place on all imaginable clients which might have slow network connectivity, low
+memory, low cpu performance. Once a revision is verified, the next one can be
+verified. Clients with more performance will be able to parallelize the
+verification. Larger files can be chunked to be placed in multiple revisions.
+
+A verified data structure is identified by its URI `verification_hash`
+and grouped by its `genesis_hash`. The first revision created will
+create a `verification_hash` which has a special meaning and is
+referred to as the `genesis_hash`. All future revisions building upon
+that first revision will be attributed to the `genesis_hash` as a unique
+URI for grouping the revisions. This allows us to understand if two
+revisions are related without needing to verify the whole history of the
+hash chain.
+
+## Verification Hash
+`revision_verification_hash` is the hash sum over the string formed by the
+following operation
+
+```
+revision_verification_hash = calculate_hash_sum(
+    content_hash + metadata_hash +
+    signature_hash + witness_hash
+)
+```
+The content_hash and metadata_hash are REQUIRED.
+The signature_hash and witness_hash are OPTIONAL.
+
+## Content
+
+A content hash is the check sum for all content data fields which simplifies
+hash construction and the ability to identify data corruption in this part of
+the verification structure.
+`content_hash` is the hash sum over the string formed by following operation:
+
+```
+contentObj = {
+    "main": content,
+    "extension_key_1": content_extension_1,
+    "extension_key_2": content_extension_2,
+    ...,
+    "extension_key_n": content_extension_n,
+}
+sortedContenObj = sort_by_keys(contentObj)
+content_hash = calculate_hash_sum(
+    sortedContenObjValue_1,
+    sortedContenObjValue_2,
+    ...,
+    sortedContenObjValue_n,
+)
+```
+Description:
+- content: The string input of the visible page using UTF-8 encoding schema.
+  REQUIRED.
+- content extensions: more data MAY be encapsulated in addition to the main
+  content. These could be a file, a stateful link, or a signature. The content
+  extensions are sorted alphabetically by their key names. OPTIONAL.
+- The `sort_by_keys` function sorts the content object elements by their keys
+  alphabetically. The JSON input MAY be a canonical JSON, in which the keys
+  order is already alphabetical, but we sort it always to ensure the order is
+  correct.
+
+To see an example of `contentObj` of a revision, see the [example](#Example)
+section,
+
+## Metadata
+
+```
+metadata_hash = calculate_hash_sum(
+    domain_id + time_stamp + previous_verification_hash
+)
+```
+
+Description:
+- metadata_hash: The check sum for all metadata data fields. It simplifies the
+  hash construction and the ability to identify data corrupton in this part of
+  the verification structure.
+- domain_id: 10 digits hexadecimal randomly generated to identify the host
+  system that runs the AQP service.
+- time_stamp: time-stamp of the current revision (decimal numbers
+  YYYYMMDDHHMMSS e.g. 20211128092608).
+- previous_verification_hash: previous_revision_verification_hash if present
+
+## Signature
+
+A signature in AQP is a cryptographic signature generated by public-private key
+pair. The protocol should be abstract, where it will support 'Method' in later
+iterations. This will allow us to use different types of implementations such
+as: PGP signatures, Ethereum, or Bitcoin
+[wallet](https://en.wikipedia.org/wiki/Cryptocurrency_wallet)'s signatures.
+
+In this specification, we use the AQP reference implementation's signing
+method, which is via an Ethereum wallet.
+
+```
+signature_hash = calculate_hash_sum(
+    signature + public_key
+)
+```
+
+The signature is generated by a wallet signing the following message:
+
+```
+I sign the following page verification_hash:" +[0x<revision_verification_hash>]
+```
+
+The `revision_verification_hash` MUST NOT be signed twice by the same key, to
+avoid information leakage of the private key.
+
+For example, a wallet with an address of
+`0xa2026582b94feb9124231fbf7b052c39218954c2` and a public key of
+`0x041518581af65749b3ddc69889df3e5d229bc8ad79279a07ddeb368ade5e1592368c5ff3b69143d7a1e7cf64f7d0774a6724e6eaf138d318d07ddc30f6081ca89a`
+signs the following message:
+```
+I sign the following page verification_hash:" +[0x9dab72c7635043452958c4cc2902f48ef7c4ae437058280197c6a2736ab9635f799cbf190d9d07dd76589055a8ad64e61c6bebd1487994207d4cb7918b471f57]
+```
+which results in the following signature:
+```
+0x19b5697c4541509c1add3db9fc2f678b7b80325ebffd4d945ca00db5f8b3f98a142edbf9a7faa0a0c7ec4f10ae1b64cf2ea62ce3ee73ed2e37ce916d6bd016601c
+```
+
+## Witness
+
+Witnessing allows one to undeniably prove the existence of a dataset
+(represented as a portable hash chain). To complete the witnessing process, a
+Domain Snapshot is created. This is a collection of all revision hashes within
+one domain. A Merkle tree is used to unify all hashes of the latest revisions
+of all portable hash chains within a domain into a single hash value.
+
+The `witness_event_verification_hash` is written to the [Witness
+Network](#witness-network). The
+`witness_event_verification_hash` is then generated by using the
+`domain_snapshot_genesis_hash` and the `merkle_root` hash together. This
+allows the page snapshot itself to also be witnessed.
+
+A single revision which has been witnessed, will not store the whole Merkle
+tree, but only its relevant path to the Merkle root. Performing a Merkle proof
+means that its revision is included in the Merkle tree.
+
+```
+witness_hash = calculate_hash_sum(
+    domain_snapshot_genesis_hash + merkle_root +
+    witness_network + witness_event_transaction_hash
+)
+```
+
+Description:
+- `witness_hash`: the checksum for all signature data fields. It simplifies hash
+  construction and identifies data corruption in this part of the verification
+  structure.
+- `domain_snapshot_genesis_hash`: Refers to the URI of the page which stores the
+  whole Merkle tree of the witness event.
+- `merkle_root`: the root hash of the Merkle tree. The presence of the
+  Merkle tree allows for lazy verification to reduce required computational
+  steps for verification by skipping the Merkle proof as both datasets can be
+  entangled in the chain by a newer revision and therefore be immutable.
+- `witness_network`: specifies which witness network was used to store the
+  `witness_event`. The following structure shows an AQP hash chain with 3
+  revisions which wrote the `witness_event_verification_hash` into the
+  witness network.
+
+Additional context:
+- relative-merkle-tree-proof: This provide the relative path with all required
+  hashes to verify the Merkle tree root from the first node which the
+  `verification_hash` of the revision as a starting point. 
+- `witness_event_verification_hash`: It is calculated by taking the sha3-512
+  checksum of the `domain_snapshot_genesis_hash` and the `merkle_root` hash.
+  This ensures that the`domain_snapshot` itself will be witnessed.
+
+
+## Example
+The following structure shows an AQP hash chain with 3 revisions:
+
+### 1st Revision
+This revision features all REQUIRED (content, metadata) and all OPTIONAL
+(signature, witness) AQP data fields.
+```json
+{
+  "verification_context": {
+    "has_previous_signature": false,
+    "has_previous_witness": false
+  },
+  "content": {
+    "rev_id": 358,
+    "content": {
+      "main": "First revision text",
+      "transclusion-hashes": ""
+    },
+    "content_hash": "ae188be061822074716b43925b3ffa90a03c530342be73c3440d8f022765ffebbb56c16552f13cd1ea61f876d2d892e0a73dcba5173fc47d371b4251d6c094da"
+  },
+  "metadata": {
+    "domain_id": "acfa9f682e",
+    "time_stamp": "20220116090401",
+    "previous_verification_hash": "",
+    "metadata_hash": "d1025fd8866d9367735d2f6617b3aa87401e08d726f311cdf834ea9540955bfc59b428676bce5d47d5fed381394ab2ed838c5eecfc9cb37313705374752c247d",
+    "verification_hash": "9dab72c7635043452958c4cc2902f48ef7c4ae437058280197c6a2736ab9635f799cbf190d9d07dd76589055a8ad64e61c6bebd1487994207d4cb7918b471f57"
+  },
+  "signature": {
+    "signature": "0x19b5697c4541509c1add3db9fc2f678b7b80325ebffd4d945ca00db5f8b3f98a142edbf9a7faa0a0c7ec4f10ae1b64cf2ea62ce3ee73ed2e37ce916d6bd016601c",
+    "public_key": "0x041518581af65749b3ddc69889df3e5d229bc8ad79279a07ddeb368ade5e1592368c5ff3b69143d7a1e7cf64f7d0774a6724e6eaf138d318d07ddc30f6081ca89a",
+    "wallet_address": "0xa2026582b94feb9124231fbf7b052c39218954c2",
+    "signature_hash": "cc42f40c4452a25f9ea48a97b6dfba6f69dec347db5c1adf25475b0b4a5da36af3fe48bf9f7ea0dda6bbed9367dc9c82834dbf8cc7f6220fd190cdb729d3f4ec"
+  },
+  "witness": {
+    "witness_event_id": "2",
+    "domain_id": "acfa9f682e",
+    "domain_snapshot_title": "Data Accounting:DomainSnapshot:b33afaf53ed3d245f0319d4997db2032de9d77791ae11f5125189815eef44f2fba9633bebe2e57bc5ea4b0424872ed02fa6aa9ad909f467726b536933bf715bf",
+    "witness_hash": "9707780cebcf6ed02b40bd7e6956b35ffe142a2b5f8cee15c703a652fa389eb118ef101e2f463e95663aa4013a42d9f1ce4a83eed3528b02bf98626e7599bbd8",
+    "domain_snapshot_genesis_hash": "b33afaf53ed3d245f0319d4997db2032de9d77791ae11f5125189815eef44f2fba9633bebe2e57bc5ea4b0424872ed02fa6aa9ad909f467726b536933bf715bf",
+    "merkle_root": "14f26d7dc0be77afff9131c03cab39a2fa9e1270c6face3fdc35b9b4b4ac4550d048c356a4713568c42411c3e7fe3553ec7b993c9bd7da97cb976e843d7e4d29",
+    "witness_event_verification_hash": "67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae",
+    "witness_network": "goerli",
+    "smart_contract_address": "0x45f59310ADD88E6d23ca58A0Fa7A55BEE6d2a611",
+    "witness_event_transaction_hash": "0x5900103adc09a789fd3bd7c23dfeff1ffce41dfba0a52b525ecc032e9279eb1f",
+    "sender_account_address": "0xa2026582b94feb9124231fbf7b052c39218954c2",
+    "source": "default",
+    "structured_merkle_proof": [
+      {
+        "witness_event_verification_hash": "67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae",
+        "depth": "4",
+        "left_leaf": "2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c",
+        "right_leaf": "9dab72c7635043452958c4cc2902f48ef7c4ae437058280197c6a2736ab9635f799cbf190d9d07dd76589055a8ad64e61c6bebd1487994207d4cb7918b471f57",
+        "successor": "789e508ccb23fe053b628cebc19a2d32f34e6aa21e878e8611f7c14d891625c7b2e243b3c3105b98295333b9183e5ea272a055a84ab65ad927f7fd9c27aae48e"
+      },
+      {
+        "witness_event_verification_hash": "67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae",
+        "depth": "3",
+        "left_leaf": "789e508ccb23fe053b628cebc19a2d32f34e6aa21e878e8611f7c14d891625c7b2e243b3c3105b98295333b9183e5ea272a055a84ab65ad927f7fd9c27aae48e",
+        "right_leaf": "c16a966333cd22ff3497875a62202874221c1dae2e74b4351d058910f8d37160be480fce9aab4ec5e725beb695509f0fd65ae581568c6f1ae25eb4f1440b287f",
+        "successor": "80d7549af24e9a6bdfc32cefe0536d6528d665cc8e65859ef4cff87270f3db8d9b95aaecc167e10c9b5be9ce3ab36d8d880c3a518e1c5eb899ca9d95af24e9db"
+      },
+      {
+        "witness_event_verification_hash": "67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae",
+        "depth": "2",
+        "left_leaf": "80d7549af24e9a6bdfc32cefe0536d6528d665cc8e65859ef4cff87270f3db8d9b95aaecc167e10c9b5be9ce3ab36d8d880c3a518e1c5eb899ca9d95af24e9db",
+        "right_leaf": "f4e189a08b486253ea0a5cc7bf7150055e738898115c4caf00e45634d6925539d51852409d1fe9108469e9b15668b940f3369300bb27cc292d1fabc0c07cd593",
+        "successor": "e227dd97e5166364483b41f058f0d176e3a50a7510299038b09ae3aef2cbafb26c787afad82563a945b433fa2d1279af3535755235ab69d6e5ab089179177c14"
+      },
+      {
+        "witness_event_verification_hash": "67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae",
+        "depth": "1",
+        "left_leaf": "e227dd97e5166364483b41f058f0d176e3a50a7510299038b09ae3aef2cbafb26c787afad82563a945b433fa2d1279af3535755235ab69d6e5ab089179177c14",
+        "right_leaf": "780f3eb08f24022be4463be141bcda6a33a157cd0fd44cf209312b8427ac4036637a63d239526555128a4e7f4bb588ebfdbd8a8cc7d797038e29b852a4fae26c",
+        "successor": "f3bd4e82b1e3d304005a7ddf4ab940f3e4e1cf099ca1c058454c431ed3feb0674c044e53150eb5691073ba58a3491565f72f6a6c2a24562ea080b569b4496c9f"
+      },
+      {
+        "witness_event_verification_hash": "67e187411f1e514f232ae2858168da29b15ddfd07523e7a7618bfbf91c583f54fe8e850146120539a92a63ce6138f96599fb8a46ed492e428fe6fde9b9ea82ae",
+        "depth": "0",
+        "left_leaf": "f3bd4e82b1e3d304005a7ddf4ab940f3e4e1cf099ca1c058454c431ed3feb0674c044e53150eb5691073ba58a3491565f72f6a6c2a24562ea080b569b4496c9f",
+        "right_leaf": "4a0c120fbdd6219b774eb2cb2076f4050d606b621e384c3ec645be0e5dbcdac3132f1f2acb531fa5ff62429907b77cf8d29a760be3765eb4decd83949a2925f8",
+        "successor": "14f26d7dc0be77afff9131c03cab39a2fa9e1270c6face3fdc35b9b4b4ac4550d048c356a4713568c42411c3e7fe3553ec7b993c9bd7da97cb976e843d7e4d29"
+      }
+    ]
+  }
+}
+```
+
+### 2nd Revision
+This revision entangles all data fields of the previous revision. As the
+calculation of the revision_verification hash depends on the revision of the
+previous revision, it is shown in verification_context.
+
+```json
+{
+  "verification_context": {
+    "has_previous_signature": true,
+    "has_previous_witness": true
+  },
+  "content": {
+    "rev_id": 362,
+    "content": {
+      "main": "First revision text",
+      "signature-slot": "[\n    {\n        \"user\": \"0xa2026582b94feb9124231fbf7b052c39218954c2\",\n        \"timestamp\": \"20220116090439\"\n    }\n]",
+      "transclusion-hashes": ""
+    },
+    "content_hash": "9732084a45fd344d63687ccf9b5cd942f99ffe1debd11622b05d0cd24a2de3e5608d5f5121bdd7559c0a2d39067f9258c4f9612e44728df2e8d9026a88ed650c"
+  },
+  "metadata": {
+    "domain_id": "acfa9f682e",
+    "time_stamp": "20220116090439",
+    "previous_verification_hash": "9dab72c7635043452958c4cc2902f48ef7c4ae437058280197c6a2736ab9635f799cbf190d9d07dd76589055a8ad64e61c6bebd1487994207d4cb7918b471f57",
+    "metadata_hash": "8df483539e2f81e64c9b9df0c7e13ae7778947b5defef860fbaed1260eade794999839bb254ea5006a5d4b6a89a37980ab576dc546d6336518d65b80bf2a5cb5",
+    "verification_hash": "296347471b33f3d3c69cc6e0699d80b4cb68ffc79c3ecce96beb659fa324fab1de7a888932fbfb7c60bb8cc83c9445ce15532987a7b59440cada649681618293"
+  },
+  "signature": {
+    "signature": "",
+    "public_key": "",
+    "wallet_address": "",
+    "signature_hash": ""
+  },
+  "witness": null
+}
+```
+
+### 3rd Revision
+This revision features a transclusion-hash for an immutable link to another
+revision.
+
+```json
+{
+  "verification_context": {
+    "has_previous_signature": false,
+    "has_previous_witness": false
+  },
+  "content": {
+    "rev_id": 363,
+    "content": {
+      "main": "First revision text\n\n[[File:Logo_inblockio.png]]",
+      "signature-slot": "[\n    {\n        \"user\": \"0xa2026582b94feb9124231fbf7b052c39218954c2\",\n        \"timestamp\": \"20220116090439\"\n    }\n]",
+      "transclusion-hashes": "[{\"dbkey\":\"Logo_inblockio.png\",\"ns\":6,\"verification_hash\":\"9b2b3cafb90a07433a2b61885a9e64641a99b1e9024cf53b640501d3706b142fed7bc372300973137ef9d92584fac70976c3889d5610abcfe1f187c248263a56\"}]"
+    },
+    "content_hash": "14b8256ccd5fa1d883983317f92f428eadb52f699f476b9be69f14c6892b41979ff7b5b7a7a978177985d6aaa0bcfd9857a2646aedc4cbb3299373daa647814b"
+  },
+  "metadata": {
+    "domain_id": "acfa9f682e",
+    "time_stamp": "20220116090556",
+    "previous_verification_hash": "296347471b33f3d3c69cc6e0699d80b4cb68ffc79c3ecce96beb659fa324fab1de7a888932fbfb7c60bb8cc83c9445ce15532987a7b59440cada649681618293",
+    "metadata_hash": "09688c05a83bb74bb255fb0c571cb6314b65f5b7f00750547a2c43f4959d4702ae2aec019c6fb4b0e5d23adea87fd456b0eaffc6ae271163a1fa45b4bae54230",
+    "verification_hash": "b35894d74dfcf8b41ff95eed97705e1acf9081021e0d478d8645cb04b8a0b4a013ee8f7fb6e140d149f2c92f20bba984fad5535938a5e36ae6a799a18343b806"
+  },
+  "signature": {
+    "signature": "",
+    "public_key": "",
+    "wallet_address": "",
+    "signature_hash": ""
+  },
+  "witness": null
+}
+```
+
+# API Endpoints
+
+The AQP provides 3 API endpoints which return data from a host that runs the
+AQP:
+
+## Get Hash Chain
+`/get_hash_chain_info/{identifier}?identifier=<title or genesis hash>`  
+Input:
+- `identifier_type`: the value must either be "title" or "genesis_hash"
+- `identifier`: the title or genesis_hash string, e.g. "Main Page" or "02c3c2...215d8d"
+Returns: all context for the requested hash_chain.
+
+Example:
+
+API Request:
+`/get_hash_chain_info/genesis_hash?identifier=dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26`
+
+API Response:
+```json
+{
+  "genesis_hash": "dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26",
+  "domain_id": "acfa9f682e",
+  "latest_verification_hash": "2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c",
+  "site_info": {
+    "sitename": "Personal Knowledge Container",
+    "dbname": "my_wiki",
+    "base": "http://localhost:9352/index.php/Aqua",
+    "generator": "MediaWiki 1.37.1",
+    "case": "first-letter",
+    "namespaces": {
+      "0": {
+        "case": true,
+        "title": ""
+      },
+     "6942": {
+        "case": true,
+        "title": "Data Accounting"
+      }
+    },
+    "version": "0.3.0"
+  },
+  "title": "Aqua",
+  "namespace": 0,
+  "chain_height": 3
+}
+```
+
+## Get Revision Hashes
+`/get_revision_hashes/{verification_hash}`
+Input:
+- `verification_hash`
+Returns: the revision requested if it exists and/or a list of any newer
+revision than the one requested.
+
+Example:
+
+API Request:
+`/get_revision_hashes/dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26`
+
+API Response:
+```json
+[
+  "dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26",
+  "f483d7746f67e7099099bcfa8ea5a93148251c598857e8fad21ce842da62794467067802ef9e818d240cd3312a3346a769f363145a87bfc1eeae19fe8d21b328",
+  "2554fb53531f4de26ff3ad1fb8c61feea6ea47c3f13c4abda385c46ef8541361f7eee42433050281714a3900115f04fe52b5a8d781a71c4c439c5de6b91cbe3c"
+]
+```
+
+## Get Revision
+`/get_revision/{verification_hash}`
+Input:
+- `verification_hash`
+Returns: the revision content together with its verification data
+
+Example: See example above.
+
+API Request: `/get_revision/dffd37be12adc9e774b51aa712f7c5bfc09f48b083540d8ca55f91f317e8685bf09daf004f7c841e53732b8c7992de3f3b9b79350d13570c3b46803ba5119c26`
+
+# Verification Process
+
+The verification process is a redo of the verification data generation
+process, and additionally a comparison of their results.
+
+**Verification of Content**
+
+All hashes are recalculated in a separate client implementation, and
+compared with the ones sent via the API. If the data was not altered or
+corrupted; nor was there a difference in the process to calculate the
+hash, they will match. This will create a high level of assurance that
+the integrity and history of the portable hash chain in question has not been
+altered.
+
+**Verification of Account**
+
+We cryptographically verify that the revision signature is indeed generated by the account specified in the verification data.
+
+**Verification of Time**
+
+To verify that the witness event included in a revision is correct, a
+lookup and comparison of the `witness_event_verification_hash` on-chain is
+performed and compared with the recalculated event.
+
+**Reference Implementation**
+
+|                                    |                                                                    |
+|------------------------------------|--------------------------------------------------------------------|
+| Command-Line-Verification-Tool     | [https://github.com/inblockio/aqua-verifier-js](https://github.com/inblockio/aqua-verifier-js) |
+| Chrome Extension Verification Tool | [https://github.com/inblockio/aqua-verifier-webextension](https://github.com/inblockio/aqua-verifier-webextension) |
+
+
+
+
+# Appendix
+
+The following content is informational and not part of the
+specification. It should help to better understand utility, context and
+services which can be built on top of AQP.
+
+## Aqua Protocol v1.1 Changes
+
+Moving over to revision based verification. This allows:
+
+-   Bulk / in parallel verification; ensuring logarithmic verification
+    times, not linear increasing verification times with longer history.
+    In short: Much faster and scalable.
+-   Single revision and range verification (you want to verify a
+    specific part of the content-chain)
+    -   This is useful for verification of identity claims, where
+        trusted parties have signed the claim and for the validator it's
+        sufficient to see that signature.
+-   This allows direct verification after every edit via the Guardian.
+    This is the preparation in the interaction to provide services
+    through the [Guardian](guardian.md).
+-   Changing the design to include transclusions e.g. this allows the
+    verification of subpages via their stateful links /
+    revision_verification_hashes
+    -   This also allows the inclusion of media files in the
+        verification process
+    -   You can upload pictures, PDF's, Word-Documents and have them
+        automatically included in the aqua protocol and therefore in the
+        verified data-structure
+-   Introduction of verification_context which indicates if the previous
+    revision has signature or witness data, or if the current revision
+    has transcluded resources. This will build the correct verification
+    structure before verification.
+
+Change in the data-structure:
+
+-   when requesting a revision this is done via the
+    GetRevisionHandler.php
+-   the previous verification hash is always served as well
+-   if signature or witness data is present in the previous revision,
+    there is a flag (1/0) that this revision depends on the previous
+    revision
+-   transcluded resources will be added to the content hash for
+    verification
+
+## Data Accounting Protocol v1.2 \[TBD\]
+
+-   Generalization of the Signature-Metadata to inform which signature
+    method was used.
+    -   GPG Signatures
+    -   BTC Wallet Signatures
+    -   Ethereum Wallet Signatures
+    -   Done by: Displaying method used for signing, displaying
+        underlying architecture.
+-   Including Account as part of the verified data structure
+-   Defining maximum payload size per revision
+
+## Services on AQP (Not yet implemented, exploration)
+
+- AQP-DACS: [Domain](#domain) Access Control System
+ -   See: [Guardian](guardian.md) (Acting similar to a WebApplication-Firewall)
+
+- ANS: Name-System and Name-Registry.
+ - See [Aqua Name Resolution](aqua-name-resolution.md)
+
+- AQP-SSI: Self-Sovereign-Identity Protocol for [Identity
+    Claim](aqua-identity-protocol.md#self-issued-identity-claims) management
+ - See [Aqua Identity Protocol](aqua-identity-protocol.md)
+
+- AQP Delegated Witnessing
+    - See [Delegated Witnessing](delegated-witnessing.md)
+
+## Similar Projects
+
+None of the listed projects apply the concepts of versioning to their documents,
+the concept of portable hash chains, the concept of personal data vaults for data
+management in comparison with the AQP reference implementation.
+
+This following list is not exhaustive:
+- [Surety](http://surety.com/)
+    The oldest blockchain-like timestamping service which has been publishing
+    to the New York Times since 1995.
+- [OpenTimestamp](https://opentimestamps.org/)
+    A free and open-source service provided by Peter Todd using the Bitcoin
+    network as a distributed cryptographic clock. The AQP MAY use OpenTimestamp
+    as a witness network.
+- [OriginStamp](https://originstamp.com/)
+    A company providing paid timestamping services for their customers.
+    It looks very similar to OpenTimestamps with open-source client libraries.
+- [Factom Protocol](https://www.factomprotocol.org/)
+    A service which creates an architecture with an extra layer of blockchain,
+    to provide an extra layer of trusted parties while providing their own
+    token. In our opinion, it introduces unnecessary complexity and
+    intermediaries as dependencies compared to the AQP.
+- [OpenAttestation](https://www.openattestation.com/)
+    An implementation of a timestamping service for document certification. One
+    application of it is for secure digital vaccination certificates by the
+    Singaporean government. They use the MetaMask Ethereum wallet for signing
+    documents making it the most similar project to AQP to our knowledge.
+
+## Blockchain Context
+
+DISCLAIMER: AQP is not a permissionless distributed ledger. In order for the
+AQP to be valuable and working, a single node implementation and single node
+deployments are sufficient, and do not require the witnessing part. The AQP MAY
+benefit from being published to a distributed ledger technology (DLT)) to
+achieve a witness event with high transaction security. AQP does not have a
+token nor is it distributing data by default.
+
+As some concepts are very similar as those used in DLT's, please refer to the
+following:
+
+A portable hash chain and its revisions are similar to a blockchain structure
+and its blocks, which has its own root hash and a set of transactions which
+are included inside.
+
+| **Blockchain Term** | **AQP Term**       | **Explanation**                                                                                                                                                                       |
+|----------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Transaction**      | **Input Data**    | In a blockchain, it's a signed transaction. In AQP, it's all the input data provided to calculate the respective content slot hashes.                                                 |
+| **Block**            | **Revision**      | A block contains the Merklized list of transactions. A revision contains various hashed data inputs such as:                                                                          |
+|                      |                    | - Content slots                                                                                                                                                                       |
+|                      |                    | - Metadata data                                                                                                                                                                       |
+|                      |                    | - Signature data                                                                                                                                                                      |
+|                      |                    | - Witness data                                                                                                                                                                        |
+| **Genesis Block**    | **Genesis Revision** | The first object in the hash chain/blockchain.                                                                                                                                         |
+| **Blockchain**       | **Hash Chain**    | The hash chain is not distributed but resides by default only in the local PKC. It is not a distributed ledger and lacks a consensus algorithm to create a shared truth between nodes. |
+
+
+### A side note
+
+It has not escaped our notice that the provided AQP improves the existing
+process of double-entry bookkeeping and provides a foundation for a new data
+economy. This also allows to create unforgeable invoices which can be clearly
+attributed to its sender, avoiding fraud. This is one of many other use cases,
+e.g. providing trusted news via revision-controlled journalism.
+1a:["$","$L20",null,{"meta":{"title":"Whitepaper","linkTitle":"Whitepaper","description":"High level outline of Aqua Protocol (AQP) specification","content":"$21","reading_time":20,"word_count":3993},"content":"$22","previousDoc":{"title":"Aqua Name Resolution (ANS)","slug":"name-resolution"},"version":"v1.0.0","slug":"whitepaper","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}]
+1b:["$","$L23",null,{"items":[{"id":"introduction","title":"Introduction","level":2},{"id":"motivation","title":"Motivation","level":2},{"id":"terminology","title":"Terminology","level":2},{"id":"wallet","title":"Wallet","level":2},{"id":"account","title":"Account","level":3},{"id":"domain","title":"Domain","level":3},{"id":"revision","title":"Revision","level":3},{"id":"page","title":"Page","level":3},{"id":"transaction-security","title":"Transaction Security","level":3},{"id":"data-asset","title":"Data Asset","level":3},{"id":"data-vault","title":"Data Vault","level":3},{"id":"witness","title":"Witness","level":3},{"id":"witness-network","title":"Witness Network","level":3},{"id":"portable-hash-chain","title":"Portable Hash Chain","level":3},{"id":"immutable-hyperlinks--transclusions","title":"Immutable Hyperlinks / Transclusions","level":3},{"id":"specification","title":"Specification","level":2},{"id":"verification-hash","title":"Verification Hash","level":2},{"id":"content","title":"Content","level":2},{"id":"metadata","title":"Metadata","level":2},{"id":"signature","title":"Signature","level":2},{"id":"witness","title":"Witness","level":2},{"id":"example","title":"Example","level":2},{"id":"1st-revision","title":"1st Revision","level":3},{"id":"2nd-revision","title":"2nd Revision","level":3},{"id":"3rd-revision","title":"3rd Revision","level":3},{"id":"get-hash-chain","title":"Get Hash Chain","level":2},{"id":"get-revision-hashes","title":"Get Revision Hashes","level":2},{"id":"get-revision","title":"Get Revision","level":2},{"id":"aqua-protocol-v11-changes","title":"Aqua Protocol v1.1 Changes","level":2},{"id":"data-accounting-protocol-v12-tbd","title":"Data Accounting Protocol v1.2 \\[TBD\\]","level":2},{"id":"services-on-aqp-not-yet-implemented-exploration","title":"Services on AQP (Not yet implemented, exploration)","level":2},{"id":"similar-projects","title":"Similar Projects","level":2},{"id":"blockchain-context","title":"Blockchain Context","level":2},{"id":"a-side-note","title":"A side note","level":3}],"config":"$1a:props:config"}]
+1c:["$","$L24",null,{}]
+1d:["$","$L25",null,{}]
+1e:["$","$L26",null,{}]
+1f:["$","$L27",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@28"}]}]
+28:null

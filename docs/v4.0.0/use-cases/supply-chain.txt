@@ -1,20 +1,26 @@
 1:"$Sreact.fragment"
-2:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-3:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-5:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
-6:"$Sreact.suspense"
-8:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"ViewportBoundary"]
-a:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"MetadataBoundary"]
-c:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-:HL["/_next/static/chunks/8a80e7184ad3a13f.css","style"]
-:HL["/_next/static/chunks/ec0800f16b1ae8cd.css","style"]
+2:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"ConfigProvider"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TabProvider"]
+4:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+5:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+6:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"VersionNotFound"]
+a:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+:HL["/_next/static/chunks/a06cf6f745569492.css","style"]
+:HL["/_next/static/chunks/b0e9cc9922d4f147.css","style"]
 :HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"P":null,"b":"k8-fwt2fbTlxLBvWFtXyi","c":["","docs","v4.0.0","use-cases","supply-chain"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v4.0.0","d"],{"children":[["slug","use-cases/supply-chain","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/8a80e7184ad3a13f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/ec0800f16b1ae8cd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L4",[["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true,"nonce":"$undefined"}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],{},null,false,false]},[["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}],[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$L8",null,{"children":"$@9"}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":"$@b"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$c",[]],"S":true}
-d:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
-e:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
-f:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
-10:T1ef1,
+0:{"P":null,"b":"_ePiRrooneby3ghoRNSHI","c":["","docs","v4.0.0","use-cases","supply-chain"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v4.0.0","d"],{"children":[["slug","use-cases/supply-chain","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/b0e9cc9922d4f147.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/eb22c92016909501.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/d07752feff0a7168.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L7",{},null,false,false]},["$L8",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+c:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
+d:"$Sreact.suspense"
+f:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"ViewportBoundary"]
+11:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"MetadataBoundary"]
+7:["$","$1","c",{"children":["$Lb",null,["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]]}]
+8:["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}]
+9:["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$d",null,{"name":"Next.Metadata","children":"$L12"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+13:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLoading"]
+14:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayoutWrapper"]
+15:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"Header"]
+16:T1ef1,
 
 The **Aqua Tree** is the primary data structure in Aqua Protocol. It serves as the container for all revisions, their relationships, and associated metadata. An Aqua Tree represents a complete, self-contained unit that can be stored, transmitted, and verified independently.
 
@@ -270,7 +276,7 @@ For large trees:
 - [Signature Revision](/schema_reference/signing_revision) - Cryptographic signatures
 - [Witness Revision](/schema_reference/witness_revision) - Blockchain anchoring
 - [Link Revision](/schema_reference/link_revision) - Connecting trees
-- [File Index](/schema_reference/file_index) - Content hash mapping11:T1ef1,
+- [File Index](/schema_reference/file_index) - Content hash mapping17:T1ef1,
 
 The **Aqua Tree** is the primary data structure in Aqua Protocol. It serves as the container for all revisions, their relationships, and associated metadata. An Aqua Tree represents a complete, self-contained unit that can be stored, transmitted, and verified independently.
 
@@ -526,7 +532,7 @@ For large trees:
 - [Signature Revision](/schema_reference/signing_revision) - Cryptographic signatures
 - [Witness Revision](/schema_reference/witness_revision) - Blockchain anchoring
 - [Link Revision](/schema_reference/link_revision) - Connecting trees
-- [File Index](/schema_reference/file_index) - Content hash mapping12:T1b1f,
+- [File Index](/schema_reference/file_index) - Content hash mapping18:T1b19,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -534,7 +540,7 @@ For large trees:
 <Callout type="info">
 **Powered by Cryptography, Not Blockchain**
 
-Aqua Protocol is made possible by crypto—as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
+Aqua Protocol is made possible by crypto as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
 
 <Badge icon="circle-check" color="green">
  Account & Verify Data in Seconds
@@ -561,7 +567,7 @@ Trust can be built by relying on hashing and encryption mechanisms or by delegat
 
 ## How It Works
 
-At its core, Aqua creates portable hash-chains—called **AquaTrees**—that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
+At its core, Aqua creates portable hash-chains called **AquaTrees** that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
 
 ### Key Features
 
@@ -740,7 +746,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-13:T1b1f,
+19:T1b19,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -748,7 +754,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 <Callout type="info">
 **Powered by Cryptography, Not Blockchain**
 
-Aqua Protocol is made possible by crypto—as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
+Aqua Protocol is made possible by crypto as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
 
 <Badge icon="circle-check" color="green">
  Account & Verify Data in Seconds
@@ -775,7 +781,7 @@ Trust can be built by relying on hashing and encryption mechanisms or by delegat
 
 ## How It Works
 
-At its core, Aqua creates portable hash-chains—called **AquaTrees**—that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
+At its core, Aqua creates portable hash-chains called **AquaTrees** that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
 
 ### Key Features
 
@@ -954,26 +960,21 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-14:T2f93,
+1a:T2e36,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
-  <TabsList>
-      <TabsTrigger value="js">JavaScript/TypeScript (v3)</TabsTrigger>
-      <TabsTrigger value="rust">Rust (V4)</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     **Stable** - Production-ready SDK for Node.js, Web, and React Native
 
     Best for: Web applications, existing JavaScript projects
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ---
@@ -1348,18 +1349,13 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
 Want to see the full workflow including signing and witnessing?
 
 <Tabs defaultValue="js">
-  <TabsList>
-    <TabsTrigger value="js">Javascript</TabsTrigger>
-    <TabsTrigger value="rust">Rust</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ## Try Aquafier
@@ -1401,26 +1397,21 @@ Not ready to code yet? Try our web-based demo:
 <Callout type="note" >
 **Ready to build?** Start with the [Development Guide](/development) for detailed instructions on signing, witnessing, and advanced features.
 </Callout  >
-15:T2f93,
+1b:T2e36,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
-  <TabsList>
-      <TabsTrigger value="js">JavaScript/TypeScript (v3)</TabsTrigger>
-      <TabsTrigger value="rust">Rust (V4)</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     **Stable** - Production-ready SDK for Node.js, Web, and React Native
 
     Best for: Web applications, existing JavaScript projects
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ---
@@ -1795,18 +1786,13 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
 Want to see the full workflow including signing and witnessing?
 
 <Tabs defaultValue="js">
-  <TabsList>
-    <TabsTrigger value="js">Javascript</TabsTrigger>
-    <TabsTrigger value="rust">Rust</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ## Try Aquafier
@@ -1848,7 +1834,7 @@ Not ready to code yet? Try our web-based demo:
 <Callout type="note" >
 **Ready to build?** Start with the [Development Guide](/development) for detailed instructions on signing, witnessing, and advanced features.
 </Callout  >
-16:T240c,
+1c:T240c,
 # File Index
 
 The **File Index** is a component of the Aqua Tree that maps content hashes to human-readable filenames. It provides context about what each hash represents, making Aqua Trees more understandable and navigable.
@@ -2227,7 +2213,7 @@ File index compresses well with gzip due to repetitive patterns:
 - [Object Revision](/schema_reference/object_revision) - Revisions containing content hashes
 - [Link Revision](/schema_reference/link_revision) - Linking to external trees
 - [Template Revision](/schema_reference/template_revision) - Schema definitions
-17:T240c,
+1d:T240c,
 # File Index
 
 The **File Index** is a component of the Aqua Tree that maps content hashes to human-readable filenames. It provides context about what each hash represents, making Aqua Trees more understandable and navigable.
@@ -2606,7 +2592,7 @@ File index compresses well with gzip due to repetitive patterns:
 - [Object Revision](/schema_reference/object_revision) - Revisions containing content hashes
 - [Link Revision](/schema_reference/link_revision) - Linking to external trees
 - [Template Revision](/schema_reference/template_revision) - Schema definitions
-18:T3a85,
+1e:T3a85,
 <Callout type="info" title="Prerequisites">
 We recommend completing the [Quick Start Guide](/quickstart) before diving into development details.
 </Callout>
@@ -3150,7 +3136,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
   <Card title="Get Support" icon="mail" href="mailto:info@inblock.io">
     Need help? Contact our team
   </Card>
-</CardGrid>19:T3a85,
+</CardGrid>1f:T3a85,
 <Callout type="info" title="Prerequisites">
 We recommend completing the [Quick Start Guide](/quickstart) before diving into development details.
 </Callout>
@@ -3694,7 +3680,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
   <Card title="Get Support" icon="mail" href="mailto:info@inblock.io">
     Need help? Contact our team
   </Card>
-</CardGrid>1a:T348e,
+</CardGrid>20:T348e,
 
 This section provides the complete technical specification for Aqua Protocol v4. Here you'll find detailed documentation on data structures, revision types, validation rules, and implementation requirements.
 
@@ -4105,7 +4091,7 @@ For previous versions, see:
 - [Version 3 Documentation](/previous_versions/version_3/introduction) - JavaScript SDK (Stable)
 - [Version 2 Documentation](/previous_versions/version_2/introduction) - Legacy
 - [Version 1 Documentation](/previous_versions/version_1/introduction) - Legacy
-1b:T348e,
+21:T348e,
 
 This section provides the complete technical specification for Aqua Protocol v4. Here you'll find detailed documentation on data structures, revision types, validation rules, and implementation requirements.
 
@@ -4516,7 +4502,7 @@ For previous versions, see:
 - [Version 3 Documentation](/previous_versions/version_3/introduction) - JavaScript SDK (Stable)
 - [Version 2 Documentation](/previous_versions/version_2/introduction) - Legacy
 - [Version 1 Documentation](/previous_versions/version_1/introduction) - Legacy
-1c:T13d0,
+22:T13d0,
 # Aqua Protocol v4
 
 Aqua Protocol v4 is the latest version of the protocol, introducing significant improvements in structure, flexibility, and capabilities. This version is currently in beta.
@@ -4645,7 +4631,7 @@ Aqua Protocol v4 is designed for:
 - Read about specific use cases and implementation patterns
 
 For questions or feedback about v4, please visit the [Aqua Protocol GitHub repository](https://github.com/inblockio).
-1d:T13d0,
+23:T13d0,
 # Aqua Protocol v4
 
 Aqua Protocol v4 is the latest version of the protocol, introducing significant improvements in structure, flexibility, and capabilities. This version is currently in beta.
@@ -4774,7 +4760,7 @@ Aqua Protocol v4 is designed for:
 - Read about specific use cases and implementation patterns
 
 For questions or feedback about v4, please visit the [Aqua Protocol GitHub repository](https://github.com/inblockio).
-1e:Tca8,
+24:Tca8,
 
 The Aqua CLI is a command-line tool for creating, signing, witnessing, and verifying Aqua Protocol chains. Built with Rust, it provides a simple interface for working with Aqua chains without writing code.
 
@@ -4902,7 +4888,7 @@ For more information about Aqua Protocol v4:
 **Current Version**: 4.0.0
 
 Built using the [Aqua Rust SDK](/dev_tools/aqua_sdk) for Aqua Protocol v4 support.
-1f:Tca8,
+25:Tca8,
 
 The Aqua CLI is a command-line tool for creating, signing, witnessing, and verifying Aqua Protocol chains. Built with Rust, it provides a simple interface for working with Aqua chains without writing code.
 
@@ -5030,7 +5016,7 @@ For more information about Aqua Protocol v4:
 **Current Version**: 4.0.0
 
 Built using the [Aqua Rust SDK](/dev_tools/aqua_sdk) for Aqua Protocol v4 support.
-20:Tefa,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/quickstart)
+26:Tefa,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/quickstart)
 The Aqua SDK is a Rust library that provides the core functionality for creating, signing, witnessing, and verifying Aqua Protocol chains. It supports Aqua Protocol v4 and includes WebAssembly (WASM) bindings for cross-platform compatibility.
 
 ## Features
@@ -5135,7 +5121,7 @@ For detailed API documentation, examples, and guides:
 **Current Version**: 4.0.0 (Beta)
 
 The SDK implements Aqua Protocol v4 with the template system and enhanced revision types. For production-stable implementations, consider the [JavaScript SDK (v3)](/previous_versions/version_3/tooling).
-21:Tefa,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/quickstart)
+27:Tefa,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/quickstart)
 The Aqua SDK is a Rust library that provides the core functionality for creating, signing, witnessing, and verifying Aqua Protocol chains. It supports Aqua Protocol v4 and includes WebAssembly (WASM) bindings for cross-platform compatibility.
 
 ## Features
@@ -5240,7 +5226,7 @@ For detailed API documentation, examples, and guides:
 **Current Version**: 4.0.0 (Beta)
 
 The SDK implements Aqua Protocol v4 with the template system and enhanced revision types. For production-stable implementations, consider the [JavaScript SDK (v3)](/previous_versions/version_3/tooling).
-22:T1289,
+28:T1289,
 
 Aquafier is a web-based reference implementation of Aqua Protocol v3, providing a user-friendly interface and HTTP API for digital content signing, provenance verification, and integrity validation. It demonstrates how Aqua Protocol features can be integrated into modern web applications.
 
@@ -5385,7 +5371,7 @@ For v3 technical details:
 4. Check the [GitHub repository](https://github.com/inblockio/aquafier-js) for self-hosting
 
 For building custom applications, consider using the [Aqua JavaScript SDK](/previous_versions/version_3/tooling) directly or the [Aqua Rust SDK](/dev_tools/aqua_sdk) for v4 features.
-23:T1289,
+29:T1289,
 
 Aquafier is a web-based reference implementation of Aqua Protocol v3, providing a user-friendly interface and HTTP API for digital content signing, provenance verification, and integrity validation. It demonstrates how Aqua Protocol features can be integrated into modern web applications.
 
@@ -5530,7 +5516,7 @@ For v3 technical details:
 4. Check the [GitHub repository](https://github.com/inblockio/aquafier-js) for self-hosting
 
 For building custom applications, consider using the [Aqua JavaScript SDK](/previous_versions/version_3/tooling) directly or the [Aqua Rust SDK](/dev_tools/aqua_sdk) for v4 features.
-24:T4217,
+2a:T4217,
 # Link Revision
 
 A Link Revision creates verifiable connections between separate revision chains. It allows you to establish relationships, dependencies, or references between different objects, effectively creating a graph structure of interconnected chains. Link revisions are essential for composing complex data structures and maintaining provenance across multiple chains.
@@ -6227,7 +6213,7 @@ Don't use links for intra-chain references (use `previous_revision` instead).
 - [Signature Revision](/schema_reference/signing_revision) - Can aggregate via links
 - [Witness Revision](/schema_reference/witness_revision) - Often follows links
 - [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) - Mathematical foundation for link structures
-25:T4217,
+2b:T4217,
 # Link Revision
 
 A Link Revision creates verifiable connections between separate revision chains. It allows you to establish relationships, dependencies, or references between different objects, effectively creating a graph structure of interconnected chains. Link revisions are essential for composing complex data structures and maintaining provenance across multiple chains.
@@ -6924,7 +6910,7 @@ Don't use links for intra-chain references (use `previous_revision` instead).
 - [Signature Revision](/schema_reference/signing_revision) - Can aggregate via links
 - [Witness Revision](/schema_reference/witness_revision) - Often follows links
 - [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) - Mathematical foundation for link structures
-26:T2073,
+2c:T2073,
 # Object Revision
 
 An Object Revision is the primary data-carrying revision type in Aqua Protocol v4. It stores arbitrary structured data that conforms to a template schema. Object revisions are typically the first revision in a chain (genesis) or follow other object revisions.
@@ -7167,7 +7153,7 @@ To verify an object revision:
 - [Signature Revision](/schema_reference/signing_revision) - Sign object revisions
 - [Witness Revision](/schema_reference/witness_revision) - Add timestamped proof
 - [Link Revision](/schema_reference/link_revision) - Connect to other chains
-27:T2073,
+2d:T2073,
 # Object Revision
 
 An Object Revision is the primary data-carrying revision type in Aqua Protocol v4. It stores arbitrary structured data that conforms to a template schema. Object revisions are typically the first revision in a chain (genesis) or follow other object revisions.
@@ -7410,12 +7396,12 @@ To verify an object revision:
 - [Signature Revision](/schema_reference/signing_revision) - Sign object revisions
 - [Witness Revision](/schema_reference/witness_revision) - Add timestamped proof
 - [Link Revision](/schema_reference/link_revision) - Connect to other chains
-28:T1185,
+2e:T1183,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose—either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -7510,12 +7496,12 @@ Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic an
 
 
 
-```29:T1185,
+```2f:T1183,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose—either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -7610,7 +7596,7 @@ Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic an
 
 
 
-```2a:T2eb6,
+```30:T2eb6,
 # Signature Revision
 
 A Signature Revision adds cryptographic proof of authenticity and authorship to a revision chain. It references a previous revision and includes a digital signature that can be verified using the associated public key or address. Aqua Protocol v4 supports three signature types: RSA, Ethereum (EIP-191), and DID-based signatures.
@@ -7958,7 +7944,7 @@ Credential => Signature (Issuer's DID) => Holder stores
 - [EIP-191 Specification](https://eips.ethereum.org/EIPS/eip-191) - Ethereum signing standard
 - [DID Core Specification](https://www.w3.org/TR/did-core/) - Decentralized Identifiers
 - [JWS Specification](https://www.rfc-editor.org/rfc/rfc7515) - JSON Web Signatures
-2b:T2eb6,
+31:T2eb6,
 # Signature Revision
 
 A Signature Revision adds cryptographic proof of authenticity and authorship to a revision chain. It references a previous revision and includes a digital signature that can be verified using the associated public key or address. Aqua Protocol v4 supports three signature types: RSA, Ethereum (EIP-191), and DID-based signatures.
@@ -8306,7 +8292,7 @@ Credential => Signature (Issuer's DID) => Holder stores
 - [EIP-191 Specification](https://eips.ethereum.org/EIPS/eip-191) - Ethereum signing standard
 - [DID Core Specification](https://www.w3.org/TR/did-core/) - Decentralized Identifiers
 - [JWS Specification](https://www.rfc-editor.org/rfc/rfc7515) - JSON Web Signatures
-2c:T2c8d,
+32:T2c8d,
 # Template Revision
 
 A Template Revision defines the structure and validation rules for Object Revisions. Templates use JSON Schema to specify what data fields are required, their types, formats, and constraints. Template revisions are standalone (they don't have a `previous_revision` field) and are referenced by object revisions via their hash.
@@ -8743,7 +8729,7 @@ Link templates to on-chain contract code for decentralized validation.
 
 - [Object Revision](/schema_reference/object_revision) - Use templates to validate objects
 - [JSON Schema Specification](https://json-schema.org/draft/2020-12/json-schema-core.html) - Full JSON Schema documentation
-2d:T2c8d,
+33:T2c8d,
 # Template Revision
 
 A Template Revision defines the structure and validation rules for Object Revisions. Templates use JSON Schema to specify what data fields are required, their types, formats, and constraints. Template revisions are standalone (they don't have a `previous_revision` field) and are referenced by object revisions via their hash.
@@ -9180,7 +9166,7 @@ Link templates to on-chain contract code for decentralized validation.
 
 - [Object Revision](/schema_reference/object_revision) - Use templates to validate objects
 - [JSON Schema Specification](https://json-schema.org/draft/2020-12/json-schema-core.html) - Full JSON Schema documentation
-2e:T334e,
+34:T334e,
 # Witness Revision
 
 A Witness Revision provides cryptographic proof that a revision existed at a specific point in time. It anchors revision hashes to external systems like blockchains (Ethereum), decentralized networks (Nostr), or Trusted Timestamping Authorities (TSA). This creates an immutable, verifiable timestamp that cannot be backdated.
@@ -9593,7 +9579,7 @@ Object → Witness (Ethereum Mainnet) → Witness (Polygon) → Witness (Arbitru
 - [RFC 3161 - Timestamping](https://www.rfc-editor.org/rfc/rfc3161) - TSA standard
 - [Ethereum Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/) - On-chain witnessing
 - [Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree) - Batch witnessing structure
-2f:T334e,
+35:T334e,
 # Witness Revision
 
 A Witness Revision provides cryptographic proof that a revision existed at a specific point in time. It anchors revision hashes to external systems like blockchains (Ethereum), decentralized networks (Nostr), or Trusted Timestamping Authorities (TSA). This creates an immutable, verifiable timestamp that cannot be backdated.
@@ -10006,7 +9992,7 @@ Object → Witness (Ethereum Mainnet) → Witness (Polygon) → Witness (Arbitru
 - [RFC 3161 - Timestamping](https://www.rfc-editor.org/rfc/rfc3161) - TSA standard
 - [Ethereum Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/) - On-chain witnessing
 - [Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree) - Batch witnessing structure
-30:T362b,
+36:T362b,
 ## Core Capabilities
 
 ### Tamper-Proof Verification
@@ -10336,7 +10322,7 @@ A: Add a revocation revision to the chain. The document history remains (for aud
 - [Identity Attestation](/use_cases/identity-attestation) - Verify identity credentials
 - [Quick Start](/quick-start) - Get started with document verification
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-31:T362b,
+37:T362b,
 ## Core Capabilities
 
 ### Tamper-Proof Verification
@@ -10666,7 +10652,7 @@ A: Add a revocation revision to the chain. The document history remains (for aud
 - [Identity Attestation](/use_cases/identity-attestation) - Verify identity credentials
 - [Quick Start](/quick-start) - Get started with document verification
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-32:T1791,
+38:T1791,
 The Aqua Protocol enables a robust **Self-Sovereign Identity (SSI)** framework where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. By leveraging cryptographic proofs and decentralized trust chains, Aqua allows users to own their data while enabling third parties to verify specific attributes with certainty.
 
 ## Core Capabilities
@@ -10785,7 +10771,7 @@ When an employer verifies Alice's degree, they trace this path back to a root of
 - [Document Verification](/use_cases/document-verification) - Verify the integrity of files and contracts.
 - [Supply Chain Tracking](/use_cases/supply-chain) - Trace provenance of physical goods.
 - [Aqua CLI](/dev_tools/aqua_cli) - Tools for issuing and verifying claims.
-33:T1791,
+39:T1791,
 The Aqua Protocol enables a robust **Self-Sovereign Identity (SSI)** framework where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. By leveraging cryptographic proofs and decentralized trust chains, Aqua allows users to own their data while enabling third parties to verify specific attributes with certainty.
 
 ## Core Capabilities
@@ -10904,7 +10890,7 @@ When an employer verifies Alice's degree, they trace this path back to a root of
 - [Document Verification](/use_cases/document-verification) - Verify the integrity of files and contracts.
 - [Supply Chain Tracking](/use_cases/supply-chain) - Trace provenance of physical goods.
 - [Aqua CLI](/dev_tools/aqua_cli) - Tools for issuing and verifying claims.
-34:T2693,
+3a:T2693,
 ## Why Aqua Protocol?
 
 Traditional systems for tracking data provenance, verifying authenticity, and maintaining audit trails rely on centralized databases and trusted intermediaries. These approaches introduce:
@@ -11116,7 +11102,7 @@ Ready to implement Aqua Protocol for your use case?
 - Check out the [Quick Start Guide](/quick-start) for hands-on implementation
 - Explore the [Schema Reference](/schema_reference/introduction) for technical specifications
 - Choose your SDK: [Rust (v4)](/previous_versions/version_4/introduction) or [JavaScript (v3)](/previous_versions/version_3/introduction)
-35:T2693,
+3b:T2693,
 ## Why Aqua Protocol?
 
 Traditional systems for tracking data provenance, verifying authenticity, and maintaining audit trails rely on centralized databases and trusted intermediaries. These approaches introduce:
@@ -11328,7 +11314,7 @@ Ready to implement Aqua Protocol for your use case?
 - Check out the [Quick Start Guide](/quick-start) for hands-on implementation
 - Explore the [Schema Reference](/schema_reference/introduction) for technical specifications
 - Choose your SDK: [Rust (v4)](/previous_versions/version_4/introduction) or [JavaScript (v3)](/previous_versions/version_3/introduction)
-36:T40fa,
+3c:T40fa,
 # Supply Chain Tracking
 
 Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded with immutable timestamps, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
@@ -11712,7 +11698,7 @@ A: Verification of existing chains works offline using cryptographic signatures.
 - [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
 - [Quick Start](/quick-start) - Get started with supply chain tracking
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-37:T40fa,
+3d:T40fa,
 # Supply Chain Tracking
 
 Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded with immutable timestamps, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
@@ -12096,154 +12082,786 @@ A: Verification of existing chains works offline using cryptographic signatures.
 - [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
 - [Quick Start](/quick-start) - Get started with supply chain tracking
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-4:["$","$6",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$Ld",null,{"header":["$","$Le",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$Lf",null,{"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$10","reading_time":5,"word_count":888},"content":"$11","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$12","reading_time":5,"word_count":820},"content":"$13"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$14","reading_time":7,"word_count":1258},"content":"$15"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$16","reading_time":5,"word_count":941},"content":"$17","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$18","reading_time":9,"word_count":1674},"content":"$19"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$1a","reading_time":8,"word_count":1476},"content":"$1b","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$1c","reading_time":4,"word_count":686},"content":"$1d"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$1e","reading_time":3,"word_count":410},"content":"$1f","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$20","reading_time":2,"word_count":391},"content":"$21","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$22","reading_time":3,"word_count":566},"content":"$23","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$24","reading_time":11,"word_count":2009},"content":"$25","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$26","reading_time":6,"word_count":1048},"content":"$27","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$28","reading_time":3,"word_count":460},"content":"$29","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$2a","reading_time":7,"word_count":1393},"content":"$2b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$2c","reading_time":7,"word_count":1369},"content":"$2d","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$2e","reading_time":9,"word_count":1682},"content":"$2f","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined"},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$30","reading_time":10,"word_count":1863},"content":"$31","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$32","reading_time":5,"word_count":865},"content":"$33","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$34","reading_time":7,"word_count":1216},"content":"$35","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$36","reading_time":12,"word_count":2274},"content":"$37","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"}],"version":"v4.0.0","config":"$4:props:children:0:props:header:props:config"}],"content":"$L38","toc":"$L39","config":"$4:props:children:0:props:header:props:config"}],"$L3a","$L3b","$L3c"]}]
-3d:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
-3e:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
-3f:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
-40:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
-39:["$","$L3d",null,{"items":[{"id":"core-capabilities","title":"Core Capabilities","level":2},{"id":"end-to-end-traceability","title":"End-to-End Traceability","level":3},{"id":"multi-party-coordination","title":"Multi-Party Coordination","level":3},{"id":"provenance-verification","title":"Provenance Verification","level":3},{"id":"real-time-transparency","title":"Real-Time Transparency","level":3},{"id":"use-cases-by-industry","title":"Use Cases by Industry","level":2},{"id":"food--agriculture","title":"Food & Agriculture","level":3},{"id":"pharmaceuticals","title":"Pharmaceuticals","level":3},{"id":"manufacturing","title":"Manufacturing","level":3},{"id":"logistics--distribution","title":"Logistics & Distribution","level":3},{"id":"key-benefits","title":"Key Benefits","level":2},{"id":"eliminate-counterfeits","title":"Eliminate Counterfeits","level":3},{"id":"improve-recall-efficiency","title":"Improve Recall Efficiency","level":3},{"id":"increase-consumer-trust","title":"Increase Consumer Trust","level":3},{"id":"streamline-compliance","title":"Streamline Compliance","level":3},{"id":"enable-ethical-sourcing","title":"Enable Ethical Sourcing","level":3},{"id":"reduce-liability","title":"Reduce Liability","level":3},{"id":"how-it-works","title":"How It Works","level":2},{"id":"1-product-registration","title":"1. Product Registration","level":3},{"id":"2-supply-chain-events","title":"2. Supply Chain Events","level":3},{"id":"3-multi-party-signatures","title":"3. Multi-Party Signatures","level":3},{"id":"4-verification","title":"4. Verification","level":3},{"id":"real-world-scenarios","title":"Real-World Scenarios","level":2},{"id":"scenario-1-pharmaceutical-supply-chain","title":"Scenario 1: Pharmaceutical Supply Chain","level":3},{"id":"scenario-2-organic-food-certification","title":"Scenario 2: Organic Food Certification","level":3},{"id":"scenario-3-automotive-parts-traceability","title":"Scenario 3: Automotive Parts Traceability","level":3},{"id":"scenario-4-coffee-supply-chain-transparency","title":"Scenario 4: Coffee Supply Chain Transparency","level":3},{"id":"integration-patterns","title":"Integration Patterns","level":2},{"id":"erp-systems","title":"ERP Systems","level":3},{"id":"iot-sensors","title":"IoT Sensors","level":3},{"id":"blockchain-oracles","title":"Blockchain Oracles","level":3},{"id":"consumer-apps","title":"Consumer Apps","level":3},{"id":"supplier-portals","title":"Supplier Portals","level":3},{"id":"best-practices","title":"Best Practices","level":2},{"id":"genesis-creation","title":"Genesis Creation","level":3},{"id":"event-granularity","title":"Event Granularity","level":3},{"id":"multi-party-coordination","title":"Multi-Party Coordination","level":3},{"id":"data-privacy","title":"Data Privacy","level":3},{"id":"verification-strategy","title":"Verification Strategy","level":3},{"id":"batch-operations","title":"Batch Operations","level":3},{"id":"technical-advantages","title":"Technical Advantages","level":2},{"id":"scalability","title":"Scalability","level":3},{"id":"interoperability","title":"Interoperability","level":3},{"id":"flexibility","title":"Flexibility","level":3},{"id":"security","title":"Security","level":3},{"id":"common-questions","title":"Common Questions","level":2},{"id":"see-also","title":"See Also","level":2}],"config":"$4:props:children:0:props:header:props:config"}]
-3a:["$","$L3e",null,{}]
-3b:["$","$L3f",null,{}]
-3c:["$","$L40",null,{}]
-41:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
-42:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
-38:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L41",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v4.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L42",null,{"href":"/docs/v4.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v4.0.0/use-cases",{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","$L42",null,{"href":"/docs/v4.0.0/use-cases","className":"hover:text-foreground transition-colors","children":"Use Cases"}]]}],["$","div","/docs/v4.0.0/use-cases/supply-chain",{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Supply Chain Tracking"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Supply Chain Tracking"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"End-to-end traceability and provenance verification for supply chain operations"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[12," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":"$L43"}],"$undefined",["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v4.0.0/use-cases/supply-chain.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":["$L44","$L45","$L46","$undefined"]}],"Edit this page"]}],"$L47"]}],"$L48"]}]
-44:["$","path","1couwa",{"d":"M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"}]
-45:["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}]
-46:["$","path","1y4qbx",{"d":"M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"}]
-47:["$","a",null,{"href":"https://github.com/inblockio/issues/new","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-external-link h-4 w-4","children":[["$","path","1q9fwt",{"d":"M15 3h6v6"}],["$","path","gplh6r",{"d":"M10 14 21 3"}],["$","path","a6xqqp",{"d":"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"}],"$undefined"]}],"Report an issue"]}]
-48:["$","div",null,{"className":"mt-12 pt-8 border-t border-border grid grid-cols-2 gap-4","children":[["$","$L42",null,{"href":"/docs/v4.0.0/use-cases/introduction","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Previous"}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Aqua Protocol Use Cases"}]]}],["$","$L42",null,{"href":"/docs/v4.0.0/dev-tools/aqua-cli","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all text-right","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center justify-end gap-2 text-sm text-muted-foreground","children":[["$","span",null,{"children":"Next"}],["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Aqua CLI"}]]}]]}]
-43:[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-6 text-foreground","children":"Supply Chain Tracking"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded with immutable timestamps, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties."}],"\n",["$","h2",null,{"id":"core-capabilities","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Core Capabilities"}],"\n",["$","h3",null,{"id":"end-to-end-traceability","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"End-to-End Traceability"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Track products from origin to destination with cryptographic proof at each step. Every transfer, transformation, and quality check is recorded in an immutable chain, creating a complete product history that can be independently verified."}],"\n",["$","h3",null,{"id":"multi-party-coordination","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Multi-Party Coordination"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Supply chains involve manufacturers, distributors, retailers, regulators, and consumers. Aqua Protocol enables all parties to contribute to the chain while maintaining data integrity, without requiring a central authority."}],"\n",["$","h3",null,{"id":"provenance-verification","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Provenance Verification"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Prove the origin and authenticity of products cryptographically. Consumers and businesses can verify that products are genuine, sourced ethically, and meet quality standards without trusting intermediaries."}],"\n",["$","h3",null,{"id":"real-time-transparency","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Real-Time Transparency"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"All stakeholders can verify the current state and history of products in real-time. Blockchain witnesses provide tamper-proof timestamps, ensuring accurate tracking of supply chain events as they occur."}],"\n",["$","h2",null,{"id":"use-cases-by-industry","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Use Cases by Industry"}],"\n",["$","h3",null,{"id":"food--agriculture","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Food & Agriculture"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Farm-to-Table Tracking"}]}],"\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Record harvest timestamps and origin farm information"}],"\n",["$","li",null,{"className":"leading-7","children":"Track temperature and storage conditions during transport"}],"\n",["$","li",null,{"className":"leading-7","children":"Prove organic certification and farming practices"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable consumers to verify food provenance via QR codes"}],"\n"]}],"\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b","\n","$L6c","\n","$L6d","\n","$L6e","\n","$L6f","\n","$L70","\n","$L71","\n","$L72","\n","$L73","\n","$L74","\n","$L75","\n","$L76","\n","$L77","\n","$L78","\n","$L79","\n","$L7a","\n","$L7b","\n","$L7c","\n","$L7d","\n","$L7e","\n","$L7f","\n","$L80","\n","$L81","\n","$L82","\n","$L83","\n","$L84","\n","$L85","\n","$L86","\n","$L87","\n","$L88","\n","$L89","\n","$L8a","\n","$L8b","\n","$L8c","\n","$L8d","\n","$L8e","\n","$L8f","\n","$L90","\n","$L91","\n","$L92","\n","$L93","\n","$L94","\n","$L95","\n","$L96","\n","$L97","\n","$L98","\n","$L99","\n","$L9a","\n","$L9b","\n","$L9c","\n","$L9d","\n","$L9e","\n","$L9f","\n","$La0","\n","$La1","\n","$La2","\n","$La3","\n","$La4","\n","$La5","\n","$La6","\n","$La7","\n","$La8","\n","$La9","\n","$Laa","\n","$Lab","\n","$Lac","\n","$Lad","\n","$Lae","\n","$Laf","\n","$Lb0","\n","$Lb1","\n","$Lb2","\n","$Lb3","\n","$Lb4","\n","$Lb5","\n","$Lb6","\n","$Lb7","\n","$Lb8","\n","$Lb9","\n","$Lba","\n","$Lbb","\n","$Lbc","\n","$Lbd","\n","$Lbe","\n","$Lbf","\n","$Lc0","\n","$Lc1","\n","$Lc2","\n","$Lc3","\n","$Lc4","\n","$Lc5","\n","$Lc6","\n","$Lc7","\n","$Lc8","\n","$Lc9"]
-49:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Quality Assurance"}]}]
-4a:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Document quality inspections at each stage"}],"\n",["$","li",null,{"className":"leading-7","children":"Track batch numbers for recall management"}],"\n",["$","li",null,{"className":"leading-7","children":"Record processing and packaging timestamps"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain cold chain compliance records"}],"\n"]}]
-4b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Regulatory Compliance"}]}]
-4c:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Demonstrate compliance with food safety regulations"}],"\n",["$","li",null,{"className":"leading-7","children":"Provide audit trails for health inspectors"}],"\n",["$","li",null,{"className":"leading-7","children":"Track certifications (organic, fair trade, kosher, halal)"}],"\n",["$","li",null,{"className":"leading-7","children":"Prove country of origin for import/export"}],"\n"]}]
-4d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Recall Management"}]}]
-4e:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Identify affected batches immediately"}],"\n",["$","li",null,{"className":"leading-7","children":"Trace contamination to specific sources"}],"\n",["$","li",null,{"className":"leading-7","children":"Notify all parties in distribution chain"}],"\n",["$","li",null,{"className":"leading-7","children":"Minimize recall scope with precise tracking"}],"\n"]}]
-4f:["$","h3",null,{"id":"pharmaceuticals","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Pharmaceuticals"}]
-50:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Drug Authentication"}]}]
-51:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Prevent counterfeit medications from entering supply chain"}],"\n",["$","li",null,{"className":"leading-7","children":"Verify pharmaceutical manufacturer and production batch"}],"\n",["$","li",null,{"className":"leading-7","children":"Track medication from factory to pharmacy"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable patients to verify medication authenticity"}],"\n"]}]
-52:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Cold Chain Management"}]}]
-53:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Record temperature at every transport stage"}],"\n",["$","li",null,{"className":"leading-7","children":"Prove compliance with storage requirements"}],"\n",["$","li",null,{"className":"leading-7","children":"Alert stakeholders to temperature excursions"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain regulatory compliance documentation"}],"\n"]}]
-54:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Clinical Trial Management"}]}]
-55:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Track investigational drugs through trial phases"}],"\n",["$","li",null,{"className":"leading-7","children":"Document chain of custody for trial materials"}],"\n",["$","li",null,{"className":"leading-7","children":"Prove compliance with trial protocols"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain audit trails for regulatory submissions"}],"\n"]}]
-56:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Regulatory Reporting"}]}]
-57:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Demonstrate compliance with pharmaceutical regulations"}],"\n",["$","li",null,{"className":"leading-7","children":"Track serialization and aggregation data"}],"\n",["$","li",null,{"className":"leading-7","children":"Provide audit trails for FDA, EMA, and other authorities"}],"\n",["$","li",null,{"className":"leading-7","children":"Support Drug Supply Chain Security Act (DSCSA) compliance"}],"\n"]}]
-58:["$","h3",null,{"id":"manufacturing","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Manufacturing"}]
-59:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Component Traceability"}]}]
-5a:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Track components from suppliers to assembly"}],"\n",["$","li",null,{"className":"leading-7","children":"Verify authenticity of critical components"}],"\n",["$","li",null,{"className":"leading-7","children":"Manage bill of materials with cryptographic proof"}],"\n",["$","li",null,{"className":"leading-7","children":"Prevent counterfeit parts from entering production"}],"\n"]}]
-5b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Quality Control"}]}]
-5c:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Record inspection results at each manufacturing stage"}],"\n",["$","li",null,{"className":"leading-7","children":"Document rework and quality issues"}],"\n",["$","li",null,{"className":"leading-7","children":"Track serial numbers through production process"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain statistical process control data"}],"\n"]}]
-5d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Product Genealogy"}]}]
-5e:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Build complete product history from raw materials"}],"\n",["$","li",null,{"className":"leading-7","children":"Track which components went into which products"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable root cause analysis for defects"}],"\n",["$","li",null,{"className":"leading-7","children":"Support warranty claims with production records"}],"\n"]}]
-5f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Supplier Management"}]}]
-60:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Verify supplier certifications and compliance"}],"\n",["$","li",null,{"className":"leading-7","children":"Track supplier performance metrics"}],"\n",["$","li",null,{"className":"leading-7","children":"Prove ethical sourcing practices"}],"\n",["$","li",null,{"className":"leading-7","children":"Manage supplier risk with documented history"}],"\n"]}]
-61:["$","h3",null,{"id":"logistics--distribution","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Logistics & Distribution"}]
-62:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Shipment Tracking"}]}]
-63:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Record custody transfers between carriers"}],"\n",["$","li",null,{"className":"leading-7","children":"Timestamp loading and unloading events"}],"\n",["$","li",null,{"className":"leading-7","children":"Track location updates throughout journey"}],"\n",["$","li",null,{"className":"leading-7","children":"Prove on-time delivery with blockchain witnesses"}],"\n"]}]
-64:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Customs and Border Control"}]}]
-65:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Provide immutable documentation for customs"}],"\n",["$","li",null,{"className":"leading-7","children":"Prove product origin for tariff classification"}],"\n",["$","li",null,{"className":"leading-7","children":"Streamline border crossings with verified data"}],"\n",["$","li",null,{"className":"leading-7","children":"Reduce customs delays with cryptographic proof"}],"\n"]}]
-66:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Last-Mile Delivery"}]}]
-67:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Verify final delivery to customer"}],"\n",["$","li",null,{"className":"leading-7","children":"Timestamp customer receipt"}],"\n",["$","li",null,{"className":"leading-7","children":"Prove condition at delivery"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable dispute resolution with documented proof"}],"\n"]}]
-68:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Warehouse Management"}]}]
-69:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Track inventory movements within facilities"}],"\n",["$","li",null,{"className":"leading-7","children":"Record picking, packing, and shipping operations"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain lot and serial number traceability"}],"\n",["$","li",null,{"className":"leading-7","children":"Integrate with ERP systems for real-time updates"}],"\n"]}]
-6a:["$","h2",null,{"id":"key-benefits","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Key Benefits"}]
-6b:["$","h3",null,{"id":"eliminate-counterfeits","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Eliminate Counterfeits"}]
-6c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Counterfeit products cost industries billions annually. Aqua Protocol makes counterfeiting economically infeasible by requiring cryptographic proof at each supply chain step. Fake products cannot produce valid Aqua chains, making them easily identifiable."}]
-6d:["$","h3",null,{"id":"improve-recall-efficiency","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Improve Recall Efficiency"}]
-6e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"When safety issues arise, rapid recall is critical. Aqua Protocol enables precise identification of affected products, reducing recall scope and cost. Complete provenance data shows exactly which batches are impacted and where they were distributed."}]
-6f:["$","h3",null,{"id":"increase-consumer-trust","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Increase Consumer Trust"}]
-70:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Consumers increasingly demand transparency about product origins and manufacturing. Scannable QR codes linked to Aqua chains let customers verify authenticity, ethical sourcing, and quality standards, building brand trust."}]
-71:["$","h3",null,{"id":"streamline-compliance","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Streamline Compliance"}]
-72:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Regulatory compliance requires extensive documentation and audit trails. Aqua Protocol automatically creates tamper-proof records that satisfy regulators, reducing compliance costs and audit preparation time."}]
-73:["$","h3",null,{"id":"enable-ethical-sourcing","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Enable Ethical Sourcing"}]
-74:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Prove that products meet ethical standards for labor practices, environmental impact, and sustainable sourcing. Immutable records prevent \"ethics washing\" and provide verifiable proof of responsible practices."}]
-75:["$","h3",null,{"id":"reduce-liability","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Reduce Liability"}]
-76:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Complete documentation of supply chain events reduces liability exposure. When disputes arise, cryptographic proof shows exactly what happened, when, and who was responsible."}]
-77:["$","h2",null,{"id":"how-it-works","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"How It Works"}]
-78:["$","h3",null,{"id":"1-product-registration","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"1. Product Registration"}]
-79:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"When a product enters the supply chain:"}]
-7a:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Genesis revision is created with product identifier"}],"\n",["$","li",null,{"className":"leading-7","children":"Initial metadata recorded (SKU, batch number, origin)"}],"\n",["$","li",null,{"className":"leading-7","children":"Manufacturer signs the genesis revision"}],"\n",["$","li",null,{"className":"leading-7","children":"Signature is witnessed on blockchain for timestamp proof"}],"\n",["$","li",null,{"className":"leading-7","children":"Product receives unique Aqua chain"}],"\n"]}]
-7b:["$","h3",null,{"id":"2-supply-chain-events","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"2. Supply Chain Events"}]
-7c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"As the product moves through the supply chain:"}]
-7d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Each event creates a new revision (transfer, inspection, processing)"}],"\n",["$","li",null,{"className":"leading-7","children":"Event data includes timestamp, location, responsible party"}],"\n",["$","li",null,{"className":"leading-7","children":"Each party signs their contributions to the chain"}],"\n",["$","li",null,{"className":"leading-7","children":"Critical events are witnessed for regulatory proof"}],"\n",["$","li",null,{"className":"leading-7","children":"Chain grows to include complete product history"}],"\n"]}]
-7e:["$","h3",null,{"id":"3-multi-party-signatures","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"3. Multi-Party Signatures"}]
-7f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"When custody transfers between parties:"}]
-80:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Sending party signs transfer revision"}],"\n",["$","li",null,{"className":"leading-7","children":"Receiving party verifies and countersigns"}],"\n",["$","li",null,{"className":"leading-7","children":"Both signatures reference the same state"}],"\n",["$","li",null,{"className":"leading-7","children":"Blockchain witness timestamps the transfer"}],"\n",["$","li",null,{"className":"leading-7","children":"Prevents disputes about transfer timing or condition"}],"\n"]}]
-81:["$","h3",null,{"id":"4-verification","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"4. Verification"}]
-82:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"At any point, stakeholders can verify:"}]
-83:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Scan product QR code to retrieve Aqua chain"}],"\n",["$","li",null,{"className":"leading-7","children":"Verify all cryptographic signatures"}],"\n",["$","li",null,{"className":"leading-7","children":"Check blockchain witnesses for timestamps"}],"\n",["$","li",null,{"className":"leading-7","children":"Validate entire chain integrity"}],"\n",["$","li",null,{"className":"leading-7","children":"Confirm product authenticity and history"}],"\n"]}]
-84:["$","h2",null,{"id":"real-world-scenarios","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Real-World Scenarios"}]
-85:["$","h3",null,{"id":"scenario-1-pharmaceutical-supply-chain","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scenario 1: Pharmaceutical Supply Chain"}]
-86:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Challenge"}],": A pharmaceutical company must track medication from manufacturing through distribution to pharmacies while maintaining cold chain compliance and preventing counterfeits."]}]
-87:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Solution"}],":"]}]
-88:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Each medication batch gets genesis revision when manufactured"}],"\n",["$","li",null,{"className":"leading-7","children":"Quality control inspections add signed revisions"}],"\n",["$","li",null,{"className":"leading-7","children":"Temperature monitors record readings as revisions"}],"\n",["$","li",null,{"className":"leading-7","children":"Each distributor transfer is signed by both parties"}],"\n",["$","li",null,{"className":"leading-7","children":"Pharmacies verify medication authenticity by scanning"}],"\n",["$","li",null,{"className":"leading-7","children":"Regulators can audit complete chain from manufacturer to patient"}],"\n"]}]
-89:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Benefits"}],": Counterfeit prevention, cold chain compliance, regulatory audit trails, patient safety, streamlined recalls"]}]
-8a:["$","h3",null,{"id":"scenario-2-organic-food-certification","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scenario 2: Organic Food Certification"}]
-8b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Challenge"}],": Consumers want to verify that \"organic\" products are genuinely organic from farm to store, but current systems rely on paper certificates that can be forged."]}]
-8c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Solution"}],":"]}]
-8d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Farms create genesis revision with organic certification"}],"\n",["$","li",null,{"className":"leading-7","children":"Certification body signs the certification revision"}],"\n",["$","li",null,{"className":"leading-7","children":"Each processing step is documented and signed"}],"\n",["$","li",null,{"className":"leading-7","children":"Distributors add transport and storage revisions"}],"\n",["$","li",null,{"className":"leading-7","children":"Retailers witness final product placement"}],"\n",["$","li",null,{"className":"leading-7","children":"Consumers scan QR code to verify organic provenance"}],"\n"]}]
-8e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Benefits"}],": Verified organic claims, consumer confidence, brand differentiation, premium pricing justification"]}]
-8f:["$","h3",null,{"id":"scenario-3-automotive-parts-traceability","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scenario 3: Automotive Parts Traceability"}]
-90:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Challenge"}],": An automotive manufacturer needs to track critical safety components through multiple supplier tiers to ensure authenticity and enable recalls if defects are discovered."]}]
-91:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Solution"}],":"]}]
-92:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Tier 3 supplier creates genesis for raw materials"}],"\n",["$","li",null,{"className":"leading-7","children":"Tier 2 supplier adds processing revisions with quality checks"}],"\n",["$","li",null,{"className":"leading-7","children":"Tier 1 supplier integrates into assemblies with link revisions"}],"\n",["$","li",null,{"className":"leading-7","children":"OEM manufacturer links assemblies into final vehicles"}],"\n",["$","li",null,{"className":"leading-7","children":"Each VIN is linked to component Aqua chains"}],"\n",["$","li",null,{"className":"leading-7","children":"Defective component traced to exact source and all affected vehicles"}],"\n"]}]
-93:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Benefits"}],": Counterfeit prevention, rapid recall execution, root cause analysis, supplier accountability, quality improvement"]}]
-94:["$","h3",null,{"id":"scenario-4-coffee-supply-chain-transparency","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scenario 4: Coffee Supply Chain Transparency"}]
-95:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Challenge"}],": Coffee roasters want to prove fair trade practices and sustainable sourcing to increasingly conscious consumers, but existing certification systems are opaque."]}]
-96:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Solution"}],":"]}]
-97:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Coffee farmers create genesis with harvest data"}],"\n",["$","li",null,{"className":"leading-7","children":"Fair trade auditor signs certification revision"}],"\n",["$","li",null,{"className":"leading-7","children":"Exporters document transport and quality grading"}],"\n",["$","li",null,{"className":"leading-7","children":"Importers add customs and warehousing data"}],"\n",["$","li",null,{"className":"leading-7","children":"Roasters link to final packaged products"}],"\n",["$","li",null,{"className":"leading-7","children":"Consumers scan bags to see complete farm-to-cup journey"}],"\n"]}]
-98:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Benefits"}],": Verified ethical sourcing, consumer transparency, premium pricing, farmer accountability, brand storytelling"]}]
-99:["$","h2",null,{"id":"integration-patterns","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Integration Patterns"}]
-9a:["$","h3",null,{"id":"erp-systems","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"ERP Systems"}]
-9b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Integrate Aqua Protocol with enterprise resource planning systems to automatically create revisions for inventory movements, production events, and quality checks."}]
-9c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Implementation"}],":"]}]
-9d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"ERP triggers Aqua revision creation on key events"}],"\n",["$","li",null,{"className":"leading-7","children":"Product master data becomes genesis revision"}],"\n",["$","li",null,{"className":"leading-7","children":"Manufacturing orders add production revisions"}],"\n",["$","li",null,{"className":"leading-7","children":"Shipping orders create transfer revisions"}],"\n",["$","li",null,{"className":"leading-7","children":"Quality inspections add signed quality revisions"}],"\n"]}]
-9e:["$","h3",null,{"id":"iot-sensors","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"IoT Sensors"}]
-9f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Connect IoT devices to automatically record sensor data as revisions:"}]
-a0:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Temperature sensors for cold chain monitoring"}],"\n",["$","li",null,{"className":"leading-7","children":"GPS trackers for location updates"}],"\n",["$","li",null,{"className":"leading-7","children":"RFID readers for automated checkpoint scanning"}],"\n",["$","li",null,{"className":"leading-7","children":"Weight scales for quantity verification"}],"\n",["$","li",null,{"className":"leading-7","children":"Quality inspection equipment for automated testing"}],"\n"]}]
-a1:["$","h3",null,{"id":"blockchain-oracles","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Blockchain Oracles"}]
-a2:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Use blockchain oracles to feed external data into supply chains:"}]
-a3:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Weather data for agricultural provenance"}],"\n",["$","li",null,{"className":"leading-7","children":"Customs clearance status"}],"\n",["$","li",null,{"className":"leading-7","children":"Regulatory database lookups"}],"\n",["$","li",null,{"className":"leading-7","children":"Third-party certification verification"}],"\n",["$","li",null,{"className":"leading-7","children":"Market pricing for timestamp-based valuation"}],"\n"]}]
-a4:["$","h3",null,{"id":"consumer-apps","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Consumer Apps"}]
-a5:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Build consumer-facing applications that verify products:"}]
-a6:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Mobile apps with QR code scanning"}],"\n",["$","li",null,{"className":"leading-7","children":"Web portals for product history viewing"}],"\n",["$","li",null,{"className":"leading-7","children":"Voice assistants for product authentication"}],"\n",["$","li",null,{"className":"leading-7","children":"Smart packaging with NFC chips"}],"\n",["$","li",null,{"className":"leading-7","children":"Augmented reality product storytelling"}],"\n"]}]
-a7:["$","h3",null,{"id":"supplier-portals","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Supplier Portals"}]
-a8:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Create portals for suppliers to contribute to chains:"}]
-a9:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Self-service revision creation"}],"\n",["$","li",null,{"className":"leading-7","children":"Document upload and signature"}],"\n",["$","li",null,{"className":"leading-7","children":"Certification management"}],"\n",["$","li",null,{"className":"leading-7","children":"Quality data submission"}],"\n",["$","li",null,{"className":"leading-7","children":"Real-time status visibility"}],"\n"]}]
-aa:["$","h2",null,{"id":"best-practices","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Best Practices"}]
-ab:["$","h3",null,{"id":"genesis-creation","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Genesis Creation"}]
-ac:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Create genesis as early as possible in supply chain"}],"\n",["$","li",null,{"className":"leading-7","children":"Include comprehensive product metadata"}],"\n",["$","li",null,{"className":"leading-7","children":"Use template revisions for standardized data"}],"\n",["$","li",null,{"className":"leading-7","children":"Sign genesis immediately to establish authenticity"}],"\n",["$","li",null,{"className":"leading-7","children":"Witness genesis for high-value or regulated products"}],"\n"]}]
-ad:["$","h3",null,{"id":"event-granularity","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Event Granularity"}]
-ae:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Balance detail with practical overhead"}],"\n",["$","li",null,{"className":"leading-7","children":"Record all custody transfers"}],"\n",["$","li",null,{"className":"leading-7","children":"Document critical quality checkpoints"}],"\n",["$","li",null,{"className":"leading-7","children":"Capture regulatory compliance events"}],"\n",["$","li",null,{"className":"leading-7","children":"Skip routine events that don't add value"}],"\n"]}]
-af:["$","h3",null,{"id":"multi-party-coordination-1","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Multi-Party Coordination"}]
-b0:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Establish clear protocols for handoffs"}],"\n",["$","li",null,{"className":"leading-7","children":"Both parties must sign custody transfers"}],"\n",["$","li",null,{"className":"leading-7","children":"Verify previous signatures before adding new ones"}],"\n",["$","li",null,{"className":"leading-7","children":"Communicate chain updates to all stakeholders"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain consistent timestamp standards"}],"\n"]}]
-b1:["$","h3",null,{"id":"data-privacy","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Data Privacy"}]
-b2:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Aqua chains store hashes, not sensitive content"}],"\n",["$","li",null,{"className":"leading-7","children":"Use tree method for selective disclosure"}],"\n",["$","li",null,{"className":"leading-7","children":"Share chains only with authorized parties"}],"\n",["$","li",null,{"className":"leading-7","children":"Consider what metadata is included"}],"\n",["$","li",null,{"className":"leading-7","children":"Use private witnesses if public timestamps are problematic"}],"\n"]}]
-b3:["$","h3",null,{"id":"verification-strategy","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Verification Strategy"}]
-b4:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Verify products at key checkpoints"}],"\n",["$","li",null,{"className":"leading-7","children":"Check complete chain for high-value items"}],"\n",["$","li",null,{"className":"leading-7","children":"Spot-check for routine items"}],"\n",["$","li",null,{"className":"leading-7","children":"Validate blockchain witnesses for critical events"}],"\n",["$","li",null,{"className":"leading-7","children":"Train staff on verification procedures"}],"\n"]}]
-b5:["$","h3",null,{"id":"batch-operations","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Batch Operations"}]
-b6:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Use batch witnessing to reduce costs"}],"\n",["$","li",null,{"className":"leading-7","children":"Group similar products in same witness transaction"}],"\n",["$","li",null,{"className":"leading-7","children":"Balance cost savings with timestamp precision"}],"\n",["$","li",null,{"className":"leading-7","children":"Implement automated batching in integration systems"}],"\n",["$","li",null,{"className":"leading-7","children":"Monitor batch sizes for optimization"}],"\n"]}]
-b7:["$","h2",null,{"id":"technical-advantages","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Technical Advantages"}]
-b8:["$","h3",null,{"id":"scalability","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scalability"}]
-b9:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Object revisions scale to billions of products"}],"\n",["$","li",null,{"className":"leading-7","children":"Link revisions enable hierarchical organization"}],"\n",["$","li",null,{"className":"leading-7","children":"Batch witnessing reduces blockchain costs"}],"\n",["$","li",null,{"className":"leading-7","children":"Offline verification after chain retrieval"}],"\n",["$","li",null,{"className":"leading-7","children":"Distributed storage prevents bottlenecks"}],"\n"]}]
-ba:["$","h3",null,{"id":"interoperability","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Interoperability"}]
-bb:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"JSON-based format for easy integration"}],"\n",["$","li",null,{"className":"leading-7","children":"Multiple SDK options (Rust, JavaScript)"}],"\n",["$","li",null,{"className":"leading-7","children":"Standard cryptographic primitives"}],"\n",["$","li",null,{"className":"leading-7","children":"Platform-agnostic verification"}],"\n",["$","li",null,{"className":"leading-7","children":"Compatible with existing supply chain systems"}],"\n"]}]
-bc:["$","h3",null,{"id":"flexibility","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Flexibility"}]
-bd:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Template system for industry-specific schemas"}],"\n",["$","li",null,{"className":"leading-7","children":"Custom revision types for unique requirements"}],"\n",["$","li",null,{"className":"leading-7","children":"Multiple signature methods for different parties"}],"\n",["$","li",null,{"className":"leading-7","children":"Choice of witnessing networks"}],"\n",["$","li",null,{"className":"leading-7","children":"Extensible for future needs"}],"\n"]}]
-be:["$","h3",null,{"id":"security","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Security"}]
-bf:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"SHA3-256 hashing prevents collision attacks"}],"\n",["$","li",null,{"className":"leading-7","children":"ECDSA signatures provide strong authentication"}],"\n",["$","li",null,{"className":"leading-7","children":"Blockchain anchoring prevents backdating"}],"\n",["$","li",null,{"className":"leading-7","children":"Merkle trees enable selective disclosure"}],"\n",["$","li",null,{"className":"leading-7","children":"Cryptographic proof instead of trust"}],"\n"]}]
-c0:["$","h2",null,{"id":"common-questions","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Common Questions"}]
-c1:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: How do we handle products without digital interfaces?"}],"\nA: Use QR codes, NFC tags, or printed Aqua chain identifiers on packaging. The Aqua chain exists independently of the physical product. Low-cost printed codes work for most products."]}]
-c2:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: What if a supply chain participant doesn't want to use Aqua Protocol?"}],"\nA: The chain can continue without them, but their contribution won't have cryptographic proof. This creates accountability - participants who don't use Aqua Protocol are less trustworthy. Market pressure encourages adoption."]}]
-c3:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: How do we handle returns and reverse logistics?"}],"\nA: Add revision documenting the return event, including reason and condition. The chain naturally grows to include forward and reverse movements, maintaining complete product history."]}]
-c4:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: Can we integrate with existing traceability systems?"}],"\nA: Yes. Aqua Protocol can wrap existing systems, adding cryptographic proof to current tracking data. Legacy system data can be hashed and stored in revisions."]}]
-c5:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: What about supply chain privacy?"}],"\nA: Aqua chains contain only hashes by default, not business-sensitive data. Share chains selectively with authorized parties. Use tree method for selective disclosure of specific fields to certain stakeholders."]}]
-c6:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: How do we handle lost or damaged products?"}],"\nA: Add revision documenting loss or damage event with relevant details. The Aqua chain preserves the history up to that point, supporting insurance claims and investigations."]}]
-c7:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: What if blockchain networks fail?"}],"\nA: Verification of existing chains works offline using cryptographic signatures. Only new witnessing requires blockchain access. Historical witnesses remain provable through blockchain transaction records."]}]
-c8:["$","h2",null,{"id":"see-also","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"See Also"}]
-c9:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/use_cases/document-verification","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Document Verification"}]," - Apply similar techniques to documents"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/use_cases/identity-attestation","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Identity Attestation"}]," - Verify credentials and certifications"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/quick-start","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Quick Start"}]," - Get started with supply chain tracking"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/schema_reference/introduction","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Schema Reference"}]," - Technical specifications"]}],"\n"]}]
-9:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-ca:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"IconMark"]
-b:[["$","title","0",{"children":"Supply Chain Tracking | Aqua Protocol Documentation"}],["$","meta","1",{"name":"description","content":"End-to-end traceability and provenance verification for supply chain operations"}],["$","meta","2",{"name":"generator","content":"v0.app"}],["$","link","3",{"rel":"canonical","href":"https://docs.aquaprotocol.org/docs/v4.0.0/use-cases/supply-chain"}],["$","meta","4",{"property":"og:title","content":"Supply Chain Tracking"}],["$","meta","5",{"property":"og:description","content":"End-to-end traceability and provenance verification for supply chain operations"}],["$","meta","6",{"property":"og:url","content":"https://docs.aquaprotocol.org/docs/v4.0.0/use-cases/supply-chain"}],["$","meta","7",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Supply Chain Tracking"}],["$","meta","12",{"name":"twitter:description","content":"End-to-end traceability and provenance verification for supply chain operations"}],["$","link","13",{"rel":"icon","href":"/logo/aqua-logo.png"}],["$","link","14",{"rel":"apple-touch-icon","href":"/apple-icon.png"}],["$","$Lca","15",{}]]
-7:null
+b:["$","$d",null,{"fallback":["$","$L13",null,{}],"children":[["$","$L14",null,{"header":["$","$L15",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$16","reading_time":5,"word_count":888},"content":"$17","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$18","reading_time":5,"word_count":823},"content":"$19"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$1a","reading_time":7,"word_count":1244},"content":"$1b"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$1c","reading_time":5,"word_count":941},"content":"$1d","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$1e","reading_time":9,"word_count":1674},"content":"$1f"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$20","reading_time":8,"word_count":1476},"content":"$21","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$22","reading_time":4,"word_count":686},"content":"$23"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$24","reading_time":3,"word_count":410},"content":"$25","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$26","reading_time":2,"word_count":391},"content":"$27","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$28","reading_time":3,"word_count":566},"content":"$29","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$2a","reading_time":11,"word_count":2009},"content":"$2b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$2c","reading_time":6,"word_count":1048},"content":"$2d","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$2e","reading_time":3,"word_count":461},"content":"$2f","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$30","reading_time":7,"word_count":1393},"content":"$31","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$32","reading_time":7,"word_count":1369},"content":"$33","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$34","reading_time":9,"word_count":1682},"content":"$35","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$36","reading_time":10,"word_count":1863},"content":"$37","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$38","reading_time":5,"word_count":865},"content":"$39","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$3a","reading_time":7,"word_count":1216},"content":"$3b","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$3c","reading_time":12,"word_count":2274},"content":"$3d","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"}],"version":"v4.0.0","content":"$L3e","toc":"$L3f","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L40","$L41","$L42"]}]
+43:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayout"]
+46:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TableOfContents"]
+47:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"MdxHotReload"]
+48:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"HotReloadIndicator"]
+49:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DevModeBadge"]
+44:T40fa,
+# Supply Chain Tracking
+
+Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded with immutable timestamps, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
+
+## Core Capabilities
+
+### End-to-End Traceability
+Track products from origin to destination with cryptographic proof at each step. Every transfer, transformation, and quality check is recorded in an immutable chain, creating a complete product history that can be independently verified.
+
+### Multi-Party Coordination
+Supply chains involve manufacturers, distributors, retailers, regulators, and consumers. Aqua Protocol enables all parties to contribute to the chain while maintaining data integrity, without requiring a central authority.
+
+### Provenance Verification
+Prove the origin and authenticity of products cryptographically. Consumers and businesses can verify that products are genuine, sourced ethically, and meet quality standards without trusting intermediaries.
+
+### Real-Time Transparency
+All stakeholders can verify the current state and history of products in real-time. Blockchain witnesses provide tamper-proof timestamps, ensuring accurate tracking of supply chain events as they occur.
+
+## Use Cases by Industry
+
+### Food & Agriculture
+
+**Farm-to-Table Tracking**
+- Record harvest timestamps and origin farm information
+- Track temperature and storage conditions during transport
+- Prove organic certification and farming practices
+- Enable consumers to verify food provenance via QR codes
+
+**Quality Assurance**
+- Document quality inspections at each stage
+- Track batch numbers for recall management
+- Record processing and packaging timestamps
+- Maintain cold chain compliance records
+
+**Regulatory Compliance**
+- Demonstrate compliance with food safety regulations
+- Provide audit trails for health inspectors
+- Track certifications (organic, fair trade, kosher, halal)
+- Prove country of origin for import/export
+
+**Recall Management**
+- Identify affected batches immediately
+- Trace contamination to specific sources
+- Notify all parties in distribution chain
+- Minimize recall scope with precise tracking
+
+### Pharmaceuticals
+
+**Drug Authentication**
+- Prevent counterfeit medications from entering supply chain
+- Verify pharmaceutical manufacturer and production batch
+- Track medication from factory to pharmacy
+- Enable patients to verify medication authenticity
+
+**Cold Chain Management**
+- Record temperature at every transport stage
+- Prove compliance with storage requirements
+- Alert stakeholders to temperature excursions
+- Maintain regulatory compliance documentation
+
+**Clinical Trial Management**
+- Track investigational drugs through trial phases
+- Document chain of custody for trial materials
+- Prove compliance with trial protocols
+- Maintain audit trails for regulatory submissions
+
+**Regulatory Reporting**
+- Demonstrate compliance with pharmaceutical regulations
+- Track serialization and aggregation data
+- Provide audit trails for FDA, EMA, and other authorities
+- Support Drug Supply Chain Security Act (DSCSA) compliance
+
+### Manufacturing
+
+**Component Traceability**
+- Track components from suppliers to assembly
+- Verify authenticity of critical components
+- Manage bill of materials with cryptographic proof
+- Prevent counterfeit parts from entering production
+
+**Quality Control**
+- Record inspection results at each manufacturing stage
+- Document rework and quality issues
+- Track serial numbers through production process
+- Maintain statistical process control data
+
+**Product Genealogy**
+- Build complete product history from raw materials
+- Track which components went into which products
+- Enable root cause analysis for defects
+- Support warranty claims with production records
+
+**Supplier Management**
+- Verify supplier certifications and compliance
+- Track supplier performance metrics
+- Prove ethical sourcing practices
+- Manage supplier risk with documented history
+
+### Logistics & Distribution
+
+**Shipment Tracking**
+- Record custody transfers between carriers
+- Timestamp loading and unloading events
+- Track location updates throughout journey
+- Prove on-time delivery with blockchain witnesses
+
+**Customs and Border Control**
+- Provide immutable documentation for customs
+- Prove product origin for tariff classification
+- Streamline border crossings with verified data
+- Reduce customs delays with cryptographic proof
+
+**Last-Mile Delivery**
+- Verify final delivery to customer
+- Timestamp customer receipt
+- Prove condition at delivery
+- Enable dispute resolution with documented proof
+
+**Warehouse Management**
+- Track inventory movements within facilities
+- Record picking, packing, and shipping operations
+- Maintain lot and serial number traceability
+- Integrate with ERP systems for real-time updates
+
+## Key Benefits
+
+### Eliminate Counterfeits
+Counterfeit products cost industries billions annually. Aqua Protocol makes counterfeiting economically infeasible by requiring cryptographic proof at each supply chain step. Fake products cannot produce valid Aqua chains, making them easily identifiable.
+
+### Improve Recall Efficiency
+When safety issues arise, rapid recall is critical. Aqua Protocol enables precise identification of affected products, reducing recall scope and cost. Complete provenance data shows exactly which batches are impacted and where they were distributed.
+
+### Increase Consumer Trust
+Consumers increasingly demand transparency about product origins and manufacturing. Scannable QR codes linked to Aqua chains let customers verify authenticity, ethical sourcing, and quality standards, building brand trust.
+
+### Streamline Compliance
+Regulatory compliance requires extensive documentation and audit trails. Aqua Protocol automatically creates tamper-proof records that satisfy regulators, reducing compliance costs and audit preparation time.
+
+### Enable Ethical Sourcing
+Prove that products meet ethical standards for labor practices, environmental impact, and sustainable sourcing. Immutable records prevent "ethics washing" and provide verifiable proof of responsible practices.
+
+### Reduce Liability
+Complete documentation of supply chain events reduces liability exposure. When disputes arise, cryptographic proof shows exactly what happened, when, and who was responsible.
+
+## How It Works
+
+### 1. Product Registration
+When a product enters the supply chain:
+- Genesis revision is created with product identifier
+- Initial metadata recorded (SKU, batch number, origin)
+- Manufacturer signs the genesis revision
+- Signature is witnessed on blockchain for timestamp proof
+- Product receives unique Aqua chain
+
+### 2. Supply Chain Events
+As the product moves through the supply chain:
+- Each event creates a new revision (transfer, inspection, processing)
+- Event data includes timestamp, location, responsible party
+- Each party signs their contributions to the chain
+- Critical events are witnessed for regulatory proof
+- Chain grows to include complete product history
+
+### 3. Multi-Party Signatures
+When custody transfers between parties:
+- Sending party signs transfer revision
+- Receiving party verifies and countersigns
+- Both signatures reference the same state
+- Blockchain witness timestamps the transfer
+- Prevents disputes about transfer timing or condition
+
+### 4. Verification
+At any point, stakeholders can verify:
+- Scan product QR code to retrieve Aqua chain
+- Verify all cryptographic signatures
+- Check blockchain witnesses for timestamps
+- Validate entire chain integrity
+- Confirm product authenticity and history
+
+## Real-World Scenarios
+
+### Scenario 1: Pharmaceutical Supply Chain
+
+**Challenge**: A pharmaceutical company must track medication from manufacturing through distribution to pharmacies while maintaining cold chain compliance and preventing counterfeits.
+
+**Solution**:
+- Each medication batch gets genesis revision when manufactured
+- Quality control inspections add signed revisions
+- Temperature monitors record readings as revisions
+- Each distributor transfer is signed by both parties
+- Pharmacies verify medication authenticity by scanning
+- Regulators can audit complete chain from manufacturer to patient
+
+**Benefits**: Counterfeit prevention, cold chain compliance, regulatory audit trails, patient safety, streamlined recalls
+
+### Scenario 2: Organic Food Certification
+
+**Challenge**: Consumers want to verify that "organic" products are genuinely organic from farm to store, but current systems rely on paper certificates that can be forged.
+
+**Solution**:
+- Farms create genesis revision with organic certification
+- Certification body signs the certification revision
+- Each processing step is documented and signed
+- Distributors add transport and storage revisions
+- Retailers witness final product placement
+- Consumers scan QR code to verify organic provenance
+
+**Benefits**: Verified organic claims, consumer confidence, brand differentiation, premium pricing justification
+
+### Scenario 3: Automotive Parts Traceability
+
+**Challenge**: An automotive manufacturer needs to track critical safety components through multiple supplier tiers to ensure authenticity and enable recalls if defects are discovered.
+
+**Solution**:
+- Tier 3 supplier creates genesis for raw materials
+- Tier 2 supplier adds processing revisions with quality checks
+- Tier 1 supplier integrates into assemblies with link revisions
+- OEM manufacturer links assemblies into final vehicles
+- Each VIN is linked to component Aqua chains
+- Defective component traced to exact source and all affected vehicles
+
+**Benefits**: Counterfeit prevention, rapid recall execution, root cause analysis, supplier accountability, quality improvement
+
+### Scenario 4: Coffee Supply Chain Transparency
+
+**Challenge**: Coffee roasters want to prove fair trade practices and sustainable sourcing to increasingly conscious consumers, but existing certification systems are opaque.
+
+**Solution**:
+- Coffee farmers create genesis with harvest data
+- Fair trade auditor signs certification revision
+- Exporters document transport and quality grading
+- Importers add customs and warehousing data
+- Roasters link to final packaged products
+- Consumers scan bags to see complete farm-to-cup journey
+
+**Benefits**: Verified ethical sourcing, consumer transparency, premium pricing, farmer accountability, brand storytelling
+
+## Integration Patterns
+
+### ERP Systems
+Integrate Aqua Protocol with enterprise resource planning systems to automatically create revisions for inventory movements, production events, and quality checks.
+
+**Implementation**:
+- ERP triggers Aqua revision creation on key events
+- Product master data becomes genesis revision
+- Manufacturing orders add production revisions
+- Shipping orders create transfer revisions
+- Quality inspections add signed quality revisions
+
+### IoT Sensors
+Connect IoT devices to automatically record sensor data as revisions:
+- Temperature sensors for cold chain monitoring
+- GPS trackers for location updates
+- RFID readers for automated checkpoint scanning
+- Weight scales for quantity verification
+- Quality inspection equipment for automated testing
+
+### Blockchain Oracles
+Use blockchain oracles to feed external data into supply chains:
+- Weather data for agricultural provenance
+- Customs clearance status
+- Regulatory database lookups
+- Third-party certification verification
+- Market pricing for timestamp-based valuation
+
+### Consumer Apps
+Build consumer-facing applications that verify products:
+- Mobile apps with QR code scanning
+- Web portals for product history viewing
+- Voice assistants for product authentication
+- Smart packaging with NFC chips
+- Augmented reality product storytelling
+
+### Supplier Portals
+Create portals for suppliers to contribute to chains:
+- Self-service revision creation
+- Document upload and signature
+- Certification management
+- Quality data submission
+- Real-time status visibility
+
+## Best Practices
+
+### Genesis Creation
+- Create genesis as early as possible in supply chain
+- Include comprehensive product metadata
+- Use template revisions for standardized data
+- Sign genesis immediately to establish authenticity
+- Witness genesis for high-value or regulated products
+
+### Event Granularity
+- Balance detail with practical overhead
+- Record all custody transfers
+- Document critical quality checkpoints
+- Capture regulatory compliance events
+- Skip routine events that don't add value
+
+### Multi-Party Coordination
+- Establish clear protocols for handoffs
+- Both parties must sign custody transfers
+- Verify previous signatures before adding new ones
+- Communicate chain updates to all stakeholders
+- Maintain consistent timestamp standards
+
+### Data Privacy
+- Aqua chains store hashes, not sensitive content
+- Use tree method for selective disclosure
+- Share chains only with authorized parties
+- Consider what metadata is included
+- Use private witnesses if public timestamps are problematic
+
+### Verification Strategy
+- Verify products at key checkpoints
+- Check complete chain for high-value items
+- Spot-check for routine items
+- Validate blockchain witnesses for critical events
+- Train staff on verification procedures
+
+### Batch Operations
+- Use batch witnessing to reduce costs
+- Group similar products in same witness transaction
+- Balance cost savings with timestamp precision
+- Implement automated batching in integration systems
+- Monitor batch sizes for optimization
+
+## Technical Advantages
+
+### Scalability
+- Object revisions scale to billions of products
+- Link revisions enable hierarchical organization
+- Batch witnessing reduces blockchain costs
+- Offline verification after chain retrieval
+- Distributed storage prevents bottlenecks
+
+### Interoperability
+- JSON-based format for easy integration
+- Multiple SDK options (Rust, JavaScript)
+- Standard cryptographic primitives
+- Platform-agnostic verification
+- Compatible with existing supply chain systems
+
+### Flexibility
+- Template system for industry-specific schemas
+- Custom revision types for unique requirements
+- Multiple signature methods for different parties
+- Choice of witnessing networks
+- Extensible for future needs
+
+### Security
+- SHA3-256 hashing prevents collision attacks
+- ECDSA signatures provide strong authentication
+- Blockchain anchoring prevents backdating
+- Merkle trees enable selective disclosure
+- Cryptographic proof instead of trust
+
+## Common Questions
+
+**Q: How do we handle products without digital interfaces?**
+A: Use QR codes, NFC tags, or printed Aqua chain identifiers on packaging. The Aqua chain exists independently of the physical product. Low-cost printed codes work for most products.
+
+**Q: What if a supply chain participant doesn't want to use Aqua Protocol?**
+A: The chain can continue without them, but their contribution won't have cryptographic proof. This creates accountability - participants who don't use Aqua Protocol are less trustworthy. Market pressure encourages adoption.
+
+**Q: How do we handle returns and reverse logistics?**
+A: Add revision documenting the return event, including reason and condition. The chain naturally grows to include forward and reverse movements, maintaining complete product history.
+
+**Q: Can we integrate with existing traceability systems?**
+A: Yes. Aqua Protocol can wrap existing systems, adding cryptographic proof to current tracking data. Legacy system data can be hashed and stored in revisions.
+
+**Q: What about supply chain privacy?**
+A: Aqua chains contain only hashes by default, not business-sensitive data. Share chains selectively with authorized parties. Use tree method for selective disclosure of specific fields to certain stakeholders.
+
+**Q: How do we handle lost or damaged products?**
+A: Add revision documenting loss or damage event with relevant details. The Aqua chain preserves the history up to that point, supporting insurance claims and investigations.
+
+**Q: What if blockchain networks fail?**
+A: Verification of existing chains works offline using cryptographic signatures. Only new witnessing requires blockchain access. Historical witnesses remain provable through blockchain transaction records.
+
+## See Also
+
+- [Document Verification](/use_cases/document-verification) - Apply similar techniques to documents
+- [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
+- [Quick Start](/quick-start) - Get started with supply chain tracking
+- [Schema Reference](/schema_reference/introduction) - Technical specifications
+45:T40fa,
+# Supply Chain Tracking
+
+Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded with immutable timestamps, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
+
+## Core Capabilities
+
+### End-to-End Traceability
+Track products from origin to destination with cryptographic proof at each step. Every transfer, transformation, and quality check is recorded in an immutable chain, creating a complete product history that can be independently verified.
+
+### Multi-Party Coordination
+Supply chains involve manufacturers, distributors, retailers, regulators, and consumers. Aqua Protocol enables all parties to contribute to the chain while maintaining data integrity, without requiring a central authority.
+
+### Provenance Verification
+Prove the origin and authenticity of products cryptographically. Consumers and businesses can verify that products are genuine, sourced ethically, and meet quality standards without trusting intermediaries.
+
+### Real-Time Transparency
+All stakeholders can verify the current state and history of products in real-time. Blockchain witnesses provide tamper-proof timestamps, ensuring accurate tracking of supply chain events as they occur.
+
+## Use Cases by Industry
+
+### Food & Agriculture
+
+**Farm-to-Table Tracking**
+- Record harvest timestamps and origin farm information
+- Track temperature and storage conditions during transport
+- Prove organic certification and farming practices
+- Enable consumers to verify food provenance via QR codes
+
+**Quality Assurance**
+- Document quality inspections at each stage
+- Track batch numbers for recall management
+- Record processing and packaging timestamps
+- Maintain cold chain compliance records
+
+**Regulatory Compliance**
+- Demonstrate compliance with food safety regulations
+- Provide audit trails for health inspectors
+- Track certifications (organic, fair trade, kosher, halal)
+- Prove country of origin for import/export
+
+**Recall Management**
+- Identify affected batches immediately
+- Trace contamination to specific sources
+- Notify all parties in distribution chain
+- Minimize recall scope with precise tracking
+
+### Pharmaceuticals
+
+**Drug Authentication**
+- Prevent counterfeit medications from entering supply chain
+- Verify pharmaceutical manufacturer and production batch
+- Track medication from factory to pharmacy
+- Enable patients to verify medication authenticity
+
+**Cold Chain Management**
+- Record temperature at every transport stage
+- Prove compliance with storage requirements
+- Alert stakeholders to temperature excursions
+- Maintain regulatory compliance documentation
+
+**Clinical Trial Management**
+- Track investigational drugs through trial phases
+- Document chain of custody for trial materials
+- Prove compliance with trial protocols
+- Maintain audit trails for regulatory submissions
+
+**Regulatory Reporting**
+- Demonstrate compliance with pharmaceutical regulations
+- Track serialization and aggregation data
+- Provide audit trails for FDA, EMA, and other authorities
+- Support Drug Supply Chain Security Act (DSCSA) compliance
+
+### Manufacturing
+
+**Component Traceability**
+- Track components from suppliers to assembly
+- Verify authenticity of critical components
+- Manage bill of materials with cryptographic proof
+- Prevent counterfeit parts from entering production
+
+**Quality Control**
+- Record inspection results at each manufacturing stage
+- Document rework and quality issues
+- Track serial numbers through production process
+- Maintain statistical process control data
+
+**Product Genealogy**
+- Build complete product history from raw materials
+- Track which components went into which products
+- Enable root cause analysis for defects
+- Support warranty claims with production records
+
+**Supplier Management**
+- Verify supplier certifications and compliance
+- Track supplier performance metrics
+- Prove ethical sourcing practices
+- Manage supplier risk with documented history
+
+### Logistics & Distribution
+
+**Shipment Tracking**
+- Record custody transfers between carriers
+- Timestamp loading and unloading events
+- Track location updates throughout journey
+- Prove on-time delivery with blockchain witnesses
+
+**Customs and Border Control**
+- Provide immutable documentation for customs
+- Prove product origin for tariff classification
+- Streamline border crossings with verified data
+- Reduce customs delays with cryptographic proof
+
+**Last-Mile Delivery**
+- Verify final delivery to customer
+- Timestamp customer receipt
+- Prove condition at delivery
+- Enable dispute resolution with documented proof
+
+**Warehouse Management**
+- Track inventory movements within facilities
+- Record picking, packing, and shipping operations
+- Maintain lot and serial number traceability
+- Integrate with ERP systems for real-time updates
+
+## Key Benefits
+
+### Eliminate Counterfeits
+Counterfeit products cost industries billions annually. Aqua Protocol makes counterfeiting economically infeasible by requiring cryptographic proof at each supply chain step. Fake products cannot produce valid Aqua chains, making them easily identifiable.
+
+### Improve Recall Efficiency
+When safety issues arise, rapid recall is critical. Aqua Protocol enables precise identification of affected products, reducing recall scope and cost. Complete provenance data shows exactly which batches are impacted and where they were distributed.
+
+### Increase Consumer Trust
+Consumers increasingly demand transparency about product origins and manufacturing. Scannable QR codes linked to Aqua chains let customers verify authenticity, ethical sourcing, and quality standards, building brand trust.
+
+### Streamline Compliance
+Regulatory compliance requires extensive documentation and audit trails. Aqua Protocol automatically creates tamper-proof records that satisfy regulators, reducing compliance costs and audit preparation time.
+
+### Enable Ethical Sourcing
+Prove that products meet ethical standards for labor practices, environmental impact, and sustainable sourcing. Immutable records prevent "ethics washing" and provide verifiable proof of responsible practices.
+
+### Reduce Liability
+Complete documentation of supply chain events reduces liability exposure. When disputes arise, cryptographic proof shows exactly what happened, when, and who was responsible.
+
+## How It Works
+
+### 1. Product Registration
+When a product enters the supply chain:
+- Genesis revision is created with product identifier
+- Initial metadata recorded (SKU, batch number, origin)
+- Manufacturer signs the genesis revision
+- Signature is witnessed on blockchain for timestamp proof
+- Product receives unique Aqua chain
+
+### 2. Supply Chain Events
+As the product moves through the supply chain:
+- Each event creates a new revision (transfer, inspection, processing)
+- Event data includes timestamp, location, responsible party
+- Each party signs their contributions to the chain
+- Critical events are witnessed for regulatory proof
+- Chain grows to include complete product history
+
+### 3. Multi-Party Signatures
+When custody transfers between parties:
+- Sending party signs transfer revision
+- Receiving party verifies and countersigns
+- Both signatures reference the same state
+- Blockchain witness timestamps the transfer
+- Prevents disputes about transfer timing or condition
+
+### 4. Verification
+At any point, stakeholders can verify:
+- Scan product QR code to retrieve Aqua chain
+- Verify all cryptographic signatures
+- Check blockchain witnesses for timestamps
+- Validate entire chain integrity
+- Confirm product authenticity and history
+
+## Real-World Scenarios
+
+### Scenario 1: Pharmaceutical Supply Chain
+
+**Challenge**: A pharmaceutical company must track medication from manufacturing through distribution to pharmacies while maintaining cold chain compliance and preventing counterfeits.
+
+**Solution**:
+- Each medication batch gets genesis revision when manufactured
+- Quality control inspections add signed revisions
+- Temperature monitors record readings as revisions
+- Each distributor transfer is signed by both parties
+- Pharmacies verify medication authenticity by scanning
+- Regulators can audit complete chain from manufacturer to patient
+
+**Benefits**: Counterfeit prevention, cold chain compliance, regulatory audit trails, patient safety, streamlined recalls
+
+### Scenario 2: Organic Food Certification
+
+**Challenge**: Consumers want to verify that "organic" products are genuinely organic from farm to store, but current systems rely on paper certificates that can be forged.
+
+**Solution**:
+- Farms create genesis revision with organic certification
+- Certification body signs the certification revision
+- Each processing step is documented and signed
+- Distributors add transport and storage revisions
+- Retailers witness final product placement
+- Consumers scan QR code to verify organic provenance
+
+**Benefits**: Verified organic claims, consumer confidence, brand differentiation, premium pricing justification
+
+### Scenario 3: Automotive Parts Traceability
+
+**Challenge**: An automotive manufacturer needs to track critical safety components through multiple supplier tiers to ensure authenticity and enable recalls if defects are discovered.
+
+**Solution**:
+- Tier 3 supplier creates genesis for raw materials
+- Tier 2 supplier adds processing revisions with quality checks
+- Tier 1 supplier integrates into assemblies with link revisions
+- OEM manufacturer links assemblies into final vehicles
+- Each VIN is linked to component Aqua chains
+- Defective component traced to exact source and all affected vehicles
+
+**Benefits**: Counterfeit prevention, rapid recall execution, root cause analysis, supplier accountability, quality improvement
+
+### Scenario 4: Coffee Supply Chain Transparency
+
+**Challenge**: Coffee roasters want to prove fair trade practices and sustainable sourcing to increasingly conscious consumers, but existing certification systems are opaque.
+
+**Solution**:
+- Coffee farmers create genesis with harvest data
+- Fair trade auditor signs certification revision
+- Exporters document transport and quality grading
+- Importers add customs and warehousing data
+- Roasters link to final packaged products
+- Consumers scan bags to see complete farm-to-cup journey
+
+**Benefits**: Verified ethical sourcing, consumer transparency, premium pricing, farmer accountability, brand storytelling
+
+## Integration Patterns
+
+### ERP Systems
+Integrate Aqua Protocol with enterprise resource planning systems to automatically create revisions for inventory movements, production events, and quality checks.
+
+**Implementation**:
+- ERP triggers Aqua revision creation on key events
+- Product master data becomes genesis revision
+- Manufacturing orders add production revisions
+- Shipping orders create transfer revisions
+- Quality inspections add signed quality revisions
+
+### IoT Sensors
+Connect IoT devices to automatically record sensor data as revisions:
+- Temperature sensors for cold chain monitoring
+- GPS trackers for location updates
+- RFID readers for automated checkpoint scanning
+- Weight scales for quantity verification
+- Quality inspection equipment for automated testing
+
+### Blockchain Oracles
+Use blockchain oracles to feed external data into supply chains:
+- Weather data for agricultural provenance
+- Customs clearance status
+- Regulatory database lookups
+- Third-party certification verification
+- Market pricing for timestamp-based valuation
+
+### Consumer Apps
+Build consumer-facing applications that verify products:
+- Mobile apps with QR code scanning
+- Web portals for product history viewing
+- Voice assistants for product authentication
+- Smart packaging with NFC chips
+- Augmented reality product storytelling
+
+### Supplier Portals
+Create portals for suppliers to contribute to chains:
+- Self-service revision creation
+- Document upload and signature
+- Certification management
+- Quality data submission
+- Real-time status visibility
+
+## Best Practices
+
+### Genesis Creation
+- Create genesis as early as possible in supply chain
+- Include comprehensive product metadata
+- Use template revisions for standardized data
+- Sign genesis immediately to establish authenticity
+- Witness genesis for high-value or regulated products
+
+### Event Granularity
+- Balance detail with practical overhead
+- Record all custody transfers
+- Document critical quality checkpoints
+- Capture regulatory compliance events
+- Skip routine events that don't add value
+
+### Multi-Party Coordination
+- Establish clear protocols for handoffs
+- Both parties must sign custody transfers
+- Verify previous signatures before adding new ones
+- Communicate chain updates to all stakeholders
+- Maintain consistent timestamp standards
+
+### Data Privacy
+- Aqua chains store hashes, not sensitive content
+- Use tree method for selective disclosure
+- Share chains only with authorized parties
+- Consider what metadata is included
+- Use private witnesses if public timestamps are problematic
+
+### Verification Strategy
+- Verify products at key checkpoints
+- Check complete chain for high-value items
+- Spot-check for routine items
+- Validate blockchain witnesses for critical events
+- Train staff on verification procedures
+
+### Batch Operations
+- Use batch witnessing to reduce costs
+- Group similar products in same witness transaction
+- Balance cost savings with timestamp precision
+- Implement automated batching in integration systems
+- Monitor batch sizes for optimization
+
+## Technical Advantages
+
+### Scalability
+- Object revisions scale to billions of products
+- Link revisions enable hierarchical organization
+- Batch witnessing reduces blockchain costs
+- Offline verification after chain retrieval
+- Distributed storage prevents bottlenecks
+
+### Interoperability
+- JSON-based format for easy integration
+- Multiple SDK options (Rust, JavaScript)
+- Standard cryptographic primitives
+- Platform-agnostic verification
+- Compatible with existing supply chain systems
+
+### Flexibility
+- Template system for industry-specific schemas
+- Custom revision types for unique requirements
+- Multiple signature methods for different parties
+- Choice of witnessing networks
+- Extensible for future needs
+
+### Security
+- SHA3-256 hashing prevents collision attacks
+- ECDSA signatures provide strong authentication
+- Blockchain anchoring prevents backdating
+- Merkle trees enable selective disclosure
+- Cryptographic proof instead of trust
+
+## Common Questions
+
+**Q: How do we handle products without digital interfaces?**
+A: Use QR codes, NFC tags, or printed Aqua chain identifiers on packaging. The Aqua chain exists independently of the physical product. Low-cost printed codes work for most products.
+
+**Q: What if a supply chain participant doesn't want to use Aqua Protocol?**
+A: The chain can continue without them, but their contribution won't have cryptographic proof. This creates accountability - participants who don't use Aqua Protocol are less trustworthy. Market pressure encourages adoption.
+
+**Q: How do we handle returns and reverse logistics?**
+A: Add revision documenting the return event, including reason and condition. The chain naturally grows to include forward and reverse movements, maintaining complete product history.
+
+**Q: Can we integrate with existing traceability systems?**
+A: Yes. Aqua Protocol can wrap existing systems, adding cryptographic proof to current tracking data. Legacy system data can be hashed and stored in revisions.
+
+**Q: What about supply chain privacy?**
+A: Aqua chains contain only hashes by default, not business-sensitive data. Share chains selectively with authorized parties. Use tree method for selective disclosure of specific fields to certain stakeholders.
+
+**Q: How do we handle lost or damaged products?**
+A: Add revision documenting loss or damage event with relevant details. The Aqua chain preserves the history up to that point, supporting insurance claims and investigations.
+
+**Q: What if blockchain networks fail?**
+A: Verification of existing chains works offline using cryptographic signatures. Only new witnessing requires blockchain access. Historical witnesses remain provable through blockchain transaction records.
+
+## See Also
+
+- [Document Verification](/use_cases/document-verification) - Apply similar techniques to documents
+- [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
+- [Quick Start](/quick-start) - Get started with supply chain tracking
+- [Schema Reference](/schema_reference/introduction) - Technical specifications
+3e:["$","$L43",null,{"meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$44","reading_time":12,"word_count":2274},"content":"$45","previousDoc":{"title":"Aqua Protocol Use Cases","slug":"use-cases/introduction"},"nextDoc":{"title":"Aqua CLI","slug":"dev-tools/aqua-cli"},"version":"v4.0.0","slug":"use-cases/supply-chain","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+3f:["$","$L46",null,{"items":[{"id":"core-capabilities","title":"Core Capabilities","level":2},{"id":"end-to-end-traceability","title":"End-to-End Traceability","level":3},{"id":"multi-party-coordination","title":"Multi-Party Coordination","level":3},{"id":"provenance-verification","title":"Provenance Verification","level":3},{"id":"real-time-transparency","title":"Real-Time Transparency","level":3},{"id":"use-cases-by-industry","title":"Use Cases by Industry","level":2},{"id":"food--agriculture","title":"Food & Agriculture","level":3},{"id":"pharmaceuticals","title":"Pharmaceuticals","level":3},{"id":"manufacturing","title":"Manufacturing","level":3},{"id":"logistics--distribution","title":"Logistics & Distribution","level":3},{"id":"key-benefits","title":"Key Benefits","level":2},{"id":"eliminate-counterfeits","title":"Eliminate Counterfeits","level":3},{"id":"improve-recall-efficiency","title":"Improve Recall Efficiency","level":3},{"id":"increase-consumer-trust","title":"Increase Consumer Trust","level":3},{"id":"streamline-compliance","title":"Streamline Compliance","level":3},{"id":"enable-ethical-sourcing","title":"Enable Ethical Sourcing","level":3},{"id":"reduce-liability","title":"Reduce Liability","level":3},{"id":"how-it-works","title":"How It Works","level":2},{"id":"1-product-registration","title":"1. Product Registration","level":3},{"id":"2-supply-chain-events","title":"2. Supply Chain Events","level":3},{"id":"3-multi-party-signatures","title":"3. Multi-Party Signatures","level":3},{"id":"4-verification","title":"4. Verification","level":3},{"id":"real-world-scenarios","title":"Real-World Scenarios","level":2},{"id":"scenario-1-pharmaceutical-supply-chain","title":"Scenario 1: Pharmaceutical Supply Chain","level":3},{"id":"scenario-2-organic-food-certification","title":"Scenario 2: Organic Food Certification","level":3},{"id":"scenario-3-automotive-parts-traceability","title":"Scenario 3: Automotive Parts Traceability","level":3},{"id":"scenario-4-coffee-supply-chain-transparency","title":"Scenario 4: Coffee Supply Chain Transparency","level":3},{"id":"integration-patterns","title":"Integration Patterns","level":2},{"id":"erp-systems","title":"ERP Systems","level":3},{"id":"iot-sensors","title":"IoT Sensors","level":3},{"id":"blockchain-oracles","title":"Blockchain Oracles","level":3},{"id":"consumer-apps","title":"Consumer Apps","level":3},{"id":"supplier-portals","title":"Supplier Portals","level":3},{"id":"best-practices","title":"Best Practices","level":2},{"id":"genesis-creation","title":"Genesis Creation","level":3},{"id":"event-granularity","title":"Event Granularity","level":3},{"id":"multi-party-coordination","title":"Multi-Party Coordination","level":3},{"id":"data-privacy","title":"Data Privacy","level":3},{"id":"verification-strategy","title":"Verification Strategy","level":3},{"id":"batch-operations","title":"Batch Operations","level":3},{"id":"technical-advantages","title":"Technical Advantages","level":2},{"id":"scalability","title":"Scalability","level":3},{"id":"interoperability","title":"Interoperability","level":3},{"id":"flexibility","title":"Flexibility","level":3},{"id":"security","title":"Security","level":3},{"id":"common-questions","title":"Common Questions","level":2},{"id":"see-also","title":"See Also","level":2}],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+40:["$","$L47",null,{}]
+41:["$","$L48",null,{}]
+42:["$","$L49",null,{}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+4a:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"IconMark"]
+e:null
+12:[["$","title","0",{"children":"Supply Chain Tracking | Aqua Protocol"}],["$","meta","1",{"name":"description","content":"End-to-end traceability and provenance verification for supply chain operations"}],["$","link","2",{"rel":"canonical","href":"https://aqua-protocol.org/docs/v4.0.0/use-cases/supply-chain"}],["$","meta","3",{"property":"og:title","content":"Supply Chain Tracking"}],["$","meta","4",{"property":"og:description","content":"End-to-end traceability and provenance verification for supply chain operations"}],["$","meta","5",{"property":"og:url","content":"https://aqua-protocol.org/docs/v4.0.0/use-cases/supply-chain"}],["$","meta","6",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Supply Chain Tracking"}],["$","meta","11",{"name":"twitter:description","content":"End-to-end traceability and provenance verification for supply chain operations"}],["$","link","12",{"rel":"icon","href":"/mint-test/logo/aqua-logo.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/mint-test/apple-icon.png"}],["$","$L4a","14",{}]]

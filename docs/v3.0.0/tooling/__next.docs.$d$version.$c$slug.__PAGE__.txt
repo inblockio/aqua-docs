@@ -1,16 +1,14 @@
 1:"$Sreact.fragment"
 2:"$Sreact.suspense"
-3:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
-4:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
-5:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
-16:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
-17:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
-18:I[222506,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"CodeBlock"]
-bb:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
-bc:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
-bd:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
-be:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
-bf:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLoading"]
+4:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayoutWrapper"]
+5:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"Header"]
+14:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayout"]
+17:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TableOfContents"]
+18:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"MdxHotReload"]
+19:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"HotReloadIndicator"]
+1a:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DevModeBadge"]
+1b:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
 6:T3875,
 # Aqua Protocol v3 Concepts
 
@@ -4527,175 +4525,1571 @@ npm test -- ./tests/aquafier.test.ts
 - [Concepts](/previous_versions/version_3/concepts) - Core concepts
 - [Schema Reference](/previous_versions/version_3/schema) - Revision specifications
 - [GitHub Repository](https://github.com/inblockio/aqua-verifier-js-lib) - Source code and examples
-0:{"buildId":"k8-fwt2fbTlxLBvWFtXyi","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$L3",null,{"header":["$","$L4",null,{"currentVersion":"v3.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$L5",null,{"docs":[{"slug":"concepts","filePath":"concepts","title":"Concepts","meta":{"title":"Concepts","description":"Core concepts and terminology for Aqua Protocol v3","content":"$6","reading_time":9,"word_count":1657},"content":"$7"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol v3","meta":{"title":"Aqua Protocol v3","description":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK","content":"$8","reading_time":6,"word_count":1069},"content":"$9"},{"slug":"schema","filePath":"schema","title":"Schema Reference","meta":{"title":"Schema Reference","description":"Detailed schema specifications for Aqua Protocol v3 revisions","content":"$a","reading_time":10,"word_count":1903},"content":"$b"},{"slug":"tooling","filePath":"tooling","title":"Tooling & SDK","meta":{"title":"Tooling & SDK","description":"Aqua JS SDK API reference and usage guide","content":"$c","reading_time":9,"word_count":1773},"content":"$d"}],"version":"v3.0.0","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"content":"$Le","toc":"$Lf","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"$L10","$L11","$L12"]}],["$L13","$L14"],"$L15"]}],"loading":null,"isPartial":false}
-e:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L16",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v3.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L17",null,{"href":"/docs/v3.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v3.0.0/tooling",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Tooling & SDK"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Tooling & SDK"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"Aqua JS SDK API reference and usage guide"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[9," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-6 text-foreground","children":"Aqua Protocol v3 - Tooling & SDK"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The Aqua JS SDK (aqua-js-sdk) is a comprehensive TypeScript library for working with Aqua Protocol v3. It provides a complete API for creating, signing, witnessing, and verifying revision chains across multiple platforms."}],"\n",["$","h2",null,{"id":"installation","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Installation"}],"\n",["$","$L18",null,{"code":"npm install aqua-js-sdk","language":"bash"}],"\n",["$","h3",null,{"id":"platform-specific-imports","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Platform-Specific Imports"}],"\n",["$","$L18",null,{"code":"// Node.js (default)\nimport Aquafier from 'aqua-js-sdk';\n\n// Web Browser\nimport Aquafier from 'aqua-js-sdk/web';\n\n// React Native\nimport Aquafier from 'aqua-js-sdk/react-native';","language":"typescript"}],"\n",["$","h2",null,{"id":"core-api","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Core API"}],"\n","$L19","\n","$L1a","\n","$L1b","\n","$L1c","\n","$L1d","\n","$L1e","\n","$L1f","\n","$L20","\n","$L21","\n","$L22","\n","$L23","\n","$L24","\n","$L25","\n","$L26","\n","$L27","\n","$L28","\n","$L29","\n","$L2a","\n","$L2b","\n","$L2c","\n","$L2d","\n","$L2e","\n","$L2f","\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b","\n","$L6c","\n","$L6d","\n","$L6e","\n","$L6f","\n","$L70","\n","$L71","\n","$L72","\n","$L73","\n","$L74","\n","$L75","\n","$L76","\n","$L77","\n","$L78","\n","$L79","\n","$L7a","\n","$L7b","\n","$L7c","\n","$L7d","\n","$L7e","\n","$L7f","\n","$L80","\n","$L81","\n","$L82","\n","$L83","\n","$L84","\n","$L85","\n","$L86","\n","$L87","\n","$L88","\n","$L89","\n","$L8a","\n","$L8b","\n","$L8c","\n","$L8d","\n","$L8e","\n","$L8f","\n","$L90","\n","$L91","\n","$L92","\n","$L93","\n","$L94","\n","$L95","\n","$L96","\n","$L97","\n","$L98","\n","$L99","\n","$L9a","\n","$L9b","\n","$L9c","\n","$L9d","\n","$L9e","\n","$L9f","\n","$La0","\n","$La1","\n","$La2","\n","$La3","\n","$La4","\n","$La5","\n","$La6","\n","$La7","\n","$La8","\n","$La9","\n","$Laa","\n","$Lab","\n","$Lac","\n","$Lad","\n","$Lae","\n","$Laf","\n","$Lb0","\n","$Lb1","\n","$Lb2","\n","$Lb3","\n","$Lb4","\n","$Lb5","\n","$Lb6","\n","$Lb7","\n","$Lb8"]}],"$undefined","$Lb9","$Lba"]}]
-f:["$","$Lbb",null,{"items":[{"id":"installation","title":"Installation","level":2},{"id":"platform-specific-imports","title":"Platform-Specific Imports","level":3},{"id":"core-api","title":"Core API","level":2},{"id":"aquafier-class","title":"Aquafier Class","level":3},{"id":"creating-revisions","title":"Creating Revisions","level":3},{"id":"signing-revisions","title":"Signing Revisions","level":3},{"id":"witnessing-revisions","title":"Witnessing Revisions","level":3},{"id":"linking-revisions","title":"Linking Revisions","level":3},{"id":"verification","title":"Verification","level":3},{"id":"utility-methods","title":"Utility Methods","level":3},{"id":"type-reference","title":"Type Reference","level":2},{"id":"core-types","title":"Core Types","level":3},{"id":"result-type","title":"Result Type","level":3},{"id":"configuration-types","title":"Configuration Types","level":3},{"id":"platform-specific-notes","title":"Platform-Specific Notes","level":2},{"id":"nodejs","title":"Node.js","level":3},{"id":"web-browser","title":"Web Browser","level":3},{"id":"react-native","title":"React Native","level":3},{"id":"complete-workflow-examples","title":"Complete Workflow Examples","level":2},{"id":"document-notarization","title":"Document Notarization","level":3},{"id":"multi-party-approval","title":"Multi-Party Approval","level":3},{"id":"form-submission-with-verification","title":"Form Submission with Verification","level":3},{"id":"error-handling","title":"Error Handling","level":2},{"id":"best-practices","title":"Best Practices","level":2},{"id":"testing","title":"Testing","level":2},{"id":"see-also","title":"See Also","level":2}],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}]
-10:["$","$Lbc",null,{}]
-11:["$","$Lbd",null,{}]
-12:["$","$Lbe",null,{}]
-13:["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true}]
-14:["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true}]
-15:["$","$Lbf",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@c0"}]}]
-19:["$","h3",null,{"id":"aquafier-class","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Aquafier Class"}]
-1a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The main class providing all Aqua Protocol operations."}]
-1b:["$","h4",null,{"id":"constructor","children":"Constructor"}]
-1c:["$","$L18",null,{"code":"const aquafier = new Aquafier();","language":"typescript"}]
-1d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"No configuration needed for initialization."}]
-1e:["$","hr",null,{}]
-1f:["$","h3",null,{"id":"creating-revisions","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Creating Revisions"}]
-20:["$","h4",null,{"id":"creategenesisrevision","children":"createGenesisRevision()"}]
-21:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Creates the first revision in a new AquaTree."}]
-22:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Signature:"}]}]
-23:["$","$L18",null,{"code":"async createGenesisRevision(\n  fileObject: FileObject,\n  isForm?: boolean,\n  enableContent?: boolean,\n  enableScalar?: boolean\n): Promise<Result<AquaOperationData, LogData[]>>","language":"typescript"}]
-24:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Parameters:"}]}]
-25:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"fileObject"}],": File data to create revision from"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"isForm"}],": If true, creates form revision (default: false)"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"enableContent"}],": Include file content in revision (default: false)"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"enableScalar"}],": Use scalar method instead of tree (default: true)"]}],"\n"]}]
-26:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Returns:"}]}]
-27:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["Success: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"AquaOperationData"}]," with new AquaTree"]}],"\n",["$","li",null,{"className":"leading-7","children":"Failure: Array of error logs"}],"\n"]}]
-28:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Example:"}]}]
-29:["$","$L18",null,{"code":"const fileObject: FileObject = {\n  fileName: \"contract.pdf\",\n  fileContent: pdfBuffer, // Uint8Array or string\n  path: \"/documents/contract.pdf\"\n};\n\nconst result = await aquafier.createGenesisRevision(fileObject);\n\nif (result.isErr) {\n  result.data.logData.forEach(log => console.error(log));\n  return;\n}\n\nconst aquaTree = result.data.aquaTree;","language":"typescript"}]
-2a:["$","h4",null,{"id":"createnewrevision","children":"createNewRevision()"}]
-2b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Adds a new file/form revision to an existing AquaTree."}]
-2c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Signature:"}]}]
-2d:["$","$L18",null,{"code":"async createNewRevision(\n  aquaTree: AquaTree,\n  fileObject: FileObject,\n  isForm?: boolean,\n  enableContent?: boolean,\n  enableScalar?: boolean\n): Promise<Result<AquaOperationData, LogData[]>>","language":"typescript"}]
-2e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Example:"}]}]
-2f:["$","$L18",null,{"code":"const result = await aquafier.createNewRevision(\n  existingAquaTree,\n  updatedFileObject,\n  false,  // not a form\n  false,  // don't embed content\n  true    // use scalar method\n);","language":"typescript"}]
-30:["$","hr",null,{}]
-31:["$","h3",null,{"id":"signing-revisions","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Signing Revisions"}]
-32:["$","h4",null,{"id":"signrevision","children":"signRevision()"}]
-33:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Signs the latest revision in an AquaTree."}]
-34:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Signature:"}]}]
-35:["$","$L18",null,{"code":"async signRevision(\n  aquaTree: AquaTree,\n  signType: SignType,\n  credentials?: CredentialsData,\n  inlineOptions?: InlineSignerOptions\n): Promise<Result<AquaOperationData, LogData[]>>","language":"typescript"}]
-36:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Parameters:"}]}]
-37:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signType"}],": One of ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"cli\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"metamask\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"did\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"p12\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"inline\""}]]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"credentials"}],": Credentials for CLI, DID, or P12 signing"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"inlineOptions"}],": Pre-computed signature for inline mode"]}],"\n"]}]
-38:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Sign Types:"}]}]
-39:["$","h5",null,{"id":"cli-signing","children":"CLI Signing"}]
-3a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Uses BIP39 mnemonic to derive wallet and sign."}]
-3b:["$","$L18",null,{"code":"const credentials: CredentialsData = {\n  mnemonic: \"abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about\",\n  // ... other fields\n};\n\nconst result = await aquafier.signRevision(\n  aquaTree,\n  \"cli\",\n  credentials\n);","language":"typescript"}]
-3c:["$","h5",null,{"id":"metamask-signing","children":"MetaMask Signing"}]
-3d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Opens MetaMask for user to sign (browser only)."}]
-3e:["$","$L18",null,{"code":"const result = await aquafier.signRevision(\n  aquaTree,\n  \"metamask\"\n);","language":"typescript"}]
-3f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"React Native MetaMask:"}]}]
-40:["$","$L18",null,{"code":"const result = await aquafier.signRevision(\n  aquaTree,\n  \"metamask\",\n  undefined,\n  {\n    deepLinkUrl: \"metamask://\",\n    callbackUrl: \"myapp://metamask-callback\",\n    onDeepLinkReady: (url) => {\n      // Open MetaMask app\n      Linking.openURL(url);\n    }\n  }\n);","language":"typescript"}]
-41:["$","h5",null,{"id":"did-signing","children":"DID Signing"}]
-42:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Signs with Decentralized Identifier."}]
-43:["$","$L18",null,{"code":"const credentials: CredentialsData = {\n  did_key: \"your-did-key-here\",\n  // ... other fields\n};\n\nconst result = await aquafier.signRevision(\n  aquaTree,\n  \"did\",\n  credentials\n);","language":"typescript"}]
-44:["$","h5",null,{"id":"p12-certificate-signing","children":"P12 Certificate Signing"}]
-45:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Signs with P12 certificate."}]
-46:["$","$L18",null,{"code":"const credentials: CredentialsData = {\n  p12_password: \"certificate-password\",\n  p12_content: \"base64-encoded-p12-content\",\n  // ... other fields\n};\n\nconst result = await aquafier.signRevision(\n  aquaTree,\n  \"p12\",\n  credentials\n);","language":"typescript"}]
-47:["$","h5",null,{"id":"inline-signing","children":"Inline Signing"}]
-48:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Use pre-computed signature."}]
-49:["$","$L18",null,{"code":"const inlineOptions: InlineSignerOptions = {\n  walletAddress: \"0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8\",\n  signature: \"0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f...\"\n};\n\nconst result = await aquafier.signRevision(\n  aquaTree,\n  \"inline\",\n  undefined,\n  inlineOptions\n);","language":"typescript"}]
-4a:["$","hr",null,{}]
-4b:["$","h3",null,{"id":"witnessing-revisions","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Witnessing Revisions"}]
-4c:["$","h4",null,{"id":"witnessrevision","children":"witnessRevision()"}]
-4d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Timestamps a revision via blockchain or TSA."}]
-4e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Signature:"}]}]
-4f:["$","$L18",null,{"code":"async witnessRevision(\n  aquaTree: AquaTree,\n  witnessType: WitnessType,\n  witnessConfig: WitnessConfig,\n  credentials?: CredentialsData,\n  witnessPlatform?: WitnessPlatformType,\n  inlineOptions?: InlineWitnessOptions\n): Promise<Result<AquaOperationData, LogData[]>>","language":"typescript"}]
-50:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Parameters:"}]}]
-51:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witnessType"}],": ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"eth\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"nostr\""}],", or ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"tsa\""}]]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witnessConfig"}],": Network and contract configuration"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"credentials"}],": Credentials for signing transaction"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witnessPlatform"}],": ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"cli\""}]," or ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"metamask\""}]," (Ethereum only)"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"inlineOptions"}],": Pre-computed transaction (inline mode)"]}],"\n"]}]
-52:["$","h4",null,{"id":"ethereum-witnessing","children":"Ethereum Witnessing"}]
-53:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Configuration:"}]}]
-54:["$","$L18",null,{"code":"const witnessConfig: WitnessConfig = {\n  witnessEventVerificationHash: latestRevisionHash,\n  witnessNetwork: \"sepolia\",  // or \"mainnet\", \"holesky\"\n  smartContractAddress: \"0x5FbDB2315678afecb367f032d93F642f64180aa3\"\n};\n\nconst credentials: CredentialsData = {\n  mnemonic: \"your mnemonic here\",\n  // ...\n};","language":"typescript"}]
-55:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"CLI Method"}]," (uses mnemonic):"]}]
-56:["$","$L18",null,{"code":"const result = await aquafier.witnessRevision(\n  aquaTree,\n  \"eth\",\n  witnessConfig,\n  credentials,\n  \"cli\"\n);","language":"typescript"}]
-57:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"MetaMask Method"}]," (prompts user):"]}]
-58:["$","$L18",null,{"code":"const result = await aquafier.witnessRevision(\n  aquaTree,\n  \"eth\",\n  witnessConfig,\n  undefined,\n  \"metamask\"\n);","language":"typescript"}]
-59:["$","h4",null,{"id":"nostr-witnessing","children":"Nostr Witnessing"}]
-5a:["$","$L18",null,{"code":"const witnessConfig: WitnessConfig = {\n  witnessEventVerificationHash: latestRevisionHash,\n  witnessNetwork: \"sepolia\",  // not used for Nostr\n  smartContractAddress: \"\"     // not used for Nostr\n};\n\nconst credentials: CredentialsData = {\n  nostr_sk: \"your-nostr-secret-key\",\n  // ...\n};\n\nconst result = await aquafier.witnessRevision(\n  aquaTree,\n  \"nostr\",\n  witnessConfig,\n  credentials\n);","language":"typescript"}]
-5b:["$","h4",null,{"id":"tsa-witnessing","children":"TSA Witnessing"}]
-5c:["$","$L18",null,{"code":"const result = await aquafier.witnessRevision(\n  aquaTree,\n  \"tsa\",\n  witnessConfig\n);","language":"typescript"}]
-5d:["$","hr",null,{}]
-5e:["$","h3",null,{"id":"linking-revisions","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Linking Revisions"}]
-5f:["$","h4",null,{"id":"linkrevision","children":"linkRevision()"}]
-60:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Creates a link revision connecting to other AquaTrees."}]
-61:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Signature:"}]}]
-62:["$","$L18",null,{"code":"async linkRevision(\n  aquaTree: AquaTree,\n  linkedAquaTrees: AquaTree[],\n  linkType?: string\n): Promise<Result<AquaOperationData, LogData[]>>","language":"typescript"}]
-63:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Example:"}]}]
-64:["$","$L18",null,{"code":"const result = await aquafier.linkRevision(\n  mainAquaTree,\n  [dependency1Tree, dependency2Tree, dependency3Tree],\n  \"dependencies\"\n);","language":"typescript"}]
-65:["$","hr",null,{}]
-66:["$","h3",null,{"id":"verification","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Verification"}]
-67:["$","h4",null,{"id":"verifyrevisionchain","children":"verifyRevisionChain()"}]
-68:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Verifies an entire AquaTree chain."}]
-69:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Signature:"}]}]
-6a:["$","$L18",null,{"code":"async verifyRevisionChain(\n  aquaTree: AquaTree,\n  credentials?: CredentialsData\n): Promise<VerificationGraphData>","language":"typescript"}]
-6b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Parameters:"}]}]
-6c:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"aquaTree"}],": Tree to verify"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"credentials"}],": Optional, for Ethereum witness lookup"]}],"\n"]}]
-6d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Returns:"}]}]
-6e:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"VerificationGraphData"}],": Graph structure with verification results"]}],"\n"]}]
-6f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Example:"}]}]
-70:["$","$L18",null,{"code":"const verificationResult = await aquafier.verifyRevisionChain(aquaTree, credentials);\n\n// Check overall success\nif (verificationResult.isValidationSuccessful) {\n  console.log(\"✓ Chain is valid\");\n} else {\n  console.log(\"✗ Chain validation failed\");\n}\n\n// Traverse verification graph\nfunction printResults(node: VerificationGraphData, depth = 0) {\n  const indent = \"  \".repeat(depth);\n  const status = node.isValidationSuccessful ? \"✓\" : \"✗\";\n  console.log(`${indent}${status} ${node.revisionType}`);\n\n  node.verificationGraphData.forEach(child => printResults(child, depth + 1));\n}\n\nprintResults(verificationResult);","language":"typescript"}]
-71:["$","h4",null,{"id":"verifyformrevision","children":"verifyFormRevision()"}]
-72:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Verifies form-specific data."}]
-73:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Signature:"}]}]
-74:["$","$L18",null,{"code":"async verifyFormRevision(\n  aquaTree: AquaTree,\n  formData: FormData\n): Promise<FormVerificationResponseData>","language":"typescript"}]
-75:["$","hr",null,{}]
-76:["$","h3",null,{"id":"utility-methods","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Utility Methods"}]
-77:["$","h4",null,{"id":"removelastrevision","children":"removeLastRevision()"}]
-78:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Removes the most recent revision from an AquaTree."}]
-79:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Signature:"}]}]
-7a:["$","$L18",null,{"code":"removeLastRevision(\n  aquaTree: AquaTree\n): Result<AquaOperationData, LogData[]>","language":"typescript"}]
-7b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Example:"}]}]
-7c:["$","$L18",null,{"code":"const result = aquafier.removeLastRevision(aquaTree);\n\nif (result.isOk) {\n  const updatedTree = result.data.aquaTree;\n  console.log(\"Revision removed successfully\");\n}","language":"typescript"}]
-7d:["$","h4",null,{"id":"checkiffilealreadynotarized","children":"checkIfFileAlreadyNotarized()"}]
-7e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Checks if a file has already been notarized."}]
-7f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Signature:"}]}]
-80:["$","$L18",null,{"code":"checkIfFileAlreadyNotarized(\n  aquaTree: AquaTree,\n  fileObject: FileObject\n): boolean","language":"typescript"}]
-81:["$","h4",null,{"id":"fetchfilestoberead","children":"fetchFilesToBeRead()"}]
-82:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Gets list of files that need content loaded."}]
-83:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Signature:"}]}]
-84:["$","$L18",null,{"code":"fetchFilesToBeRead(aquaTree: AquaTree): string[]","language":"typescript"}]
-85:["$","hr",null,{}]
-86:["$","h2",null,{"id":"type-reference","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Type Reference"}]
-87:["$","h3",null,{"id":"core-types","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Core Types"}]
-88:["$","$L18",null,{"code":"interface FileObject {\n  fileName: string\n  fileContent: string | AquaTree | Uint8Array | Record<string, string> | object\n  path: string\n  fileSize?: number\n}\n\ninterface AquaTree {\n  revisions: Revisions\n  file_index: FileIndex\n  tree?: RevisionTree\n  treeMapping?: TreeMapping\n}\n\ninterface Revision {\n  previous_verification_hash: string\n  local_timestamp: string\n  revision_type: RevisionType\n  version: string\n  // ... type-specific fields\n}\n\ntype RevisionType = \"file\" | \"witness\" | \"signature\" | \"form\" | \"link\"\ntype SignType = \"metamask\" | \"cli\" | \"did\" | \"p12\" | \"inline\"\ntype WitnessType = \"tsa\" | \"eth\" | \"nostr\"\ntype WitnessNetwork = \"sepolia\" | \"mainnet\" | \"holesky\"","language":"typescript"}]
-89:["$","h3",null,{"id":"result-type","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Result Type"}]
-8a:["$","$L18",null,{"code":"type Result<T, E> =\n  | { isOk: true; isErr: false; data: T }\n  | { isOk: false; isErr: true; data: E }","language":"typescript"}]
-8b:["$","h3",null,{"id":"configuration-types","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Configuration Types"}]
-8c:["$","$L18",null,{"code":"interface CredentialsData {\n  mnemonic: string\n  nostr_sk: string\n  did_key: string\n  alchemy_key: string\n  witness_eth_network: string\n  witness_method: string\n  p12_password?: string\n  p12_content?: string\n}\n\ninterface WitnessConfig {\n  witnessEventVerificationHash: string\n  witnessNetwork: WitnessNetwork\n  smartContractAddress: string\n}","language":"typescript"}]
-8d:["$","hr",null,{}]
-8e:["$","h2",null,{"id":"platform-specific-notes","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Platform-Specific Notes"}]
-8f:["$","h3",null,{"id":"nodejs","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Node.js"}]
-90:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Full functionality available:"}]
-91:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"All signing methods"}],"\n",["$","li",null,{"className":"leading-7","children":"All witnessing methods"}],"\n",["$","li",null,{"className":"leading-7","children":"File system access"}],"\n",["$","li",null,{"className":"leading-7","children":"HTTP server for MetaMask callback"}],"\n"]}]
-92:["$","$L18",null,{"code":"import Aquafier from 'aqua-js-sdk';\nimport fs from 'fs';\n\nconst aquafier = new Aquafier();\n\n// Read file from disk\nconst fileContent = fs.readFileSync('document.pdf');\n\nconst fileObject = {\n  fileName: 'document.pdf',\n  fileContent: fileContent,\n  path: './document.pdf'\n};","language":"typescript"}]
-93:["$","h3",null,{"id":"web-browser","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Web Browser"}]
-94:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Most functionality available:"}]
-95:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"MetaMask signing (primary method)"}],"\n",["$","li",null,{"className":"leading-7","children":"DID signing"}],"\n",["$","li",null,{"className":"leading-7","children":"Ethereum witnessing via MetaMask"}],"\n",["$","li",null,{"className":"leading-7","children":"Nostr, TSA witnessing"}],"\n"]}]
-96:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Limitations:"}]}]
-97:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"No P12 signing (requires file system)"}],"\n",["$","li",null,{"className":"leading-7","children":"No CLI signing with mnemonic (security risk in browser)"}],"\n"]}]
-98:["$","$L18",null,{"code":"import Aquafier from 'aqua-js-sdk/web';\n\nconst aquafier = new Aquafier();\n\n// File from input element\nconst file = document.getElementById('fileInput').files[0];\nconst arrayBuffer = await file.arrayBuffer();\n\nconst fileObject = {\n  fileName: file.name,\n  fileContent: new Uint8Array(arrayBuffer),\n  path: file.name\n};","language":"typescript"}]
-99:["$","h3",null,{"id":"react-native","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"React Native"}]
-9a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Most functionality with platform adaptations:"}]
-9b:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"MetaMask via deep linking"}],"\n",["$","li",null,{"className":"leading-7","children":"DID signing"}],"\n",["$","li",null,{"className":"leading-7","children":"Limited witnessing"}],"\n"]}]
-9c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Limitations:"}]}]
-9d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"No local HTTP server"}],"\n",["$","li",null,{"className":"leading-7","children":"MetaMask requires custom deep linking"}],"\n",["$","li",null,{"className":"leading-7","children":"File system needs react-native-fs"}],"\n"]}]
-9e:["$","$L18",null,{"code":"import Aquafier from 'aqua-js-sdk/react-native';\nimport RNFS from 'react-native-fs';\n\nconst aquafier = new Aquafier();\n\n// Read file\nconst fileContent = await RNFS.readFile(filePath, 'base64');\n\nconst fileObject = {\n  fileName: 'document.pdf',\n  fileContent: Buffer.from(fileContent, 'base64'),\n  path: filePath\n};","language":"typescript"}]
-9f:["$","hr",null,{}]
-a0:["$","h2",null,{"id":"complete-workflow-examples","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Complete Workflow Examples"}]
-a1:["$","h3",null,{"id":"document-notarization","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Document Notarization"}]
-a2:["$","$L18",null,{"code":"// 1. Create genesis\nconst fileObject: FileObject = {\n  fileName: \"contract.pdf\",\n  fileContent: pdfBuffer,\n  path: \"/contracts/contract.pdf\"\n};\n\nlet result = await aquafier.createGenesisRevision(fileObject);\nlet aquaTree = result.data.aquaTree;\n\n// 2. Sign with CLI\nconst credentials: CredentialsData = {\n  mnemonic: process.env.MNEMONIC,\n  // ... other fields\n};\n\nresult = await aquafier.signRevision(aquaTree, \"cli\", credentials);\naquaTree = result.data.aquaTree;\n\n// 3. Witness to Ethereum\nconst witnessConfig: WitnessConfig = {\n  witnessEventVerificationHash: Object.keys(aquaTree.revisions)[Object.keys(aquaTree.revisions).length - 1],\n  witnessNetwork: \"sepolia\",\n  smartContractAddress: \"0x5FbDB2315678afecb367f032d93F642f64180aa3\"\n};\n\nresult = await aquafier.witnessRevision(\n  aquaTree,\n  \"eth\",\n  witnessConfig,\n  credentials,\n  \"cli\"\n);\naquaTree = result.data.aquaTree;\n\n// 4. Save\nfs.writeFileSync('contract.aqua.json', JSON.stringify(aquaTree, null, 2));","language":"typescript"}]
-a3:["$","h3",null,{"id":"multi-party-approval","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Multi-Party Approval"}]
-a4:["$","$L18",null,{"code":"// Party 1: Create and sign\nlet result = await aquafier.createGenesisRevision(fileObject);\nlet aquaTree = result.data.aquaTree;\n\nresult = await aquafier.signRevision(aquaTree, \"cli\", party1Credentials);\naquaTree = result.data.aquaTree;\n\n// Send aquaTree to Party 2\n\n// Party 2: Add signature\nresult = await aquafier.signRevision(aquaTree, \"metamask\");\naquaTree = result.data.aquaTree;\n\n// Send back to Party 1\n\n// Party 1: Witness\nresult = await aquafier.witnessRevision(\n  aquaTree,\n  \"eth\",\n  witnessConfig,\n  party1Credentials,\n  \"cli\"\n);\naquaTree = result.data.aquaTree;","language":"typescript"}]
-a5:["$","h3",null,{"id":"form-submission-with-verification","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Form Submission with Verification"}]
-a6:["$","$L18",null,{"code":"// 1. Create form genesis\nconst formData = {\n  name: \"John Doe\",\n  email: \"john@example.com\",\n  status: \"pending\"\n};\n\nconst fileObject: FileObject = {\n  fileName: \"application.json\",\n  fileContent: formData,\n  path: \"/forms/application.json\"\n};\n\nlet result = await aquafier.createGenesisRevision(fileObject, true);  // isForm=true\nlet aquaTree = result.data.aquaTree;\n\n// 2. Sign\nresult = await aquafier.signRevision(aquaTree, \"did\", credentials);\naquaTree = result.data.aquaTree;\n\n// 3. Witness\nresult = await aquafier.witnessRevision(aquaTree, \"nostr\", witnessConfig, credentials);\naquaTree = result.data.aquaTree;\n\n// 4. Verify form\nconst verifyResult = await aquafier.verifyFormRevision(aquaTree, formData);\nconsole.log(\"Form valid:\", verifyResult.isOk);","language":"typescript"}]
-a7:["$","hr",null,{}]
-a8:["$","h2",null,{"id":"error-handling","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Error Handling"}]
-a9:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["All methods return ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Result<T, E>"}]," type. Always check for errors:"]}]
-aa:["$","$L18",null,{"code":"const result = await aquafier.createGenesisRevision(fileObject);\n\nif (result.isErr) {\n  // Handle error\n  console.error(\"Failed to create genesis:\");\n  result.data.forEach(log => {\n    console.error(`[${log.logType}] ${log.log}`);\n  });\n  return;\n}\n\n// Success\nconst aquaTree = result.data.aquaTree;","language":"typescript"}]
-ab:["$","hr",null,{}]
-ac:["$","h2",null,{"id":"best-practices","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Best Practices"}]
-ad:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Always verify results"}],": Check ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"isErr"}]," before using data"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Store credentials securely"}],": Never commit mnemonic/keys"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Use environment variables"}],": Store sensitive data in ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":".env"}]]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Validate inputs"}],": Check file sizes and formats before processing"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Handle logs"}],": Display or log all LogData for debugging"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Test on testnets"}],": Use Sepolia/Holesky before mainnet"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Save AquaTrees"}],": Persist JSON after each operation"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Verify chains"}],": Run verification after receiving AquaTrees"]}],"\n"]}]
-ae:["$","hr",null,{}]
-af:["$","h2",null,{"id":"testing","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Testing"}]
-b0:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["Create ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"credentials.json"}]," for testing:"]}]
-b1:["$","$L18",null,{"code":"{\n  \"mnemonic\": \"your test mnemonic\",\n  \"nostr_sk\": \"your nostr secret key\",\n  \"did_key\": \"your did key\",\n  \"alchemy_key\": \"your alchemy api key\",\n  \"witness_eth_network\": \"sepolia\",\n  \"witness_method\": \"cli\"\n}","language":"json"}]
-b2:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Run tests:"}]
-b3:["$","$L18",null,{"code":"npm test","language":"bash"}]
-b4:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Run specific test file:"}]
-b5:["$","$L18",null,{"code":"npm test -- ./tests/aquafier.test.ts","language":"bash"}]
-b6:["$","hr",null,{}]
-b7:["$","h2",null,{"id":"see-also","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"See Also"}]
-b8:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/previous_versions/version_3/introduction","className":"text-primary hover:underline font-medium","children":"Introduction"}]," - Getting started"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/previous_versions/version_3/concepts","className":"text-primary hover:underline font-medium","children":"Concepts"}]," - Core concepts"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/previous_versions/version_3/schema","className":"text-primary hover:underline font-medium","children":"Schema Reference"}]," - Revision specifications"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-verifier-js-lib","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"GitHub Repository"}]," - Source code and examples"]}],"\n"]}]
-b9:["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v3.0.0/tooling.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":[["$","path","1couwa",{"d":"M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","1y4qbx",{"d":"M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"}],"$undefined"]}],"Edit this page"]}],["$","a",null,{"href":"https://github.com/inblockio/issues/new","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-external-link h-4 w-4","children":[["$","path","1q9fwt",{"d":"M15 3h6v6"}],["$","path","gplh6r",{"d":"M10 14 21 3"}],["$","path","a6xqqp",{"d":"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"}],"$undefined"]}],"Report an issue"]}]]}]
-ba:["$","div",null,{"className":"mt-12 pt-8 border-t border-border grid grid-cols-2 gap-4","children":[["$","$L17",null,{"href":"/docs/v3.0.0/schema","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Previous"}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Schema Reference"}]]}],["$","div",null,{}]]}]
-c0:null
+0:{"buildId":"_ePiRrooneby3ghoRNSHI","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","$L3",null,{}],"children":[["$","$L4",null,{"header":["$","$L5",null,{"currentVersion":"v3.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"docs":[{"slug":"concepts","filePath":"concepts","title":"Concepts","meta":{"title":"Concepts","description":"Core concepts and terminology for Aqua Protocol v3","content":"$6","reading_time":9,"word_count":1657},"content":"$7"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol v3","meta":{"title":"Aqua Protocol v3","description":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK","content":"$8","reading_time":6,"word_count":1069},"content":"$9"},{"slug":"schema","filePath":"schema","title":"Schema Reference","meta":{"title":"Schema Reference","description":"Detailed schema specifications for Aqua Protocol v3 revisions","content":"$a","reading_time":10,"word_count":1903},"content":"$b"},{"slug":"tooling","filePath":"tooling","title":"Tooling & SDK","meta":{"title":"Tooling & SDK","description":"Aqua JS SDK API reference and usage guide","content":"$c","reading_time":9,"word_count":1773},"content":"$d"}],"version":"v3.0.0","content":"$Le","toc":"$Lf","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"$L10","$L11","$L12"]}],null,"$L13"]}],"loading":null,"isPartial":false}
+15:T3ef3,
+# Aqua Protocol v3 - Tooling & SDK
+
+The Aqua JS SDK (aqua-js-sdk) is a comprehensive TypeScript library for working with Aqua Protocol v3. It provides a complete API for creating, signing, witnessing, and verifying revision chains across multiple platforms.
+
+## Installation
+
+```bash
+npm install aqua-js-sdk
+```
+
+### Platform-Specific Imports
+
+```typescript
+// Node.js (default)
+import Aquafier from 'aqua-js-sdk';
+
+// Web Browser
+import Aquafier from 'aqua-js-sdk/web';
+
+// React Native
+import Aquafier from 'aqua-js-sdk/react-native';
+```
+
+## Core API
+
+### Aquafier Class
+
+The main class providing all Aqua Protocol operations.
+
+#### Constructor
+
+```typescript
+const aquafier = new Aquafier();
+```
+
+No configuration needed for initialization.
+
+---
+
+### Creating Revisions
+
+#### createGenesisRevision()
+
+Creates the first revision in a new AquaTree.
+
+**Signature:**
+```typescript
+async createGenesisRevision(
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `fileObject`: File data to create revision from
+- `isForm`: If true, creates form revision (default: false)
+- `enableContent`: Include file content in revision (default: false)
+- `enableScalar`: Use scalar method instead of tree (default: true)
+
+**Returns:**
+- Success: `AquaOperationData` with new AquaTree
+- Failure: Array of error logs
+
+**Example:**
+```typescript
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer, // Uint8Array or string
+  path: "/documents/contract.pdf"
+};
+
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  result.data.logData.forEach(log => console.error(log));
+  return;
+}
+
+const aquaTree = result.data.aquaTree;
+```
+
+#### createNewRevision()
+
+Adds a new file/form revision to an existing AquaTree.
+
+**Signature:**
+```typescript
+async createNewRevision(
+  aquaTree: AquaTree,
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Example:**
+```typescript
+const result = await aquafier.createNewRevision(
+  existingAquaTree,
+  updatedFileObject,
+  false,  // not a form
+  false,  // don't embed content
+  true    // use scalar method
+);
+```
+
+---
+
+### Signing Revisions
+
+#### signRevision()
+
+Signs the latest revision in an AquaTree.
+
+**Signature:**
+```typescript
+async signRevision(
+  aquaTree: AquaTree,
+  signType: SignType,
+  credentials?: CredentialsData,
+  inlineOptions?: InlineSignerOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `signType`: One of `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"`
+- `credentials`: Credentials for CLI, DID, or P12 signing
+- `inlineOptions`: Pre-computed signature for inline mode
+
+**Sign Types:**
+
+##### CLI Signing
+Uses BIP39 mnemonic to derive wallet and sign.
+
+```typescript
+const credentials: CredentialsData = {
+  mnemonic: "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "cli",
+  credentials
+);
+```
+
+##### MetaMask Signing
+Opens MetaMask for user to sign (browser only).
+
+```typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask"
+);
+```
+
+**React Native MetaMask:**
+```typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask",
+  undefined,
+  {
+    deepLinkUrl: "metamask://",
+    callbackUrl: "myapp://metamask-callback",
+    onDeepLinkReady: (url) => {
+      // Open MetaMask app
+      Linking.openURL(url);
+    }
+  }
+);
+```
+
+##### DID Signing
+Signs with Decentralized Identifier.
+
+```typescript
+const credentials: CredentialsData = {
+  did_key: "your-did-key-here",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "did",
+  credentials
+);
+```
+
+##### P12 Certificate Signing
+Signs with P12 certificate.
+
+```typescript
+const credentials: CredentialsData = {
+  p12_password: "certificate-password",
+  p12_content: "base64-encoded-p12-content",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "p12",
+  credentials
+);
+```
+
+##### Inline Signing
+Use pre-computed signature.
+
+```typescript
+const inlineOptions: InlineSignerOptions = {
+  walletAddress: "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  signature: "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f..."
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "inline",
+  undefined,
+  inlineOptions
+);
+```
+
+---
+
+### Witnessing Revisions
+
+#### witnessRevision()
+
+Timestamps a revision via blockchain or TSA.
+
+**Signature:**
+```typescript
+async witnessRevision(
+  aquaTree: AquaTree,
+  witnessType: WitnessType,
+  witnessConfig: WitnessConfig,
+  credentials?: CredentialsData,
+  witnessPlatform?: WitnessPlatformType,
+  inlineOptions?: InlineWitnessOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `witnessType`: `"eth"`, `"nostr"`, or `"tsa"`
+- `witnessConfig`: Network and contract configuration
+- `credentials`: Credentials for signing transaction
+- `witnessPlatform`: `"cli"` or `"metamask"` (Ethereum only)
+- `inlineOptions`: Pre-computed transaction (inline mode)
+
+#### Ethereum Witnessing
+
+**Configuration:**
+```typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // or "mainnet", "holesky"
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+const credentials: CredentialsData = {
+  mnemonic: "your mnemonic here",
+  // ...
+};
+```
+
+**CLI Method** (uses mnemonic):
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+```
+
+**MetaMask Method** (prompts user):
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  undefined,
+  "metamask"
+);
+```
+
+#### Nostr Witnessing
+
+```typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // not used for Nostr
+  smartContractAddress: ""     // not used for Nostr
+};
+
+const credentials: CredentialsData = {
+  nostr_sk: "your-nostr-secret-key",
+  // ...
+};
+
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "nostr",
+  witnessConfig,
+  credentials
+);
+```
+
+#### TSA Witnessing
+
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "tsa",
+  witnessConfig
+);
+```
+
+---
+
+### Linking Revisions
+
+#### linkRevision()
+
+Creates a link revision connecting to other AquaTrees.
+
+**Signature:**
+```typescript
+async linkRevision(
+  aquaTree: AquaTree,
+  linkedAquaTrees: AquaTree[],
+  linkType?: string
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Example:**
+```typescript
+const result = await aquafier.linkRevision(
+  mainAquaTree,
+  [dependency1Tree, dependency2Tree, dependency3Tree],
+  "dependencies"
+);
+```
+
+---
+
+### Verification
+
+#### verifyRevisionChain()
+
+Verifies an entire AquaTree chain.
+
+**Signature:**
+```typescript
+async verifyRevisionChain(
+  aquaTree: AquaTree,
+  credentials?: CredentialsData
+): Promise<VerificationGraphData>
+```
+
+**Parameters:**
+- `aquaTree`: Tree to verify
+- `credentials`: Optional, for Ethereum witness lookup
+
+**Returns:**
+- `VerificationGraphData`: Graph structure with verification results
+
+**Example:**
+```typescript
+const verificationResult = await aquafier.verifyRevisionChain(aquaTree, credentials);
+
+// Check overall success
+if (verificationResult.isValidationSuccessful) {
+  console.log("✓ Chain is valid");
+} else {
+  console.log("✗ Chain validation failed");
+}
+
+// Traverse verification graph
+function printResults(node: VerificationGraphData, depth = 0) {
+  const indent = "  ".repeat(depth);
+  const status = node.isValidationSuccessful ? "✓" : "✗";
+  console.log(`${indent}${status} ${node.revisionType}`);
+
+  node.verificationGraphData.forEach(child => printResults(child, depth + 1));
+}
+
+printResults(verificationResult);
+```
+
+#### verifyFormRevision()
+
+Verifies form-specific data.
+
+**Signature:**
+```typescript
+async verifyFormRevision(
+  aquaTree: AquaTree,
+  formData: FormData
+): Promise<FormVerificationResponseData>
+```
+
+---
+
+### Utility Methods
+
+#### removeLastRevision()
+
+Removes the most recent revision from an AquaTree.
+
+**Signature:**
+```typescript
+removeLastRevision(
+  aquaTree: AquaTree
+): Result<AquaOperationData, LogData[]>
+```
+
+**Example:**
+```typescript
+const result = aquafier.removeLastRevision(aquaTree);
+
+if (result.isOk) {
+  const updatedTree = result.data.aquaTree;
+  console.log("Revision removed successfully");
+}
+```
+
+#### checkIfFileAlreadyNotarized()
+
+Checks if a file has already been notarized.
+
+**Signature:**
+```typescript
+checkIfFileAlreadyNotarized(
+  aquaTree: AquaTree,
+  fileObject: FileObject
+): boolean
+```
+
+#### fetchFilesToBeRead()
+
+Gets list of files that need content loaded.
+
+**Signature:**
+```typescript
+fetchFilesToBeRead(aquaTree: AquaTree): string[]
+```
+
+---
+
+## Type Reference
+
+### Core Types
+
+```typescript
+interface FileObject {
+  fileName: string
+  fileContent: string | AquaTree | Uint8Array | Record<string, string> | object
+  path: string
+  fileSize?: number
+}
+
+interface AquaTree {
+  revisions: Revisions
+  file_index: FileIndex
+  tree?: RevisionTree
+  treeMapping?: TreeMapping
+}
+
+interface Revision {
+  previous_verification_hash: string
+  local_timestamp: string
+  revision_type: RevisionType
+  version: string
+  // ... type-specific fields
+}
+
+type RevisionType = "file" | "witness" | "signature" | "form" | "link"
+type SignType = "metamask" | "cli" | "did" | "p12" | "inline"
+type WitnessType = "tsa" | "eth" | "nostr"
+type WitnessNetwork = "sepolia" | "mainnet" | "holesky"
+```
+
+### Result Type
+
+```typescript
+type Result<T, E> =
+  | { isOk: true; isErr: false; data: T }
+  | { isOk: false; isErr: true; data: E }
+```
+
+### Configuration Types
+
+```typescript
+interface CredentialsData {
+  mnemonic: string
+  nostr_sk: string
+  did_key: string
+  alchemy_key: string
+  witness_eth_network: string
+  witness_method: string
+  p12_password?: string
+  p12_content?: string
+}
+
+interface WitnessConfig {
+  witnessEventVerificationHash: string
+  witnessNetwork: WitnessNetwork
+  smartContractAddress: string
+}
+```
+
+---
+
+## Platform-Specific Notes
+
+### Node.js
+
+Full functionality available:
+- All signing methods
+- All witnessing methods
+- File system access
+- HTTP server for MetaMask callback
+
+```typescript
+import Aquafier from 'aqua-js-sdk';
+import fs from 'fs';
+
+const aquafier = new Aquafier();
+
+// Read file from disk
+const fileContent = fs.readFileSync('document.pdf');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: fileContent,
+  path: './document.pdf'
+};
+```
+
+### Web Browser
+
+Most functionality available:
+- MetaMask signing (primary method)
+- DID signing
+- Ethereum witnessing via MetaMask
+- Nostr, TSA witnessing
+
+**Limitations:**
+- No P12 signing (requires file system)
+- No CLI signing with mnemonic (security risk in browser)
+
+```typescript
+import Aquafier from 'aqua-js-sdk/web';
+
+const aquafier = new Aquafier();
+
+// File from input element
+const file = document.getElementById('fileInput').files[0];
+const arrayBuffer = await file.arrayBuffer();
+
+const fileObject = {
+  fileName: file.name,
+  fileContent: new Uint8Array(arrayBuffer),
+  path: file.name
+};
+```
+
+### React Native
+
+Most functionality with platform adaptations:
+- MetaMask via deep linking
+- DID signing
+- Limited witnessing
+
+**Limitations:**
+- No local HTTP server
+- MetaMask requires custom deep linking
+- File system needs react-native-fs
+
+```typescript
+import Aquafier from 'aqua-js-sdk/react-native';
+import RNFS from 'react-native-fs';
+
+const aquafier = new Aquafier();
+
+// Read file
+const fileContent = await RNFS.readFile(filePath, 'base64');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: Buffer.from(fileContent, 'base64'),
+  path: filePath
+};
+```
+
+---
+
+## Complete Workflow Examples
+
+### Document Notarization
+
+```typescript
+// 1. Create genesis
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer,
+  path: "/contracts/contract.pdf"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign with CLI
+const credentials: CredentialsData = {
+  mnemonic: process.env.MNEMONIC,
+  // ... other fields
+};
+
+result = await aquafier.signRevision(aquaTree, "cli", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness to Ethereum
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: Object.keys(aquaTree.revisions)[Object.keys(aquaTree.revisions).length - 1],
+  witnessNetwork: "sepolia",
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+
+// 4. Save
+fs.writeFileSync('contract.aqua.json', JSON.stringify(aquaTree, null, 2));
+```
+
+### Multi-Party Approval
+
+```typescript
+// Party 1: Create and sign
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+result = await aquafier.signRevision(aquaTree, "cli", party1Credentials);
+aquaTree = result.data.aquaTree;
+
+// Send aquaTree to Party 2
+
+// Party 2: Add signature
+result = await aquafier.signRevision(aquaTree, "metamask");
+aquaTree = result.data.aquaTree;
+
+// Send back to Party 1
+
+// Party 1: Witness
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  party1Credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+```
+
+### Form Submission with Verification
+
+```typescript
+// 1. Create form genesis
+const formData = {
+  name: "John Doe",
+  email: "john@example.com",
+  status: "pending"
+};
+
+const fileObject: FileObject = {
+  fileName: "application.json",
+  fileContent: formData,
+  path: "/forms/application.json"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject, true);  // isForm=true
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign
+result = await aquafier.signRevision(aquaTree, "did", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness
+result = await aquafier.witnessRevision(aquaTree, "nostr", witnessConfig, credentials);
+aquaTree = result.data.aquaTree;
+
+// 4. Verify form
+const verifyResult = await aquafier.verifyFormRevision(aquaTree, formData);
+console.log("Form valid:", verifyResult.isOk);
+```
+
+---
+
+## Error Handling
+
+All methods return `Result<T, E>` type. Always check for errors:
+
+```typescript
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  // Handle error
+  console.error("Failed to create genesis:");
+  result.data.forEach(log => {
+    console.error(`[${log.logType}] ${log.log}`);
+  });
+  return;
+}
+
+// Success
+const aquaTree = result.data.aquaTree;
+```
+
+---
+
+## Best Practices
+
+1. **Always verify results**: Check `isErr` before using data
+2. **Store credentials securely**: Never commit mnemonic/keys
+3. **Use environment variables**: Store sensitive data in `.env`
+4. **Validate inputs**: Check file sizes and formats before processing
+5. **Handle logs**: Display or log all LogData for debugging
+6. **Test on testnets**: Use Sepolia/Holesky before mainnet
+7. **Save AquaTrees**: Persist JSON after each operation
+8. **Verify chains**: Run verification after receiving AquaTrees
+
+---
+
+## Testing
+
+Create `credentials.json` for testing:
+
+```json
+{
+  "mnemonic": "your test mnemonic",
+  "nostr_sk": "your nostr secret key",
+  "did_key": "your did key",
+  "alchemy_key": "your alchemy api key",
+  "witness_eth_network": "sepolia",
+  "witness_method": "cli"
+}
+```
+
+Run tests:
+```bash
+npm test
+```
+
+Run specific test file:
+```bash
+npm test -- ./tests/aquafier.test.ts
+```
+
+---
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Getting started
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts
+- [Schema Reference](/previous_versions/version_3/schema) - Revision specifications
+- [GitHub Repository](https://github.com/inblockio/aqua-verifier-js-lib) - Source code and examples
+16:T3ef3,
+# Aqua Protocol v3 - Tooling & SDK
+
+The Aqua JS SDK (aqua-js-sdk) is a comprehensive TypeScript library for working with Aqua Protocol v3. It provides a complete API for creating, signing, witnessing, and verifying revision chains across multiple platforms.
+
+## Installation
+
+```bash
+npm install aqua-js-sdk
+```
+
+### Platform-Specific Imports
+
+```typescript
+// Node.js (default)
+import Aquafier from 'aqua-js-sdk';
+
+// Web Browser
+import Aquafier from 'aqua-js-sdk/web';
+
+// React Native
+import Aquafier from 'aqua-js-sdk/react-native';
+```
+
+## Core API
+
+### Aquafier Class
+
+The main class providing all Aqua Protocol operations.
+
+#### Constructor
+
+```typescript
+const aquafier = new Aquafier();
+```
+
+No configuration needed for initialization.
+
+---
+
+### Creating Revisions
+
+#### createGenesisRevision()
+
+Creates the first revision in a new AquaTree.
+
+**Signature:**
+```typescript
+async createGenesisRevision(
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `fileObject`: File data to create revision from
+- `isForm`: If true, creates form revision (default: false)
+- `enableContent`: Include file content in revision (default: false)
+- `enableScalar`: Use scalar method instead of tree (default: true)
+
+**Returns:**
+- Success: `AquaOperationData` with new AquaTree
+- Failure: Array of error logs
+
+**Example:**
+```typescript
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer, // Uint8Array or string
+  path: "/documents/contract.pdf"
+};
+
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  result.data.logData.forEach(log => console.error(log));
+  return;
+}
+
+const aquaTree = result.data.aquaTree;
+```
+
+#### createNewRevision()
+
+Adds a new file/form revision to an existing AquaTree.
+
+**Signature:**
+```typescript
+async createNewRevision(
+  aquaTree: AquaTree,
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Example:**
+```typescript
+const result = await aquafier.createNewRevision(
+  existingAquaTree,
+  updatedFileObject,
+  false,  // not a form
+  false,  // don't embed content
+  true    // use scalar method
+);
+```
+
+---
+
+### Signing Revisions
+
+#### signRevision()
+
+Signs the latest revision in an AquaTree.
+
+**Signature:**
+```typescript
+async signRevision(
+  aquaTree: AquaTree,
+  signType: SignType,
+  credentials?: CredentialsData,
+  inlineOptions?: InlineSignerOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `signType`: One of `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"`
+- `credentials`: Credentials for CLI, DID, or P12 signing
+- `inlineOptions`: Pre-computed signature for inline mode
+
+**Sign Types:**
+
+##### CLI Signing
+Uses BIP39 mnemonic to derive wallet and sign.
+
+```typescript
+const credentials: CredentialsData = {
+  mnemonic: "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "cli",
+  credentials
+);
+```
+
+##### MetaMask Signing
+Opens MetaMask for user to sign (browser only).
+
+```typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask"
+);
+```
+
+**React Native MetaMask:**
+```typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask",
+  undefined,
+  {
+    deepLinkUrl: "metamask://",
+    callbackUrl: "myapp://metamask-callback",
+    onDeepLinkReady: (url) => {
+      // Open MetaMask app
+      Linking.openURL(url);
+    }
+  }
+);
+```
+
+##### DID Signing
+Signs with Decentralized Identifier.
+
+```typescript
+const credentials: CredentialsData = {
+  did_key: "your-did-key-here",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "did",
+  credentials
+);
+```
+
+##### P12 Certificate Signing
+Signs with P12 certificate.
+
+```typescript
+const credentials: CredentialsData = {
+  p12_password: "certificate-password",
+  p12_content: "base64-encoded-p12-content",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "p12",
+  credentials
+);
+```
+
+##### Inline Signing
+Use pre-computed signature.
+
+```typescript
+const inlineOptions: InlineSignerOptions = {
+  walletAddress: "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  signature: "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f..."
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "inline",
+  undefined,
+  inlineOptions
+);
+```
+
+---
+
+### Witnessing Revisions
+
+#### witnessRevision()
+
+Timestamps a revision via blockchain or TSA.
+
+**Signature:**
+```typescript
+async witnessRevision(
+  aquaTree: AquaTree,
+  witnessType: WitnessType,
+  witnessConfig: WitnessConfig,
+  credentials?: CredentialsData,
+  witnessPlatform?: WitnessPlatformType,
+  inlineOptions?: InlineWitnessOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `witnessType`: `"eth"`, `"nostr"`, or `"tsa"`
+- `witnessConfig`: Network and contract configuration
+- `credentials`: Credentials for signing transaction
+- `witnessPlatform`: `"cli"` or `"metamask"` (Ethereum only)
+- `inlineOptions`: Pre-computed transaction (inline mode)
+
+#### Ethereum Witnessing
+
+**Configuration:**
+```typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // or "mainnet", "holesky"
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+const credentials: CredentialsData = {
+  mnemonic: "your mnemonic here",
+  // ...
+};
+```
+
+**CLI Method** (uses mnemonic):
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+```
+
+**MetaMask Method** (prompts user):
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  undefined,
+  "metamask"
+);
+```
+
+#### Nostr Witnessing
+
+```typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // not used for Nostr
+  smartContractAddress: ""     // not used for Nostr
+};
+
+const credentials: CredentialsData = {
+  nostr_sk: "your-nostr-secret-key",
+  // ...
+};
+
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "nostr",
+  witnessConfig,
+  credentials
+);
+```
+
+#### TSA Witnessing
+
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "tsa",
+  witnessConfig
+);
+```
+
+---
+
+### Linking Revisions
+
+#### linkRevision()
+
+Creates a link revision connecting to other AquaTrees.
+
+**Signature:**
+```typescript
+async linkRevision(
+  aquaTree: AquaTree,
+  linkedAquaTrees: AquaTree[],
+  linkType?: string
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Example:**
+```typescript
+const result = await aquafier.linkRevision(
+  mainAquaTree,
+  [dependency1Tree, dependency2Tree, dependency3Tree],
+  "dependencies"
+);
+```
+
+---
+
+### Verification
+
+#### verifyRevisionChain()
+
+Verifies an entire AquaTree chain.
+
+**Signature:**
+```typescript
+async verifyRevisionChain(
+  aquaTree: AquaTree,
+  credentials?: CredentialsData
+): Promise<VerificationGraphData>
+```
+
+**Parameters:**
+- `aquaTree`: Tree to verify
+- `credentials`: Optional, for Ethereum witness lookup
+
+**Returns:**
+- `VerificationGraphData`: Graph structure with verification results
+
+**Example:**
+```typescript
+const verificationResult = await aquafier.verifyRevisionChain(aquaTree, credentials);
+
+// Check overall success
+if (verificationResult.isValidationSuccessful) {
+  console.log("✓ Chain is valid");
+} else {
+  console.log("✗ Chain validation failed");
+}
+
+// Traverse verification graph
+function printResults(node: VerificationGraphData, depth = 0) {
+  const indent = "  ".repeat(depth);
+  const status = node.isValidationSuccessful ? "✓" : "✗";
+  console.log(`${indent}${status} ${node.revisionType}`);
+
+  node.verificationGraphData.forEach(child => printResults(child, depth + 1));
+}
+
+printResults(verificationResult);
+```
+
+#### verifyFormRevision()
+
+Verifies form-specific data.
+
+**Signature:**
+```typescript
+async verifyFormRevision(
+  aquaTree: AquaTree,
+  formData: FormData
+): Promise<FormVerificationResponseData>
+```
+
+---
+
+### Utility Methods
+
+#### removeLastRevision()
+
+Removes the most recent revision from an AquaTree.
+
+**Signature:**
+```typescript
+removeLastRevision(
+  aquaTree: AquaTree
+): Result<AquaOperationData, LogData[]>
+```
+
+**Example:**
+```typescript
+const result = aquafier.removeLastRevision(aquaTree);
+
+if (result.isOk) {
+  const updatedTree = result.data.aquaTree;
+  console.log("Revision removed successfully");
+}
+```
+
+#### checkIfFileAlreadyNotarized()
+
+Checks if a file has already been notarized.
+
+**Signature:**
+```typescript
+checkIfFileAlreadyNotarized(
+  aquaTree: AquaTree,
+  fileObject: FileObject
+): boolean
+```
+
+#### fetchFilesToBeRead()
+
+Gets list of files that need content loaded.
+
+**Signature:**
+```typescript
+fetchFilesToBeRead(aquaTree: AquaTree): string[]
+```
+
+---
+
+## Type Reference
+
+### Core Types
+
+```typescript
+interface FileObject {
+  fileName: string
+  fileContent: string | AquaTree | Uint8Array | Record<string, string> | object
+  path: string
+  fileSize?: number
+}
+
+interface AquaTree {
+  revisions: Revisions
+  file_index: FileIndex
+  tree?: RevisionTree
+  treeMapping?: TreeMapping
+}
+
+interface Revision {
+  previous_verification_hash: string
+  local_timestamp: string
+  revision_type: RevisionType
+  version: string
+  // ... type-specific fields
+}
+
+type RevisionType = "file" | "witness" | "signature" | "form" | "link"
+type SignType = "metamask" | "cli" | "did" | "p12" | "inline"
+type WitnessType = "tsa" | "eth" | "nostr"
+type WitnessNetwork = "sepolia" | "mainnet" | "holesky"
+```
+
+### Result Type
+
+```typescript
+type Result<T, E> =
+  | { isOk: true; isErr: false; data: T }
+  | { isOk: false; isErr: true; data: E }
+```
+
+### Configuration Types
+
+```typescript
+interface CredentialsData {
+  mnemonic: string
+  nostr_sk: string
+  did_key: string
+  alchemy_key: string
+  witness_eth_network: string
+  witness_method: string
+  p12_password?: string
+  p12_content?: string
+}
+
+interface WitnessConfig {
+  witnessEventVerificationHash: string
+  witnessNetwork: WitnessNetwork
+  smartContractAddress: string
+}
+```
+
+---
+
+## Platform-Specific Notes
+
+### Node.js
+
+Full functionality available:
+- All signing methods
+- All witnessing methods
+- File system access
+- HTTP server for MetaMask callback
+
+```typescript
+import Aquafier from 'aqua-js-sdk';
+import fs from 'fs';
+
+const aquafier = new Aquafier();
+
+// Read file from disk
+const fileContent = fs.readFileSync('document.pdf');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: fileContent,
+  path: './document.pdf'
+};
+```
+
+### Web Browser
+
+Most functionality available:
+- MetaMask signing (primary method)
+- DID signing
+- Ethereum witnessing via MetaMask
+- Nostr, TSA witnessing
+
+**Limitations:**
+- No P12 signing (requires file system)
+- No CLI signing with mnemonic (security risk in browser)
+
+```typescript
+import Aquafier from 'aqua-js-sdk/web';
+
+const aquafier = new Aquafier();
+
+// File from input element
+const file = document.getElementById('fileInput').files[0];
+const arrayBuffer = await file.arrayBuffer();
+
+const fileObject = {
+  fileName: file.name,
+  fileContent: new Uint8Array(arrayBuffer),
+  path: file.name
+};
+```
+
+### React Native
+
+Most functionality with platform adaptations:
+- MetaMask via deep linking
+- DID signing
+- Limited witnessing
+
+**Limitations:**
+- No local HTTP server
+- MetaMask requires custom deep linking
+- File system needs react-native-fs
+
+```typescript
+import Aquafier from 'aqua-js-sdk/react-native';
+import RNFS from 'react-native-fs';
+
+const aquafier = new Aquafier();
+
+// Read file
+const fileContent = await RNFS.readFile(filePath, 'base64');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: Buffer.from(fileContent, 'base64'),
+  path: filePath
+};
+```
+
+---
+
+## Complete Workflow Examples
+
+### Document Notarization
+
+```typescript
+// 1. Create genesis
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer,
+  path: "/contracts/contract.pdf"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign with CLI
+const credentials: CredentialsData = {
+  mnemonic: process.env.MNEMONIC,
+  // ... other fields
+};
+
+result = await aquafier.signRevision(aquaTree, "cli", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness to Ethereum
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: Object.keys(aquaTree.revisions)[Object.keys(aquaTree.revisions).length - 1],
+  witnessNetwork: "sepolia",
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+
+// 4. Save
+fs.writeFileSync('contract.aqua.json', JSON.stringify(aquaTree, null, 2));
+```
+
+### Multi-Party Approval
+
+```typescript
+// Party 1: Create and sign
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+result = await aquafier.signRevision(aquaTree, "cli", party1Credentials);
+aquaTree = result.data.aquaTree;
+
+// Send aquaTree to Party 2
+
+// Party 2: Add signature
+result = await aquafier.signRevision(aquaTree, "metamask");
+aquaTree = result.data.aquaTree;
+
+// Send back to Party 1
+
+// Party 1: Witness
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  party1Credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+```
+
+### Form Submission with Verification
+
+```typescript
+// 1. Create form genesis
+const formData = {
+  name: "John Doe",
+  email: "john@example.com",
+  status: "pending"
+};
+
+const fileObject: FileObject = {
+  fileName: "application.json",
+  fileContent: formData,
+  path: "/forms/application.json"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject, true);  // isForm=true
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign
+result = await aquafier.signRevision(aquaTree, "did", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness
+result = await aquafier.witnessRevision(aquaTree, "nostr", witnessConfig, credentials);
+aquaTree = result.data.aquaTree;
+
+// 4. Verify form
+const verifyResult = await aquafier.verifyFormRevision(aquaTree, formData);
+console.log("Form valid:", verifyResult.isOk);
+```
+
+---
+
+## Error Handling
+
+All methods return `Result<T, E>` type. Always check for errors:
+
+```typescript
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  // Handle error
+  console.error("Failed to create genesis:");
+  result.data.forEach(log => {
+    console.error(`[${log.logType}] ${log.log}`);
+  });
+  return;
+}
+
+// Success
+const aquaTree = result.data.aquaTree;
+```
+
+---
+
+## Best Practices
+
+1. **Always verify results**: Check `isErr` before using data
+2. **Store credentials securely**: Never commit mnemonic/keys
+3. **Use environment variables**: Store sensitive data in `.env`
+4. **Validate inputs**: Check file sizes and formats before processing
+5. **Handle logs**: Display or log all LogData for debugging
+6. **Test on testnets**: Use Sepolia/Holesky before mainnet
+7. **Save AquaTrees**: Persist JSON after each operation
+8. **Verify chains**: Run verification after receiving AquaTrees
+
+---
+
+## Testing
+
+Create `credentials.json` for testing:
+
+```json
+{
+  "mnemonic": "your test mnemonic",
+  "nostr_sk": "your nostr secret key",
+  "did_key": "your did key",
+  "alchemy_key": "your alchemy api key",
+  "witness_eth_network": "sepolia",
+  "witness_method": "cli"
+}
+```
+
+Run tests:
+```bash
+npm test
+```
+
+Run specific test file:
+```bash
+npm test -- ./tests/aquafier.test.ts
+```
+
+---
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Getting started
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts
+- [Schema Reference](/previous_versions/version_3/schema) - Revision specifications
+- [GitHub Repository](https://github.com/inblockio/aqua-verifier-js-lib) - Source code and examples
+e:["$","$L14",null,{"meta":{"title":"Tooling & SDK","description":"Aqua JS SDK API reference and usage guide","content":"$15","reading_time":9,"word_count":1773},"content":"$16","previousDoc":{"title":"Schema Reference","slug":"schema"},"version":"v3.0.0","slug":"tooling","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}]
+f:["$","$L17",null,{"items":[{"id":"installation","title":"Installation","level":2},{"id":"platform-specific-imports","title":"Platform-Specific Imports","level":3},{"id":"core-api","title":"Core API","level":2},{"id":"aquafier-class","title":"Aquafier Class","level":3},{"id":"creating-revisions","title":"Creating Revisions","level":3},{"id":"signing-revisions","title":"Signing Revisions","level":3},{"id":"witnessing-revisions","title":"Witnessing Revisions","level":3},{"id":"linking-revisions","title":"Linking Revisions","level":3},{"id":"verification","title":"Verification","level":3},{"id":"utility-methods","title":"Utility Methods","level":3},{"id":"type-reference","title":"Type Reference","level":2},{"id":"core-types","title":"Core Types","level":3},{"id":"result-type","title":"Result Type","level":3},{"id":"configuration-types","title":"Configuration Types","level":3},{"id":"platform-specific-notes","title":"Platform-Specific Notes","level":2},{"id":"nodejs","title":"Node.js","level":3},{"id":"web-browser","title":"Web Browser","level":3},{"id":"react-native","title":"React Native","level":3},{"id":"complete-workflow-examples","title":"Complete Workflow Examples","level":2},{"id":"document-notarization","title":"Document Notarization","level":3},{"id":"multi-party-approval","title":"Multi-Party Approval","level":3},{"id":"form-submission-with-verification","title":"Form Submission with Verification","level":3},{"id":"error-handling","title":"Error Handling","level":2},{"id":"best-practices","title":"Best Practices","level":2},{"id":"testing","title":"Testing","level":2},{"id":"see-also","title":"See Also","level":2}],"config":"$e:props:config"}]
+10:["$","$L18",null,{}]
+11:["$","$L19",null,{}]
+12:["$","$L1a",null,{}]
+13:["$","$L1b",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@1c"}]}]
+1c:null

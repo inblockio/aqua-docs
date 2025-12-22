@@ -1,20 +1,26 @@
 1:"$Sreact.fragment"
-2:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-3:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-5:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
-6:"$Sreact.suspense"
-8:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"ViewportBoundary"]
-a:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"MetadataBoundary"]
-c:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-:HL["/_next/static/chunks/8a80e7184ad3a13f.css","style"]
-:HL["/_next/static/chunks/ec0800f16b1ae8cd.css","style"]
+2:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"ConfigProvider"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TabProvider"]
+4:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+5:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+6:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"VersionNotFound"]
+a:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+:HL["/_next/static/chunks/a06cf6f745569492.css","style"]
+:HL["/_next/static/chunks/b0e9cc9922d4f147.css","style"]
 :HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"P":null,"b":"k8-fwt2fbTlxLBvWFtXyi","c":["","docs","v3.0.0","schema"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v3.0.0","d"],{"children":[["slug","schema","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/8a80e7184ad3a13f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/ec0800f16b1ae8cd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L4",[["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true,"nonce":"$undefined"}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],{},null,false,false]},[["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}],[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$L8",null,{"children":"$@9"}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":"$@b"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$c",[]],"S":true}
-d:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
-e:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
-f:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
-10:T3875,
+0:{"P":null,"b":"_ePiRrooneby3ghoRNSHI","c":["","docs","v3.0.0","schema"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v3.0.0","d"],{"children":[["slug","schema","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/b0e9cc9922d4f147.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/eb22c92016909501.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/d07752feff0a7168.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L7",{},null,false,false]},["$L8",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+c:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
+d:"$Sreact.suspense"
+f:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"ViewportBoundary"]
+11:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"MetadataBoundary"]
+7:["$","$1","c",{"children":["$Lb",null,["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]]}]
+8:["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}]
+9:["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$d",null,{"name":"Next.Metadata","children":"$L12"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+13:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLoading"]
+14:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayoutWrapper"]
+15:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"Header"]
+16:T3875,
 # Aqua Protocol v3 Concepts
 
 Understanding the core concepts of Aqua Protocol v3 is essential for effectively using the SDK and building applications. This guide covers the fundamental ideas, terminology, and patterns used throughout the protocol.
@@ -621,7 +627,7 @@ fs.writeFileSync('document.aqua.json', JSON.stringify(aquaTree, null, 2));
 - [Introduction](/previous_versions/version_3/introduction) - Overview and quick start
 - [Tooling](/previous_versions/version_3/tooling) - SDK API reference
 - [Schema Reference](/previous_versions/version_3/schema) - Detailed specifications
-11:T3875,
+17:T3875,
 # Aqua Protocol v3 Concepts
 
 Understanding the core concepts of Aqua Protocol v3 is essential for effectively using the SDK and building applications. This guide covers the fundamental ideas, terminology, and patterns used throughout the protocol.
@@ -1228,7 +1234,7 @@ fs.writeFileSync('document.aqua.json', JSON.stringify(aquaTree, null, 2));
 - [Introduction](/previous_versions/version_3/introduction) - Overview and quick start
 - [Tooling](/previous_versions/version_3/tooling) - SDK API reference
 - [Schema Reference](/previous_versions/version_3/schema) - Detailed specifications
-12:T2045,
+18:T2045,
 # Aqua Protocol v3
 
 Aqua Protocol v3 is a mature version of the protocol with a comprehensive JavaScript/TypeScript SDK. It provides a robust framework for creating verifiable revision chains with support for files, forms, signatures, witnesses, and links.
@@ -1526,7 +1532,7 @@ verification.verificationGraphData.forEach(node => {
 - **3.0.0**: Major release with TypeScript rewrite
 
 For detailed changelog, see the [GitHub releases](https://github.com/inblockio/aqua-verifier-js-lib/releases).
-13:T2045,
+19:T2045,
 # Aqua Protocol v3
 
 Aqua Protocol v3 is a mature version of the protocol with a comprehensive JavaScript/TypeScript SDK. It provides a robust framework for creating verifiable revision chains with support for files, forms, signatures, witnesses, and links.
@@ -1824,7 +1830,7 @@ verification.verificationGraphData.forEach(node => {
 - **3.0.0**: Major release with TypeScript rewrite
 
 For detailed changelog, see the [GitHub releases](https://github.com/inblockio/aqua-verifier-js-lib/releases).
-14:T45aa,
+1a:T45aa,
 # Aqua Protocol v3 - Schema Reference
 
 This document provides comprehensive technical specifications for all revision types in Aqua Protocol v3. Each revision type has specific fields and validation rules.
@@ -2397,7 +2403,7 @@ Complete AquaTree structure for storage/transmission:
 - [Introduction](/previous_versions/version_3/introduction) - Getting started
 - [Concepts](/previous_versions/version_3/concepts) - Core concepts
 - [Tooling](/previous_versions/version_3/tooling) - SDK API reference
-15:T45aa,
+1b:T45aa,
 # Aqua Protocol v3 - Schema Reference
 
 This document provides comprehensive technical specifications for all revision types in Aqua Protocol v3. Each revision type has specific fields and validation rules.
@@ -2970,7 +2976,7 @@ Complete AquaTree structure for storage/transmission:
 - [Introduction](/previous_versions/version_3/introduction) - Getting started
 - [Concepts](/previous_versions/version_3/concepts) - Core concepts
 - [Tooling](/previous_versions/version_3/tooling) - SDK API reference
-16:T3ef3,
+1c:T3ef3,
 # Aqua Protocol v3 - Tooling & SDK
 
 The Aqua JS SDK (aqua-js-sdk) is a comprehensive TypeScript library for working with Aqua Protocol v3. It provides a complete API for creating, signing, witnessing, and verifying revision chains across multiple platforms.
@@ -3750,7 +3756,7 @@ npm test -- ./tests/aquafier.test.ts
 - [Concepts](/previous_versions/version_3/concepts) - Core concepts
 - [Schema Reference](/previous_versions/version_3/schema) - Revision specifications
 - [GitHub Repository](https://github.com/inblockio/aqua-verifier-js-lib) - Source code and examples
-17:T3ef3,
+1d:T3ef3,
 # Aqua Protocol v3 - Tooling & SDK
 
 The Aqua JS SDK (aqua-js-sdk) is a comprehensive TypeScript library for working with Aqua Protocol v3. It provides a complete API for creating, signing, witnessing, and verifying revision chains across multiple platforms.
@@ -4530,116 +4536,484 @@ npm test -- ./tests/aquafier.test.ts
 - [Concepts](/previous_versions/version_3/concepts) - Core concepts
 - [Schema Reference](/previous_versions/version_3/schema) - Revision specifications
 - [GitHub Repository](https://github.com/inblockio/aqua-verifier-js-lib) - Source code and examples
-4:["$","$6",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$Ld",null,{"header":["$","$Le",null,{"currentVersion":"v3.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$Lf",null,{"docs":[{"slug":"concepts","filePath":"concepts","title":"Concepts","meta":{"title":"Concepts","description":"Core concepts and terminology for Aqua Protocol v3","content":"$10","reading_time":9,"word_count":1657},"content":"$11"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol v3","meta":{"title":"Aqua Protocol v3","description":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK","content":"$12","reading_time":6,"word_count":1069},"content":"$13"},{"slug":"schema","filePath":"schema","title":"Schema Reference","meta":{"title":"Schema Reference","description":"Detailed schema specifications for Aqua Protocol v3 revisions","content":"$14","reading_time":10,"word_count":1903},"content":"$15"},{"slug":"tooling","filePath":"tooling","title":"Tooling & SDK","meta":{"title":"Tooling & SDK","description":"Aqua JS SDK API reference and usage guide","content":"$16","reading_time":9,"word_count":1773},"content":"$17"}],"version":"v3.0.0","config":"$4:props:children:0:props:header:props:config"}],"content":"$L18","toc":"$L19","config":"$4:props:children:0:props:header:props:config"}],"$L1a","$L1b","$L1c"]}]
-1d:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
-1e:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
-1f:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
-20:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
-19:["$","$L1d",null,{"items":[{"id":"version-string-format","title":"Version String Format","level":2},{"id":"common-fields","title":"Common Fields","level":2},{"id":"file-revision","title":"File Revision","level":2},{"id":"fields","title":"Fields","level":3},{"id":"genesis-file-revision-scalar","title":"Genesis File Revision (Scalar)","level":3},{"id":"genesis-file-revision-tree","title":"Genesis File Revision (Tree)","level":3},{"id":"with-content","title":"With Content","level":3},{"id":"validation-rules","title":"Validation Rules","level":3},{"id":"form-revision","title":"Form Revision","level":2},{"id":"fields","title":"Fields","level":3},{"id":"example-scalar","title":"Example (Scalar)","level":3},{"id":"example-tree","title":"Example (Tree)","level":3},{"id":"leaf-computation-tree-mode","title":"Leaf Computation (Tree Mode)","level":3},{"id":"validation-rules","title":"Validation Rules","level":3},{"id":"signature-revision","title":"Signature Revision","level":2},{"id":"common-fields","title":"Common Fields","level":3},{"id":"cli--metamask-signature","title":"CLI / MetaMask Signature","level":3},{"id":"did-signature","title":"DID Signature","level":3},{"id":"p12-certificate-signature","title":"P12 Certificate Signature","level":3},{"id":"inline-signature","title":"Inline Signature","level":3},{"id":"validation-rules","title":"Validation Rules","level":3},{"id":"witness-revision","title":"Witness Revision","level":2},{"id":"fields","title":"Fields","level":3},{"id":"ethereum-witness-example","title":"Ethereum Witness Example","level":3},{"id":"batched-witness-example","title":"Batched Witness Example","level":3},{"id":"nostr-witness-example","title":"Nostr Witness Example","level":3},{"id":"tsa-witness-example","title":"TSA Witness Example","level":3},{"id":"validation-rules","title":"Validation Rules","level":3},{"id":"link-revision","title":"Link Revision","level":2},{"id":"fields","title":"Fields","level":3},{"id":"example","title":"Example","level":3},{"id":"validation-rules","title":"Validation Rules","level":3},{"id":"hash-computation","title":"Hash Computation","level":2},{"id":"scalar-method","title":"Scalar Method","level":3},{"id":"tree-method","title":"Tree Method","level":3},{"id":"aquatree-storage-format","title":"AquaTree Storage Format","level":2},{"id":"field-constraints","title":"Field Constraints","level":2},{"id":"hashes","title":"Hashes","level":3},{"id":"timestamps","title":"Timestamps","level":3},{"id":"ethereum-addresses","title":"Ethereum Addresses","level":3},{"id":"nonces","title":"Nonces","level":3},{"id":"version-compatibility","title":"Version Compatibility","level":2},{"id":"see-also","title":"See Also","level":2}],"config":"$4:props:children:0:props:header:props:config"}]
-1a:["$","$L1e",null,{}]
-1b:["$","$L1f",null,{}]
-1c:["$","$L20",null,{}]
-21:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
-22:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
-18:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L21",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v3.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L22",null,{"href":"/docs/v3.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v3.0.0/schema",{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Schema Reference"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Schema Reference"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"Detailed schema specifications for Aqua Protocol v3 revisions"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[10," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":"$L23"}],"$undefined",["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v3.0.0/schema.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":[["$","path","1couwa",{"d":"M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","1y4qbx",{"d":"M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"}],"$undefined"]}],"Edit this page"]}],["$","a",null,{"href":"https://github.com/inblockio/issues/new","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":["$L24","Report an issue"]}]]}],"$L25"]}]
-24:["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-external-link h-4 w-4","children":[["$","path","1q9fwt",{"d":"M15 3h6v6"}],["$","path","gplh6r",{"d":"M10 14 21 3"}],["$","path","a6xqqp",{"d":"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"}],"$undefined"]}]
-25:["$","div",null,{"className":"mt-12 pt-8 border-t border-border grid grid-cols-2 gap-4","children":[["$","$L22",null,{"href":"/docs/v3.0.0/introduction","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Previous"}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Aqua Protocol v3"}]]}],["$","$L22",null,{"href":"/docs/v3.0.0/tooling","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all text-right","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center justify-end gap-2 text-sm text-muted-foreground","children":[["$","span",null,{"children":"Next"}],["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Tooling & SDK"}]]}]]}]
-23:[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-6 text-foreground","children":"Aqua Protocol v3 - Schema Reference"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"This document provides comprehensive technical specifications for all revision types in Aqua Protocol v3. Each revision type has specific fields and validation rules."}],"\n",["$","h2",null,{"id":"version-string-format","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Version String Format"}],"\n",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: {scalar|tree}\n"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Components:"}]}],"\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["Protocol URL: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"https://aqua-protocol.org/docs/v3/schema_2"}]]}],"\n",["$","li",null,{"className":"leading-7","children":["Hash Algorithm: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"SHA256"}]]}],"\n",["$","li",null,{"className":"leading-7","children":["Canonicalization Method: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"scalar"}]," or ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"tree"}]]}],"\n"]}],"\n",["$","h2",null,{"id":"common-fields","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Common Fields"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"All revisions share these mandatory fields:"}],"\n",["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Validation"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_verification_hash"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hash of previous revision"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Empty string for genesis, otherwise 64-char hex with ","$L26"," prefix"]}]]}],"$L27","$L28","$L29"]}]]}]}],"\n","$L2a","\n","$L2b","\n","$L2c","\n","$L2d","\n","$L2e","\n","$L2f","\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b","\n","$L6c","\n","$L6d","\n","$L6e","\n","$L6f","\n","$L70","\n","$L71","\n","$L72","\n","$L73","\n","$L74","\n","$L75","\n","$L76","\n","$L77","\n","$L78","\n","$L79","\n","$L7a","\n","$L7b","\n","$L7c","\n","$L7d","\n","$L7e","\n","$L7f","\n","$L80","\n","$L81","\n","$L82","\n","$L83","\n","$L84","\n","$L85","\n","$L86","\n","$L87","\n","$L88","\n","$L89","\n","$L8a","\n","$L8b","\n","$L8c","\n","$L8d","\n","$L8e","\n","$L8f","\n","$L90","\n","$L91","\n","$L92","\n","$L93"]
-98:I[222506,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"CodeBlock"]
-26:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x"}]
-27:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"ISO 8601 timestamp"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Valid ISO 8601 format: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"YYYY-MM-DDTHH:mm:ss"}]]}]]}]
-28:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Type of revision"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["One of: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"file\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"form\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"signature\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"witness\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"link\""}]]}]]}]
-29:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"version"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Protocol version and method"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Must match format above"}]]}]
-2a:["$","hr",null,{}]
-2b:["$","h2",null,{"id":"file-revision","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"File Revision"}]
-2c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Represents a file with metadata and optional content."}]
-2d:["$","h3",null,{"id":"fields","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Fields"}]
-2e:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Required"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_verification_hash"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Previous revision hash (empty for genesis)"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"ISO 8601 timestamp"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Must be ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"file\""}]]}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"version"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Protocol version string"}]]}],"$L94","$L95","$L96","$L97"]}]]}]}]
-2f:["$","h3",null,{"id":"genesis-file-revision-scalar","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Genesis File Revision (Scalar)"}]
-30:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"\",\n  \"local_timestamp\": \"2024-01-01T12:00:00\",\n  \"revision_type\": \"file\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\",\n  \"file_hash\": \"0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08\",\n  \"file_nonce\": \"0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c\"\n}","language":"json","filename":"$undefined"}]
-31:["$","h3",null,{"id":"genesis-file-revision-tree","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Genesis File Revision (Tree)"}]
-32:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"\",\n  \"local_timestamp\": \"2024-01-01T12:00:00\",\n  \"revision_type\": \"file\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree\",\n  \"file_hash\": \"0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08\",\n  \"file_nonce\": \"0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c\",\n  \"leaves\": [\n    \"0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef\",\n    \"0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890\"\n  ]\n}","language":"json","filename":"$undefined"}]
-33:["$","h3",null,{"id":"with-content","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"With Content"}]
-34:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"\",\n  \"local_timestamp\": \"2024-01-01T12:00:00\",\n  \"revision_type\": \"file\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\",\n  \"file_hash\": \"0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08\",\n  \"file_nonce\": \"0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c\",\n  \"content\": \"This is the file content as a string\"\n}","language":"json","filename":"$undefined"}]
-35:["$","h3",null,{"id":"validation-rules","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Validation Rules"}]
-36:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"file_hash"}]," must match SHA256 of file content"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"file_nonce"}]," must be exactly 16 bytes (32 hex chars + ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x"}],")"]}],"\n",["$","li",null,{"className":"leading-7","children":["If ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Method: tree"}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"leaves"}]," array must be present"]}],"\n",["$","li",null,{"className":"leading-7","children":["If ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Method: scalar"}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"leaves"}]," must be absent"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"content"}]," is optional but if present, hash must match ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"file_hash"}]]}],"\n"]}]
-37:["$","hr",null,{}]
-38:["$","h2",null,{"id":"form-revision","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Form Revision"}]
-39:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Stores structured key-value data."}]
-3a:["$","h3",null,{"id":"fields-1","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Fields"}]
-3b:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Required"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_verification_hash"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Previous revision hash (empty for genesis)"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"ISO 8601 timestamp"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Must be ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"form\""}]]}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"version"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Protocol version string"}]]}],"$L99","$L9a","$L9b","$L9c"]}]]}]}]
-3c:["$","h3",null,{"id":"example-scalar","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Example (Scalar)"}]
-3d:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"\",\n  \"local_timestamp\": \"2024-01-01T12:00:00\",\n  \"revision_type\": \"form\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\",\n  \"file_hash\": \"0xabc123def456...\",\n  \"file_nonce\": \"0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f\",\n  \"content\": {\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"organization\": \"Example Corp\",\n    \"role\": \"Developer\"\n  }\n}","language":"json","filename":"$undefined"}]
-3e:["$","h3",null,{"id":"example-tree","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Example (Tree)"}]
-3f:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"\",\n  \"local_timestamp\": \"2024-01-01T12:00:00\",\n  \"revision_type\": \"form\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree\",\n  \"file_hash\": \"0xabc123def456...\",\n  \"file_nonce\": \"0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f\",\n  \"content\": {\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"organization\": \"Example Corp\",\n    \"role\": \"Developer\"\n  },\n  \"leaves\": [\n    \"0x...\",  // SHA256(\"name:John Doe\")\n    \"0x...\",  // SHA256(\"email:john@example.com\")\n    \"0x...\",  // SHA256(\"organization:Example Corp\")\n    \"0x...\"   // SHA256(\"role:Developer\")\n  ]\n}","language":"json","filename":"$undefined"}]
-40:["$","h3",null,{"id":"leaf-computation-tree-mode","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Leaf Computation (Tree Mode)"}]
-41:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["For each key-value pair in ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"content"}],":"]}]
-42:["$","$L98",null,{"code":"leaf_hash = SHA256(`${key}:${value}`)","language":"typescript","filename":"$undefined"}]
-43:["$","h3",null,{"id":"validation-rules-1","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Validation Rules"}]
-44:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"content"}]," must be a valid JSON object"]}],"\n",["$","li",null,{"className":"leading-7","children":["All values in ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"content"}]," must be strings"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"file_hash"}]," must match hash of canonicalized content"]}],"\n",["$","li",null,{"className":"leading-7","children":["If ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Method: tree"}],", number of leaves must match number of keys in content"]}],"\n"]}]
-45:["$","hr",null,{}]
-46:["$","h2",null,{"id":"signature-revision","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Signature Revision"}]
-47:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Adds cryptographic signature to verify authenticity."}]
-48:["$","h3",null,{"id":"common-fields-1","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Common Fields"}]
-49:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Required"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_verification_hash"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hash of revision being signed"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"ISO 8601 timestamp"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Must be ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"signature\""}]]}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"version"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Protocol version string"}]]}],"$L9d"]}]]}]}]
-4a:["$","h3",null,{"id":"cli--metamask-signature","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"CLI / MetaMask Signature"}]
-4b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Additional Fields:"}]}]
-4c:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Required"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hex-encoded signature (65 bytes for ECDSA)"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature_wallet_address"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Ethereum address (EIP-55 checksummed)"}]]}]]}]]}]}]
-4d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Example:"}]}]
-4e:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"0xabc123...\",\n  \"local_timestamp\": \"2024-01-01T12:01:00\",\n  \"revision_type\": \"signature\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\",\n  \"signature_type\": \"cli\",\n  \"signature\": \"0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c\",\n  \"signature_wallet_address\": \"0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8\"\n}","language":"json","filename":"$undefined"}]
-4f:["$","h3",null,{"id":"did-signature","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"DID Signature"}]
-50:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Additional Fields:"}]}]
-51:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Required"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"object"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"JWS (JSON Web Signature) object"}]]}]}]]}]}]
-52:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Signature Object Structure:"}]}]
-53:["$","$L98",null,{"code":"{\n  payload: string;       // Base64url-encoded payload\n  signatures: [{\n    protected: string;   // Base64url-encoded protected header\n    signature: string;   // Base64url-encoded signature\n  }]\n}","language":"typescript","filename":"$undefined"}]
-54:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Example:"}]}]
-55:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"0xabc123...\",\n  \"local_timestamp\": \"2024-01-01T12:01:00\",\n  \"revision_type\": \"signature\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\",\n  \"signature_type\": \"did\",\n  \"signature\": {\n    \"payload\": \"eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19\",\n    \"signatures\": [{\n      \"protected\": \"eyJhbGciOiJFZERTQSJ9\",\n      \"signature\": \"kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ\"\n    }]\n  }\n}","language":"json","filename":"$undefined"}]
-56:["$","h3",null,{"id":"p12-certificate-signature","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"P12 Certificate Signature"}]
-57:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Additional Fields:"}]}]
-58:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Required"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hex-encoded signature"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature_public_key"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hex-encoded DER public key"}]]}]]}]]}]}]
-59:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Example:"}]}]
-5a:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"0xabc123...\",\n  \"local_timestamp\": \"2024-01-01T12:01:00\",\n  \"revision_type\": \"signature\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\",\n  \"signature_type\": \"p12\",\n  \"signature\": \"0x...\",\n  \"signature_public_key\": \"0x308201a2300d06092a864886f70d01010105000382018f...\"\n}","language":"json","filename":"$undefined"}]
-5b:["$","h3",null,{"id":"inline-signature","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Inline Signature"}]
-5c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Same as CLI/MetaMask but with pre-computed signature."}]
-5d:["$","h3",null,{"id":"validation-rules-2","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Validation Rules"}]
-5e:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Signature must be verifiable using provided credentials"}],"\n",["$","li",null,{"className":"leading-7","children":"For CLI/MetaMask: Address must be recoverable from signature"}],"\n",["$","li",null,{"className":"leading-7","children":"For DID: JWS must be valid and verifiable"}],"\n",["$","li",null,{"className":"leading-7","children":"For P12: Signature must verify with public key"}],"\n",["$","li",null,{"className":"leading-7","children":["Signature must be computed over ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_verification_hash"}]]}],"\n"]}]
-5f:["$","hr",null,{}]
-60:["$","h2",null,{"id":"witness-revision","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Witness Revision"}]
-61:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Anchors revision to blockchain or timestamping service."}]
-62:["$","h3",null,{"id":"fields-2","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Fields"}]
-63:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Required"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_verification_hash"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hash being witnessed"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"ISO 8601 timestamp"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Must be ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"witness\""}]]}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"version"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Protocol version string"}]]}],"$L9e","$L9f","$La0","$La1","$La2","$La3","$La4"]}]]}]}]
-64:["$","h3",null,{"id":"ethereum-witness-example","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Ethereum Witness Example"}]
-65:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"0xabc123...\",\n  \"local_timestamp\": \"2024-01-01T12:02:00\",\n  \"revision_type\": \"witness\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\",\n  \"witness_merkle_root\": \"0xdef456...\",\n  \"witness_timestamp\": 1704110520,\n  \"witness_network\": \"sepolia\",\n  \"witness_smart_contract_address\": \"0x5FbDB2315678afecb367f032d93F642f64180aa3\",\n  \"witness_transaction_hash\": \"0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08\",\n  \"witness_sender_account_address\": \"0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8\",\n  \"witness_merkle_proof\": []\n}","language":"json","filename":"$undefined"}]
-66:["$","h3",null,{"id":"batched-witness-example","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Batched Witness Example"}]
-67:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Multiple revisions witnessed in single transaction:"}]
-68:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"0xabc123...\",\n  \"local_timestamp\": \"2024-01-01T12:02:00\",\n  \"revision_type\": \"witness\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\",\n  \"witness_merkle_root\": \"0xroot...\",\n  \"witness_timestamp\": 1704110520,\n  \"witness_network\": \"mainnet\",\n  \"witness_smart_contract_address\": \"0x5FbDB2315678afecb367f032d93F642f64180aa3\",\n  \"witness_transaction_hash\": \"0x9f86d081...\",\n  \"witness_sender_account_address\": \"0x742d35Cc...\",\n  \"witness_merkle_proof\": [\n    \"0xsibling_hash_1\",\n    \"0xsibling_hash_2\",\n    \"0xsibling_hash_3\"\n  ]\n}","language":"json","filename":"$undefined"}]
-69:["$","h3",null,{"id":"nostr-witness-example","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Nostr Witness Example"}]
-6a:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"0xabc123...\",\n  \"local_timestamp\": \"2024-01-01T12:02:00\",\n  \"revision_type\": \"witness\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\",\n  \"witness_merkle_root\": \"0xabc123...\",\n  \"witness_timestamp\": 1704110520,\n  \"witness_network\": \"nostr\",\n  \"witness_smart_contract_address\": \"\",\n  \"witness_transaction_hash\": \"nevent1qqsw...\",\n  \"witness_sender_account_address\": \"npub1...\",\n  \"witness_merkle_proof\": []\n}","language":"json","filename":"$undefined"}]
-6b:["$","h3",null,{"id":"tsa-witness-example","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"TSA Witness Example"}]
-6c:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"0xabc123...\",\n  \"local_timestamp\": \"2024-01-01T12:02:00\",\n  \"revision_type\": \"witness\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\",\n  \"witness_merkle_root\": \"0xabc123...\",\n  \"witness_timestamp\": 1704110520,\n  \"witness_network\": \"tsa\",\n  \"witness_smart_contract_address\": \"https://timestamp.digicert.com\",\n  \"witness_transaction_hash\": \"base64_tsa_response\",\n  \"witness_sender_account_address\": \"\",\n  \"witness_merkle_proof\": []\n}","language":"json","filename":"$undefined"}]
-6d:["$","h3",null,{"id":"validation-rules-3","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Validation Rules"}]
-6e:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["For single witness: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_merkle_proof"}]," must be empty array"]}],"\n",["$","li",null,{"className":"leading-7","children":["For single witness: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_merkle_root"}]," equals ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_verification_hash"}]]}],"\n",["$","li",null,{"className":"leading-7","children":["For batched: Merkle proof must verify back to ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_merkle_root"}]]}],"\n",["$","li",null,{"className":"leading-7","children":"Transaction must exist and be confirmed on specified network"}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_timestamp"}]," should match blockchain/service timestamp"]}],"\n",["$","li",null,{"className":"leading-7","children":"For Ethereum: Contract address and sender address required"}],"\n"]}]
-6f:["$","hr",null,{}]
-70:["$","h2",null,{"id":"link-revision","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Link Revision"}]
-71:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Connects to other AquaTree chains."}]
-72:["$","h3",null,{"id":"fields-3","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Fields"}]
-73:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Required"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_verification_hash"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Previous revision in this chain"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"ISO 8601 timestamp"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Must be ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"link\""}]]}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"version"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Protocol version string"}]]}],"$La5","$La6","$La7"]}]]}]}]
-74:["$","h3",null,{"id":"example","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Example"}]
-75:["$","$L98",null,{"code":"{\n  \"previous_verification_hash\": \"0xabc123...\",\n  \"local_timestamp\": \"2024-01-01T12:03:00\",\n  \"revision_type\": \"link\",\n  \"version\": \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\",\n  \"link_type\": \"dependencies\",\n  \"link_verification_hashes\": [\n    \"0x111222333444555666777888999000aaabbbcccdddeeefff000111222333444\",\n    \"0x222333444555666777888999000aaabbbcccdddeeefff000111222333444555\",\n    \"0x333444555666777888999000aaabbbcccdddeeefff000111222333444555666\"\n  ],\n  \"link_file_hashes\": [\n    \"0xfileHash1...\",\n    \"0xfileHash2...\",\n    \"0xfileHash3...\"\n  ]\n}","language":"json","filename":"$undefined"}]
-76:["$","h3",null,{"id":"validation-rules-4","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Validation Rules"}]
-77:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"link_verification_hashes"}]," must be non-empty array"]}],"\n",["$","li",null,{"className":"leading-7","children":"Each hash in array must be valid revision hash"}],"\n",["$","li",null,{"className":"leading-7","children":["If ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"link_file_hashes"}]," present, must have same length as ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"link_verification_hashes"}]]}],"\n",["$","li",null,{"className":"leading-7","children":"Referenced revisions should exist (optional strict validation)"}],"\n"]}]
-78:["$","hr",null,{}]
-79:["$","h2",null,{"id":"hash-computation","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Hash Computation"}]
-7a:["$","h3",null,{"id":"scalar-method","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scalar Method"}]
-7b:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Serialize revision as canonical JSON (sorted keys)"}],"\n",["$","li",null,{"className":"leading-7","children":"Compute SHA256 hash of serialized string"}],"\n",["$","li",null,{"className":"leading-7","children":["Prefix with ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x"}]]}],"\n"]}]
-7c:["$","$L98",null,{"code":"const canonical = JSON.stringify(sortKeys(revision));\nconst hash = \"0x\" + sha256(canonical).toString('hex');","language":"typescript","filename":"$undefined"}]
-7d:["$","h3",null,{"id":"tree-method","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Tree Method"}]
-7e:["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Extract leaves array from revision"}],"\n",["$","li",null,{"className":"leading-7","children":"Build Merkle tree from leaves"}],"\n",["$","li",null,{"className":"leading-7","children":"Root hash becomes verification hash"}],"\n"]}]
-7f:["$","$L98",null,{"code":"const leaves = revision.leaves;\nconst tree = new MerkleTree(leaves, sha256);\nconst hash = \"0x\" + tree.getRoot().toString('hex');","language":"typescript","filename":"$undefined"}]
-80:["$","hr",null,{}]
-81:["$","h2",null,{"id":"aquatree-storage-format","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"AquaTree Storage Format"}]
-82:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Complete AquaTree structure for storage/transmission:"}]
-a8:T705,{
+b:["$","$d",null,{"fallback":["$","$L13",null,{}],"children":[["$","$L14",null,{"header":["$","$L15",null,{"currentVersion":"v3.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"concepts","filePath":"concepts","title":"Concepts","meta":{"title":"Concepts","description":"Core concepts and terminology for Aqua Protocol v3","content":"$16","reading_time":9,"word_count":1657},"content":"$17"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol v3","meta":{"title":"Aqua Protocol v3","description":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK","content":"$18","reading_time":6,"word_count":1069},"content":"$19"},{"slug":"schema","filePath":"schema","title":"Schema Reference","meta":{"title":"Schema Reference","description":"Detailed schema specifications for Aqua Protocol v3 revisions","content":"$1a","reading_time":10,"word_count":1903},"content":"$1b"},{"slug":"tooling","filePath":"tooling","title":"Tooling & SDK","meta":{"title":"Tooling & SDK","description":"Aqua JS SDK API reference and usage guide","content":"$1c","reading_time":9,"word_count":1773},"content":"$1d"}],"version":"v3.0.0","content":"$L1e","toc":"$L1f","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L20","$L21","$L22"]}]
+23:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayout"]
+26:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TableOfContents"]
+27:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"MdxHotReload"]
+28:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"HotReloadIndicator"]
+29:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DevModeBadge"]
+24:T45aa,
+# Aqua Protocol v3 - Schema Reference
+
+This document provides comprehensive technical specifications for all revision types in Aqua Protocol v3. Each revision type has specific fields and validation rules.
+
+## Version String Format
+
+```
+https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: {scalar|tree}
+```
+
+**Components:**
+- Protocol URL: `https://aqua-protocol.org/docs/v3/schema_2`
+- Hash Algorithm: `SHA256`
+- Canonicalization Method: `scalar` or `tree`
+
+## Common Fields
+
+All revisions share these mandatory fields:
+
+| Field | Type | Description | Validation |
+|-------|------|-------------|------------|
+| `previous_verification_hash` | string | Hash of previous revision | Empty string for genesis, otherwise 64-char hex with `0x` prefix |
+| `local_timestamp` | string | ISO 8601 timestamp | Valid ISO 8601 format: `YYYY-MM-DDTHH:mm:ss` |
+| `revision_type` | string | Type of revision | One of: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version and method | Must match format above |
+
+---
+
+## File Revision
+
+Represents a file with metadata and optional content.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision hash (empty for genesis) |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"file"` |
+| `version` | string | Yes | Protocol version string |
+| `file_hash` | string | Yes | SHA256 hash of file content (hex with `0x`) |
+| `file_nonce` | string | Yes | Random 16-byte nonce (hex with `0x`) |
+| `content` | string/Uint8Array | No | Optional file content |
+| `leaves` | string[] | Conditional | Required if `Method: tree`, array of leaf hashes |
+
+### Genesis File Revision (Scalar)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c"
+}
+```
+
+### Genesis File Revision (Tree)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "leaves": [
+    "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
+  ]
+}
+```
+
+### With Content
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "content": "This is the file content as a string"
+}
+```
+
+### Validation Rules
+
+1. `file_hash` must match SHA256 of file content
+2. `file_nonce` must be exactly 16 bytes (32 hex chars + `0x`)
+3. If `Method: tree`, `leaves` array must be present
+4. If `Method: scalar`, `leaves` must be absent
+5. `content` is optional but if present, hash must match `file_hash`
+
+---
+
+## Form Revision
+
+Stores structured key-value data.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision hash (empty for genesis) |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"form"` |
+| `version` | string | Yes | Protocol version string |
+| `file_hash` | string | Yes | SHA256 hash of form data |
+| `file_nonce` | string | Yes | Random 16-byte nonce |
+| `content` | object | Yes | Form data as key-value pairs |
+| `leaves` | string[] | Conditional | Required if `Method: tree` |
+
+### Example (Scalar)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  }
+}
+```
+
+### Example (Tree)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  },
+  "leaves": [
+    "0x...",  // SHA256("name:John Doe")
+    "0x...",  // SHA256("email:john@example.com")
+    "0x...",  // SHA256("organization:Example Corp")
+    "0x..."   // SHA256("role:Developer")
+  ]
+}
+```
+
+### Leaf Computation (Tree Mode)
+
+For each key-value pair in `content`:
+```typescript
+leaf_hash = SHA256(`${key}:${value}`)
+```
+
+### Validation Rules
+
+1. `content` must be a valid JSON object
+2. All values in `content` must be strings
+3. `file_hash` must match hash of canonicalized content
+4. If `Method: tree`, number of leaves must match number of keys in content
+
+---
+
+## Signature Revision
+
+Adds cryptographic signature to verify authenticity.
+
+### Common Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Hash of revision being signed |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"signature"` |
+| `version` | string | Yes | Protocol version string |
+| `signature_type` | string | Yes | Type: `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"` |
+
+### CLI / MetaMask Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | string | Yes | Hex-encoded signature (65 bytes for ECDSA) |
+| `signature_wallet_address` | string | Yes | Ethereum address (EIP-55 checksummed) |
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "cli",
+  "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c",
+  "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+}
+```
+
+### DID Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | object | Yes | JWS (JSON Web Signature) object |
+
+**Signature Object Structure:**
+```typescript
+{
+  payload: string;       // Base64url-encoded payload
+  signatures: [{
+    protected: string;   // Base64url-encoded protected header
+    signature: string;   // Base64url-encoded signature
+  }]
+}
+```
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "did",
+  "signature": {
+    "payload": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19",
+    "signatures": [{
+      "protected": "eyJhbGciOiJFZERTQSJ9",
+      "signature": "kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ"
+    }]
+  }
+}
+```
+
+### P12 Certificate Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | string | Yes | Hex-encoded signature |
+| `signature_public_key` | string | Yes | Hex-encoded DER public key |
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "p12",
+  "signature": "0x...",
+  "signature_public_key": "0x308201a2300d06092a864886f70d01010105000382018f..."
+}
+```
+
+### Inline Signature
+
+Same as CLI/MetaMask but with pre-computed signature.
+
+### Validation Rules
+
+1. Signature must be verifiable using provided credentials
+2. For CLI/MetaMask: Address must be recoverable from signature
+3. For DID: JWS must be valid and verifiable
+4. For P12: Signature must verify with public key
+5. Signature must be computed over `previous_verification_hash`
+
+---
+
+## Witness Revision
+
+Anchors revision to blockchain or timestamping service.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Hash being witnessed |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"witness"` |
+| `version` | string | Yes | Protocol version string |
+| `witness_merkle_root` | string | Yes | Root hash of Merkle tree |
+| `witness_timestamp` | number | Yes | Unix timestamp from witness service |
+| `witness_network` | string | Yes | Network: `"mainnet"`, `"sepolia"`, `"holesky"`, `"tsa"`, `"nostr"` |
+| `witness_smart_contract_address` | string | Conditional | Required for Ethereum |
+| `witness_transaction_hash` | string | Yes | Transaction or event hash |
+| `witness_sender_account_address` | string | Conditional | Required for Ethereum |
+| `witness_merkle_proof` | string[] | Yes | Merkle proof (empty for single witness) |
+
+### Ethereum Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xdef456...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "sepolia",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "witness_sender_account_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  "witness_merkle_proof": []
+}
+```
+
+### Batched Witness Example
+
+Multiple revisions witnessed in single transaction:
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xroot...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "mainnet",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081...",
+  "witness_sender_account_address": "0x742d35Cc...",
+  "witness_merkle_proof": [
+    "0xsibling_hash_1",
+    "0xsibling_hash_2",
+    "0xsibling_hash_3"
+  ]
+}
+```
+
+### Nostr Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "nostr",
+  "witness_smart_contract_address": "",
+  "witness_transaction_hash": "nevent1qqsw...",
+  "witness_sender_account_address": "npub1...",
+  "witness_merkle_proof": []
+}
+```
+
+### TSA Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "tsa",
+  "witness_smart_contract_address": "https://timestamp.digicert.com",
+  "witness_transaction_hash": "base64_tsa_response",
+  "witness_sender_account_address": "",
+  "witness_merkle_proof": []
+}
+```
+
+### Validation Rules
+
+1. For single witness: `witness_merkle_proof` must be empty array
+2. For single witness: `witness_merkle_root` equals `previous_verification_hash`
+3. For batched: Merkle proof must verify back to `witness_merkle_root`
+4. Transaction must exist and be confirmed on specified network
+5. `witness_timestamp` should match blockchain/service timestamp
+6. For Ethereum: Contract address and sender address required
+
+---
+
+## Link Revision
+
+Connects to other AquaTree chains.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision in this chain |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"link"` |
+| `version` | string | Yes | Protocol version string |
+| `link_type` | string | No | Application-specific link type |
+| `link_verification_hashes` | string[] | Yes | Array of hashes from other chains |
+| `link_file_hashes` | string[] | No | Corresponding file hashes |
+
+### Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:03:00",
+  "revision_type": "link",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "link_type": "dependencies",
+  "link_verification_hashes": [
+    "0x111222333444555666777888999000aaabbbcccdddeeefff000111222333444",
+    "0x222333444555666777888999000aaabbbcccdddeeefff000111222333444555",
+    "0x333444555666777888999000aaabbbcccdddeeefff000111222333444555666"
+  ],
+  "link_file_hashes": [
+    "0xfileHash1...",
+    "0xfileHash2...",
+    "0xfileHash3..."
+  ]
+}
+```
+
+### Validation Rules
+
+1. `link_verification_hashes` must be non-empty array
+2. Each hash in array must be valid revision hash
+3. If `link_file_hashes` present, must have same length as `link_verification_hashes`
+4. Referenced revisions should exist (optional strict validation)
+
+---
+
+## Hash Computation
+
+### Scalar Method
+
+1. Serialize revision as canonical JSON (sorted keys)
+2. Compute SHA256 hash of serialized string
+3. Prefix with `0x`
+
+```typescript
+const canonical = JSON.stringify(sortKeys(revision));
+const hash = "0x" + sha256(canonical).toString('hex');
+```
+
+### Tree Method
+
+1. Extract leaves array from revision
+2. Build Merkle tree from leaves
+3. Root hash becomes verification hash
+
+```typescript
+const leaves = revision.leaves;
+const tree = new MerkleTree(leaves, sha256);
+const hash = "0x" + tree.getRoot().toString('hex');
+```
+
+---
+
+## AquaTree Storage Format
+
+Complete AquaTree structure for storage/transmission:
+
+```json
+{
   "revisions": {
     "0xgenesis_hash": {
       "previous_verification_hash": "",
@@ -4697,43 +5071,629 @@ a8:T705,{
     },
     "latestHash": "0xwitness_hash"
   }
-}83:["$","$L98",null,{"code":"$a8","language":"json","filename":"$undefined"}]
-84:["$","hr",null,{}]
-85:["$","h2",null,{"id":"field-constraints","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Field Constraints"}]
-86:["$","h3",null,{"id":"hashes","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Hashes"}]
-87:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":["Format: Lowercase hexadecimal with ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x"}]," prefix"]}],"\n",["$","li",null,{"className":"leading-7","children":"Length: 64 characters (32 bytes) + 2-char prefix = 66 total"}],"\n",["$","li",null,{"className":"leading-7","children":["Example: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"}]]}],"\n"]}]
-88:["$","h3",null,{"id":"timestamps","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Timestamps"}]
-89:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Format: ISO 8601"}],"\n",["$","li",null,{"className":"leading-7","children":["Pattern: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"YYYY-MM-DDTHH:mm:ss"}]]}],"\n",["$","li",null,{"className":"leading-7","children":["Example: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"2024-01-01T12:00:00"}]]}],"\n"]}]
-8a:["$","h3",null,{"id":"ethereum-addresses","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Ethereum Addresses"}]
-8b:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Format: EIP-55 checksummed"}],"\n",["$","li",null,{"className":"leading-7","children":"Length: 42 characters (20 bytes + 0x)"}],"\n",["$","li",null,{"className":"leading-7","children":"Mixed case for checksum"}],"\n",["$","li",null,{"className":"leading-7","children":["Example: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"}]]}],"\n"]}]
-8c:["$","h3",null,{"id":"nonces","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Nonces"}]
-8d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Length: Exactly 16 bytes (32 hex chars + 0x)"}],"\n",["$","li",null,{"className":"leading-7","children":["Format: Lowercase hexadecimal with ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x"}]," prefix"]}],"\n",["$","li",null,{"className":"leading-7","children":["Example: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c"}]]}],"\n"]}]
-8e:["$","hr",null,{}]
-8f:["$","h2",null,{"id":"version-compatibility","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Version Compatibility"}]
-90:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"v3.2.x"}],": Current version, fully compatible"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"v3.1.x"}],": Compatible, minor improvements"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"v3.0.x"}],": Compatible, initial TypeScript release"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"v2.x"}],": Not compatible, different schema"]}],"\n"]}]
-91:["$","hr",null,{}]
-92:["$","h2",null,{"id":"see-also","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"See Also"}]
-93:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/previous_versions/version_3/introduction","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Introduction"}]," - Getting started"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/previous_versions/version_3/concepts","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Concepts"}]," - Core concepts"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/previous_versions/version_3/tooling","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Tooling"}]," - SDK API reference"]}],"\n"]}]
-94:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"file_hash"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["SHA256 hash of file content (hex with ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x"}],")"]}]]}]
-95:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"file_nonce"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Random 16-byte nonce (hex with ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"0x"}],")"]}]]}]
-96:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"content"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string/Uint8Array"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"No"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Optional file content"}]]}]
-97:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"leaves"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string[]"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Conditional"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Required if ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Method: tree"}],", array of leaf hashes"]}]]}]
-99:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"file_hash"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"SHA256 hash of form data"}]]}]
-9a:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"file_nonce"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Random 16-byte nonce"}]]}]
-9b:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"content"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"object"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Form data as key-value pairs"}]]}]
-9c:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"leaves"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string[]"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Conditional"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Required if ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Method: tree"}]]}]]}]
-9d:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"signature_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Type: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"cli\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"metamask\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"did\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"p12\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"inline\""}]]}]]}]
-9e:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_merkle_root"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Root hash of Merkle tree"}]]}]
-9f:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_timestamp"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"number"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Unix timestamp from witness service"}]]}]
-a0:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_network"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Network: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"mainnet\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"sepolia\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"holesky\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"tsa\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"nostr\""}]]}]]}]
-a1:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_smart_contract_address"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Conditional"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Required for Ethereum"}]]}]
-a2:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_transaction_hash"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Transaction or event hash"}]]}]
-a3:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_sender_account_address"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Conditional"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Required for Ethereum"}]]}]
-a4:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"witness_merkle_proof"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string[]"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Merkle proof (empty for single witness)"}]]}]
-a5:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"link_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"No"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Application-specific link type"}]]}]
-a6:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"link_verification_hashes"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string[]"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Yes"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Array of hashes from other chains"}]]}]
-a7:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"link_file_hashes"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string[]"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"No"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Corresponding file hashes"}]]}]
-9:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-a9:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"IconMark"]
-b:[["$","title","0",{"children":"Schema Reference | Aqua Protocol Documentation"}],["$","meta","1",{"name":"description","content":"Detailed schema specifications for Aqua Protocol v3 revisions"}],["$","meta","2",{"name":"generator","content":"v0.app"}],["$","link","3",{"rel":"canonical","href":"https://docs.aquaprotocol.org/docs/v3.0.0/schema"}],["$","meta","4",{"property":"og:title","content":"Schema Reference"}],["$","meta","5",{"property":"og:description","content":"Detailed schema specifications for Aqua Protocol v3 revisions"}],["$","meta","6",{"property":"og:url","content":"https://docs.aquaprotocol.org/docs/v3.0.0/schema"}],["$","meta","7",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Schema Reference"}],["$","meta","12",{"name":"twitter:description","content":"Detailed schema specifications for Aqua Protocol v3 revisions"}],["$","link","13",{"rel":"icon","href":"/logo/aqua-logo.png"}],["$","link","14",{"rel":"apple-touch-icon","href":"/apple-icon.png"}],["$","$La9","15",{}]]
-7:null
+}
+```
+
+---
+
+## Field Constraints
+
+### Hashes
+- Format: Lowercase hexadecimal with `0x` prefix
+- Length: 64 characters (32 bytes) + 2-char prefix = 66 total
+- Example: `0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08`
+
+### Timestamps
+- Format: ISO 8601
+- Pattern: `YYYY-MM-DDTHH:mm:ss`
+- Example: `2024-01-01T12:00:00`
+
+### Ethereum Addresses
+- Format: EIP-55 checksummed
+- Length: 42 characters (20 bytes + 0x)
+- Mixed case for checksum
+- Example: `0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8`
+
+### Nonces
+- Length: Exactly 16 bytes (32 hex chars + 0x)
+- Format: Lowercase hexadecimal with `0x` prefix
+- Example: `0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c`
+
+---
+
+## Version Compatibility
+
+- **v3.2.x**: Current version, fully compatible
+- **v3.1.x**: Compatible, minor improvements
+- **v3.0.x**: Compatible, initial TypeScript release
+- **v2.x**: Not compatible, different schema
+
+---
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Getting started
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts
+- [Tooling](/previous_versions/version_3/tooling) - SDK API reference
+25:T45aa,
+# Aqua Protocol v3 - Schema Reference
+
+This document provides comprehensive technical specifications for all revision types in Aqua Protocol v3. Each revision type has specific fields and validation rules.
+
+## Version String Format
+
+```
+https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: {scalar|tree}
+```
+
+**Components:**
+- Protocol URL: `https://aqua-protocol.org/docs/v3/schema_2`
+- Hash Algorithm: `SHA256`
+- Canonicalization Method: `scalar` or `tree`
+
+## Common Fields
+
+All revisions share these mandatory fields:
+
+| Field | Type | Description | Validation |
+|-------|------|-------------|------------|
+| `previous_verification_hash` | string | Hash of previous revision | Empty string for genesis, otherwise 64-char hex with `0x` prefix |
+| `local_timestamp` | string | ISO 8601 timestamp | Valid ISO 8601 format: `YYYY-MM-DDTHH:mm:ss` |
+| `revision_type` | string | Type of revision | One of: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version and method | Must match format above |
+
+---
+
+## File Revision
+
+Represents a file with metadata and optional content.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision hash (empty for genesis) |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"file"` |
+| `version` | string | Yes | Protocol version string |
+| `file_hash` | string | Yes | SHA256 hash of file content (hex with `0x`) |
+| `file_nonce` | string | Yes | Random 16-byte nonce (hex with `0x`) |
+| `content` | string/Uint8Array | No | Optional file content |
+| `leaves` | string[] | Conditional | Required if `Method: tree`, array of leaf hashes |
+
+### Genesis File Revision (Scalar)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c"
+}
+```
+
+### Genesis File Revision (Tree)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "leaves": [
+    "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
+  ]
+}
+```
+
+### With Content
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "content": "This is the file content as a string"
+}
+```
+
+### Validation Rules
+
+1. `file_hash` must match SHA256 of file content
+2. `file_nonce` must be exactly 16 bytes (32 hex chars + `0x`)
+3. If `Method: tree`, `leaves` array must be present
+4. If `Method: scalar`, `leaves` must be absent
+5. `content` is optional but if present, hash must match `file_hash`
+
+---
+
+## Form Revision
+
+Stores structured key-value data.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision hash (empty for genesis) |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"form"` |
+| `version` | string | Yes | Protocol version string |
+| `file_hash` | string | Yes | SHA256 hash of form data |
+| `file_nonce` | string | Yes | Random 16-byte nonce |
+| `content` | object | Yes | Form data as key-value pairs |
+| `leaves` | string[] | Conditional | Required if `Method: tree` |
+
+### Example (Scalar)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  }
+}
+```
+
+### Example (Tree)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  },
+  "leaves": [
+    "0x...",  // SHA256("name:John Doe")
+    "0x...",  // SHA256("email:john@example.com")
+    "0x...",  // SHA256("organization:Example Corp")
+    "0x..."   // SHA256("role:Developer")
+  ]
+}
+```
+
+### Leaf Computation (Tree Mode)
+
+For each key-value pair in `content`:
+```typescript
+leaf_hash = SHA256(`${key}:${value}`)
+```
+
+### Validation Rules
+
+1. `content` must be a valid JSON object
+2. All values in `content` must be strings
+3. `file_hash` must match hash of canonicalized content
+4. If `Method: tree`, number of leaves must match number of keys in content
+
+---
+
+## Signature Revision
+
+Adds cryptographic signature to verify authenticity.
+
+### Common Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Hash of revision being signed |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"signature"` |
+| `version` | string | Yes | Protocol version string |
+| `signature_type` | string | Yes | Type: `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"` |
+
+### CLI / MetaMask Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | string | Yes | Hex-encoded signature (65 bytes for ECDSA) |
+| `signature_wallet_address` | string | Yes | Ethereum address (EIP-55 checksummed) |
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "cli",
+  "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c",
+  "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+}
+```
+
+### DID Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | object | Yes | JWS (JSON Web Signature) object |
+
+**Signature Object Structure:**
+```typescript
+{
+  payload: string;       // Base64url-encoded payload
+  signatures: [{
+    protected: string;   // Base64url-encoded protected header
+    signature: string;   // Base64url-encoded signature
+  }]
+}
+```
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "did",
+  "signature": {
+    "payload": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19",
+    "signatures": [{
+      "protected": "eyJhbGciOiJFZERTQSJ9",
+      "signature": "kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ"
+    }]
+  }
+}
+```
+
+### P12 Certificate Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | string | Yes | Hex-encoded signature |
+| `signature_public_key` | string | Yes | Hex-encoded DER public key |
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "p12",
+  "signature": "0x...",
+  "signature_public_key": "0x308201a2300d06092a864886f70d01010105000382018f..."
+}
+```
+
+### Inline Signature
+
+Same as CLI/MetaMask but with pre-computed signature.
+
+### Validation Rules
+
+1. Signature must be verifiable using provided credentials
+2. For CLI/MetaMask: Address must be recoverable from signature
+3. For DID: JWS must be valid and verifiable
+4. For P12: Signature must verify with public key
+5. Signature must be computed over `previous_verification_hash`
+
+---
+
+## Witness Revision
+
+Anchors revision to blockchain or timestamping service.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Hash being witnessed |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"witness"` |
+| `version` | string | Yes | Protocol version string |
+| `witness_merkle_root` | string | Yes | Root hash of Merkle tree |
+| `witness_timestamp` | number | Yes | Unix timestamp from witness service |
+| `witness_network` | string | Yes | Network: `"mainnet"`, `"sepolia"`, `"holesky"`, `"tsa"`, `"nostr"` |
+| `witness_smart_contract_address` | string | Conditional | Required for Ethereum |
+| `witness_transaction_hash` | string | Yes | Transaction or event hash |
+| `witness_sender_account_address` | string | Conditional | Required for Ethereum |
+| `witness_merkle_proof` | string[] | Yes | Merkle proof (empty for single witness) |
+
+### Ethereum Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xdef456...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "sepolia",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "witness_sender_account_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  "witness_merkle_proof": []
+}
+```
+
+### Batched Witness Example
+
+Multiple revisions witnessed in single transaction:
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xroot...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "mainnet",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081...",
+  "witness_sender_account_address": "0x742d35Cc...",
+  "witness_merkle_proof": [
+    "0xsibling_hash_1",
+    "0xsibling_hash_2",
+    "0xsibling_hash_3"
+  ]
+}
+```
+
+### Nostr Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "nostr",
+  "witness_smart_contract_address": "",
+  "witness_transaction_hash": "nevent1qqsw...",
+  "witness_sender_account_address": "npub1...",
+  "witness_merkle_proof": []
+}
+```
+
+### TSA Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "tsa",
+  "witness_smart_contract_address": "https://timestamp.digicert.com",
+  "witness_transaction_hash": "base64_tsa_response",
+  "witness_sender_account_address": "",
+  "witness_merkle_proof": []
+}
+```
+
+### Validation Rules
+
+1. For single witness: `witness_merkle_proof` must be empty array
+2. For single witness: `witness_merkle_root` equals `previous_verification_hash`
+3. For batched: Merkle proof must verify back to `witness_merkle_root`
+4. Transaction must exist and be confirmed on specified network
+5. `witness_timestamp` should match blockchain/service timestamp
+6. For Ethereum: Contract address and sender address required
+
+---
+
+## Link Revision
+
+Connects to other AquaTree chains.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision in this chain |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"link"` |
+| `version` | string | Yes | Protocol version string |
+| `link_type` | string | No | Application-specific link type |
+| `link_verification_hashes` | string[] | Yes | Array of hashes from other chains |
+| `link_file_hashes` | string[] | No | Corresponding file hashes |
+
+### Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:03:00",
+  "revision_type": "link",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "link_type": "dependencies",
+  "link_verification_hashes": [
+    "0x111222333444555666777888999000aaabbbcccdddeeefff000111222333444",
+    "0x222333444555666777888999000aaabbbcccdddeeefff000111222333444555",
+    "0x333444555666777888999000aaabbbcccdddeeefff000111222333444555666"
+  ],
+  "link_file_hashes": [
+    "0xfileHash1...",
+    "0xfileHash2...",
+    "0xfileHash3..."
+  ]
+}
+```
+
+### Validation Rules
+
+1. `link_verification_hashes` must be non-empty array
+2. Each hash in array must be valid revision hash
+3. If `link_file_hashes` present, must have same length as `link_verification_hashes`
+4. Referenced revisions should exist (optional strict validation)
+
+---
+
+## Hash Computation
+
+### Scalar Method
+
+1. Serialize revision as canonical JSON (sorted keys)
+2. Compute SHA256 hash of serialized string
+3. Prefix with `0x`
+
+```typescript
+const canonical = JSON.stringify(sortKeys(revision));
+const hash = "0x" + sha256(canonical).toString('hex');
+```
+
+### Tree Method
+
+1. Extract leaves array from revision
+2. Build Merkle tree from leaves
+3. Root hash becomes verification hash
+
+```typescript
+const leaves = revision.leaves;
+const tree = new MerkleTree(leaves, sha256);
+const hash = "0x" + tree.getRoot().toString('hex');
+```
+
+---
+
+## AquaTree Storage Format
+
+Complete AquaTree structure for storage/transmission:
+
+```json
+{
+  "revisions": {
+    "0xgenesis_hash": {
+      "previous_verification_hash": "",
+      "local_timestamp": "2024-01-01T12:00:00",
+      "revision_type": "file",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "file_hash": "0x...",
+      "file_nonce": "0x..."
+    },
+    "0xsignature_hash": {
+      "previous_verification_hash": "0xgenesis_hash",
+      "local_timestamp": "2024-01-01T12:01:00",
+      "revision_type": "signature",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "signature_type": "cli",
+      "signature": "0x...",
+      "signature_wallet_address": "0x..."
+    },
+    "0xwitness_hash": {
+      "previous_verification_hash": "0xsignature_hash",
+      "local_timestamp": "2024-01-01T12:02:00",
+      "revision_type": "witness",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "witness_merkle_root": "0x...",
+      "witness_timestamp": 1704110520,
+      "witness_network": "sepolia",
+      "witness_smart_contract_address": "0x...",
+      "witness_transaction_hash": "0x...",
+      "witness_sender_account_address": "0x...",
+      "witness_merkle_proof": []
+    }
+  },
+  "file_index": {
+    "0xfile_hash": "document.pdf"
+  },
+  "tree": {
+    "hash": "0xgenesis_hash",
+    "children": [
+      {
+        "hash": "0xsignature_hash",
+        "children": [
+          {
+            "hash": "0xwitness_hash",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "treeMapping": {
+    "paths": {
+      "0xgenesis_hash": ["0xgenesis_hash"],
+      "0xsignature_hash": ["0xgenesis_hash", "0xsignature_hash"],
+      "0xwitness_hash": ["0xgenesis_hash", "0xsignature_hash", "0xwitness_hash"]
+    },
+    "latestHash": "0xwitness_hash"
+  }
+}
+```
+
+---
+
+## Field Constraints
+
+### Hashes
+- Format: Lowercase hexadecimal with `0x` prefix
+- Length: 64 characters (32 bytes) + 2-char prefix = 66 total
+- Example: `0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08`
+
+### Timestamps
+- Format: ISO 8601
+- Pattern: `YYYY-MM-DDTHH:mm:ss`
+- Example: `2024-01-01T12:00:00`
+
+### Ethereum Addresses
+- Format: EIP-55 checksummed
+- Length: 42 characters (20 bytes + 0x)
+- Mixed case for checksum
+- Example: `0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8`
+
+### Nonces
+- Length: Exactly 16 bytes (32 hex chars + 0x)
+- Format: Lowercase hexadecimal with `0x` prefix
+- Example: `0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c`
+
+---
+
+## Version Compatibility
+
+- **v3.2.x**: Current version, fully compatible
+- **v3.1.x**: Compatible, minor improvements
+- **v3.0.x**: Compatible, initial TypeScript release
+- **v2.x**: Not compatible, different schema
+
+---
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Getting started
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts
+- [Tooling](/previous_versions/version_3/tooling) - SDK API reference
+1e:["$","$L23",null,{"meta":{"title":"Schema Reference","description":"Detailed schema specifications for Aqua Protocol v3 revisions","content":"$24","reading_time":10,"word_count":1903},"content":"$25","previousDoc":{"title":"Aqua Protocol v3","slug":"introduction"},"nextDoc":{"title":"Tooling & SDK","slug":"tooling"},"version":"v3.0.0","slug":"schema","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+1f:["$","$L26",null,{"items":[{"id":"version-string-format","title":"Version String Format","level":2},{"id":"common-fields","title":"Common Fields","level":2},{"id":"file-revision","title":"File Revision","level":2},{"id":"fields","title":"Fields","level":3},{"id":"genesis-file-revision-scalar","title":"Genesis File Revision (Scalar)","level":3},{"id":"genesis-file-revision-tree","title":"Genesis File Revision (Tree)","level":3},{"id":"with-content","title":"With Content","level":3},{"id":"validation-rules","title":"Validation Rules","level":3},{"id":"form-revision","title":"Form Revision","level":2},{"id":"fields","title":"Fields","level":3},{"id":"example-scalar","title":"Example (Scalar)","level":3},{"id":"example-tree","title":"Example (Tree)","level":3},{"id":"leaf-computation-tree-mode","title":"Leaf Computation (Tree Mode)","level":3},{"id":"validation-rules","title":"Validation Rules","level":3},{"id":"signature-revision","title":"Signature Revision","level":2},{"id":"common-fields","title":"Common Fields","level":3},{"id":"cli--metamask-signature","title":"CLI / MetaMask Signature","level":3},{"id":"did-signature","title":"DID Signature","level":3},{"id":"p12-certificate-signature","title":"P12 Certificate Signature","level":3},{"id":"inline-signature","title":"Inline Signature","level":3},{"id":"validation-rules","title":"Validation Rules","level":3},{"id":"witness-revision","title":"Witness Revision","level":2},{"id":"fields","title":"Fields","level":3},{"id":"ethereum-witness-example","title":"Ethereum Witness Example","level":3},{"id":"batched-witness-example","title":"Batched Witness Example","level":3},{"id":"nostr-witness-example","title":"Nostr Witness Example","level":3},{"id":"tsa-witness-example","title":"TSA Witness Example","level":3},{"id":"validation-rules","title":"Validation Rules","level":3},{"id":"link-revision","title":"Link Revision","level":2},{"id":"fields","title":"Fields","level":3},{"id":"example","title":"Example","level":3},{"id":"validation-rules","title":"Validation Rules","level":3},{"id":"hash-computation","title":"Hash Computation","level":2},{"id":"scalar-method","title":"Scalar Method","level":3},{"id":"tree-method","title":"Tree Method","level":3},{"id":"aquatree-storage-format","title":"AquaTree Storage Format","level":2},{"id":"field-constraints","title":"Field Constraints","level":2},{"id":"hashes","title":"Hashes","level":3},{"id":"timestamps","title":"Timestamps","level":3},{"id":"ethereum-addresses","title":"Ethereum Addresses","level":3},{"id":"nonces","title":"Nonces","level":3},{"id":"version-compatibility","title":"Version Compatibility","level":2},{"id":"see-also","title":"See Also","level":2}],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+20:["$","$L27",null,{}]
+21:["$","$L28",null,{}]
+22:["$","$L29",null,{}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+2a:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"IconMark"]
+e:null
+12:[["$","title","0",{"children":"Schema Reference | Aqua Protocol"}],["$","meta","1",{"name":"description","content":"Detailed schema specifications for Aqua Protocol v3 revisions"}],["$","link","2",{"rel":"canonical","href":"https://aqua-protocol.org/docs/v3.0.0/schema"}],["$","meta","3",{"property":"og:title","content":"Schema Reference"}],["$","meta","4",{"property":"og:description","content":"Detailed schema specifications for Aqua Protocol v3 revisions"}],["$","meta","5",{"property":"og:url","content":"https://aqua-protocol.org/docs/v3.0.0/schema"}],["$","meta","6",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Schema Reference"}],["$","meta","11",{"name":"twitter:description","content":"Detailed schema specifications for Aqua Protocol v3 revisions"}],["$","link","12",{"rel":"icon","href":"/mint-test/logo/aqua-logo.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/mint-test/apple-icon.png"}],["$","$L2a","14",{}]]

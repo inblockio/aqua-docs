@@ -1,20 +1,26 @@
 1:"$Sreact.fragment"
-2:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-3:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-5:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
-6:"$Sreact.suspense"
-8:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"ViewportBoundary"]
-a:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"MetadataBoundary"]
-c:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"default"]
-:HL["/_next/static/chunks/8a80e7184ad3a13f.css","style"]
-:HL["/_next/static/chunks/ec0800f16b1ae8cd.css","style"]
+2:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"ConfigProvider"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TabProvider"]
+4:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+5:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+6:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"VersionNotFound"]
+a:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+:HL["/_next/static/chunks/a06cf6f745569492.css","style"]
+:HL["/_next/static/chunks/b0e9cc9922d4f147.css","style"]
 :HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"P":null,"b":"k8-fwt2fbTlxLBvWFtXyi","c":["","docs","v3.0.0","introduction"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v3.0.0","d"],{"children":[["slug","introduction","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/8a80e7184ad3a13f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/ec0800f16b1ae8cd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L4",[["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true,"nonce":"$undefined"}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],{},null,false,false]},[["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}],[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$L8",null,{"children":"$@9"}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":"$@b"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$c",[]],"S":true}
-d:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
-e:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
-f:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
-10:T3875,
+0:{"P":null,"b":"_ePiRrooneby3ghoRNSHI","c":["","docs","v3.0.0","introduction"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v3.0.0","d"],{"children":[["slug","introduction","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/b0e9cc9922d4f147.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/eb22c92016909501.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/d07752feff0a7168.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L7",{},null,false,false]},["$L8",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+c:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
+d:"$Sreact.suspense"
+f:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"ViewportBoundary"]
+11:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"MetadataBoundary"]
+7:["$","$1","c",{"children":["$Lb",null,["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]]}]
+8:["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}]
+9:["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$d",null,{"name":"Next.Metadata","children":"$L12"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+13:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLoading"]
+14:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayoutWrapper"]
+15:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"Header"]
+16:T3875,
 # Aqua Protocol v3 Concepts
 
 Understanding the core concepts of Aqua Protocol v3 is essential for effectively using the SDK and building applications. This guide covers the fundamental ideas, terminology, and patterns used throughout the protocol.
@@ -621,7 +627,7 @@ fs.writeFileSync('document.aqua.json', JSON.stringify(aquaTree, null, 2));
 - [Introduction](/previous_versions/version_3/introduction) - Overview and quick start
 - [Tooling](/previous_versions/version_3/tooling) - SDK API reference
 - [Schema Reference](/previous_versions/version_3/schema) - Detailed specifications
-11:T3875,
+17:T3875,
 # Aqua Protocol v3 Concepts
 
 Understanding the core concepts of Aqua Protocol v3 is essential for effectively using the SDK and building applications. This guide covers the fundamental ideas, terminology, and patterns used throughout the protocol.
@@ -1228,7 +1234,7 @@ fs.writeFileSync('document.aqua.json', JSON.stringify(aquaTree, null, 2));
 - [Introduction](/previous_versions/version_3/introduction) - Overview and quick start
 - [Tooling](/previous_versions/version_3/tooling) - SDK API reference
 - [Schema Reference](/previous_versions/version_3/schema) - Detailed specifications
-12:T2045,
+18:T2045,
 # Aqua Protocol v3
 
 Aqua Protocol v3 is a mature version of the protocol with a comprehensive JavaScript/TypeScript SDK. It provides a robust framework for creating verifiable revision chains with support for files, forms, signatures, witnesses, and links.
@@ -1526,7 +1532,7 @@ verification.verificationGraphData.forEach(node => {
 - **3.0.0**: Major release with TypeScript rewrite
 
 For detailed changelog, see the [GitHub releases](https://github.com/inblockio/aqua-verifier-js-lib/releases).
-13:T2045,
+19:T2045,
 # Aqua Protocol v3
 
 Aqua Protocol v3 is a mature version of the protocol with a comprehensive JavaScript/TypeScript SDK. It provides a robust framework for creating verifiable revision chains with support for files, forms, signatures, witnesses, and links.
@@ -1824,7 +1830,7 @@ verification.verificationGraphData.forEach(node => {
 - **3.0.0**: Major release with TypeScript rewrite
 
 For detailed changelog, see the [GitHub releases](https://github.com/inblockio/aqua-verifier-js-lib/releases).
-14:T45aa,
+1a:T45aa,
 # Aqua Protocol v3 - Schema Reference
 
 This document provides comprehensive technical specifications for all revision types in Aqua Protocol v3. Each revision type has specific fields and validation rules.
@@ -2397,7 +2403,7 @@ Complete AquaTree structure for storage/transmission:
 - [Introduction](/previous_versions/version_3/introduction) - Getting started
 - [Concepts](/previous_versions/version_3/concepts) - Core concepts
 - [Tooling](/previous_versions/version_3/tooling) - SDK API reference
-15:T45aa,
+1b:T45aa,
 # Aqua Protocol v3 - Schema Reference
 
 This document provides comprehensive technical specifications for all revision types in Aqua Protocol v3. Each revision type has specific fields and validation rules.
@@ -2970,7 +2976,7 @@ Complete AquaTree structure for storage/transmission:
 - [Introduction](/previous_versions/version_3/introduction) - Getting started
 - [Concepts](/previous_versions/version_3/concepts) - Core concepts
 - [Tooling](/previous_versions/version_3/tooling) - SDK API reference
-16:T3ef3,
+1c:T3ef3,
 # Aqua Protocol v3 - Tooling & SDK
 
 The Aqua JS SDK (aqua-js-sdk) is a comprehensive TypeScript library for working with Aqua Protocol v3. It provides a complete API for creating, signing, witnessing, and verifying revision chains across multiple platforms.
@@ -3750,7 +3756,7 @@ npm test -- ./tests/aquafier.test.ts
 - [Concepts](/previous_versions/version_3/concepts) - Core concepts
 - [Schema Reference](/previous_versions/version_3/schema) - Revision specifications
 - [GitHub Repository](https://github.com/inblockio/aqua-verifier-js-lib) - Source code and examples
-17:T3ef3,
+1d:T3ef3,
 # Aqua Protocol v3 - Tooling & SDK
 
 The Aqua JS SDK (aqua-js-sdk) is a comprehensive TypeScript library for working with Aqua Protocol v3. It provides a complete API for creating, signing, witnessing, and verifying revision chains across multiple platforms.
@@ -4530,88 +4536,614 @@ npm test -- ./tests/aquafier.test.ts
 - [Concepts](/previous_versions/version_3/concepts) - Core concepts
 - [Schema Reference](/previous_versions/version_3/schema) - Revision specifications
 - [GitHub Repository](https://github.com/inblockio/aqua-verifier-js-lib) - Source code and examples
-4:["$","$6",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$Ld",null,{"header":["$","$Le",null,{"currentVersion":"v3.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$Lf",null,{"docs":[{"slug":"concepts","filePath":"concepts","title":"Concepts","meta":{"title":"Concepts","description":"Core concepts and terminology for Aqua Protocol v3","content":"$10","reading_time":9,"word_count":1657},"content":"$11"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol v3","meta":{"title":"Aqua Protocol v3","description":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK","content":"$12","reading_time":6,"word_count":1069},"content":"$13"},{"slug":"schema","filePath":"schema","title":"Schema Reference","meta":{"title":"Schema Reference","description":"Detailed schema specifications for Aqua Protocol v3 revisions","content":"$14","reading_time":10,"word_count":1903},"content":"$15"},{"slug":"tooling","filePath":"tooling","title":"Tooling & SDK","meta":{"title":"Tooling & SDK","description":"Aqua JS SDK API reference and usage guide","content":"$16","reading_time":9,"word_count":1773},"content":"$17"}],"version":"v3.0.0","config":"$4:props:children:0:props:header:props:config"}],"content":"$L18","toc":"$L19","config":"$4:props:children:0:props:header:props:config"}],"$L1a","$L1b","$L1c"]}]
-1d:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
-1e:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
-1f:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
-20:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
-19:["$","$L1d",null,{"items":[{"id":"overview","title":"Overview","level":2},{"id":"version-identifier","title":"Version Identifier","level":2},{"id":"core-components","title":"Core Components","level":2},{"id":"aquatree-structure","title":"AquaTree Structure","level":3},{"id":"revision-types","title":"Revision Types","level":3},{"id":"key-features","title":"Key Features","level":2},{"id":"1-dual-mode-support","title":"1. Dual Mode Support","level":3},{"id":"2-platform-flexibility","title":"2. Platform Flexibility","level":3},{"id":"3-comprehensive-signing","title":"3. Comprehensive Signing","level":3},{"id":"4-multi-network-witnessing","title":"4. Multi-Network Witnessing","level":3},{"id":"5-content-flexibility","title":"5. Content Flexibility","level":3},{"id":"quick-start-example","title":"Quick Start Example","level":2},{"id":"architecture","title":"Architecture","level":2},{"id":"revision-chain-structure","title":"Revision Chain Structure","level":3},{"id":"tree-branching","title":"Tree Branching","level":3},{"id":"common-fields","title":"Common Fields","level":2},{"id":"installation","title":"Installation","level":2},{"id":"requirements","title":"Requirements","level":3},{"id":"peer-dependencies","title":"Peer Dependencies","level":3},{"id":"use-cases","title":"Use Cases","level":2},{"id":"document-notarization","title":"Document Notarization","level":3},{"id":"form-data-accountability","title":"Form Data Accountability","level":3},{"id":"multi-party-approval","title":"Multi-Party Approval","level":3},{"id":"supply-chain-tracking","title":"Supply Chain Tracking","level":3},{"id":"content-versioning","title":"Content Versioning","level":3},{"id":"verification","title":"Verification","level":2},{"id":"key-differences-from-v4","title":"Key Differences from v4","level":2},{"id":"migration-considerations","title":"Migration Considerations","level":2},{"id":"from-v3-to-v4","title":"From v3 to v4","level":3},{"id":"when-to-use-v3","title":"When to Use v3","level":3},{"id":"when-to-use-v4","title":"When to Use v4","level":3},{"id":"community-and-support","title":"Community and Support","level":2},{"id":"next-steps","title":"Next Steps","level":2},{"id":"version-history","title":"Version History","level":2}],"config":"$4:props:children:0:props:header:props:config"}]
-1a:["$","$L1e",null,{}]
-1b:["$","$L1f",null,{}]
-1c:["$","$L20",null,{}]
-21:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
-22:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
-18:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L21",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v3.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L22",null,{"href":"/docs/v3.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v3.0.0/introduction",{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Aqua Protocol v3"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Aqua Protocol v3"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[6," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":"$L23"}],"$undefined",["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v3.0.0/introduction.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":[["$","path","1couwa",{"d":"M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","1y4qbx",{"d":"M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"}],"$undefined"]}],"Edit this page"]}],["$","a",null,{"href":"https://github.com/inblockio/issues/new","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":["$L24","Report an issue"]}]]}],"$L25"]}]
-24:["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-external-link h-4 w-4","children":[["$","path","1q9fwt",{"d":"M15 3h6v6"}],["$","path","gplh6r",{"d":"M10 14 21 3"}],["$","path","a6xqqp",{"d":"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"}],"$undefined"]}]
-25:["$","div",null,{"className":"mt-12 pt-8 border-t border-border grid grid-cols-2 gap-4","children":[["$","$L22",null,{"href":"/docs/v3.0.0/concepts","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Previous"}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Concepts"}]]}],["$","$L22",null,{"href":"/docs/v3.0.0/schema","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all text-right","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center justify-end gap-2 text-sm text-muted-foreground","children":[["$","span",null,{"children":"Next"}],["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Schema Reference"}]]}]]}]
-26:I[222506,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"CodeBlock"]
-23:[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-6 text-foreground","children":"Aqua Protocol v3"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Aqua Protocol v3 is a mature version of the protocol with a comprehensive JavaScript/TypeScript SDK. It provides a robust framework for creating verifiable revision chains with support for files, forms, signatures, witnesses, and links."}],"\n",["$","h2",null,{"id":"overview","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Overview"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Version 3 represents a stable, production-ready implementation of the Aqua Protocol specifically designed for JavaScript/TypeScript environments. It offers:"}],"\n",["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Cross-Platform Support"}],": Node.js, Web browsers, and React Native"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Type Safety"}],": Full TypeScript support with comprehensive type definitions"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Flexible Revision Types"}],": File, Form, Signature, Witness, and Link revisions"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Multiple Signing Methods"}],": CLI, MetaMask, DID, and P12 certificate signing"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Multi-Network Witnessing"}],": Ethereum (mainnet, Sepolia, Holesky), Nostr, and TSA"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Tree Structure"}],": Native support for revision trees and path mapping"]}],"\n"]}],"\n",["$","h2",null,{"id":"version-identifier","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Version Identifier"}],"\n",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar/tree\n"}],"\n",["$","h2",null,{"id":"core-components","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Core Components"}],"\n",["$","h3",null,{"id":"aquatree-structure","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"AquaTree Structure"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"The AquaTree is the core data structure in v3:"}],"\n",["$","$L26",null,{"code":"interface AquaTree {\n  revisions: Revisions      // Map of revision hash to revision data\n  file_index: FileIndex     // Map of file hash to filename\n  tree?: RevisionTree       // Tree structure representation\n  treeMapping?: TreeMapping // Path mappings for navigation\n}","language":"typescript","filename":"$undefined"}],"\n",["$","h3",null,{"id":"revision-types","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Revision Types"}],"\n",["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"V3 supports five types of revisions:"}],"\n",["$","ol",null,{"className":"list-decimal list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"File Revision"}]," - Store file metadata and content hashes"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Form Revision"}]," - Store structured form data with key-value pairs"]}],"\n","$L27","\n","$L28","\n","$L29","\n"]}],"\n","$L2a","\n","$L2b","\n","$L2c","\n","$L2d","\n","$L2e","\n","$L2f","\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67"]
-27:["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Signature Revision"}]," - Add cryptographic signatures"]}]
-28:["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Witness Revision"}]," - Timestamp via blockchain or TSA"]}]
-29:["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Link Revision"}]," - Connect to other AquaTree chains"]}]
-2a:["$","h2",null,{"id":"key-features","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Key Features"}]
-2b:["$","h3",null,{"id":"1-dual-mode-support","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"1. Dual Mode Support"}]
-2c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Scalar Mode"}],": Direct hash computation"]}]
-2d:["$","$L26",null,{"code":"version: \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar\"","language":"typescript","filename":"$undefined"}]
-2e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Tree Mode"}],": Merkle tree-based with leaves"]}]
-2f:["$","$L26",null,{"code":"version: \"https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree\"\nleaves: [\"hash1\", \"hash2\", \"hash3\", ...]","language":"typescript","filename":"$undefined"}]
-30:["$","h3",null,{"id":"2-platform-flexibility","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"2. Platform Flexibility"}]
-31:["$","$L26",null,{"code":"// Node.js\nimport Aquafier from 'aqua-js-sdk';\n\n// Web Browser\nimport Aquafier from 'aqua-js-sdk/web';\n\n// React Native\nimport Aquafier from 'aqua-js-sdk/react-native';","language":"typescript","filename":"$undefined"}]
-32:["$","h3",null,{"id":"3-comprehensive-signing","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"3. Comprehensive Signing"}]
-33:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"CLI Signing"}],": Uses mnemonic phrase"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"MetaMask"}],": Browser extension integration"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"DID"}],": Decentralized identifiers with JWS"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"P12"}],": Certificate-based signing"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Inline"}],": Pre-computed signatures"]}],"\n"]}]
-34:["$","h3",null,{"id":"4-multi-network-witnessing","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"4. Multi-Network Witnessing"}]
-35:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Ethereum"}],": Mainnet, Sepolia, Holesky testnets"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Nostr"}],": Decentralized social network"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"TSA"}],": RFC 3161 timestamp authorities"]}],"\n"]}]
-36:["$","h3",null,{"id":"5-content-flexibility","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"5. Content Flexibility"}]
-37:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"File content can be:"}]
-38:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Text"}],": HTML, plain text, JSON"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Binary"}],": Images, PDFs, any file type (as Uint8Array)"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Forms"}],": Key-value structured data"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Links"}],": References to other AquaTrees"]}],"\n"]}]
-39:["$","h2",null,{"id":"quick-start-example","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Quick Start Example"}]
-3a:["$","$L26",null,{"code":"import Aquafier, { FileObject } from 'aqua-js-sdk';\n\n// Initialize Aquafier\nconst aquafier = new Aquafier();\n\n// Create file object\nconst fileObject: FileObject = {\n  fileName: \"document.txt\",\n  fileContent: \"Important document content\",\n  path: \"/documents/document.txt\"\n};\n\n// Create genesis revision\nconst result = await aquafier.createGenesisRevision(fileObject);\n\nif (result.isErr) {\n  console.error(\"Error creating revision\");\n  result.logs.forEach(log => console.log(log));\n  return;\n}\n\n// Access the AquaTree\nconst aquaTree = result.data.aquaTree;\n\n// Sign the revision\nconst signResult = await aquafier.signRevision(\n  aquaTree,\n  \"cli\",  // or \"metamask\", \"did\", \"p12\"\n  credentials\n);\n\n// Witness to blockchain\nconst witnessResult = await aquafier.witnessRevision(\n  signResult.data.aquaTree,\n  \"eth\",  // or \"nostr\", \"tsa\"\n  witnessConfig\n);\n\n// Save aquaTree JSON for storage/transmission\nconst json = JSON.stringify(witnessResult.data.aquaTree);","language":"typescript","filename":"$undefined"}]
-3b:["$","h2",null,{"id":"architecture","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Architecture"}]
-3c:["$","h3",null,{"id":"revision-chain-structure","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Revision Chain Structure"}]
-3d:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Genesis Revision (File/Form)\n    ↓ previous_verification_hash\nSignature Revision\n    ↓ previous_verification_hash\nWitness Revision\n    ↓ previous_verification_hash\nNew Content Revision\n    ↓ previous_verification_hash\n...\n"}]
-3e:["$","h3",null,{"id":"tree-branching","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Tree Branching"}]
-3f:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"V3 supports tree structures for branching revisions:"}]
-40:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"        Genesis\n           ↓\n      Signature\n         /  \\\n    Branch A  Branch B\n       ↓        ↓\n    Update 1  Update 2\n"}]
-41:["$","h2",null,{"id":"common-fields","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Common Fields"}]
-42:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"All revisions share these core fields:"}]
-43:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Field"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Type"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Description"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"previous_verification_hash"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Hash of previous revision (empty for genesis)"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"ISO 8601 timestamp"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"revision_type"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["Type: ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"file\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"form\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"signature\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"witness\""}],", ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"\"link\""}]]}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"version"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Protocol version and method identifier"}]]}]]}]]}]}]
-44:["$","h2",null,{"id":"installation","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Installation"}]
-45:["$","$L26",null,{"code":"npm install aqua-js-sdk","language":"bash","filename":"$undefined"}]
-46:["$","h3",null,{"id":"requirements","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Requirements"}]
-47:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Node.js v20.9.0 or later"}],"\n",["$","li",null,{"className":"leading-7","children":"TypeScript 5.3+ (optional, for type checking)"}],"\n"]}]
-48:["$","h3",null,{"id":"peer-dependencies","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Peer Dependencies"}]
-49:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"ethers"}]," ^6.7.1 (for Ethereum operations)"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"react-native-fs"}]," (optional, for React Native)"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"@react-native-async-storage/async-storage"}]," (optional, for React Native)"]}],"\n"]}]
-4a:["$","h2",null,{"id":"use-cases","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Use Cases"}]
-4b:["$","h3",null,{"id":"document-notarization","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Document Notarization"}]
-4c:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Document → Sign (Author) → Witness (Ethereum) → Verifiable Proof\n"}]
-4d:["$","h3",null,{"id":"form-data-accountability","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Form Data Accountability"}]
-4e:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Form Submission → Sign (User) → Witness → Audit Trail\n"}]
-4f:["$","h3",null,{"id":"multi-party-approval","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Multi-Party Approval"}]
-50:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Document → Sign (Party 1) → Sign (Party 2) → Witness → Approved\n"}]
-51:["$","h3",null,{"id":"supply-chain-tracking","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Supply Chain Tracking"}]
-52:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Event 1 → Link to Event 2 → Link to Event 3 → Complete Chain\n"}]
-53:["$","h3",null,{"id":"content-versioning","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Content Versioning"}]
-54:["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"Version 1 → Update → Version 2 → Update → Version 3 → History\n"}]
-55:["$","h2",null,{"id":"verification","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Verification"}]
-56:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"V3 includes comprehensive verification capabilities:"}]
-57:["$","$L26",null,{"code":"// Verify entire chain\nconst verification = await aquafier.verifyRevisionChain(aquaTree);\n\n// Check results\nverification.verificationGraphData.forEach(node => {\n  console.log(`${node.revisionType}: ${node.isValidationSuccessful ? '✓' : '✗'}`);\n});","language":"typescript","filename":"$undefined"}]
-58:["$","h2",null,{"id":"key-differences-from-v4","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Key Differences from v4"}]
-59:["$","div",null,{"className":"overflow-x-auto mb-6 rounded-xl border border-border","children":["$","table",null,{"className":"min-w-full border-collapse","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"Feature"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"v3"}],["$","th",null,{"className":"border-b border-r border-border bg-muted px-4 py-2 text-left font-semibold text-foreground last:border-r-0","children":"v4"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Language"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"JavaScript/TypeScript"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Rust (with WASM support)"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Template System"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"No formal templates"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Template revisions with JSON Schema"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Signature Types"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"4 types (CLI, MetaMask, DID, P12)"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"3 types (RSA, EIP-191, DID:JWS)"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Version Format"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"URL with embedded method"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"URL only, method as field"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Form Support"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Native form revision type"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Forms as object revisions with templates"}]]}],["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Platform Focus"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Web/Node.js/React Native"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Cross-platform with WASM"}]]}]]}]]}]}]
-5a:["$","h2",null,{"id":"migration-considerations","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Migration Considerations"}]
-5b:["$","h3",null,{"id":"from-v3-to-v4","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"From v3 to v4"}]
-5c:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Breaking Changes"}],": Schema structure differs significantly"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"No Direct Migration"}],": v3 and v4 chains are not directly compatible"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Use Case"}],": Continue using v3 for JavaScript-first projects"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Future"}],": v4 offers more structure and cross-platform consistency"]}],"\n"]}]
-5d:["$","h3",null,{"id":"when-to-use-v3","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"When to Use v3"}]
-5e:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Existing JavaScript/TypeScript projects"}],"\n",["$","li",null,{"className":"leading-7","children":"React Native applications"}],"\n",["$","li",null,{"className":"leading-7","children":"Need for form revision type"}],"\n",["$","li",null,{"className":"leading-7","children":"Mature, stable implementation required"}],"\n",["$","li",null,{"className":"leading-7","children":"Quick prototyping and development"}],"\n"]}]
-5f:["$","h3",null,{"id":"when-to-use-v4","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"When to Use v4"}]
-60:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"New projects requiring maximum interoperability"}],"\n",["$","li",null,{"className":"leading-7","children":"Need for formal schema validation"}],"\n",["$","li",null,{"className":"leading-7","children":"Rust or multi-language environments"}],"\n",["$","li",null,{"className":"leading-7","children":"WASM compilation for web"}],"\n",["$","li",null,{"className":"leading-7","children":"Template-based data structures"}],"\n"]}]
-61:["$","h2",null,{"id":"community-and-support","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Community and Support"}]
-62:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"GitHub"}],": ",["$","a",null,{"href":"https://github.com/inblockio/aqua-verifier-js-lib","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"aqua-verifier-js-lib"}]]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Issues"}],": Report bugs and request features on GitHub"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Documentation"}],": Examples in ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"/examples"}]," directory"]}],"\n"]}]
-63:["$","h2",null,{"id":"next-steps","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Next Steps"}]
-64:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/previous_versions/version_3/concepts","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Concepts"}]," - Core concepts and terminology"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/previous_versions/version_3/tooling","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Tooling"}]," - SDK usage and API reference"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/previous_versions/version_3/schema","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Schema Reference"}]," - Detailed revision specifications"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-verifier-js-lib/tree/main/examples","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"Examples"}]," - Code examples"]}],"\n"]}]
-65:["$","h2",null,{"id":"version-history","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Version History"}]
-66:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"3.2.1"}],": Current stable release"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"3.2.0"}],": React Native support added"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"3.1.x"}],": Performance improvements"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"3.0.0"}],": Major release with TypeScript rewrite"]}],"\n"]}]
-67:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["For detailed changelog, see the ",["$","a",null,{"href":"https://github.com/inblockio/aqua-verifier-js-lib/releases","className":"text-primary hover:underline font-medium","target":"_blank","rel":"noopener noreferrer","children":"GitHub releases"}],"."]}]
-9:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-68:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"IconMark"]
-b:[["$","title","0",{"children":"Aqua Protocol v3 | Aqua Protocol Documentation"}],["$","meta","1",{"name":"description","content":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK"}],["$","meta","2",{"name":"generator","content":"v0.app"}],["$","link","3",{"rel":"canonical","href":"https://docs.aquaprotocol.org/docs/v3.0.0/introduction"}],["$","meta","4",{"property":"og:title","content":"Aqua Protocol v3"}],["$","meta","5",{"property":"og:description","content":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK"}],["$","meta","6",{"property":"og:url","content":"https://docs.aquaprotocol.org/docs/v3.0.0/introduction"}],["$","meta","7",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Aqua Protocol v3"}],["$","meta","12",{"name":"twitter:description","content":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK"}],["$","link","13",{"rel":"icon","href":"/logo/aqua-logo.png"}],["$","link","14",{"rel":"apple-touch-icon","href":"/apple-icon.png"}],["$","$L68","15",{}]]
-7:null
+b:["$","$d",null,{"fallback":["$","$L13",null,{}],"children":[["$","$L14",null,{"header":["$","$L15",null,{"currentVersion":"v3.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"concepts","filePath":"concepts","title":"Concepts","meta":{"title":"Concepts","description":"Core concepts and terminology for Aqua Protocol v3","content":"$16","reading_time":9,"word_count":1657},"content":"$17"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol v3","meta":{"title":"Aqua Protocol v3","description":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK","content":"$18","reading_time":6,"word_count":1069},"content":"$19"},{"slug":"schema","filePath":"schema","title":"Schema Reference","meta":{"title":"Schema Reference","description":"Detailed schema specifications for Aqua Protocol v3 revisions","content":"$1a","reading_time":10,"word_count":1903},"content":"$1b"},{"slug":"tooling","filePath":"tooling","title":"Tooling & SDK","meta":{"title":"Tooling & SDK","description":"Aqua JS SDK API reference and usage guide","content":"$1c","reading_time":9,"word_count":1773},"content":"$1d"}],"version":"v3.0.0","content":"$L1e","toc":"$L1f","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L20","$L21","$L22"]}]
+23:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayout"]
+26:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TableOfContents"]
+27:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"MdxHotReload"]
+28:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"HotReloadIndicator"]
+29:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DevModeBadge"]
+24:T2045,
+# Aqua Protocol v3
+
+Aqua Protocol v3 is a mature version of the protocol with a comprehensive JavaScript/TypeScript SDK. It provides a robust framework for creating verifiable revision chains with support for files, forms, signatures, witnesses, and links.
+
+## Overview
+
+Version 3 represents a stable, production-ready implementation of the Aqua Protocol specifically designed for JavaScript/TypeScript environments. It offers:
+
+- **Cross-Platform Support**: Node.js, Web browsers, and React Native
+- **Type Safety**: Full TypeScript support with comprehensive type definitions
+- **Flexible Revision Types**: File, Form, Signature, Witness, and Link revisions
+- **Multiple Signing Methods**: CLI, MetaMask, DID, and P12 certificate signing
+- **Multi-Network Witnessing**: Ethereum (mainnet, Sepolia, Holesky), Nostr, and TSA
+- **Tree Structure**: Native support for revision trees and path mapping
+
+## Version Identifier
+
+```
+https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar/tree
+```
+
+## Core Components
+
+### AquaTree Structure
+
+The AquaTree is the core data structure in v3:
+
+```typescript
+interface AquaTree {
+  revisions: Revisions      // Map of revision hash to revision data
+  file_index: FileIndex     // Map of file hash to filename
+  tree?: RevisionTree       // Tree structure representation
+  treeMapping?: TreeMapping // Path mappings for navigation
+}
+```
+
+### Revision Types
+
+V3 supports five types of revisions:
+
+1. **File Revision** - Store file metadata and content hashes
+2. **Form Revision** - Store structured form data with key-value pairs
+3. **Signature Revision** - Add cryptographic signatures
+4. **Witness Revision** - Timestamp via blockchain or TSA
+5. **Link Revision** - Connect to other AquaTree chains
+
+## Key Features
+
+### 1. Dual Mode Support
+
+**Scalar Mode**: Direct hash computation
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
+```
+
+**Tree Mode**: Merkle tree-based with leaves
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree"
+leaves: ["hash1", "hash2", "hash3", ...]
+```
+
+### 2. Platform Flexibility
+
+```typescript
+// Node.js
+import Aquafier from 'aqua-js-sdk';
+
+// Web Browser
+import Aquafier from 'aqua-js-sdk/web';
+
+// React Native
+import Aquafier from 'aqua-js-sdk/react-native';
+```
+
+### 3. Comprehensive Signing
+
+- **CLI Signing**: Uses mnemonic phrase
+- **MetaMask**: Browser extension integration
+- **DID**: Decentralized identifiers with JWS
+- **P12**: Certificate-based signing
+- **Inline**: Pre-computed signatures
+
+### 4. Multi-Network Witnessing
+
+- **Ethereum**: Mainnet, Sepolia, Holesky testnets
+- **Nostr**: Decentralized social network
+- **TSA**: RFC 3161 timestamp authorities
+
+### 5. Content Flexibility
+
+File content can be:
+- **Text**: HTML, plain text, JSON
+- **Binary**: Images, PDFs, any file type (as Uint8Array)
+- **Forms**: Key-value structured data
+- **Links**: References to other AquaTrees
+
+## Quick Start Example
+
+```typescript
+import Aquafier, { FileObject } from 'aqua-js-sdk';
+
+// Initialize Aquafier
+const aquafier = new Aquafier();
+
+// Create file object
+const fileObject: FileObject = {
+  fileName: "document.txt",
+  fileContent: "Important document content",
+  path: "/documents/document.txt"
+};
+
+// Create genesis revision
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  console.error("Error creating revision");
+  result.logs.forEach(log => console.log(log));
+  return;
+}
+
+// Access the AquaTree
+const aquaTree = result.data.aquaTree;
+
+// Sign the revision
+const signResult = await aquafier.signRevision(
+  aquaTree,
+  "cli",  // or "metamask", "did", "p12"
+  credentials
+);
+
+// Witness to blockchain
+const witnessResult = await aquafier.witnessRevision(
+  signResult.data.aquaTree,
+  "eth",  // or "nostr", "tsa"
+  witnessConfig
+);
+
+// Save aquaTree JSON for storage/transmission
+const json = JSON.stringify(witnessResult.data.aquaTree);
+```
+
+## Architecture
+
+### Revision Chain Structure
+
+```
+Genesis Revision (File/Form)
+    ↓ previous_verification_hash
+Signature Revision
+    ↓ previous_verification_hash
+Witness Revision
+    ↓ previous_verification_hash
+New Content Revision
+    ↓ previous_verification_hash
+...
+```
+
+### Tree Branching
+
+V3 supports tree structures for branching revisions:
+
+```
+        Genesis
+           ↓
+      Signature
+         /  \
+    Branch A  Branch B
+       ↓        ↓
+    Update 1  Update 2
+```
+
+## Common Fields
+
+All revisions share these core fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `previous_verification_hash` | string | Hash of previous revision (empty for genesis) |
+| `local_timestamp` | string | ISO 8601 timestamp |
+| `revision_type` | string | Type: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version and method identifier |
+
+## Installation
+
+```bash
+npm install aqua-js-sdk
+```
+
+### Requirements
+
+- Node.js v20.9.0 or later
+- TypeScript 5.3+ (optional, for type checking)
+
+### Peer Dependencies
+
+- `ethers` ^6.7.1 (for Ethereum operations)
+- `react-native-fs` (optional, for React Native)
+- `@react-native-async-storage/async-storage` (optional, for React Native)
+
+## Use Cases
+
+### Document Notarization
+```
+Document → Sign (Author) → Witness (Ethereum) → Verifiable Proof
+```
+
+### Form Data Accountability
+```
+Form Submission → Sign (User) → Witness → Audit Trail
+```
+
+### Multi-Party Approval
+```
+Document → Sign (Party 1) → Sign (Party 2) → Witness → Approved
+```
+
+### Supply Chain Tracking
+```
+Event 1 → Link to Event 2 → Link to Event 3 → Complete Chain
+```
+
+### Content Versioning
+```
+Version 1 → Update → Version 2 → Update → Version 3 → History
+```
+
+## Verification
+
+V3 includes comprehensive verification capabilities:
+
+```typescript
+// Verify entire chain
+const verification = await aquafier.verifyRevisionChain(aquaTree);
+
+// Check results
+verification.verificationGraphData.forEach(node => {
+  console.log(`${node.revisionType}: ${node.isValidationSuccessful ? '✓' : '✗'}`);
+});
+```
+
+## Key Differences from v4
+
+| Feature | v3 | v4 |
+|---------|----|----|
+| Language | JavaScript/TypeScript | Rust (with WASM support) |
+| Template System | No formal templates | Template revisions with JSON Schema |
+| Signature Types | 4 types (CLI, MetaMask, DID, P12) | 3 types (RSA, EIP-191, DID:JWS) |
+| Version Format | URL with embedded method | URL only, method as field |
+| Form Support | Native form revision type | Forms as object revisions with templates |
+| Platform Focus | Web/Node.js/React Native | Cross-platform with WASM |
+
+## Migration Considerations
+
+### From v3 to v4
+
+- **Breaking Changes**: Schema structure differs significantly
+- **No Direct Migration**: v3 and v4 chains are not directly compatible
+- **Use Case**: Continue using v3 for JavaScript-first projects
+- **Future**: v4 offers more structure and cross-platform consistency
+
+### When to Use v3
+
+- Existing JavaScript/TypeScript projects
+- React Native applications
+- Need for form revision type
+- Mature, stable implementation required
+- Quick prototyping and development
+
+### When to Use v4
+
+- New projects requiring maximum interoperability
+- Need for formal schema validation
+- Rust or multi-language environments
+- WASM compilation for web
+- Template-based data structures
+
+## Community and Support
+
+- **GitHub**: [aqua-verifier-js-lib](https://github.com/inblockio/aqua-verifier-js-lib)
+- **Issues**: Report bugs and request features on GitHub
+- **Documentation**: Examples in `/examples` directory
+
+## Next Steps
+
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts and terminology
+- [Tooling](/previous_versions/version_3/tooling) - SDK usage and API reference
+- [Schema Reference](/previous_versions/version_3/schema) - Detailed revision specifications
+- [Examples](https://github.com/inblockio/aqua-verifier-js-lib/tree/main/examples) - Code examples
+
+## Version History
+
+- **3.2.1**: Current stable release
+- **3.2.0**: React Native support added
+- **3.1.x**: Performance improvements
+- **3.0.0**: Major release with TypeScript rewrite
+
+For detailed changelog, see the [GitHub releases](https://github.com/inblockio/aqua-verifier-js-lib/releases).
+25:T2045,
+# Aqua Protocol v3
+
+Aqua Protocol v3 is a mature version of the protocol with a comprehensive JavaScript/TypeScript SDK. It provides a robust framework for creating verifiable revision chains with support for files, forms, signatures, witnesses, and links.
+
+## Overview
+
+Version 3 represents a stable, production-ready implementation of the Aqua Protocol specifically designed for JavaScript/TypeScript environments. It offers:
+
+- **Cross-Platform Support**: Node.js, Web browsers, and React Native
+- **Type Safety**: Full TypeScript support with comprehensive type definitions
+- **Flexible Revision Types**: File, Form, Signature, Witness, and Link revisions
+- **Multiple Signing Methods**: CLI, MetaMask, DID, and P12 certificate signing
+- **Multi-Network Witnessing**: Ethereum (mainnet, Sepolia, Holesky), Nostr, and TSA
+- **Tree Structure**: Native support for revision trees and path mapping
+
+## Version Identifier
+
+```
+https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar/tree
+```
+
+## Core Components
+
+### AquaTree Structure
+
+The AquaTree is the core data structure in v3:
+
+```typescript
+interface AquaTree {
+  revisions: Revisions      // Map of revision hash to revision data
+  file_index: FileIndex     // Map of file hash to filename
+  tree?: RevisionTree       // Tree structure representation
+  treeMapping?: TreeMapping // Path mappings for navigation
+}
+```
+
+### Revision Types
+
+V3 supports five types of revisions:
+
+1. **File Revision** - Store file metadata and content hashes
+2. **Form Revision** - Store structured form data with key-value pairs
+3. **Signature Revision** - Add cryptographic signatures
+4. **Witness Revision** - Timestamp via blockchain or TSA
+5. **Link Revision** - Connect to other AquaTree chains
+
+## Key Features
+
+### 1. Dual Mode Support
+
+**Scalar Mode**: Direct hash computation
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
+```
+
+**Tree Mode**: Merkle tree-based with leaves
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree"
+leaves: ["hash1", "hash2", "hash3", ...]
+```
+
+### 2. Platform Flexibility
+
+```typescript
+// Node.js
+import Aquafier from 'aqua-js-sdk';
+
+// Web Browser
+import Aquafier from 'aqua-js-sdk/web';
+
+// React Native
+import Aquafier from 'aqua-js-sdk/react-native';
+```
+
+### 3. Comprehensive Signing
+
+- **CLI Signing**: Uses mnemonic phrase
+- **MetaMask**: Browser extension integration
+- **DID**: Decentralized identifiers with JWS
+- **P12**: Certificate-based signing
+- **Inline**: Pre-computed signatures
+
+### 4. Multi-Network Witnessing
+
+- **Ethereum**: Mainnet, Sepolia, Holesky testnets
+- **Nostr**: Decentralized social network
+- **TSA**: RFC 3161 timestamp authorities
+
+### 5. Content Flexibility
+
+File content can be:
+- **Text**: HTML, plain text, JSON
+- **Binary**: Images, PDFs, any file type (as Uint8Array)
+- **Forms**: Key-value structured data
+- **Links**: References to other AquaTrees
+
+## Quick Start Example
+
+```typescript
+import Aquafier, { FileObject } from 'aqua-js-sdk';
+
+// Initialize Aquafier
+const aquafier = new Aquafier();
+
+// Create file object
+const fileObject: FileObject = {
+  fileName: "document.txt",
+  fileContent: "Important document content",
+  path: "/documents/document.txt"
+};
+
+// Create genesis revision
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  console.error("Error creating revision");
+  result.logs.forEach(log => console.log(log));
+  return;
+}
+
+// Access the AquaTree
+const aquaTree = result.data.aquaTree;
+
+// Sign the revision
+const signResult = await aquafier.signRevision(
+  aquaTree,
+  "cli",  // or "metamask", "did", "p12"
+  credentials
+);
+
+// Witness to blockchain
+const witnessResult = await aquafier.witnessRevision(
+  signResult.data.aquaTree,
+  "eth",  // or "nostr", "tsa"
+  witnessConfig
+);
+
+// Save aquaTree JSON for storage/transmission
+const json = JSON.stringify(witnessResult.data.aquaTree);
+```
+
+## Architecture
+
+### Revision Chain Structure
+
+```
+Genesis Revision (File/Form)
+    ↓ previous_verification_hash
+Signature Revision
+    ↓ previous_verification_hash
+Witness Revision
+    ↓ previous_verification_hash
+New Content Revision
+    ↓ previous_verification_hash
+...
+```
+
+### Tree Branching
+
+V3 supports tree structures for branching revisions:
+
+```
+        Genesis
+           ↓
+      Signature
+         /  \
+    Branch A  Branch B
+       ↓        ↓
+    Update 1  Update 2
+```
+
+## Common Fields
+
+All revisions share these core fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `previous_verification_hash` | string | Hash of previous revision (empty for genesis) |
+| `local_timestamp` | string | ISO 8601 timestamp |
+| `revision_type` | string | Type: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version and method identifier |
+
+## Installation
+
+```bash
+npm install aqua-js-sdk
+```
+
+### Requirements
+
+- Node.js v20.9.0 or later
+- TypeScript 5.3+ (optional, for type checking)
+
+### Peer Dependencies
+
+- `ethers` ^6.7.1 (for Ethereum operations)
+- `react-native-fs` (optional, for React Native)
+- `@react-native-async-storage/async-storage` (optional, for React Native)
+
+## Use Cases
+
+### Document Notarization
+```
+Document → Sign (Author) → Witness (Ethereum) → Verifiable Proof
+```
+
+### Form Data Accountability
+```
+Form Submission → Sign (User) → Witness → Audit Trail
+```
+
+### Multi-Party Approval
+```
+Document → Sign (Party 1) → Sign (Party 2) → Witness → Approved
+```
+
+### Supply Chain Tracking
+```
+Event 1 → Link to Event 2 → Link to Event 3 → Complete Chain
+```
+
+### Content Versioning
+```
+Version 1 → Update → Version 2 → Update → Version 3 → History
+```
+
+## Verification
+
+V3 includes comprehensive verification capabilities:
+
+```typescript
+// Verify entire chain
+const verification = await aquafier.verifyRevisionChain(aquaTree);
+
+// Check results
+verification.verificationGraphData.forEach(node => {
+  console.log(`${node.revisionType}: ${node.isValidationSuccessful ? '✓' : '✗'}`);
+});
+```
+
+## Key Differences from v4
+
+| Feature | v3 | v4 |
+|---------|----|----|
+| Language | JavaScript/TypeScript | Rust (with WASM support) |
+| Template System | No formal templates | Template revisions with JSON Schema |
+| Signature Types | 4 types (CLI, MetaMask, DID, P12) | 3 types (RSA, EIP-191, DID:JWS) |
+| Version Format | URL with embedded method | URL only, method as field |
+| Form Support | Native form revision type | Forms as object revisions with templates |
+| Platform Focus | Web/Node.js/React Native | Cross-platform with WASM |
+
+## Migration Considerations
+
+### From v3 to v4
+
+- **Breaking Changes**: Schema structure differs significantly
+- **No Direct Migration**: v3 and v4 chains are not directly compatible
+- **Use Case**: Continue using v3 for JavaScript-first projects
+- **Future**: v4 offers more structure and cross-platform consistency
+
+### When to Use v3
+
+- Existing JavaScript/TypeScript projects
+- React Native applications
+- Need for form revision type
+- Mature, stable implementation required
+- Quick prototyping and development
+
+### When to Use v4
+
+- New projects requiring maximum interoperability
+- Need for formal schema validation
+- Rust or multi-language environments
+- WASM compilation for web
+- Template-based data structures
+
+## Community and Support
+
+- **GitHub**: [aqua-verifier-js-lib](https://github.com/inblockio/aqua-verifier-js-lib)
+- **Issues**: Report bugs and request features on GitHub
+- **Documentation**: Examples in `/examples` directory
+
+## Next Steps
+
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts and terminology
+- [Tooling](/previous_versions/version_3/tooling) - SDK usage and API reference
+- [Schema Reference](/previous_versions/version_3/schema) - Detailed revision specifications
+- [Examples](https://github.com/inblockio/aqua-verifier-js-lib/tree/main/examples) - Code examples
+
+## Version History
+
+- **3.2.1**: Current stable release
+- **3.2.0**: React Native support added
+- **3.1.x**: Performance improvements
+- **3.0.0**: Major release with TypeScript rewrite
+
+For detailed changelog, see the [GitHub releases](https://github.com/inblockio/aqua-verifier-js-lib/releases).
+1e:["$","$L23",null,{"meta":{"title":"Aqua Protocol v3","description":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK","content":"$24","reading_time":6,"word_count":1069},"content":"$25","previousDoc":{"title":"Concepts","slug":"concepts"},"nextDoc":{"title":"Schema Reference","slug":"schema"},"version":"v3.0.0","slug":"introduction","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+1f:["$","$L26",null,{"items":[{"id":"overview","title":"Overview","level":2},{"id":"version-identifier","title":"Version Identifier","level":2},{"id":"core-components","title":"Core Components","level":2},{"id":"aquatree-structure","title":"AquaTree Structure","level":3},{"id":"revision-types","title":"Revision Types","level":3},{"id":"key-features","title":"Key Features","level":2},{"id":"1-dual-mode-support","title":"1. Dual Mode Support","level":3},{"id":"2-platform-flexibility","title":"2. Platform Flexibility","level":3},{"id":"3-comprehensive-signing","title":"3. Comprehensive Signing","level":3},{"id":"4-multi-network-witnessing","title":"4. Multi-Network Witnessing","level":3},{"id":"5-content-flexibility","title":"5. Content Flexibility","level":3},{"id":"quick-start-example","title":"Quick Start Example","level":2},{"id":"architecture","title":"Architecture","level":2},{"id":"revision-chain-structure","title":"Revision Chain Structure","level":3},{"id":"tree-branching","title":"Tree Branching","level":3},{"id":"common-fields","title":"Common Fields","level":2},{"id":"installation","title":"Installation","level":2},{"id":"requirements","title":"Requirements","level":3},{"id":"peer-dependencies","title":"Peer Dependencies","level":3},{"id":"use-cases","title":"Use Cases","level":2},{"id":"document-notarization","title":"Document Notarization","level":3},{"id":"form-data-accountability","title":"Form Data Accountability","level":3},{"id":"multi-party-approval","title":"Multi-Party Approval","level":3},{"id":"supply-chain-tracking","title":"Supply Chain Tracking","level":3},{"id":"content-versioning","title":"Content Versioning","level":3},{"id":"verification","title":"Verification","level":2},{"id":"key-differences-from-v4","title":"Key Differences from v4","level":2},{"id":"migration-considerations","title":"Migration Considerations","level":2},{"id":"from-v3-to-v4","title":"From v3 to v4","level":3},{"id":"when-to-use-v3","title":"When to Use v3","level":3},{"id":"when-to-use-v4","title":"When to Use v4","level":3},{"id":"community-and-support","title":"Community and Support","level":2},{"id":"next-steps","title":"Next Steps","level":2},{"id":"version-history","title":"Version History","level":2}],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+20:["$","$L27",null,{}]
+21:["$","$L28",null,{}]
+22:["$","$L29",null,{}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+2a:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"IconMark"]
+e:null
+12:[["$","title","0",{"children":"Aqua Protocol v3 | Aqua Protocol"}],["$","meta","1",{"name":"description","content":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK"}],["$","link","2",{"rel":"canonical","href":"https://aqua-protocol.org/docs/v3.0.0/introduction"}],["$","meta","3",{"property":"og:title","content":"Aqua Protocol v3"}],["$","meta","4",{"property":"og:description","content":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK"}],["$","meta","5",{"property":"og:url","content":"https://aqua-protocol.org/docs/v3.0.0/introduction"}],["$","meta","6",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Aqua Protocol v3"}],["$","meta","11",{"name":"twitter:description","content":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK"}],["$","link","12",{"rel":"icon","href":"/mint-test/logo/aqua-logo.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/mint-test/apple-icon.png"}],["$","$L2a","14",{}]]

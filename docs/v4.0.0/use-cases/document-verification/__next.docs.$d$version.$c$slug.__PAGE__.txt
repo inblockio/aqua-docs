@@ -1,15 +1,14 @@
 1:"$Sreact.fragment"
 2:"$Sreact.suspense"
-3:I[77988,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MobileDocLayout"]
-4:I[667248,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Header"]
-5:I[193649,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"Sidebar"]
-36:I[725689,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"SearchHighlight"]
-37:I[522016,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],""]
-bd:I[221187,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"TableOfContents"]
-be:I[801024,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"MdxHotReload"]
-bf:I[713918,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"HotReloadIndicator"]
-c0:I[694600,["/_next/static/chunks/5e52b2e731b92ce4.js","/_next/static/chunks/ed1bd6cc32fd00b6.js"],"DevModeBadge"]
-c1:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/d80b3790a119a285.js"],"OutletBoundary"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLoading"]
+4:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayoutWrapper"]
+5:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"Header"]
+34:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DocLayout"]
+37:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"TableOfContents"]
+38:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"MdxHotReload"]
+39:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"HotReloadIndicator"]
+3a:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/d07752feff0a7168.js"],"DevModeBadge"]
+3b:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
 6:T1ef1,
 
 The **Aqua Tree** is the primary data structure in Aqua Protocol. It serves as the container for all revisions, their relationships, and associated metadata. An Aqua Tree represents a complete, self-contained unit that can be stored, transmitted, and verified independently.
@@ -522,7 +521,7 @@ For large trees:
 - [Signature Revision](/schema_reference/signing_revision) - Cryptographic signatures
 - [Witness Revision](/schema_reference/witness_revision) - Blockchain anchoring
 - [Link Revision](/schema_reference/link_revision) - Connecting trees
-- [File Index](/schema_reference/file_index) - Content hash mapping8:T1b1f,
+- [File Index](/schema_reference/file_index) - Content hash mapping8:T1b19,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -530,7 +529,7 @@ For large trees:
 <Callout type="info">
 **Powered by Cryptography, Not Blockchain**
 
-Aqua Protocol is made possible by crypto—as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
+Aqua Protocol is made possible by crypto as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
 
 <Badge icon="circle-check" color="green">
  Account & Verify Data in Seconds
@@ -557,7 +556,7 @@ Trust can be built by relying on hashing and encryption mechanisms or by delegat
 
 ## How It Works
 
-At its core, Aqua creates portable hash-chains—called **AquaTrees**—that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
+At its core, Aqua creates portable hash-chains called **AquaTrees** that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
 
 ### Key Features
 
@@ -736,7 +735,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-9:T1b1f,
+9:T1b19,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -744,7 +743,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 <Callout type="info">
 **Powered by Cryptography, Not Blockchain**
 
-Aqua Protocol is made possible by crypto—as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
+Aqua Protocol is made possible by crypto as in _cryptography_! While it can use Ethereum for timestamping, the protocol itself neither is nor requires blockchain technology. It's a privacy-preserving, open-source protocol built on modern cryptographic methods.
 
 <Badge icon="circle-check" color="green">
  Account & Verify Data in Seconds
@@ -771,7 +770,7 @@ Trust can be built by relying on hashing and encryption mechanisms or by delegat
 
 ## How It Works
 
-At its core, Aqua creates portable hash-chains—called **AquaTrees**—that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
+At its core, Aqua creates portable hash-chains called **AquaTrees** that record a gapless history of data revisions. These trees can be timestamped on Ethereum for immutability, exchanged across services, and verified automatically. Whether securing documents, systems, or identities, Aqua liberates the certification process from institutional gatekeepers, making trust accessible through open cryptographic standards.
 
 ### Key Features
 
@@ -950,26 +949,21 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-a:T2f93,
+a:T2e36,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
-  <TabsList>
-      <TabsTrigger value="js">JavaScript/TypeScript (v3)</TabsTrigger>
-      <TabsTrigger value="rust">Rust (V4)</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     **Stable** - Production-ready SDK for Node.js, Web, and React Native
 
     Best for: Web applications, existing JavaScript projects
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ---
@@ -1344,18 +1338,13 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
 Want to see the full workflow including signing and witnessing?
 
 <Tabs defaultValue="js">
-  <TabsList>
-    <TabsTrigger value="js">Javascript</TabsTrigger>
-    <TabsTrigger value="rust">Rust</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ## Try Aquafier
@@ -1397,26 +1386,21 @@ Not ready to code yet? Try our web-based demo:
 <Callout type="note" >
 **Ready to build?** Start with the [Development Guide](/development) for detailed instructions on signing, witnessing, and advanced features.
 </Callout  >
-b:T2f93,
+b:T2e36,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
-  <TabsList>
-      <TabsTrigger value="js">JavaScript/TypeScript (v3)</TabsTrigger>
-      <TabsTrigger value="rust">Rust (V4)</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     **Stable** - Production-ready SDK for Node.js, Web, and React Native
 
     Best for: Web applications, existing JavaScript projects
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ---
@@ -1791,18 +1775,13 @@ Now that you have the basics, dive deeper into Aqua Protocol's features:
 Want to see the full workflow including signing and witnessing?
 
 <Tabs defaultValue="js">
-  <TabsList>
-    <TabsTrigger value="js">Javascript</TabsTrigger>
-    <TabsTrigger value="rust">Rust</TabsTrigger>
-  </TabsList>
-
-  <TabsContent value="js">
+  <Tab label="js">
     Check out the [complete JavaScript example](https://github.com/inblockio/aqua-js-sdk/tree/master/examples) in the SDK repository.
-  </TabsContent>
+  </Tab>
 
-  <TabsContent value="rust">
+  <Tab label="rust">
     Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
-  </TabsContent>
+  </Tab>
 </Tabs>
 
 ## Try Aquafier
@@ -7406,12 +7385,12 @@ To verify an object revision:
 - [Signature Revision](/schema_reference/signing_revision) - Sign object revisions
 - [Witness Revision](/schema_reference/witness_revision) - Add timestamped proof
 - [Link Revision](/schema_reference/link_revision) - Connect to other chains
-1e:T1185,
+1e:T1183,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose—either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -7506,12 +7485,12 @@ Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic an
 
 
 
-```1f:T1185,
+```1f:T1183,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose—either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -12092,146 +12071,671 @@ A: Verification of existing chains works offline using cryptographic signatures.
 - [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
 - [Quick Start](/quick-start) - Get started with supply chain tracking
 - [Schema Reference](/schema_reference/introduction) - Technical specifications
-0:{"buildId":"k8-fwt2fbTlxLBvWFtXyi","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","div",null,{"className":"max-w-4xl mx-auto px-6 py-8","children":["$","div",null,{"className":"animate-pulse space-y-4","children":[["$","div",null,{"className":"h-8 bg-gray-200 rounded w-3/4"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-1/2"}],["$","div",null,{"className":"space-y-3 mt-8","children":[["$","div",null,{"className":"h-4 bg-gray-200 rounded"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-5/6"}],["$","div",null,{"className":"h-4 bg-gray-200 rounded w-4/6"}]]}]]}]}],"children":[["$","$L3",null,{"header":["$","$L4",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"sidebar":["$","$L5",null,{"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$6","reading_time":5,"word_count":888},"content":"$7","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$8","reading_time":5,"word_count":820},"content":"$9"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$a","reading_time":7,"word_count":1258},"content":"$b"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$c","reading_time":5,"word_count":941},"content":"$d","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$e","reading_time":9,"word_count":1674},"content":"$f"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$10","reading_time":8,"word_count":1476},"content":"$11","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$12","reading_time":4,"word_count":686},"content":"$13"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$14","reading_time":3,"word_count":410},"content":"$15","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$16","reading_time":2,"word_count":391},"content":"$17","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$18","reading_time":3,"word_count":566},"content":"$19","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$1a","reading_time":11,"word_count":2009},"content":"$1b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$1c","reading_time":6,"word_count":1048},"content":"$1d","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$1e","reading_time":3,"word_count":460},"content":"$1f","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$20","reading_time":7,"word_count":1393},"content":"$21","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$22","reading_time":7,"word_count":1369},"content":"$23","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$24","reading_time":9,"word_count":1682},"content":"$25","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$26","reading_time":10,"word_count":1863},"content":"$27","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$28","reading_time":5,"word_count":865},"content":"$29","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$2a","reading_time":7,"word_count":1216},"content":"$2b","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$2c","reading_time":12,"word_count":2274},"content":"$2d","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"}],"version":"v4.0.0","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"content":"$L2e","toc":"$L2f","config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}],"$L30","$L31","$L32"]}],["$L33","$L34"],"$L35"]}],"loading":null,"isPartial":false}
-2e:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","$L36",null,{}],["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v4.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L37",null,{"href":"/docs/v4.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v4.0.0/use-cases",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","$L37",null,{"href":"/docs/v4.0.0/use-cases","className":"hover:text-foreground transition-colors","children":"Use Cases"}]]}],["$","div","/docs/v4.0.0/use-cases/document-verification",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Document Verification"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Document Verification"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail."}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[10," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":[["$","h2",null,{"id":"core-capabilities","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Core Capabilities"}],"\n",["$","h3",null,{"id":"tamper-proof-verification","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Tamper-Proof Verification"}],"\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b","\n","$L6c","\n","$L6d","\n","$L6e","\n","$L6f","\n","$L70","\n","$L71","\n","$L72","\n","$L73","\n","$L74","\n","$L75","\n","$L76","\n","$L77","\n","$L78","\n","$L79","\n","$L7a","\n","$L7b","\n","$L7c","\n","$L7d","\n","$L7e","\n","$L7f","\n","$L80","\n","$L81","\n","$L82","\n","$L83","\n","$L84","\n","$L85","\n","$L86","\n","$L87","\n","$L88","\n","$L89","\n","$L8a","\n","$L8b","\n","$L8c","\n","$L8d","\n","$L8e","\n","$L8f","\n","$L90","\n","$L91","\n","$L92","\n","$L93","\n","$L94","\n","$L95","\n","$L96","\n","$L97","\n","$L98","\n","$L99","\n","$L9a","\n","$L9b","\n","$L9c","\n","$L9d","\n","$L9e","\n","$L9f","\n","$La0","\n","$La1","\n","$La2","\n","$La3","\n","$La4","\n","$La5","\n","$La6","\n","$La7","\n","$La8","\n","$La9","\n","$Laa","\n","$Lab","\n","$Lac","\n","$Lad","\n","$Lae","\n","$Laf","\n","$Lb0","\n","$Lb1","\n","$Lb2","\n","$Lb3","\n","$Lb4","\n","$Lb5","\n","$Lb6","\n","$Lb7","\n","$Lb8","\n","$Lb9","\n","$Lba"]}],"$undefined","$Lbb","$Lbc"]}]
-2f:["$","$Lbd",null,{"items":[{"id":"core-capabilities","title":"Core Capabilities","level":2},{"id":"tamper-proof-verification","title":"Tamper-Proof Verification","level":3},{"id":"timestamp-authentication","title":"Timestamp Authentication","level":3},{"id":"permanent-audit-trails","title":"Permanent Audit Trails","level":3},{"id":"decentralized-validation","title":"Decentralized Validation","level":3},{"id":"use-cases-by-industry","title":"Use Cases by Industry","level":2},{"id":"legal-documents","title":"Legal Documents","level":3},{"id":"business-applications","title":"Business Applications","level":3},{"id":"educational-credentials","title":"Educational Credentials","level":3},{"id":"government-documents","title":"Government Documents","level":3},{"id":"key-benefits","title":"Key Benefits","level":2},{"id":"eliminate-single-points-of-failure","title":"Eliminate Single Points of Failure","level":3},{"id":"maintain-document-provenance","title":"Maintain Document Provenance","level":3},{"id":"cryptographic-verification","title":"Cryptographic Verification","level":3},{"id":"no-trusted-intermediaries-required","title":"No Trusted Intermediaries Required","level":3},{"id":"regulatory-compliance","title":"Regulatory Compliance","level":3},{"id":"cost-reduction","title":"Cost Reduction","level":3},{"id":"how-it-works","title":"How It Works","level":2},{"id":"1-document-notarization","title":"1. Document Notarization","level":3},{"id":"2-document-updates","title":"2. Document Updates","level":3},{"id":"3-multi-party-signing","title":"3. Multi-Party Signing","level":3},{"id":"4-verification","title":"4. Verification","level":3},{"id":"real-world-scenarios","title":"Real-World Scenarios","level":2},{"id":"scenario-1-legal-contract-management","title":"Scenario 1: Legal Contract Management","level":3},{"id":"scenario-2-academic-credential-verification","title":"Scenario 2: Academic Credential Verification","level":3},{"id":"scenario-3-financial-audit-trail","title":"Scenario 3: Financial Audit Trail","level":3},{"id":"scenario-4-government-permit-issuance","title":"Scenario 4: Government Permit Issuance","level":3},{"id":"integration-patterns","title":"Integration Patterns","level":2},{"id":"document-management-systems","title":"Document Management Systems","level":3},{"id":"e-signature-platforms","title":"E-Signature Platforms","level":3},{"id":"crm-and-business-systems","title":"CRM and Business Systems","level":3},{"id":"educational-systems","title":"Educational Systems","level":3},{"id":"government-systems","title":"Government Systems","level":3},{"id":"best-practices","title":"Best Practices","level":2},{"id":"initial-notarization","title":"Initial Notarization","level":3},{"id":"multi-party-documents","title":"Multi-Party Documents","level":3},{"id":"long-term-storage","title":"Long-Term Storage","level":3},{"id":"verification","title":"Verification","level":3},{"id":"privacy-considerations","title":"Privacy Considerations","level":3},{"id":"technical-advantages","title":"Technical Advantages","level":2},{"id":"cryptographic-security","title":"Cryptographic Security","level":3},{"id":"scalability","title":"Scalability","level":3},{"id":"interoperability","title":"Interoperability","level":3},{"id":"future-proof","title":"Future-Proof","level":3},{"id":"common-questions","title":"Common Questions","level":2},{"id":"see-also","title":"See Also","level":2}],"config":{"site":{"title":"Aqua Protocol Documentation","description":"Account & verify data in seconds using cryptographic proof","baseUrl":"/","language":"en","url":"https://docs.aquaprotocol.org","organizationName":"inblock.io","projectName":"aqua-protocol","activeVersion":"v4.0.0","logo":"/logo/aqua-logo.png","favicon":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true,"primaryColor":"#E55B1F"},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"aqua-docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","linkedin":"https://www.linkedin.com/company/inblock-io","custom":[{"label":"Aquafier","href":"https://dev.inblock.io/app"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 inblock.io. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/getting-started/quickstart"},{"label":"Schema Reference","href":"/docs/v4.0.0/schema-reference/introduction"},{"label":"Use Cases","href":"/docs/v4.0.0/use-cases/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"},{"label":"Twitter","href":"https://x.com/inblockio"},{"label":"LinkedIn","href":"https://www.linkedin.com/company/inblock-io"}]},{"title":"Resources","items":[{"label":"Aquafier","href":"https://aquafier.inblock.io"},{"label":"Dev Environment","href":"https://dev.inblock.io"},{"label":"Contact","href":"mailto:info@inblock.io"}]}]},"banner":{"enabled":true,"message":"🎉 Aqua Protocol v4 is now in Beta! Check out the latest features.","type":"info","dismissible":true},"env":{"API_BASE_URL":"https://api.aquaprotocol.org","API_VERSION":"v4","AQUAFIER_URL":"https://aquafier.inblock.io","AQUAFIER_DEV_URL":"https://dev.inblock.io"}}}]
-30:["$","$Lbe",null,{}]
-31:["$","$Lbf",null,{}]
-32:["$","$Lc0",null,{}]
-33:["$","script","script-0",{"src":"/_next/static/chunks/5e52b2e731b92ce4.js","async":true}]
-34:["$","script","script-1",{"src":"/_next/static/chunks/ed1bd6cc32fd00b6.js","async":true}]
-35:["$","$Lc1",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@c2"}]}]
-38:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Once a document is notarized in the Aqua Protocol, any modification becomes immediately detectable. The cryptographic hash of the document content is stored in the revision chain, making it mathematically impossible to alter without detection."}]
-39:["$","h3",null,{"id":"timestamp-authentication","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Timestamp Authentication"}]
-3a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Every document revision receives a blockchain-anchored timestamp, providing cryptographic proof of when the document was created or modified. This eliminates disputes about document timelines."}]
-3b:["$","h3",null,{"id":"permanent-audit-trails","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Permanent Audit Trails"}]
-3c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"All document revisions, signatures, and witnesses are permanently recorded in an immutable chain. This creates a complete history of the document lifecycle that can be independently verified."}]
-3d:["$","h3",null,{"id":"decentralized-validation","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Decentralized Validation"}]
-3e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Verification happens cryptographically without requiring trust in intermediaries. Anyone with the document and its Aqua chain can independently verify authenticity and integrity."}]
-3f:["$","h2",null,{"id":"use-cases-by-industry","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Use Cases by Industry"}]
-40:["$","h3",null,{"id":"legal-documents","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Legal Documents"}]
-41:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Contract Authenticity"}]}]
-42:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Prove when contracts were signed"}],"\n",["$","li",null,{"className":"leading-7","children":"Verify that contract terms haven't been altered"}],"\n",["$","li",null,{"className":"leading-7","children":"Establish non-repudiation through digital signatures"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain chain of custody for legal proceedings"}],"\n"]}]
-43:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Evidence Preservation"}]}]
-44:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Create tamper-proof records of digital evidence"}],"\n",["$","li",null,{"className":"leading-7","children":"Timestamp evidence collection"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain audit trails for admissibility"}],"\n",["$","li",null,{"className":"leading-7","children":"Prove evidence integrity in court"}],"\n"]}]
-45:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Notary Services"}]}]
-46:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Provide remote notarization with cryptographic proof"}],"\n",["$","li",null,{"className":"leading-7","children":"Replace traditional notary stamps with blockchain anchoring"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable verifiable notarization across jurisdictions"}],"\n",["$","li",null,{"className":"leading-7","children":"Reduce costs while increasing security"}],"\n"]}]
-47:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Legal Compliance"}]}]
-48:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Demonstrate compliance with document retention policies"}],"\n",["$","li",null,{"className":"leading-7","children":"Prove regulatory filings were submitted on time"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain auditable records for investigations"}],"\n",["$","li",null,{"className":"leading-7","children":"Satisfy e-discovery requirements"}],"\n"]}]
-49:["$","h3",null,{"id":"business-applications","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Business Applications"}]
-4a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Invoice Verification"}]}]
-4b:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Authenticate invoices to prevent fraud"}],"\n",["$","li",null,{"className":"leading-7","children":"Track invoice approvals and modifications"}],"\n",["$","li",null,{"className":"leading-7","children":"Provide proof of invoice delivery and receipt"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable automated payment processing with verified invoices"}],"\n"]}]
-4c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Purchase Orders"}]}]
-4d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Verify PO authenticity between trading partners"}],"\n",["$","li",null,{"className":"leading-7","children":"Track PO modifications and approvals"}],"\n",["$","li",null,{"className":"leading-7","children":"Prevent unauthorized changes"}],"\n",["$","li",null,{"className":"leading-7","children":"Create audit trails for procurement compliance"}],"\n"]}]
-4e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Financial Records"}]}]
-4f:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Ensure integrity of financial statements"}],"\n",["$","li",null,{"className":"leading-7","children":"Track modifications to accounting records"}],"\n",["$","li",null,{"className":"leading-7","children":"Satisfy auditor requirements for record verification"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain SOX compliance with immutable audit logs"}],"\n"]}]
-50:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Regulatory Reporting"}]}]
-51:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Prove timely submission of regulatory reports"}],"\n",["$","li",null,{"className":"leading-7","children":"Demonstrate report integrity over time"}],"\n",["$","li",null,{"className":"leading-7","children":"Satisfy audit requirements"}],"\n",["$","li",null,{"className":"leading-7","children":"Reduce compliance costs"}],"\n"]}]
-52:["$","h3",null,{"id":"educational-credentials","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Educational Credentials"}]
-53:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Diploma Authentication"}]}]
-54:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Provide instant verification of degree authenticity"}],"\n",["$","li",null,{"className":"leading-7","children":"Eliminate diploma mills and fraudulent credentials"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable employers to verify qualifications"}],"\n",["$","li",null,{"className":"leading-7","children":"Reduce verification costs and time"}],"\n"]}]
-55:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Transcript Integrity"}]}]
-56:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Prevent transcript tampering"}],"\n",["$","li",null,{"className":"leading-7","children":"Allow secure sharing with third parties"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain permanent academic records"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable credential portability across institutions"}],"\n"]}]
-57:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Certificate Validation"}]}]
-58:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Verify professional certifications"}],"\n",["$","li",null,{"className":"leading-7","children":"Track certificate expiration dates"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable certificate revocation when needed"}],"\n",["$","li",null,{"className":"leading-7","children":"Support continuing education tracking"}],"\n"]}]
-59:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Academic Records"}]}]
-5a:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Create verifiable lifetime learning records"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable secure transcript sharing"}],"\n",["$","li",null,{"className":"leading-7","children":"Support credential stacking and micro-credentials"}],"\n",["$","li",null,{"className":"leading-7","children":"Facilitate credit transfers between institutions"}],"\n"]}]
-5b:["$","h3",null,{"id":"government-documents","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Government Documents"}]
-5c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Identity Documents"}]}]
-5d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Authenticate passports and ID cards"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable remote identity verification"}],"\n",["$","li",null,{"className":"leading-7","children":"Prevent identity fraud"}],"\n",["$","li",null,{"className":"leading-7","children":"Support digital identity systems"}],"\n"]}]
-5e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"License Verification"}]}]
-5f:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Verify professional licenses instantly"}],"\n",["$","li",null,{"className":"leading-7","children":"Track license renewals and expirations"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable license portability across jurisdictions"}],"\n",["$","li",null,{"className":"leading-7","children":"Support automated compliance checking"}],"\n"]}]
-60:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Permits and Certifications"}]}]
-61:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Authenticate building permits"}],"\n",["$","li",null,{"className":"leading-7","children":"Verify safety certifications"}],"\n",["$","li",null,{"className":"leading-7","children":"Track permit modifications"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable instant permit validation by inspectors"}],"\n"]}]
-62:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["$","strong",null,{"children":"Official Records"}]}]
-63:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Ensure integrity of government records"}],"\n",["$","li",null,{"className":"leading-7","children":"Enable citizen verification of official documents"}],"\n",["$","li",null,{"className":"leading-7","children":"Maintain transparent government operations"}],"\n",["$","li",null,{"className":"leading-7","children":"Prevent records tampering"}],"\n"]}]
-64:["$","h2",null,{"id":"key-benefits","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Key Benefits"}]
-65:["$","h3",null,{"id":"eliminate-single-points-of-failure","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Eliminate Single Points of Failure"}]
-66:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Traditional document verification systems rely on centralized databases that can fail, be hacked, or become unavailable. Aqua Protocol's decentralized approach distributes verification capability, ensuring documents can always be verified even if specific systems are offline."}]
-67:["$","h3",null,{"id":"maintain-document-provenance","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Maintain Document Provenance"}]
-68:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Every document modification is recorded with cryptographic proof of who made the change, when it occurred, and what was changed. This complete provenance trail answers questions about document history definitively."}]
-69:["$","h3",null,{"id":"cryptographic-verification","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Cryptographic Verification"}]
-6a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Verification relies on mathematical certainty rather than trust. Hashes, signatures, and blockchain anchors provide proof that can't be forged, even by system administrators."}]
-6b:["$","h3",null,{"id":"no-trusted-intermediaries-required","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"No Trusted Intermediaries Required"}]
-6c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Unlike traditional notary or verification services, Aqua Protocol enables anyone to verify document authenticity independently. This reduces costs and increases accessibility."}]
-6d:["$","h3",null,{"id":"regulatory-compliance","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Regulatory Compliance"}]
-6e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Industries requiring regulatory compliance benefit from maintained audit trails:"}]
-6f:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Legal firms"}],": Demonstrate evidence integrity and chain of custody"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Financial institutions"}],": Satisfy SOX, GDPR, and financial regulations"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Healthcare providers"}],": Maintain HIPAA-compliant document trails"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","strong",null,{"children":"Educational institutions"}],": Provide verifiable credentials that meet accreditation standards"]}],"\n"]}]
-70:["$","h3",null,{"id":"cost-reduction","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Cost Reduction"}]
-71:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Automated verification reduces manual processes, eliminates middlemen, speeds up verification times, and prevents fraud losses."}]
-72:["$","h2",null,{"id":"how-it-works","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"How It Works"}]
-73:["$","h3",null,{"id":"1-document-notarization","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"1. Document Notarization"}]
-74:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"When a document is first notarized:"}]
-75:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"The document content is hashed using SHA3-256"}],"\n",["$","li",null,{"className":"leading-7","children":"A genesis revision is created with the document hash"}],"\n",["$","li",null,{"className":"leading-7","children":"The revision is signed by the document creator"}],"\n",["$","li",null,{"className":"leading-7","children":"The signature is witnessed on a blockchain"}],"\n",["$","li",null,{"className":"leading-7","children":"All data is stored in an immutable Aqua chain"}],"\n"]}]
-76:["$","h3",null,{"id":"2-document-updates","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"2. Document Updates"}]
-77:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"When a document is modified:"}]
-78:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"A new revision is created referencing the previous revision"}],"\n",["$","li",null,{"className":"leading-7","children":"The new content hash is recorded"}],"\n",["$","li",null,{"className":"leading-7","children":"The update is signed by authorized parties"}],"\n",["$","li",null,{"className":"leading-7","children":"The signature is witnessed for timestamp proof"}],"\n",["$","li",null,{"className":"leading-7","children":"The revision chain grows, maintaining complete history"}],"\n"]}]
-79:["$","h3",null,{"id":"3-multi-party-signing","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"3. Multi-Party Signing"}]
-7a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"For documents requiring multiple signatures:"}]
-7b:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Each party adds their signature as a new revision"}],"\n",["$","li",null,{"className":"leading-7","children":"Signatures reference the document revision being signed"}],"\n",["$","li",null,{"className":"leading-7","children":"Order of signing is preserved in the chain"}],"\n",["$","li",null,{"className":"leading-7","children":"All signatures receive blockchain timestamps"}],"\n",["$","li",null,{"className":"leading-7","children":"Final witness anchors the complete signing process"}],"\n"]}]
-7c:["$","h3",null,{"id":"4-verification","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"4. Verification"}]
-7d:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Anyone can verify a document by:"}]
-7e:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Computing the hash of the document content"}],"\n",["$","li",null,{"className":"leading-7","children":"Comparing it to the hash in the revision chain"}],"\n",["$","li",null,{"className":"leading-7","children":"Verifying all signatures cryptographically"}],"\n",["$","li",null,{"className":"leading-7","children":"Checking blockchain witness timestamps"}],"\n",["$","li",null,{"className":"leading-7","children":"Validating the entire revision chain integrity"}],"\n"]}]
-7f:["$","h2",null,{"id":"real-world-scenarios","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Real-World Scenarios"}]
-80:["$","h3",null,{"id":"scenario-1-legal-contract-management","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scenario 1: Legal Contract Management"}]
-81:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Challenge"}],": A law firm needs to manage contracts with guaranteed integrity and provable signing timestamps for multiple parties."]}]
-82:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Solution"}],":"]}]
-83:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Contract is notarized when drafted, creating the genesis revision"}],"\n",["$","li",null,{"className":"leading-7","children":"Each party reviews and signs, adding signature revisions"}],"\n",["$","li",null,{"className":"leading-7","children":"Final contract is witnessed on Ethereum mainnet"}],"\n",["$","li",null,{"className":"leading-7","children":"All parties receive the complete Aqua chain"}],"\n",["$","li",null,{"className":"leading-7","children":"Years later, if disputed, the contract's integrity and signing timeline can be cryptographically proven"}],"\n"]}]
-84:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Benefits"}],": Non-repudiation, tamper-proof records, defensible timestamps, reduced notary costs"]}]
-85:["$","h3",null,{"id":"scenario-2-academic-credential-verification","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scenario 2: Academic Credential Verification"}]
-86:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Challenge"}],": Universities issue thousands of diplomas, and employers need to verify credentials quickly without calling the registrar."]}]
-87:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Solution"}],":"]}]
-88:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"University notarizes each diploma as it's issued"}],"\n",["$","li",null,{"className":"leading-7","children":"Diploma includes an Aqua chain with the university's signature"}],"\n",["$","li",null,{"className":"leading-7","children":"University witnesses the batch of diplomas on blockchain"}],"\n",["$","li",null,{"className":"leading-7","children":"Employers scan QR code or receive Aqua chain from candidate"}],"\n",["$","li",null,{"className":"leading-7","children":"Verification happens instantly using Aqua verification tools"}],"\n"]}]
-89:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Benefits"}],": Instant verification, eliminated fraud, reduced administrative burden, improved candidate experience"]}]
-8a:["$","h3",null,{"id":"scenario-3-financial-audit-trail","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scenario 3: Financial Audit Trail"}]
-8b:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Challenge"}],": A public company must maintain auditable financial records that prove compliance with regulations."]}]
-8c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Solution"}],":"]}]
-8d:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Financial statements are notarized each quarter"}],"\n",["$","li",null,{"className":"leading-7","children":"CFO signs the statement, adding signature revision"}],"\n",["$","li",null,{"className":"leading-7","children":"External auditor witnesses the statement on blockchain"}],"\n",["$","li",null,{"className":"leading-7","children":"Audit trail is preserved permanently"}],"\n",["$","li",null,{"className":"leading-7","children":"Regulators can verify statement integrity independently"}],"\n"]}]
-8e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Benefits"}],": Regulatory compliance, reduced audit costs, defensible records, fraud prevention"]}]
-8f:["$","h3",null,{"id":"scenario-4-government-permit-issuance","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scenario 4: Government Permit Issuance"}]
-90:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Challenge"}],": Building department issues permits that need to be verified by inspectors, contractors, and the public."]}]
-91:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Solution"}],":"]}]
-92:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Permit applications are notarized when submitted"}],"\n",["$","li",null,{"className":"leading-7","children":"Permit approvals are signed by authorized officials"}],"\n",["$","li",null,{"className":"leading-7","children":"Approved permits are witnessed on blockchain"}],"\n",["$","li",null,{"className":"leading-7","children":"QR codes on physical permits link to Aqua chains"}],"\n",["$","li",null,{"className":"leading-7","children":"Anyone can verify permit authenticity and status"}],"\n"]}]
-93:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Benefits"}],": Fraud prevention, instant verification, public transparency, reduced administrative overhead"]}]
-94:["$","h2",null,{"id":"integration-patterns","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Integration Patterns"}]
-95:["$","h3",null,{"id":"document-management-systems","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Document Management Systems"}]
-96:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Integrate Aqua Protocol into existing DMS platforms to automatically notarize important documents. When documents are finalized, trigger Aqua notarization via SDK."}]
-97:["$","h3",null,{"id":"e-signature-platforms","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"E-Signature Platforms"}]
-98:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Enhance e-signature solutions with blockchain-anchored timestamps and cryptographic verification. Each signature becomes a verifiable revision in the Aqua chain."}]
-99:["$","h3",null,{"id":"crm-and-business-systems","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"CRM and Business Systems"}]
-9a:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Add document verification to CRM, ERP, or custom business applications. Automatically notarize quotes, proposals, contracts, and invoices as they're generated."}]
-9b:["$","h3",null,{"id":"educational-systems","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Educational Systems"}]
-9c:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Integrate with student information systems to automatically notarize transcripts, diplomas, and certificates as they're issued."}]
-9d:["$","h3",null,{"id":"government-systems","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Government Systems"}]
-9e:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":"Add Aqua Protocol to permit, license, and registration systems to provide instant verification capability to citizens and businesses."}]
-9f:["$","h2",null,{"id":"best-practices","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Best Practices"}]
-a0:["$","h3",null,{"id":"initial-notarization","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Initial Notarization"}]
-a1:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Notarize documents as early as possible in their lifecycle"}],"\n",["$","li",null,{"className":"leading-7","children":"Include relevant metadata (document type, parties, purpose)"}],"\n",["$","li",null,{"className":"leading-7","children":"Use appropriate method (scalar for small docs, tree for large)"}],"\n",["$","li",null,{"className":"leading-7","children":"Sign immediately after creation to establish authorship"}],"\n"]}]
-a2:["$","h3",null,{"id":"multi-party-documents","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Multi-Party Documents"}]
-a3:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Establish signing order and communicate to all parties"}],"\n",["$","li",null,{"className":"leading-7","children":"Each party should verify previous signatures before adding theirs"}],"\n",["$","li",null,{"className":"leading-7","children":"Witness after all signatures are collected"}],"\n",["$","li",null,{"className":"leading-7","children":"Distribute complete Aqua chain to all parties"}],"\n"]}]
-a4:["$","h3",null,{"id":"long-term-storage","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Long-Term Storage"}]
-a5:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Store Aqua chains separately from documents"}],"\n",["$","li",null,{"className":"leading-7","children":"Back up chains to multiple locations"}],"\n",["$","li",null,{"className":"leading-7","children":"Include Aqua chain with document when transmitting"}],"\n",["$","li",null,{"className":"leading-7","children":"Test verification periodically"}],"\n"]}]
-a6:["$","h3",null,{"id":"verification","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Verification"}]
-a7:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Always verify documents received from third parties"}],"\n",["$","li",null,{"className":"leading-7","children":"Check entire revision chain, not just the latest revision"}],"\n",["$","li",null,{"className":"leading-7","children":"Verify blockchain witnesses for important documents"}],"\n",["$","li",null,{"className":"leading-7","children":"Validate signatures match expected signers"}],"\n"]}]
-a8:["$","h3",null,{"id":"privacy-considerations","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Privacy Considerations"}]
-a9:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Aqua chains don't contain document content by default"}],"\n",["$","li",null,{"className":"leading-7","children":"Share chains carefully as they prove document existence"}],"\n",["$","li",null,{"className":"leading-7","children":"Use private blockchains if public witnessing is problematic"}],"\n",["$","li",null,{"className":"leading-7","children":"Consider what metadata is included in revisions"}],"\n"]}]
-aa:["$","h2",null,{"id":"technical-advantages","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Technical Advantages"}]
-ab:["$","h3",null,{"id":"cryptographic-security","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Cryptographic Security"}]
-ac:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"SHA3-256 hashing provides computational infeasibility of collision attacks"}],"\n",["$","li",null,{"className":"leading-7","children":"ECDSA signatures (65 bytes) provide 128-bit security level"}],"\n",["$","li",null,{"className":"leading-7","children":"Blockchain anchoring makes backdating mathematically impossible"}],"\n"]}]
-ad:["$","h3",null,{"id":"scalability","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Scalability"}]
-ae:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Document verification is O(n) where n is number of revisions"}],"\n",["$","li",null,{"className":"leading-7","children":"Merkle tree mode enables selective disclosure of large documents"}],"\n",["$","li",null,{"className":"leading-7","children":"Batch witnessing reduces blockchain transaction costs"}],"\n",["$","li",null,{"className":"leading-7","children":"Verification can happen offline after initial chain retrieval"}],"\n"]}]
-af:["$","h3",null,{"id":"interoperability","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Interoperability"}]
-b0:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"JSON-based format enables easy integration"}],"\n",["$","li",null,{"className":"leading-7","children":"Multiple SDK options (Rust, JavaScript/TypeScript)"}],"\n",["$","li",null,{"className":"leading-7","children":"Platform-agnostic verification"}],"\n",["$","li",null,{"className":"leading-7","children":"Standard cryptographic primitives"}],"\n"]}]
-b1:["$","h3",null,{"id":"future-proof","className":"text-2xl font-semibold tracking-tight mt-8 mb-3 text-foreground scroll-mt-24","children":"Future-Proof"}]
-b2:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":"Protocol versioning supports evolution"}],"\n",["$","li",null,{"className":"leading-7","children":"Blockchain-agnostic witness mechanism"}],"\n",["$","li",null,{"className":"leading-7","children":"Multiple signature algorithm support"}],"\n",["$","li",null,{"className":"leading-7","children":"Extensible revision types"}],"\n"]}]
-b3:["$","h2",null,{"id":"common-questions","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"Common Questions"}]
-b4:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: What if the blockchain network goes offline?"}],"\nA: Verification of existing documents still works using cryptographic verification of signatures and hashes. Only new witnessing requires blockchain access. Historical witnesses remain provable through transaction records."]}]
-b5:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: How long are documents stored?"}],"\nA: Aqua Protocol stores only hashes and metadata, not document content. Document storage is separate and managed by users. Aqua chains are small (kilobytes) and can be stored indefinitely."]}]
-b6:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: Can witnesses be trusted?"}],"\nA: Blockchain witnesses provide cryptographic proof of timestamp. As long as the blockchain network is secure and decentralized, witnesses cannot be backdated or falsified."]}]
-b7:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: What about privacy?"}],"\nA: By default, only document hashes are stored on-chain, not content. The document itself remains private. Share Aqua chains carefully as they prove document existence at specific times."]}]
-b8:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","strong",null,{"children":"Q: How do I revoke a document?"}],"\nA: Add a revocation revision to the chain. The document history remains (for audit purposes), but new revisions can indicate revoked status."]}]
-b9:["$","h2",null,{"id":"see-also","className":"text-3xl font-semibold tracking-tight mt-12 mb-4 text-foreground scroll-mt-24","children":"See Also"}]
-ba:["$","ul",null,{"className":"list-disc list-inside space-y-2 mb-4 text-muted-foreground","children":["\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/use_cases/supply-chain","className":"text-primary hover:underline font-medium","children":"Supply Chain Tracking"}]," - Apply similar verification to supply chain events"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/use_cases/identity-attestation","className":"text-primary hover:underline font-medium","children":"Identity Attestation"}]," - Verify identity credentials"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/quick-start","className":"text-primary hover:underline font-medium","children":"Quick Start"}]," - Get started with document verification"]}],"\n",["$","li",null,{"className":"leading-7","children":[["$","a",null,{"href":"/schema_reference/introduction","className":"text-primary hover:underline font-medium","children":"Schema Reference"}]," - Technical specifications"]}],"\n"]}]
-bb:["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v4.0.0/use-cases/document-verification.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":[["$","path","1couwa",{"d":"M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","1y4qbx",{"d":"M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"}],"$undefined"]}],"Edit this page"]}],["$","a",null,{"href":"https://github.com/inblockio/issues/new","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-external-link h-4 w-4","children":[["$","path","1q9fwt",{"d":"M15 3h6v6"}],["$","path","gplh6r",{"d":"M10 14 21 3"}],["$","path","a6xqqp",{"d":"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"}],"$undefined"]}],"Report an issue"]}]]}]
-bc:["$","div",null,{"className":"mt-12 pt-8 border-t border-border grid grid-cols-2 gap-4","children":[["$","$L37",null,{"href":"/docs/v4.0.0/version-info","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],["$","span",null,{"children":"Previous"}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Version v4 (beta)"}]]}],["$","$L37",null,{"href":"/docs/v4.0.0/use-cases/identity-attestation","className":"group flex flex-col gap-2 p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-muted/50 transition-all text-right","style":{"textDecoration":"none !important"},"children":[["$","div",null,{"className":"flex items-center justify-end gap-2 text-sm text-muted-foreground","children":[["$","span",null,{"children":"Next"}],["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}]]}],["$","div",null,{"className":"text-base font-medium text-foreground group-hover:text-primary transition-colors","children":"Identity Attestation"}]]}]]}]
-c2:null
+0:{"buildId":"_ePiRrooneby3ghoRNSHI","rsc":["$","$1","c",{"children":[["$","$2",null,{"fallback":["$","$L3",null,{}],"children":[["$","$L4",null,{"header":["$","$L5",null,{"currentVersion":"v4.0.0","versions":["v1.0.0","v2.0.0","v3.0.0","v4.0.0"],"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$6","reading_time":5,"word_count":888},"content":"$7","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$8","reading_time":5,"word_count":823},"content":"$9"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$a","reading_time":7,"word_count":1244},"content":"$b"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$c","reading_time":5,"word_count":941},"content":"$d","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$e","reading_time":9,"word_count":1674},"content":"$f"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$10","reading_time":8,"word_count":1476},"content":"$11","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$12","reading_time":4,"word_count":686},"content":"$13"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$14","reading_time":3,"word_count":410},"content":"$15","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$16","reading_time":2,"word_count":391},"content":"$17","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$18","reading_time":3,"word_count":566},"content":"$19","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$1a","reading_time":11,"word_count":2009},"content":"$1b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$1c","reading_time":6,"word_count":1048},"content":"$1d","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$1e","reading_time":3,"word_count":461},"content":"$1f","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$20","reading_time":7,"word_count":1393},"content":"$21","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$22","reading_time":7,"word_count":1369},"content":"$23","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$24","reading_time":9,"word_count":1682},"content":"$25","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$26","reading_time":10,"word_count":1863},"content":"$27","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$28","reading_time":5,"word_count":865},"content":"$29","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$2a","reading_time":7,"word_count":1216},"content":"$2b","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$2c","reading_time":12,"word_count":2274},"content":"$2d","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb"}],"version":"v4.0.0","content":"$L2e","toc":"$L2f","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}],"$L30","$L31","$L32"]}],null,"$L33"]}],"loading":null,"isPartial":false}
+35:T362b,
+## Core Capabilities
+
+### Tamper-Proof Verification
+Once a document is notarized in the Aqua Protocol, any modification becomes immediately detectable. The cryptographic hash of the document content is stored in the revision chain, making it mathematically impossible to alter without detection.
+
+### Timestamp Authentication
+Every document revision receives a blockchain-anchored timestamp, providing cryptographic proof of when the document was created or modified. This eliminates disputes about document timelines.
+
+### Permanent Audit Trails
+All document revisions, signatures, and witnesses are permanently recorded in an immutable chain. This creates a complete history of the document lifecycle that can be independently verified.
+
+### Decentralized Validation
+Verification happens cryptographically without requiring trust in intermediaries. Anyone with the document and its Aqua chain can independently verify authenticity and integrity.
+
+## Use Cases by Industry
+
+### Legal Documents
+
+**Contract Authenticity**
+- Prove when contracts were signed
+- Verify that contract terms haven't been altered
+- Establish non-repudiation through digital signatures
+- Maintain chain of custody for legal proceedings
+
+**Evidence Preservation**
+- Create tamper-proof records of digital evidence
+- Timestamp evidence collection
+- Maintain audit trails for admissibility
+- Prove evidence integrity in court
+
+**Notary Services**
+- Provide remote notarization with cryptographic proof
+- Replace traditional notary stamps with blockchain anchoring
+- Enable verifiable notarization across jurisdictions
+- Reduce costs while increasing security
+
+**Legal Compliance**
+- Demonstrate compliance with document retention policies
+- Prove regulatory filings were submitted on time
+- Maintain auditable records for investigations
+- Satisfy e-discovery requirements
+
+### Business Applications
+
+**Invoice Verification**
+- Authenticate invoices to prevent fraud
+- Track invoice approvals and modifications
+- Provide proof of invoice delivery and receipt
+- Enable automated payment processing with verified invoices
+
+**Purchase Orders**
+- Verify PO authenticity between trading partners
+- Track PO modifications and approvals
+- Prevent unauthorized changes
+- Create audit trails for procurement compliance
+
+**Financial Records**
+- Ensure integrity of financial statements
+- Track modifications to accounting records
+- Satisfy auditor requirements for record verification
+- Maintain SOX compliance with immutable audit logs
+
+**Regulatory Reporting**
+- Prove timely submission of regulatory reports
+- Demonstrate report integrity over time
+- Satisfy audit requirements
+- Reduce compliance costs
+
+### Educational Credentials
+
+**Diploma Authentication**
+- Provide instant verification of degree authenticity
+- Eliminate diploma mills and fraudulent credentials
+- Enable employers to verify qualifications
+- Reduce verification costs and time
+
+**Transcript Integrity**
+- Prevent transcript tampering
+- Allow secure sharing with third parties
+- Maintain permanent academic records
+- Enable credential portability across institutions
+
+**Certificate Validation**
+- Verify professional certifications
+- Track certificate expiration dates
+- Enable certificate revocation when needed
+- Support continuing education tracking
+
+**Academic Records**
+- Create verifiable lifetime learning records
+- Enable secure transcript sharing
+- Support credential stacking and micro-credentials
+- Facilitate credit transfers between institutions
+
+### Government Documents
+
+**Identity Documents**
+- Authenticate passports and ID cards
+- Enable remote identity verification
+- Prevent identity fraud
+- Support digital identity systems
+
+**License Verification**
+- Verify professional licenses instantly
+- Track license renewals and expirations
+- Enable license portability across jurisdictions
+- Support automated compliance checking
+
+**Permits and Certifications**
+- Authenticate building permits
+- Verify safety certifications
+- Track permit modifications
+- Enable instant permit validation by inspectors
+
+**Official Records**
+- Ensure integrity of government records
+- Enable citizen verification of official documents
+- Maintain transparent government operations
+- Prevent records tampering
+
+## Key Benefits
+
+### Eliminate Single Points of Failure
+Traditional document verification systems rely on centralized databases that can fail, be hacked, or become unavailable. Aqua Protocol's decentralized approach distributes verification capability, ensuring documents can always be verified even if specific systems are offline.
+
+### Maintain Document Provenance
+Every document modification is recorded with cryptographic proof of who made the change, when it occurred, and what was changed. This complete provenance trail answers questions about document history definitively.
+
+### Cryptographic Verification
+Verification relies on mathematical certainty rather than trust. Hashes, signatures, and blockchain anchors provide proof that can't be forged, even by system administrators.
+
+### No Trusted Intermediaries Required
+Unlike traditional notary or verification services, Aqua Protocol enables anyone to verify document authenticity independently. This reduces costs and increases accessibility.
+
+### Regulatory Compliance
+Industries requiring regulatory compliance benefit from maintained audit trails:
+- **Legal firms**: Demonstrate evidence integrity and chain of custody
+- **Financial institutions**: Satisfy SOX, GDPR, and financial regulations
+- **Healthcare providers**: Maintain HIPAA-compliant document trails
+- **Educational institutions**: Provide verifiable credentials that meet accreditation standards
+
+### Cost Reduction
+Automated verification reduces manual processes, eliminates middlemen, speeds up verification times, and prevents fraud losses.
+
+## How It Works
+
+### 1. Document Notarization
+When a document is first notarized:
+- The document content is hashed using SHA3-256
+- A genesis revision is created with the document hash
+- The revision is signed by the document creator
+- The signature is witnessed on a blockchain
+- All data is stored in an immutable Aqua chain
+
+### 2. Document Updates
+When a document is modified:
+- A new revision is created referencing the previous revision
+- The new content hash is recorded
+- The update is signed by authorized parties
+- The signature is witnessed for timestamp proof
+- The revision chain grows, maintaining complete history
+
+### 3. Multi-Party Signing
+For documents requiring multiple signatures:
+- Each party adds their signature as a new revision
+- Signatures reference the document revision being signed
+- Order of signing is preserved in the chain
+- All signatures receive blockchain timestamps
+- Final witness anchors the complete signing process
+
+### 4. Verification
+Anyone can verify a document by:
+- Computing the hash of the document content
+- Comparing it to the hash in the revision chain
+- Verifying all signatures cryptographically
+- Checking blockchain witness timestamps
+- Validating the entire revision chain integrity
+
+## Real-World Scenarios
+
+### Scenario 1: Legal Contract Management
+
+**Challenge**: A law firm needs to manage contracts with guaranteed integrity and provable signing timestamps for multiple parties.
+
+**Solution**:
+- Contract is notarized when drafted, creating the genesis revision
+- Each party reviews and signs, adding signature revisions
+- Final contract is witnessed on Ethereum mainnet
+- All parties receive the complete Aqua chain
+- Years later, if disputed, the contract's integrity and signing timeline can be cryptographically proven
+
+**Benefits**: Non-repudiation, tamper-proof records, defensible timestamps, reduced notary costs
+
+### Scenario 2: Academic Credential Verification
+
+**Challenge**: Universities issue thousands of diplomas, and employers need to verify credentials quickly without calling the registrar.
+
+**Solution**:
+- University notarizes each diploma as it's issued
+- Diploma includes an Aqua chain with the university's signature
+- University witnesses the batch of diplomas on blockchain
+- Employers scan QR code or receive Aqua chain from candidate
+- Verification happens instantly using Aqua verification tools
+
+**Benefits**: Instant verification, eliminated fraud, reduced administrative burden, improved candidate experience
+
+### Scenario 3: Financial Audit Trail
+
+**Challenge**: A public company must maintain auditable financial records that prove compliance with regulations.
+
+**Solution**:
+- Financial statements are notarized each quarter
+- CFO signs the statement, adding signature revision
+- External auditor witnesses the statement on blockchain
+- Audit trail is preserved permanently
+- Regulators can verify statement integrity independently
+
+**Benefits**: Regulatory compliance, reduced audit costs, defensible records, fraud prevention
+
+### Scenario 4: Government Permit Issuance
+
+**Challenge**: Building department issues permits that need to be verified by inspectors, contractors, and the public.
+
+**Solution**:
+- Permit applications are notarized when submitted
+- Permit approvals are signed by authorized officials
+- Approved permits are witnessed on blockchain
+- QR codes on physical permits link to Aqua chains
+- Anyone can verify permit authenticity and status
+
+**Benefits**: Fraud prevention, instant verification, public transparency, reduced administrative overhead
+
+## Integration Patterns
+
+### Document Management Systems
+Integrate Aqua Protocol into existing DMS platforms to automatically notarize important documents. When documents are finalized, trigger Aqua notarization via SDK.
+
+### E-Signature Platforms
+Enhance e-signature solutions with blockchain-anchored timestamps and cryptographic verification. Each signature becomes a verifiable revision in the Aqua chain.
+
+### CRM and Business Systems
+Add document verification to CRM, ERP, or custom business applications. Automatically notarize quotes, proposals, contracts, and invoices as they're generated.
+
+### Educational Systems
+Integrate with student information systems to automatically notarize transcripts, diplomas, and certificates as they're issued.
+
+### Government Systems
+Add Aqua Protocol to permit, license, and registration systems to provide instant verification capability to citizens and businesses.
+
+## Best Practices
+
+### Initial Notarization
+- Notarize documents as early as possible in their lifecycle
+- Include relevant metadata (document type, parties, purpose)
+- Use appropriate method (scalar for small docs, tree for large)
+- Sign immediately after creation to establish authorship
+
+### Multi-Party Documents
+- Establish signing order and communicate to all parties
+- Each party should verify previous signatures before adding theirs
+- Witness after all signatures are collected
+- Distribute complete Aqua chain to all parties
+
+### Long-Term Storage
+- Store Aqua chains separately from documents
+- Back up chains to multiple locations
+- Include Aqua chain with document when transmitting
+- Test verification periodically
+
+### Verification
+- Always verify documents received from third parties
+- Check entire revision chain, not just the latest revision
+- Verify blockchain witnesses for important documents
+- Validate signatures match expected signers
+
+### Privacy Considerations
+- Aqua chains don't contain document content by default
+- Share chains carefully as they prove document existence
+- Use private blockchains if public witnessing is problematic
+- Consider what metadata is included in revisions
+
+## Technical Advantages
+
+### Cryptographic Security
+- SHA3-256 hashing provides computational infeasibility of collision attacks
+- ECDSA signatures (65 bytes) provide 128-bit security level
+- Blockchain anchoring makes backdating mathematically impossible
+
+### Scalability
+- Document verification is O(n) where n is number of revisions
+- Merkle tree mode enables selective disclosure of large documents
+- Batch witnessing reduces blockchain transaction costs
+- Verification can happen offline after initial chain retrieval
+
+### Interoperability
+- JSON-based format enables easy integration
+- Multiple SDK options (Rust, JavaScript/TypeScript)
+- Platform-agnostic verification
+- Standard cryptographic primitives
+
+### Future-Proof
+- Protocol versioning supports evolution
+- Blockchain-agnostic witness mechanism
+- Multiple signature algorithm support
+- Extensible revision types
+
+## Common Questions
+
+**Q: What if the blockchain network goes offline?**
+A: Verification of existing documents still works using cryptographic verification of signatures and hashes. Only new witnessing requires blockchain access. Historical witnesses remain provable through transaction records.
+
+**Q: How long are documents stored?**
+A: Aqua Protocol stores only hashes and metadata, not document content. Document storage is separate and managed by users. Aqua chains are small (kilobytes) and can be stored indefinitely.
+
+**Q: Can witnesses be trusted?**
+A: Blockchain witnesses provide cryptographic proof of timestamp. As long as the blockchain network is secure and decentralized, witnesses cannot be backdated or falsified.
+
+**Q: What about privacy?**
+A: By default, only document hashes are stored on-chain, not content. The document itself remains private. Share Aqua chains carefully as they prove document existence at specific times.
+
+**Q: How do I revoke a document?**
+A: Add a revocation revision to the chain. The document history remains (for audit purposes), but new revisions can indicate revoked status.
+
+## See Also
+
+- [Supply Chain Tracking](/use_cases/supply-chain) - Apply similar verification to supply chain events
+- [Identity Attestation](/use_cases/identity-attestation) - Verify identity credentials
+- [Quick Start](/quick-start) - Get started with document verification
+- [Schema Reference](/schema_reference/introduction) - Technical specifications
+36:T362b,
+## Core Capabilities
+
+### Tamper-Proof Verification
+Once a document is notarized in the Aqua Protocol, any modification becomes immediately detectable. The cryptographic hash of the document content is stored in the revision chain, making it mathematically impossible to alter without detection.
+
+### Timestamp Authentication
+Every document revision receives a blockchain-anchored timestamp, providing cryptographic proof of when the document was created or modified. This eliminates disputes about document timelines.
+
+### Permanent Audit Trails
+All document revisions, signatures, and witnesses are permanently recorded in an immutable chain. This creates a complete history of the document lifecycle that can be independently verified.
+
+### Decentralized Validation
+Verification happens cryptographically without requiring trust in intermediaries. Anyone with the document and its Aqua chain can independently verify authenticity and integrity.
+
+## Use Cases by Industry
+
+### Legal Documents
+
+**Contract Authenticity**
+- Prove when contracts were signed
+- Verify that contract terms haven't been altered
+- Establish non-repudiation through digital signatures
+- Maintain chain of custody for legal proceedings
+
+**Evidence Preservation**
+- Create tamper-proof records of digital evidence
+- Timestamp evidence collection
+- Maintain audit trails for admissibility
+- Prove evidence integrity in court
+
+**Notary Services**
+- Provide remote notarization with cryptographic proof
+- Replace traditional notary stamps with blockchain anchoring
+- Enable verifiable notarization across jurisdictions
+- Reduce costs while increasing security
+
+**Legal Compliance**
+- Demonstrate compliance with document retention policies
+- Prove regulatory filings were submitted on time
+- Maintain auditable records for investigations
+- Satisfy e-discovery requirements
+
+### Business Applications
+
+**Invoice Verification**
+- Authenticate invoices to prevent fraud
+- Track invoice approvals and modifications
+- Provide proof of invoice delivery and receipt
+- Enable automated payment processing with verified invoices
+
+**Purchase Orders**
+- Verify PO authenticity between trading partners
+- Track PO modifications and approvals
+- Prevent unauthorized changes
+- Create audit trails for procurement compliance
+
+**Financial Records**
+- Ensure integrity of financial statements
+- Track modifications to accounting records
+- Satisfy auditor requirements for record verification
+- Maintain SOX compliance with immutable audit logs
+
+**Regulatory Reporting**
+- Prove timely submission of regulatory reports
+- Demonstrate report integrity over time
+- Satisfy audit requirements
+- Reduce compliance costs
+
+### Educational Credentials
+
+**Diploma Authentication**
+- Provide instant verification of degree authenticity
+- Eliminate diploma mills and fraudulent credentials
+- Enable employers to verify qualifications
+- Reduce verification costs and time
+
+**Transcript Integrity**
+- Prevent transcript tampering
+- Allow secure sharing with third parties
+- Maintain permanent academic records
+- Enable credential portability across institutions
+
+**Certificate Validation**
+- Verify professional certifications
+- Track certificate expiration dates
+- Enable certificate revocation when needed
+- Support continuing education tracking
+
+**Academic Records**
+- Create verifiable lifetime learning records
+- Enable secure transcript sharing
+- Support credential stacking and micro-credentials
+- Facilitate credit transfers between institutions
+
+### Government Documents
+
+**Identity Documents**
+- Authenticate passports and ID cards
+- Enable remote identity verification
+- Prevent identity fraud
+- Support digital identity systems
+
+**License Verification**
+- Verify professional licenses instantly
+- Track license renewals and expirations
+- Enable license portability across jurisdictions
+- Support automated compliance checking
+
+**Permits and Certifications**
+- Authenticate building permits
+- Verify safety certifications
+- Track permit modifications
+- Enable instant permit validation by inspectors
+
+**Official Records**
+- Ensure integrity of government records
+- Enable citizen verification of official documents
+- Maintain transparent government operations
+- Prevent records tampering
+
+## Key Benefits
+
+### Eliminate Single Points of Failure
+Traditional document verification systems rely on centralized databases that can fail, be hacked, or become unavailable. Aqua Protocol's decentralized approach distributes verification capability, ensuring documents can always be verified even if specific systems are offline.
+
+### Maintain Document Provenance
+Every document modification is recorded with cryptographic proof of who made the change, when it occurred, and what was changed. This complete provenance trail answers questions about document history definitively.
+
+### Cryptographic Verification
+Verification relies on mathematical certainty rather than trust. Hashes, signatures, and blockchain anchors provide proof that can't be forged, even by system administrators.
+
+### No Trusted Intermediaries Required
+Unlike traditional notary or verification services, Aqua Protocol enables anyone to verify document authenticity independently. This reduces costs and increases accessibility.
+
+### Regulatory Compliance
+Industries requiring regulatory compliance benefit from maintained audit trails:
+- **Legal firms**: Demonstrate evidence integrity and chain of custody
+- **Financial institutions**: Satisfy SOX, GDPR, and financial regulations
+- **Healthcare providers**: Maintain HIPAA-compliant document trails
+- **Educational institutions**: Provide verifiable credentials that meet accreditation standards
+
+### Cost Reduction
+Automated verification reduces manual processes, eliminates middlemen, speeds up verification times, and prevents fraud losses.
+
+## How It Works
+
+### 1. Document Notarization
+When a document is first notarized:
+- The document content is hashed using SHA3-256
+- A genesis revision is created with the document hash
+- The revision is signed by the document creator
+- The signature is witnessed on a blockchain
+- All data is stored in an immutable Aqua chain
+
+### 2. Document Updates
+When a document is modified:
+- A new revision is created referencing the previous revision
+- The new content hash is recorded
+- The update is signed by authorized parties
+- The signature is witnessed for timestamp proof
+- The revision chain grows, maintaining complete history
+
+### 3. Multi-Party Signing
+For documents requiring multiple signatures:
+- Each party adds their signature as a new revision
+- Signatures reference the document revision being signed
+- Order of signing is preserved in the chain
+- All signatures receive blockchain timestamps
+- Final witness anchors the complete signing process
+
+### 4. Verification
+Anyone can verify a document by:
+- Computing the hash of the document content
+- Comparing it to the hash in the revision chain
+- Verifying all signatures cryptographically
+- Checking blockchain witness timestamps
+- Validating the entire revision chain integrity
+
+## Real-World Scenarios
+
+### Scenario 1: Legal Contract Management
+
+**Challenge**: A law firm needs to manage contracts with guaranteed integrity and provable signing timestamps for multiple parties.
+
+**Solution**:
+- Contract is notarized when drafted, creating the genesis revision
+- Each party reviews and signs, adding signature revisions
+- Final contract is witnessed on Ethereum mainnet
+- All parties receive the complete Aqua chain
+- Years later, if disputed, the contract's integrity and signing timeline can be cryptographically proven
+
+**Benefits**: Non-repudiation, tamper-proof records, defensible timestamps, reduced notary costs
+
+### Scenario 2: Academic Credential Verification
+
+**Challenge**: Universities issue thousands of diplomas, and employers need to verify credentials quickly without calling the registrar.
+
+**Solution**:
+- University notarizes each diploma as it's issued
+- Diploma includes an Aqua chain with the university's signature
+- University witnesses the batch of diplomas on blockchain
+- Employers scan QR code or receive Aqua chain from candidate
+- Verification happens instantly using Aqua verification tools
+
+**Benefits**: Instant verification, eliminated fraud, reduced administrative burden, improved candidate experience
+
+### Scenario 3: Financial Audit Trail
+
+**Challenge**: A public company must maintain auditable financial records that prove compliance with regulations.
+
+**Solution**:
+- Financial statements are notarized each quarter
+- CFO signs the statement, adding signature revision
+- External auditor witnesses the statement on blockchain
+- Audit trail is preserved permanently
+- Regulators can verify statement integrity independently
+
+**Benefits**: Regulatory compliance, reduced audit costs, defensible records, fraud prevention
+
+### Scenario 4: Government Permit Issuance
+
+**Challenge**: Building department issues permits that need to be verified by inspectors, contractors, and the public.
+
+**Solution**:
+- Permit applications are notarized when submitted
+- Permit approvals are signed by authorized officials
+- Approved permits are witnessed on blockchain
+- QR codes on physical permits link to Aqua chains
+- Anyone can verify permit authenticity and status
+
+**Benefits**: Fraud prevention, instant verification, public transparency, reduced administrative overhead
+
+## Integration Patterns
+
+### Document Management Systems
+Integrate Aqua Protocol into existing DMS platforms to automatically notarize important documents. When documents are finalized, trigger Aqua notarization via SDK.
+
+### E-Signature Platforms
+Enhance e-signature solutions with blockchain-anchored timestamps and cryptographic verification. Each signature becomes a verifiable revision in the Aqua chain.
+
+### CRM and Business Systems
+Add document verification to CRM, ERP, or custom business applications. Automatically notarize quotes, proposals, contracts, and invoices as they're generated.
+
+### Educational Systems
+Integrate with student information systems to automatically notarize transcripts, diplomas, and certificates as they're issued.
+
+### Government Systems
+Add Aqua Protocol to permit, license, and registration systems to provide instant verification capability to citizens and businesses.
+
+## Best Practices
+
+### Initial Notarization
+- Notarize documents as early as possible in their lifecycle
+- Include relevant metadata (document type, parties, purpose)
+- Use appropriate method (scalar for small docs, tree for large)
+- Sign immediately after creation to establish authorship
+
+### Multi-Party Documents
+- Establish signing order and communicate to all parties
+- Each party should verify previous signatures before adding theirs
+- Witness after all signatures are collected
+- Distribute complete Aqua chain to all parties
+
+### Long-Term Storage
+- Store Aqua chains separately from documents
+- Back up chains to multiple locations
+- Include Aqua chain with document when transmitting
+- Test verification periodically
+
+### Verification
+- Always verify documents received from third parties
+- Check entire revision chain, not just the latest revision
+- Verify blockchain witnesses for important documents
+- Validate signatures match expected signers
+
+### Privacy Considerations
+- Aqua chains don't contain document content by default
+- Share chains carefully as they prove document existence
+- Use private blockchains if public witnessing is problematic
+- Consider what metadata is included in revisions
+
+## Technical Advantages
+
+### Cryptographic Security
+- SHA3-256 hashing provides computational infeasibility of collision attacks
+- ECDSA signatures (65 bytes) provide 128-bit security level
+- Blockchain anchoring makes backdating mathematically impossible
+
+### Scalability
+- Document verification is O(n) where n is number of revisions
+- Merkle tree mode enables selective disclosure of large documents
+- Batch witnessing reduces blockchain transaction costs
+- Verification can happen offline after initial chain retrieval
+
+### Interoperability
+- JSON-based format enables easy integration
+- Multiple SDK options (Rust, JavaScript/TypeScript)
+- Platform-agnostic verification
+- Standard cryptographic primitives
+
+### Future-Proof
+- Protocol versioning supports evolution
+- Blockchain-agnostic witness mechanism
+- Multiple signature algorithm support
+- Extensible revision types
+
+## Common Questions
+
+**Q: What if the blockchain network goes offline?**
+A: Verification of existing documents still works using cryptographic verification of signatures and hashes. Only new witnessing requires blockchain access. Historical witnesses remain provable through transaction records.
+
+**Q: How long are documents stored?**
+A: Aqua Protocol stores only hashes and metadata, not document content. Document storage is separate and managed by users. Aqua chains are small (kilobytes) and can be stored indefinitely.
+
+**Q: Can witnesses be trusted?**
+A: Blockchain witnesses provide cryptographic proof of timestamp. As long as the blockchain network is secure and decentralized, witnesses cannot be backdated or falsified.
+
+**Q: What about privacy?**
+A: By default, only document hashes are stored on-chain, not content. The document itself remains private. Share Aqua chains carefully as they prove document existence at specific times.
+
+**Q: How do I revoke a document?**
+A: Add a revocation revision to the chain. The document history remains (for audit purposes), but new revisions can indicate revoked status.
+
+## See Also
+
+- [Supply Chain Tracking](/use_cases/supply-chain) - Apply similar verification to supply chain events
+- [Identity Attestation](/use_cases/identity-attestation) - Verify identity credentials
+- [Quick Start](/quick-start) - Get started with document verification
+- [Schema Reference](/schema_reference/introduction) - Technical specifications
+2e:["$","$L34",null,{"meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$35","reading_time":10,"word_count":1863},"content":"$36","previousDoc":{"title":"Version v4 (beta)","slug":"version-info"},"nextDoc":{"title":"Identity Attestation","slug":"use-cases/identity-attestation"},"version":"v4.0.0","slug":"use-cases/document-verification","config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}}}]
+2f:["$","$L37",null,{"items":[{"id":"core-capabilities","title":"Core Capabilities","level":2},{"id":"tamper-proof-verification","title":"Tamper-Proof Verification","level":3},{"id":"timestamp-authentication","title":"Timestamp Authentication","level":3},{"id":"permanent-audit-trails","title":"Permanent Audit Trails","level":3},{"id":"decentralized-validation","title":"Decentralized Validation","level":3},{"id":"use-cases-by-industry","title":"Use Cases by Industry","level":2},{"id":"legal-documents","title":"Legal Documents","level":3},{"id":"business-applications","title":"Business Applications","level":3},{"id":"educational-credentials","title":"Educational Credentials","level":3},{"id":"government-documents","title":"Government Documents","level":3},{"id":"key-benefits","title":"Key Benefits","level":2},{"id":"eliminate-single-points-of-failure","title":"Eliminate Single Points of Failure","level":3},{"id":"maintain-document-provenance","title":"Maintain Document Provenance","level":3},{"id":"cryptographic-verification","title":"Cryptographic Verification","level":3},{"id":"no-trusted-intermediaries-required","title":"No Trusted Intermediaries Required","level":3},{"id":"regulatory-compliance","title":"Regulatory Compliance","level":3},{"id":"cost-reduction","title":"Cost Reduction","level":3},{"id":"how-it-works","title":"How It Works","level":2},{"id":"1-document-notarization","title":"1. Document Notarization","level":3},{"id":"2-document-updates","title":"2. Document Updates","level":3},{"id":"3-multi-party-signing","title":"3. Multi-Party Signing","level":3},{"id":"4-verification","title":"4. Verification","level":3},{"id":"real-world-scenarios","title":"Real-World Scenarios","level":2},{"id":"scenario-1-legal-contract-management","title":"Scenario 1: Legal Contract Management","level":3},{"id":"scenario-2-academic-credential-verification","title":"Scenario 2: Academic Credential Verification","level":3},{"id":"scenario-3-financial-audit-trail","title":"Scenario 3: Financial Audit Trail","level":3},{"id":"scenario-4-government-permit-issuance","title":"Scenario 4: Government Permit Issuance","level":3},{"id":"integration-patterns","title":"Integration Patterns","level":2},{"id":"document-management-systems","title":"Document Management Systems","level":3},{"id":"e-signature-platforms","title":"E-Signature Platforms","level":3},{"id":"crm-and-business-systems","title":"CRM and Business Systems","level":3},{"id":"educational-systems","title":"Educational Systems","level":3},{"id":"government-systems","title":"Government Systems","level":3},{"id":"best-practices","title":"Best Practices","level":2},{"id":"initial-notarization","title":"Initial Notarization","level":3},{"id":"multi-party-documents","title":"Multi-Party Documents","level":3},{"id":"long-term-storage","title":"Long-Term Storage","level":3},{"id":"verification","title":"Verification","level":3},{"id":"privacy-considerations","title":"Privacy Considerations","level":3},{"id":"technical-advantages","title":"Technical Advantages","level":2},{"id":"cryptographic-security","title":"Cryptographic Security","level":3},{"id":"scalability","title":"Scalability","level":3},{"id":"interoperability","title":"Interoperability","level":3},{"id":"future-proof","title":"Future-Proof","level":3},{"id":"common-questions","title":"Common Questions","level":2},{"id":"see-also","title":"See Also","level":2}],"config":"$2e:props:config"}]
+30:["$","$L38",null,{}]
+31:["$","$L39",null,{}]
+32:["$","$L3a",null,{}]
+33:["$","$L3b",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@3c"}]}]
+3c:null
