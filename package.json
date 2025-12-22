@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "npm run generate:redirects && next build",
-    "dev": "next dev",
+    "dev": "next dev -p 4000",
     "lint": "eslint .",
     "start": "next start",
     "generate:redirects": "node scripts/generate-redirects.mjs",
