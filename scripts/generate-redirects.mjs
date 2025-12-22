@@ -35,6 +35,31 @@ function findMdxFiles(dir, baseDir = dir) {
 }
 
 /**
+ * Get all folders (categories) that need redirect pages
+ */
+function getFolderRedirects(mdxFiles, version) {
+  const folders = new Map() // folder path -> first doc in folder
+
+  for (const file of mdxFiles) {
+    const normalized = file.replace(/\\/g, '/')
+    const parts = normalized.split('/')
+
+    // For each level of nesting, track the folder
+    for (let i = 0; i < parts.length - 1; i++) {
+      const folderPath = parts.slice(0, i + 1).join('/')
+
+      if (!folders.has(folderPath)) {
+        // This is the first doc we've seen in this folder
+        const docSlug = normalized.replace(/\.mdx$/, '').replace(/\/index$/, '')
+        folders.set(folderPath, `/docs/${version}/${docSlug}`)
+      }
+    }
+  }
+
+  return folders
+}
+
+/**
  * Build redirect mappings from frontmatter
  */
 async function buildRedirects() {
@@ -44,10 +69,22 @@ async function buildRedirects() {
   })
 
   const redirects = []
+  const folderRedirects = []
 
   for (const version of versions) {
     const versionDir = path.join(DOCS_DIR, version)
     const mdxFiles = findMdxFiles(versionDir)
+
+    // Build folder redirects for static export
+    const folders = getFolderRedirects(mdxFiles, version)
+    for (const [folderPath, destination] of folders.entries()) {
+      const source = `/docs/${version}/${folderPath}`
+      folderRedirects.push({
+        source,
+        destination,
+        permanent: false, // Temporary redirect for folder access
+      })
+    }
 
     for (const file of mdxFiles) {
       const filePath = path.join(versionDir, file)
@@ -55,7 +92,7 @@ async function buildRedirects() {
       const { data } = matter(fileContents)
 
       if (data.redirect_from && Array.isArray(data.redirect_from)) {
-        const slug = file.replace(/\.mdx$/, "")
+        const slug = file.replace(/\.mdx$/, "").replace(/\\/g, '/')
         const destination = `/docs/${version}/${slug}`
 
         for (const source of data.redirect_from) {
@@ -69,19 +106,22 @@ async function buildRedirects() {
     }
   }
 
-  return redirects
+  return { redirects, folderRedirects }
 }
 
 /**
  * Generate redirects and write to a JSON file
  */
 async function main() {
-  const redirects = await buildRedirects()
-  
+  const { redirects, folderRedirects } = await buildRedirects()
+
+  const allRedirects = [...redirects, ...folderRedirects]
+
   const outputPath = path.join(__dirname, "..", "redirects.json")
-  fs.writeFileSync(outputPath, JSON.stringify(redirects, null, 2))
-  
-  console.log(`✅ Generated ${redirects.length} redirects`)
+  fs.writeFileSync(outputPath, JSON.stringify(allRedirects, null, 2))
+
+  console.log(`✅ Generated ${redirects.length} frontmatter redirects`)
+  console.log(`✅ Generated ${folderRedirects.length} folder redirects`)
   console.log(`📝 Saved to: ${outputPath}`)
 }
 

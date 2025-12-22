@@ -70,7 +70,7 @@ jobs:
       - name: Build Next.js documentation
         run: |
           echo "Building Next.js documentation..."
-          yarn build
+          yarn build:export
           echo "✓ Build completed"
         env:
           NODE_ENV: production
