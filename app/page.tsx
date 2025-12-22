@@ -1,9 +1,7 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { ArrowRight, Shield, Fingerprint, Lock, Github, Twitter, Linkedin, ExternalLink } from "lucide-react"
-import { getConfig } from "@/lib/config"
-import { Footer } from "@/components/docs/footer"
-import { getAssetPath } from "@/lib/utils"
+import { getConfig, getAssetPath } from "specra/lib"
+import { Button } from "specra/components"
 
 export default function HomePage() {
   // Server component - can use getConfig directly
@@ -54,7 +52,7 @@ export default function HomePage() {
           </p>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
             An open, public, and decentralized solution for data accountability and governance.
-            Built with modern cryptographic standards—no blockchain required.
+            Built with modern cryptographic standards.
           </p>
           <div className="flex items-center justify-center gap-4 pt-4">
             <Button asChild size="lg">

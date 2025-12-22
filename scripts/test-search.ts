@@ -1,5 +1,5 @@
 import { MeiliSearch } from "meilisearch"
-import { getConfig } from "../lib/config.server"
+import { getConfig } from "specra"
 
 async function testSearch() {
     const config = getConfig()

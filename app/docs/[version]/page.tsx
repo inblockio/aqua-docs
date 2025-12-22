@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation"
-import { getAllDocs, getVersions } from "@/lib/mdx"
+import { getCachedVersions, getCachedAllDocs } from "specra/lib"
 
 interface PageProps {
   params: Promise<{
@@ -8,7 +8,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const versions = getVersions()
+  const versions = getCachedVersions()
   return versions.map((version) => ({
     version,
   }))
@@ -16,7 +16,7 @@ export async function generateStaticParams() {
 
 export default async function VersionIndexPage({ params }: PageProps) {
   const { version } = await params
-  const docs = await getAllDocs(version)
+  const docs = await getCachedAllDocs(version)
 
   if (docs.length === 0) {
     redirect("/docs/v1.0.0")

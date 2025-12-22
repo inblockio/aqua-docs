@@ -2,8 +2,9 @@ import { MeiliSearch } from "meilisearch"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import { getConfig } from "../lib/config.server"
-import { extractSearchText } from "@/components/docs/componentTextProps"
+import { getConfig } from "specra"
+import { extractSearchText } from "specra/components"
+// import { extractSearchText } from "@/components/docs/componentTextProps"
 
 interface SearchDocument {
     id: string
@@ -14,6 +15,7 @@ interface SearchDocument {
     category?: string
     tags?: string[]
 }
+
 
 async function indexDocuments() {
     const config = getConfig()
