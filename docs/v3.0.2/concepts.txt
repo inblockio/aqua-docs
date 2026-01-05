@@ -1,0 +1,5767 @@
+1:"$Sreact.fragment"
+2:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"ConfigProvider"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"TabProvider"]
+4:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+5:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+6:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"VersionNotFound"]
+a:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+:HL["/_next/static/chunks/a06cf6f745569492.css","style"]
+:HL["/_next/static/chunks/b0e9cc9922d4f147.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"b":"JYW95fJa52-5pkdIpCduE","c":["","docs","v3.0.2","concepts"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v3.0.2","d"],{"children":[["slug","concepts","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/b0e9cc9922d4f147.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/eb22c92016909501.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/147f1793f0357acf.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L7",{},null,false,false]},["$L8",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
+c:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
+d:"$Sreact.suspense"
+f:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"ViewportBoundary"]
+11:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"MetadataBoundary"]
+7:["$","$1","c",{"children":["$Lb",null,["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]]}]
+8:["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}]
+9:["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$d",null,{"name":"Next.Metadata","children":"$L12"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+13:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"DocLoading"]
+14:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"DocLayoutWrapper"]
+15:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"Header"]
+16:T3875,
+# Aqua Protocol v3 Concepts
+
+Understanding the core concepts of Aqua Protocol v3 is essential for effectively using the SDK and building applications. This guide covers the fundamental ideas, terminology, and patterns used throughout the protocol.
+
+## AquaTree
+
+The **AquaTree** is the primary data structure in v3. It represents a complete, self-contained collection of revisions with their relationships and metadata.
+
+### Structure
+
+```typescript
+interface AquaTree {
+  revisions: Revisions      // All revisions indexed by hash
+  file_index: FileIndex     // Maps file hashes to filenames
+  tree?: RevisionTree       // Tree structure of revisions
+  treeMapping?: TreeMapping // Path mappings for navigation
+}
+```
+
+### Components
+
+#### 1. Revisions
+A flat map of all revisions, keyed by their verification hash:
+
+```typescript
+{
+  "0xabc123...": {
+    previous_verification_hash: "0xdef456...",
+    local_timestamp: "2024-01-01T12:00:00",
+    revision_type: "file",
+    // ... other fields
+  },
+  "0xdef456...": {
+    // ... another revision
+  }
+}
+```
+
+#### 2. File Index
+Maps file content hashes to filenames for reference:
+
+```typescript
+{
+  "0xfile_hash_1": "document.pdf",
+  "0xfile_hash_2": "image.png"
+}
+```
+
+#### 3. Tree Structure (Optional)
+Hierarchical representation showing parent-child relationships:
+
+```typescript
+{
+  hash: "0xabc123...",  // Root revision
+  children: [
+    {
+      hash: "0xdef456...",
+      children: [...]
+    }
+  ]
+}
+```
+
+#### 4. Tree Mapping (Optional)
+Path information for each revision:
+
+```typescript
+{
+  paths: {
+    "0xabc123": ["0xroot", "0xabc123"],
+    "0xdef456": ["0xroot", "0xabc123", "0xdef456"]
+  },
+  latestHash: "0xdef456..."  // Most recent revision
+}
+```
+
+## Revisions
+
+A **Revision** is a single entry in the AquaTree representing an operation or state change.
+
+### Common Fields
+
+All revisions share these base fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `previous_verification_hash` | string | Hash linking to previous revision (empty string for genesis) |
+| `local_timestamp` | string | ISO 8601 timestamp when revision was created |
+| `revision_type` | string | One of: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version with method: `https://aqua-protocol.org/docs/v3/schema_2 \| SHA256 \| Method: scalar/tree` |
+
+### Genesis Revision
+
+The **genesis revision** is the first revision in a chain:
+- `previous_verification_hash` is an empty string `""`
+- Typically a file or form revision
+- Establishes the initial state
+
+### Verification Hash
+
+Each revision has a unique **verification hash** computed from its canonical form:
+
+```typescript
+hash = SHA256(canonicalized_revision_data)
+```
+
+This hash serves as:
+- Unique identifier for the revision
+- Key in the revisions map
+- Reference in `previous_verification_hash` fields
+
+## Revision Types
+
+### 1. File Revision
+
+Stores file metadata and optionally content.
+
+**Purpose**: Document file presence and content integrity
+
+**Fields**:
+- `file_hash`: SHA256 hash of file content
+- `file_nonce`: Random nonce for uniqueness
+- `content`: Optional file content (text or binary)
+- `leaves`: Array of hashes (tree mode only)
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c"
+}
+```
+
+### 2. Form Revision
+
+Stores structured key-value data.
+
+**Purpose**: Capture form submissions, structured data, or metadata
+
+**Fields**:
+- `file_hash`: Hash of form data
+- `file_nonce`: Random nonce
+- `content`: Form data as key-value object
+- `leaves`: Array of hashes (tree mode only)
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0xabc123...",
+  "file_nonce": "0x123abc...",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "status": "approved"
+  },
+  "leaves": ["0x...", "0x...", "0x..."]
+}
+```
+
+### 3. Signature Revision
+
+Adds cryptographic signature to prove authenticity.
+
+**Purpose**: Authenticate revisions and establish authorship
+
+**Fields**:
+- `signature`: Signature value (format depends on type)
+- `signature_type`: One of `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"`
+- `signature_wallet_address`: Ethereum address (for cli/metamask)
+- `signature_public_key`: Public key (for p12)
+
+**Example (MetaMask)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "metamask",
+  "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f...",
+  "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+}
+```
+
+**Example (DID)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "did",
+  "signature": {
+    "payload": "eyJhbGciOi...",
+    "signatures": [{
+      "protected": "eyJhbGci...",
+      "signature": "..."
+    }]
+  }
+}
+```
+
+### 4. Witness Revision
+
+Anchors revision to external timestamping service.
+
+**Purpose**: Prove existence at specific time via blockchain or TSA
+
+**Fields**:
+- `witness_merkle_root`: Root hash of Merkle tree
+- `witness_timestamp`: Unix timestamp from witness service
+- `witness_network`: Network used (`"mainnet"`, `"sepolia"`, `"holesky"`, `"tsa"`, `"nostr"`)
+- `witness_smart_contract_address`: Contract address (Ethereum)
+- `witness_transaction_hash`: Transaction hash
+- `witness_sender_account_address`: Account that witnessed
+- `witness_merkle_proof`: Merkle proof array
+
+**Example (Ethereum)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xdef456...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "sepolia",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081...",
+  "witness_sender_account_address": "0x742d35Cc...",
+  "witness_merkle_proof": []
+}
+```
+
+### 5. Link Revision
+
+Connects to other AquaTree chains.
+
+**Purpose**: Establish relationships between separate chains
+
+**Fields**:
+- `link_type`: Type of link relationship (application-specific)
+- `link_verification_hashes`: Array of hashes from other chains
+- `link_file_hashes`: Array of corresponding file hashes
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:03:00",
+  "revision_type": "link",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "link_type": "dependency",
+  "link_verification_hashes": [
+    "0x111...",
+    "0x222...",
+    "0x333..."
+  ],
+  "link_file_hashes": [
+    "0xaaa...",
+    "0xbbb...",
+    "0xccc..."
+  ]
+}
+```
+
+## Methods: Scalar vs Tree
+
+V3 supports two canonicalization methods, specified in the version string.
+
+### Scalar Method
+
+**Format**: `Method: scalar`
+
+**How it works**:
+- Revision is serialized as-is
+- Hash computed directly from canonical JSON
+- Simple, straightforward
+
+**When to use**:
+- Small revisions
+- Simple file/form data
+- Quick operations
+
+**Example**:
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
+// No leaves field
+```
+
+### Tree Method
+
+**Format**: `Method: tree`
+
+**How it works**:
+- Content broken into key-value leaves
+- Each leaf hashed individually
+- Merkle tree constructed from leaves
+- Root becomes the verification hash
+
+**When to use**:
+- Large files or forms
+- Selective disclosure needed
+- Proof of specific fields
+
+**Example**:
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree"
+leaves: [
+  "0xhash_of_key_value_1",
+  "0xhash_of_key_value_2",
+  "0xhash_of_key_value_3"
+]
+```
+
+**Leaf Generation**:
+```typescript
+// For form data: { "name": "John", "email": "john@example.com" }
+leaves = [
+  SHA256("name:John"),
+  SHA256("email:john@example.com")
+]
+```
+
+## Chains and Trees
+
+### Linear Chain
+
+Simple sequence of revisions:
+
+```
+Genesis � Signature � Witness � Update � Signature � Witness
+```
+
+Each revision references the previous one.
+
+### Branching Tree
+
+Multiple paths from a common ancestor:
+
+```
+            Genesis
+               �
+          Signature
+             /  \
+        Branch A  Branch B
+           �        �
+        Update 1  Update 2
+```
+
+V3 supports branching, allowing parallel development paths.
+
+### Path Mapping
+
+The `treeMapping` provides paths to each revision:
+
+```typescript
+{
+  paths: {
+    "genesis_hash": ["genesis_hash"],
+    "sig_hash": ["genesis_hash", "sig_hash"],
+    "branch_a_hash": ["genesis_hash", "sig_hash", "branch_a_hash"],
+    "branch_b_hash": ["genesis_hash", "sig_hash", "branch_b_hash"]
+  },
+  latestHash: "branch_a_hash"  // Longest path
+}
+```
+
+## File Object
+
+Input format for creating revisions:
+
+```typescript
+interface FileObject {
+  fileName: string           // Display name
+  fileContent: string |      // Text content
+                AquaTree |   // Linked tree
+                Uint8Array | // Binary data
+                Record<string, string> | // Form data
+                object       // Structured data
+  path: string              // File path
+  fileSize?: number         // Size in bytes
+}
+```
+
+### Content Types
+
+**Text**: Plain text, HTML, JSON
+```typescript
+{
+  fileName: "doc.txt",
+  fileContent: "Hello World",
+  path: "/docs/doc.txt"
+}
+```
+
+**Binary**: Images, PDFs, any binary file
+```typescript
+{
+  fileName: "image.png",
+  fileContent: new Uint8Array([...]),
+  path: "/images/image.png"
+}
+```
+
+**Form**: Key-value structured data
+```typescript
+{
+  fileName: "form.json",
+  fileContent: {
+    "field1": "value1",
+    "field2": "value2"
+  },
+  path: "/forms/form.json"
+}
+```
+
+**Link**: Reference to another AquaTree
+```typescript
+{
+  fileName: "linked.json",
+  fileContent: anotherAquaTree,
+  path: "/links/linked.json"
+}
+```
+
+## Verification Graph
+
+Result of verification includes a graph structure:
+
+```typescript
+interface VerificationGraphData {
+  hash: string
+  previous_verification_hash: string
+  timestamp: string
+  isValidationSuccessful: boolean
+  revisionType: RevisionType
+  info: RevisionGraphInfo  // Type-specific details
+  verificationGraphData: VerificationGraphData[]      // Children
+  linkVerificationGraphData: VerificationGraphData[]  // Links
+}
+```
+
+### Traversing the Graph
+
+```typescript
+function printVerification(graph: VerificationGraphData, depth = 0) {
+  const indent = "  ".repeat(depth);
+  const status = graph.isValidationSuccessful ? "" : "";
+  console.log(`${indent}${status} ${graph.revisionType} (${graph.hash.slice(0, 10)}...)`);
+
+  // Traverse children
+  graph.verificationGraphData.forEach(child => {
+    printVerification(child, depth + 1);
+  });
+
+  // Traverse links
+  graph.linkVerificationGraphData.forEach(link => {
+    console.log(`${indent}  � Linked:`);
+    printVerification(link, depth + 2);
+  });
+}
+```
+
+## Credentials
+
+Configuration for signing and witnessing:
+
+```typescript
+interface CredentialsData {
+  mnemonic: string             // BIP39 mnemonic for CLI signing
+  nostr_sk: string             // Nostr secret key
+  did_key: string              // DID key for DID signing
+  alchemy_key: string          // Alchemy API key for verification
+  witness_eth_network: string  // "mainnet", "sepolia", "holesky"
+  witness_method: string       // "cli" or "metamask"
+  p12_password?: string        // P12 certificate password
+  p12_content?: string         // P12 certificate content
+}
+```
+
+## Logging
+
+V3 uses typed logging throughout:
+
+```typescript
+enum LogType {
+  SUCCESS = "success",
+  INFO = "info",
+  ERROR = "error",
+  WARNING = "warning",
+  HINT = "hint",
+  DEBUGDATA = "debug_data",
+  // ... revision types with emojis
+  FILE = "file",      // =�
+  LINK = "link",      // =
+  SIGNATURE = "signature",  // =
+  WITNESS = "witness",      // =@
+  FORM = "form"            // =�
+}
+```
+
+Each operation returns logs for debugging and user feedback.
+
+## Best Practices
+
+### 1. Genesis Patterns
+
+**Single File**:
+```
+File Genesis � Sign � Witness
+```
+
+**Form Data**:
+```
+Form Genesis � Sign � Witness
+```
+
+### 2. Update Patterns
+
+**Content Update**:
+```
+... � New File Revision � Sign � Witness
+```
+
+**Multi-Party**:
+```
+... � Sign (Party 1) � Sign (Party 2) � Witness
+```
+
+### 3. Linking Patterns
+
+**Dependencies**:
+```
+Main Document � Link (to dependencies) � Sign � Witness
+```
+
+**Aggregation**:
+```
+Component 1 
+Component 2 � Aggregation Link � Sign � Witness
+Component 3 
+```
+
+### 4. Verification Patterns
+
+**Full Chain**:
+```typescript
+const result = await aquafier.verifyRevisionChain(aquaTree);
+```
+
+**Specific Revision**:
+```typescript
+const revision = aquaTree.revisions[specificHash];
+// Manually verify hash computation
+```
+
+### 5. Storage Patterns
+
+**Database**: Store serialized AquaTree JSON
+```typescript
+const json = JSON.stringify(aquaTree);
+db.save(documentId, json);
+```
+
+**File System**: Save as .aqua.json file
+```typescript
+fs.writeFileSync('document.aqua.json', JSON.stringify(aquaTree, null, 2));
+```
+
+## Common Patterns
+
+### Document Lifecycle
+
+```
+1. Create � File Genesis
+2. Review � Sign (Reviewer)
+3. Approve � Sign (Approver)
+4. Timestamp � Witness (Ethereum)
+5. Archive � Store AquaTree
+6. Verify � Check entire chain
+```
+
+### Multi-Document Project
+
+```
+1. Create each document � Individual AquaTrees
+2. Link together � Link Revision in main tree
+3. Sign project � Sign main tree
+4. Witness � Witness main tree
+5. All documents timestamped through link
+```
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Overview and quick start
+- [Tooling](/previous_versions/version_3/tooling) - SDK API reference
+- [Schema Reference](/previous_versions/version_3/schema) - Detailed specifications
+17:T3875,
+# Aqua Protocol v3 Concepts
+
+Understanding the core concepts of Aqua Protocol v3 is essential for effectively using the SDK and building applications. This guide covers the fundamental ideas, terminology, and patterns used throughout the protocol.
+
+## AquaTree
+
+The **AquaTree** is the primary data structure in v3. It represents a complete, self-contained collection of revisions with their relationships and metadata.
+
+### Structure
+
+```typescript
+interface AquaTree {
+  revisions: Revisions      // All revisions indexed by hash
+  file_index: FileIndex     // Maps file hashes to filenames
+  tree?: RevisionTree       // Tree structure of revisions
+  treeMapping?: TreeMapping // Path mappings for navigation
+}
+```
+
+### Components
+
+#### 1. Revisions
+A flat map of all revisions, keyed by their verification hash:
+
+```typescript
+{
+  "0xabc123...": {
+    previous_verification_hash: "0xdef456...",
+    local_timestamp: "2024-01-01T12:00:00",
+    revision_type: "file",
+    // ... other fields
+  },
+  "0xdef456...": {
+    // ... another revision
+  }
+}
+```
+
+#### 2. File Index
+Maps file content hashes to filenames for reference:
+
+```typescript
+{
+  "0xfile_hash_1": "document.pdf",
+  "0xfile_hash_2": "image.png"
+}
+```
+
+#### 3. Tree Structure (Optional)
+Hierarchical representation showing parent-child relationships:
+
+```typescript
+{
+  hash: "0xabc123...",  // Root revision
+  children: [
+    {
+      hash: "0xdef456...",
+      children: [...]
+    }
+  ]
+}
+```
+
+#### 4. Tree Mapping (Optional)
+Path information for each revision:
+
+```typescript
+{
+  paths: {
+    "0xabc123": ["0xroot", "0xabc123"],
+    "0xdef456": ["0xroot", "0xabc123", "0xdef456"]
+  },
+  latestHash: "0xdef456..."  // Most recent revision
+}
+```
+
+## Revisions
+
+A **Revision** is a single entry in the AquaTree representing an operation or state change.
+
+### Common Fields
+
+All revisions share these base fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `previous_verification_hash` | string | Hash linking to previous revision (empty string for genesis) |
+| `local_timestamp` | string | ISO 8601 timestamp when revision was created |
+| `revision_type` | string | One of: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version with method: `https://aqua-protocol.org/docs/v3/schema_2 \| SHA256 \| Method: scalar/tree` |
+
+### Genesis Revision
+
+The **genesis revision** is the first revision in a chain:
+- `previous_verification_hash` is an empty string `""`
+- Typically a file or form revision
+- Establishes the initial state
+
+### Verification Hash
+
+Each revision has a unique **verification hash** computed from its canonical form:
+
+```typescript
+hash = SHA256(canonicalized_revision_data)
+```
+
+This hash serves as:
+- Unique identifier for the revision
+- Key in the revisions map
+- Reference in `previous_verification_hash` fields
+
+## Revision Types
+
+### 1. File Revision
+
+Stores file metadata and optionally content.
+
+**Purpose**: Document file presence and content integrity
+
+**Fields**:
+- `file_hash`: SHA256 hash of file content
+- `file_nonce`: Random nonce for uniqueness
+- `content`: Optional file content (text or binary)
+- `leaves`: Array of hashes (tree mode only)
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c"
+}
+```
+
+### 2. Form Revision
+
+Stores structured key-value data.
+
+**Purpose**: Capture form submissions, structured data, or metadata
+
+**Fields**:
+- `file_hash`: Hash of form data
+- `file_nonce`: Random nonce
+- `content`: Form data as key-value object
+- `leaves`: Array of hashes (tree mode only)
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0xabc123...",
+  "file_nonce": "0x123abc...",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "status": "approved"
+  },
+  "leaves": ["0x...", "0x...", "0x..."]
+}
+```
+
+### 3. Signature Revision
+
+Adds cryptographic signature to prove authenticity.
+
+**Purpose**: Authenticate revisions and establish authorship
+
+**Fields**:
+- `signature`: Signature value (format depends on type)
+- `signature_type`: One of `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"`
+- `signature_wallet_address`: Ethereum address (for cli/metamask)
+- `signature_public_key`: Public key (for p12)
+
+**Example (MetaMask)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "metamask",
+  "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f...",
+  "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+}
+```
+
+**Example (DID)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "did",
+  "signature": {
+    "payload": "eyJhbGciOi...",
+    "signatures": [{
+      "protected": "eyJhbGci...",
+      "signature": "..."
+    }]
+  }
+}
+```
+
+### 4. Witness Revision
+
+Anchors revision to external timestamping service.
+
+**Purpose**: Prove existence at specific time via blockchain or TSA
+
+**Fields**:
+- `witness_merkle_root`: Root hash of Merkle tree
+- `witness_timestamp`: Unix timestamp from witness service
+- `witness_network`: Network used (`"mainnet"`, `"sepolia"`, `"holesky"`, `"tsa"`, `"nostr"`)
+- `witness_smart_contract_address`: Contract address (Ethereum)
+- `witness_transaction_hash`: Transaction hash
+- `witness_sender_account_address`: Account that witnessed
+- `witness_merkle_proof`: Merkle proof array
+
+**Example (Ethereum)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xdef456...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "sepolia",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081...",
+  "witness_sender_account_address": "0x742d35Cc...",
+  "witness_merkle_proof": []
+}
+```
+
+### 5. Link Revision
+
+Connects to other AquaTree chains.
+
+**Purpose**: Establish relationships between separate chains
+
+**Fields**:
+- `link_type`: Type of link relationship (application-specific)
+- `link_verification_hashes`: Array of hashes from other chains
+- `link_file_hashes`: Array of corresponding file hashes
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:03:00",
+  "revision_type": "link",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "link_type": "dependency",
+  "link_verification_hashes": [
+    "0x111...",
+    "0x222...",
+    "0x333..."
+  ],
+  "link_file_hashes": [
+    "0xaaa...",
+    "0xbbb...",
+    "0xccc..."
+  ]
+}
+```
+
+## Methods: Scalar vs Tree
+
+V3 supports two canonicalization methods, specified in the version string.
+
+### Scalar Method
+
+**Format**: `Method: scalar`
+
+**How it works**:
+- Revision is serialized as-is
+- Hash computed directly from canonical JSON
+- Simple, straightforward
+
+**When to use**:
+- Small revisions
+- Simple file/form data
+- Quick operations
+
+**Example**:
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
+// No leaves field
+```
+
+### Tree Method
+
+**Format**: `Method: tree`
+
+**How it works**:
+- Content broken into key-value leaves
+- Each leaf hashed individually
+- Merkle tree constructed from leaves
+- Root becomes the verification hash
+
+**When to use**:
+- Large files or forms
+- Selective disclosure needed
+- Proof of specific fields
+
+**Example**:
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree"
+leaves: [
+  "0xhash_of_key_value_1",
+  "0xhash_of_key_value_2",
+  "0xhash_of_key_value_3"
+]
+```
+
+**Leaf Generation**:
+```typescript
+// For form data: { "name": "John", "email": "john@example.com" }
+leaves = [
+  SHA256("name:John"),
+  SHA256("email:john@example.com")
+]
+```
+
+## Chains and Trees
+
+### Linear Chain
+
+Simple sequence of revisions:
+
+```
+Genesis � Signature � Witness � Update � Signature � Witness
+```
+
+Each revision references the previous one.
+
+### Branching Tree
+
+Multiple paths from a common ancestor:
+
+```
+            Genesis
+               �
+          Signature
+             /  \
+        Branch A  Branch B
+           �        �
+        Update 1  Update 2
+```
+
+V3 supports branching, allowing parallel development paths.
+
+### Path Mapping
+
+The `treeMapping` provides paths to each revision:
+
+```typescript
+{
+  paths: {
+    "genesis_hash": ["genesis_hash"],
+    "sig_hash": ["genesis_hash", "sig_hash"],
+    "branch_a_hash": ["genesis_hash", "sig_hash", "branch_a_hash"],
+    "branch_b_hash": ["genesis_hash", "sig_hash", "branch_b_hash"]
+  },
+  latestHash: "branch_a_hash"  // Longest path
+}
+```
+
+## File Object
+
+Input format for creating revisions:
+
+```typescript
+interface FileObject {
+  fileName: string           // Display name
+  fileContent: string |      // Text content
+                AquaTree |   // Linked tree
+                Uint8Array | // Binary data
+                Record<string, string> | // Form data
+                object       // Structured data
+  path: string              // File path
+  fileSize?: number         // Size in bytes
+}
+```
+
+### Content Types
+
+**Text**: Plain text, HTML, JSON
+```typescript
+{
+  fileName: "doc.txt",
+  fileContent: "Hello World",
+  path: "/docs/doc.txt"
+}
+```
+
+**Binary**: Images, PDFs, any binary file
+```typescript
+{
+  fileName: "image.png",
+  fileContent: new Uint8Array([...]),
+  path: "/images/image.png"
+}
+```
+
+**Form**: Key-value structured data
+```typescript
+{
+  fileName: "form.json",
+  fileContent: {
+    "field1": "value1",
+    "field2": "value2"
+  },
+  path: "/forms/form.json"
+}
+```
+
+**Link**: Reference to another AquaTree
+```typescript
+{
+  fileName: "linked.json",
+  fileContent: anotherAquaTree,
+  path: "/links/linked.json"
+}
+```
+
+## Verification Graph
+
+Result of verification includes a graph structure:
+
+```typescript
+interface VerificationGraphData {
+  hash: string
+  previous_verification_hash: string
+  timestamp: string
+  isValidationSuccessful: boolean
+  revisionType: RevisionType
+  info: RevisionGraphInfo  // Type-specific details
+  verificationGraphData: VerificationGraphData[]      // Children
+  linkVerificationGraphData: VerificationGraphData[]  // Links
+}
+```
+
+### Traversing the Graph
+
+```typescript
+function printVerification(graph: VerificationGraphData, depth = 0) {
+  const indent = "  ".repeat(depth);
+  const status = graph.isValidationSuccessful ? "" : "";
+  console.log(`${indent}${status} ${graph.revisionType} (${graph.hash.slice(0, 10)}...)`);
+
+  // Traverse children
+  graph.verificationGraphData.forEach(child => {
+    printVerification(child, depth + 1);
+  });
+
+  // Traverse links
+  graph.linkVerificationGraphData.forEach(link => {
+    console.log(`${indent}  � Linked:`);
+    printVerification(link, depth + 2);
+  });
+}
+```
+
+## Credentials
+
+Configuration for signing and witnessing:
+
+```typescript
+interface CredentialsData {
+  mnemonic: string             // BIP39 mnemonic for CLI signing
+  nostr_sk: string             // Nostr secret key
+  did_key: string              // DID key for DID signing
+  alchemy_key: string          // Alchemy API key for verification
+  witness_eth_network: string  // "mainnet", "sepolia", "holesky"
+  witness_method: string       // "cli" or "metamask"
+  p12_password?: string        // P12 certificate password
+  p12_content?: string         // P12 certificate content
+}
+```
+
+## Logging
+
+V3 uses typed logging throughout:
+
+```typescript
+enum LogType {
+  SUCCESS = "success",
+  INFO = "info",
+  ERROR = "error",
+  WARNING = "warning",
+  HINT = "hint",
+  DEBUGDATA = "debug_data",
+  // ... revision types with emojis
+  FILE = "file",      // =�
+  LINK = "link",      // =
+  SIGNATURE = "signature",  // =
+  WITNESS = "witness",      // =@
+  FORM = "form"            // =�
+}
+```
+
+Each operation returns logs for debugging and user feedback.
+
+## Best Practices
+
+### 1. Genesis Patterns
+
+**Single File**:
+```
+File Genesis � Sign � Witness
+```
+
+**Form Data**:
+```
+Form Genesis � Sign � Witness
+```
+
+### 2. Update Patterns
+
+**Content Update**:
+```
+... � New File Revision � Sign � Witness
+```
+
+**Multi-Party**:
+```
+... � Sign (Party 1) � Sign (Party 2) � Witness
+```
+
+### 3. Linking Patterns
+
+**Dependencies**:
+```
+Main Document � Link (to dependencies) � Sign � Witness
+```
+
+**Aggregation**:
+```
+Component 1 
+Component 2 � Aggregation Link � Sign � Witness
+Component 3 
+```
+
+### 4. Verification Patterns
+
+**Full Chain**:
+```typescript
+const result = await aquafier.verifyRevisionChain(aquaTree);
+```
+
+**Specific Revision**:
+```typescript
+const revision = aquaTree.revisions[specificHash];
+// Manually verify hash computation
+```
+
+### 5. Storage Patterns
+
+**Database**: Store serialized AquaTree JSON
+```typescript
+const json = JSON.stringify(aquaTree);
+db.save(documentId, json);
+```
+
+**File System**: Save as .aqua.json file
+```typescript
+fs.writeFileSync('document.aqua.json', JSON.stringify(aquaTree, null, 2));
+```
+
+## Common Patterns
+
+### Document Lifecycle
+
+```
+1. Create � File Genesis
+2. Review � Sign (Reviewer)
+3. Approve � Sign (Approver)
+4. Timestamp � Witness (Ethereum)
+5. Archive � Store AquaTree
+6. Verify � Check entire chain
+```
+
+### Multi-Document Project
+
+```
+1. Create each document � Individual AquaTrees
+2. Link together � Link Revision in main tree
+3. Sign project � Sign main tree
+4. Witness � Witness main tree
+5. All documents timestamped through link
+```
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Overview and quick start
+- [Tooling](/previous_versions/version_3/tooling) - SDK API reference
+- [Schema Reference](/previous_versions/version_3/schema) - Detailed specifications
+18:T2045,
+# Aqua Protocol v3
+
+Aqua Protocol v3 is a mature version of the protocol with a comprehensive JavaScript/TypeScript SDK. It provides a robust framework for creating verifiable revision chains with support for files, forms, signatures, witnesses, and links.
+
+## Overview
+
+Version 3 represents a stable, production-ready implementation of the Aqua Protocol specifically designed for JavaScript/TypeScript environments. It offers:
+
+- **Cross-Platform Support**: Node.js, Web browsers, and React Native
+- **Type Safety**: Full TypeScript support with comprehensive type definitions
+- **Flexible Revision Types**: File, Form, Signature, Witness, and Link revisions
+- **Multiple Signing Methods**: CLI, MetaMask, DID, and P12 certificate signing
+- **Multi-Network Witnessing**: Ethereum (mainnet, Sepolia, Holesky), Nostr, and TSA
+- **Tree Structure**: Native support for revision trees and path mapping
+
+## Version Identifier
+
+```
+https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar/tree
+```
+
+## Core Components
+
+### AquaTree Structure
+
+The AquaTree is the core data structure in v3:
+
+```typescript
+interface AquaTree {
+  revisions: Revisions      // Map of revision hash to revision data
+  file_index: FileIndex     // Map of file hash to filename
+  tree?: RevisionTree       // Tree structure representation
+  treeMapping?: TreeMapping // Path mappings for navigation
+}
+```
+
+### Revision Types
+
+V3 supports five types of revisions:
+
+1. **File Revision** - Store file metadata and content hashes
+2. **Form Revision** - Store structured form data with key-value pairs
+3. **Signature Revision** - Add cryptographic signatures
+4. **Witness Revision** - Timestamp via blockchain or TSA
+5. **Link Revision** - Connect to other AquaTree chains
+
+## Key Features
+
+### 1. Dual Mode Support
+
+**Scalar Mode**: Direct hash computation
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
+```
+
+**Tree Mode**: Merkle tree-based with leaves
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree"
+leaves: ["hash1", "hash2", "hash3", ...]
+```
+
+### 2. Platform Flexibility
+
+```typescript
+// Node.js
+import Aquafier from 'aqua-js-sdk';
+
+// Web Browser
+import Aquafier from 'aqua-js-sdk/web';
+
+// React Native
+import Aquafier from 'aqua-js-sdk/react-native';
+```
+
+### 3. Comprehensive Signing
+
+- **CLI Signing**: Uses mnemonic phrase
+- **MetaMask**: Browser extension integration
+- **DID**: Decentralized identifiers with JWS
+- **P12**: Certificate-based signing
+- **Inline**: Pre-computed signatures
+
+### 4. Multi-Network Witnessing
+
+- **Ethereum**: Mainnet, Sepolia, Holesky testnets
+- **Nostr**: Decentralized social network
+- **TSA**: RFC 3161 timestamp authorities
+
+### 5. Content Flexibility
+
+File content can be:
+- **Text**: HTML, plain text, JSON
+- **Binary**: Images, PDFs, any file type (as Uint8Array)
+- **Forms**: Key-value structured data
+- **Links**: References to other AquaTrees
+
+## Quick Start Example
+
+```typescript
+import Aquafier, { FileObject } from 'aqua-js-sdk';
+
+// Initialize Aquafier
+const aquafier = new Aquafier();
+
+// Create file object
+const fileObject: FileObject = {
+  fileName: "document.txt",
+  fileContent: "Important document content",
+  path: "/documents/document.txt"
+};
+
+// Create genesis revision
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  console.error("Error creating revision");
+  result.logs.forEach(log => console.log(log));
+  return;
+}
+
+// Access the AquaTree
+const aquaTree = result.data.aquaTree;
+
+// Sign the revision
+const signResult = await aquafier.signRevision(
+  aquaTree,
+  "cli",  // or "metamask", "did", "p12"
+  credentials
+);
+
+// Witness to blockchain
+const witnessResult = await aquafier.witnessRevision(
+  signResult.data.aquaTree,
+  "eth",  // or "nostr", "tsa"
+  witnessConfig
+);
+
+// Save aquaTree JSON for storage/transmission
+const json = JSON.stringify(witnessResult.data.aquaTree);
+```
+
+## Architecture
+
+### Revision Chain Structure
+
+```
+Genesis Revision (File/Form)
+    ↓ previous_verification_hash
+Signature Revision
+    ↓ previous_verification_hash
+Witness Revision
+    ↓ previous_verification_hash
+New Content Revision
+    ↓ previous_verification_hash
+...
+```
+
+### Tree Branching
+
+V3 supports tree structures for branching revisions:
+
+```
+        Genesis
+           ↓
+      Signature
+         /  \
+    Branch A  Branch B
+       ↓        ↓
+    Update 1  Update 2
+```
+
+## Common Fields
+
+All revisions share these core fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `previous_verification_hash` | string | Hash of previous revision (empty for genesis) |
+| `local_timestamp` | string | ISO 8601 timestamp |
+| `revision_type` | string | Type: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version and method identifier |
+
+## Installation
+
+```bash
+npm install aqua-js-sdk
+```
+
+### Requirements
+
+- Node.js v20.9.0 or later
+- TypeScript 5.3+ (optional, for type checking)
+
+### Peer Dependencies
+
+- `ethers` ^6.7.1 (for Ethereum operations)
+- `react-native-fs` (optional, for React Native)
+- `@react-native-async-storage/async-storage` (optional, for React Native)
+
+## Use Cases
+
+### Document Notarization
+```
+Document → Sign (Author) → Witness (Ethereum) → Verifiable Proof
+```
+
+### Form Data Accountability
+```
+Form Submission → Sign (User) → Witness → Audit Trail
+```
+
+### Multi-Party Approval
+```
+Document → Sign (Party 1) → Sign (Party 2) → Witness → Approved
+```
+
+### Supply Chain Tracking
+```
+Event 1 → Link to Event 2 → Link to Event 3 → Complete Chain
+```
+
+### Content Versioning
+```
+Version 1 → Update → Version 2 → Update → Version 3 → History
+```
+
+## Verification
+
+V3 includes comprehensive verification capabilities:
+
+```typescript
+// Verify entire chain
+const verification = await aquafier.verifyRevisionChain(aquaTree);
+
+// Check results
+verification.verificationGraphData.forEach(node => {
+  console.log(`${node.revisionType}: ${node.isValidationSuccessful ? '✓' : '✗'}`);
+});
+```
+
+## Key Differences from v4
+
+| Feature | v3 | v4 |
+|---------|----|----|
+| Language | JavaScript/TypeScript | Rust (with WASM support) |
+| Template System | No formal templates | Template revisions with JSON Schema |
+| Signature Types | 4 types (CLI, MetaMask, DID, P12) | 3 types (RSA, EIP-191, DID:JWS) |
+| Version Format | URL with embedded method | URL only, method as field |
+| Form Support | Native form revision type | Forms as object revisions with templates |
+| Platform Focus | Web/Node.js/React Native | Cross-platform with WASM |
+
+## Migration Considerations
+
+### From v3 to v4
+
+- **Breaking Changes**: Schema structure differs significantly
+- **No Direct Migration**: v3 and v4 chains are not directly compatible
+- **Use Case**: Continue using v3 for JavaScript-first projects
+- **Future**: v4 offers more structure and cross-platform consistency
+
+### When to Use v3
+
+- Existing JavaScript/TypeScript projects
+- React Native applications
+- Need for form revision type
+- Mature, stable implementation required
+- Quick prototyping and development
+
+### When to Use v4
+
+- New projects requiring maximum interoperability
+- Need for formal schema validation
+- Rust or multi-language environments
+- WASM compilation for web
+- Template-based data structures
+
+## Community and Support
+
+- **GitHub**: [aqua-verifier-js-lib](https://github.com/inblockio/aqua-verifier-js-lib)
+- **Issues**: Report bugs and request features on GitHub
+- **Documentation**: Examples in `/examples` directory
+
+## Next Steps
+
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts and terminology
+- [Tooling](/previous_versions/version_3/tooling) - SDK usage and API reference
+- [Schema Reference](/previous_versions/version_3/schema) - Detailed revision specifications
+- [Examples](https://github.com/inblockio/aqua-verifier-js-lib/tree/main/examples) - Code examples
+
+## Version History
+
+- **3.2.1**: Current stable release
+- **3.2.0**: React Native support added
+- **3.1.x**: Performance improvements
+- **3.0.0**: Major release with TypeScript rewrite
+
+For detailed changelog, see the [GitHub releases](https://github.com/inblockio/aqua-verifier-js-lib/releases).
+19:T2045,
+# Aqua Protocol v3
+
+Aqua Protocol v3 is a mature version of the protocol with a comprehensive JavaScript/TypeScript SDK. It provides a robust framework for creating verifiable revision chains with support for files, forms, signatures, witnesses, and links.
+
+## Overview
+
+Version 3 represents a stable, production-ready implementation of the Aqua Protocol specifically designed for JavaScript/TypeScript environments. It offers:
+
+- **Cross-Platform Support**: Node.js, Web browsers, and React Native
+- **Type Safety**: Full TypeScript support with comprehensive type definitions
+- **Flexible Revision Types**: File, Form, Signature, Witness, and Link revisions
+- **Multiple Signing Methods**: CLI, MetaMask, DID, and P12 certificate signing
+- **Multi-Network Witnessing**: Ethereum (mainnet, Sepolia, Holesky), Nostr, and TSA
+- **Tree Structure**: Native support for revision trees and path mapping
+
+## Version Identifier
+
+```
+https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar/tree
+```
+
+## Core Components
+
+### AquaTree Structure
+
+The AquaTree is the core data structure in v3:
+
+```typescript
+interface AquaTree {
+  revisions: Revisions      // Map of revision hash to revision data
+  file_index: FileIndex     // Map of file hash to filename
+  tree?: RevisionTree       // Tree structure representation
+  treeMapping?: TreeMapping // Path mappings for navigation
+}
+```
+
+### Revision Types
+
+V3 supports five types of revisions:
+
+1. **File Revision** - Store file metadata and content hashes
+2. **Form Revision** - Store structured form data with key-value pairs
+3. **Signature Revision** - Add cryptographic signatures
+4. **Witness Revision** - Timestamp via blockchain or TSA
+5. **Link Revision** - Connect to other AquaTree chains
+
+## Key Features
+
+### 1. Dual Mode Support
+
+**Scalar Mode**: Direct hash computation
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
+```
+
+**Tree Mode**: Merkle tree-based with leaves
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree"
+leaves: ["hash1", "hash2", "hash3", ...]
+```
+
+### 2. Platform Flexibility
+
+```typescript
+// Node.js
+import Aquafier from 'aqua-js-sdk';
+
+// Web Browser
+import Aquafier from 'aqua-js-sdk/web';
+
+// React Native
+import Aquafier from 'aqua-js-sdk/react-native';
+```
+
+### 3. Comprehensive Signing
+
+- **CLI Signing**: Uses mnemonic phrase
+- **MetaMask**: Browser extension integration
+- **DID**: Decentralized identifiers with JWS
+- **P12**: Certificate-based signing
+- **Inline**: Pre-computed signatures
+
+### 4. Multi-Network Witnessing
+
+- **Ethereum**: Mainnet, Sepolia, Holesky testnets
+- **Nostr**: Decentralized social network
+- **TSA**: RFC 3161 timestamp authorities
+
+### 5. Content Flexibility
+
+File content can be:
+- **Text**: HTML, plain text, JSON
+- **Binary**: Images, PDFs, any file type (as Uint8Array)
+- **Forms**: Key-value structured data
+- **Links**: References to other AquaTrees
+
+## Quick Start Example
+
+```typescript
+import Aquafier, { FileObject } from 'aqua-js-sdk';
+
+// Initialize Aquafier
+const aquafier = new Aquafier();
+
+// Create file object
+const fileObject: FileObject = {
+  fileName: "document.txt",
+  fileContent: "Important document content",
+  path: "/documents/document.txt"
+};
+
+// Create genesis revision
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  console.error("Error creating revision");
+  result.logs.forEach(log => console.log(log));
+  return;
+}
+
+// Access the AquaTree
+const aquaTree = result.data.aquaTree;
+
+// Sign the revision
+const signResult = await aquafier.signRevision(
+  aquaTree,
+  "cli",  // or "metamask", "did", "p12"
+  credentials
+);
+
+// Witness to blockchain
+const witnessResult = await aquafier.witnessRevision(
+  signResult.data.aquaTree,
+  "eth",  // or "nostr", "tsa"
+  witnessConfig
+);
+
+// Save aquaTree JSON for storage/transmission
+const json = JSON.stringify(witnessResult.data.aquaTree);
+```
+
+## Architecture
+
+### Revision Chain Structure
+
+```
+Genesis Revision (File/Form)
+    ↓ previous_verification_hash
+Signature Revision
+    ↓ previous_verification_hash
+Witness Revision
+    ↓ previous_verification_hash
+New Content Revision
+    ↓ previous_verification_hash
+...
+```
+
+### Tree Branching
+
+V3 supports tree structures for branching revisions:
+
+```
+        Genesis
+           ↓
+      Signature
+         /  \
+    Branch A  Branch B
+       ↓        ↓
+    Update 1  Update 2
+```
+
+## Common Fields
+
+All revisions share these core fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `previous_verification_hash` | string | Hash of previous revision (empty for genesis) |
+| `local_timestamp` | string | ISO 8601 timestamp |
+| `revision_type` | string | Type: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version and method identifier |
+
+## Installation
+
+```bash
+npm install aqua-js-sdk
+```
+
+### Requirements
+
+- Node.js v20.9.0 or later
+- TypeScript 5.3+ (optional, for type checking)
+
+### Peer Dependencies
+
+- `ethers` ^6.7.1 (for Ethereum operations)
+- `react-native-fs` (optional, for React Native)
+- `@react-native-async-storage/async-storage` (optional, for React Native)
+
+## Use Cases
+
+### Document Notarization
+```
+Document → Sign (Author) → Witness (Ethereum) → Verifiable Proof
+```
+
+### Form Data Accountability
+```
+Form Submission → Sign (User) → Witness → Audit Trail
+```
+
+### Multi-Party Approval
+```
+Document → Sign (Party 1) → Sign (Party 2) → Witness → Approved
+```
+
+### Supply Chain Tracking
+```
+Event 1 → Link to Event 2 → Link to Event 3 → Complete Chain
+```
+
+### Content Versioning
+```
+Version 1 → Update → Version 2 → Update → Version 3 → History
+```
+
+## Verification
+
+V3 includes comprehensive verification capabilities:
+
+```typescript
+// Verify entire chain
+const verification = await aquafier.verifyRevisionChain(aquaTree);
+
+// Check results
+verification.verificationGraphData.forEach(node => {
+  console.log(`${node.revisionType}: ${node.isValidationSuccessful ? '✓' : '✗'}`);
+});
+```
+
+## Key Differences from v4
+
+| Feature | v3 | v4 |
+|---------|----|----|
+| Language | JavaScript/TypeScript | Rust (with WASM support) |
+| Template System | No formal templates | Template revisions with JSON Schema |
+| Signature Types | 4 types (CLI, MetaMask, DID, P12) | 3 types (RSA, EIP-191, DID:JWS) |
+| Version Format | URL with embedded method | URL only, method as field |
+| Form Support | Native form revision type | Forms as object revisions with templates |
+| Platform Focus | Web/Node.js/React Native | Cross-platform with WASM |
+
+## Migration Considerations
+
+### From v3 to v4
+
+- **Breaking Changes**: Schema structure differs significantly
+- **No Direct Migration**: v3 and v4 chains are not directly compatible
+- **Use Case**: Continue using v3 for JavaScript-first projects
+- **Future**: v4 offers more structure and cross-platform consistency
+
+### When to Use v3
+
+- Existing JavaScript/TypeScript projects
+- React Native applications
+- Need for form revision type
+- Mature, stable implementation required
+- Quick prototyping and development
+
+### When to Use v4
+
+- New projects requiring maximum interoperability
+- Need for formal schema validation
+- Rust or multi-language environments
+- WASM compilation for web
+- Template-based data structures
+
+## Community and Support
+
+- **GitHub**: [aqua-verifier-js-lib](https://github.com/inblockio/aqua-verifier-js-lib)
+- **Issues**: Report bugs and request features on GitHub
+- **Documentation**: Examples in `/examples` directory
+
+## Next Steps
+
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts and terminology
+- [Tooling](/previous_versions/version_3/tooling) - SDK usage and API reference
+- [Schema Reference](/previous_versions/version_3/schema) - Detailed revision specifications
+- [Examples](https://github.com/inblockio/aqua-verifier-js-lib/tree/main/examples) - Code examples
+
+## Version History
+
+- **3.2.1**: Current stable release
+- **3.2.0**: React Native support added
+- **3.1.x**: Performance improvements
+- **3.0.0**: Major release with TypeScript rewrite
+
+For detailed changelog, see the [GitHub releases](https://github.com/inblockio/aqua-verifier-js-lib/releases).
+1a:T45aa,
+# Aqua Protocol v3 - Schema Reference
+
+This document provides comprehensive technical specifications for all revision types in Aqua Protocol v3. Each revision type has specific fields and validation rules.
+
+## Version String Format
+
+```
+https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: {scalar|tree}
+```
+
+**Components:**
+- Protocol URL: `https://aqua-protocol.org/docs/v3/schema_2`
+- Hash Algorithm: `SHA256`
+- Canonicalization Method: `scalar` or `tree`
+
+## Common Fields
+
+All revisions share these mandatory fields:
+
+| Field | Type | Description | Validation |
+|-------|------|-------------|------------|
+| `previous_verification_hash` | string | Hash of previous revision | Empty string for genesis, otherwise 64-char hex with `0x` prefix |
+| `local_timestamp` | string | ISO 8601 timestamp | Valid ISO 8601 format: `YYYY-MM-DDTHH:mm:ss` |
+| `revision_type` | string | Type of revision | One of: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version and method | Must match format above |
+
+---
+
+## File Revision
+
+Represents a file with metadata and optional content.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision hash (empty for genesis) |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"file"` |
+| `version` | string | Yes | Protocol version string |
+| `file_hash` | string | Yes | SHA256 hash of file content (hex with `0x`) |
+| `file_nonce` | string | Yes | Random 16-byte nonce (hex with `0x`) |
+| `content` | string/Uint8Array | No | Optional file content |
+| `leaves` | string[] | Conditional | Required if `Method: tree`, array of leaf hashes |
+
+### Genesis File Revision (Scalar)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c"
+}
+```
+
+### Genesis File Revision (Tree)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "leaves": [
+    "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
+  ]
+}
+```
+
+### With Content
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "content": "This is the file content as a string"
+}
+```
+
+### Validation Rules
+
+1. `file_hash` must match SHA256 of file content
+2. `file_nonce` must be exactly 16 bytes (32 hex chars + `0x`)
+3. If `Method: tree`, `leaves` array must be present
+4. If `Method: scalar`, `leaves` must be absent
+5. `content` is optional but if present, hash must match `file_hash`
+
+---
+
+## Form Revision
+
+Stores structured key-value data.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision hash (empty for genesis) |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"form"` |
+| `version` | string | Yes | Protocol version string |
+| `file_hash` | string | Yes | SHA256 hash of form data |
+| `file_nonce` | string | Yes | Random 16-byte nonce |
+| `content` | object | Yes | Form data as key-value pairs |
+| `leaves` | string[] | Conditional | Required if `Method: tree` |
+
+### Example (Scalar)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  }
+}
+```
+
+### Example (Tree)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  },
+  "leaves": [
+    "0x...",  // SHA256("name:John Doe")
+    "0x...",  // SHA256("email:john@example.com")
+    "0x...",  // SHA256("organization:Example Corp")
+    "0x..."   // SHA256("role:Developer")
+  ]
+}
+```
+
+### Leaf Computation (Tree Mode)
+
+For each key-value pair in `content`:
+```typescript
+leaf_hash = SHA256(`${key}:${value}`)
+```
+
+### Validation Rules
+
+1. `content` must be a valid JSON object
+2. All values in `content` must be strings
+3. `file_hash` must match hash of canonicalized content
+4. If `Method: tree`, number of leaves must match number of keys in content
+
+---
+
+## Signature Revision
+
+Adds cryptographic signature to verify authenticity.
+
+### Common Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Hash of revision being signed |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"signature"` |
+| `version` | string | Yes | Protocol version string |
+| `signature_type` | string | Yes | Type: `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"` |
+
+### CLI / MetaMask Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | string | Yes | Hex-encoded signature (65 bytes for ECDSA) |
+| `signature_wallet_address` | string | Yes | Ethereum address (EIP-55 checksummed) |
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "cli",
+  "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c",
+  "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+}
+```
+
+### DID Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | object | Yes | JWS (JSON Web Signature) object |
+
+**Signature Object Structure:**
+```typescript
+{
+  payload: string;       // Base64url-encoded payload
+  signatures: [{
+    protected: string;   // Base64url-encoded protected header
+    signature: string;   // Base64url-encoded signature
+  }]
+}
+```
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "did",
+  "signature": {
+    "payload": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19",
+    "signatures": [{
+      "protected": "eyJhbGciOiJFZERTQSJ9",
+      "signature": "kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ"
+    }]
+  }
+}
+```
+
+### P12 Certificate Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | string | Yes | Hex-encoded signature |
+| `signature_public_key` | string | Yes | Hex-encoded DER public key |
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "p12",
+  "signature": "0x...",
+  "signature_public_key": "0x308201a2300d06092a864886f70d01010105000382018f..."
+}
+```
+
+### Inline Signature
+
+Same as CLI/MetaMask but with pre-computed signature.
+
+### Validation Rules
+
+1. Signature must be verifiable using provided credentials
+2. For CLI/MetaMask: Address must be recoverable from signature
+3. For DID: JWS must be valid and verifiable
+4. For P12: Signature must verify with public key
+5. Signature must be computed over `previous_verification_hash`
+
+---
+
+## Witness Revision
+
+Anchors revision to blockchain or timestamping service.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Hash being witnessed |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"witness"` |
+| `version` | string | Yes | Protocol version string |
+| `witness_merkle_root` | string | Yes | Root hash of Merkle tree |
+| `witness_timestamp` | number | Yes | Unix timestamp from witness service |
+| `witness_network` | string | Yes | Network: `"mainnet"`, `"sepolia"`, `"holesky"`, `"tsa"`, `"nostr"` |
+| `witness_smart_contract_address` | string | Conditional | Required for Ethereum |
+| `witness_transaction_hash` | string | Yes | Transaction or event hash |
+| `witness_sender_account_address` | string | Conditional | Required for Ethereum |
+| `witness_merkle_proof` | string[] | Yes | Merkle proof (empty for single witness) |
+
+### Ethereum Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xdef456...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "sepolia",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "witness_sender_account_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  "witness_merkle_proof": []
+}
+```
+
+### Batched Witness Example
+
+Multiple revisions witnessed in single transaction:
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xroot...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "mainnet",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081...",
+  "witness_sender_account_address": "0x742d35Cc...",
+  "witness_merkle_proof": [
+    "0xsibling_hash_1",
+    "0xsibling_hash_2",
+    "0xsibling_hash_3"
+  ]
+}
+```
+
+### Nostr Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "nostr",
+  "witness_smart_contract_address": "",
+  "witness_transaction_hash": "nevent1qqsw...",
+  "witness_sender_account_address": "npub1...",
+  "witness_merkle_proof": []
+}
+```
+
+### TSA Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "tsa",
+  "witness_smart_contract_address": "https://timestamp.digicert.com",
+  "witness_transaction_hash": "base64_tsa_response",
+  "witness_sender_account_address": "",
+  "witness_merkle_proof": []
+}
+```
+
+### Validation Rules
+
+1. For single witness: `witness_merkle_proof` must be empty array
+2. For single witness: `witness_merkle_root` equals `previous_verification_hash`
+3. For batched: Merkle proof must verify back to `witness_merkle_root`
+4. Transaction must exist and be confirmed on specified network
+5. `witness_timestamp` should match blockchain/service timestamp
+6. For Ethereum: Contract address and sender address required
+
+---
+
+## Link Revision
+
+Connects to other AquaTree chains.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision in this chain |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"link"` |
+| `version` | string | Yes | Protocol version string |
+| `link_type` | string | No | Application-specific link type |
+| `link_verification_hashes` | string[] | Yes | Array of hashes from other chains |
+| `link_file_hashes` | string[] | No | Corresponding file hashes |
+
+### Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:03:00",
+  "revision_type": "link",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "link_type": "dependencies",
+  "link_verification_hashes": [
+    "0x111222333444555666777888999000aaabbbcccdddeeefff000111222333444",
+    "0x222333444555666777888999000aaabbbcccdddeeefff000111222333444555",
+    "0x333444555666777888999000aaabbbcccdddeeefff000111222333444555666"
+  ],
+  "link_file_hashes": [
+    "0xfileHash1...",
+    "0xfileHash2...",
+    "0xfileHash3..."
+  ]
+}
+```
+
+### Validation Rules
+
+1. `link_verification_hashes` must be non-empty array
+2. Each hash in array must be valid revision hash
+3. If `link_file_hashes` present, must have same length as `link_verification_hashes`
+4. Referenced revisions should exist (optional strict validation)
+
+---
+
+## Hash Computation
+
+### Scalar Method
+
+1. Serialize revision as canonical JSON (sorted keys)
+2. Compute SHA256 hash of serialized string
+3. Prefix with `0x`
+
+```typescript
+const canonical = JSON.stringify(sortKeys(revision));
+const hash = "0x" + sha256(canonical).toString('hex');
+```
+
+### Tree Method
+
+1. Extract leaves array from revision
+2. Build Merkle tree from leaves
+3. Root hash becomes verification hash
+
+```typescript
+const leaves = revision.leaves;
+const tree = new MerkleTree(leaves, sha256);
+const hash = "0x" + tree.getRoot().toString('hex');
+```
+
+---
+
+## AquaTree Storage Format
+
+Complete AquaTree structure for storage/transmission:
+
+```json
+{
+  "revisions": {
+    "0xgenesis_hash": {
+      "previous_verification_hash": "",
+      "local_timestamp": "2024-01-01T12:00:00",
+      "revision_type": "file",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "file_hash": "0x...",
+      "file_nonce": "0x..."
+    },
+    "0xsignature_hash": {
+      "previous_verification_hash": "0xgenesis_hash",
+      "local_timestamp": "2024-01-01T12:01:00",
+      "revision_type": "signature",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "signature_type": "cli",
+      "signature": "0x...",
+      "signature_wallet_address": "0x..."
+    },
+    "0xwitness_hash": {
+      "previous_verification_hash": "0xsignature_hash",
+      "local_timestamp": "2024-01-01T12:02:00",
+      "revision_type": "witness",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "witness_merkle_root": "0x...",
+      "witness_timestamp": 1704110520,
+      "witness_network": "sepolia",
+      "witness_smart_contract_address": "0x...",
+      "witness_transaction_hash": "0x...",
+      "witness_sender_account_address": "0x...",
+      "witness_merkle_proof": []
+    }
+  },
+  "file_index": {
+    "0xfile_hash": "document.pdf"
+  },
+  "tree": {
+    "hash": "0xgenesis_hash",
+    "children": [
+      {
+        "hash": "0xsignature_hash",
+        "children": [
+          {
+            "hash": "0xwitness_hash",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "treeMapping": {
+    "paths": {
+      "0xgenesis_hash": ["0xgenesis_hash"],
+      "0xsignature_hash": ["0xgenesis_hash", "0xsignature_hash"],
+      "0xwitness_hash": ["0xgenesis_hash", "0xsignature_hash", "0xwitness_hash"]
+    },
+    "latestHash": "0xwitness_hash"
+  }
+}
+```
+
+---
+
+## Field Constraints
+
+### Hashes
+- Format: Lowercase hexadecimal with `0x` prefix
+- Length: 64 characters (32 bytes) + 2-char prefix = 66 total
+- Example: `0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08`
+
+### Timestamps
+- Format: ISO 8601
+- Pattern: `YYYY-MM-DDTHH:mm:ss`
+- Example: `2024-01-01T12:00:00`
+
+### Ethereum Addresses
+- Format: EIP-55 checksummed
+- Length: 42 characters (20 bytes + 0x)
+- Mixed case for checksum
+- Example: `0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8`
+
+### Nonces
+- Length: Exactly 16 bytes (32 hex chars + 0x)
+- Format: Lowercase hexadecimal with `0x` prefix
+- Example: `0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c`
+
+---
+
+## Version Compatibility
+
+- **v3.2.x**: Current version, fully compatible
+- **v3.1.x**: Compatible, minor improvements
+- **v3.0.x**: Compatible, initial TypeScript release
+- **v2.x**: Not compatible, different schema
+
+---
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Getting started
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts
+- [Tooling](/previous_versions/version_3/tooling) - SDK API reference
+1b:T45aa,
+# Aqua Protocol v3 - Schema Reference
+
+This document provides comprehensive technical specifications for all revision types in Aqua Protocol v3. Each revision type has specific fields and validation rules.
+
+## Version String Format
+
+```
+https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: {scalar|tree}
+```
+
+**Components:**
+- Protocol URL: `https://aqua-protocol.org/docs/v3/schema_2`
+- Hash Algorithm: `SHA256`
+- Canonicalization Method: `scalar` or `tree`
+
+## Common Fields
+
+All revisions share these mandatory fields:
+
+| Field | Type | Description | Validation |
+|-------|------|-------------|------------|
+| `previous_verification_hash` | string | Hash of previous revision | Empty string for genesis, otherwise 64-char hex with `0x` prefix |
+| `local_timestamp` | string | ISO 8601 timestamp | Valid ISO 8601 format: `YYYY-MM-DDTHH:mm:ss` |
+| `revision_type` | string | Type of revision | One of: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version and method | Must match format above |
+
+---
+
+## File Revision
+
+Represents a file with metadata and optional content.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision hash (empty for genesis) |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"file"` |
+| `version` | string | Yes | Protocol version string |
+| `file_hash` | string | Yes | SHA256 hash of file content (hex with `0x`) |
+| `file_nonce` | string | Yes | Random 16-byte nonce (hex with `0x`) |
+| `content` | string/Uint8Array | No | Optional file content |
+| `leaves` | string[] | Conditional | Required if `Method: tree`, array of leaf hashes |
+
+### Genesis File Revision (Scalar)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c"
+}
+```
+
+### Genesis File Revision (Tree)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "leaves": [
+    "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
+  ]
+}
+```
+
+### With Content
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c",
+  "content": "This is the file content as a string"
+}
+```
+
+### Validation Rules
+
+1. `file_hash` must match SHA256 of file content
+2. `file_nonce` must be exactly 16 bytes (32 hex chars + `0x`)
+3. If `Method: tree`, `leaves` array must be present
+4. If `Method: scalar`, `leaves` must be absent
+5. `content` is optional but if present, hash must match `file_hash`
+
+---
+
+## Form Revision
+
+Stores structured key-value data.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision hash (empty for genesis) |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"form"` |
+| `version` | string | Yes | Protocol version string |
+| `file_hash` | string | Yes | SHA256 hash of form data |
+| `file_nonce` | string | Yes | Random 16-byte nonce |
+| `content` | object | Yes | Form data as key-value pairs |
+| `leaves` | string[] | Conditional | Required if `Method: tree` |
+
+### Example (Scalar)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  }
+}
+```
+
+### Example (Tree)
+
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0xabc123def456...",
+  "file_nonce": "0x7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "organization": "Example Corp",
+    "role": "Developer"
+  },
+  "leaves": [
+    "0x...",  // SHA256("name:John Doe")
+    "0x...",  // SHA256("email:john@example.com")
+    "0x...",  // SHA256("organization:Example Corp")
+    "0x..."   // SHA256("role:Developer")
+  ]
+}
+```
+
+### Leaf Computation (Tree Mode)
+
+For each key-value pair in `content`:
+```typescript
+leaf_hash = SHA256(`${key}:${value}`)
+```
+
+### Validation Rules
+
+1. `content` must be a valid JSON object
+2. All values in `content` must be strings
+3. `file_hash` must match hash of canonicalized content
+4. If `Method: tree`, number of leaves must match number of keys in content
+
+---
+
+## Signature Revision
+
+Adds cryptographic signature to verify authenticity.
+
+### Common Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Hash of revision being signed |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"signature"` |
+| `version` | string | Yes | Protocol version string |
+| `signature_type` | string | Yes | Type: `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"` |
+
+### CLI / MetaMask Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | string | Yes | Hex-encoded signature (65 bytes for ECDSA) |
+| `signature_wallet_address` | string | Yes | Ethereum address (EIP-55 checksummed) |
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "cli",
+  "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d1c",
+  "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+}
+```
+
+### DID Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | object | Yes | JWS (JSON Web Signature) object |
+
+**Signature Object Structure:**
+```typescript
+{
+  payload: string;       // Base64url-encoded payload
+  signatures: [{
+    protected: string;   // Base64url-encoded protected header
+    signature: string;   // Base64url-encoded signature
+  }]
+}
+```
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "did",
+  "signature": {
+    "payload": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19",
+    "signatures": [{
+      "protected": "eyJhbGciOiJFZERTQSJ9",
+      "signature": "kKvXJ_qjJRtGQFLpRvQlCdXMFD8sSE4DTlbMmLqg0BJ9FQKLHvX7y_z5Pr8u0xT8D2vCj9qL1KzN4rP2MzKfBQ"
+    }]
+  }
+}
+```
+
+### P12 Certificate Signature
+
+**Additional Fields:**
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `signature` | string | Yes | Hex-encoded signature |
+| `signature_public_key` | string | Yes | Hex-encoded DER public key |
+
+**Example:**
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "p12",
+  "signature": "0x...",
+  "signature_public_key": "0x308201a2300d06092a864886f70d01010105000382018f..."
+}
+```
+
+### Inline Signature
+
+Same as CLI/MetaMask but with pre-computed signature.
+
+### Validation Rules
+
+1. Signature must be verifiable using provided credentials
+2. For CLI/MetaMask: Address must be recoverable from signature
+3. For DID: JWS must be valid and verifiable
+4. For P12: Signature must verify with public key
+5. Signature must be computed over `previous_verification_hash`
+
+---
+
+## Witness Revision
+
+Anchors revision to blockchain or timestamping service.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Hash being witnessed |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"witness"` |
+| `version` | string | Yes | Protocol version string |
+| `witness_merkle_root` | string | Yes | Root hash of Merkle tree |
+| `witness_timestamp` | number | Yes | Unix timestamp from witness service |
+| `witness_network` | string | Yes | Network: `"mainnet"`, `"sepolia"`, `"holesky"`, `"tsa"`, `"nostr"` |
+| `witness_smart_contract_address` | string | Conditional | Required for Ethereum |
+| `witness_transaction_hash` | string | Yes | Transaction or event hash |
+| `witness_sender_account_address` | string | Conditional | Required for Ethereum |
+| `witness_merkle_proof` | string[] | Yes | Merkle proof (empty for single witness) |
+
+### Ethereum Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xdef456...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "sepolia",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "witness_sender_account_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  "witness_merkle_proof": []
+}
+```
+
+### Batched Witness Example
+
+Multiple revisions witnessed in single transaction:
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xroot...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "mainnet",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081...",
+  "witness_sender_account_address": "0x742d35Cc...",
+  "witness_merkle_proof": [
+    "0xsibling_hash_1",
+    "0xsibling_hash_2",
+    "0xsibling_hash_3"
+  ]
+}
+```
+
+### Nostr Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "nostr",
+  "witness_smart_contract_address": "",
+  "witness_transaction_hash": "nevent1qqsw...",
+  "witness_sender_account_address": "npub1...",
+  "witness_merkle_proof": []
+}
+```
+
+### TSA Witness Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xabc123...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "tsa",
+  "witness_smart_contract_address": "https://timestamp.digicert.com",
+  "witness_transaction_hash": "base64_tsa_response",
+  "witness_sender_account_address": "",
+  "witness_merkle_proof": []
+}
+```
+
+### Validation Rules
+
+1. For single witness: `witness_merkle_proof` must be empty array
+2. For single witness: `witness_merkle_root` equals `previous_verification_hash`
+3. For batched: Merkle proof must verify back to `witness_merkle_root`
+4. Transaction must exist and be confirmed on specified network
+5. `witness_timestamp` should match blockchain/service timestamp
+6. For Ethereum: Contract address and sender address required
+
+---
+
+## Link Revision
+
+Connects to other AquaTree chains.
+
+### Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_verification_hash` | string | Yes | Previous revision in this chain |
+| `local_timestamp` | string | Yes | ISO 8601 timestamp |
+| `revision_type` | string | Yes | Must be `"link"` |
+| `version` | string | Yes | Protocol version string |
+| `link_type` | string | No | Application-specific link type |
+| `link_verification_hashes` | string[] | Yes | Array of hashes from other chains |
+| `link_file_hashes` | string[] | No | Corresponding file hashes |
+
+### Example
+
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:03:00",
+  "revision_type": "link",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "link_type": "dependencies",
+  "link_verification_hashes": [
+    "0x111222333444555666777888999000aaabbbcccdddeeefff000111222333444",
+    "0x222333444555666777888999000aaabbbcccdddeeefff000111222333444555",
+    "0x333444555666777888999000aaabbbcccdddeeefff000111222333444555666"
+  ],
+  "link_file_hashes": [
+    "0xfileHash1...",
+    "0xfileHash2...",
+    "0xfileHash3..."
+  ]
+}
+```
+
+### Validation Rules
+
+1. `link_verification_hashes` must be non-empty array
+2. Each hash in array must be valid revision hash
+3. If `link_file_hashes` present, must have same length as `link_verification_hashes`
+4. Referenced revisions should exist (optional strict validation)
+
+---
+
+## Hash Computation
+
+### Scalar Method
+
+1. Serialize revision as canonical JSON (sorted keys)
+2. Compute SHA256 hash of serialized string
+3. Prefix with `0x`
+
+```typescript
+const canonical = JSON.stringify(sortKeys(revision));
+const hash = "0x" + sha256(canonical).toString('hex');
+```
+
+### Tree Method
+
+1. Extract leaves array from revision
+2. Build Merkle tree from leaves
+3. Root hash becomes verification hash
+
+```typescript
+const leaves = revision.leaves;
+const tree = new MerkleTree(leaves, sha256);
+const hash = "0x" + tree.getRoot().toString('hex');
+```
+
+---
+
+## AquaTree Storage Format
+
+Complete AquaTree structure for storage/transmission:
+
+```json
+{
+  "revisions": {
+    "0xgenesis_hash": {
+      "previous_verification_hash": "",
+      "local_timestamp": "2024-01-01T12:00:00",
+      "revision_type": "file",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "file_hash": "0x...",
+      "file_nonce": "0x..."
+    },
+    "0xsignature_hash": {
+      "previous_verification_hash": "0xgenesis_hash",
+      "local_timestamp": "2024-01-01T12:01:00",
+      "revision_type": "signature",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "signature_type": "cli",
+      "signature": "0x...",
+      "signature_wallet_address": "0x..."
+    },
+    "0xwitness_hash": {
+      "previous_verification_hash": "0xsignature_hash",
+      "local_timestamp": "2024-01-01T12:02:00",
+      "revision_type": "witness",
+      "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+      "witness_merkle_root": "0x...",
+      "witness_timestamp": 1704110520,
+      "witness_network": "sepolia",
+      "witness_smart_contract_address": "0x...",
+      "witness_transaction_hash": "0x...",
+      "witness_sender_account_address": "0x...",
+      "witness_merkle_proof": []
+    }
+  },
+  "file_index": {
+    "0xfile_hash": "document.pdf"
+  },
+  "tree": {
+    "hash": "0xgenesis_hash",
+    "children": [
+      {
+        "hash": "0xsignature_hash",
+        "children": [
+          {
+            "hash": "0xwitness_hash",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "treeMapping": {
+    "paths": {
+      "0xgenesis_hash": ["0xgenesis_hash"],
+      "0xsignature_hash": ["0xgenesis_hash", "0xsignature_hash"],
+      "0xwitness_hash": ["0xgenesis_hash", "0xsignature_hash", "0xwitness_hash"]
+    },
+    "latestHash": "0xwitness_hash"
+  }
+}
+```
+
+---
+
+## Field Constraints
+
+### Hashes
+- Format: Lowercase hexadecimal with `0x` prefix
+- Length: 64 characters (32 bytes) + 2-char prefix = 66 total
+- Example: `0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08`
+
+### Timestamps
+- Format: ISO 8601
+- Pattern: `YYYY-MM-DDTHH:mm:ss`
+- Example: `2024-01-01T12:00:00`
+
+### Ethereum Addresses
+- Format: EIP-55 checksummed
+- Length: 42 characters (20 bytes + 0x)
+- Mixed case for checksum
+- Example: `0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8`
+
+### Nonces
+- Length: Exactly 16 bytes (32 hex chars + 0x)
+- Format: Lowercase hexadecimal with `0x` prefix
+- Example: `0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c`
+
+---
+
+## Version Compatibility
+
+- **v3.2.x**: Current version, fully compatible
+- **v3.1.x**: Compatible, minor improvements
+- **v3.0.x**: Compatible, initial TypeScript release
+- **v2.x**: Not compatible, different schema
+
+---
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Getting started
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts
+- [Tooling](/previous_versions/version_3/tooling) - SDK API reference
+1c:T3ef3,
+# Aqua Protocol v3 - Tooling & SDK
+
+The Aqua JS SDK (aqua-js-sdk) is a comprehensive TypeScript library for working with Aqua Protocol v3. It provides a complete API for creating, signing, witnessing, and verifying revision chains across multiple platforms.
+
+## Installation
+
+```bash
+npm install aqua-js-sdk
+```
+
+### Platform-Specific Imports
+
+```typescript
+// Node.js (default)
+import Aquafier from 'aqua-js-sdk';
+
+// Web Browser
+import Aquafier from 'aqua-js-sdk/web';
+
+// React Native
+import Aquafier from 'aqua-js-sdk/react-native';
+```
+
+## Core API
+
+### Aquafier Class
+
+The main class providing all Aqua Protocol operations.
+
+#### Constructor
+
+```typescript
+const aquafier = new Aquafier();
+```
+
+No configuration needed for initialization.
+
+---
+
+### Creating Revisions
+
+#### createGenesisRevision()
+
+Creates the first revision in a new AquaTree.
+
+**Signature:**
+```typescript
+async createGenesisRevision(
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `fileObject`: File data to create revision from
+- `isForm`: If true, creates form revision (default: false)
+- `enableContent`: Include file content in revision (default: false)
+- `enableScalar`: Use scalar method instead of tree (default: true)
+
+**Returns:**
+- Success: `AquaOperationData` with new AquaTree
+- Failure: Array of error logs
+
+**Example:**
+```typescript
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer, // Uint8Array or string
+  path: "/documents/contract.pdf"
+};
+
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  result.data.logData.forEach(log => console.error(log));
+  return;
+}
+
+const aquaTree = result.data.aquaTree;
+```
+
+#### createNewRevision()
+
+Adds a new file/form revision to an existing AquaTree.
+
+**Signature:**
+```typescript
+async createNewRevision(
+  aquaTree: AquaTree,
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Example:**
+```typescript
+const result = await aquafier.createNewRevision(
+  existingAquaTree,
+  updatedFileObject,
+  false,  // not a form
+  false,  // don't embed content
+  true    // use scalar method
+);
+```
+
+---
+
+### Signing Revisions
+
+#### signRevision()
+
+Signs the latest revision in an AquaTree.
+
+**Signature:**
+```typescript
+async signRevision(
+  aquaTree: AquaTree,
+  signType: SignType,
+  credentials?: CredentialsData,
+  inlineOptions?: InlineSignerOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `signType`: One of `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"`
+- `credentials`: Credentials for CLI, DID, or P12 signing
+- `inlineOptions`: Pre-computed signature for inline mode
+
+**Sign Types:**
+
+##### CLI Signing
+Uses BIP39 mnemonic to derive wallet and sign.
+
+```typescript
+const credentials: CredentialsData = {
+  mnemonic: "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "cli",
+  credentials
+);
+```
+
+##### MetaMask Signing
+Opens MetaMask for user to sign (browser only).
+
+```typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask"
+);
+```
+
+**React Native MetaMask:**
+```typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask",
+  undefined,
+  {
+    deepLinkUrl: "metamask://",
+    callbackUrl: "myapp://metamask-callback",
+    onDeepLinkReady: (url) => {
+      // Open MetaMask app
+      Linking.openURL(url);
+    }
+  }
+);
+```
+
+##### DID Signing
+Signs with Decentralized Identifier.
+
+```typescript
+const credentials: CredentialsData = {
+  did_key: "your-did-key-here",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "did",
+  credentials
+);
+```
+
+##### P12 Certificate Signing
+Signs with P12 certificate.
+
+```typescript
+const credentials: CredentialsData = {
+  p12_password: "certificate-password",
+  p12_content: "base64-encoded-p12-content",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "p12",
+  credentials
+);
+```
+
+##### Inline Signing
+Use pre-computed signature.
+
+```typescript
+const inlineOptions: InlineSignerOptions = {
+  walletAddress: "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  signature: "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f..."
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "inline",
+  undefined,
+  inlineOptions
+);
+```
+
+---
+
+### Witnessing Revisions
+
+#### witnessRevision()
+
+Timestamps a revision via blockchain or TSA.
+
+**Signature:**
+```typescript
+async witnessRevision(
+  aquaTree: AquaTree,
+  witnessType: WitnessType,
+  witnessConfig: WitnessConfig,
+  credentials?: CredentialsData,
+  witnessPlatform?: WitnessPlatformType,
+  inlineOptions?: InlineWitnessOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `witnessType`: `"eth"`, `"nostr"`, or `"tsa"`
+- `witnessConfig`: Network and contract configuration
+- `credentials`: Credentials for signing transaction
+- `witnessPlatform`: `"cli"` or `"metamask"` (Ethereum only)
+- `inlineOptions`: Pre-computed transaction (inline mode)
+
+#### Ethereum Witnessing
+
+**Configuration:**
+```typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // or "mainnet", "holesky"
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+const credentials: CredentialsData = {
+  mnemonic: "your mnemonic here",
+  // ...
+};
+```
+
+**CLI Method** (uses mnemonic):
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+```
+
+**MetaMask Method** (prompts user):
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  undefined,
+  "metamask"
+);
+```
+
+#### Nostr Witnessing
+
+```typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // not used for Nostr
+  smartContractAddress: ""     // not used for Nostr
+};
+
+const credentials: CredentialsData = {
+  nostr_sk: "your-nostr-secret-key",
+  // ...
+};
+
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "nostr",
+  witnessConfig,
+  credentials
+);
+```
+
+#### TSA Witnessing
+
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "tsa",
+  witnessConfig
+);
+```
+
+---
+
+### Linking Revisions
+
+#### linkRevision()
+
+Creates a link revision connecting to other AquaTrees.
+
+**Signature:**
+```typescript
+async linkRevision(
+  aquaTree: AquaTree,
+  linkedAquaTrees: AquaTree[],
+  linkType?: string
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Example:**
+```typescript
+const result = await aquafier.linkRevision(
+  mainAquaTree,
+  [dependency1Tree, dependency2Tree, dependency3Tree],
+  "dependencies"
+);
+```
+
+---
+
+### Verification
+
+#### verifyRevisionChain()
+
+Verifies an entire AquaTree chain.
+
+**Signature:**
+```typescript
+async verifyRevisionChain(
+  aquaTree: AquaTree,
+  credentials?: CredentialsData
+): Promise<VerificationGraphData>
+```
+
+**Parameters:**
+- `aquaTree`: Tree to verify
+- `credentials`: Optional, for Ethereum witness lookup
+
+**Returns:**
+- `VerificationGraphData`: Graph structure with verification results
+
+**Example:**
+```typescript
+const verificationResult = await aquafier.verifyRevisionChain(aquaTree, credentials);
+
+// Check overall success
+if (verificationResult.isValidationSuccessful) {
+  console.log("✓ Chain is valid");
+} else {
+  console.log("✗ Chain validation failed");
+}
+
+// Traverse verification graph
+function printResults(node: VerificationGraphData, depth = 0) {
+  const indent = "  ".repeat(depth);
+  const status = node.isValidationSuccessful ? "✓" : "✗";
+  console.log(`${indent}${status} ${node.revisionType}`);
+
+  node.verificationGraphData.forEach(child => printResults(child, depth + 1));
+}
+
+printResults(verificationResult);
+```
+
+#### verifyFormRevision()
+
+Verifies form-specific data.
+
+**Signature:**
+```typescript
+async verifyFormRevision(
+  aquaTree: AquaTree,
+  formData: FormData
+): Promise<FormVerificationResponseData>
+```
+
+---
+
+### Utility Methods
+
+#### removeLastRevision()
+
+Removes the most recent revision from an AquaTree.
+
+**Signature:**
+```typescript
+removeLastRevision(
+  aquaTree: AquaTree
+): Result<AquaOperationData, LogData[]>
+```
+
+**Example:**
+```typescript
+const result = aquafier.removeLastRevision(aquaTree);
+
+if (result.isOk) {
+  const updatedTree = result.data.aquaTree;
+  console.log("Revision removed successfully");
+}
+```
+
+#### checkIfFileAlreadyNotarized()
+
+Checks if a file has already been notarized.
+
+**Signature:**
+```typescript
+checkIfFileAlreadyNotarized(
+  aquaTree: AquaTree,
+  fileObject: FileObject
+): boolean
+```
+
+#### fetchFilesToBeRead()
+
+Gets list of files that need content loaded.
+
+**Signature:**
+```typescript
+fetchFilesToBeRead(aquaTree: AquaTree): string[]
+```
+
+---
+
+## Type Reference
+
+### Core Types
+
+```typescript
+interface FileObject {
+  fileName: string
+  fileContent: string | AquaTree | Uint8Array | Record<string, string> | object
+  path: string
+  fileSize?: number
+}
+
+interface AquaTree {
+  revisions: Revisions
+  file_index: FileIndex
+  tree?: RevisionTree
+  treeMapping?: TreeMapping
+}
+
+interface Revision {
+  previous_verification_hash: string
+  local_timestamp: string
+  revision_type: RevisionType
+  version: string
+  // ... type-specific fields
+}
+
+type RevisionType = "file" | "witness" | "signature" | "form" | "link"
+type SignType = "metamask" | "cli" | "did" | "p12" | "inline"
+type WitnessType = "tsa" | "eth" | "nostr"
+type WitnessNetwork = "sepolia" | "mainnet" | "holesky"
+```
+
+### Result Type
+
+```typescript
+type Result<T, E> =
+  | { isOk: true; isErr: false; data: T }
+  | { isOk: false; isErr: true; data: E }
+```
+
+### Configuration Types
+
+```typescript
+interface CredentialsData {
+  mnemonic: string
+  nostr_sk: string
+  did_key: string
+  alchemy_key: string
+  witness_eth_network: string
+  witness_method: string
+  p12_password?: string
+  p12_content?: string
+}
+
+interface WitnessConfig {
+  witnessEventVerificationHash: string
+  witnessNetwork: WitnessNetwork
+  smartContractAddress: string
+}
+```
+
+---
+
+## Platform-Specific Notes
+
+### Node.js
+
+Full functionality available:
+- All signing methods
+- All witnessing methods
+- File system access
+- HTTP server for MetaMask callback
+
+```typescript
+import Aquafier from 'aqua-js-sdk';
+import fs from 'fs';
+
+const aquafier = new Aquafier();
+
+// Read file from disk
+const fileContent = fs.readFileSync('document.pdf');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: fileContent,
+  path: './document.pdf'
+};
+```
+
+### Web Browser
+
+Most functionality available:
+- MetaMask signing (primary method)
+- DID signing
+- Ethereum witnessing via MetaMask
+- Nostr, TSA witnessing
+
+**Limitations:**
+- No P12 signing (requires file system)
+- No CLI signing with mnemonic (security risk in browser)
+
+```typescript
+import Aquafier from 'aqua-js-sdk/web';
+
+const aquafier = new Aquafier();
+
+// File from input element
+const file = document.getElementById('fileInput').files[0];
+const arrayBuffer = await file.arrayBuffer();
+
+const fileObject = {
+  fileName: file.name,
+  fileContent: new Uint8Array(arrayBuffer),
+  path: file.name
+};
+```
+
+### React Native
+
+Most functionality with platform adaptations:
+- MetaMask via deep linking
+- DID signing
+- Limited witnessing
+
+**Limitations:**
+- No local HTTP server
+- MetaMask requires custom deep linking
+- File system needs react-native-fs
+
+```typescript
+import Aquafier from 'aqua-js-sdk/react-native';
+import RNFS from 'react-native-fs';
+
+const aquafier = new Aquafier();
+
+// Read file
+const fileContent = await RNFS.readFile(filePath, 'base64');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: Buffer.from(fileContent, 'base64'),
+  path: filePath
+};
+```
+
+---
+
+## Complete Workflow Examples
+
+### Document Notarization
+
+```typescript
+// 1. Create genesis
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer,
+  path: "/contracts/contract.pdf"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign with CLI
+const credentials: CredentialsData = {
+  mnemonic: process.env.MNEMONIC,
+  // ... other fields
+};
+
+result = await aquafier.signRevision(aquaTree, "cli", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness to Ethereum
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: Object.keys(aquaTree.revisions)[Object.keys(aquaTree.revisions).length - 1],
+  witnessNetwork: "sepolia",
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+
+// 4. Save
+fs.writeFileSync('contract.aqua.json', JSON.stringify(aquaTree, null, 2));
+```
+
+### Multi-Party Approval
+
+```typescript
+// Party 1: Create and sign
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+result = await aquafier.signRevision(aquaTree, "cli", party1Credentials);
+aquaTree = result.data.aquaTree;
+
+// Send aquaTree to Party 2
+
+// Party 2: Add signature
+result = await aquafier.signRevision(aquaTree, "metamask");
+aquaTree = result.data.aquaTree;
+
+// Send back to Party 1
+
+// Party 1: Witness
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  party1Credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+```
+
+### Form Submission with Verification
+
+```typescript
+// 1. Create form genesis
+const formData = {
+  name: "John Doe",
+  email: "john@example.com",
+  status: "pending"
+};
+
+const fileObject: FileObject = {
+  fileName: "application.json",
+  fileContent: formData,
+  path: "/forms/application.json"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject, true);  // isForm=true
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign
+result = await aquafier.signRevision(aquaTree, "did", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness
+result = await aquafier.witnessRevision(aquaTree, "nostr", witnessConfig, credentials);
+aquaTree = result.data.aquaTree;
+
+// 4. Verify form
+const verifyResult = await aquafier.verifyFormRevision(aquaTree, formData);
+console.log("Form valid:", verifyResult.isOk);
+```
+
+---
+
+## Error Handling
+
+All methods return `Result<T, E>` type. Always check for errors:
+
+```typescript
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  // Handle error
+  console.error("Failed to create genesis:");
+  result.data.forEach(log => {
+    console.error(`[${log.logType}] ${log.log}`);
+  });
+  return;
+}
+
+// Success
+const aquaTree = result.data.aquaTree;
+```
+
+---
+
+## Best Practices
+
+1. **Always verify results**: Check `isErr` before using data
+2. **Store credentials securely**: Never commit mnemonic/keys
+3. **Use environment variables**: Store sensitive data in `.env`
+4. **Validate inputs**: Check file sizes and formats before processing
+5. **Handle logs**: Display or log all LogData for debugging
+6. **Test on testnets**: Use Sepolia/Holesky before mainnet
+7. **Save AquaTrees**: Persist JSON after each operation
+8. **Verify chains**: Run verification after receiving AquaTrees
+
+---
+
+## Testing
+
+Create `credentials.json` for testing:
+
+```json
+{
+  "mnemonic": "your test mnemonic",
+  "nostr_sk": "your nostr secret key",
+  "did_key": "your did key",
+  "alchemy_key": "your alchemy api key",
+  "witness_eth_network": "sepolia",
+  "witness_method": "cli"
+}
+```
+
+Run tests:
+```bash
+npm test
+```
+
+Run specific test file:
+```bash
+npm test -- ./tests/aquafier.test.ts
+```
+
+---
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Getting started
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts
+- [Schema Reference](/previous_versions/version_3/schema) - Revision specifications
+- [GitHub Repository](https://github.com/inblockio/aqua-verifier-js-lib) - Source code and examples
+1d:T3ef3,
+# Aqua Protocol v3 - Tooling & SDK
+
+The Aqua JS SDK (aqua-js-sdk) is a comprehensive TypeScript library for working with Aqua Protocol v3. It provides a complete API for creating, signing, witnessing, and verifying revision chains across multiple platforms.
+
+## Installation
+
+```bash
+npm install aqua-js-sdk
+```
+
+### Platform-Specific Imports
+
+```typescript
+// Node.js (default)
+import Aquafier from 'aqua-js-sdk';
+
+// Web Browser
+import Aquafier from 'aqua-js-sdk/web';
+
+// React Native
+import Aquafier from 'aqua-js-sdk/react-native';
+```
+
+## Core API
+
+### Aquafier Class
+
+The main class providing all Aqua Protocol operations.
+
+#### Constructor
+
+```typescript
+const aquafier = new Aquafier();
+```
+
+No configuration needed for initialization.
+
+---
+
+### Creating Revisions
+
+#### createGenesisRevision()
+
+Creates the first revision in a new AquaTree.
+
+**Signature:**
+```typescript
+async createGenesisRevision(
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `fileObject`: File data to create revision from
+- `isForm`: If true, creates form revision (default: false)
+- `enableContent`: Include file content in revision (default: false)
+- `enableScalar`: Use scalar method instead of tree (default: true)
+
+**Returns:**
+- Success: `AquaOperationData` with new AquaTree
+- Failure: Array of error logs
+
+**Example:**
+```typescript
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer, // Uint8Array or string
+  path: "/documents/contract.pdf"
+};
+
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  result.data.logData.forEach(log => console.error(log));
+  return;
+}
+
+const aquaTree = result.data.aquaTree;
+```
+
+#### createNewRevision()
+
+Adds a new file/form revision to an existing AquaTree.
+
+**Signature:**
+```typescript
+async createNewRevision(
+  aquaTree: AquaTree,
+  fileObject: FileObject,
+  isForm?: boolean,
+  enableContent?: boolean,
+  enableScalar?: boolean
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Example:**
+```typescript
+const result = await aquafier.createNewRevision(
+  existingAquaTree,
+  updatedFileObject,
+  false,  // not a form
+  false,  // don't embed content
+  true    // use scalar method
+);
+```
+
+---
+
+### Signing Revisions
+
+#### signRevision()
+
+Signs the latest revision in an AquaTree.
+
+**Signature:**
+```typescript
+async signRevision(
+  aquaTree: AquaTree,
+  signType: SignType,
+  credentials?: CredentialsData,
+  inlineOptions?: InlineSignerOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `signType`: One of `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"`
+- `credentials`: Credentials for CLI, DID, or P12 signing
+- `inlineOptions`: Pre-computed signature for inline mode
+
+**Sign Types:**
+
+##### CLI Signing
+Uses BIP39 mnemonic to derive wallet and sign.
+
+```typescript
+const credentials: CredentialsData = {
+  mnemonic: "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "cli",
+  credentials
+);
+```
+
+##### MetaMask Signing
+Opens MetaMask for user to sign (browser only).
+
+```typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask"
+);
+```
+
+**React Native MetaMask:**
+```typescript
+const result = await aquafier.signRevision(
+  aquaTree,
+  "metamask",
+  undefined,
+  {
+    deepLinkUrl: "metamask://",
+    callbackUrl: "myapp://metamask-callback",
+    onDeepLinkReady: (url) => {
+      // Open MetaMask app
+      Linking.openURL(url);
+    }
+  }
+);
+```
+
+##### DID Signing
+Signs with Decentralized Identifier.
+
+```typescript
+const credentials: CredentialsData = {
+  did_key: "your-did-key-here",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "did",
+  credentials
+);
+```
+
+##### P12 Certificate Signing
+Signs with P12 certificate.
+
+```typescript
+const credentials: CredentialsData = {
+  p12_password: "certificate-password",
+  p12_content: "base64-encoded-p12-content",
+  // ... other fields
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "p12",
+  credentials
+);
+```
+
+##### Inline Signing
+Use pre-computed signature.
+
+```typescript
+const inlineOptions: InlineSignerOptions = {
+  walletAddress: "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8",
+  signature: "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f..."
+};
+
+const result = await aquafier.signRevision(
+  aquaTree,
+  "inline",
+  undefined,
+  inlineOptions
+);
+```
+
+---
+
+### Witnessing Revisions
+
+#### witnessRevision()
+
+Timestamps a revision via blockchain or TSA.
+
+**Signature:**
+```typescript
+async witnessRevision(
+  aquaTree: AquaTree,
+  witnessType: WitnessType,
+  witnessConfig: WitnessConfig,
+  credentials?: CredentialsData,
+  witnessPlatform?: WitnessPlatformType,
+  inlineOptions?: InlineWitnessOptions
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Parameters:**
+- `witnessType`: `"eth"`, `"nostr"`, or `"tsa"`
+- `witnessConfig`: Network and contract configuration
+- `credentials`: Credentials for signing transaction
+- `witnessPlatform`: `"cli"` or `"metamask"` (Ethereum only)
+- `inlineOptions`: Pre-computed transaction (inline mode)
+
+#### Ethereum Witnessing
+
+**Configuration:**
+```typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // or "mainnet", "holesky"
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+const credentials: CredentialsData = {
+  mnemonic: "your mnemonic here",
+  // ...
+};
+```
+
+**CLI Method** (uses mnemonic):
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+```
+
+**MetaMask Method** (prompts user):
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  undefined,
+  "metamask"
+);
+```
+
+#### Nostr Witnessing
+
+```typescript
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: latestRevisionHash,
+  witnessNetwork: "sepolia",  // not used for Nostr
+  smartContractAddress: ""     // not used for Nostr
+};
+
+const credentials: CredentialsData = {
+  nostr_sk: "your-nostr-secret-key",
+  // ...
+};
+
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "nostr",
+  witnessConfig,
+  credentials
+);
+```
+
+#### TSA Witnessing
+
+```typescript
+const result = await aquafier.witnessRevision(
+  aquaTree,
+  "tsa",
+  witnessConfig
+);
+```
+
+---
+
+### Linking Revisions
+
+#### linkRevision()
+
+Creates a link revision connecting to other AquaTrees.
+
+**Signature:**
+```typescript
+async linkRevision(
+  aquaTree: AquaTree,
+  linkedAquaTrees: AquaTree[],
+  linkType?: string
+): Promise<Result<AquaOperationData, LogData[]>>
+```
+
+**Example:**
+```typescript
+const result = await aquafier.linkRevision(
+  mainAquaTree,
+  [dependency1Tree, dependency2Tree, dependency3Tree],
+  "dependencies"
+);
+```
+
+---
+
+### Verification
+
+#### verifyRevisionChain()
+
+Verifies an entire AquaTree chain.
+
+**Signature:**
+```typescript
+async verifyRevisionChain(
+  aquaTree: AquaTree,
+  credentials?: CredentialsData
+): Promise<VerificationGraphData>
+```
+
+**Parameters:**
+- `aquaTree`: Tree to verify
+- `credentials`: Optional, for Ethereum witness lookup
+
+**Returns:**
+- `VerificationGraphData`: Graph structure with verification results
+
+**Example:**
+```typescript
+const verificationResult = await aquafier.verifyRevisionChain(aquaTree, credentials);
+
+// Check overall success
+if (verificationResult.isValidationSuccessful) {
+  console.log("✓ Chain is valid");
+} else {
+  console.log("✗ Chain validation failed");
+}
+
+// Traverse verification graph
+function printResults(node: VerificationGraphData, depth = 0) {
+  const indent = "  ".repeat(depth);
+  const status = node.isValidationSuccessful ? "✓" : "✗";
+  console.log(`${indent}${status} ${node.revisionType}`);
+
+  node.verificationGraphData.forEach(child => printResults(child, depth + 1));
+}
+
+printResults(verificationResult);
+```
+
+#### verifyFormRevision()
+
+Verifies form-specific data.
+
+**Signature:**
+```typescript
+async verifyFormRevision(
+  aquaTree: AquaTree,
+  formData: FormData
+): Promise<FormVerificationResponseData>
+```
+
+---
+
+### Utility Methods
+
+#### removeLastRevision()
+
+Removes the most recent revision from an AquaTree.
+
+**Signature:**
+```typescript
+removeLastRevision(
+  aquaTree: AquaTree
+): Result<AquaOperationData, LogData[]>
+```
+
+**Example:**
+```typescript
+const result = aquafier.removeLastRevision(aquaTree);
+
+if (result.isOk) {
+  const updatedTree = result.data.aquaTree;
+  console.log("Revision removed successfully");
+}
+```
+
+#### checkIfFileAlreadyNotarized()
+
+Checks if a file has already been notarized.
+
+**Signature:**
+```typescript
+checkIfFileAlreadyNotarized(
+  aquaTree: AquaTree,
+  fileObject: FileObject
+): boolean
+```
+
+#### fetchFilesToBeRead()
+
+Gets list of files that need content loaded.
+
+**Signature:**
+```typescript
+fetchFilesToBeRead(aquaTree: AquaTree): string[]
+```
+
+---
+
+## Type Reference
+
+### Core Types
+
+```typescript
+interface FileObject {
+  fileName: string
+  fileContent: string | AquaTree | Uint8Array | Record<string, string> | object
+  path: string
+  fileSize?: number
+}
+
+interface AquaTree {
+  revisions: Revisions
+  file_index: FileIndex
+  tree?: RevisionTree
+  treeMapping?: TreeMapping
+}
+
+interface Revision {
+  previous_verification_hash: string
+  local_timestamp: string
+  revision_type: RevisionType
+  version: string
+  // ... type-specific fields
+}
+
+type RevisionType = "file" | "witness" | "signature" | "form" | "link"
+type SignType = "metamask" | "cli" | "did" | "p12" | "inline"
+type WitnessType = "tsa" | "eth" | "nostr"
+type WitnessNetwork = "sepolia" | "mainnet" | "holesky"
+```
+
+### Result Type
+
+```typescript
+type Result<T, E> =
+  | { isOk: true; isErr: false; data: T }
+  | { isOk: false; isErr: true; data: E }
+```
+
+### Configuration Types
+
+```typescript
+interface CredentialsData {
+  mnemonic: string
+  nostr_sk: string
+  did_key: string
+  alchemy_key: string
+  witness_eth_network: string
+  witness_method: string
+  p12_password?: string
+  p12_content?: string
+}
+
+interface WitnessConfig {
+  witnessEventVerificationHash: string
+  witnessNetwork: WitnessNetwork
+  smartContractAddress: string
+}
+```
+
+---
+
+## Platform-Specific Notes
+
+### Node.js
+
+Full functionality available:
+- All signing methods
+- All witnessing methods
+- File system access
+- HTTP server for MetaMask callback
+
+```typescript
+import Aquafier from 'aqua-js-sdk';
+import fs from 'fs';
+
+const aquafier = new Aquafier();
+
+// Read file from disk
+const fileContent = fs.readFileSync('document.pdf');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: fileContent,
+  path: './document.pdf'
+};
+```
+
+### Web Browser
+
+Most functionality available:
+- MetaMask signing (primary method)
+- DID signing
+- Ethereum witnessing via MetaMask
+- Nostr, TSA witnessing
+
+**Limitations:**
+- No P12 signing (requires file system)
+- No CLI signing with mnemonic (security risk in browser)
+
+```typescript
+import Aquafier from 'aqua-js-sdk/web';
+
+const aquafier = new Aquafier();
+
+// File from input element
+const file = document.getElementById('fileInput').files[0];
+const arrayBuffer = await file.arrayBuffer();
+
+const fileObject = {
+  fileName: file.name,
+  fileContent: new Uint8Array(arrayBuffer),
+  path: file.name
+};
+```
+
+### React Native
+
+Most functionality with platform adaptations:
+- MetaMask via deep linking
+- DID signing
+- Limited witnessing
+
+**Limitations:**
+- No local HTTP server
+- MetaMask requires custom deep linking
+- File system needs react-native-fs
+
+```typescript
+import Aquafier from 'aqua-js-sdk/react-native';
+import RNFS from 'react-native-fs';
+
+const aquafier = new Aquafier();
+
+// Read file
+const fileContent = await RNFS.readFile(filePath, 'base64');
+
+const fileObject = {
+  fileName: 'document.pdf',
+  fileContent: Buffer.from(fileContent, 'base64'),
+  path: filePath
+};
+```
+
+---
+
+## Complete Workflow Examples
+
+### Document Notarization
+
+```typescript
+// 1. Create genesis
+const fileObject: FileObject = {
+  fileName: "contract.pdf",
+  fileContent: pdfBuffer,
+  path: "/contracts/contract.pdf"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign with CLI
+const credentials: CredentialsData = {
+  mnemonic: process.env.MNEMONIC,
+  // ... other fields
+};
+
+result = await aquafier.signRevision(aquaTree, "cli", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness to Ethereum
+const witnessConfig: WitnessConfig = {
+  witnessEventVerificationHash: Object.keys(aquaTree.revisions)[Object.keys(aquaTree.revisions).length - 1],
+  witnessNetwork: "sepolia",
+  smartContractAddress: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+};
+
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+
+// 4. Save
+fs.writeFileSync('contract.aqua.json', JSON.stringify(aquaTree, null, 2));
+```
+
+### Multi-Party Approval
+
+```typescript
+// Party 1: Create and sign
+let result = await aquafier.createGenesisRevision(fileObject);
+let aquaTree = result.data.aquaTree;
+
+result = await aquafier.signRevision(aquaTree, "cli", party1Credentials);
+aquaTree = result.data.aquaTree;
+
+// Send aquaTree to Party 2
+
+// Party 2: Add signature
+result = await aquafier.signRevision(aquaTree, "metamask");
+aquaTree = result.data.aquaTree;
+
+// Send back to Party 1
+
+// Party 1: Witness
+result = await aquafier.witnessRevision(
+  aquaTree,
+  "eth",
+  witnessConfig,
+  party1Credentials,
+  "cli"
+);
+aquaTree = result.data.aquaTree;
+```
+
+### Form Submission with Verification
+
+```typescript
+// 1. Create form genesis
+const formData = {
+  name: "John Doe",
+  email: "john@example.com",
+  status: "pending"
+};
+
+const fileObject: FileObject = {
+  fileName: "application.json",
+  fileContent: formData,
+  path: "/forms/application.json"
+};
+
+let result = await aquafier.createGenesisRevision(fileObject, true);  // isForm=true
+let aquaTree = result.data.aquaTree;
+
+// 2. Sign
+result = await aquafier.signRevision(aquaTree, "did", credentials);
+aquaTree = result.data.aquaTree;
+
+// 3. Witness
+result = await aquafier.witnessRevision(aquaTree, "nostr", witnessConfig, credentials);
+aquaTree = result.data.aquaTree;
+
+// 4. Verify form
+const verifyResult = await aquafier.verifyFormRevision(aquaTree, formData);
+console.log("Form valid:", verifyResult.isOk);
+```
+
+---
+
+## Error Handling
+
+All methods return `Result<T, E>` type. Always check for errors:
+
+```typescript
+const result = await aquafier.createGenesisRevision(fileObject);
+
+if (result.isErr) {
+  // Handle error
+  console.error("Failed to create genesis:");
+  result.data.forEach(log => {
+    console.error(`[${log.logType}] ${log.log}`);
+  });
+  return;
+}
+
+// Success
+const aquaTree = result.data.aquaTree;
+```
+
+---
+
+## Best Practices
+
+1. **Always verify results**: Check `isErr` before using data
+2. **Store credentials securely**: Never commit mnemonic/keys
+3. **Use environment variables**: Store sensitive data in `.env`
+4. **Validate inputs**: Check file sizes and formats before processing
+5. **Handle logs**: Display or log all LogData for debugging
+6. **Test on testnets**: Use Sepolia/Holesky before mainnet
+7. **Save AquaTrees**: Persist JSON after each operation
+8. **Verify chains**: Run verification after receiving AquaTrees
+
+---
+
+## Testing
+
+Create `credentials.json` for testing:
+
+```json
+{
+  "mnemonic": "your test mnemonic",
+  "nostr_sk": "your nostr secret key",
+  "did_key": "your did key",
+  "alchemy_key": "your alchemy api key",
+  "witness_eth_network": "sepolia",
+  "witness_method": "cli"
+}
+```
+
+Run tests:
+```bash
+npm test
+```
+
+Run specific test file:
+```bash
+npm test -- ./tests/aquafier.test.ts
+```
+
+---
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Getting started
+- [Concepts](/previous_versions/version_3/concepts) - Core concepts
+- [Schema Reference](/previous_versions/version_3/schema) - Revision specifications
+- [GitHub Repository](https://github.com/inblockio/aqua-verifier-js-lib) - Source code and examples
+b:["$","$d",null,{"fallback":["$","$L13",null,{}],"children":[["$","$L14",null,{"header":["$","$L15",null,{"currentVersion":"v3.0.2","versions":["v1.1.0","v2.0.2","v3.0.2","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"concepts","filePath":"concepts","title":"Concepts","meta":{"title":"Concepts","description":"Core concepts and terminology for Aqua Protocol v3","content":"$16","reading_time":9,"word_count":1657},"content":"$17"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol v3","meta":{"title":"Aqua Protocol v3","description":"Introduction to Aqua Protocol version 3 with JavaScript/TypeScript SDK","content":"$18","reading_time":6,"word_count":1069},"content":"$19"},{"slug":"schema","filePath":"schema","title":"Schema Reference","meta":{"title":"Schema Reference","description":"Detailed schema specifications for Aqua Protocol v3 revisions","content":"$1a","reading_time":10,"word_count":1903},"content":"$1b"},{"slug":"tooling","filePath":"tooling","title":"Tooling & SDK","meta":{"title":"Tooling & SDK","description":"Aqua JS SDK API reference and usage guide","content":"$1c","reading_time":9,"word_count":1773},"content":"$1d"}],"version":"v3.0.2","content":"$L1e","toc":"$L1f","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L20","$L21","$L22"]}]
+23:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"DocLayout"]
+26:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"TableOfContents"]
+27:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"MdxHotReload"]
+28:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"HotReloadIndicator"]
+29:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"DevModeBadge"]
+24:T3875,
+# Aqua Protocol v3 Concepts
+
+Understanding the core concepts of Aqua Protocol v3 is essential for effectively using the SDK and building applications. This guide covers the fundamental ideas, terminology, and patterns used throughout the protocol.
+
+## AquaTree
+
+The **AquaTree** is the primary data structure in v3. It represents a complete, self-contained collection of revisions with their relationships and metadata.
+
+### Structure
+
+```typescript
+interface AquaTree {
+  revisions: Revisions      // All revisions indexed by hash
+  file_index: FileIndex     // Maps file hashes to filenames
+  tree?: RevisionTree       // Tree structure of revisions
+  treeMapping?: TreeMapping // Path mappings for navigation
+}
+```
+
+### Components
+
+#### 1. Revisions
+A flat map of all revisions, keyed by their verification hash:
+
+```typescript
+{
+  "0xabc123...": {
+    previous_verification_hash: "0xdef456...",
+    local_timestamp: "2024-01-01T12:00:00",
+    revision_type: "file",
+    // ... other fields
+  },
+  "0xdef456...": {
+    // ... another revision
+  }
+}
+```
+
+#### 2. File Index
+Maps file content hashes to filenames for reference:
+
+```typescript
+{
+  "0xfile_hash_1": "document.pdf",
+  "0xfile_hash_2": "image.png"
+}
+```
+
+#### 3. Tree Structure (Optional)
+Hierarchical representation showing parent-child relationships:
+
+```typescript
+{
+  hash: "0xabc123...",  // Root revision
+  children: [
+    {
+      hash: "0xdef456...",
+      children: [...]
+    }
+  ]
+}
+```
+
+#### 4. Tree Mapping (Optional)
+Path information for each revision:
+
+```typescript
+{
+  paths: {
+    "0xabc123": ["0xroot", "0xabc123"],
+    "0xdef456": ["0xroot", "0xabc123", "0xdef456"]
+  },
+  latestHash: "0xdef456..."  // Most recent revision
+}
+```
+
+## Revisions
+
+A **Revision** is a single entry in the AquaTree representing an operation or state change.
+
+### Common Fields
+
+All revisions share these base fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `previous_verification_hash` | string | Hash linking to previous revision (empty string for genesis) |
+| `local_timestamp` | string | ISO 8601 timestamp when revision was created |
+| `revision_type` | string | One of: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version with method: `https://aqua-protocol.org/docs/v3/schema_2 \| SHA256 \| Method: scalar/tree` |
+
+### Genesis Revision
+
+The **genesis revision** is the first revision in a chain:
+- `previous_verification_hash` is an empty string `""`
+- Typically a file or form revision
+- Establishes the initial state
+
+### Verification Hash
+
+Each revision has a unique **verification hash** computed from its canonical form:
+
+```typescript
+hash = SHA256(canonicalized_revision_data)
+```
+
+This hash serves as:
+- Unique identifier for the revision
+- Key in the revisions map
+- Reference in `previous_verification_hash` fields
+
+## Revision Types
+
+### 1. File Revision
+
+Stores file metadata and optionally content.
+
+**Purpose**: Document file presence and content integrity
+
+**Fields**:
+- `file_hash`: SHA256 hash of file content
+- `file_nonce`: Random nonce for uniqueness
+- `content`: Optional file content (text or binary)
+- `leaves`: Array of hashes (tree mode only)
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c"
+}
+```
+
+### 2. Form Revision
+
+Stores structured key-value data.
+
+**Purpose**: Capture form submissions, structured data, or metadata
+
+**Fields**:
+- `file_hash`: Hash of form data
+- `file_nonce`: Random nonce
+- `content`: Form data as key-value object
+- `leaves`: Array of hashes (tree mode only)
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0xabc123...",
+  "file_nonce": "0x123abc...",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "status": "approved"
+  },
+  "leaves": ["0x...", "0x...", "0x..."]
+}
+```
+
+### 3. Signature Revision
+
+Adds cryptographic signature to prove authenticity.
+
+**Purpose**: Authenticate revisions and establish authorship
+
+**Fields**:
+- `signature`: Signature value (format depends on type)
+- `signature_type`: One of `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"`
+- `signature_wallet_address`: Ethereum address (for cli/metamask)
+- `signature_public_key`: Public key (for p12)
+
+**Example (MetaMask)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "metamask",
+  "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f...",
+  "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+}
+```
+
+**Example (DID)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "did",
+  "signature": {
+    "payload": "eyJhbGciOi...",
+    "signatures": [{
+      "protected": "eyJhbGci...",
+      "signature": "..."
+    }]
+  }
+}
+```
+
+### 4. Witness Revision
+
+Anchors revision to external timestamping service.
+
+**Purpose**: Prove existence at specific time via blockchain or TSA
+
+**Fields**:
+- `witness_merkle_root`: Root hash of Merkle tree
+- `witness_timestamp`: Unix timestamp from witness service
+- `witness_network`: Network used (`"mainnet"`, `"sepolia"`, `"holesky"`, `"tsa"`, `"nostr"`)
+- `witness_smart_contract_address`: Contract address (Ethereum)
+- `witness_transaction_hash`: Transaction hash
+- `witness_sender_account_address`: Account that witnessed
+- `witness_merkle_proof`: Merkle proof array
+
+**Example (Ethereum)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xdef456...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "sepolia",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081...",
+  "witness_sender_account_address": "0x742d35Cc...",
+  "witness_merkle_proof": []
+}
+```
+
+### 5. Link Revision
+
+Connects to other AquaTree chains.
+
+**Purpose**: Establish relationships between separate chains
+
+**Fields**:
+- `link_type`: Type of link relationship (application-specific)
+- `link_verification_hashes`: Array of hashes from other chains
+- `link_file_hashes`: Array of corresponding file hashes
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:03:00",
+  "revision_type": "link",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "link_type": "dependency",
+  "link_verification_hashes": [
+    "0x111...",
+    "0x222...",
+    "0x333..."
+  ],
+  "link_file_hashes": [
+    "0xaaa...",
+    "0xbbb...",
+    "0xccc..."
+  ]
+}
+```
+
+## Methods: Scalar vs Tree
+
+V3 supports two canonicalization methods, specified in the version string.
+
+### Scalar Method
+
+**Format**: `Method: scalar`
+
+**How it works**:
+- Revision is serialized as-is
+- Hash computed directly from canonical JSON
+- Simple, straightforward
+
+**When to use**:
+- Small revisions
+- Simple file/form data
+- Quick operations
+
+**Example**:
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
+// No leaves field
+```
+
+### Tree Method
+
+**Format**: `Method: tree`
+
+**How it works**:
+- Content broken into key-value leaves
+- Each leaf hashed individually
+- Merkle tree constructed from leaves
+- Root becomes the verification hash
+
+**When to use**:
+- Large files or forms
+- Selective disclosure needed
+- Proof of specific fields
+
+**Example**:
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree"
+leaves: [
+  "0xhash_of_key_value_1",
+  "0xhash_of_key_value_2",
+  "0xhash_of_key_value_3"
+]
+```
+
+**Leaf Generation**:
+```typescript
+// For form data: { "name": "John", "email": "john@example.com" }
+leaves = [
+  SHA256("name:John"),
+  SHA256("email:john@example.com")
+]
+```
+
+## Chains and Trees
+
+### Linear Chain
+
+Simple sequence of revisions:
+
+```
+Genesis � Signature � Witness � Update � Signature � Witness
+```
+
+Each revision references the previous one.
+
+### Branching Tree
+
+Multiple paths from a common ancestor:
+
+```
+            Genesis
+               �
+          Signature
+             /  \
+        Branch A  Branch B
+           �        �
+        Update 1  Update 2
+```
+
+V3 supports branching, allowing parallel development paths.
+
+### Path Mapping
+
+The `treeMapping` provides paths to each revision:
+
+```typescript
+{
+  paths: {
+    "genesis_hash": ["genesis_hash"],
+    "sig_hash": ["genesis_hash", "sig_hash"],
+    "branch_a_hash": ["genesis_hash", "sig_hash", "branch_a_hash"],
+    "branch_b_hash": ["genesis_hash", "sig_hash", "branch_b_hash"]
+  },
+  latestHash: "branch_a_hash"  // Longest path
+}
+```
+
+## File Object
+
+Input format for creating revisions:
+
+```typescript
+interface FileObject {
+  fileName: string           // Display name
+  fileContent: string |      // Text content
+                AquaTree |   // Linked tree
+                Uint8Array | // Binary data
+                Record<string, string> | // Form data
+                object       // Structured data
+  path: string              // File path
+  fileSize?: number         // Size in bytes
+}
+```
+
+### Content Types
+
+**Text**: Plain text, HTML, JSON
+```typescript
+{
+  fileName: "doc.txt",
+  fileContent: "Hello World",
+  path: "/docs/doc.txt"
+}
+```
+
+**Binary**: Images, PDFs, any binary file
+```typescript
+{
+  fileName: "image.png",
+  fileContent: new Uint8Array([...]),
+  path: "/images/image.png"
+}
+```
+
+**Form**: Key-value structured data
+```typescript
+{
+  fileName: "form.json",
+  fileContent: {
+    "field1": "value1",
+    "field2": "value2"
+  },
+  path: "/forms/form.json"
+}
+```
+
+**Link**: Reference to another AquaTree
+```typescript
+{
+  fileName: "linked.json",
+  fileContent: anotherAquaTree,
+  path: "/links/linked.json"
+}
+```
+
+## Verification Graph
+
+Result of verification includes a graph structure:
+
+```typescript
+interface VerificationGraphData {
+  hash: string
+  previous_verification_hash: string
+  timestamp: string
+  isValidationSuccessful: boolean
+  revisionType: RevisionType
+  info: RevisionGraphInfo  // Type-specific details
+  verificationGraphData: VerificationGraphData[]      // Children
+  linkVerificationGraphData: VerificationGraphData[]  // Links
+}
+```
+
+### Traversing the Graph
+
+```typescript
+function printVerification(graph: VerificationGraphData, depth = 0) {
+  const indent = "  ".repeat(depth);
+  const status = graph.isValidationSuccessful ? "" : "";
+  console.log(`${indent}${status} ${graph.revisionType} (${graph.hash.slice(0, 10)}...)`);
+
+  // Traverse children
+  graph.verificationGraphData.forEach(child => {
+    printVerification(child, depth + 1);
+  });
+
+  // Traverse links
+  graph.linkVerificationGraphData.forEach(link => {
+    console.log(`${indent}  � Linked:`);
+    printVerification(link, depth + 2);
+  });
+}
+```
+
+## Credentials
+
+Configuration for signing and witnessing:
+
+```typescript
+interface CredentialsData {
+  mnemonic: string             // BIP39 mnemonic for CLI signing
+  nostr_sk: string             // Nostr secret key
+  did_key: string              // DID key for DID signing
+  alchemy_key: string          // Alchemy API key for verification
+  witness_eth_network: string  // "mainnet", "sepolia", "holesky"
+  witness_method: string       // "cli" or "metamask"
+  p12_password?: string        // P12 certificate password
+  p12_content?: string         // P12 certificate content
+}
+```
+
+## Logging
+
+V3 uses typed logging throughout:
+
+```typescript
+enum LogType {
+  SUCCESS = "success",
+  INFO = "info",
+  ERROR = "error",
+  WARNING = "warning",
+  HINT = "hint",
+  DEBUGDATA = "debug_data",
+  // ... revision types with emojis
+  FILE = "file",      // =�
+  LINK = "link",      // =
+  SIGNATURE = "signature",  // =
+  WITNESS = "witness",      // =@
+  FORM = "form"            // =�
+}
+```
+
+Each operation returns logs for debugging and user feedback.
+
+## Best Practices
+
+### 1. Genesis Patterns
+
+**Single File**:
+```
+File Genesis � Sign � Witness
+```
+
+**Form Data**:
+```
+Form Genesis � Sign � Witness
+```
+
+### 2. Update Patterns
+
+**Content Update**:
+```
+... � New File Revision � Sign � Witness
+```
+
+**Multi-Party**:
+```
+... � Sign (Party 1) � Sign (Party 2) � Witness
+```
+
+### 3. Linking Patterns
+
+**Dependencies**:
+```
+Main Document � Link (to dependencies) � Sign � Witness
+```
+
+**Aggregation**:
+```
+Component 1 
+Component 2 � Aggregation Link � Sign � Witness
+Component 3 
+```
+
+### 4. Verification Patterns
+
+**Full Chain**:
+```typescript
+const result = await aquafier.verifyRevisionChain(aquaTree);
+```
+
+**Specific Revision**:
+```typescript
+const revision = aquaTree.revisions[specificHash];
+// Manually verify hash computation
+```
+
+### 5. Storage Patterns
+
+**Database**: Store serialized AquaTree JSON
+```typescript
+const json = JSON.stringify(aquaTree);
+db.save(documentId, json);
+```
+
+**File System**: Save as .aqua.json file
+```typescript
+fs.writeFileSync('document.aqua.json', JSON.stringify(aquaTree, null, 2));
+```
+
+## Common Patterns
+
+### Document Lifecycle
+
+```
+1. Create � File Genesis
+2. Review � Sign (Reviewer)
+3. Approve � Sign (Approver)
+4. Timestamp � Witness (Ethereum)
+5. Archive � Store AquaTree
+6. Verify � Check entire chain
+```
+
+### Multi-Document Project
+
+```
+1. Create each document � Individual AquaTrees
+2. Link together � Link Revision in main tree
+3. Sign project � Sign main tree
+4. Witness � Witness main tree
+5. All documents timestamped through link
+```
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Overview and quick start
+- [Tooling](/previous_versions/version_3/tooling) - SDK API reference
+- [Schema Reference](/previous_versions/version_3/schema) - Detailed specifications
+25:T3875,
+# Aqua Protocol v3 Concepts
+
+Understanding the core concepts of Aqua Protocol v3 is essential for effectively using the SDK and building applications. This guide covers the fundamental ideas, terminology, and patterns used throughout the protocol.
+
+## AquaTree
+
+The **AquaTree** is the primary data structure in v3. It represents a complete, self-contained collection of revisions with their relationships and metadata.
+
+### Structure
+
+```typescript
+interface AquaTree {
+  revisions: Revisions      // All revisions indexed by hash
+  file_index: FileIndex     // Maps file hashes to filenames
+  tree?: RevisionTree       // Tree structure of revisions
+  treeMapping?: TreeMapping // Path mappings for navigation
+}
+```
+
+### Components
+
+#### 1. Revisions
+A flat map of all revisions, keyed by their verification hash:
+
+```typescript
+{
+  "0xabc123...": {
+    previous_verification_hash: "0xdef456...",
+    local_timestamp: "2024-01-01T12:00:00",
+    revision_type: "file",
+    // ... other fields
+  },
+  "0xdef456...": {
+    // ... another revision
+  }
+}
+```
+
+#### 2. File Index
+Maps file content hashes to filenames for reference:
+
+```typescript
+{
+  "0xfile_hash_1": "document.pdf",
+  "0xfile_hash_2": "image.png"
+}
+```
+
+#### 3. Tree Structure (Optional)
+Hierarchical representation showing parent-child relationships:
+
+```typescript
+{
+  hash: "0xabc123...",  // Root revision
+  children: [
+    {
+      hash: "0xdef456...",
+      children: [...]
+    }
+  ]
+}
+```
+
+#### 4. Tree Mapping (Optional)
+Path information for each revision:
+
+```typescript
+{
+  paths: {
+    "0xabc123": ["0xroot", "0xabc123"],
+    "0xdef456": ["0xroot", "0xabc123", "0xdef456"]
+  },
+  latestHash: "0xdef456..."  // Most recent revision
+}
+```
+
+## Revisions
+
+A **Revision** is a single entry in the AquaTree representing an operation or state change.
+
+### Common Fields
+
+All revisions share these base fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `previous_verification_hash` | string | Hash linking to previous revision (empty string for genesis) |
+| `local_timestamp` | string | ISO 8601 timestamp when revision was created |
+| `revision_type` | string | One of: `"file"`, `"form"`, `"signature"`, `"witness"`, `"link"` |
+| `version` | string | Protocol version with method: `https://aqua-protocol.org/docs/v3/schema_2 \| SHA256 \| Method: scalar/tree` |
+
+### Genesis Revision
+
+The **genesis revision** is the first revision in a chain:
+- `previous_verification_hash` is an empty string `""`
+- Typically a file or form revision
+- Establishes the initial state
+
+### Verification Hash
+
+Each revision has a unique **verification hash** computed from its canonical form:
+
+```typescript
+hash = SHA256(canonicalized_revision_data)
+```
+
+This hash serves as:
+- Unique identifier for the revision
+- Key in the revisions map
+- Reference in `previous_verification_hash` fields
+
+## Revision Types
+
+### 1. File Revision
+
+Stores file metadata and optionally content.
+
+**Purpose**: Document file presence and content integrity
+
+**Fields**:
+- `file_hash`: SHA256 hash of file content
+- `file_nonce`: Random nonce for uniqueness
+- `content`: Optional file content (text or binary)
+- `leaves`: Array of hashes (tree mode only)
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "file",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "file_hash": "0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+  "file_nonce": "0x3fa8b1c2d3e4f5a67b8c9d0e1f2a3b4c"
+}
+```
+
+### 2. Form Revision
+
+Stores structured key-value data.
+
+**Purpose**: Capture form submissions, structured data, or metadata
+
+**Fields**:
+- `file_hash`: Hash of form data
+- `file_nonce`: Random nonce
+- `content`: Form data as key-value object
+- `leaves`: Array of hashes (tree mode only)
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "",
+  "local_timestamp": "2024-01-01T12:00:00",
+  "revision_type": "form",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree",
+  "file_hash": "0xabc123...",
+  "file_nonce": "0x123abc...",
+  "content": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "status": "approved"
+  },
+  "leaves": ["0x...", "0x...", "0x..."]
+}
+```
+
+### 3. Signature Revision
+
+Adds cryptographic signature to prove authenticity.
+
+**Purpose**: Authenticate revisions and establish authorship
+
+**Fields**:
+- `signature`: Signature value (format depends on type)
+- `signature_type`: One of `"cli"`, `"metamask"`, `"did"`, `"p12"`, `"inline"`
+- `signature_wallet_address`: Ethereum address (for cli/metamask)
+- `signature_public_key`: Public key (for p12)
+
+**Example (MetaMask)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "metamask",
+  "signature": "0x8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f...",
+  "signature_wallet_address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb8"
+}
+```
+
+**Example (DID)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:01:00",
+  "revision_type": "signature",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "signature_type": "did",
+  "signature": {
+    "payload": "eyJhbGciOi...",
+    "signatures": [{
+      "protected": "eyJhbGci...",
+      "signature": "..."
+    }]
+  }
+}
+```
+
+### 4. Witness Revision
+
+Anchors revision to external timestamping service.
+
+**Purpose**: Prove existence at specific time via blockchain or TSA
+
+**Fields**:
+- `witness_merkle_root`: Root hash of Merkle tree
+- `witness_timestamp`: Unix timestamp from witness service
+- `witness_network`: Network used (`"mainnet"`, `"sepolia"`, `"holesky"`, `"tsa"`, `"nostr"`)
+- `witness_smart_contract_address`: Contract address (Ethereum)
+- `witness_transaction_hash`: Transaction hash
+- `witness_sender_account_address`: Account that witnessed
+- `witness_merkle_proof`: Merkle proof array
+
+**Example (Ethereum)**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:02:00",
+  "revision_type": "witness",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "witness_merkle_root": "0xdef456...",
+  "witness_timestamp": 1704110520,
+  "witness_network": "sepolia",
+  "witness_smart_contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "witness_transaction_hash": "0x9f86d081...",
+  "witness_sender_account_address": "0x742d35Cc...",
+  "witness_merkle_proof": []
+}
+```
+
+### 5. Link Revision
+
+Connects to other AquaTree chains.
+
+**Purpose**: Establish relationships between separate chains
+
+**Fields**:
+- `link_type`: Type of link relationship (application-specific)
+- `link_verification_hashes`: Array of hashes from other chains
+- `link_file_hashes`: Array of corresponding file hashes
+
+**Example**:
+```json
+{
+  "previous_verification_hash": "0xabc123...",
+  "local_timestamp": "2024-01-01T12:03:00",
+  "revision_type": "link",
+  "version": "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar",
+  "link_type": "dependency",
+  "link_verification_hashes": [
+    "0x111...",
+    "0x222...",
+    "0x333..."
+  ],
+  "link_file_hashes": [
+    "0xaaa...",
+    "0xbbb...",
+    "0xccc..."
+  ]
+}
+```
+
+## Methods: Scalar vs Tree
+
+V3 supports two canonicalization methods, specified in the version string.
+
+### Scalar Method
+
+**Format**: `Method: scalar`
+
+**How it works**:
+- Revision is serialized as-is
+- Hash computed directly from canonical JSON
+- Simple, straightforward
+
+**When to use**:
+- Small revisions
+- Simple file/form data
+- Quick operations
+
+**Example**:
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: scalar"
+// No leaves field
+```
+
+### Tree Method
+
+**Format**: `Method: tree`
+
+**How it works**:
+- Content broken into key-value leaves
+- Each leaf hashed individually
+- Merkle tree constructed from leaves
+- Root becomes the verification hash
+
+**When to use**:
+- Large files or forms
+- Selective disclosure needed
+- Proof of specific fields
+
+**Example**:
+```typescript
+version: "https://aqua-protocol.org/docs/v3/schema_2 | SHA256 | Method: tree"
+leaves: [
+  "0xhash_of_key_value_1",
+  "0xhash_of_key_value_2",
+  "0xhash_of_key_value_3"
+]
+```
+
+**Leaf Generation**:
+```typescript
+// For form data: { "name": "John", "email": "john@example.com" }
+leaves = [
+  SHA256("name:John"),
+  SHA256("email:john@example.com")
+]
+```
+
+## Chains and Trees
+
+### Linear Chain
+
+Simple sequence of revisions:
+
+```
+Genesis � Signature � Witness � Update � Signature � Witness
+```
+
+Each revision references the previous one.
+
+### Branching Tree
+
+Multiple paths from a common ancestor:
+
+```
+            Genesis
+               �
+          Signature
+             /  \
+        Branch A  Branch B
+           �        �
+        Update 1  Update 2
+```
+
+V3 supports branching, allowing parallel development paths.
+
+### Path Mapping
+
+The `treeMapping` provides paths to each revision:
+
+```typescript
+{
+  paths: {
+    "genesis_hash": ["genesis_hash"],
+    "sig_hash": ["genesis_hash", "sig_hash"],
+    "branch_a_hash": ["genesis_hash", "sig_hash", "branch_a_hash"],
+    "branch_b_hash": ["genesis_hash", "sig_hash", "branch_b_hash"]
+  },
+  latestHash: "branch_a_hash"  // Longest path
+}
+```
+
+## File Object
+
+Input format for creating revisions:
+
+```typescript
+interface FileObject {
+  fileName: string           // Display name
+  fileContent: string |      // Text content
+                AquaTree |   // Linked tree
+                Uint8Array | // Binary data
+                Record<string, string> | // Form data
+                object       // Structured data
+  path: string              // File path
+  fileSize?: number         // Size in bytes
+}
+```
+
+### Content Types
+
+**Text**: Plain text, HTML, JSON
+```typescript
+{
+  fileName: "doc.txt",
+  fileContent: "Hello World",
+  path: "/docs/doc.txt"
+}
+```
+
+**Binary**: Images, PDFs, any binary file
+```typescript
+{
+  fileName: "image.png",
+  fileContent: new Uint8Array([...]),
+  path: "/images/image.png"
+}
+```
+
+**Form**: Key-value structured data
+```typescript
+{
+  fileName: "form.json",
+  fileContent: {
+    "field1": "value1",
+    "field2": "value2"
+  },
+  path: "/forms/form.json"
+}
+```
+
+**Link**: Reference to another AquaTree
+```typescript
+{
+  fileName: "linked.json",
+  fileContent: anotherAquaTree,
+  path: "/links/linked.json"
+}
+```
+
+## Verification Graph
+
+Result of verification includes a graph structure:
+
+```typescript
+interface VerificationGraphData {
+  hash: string
+  previous_verification_hash: string
+  timestamp: string
+  isValidationSuccessful: boolean
+  revisionType: RevisionType
+  info: RevisionGraphInfo  // Type-specific details
+  verificationGraphData: VerificationGraphData[]      // Children
+  linkVerificationGraphData: VerificationGraphData[]  // Links
+}
+```
+
+### Traversing the Graph
+
+```typescript
+function printVerification(graph: VerificationGraphData, depth = 0) {
+  const indent = "  ".repeat(depth);
+  const status = graph.isValidationSuccessful ? "" : "";
+  console.log(`${indent}${status} ${graph.revisionType} (${graph.hash.slice(0, 10)}...)`);
+
+  // Traverse children
+  graph.verificationGraphData.forEach(child => {
+    printVerification(child, depth + 1);
+  });
+
+  // Traverse links
+  graph.linkVerificationGraphData.forEach(link => {
+    console.log(`${indent}  � Linked:`);
+    printVerification(link, depth + 2);
+  });
+}
+```
+
+## Credentials
+
+Configuration for signing and witnessing:
+
+```typescript
+interface CredentialsData {
+  mnemonic: string             // BIP39 mnemonic for CLI signing
+  nostr_sk: string             // Nostr secret key
+  did_key: string              // DID key for DID signing
+  alchemy_key: string          // Alchemy API key for verification
+  witness_eth_network: string  // "mainnet", "sepolia", "holesky"
+  witness_method: string       // "cli" or "metamask"
+  p12_password?: string        // P12 certificate password
+  p12_content?: string         // P12 certificate content
+}
+```
+
+## Logging
+
+V3 uses typed logging throughout:
+
+```typescript
+enum LogType {
+  SUCCESS = "success",
+  INFO = "info",
+  ERROR = "error",
+  WARNING = "warning",
+  HINT = "hint",
+  DEBUGDATA = "debug_data",
+  // ... revision types with emojis
+  FILE = "file",      // =�
+  LINK = "link",      // =
+  SIGNATURE = "signature",  // =
+  WITNESS = "witness",      // =@
+  FORM = "form"            // =�
+}
+```
+
+Each operation returns logs for debugging and user feedback.
+
+## Best Practices
+
+### 1. Genesis Patterns
+
+**Single File**:
+```
+File Genesis � Sign � Witness
+```
+
+**Form Data**:
+```
+Form Genesis � Sign � Witness
+```
+
+### 2. Update Patterns
+
+**Content Update**:
+```
+... � New File Revision � Sign � Witness
+```
+
+**Multi-Party**:
+```
+... � Sign (Party 1) � Sign (Party 2) � Witness
+```
+
+### 3. Linking Patterns
+
+**Dependencies**:
+```
+Main Document � Link (to dependencies) � Sign � Witness
+```
+
+**Aggregation**:
+```
+Component 1 
+Component 2 � Aggregation Link � Sign � Witness
+Component 3 
+```
+
+### 4. Verification Patterns
+
+**Full Chain**:
+```typescript
+const result = await aquafier.verifyRevisionChain(aquaTree);
+```
+
+**Specific Revision**:
+```typescript
+const revision = aquaTree.revisions[specificHash];
+// Manually verify hash computation
+```
+
+### 5. Storage Patterns
+
+**Database**: Store serialized AquaTree JSON
+```typescript
+const json = JSON.stringify(aquaTree);
+db.save(documentId, json);
+```
+
+**File System**: Save as .aqua.json file
+```typescript
+fs.writeFileSync('document.aqua.json', JSON.stringify(aquaTree, null, 2));
+```
+
+## Common Patterns
+
+### Document Lifecycle
+
+```
+1. Create � File Genesis
+2. Review � Sign (Reviewer)
+3. Approve � Sign (Approver)
+4. Timestamp � Witness (Ethereum)
+5. Archive � Store AquaTree
+6. Verify � Check entire chain
+```
+
+### Multi-Document Project
+
+```
+1. Create each document � Individual AquaTrees
+2. Link together � Link Revision in main tree
+3. Sign project � Sign main tree
+4. Witness � Witness main tree
+5. All documents timestamped through link
+```
+
+## See Also
+
+- [Introduction](/previous_versions/version_3/introduction) - Overview and quick start
+- [Tooling](/previous_versions/version_3/tooling) - SDK API reference
+- [Schema Reference](/previous_versions/version_3/schema) - Detailed specifications
+1e:["$","$L23",null,{"meta":{"title":"Concepts","description":"Core concepts and terminology for Aqua Protocol v3","content":"$24","reading_time":9,"word_count":1657},"content":"$25","previousDoc":"$undefined","nextDoc":{"title":"Aqua Protocol v3","slug":"introduction"},"version":"v3.0.2","slug":"concepts","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+1f:["$","$L26",null,{"items":[{"id":"aquatree","title":"AquaTree","level":2},{"id":"structure","title":"Structure","level":3},{"id":"components","title":"Components","level":3},{"id":"revisions","title":"Revisions","level":2},{"id":"common-fields","title":"Common Fields","level":3},{"id":"genesis-revision","title":"Genesis Revision","level":3},{"id":"verification-hash","title":"Verification Hash","level":3},{"id":"revision-types","title":"Revision Types","level":2},{"id":"1-file-revision","title":"1. File Revision","level":3},{"id":"2-form-revision","title":"2. Form Revision","level":3},{"id":"3-signature-revision","title":"3. Signature Revision","level":3},{"id":"4-witness-revision","title":"4. Witness Revision","level":3},{"id":"5-link-revision","title":"5. Link Revision","level":3},{"id":"methods-scalar-vs-tree","title":"Methods: Scalar vs Tree","level":2},{"id":"scalar-method","title":"Scalar Method","level":3},{"id":"tree-method","title":"Tree Method","level":3},{"id":"chains-and-trees","title":"Chains and Trees","level":2},{"id":"linear-chain","title":"Linear Chain","level":3},{"id":"branching-tree","title":"Branching Tree","level":3},{"id":"path-mapping","title":"Path Mapping","level":3},{"id":"file-object","title":"File Object","level":2},{"id":"content-types","title":"Content Types","level":3},{"id":"verification-graph","title":"Verification Graph","level":2},{"id":"traversing-the-graph","title":"Traversing the Graph","level":3},{"id":"credentials","title":"Credentials","level":2},{"id":"logging","title":"Logging","level":2},{"id":"best-practices","title":"Best Practices","level":2},{"id":"1-genesis-patterns","title":"1. Genesis Patterns","level":3},{"id":"2-update-patterns","title":"2. Update Patterns","level":3},{"id":"3-linking-patterns","title":"3. Linking Patterns","level":3},{"id":"4-verification-patterns","title":"4. Verification Patterns","level":3},{"id":"5-storage-patterns","title":"5. Storage Patterns","level":3},{"id":"common-patterns","title":"Common Patterns","level":2},{"id":"document-lifecycle","title":"Document Lifecycle","level":3},{"id":"multi-document-project","title":"Multi-Document Project","level":3},{"id":"see-also","title":"See Also","level":2}],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+20:["$","$L27",null,{}]
+21:["$","$L28",null,{}]
+22:["$","$L29",null,{}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+2a:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"IconMark"]
+e:null
+12:[["$","title","0",{"children":"Concepts | Aqua Protocol"}],["$","meta","1",{"name":"description","content":"Core concepts and terminology for Aqua Protocol v3"}],["$","link","2",{"rel":"canonical","href":"https://aqua-protocol.org/docs/v3.0.2/concepts"}],["$","meta","3",{"property":"og:title","content":"Concepts"}],["$","meta","4",{"property":"og:description","content":"Core concepts and terminology for Aqua Protocol v3"}],["$","meta","5",{"property":"og:url","content":"https://aqua-protocol.org/docs/v3.0.2/concepts"}],["$","meta","6",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Concepts"}],["$","meta","11",{"name":"twitter:description","content":"Core concepts and terminology for Aqua Protocol v3"}],["$","link","12",{"rel":"icon","href":"/logo/aqua-logo.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/apple-icon.png"}],["$","$L2a","14",{}]]
