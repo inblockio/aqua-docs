@@ -115,13 +115,29 @@ async function buildRedirects() {
 async function main() {
   const { redirects, folderRedirects } = await buildRedirects()
 
-  const allRedirects = [...redirects, ...folderRedirects]
+  // Add manual redirects for the /docs/ path and other common paths
+  const manualRedirects = [
+    {
+      source: "/docs",
+      destination: "/",
+      permanent: false,
+    },
+    {
+      source: "/docs/",
+      destination: "/",
+      permanent: false,
+    }
+  ]
+
+  const allRedirects = [...redirects, ...folderRedirects, ...manualRedirects]
+
 
   const outputPath = path.join(__dirname, "..", "redirects.json")
   fs.writeFileSync(outputPath, JSON.stringify(allRedirects, null, 2))
 
   console.log(`✅ Generated ${redirects.length} frontmatter redirects`)
   console.log(`✅ Generated ${folderRedirects.length} folder redirects`)
+  console.log(`✅ Generated ${manualRedirects.length} manual redirects`)
   console.log(`📝 Saved to: ${outputPath}`)
 }
 

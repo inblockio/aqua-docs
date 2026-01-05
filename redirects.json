@@ -1,5 +1,35 @@
 [
   {
+    "source": "/docs/v1/Protocol/whitepaper",
+    "destination": "/docs/v1.1.0/whitepaper",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v1.0.0/whitepaper",
+    "destination": "/docs/v1.1.0/whitepaper",
+    "permanent": true
+  },
+  {
+    "source": "/docs/protocol/whitepaper",
+    "destination": "/docs/v1.1.0/whitepaper",
+    "permanent": true
+  },
+  {
+    "source": "/docs/protocol/whitepaper/",
+    "destination": "/docs/v1.1.0/whitepaper",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v3/schema_2",
+    "destination": "/docs/v3.0.2/schema",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v3/schema",
+    "destination": "/docs/v3.0.2/schema",
+    "permanent": true
+  },
+  {
     "source": "/docs/v4.0.0/dev-tools",
     "destination": "/docs/v4.0.0/dev-tools/aqua-cli",
     "permanent": false
@@ -17,6 +47,16 @@
   {
     "source": "/docs/v4.0.0/use-cases",
     "destination": "/docs/v4.0.0/use-cases/document-verification",
+    "permanent": false
+  },
+  {
+    "source": "/docs",
+    "destination": "/",
+    "permanent": false
+  },
+  {
+    "source": "/docs/",
+    "destination": "/",
     "permanent": false
   }
 ]

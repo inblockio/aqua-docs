@@ -113,7 +113,7 @@ export default async function DocPage({ params }: PageProps) {
           header={<Header currentVersion={version} versions={versions} config={config} />}
           docs={allDocs}
           version={version}
-          content={
+          children={
             <CategoryIndex
               categoryPath={slug}
               version={version}
@@ -143,7 +143,7 @@ export default async function DocPage({ params }: PageProps) {
             header={<Header currentVersion={version} versions={versions} config={config} />}
             docs={allDocs}
             version={version}
-            content={<NotFoundContent version={version} />}
+            children={<NotFoundContent version={version} />}
             toc={<div />}
             config={config}
             currentPageTabGroup={undefined}
@@ -176,7 +176,7 @@ export default async function DocPage({ params }: PageProps) {
           header={<Header currentVersion={version} versions={versions} config={config} />}
           docs={allDocs}
           version={version}
-          content={
+          children={
             showCategoryIndex ? (
               <CategoryIndex
                 categoryPath={slug}
