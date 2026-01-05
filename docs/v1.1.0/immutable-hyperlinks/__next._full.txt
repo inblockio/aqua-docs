@@ -1,26 +1,33 @@
 1:"$Sreact.fragment"
-2:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"ConfigProvider"]
-3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"TabProvider"]
+2:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"ConfigProvider"]
+3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"TabProvider"]
 4:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
 5:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
-6:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"VersionNotFound"]
-a:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
+6:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"Button"]
+7:I[522016,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],""]
+10:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
 :HL["/_next/static/chunks/a06cf6f745569492.css","style"]
-:HL["/_next/static/chunks/b0e9cc9922d4f147.css","style"]
+:HL["/_next/static/chunks/a491150350dc0381.css","style"]
 :HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"P":null,"b":"JYW95fJa52-5pkdIpCduE","c":["","docs","v1.1.0","immutable-hyperlinks"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v1.1.0","d"],{"children":[["slug","immutable-hyperlinks","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/b0e9cc9922d4f147.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/eb22c92016909501.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/147f1793f0357acf.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["$L7",{},null,false,false]},["$L8",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"S":true}
-c:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
-d:"$Sreact.suspense"
-f:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"ViewportBoundary"]
-11:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"MetadataBoundary"]
-7:["$","$1","c",{"children":["$Lb",null,["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]]}]
-8:["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}]
-9:["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$d",null,{"name":"Next.Metadata","children":"$L12"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
-13:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"DocLoading"]
-14:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"DocLayoutWrapper"]
-15:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"Header"]
-16:Td09,
+0:{"P":null,"b":"jYB6lbiHIxAlWcwG_MhGb","c":["","docs","v1.1.0","immutable-hyperlinks"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v1.1.0","d"],{"children":[["slug","immutable-hyperlinks","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/a491150350dc0381.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/eb22c92016909501.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/c4a8b026e121e3ad.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen bg-background flex items-center justify-center px-6","children":["$","div",null,{"className":"max-w-2xl mx-auto text-center space-y-6","children":[["$","div",null,{"className":"space-y-2","children":[["$","h1",null,{"className":"text-6xl md:text-8xl font-bold text-primary","children":"404"}],["$","h2",null,{"className":"text-2xl md:text-3xl font-semibold text-foreground","children":"Page Not Found"}]]}],["$","p",null,{"className":"text-muted-foreground text-lg max-w-md mx-auto","children":"The page you're looking for doesn't exist or may have been moved."}],["$","div",null,{"className":"flex flex-col sm:flex-row items-center justify-center gap-4 pt-6","children":[["$","$L6",null,{"asChild":true,"size":"lg","children":["$","$L7",null,{"href":"/","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-house mr-2 h-4 w-4","children":[["$","path","5wwlr5",{"d":"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"}],["$","path","1d0kgt",{"d":"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"}],"$undefined"]}],"Go to Homepage"]}]}],["$","$L6",null,{"asChild":true,"variant":"outline","size":"lg","children":["$","$L7",null,{"href":"/docs/v4.0.0/welcome","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left mr-2 h-4 w-4","children":["$L8","$L9","$undefined"]}],"View Documentation"]}]}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":["$La",{"children":["$Lb",{"children":["$Lc",{"children":["$Ld",{},null,false,false]},["$Le",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"S":true}
+11:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"VersionNotFound"]
+13:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
+14:"$Sreact.suspense"
+16:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"ViewportBoundary"]
+18:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"MetadataBoundary"]
+8:["$","path","1l729n",{"d":"m12 19-7-7 7-7"}]
+9:["$","path","x3x0zl",{"d":"M19 12H5"}]
+a:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+b:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L11",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+c:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+d:["$","$1","c",{"children":["$L12",null,["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]]}]
+e:["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}]
+f:["$","$1","h",{"children":[null,["$","$L16",null,{"children":"$L17"}],["$","div",null,{"hidden":true,"children":["$","$L18",null,{"children":["$","$14",null,{"name":"Next.Metadata","children":"$L19"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+1a:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"DocLoading"]
+1b:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"DocLayoutWrapper"]
+1c:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"Header"]
+1d:Td09,
 We first exchanged goods, then we used means to exchange goods, such as
 shells and coins. Today we use money. We have transitioned to a world where
 we present and exchange data to receive goods and services.
@@ -89,7 +96,7 @@ usage of data as a means of exchange.
 
 *Please contribute to this article (fixing errors) by exporting it and
 sending it back with your improvement to community\[at\]inblock\[dot\]io.*
-17:Td09,
+1e:Td09,
 We first exchanged goods, then we used means to exchange goods, such as
 shells and coins. Today we use money. We have transitioned to a world where
 we present and exchange data to receive goods and services.
@@ -158,7 +165,7 @@ usage of data as a means of exchange.
 
 *Please contribute to this article (fixing errors) by exporting it and
 sending it back with your improvement to community\[at\]inblock\[dot\]io.*
-18:T14c2,
+1f:T14c2,
 Author: Ben Koo
 E-Mail: koo0905\[at\]gmail\[dot\]com
 Year: 2021
@@ -265,7 +272,7 @@ New Economy](https://wip.mitpress.mit.edu/new-economy)[^7].
 [^7]: Alex Pentland, Alexander Lipton, and Thomas Hardjono, Building the
     New Economy, MIT Press, Work in Progress,
     [https://wip.mitpress.mit.edu/new-economy](https://wip.mitpress.mit.edu/new-economy)
-19:T14c2,
+20:T14c2,
 Author: Ben Koo
 E-Mail: koo0905\[at\]gmail\[dot\]com
 Year: 2021
@@ -372,7 +379,7 @@ New Economy](https://wip.mitpress.mit.edu/new-economy)[^7].
 [^7]: Alex Pentland, Alexander Lipton, and Thomas Hardjono, Building the
     New Economy, MIT Press, Work in Progress,
     [https://wip.mitpress.mit.edu/new-economy](https://wip.mitpress.mit.edu/new-economy)
-1a:T1238,
+21:T1238,
 The following design principles pertain to Aqua reference Implementation `PKC`
 
 ## Private is Default
@@ -492,7 +499,7 @@ Furthermore we ensure with the development of the MediaWiki Data
 Accounting Extension, that the data is still compatible with the legacy
 import / export (which means only the text not the verification data is
 imported / exported.
-1b:T1238,
+22:T1238,
 The following design principles pertain to Aqua reference Implementation `PKC`
 
 ## Private is Default
@@ -612,7 +619,7 @@ Furthermore we ensure with the development of the MediaWiki Data
 Accounting Extension, that the data is still compatible with the legacy
 import / export (which means only the text not the verification data is
 imported / exported.
-1c:T47c9,
+23:T47c9,
 # Context
 
 It is highly problematic to expose sensitive data, such as personal
@@ -978,7 +985,7 @@ history of the channel is not kept
 * (required) read content of room (send it to the Guardian for verification,
  before it's send to the import API) (required)
 
-1d:T47c9,
+24:T47c9,
 # Context
 
 It is highly problematic to expose sensitive data, such as personal
@@ -1344,7 +1351,7 @@ history of the channel is not kept
 * (required) read content of room (send it to the Guardian for verification,
  before it's send to the import API) (required)
 
-1e:Tb92,
+25:Tb92,
 Traditional hyperlinks are usually
 [URL's](https://en.wikipedia.org/wiki/URL) based on the
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) structure.
@@ -1422,7 +1429,7 @@ prefix to the `<verification_hash>` resulting in the following syntax:
 
 Note: Implementatstion specific to aqua-PKC:
 - The verification_hash is stored in the content-slot 'transclusion hashes' with the internal links which referne the resource.
-1f:Tb92,
+26:Tb92,
 Traditional hyperlinks are usually
 [URL's](https://en.wikipedia.org/wiki/URL) based on the
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) structure.
@@ -1500,7 +1507,7 @@ prefix to the `<verification_hash>` resulting in the following syntax:
 
 Note: Implementatstion specific to aqua-PKC:
 - The verification_hash is stored in the content-slot 'transclusion hashes' with the internal links which referne the resource.
-20:T7e3,
+27:T7e3,
 How safe are the wallets to used? - Current PKC Pilot - relating to the
 'Authentication assurance level's (AAL)' according to the World Bank
 standards:
@@ -1544,7 +1551,7 @@ authentication for logins after wallet-authentication see
     Metamask. If Metamask is hacked it will not allow to compromise the
     model above as the security of the private key of the hardware token
     is preserved.
-21:T7e3,
+28:T7e3,
 How safe are the wallets to used? - Current PKC Pilot - relating to the
 'Authentication assurance level's (AAL)' according to the World Bank
 standards:
@@ -1588,7 +1595,7 @@ authentication for logins after wallet-authentication see
     Metamask. If Metamask is hacked it will not allow to compromise the
     model above as the security of the private key of the hardware token
     is preserved.
-22:T3c92,
+29:T3c92,
 Implementation specific architecture documentation for the Aqua Data
 Vault 'Personal Knowledge Container (PKC)'. In this document you will
 find reasoning as to why certain components were chosen to build this
@@ -1920,7 +1927,7 @@ authentication challenges.
 
 5. [Merkle Tree - Wikipedia](https://en.wikipedia.org/wiki/Merkle_tree)
 
-23:T3c92,
+2a:T3c92,
 Implementation specific architecture documentation for the Aqua Data
 Vault 'Personal Knowledge Container (PKC)'. In this document you will
 find reasoning as to why certain components were chosen to build this
@@ -2252,7 +2259,7 @@ authentication challenges.
 
 5. [Merkle Tree - Wikipedia](https://en.wikipedia.org/wiki/Merkle_tree)
 
-24:T4e17,
+2b:T4e17,
 The Aqua Identity Protocol (AIP) is an experimental application protocol
 under development for Self Sovereign Identity's (SSIs) on top of the
 Aqua Protocol. This is an active field of research which is related to
@@ -2689,7 +2696,7 @@ See Implementation Specific Aqua Identity Protocol Implementation in MWe
 
 6. [PKI Certificate Revocation Process Explained - TechNet](https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx)
 
-25:T4e17,
+2c:T4e17,
 The Aqua Identity Protocol (AIP) is an experimental application protocol
 under development for Self Sovereign Identity's (SSIs) on top of the
 Aqua Protocol. This is an active field of research which is related to
@@ -3126,7 +3133,7 @@ See Implementation Specific Aqua Identity Protocol Implementation in MWe
 
 6. [PKI Certificate Revocation Process Explained - TechNet](https://social.technet.microsoft.com/wiki/contents/articles/34071.pki-certificate-revocation-process-explained.aspx)
 
-26:T174e,
+2d:T174e,
 
 
 
@@ -3162,7 +3169,7 @@ This technology enables various applications by offering a peer-to-peer-publishi
 This Protocol and prototype allow for the practical exploration this how this can redefine our collective sense-making by providing a rational process for forming a truth by consensus between trusted peers. This allows for the practical exploration of digital, participatory collaboration at scale, as the AQUA-Protocol can account for contributions that are currently not measurable in monetary value while those contributions provide value to society and/or nature. It seems possible to envision a different economy where data becomes a multi-dimensional currency that allows us to make better-informed decisions. It can inform us to have a greater choice in how we participate economically as service providers and/or consumers.
 
 * **What is it *not yet* good for?**: This is an experimental protocol with a pilot implementation, which is meant for the exploration of new design principles to improve digital sovereignty and trust. This prototype is not production-grade software and should not be used outside of experimental applications. The prototype does currently (Dec'22) not include a transport layer.
-27:T174e,
+2e:T174e,
 
 
 
@@ -3198,7 +3205,7 @@ This technology enables various applications by offering a peer-to-peer-publishi
 This Protocol and prototype allow for the practical exploration this how this can redefine our collective sense-making by providing a rational process for forming a truth by consensus between trusted peers. This allows for the practical exploration of digital, participatory collaboration at scale, as the AQUA-Protocol can account for contributions that are currently not measurable in monetary value while those contributions provide value to society and/or nature. It seems possible to envision a different economy where data becomes a multi-dimensional currency that allows us to make better-informed decisions. It can inform us to have a greater choice in how we participate economically as service providers and/or consumers.
 
 * **What is it *not yet* good for?**: This is an experimental protocol with a pilot implementation, which is meant for the exploration of new design principles to improve digital sovereignty and trust. This prototype is not production-grade software and should not be used outside of experimental applications. The prototype does currently (Dec'22) not include a transport layer.
-28:T94e5,
+2f:T94e5,
 
 |                  |                                            |
 |------------------|--------------------------------------------|
@@ -3976,7 +3983,7 @@ process of double-entry bookkeeping and provides a foundation for a new data
 economy. This also allows to create unforgeable invoices which can be clearly
 attributed to its sender, avoiding fraud. This is one of many other use cases,
 e.g. providing trusted news via revision-controlled journalism.
-29:T94e5,
+30:T94e5,
 
 |                  |                                            |
 |------------------|--------------------------------------------|
@@ -4754,13 +4761,13 @@ process of double-entry bookkeeping and provides a foundation for a new data
 economy. This also allows to create unforgeable invoices which can be clearly
 attributed to its sender, avoiding fraud. This is one of many other use cases,
 e.g. providing trusted news via revision-controlled journalism.
-b:["$","$d",null,{"fallback":["$","$L13",null,{}],"children":[["$","$L14",null,{"header":["$","$L15",null,{"currentVersion":"v1.1.0","versions":["v1.1.0","v2.0.2","v3.0.2","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"data-accounting","filePath":"data-accounting","title":"Data Accounting","meta":{"title":"Data Accounting","linkTitle":"Data Accounting","weight":5,"sidebar_position":5,"description":"Introduces the concept of Data Accounting\n","content":"$16","reading_time":3,"word_count":525},"content":"$17"},{"slug":"data-governance","filePath":"data-governance","title":"Data Governance","meta":{"title":"Data Governance","linkTitle":"Data Governance","weight":6,"sidebar_position":6,"description":"Introduces the concept of Data Governance\n","content":"$18","reading_time":4,"word_count":643},"content":"$19"},{"slug":"delegated-witnessing","filePath":"delegated-witnessing","title":"Delegated Witnessing","meta":{"title":"Delegated Witnessing","linkTitle":"Delegated Witnessing","weight":7,"sidebar_position":7,"description":"Describes the process of sending domain snapshots to remote data vaults.\n","content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n","reading_time":1,"word_count":73},"content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n"},{"slug":"design-principles","filePath":"design-principles","title":"Design Principles","meta":{"title":"Design Principles","linkTitle":"Design Principles","weight":8,"sidebar_position":8,"description":"Lists the design principles underlying our reference implementation\n","content":"$1a","reading_time":4,"word_count":704},"content":"$1b"},{"slug":"guardian","filePath":"guardian","title":"Guardian","meta":{"title":"Guardian","linkTitle":"Guardian","weight":9,"sidebar_position":9,"description":"Shows access and transport layer logic used to interconnect data vaults\n","content":"$1c","reading_time":15,"word_count":2811},"content":"$1d"},{"slug":"immutable-hyperlinks","filePath":"immutable-hyperlinks","title":"Immutable Hyperlinks","meta":{"title":"Immutable Hyperlinks","linkTitle":"Immutable Hyperlinks","weight":10,"sidebar_position":10,"description":"Shows how the Aqua URI's can be used as immutable links.\n","content":"$1e","reading_time":3,"word_count":454},"content":"$1f"},{"slug":"assurance-levels","filePath":"assurance-levels","title":"Assurance Levels (AAL)","meta":{"title":"Assurance Levels (AAL)","linkTitle":"Assurance Levels","description":"Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation. \n","content":"$20","reading_time":2,"word_count":285},"content":"$21"},{"slug":"concepts","filePath":"concepts","title":"Concepts ","meta":{"title":"Concepts ","description":"Explains the technologies selected for the reference implementation and why we selected them.","content":"$22","reading_time":11,"word_count":2055},"content":"$23"},{"slug":"identity-protocol","filePath":"identity-protocol","title":"Identity Protocol","meta":{"title":"Identity Protocol","description":"The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.\n","content":"$24","reading_time":13,"word_count":2566},"content":"$25"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol Version 1","meta":{"title":"Aqua Protocol Version 1","description":"An overview of verision 1 of the Aqua protocol","content":"$26","reading_time":5,"word_count":872},"content":"$27"},{"slug":"name-resolution","filePath":"name-resolution","title":"Aqua Name Resolution (ANS)","meta":{"title":"Aqua Name Resolution (ANS)","description":"ANS is used to hashes of various types to human readable names","content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n","reading_time":1,"word_count":44},"content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n"},{"slug":"whitepaper","filePath":"whitepaper","title":"Whitepaper","meta":{"title":"Whitepaper","linkTitle":"Whitepaper","description":"High level outline of Aqua Protocol (AQP) specification","content":"$28","reading_time":20,"word_count":3993},"content":"$29"}],"version":"v1.1.0","content":"$L2a","toc":"$L2b","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L2c","$L2d","$L2e"]}]
-2f:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"DocLayout"]
-32:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"TableOfContents"]
-33:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"MdxHotReload"]
-34:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"HotReloadIndicator"]
-35:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/147f1793f0357acf.js"],"DevModeBadge"]
-30:Tb92,
+12:["$","$14",null,{"fallback":["$","$L1a",null,{}],"children":[["$","$L1b",null,{"header":["$","$L1c",null,{"currentVersion":"v1.1.0","versions":["v1.1.0","v2.0.2","v3.0.2","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"data-accounting","filePath":"data-accounting","title":"Data Accounting","meta":{"title":"Data Accounting","linkTitle":"Data Accounting","weight":5,"sidebar_position":5,"description":"Introduces the concept of Data Accounting\n","content":"$1d","reading_time":3,"word_count":525},"content":"$1e"},{"slug":"data-governance","filePath":"data-governance","title":"Data Governance","meta":{"title":"Data Governance","linkTitle":"Data Governance","weight":6,"sidebar_position":6,"description":"Introduces the concept of Data Governance\n","content":"$1f","reading_time":4,"word_count":643},"content":"$20"},{"slug":"delegated-witnessing","filePath":"delegated-witnessing","title":"Delegated Witnessing","meta":{"title":"Delegated Witnessing","linkTitle":"Delegated Witnessing","weight":7,"sidebar_position":7,"description":"Describes the process of sending domain snapshots to remote data vaults.\n","content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n","reading_time":1,"word_count":73},"content":"\nDescribes the process of sending a domain snapshot to a remote data vault for\nwitnessing. The domain snapshot is then included in the witnessing event and\nsent back to its original data vault. This makes the domain snapshot behave\nlike an ordinary portable hash chain that can be witnessed. The relative path\nof the Merkle proof is used as a prefix for all other included portable hash\nchains included in the domain snapshot.\n"},{"slug":"design-principles","filePath":"design-principles","title":"Design Principles","meta":{"title":"Design Principles","linkTitle":"Design Principles","weight":8,"sidebar_position":8,"description":"Lists the design principles underlying our reference implementation\n","content":"$21","reading_time":4,"word_count":704},"content":"$22"},{"slug":"guardian","filePath":"guardian","title":"Guardian","meta":{"title":"Guardian","linkTitle":"Guardian","weight":9,"sidebar_position":9,"description":"Shows access and transport layer logic used to interconnect data vaults\n","content":"$23","reading_time":15,"word_count":2811},"content":"$24"},{"slug":"immutable-hyperlinks","filePath":"immutable-hyperlinks","title":"Immutable Hyperlinks","meta":{"title":"Immutable Hyperlinks","linkTitle":"Immutable Hyperlinks","weight":10,"sidebar_position":10,"description":"Shows how the Aqua URI's can be used as immutable links.\n","content":"$25","reading_time":3,"word_count":454},"content":"$26"},{"slug":"assurance-levels","filePath":"assurance-levels","title":"Assurance Levels (AAL)","meta":{"title":"Assurance Levels (AAL)","linkTitle":"Assurance Levels","description":"Highlights the levels of assurances you can receive by using technology provided in the Aqua reference implementation. \n","content":"$27","reading_time":2,"word_count":285},"content":"$28"},{"slug":"concepts","filePath":"concepts","title":"Concepts ","meta":{"title":"Concepts ","description":"Explains the technologies selected for the reference implementation and why we selected them.","content":"$29","reading_time":11,"word_count":2055},"content":"$2a"},{"slug":"identity-protocol","filePath":"identity-protocol","title":"Identity Protocol","meta":{"title":"Identity Protocol","description":"The following text has the goal to highlight the possibility to build identity protocol functionality on top of the core verifiction protocol. This part of the project is in early stages and not mature.\n","content":"$2b","reading_time":13,"word_count":2566},"content":"$2c"},{"slug":"introduction","filePath":"introduction","title":"Aqua Protocol Version 1","meta":{"title":"Aqua Protocol Version 1","description":"An overview of verision 1 of the Aqua protocol","content":"$2d","reading_time":5,"word_count":872},"content":"$2e"},{"slug":"name-resolution","filePath":"name-resolution","title":"Aqua Name Resolution (ANS)","meta":{"title":"Aqua Name Resolution (ANS)","description":"ANS is used to hashes of various types to human readable names","content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n","reading_time":1,"word_count":44},"content":"\nANS is used to resolve hashes of various types to human readable names.\n\nThe following hashes are resolved by the ANS:\n* wallet-addresses to names, organisations an aliases.\n* genesis_hashes to titles.\n* domain_ids to registered endpoints of that domain.\n\nSee the [reference implementation](https://github.com/inblockio/aqua-verifier-webextension/blob/main/src/name_resolver.ts).\n"},{"slug":"whitepaper","filePath":"whitepaper","title":"Whitepaper","meta":{"title":"Whitepaper","linkTitle":"Whitepaper","description":"High level outline of Aqua Protocol (AQP) specification","redirect_from":["/docs/v1/Protocol/whitepaper","/docs/v1.0.0/whitepaper","/docs/protocol/whitepaper","/docs/protocol/whitepaper/"],"content":"$2f","reading_time":20,"word_count":3993},"content":"$30"}],"version":"v1.1.0","children":"$L31","toc":"$L32","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L33","$L34","$L35"]}]
+36:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"DocLayout"]
+39:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"TableOfContents"]
+3a:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"MdxHotReload"]
+3b:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"HotReloadIndicator"]
+3c:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"DevModeBadge"]
+37:Tb92,
 Traditional hyperlinks are usually
 [URL's](https://en.wikipedia.org/wiki/URL) based on the
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) structure.
@@ -4838,7 +4845,7 @@ prefix to the `<verification_hash>` resulting in the following syntax:
 
 Note: Implementatstion specific to aqua-PKC:
 - The verification_hash is stored in the content-slot 'transclusion hashes' with the internal links which referne the resource.
-31:Tb92,
+38:Tb92,
 Traditional hyperlinks are usually
 [URL's](https://en.wikipedia.org/wiki/URL) based on the
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) structure.
@@ -4916,12 +4923,12 @@ prefix to the `<verification_hash>` resulting in the following syntax:
 
 Note: Implementatstion specific to aqua-PKC:
 - The verification_hash is stored in the content-slot 'transclusion hashes' with the internal links which referne the resource.
-2a:["$","$L2f",null,{"meta":{"title":"Immutable Hyperlinks","linkTitle":"Immutable Hyperlinks","weight":10,"sidebar_position":10,"description":"Shows how the Aqua URI's can be used as immutable links.\n","content":"$30","reading_time":3,"word_count":454},"content":"$31","previousDoc":{"title":"Guardian","slug":"guardian"},"nextDoc":{"title":"Assurance Levels (AAL)","slug":"assurance-levels"},"version":"v1.1.0","slug":"immutable-hyperlinks","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
-2b:["$","$L32",null,{"items":[],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
-2c:["$","$L33",null,{}]
-2d:["$","$L34",null,{}]
-2e:["$","$L35",null,{}]
-10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-36:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"IconMark"]
-e:null
-12:[["$","title","0",{"children":"Immutable Hyperlinks | Aqua Protocol"}],["$","meta","1",{"name":"description","content":"Shows how the Aqua URI's can be used as immutable links.\n"}],["$","link","2",{"rel":"canonical","href":"https://aqua-protocol.org/docs/v1.1.0/immutable-hyperlinks"}],["$","meta","3",{"property":"og:title","content":"Immutable Hyperlinks"}],["$","meta","4",{"property":"og:description","content":"Shows how the Aqua URI's can be used as immutable links.\n"}],["$","meta","5",{"property":"og:url","content":"https://aqua-protocol.org/docs/v1.1.0/immutable-hyperlinks"}],["$","meta","6",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Immutable Hyperlinks"}],["$","meta","11",{"name":"twitter:description","content":"Shows how the Aqua URI's can be used as immutable links.\n"}],["$","link","12",{"rel":"icon","href":"/logo/aqua-logo.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/apple-icon.png"}],["$","$L36","14",{}]]
+31:["$","$L36",null,{"meta":{"title":"Immutable Hyperlinks","linkTitle":"Immutable Hyperlinks","weight":10,"sidebar_position":10,"description":"Shows how the Aqua URI's can be used as immutable links.\n","content":"$37","reading_time":3,"word_count":454},"content":"$38","previousDoc":{"title":"Guardian","slug":"guardian"},"nextDoc":{"title":"Assurance Levels (AAL)","slug":"assurance-levels"},"version":"v1.1.0","slug":"immutable-hyperlinks","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+32:["$","$L39",null,{"items":[],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+33:["$","$L3a",null,{}]
+34:["$","$L3b",null,{}]
+35:["$","$L3c",null,{}]
+17:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+3d:I[27201,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"IconMark"]
+15:null
+19:[["$","title","0",{"children":"Immutable Hyperlinks | Aqua Protocol"}],["$","meta","1",{"name":"description","content":"Shows how the Aqua URI's can be used as immutable links.\n"}],["$","link","2",{"rel":"canonical","href":"https://aqua-protocol.org/docs/v1.1.0/immutable-hyperlinks"}],["$","meta","3",{"property":"og:title","content":"Immutable Hyperlinks"}],["$","meta","4",{"property":"og:description","content":"Shows how the Aqua URI's can be used as immutable links.\n"}],["$","meta","5",{"property":"og:url","content":"https://aqua-protocol.org/docs/v1.1.0/immutable-hyperlinks"}],["$","meta","6",{"property":"og:site_name","content":"Documentation Platform"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Immutable Hyperlinks"}],["$","meta","11",{"name":"twitter:description","content":"Shows how the Aqua URI's can be used as immutable links.\n"}],["$","link","12",{"rel":"icon","href":"/logo/aqua-logo.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/apple-icon.png"}],["$","$L3d","14",{}]]
