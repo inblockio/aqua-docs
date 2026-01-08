@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Shield, Fingerprint, Lock, Github, Twitter, Linkedin, ExternalLink } from "lucide-react"
+import { ArrowRight, Shield, Fingerprint, Lock, Github, Twitter, Linkedin, ExternalLink, Upload, PenTool, UserCheck } from "lucide-react"
 import { getConfig, getAssetPath } from "specra/lib"
 import { Button } from "specra/components"
 
@@ -108,35 +108,59 @@ export default function HomePage() {
         </div>
 
         {/* CTA Section */}
-        <div className="py-16 max-w-4xl mx-auto">
-          <div className="rounded-xl border border-border bg-card p-8 md:p-12 text-center space-y-6">
+        <div className="py-16 mx-auto">
+          <div className="rounded-xl border border-border bg-card p-8 md:p-12 text-center space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Try Aquafier</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Experience the power of Aqua Protocol with Aquafier. <br/> Our reference implementation
-              that lets you upload, verify, and notarize any file in seconds.
+              Experience the power of Aqua Protocol with our own application Aquafier.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-              {
-                config?.env?.AQUAFIER_URL ? (
-                  <Button asChild size="lg" variant="default">
-                    <Link href={config.env.AQUAFIER_URL} target="_blank" rel="noopener noreferrer">
-                      Aquafier Production
-                      <ExternalLink className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                ) : null
-              }
-              {
-                config?.env?.AQUAFIER_DEV_URL ? (
-                  <Button asChild size="lg" variant="outline">
-                    <Link href={config.env.AQUAFIER_DEV_URL} target="_blank" rel="noopener noreferrer">
-                      Development Environment
-                      <ExternalLink className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                ) : null
-              }
+
+            {/* Feature Cards */}
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto pt-4">
+              <div className="p-6 rounded-lg border border-border bg-background hover:shadow-lg transition-all">
+                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 mx-auto">
+                  <Upload className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Upload & Verify</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Use our cloud storage-style features to upload, verify, and notarize any file in seconds
+                </p>
+              </div>
+
+              <div className="p-6 rounded-lg border border-border bg-background hover:shadow-lg transition-all">
+                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 mx-auto">
+                  <PenTool className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Electronic Signature</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Sign documents with an electronic signature solution featuring a portable verification trail
+                </p>
+              </div>
+
+              <div className="p-6 rounded-lg border border-border bg-background hover:shadow-lg transition-all">
+                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 mx-auto">
+                  <UserCheck className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Self-Sovereign Identity</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Create and manage a Self-Sovereign-Identity which allows for peer-to-peer attestations and challenge based verification
+                </p>
+              </div>
             </div>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                            <Button asChild size="lg" variant="default">
+                              <Link href="https://aquafier.inblock.io" target="_blank" rel="noopener noreferrer">
+                                Aquafier Production
+                                <ExternalLink className="ml-2 h-4 w-4" />
+                              </Link>
+                            </Button>
+                            <Button asChild size="lg" variant="outline">
+                              <Link href="https://dev.inblock.io" target="_blank" rel="noopener noreferrer">
+                                Development Environment
+                                <ExternalLink className="ml-2 h-4 w-4" />
+                              </Link>
+                            </Button>            </div>
           </div>
         </div>
 
