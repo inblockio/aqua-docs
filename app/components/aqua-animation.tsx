@@ -374,8 +374,8 @@ export default function AquaAnimation({
     function drawEdge(from: AquaNode, to: AquaNode) {
       const a = Math.min(posAlpha(from.x), posAlpha(to.x))
       if (a < 0.01) return
-      ctx!.strokeStyle = `rgba(60,120,140,${a * 0.6})`
-      ctx!.lineWidth = 1.2
+      ctx!.strokeStyle = `rgba(20,60,80,${a * 0.85})`
+      ctx!.lineWidth = 1.6
       ctx!.beginPath()
       ctx!.moveTo(from.x, from.y)
       ctx!.lineTo(to.x, to.y)
@@ -397,9 +397,9 @@ export default function AquaAnimation({
         ctx!.lineTo(link.to.x, link.to.y)
         ctx!.stroke()
       }
-      const baseAlpha = a * (0.35 + flash * 0.4)
-      ctx!.strokeStyle = `rgba(100,110,160,${baseAlpha})`
-      ctx!.lineWidth = 0.7 + flash * 1.3
+      const baseAlpha = a * (0.6 + flash * 0.4)
+      ctx!.strokeStyle = `rgba(40,50,100,${baseAlpha})`
+      ctx!.lineWidth = 1.0 + flash * 1.3
       ctx!.setLineDash([4, 5])
       ctx!.beginPath()
       ctx!.moveTo(link.from.x, link.from.y)
