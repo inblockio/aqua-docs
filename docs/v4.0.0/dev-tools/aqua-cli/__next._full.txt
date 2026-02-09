@@ -1,17 +1,17 @@
 1:"$Sreact.fragment"
-2:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"ConfigProvider"]
-3:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"TabProvider"]
+2:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"ConfigProvider"]
+3:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"TabProvider"]
 4:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
 5:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
-6:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"Button"]
-7:I[522016,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],""]
+6:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"Button"]
+7:I[522016,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],""]
 10:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"default"]
 :HL["/_next/static/chunks/a06cf6f745569492.css","style"]
-:HL["/_next/static/chunks/60a2ffde60849d50.css","style"]
+:HL["/_next/static/chunks/f82219dac8d32eee.css","style"]
 :HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"P":null,"b":"tnD1xWQ3gZ5VL1Amkz1yO","c":["","docs","v4.0.0","dev-tools","aqua-cli"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v4.0.0","d"],{"children":[["slug","dev-tools/aqua-cli","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/60a2ffde60849d50.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/eb22c92016909501.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/c4a8b026e121e3ad.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen bg-background flex items-center justify-center px-6","children":["$","div",null,{"className":"max-w-2xl mx-auto text-center space-y-6","children":[["$","div",null,{"className":"space-y-2","children":[["$","h1",null,{"className":"text-6xl md:text-8xl font-bold text-primary","children":"404"}],["$","h2",null,{"className":"text-2xl md:text-3xl font-semibold text-foreground","children":"Page Not Found"}]]}],["$","p",null,{"className":"text-muted-foreground text-lg max-w-md mx-auto","children":"The page you're looking for doesn't exist or may have been moved."}],["$","div",null,{"className":"flex flex-col sm:flex-row items-center justify-center gap-4 pt-6","children":[["$","$L6",null,{"asChild":true,"size":"lg","children":["$","$L7",null,{"href":"/","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-house mr-2 h-4 w-4","children":[["$","path","5wwlr5",{"d":"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"}],["$","path","1d0kgt",{"d":"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"}],"$undefined"]}],"Go to Homepage"]}]}],["$","$L6",null,{"asChild":true,"variant":"outline","size":"lg","children":["$","$L7",null,{"href":"/docs/v4.0.0/welcome","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left mr-2 h-4 w-4","children":["$L8","$L9","$undefined"]}],"View Documentation"]}]}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":["$La",{"children":["$Lb",{"children":["$Lc",{"children":["$Ld",{},null,false,false]},["$Le",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"S":true}
-11:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"VersionNotFound"]
+0:{"P":null,"b":"eBRy_el4Ouon3ylEfHkHz","c":["","docs","v4.0.0","dev-tools","aqua-cli"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v4.0.0","d"],{"children":[["slug","dev-tools/aqua-cli","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/f82219dac8d32eee.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/046974dfe7bf38d4.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/f219180dc6319b62.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":"/logo/aqua-logo.png"},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./lib/config.types.ts","social":{"github":"https://github.com/inblockio","twitter":"https://twitter.com/inblockio","custom":[{"label":"Website","href":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2024 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v1.0.0/getting-started"},{"label":"API Reference","href":"/docs/v1.0.0/api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio/aqua-docs"},{"label":"Discord","href":"#"}]}]},"banner":{"enabled":false,"message":"🎉 This is a development version. Some features may not work as expected.","type":"error","dismissible":true},"env":{},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen bg-background flex items-center justify-center px-6","children":["$","div",null,{"className":"max-w-2xl mx-auto text-center space-y-6","children":[["$","div",null,{"className":"space-y-2","children":[["$","h1",null,{"className":"text-6xl md:text-8xl font-bold text-primary","children":"404"}],["$","h2",null,{"className":"text-2xl md:text-3xl font-semibold text-foreground","children":"Page Not Found"}]]}],["$","p",null,{"className":"text-muted-foreground text-lg max-w-md mx-auto","children":"The page you're looking for doesn't exist or may have been moved."}],["$","div",null,{"className":"flex flex-col sm:flex-row items-center justify-center gap-4 pt-6","children":[["$","$L6",null,{"asChild":true,"size":"lg","children":["$","$L7",null,{"href":"/","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-house mr-2 h-4 w-4","children":[["$","path","5wwlr5",{"d":"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"}],["$","path","1d0kgt",{"d":"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"}],"$undefined"]}],"Go to Homepage"]}]}],["$","$L6",null,{"asChild":true,"variant":"outline","size":"lg","children":["$","$L7",null,{"href":"/docs/v4.0.0/welcome","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-left mr-2 h-4 w-4","children":["$L8","$L9","$undefined"]}],"View Documentation"]}]}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":["$La",{"children":["$Lb",{"children":["$Lc",{"children":["$Ld",{},null,false,false]},["$Le",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"S":true}
+11:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"VersionNotFound"]
 13:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
 14:"$Sreact.suspense"
 16:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"ViewportBoundary"]
@@ -24,10 +24,10 @@ c:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children
 d:["$","$1","c",{"children":["$L12",null,["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]]}]
 e:["$","div","l",{"className":"flex items-center justify-center min-h-screen","children":["$","div",null,{"className":"animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"}]}]
 f:["$","$1","h",{"children":[null,["$","$L16",null,{"children":"$L17"}],["$","div",null,{"hidden":true,"children":["$","$L18",null,{"children":["$","$14",null,{"name":"Next.Metadata","children":"$L19"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
-1a:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"DocLoading"]
-1b:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"DocLayoutWrapper"]
-1c:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"Header"]
-1d:T1ef1,
+1a:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"DocLoading"]
+1b:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"DocLayoutWrapper"]
+1c:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"Header"]
+1d:T1f72,
 
 The **Aqua Tree** is the primary data structure in Aqua Protocol. It serves as the container for all revisions, their relationships, and associated metadata. An Aqua Tree represents a complete, self-contained unit that can be stored, transmitted, and verified independently.
 
@@ -107,7 +107,7 @@ The hash serves as:
 
 The `file_index` maps content hashes to human-readable filenames. This provides context about what content each hash represents.
 
-See the [File Index documentation](/schema_reference/file_index) for detailed information.
+See the [File Index documentation](/docs/v4.0.0/schema-reference/file-index) for detailed information.
 
 ## Complete Example
 
@@ -278,12 +278,12 @@ For large trees:
 
 ## Related Documentation
 
-- [Revision Types](/schema_reference/revision) - Overview of all revision types
-- [Object Revision](/schema_reference/object_revision) - Genesis and data revisions
-- [Signature Revision](/schema_reference/signing_revision) - Cryptographic signatures
-- [Witness Revision](/schema_reference/witness_revision) - Blockchain anchoring
-- [Link Revision](/schema_reference/link_revision) - Connecting trees
-- [File Index](/schema_reference/file_index) - Content hash mapping1e:T1ef1,
+- [Revision Types](/docs/v4.0.0/schema-reference/revision/revision) - Overview of all revision types
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - Genesis and data revisions
+- [Signature Revision](/docs/v4.0.0/schema-reference/revision/signing-revision) - Cryptographic signatures
+- [Witness Revision](/docs/v4.0.0/schema-reference/revision/witness-revision) - Blockchain anchoring
+- [Link Revision](/docs/v4.0.0/schema-reference/revision/link-revision) - Connecting trees
+- [File Index](/docs/v4.0.0/schema-reference/file-index) - Content hash mapping1e:T1f72,
 
 The **Aqua Tree** is the primary data structure in Aqua Protocol. It serves as the container for all revisions, their relationships, and associated metadata. An Aqua Tree represents a complete, self-contained unit that can be stored, transmitted, and verified independently.
 
@@ -363,7 +363,7 @@ The hash serves as:
 
 The `file_index` maps content hashes to human-readable filenames. This provides context about what content each hash represents.
 
-See the [File Index documentation](/schema_reference/file_index) for detailed information.
+See the [File Index documentation](/docs/v4.0.0/schema-reference/file-index) for detailed information.
 
 ## Complete Example
 
@@ -534,12 +534,12 @@ For large trees:
 
 ## Related Documentation
 
-- [Revision Types](/schema_reference/revision) - Overview of all revision types
-- [Object Revision](/schema_reference/object_revision) - Genesis and data revisions
-- [Signature Revision](/schema_reference/signing_revision) - Cryptographic signatures
-- [Witness Revision](/schema_reference/witness_revision) - Blockchain anchoring
-- [Link Revision](/schema_reference/link_revision) - Connecting trees
-- [File Index](/schema_reference/file_index) - Content hash mapping1f:T1b19,
+- [Revision Types](/docs/v4.0.0/schema-reference/revision/revision) - Overview of all revision types
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - Genesis and data revisions
+- [Signature Revision](/docs/v4.0.0/schema-reference/revision/signing-revision) - Cryptographic signatures
+- [Witness Revision](/docs/v4.0.0/schema-reference/revision/witness-revision) - Blockchain anchoring
+- [Link Revision](/docs/v4.0.0/schema-reference/revision/link-revision) - Connecting trees
+- [File Index](/docs/v4.0.0/schema-reference/file-index) - Content hash mapping1f:T1b79,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -562,7 +562,7 @@ The Aqua Protocol is a foundational framework for building distributed trust net
 
 <Card title="Core Idea"
   icon="rocket"
-  href="/quickstart"
+  href="/docs/v4.0.0/quickstart"
   horizontal
 >
   Building trust through cryptographic proof and verifiable data structures.
@@ -611,14 +611,14 @@ Want to see Aqua Protocol in action? Try **Aquafier**, our reference implementat
 <CardGrid cols={2}>
   <Card title="Quick Start Guide"
     icon="rocket"
-    href="/quickstart"
+    href="/docs/v4.0.0/quickstart"
   >
     Get up and running with Aqua Protocol in minutes
   </Card>
 
   <Card title="Understand the Schema"
     icon="brain"
-    href="/schema_reference/introduction"
+    href="/docs/v4.0.0/schema-reference/introduction"
   >
     Learn about the components that make up the protocol
   </Card>
@@ -632,14 +632,14 @@ Want to see Aqua Protocol in action? Try **Aquafier**, our reference implementat
 
   <Card title="Developer Tools"
     icon="wrench"
-    href="/dev_tools/aqua_sdk"
+    href="/docs/v4.0.0/dev-tools/aqua-sdk"
   >
     Get started with our SDK, CLI, and development tools
   </Card>
 
   <Card title="Use Cases"
     icon="lightbulb"
-    href="/use_cases/introduction"
+    href="/docs/v4.0.0/use-cases/introduction"
   >
     Discover real-world applications and implementation patterns
   </Card>
@@ -739,9 +739,9 @@ Aqua Protocol is open source and community-driven. We welcome:
 
 Ready to dive deeper?
 
-1. **Start Building**: Follow the [Quick Start Guide](/quickstart) to create your first Aqua chain
-2. **Understand the Protocol**: Read the [Schema Reference](/schema_reference/introduction) for technical details
-3. **Explore Use Cases**: See how others are using Aqua in [real-world applications](/use_cases/introduction)
+1. **Start Building**: Follow the [Quick Start Guide](/docs/v4.0.0/quickstart) to create your first Aqua chain
+2. **Understand the Protocol**: Read the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) for technical details
+3. **Explore Use Cases**: See how others are using Aqua in [real-world applications](/docs/v4.0.0/use-cases/introduction)
 4. **Join the Community**: Connect with developers on [GitHub](https://github.com/inblockio)
 
 ---
@@ -753,7 +753,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-20:T1b19,
+20:T1b79,
 
 
 **Aqua Protocol** is an open, private, and decentralized solution for data accountability and governance. Built with modern cryptographic standards, Aqua enables you to verify data integrity and provenance without relying on centralized authorities.
@@ -776,7 +776,7 @@ The Aqua Protocol is a foundational framework for building distributed trust net
 
 <Card title="Core Idea"
   icon="rocket"
-  href="/quickstart"
+  href="/docs/v4.0.0/quickstart"
   horizontal
 >
   Building trust through cryptographic proof and verifiable data structures.
@@ -825,14 +825,14 @@ Want to see Aqua Protocol in action? Try **Aquafier**, our reference implementat
 <CardGrid cols={2}>
   <Card title="Quick Start Guide"
     icon="rocket"
-    href="/quickstart"
+    href="/docs/v4.0.0/quickstart"
   >
     Get up and running with Aqua Protocol in minutes
   </Card>
 
   <Card title="Understand the Schema"
     icon="brain"
-    href="/schema_reference/introduction"
+    href="/docs/v4.0.0/schema-reference/introduction"
   >
     Learn about the components that make up the protocol
   </Card>
@@ -846,14 +846,14 @@ Want to see Aqua Protocol in action? Try **Aquafier**, our reference implementat
 
   <Card title="Developer Tools"
     icon="wrench"
-    href="/dev_tools/aqua_sdk"
+    href="/docs/v4.0.0/dev-tools/aqua-sdk"
   >
     Get started with our SDK, CLI, and development tools
   </Card>
 
   <Card title="Use Cases"
     icon="lightbulb"
-    href="/use_cases/introduction"
+    href="/docs/v4.0.0/use-cases/introduction"
   >
     Discover real-world applications and implementation patterns
   </Card>
@@ -953,9 +953,9 @@ Aqua Protocol is open source and community-driven. We welcome:
 
 Ready to dive deeper?
 
-1. **Start Building**: Follow the [Quick Start Guide](/quickstart) to create your first Aqua chain
-2. **Understand the Protocol**: Read the [Schema Reference](/schema_reference/introduction) for technical details
-3. **Explore Use Cases**: See how others are using Aqua in [real-world applications](/use_cases/introduction)
+1. **Start Building**: Follow the [Quick Start Guide](/docs/v4.0.0/quickstart) to create your first Aqua chain
+2. **Understand the Protocol**: Read the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) for technical details
+3. **Explore Use Cases**: See how others are using Aqua in [real-world applications](/docs/v4.0.0/use-cases/introduction)
 4. **Join the Community**: Connect with developers on [GitHub](https://github.com/inblockio)
 
 ---
@@ -967,7 +967,7 @@ Email us at [info@inblock.io](mailto:info@inblock.io) to talk to our team, or op
 </Callout>
 
 
-21:T2e36,
+21:T2ef1,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
@@ -1233,7 +1233,7 @@ We recommend using TypeScript to enjoy type definitions and better development e
   </Step>
 </Steps>
 
-See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
+See the [CLI documentation](/docs/v4.0.0/dev-tools/aqua-cli) for more commands.
 
 ---
 
@@ -1285,7 +1285,7 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
     **Solution**: MetaMask works in browser environments only. For Node.js:
     - Use CLI signing with mnemonic in `credentials.json`
     - Or use DID or P12 signing methods
-    - See [Development Guide](/development) for details
+    - See [Development Guide](/docs/v4.0.0/development) for details
   </AccordionItem >
 
   <AccordionItem  title="Witnessing: Network errors">
@@ -1318,31 +1318,31 @@ Congratulations! You've created your first Aqua chain. Here's what you accomplis
 Now that you have the basics, dive deeper into Aqua Protocol's features:
 
 <CardGrid  cols={2}>
-  <Card title="Signing Revisions" icon="signature" href="/schema_reference/signing_revision">
+  <Card title="Signing Revisions" icon="signature" href="/docs/v4.0.0/schema-reference/revision/signing-revision">
     Add cryptographic signatures with RSA, Ethereum, or DID methods
   </Card>
 
-  <Card title="Witnessing" icon="clock" href="/schema_reference/witness_revision">
+  <Card title="Witnessing" icon="clock" href="/docs/v4.0.0/schema-reference/revision/witness-revision">
     Anchor your chains to Ethereum, TSA, or Nostr for timestamps
   </Card>
 
-  <Card title="Linking Chains" icon="link" href="/schema_reference/link_revision">
+  <Card title="Linking Chains" icon="link" href="/docs/v4.0.0/schema-reference/revision/link-revision">
     Connect multiple Aqua Trees to build complex provenance graphs
   </Card>
 
-  <Card title="Using Templates" icon="table" href="/schema_reference/template_revision">
+  <Card title="Using Templates" icon="table" href="/docs/v4.0.0/schema-reference/revision/template-revision">
     Define data schemas with JSON Schema validation (v4 only)
   </Card>
 
-  <Card title="Development Guide" icon="code" href="/development">
+  <Card title="Development Guide" icon="code" href="/docs/v4.0.0/development">
     Complete guide for signing methods, witnessing, and advanced usage
   </Card>
 
-  <Card title="Schema Reference" icon="book" href="/schema_reference/introduction">
+  <Card title="Schema Reference" icon="book" href="/docs/v4.0.0/schema-reference/introduction">
     Detailed technical specifications for all revision types
   </Card>
 
-  <Card title="Use Cases" icon="lightbulb" href="/use_cases/introduction">
+  <Card title="Use Cases" icon="lightbulb" href="/docs/v4.0.0/use-cases/introduction">
     Explore real-world applications and implementation patterns
   </Card>
 
@@ -1361,7 +1361,7 @@ Want to see the full workflow including signing and witnessing?
   </Tab>
 
   <Tab label="rust">
-    Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
+    Check out the [Rust SDK documentation](/docs/v4.0.0/dev-tools/aqua-sdk) for complete examples.
   </Tab>
 </Tabs>
 
@@ -1390,7 +1390,7 @@ Not ready to code yet? Try our web-based demo:
     Contact our team for assistance
   </Card>
 
-  <Card title="Documentation" icon="book" href="/">
+  <Card title="Documentation" icon="book" href="/docs/v4.0.0/welcome">
     Browse comprehensive guides and references
   </Card>
 
@@ -1402,9 +1402,9 @@ Not ready to code yet? Try our web-based demo:
 ---
 
 <Callout type="note" >
-**Ready to build?** Start with the [Development Guide](/development) for detailed instructions on signing, witnessing, and advanced features.
+**Ready to build?** Start with the [Development Guide](/docs/v4.0.0/development) for detailed instructions on signing, witnessing, and advanced features.
 </Callout  >
-22:T2e36,
+22:T2ef1,
 ## Choose Your SDK
 
 <Tabs defaultValue="js">
@@ -1670,7 +1670,7 @@ We recommend using TypeScript to enjoy type definitions and better development e
   </Step>
 </Steps>
 
-See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
+See the [CLI documentation](/docs/v4.0.0/dev-tools/aqua-cli) for more commands.
 
 ---
 
@@ -1722,7 +1722,7 @@ See the [CLI documentation](/dev_tools/aqua_cli) for more commands.
     **Solution**: MetaMask works in browser environments only. For Node.js:
     - Use CLI signing with mnemonic in `credentials.json`
     - Or use DID or P12 signing methods
-    - See [Development Guide](/development) for details
+    - See [Development Guide](/docs/v4.0.0/development) for details
   </AccordionItem >
 
   <AccordionItem  title="Witnessing: Network errors">
@@ -1755,31 +1755,31 @@ Congratulations! You've created your first Aqua chain. Here's what you accomplis
 Now that you have the basics, dive deeper into Aqua Protocol's features:
 
 <CardGrid  cols={2}>
-  <Card title="Signing Revisions" icon="signature" href="/schema_reference/signing_revision">
+  <Card title="Signing Revisions" icon="signature" href="/docs/v4.0.0/schema-reference/revision/signing-revision">
     Add cryptographic signatures with RSA, Ethereum, or DID methods
   </Card>
 
-  <Card title="Witnessing" icon="clock" href="/schema_reference/witness_revision">
+  <Card title="Witnessing" icon="clock" href="/docs/v4.0.0/schema-reference/revision/witness-revision">
     Anchor your chains to Ethereum, TSA, or Nostr for timestamps
   </Card>
 
-  <Card title="Linking Chains" icon="link" href="/schema_reference/link_revision">
+  <Card title="Linking Chains" icon="link" href="/docs/v4.0.0/schema-reference/revision/link-revision">
     Connect multiple Aqua Trees to build complex provenance graphs
   </Card>
 
-  <Card title="Using Templates" icon="table" href="/schema_reference/template_revision">
+  <Card title="Using Templates" icon="table" href="/docs/v4.0.0/schema-reference/revision/template-revision">
     Define data schemas with JSON Schema validation (v4 only)
   </Card>
 
-  <Card title="Development Guide" icon="code" href="/development">
+  <Card title="Development Guide" icon="code" href="/docs/v4.0.0/development">
     Complete guide for signing methods, witnessing, and advanced usage
   </Card>
 
-  <Card title="Schema Reference" icon="book" href="/schema_reference/introduction">
+  <Card title="Schema Reference" icon="book" href="/docs/v4.0.0/schema-reference/introduction">
     Detailed technical specifications for all revision types
   </Card>
 
-  <Card title="Use Cases" icon="lightbulb" href="/use_cases/introduction">
+  <Card title="Use Cases" icon="lightbulb" href="/docs/v4.0.0/use-cases/introduction">
     Explore real-world applications and implementation patterns
   </Card>
 
@@ -1798,7 +1798,7 @@ Want to see the full workflow including signing and witnessing?
   </Tab>
 
   <Tab label="rust">
-    Check out the [Rust SDK documentation](/dev_tools/aqua_sdk) for complete examples.
+    Check out the [Rust SDK documentation](/docs/v4.0.0/dev-tools/aqua-sdk) for complete examples.
   </Tab>
 </Tabs>
 
@@ -1827,7 +1827,7 @@ Not ready to code yet? Try our web-based demo:
     Contact our team for assistance
   </Card>
 
-  <Card title="Documentation" icon="book" href="/">
+  <Card title="Documentation" icon="book" href="/docs/v4.0.0/welcome">
     Browse comprehensive guides and references
   </Card>
 
@@ -1839,9 +1839,9 @@ Not ready to code yet? Try our web-based demo:
 ---
 
 <Callout type="note" >
-**Ready to build?** Start with the [Development Guide](/development) for detailed instructions on signing, witnessing, and advanced features.
+**Ready to build?** Start with the [Development Guide](/docs/v4.0.0/development) for detailed instructions on signing, witnessing, and advanced features.
 </Callout  >
-23:T240c,
+23:T2457,
 # File Index
 
 The **File Index** is a component of the Aqua Tree that maps content hashes to human-readable filenames. It provides context about what each hash represents, making Aqua Trees more understandable and navigable.
@@ -2216,11 +2216,11 @@ File index compresses well with gzip due to repetitive patterns:
 
 ## Related Documentation
 
-- [Aqua Tree](/schema_reference/aqua_tree) - Complete tree structure
-- [Object Revision](/schema_reference/object_revision) - Revisions containing content hashes
-- [Link Revision](/schema_reference/link_revision) - Linking to external trees
-- [Template Revision](/schema_reference/template_revision) - Schema definitions
-24:T240c,
+- [Aqua Tree](/docs/v4.0.0/schema-reference/aqua-tree) - Complete tree structure
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - Revisions containing content hashes
+- [Link Revision](/docs/v4.0.0/schema-reference/revision/link-revision) - Linking to external trees
+- [Template Revision](/docs/v4.0.0/schema-reference/revision/template-revision) - Schema definitions
+24:T2457,
 # File Index
 
 The **File Index** is a component of the Aqua Tree that maps content hashes to human-readable filenames. It provides context about what each hash represents, making Aqua Trees more understandable and navigable.
@@ -2595,13 +2595,13 @@ File index compresses well with gzip due to repetitive patterns:
 
 ## Related Documentation
 
-- [Aqua Tree](/schema_reference/aqua_tree) - Complete tree structure
-- [Object Revision](/schema_reference/object_revision) - Revisions containing content hashes
-- [Link Revision](/schema_reference/link_revision) - Linking to external trees
-- [Template Revision](/schema_reference/template_revision) - Schema definitions
-25:T3a85,
+- [Aqua Tree](/docs/v4.0.0/schema-reference/aqua-tree) - Complete tree structure
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - Revisions containing content hashes
+- [Link Revision](/docs/v4.0.0/schema-reference/revision/link-revision) - Linking to external trees
+- [Template Revision](/docs/v4.0.0/schema-reference/revision/template-revision) - Schema definitions
+25:T3ac1,
 <Callout type="info" title="Prerequisites">
-We recommend completing the [Quick Start Guide](/quickstart) before diving into development details.
+We recommend completing the [Quick Start Guide](/docs/v4.0.0/quickstart) before diving into development details.
 </Callout>
 
 ## Choose Your SDK
@@ -2609,25 +2609,25 @@ We recommend completing the [Quick Start Guide](/quickstart) before diving into 
 Aqua Protocol offers SDKs for different use cases:
 
 <CardGrid cols={2}>
-  <Card title="Rust SDK (v4)" icon="code" href="/dev_tools/aqua_sdk">
+  <Card title="Rust SDK (v4)" icon="code" href="/docs/v4.0.0/dev-tools/aqua-sdk">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
   </Card>
 
-  <Card title="JavaScript SDK (v3)" icon="code" href="/previous_versions/version_3/tooling">
+  <Card title="JavaScript SDK (v3)" icon="code" href="/docs/v3.0.2/tooling">
     **Stable** - Production-ready, Node.js/Web/React Native
 
     Best for: Web applications, existing JavaScript projects
   </Card>
 
-  <Card title="CLI Tool (v4)" icon="terminal" href="/dev_tools/aqua_cli">
+  <Card title="CLI Tool (v4)" icon="terminal" href="/docs/v4.0.0/dev-tools/aqua-cli">
     Command-line tool for quick operations
 
     Best for: Testing, CI/CD, scripting
   </Card>
 
-  <Card title="Aquafier API (v3)" icon="globe" href="/dev_tools/aquafier_api">
+  <Card title="Aquafier API (v3)" icon="globe" href="/docs/v4.0.0/dev-tools/aquafier-api">
     Web-based API for notarization
 
     Best for: No-code integration, demos
@@ -2708,7 +2708,7 @@ Or with private key:
 Never commit credentials.json to version control! Add it to `.gitignore`.
 </Callout>
 
-Check your SDK documentation ([Rust SDK](/dev_tools/aqua_sdk) | [JavaScript SDK](/previous_versions/version_3/tooling)) for how to pass credentials.
+Check your SDK documentation ([Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) | [JavaScript SDK](/docs/v3.0.2/tooling)) for how to pass credentials.
 
 **Protocol Support**: v3, v4
 
@@ -3060,7 +3060,7 @@ if (verificationResult.isOk()) {
     Browse full working examples in the repository
   </Card>
 
-  <Card title="API Documentation" icon="book" href="/previous_versions/version_3/tooling">
+  <Card title="API Documentation" icon="book" href="/docs/v3.0.2/tooling">
     Detailed API reference for JavaScript SDK
   </Card>
 </CardGrid>
@@ -3116,11 +3116,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ### More Resources
 
 <CardGrid cols={2}>
-  <Card title="Rust SDK Guide" icon="code" href="/dev_tools/aqua_sdk">
+  <Card title="Rust SDK Guide" icon="code" href="/docs/v4.0.0/dev-tools/aqua-sdk">
     Complete guide for the Rust SDK
   </Card>
 
-  <Card title="Schema Reference" icon="book" href="/schema_reference/introduction">
+  <Card title="Schema Reference" icon="book" href="/docs/v4.0.0/schema-reference/introduction">
     v4 protocol specifications
   </Card>
 </CardGrid>
@@ -3128,11 +3128,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ## Next Steps
 
 <CardGrid cols={2}>
-  <Card title="Use Cases" icon="lightbulb" href="/use_cases/introduction">
+  <Card title="Use Cases" icon="lightbulb" href="/docs/v4.0.0/use-cases/introduction">
     Explore real-world applications
   </Card>
 
-  <Card title="Quick Start" icon="rocket" href="/quickstart">
+  <Card title="Quick Start" icon="rocket" href="/docs/v4.0.0/quickstart">
     Build your first Aqua application
   </Card>
 
@@ -3143,9 +3143,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
   <Card title="Get Support" icon="mail" href="mailto:info@inblock.io">
     Need help? Contact our team
   </Card>
-</CardGrid>26:T3a85,
+</CardGrid>26:T3ac1,
 <Callout type="info" title="Prerequisites">
-We recommend completing the [Quick Start Guide](/quickstart) before diving into development details.
+We recommend completing the [Quick Start Guide](/docs/v4.0.0/quickstart) before diving into development details.
 </Callout>
 
 ## Choose Your SDK
@@ -3153,25 +3153,25 @@ We recommend completing the [Quick Start Guide](/quickstart) before diving into 
 Aqua Protocol offers SDKs for different use cases:
 
 <CardGrid cols={2}>
-  <Card title="Rust SDK (v4)" icon="code" href="/dev_tools/aqua_sdk">
+  <Card title="Rust SDK (v4)" icon="code" href="/docs/v4.0.0/dev-tools/aqua-sdk">
     **Beta** - Template system, WASM support, cross-platform
 
     Best for: New projects, performance-critical applications
   </Card>
 
-  <Card title="JavaScript SDK (v3)" icon="code" href="/previous_versions/version_3/tooling">
+  <Card title="JavaScript SDK (v3)" icon="code" href="/docs/v3.0.2/tooling">
     **Stable** - Production-ready, Node.js/Web/React Native
 
     Best for: Web applications, existing JavaScript projects
   </Card>
 
-  <Card title="CLI Tool (v4)" icon="terminal" href="/dev_tools/aqua_cli">
+  <Card title="CLI Tool (v4)" icon="terminal" href="/docs/v4.0.0/dev-tools/aqua-cli">
     Command-line tool for quick operations
 
     Best for: Testing, CI/CD, scripting
   </Card>
 
-  <Card title="Aquafier API (v3)" icon="globe" href="/dev_tools/aquafier_api">
+  <Card title="Aquafier API (v3)" icon="globe" href="/docs/v4.0.0/dev-tools/aquafier-api">
     Web-based API for notarization
 
     Best for: No-code integration, demos
@@ -3252,7 +3252,7 @@ Or with private key:
 Never commit credentials.json to version control! Add it to `.gitignore`.
 </Callout>
 
-Check your SDK documentation ([Rust SDK](/dev_tools/aqua_sdk) | [JavaScript SDK](/previous_versions/version_3/tooling)) for how to pass credentials.
+Check your SDK documentation ([Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) | [JavaScript SDK](/docs/v3.0.2/tooling)) for how to pass credentials.
 
 **Protocol Support**: v3, v4
 
@@ -3604,7 +3604,7 @@ if (verificationResult.isOk()) {
     Browse full working examples in the repository
   </Card>
 
-  <Card title="API Documentation" icon="book" href="/previous_versions/version_3/tooling">
+  <Card title="API Documentation" icon="book" href="/docs/v3.0.2/tooling">
     Detailed API reference for JavaScript SDK
   </Card>
 </CardGrid>
@@ -3660,11 +3660,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ### More Resources
 
 <CardGrid cols={2}>
-  <Card title="Rust SDK Guide" icon="code" href="/dev_tools/aqua_sdk">
+  <Card title="Rust SDK Guide" icon="code" href="/docs/v4.0.0/dev-tools/aqua-sdk">
     Complete guide for the Rust SDK
   </Card>
 
-  <Card title="Schema Reference" icon="book" href="/schema_reference/introduction">
+  <Card title="Schema Reference" icon="book" href="/docs/v4.0.0/schema-reference/introduction">
     v4 protocol specifications
   </Card>
 </CardGrid>
@@ -3672,11 +3672,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ## Next Steps
 
 <CardGrid cols={2}>
-  <Card title="Use Cases" icon="lightbulb" href="/use_cases/introduction">
+  <Card title="Use Cases" icon="lightbulb" href="/docs/v4.0.0/use-cases/introduction">
     Explore real-world applications
   </Card>
 
-  <Card title="Quick Start" icon="rocket" href="/quickstart">
+  <Card title="Quick Start" icon="rocket" href="/docs/v4.0.0/quickstart">
     Build your first Aqua application
   </Card>
 
@@ -3687,7 +3687,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
   <Card title="Get Support" icon="mail" href="mailto:info@inblock.io">
     Need help? Contact our team
   </Card>
-</CardGrid>27:T348e,
+</CardGrid>27:T355d,
 
 This section provides the complete technical specification for Aqua Protocol v4. Here you'll find detailed documentation on data structures, revision types, validation rules, and implementation requirements.
 
@@ -3722,10 +3722,10 @@ When you notarize content with Aqua Protocol, the output is a JSON file called a
 
 The Aqua Tree contains two primary components:
 
-- **[Revisions](/schema_reference/revision)**: Map of verification hashes to revision objects
-- **[File Index](/schema_reference/file_index)**: Map of content hashes to filenames
+- **[Revisions](/docs/v4.0.0/schema-reference/revision/revision)**: Map of verification hashes to revision objects
+- **[File Index](/docs/v4.0.0/schema-reference/file-index)**: Map of content hashes to filenames
 
-See the [Aqua Tree documentation](/schema_reference/aqua_tree) for complete details.
+See the [Aqua Tree documentation](/docs/v4.0.0/schema-reference/aqua-tree) for complete details.
 
 ## Revision Types
 
@@ -3739,7 +3739,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Document updates and modifications
 - Data snapshots
 
-**Learn more**: [Object Revision Reference](/schema_reference/object_revision)
+**Learn more**: [Object Revision Reference](/docs/v4.0.0/schema-reference/revision/object-revision)
 
 ### 2. Template Revision
 **Purpose**: Define data schemas and validation rules
@@ -3749,7 +3749,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Creating reusable data models
 - Validating object revision content
 
-**Learn more**: [Template Revision Reference](/schema_reference/template_revision)
+**Learn more**: [Template Revision Reference](/docs/v4.0.0/schema-reference/revision/template-revision)
 
 ### 3. Signature Revision
 **Purpose**: Add cryptographic signatures for authentication
@@ -3764,7 +3764,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - **EIP-191**: Ethereum-style signatures
 - **DID:JWS**: Decentralized identifier signatures
 
-**Learn more**: [Signature Revision Reference](/schema_reference/signing_revision)
+**Learn more**: [Signature Revision Reference](/docs/v4.0.0/schema-reference/revision/signing-revision)
 
 ### 4. Witness Revision
 **Purpose**: Anchor revisions to blockchain for timestamping
@@ -3779,7 +3779,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Nostr
 - TSA (RFC 3161 Timestamping Authorities)
 
-**Learn more**: [Witness Revision Reference](/schema_reference/witness_revision)
+**Learn more**: [Witness Revision Reference](/docs/v4.0.0/schema-reference/revision/witness-revision)
 
 ### 5. Link Revision
 **Purpose**: Connect to other Aqua Trees
@@ -3789,7 +3789,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Building composite documents
 - Creating provenance graphs
 
-**Learn more**: [Link Revision Reference](/schema_reference/link_revision)
+**Learn more**: [Link Revision Reference](/docs/v4.0.0/schema-reference/revision/link-revision)
 
 ## Common Revision Fields
 
@@ -4043,46 +4043,45 @@ Aqua Protocol v4 schema supports diverse applications:
 Explore the detailed specifications for each component:
 
 <CardGrid cols={2}>
-  <Card title="Aqua Tree" icon="tree" href="/schema_reference/aqua_tree">
+  <Card title="Aqua Tree" icon="tree" href="/docs/v4.0.0/schema-reference/aqua-tree">
     Root data structure containing revisions and file index
   </Card>
 
-  <Card title="File Index" icon="folder" href="/schema_reference/file_index">
+  <Card title="File Index" icon="folder" href="/docs/v4.0.0/schema-reference/file-index">
     Mapping content hashes to filenames
   </Card>
 
-  <Card title="Revision Types" icon="code-branch" href="/schema_reference/revision">
+  <Card title="Revision Types" icon="code-branch" href="/docs/v4.0.0/schema-reference/revision/revision">
     Overview of all revision types
   </Card>
 
-  <Card title="Object Revision" icon="file" href="/schema_reference/object_revision">
+  <Card title="Object Revision" icon="file" href="/docs/v4.0.0/schema-reference/revision/object-revision">
     Store document and data content
   </Card>
 
-  <Card title="Template Revision" icon="table" href="/schema_reference/template_revision">
+  <Card title="Template Revision" icon="table" href="/docs/v4.0.0/schema-reference/revision/template-revision">
     Define schemas with JSON Schema
   </Card>
 
-  <Card title="Signature Revision" icon="signature" href="/schema_reference/signing_revision">
+  <Card title="Signature Revision" icon="signature" href="/docs/v4.0.0/schema-reference/revision/signing-revision">
     Add cryptographic signatures
   </Card>
 
-  <Card title="Witness Revision" icon="clock" href="/schema_reference/witness_revision">
+  <Card title="Witness Revision" icon="clock" href="/docs/v4.0.0/schema-reference/revision/witness-revision">
     Blockchain timestamping
   </Card>
 
-  <Card title="Link Revision" icon="link" href="/schema_reference/link_revision">
+  <Card title="Link Revision" icon="link" href="/docs/v4.0.0/schema-reference/revision/link-revision">
     Connect to other Aqua Trees
   </Card>
 </CardGrid>
 
 ## Additional Resources
 
-- [Quick Start Guide](/quickstart) - Get started with Aqua Protocol
-- [Version 4 Introduction](/previous_versions/version_4/version_4) - Overview of v4 features
-- [Use Cases](/use_cases/introduction) - Real-world applications
-- [Aqua SDK](/dev_tools/aqua_sdk) - Rust SDK for implementation
-- [Aqua CLI](/dev_tools/aqua_cli) - Command-line tool
+- [Quick Start Guide](/docs/v4.0.0/quickstart) - Get started with Aqua Protocol
+- [Use Cases](/docs/v4.0.0/use-cases/introduction) - Real-world applications
+- [Aqua SDK](/docs/v4.0.0/dev-tools/aqua-sdk) - Rust SDK for implementation
+- [Aqua CLI](/docs/v4.0.0/dev-tools/aqua-cli) - Command-line tool
 
 ## Version History
 
@@ -4095,10 +4094,10 @@ Aqua Protocol v4 introduces:
 - Better support for complex data structures
 
 For previous versions, see:
-- [Version 3 Documentation](/previous_versions/version_3/introduction) - JavaScript SDK (Stable)
-- [Version 2 Documentation](/previous_versions/version_2/introduction) - Legacy
-- [Version 1 Documentation](/previous_versions/version_1/introduction) - Legacy
-28:T348e,
+- [Version 3 Documentation](/docs/v3.0.2/introduction) - JavaScript SDK (Stable)
+- [Version 2 Documentation](/docs/v2.0.2/introduction) - Legacy
+- [Version 1 Documentation](/docs/v1.1.0/introduction) - Legacy
+28:T355d,
 
 This section provides the complete technical specification for Aqua Protocol v4. Here you'll find detailed documentation on data structures, revision types, validation rules, and implementation requirements.
 
@@ -4133,10 +4132,10 @@ When you notarize content with Aqua Protocol, the output is a JSON file called a
 
 The Aqua Tree contains two primary components:
 
-- **[Revisions](/schema_reference/revision)**: Map of verification hashes to revision objects
-- **[File Index](/schema_reference/file_index)**: Map of content hashes to filenames
+- **[Revisions](/docs/v4.0.0/schema-reference/revision/revision)**: Map of verification hashes to revision objects
+- **[File Index](/docs/v4.0.0/schema-reference/file-index)**: Map of content hashes to filenames
 
-See the [Aqua Tree documentation](/schema_reference/aqua_tree) for complete details.
+See the [Aqua Tree documentation](/docs/v4.0.0/schema-reference/aqua-tree) for complete details.
 
 ## Revision Types
 
@@ -4150,7 +4149,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Document updates and modifications
 - Data snapshots
 
-**Learn more**: [Object Revision Reference](/schema_reference/object_revision)
+**Learn more**: [Object Revision Reference](/docs/v4.0.0/schema-reference/revision/object-revision)
 
 ### 2. Template Revision
 **Purpose**: Define data schemas and validation rules
@@ -4160,7 +4159,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Creating reusable data models
 - Validating object revision content
 
-**Learn more**: [Template Revision Reference](/schema_reference/template_revision)
+**Learn more**: [Template Revision Reference](/docs/v4.0.0/schema-reference/revision/template-revision)
 
 ### 3. Signature Revision
 **Purpose**: Add cryptographic signatures for authentication
@@ -4175,7 +4174,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - **EIP-191**: Ethereum-style signatures
 - **DID:JWS**: Decentralized identifier signatures
 
-**Learn more**: [Signature Revision Reference](/schema_reference/signing_revision)
+**Learn more**: [Signature Revision Reference](/docs/v4.0.0/schema-reference/revision/signing-revision)
 
 ### 4. Witness Revision
 **Purpose**: Anchor revisions to blockchain for timestamping
@@ -4190,7 +4189,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Nostr
 - TSA (RFC 3161 Timestamping Authorities)
 
-**Learn more**: [Witness Revision Reference](/schema_reference/witness_revision)
+**Learn more**: [Witness Revision Reference](/docs/v4.0.0/schema-reference/revision/witness-revision)
 
 ### 5. Link Revision
 **Purpose**: Connect to other Aqua Trees
@@ -4200,7 +4199,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Building composite documents
 - Creating provenance graphs
 
-**Learn more**: [Link Revision Reference](/schema_reference/link_revision)
+**Learn more**: [Link Revision Reference](/docs/v4.0.0/schema-reference/revision/link-revision)
 
 ## Common Revision Fields
 
@@ -4454,46 +4453,45 @@ Aqua Protocol v4 schema supports diverse applications:
 Explore the detailed specifications for each component:
 
 <CardGrid cols={2}>
-  <Card title="Aqua Tree" icon="tree" href="/schema_reference/aqua_tree">
+  <Card title="Aqua Tree" icon="tree" href="/docs/v4.0.0/schema-reference/aqua-tree">
     Root data structure containing revisions and file index
   </Card>
 
-  <Card title="File Index" icon="folder" href="/schema_reference/file_index">
+  <Card title="File Index" icon="folder" href="/docs/v4.0.0/schema-reference/file-index">
     Mapping content hashes to filenames
   </Card>
 
-  <Card title="Revision Types" icon="code-branch" href="/schema_reference/revision">
+  <Card title="Revision Types" icon="code-branch" href="/docs/v4.0.0/schema-reference/revision/revision">
     Overview of all revision types
   </Card>
 
-  <Card title="Object Revision" icon="file" href="/schema_reference/object_revision">
+  <Card title="Object Revision" icon="file" href="/docs/v4.0.0/schema-reference/revision/object-revision">
     Store document and data content
   </Card>
 
-  <Card title="Template Revision" icon="table" href="/schema_reference/template_revision">
+  <Card title="Template Revision" icon="table" href="/docs/v4.0.0/schema-reference/revision/template-revision">
     Define schemas with JSON Schema
   </Card>
 
-  <Card title="Signature Revision" icon="signature" href="/schema_reference/signing_revision">
+  <Card title="Signature Revision" icon="signature" href="/docs/v4.0.0/schema-reference/revision/signing-revision">
     Add cryptographic signatures
   </Card>
 
-  <Card title="Witness Revision" icon="clock" href="/schema_reference/witness_revision">
+  <Card title="Witness Revision" icon="clock" href="/docs/v4.0.0/schema-reference/revision/witness-revision">
     Blockchain timestamping
   </Card>
 
-  <Card title="Link Revision" icon="link" href="/schema_reference/link_revision">
+  <Card title="Link Revision" icon="link" href="/docs/v4.0.0/schema-reference/revision/link-revision">
     Connect to other Aqua Trees
   </Card>
 </CardGrid>
 
 ## Additional Resources
 
-- [Quick Start Guide](/quickstart) - Get started with Aqua Protocol
-- [Version 4 Introduction](/previous_versions/version_4/version_4) - Overview of v4 features
-- [Use Cases](/use_cases/introduction) - Real-world applications
-- [Aqua SDK](/dev_tools/aqua_sdk) - Rust SDK for implementation
-- [Aqua CLI](/dev_tools/aqua_cli) - Command-line tool
+- [Quick Start Guide](/docs/v4.0.0/quickstart) - Get started with Aqua Protocol
+- [Use Cases](/docs/v4.0.0/use-cases/introduction) - Real-world applications
+- [Aqua SDK](/docs/v4.0.0/dev-tools/aqua-sdk) - Rust SDK for implementation
+- [Aqua CLI](/docs/v4.0.0/dev-tools/aqua-cli) - Command-line tool
 
 ## Version History
 
@@ -4506,10 +4504,10 @@ Aqua Protocol v4 introduces:
 - Better support for complex data structures
 
 For previous versions, see:
-- [Version 3 Documentation](/previous_versions/version_3/introduction) - JavaScript SDK (Stable)
-- [Version 2 Documentation](/previous_versions/version_2/introduction) - Legacy
-- [Version 1 Documentation](/previous_versions/version_1/introduction) - Legacy
-29:T13d0,
+- [Version 3 Documentation](/docs/v3.0.2/introduction) - JavaScript SDK (Stable)
+- [Version 2 Documentation](/docs/v2.0.2/introduction) - Legacy
+- [Version 1 Documentation](/docs/v1.1.0/introduction) - Legacy
+29:T13e8,
 # Aqua Protocol v4
 
 Aqua Protocol v4 is the latest version of the protocol, introducing significant improvements in structure, flexibility, and capabilities. This version is currently in beta.
@@ -4588,7 +4586,7 @@ Link revisions create verifiable connections between separate revision chains.
 
 ## Getting Started
 
-To understand the v4 schema in detail, visit the [Schema Reference](/schema_reference/introduction) section, where each revision type is documented with examples and field specifications.
+To understand the v4 schema in detail, visit the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) section, where each revision type is documented with examples and field specifications.
 
 ## Tooling
 
@@ -4632,13 +4630,13 @@ Aqua Protocol v4 is designed for:
 
 ## Next Steps
 
-- Explore the [Schema Reference](/schema_reference/introduction) to understand each revision type
+- Explore the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) to understand each revision type
 - Review example revision chains in the SDK repository
 - Try the CLI tools to create your first revision chain
 - Read about specific use cases and implementation patterns
 
 For questions or feedback about v4, please visit the [Aqua Protocol GitHub repository](https://github.com/inblockio).
-2a:T13d0,
+2a:T13e8,
 # Aqua Protocol v4
 
 Aqua Protocol v4 is the latest version of the protocol, introducing significant improvements in structure, flexibility, and capabilities. This version is currently in beta.
@@ -4717,7 +4715,7 @@ Link revisions create verifiable connections between separate revision chains.
 
 ## Getting Started
 
-To understand the v4 schema in detail, visit the [Schema Reference](/schema_reference/introduction) section, where each revision type is documented with examples and field specifications.
+To understand the v4 schema in detail, visit the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) section, where each revision type is documented with examples and field specifications.
 
 ## Tooling
 
@@ -4761,13 +4759,13 @@ Aqua Protocol v4 is designed for:
 
 ## Next Steps
 
-- Explore the [Schema Reference](/schema_reference/introduction) to understand each revision type
+- Explore the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) to understand each revision type
 - Review example revision chains in the SDK repository
 - Try the CLI tools to create your first revision chain
 - Read about specific use cases and implementation patterns
 
 For questions or feedback about v4, please visit the [Aqua Protocol GitHub repository](https://github.com/inblockio).
-2b:Tca8,
+2b:Tc7d,
 
 The Aqua CLI is a command-line tool for creating, signing, witnessing, and verifying Aqua Protocol chains. Built with Rust, it provides a simple interface for working with Aqua chains without writing code.
 
@@ -4887,15 +4885,14 @@ chmod +x test_aqua_cli.sh
 ## Documentation
 
 For more information about Aqua Protocol v4:
-- [Version 4 Introduction](/previous_versions/version_4/version_4)
-- [Schema Reference](/schema_reference/introduction)
+- [Schema Reference](/docs/v4.0.0/schema-reference/introduction)
 
 ## Version
 
 **Current Version**: 4.0.0
 
-Built using the [Aqua Rust SDK](/dev_tools/aqua_sdk) for Aqua Protocol v4 support.
-2c:Tca8,
+Built using the [Aqua Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) for Aqua Protocol v4 support.
+2c:Tc7d,
 
 The Aqua CLI is a command-line tool for creating, signing, witnessing, and verifying Aqua Protocol chains. Built with Rust, it provides a simple interface for working with Aqua chains without writing code.
 
@@ -5015,15 +5012,14 @@ chmod +x test_aqua_cli.sh
 ## Documentation
 
 For more information about Aqua Protocol v4:
-- [Version 4 Introduction](/previous_versions/version_4/version_4)
-- [Schema Reference](/schema_reference/introduction)
+- [Schema Reference](/docs/v4.0.0/schema-reference/introduction)
 
 ## Version
 
 **Current Version**: 4.0.0
 
-Built using the [Aqua Rust SDK](/dev_tools/aqua_sdk) for Aqua Protocol v4 support.
-2d:Tefa,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/quickstart)
+Built using the [Aqua Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) for Aqua Protocol v4 support.
+2d:Tebf,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/docs/v4.0.0/quickstart)
 The Aqua SDK is a Rust library that provides the core functionality for creating, signing, witnessing, and verifying Aqua Protocol chains. It supports Aqua Protocol v4 and includes WebAssembly (WASM) bindings for cross-platform compatibility.
 
 ## Features
@@ -5119,16 +5115,15 @@ aqua-rs-sdk = { git = "https://github.com/inblockio/aqua-verifier-rs" }
 ## Documentation
 
 For detailed API documentation, examples, and guides:
-- [Version 4 Introduction](/previous_versions/version_4/version_4)
-- [Schema Reference](/schema_reference/introduction)
+- [Schema Reference](/docs/v4.0.0/schema-reference/introduction)
 - [API Documentation](https://docs.rs/aqua-rs-sdk)
 
 ## Version
 
 **Current Version**: 4.0.0 (Beta)
 
-The SDK implements Aqua Protocol v4 with the template system and enhanced revision types. For production-stable implementations, consider the [JavaScript SDK (v3)](/previous_versions/version_3/tooling).
-2e:Tefa,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/quickstart)
+The SDK implements Aqua Protocol v4 with the template system and enhanced revision types. For production-stable implementations, consider the [JavaScript SDK (v3)](/docs/v3.0.2/tooling).
+2e:Tebf,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/docs/v4.0.0/quickstart)
 The Aqua SDK is a Rust library that provides the core functionality for creating, signing, witnessing, and verifying Aqua Protocol chains. It supports Aqua Protocol v4 and includes WebAssembly (WASM) bindings for cross-platform compatibility.
 
 ## Features
@@ -5224,16 +5219,15 @@ aqua-rs-sdk = { git = "https://github.com/inblockio/aqua-verifier-rs" }
 ## Documentation
 
 For detailed API documentation, examples, and guides:
-- [Version 4 Introduction](/previous_versions/version_4/version_4)
-- [Schema Reference](/schema_reference/introduction)
+- [Schema Reference](/docs/v4.0.0/schema-reference/introduction)
 - [API Documentation](https://docs.rs/aqua-rs-sdk)
 
 ## Version
 
 **Current Version**: 4.0.0 (Beta)
 
-The SDK implements Aqua Protocol v4 with the template system and enhanced revision types. For production-stable implementations, consider the [JavaScript SDK (v3)](/previous_versions/version_3/tooling).
-2f:T12b1,
+The SDK implements Aqua Protocol v4 with the template system and enhanced revision types. For production-stable implementations, consider the [JavaScript SDK (v3)](/docs/v3.0.2/tooling).
+2f:T127d,
 
 Aquafier is a web-based reference implementation of Aqua Protocol v3, providing a user-friendly interface and HTTP API for digital content signing, provenance verification, and integrity validation. It demonstrates how Aqua Protocol features can be integrated into modern web applications.
 
@@ -5355,9 +5349,9 @@ Aquafier's modular architecture makes it suitable as a foundation for custom app
 **Aqua Protocol v3**: Aquafier implements the stable JavaScript SDK
 
 For v3 technical details:
-- [Version 3 Introduction](/previous_versions/version_3/introduction)
-- [Version 3 Concepts](/previous_versions/version_3/concepts)
-- [Version 3 SDK](/previous_versions/version_3/tooling)
+- [Version 3 Introduction](/docs/v3.0.2/introduction)
+- [Version 3 Concepts](/docs/v3.0.2/concepts)
+- [Version 3 SDK](/docs/v3.0.2/tooling)
 
 ## Repository
 
@@ -5379,8 +5373,8 @@ For v3 technical details:
 3. Explore the API documentation for programmatic integration
 4. Check the [GitHub repository](https://github.com/inblockio/aquafier-js) for self-hosting
 
-For building custom applications, consider using the [Aqua JavaScript SDK](/previous_versions/version_3/tooling) directly or the [Aqua Rust SDK](/dev_tools/aqua_sdk) for v4 features.
-30:T12b1,
+For building custom applications, consider using the [Aqua JavaScript SDK](/docs/v3.0.2/tooling) directly or the [Aqua Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) for v4 features.
+30:T127d,
 
 Aquafier is a web-based reference implementation of Aqua Protocol v3, providing a user-friendly interface and HTTP API for digital content signing, provenance verification, and integrity validation. It demonstrates how Aqua Protocol features can be integrated into modern web applications.
 
@@ -5502,9 +5496,9 @@ Aquafier's modular architecture makes it suitable as a foundation for custom app
 **Aqua Protocol v3**: Aquafier implements the stable JavaScript SDK
 
 For v3 technical details:
-- [Version 3 Introduction](/previous_versions/version_3/introduction)
-- [Version 3 Concepts](/previous_versions/version_3/concepts)
-- [Version 3 SDK](/previous_versions/version_3/tooling)
+- [Version 3 Introduction](/docs/v3.0.2/introduction)
+- [Version 3 Concepts](/docs/v3.0.2/concepts)
+- [Version 3 SDK](/docs/v3.0.2/tooling)
 
 ## Repository
 
@@ -5526,8 +5520,8 @@ For v3 technical details:
 3. Explore the API documentation for programmatic integration
 4. Check the [GitHub repository](https://github.com/inblockio/aquafier-js) for self-hosting
 
-For building custom applications, consider using the [Aqua JavaScript SDK](/previous_versions/version_3/tooling) directly or the [Aqua Rust SDK](/dev_tools/aqua_sdk) for v4 features.
-31:T4217,
+For building custom applications, consider using the [Aqua JavaScript SDK](/docs/v3.0.2/tooling) directly or the [Aqua Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) for v4 features.
+31:T4256,
 # Link Revision
 
 A Link Revision creates verifiable connections between separate revision chains. It allows you to establish relationships, dependencies, or references between different objects, effectively creating a graph structure of interconnected chains. Link revisions are essential for composing complex data structures and maintaining provenance across multiple chains.
@@ -6220,11 +6214,11 @@ Don't use links for intra-chain references (use `previous_revision` instead).
 
 ## See Also
 
-- [Object Revision](/schema_reference/object_revision) - Often linked
-- [Signature Revision](/schema_reference/signing_revision) - Can aggregate via links
-- [Witness Revision](/schema_reference/witness_revision) - Often follows links
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - Often linked
+- [Signature Revision](/docs/v4.0.0/schema-reference/revision/signing-revision) - Can aggregate via links
+- [Witness Revision](/docs/v4.0.0/schema-reference/revision/witness-revision) - Often follows links
 - [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) - Mathematical foundation for link structures
-32:T4217,
+32:T4256,
 # Link Revision
 
 A Link Revision creates verifiable connections between separate revision chains. It allows you to establish relationships, dependencies, or references between different objects, effectively creating a graph structure of interconnected chains. Link revisions are essential for composing complex data structures and maintaining provenance across multiple chains.
@@ -6917,11 +6911,11 @@ Don't use links for intra-chain references (use `previous_revision` instead).
 
 ## See Also
 
-- [Object Revision](/schema_reference/object_revision) - Often linked
-- [Signature Revision](/schema_reference/signing_revision) - Can aggregate via links
-- [Witness Revision](/schema_reference/witness_revision) - Often follows links
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - Often linked
+- [Signature Revision](/docs/v4.0.0/schema-reference/revision/signing-revision) - Can aggregate via links
+- [Witness Revision](/docs/v4.0.0/schema-reference/revision/witness-revision) - Often follows links
 - [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) - Mathematical foundation for link structures
-33:T2073,
+33:T20c7,
 # Object Revision
 
 An Object Revision is the primary data-carrying revision type in Aqua Protocol v4. It stores arbitrary structured data that conforms to a template schema. Object revisions are typically the first revision in a chain (genesis) or follow other object revisions.
@@ -7160,11 +7154,11 @@ To verify an object revision:
 
 ## See Also
 
-- [Template Revision](/schema_reference/template_revision) - Defines the schema for object payloads
-- [Signature Revision](/schema_reference/signing_revision) - Sign object revisions
-- [Witness Revision](/schema_reference/witness_revision) - Add timestamped proof
-- [Link Revision](/schema_reference/link_revision) - Connect to other chains
-34:T2073,
+- [Template Revision](/docs/v4.0.0/schema-reference/revision/template-revision) - Defines the schema for object payloads
+- [Signature Revision](/docs/v4.0.0/schema-reference/revision/signing-revision) - Sign object revisions
+- [Witness Revision](/docs/v4.0.0/schema-reference/revision/witness-revision) - Add timestamped proof
+- [Link Revision](/docs/v4.0.0/schema-reference/revision/link-revision) - Connect to other chains
+34:T20c7,
 # Object Revision
 
 An Object Revision is the primary data-carrying revision type in Aqua Protocol v4. It stores arbitrary structured data that conforms to a template schema. Object revisions are typically the first revision in a chain (genesis) or follow other object revisions.
@@ -7403,16 +7397,16 @@ To verify an object revision:
 
 ## See Also
 
-- [Template Revision](/schema_reference/template_revision) - Defines the schema for object payloads
-- [Signature Revision](/schema_reference/signing_revision) - Sign object revisions
-- [Witness Revision](/schema_reference/witness_revision) - Add timestamped proof
-- [Link Revision](/schema_reference/link_revision) - Connect to other chains
-35:T1183,
+- [Template Revision](/docs/v4.0.0/schema-reference/revision/template-revision) - Defines the schema for object payloads
+- [Signature Revision](/docs/v4.0.0/schema-reference/revision/signing-revision) - Sign object revisions
+- [Witness Revision](/docs/v4.0.0/schema-reference/revision/witness-revision) - Add timestamped proof
+- [Link Revision](/docs/v4.0.0/schema-reference/revision/link-revision) - Connect to other chains
+35:T1109,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](/docs/v4.0.0/schema-reference/revision/template-revision) (32-hex hash) (for [Object](/docs/v4.0.0/schema-reference/revision/object-revision) revisions) or built-in types like "[template](/docs/v4.0.0/schema-reference/revision/template-revision)", "[signature](/docs/v4.0.0/schema-reference/revision/signing-revision)", or "[link](/docs/v4.0.0/schema-reference/revision/link-revision)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -7507,12 +7501,12 @@ Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic an
 
 
 
-```36:T1183,
+```36:T1109,
 Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic and form a graph structure in a hash-tree. It represents the evolutionary, iterative, and historical essence of the atomic objects in the Aqua Protocol.
 
 
 - Revision Chaining: Revisions form chains via optional previous_revision (a SHA3-256 hash), marking genesis if absent.
-- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) (32-hex hash) (for [Object](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21) revisions) or built-in types like "[template](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", "[signature](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)", or "[link](https://www.notion.so/V4-Protocol-Draft-27ae695c0eec801c95fff40830e4c0e4?pvs=21)".
+- Type Identification: revision_type specifies the revision's purpose either a reference to a [template](/docs/v4.0.0/schema-reference/revision/template-revision) (32-hex hash) (for [Object](/docs/v4.0.0/schema-reference/revision/object-revision) revisions) or built-in types like "[template](/docs/v4.0.0/schema-reference/revision/template-revision)", "[signature](/docs/v4.0.0/schema-reference/revision/signing-revision)", or "[link](/docs/v4.0.0/schema-reference/revision/link-revision)".
 - Timing and Entropy: Includes a Unix timestamp (local_timestamp, unsigned 64-bit) and a random nonce (128-bit hex) for ordering and anti-collision.
 - Versioning: version points to a protocol schema URL or a hash/custom string (up to 128 chars) for compatibility.
 - Canonicalisation Method: method chooses between "scalar" (simple object hash for efficiency) or "tree" (Merkle tree for granular proofs, e.g., selective disclosure).
@@ -7607,7 +7601,7 @@ Revisions are content-identifiable envelops in Aqua-Protocol. They are atomic an
 
 
 
-```37:T2eb6,
+```37:T2ef5,
 # Signature Revision
 
 A Signature Revision adds cryptographic proof of authenticity and authorship to a revision chain. It references a previous revision and includes a digital signature that can be verified using the associated public key or address. Aqua Protocol v4 supports three signature types: RSA, Ethereum (EIP-191), and DID-based signatures.
@@ -7949,13 +7943,13 @@ Credential => Signature (Issuer's DID) => Holder stores
 
 ## See Also
 
-- [Object Revision](/schema_reference/object_revision) - What typically gets signed
-- [Witness Revision](/schema_reference/witness_revision) - Add timestamps after signing
-- [Link Revision](/schema_reference/link_revision) - Combine signature branches
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - What typically gets signed
+- [Witness Revision](/docs/v4.0.0/schema-reference/revision/witness-revision) - Add timestamps after signing
+- [Link Revision](/docs/v4.0.0/schema-reference/revision/link-revision) - Combine signature branches
 - [EIP-191 Specification](https://eips.ethereum.org/EIPS/eip-191) - Ethereum signing standard
 - [DID Core Specification](https://www.w3.org/TR/did-core/) - Decentralized Identifiers
 - [JWS Specification](https://www.rfc-editor.org/rfc/rfc7515) - JSON Web Signatures
-38:T2eb6,
+38:T2ef5,
 # Signature Revision
 
 A Signature Revision adds cryptographic proof of authenticity and authorship to a revision chain. It references a previous revision and includes a digital signature that can be verified using the associated public key or address. Aqua Protocol v4 supports three signature types: RSA, Ethereum (EIP-191), and DID-based signatures.
@@ -8297,13 +8291,13 @@ Credential => Signature (Issuer's DID) => Holder stores
 
 ## See Also
 
-- [Object Revision](/schema_reference/object_revision) - What typically gets signed
-- [Witness Revision](/schema_reference/witness_revision) - Add timestamps after signing
-- [Link Revision](/schema_reference/link_revision) - Combine signature branches
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - What typically gets signed
+- [Witness Revision](/docs/v4.0.0/schema-reference/revision/witness-revision) - Add timestamps after signing
+- [Link Revision](/docs/v4.0.0/schema-reference/revision/link-revision) - Combine signature branches
 - [EIP-191 Specification](https://eips.ethereum.org/EIPS/eip-191) - Ethereum signing standard
 - [DID Core Specification](https://www.w3.org/TR/did-core/) - Decentralized Identifiers
 - [JWS Specification](https://www.rfc-editor.org/rfc/rfc7515) - JSON Web Signatures
-39:T2c8d,
+39:T2ca2,
 # Template Revision
 
 A Template Revision defines the structure and validation rules for Object Revisions. Templates use JSON Schema to specify what data fields are required, their types, formats, and constraints. Template revisions are standalone (they don't have a `previous_revision` field) and are referenced by object revisions via their hash.
@@ -8738,9 +8732,9 @@ Link templates to on-chain contract code for decentralized validation.
 
 ## See Also
 
-- [Object Revision](/schema_reference/object_revision) - Use templates to validate objects
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - Use templates to validate objects
 - [JSON Schema Specification](https://json-schema.org/draft/2020-12/json-schema-core.html) - Full JSON Schema documentation
-3a:T2c8d,
+3a:T2ca2,
 # Template Revision
 
 A Template Revision defines the structure and validation rules for Object Revisions. Templates use JSON Schema to specify what data fields are required, their types, formats, and constraints. Template revisions are standalone (they don't have a `previous_revision` field) and are referenced by object revisions via their hash.
@@ -9175,9 +9169,9 @@ Link templates to on-chain contract code for decentralized validation.
 
 ## See Also
 
-- [Object Revision](/schema_reference/object_revision) - Use templates to validate objects
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - Use templates to validate objects
 - [JSON Schema Specification](https://json-schema.org/draft/2020-12/json-schema-core.html) - Full JSON Schema documentation
-3b:T334e,
+3b:T3378,
 # Witness Revision
 
 A Witness Revision provides cryptographic proof that a revision existed at a specific point in time. It anchors revision hashes to external systems like blockchains (Ethereum), decentralized networks (Nostr), or Trusted Timestamping Authorities (TSA). This creates an immutable, verifiable timestamp that cannot be backdated.
@@ -9585,12 +9579,12 @@ Object → Witness (Ethereum Mainnet) → Witness (Polygon) → Witness (Arbitru
 
 ## See Also
 
-- [Object Revision](/schema_reference/object_revision) - What typically gets witnessed
-- [Signature Revision](/schema_reference/signing_revision) - Often combined with witnessing
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - What typically gets witnessed
+- [Signature Revision](/docs/v4.0.0/schema-reference/revision/signing-revision) - Often combined with witnessing
 - [RFC 3161 - Timestamping](https://www.rfc-editor.org/rfc/rfc3161) - TSA standard
 - [Ethereum Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/) - On-chain witnessing
 - [Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree) - Batch witnessing structure
-3c:T334e,
+3c:T3378,
 # Witness Revision
 
 A Witness Revision provides cryptographic proof that a revision existed at a specific point in time. It anchors revision hashes to external systems like blockchains (Ethereum), decentralized networks (Nostr), or Trusted Timestamping Authorities (TSA). This creates an immutable, verifiable timestamp that cannot be backdated.
@@ -9998,12 +9992,12 @@ Object → Witness (Ethereum Mainnet) → Witness (Polygon) → Witness (Arbitru
 
 ## See Also
 
-- [Object Revision](/schema_reference/object_revision) - What typically gets witnessed
-- [Signature Revision](/schema_reference/signing_revision) - Often combined with witnessing
+- [Object Revision](/docs/v4.0.0/schema-reference/revision/object-revision) - What typically gets witnessed
+- [Signature Revision](/docs/v4.0.0/schema-reference/revision/signing-revision) - Often combined with witnessing
 - [RFC 3161 - Timestamping](https://www.rfc-editor.org/rfc/rfc3161) - TSA standard
 - [Ethereum Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/) - On-chain witnessing
 - [Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree) - Batch witnessing structure
-3d:T362b,
+3d:T365a,
 ## Core Capabilities
 
 ### Tamper-Proof Verification
@@ -10329,11 +10323,11 @@ A: Add a revocation revision to the chain. The document history remains (for aud
 
 ## See Also
 
-- [Supply Chain Tracking](/use_cases/supply-chain) - Apply similar verification to supply chain events
-- [Identity Attestation](/use_cases/identity-attestation) - Verify identity credentials
-- [Quick Start](/quick-start) - Get started with document verification
-- [Schema Reference](/schema_reference/introduction) - Technical specifications
-3e:T362b,
+- [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) - Apply similar verification to supply chain events
+- [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) - Verify identity credentials
+- [Quick Start](/docs/v4.0.0/quickstart) - Get started with document verification
+- [Schema Reference](/docs/v4.0.0/schema-reference/introduction) - Technical specifications
+3e:T365a,
 ## Core Capabilities
 
 ### Tamper-Proof Verification
@@ -10659,11 +10653,11 @@ A: Add a revocation revision to the chain. The document history remains (for aud
 
 ## See Also
 
-- [Supply Chain Tracking](/use_cases/supply-chain) - Apply similar verification to supply chain events
-- [Identity Attestation](/use_cases/identity-attestation) - Verify identity credentials
-- [Quick Start](/quick-start) - Get started with document verification
-- [Schema Reference](/schema_reference/introduction) - Technical specifications
-3f:T1791,
+- [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) - Apply similar verification to supply chain events
+- [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) - Verify identity credentials
+- [Quick Start](/docs/v4.0.0/quickstart) - Get started with document verification
+- [Schema Reference](/docs/v4.0.0/schema-reference/introduction) - Technical specifications
+3f:T17b5,
 The Aqua Protocol enables a robust **Self-Sovereign Identity (SSI)** framework where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. By leveraging cryptographic proofs and decentralized trust chains, Aqua allows users to own their data while enabling third parties to verify specific attributes with certainty.
 
 ## Core Capabilities
@@ -10779,10 +10773,10 @@ When an employer verifies Alice's degree, they trace this path back to a root of
 
 ## See Also
 
-- [Document Verification](/use_cases/document-verification) - Verify the integrity of files and contracts.
-- [Supply Chain Tracking](/use_cases/supply-chain) - Trace provenance of physical goods.
-- [Aqua CLI](/dev_tools/aqua_cli) - Tools for issuing and verifying claims.
-40:T1791,
+- [Document Verification](/docs/v4.0.0/use-cases/document-verification) - Verify the integrity of files and contracts.
+- [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) - Trace provenance of physical goods.
+- [Aqua CLI](/docs/v4.0.0/dev-tools/aqua-cli) - Tools for issuing and verifying claims.
+40:T17b5,
 The Aqua Protocol enables a robust **Self-Sovereign Identity (SSI)** framework where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. By leveraging cryptographic proofs and decentralized trust chains, Aqua allows users to own their data while enabling third parties to verify specific attributes with certainty.
 
 ## Core Capabilities
@@ -10898,10 +10892,10 @@ When an employer verifies Alice's degree, they trace this path back to a root of
 
 ## See Also
 
-- [Document Verification](/use_cases/document-verification) - Verify the integrity of files and contracts.
-- [Supply Chain Tracking](/use_cases/supply-chain) - Trace provenance of physical goods.
-- [Aqua CLI](/dev_tools/aqua_cli) - Tools for issuing and verifying claims.
-41:T2693,
+- [Document Verification](/docs/v4.0.0/use-cases/document-verification) - Verify the integrity of files and contracts.
+- [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) - Trace provenance of physical goods.
+- [Aqua CLI](/docs/v4.0.0/dev-tools/aqua-cli) - Tools for issuing and verifying claims.
+41:T2595,
 ## Why Aqua Protocol?
 
 Traditional systems for tracking data provenance, verifying authenticity, and maintaining audit trails rely on centralized databases and trusted intermediaries. These approaches introduce:
@@ -11033,21 +11027,18 @@ Aqua Protocol adapts to diverse requirements through:
 Explore the detailed use cases below to understand how Aqua Protocol applies to your specific domain:
 
 <CardGrid cols={2}>
-  <Card title="Document Verification" icon="file-check" href="/use_cases/document-verification">
+  <Card title="Document Verification" icon="file-check" href="/docs/v4.0.0/use-cases/document-verification">
     Ensure document authenticity and integrity with cryptographic verification. Learn how legal firms, businesses, educational institutions, and government agencies use Aqua Protocol for tamper-proof document management.
   </Card>
 
-  <Card title="Supply Chain Tracking" icon="truck" href="/use_cases/supply-chain">
+  <Card title="Supply Chain Tracking" icon="truck" href="/docs/v4.0.0/use-cases/supply-chain">
     Track products through the supply chain with end-to-end transparency. Discover how food, pharmaceutical, manufacturing, and logistics companies implement provenance verification.
   </Card>
 
-  <Card title="Identity Attestation" icon="id-card" href="/use_cases/identity-attestation">
+  <Card title="Identity Attestation" icon="id-card" href="/docs/v4.0.0/use-cases/identity-attestation">
     Implement secure identity verification and credential attestation. Explore how credentials, certifications, and identity documents gain instant verifiability.
   </Card>
 
-  <Card title="Examples & Tutorials" icon="graduation-cap" href="/use_cases/examples">
-    Practical examples and step-by-step tutorials for building with Aqua Protocol. Get hands-on experience implementing real-world use cases.
-  </Card>
 </CardGrid>
 
 ## Common Patterns
@@ -11110,10 +11101,10 @@ Protocol versioning, extensible revision types, and blockchain-agnostic witnessi
 Ready to implement Aqua Protocol for your use case?
 
 - Review the detailed use case documentation above
-- Check out the [Quick Start Guide](/quick-start) for hands-on implementation
-- Explore the [Schema Reference](/schema_reference/introduction) for technical specifications
-- Choose your SDK: [Rust (v4)](/previous_versions/version_4/introduction) or [JavaScript (v3)](/previous_versions/version_3/introduction)
-42:T2693,
+- Check out the [Quick Start Guide](/docs/v4.0.0/quickstart) for hands-on implementation
+- Explore the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) for technical specifications
+- Choose your SDK: [JavaScript (v3)](/docs/v3.0.2/introduction)
+42:T2595,
 ## Why Aqua Protocol?
 
 Traditional systems for tracking data provenance, verifying authenticity, and maintaining audit trails rely on centralized databases and trusted intermediaries. These approaches introduce:
@@ -11245,21 +11236,18 @@ Aqua Protocol adapts to diverse requirements through:
 Explore the detailed use cases below to understand how Aqua Protocol applies to your specific domain:
 
 <CardGrid cols={2}>
-  <Card title="Document Verification" icon="file-check" href="/use_cases/document-verification">
+  <Card title="Document Verification" icon="file-check" href="/docs/v4.0.0/use-cases/document-verification">
     Ensure document authenticity and integrity with cryptographic verification. Learn how legal firms, businesses, educational institutions, and government agencies use Aqua Protocol for tamper-proof document management.
   </Card>
 
-  <Card title="Supply Chain Tracking" icon="truck" href="/use_cases/supply-chain">
+  <Card title="Supply Chain Tracking" icon="truck" href="/docs/v4.0.0/use-cases/supply-chain">
     Track products through the supply chain with end-to-end transparency. Discover how food, pharmaceutical, manufacturing, and logistics companies implement provenance verification.
   </Card>
 
-  <Card title="Identity Attestation" icon="id-card" href="/use_cases/identity-attestation">
+  <Card title="Identity Attestation" icon="id-card" href="/docs/v4.0.0/use-cases/identity-attestation">
     Implement secure identity verification and credential attestation. Explore how credentials, certifications, and identity documents gain instant verifiability.
   </Card>
 
-  <Card title="Examples & Tutorials" icon="graduation-cap" href="/use_cases/examples">
-    Practical examples and step-by-step tutorials for building with Aqua Protocol. Get hands-on experience implementing real-world use cases.
-  </Card>
 </CardGrid>
 
 ## Common Patterns
@@ -11322,10 +11310,10 @@ Protocol versioning, extensible revision types, and blockchain-agnostic witnessi
 Ready to implement Aqua Protocol for your use case?
 
 - Review the detailed use case documentation above
-- Check out the [Quick Start Guide](/quick-start) for hands-on implementation
-- Explore the [Schema Reference](/schema_reference/introduction) for technical specifications
-- Choose your SDK: [Rust (v4)](/previous_versions/version_4/introduction) or [JavaScript (v3)](/previous_versions/version_3/introduction)
-43:T40fa,
+- Check out the [Quick Start Guide](/docs/v4.0.0/quickstart) for hands-on implementation
+- Explore the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) for technical specifications
+- Choose your SDK: [JavaScript (v3)](/docs/v3.0.2/introduction)
+43:T4129,
 # Supply Chain Tracking
 
 Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded with immutable timestamps, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
@@ -11705,11 +11693,11 @@ A: Verification of existing chains works offline using cryptographic signatures.
 
 ## See Also
 
-- [Document Verification](/use_cases/document-verification) - Apply similar techniques to documents
-- [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
-- [Quick Start](/quick-start) - Get started with supply chain tracking
-- [Schema Reference](/schema_reference/introduction) - Technical specifications
-44:T40fa,
+- [Document Verification](/docs/v4.0.0/use-cases/document-verification) - Apply similar techniques to documents
+- [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) - Verify credentials and certifications
+- [Quick Start](/docs/v4.0.0/quickstart) - Get started with supply chain tracking
+- [Schema Reference](/docs/v4.0.0/schema-reference/introduction) - Technical specifications
+44:T4129,
 # Supply Chain Tracking
 
 Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded with immutable timestamps, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
@@ -12089,17 +12077,17 @@ A: Verification of existing chains works offline using cryptographic signatures.
 
 ## See Also
 
-- [Document Verification](/use_cases/document-verification) - Apply similar techniques to documents
-- [Identity Attestation](/use_cases/identity-attestation) - Verify credentials and certifications
-- [Quick Start](/quick-start) - Get started with supply chain tracking
-- [Schema Reference](/schema_reference/introduction) - Technical specifications
-12:["$","$14",null,{"fallback":["$","$L1a",null,{}],"children":[["$","$L1b",null,{"header":["$","$L1c",null,{"currentVersion":"v4.0.0","versions":["v1.1.0","v2.0.2","v3.0.2","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$1d","reading_time":5,"word_count":888},"content":"$1e","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$1f","reading_time":5,"word_count":823},"content":"$20"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$21","reading_time":7,"word_count":1244},"content":"$22"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$23","reading_time":5,"word_count":941},"content":"$24","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$25","reading_time":9,"word_count":1674},"content":"$26"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$27","reading_time":8,"word_count":1476},"content":"$28","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$29","reading_time":4,"word_count":686},"content":"$2a"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$2b","reading_time":3,"word_count":410},"content":"$2c","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$2d","reading_time":2,"word_count":391},"content":"$2e","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$2f","reading_time":3,"word_count":573},"content":"$30","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$31","reading_time":11,"word_count":2009},"content":"$32","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$33","reading_time":6,"word_count":1048},"content":"$34","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$35","reading_time":3,"word_count":461},"content":"$36","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$37","reading_time":7,"word_count":1393},"content":"$38","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$39","reading_time":7,"word_count":1369},"content":"$3a","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$3b","reading_time":9,"word_count":1682},"content":"$3c","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$3d","reading_time":10,"word_count":1863},"content":"$3e","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$3f","reading_time":5,"word_count":865},"content":"$40","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$41","reading_time":7,"word_count":1216},"content":"$42","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$43","reading_time":12,"word_count":2274},"content":"$44","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"}],"version":"v4.0.0","children":"$L45","toc":"$L46","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L47","$L48","$L49"]}]
-4a:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"DocLayout"]
-4d:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"TableOfContents"]
-4e:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"MdxHotReload"]
-4f:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"HotReloadIndicator"]
-50:I[931024,["/_next/static/chunks/eb22c92016909501.js","/_next/static/chunks/c4a8b026e121e3ad.js"],"DevModeBadge"]
-4b:Tca8,
+- [Document Verification](/docs/v4.0.0/use-cases/document-verification) - Apply similar techniques to documents
+- [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) - Verify credentials and certifications
+- [Quick Start](/docs/v4.0.0/quickstart) - Get started with supply chain tracking
+- [Schema Reference](/docs/v4.0.0/schema-reference/introduction) - Technical specifications
+12:["$","$14",null,{"fallback":["$","$L1a",null,{}],"children":[["$","$L1b",null,{"header":["$","$L1c",null,{"currentVersion":"v4.0.0","versions":["v1.1.0","v2.0.2","v3.0.2","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$1d","reading_time":5,"word_count":888},"content":"$1e","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$1f","reading_time":5,"word_count":823},"content":"$20"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$21","reading_time":7,"word_count":1244},"content":"$22"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$23","reading_time":5,"word_count":941},"content":"$24","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$25","reading_time":9,"word_count":1674},"content":"$26"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$27","reading_time":8,"word_count":1467},"content":"$28","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$29","reading_time":4,"word_count":686},"content":"$2a"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$2b","reading_time":3,"word_count":406},"content":"$2c","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$2d","reading_time":2,"word_count":387},"content":"$2e","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$2f","reading_time":3,"word_count":573},"content":"$30","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$31","reading_time":11,"word_count":2009},"content":"$32","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$33","reading_time":6,"word_count":1048},"content":"$34","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$35","reading_time":3,"word_count":461},"content":"$36","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$37","reading_time":7,"word_count":1393},"content":"$38","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$39","reading_time":7,"word_count":1369},"content":"$3a","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$3b","reading_time":9,"word_count":1682},"content":"$3c","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$3d","reading_time":10,"word_count":1863},"content":"$3e","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$3f","reading_time":5,"word_count":865},"content":"$40","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$41","reading_time":6,"word_count":1189},"content":"$42","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$43","reading_time":12,"word_count":2274},"content":"$44","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"}],"version":"v4.0.0","children":"$L45","toc":"$L46","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L47","$L48","$L49"]}]
+4a:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"DocLayout"]
+4d:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"TableOfContents"]
+4e:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"MdxHotReload"]
+4f:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"HotReloadIndicator"]
+50:I[931024,["/_next/static/chunks/046974dfe7bf38d4.js","/_next/static/chunks/f219180dc6319b62.js"],"DevModeBadge"]
+4b:Tc7d,
 
 The Aqua CLI is a command-line tool for creating, signing, witnessing, and verifying Aqua Protocol chains. Built with Rust, it provides a simple interface for working with Aqua chains without writing code.
 
@@ -12219,15 +12207,14 @@ chmod +x test_aqua_cli.sh
 ## Documentation
 
 For more information about Aqua Protocol v4:
-- [Version 4 Introduction](/previous_versions/version_4/version_4)
-- [Schema Reference](/schema_reference/introduction)
+- [Schema Reference](/docs/v4.0.0/schema-reference/introduction)
 
 ## Version
 
 **Current Version**: 4.0.0
 
-Built using the [Aqua Rust SDK](/dev_tools/aqua_sdk) for Aqua Protocol v4 support.
-4c:Tca8,
+Built using the [Aqua Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) for Aqua Protocol v4 support.
+4c:Tc7d,
 
 The Aqua CLI is a command-line tool for creating, signing, witnessing, and verifying Aqua Protocol chains. Built with Rust, it provides a simple interface for working with Aqua chains without writing code.
 
@@ -12347,15 +12334,14 @@ chmod +x test_aqua_cli.sh
 ## Documentation
 
 For more information about Aqua Protocol v4:
-- [Version 4 Introduction](/previous_versions/version_4/version_4)
-- [Schema Reference](/schema_reference/introduction)
+- [Schema Reference](/docs/v4.0.0/schema-reference/introduction)
 
 ## Version
 
 **Current Version**: 4.0.0
 
-Built using the [Aqua Rust SDK](/dev_tools/aqua_sdk) for Aqua Protocol v4 support.
-45:["$","$L4a",null,{"meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$4b","reading_time":3,"word_count":410},"content":"$4c","previousDoc":{"title":"Supply Chain Tracking","slug":"use-cases/supply-chain"},"nextDoc":{"title":"Aqua SDK","slug":"dev-tools/aqua-sdk"},"version":"v4.0.0","slug":"dev-tools/aqua-cli","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+Built using the [Aqua Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) for Aqua Protocol v4 support.
+45:["$","$L4a",null,{"meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$4b","reading_time":3,"word_count":406},"content":"$4c","previousDoc":{"title":"Supply Chain Tracking","slug":"use-cases/supply-chain"},"nextDoc":{"title":"Aqua SDK","slug":"dev-tools/aqua-sdk"},"version":"v4.0.0","slug":"dev-tools/aqua-cli","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
 46:["$","$L4d",null,{"items":[{"id":"features","title":"Features","level":2},{"id":"installation","title":"Installation","level":2},{"id":"from-source","title":"From Source","level":3},{"id":"local-development","title":"Local Development","level":3},{"id":"configuration","title":"Configuration","level":2},{"id":"basic-usage","title":"Basic Usage","level":2},{"id":"keys-file-format","title":"Keys File Format","level":2},{"id":"versioning","title":"Versioning","level":2},{"id":"testing","title":"Testing","level":2},{"id":"use-cases","title":"Use Cases","level":2},{"id":"repository","title":"Repository","level":2},{"id":"documentation","title":"Documentation","level":2},{"id":"version","title":"Version","level":2}],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
 47:["$","$L4e",null,{}]
 48:["$","$L4f",null,{}]

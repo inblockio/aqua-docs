@@ -12,4 +12,4 @@
     stroke: revert;
     stroke-width: revert;
   }
-`,"getIconStyles");e.s(["getIconStyles",()=>t])},645958,e=>{"use strict";var t=e.i(977662);e.i(572247),e.i(707510),e.i(35815),e.i(893016),e.i(754802),e.i(620502),e.i(407983),e.i(102256),e.i(833448),e.i(780262),e.i(195923),e.i(80926);var i=e.i(171206),r={parser:t.classDiagram_default,get db(){return new t.ClassDB},renderer:t.classRenderer_v3_unified_default,styles:t.styles_default,init:(0,i.__name)(e=>{e.class||(e.class={}),e.class.arrowMarkerAbsolute=e.arrowMarkerAbsolute},"init")};e.s(["diagram",()=>r])}]);
+`,"getIconStyles");e.s(["getIconStyles",()=>t])},676395,e=>{"use strict";var t=e.i(977662);e.i(572247),e.i(707510),e.i(35815),e.i(893016),e.i(754802),e.i(620502),e.i(407983),e.i(102256),e.i(833448),e.i(780262),e.i(195923),e.i(80926);var i=e.i(171206),r={parser:t.classDiagram_default,get db(){return new t.ClassDB},renderer:t.classRenderer_v3_unified_default,styles:t.styles_default,init:(0,i.__name)(e=>{e.class||(e.class={}),e.class.arrowMarkerAbsolute=e.arrowMarkerAbsolute},"init")};e.s(["diagram",()=>r])}]);
