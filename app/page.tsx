@@ -48,14 +48,13 @@ export default function HomePage() {
         <div className="container px-6 mx-auto relative z-10">
           <div className="mx-auto text-center space-y-6 py-20 max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-foreground">
-              Welcome to the <span className="text-primary">Aqua Protocol</span>
+              Welcome to<br /><span className="text-primary">Aqua Protocol</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Account & verify data in seconds using cryptographic proof
-            </p>
+              Secure and verify data assets instantly<br />with cryptographic proofs.
+          </p>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              An open, public, and decentralized solution for data accountability and governance.
-              Built with modern cryptographic standards.
+              An open, decentralized framework<br /> for data accountability and governance,<br />powered by advanced cryptographic standards.
             </p>
             <div className="flex items-center justify-center gap-4 pt-4">
               <Button asChild size="lg">

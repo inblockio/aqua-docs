@@ -99,7 +99,7 @@ export default function AquaAnimation({
       const cx = canvas!.width / 2
       const half = canvas!.width / 2
       const dist = Math.abs(x - cx)
-      let fade = dist / (half * 0.6) - 0.25
+      let fade = dist / (half * 0.75) - 0.5
       if (fade < 0) fade = 0
       if (fade > 1) fade = 1
       return fade * 0.75
