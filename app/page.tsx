@@ -115,9 +115,9 @@ export default function HomePage() {
         {/* CTA Section */}
         <div className="py-16 mx-auto">
           <div className="rounded-xl border border-border bg-card p-8 md:p-12 text-center space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Try Aquafier</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Use <span style={{ background: "linear-gradient(90deg, #EF5401, #FF8C00)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>AquaFire App</span> now!</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Experience the power of Aqua Protocol with our own application Aquafier.
+              Use our reference Application and experience the power of accounted data assets.
             </p>
 
             {/* Feature Cards */}
@@ -152,11 +152,11 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+              <p>Try our Web-Application now</p>
               <Button asChild size="lg" variant="default">
                 <Link href="https://aquafier.inblock.io" target="_blank" rel="noopener noreferrer">
-                  Aquafier Production
+                  AquaFire Production
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
