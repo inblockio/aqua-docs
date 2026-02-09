@@ -23,10 +23,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'yarn'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
 
       - name: Validate documentation structure
         run: |
@@ -40,7 +40,7 @@ jobs:
           echo "✓ Documentation structure validated"
 
       - name: Run linting
-        run: yarn lint
+        run: npm run lint
         continue-on-error: true
 
   deploy:
@@ -62,15 +62,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'yarn'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
 
       - name: Build Next.js documentation
         run: |
           echo "Building Next.js documentation..."
-          yarn build:export
+          npm run build:export
           echo "✓ Build completed"
         env:
           NODE_ENV: production
