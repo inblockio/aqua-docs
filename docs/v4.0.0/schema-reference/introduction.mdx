@@ -38,10 +38,10 @@ When you notarize content with Aqua Protocol, the output is a JSON file called a
 
 The Aqua Tree contains two primary components:
 
-- **[Revisions](/schema_reference/revision)**: Map of verification hashes to revision objects
-- **[File Index](/schema_reference/file_index)**: Map of content hashes to filenames
+- **[Revisions](/docs/v4.0.0/schema-reference/revision/revision)**: Map of verification hashes to revision objects
+- **[File Index](/docs/v4.0.0/schema-reference/file-index)**: Map of content hashes to filenames
 
-See the [Aqua Tree documentation](/schema_reference/aqua_tree) for complete details.
+See the [Aqua Tree documentation](/docs/v4.0.0/schema-reference/aqua-tree) for complete details.
 
 ## Revision Types
 
@@ -55,7 +55,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Document updates and modifications
 - Data snapshots
 
-**Learn more**: [Object Revision Reference](/schema_reference/object_revision)
+**Learn more**: [Object Revision Reference](/docs/v4.0.0/schema-reference/revision/object-revision)
 
 ### 2. Template Revision
 **Purpose**: Define data schemas and validation rules
@@ -65,7 +65,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Creating reusable data models
 - Validating object revision content
 
-**Learn more**: [Template Revision Reference](/schema_reference/template_revision)
+**Learn more**: [Template Revision Reference](/docs/v4.0.0/schema-reference/revision/template-revision)
 
 ### 3. Signature Revision
 **Purpose**: Add cryptographic signatures for authentication
@@ -80,7 +80,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - **EIP-191**: Ethereum-style signatures
 - **DID:JWS**: Decentralized identifier signatures
 
-**Learn more**: [Signature Revision Reference](/schema_reference/signing_revision)
+**Learn more**: [Signature Revision Reference](/docs/v4.0.0/schema-reference/revision/signing-revision)
 
 ### 4. Witness Revision
 **Purpose**: Anchor revisions to blockchain for timestamping
@@ -95,7 +95,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Nostr
 - TSA (RFC 3161 Timestamping Authorities)
 
-**Learn more**: [Witness Revision Reference](/schema_reference/witness_revision)
+**Learn more**: [Witness Revision Reference](/docs/v4.0.0/schema-reference/revision/witness-revision)
 
 ### 5. Link Revision
 **Purpose**: Connect to other Aqua Trees
@@ -105,7 +105,7 @@ Aqua Protocol v4 defines five revision types, each serving a specific purpose:
 - Building composite documents
 - Creating provenance graphs
 
-**Learn more**: [Link Revision Reference](/schema_reference/link_revision)
+**Learn more**: [Link Revision Reference](/docs/v4.0.0/schema-reference/revision/link-revision)
 
 ## Common Revision Fields
 
@@ -359,46 +359,45 @@ Aqua Protocol v4 schema supports diverse applications:
 Explore the detailed specifications for each component:
 
 <CardGrid cols={2}>
-  <Card title="Aqua Tree" icon="tree" href="/schema_reference/aqua_tree">
+  <Card title="Aqua Tree" icon="tree" href="/docs/v4.0.0/schema-reference/aqua-tree">
     Root data structure containing revisions and file index
   </Card>
 
-  <Card title="File Index" icon="folder" href="/schema_reference/file_index">
+  <Card title="File Index" icon="folder" href="/docs/v4.0.0/schema-reference/file-index">
     Mapping content hashes to filenames
   </Card>
 
-  <Card title="Revision Types" icon="code-branch" href="/schema_reference/revision">
+  <Card title="Revision Types" icon="code-branch" href="/docs/v4.0.0/schema-reference/revision/revision">
     Overview of all revision types
   </Card>
 
-  <Card title="Object Revision" icon="file" href="/schema_reference/object_revision">
+  <Card title="Object Revision" icon="file" href="/docs/v4.0.0/schema-reference/revision/object-revision">
     Store document and data content
   </Card>
 
-  <Card title="Template Revision" icon="table" href="/schema_reference/template_revision">
+  <Card title="Template Revision" icon="table" href="/docs/v4.0.0/schema-reference/revision/template-revision">
     Define schemas with JSON Schema
   </Card>
 
-  <Card title="Signature Revision" icon="signature" href="/schema_reference/signing_revision">
+  <Card title="Signature Revision" icon="signature" href="/docs/v4.0.0/schema-reference/revision/signing-revision">
     Add cryptographic signatures
   </Card>
 
-  <Card title="Witness Revision" icon="clock" href="/schema_reference/witness_revision">
+  <Card title="Witness Revision" icon="clock" href="/docs/v4.0.0/schema-reference/revision/witness-revision">
     Blockchain timestamping
   </Card>
 
-  <Card title="Link Revision" icon="link" href="/schema_reference/link_revision">
+  <Card title="Link Revision" icon="link" href="/docs/v4.0.0/schema-reference/revision/link-revision">
     Connect to other Aqua Trees
   </Card>
 </CardGrid>
 
 ## Additional Resources
 
-- [Quick Start Guide](/quickstart) - Get started with Aqua Protocol
-- [Version 4 Introduction](/previous_versions/version_4/version_4) - Overview of v4 features
-- [Use Cases](/use_cases/introduction) - Real-world applications
-- [Aqua SDK](/dev_tools/aqua_sdk) - Rust SDK for implementation
-- [Aqua CLI](/dev_tools/aqua_cli) - Command-line tool
+- [Quick Start Guide](/docs/v4.0.0/quickstart) - Get started with Aqua Protocol
+- [Use Cases](/docs/v4.0.0/use-cases/introduction) - Real-world applications
+- [Aqua SDK](/docs/v4.0.0/dev-tools/aqua-sdk) - Rust SDK for implementation
+- [Aqua CLI](/docs/v4.0.0/dev-tools/aqua-cli) - Command-line tool
 
 ## Version History
 
@@ -411,6 +410,6 @@ Aqua Protocol v4 introduces:
 - Better support for complex data structures
 
 For previous versions, see:
-- [Version 3 Documentation](/previous_versions/version_3/introduction) - JavaScript SDK (Stable)
-- [Version 2 Documentation](/previous_versions/version_2/introduction) - Legacy
-- [Version 1 Documentation](/previous_versions/version_1/introduction) - Legacy
+- [Version 3 Documentation](/docs/v3.0.2/introduction) - JavaScript SDK (Stable)
+- [Version 2 Documentation](/docs/v2.0.2/introduction) - Legacy
+- [Version 1 Documentation](/docs/v1.1.0/introduction) - Legacy
