@@ -2,6 +2,7 @@ import Link from "next/link"
 import { ArrowRight, Shield, Fingerprint, Lock, Github, Twitter, Linkedin, ExternalLink, Upload, PenTool, UserCheck } from "lucide-react"
 import { getConfig, getAssetPath } from "specra/lib"
 import { Button } from "specra/components"
+import AquaAnimation from "./components/aqua-animation"
 
 export default function HomePage() {
   // Server component - can use getConfig directly
@@ -41,39 +42,44 @@ export default function HomePage() {
         </div>
       </header>
 
-      <main className="container px-6 mx-auto">
-        {/* Hero Section */}
-        <div className="mx-auto text-center space-y-6 py-20 max-w-4xl">
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-foreground">
-            Welcome to the <span className="text-primary">Aqua Protocol</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            Account & verify data in seconds using cryptographic proof
-          </p>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            An open, public, and decentralized solution for data accountability and governance.
-            Built with modern cryptographic standards.
-          </p>
-          <div className="flex items-center justify-center gap-4 pt-4">
-            <Button asChild size="lg">
-              <Link href={docsUrl}>
-                Get Started
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            {
-              config?.env?.AQUAFIER_URL ? (
-                <Button asChild size="lg" variant="outline">
-                  <Link href={config.env.AQUAFIER_URL} target="_blank" rel="noopener noreferrer">
-                    Try Aquafier
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              ) : null
-            }
+      {/* Hero Section with Animation */}
+      <div className="relative overflow-hidden">
+        <AquaAnimation reverse={false} laneCount={5} />
+        <div className="container px-6 mx-auto relative z-10">
+          <div className="mx-auto text-center space-y-6 py-20 max-w-4xl">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-foreground">
+              Welcome to the <span className="text-primary">Aqua Protocol</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Account & verify data in seconds using cryptographic proof
+            </p>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              An open, public, and decentralized solution for data accountability and governance.
+              Built with modern cryptographic standards.
+            </p>
+            <div className="flex items-center justify-center gap-4 pt-4">
+              <Button asChild size="lg">
+                <Link href={docsUrl}>
+                  Get Started
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              {
+                config?.env?.AQUAFIER_URL ? (
+                  <Button asChild size="lg" variant="outline">
+                    <Link href={config.env.AQUAFIER_URL} target="_blank" rel="noopener noreferrer">
+                      Try Aquafier
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                ) : null
+              }
+            </div>
           </div>
         </div>
+      </div>
 
+      <main className="container px-6 mx-auto">
         {/* Key Features */}
         <div className="grid md:grid-cols-3 gap-6 py-16 max-w-6xl mx-auto">
           <div className="p-6 rounded-lg border border-border bg-card hover:shadow-md transition-shadow">
@@ -149,18 +155,19 @@ export default function HomePage() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                            <Button asChild size="lg" variant="default">
-                              <Link href="https://aquafier.inblock.io" target="_blank" rel="noopener noreferrer">
-                                Aquafier Production
-                                <ExternalLink className="ml-2 h-4 w-4" />
-                              </Link>
-                            </Button>
-                            <Button asChild size="lg" variant="outline">
-                              <Link href="https://dev.inblock.io" target="_blank" rel="noopener noreferrer">
-                                Development Environment
-                                <ExternalLink className="ml-2 h-4 w-4" />
-                              </Link>
-                            </Button>            </div>
+              <Button asChild size="lg" variant="default">
+                <Link href="https://aquafier.inblock.io" target="_blank" rel="noopener noreferrer">
+                  Aquafier Production
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <Link href="https://dev.inblock.io" target="_blank" rel="noopener noreferrer">
+                  Development Environment
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
 
