@@ -389,7 +389,7 @@ export default function AquaAnimation({
       const flash = age < FLASH_DURATION ? 1 - age / FLASH_DURATION : 0
       if (flash > 0) {
         const glowAlpha = a * flash * 0.8
-        ctx!.strokeStyle = `rgba(180,200,220,${glowAlpha})`
+        ctx!.strokeStyle = `rgba(0,0,0,${glowAlpha})`
         ctx!.lineWidth = 3
         ctx!.setLineDash([])
         ctx!.beginPath()

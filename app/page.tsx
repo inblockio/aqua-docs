@@ -11,7 +11,7 @@ export default function HomePage() {
   const docsUrl = `/docs/${activeVersion}/welcome`
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen page-gradient">
       <header className="border-b border-border">
         <div className="container flex h-16 items-center justify-between px-6 mx-auto">
           <Link href="/" className="flex items-center gap-2">

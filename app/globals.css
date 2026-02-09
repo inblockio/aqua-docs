@@ -1,1 +1,25 @@
 @import "specra/styles";
+
+.page-gradient {
+  background: linear-gradient(
+    to bottom,
+    #f0f4fa 0%,
+    #dce4f0 30%,
+    #c5d0e6 50%,
+    #b8c6de 70%,
+    #aebdd8 100%
+  ) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-gradient {
+    background: linear-gradient(
+      to bottom,
+      #0f1219 0%,
+      #131a28 30%,
+      #172035 50%,
+      #1a2540 70%,
+      #1e2a48 100%
+    ) !important;
+  }
+}
