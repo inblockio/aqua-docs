@@ -83,15 +83,16 @@ export default function AquaAnimation({
     }
 
     const DRIFT_MIN = 0.8
-    const DRIFT_MAX = 2.3
+    const DRIFT_MAX = 1.61
     const SPAWN_INTERVAL = 50
-    const MAX_CHAINS = 20
+    const MAX_CHAINS = 14
     const MAX_NODES = 10
     const NODE_R = 4
     let LANE_HEIGHT = 0
     const BRANCH_TYPES: Array<"revision" | "signature" | "witness"> = ["revision", "signature", "witness"]
     const MAX_PER_LANE = 3
     const MIN_LANE_GAP = 250
+    const MAX_LINKS_PER_CHAIN = 4
     const MAX_LINKS_PER_PAIR = 4
     const FLASH_DURATION = 30
 
@@ -119,10 +120,8 @@ export default function AquaAnimation({
       }
 
       // Above the cutoff: horizontal center fade
-      const cx = canvas!.width / 2
-      const half = canvas!.width / 2
-      const dist = Math.abs(x - cx)
-      let hFade = (dist / half - 0.25) / 0.35
+      const dist = Math.abs(x - frameHalfW)
+      let hFade = (dist / frameHalfW - 0.25) / 0.35
       if (hFade < 0) hFade = 0
       if (hFade > 1) hFade = 1
       return hFade
@@ -303,6 +302,15 @@ export default function AquaAnimation({
       return count
     }
 
+    function countLinksFor(c: AquaChain): number {
+      let count = 0
+      for (let i = 0; i < crossLinks.length; i++) {
+        const l = crossLinks[i]
+        if (c.nodes.indexOf(l.from) !== -1 || c.nodes.indexOf(l.to) !== -1) count++
+      }
+      return count
+    }
+
     function addCrossLinks(chain: AquaChain) {
       const chainX = chainAvgX(chain)
       const others: { chain: AquaChain; dist: number }[] = []
@@ -313,10 +321,13 @@ export default function AquaAnimation({
       others.sort((a, b) => a.dist - b.dist)
 
       for (let i = 0; i < others.length; i++) {
+        if (countLinksFor(chain) >= MAX_LINKS_PER_CHAIN) break
         const other = others[i].chain
         if (other.nodes.length === 0) continue
+        if (countLinksFor(other) >= MAX_LINKS_PER_CHAIN) continue
         if (countLinksBetween(chain, other) >= MAX_LINKS_PER_PAIR) continue
-        let chance = 1.0 / (1 + i * 0.3)
+        const yDist = others[i].dist
+        let chance = Math.exp(-yDist / (LANE_HEIGHT * 1.5))
         const otherX = chainAvgX(other)
         if (reverse) {
           if (otherX < chainX) chance *= 3
@@ -350,16 +361,17 @@ export default function AquaAnimation({
       chain.edges.push({ from: br.tip, to: child })
       br.tip = child
 
-      if (Math.random() < 0.85 && chains.length > 1) {
+      if (Math.random() < 0.85 && chains.length > 1 && countLinksFor(chain) < MAX_LINKS_PER_CHAIN) {
         const myX = chainAvgX(chain)
         let bestChain: AquaChain | null = null
         let bestScore = -Infinity
         for (let k = 0; k < chains.length; k++) {
           if (chains[k] === chain) continue
           if (chains[k].nodes.length === 0) continue
+          if (countLinksFor(chains[k]) >= MAX_LINKS_PER_CHAIN) continue
           if (countLinksBetween(chain, chains[k]) >= MAX_LINKS_PER_PAIR) continue
           const d = Math.abs(chains[k].lane.y - chain.lane.y)
-          const proximity = 1 / (1 + d / 40)
+          const proximity = Math.exp(-d / (LANE_HEIGHT * 1.5))
           const otherAvgX = chainAvgX(chains[k])
           let dirBonus: number
           if (reverse) {
@@ -379,6 +391,10 @@ export default function AquaAnimation({
       }
     }
 
+    // Per-frame cached state
+    let frameDark = false
+    let frameHalfW = 0
+
     function drawNode(n: AquaNode) {
       const a = posAlpha(n.x, n.y)
       if (a < 0.01) return
@@ -395,15 +411,10 @@ export default function AquaAnimation({
       }
     }
 
-    function isDark(): boolean {
-      return document.documentElement.classList.contains("dark")
-    }
-
     function drawEdge(from: AquaNode, to: AquaNode) {
       const a = Math.min(posAlpha(from.x, from.y), posAlpha(to.x, to.y))
       if (a < 0.01) return
-      const dark = isDark()
-      ctx!.strokeStyle = dark
+      ctx!.strokeStyle = frameDark
         ? `rgba(200,215,235,${a})`
         : `rgba(10,40,60,${a})`
       ctx!.lineWidth = 1.8
@@ -416,37 +427,44 @@ export default function AquaAnimation({
     function drawCrossLink(link: CrossLink) {
       const a = Math.min(posAlpha(link.from.x, link.from.y), posAlpha(link.to.x, link.to.y))
       if (a < 0.01) return
-      const dark = isDark()
       const age = frameCount - (link.birth || 0)
       const flash = age < FLASH_DURATION ? 1 - age / FLASH_DURATION : 0
+      const midX = (link.from.x + link.to.x) / 2
+      const midY = (link.from.y + link.to.y) / 2
+      const dx = link.to.x - link.from.x
+      const dy = link.to.y - link.from.y
+      const len = Math.sqrt(dx * dx + dy * dy)
+      const bulge = len * 0.2
+      const cpX = midX + (dy / len) * bulge
+      const cpY = midY - (dx / len) * bulge
       if (flash > 0) {
-        const glowAlpha = a * flash * 0.8
-        ctx!.strokeStyle = dark
+        const glowAlpha = a * flash * 0.6
+        ctx!.strokeStyle = frameDark
           ? `rgba(255,255,255,${glowAlpha})`
           : `rgba(0,0,0,${glowAlpha})`
-        ctx!.lineWidth = 3
-        ctx!.setLineDash([])
+        ctx!.lineWidth = 2.5
         ctx!.beginPath()
         ctx!.moveTo(link.from.x, link.from.y)
-        ctx!.lineTo(link.to.x, link.to.y)
+        ctx!.quadraticCurveTo(cpX, cpY, link.to.x, link.to.y)
         ctx!.stroke()
       }
-      const baseAlpha = a * (0.8 + flash * 0.2)
-      ctx!.strokeStyle = dark
-        ? `rgba(200,210,240,${baseAlpha})`
-        : `rgba(30,40,90,${baseAlpha})`
-      ctx!.lineWidth = 1.2 + flash * 1.3
-      ctx!.setLineDash([4, 5])
+      const baseAlpha = a * (0.5 + flash * 0.3)
+      ctx!.strokeStyle = frameDark
+        ? `rgba(140,160,220,${baseAlpha})`
+        : `rgba(60,80,140,${baseAlpha})`
+      ctx!.lineWidth = 0.8 + flash * 1.0
       ctx!.beginPath()
       ctx!.moveTo(link.from.x, link.from.y)
-      ctx!.lineTo(link.to.x, link.to.y)
+      ctx!.quadraticCurveTo(cpX, cpY, link.to.x, link.to.y)
       ctx!.stroke()
-      ctx!.setLineDash([])
     }
 
     function animate() {
       ctx!.clearRect(0, 0, canvas!.width, canvas!.height)
-      updateFadeCutoff()
+      // Cache per-frame values to avoid repeated DOM reads
+      frameDark = document.documentElement.classList.contains("dark")
+      frameHalfW = canvas!.width / 2
+      if (frameCount % 30 === 0) updateFadeCutoff()
       frameCount++
 
       if (frameCount % SPAWN_INTERVAL === 0 && chains.length < MAX_CHAINS) {
