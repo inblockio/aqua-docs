@@ -23,7 +23,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen page-gradient relative">
-      <AquaAnimation reverse={false} laneCount={15} fadeAboveSelector="#hero-cta" />
+      <AquaAnimation reverse={false} laneCount={20} fadeAboveSelector="#hero-cta" topPadding={80} />
       <div className="relative z-10">
       <header className="border-b border-border">
         <div className="container flex h-16 items-center justify-between px-6 mx-auto">

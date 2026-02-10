@@ -7,6 +7,7 @@ interface AquaAnimationProps {
   laneCount?: number
   invertSpeed?: boolean
   fadeAboveSelector?: string
+  topPadding?: number
 }
 
 interface AquaNode {
@@ -31,6 +32,7 @@ interface AquaChain {
   edges: AquaEdge[]
   lane: Lane
   branches: AquaBranch[]
+  drift: number
 }
 
 interface CrossLink {
@@ -50,6 +52,7 @@ export default function AquaAnimation({
   laneCount = 5,
   invertSpeed = false,
   fadeAboveSelector,
+  topPadding = 0,
 }: AquaAnimationProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
@@ -79,8 +82,8 @@ export default function AquaAnimation({
       witness: [50, 130, 220],
     }
 
-    const DRIFT_MIN = 0.5
-    const DRIFT_MAX = 1.0
+    const DRIFT_MIN = 0.8
+    const DRIFT_MAX = 2.3
     const SPAWN_INTERVAL = 50
     const MAX_CHAINS = 20
     const MAX_NODES = 10
@@ -136,15 +139,16 @@ export default function AquaAnimation({
     }
 
     function initLanes() {
-      LANE_HEIGHT = canvas!.height / laneCount
+      const usableHeight = canvas!.height - topPadding
+      LANE_HEIGHT = usableHeight / laneCount
       lanes = []
       for (let i = 0; i < laneCount; i++) {
-        const t = laneCount > 1 ? i / (laneCount - 1) : 0
-        const speed = invertSpeed
-          ? DRIFT_MIN + (1 - t) * (DRIFT_MAX - DRIFT_MIN)
-          : DRIFT_MIN + t * (DRIFT_MAX - DRIFT_MIN)
-        lanes.push({ y: LANE_HEIGHT * (i + 0.5), occupants: [], drift: speed })
+        lanes.push({ y: topPadding + LANE_HEIGHT * (i + 0.5), occupants: [], drift: 0 })
       }
+    }
+
+    function randomDrift(): number {
+      return DRIFT_MIN + Math.random() * (DRIFT_MAX - DRIFT_MIN)
     }
 
     function chainEdgeX(c: AquaChain): number {
@@ -198,7 +202,7 @@ export default function AquaAnimation({
       const yBand = LANE_HEIGHT * 0.45
       const forkStep = yBand / 3
       const nodeStep = rand(24, 36)
-      const chain: AquaChain = { nodes: [], edges: [], lane: lane, branches: [] }
+      const chain: AquaChain = { nodes: [], edges: [], lane: lane, branches: [], drift: randomDrift() }
 
       const genesis: AquaNode = { x: startX, y: centerY, type: "genesis", lineY: centerY }
       chain.nodes.push(genesis)
@@ -454,7 +458,7 @@ export default function AquaAnimation({
       }
 
       for (let i = 0; i < chains.length; i++) {
-        const speed = chains[i].lane.drift
+        const speed = chains[i].drift
         for (let j = 0; j < chains[i].nodes.length; j++) {
           if (reverse) {
             chains[i].nodes[j].x += speed
@@ -489,9 +493,9 @@ export default function AquaAnimation({
 
       crossLinks = crossLinks.filter((link) => {
         if (reverse) {
-          return link.from.x < canvas!.width + 80 && link.to.x < canvas!.width + 80
+          return link.from.x < canvas!.width + 80 || link.to.x < canvas!.width + 80
         }
-        return link.from.x > -80 && link.to.x > -80
+        return link.from.x > -80 || link.to.x > -80
       })
 
       for (let i = 0; i < crossLinks.length; i++) {
@@ -534,7 +538,7 @@ export default function AquaAnimation({
       window.removeEventListener("resize", handleResize)
       cancelAnimationFrame(animId)
     }
-  }, [reverse, laneCount, invertSpeed])
+  }, [reverse, laneCount, invertSpeed, topPadding])
 
   return (
     <canvas
