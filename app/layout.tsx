@@ -75,7 +75,7 @@ export default function RootLayout({
     config.navigation?.tabGroups?.[0]?.id ?? ""
 
   return (
-    <html lang={config.site.language || "en"}>
+    <html lang={config.site.language || "en"} suppressHydrationWarning>
       <body
         // className={`${geist.className} ${geistMono.className} antialiased`}
         className={`font-sans antialiased`}

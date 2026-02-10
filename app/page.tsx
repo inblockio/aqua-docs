@@ -2,6 +2,7 @@ import Link from "next/link"
 import { ArrowRight, Shield, Fingerprint, Lock, Github, Twitter, Linkedin, ExternalLink, Upload, PenTool, UserCheck } from "lucide-react"
 import { getConfig, getAssetPath, getI18nConfig } from "specra/lib"
 import { Button } from "specra/components"
+import { ThemeToggle } from "./components/theme-toggle-client"
 import AquaAnimation from "./components/aqua-animation"
 
 export default function HomePage() {
@@ -17,7 +18,7 @@ export default function HomePage() {
         <div className="container flex h-16 items-center justify-between px-6 mx-auto">
           <Link href="/" className="flex items-center gap-2">
             {config.site.logo ? (
-              <img src={getAssetPath(typeof config.site.logo === "string" ? config.site.logo : config.site.logo.dark ?? "")} alt={config.site.title} className="h-8 w-auto" />
+              <img src={getAssetPath(config.site.logo ?? "")} alt={config.site.title} className="h-12 w-auto" />
             ) : (
               <div className="h-8 w-8 rounded-xl bg-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">A</span>
@@ -25,10 +26,7 @@ export default function HomePage() {
             )}
             <span className="font-semibold text-lg text-foreground">Aqua Protocol</span>
           </Link>
-          <div className="flex items-center gap-6">
-            {/* <Link href={docsUrl} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Documentation
-            </Link> */}
+          <div className="flex items-center gap-4">
             {
               config?.social?.github ? (
                 <Link href={config.social.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -36,8 +34,9 @@ export default function HomePage() {
                 </Link>
               ) : null
             }
+            <ThemeToggle />
             <Button asChild>
-              <Link href={docsUrl}>Get Started</Link>
+              <Link href={docsUrl}>Documentation</Link>
             </Button>
           </div>
         </div>

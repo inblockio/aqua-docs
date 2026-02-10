@@ -371,10 +371,17 @@ export default function AquaAnimation({
       }
     }
 
+    function isDark(): boolean {
+      return document.documentElement.classList.contains("dark")
+    }
+
     function drawEdge(from: AquaNode, to: AquaNode) {
       const a = Math.min(posAlpha(from.x), posAlpha(to.x))
       if (a < 0.01) return
-      ctx!.strokeStyle = `rgba(20,60,80,${a * 0.85})`
+      const dark = isDark()
+      ctx!.strokeStyle = dark
+        ? `rgba(180,200,220,${a * 0.85})`
+        : `rgba(20,60,80,${a * 0.85})`
       ctx!.lineWidth = 1.6
       ctx!.beginPath()
       ctx!.moveTo(from.x, from.y)
@@ -385,11 +392,14 @@ export default function AquaAnimation({
     function drawCrossLink(link: CrossLink) {
       const a = Math.min(posAlpha(link.from.x), posAlpha(link.to.x))
       if (a < 0.01) return
+      const dark = isDark()
       const age = frameCount - (link.birth || 0)
       const flash = age < FLASH_DURATION ? 1 - age / FLASH_DURATION : 0
       if (flash > 0) {
         const glowAlpha = a * flash * 0.8
-        ctx!.strokeStyle = `rgba(0,0,0,${glowAlpha})`
+        ctx!.strokeStyle = dark
+          ? `rgba(255,255,255,${glowAlpha})`
+          : `rgba(0,0,0,${glowAlpha})`
         ctx!.lineWidth = 3
         ctx!.setLineDash([])
         ctx!.beginPath()
@@ -398,7 +408,9 @@ export default function AquaAnimation({
         ctx!.stroke()
       }
       const baseAlpha = a * (0.6 + flash * 0.4)
-      ctx!.strokeStyle = `rgba(40,50,100,${baseAlpha})`
+      ctx!.strokeStyle = dark
+        ? `rgba(180,190,230,${baseAlpha})`
+        : `rgba(40,50,100,${baseAlpha})`
       ctx!.lineWidth = 1.0 + flash * 1.3
       ctx!.setLineDash([4, 5])
       ctx!.beginPath()
