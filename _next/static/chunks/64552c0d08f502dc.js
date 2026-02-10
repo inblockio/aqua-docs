@@ -1,0 +1,115 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,289066,e=>{"use strict";var t=e.i(142038);e.s(["default",0,function(e){return(0,t.default)(e,4)}])},270472,626643,e=>{"use strict";e.i(461696);var t=e.i(915888),r=e.i(595007),l=e.i(289066),l=l,i=e.i(553908);e.i(178662);var n=e.i(704642);function a(e){var t,n,a={options:{directed:e.isDirected(),multigraph:e.isMultigraph(),compound:e.isCompound()},nodes:(t=e,i.map(t.nodes(),function(e){var l=t.node(e),i=t.parent(e),n={v:e};return r.isUndefined(l)||(n.value=l),r.isUndefined(i)||(n.parent=i),n})),edges:(n=e,i.map(n.edges(),function(e){var t=n.edge(e),l={v:e.v,w:e.w};return r.isUndefined(e.name)||(l.name=e.name),r.isUndefined(t)||(l.value=t),l}))};return r.isUndefined(e.graph())||(a.value=l.default(e.graph())),a}e.s(["write",()=>a],626643);var o=e.i(855829),d=e.i(733773);e.i(566661);var s=e.i(601887);e.i(947716);var c=e.i(723685);let h={},g={},f={},p=(e,t)=>(d.l.trace("In isDescendant",t," ",e," = ",g[t].includes(e)),!!g[t].includes(e)),u=(e,t,r,l)=>{d.l.warn("Copying children of ",e,"root",l,"data",t.node(e),l);let i=t.children(e)||[];e!==l&&i.push(e),d.l.warn("Copying (nodes) clusterId",e,"nodes",i),i.forEach(i=>{if(t.children(i).length>0)u(i,t,r,l);else{let n=t.node(i);d.l.info("cp ",i," to ",l," with parent ",e),r.setNode(i,n),l!==t.parent(i)&&(d.l.warn("Setting parent",i,t.parent(i)),r.setParent(i,t.parent(i))),e!==l&&i!==e?(d.l.debug("Setting parent",i,e),r.setParent(i,e)):(d.l.info("In copy ",e,"root",l,"data",t.node(e),l),d.l.debug("Not Setting parent for node=",i,"cluster!==rootId",e!==l,"node!==clusterId",i!==e));let a=t.edges(i);d.l.debug("Copying Edges",a),a.forEach(i=>{d.l.info("Edge",i);let n=t.edge(i.v,i.w,i.name);d.l.info("Edge data",n,l);try{(d.l.info("Descendants of ",l," is ",g[l]),d.l.info("Edge is ",i),i.v!==l&&i.w!==l&&(g[l]?g[l].includes(i.v)||p(i.v,l)||p(i.w,l)||g[l].includes(i.w):(d.l.debug("Tilt, ",l,",not in descendants"),!1)))?(d.l.info("Copying as ",i.v,i.w,n,i.name),r.setEdge(i.v,i.w,n,i.name),d.l.info("newGraph edges ",r.edges(),r.edge(r.edges()[0]))):d.l.info("Skipping copy of edge ",i.v,"-->",i.w," rootId: ",l," clusterId:",e)}catch(e){d.l.error(e)}})}d.l.debug("Removing node",i),t.removeNode(i)})},w=(e,t)=>{let r=t.children(e),l=[...r];for(let i of r)f[i]=e,l=[...l,...w(i,t)];return l},b=(e,t)=>{d.l.trace("Searching",e);let r=t.children(e);if(d.l.trace("Searching children of id ",e,r),r.length<1)return d.l.trace("This is a valid node",e),e;for(let l of r){let r=b(l,t);if(r)return d.l.trace("Found replacement for",e," => ",r),r}},y=e=>h[e]&&h[e].externalConnections&&h[e]?h[e].id:e,v=(e,t)=>{if(d.l.warn("extractor - ",t,a(e),e.children("D")),t>10)return void d.l.error("Bailing out");let r=e.nodes(),l=!1;for(let t of r){let r=e.children(t);l=l||r.length>0}if(!l)return void d.l.debug("Done, no node has children",e.nodes());for(let l of(d.l.debug("Nodes = ",r,t),r))if(d.l.debug("Extracting node",l,h,h[l]&&!h[l].externalConnections,!e.parent(l),e.node(l),e.children("D")," Depth ",t),h[l])if(!h[l].externalConnections&&e.children(l)&&e.children(l).length>0){d.l.warn("Cluster without external connections, without a parent and with children",l,t);let r="TB"===e.graph().rankdir?"LR":"TB";h[l]&&h[l].clusterData&&h[l].clusterData.dir&&(r=h[l].clusterData.dir,d.l.warn("Fixing dir",h[l].clusterData.dir,r));let i=new n.Graph({multigraph:!0,compound:!0}).setGraph({rankdir:r,nodesep:50,ranksep:50,marginx:8,marginy:8}).setDefaultEdgeLabel(function(){return{}});d.l.warn("Old graph before copy",a(e)),u(l,e,i,l),e.setNode(l,{clusterNode:!0,id:l,clusterData:h[l].clusterData,labelText:h[l].labelText,graph:i}),d.l.warn("New graph after copy node: (",l,")",a(i)),d.l.debug("Old graph after copy",a(e))}else d.l.warn("Cluster ** ",l," **not meeting the criteria !externalConnections:",!h[l].externalConnections," no parent: ",!e.parent(l)," children ",e.children(l)&&e.children(l).length>0,e.children("D"),t),d.l.debug(h);else d.l.debug("Not a cluster",l,t);for(let l of(r=e.nodes(),d.l.warn("New list of nodes",r),r)){let r=e.node(l);d.l.warn(" Now next level",l,r),r.clusterNode&&v(r.graph,t+1)}},x=(e,t)=>{if(0===t.length)return[];let r=Object.assign(t);return t.forEach(t=>{let l=e.children(t),i=x(e,l);r=[...r,...i]}),r},m={rect:(e,t)=>{d.l.info("Creating subgraph rect for ",t.id,t);let r=(0,d.c)(),l=e.insert("g").attr("class","cluster"+(t.class?" "+t.class:"")).attr("id",t.id),i=l.insert("rect",":first-child"),n=(0,d.m)(r.flowchart.htmlLabels),a=l.insert("g").attr("class","cluster-label"),h="markdown"===t.labelType?(0,s.a)(a,t.labelText,{style:t.labelStyle,useHtmlLabels:n}):a.node().appendChild((0,o.c)(t.labelText,t.labelStyle,void 0,!0)),g=h.getBBox();if((0,d.m)(r.flowchart.htmlLabels)){let e=h.children[0],t=(0,c.select)(h);g=e.getBoundingClientRect(),t.attr("width",g.width),t.attr("height",g.height)}let f=0*t.padding,p=t.width<=g.width+f?g.width+f:t.width;t.width<=g.width+f?t.diff=(g.width-t.width)/2-t.padding/2:t.diff=-t.padding/2,d.l.trace("Data ",t,JSON.stringify(t)),i.attr("style",t.style).attr("rx",t.rx).attr("ry",t.ry).attr("x",t.x-p/2).attr("y",t.y-t.height/2-f/2).attr("width",p).attr("height",t.height+f);let{subGraphTitleTopMargin:u}=(0,o.g)(r);n?a.attr("transform",`translate(${t.x-g.width/2}, ${t.y-t.height/2+u})`):a.attr("transform",`translate(${t.x}, ${t.y-t.height/2+u})`);let w=i.node().getBBox();return t.width=w.width,t.height=w.height,t.intersect=function(e){return(0,o.i)(t,e)},l},roundedWithTitle:(e,t)=>{let r=(0,d.c)(),l=e.insert("g").attr("class",t.classes).attr("id",t.id),i=l.insert("rect",":first-child"),n=l.insert("g").attr("class","cluster-label"),a=l.append("rect"),s=n.node().appendChild((0,o.c)(t.labelText,t.labelStyle,void 0,!0)),h=s.getBBox();if((0,d.m)(r.flowchart.htmlLabels)){let e=s.children[0],t=(0,c.select)(s);h=e.getBoundingClientRect(),t.attr("width",h.width),t.attr("height",h.height)}h=s.getBBox();let g=0*t.padding,f=g/2,p=t.width<=h.width+t.padding?h.width+t.padding:t.width;t.width<=h.width+t.padding?t.diff=(h.width+0*t.padding-t.width)/2:t.diff=-t.padding/2,i.attr("class","outer").attr("x",t.x-p/2-f).attr("y",t.y-t.height/2-f).attr("width",p+g).attr("height",t.height+g),a.attr("class","inner").attr("x",t.x-p/2-f).attr("y",t.y-t.height/2-f+h.height-1).attr("width",p+g).attr("height",t.height+g-h.height-3);let{subGraphTitleTopMargin:u}=(0,o.g)(r);return n.attr("transform",`translate(${t.x-h.width/2}, ${t.y-t.height/2-t.padding/3+((0,d.m)(r.flowchart.htmlLabels)?5:3)+u})`),t.height=i.node().getBBox().height,t.intersect=function(e){return(0,o.i)(t,e)},l},noteGroup:(e,t)=>{let r=e.insert("g").attr("class","note-cluster").attr("id",t.id),l=r.insert("rect",":first-child"),i=0*t.padding,n=i/2;l.attr("rx",t.rx).attr("ry",t.ry).attr("x",t.x-t.width/2-n).attr("y",t.y-t.height/2-n).attr("width",t.width+i).attr("height",t.height+i).attr("fill","none");let a=l.node().getBBox();return t.width=a.width,t.height=a.height,t.intersect=function(e){return(0,o.i)(t,e)},r},divider:(e,t)=>{let r=e.insert("g").attr("class",t.classes).attr("id",t.id),l=r.insert("rect",":first-child"),i=0*t.padding;l.attr("class","divider").attr("x",t.x-t.width/2-i/2).attr("y",t.y-t.height/2).attr("width",t.width+i).attr("height",t.height+i);let n=l.node().getBBox();return t.width=n.width,t.height=n.height,t.diff=-t.padding/2,t.intersect=function(e){return(0,o.i)(t,e)},r}},k={},S=async(e,r,l,i,n,s)=>{d.l.info("Graph in recursive render: XXX",a(r),n);let c=r.graph().rankdir;d.l.trace("Dir in recursive render - dir:",c);let g=e.insert("g").attr("class","root");r.nodes()?d.l.info("Recursive render XXX",r.nodes()):d.l.info("No nodes found for",r),r.edges().length>0&&d.l.trace("Recursive edges",r.edge(r.edges()[0]));let f=g.insert("g").attr("class","clusters"),p=g.insert("g").attr("class","edgePaths"),u=g.insert("g").attr("class","edgeLabels"),w=g.insert("g").attr("class","nodes");await Promise.all(r.nodes().map(async function(e){let t=r.node(e);if(void 0!==n){let t=JSON.parse(JSON.stringify(n.clusterData));d.l.info("Setting data for cluster XXX (",e,") ",t,n),r.setNode(n.id,t),r.parent(e)||(d.l.trace("Setting parent",e,n.id),r.setParent(e,n.id,t))}if(d.l.info("(Insert) Node XXX"+e+": "+JSON.stringify(r.node(e))),t&&t.clusterNode){d.l.info("Cluster identified",e,t.width,r.node(e));let n=await S(w,t.graph,l,i,r.node(e),s),a=n.elem;(0,o.u)(t,a),t.diff=n.diff||0,d.l.info("Node bounds (abc123)",e,t,t.width,t.x,t.y),(0,o.s)(a,t),d.l.warn("Recursive render complete ",a,t)}else r.children(e).length>0?(d.l.info("Cluster - the non recursive path XXX",e,t.id,t,r),d.l.info(b(t.id,r)),h[t.id]={id:b(t.id,r),node:t}):(d.l.info("Node - the non recursive path",e,t.id,t),await (0,o.e)(w,r.node(e),c))})),r.edges().forEach(function(e){let t=r.edge(e.v,e.w,e.name);d.l.info("Edge "+e.v+" -> "+e.w+": "+JSON.stringify(e)),d.l.info("Edge "+e.v+" -> "+e.w+": ",e," ",JSON.stringify(r.edge(e))),d.l.info("Fix",h,"ids:",e.v,e.w,"Translating: ",h[e.v],h[e.w]),(0,o.f)(u,t)}),r.edges().forEach(function(e){d.l.info("Edge "+e.v+" -> "+e.w+": "+JSON.stringify(e))}),d.l.info("#############################################"),d.l.info("###                Layout                 ###"),d.l.info("#############################################"),d.l.info(r),(0,t.layout)(r),d.l.info("Graph after layout:",a(r));let y=0,{subGraphTitleTotalMargin:v}=(0,o.g)(s);return x(r,r.children()).forEach(function(e){let t=r.node(e);if(d.l.info("Position "+e+": "+JSON.stringify(r.node(e))),d.l.info("Position "+e+": ("+t.x,","+t.y,") width: ",t.width," height: ",t.height),t&&t.clusterNode)t.y+=v,(0,o.p)(t);else if(r.children(e).length>0){let e;t.height+=v,d.l.trace("Inserting cluster"),e=t.shape||"rect",k[t.id]=m[e](f,t),h[t.id].node=t}else t.y+=v/2,(0,o.p)(t)}),r.edges().forEach(function(e){let t=r.edge(e);d.l.info("Edge "+e.v+" -> "+e.w+": "+JSON.stringify(t),t),t.points.forEach(e=>e.y+=v/2);let n=(0,o.h)(p,e,t,h,l,r,i);(0,o.j)(t,n)}),r.nodes().forEach(function(e){let t=r.node(e);d.l.info(e,t.type,t.diff),"group"===t.type&&(y=t.diff)}),{elem:g,diff:y}},C=async(e,t,r,l,i)=>{(0,o.a)(e,r,l,i),(0,o.b)(),(0,o.d)(),k={},g={},f={},h={},d.l.warn("Graph at first:",JSON.stringify(a(t))),((e,t)=>{if(!e)return d.l.debug("Opting out, no graph ");for(let t of(d.l.debug("Opting in, graph "),e.nodes().forEach(function(t){e.children(t).length>0&&(d.l.warn("Cluster identified",t," Replacement id in edges: ",b(t,e)),g[t]=w(t,e),h[t]={id:b(t,e),clusterData:e.node(t)})}),e.nodes().forEach(function(t){let r=e.children(t),l=e.edges();r.length>0?(d.l.debug("Cluster identified",t,g),l.forEach(e=>{e.v!==t&&e.w!==t&&p(e.v,t)^p(e.w,t)&&(d.l.warn("Edge: ",e," leaves cluster ",t),d.l.warn("Descendants of XXX ",t,": ",g[t]),h[t].externalConnections=!0)})):d.l.debug("Not a cluster ",t,g)}),Object.keys(h))){let r=h[t].id,l=e.parent(r);l!==t&&h[l]&&!h[l].externalConnections&&(h[t].id=l)}e.edges().forEach(function(t){let r=e.edge(t);d.l.warn("Edge "+t.v+" -> "+t.w+": "+JSON.stringify(t)),d.l.warn("Edge "+t.v+" -> "+t.w+": "+JSON.stringify(e.edge(t)));let l=t.v,i=t.w;if(d.l.warn("Fix XXX",h,"ids:",t.v,t.w,"Translating: ",h[t.v]," --- ",h[t.w]),h[t.v]&&h[t.w]&&h[t.v]===h[t.w]){d.l.warn("Fixing and trixing link to self - removing XXX",t.v,t.w,t.name),d.l.warn("Fixing and trixing - removing XXX",t.v,t.w,t.name),l=y(t.v),i=y(t.w),e.removeEdge(t.v,t.w,t.name);let n=t.w+"---"+t.v;e.setNode(n,{domId:n,id:n,labelStyle:"",labelText:r.label,padding:0,shape:"labelRect",style:""});let a=structuredClone(r),o=structuredClone(r);a.label="",a.arrowTypeEnd="none",o.label="",a.fromCluster=t.v,o.toCluster=t.v,e.setEdge(l,n,a,t.name+"-cyclic-special"),e.setEdge(n,i,o,t.name+"-cyclic-special")}else(h[t.v]||h[t.w])&&(d.l.warn("Fixing and trixing - removing XXX",t.v,t.w,t.name),l=y(t.v),i=y(t.w),e.removeEdge(t.v,t.w,t.name),l!==t.v&&(h[e.parent(l)].externalConnections=!0,r.fromCluster=t.v),i!==t.w&&(h[e.parent(i)].externalConnections=!0,r.toCluster=t.w),d.l.warn("Fix Replacing with XXX",l,i,t.name),e.setEdge(l,i,r,t.name))}),d.l.warn("Adjusted Graph",a(e)),v(e,0),d.l.trace(h)})(t),d.l.warn("Graph after:",JSON.stringify(a(t)));let n=(0,d.c)();await S(e,t,l,i,void 0,n)};e.s(["r",()=>C],270472)},569696,e=>{"use strict";var t=e.i(895727),r=e.i(526290);e.s(["channel",0,(e,l)=>t.default.lang.round(r.default.parse(e)[l])],569696)},552343,966692,626971,942734,e=>{"use strict";e.i(947716);var t=e.i(851262),r=e.i(723685),l=e.i(57161),i=e.i(448708);function n(e){return"string"==typeof e?new i.Selection([document.querySelectorAll(e)],[document.documentElement]):new i.Selection([(0,l.default)(e)],i.root)}e.s(["selectAll",0,n],966692);var a=e.i(469219),a=a,o=e.i(621017);function d(e,t){return!!e.children(t).length}function s(e){return h(e.v)+":"+h(e.w)+":"+h(e.name)}var c=/:/g;function h(e){return e?String(e).replace(c,"\\:"):""}function g(e,t){t&&e.attr("style",t)}function f(e,t,r){t&&e.attr("class",t).attr("class",r+" "+e.attr("class"))}function p(e,t){var r=t.graph();if(a.default(r)){var l=r.transition;if(o.isFunction(l))return l(e)}return e}function u(e,t){var r=e.append("foreignObject").attr("width","100000"),l=r.append("xhtml:div");l.attr("xmlns","http://www.w3.org/1999/xhtml");var i=t.label;switch(typeof i){case"function":l.insert(i);break;case"object":l.insert(function(){return i});break;default:l.html(i)}g(l,t.labelStyle),l.style("display","inline-block"),l.style("white-space","nowrap");var n=l.node().getBoundingClientRect();return r.attr("width",n.width).attr("height",n.height),r}e.s(["applyClass",()=>f,"applyStyle",()=>g,"applyTransition",()=>p,"edgeToId",()=>s,"isSubgraph",()=>d],626971),e.s(["addHtmlLabel",()=>u],942734),e.i(566661);var w=e.i(704642),b=e.i(270472),y=e.i(733773),v=e.i(569696),x=e.i(950241);let m={},k=async function(e,t,r,l,i,n){let a=l.select(`[id="${r}"]`);for(let r of Object.keys(e)){let l,o=e[r],d="default";o.classes.length>0&&(d=o.classes.join(" ")),d+=" flowchart-label";let s=(0,y.k)(o.styles),c=void 0!==o.text?o.text:o.id;if(y.l.info("vertex",o,o.labelType),"markdown"===o.labelType)y.l.info("vertex",o,o.labelType);else if((0,y.m)((0,y.c)().flowchart.htmlLabels))(l=u(a,{label:c}).node()).parentNode.removeChild(l);else{let e=i.createElementNS("http://www.w3.org/2000/svg","text");for(let t of(e.setAttribute("style",s.labelStyle.replace("color:","fill:")),c.split(y.e.lineBreakRegex))){let r=i.createElementNS("http://www.w3.org/2000/svg","tspan");r.setAttributeNS("http://www.w3.org/XML/1998/namespace","xml:space","preserve"),r.setAttribute("dy","1em"),r.setAttribute("x","1"),r.textContent=t,e.appendChild(r)}l=e}let h=0,g="";switch(o.type){case"round":h=5,g="rect";break;case"square":case"group":default:g="rect";break;case"diamond":g="question";break;case"hexagon":g="hexagon";break;case"odd":case"odd_right":g="rect_left_inv_arrow";break;case"lean_right":g="lean_right";break;case"lean_left":g="lean_left";break;case"trapezoid":g="trapezoid";break;case"inv_trapezoid":g="inv_trapezoid";break;case"circle":g="circle";break;case"ellipse":g="ellipse";break;case"stadium":g="stadium";break;case"subroutine":g="subroutine";break;case"cylinder":g="cylinder";break;case"doublecircle":g="doublecircle"}let f=await (0,y.r)(c,(0,y.c)());t.setNode(o.id,{labelStyle:s.labelStyle,shape:g,labelText:f,labelType:o.labelType,rx:h,ry:h,class:d,style:s.style,id:o.id,link:o.link,linkTarget:o.linkTarget,tooltip:n.db.getTooltip(o.id)||"",domId:n.db.lookUpDomId(o.id),haveCallback:o.haveCallback,width:"group"===o.type?500:void 0,dir:o.dir,type:o.type,props:o.props,padding:(0,y.c)().flowchart.padding}),y.l.info("setNode",{labelStyle:s.labelStyle,labelType:o.labelType,shape:g,labelText:f,rx:h,ry:h,class:d,style:s.style,id:o.id,domId:n.db.lookUpDomId(o.id),width:"group"===o.type?500:void 0,type:o.type,dir:o.dir,props:o.props,padding:(0,y.c)().flowchart.padding})}},S=async function(e,r,l){let i,n;y.l.info("abc78 edges = ",e);let a=0,o={};if(void 0!==e.defaultStyle){let t=(0,y.k)(e.defaultStyle);i=t.style,n=t.labelStyle}for(let l of e){a++;let d="L-"+l.start+"-"+l.end;void 0===o[d]?o[d]=0:o[d]++,y.l.info("abc78 new entry",d,o[d]);let s=d+"-"+o[d];y.l.info("abc78 new link id to be used is",d,s,o[d]);let c="LS-"+l.start,h="LE-"+l.end,g={style:"",labelStyle:""};switch(g.minlen=l.length||1,"arrow_open"===l.type?g.arrowhead="none":g.arrowhead="normal",g.arrowTypeStart="arrow_open",g.arrowTypeEnd="arrow_open",l.type){case"double_arrow_cross":g.arrowTypeStart="arrow_cross";case"arrow_cross":g.arrowTypeEnd="arrow_cross";break;case"double_arrow_point":g.arrowTypeStart="arrow_point";case"arrow_point":g.arrowTypeEnd="arrow_point";break;case"double_arrow_circle":g.arrowTypeStart="arrow_circle";case"arrow_circle":g.arrowTypeEnd="arrow_circle"}let f="",p="";switch(l.stroke){case"normal":f="fill:none;",void 0!==i&&(f=i),void 0!==n&&(p=n),g.thickness="normal",g.pattern="solid";break;case"dotted":g.thickness="normal",g.pattern="dotted",g.style="fill:none;stroke-width:2px;stroke-dasharray:3;";break;case"thick":g.thickness="thick",g.pattern="solid",g.style="stroke-width: 3.5px;fill:none;";break;case"invisible":g.thickness="invisible",g.pattern="solid",g.style="stroke-width: 0;fill:none;"}if(void 0!==l.style){let e=(0,y.k)(l.style);f=e.style,p=e.labelStyle}g.style=g.style+=f,g.labelStyle=g.labelStyle+=p,void 0!==l.interpolate?g.curve=(0,y.n)(l.interpolate,t.curveLinear):void 0!==e.defaultInterpolate?g.curve=(0,y.n)(e.defaultInterpolate,t.curveLinear):g.curve=(0,y.n)(m.curve,t.curveLinear),void 0===l.text?void 0!==l.style&&(g.arrowheadStyle="fill: #333"):(g.arrowheadStyle="fill: #333",g.labelpos="c"),g.labelType=l.labelType,g.label=await (0,y.r)(l.text.replace(y.e.lineBreakRegex,"\n"),(0,y.c)()),void 0===l.style&&(g.style=g.style||"stroke: #333; stroke-width: 1.5px;fill:none;"),g.labelStyle=g.labelStyle.replace("color:","fill:"),g.id=s,g.classes="flowchart-link "+c+" "+h,r.setEdge(l.start,l.end,g,a)}},C=async function(e,t,l,i){let a,o;y.l.info("Drawing flowchart");let d=i.db.getDirection();void 0===d&&(d="TD");let{securityLevel:s,flowchart:c}=(0,y.c)(),h=c.nodeSpacing||50,g=c.rankSpacing||50;"sandbox"===s&&(a=(0,r.select)("#i"+t));let f="sandbox"===s?(0,r.select)(a.nodes()[0].contentDocument.body):(0,r.select)("body"),p="sandbox"===s?a.nodes()[0].contentDocument:document,u=new w.Graph({multigraph:!0,compound:!0}).setGraph({rankdir:d,nodesep:h,ranksep:g,marginx:0,marginy:0}).setDefaultEdgeLabel(function(){return{}}),v=i.db.getSubGraphs();y.l.info("Subgraphs - ",v);for(let e=v.length-1;e>=0;e--)o=v[e],y.l.info("Subgraph - ",o),i.db.addVertex(o.id,{text:o.title,type:o.labelType},"group",void 0,o.classes,o.dir);let x=i.db.getVertices(),m=i.db.getEdges();y.l.info("Edges",m);let C=0;for(C=v.length-1;C>=0;C--){o=v[C],n("cluster").append("text");for(let e=0;e<o.nodes.length;e++)y.l.info("Setting up subgraphs",o.nodes[e],o.id),u.setParent(o.nodes[e],o.id)}await k(x,u,t,f,p,i),await S(m,u);let T=f.select(`[id="${t}"]`),E=f.select("#"+t+" g");if(await (0,b.r)(E,u,["point","circle","cross"],"flowchart",t),y.u.insertTitle(T,"flowchartTitleText",c.titleTopMargin,i.db.getDiagramTitle()),(0,y.o)(u,T,c.diagramPadding,c.useMaxWidth),i.db.indexNodes("subGraph"+C),!c.htmlLabels)for(let e of p.querySelectorAll('[id="'+t+'"] .edgeLabel .label')){let t=e.getBBox(),r=p.createElementNS("http://www.w3.org/2000/svg","rect");r.setAttribute("rx",0),r.setAttribute("ry",0),r.setAttribute("width",t.width),r.setAttribute("height",t.height),e.insertBefore(r,e.firstChild)}Object.keys(x).forEach(function(e){let l=x[e];if(l.link){let i=(0,r.select)("#"+t+' [id="'+e+'"]');if(i){let e=p.createElementNS("http://www.w3.org/2000/svg","a");e.setAttributeNS("http://www.w3.org/2000/svg","class",l.classes.join(" ")),e.setAttributeNS("http://www.w3.org/2000/svg","href",l.link),e.setAttributeNS("http://www.w3.org/2000/svg","rel","noopener"),"sandbox"===s?e.setAttributeNS("http://www.w3.org/2000/svg","target","_top"):l.linkTarget&&e.setAttributeNS("http://www.w3.org/2000/svg","target",l.linkTarget);let t=i.insert(function(){return e},":first-child"),r=i.select(".label-container");r&&t.append(function(){return r.node()});let n=i.select(".label");n&&t.append(function(){return n.node()})}}})},T={setConf:function(e){for(let t of Object.keys(e))m[t]=e[t]},addVertices:k,addEdges:S,getClasses:function(e,t){return t.db.getClasses()},draw:C},E=e=>{var t;let r,l,i,n;return`.label {
+    font-family: ${e.fontFamily};
+    color: ${e.nodeTextColor||e.textColor};
+  }
+  .cluster-label text {
+    fill: ${e.titleColor};
+  }
+  .cluster-label span,p {
+    color: ${e.titleColor};
+  }
+
+  .label text,span,p {
+    fill: ${e.nodeTextColor||e.textColor};
+    color: ${e.nodeTextColor||e.textColor};
+  }
+
+  .node rect,
+  .node circle,
+  .node ellipse,
+  .node polygon,
+  .node path {
+    fill: ${e.mainBkg};
+    stroke: ${e.nodeBorder};
+    stroke-width: 1px;
+  }
+  .flowchart-label text {
+    text-anchor: middle;
+  }
+  // .flowchart-label .text-outer-tspan {
+  //   text-anchor: middle;
+  // }
+  // .flowchart-label .text-inner-tspan {
+  //   text-anchor: start;
+  // }
+
+  .node .katex path {
+    fill: #000;
+    stroke: #000;
+    stroke-width: 1px;
+  }
+
+  .node .label {
+    text-align: center;
+  }
+  .node.clickable {
+    cursor: pointer;
+  }
+
+  .arrowheadPath {
+    fill: ${e.arrowheadColor};
+  }
+
+  .edgePath .path {
+    stroke: ${e.lineColor};
+    stroke-width: 2.0px;
+  }
+
+  .flowchart-link {
+    stroke: ${e.lineColor};
+    fill: none;
+  }
+
+  .edgeLabel {
+    background-color: ${e.edgeLabelBackground};
+    rect {
+      opacity: 0.5;
+      background-color: ${e.edgeLabelBackground};
+      fill: ${e.edgeLabelBackground};
+    }
+    text-align: center;
+  }
+
+  /* For html labels only */
+  .labelBkg {
+    background-color: ${t=e.edgeLabelBackground,l=(r=v.channel)(t,"r"),i=r(t,"g"),n=r(t,"b"),x.rgba(l,i,n,.5)};
+    // background-color: 
+  }
+
+  .cluster rect {
+    fill: ${e.clusterBkg};
+    stroke: ${e.clusterBorder};
+    stroke-width: 1px;
+  }
+
+  .cluster text {
+    fill: ${e.titleColor};
+  }
+
+  .cluster span,p {
+    color: ${e.titleColor};
+  }
+  /* .cluster div {
+    color: ${e.titleColor};
+  } */
+
+  div.mermaidTooltip {
+    position: absolute;
+    text-align: center;
+    max-width: 200px;
+    padding: 2px;
+    font-family: ${e.fontFamily};
+    font-size: 12px;
+    background: ${e.tertiaryColor};
+    border: 1px solid ${e.border2};
+    border-radius: 2px;
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  .flowchartTitleText {
+    text-anchor: middle;
+    font-size: 18px;
+    fill: ${e.textColor};
+  }
+`};e.s(["a",()=>E,"f",()=>T],552343)},378735,e=>{"use strict";var t=e.i(969203),r=e.i(552343),l=e.i(733773);e.i(947716),e.i(942734),e.i(566661),e.i(461696),e.i(626643),e.i(440524),e.i(822315),e.i(139941),e.i(424154);let i={parser:t.p,db:t.f,renderer:r.f,styles:r.a,init:e=>{e.flowchart||(e.flowchart={}),e.flowchart.arrowMarkerAbsolute=e.arrowMarkerAbsolute,(0,l.p)({flowchart:{arrowMarkerAbsolute:e.arrowMarkerAbsolute}}),r.f.setConf(e.flowchart),t.f.clear(),t.f.setGen("gen-2")}};e.s(["diagram",()=>i])}]);
