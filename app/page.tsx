@@ -8,6 +8,7 @@ function XIcon({ className }: { className?: string }) {
     </svg>
   )
 }
+
 import { getConfig, getAssetPath, getI18nConfig } from "specra/lib"
 import { Button } from "specra/components"
 import { ThemeToggle } from "./components/theme-toggle-client"
