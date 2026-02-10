@@ -1,5 +1,13 @@
 import Link from "next/link"
-import { ArrowRight, Shield, Fingerprint, Lock, Github, Twitter, Linkedin, ExternalLink, Upload, PenTool, UserCheck } from "lucide-react"
+import { ArrowRight, Shield, Fingerprint, Lock, Github, Linkedin, ExternalLink, Upload, PenTool, UserCheck } from "lucide-react"
+
+function XIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  )
+}
 import { getConfig, getAssetPath, getI18nConfig } from "specra/lib"
 import { Button } from "specra/components"
 import { ThemeToggle } from "./components/theme-toggle-client"
@@ -13,12 +21,14 @@ export default function HomePage() {
   const docsUrl = `/docs/${activeVersion}/${defaultLocale}/welcome`
 
   return (
-    <div className="min-h-screen page-gradient">
+    <div className="min-h-screen page-gradient relative">
+      <AquaAnimation reverse={false} laneCount={15} fadeAboveSelector="#hero-cta" />
+      <div className="relative z-10">
       <header className="border-b border-border">
         <div className="container flex h-16 items-center justify-between px-6 mx-auto">
           <Link href="/" className="flex items-center gap-2">
             {config.site.logo ? (
-              <img src={getAssetPath(config.site.logo ?? "")} alt={config.site.title} className="h-12 w-auto" />
+              <img src={getAssetPath(typeof config.site.logo === "string" ? config.site.logo : config.site.logo.dark ?? "")} alt={config.site.title} className="h-12 w-auto" />
             ) : (
               <div className="h-8 w-8 rounded-xl bg-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">A</span>
@@ -42,10 +52,9 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* Hero Section with Animation */}
-      <div className="relative overflow-hidden">
-        <AquaAnimation reverse={false} laneCount={5} />
-        <div className="container px-6 mx-auto relative z-10">
+      {/* Hero Section */}
+      <div>
+        <div className="container px-6 mx-auto">
           <div className="mx-auto text-center space-y-6 py-20 max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-foreground">
               Welcome to<br /><span className="text-primary">Aqua Protocol</span>
@@ -56,7 +65,7 @@ export default function HomePage() {
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               An open, decentralized framework<br /> for data accountability and governance,<br />powered by advanced cryptographic standards.
             </p>
-            <div className="flex items-center justify-center gap-4 pt-4">
+            <div id="hero-cta" className="flex items-center justify-center gap-4 pt-4">
               <Button asChild size="lg">
                 <Link href={docsUrl}>
                   Get Started
@@ -67,7 +76,7 @@ export default function HomePage() {
                 config?.env?.AQUAFIER_URL ? (
                   <Button asChild size="lg" variant="outline">
                     <Link href={config.env.AQUAFIER_URL} target="_blank" rel="noopener noreferrer">
-                      Try Aquafier
+                      Try AquaFire App
                       <ExternalLink className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
@@ -81,7 +90,7 @@ export default function HomePage() {
       <main className="container px-6 mx-auto">
         {/* Key Features */}
         <div className="grid md:grid-cols-3 gap-6 py-16 max-w-6xl mx-auto">
-          <div className="p-6 rounded-lg border border-border bg-card hover:shadow-md transition-shadow">
+          <div className="p-6 rounded-lg border border-border bg-card/75 hover:shadow-md transition-shadow">
             <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
               <Shield className="h-6 w-6 text-primary" />
             </div>
@@ -91,7 +100,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="p-6 rounded-lg border border-border bg-card hover:shadow-md transition-shadow">
+          <div className="p-6 rounded-lg border border-border bg-card/75 hover:shadow-md transition-shadow">
             <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
               <Fingerprint className="h-6 w-6 text-primary" />
             </div>
@@ -101,7 +110,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="p-6 rounded-lg border border-border bg-card hover:shadow-md transition-shadow">
+          <div className="p-6 rounded-lg border border-border bg-card/75 hover:shadow-md transition-shadow">
             <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
               <Lock className="h-6 w-6 text-primary" />
             </div>
@@ -114,7 +123,7 @@ export default function HomePage() {
 
         {/* CTA Section */}
         <div className="py-16 mx-auto">
-          <div className="rounded-xl border border-border bg-card p-8 md:p-12 text-center space-y-8">
+          <div className="rounded-xl border border-border bg-card/75 p-8 md:p-12 text-center space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Use <span style={{ background: "linear-gradient(90deg, #EF5401, #FF8C00)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>AquaFire App</span> now!</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Use our reference Application and experience the power of accounted data assets.
@@ -122,7 +131,7 @@ export default function HomePage() {
 
             {/* Feature Cards */}
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto pt-4">
-              <div className="p-6 rounded-lg border border-border bg-background hover:shadow-lg transition-all">
+              <div className="p-6 rounded-lg border-[3px] border-border dark:border-gray-400 bg-background/75 hover:shadow-lg transition-all">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 mx-auto">
                   <Upload className="h-6 w-6 text-primary" />
                 </div>
@@ -132,7 +141,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-lg border border-border bg-background hover:shadow-lg transition-all">
+              <div className="p-6 rounded-lg border-[3px] border-border dark:border-gray-400 bg-background/75 hover:shadow-lg transition-all">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 mx-auto">
                   <PenTool className="h-6 w-6 text-primary" />
                 </div>
@@ -142,7 +151,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-lg border border-border bg-background hover:shadow-lg transition-all">
+              <div className="p-6 rounded-lg border-[3px] border-border dark:border-gray-400 bg-background/75 hover:shadow-lg transition-all">
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 mx-auto">
                   <UserCheck className="h-6 w-6 text-primary" />
                 </div>
@@ -171,47 +180,49 @@ export default function HomePage() {
         </div>
 
         {/* Community Section */}
-        <div className="py-16 max-w-3xl mx-auto text-center space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground">Join the Community</h2>
-          <p className="text-muted-foreground">
-            Aqua Protocol is open source and community-driven. Connect with developers and stay updated.
-          </p>
-          <div className="flex items-center justify-center gap-4 pt-4">
-            {
-              config?.social?.github ? (
-                <Button asChild variant="outline" size="lg">
-                  <Link href={config.social.github} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-5 w-5" />
-                    GitHub
-                  </Link>
-                </Button>
-              ) : null
-            }
-            {
-              config?.social?.twitter ? (
-                <Button asChild variant="outline" size="lg">
-                  <Link href={config.social.twitter} target="_blank" rel="noopener noreferrer">
-                    <Twitter className="mr-2 h-5 w-5" />
-                    Twitter
-                  </Link>
-                </Button>
-              ) : null
-            }
-            {
-              config?.social?.linkedin ? (
-                <Button asChild variant="outline" size="lg">
-                  <Link href={config.social.linkedin} target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="mr-2 h-5 w-5" />
-                    LinkedIn
-                  </Link>
-                </Button>
-              ) : null
-            }
+        <div className="py-16 mx-auto">
+          <div className="rounded-xl border border-border bg-card/75 p-8 md:p-12 text-center space-y-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">Join the Community</h2>
+            <p className="text-muted-foreground">
+              Aqua Protocol is open source and community-driven. Connect with developers and stay updated.
+            </p>
+            <div className="flex items-center justify-center gap-4 pt-4">
+              {
+                config?.social?.github ? (
+                  <Button asChild variant="outline" size="lg">
+                    <Link href={config.social.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-5 w-5" />
+                      GitHub
+                    </Link>
+                  </Button>
+                ) : null
+              }
+              {
+                config?.social?.twitter ? (
+                  <Button asChild variant="outline" size="lg">
+                    <Link href={config.social.twitter} target="_blank" rel="noopener noreferrer">
+                      <XIcon className="h-5 w-5" />
+                    </Link>
+                  </Button>
+                ) : null
+              }
+              {
+                config?.social?.linkedin ? (
+                  <Button asChild variant="outline" size="lg">
+                    <Link href={config.social.linkedin} target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="mr-2 h-5 w-5" />
+                      LinkedIn
+                    </Link>
+                  </Button>
+                ) : null
+              }
+            </div>
           </div>
         </div>
       </main>
 
       {/* <Footer /> */}
+      </div>
     </div>
   )
 }

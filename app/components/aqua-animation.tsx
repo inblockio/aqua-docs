@@ -6,6 +6,7 @@ interface AquaAnimationProps {
   reverse?: boolean
   laneCount?: number
   invertSpeed?: boolean
+  fadeAboveSelector?: string
 }
 
 interface AquaNode {
@@ -48,6 +49,7 @@ export default function AquaAnimation({
   reverse = false,
   laneCount = 5,
   invertSpeed = false,
+  fadeAboveSelector,
 }: AquaAnimationProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
@@ -66,6 +68,7 @@ export default function AquaAnimation({
       canvas.width = parent.offsetWidth
       canvas.height = parent.offsetHeight
       initLanes()
+      updateFadeCutoff()
     }
     window.addEventListener("resize", handleResize)
 
@@ -95,14 +98,31 @@ export default function AquaAnimation({
     let lanes: Lane[] = []
     let animId: number
 
-    function posAlpha(x: number): number {
+    let fadeCutoffY = 0
+
+    function updateFadeCutoff() {
+      if (!fadeAboveSelector) return
+      const el = document.querySelector(fadeAboveSelector)
+      if (!el) return
+      const canvasRect = canvas!.getBoundingClientRect()
+      const elRect = el.getBoundingClientRect()
+      fadeCutoffY = elRect.bottom - canvasRect.top
+    }
+
+    function posAlpha(x: number, y: number): number {
+      // Below the cutoff: fully visible, no fade
+      if (fadeCutoffY > 0 && y >= fadeCutoffY) {
+        return 1
+      }
+
+      // Above the cutoff: horizontal center fade
       const cx = canvas!.width / 2
       const half = canvas!.width / 2
       const dist = Math.abs(x - cx)
-      let fade = dist / (half * 0.75) - 0.5
-      if (fade < 0) fade = 0
-      if (fade > 1) fade = 1
-      return fade * 0.75
+      let hFade = (dist / half - 0.25) / 0.35
+      if (hFade < 0) hFade = 0
+      if (hFade > 1) hFade = 1
+      return hFade
     }
 
     function rand(a: number, b: number) {
@@ -356,15 +376,15 @@ export default function AquaAnimation({
     }
 
     function drawNode(n: AquaNode) {
-      const a = posAlpha(n.x)
+      const a = posAlpha(n.x, n.y)
       if (a < 0.01) return
       const c = COLORS[n.type]
       ctx!.fillStyle = `rgba(${c[0]},${c[1]},${c[2]},${a})`
       ctx!.beginPath()
       ctx!.arc(n.x, n.y, NODE_R, 0, Math.PI * 2)
       ctx!.fill()
-      if (n.type === "genesis" && a > 0.15) {
-        ctx!.fillStyle = `rgba(${c[0]},${c[1]},${c[2]},${a * 0.15})`
+      if (n.type === "genesis" && a > 0.1) {
+        ctx!.fillStyle = `rgba(${c[0]},${c[1]},${c[2]},${a * 0.25})`
         ctx!.beginPath()
         ctx!.arc(n.x, n.y, NODE_R * 3, 0, Math.PI * 2)
         ctx!.fill()
@@ -376,13 +396,13 @@ export default function AquaAnimation({
     }
 
     function drawEdge(from: AquaNode, to: AquaNode) {
-      const a = Math.min(posAlpha(from.x), posAlpha(to.x))
+      const a = Math.min(posAlpha(from.x, from.y), posAlpha(to.x, to.y))
       if (a < 0.01) return
       const dark = isDark()
       ctx!.strokeStyle = dark
-        ? `rgba(180,200,220,${a * 0.85})`
-        : `rgba(20,60,80,${a * 0.85})`
-      ctx!.lineWidth = 1.6
+        ? `rgba(200,215,235,${a})`
+        : `rgba(10,40,60,${a})`
+      ctx!.lineWidth = 1.8
       ctx!.beginPath()
       ctx!.moveTo(from.x, from.y)
       ctx!.lineTo(to.x, to.y)
@@ -390,7 +410,7 @@ export default function AquaAnimation({
     }
 
     function drawCrossLink(link: CrossLink) {
-      const a = Math.min(posAlpha(link.from.x), posAlpha(link.to.x))
+      const a = Math.min(posAlpha(link.from.x, link.from.y), posAlpha(link.to.x, link.to.y))
       if (a < 0.01) return
       const dark = isDark()
       const age = frameCount - (link.birth || 0)
@@ -407,11 +427,11 @@ export default function AquaAnimation({
         ctx!.lineTo(link.to.x, link.to.y)
         ctx!.stroke()
       }
-      const baseAlpha = a * (0.6 + flash * 0.4)
+      const baseAlpha = a * (0.8 + flash * 0.2)
       ctx!.strokeStyle = dark
-        ? `rgba(180,190,230,${baseAlpha})`
-        : `rgba(40,50,100,${baseAlpha})`
-      ctx!.lineWidth = 1.0 + flash * 1.3
+        ? `rgba(200,210,240,${baseAlpha})`
+        : `rgba(30,40,90,${baseAlpha})`
+      ctx!.lineWidth = 1.2 + flash * 1.3
       ctx!.setLineDash([4, 5])
       ctx!.beginPath()
       ctx!.moveTo(link.from.x, link.from.y)
@@ -422,6 +442,7 @@ export default function AquaAnimation({
 
     function animate() {
       ctx!.clearRect(0, 0, canvas!.width, canvas!.height)
+      updateFadeCutoff()
       frameCount++
 
       if (frameCount % SPAWN_INTERVAL === 0 && chains.length < MAX_CHAINS) {
