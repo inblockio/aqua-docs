@@ -82,8 +82,8 @@ export default function AquaAnimation({
       witness: [50, 130, 220],
     }
 
-    const DRIFT_MIN = 0.8
-    const DRIFT_MAX = 1.61
+    const DRIFT_MIN = 0.4
+    const DRIFT_MAX = 0.805
     const SPAWN_INTERVAL = 50
     const MAX_CHAINS = 14
     const MAX_NODES = 10
