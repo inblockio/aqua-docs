@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { ArrowRight, Shield, Fingerprint, Lock, Github, Twitter, Linkedin, ExternalLink, Upload, PenTool, UserCheck } from "lucide-react"
-import { getConfig, getAssetPath } from "specra/lib"
+import { getConfig, getAssetPath, getI18nConfig } from "specra/lib"
 import { Button } from "specra/components"
 import AquaAnimation from "./components/aqua-animation"
 
@@ -8,7 +8,8 @@ export default function HomePage() {
   // Server component - can use getConfig directly
   const config = getConfig()
   const activeVersion = config.site.activeVersion || "v4.0.0"
-  const docsUrl = `/docs/${activeVersion}/welcome`
+  const defaultLocale = getI18nConfig()?.defaultLocale ?? "en"
+  const docsUrl = `/docs/${activeVersion}/${defaultLocale}welcome`
 
   return (
     <div className="min-h-screen page-gradient">
