@@ -9,7 +9,7 @@ export default function HomePage() {
   const config = getConfig()
   const activeVersion = config.site.activeVersion || "v4.0.0"
   const defaultLocale = getI18nConfig()?.defaultLocale ?? "en"
-  const docsUrl = `/docs/${activeVersion}/${defaultLocale}welcome`
+  const docsUrl = `/docs/${activeVersion}/${defaultLocale}/welcome`
 
   return (
     <div className="min-h-screen page-gradient">
