@@ -11,19 +11,21 @@ import {
   SpecraConfig,
 } from "specra/lib"
 import {
-  DocLayout,
+  // DocLayout,
   TableOfContents,
   Header,
   DocLayoutWrapper,
   HotReloadIndicator,
   DevModeBadge,
   MdxHotReload,
-  CategoryIndex,
+  // CategoryIndex,
   NotFoundContent,
   DocLoading,
 } from "specra/components"
 
 import specraConfig from "./../../../../specra.config.json"
+import { CategoryIndex, DocLayout } from "specra/layouts"
+import { mdxComponents } from "specra/mdx-components"
 
 interface PageProps {
   params: Promise<{
@@ -121,6 +123,7 @@ export default async function DocPage({ params }: PageProps) {
               title={slug.split("/").pop()?.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase()) || "Category"}
               description="Browse the documentation in this section."
               config={config}
+              mdxComponents={mdxComponents}
             />
           }
           toc={<div />}
@@ -186,6 +189,7 @@ export default async function DocPage({ params }: PageProps) {
                 description={doc.meta.description}
                 content={doc.content}
                 config={config}
+                mdxComponents={mdxComponents}
               />
             ) : (
               <DocLayout
@@ -196,6 +200,7 @@ export default async function DocPage({ params }: PageProps) {
                 version={version}
                 slug={slug}
                 config={config}
+                mdxComponents={mdxComponents}
               />
             )
           }

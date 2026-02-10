@@ -1,5 +1,5 @@
 {
-  "$schema": "./lib/config.types.ts",
+  "$schema": "./node_modules/specra/config/specra.config.schema.json",
   "site": {
     "title": "Aqua Protocol",
     "description": "Aqua",
@@ -10,7 +10,10 @@
     "projectName": "aqua-docs",
     "activeVersion": "v4.0.0",
     "favicon": "/logo/aqua-logo.png",
-    "logo": "/logo/aqua-logo.png"
+    "logo": {
+      "dark": "/logo/aqua-logo.png",
+      "light": "/logo/aqua-logo.png"
+    }
   },
   "theme": {
     "defaultMode": "system",
@@ -30,7 +33,7 @@
     "custom": [
       {
         "label": "Website",
-        "href": "https://dev.inblock.io"
+        "url": "https://dev.inblock.io"
       }
     ]
   },
@@ -81,7 +84,7 @@
   },
   "banner": {
     "enabled": false,
-    "message": "🎉 This is a development version. Some features may not work as expected.",
+    "message": "🎉 Aqua protocol - Let us build privacy infra together!",
     "type": "error",
     "dismissible": true
   },
@@ -92,9 +95,19 @@
     "showAuthors": false,
     "showTags": true,
     "versioning": true,
-    "i18n": false
+    "i18n": {
+      "defaultLocale": "en",
+      "locales": [
+        "en"
+      ],
+      "localeNames": {
+        "en": "English"
+      },
+      "prefixDefault": true
+    }
   },
   "env": {
+    "AQUAFIER_URL": "https://aquafier.inblock.io"
   },
   "deployment": {
     "target": "github-pages",
