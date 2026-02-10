@@ -2,4 +2,4 @@
 2:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/73e3194f06db260e.js"],"default"]
 3:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/73e3194f06db260e.js"],"default"]
 4:I[839694,["/_next/static/chunks/a423cf2782ee23a6.js","/_next/static/chunks/150ebe81571675a9.js"],"VersionNotFound"]
-0:{"buildId":"TYUIaraO8R0geQ40dh84t","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}],"notFound":[["$","$L4",null,{}],[]]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"6_vU5CCijnEjInL8VxSpr","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}],"notFound":[["$","$L4",null,{}],[]]}]]}],"loading":null,"isPartial":false}
