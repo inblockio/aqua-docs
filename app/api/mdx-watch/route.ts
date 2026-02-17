@@ -2,7 +2,7 @@ import { NextRequest } from 'next/server'
 import { watch } from 'fs'
 import { join } from 'path'
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 export async function GET(request: NextRequest) {
   // Only allow in development mode
