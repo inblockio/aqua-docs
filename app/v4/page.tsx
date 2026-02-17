@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Shield, Fingerprint, Lock, ArrowRight, ExternalLink, Eye, KeyRound, FileCheck, Bot, AlertTriangle, CheckCircle, Globe, Code, Scale, Landmark, Clock, LockKeyhole } from "lucide-react"
+import { Shield, Fingerprint, Lock, ArrowRight, ExternalLink, Eye, KeyRound, FileCheck, Bot, AlertTriangle, CheckCircle, Globe, Code, Scale, Landmark, Clock, LockKeyhole, MousePointerClick, TrendingUp, Building2, Terminal, Signature } from "lucide-react"
 import HackerAnimation from "./hacker-animation"
 import { useEffect, useState, useRef } from "react"
 
@@ -534,16 +534,16 @@ export default function V4LandingPage() {
             <div className="text-center mb-16">
               <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// How It Works</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
-                Three Pillars of <span className="text-green-400">Verifiable Trust</span>
+                Pillars of <span className="text-green-400">Verifiable Trust</span>
               </h2>
               <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">
-                Aqua combines cryptographic hash chains, optional timestamping, and decentralized verification
-                to create trust without central authorities.
+                Aqua combines cryptographic hash chains, modular signatures, optional timestamping, and
+                decentralized verification to create trust without central authorities.
               </p>
             </div>
           </RevealSection>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <RevealSection delay={100}>
               <div className="p-8 rounded-xl border border-green-500/15 bg-[#0a0a0f]/80 hover:border-green-500/30 transition-all group relative overflow-hidden h-full">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
@@ -574,6 +574,29 @@ export default function V4LandingPage() {
                     <span className="text-green-500/40 font-mono text-4xl font-bold">02</span>
                   </div>
                   <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
+                    <Signature className="h-6 w-6 text-green-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-green-400 font-mono mb-3">MODULAR SIGNATURES</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    Aqua supports <span className="text-gray-300">multiple signature schemes</span> — Ethereum wallets,
+                    DIDs, X.509 certificates, and more. The signature layer is modular by design: plug in the
+                    cryptographic paradigm that fits your security requirements without changing the protocol.
+                  </p>
+                  <div className="mt-5 font-mono text-xs text-green-500/50 border-t border-green-500/10 pt-4">
+                    &gt; One protocol, any signature scheme
+                  </div>
+                </div>
+              </div>
+            </RevealSection>
+
+            <RevealSection delay={300}>
+              <div className="p-8 rounded-xl border border-green-500/15 bg-[#0a0a0f]/80 hover:border-green-500/30 transition-all group relative overflow-hidden h-full">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
+                <div className="relative">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-green-500/40 font-mono text-4xl font-bold">03</span>
+                  </div>
+                  <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
                     <Clock className="h-6 w-6 text-green-400" />
                   </div>
                   <h3 className="text-lg font-bold text-green-400 font-mono mb-3">IMMUTABLE TIMESTAMPS</h3>
@@ -589,12 +612,12 @@ export default function V4LandingPage() {
               </div>
             </RevealSection>
 
-            <RevealSection delay={300}>
+            <RevealSection delay={400}>
               <div className="p-8 rounded-xl border border-green-500/15 bg-[#0a0a0f]/80 hover:border-green-500/30 transition-all group relative overflow-hidden h-full">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
                 <div className="relative">
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="text-green-500/40 font-mono text-4xl font-bold">03</span>
+                    <span className="text-green-500/40 font-mono text-4xl font-bold">04</span>
                   </div>
                   <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
                     <LockKeyhole className="h-6 w-6 text-green-400" />
@@ -651,6 +674,124 @@ export default function V4LandingPage() {
               </div>
             </div>
           </RevealSection>
+        </div>
+      </section>
+
+      {/* ── WHO IT'S FOR ── */}
+      <section className="relative z-10 py-24 border-t border-green-900/20">
+        <div className="max-w-6xl mx-auto px-6">
+          <RevealSection>
+            <div className="text-center mb-16">
+              <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// Who It&apos;s For</span>
+              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
+                One Protocol. <span className="text-green-400">Every Stakeholder.</span>
+              </h2>
+            </div>
+          </RevealSection>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Explore */}
+            <RevealSection delay={100}>
+              <div className="h-full p-8 rounded-xl border border-sky-500/20 bg-[#0a0a0f]/80 hover:border-sky-500/40 transition-all relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-sky-500/5 rounded-full blur-3xl group-hover:bg-sky-500/10 transition-all" />
+                <div className="relative">
+                  <div className="h-12 w-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mb-5">
+                    <MousePointerClick className="h-6 w-6 text-sky-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-sky-400 font-mono mb-3">EXPLORE</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                    Experience Aqua hands-on with <span className="text-gray-300">Aquafier</span> — no code, no setup.
+                    See how cryptographic provenance works in practice, right in your browser.
+                  </p>
+                  <Link
+                    href="https://aquafier.inblock.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 border border-sky-500/30 text-sky-400 text-sm font-mono rounded-lg hover:bg-sky-500/10 transition-all"
+                  >
+                    TRY AQUAFIER
+                    <ExternalLink className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </RevealSection>
+
+            {/* Invest */}
+            <RevealSection delay={200}>
+              <div className="h-full p-8 rounded-xl border border-amber-500/20 bg-[#0a0a0f]/80 hover:border-amber-500/40 transition-all relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full blur-3xl group-hover:bg-amber-500/10 transition-all" />
+                <div className="relative">
+                  <div className="h-12 w-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-5">
+                    <TrendingUp className="h-6 w-6 text-amber-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-amber-400 font-mono mb-3">INVEST</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                    Trust infrastructure for AI — <span className="text-gray-300">regulatory tailwinds</span>, enterprise
+                    monetization, and a massive unmet market. The security layer AI has been missing.
+                  </p>
+                  <Link
+                    href="https://calendly.com/tim-bansemer/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 border border-amber-500/30 text-amber-400 text-sm font-mono rounded-lg hover:bg-amber-500/10 transition-all"
+                  >
+                    BOOK A CALL
+                    <ExternalLink className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </RevealSection>
+
+            {/* License & Integrate */}
+            <RevealSection delay={300}>
+              <div className="h-full p-8 rounded-xl border border-violet-500/20 bg-[#0a0a0f]/80 hover:border-violet-500/40 transition-all relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-violet-500/5 rounded-full blur-3xl group-hover:bg-violet-500/10 transition-all" />
+                <div className="relative">
+                  <div className="h-12 w-12 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center mb-5">
+                    <Building2 className="h-6 w-6 text-violet-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-violet-400 font-mono mb-3">LICENSE &amp; INTEGRATE</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                    Enterprise-grade, <span className="text-gray-300">compliance-ready</span> deployment.
+                    Custom integration, licensing, and production infrastructure for your organization.
+                  </p>
+                  <Link
+                    href="https://calendly.com/tim-bansemer/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 border border-violet-500/30 text-violet-400 text-sm font-mono rounded-lg hover:bg-violet-500/10 transition-all"
+                  >
+                    REQUEST A DEMO
+                    <ExternalLink className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </RevealSection>
+
+            {/* Build */}
+            <RevealSection delay={400}>
+              <div className="h-full p-8 rounded-xl border border-green-500/20 bg-[#0a0a0f]/80 hover:border-green-500/40 transition-all relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
+                <div className="relative">
+                  <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
+                    <Terminal className="h-6 w-6 text-green-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-green-400 font-mono mb-3">BUILD</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                    Open protocol, open SDK. Ship <span className="text-gray-300">verified AI applications</span> with
+                    cryptographic trust baked in from day one.
+                  </p>
+                  <Link
+                    href="/docs/v4.0.0/en/welcome"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 border border-green-500/30 text-green-400 text-sm font-mono rounded-lg hover:bg-green-500/10 transition-all"
+                  >
+                    READ THE DOCS
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </RevealSection>
+          </div>
         </div>
       </section>
 
@@ -790,22 +931,40 @@ export default function V4LandingPage() {
                   <br />
                   <span className="text-green-400/80 font-mono">Build free. Deploy enterprise.</span>
                 </p>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                  <Link
-                    href="/docs/v4.0.0/en/welcome"
-                    className="group px-8 py-4 bg-green-500 text-black font-bold font-mono rounded-lg hover:bg-green-400 transition-all flex items-center gap-2 text-lg"
-                  >
-                    READ THE DOCS
-                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
                   <Link
                     href="https://aquafier.inblock.io"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-8 py-4 border border-gray-600 text-gray-300 font-mono rounded-lg hover:border-green-500/50 hover:text-green-400 transition-all flex items-center gap-2 text-lg"
+                    className="flex flex-col items-center gap-2 px-4 py-4 border border-sky-500/30 text-sky-400 font-mono text-sm rounded-lg hover:bg-sky-500/10 transition-all"
                   >
-                    TRY AQUAFIRE
-                    <ExternalLink className="h-5 w-5" />
+                    <MousePointerClick className="h-5 w-5" />
+                    EXPLORE
+                  </Link>
+                  <Link
+                    href="https://calendly.com/tim-bansemer/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col items-center gap-2 px-4 py-4 border border-amber-500/30 text-amber-400 font-mono text-sm rounded-lg hover:bg-amber-500/10 transition-all"
+                  >
+                    <TrendingUp className="h-5 w-5" />
+                    INVEST
+                  </Link>
+                  <Link
+                    href="https://calendly.com/tim-bansemer/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col items-center gap-2 px-4 py-4 border border-violet-500/30 text-violet-400 font-mono text-sm rounded-lg hover:bg-violet-500/10 transition-all"
+                  >
+                    <Building2 className="h-5 w-5" />
+                    GET A DEMO
+                  </Link>
+                  <Link
+                    href="/docs/v4.0.0/en/welcome"
+                    className="flex flex-col items-center gap-2 px-4 py-4 border border-green-500/30 text-green-400 font-mono text-sm rounded-lg hover:bg-green-500/10 transition-all"
+                  >
+                    <Terminal className="h-5 w-5" />
+                    BUILD
                   </Link>
                 </div>
               </div>
