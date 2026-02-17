@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Shield, Fingerprint, Lock, ArrowRight, ExternalLink, Eye, KeyRound, FileCheck, Bot, AlertTriangle, CheckCircle, Globe, Code } from "lucide-react"
+import { Shield, Fingerprint, Lock, ArrowRight, ExternalLink, Eye, KeyRound, FileCheck, Bot, AlertTriangle, CheckCircle, Globe, Code, Scale, Landmark } from "lucide-react"
 import HackerAnimation from "./hacker-animation"
 import { useEffect, useState, useRef } from "react"
 
@@ -261,6 +261,107 @@ export default function V4LandingPage() {
             </div>
           </RevealSection>
 
+          {/* Regulatory Signal */}
+          <RevealSection delay={300}>
+            <div className="mb-16 rounded-xl border border-amber-500/15 bg-[#0a0a0f]/90 overflow-hidden">
+              {/* Header bar */}
+              <div className="flex items-center gap-2 px-5 py-3 border-b border-amber-500/10 bg-amber-500/[0.03]">
+                <Scale className="h-3.5 w-3.5 text-amber-500" />
+                <span className="text-xs font-mono text-amber-400/70 tracking-wider">REGULATORY SIGNAL // COMPLIANCE REQUIRED</span>
+              </div>
+              {/* Body */}
+              <div className="p-6 md:p-8">
+                <p className="text-gray-400 text-sm mb-6">
+                  It&apos;s not just the market — <span className="text-amber-300">regulators on both sides of the Atlantic are converging</span> on
+                  the same conclusion: AI systems need verifiable provenance, identity, and audit infrastructure. This is becoming law.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  {/* US — NTIA */}
+                  <div className="p-5 rounded-lg border border-amber-500/10 bg-amber-500/[0.02]">
+                    <div className="flex items-center gap-2 mb-4">
+                      <Landmark className="h-4 w-4 text-amber-400" />
+                      <span className="font-mono text-sm text-amber-300 font-bold">US: NTIA RFC 2023-07776</span>
+                    </div>
+                    <p className="text-gray-400 text-xs leading-relaxed mb-4">
+                      The National Telecommunications and Information Administration called for public input on AI accountability,
+                      receiving 1,400+ comments. The resulting 2024 report explicitly recommends investment in:
+                    </p>
+                    <div className="space-y-2 font-mono text-xs">
+                      <div className="flex items-start gap-2">
+                        <span className="text-amber-500 shrink-0">&gt;</span>
+                        <span className="text-amber-200/80"><span className="text-amber-400">Rec. 5:</span> &ldquo;Provenance technologies&rdquo; to assess AI training data and usage</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <span className="text-amber-500 shrink-0">&gt;</span>
+                        <span className="text-amber-200/80"><span className="text-amber-400">Rec. 2:</span> Standard disclosures for AI architecture, data, and performance</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <span className="text-amber-500 shrink-0">&gt;</span>
+                        <span className="text-amber-200/80"><span className="text-amber-400">Rec. 6:</span> Independent evaluations of high-risk AI systems</span>
+                      </div>
+                    </div>
+                    <div className="mt-4 flex items-center gap-3">
+                      <Link
+                        href="https://www.federalregister.gov/documents/2023/04/13/2023-07776/ai-accountability-policy-request-for-comment"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1"
+                      >
+                        RFC <ExternalLink className="h-3 w-3" />
+                      </Link>
+                      <Link
+                        href="https://www.ntia.gov/issues/artificial-intelligence/ai-accountability-policy-report"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1"
+                      >
+                        Report <ExternalLink className="h-3 w-3" />
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* EU — AI Act */}
+                  <div className="p-5 rounded-lg border border-amber-500/10 bg-amber-500/[0.02]">
+                    <div className="flex items-center gap-2 mb-4">
+                      <Scale className="h-4 w-4 text-amber-400" />
+                      <span className="font-mono text-sm text-amber-300 font-bold">EU: AI Act (2024/1689)</span>
+                    </div>
+                    <p className="text-gray-400 text-xs leading-relaxed mb-4">
+                      The world&apos;s first comprehensive AI regulation. Entered into force August 2024,
+                      with obligations phasing in through 2026. Non-compliance carries severe penalties.
+                    </p>
+                    <div className="space-y-2 font-mono text-xs">
+                      <div className="flex items-start gap-2">
+                        <span className="text-amber-500 shrink-0">&gt;</span>
+                        <span className="text-amber-200/80"><span className="text-amber-400">Art. 10:</span> Data governance — provenance documentation, source traceability</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <span className="text-amber-500 shrink-0">&gt;</span>
+                        <span className="text-amber-200/80"><span className="text-amber-400">Art. 12:</span> Automatic logging for traceability and post-market monitoring</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <span className="text-amber-500 shrink-0">&gt;</span>
+                        <span className="text-amber-200/80"><span className="text-amber-400">Art. 13:</span> Transparency obligations for AI system providers</span>
+                      </div>
+                    </div>
+                    <div className="mt-4 flex items-center justify-between">
+                      <Link
+                        href="https://artificialintelligenceact.eu/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1"
+                      >
+                        Full text <ExternalLink className="h-3 w-3" />
+                      </Link>
+                      <span className="text-xs font-mono text-red-400/80">Penalty: up to 7% of global turnover</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </RevealSection>
+
           {/* Threat cards */}
           <div className="grid md:grid-cols-3 gap-6">
             <RevealSection delay={100}>
@@ -435,12 +536,12 @@ export default function V4LandingPage() {
             <div className="text-center">
               <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// Open Protocol</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
-                Trust requires <span className="text-green-400">transparency</span>
+                The <span className="text-green-400">Linux</span> of AI Verification
               </h2>
               <p className="text-gray-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
                 Aqua V4 is fully open source. Trust infrastructure cannot depend on a single vendor — it must be
-                auditable, forkable, and verifiable by anyone. Like TLS secures the web and PGP secures communication,
-                Aqua secures data provenance as an open standard.
+                auditable, forkable, and verifiable by anyone. Free to build on. Enterprises deploy with
+                production-grade infrastructure, compliance, and SLAs.
               </p>
             </div>
           </RevealSection>
