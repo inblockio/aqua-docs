@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, type RefObject } from "react"
 
 const THREAT_MESSAGES = [
   "ACCESS DENIED",
@@ -60,18 +60,12 @@ interface FloatingMessage {
 }
 
 interface HackerAnimationProps {
-  /** 0 = top (hostile), 1 = bottom (secure). Drives atmosphere transition. */
-  scrollRatio?: number
+  /** Ref whose .current is 0 (top/hostile) → 1 (bottom/secure). */
+  scrollRatioRef: RefObject<number>
 }
 
-export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProps) {
+export default function HackerAnimation({ scrollRatioRef }: HackerAnimationProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const scrollRef = useRef(scrollRatio)
-
-  // Keep scroll ratio in sync without re-running the effect
-  useEffect(() => {
-    scrollRef.current = scrollRatio
-  }, [scrollRatio])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -83,10 +77,59 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
 
     let w = (canvas.width = parent.offsetWidth)
     let h = (canvas.height = parent.offsetHeight)
+    let animId = 0
+
+    /* ── Offscreen caches ── */
+    let hexCache: HTMLCanvasElement
+    let scanCache: HTMLCanvasElement
+
+    function buildHexCache() {
+      hexCache = document.createElement("canvas")
+      hexCache.width = w
+      hexCache.height = h
+      const hctx = hexCache.getContext("2d")!
+      const spacing = 80
+      // Draw at full alpha; composited with globalAlpha in animate()
+      hctx.strokeStyle = "rgb(0, 255, 65)"
+      hctx.lineWidth = 0.5
+      for (let x = 0; x < w + spacing; x += spacing) {
+        for (let y = 0; y < h + spacing; y += spacing * 0.866) {
+          const offset = (Math.floor(y / (spacing * 0.866)) % 2) * (spacing / 2)
+          hctx.beginPath()
+          for (let i = 0; i < 6; i++) {
+            const angle = (Math.PI / 3) * i - Math.PI / 6
+            const px = x + offset + Math.cos(angle) * (spacing / 2.5)
+            const py = y + Math.sin(angle) * (spacing / 2.5)
+            if (i === 0) hctx.moveTo(px, py)
+            else hctx.lineTo(px, py)
+          }
+          hctx.closePath()
+          hctx.stroke()
+        }
+      }
+    }
+
+    function buildScanCache() {
+      scanCache = document.createElement("canvas")
+      scanCache.width = w
+      scanCache.height = h
+      const sctx = scanCache.getContext("2d")!
+      sctx.fillStyle = "rgba(255, 255, 255, 0.008)"
+      for (let y = 0; y < h; y += 4) {
+        sctx.fillRect(0, y, w, 1)
+      }
+    }
+
+    function buildCaches() {
+      buildHexCache()
+      buildScanCache()
+    }
+    buildCaches()
 
     const handleResize = () => {
       w = canvas.width = parent.offsetWidth
       h = canvas.height = parent.offsetHeight
+      buildCaches()
     }
     window.addEventListener("resize", handleResize)
 
@@ -103,58 +146,39 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
     }
 
     function spawnMessage() {
-      const r = scrollRef.current
-      // At top (r=0): 80% threats. At bottom (r=1): 20% threats.
+      const r = scrollRatioRef.current
       const threatChance = 0.8 - r * 0.6
       const isThreat = Math.random() < threatChance
       const type = isThreat ? "threat" : "secure"
       const text = isThreat ? pick(THREAT_MESSAGES) : pick(SECURE_MESSAGES)
 
-      // Speed slows down as page calms: 100% at top, 60% at bottom
       const speedMult = 1 - r * 0.4
       const edge = Math.floor(Math.random() * 4)
       let x: number, y: number, vx: number, vy: number
       const speed = rand(0.3, 1.2) * speedMult
 
       switch (edge) {
-        case 0: // top
-          x = rand(0, w)
-          y = -20
-          vx = rand(-1.2, 1.2) * speedMult
-          vy = speed
+        case 0:
+          x = rand(0, w); y = -20; vx = rand(-1.2, 1.2) * speedMult; vy = speed
           break
-        case 1: // right
-          x = w + 20
-          y = rand(0, h)
-          vx = -speed
-          vy = rand(-1.2, 1.2) * speedMult
+        case 1:
+          x = w + 20; y = rand(0, h); vx = -speed; vy = rand(-1.2, 1.2) * speedMult
           break
-        case 2: // bottom
-          x = rand(0, w)
-          y = h + 20
-          vx = rand(-1.2, 1.2) * speedMult
-          vy = -speed
+        case 2:
+          x = rand(0, w); y = h + 20; vx = rand(-1.2, 1.2) * speedMult; vy = -speed
           break
-        default: // left
-          x = -20
-          y = rand(0, h)
-          vx = speed
-          vy = rand(-1.2, 1.2) * speedMult
+        default:
+          x = -20; y = rand(0, h); vx = speed; vy = rand(-1.2, 1.2) * speedMult
           break
       }
 
-      const maxLife = rand(400, 900)
       messages.push({
-        text,
-        x,
-        y,
-        vx,
-        vy,
+        text, x, y, vx, vy,
         opacity: 0,
         maxOpacity: rand(0.08, 0.35),
         fadeIn: true,
         life: 0,
-        maxLife,
+        maxLife: rand(400, 900),
         type,
         fontSize: rand(10, 18),
         glitchTimer: 0,
@@ -162,68 +186,29 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
       })
     }
 
-    // Scan lines data
-    const scanLineSpacing = 4
-
-    function drawScanLines() {
-      ctx!.fillStyle = "rgba(255, 255, 255, 0.008)"
-      for (let y = 0; y < h; y += scanLineSpacing) {
-        ctx!.fillRect(0, y, w, 1)
-      }
-    }
-
-    // Hex grid background
-    function drawHexGrid() {
-      const r = scrollRef.current
-      const spacing = 80
-      // Grid shifts from faint green to brighter green as page calms
-      const alpha = 0.015 + r * 0.015
-      ctx!.strokeStyle = `rgba(0, 255, 65, ${alpha})`
-      ctx!.lineWidth = 0.5
-      for (let x = 0; x < w + spacing; x += spacing) {
-        for (let y = 0; y < h + spacing; y += spacing * 0.866) {
-          const offset = (Math.floor(y / (spacing * 0.866)) % 2) * (spacing / 2)
-          ctx!.beginPath()
-          for (let i = 0; i < 6; i++) {
-            const angle = (Math.PI / 3) * i - Math.PI / 6
-            const px = x + offset + Math.cos(angle) * (spacing / 2.5)
-            const py = y + Math.sin(angle) * (spacing / 2.5)
-            if (i === 0) ctx!.moveTo(px, py)
-            else ctx!.lineTo(px, py)
-          }
-          ctx!.closePath()
-          ctx!.stroke()
-        }
-      }
-    }
-
-    // Vertical data streams (matrix-like)
+    /* ── Vertical data streams ── */
     const streams: { x: number; chars: string[]; y: number; speed: number; baseSpeed: number; opacity: number; baseOpacity: number }[] = []
-    function initStreams() {
-      const count = isMobile ? Math.floor(w / 60) : Math.floor(w / 30)
-      for (let i = 0; i < count; i++) {
-        const spd = rand(0.3, 1.5)
-        const op = rand(0.02, 0.06)
-        streams.push({
-          x: rand(0, w),
-          chars: Array.from({ length: Math.floor(rand(5, 20)) }, () =>
-            String.fromCharCode(0x30a0 + Math.floor(Math.random() * 96))
-          ),
-          y: rand(-h, 0),
-          speed: spd,
-          baseSpeed: spd,
-          opacity: op,
-          baseOpacity: op,
-        })
-      }
+    const streamCount = isMobile ? Math.floor(w / 60) : Math.floor(w / 30)
+    for (let i = 0; i < streamCount; i++) {
+      const spd = rand(0.3, 1.5)
+      const op = rand(0.02, 0.06)
+      streams.push({
+        x: rand(0, w),
+        chars: Array.from({ length: Math.floor(rand(5, 20)) }, () =>
+          String.fromCharCode(0x30a0 + Math.floor(Math.random() * 96))
+        ),
+        y: rand(-h, 0),
+        speed: spd,
+        baseSpeed: spd,
+        opacity: op,
+        baseOpacity: op,
+      })
     }
-    initStreams()
 
     function drawStreams() {
-      const r = scrollRef.current
+      const r = scrollRatioRef.current
       ctx!.font = "12px monospace"
       for (const stream of streams) {
-        // Streams slow down and dim as page calms
         stream.speed = stream.baseSpeed * (1 - r * 0.5)
         stream.opacity = stream.baseOpacity * (1 - r * 0.4)
 
@@ -238,7 +223,6 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
           const fade = i === stream.chars.length - 1 ? stream.opacity * 2 : stream.opacity
           ctx!.fillStyle = `rgba(0, 255, 65, ${fade})`
           ctx!.fillText(stream.chars[i], stream.x, cy)
-          // Randomly mutate chars — less mutation when calm
           if (Math.random() < 0.01 * (1 - r * 0.7)) {
             stream.chars[i] = String.fromCharCode(0x30a0 + Math.floor(Math.random() * 96))
           }
@@ -246,10 +230,11 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
       }
     }
 
+    /* ── Main loop ── */
     function animate() {
-      const r = scrollRef.current
+      const r = scrollRatioRef.current
 
-      // Background tint transitions from pure black to very dark green
+      // Background tint: black → very dark green
       const bgR = Math.round(5 - r * 2)
       const bgG = Math.round(5 + r * 8)
       const bgB = Math.round(8 - r * 3)
@@ -258,12 +243,18 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
 
       frameCount++
 
-      // Background layers
-      if (frameCount % 3 === 0) drawHexGrid()
-      drawStreams()
-      drawScanLines()
+      // Hex grid — cached, composited with variable alpha
+      const hexAlpha = 0.015 + r * 0.015
+      ctx!.globalAlpha = hexAlpha
+      ctx!.drawImage(hexCache, 0, 0)
+      ctx!.globalAlpha = 1
 
-      // Spawn rate decreases as page calms: every 25 frames at top, every 50 at bottom
+      drawStreams()
+
+      // Scan lines — cached
+      ctx!.drawImage(scanCache, 0, 0)
+
+      // Spawn messages
       const spawnInterval = Math.round(25 + r * 25)
       if (frameCount % spawnInterval === 0 && messages.length < maxMessages) {
         spawnMessage()
@@ -272,7 +263,7 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
         spawnMessage()
       }
 
-      // Update & draw messages
+      // Update & draw messages (no shadowBlur — major perf win)
       for (let i = messages.length - 1; i >= 0; i--) {
         const msg = messages[i]
         msg.life++
@@ -290,17 +281,15 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
           msg.opacity = msg.maxOpacity
         }
 
-        // Glitch effect for threat messages — less frequent when calm
+        // Glitch effect for threats
         if (msg.type === "threat") {
           msg.glitchTimer++
-          const glitchThreshold = 100 + r * 400 // glitches become rare
+          const glitchThreshold = 100 + r * 400
           if (msg.glitchTimer > rand(glitchThreshold, glitchThreshold + 200)) {
             msg.glitchActive = true
             msg.glitchTimer = 0
           }
-          if (msg.glitchActive) {
-            if (msg.glitchTimer > 5) msg.glitchActive = false
-          }
+          if (msg.glitchActive && msg.glitchTimer > 5) msg.glitchActive = false
         }
 
         // Remove dead messages
@@ -309,16 +298,11 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
           continue
         }
 
-        // Draw
-        ctx!.save()
+        // Draw — lightweight glow via double-render instead of expensive shadowBlur
         ctx!.font = `bold ${msg.fontSize}px monospace`
 
         if (msg.type === "threat") {
-          // Red glow — dimmer when calm
           const threatAlpha = msg.opacity * (1 - r * 0.5)
-          ctx!.shadowColor = `rgba(255, 0, 0, ${0.5 * (1 - r * 0.6)})`
-          ctx!.shadowBlur = 8 * (1 - r * 0.5)
-          ctx!.fillStyle = `rgba(255, 20, 20, ${threatAlpha})`
 
           if (msg.glitchActive) {
             ctx!.fillStyle = `rgba(255, 0, 0, ${threatAlpha * 0.5})`
@@ -326,16 +310,24 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
             ctx!.fillStyle = `rgba(255, 100, 100, ${threatAlpha * 0.7})`
             ctx!.fillText(msg.text, msg.x + rand(-2, 2), msg.y + rand(-1, 1))
           }
+
+          // Soft glow layer (cheaper than shadowBlur)
+          ctx!.fillStyle = `rgba(255, 20, 20, ${threatAlpha * 0.3})`
+          ctx!.fillText(msg.text, msg.x + 1, msg.y + 1)
+          // Main text
+          ctx!.fillStyle = `rgba(255, 20, 20, ${threatAlpha})`
           ctx!.fillText(msg.text, msg.x, msg.y)
         } else {
-          // Green glow — brighter when calm
           const secureAlpha = msg.opacity * (1 + r * 0.3)
-          ctx!.shadowColor = `rgba(0, 255, 65, ${0.5 * (1 + r * 0.3)})`
-          ctx!.shadowBlur = 10 + r * 5
+
+          // Soft glow layer
+          ctx!.fillStyle = `rgba(0, 255, 65, ${secureAlpha * 0.3})`
+          ctx!.fillText(msg.text, msg.x + 1, msg.y + 1)
+          // Main text
           ctx!.fillStyle = `rgba(0, 255, 65, ${secureAlpha})`
           ctx!.fillText(msg.text, msg.x, msg.y)
 
-          // Extra glow line underneath for secure messages
+          // Underline for bright secure messages
           if (secureAlpha > 0.15) {
             const textWidth = ctx!.measureText(msg.text).width
             ctx!.strokeStyle = `rgba(0, 255, 65, ${secureAlpha * 0.3})`
@@ -346,16 +338,15 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
             ctx!.stroke()
           }
         }
-        ctx!.restore()
       }
 
-      // Occasional screen flash — only in hostile zone
+      // Occasional screen flash — hostile zone only
       if (r < 0.4 && Math.random() < 0.002) {
         ctx!.fillStyle = "rgba(255, 0, 0, 0.02)"
         ctx!.fillRect(0, 0, w, h)
       }
 
-      requestAnimationFrame(animate)
+      animId = requestAnimationFrame(animate)
     }
 
     // Clear canvas initially
@@ -365,7 +356,6 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
     // Seed initial messages
     for (let i = 0; i < 15; i++) {
       spawnMessage()
-      // Age them so they're already visible
       const msg = messages[messages.length - 1]
       const age = rand(50, 300)
       msg.life = age
@@ -374,13 +364,13 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
       msg.opacity = msg.maxOpacity
     }
 
-    const animId = requestAnimationFrame(animate)
+    animId = requestAnimationFrame(animate)
 
     return () => {
       window.removeEventListener("resize", handleResize)
       cancelAnimationFrame(animId)
     }
-  }, [])
+  }, [scrollRatioRef])
 
   return (
     <canvas

@@ -70,7 +70,7 @@ function RevealSection({ children, className, delay = 0 }: { children: React.Rea
 /* ─── Main Page ─── */
 export default function V4LandingPage() {
   const [mounted, setMounted] = useState(false)
-  const [scrollRatio, setScrollRatio] = useState(0)
+  const scrollRatioRef = useRef(0)
   const solutionRef = useRef<HTMLElement>(null)
 
   useEffect(() => setMounted(true), [])
@@ -80,10 +80,8 @@ export default function V4LandingPage() {
       if (!solutionRef.current) return
       const rect = solutionRef.current.getBoundingClientRect()
       const viewportH = window.innerHeight
-      // ratio goes 0→1 as the solution section scrolls into view
-      // starts transitioning when section is one viewport away, reaches 1 when section top hits viewport top
       const rawRatio = 1 - rect.top / viewportH
-      setScrollRatio(Math.max(0, Math.min(1, rawRatio)))
+      scrollRatioRef.current = Math.max(0, Math.min(1, rawRatio))
     }
     window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
@@ -91,7 +89,7 @@ export default function V4LandingPage() {
 
   return (
     <div className="min-h-screen bg-[#050508] text-gray-100 overflow-x-hidden">
-      <HackerAnimation scrollRatio={scrollRatio} />
+      <HackerAnimation scrollRatioRef={scrollRatioRef} />
 
       {/* ── NAV ── */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-green-900/30 bg-[#050508]/80 backdrop-blur-md">
@@ -172,7 +170,7 @@ export default function V4LandingPage() {
                 href="/docs/v4.0.0/en/welcome"
                 className="group px-8 py-4 bg-green-500 text-black font-bold font-mono rounded-lg hover:bg-green-400 transition-all flex items-center gap-2 text-lg"
               >
-                INITIALIZE AQUA
+                DOCUMENTATION
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
