@@ -739,8 +739,8 @@ export default function V4LandingPage() {
             <Link href="https://github.com/inblockio" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-400 transition-colors text-sm font-mono">
               GITHUB
             </Link>
-            <Link href="https://twitter.com/inblockio" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-400 transition-colors text-sm font-mono">
-              X/TWITTER
+            <Link href="https://x.com/inblockio" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-400 transition-colors text-sm font-mono">
+              X
             </Link>
             <Link href="/docs/v4.0.0/en/welcome" className="text-gray-500 hover:text-green-400 transition-colors text-sm font-mono">
               DOCS
