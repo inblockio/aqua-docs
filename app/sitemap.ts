@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next"
 import { getCachedVersions, getCachedAllDocs } from "specra/lib"
 
+export const dynamic = "force-static"
+
 const BASE_URL = "https://aqua-protocol.org"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
