@@ -745,7 +745,7 @@ export default function V4LandingPage() {
             </Link>
           </div>
           <div className="text-xs text-gray-600 font-mono">
-            &copy; 2024 inBlock.io — All rights reserved
+            &copy; 2026 inBlock.io — All rights reserved
           </div>
         </div>
       </footer>

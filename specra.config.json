@@ -2,7 +2,7 @@
   "$schema": "./node_modules/specra/config/specra.config.schema.json",
   "site": {
     "title": "Aqua Protocol",
-    "description": "Aqua",
+    "description": "Open-source cryptographic trust infrastructure for the AI era — verifiable identity, access control, and tamper-proof provenance.",
     "url": "https://aqua-protocol.org",
     "baseUrl": "/",
     "language": "en",
@@ -29,7 +29,7 @@
   },
   "social": {
     "github": "https://github.com/inblockio",
-    "twitter": "https://twitter.com/inblockio",
+    "twitter": "https://x.com/inblockio",
     "custom": [
       {
         "label": "Website",
@@ -52,18 +52,18 @@
     "plausible": ""
   },
   "footer": {
-    "copyright": "Copyright © 2024 Aqua. All rights reserved.",
+    "copyright": "Copyright © 2026 Aqua. All rights reserved.",
     "links": [
       {
         "title": "Documentation",
         "items": [
           {
             "label": "Getting Started",
-            "href": "/docs/v1.0.0/getting-started"
+            "href": "/docs/v4.0.0/en/quickstart"
           },
           {
             "label": "API Reference",
-            "href": "/docs/v1.0.0/api"
+            "href": "/docs/v4.0.0/en/dev-tools/aquafier-api"
           }
         ]
       },
@@ -72,11 +72,7 @@
         "items": [
           {
             "label": "GitHub",
-            "href": "https://github.com/inblockio/aqua-docs"
-          },
-          {
-            "label": "Discord",
-            "href": "#"
+            "href": "https://github.com/inblockio"
           }
         ]
       }
