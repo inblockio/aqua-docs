@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Shield, Fingerprint, Lock, ArrowRight, ExternalLink, Eye, KeyRound, FileCheck, Bot, AlertTriangle, CheckCircle } from "lucide-react"
+import { Shield, Fingerprint, Lock, ArrowRight, ExternalLink, Eye, KeyRound, FileCheck, Bot, AlertTriangle, CheckCircle, Globe, Code } from "lucide-react"
 import HackerAnimation from "./hacker-animation"
 import { useEffect, useState, useRef } from "react"
 
@@ -39,28 +39,6 @@ function Typewriter({ texts, className }: { texts: string[]; className?: string 
       {displayText}
       <span className="animate-pulse">_</span>
     </span>
-  )
-}
-
-/* ─── Animated counter ─── */
-function AnimatedStat({ value, label, prefix }: { value: string; label: string; prefix?: string }) {
-  const [visible, setVisible] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setVisible(true) },
-      { threshold: 0.3 }
-    )
-    if (ref.current) observer.observe(ref.current)
-    return () => observer.disconnect()
-  }, [])
-
-  return (
-    <div ref={ref} className={`text-center transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
-      <div className="text-3xl md:text-4xl font-bold font-mono text-red-500">{prefix}{value}</div>
-      <div className="text-sm text-gray-400 mt-1">{label}</div>
-    </div>
   )
 }
 
@@ -217,13 +195,52 @@ export default function V4LandingPage() {
             </div>
           </RevealSection>
 
-          {/* Threat stats */}
+          {/* Lex Fridman Signal */}
           <RevealSection delay={200}>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 p-8 rounded-xl border border-red-500/10 bg-red-500/[0.02]">
-              <AnimatedStat value="96%" label="of deepfakes go undetected" />
-              <AnimatedStat value="3.4B" prefix="$" label="lost to AI-enabled fraud (2025)" />
-              <AnimatedStat value="78%" label="of orgs lack AI data provenance" />
-              <AnimatedStat value="0" label="universal trust standards for AI" />
+            <div className="mb-16 rounded-xl border border-red-500/15 bg-[#0a0a0f]/90 overflow-hidden">
+              {/* Header bar */}
+              <div className="flex items-center gap-2 px-5 py-3 border-b border-red-500/10 bg-red-500/[0.03]">
+                <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+                <span className="text-xs font-mono text-red-400/70 tracking-wider">SIGNAL DETECTED // SOURCE: @lexfridman</span>
+              </div>
+              {/* Quote body */}
+              <div className="p-6 md:p-8">
+                <blockquote className="text-gray-300 text-base md:text-lg leading-relaxed mb-6 border-l-2 border-red-500/40 pl-5">
+                  &ldquo;Very soon, if not already, <span className="text-red-400 font-semibold">security will become THE bottleneck</span> for
+                  effectiveness and usefulness of AI agents as a whole, since intelligence is still rapidly scaling
+                  and is no longer an obvious bottleneck for many use-cases.&rdquo;
+                </blockquote>
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                  <div>
+                    <div className="text-sm text-gray-500 mb-3">Lex identifies three pillars of AI agent power:</div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 font-mono text-xs">
+                      <div className="flex items-center gap-2 px-3 py-2 rounded border border-gray-700/50 bg-[#0a0a0f]">
+                        <span className="text-gray-500">1.</span>
+                        <span className="text-gray-400">Model intelligence</span>
+                        <span className="text-green-500/50 ml-auto">SCALING</span>
+                      </div>
+                      <div className="flex items-center gap-2 px-3 py-2 rounded border border-red-500/20 bg-red-500/[0.03]">
+                        <span className="text-red-400">2.</span>
+                        <span className="text-red-300">Data access</span>
+                        <span className="text-red-500 ml-auto">UNSECURED</span>
+                      </div>
+                      <div className="flex items-center gap-2 px-3 py-2 rounded border border-red-500/20 bg-red-500/[0.03]">
+                        <span className="text-red-400">3.</span>
+                        <span className="text-red-300">Agent autonomy</span>
+                        <span className="text-red-500 ml-auto">UNSECURED</span>
+                      </div>
+                    </div>
+                  </div>
+                  <Link
+                    href="https://x.com/lexfridman/status/2023573186496037044"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-mono text-gray-600 hover:text-gray-400 transition-colors flex items-center gap-1 shrink-0"
+                  >
+                    Source <ExternalLink className="h-3 w-3" />
+                  </Link>
+                </div>
+              </div>
             </div>
           </RevealSection>
 
@@ -394,6 +411,45 @@ export default function V4LandingPage() {
         </div>
       </section>
 
+      {/* ── OPEN PROTOCOL ── */}
+      <section className="relative z-10 py-24 border-t border-green-900/20">
+        <div className="max-w-4xl mx-auto px-6">
+          <RevealSection>
+            <div className="text-center">
+              <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// Open Protocol</span>
+              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
+                Trust requires <span className="text-green-400">transparency</span>
+              </h2>
+              <p className="text-gray-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
+                Aqua V4 is fully open source. Trust infrastructure cannot depend on a single vendor — it must be
+                auditable, forkable, and verifiable by anyone. Like TLS secures the web and PGP secures communication,
+                Aqua secures data provenance as an open standard.
+              </p>
+            </div>
+          </RevealSection>
+
+          <RevealSection delay={200}>
+            <div className="grid md:grid-cols-3 gap-6 mt-12">
+              <div className="p-6 rounded-xl border border-green-500/10 bg-[#0a0f0a]/60 text-center">
+                <Code className="h-6 w-6 text-green-400 mx-auto mb-3" />
+                <div className="font-mono text-sm text-green-400 font-bold mb-1">OPEN SPEC</div>
+                <p className="text-xs text-gray-500">Full protocol specification, verification trees, and SDK — publicly auditable.</p>
+              </div>
+              <div className="p-6 rounded-xl border border-green-500/10 bg-[#0a0f0a]/60 text-center">
+                <Globe className="h-6 w-6 text-green-400 mx-auto mb-3" />
+                <div className="font-mono text-sm text-green-400 font-bold mb-1">OPEN STANDARD</div>
+                <p className="text-xs text-gray-500">Interoperable by design. Every implementation strengthens the verification network.</p>
+              </div>
+              <div className="p-6 rounded-xl border border-green-500/10 bg-[#0a0f0a]/60 text-center">
+                <Shield className="h-6 w-6 text-green-400 mx-auto mb-3" />
+                <div className="font-mono text-sm text-green-400 font-bold mb-1">ENTERPRISE READY</div>
+                <p className="text-xs text-gray-500">Build free. Deploy with production-grade infrastructure, SLAs, and compliance.</p>
+              </div>
+            </div>
+          </RevealSection>
+        </div>
+      </section>
+
       {/* ── HOW IT WORKS — Terminal Style ── */}
       <section className="relative z-10 py-24 border-t border-green-900/20">
         <div className="max-w-4xl mx-auto px-6">
@@ -527,7 +583,8 @@ export default function V4LandingPage() {
                 </h2>
                 <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
                   Open-source. Decentralized. Cryptographically sound.
-                  The trust layer that AI has been missing.
+                  <br />
+                  <span className="text-green-400/80 font-mono">Build free. Deploy enterprise.</span>
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <Link
