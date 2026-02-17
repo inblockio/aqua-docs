@@ -94,7 +94,7 @@ export default function HackerAnimation() {
       const type = isThreat ? "threat" : "secure"
       const text = isThreat ? pick(THREAT_MESSAGES) : pick(SECURE_MESSAGES)
 
-      // Spawn from edges
+      // Spawn from edges with steep cross-axis movement
       const edge = Math.floor(Math.random() * 4)
       let x: number, y: number, vx: number, vy: number
       const speed = rand(0.3, 1.2)
@@ -103,26 +103,26 @@ export default function HackerAnimation() {
         case 0: // top
           x = rand(0, w)
           y = -20
-          vx = rand(-0.5, 0.5)
+          vx = rand(-1.2, 1.2)
           vy = speed
           break
         case 1: // right
           x = w + 20
           y = rand(0, h)
           vx = -speed
-          vy = rand(-0.3, 0.3)
+          vy = rand(-1.2, 1.2)
           break
         case 2: // bottom
           x = rand(0, w)
           y = h + 20
-          vx = rand(-0.5, 0.5)
+          vx = rand(-1.2, 1.2)
           vy = -speed
           break
         default: // left
           x = -20
           y = rand(0, h)
           vx = speed
-          vy = rand(-0.3, 0.3)
+          vy = rand(-1.2, 1.2)
           break
       }
 
@@ -218,8 +218,7 @@ export default function HackerAnimation() {
     }
 
     function animate() {
-      ctx!.fillStyle = "rgba(5, 5, 8, 0.15)"
-      ctx!.fillRect(0, 0, w, h)
+      ctx!.clearRect(0, 0, w, h)
 
       frameCount++
 
