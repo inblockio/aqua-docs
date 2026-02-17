@@ -534,7 +534,7 @@ export default function V4LandingPage() {
             <div className="text-center">
               <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// Open Protocol</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
-                The <span className="text-green-400">Linux</span> of AI Verification
+                The <span className="text-green-400">Kubernetes</span> of AI Verification
               </h2>
               <p className="text-gray-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
                 Aqua V4 is fully open source. Trust infrastructure cannot depend on a single vendor — it must be

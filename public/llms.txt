@@ -1,0 +1,40 @@
+# Aqua Protocol
+
+> Aqua is an open-source cryptographic protocol for AI-era trust infrastructure — providing verifiable identity, granular access control, and tamper-proof data provenance without requiring a blockchain.
+
+## Overview
+
+Aqua V4 solves the AI trust crisis: as AI agents generate content, make decisions, and access systems at scale, there is no infrastructure to verify identity, control access, or prove provenance. Aqua provides that infrastructure using cryptographic hash chains, self-sovereign identity with peer attestation, and revision-level access control.
+
+## Core Concepts
+
+- **Identity**: Self-sovereign, cryptographic identity attestation. Every agent, model, and user is verified and accountable via peer-to-peer attestation and challenge-based verification — no central authority required.
+- **Access Control**: Granular, cryptographic access policies with revision-level permissions, auditable access trails, and zero-trust architecture.
+- **Provenance**: Every piece of data carries its full history via cryptographic hash chains. Tamper-proof, portable, and independently verifiable.
+
+## Key Links
+
+- Documentation: https://aqua-protocol.org/docs/v4.0.0/en/welcome
+- Quickstart: https://aqua-protocol.org/docs/v4.0.0/en/quickstart
+- Schema Reference: https://aqua-protocol.org/docs/v4.0.0/en/schema-reference/introduction
+- Use Cases: https://aqua-protocol.org/docs/v4.0.0/en/use-cases/introduction
+- Dev Tools (CLI): https://aqua-protocol.org/docs/v4.0.0/en/dev-tools/aqua-cli
+- Dev Tools (SDK): https://aqua-protocol.org/docs/v4.0.0/en/dev-tools/aqua-sdk
+- API Reference: https://aqua-protocol.org/docs/v4.0.0/en/dev-tools/aquafier-api
+- GitHub: https://github.com/inblockio
+- Live Demo (Aquafier): https://aquafier.inblock.io
+
+## Documentation Versions
+
+- V4.0.0 (latest): https://aqua-protocol.org/docs/v4.0.0/en/welcome
+- V3.0.2: https://aqua-protocol.org/docs/v3.0.2/en/introduction
+- V2.0.2: https://aqua-protocol.org/docs/v2.0.2/en/introduction
+- V1.1.0: https://aqua-protocol.org/docs/v1.1.0/en/introduction
+
+## Technical Details
+
+Aqua uses a hash-chain data structure called an **Aqua Tree** where each revision is cryptographically linked to its predecessor. Revision types include object revisions, signing revisions, witness revisions, link revisions, and template revisions. Verification is portable and works offline — no blockchain or central server required.
+
+## Organization
+
+Built by inBlock.io. Fully open source under a permissive license. Enterprises deploy with production-grade infrastructure, compliance, and SLAs.
