@@ -134,9 +134,10 @@ export default function HackerAnimation({ scrollRatioRef }: HackerAnimationProps
     window.addEventListener("resize", handleResize)
 
     const isMobile = w < 640
-    const maxMessages = isMobile ? 20 : 50
+    const maxMessages = isMobile ? 12 : 50
     const messages: FloatingMessage[] = []
     let frameCount = 0
+    let skipFrame = false
 
     function rand(a: number, b: number) {
       return a + Math.random() * (b - a)
@@ -188,7 +189,7 @@ export default function HackerAnimation({ scrollRatioRef }: HackerAnimationProps
 
     /* ── Vertical data streams ── */
     const streams: { x: number; chars: string[]; y: number; speed: number; baseSpeed: number; opacity: number; baseOpacity: number }[] = []
-    const streamCount = isMobile ? Math.floor(w / 60) : Math.floor(w / 30)
+    const streamCount = isMobile ? Math.floor(w / 90) : Math.floor(w / 30)
     for (let i = 0; i < streamCount; i++) {
       const spd = rand(0.3, 1.5)
       const op = rand(0.02, 0.06)
@@ -232,6 +233,15 @@ export default function HackerAnimation({ scrollRatioRef }: HackerAnimationProps
 
     /* ── Main loop ── */
     function animate() {
+      // Throttle to ~30fps on mobile by skipping every other frame
+      if (isMobile) {
+        skipFrame = !skipFrame
+        if (skipFrame) {
+          animId = requestAnimationFrame(animate)
+          return
+        }
+      }
+
       const r = scrollRatioRef.current
 
       // Background tint: black → very dark green
