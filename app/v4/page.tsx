@@ -70,11 +70,28 @@ function RevealSection({ children, className, delay = 0 }: { children: React.Rea
 /* ─── Main Page ─── */
 export default function V4LandingPage() {
   const [mounted, setMounted] = useState(false)
+  const [scrollRatio, setScrollRatio] = useState(0)
+  const solutionRef = useRef<HTMLElement>(null)
+
   useEffect(() => setMounted(true), [])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!solutionRef.current) return
+      const rect = solutionRef.current.getBoundingClientRect()
+      const viewportH = window.innerHeight
+      // ratio goes 0→1 as the solution section scrolls into view
+      // starts transitioning when section is one viewport away, reaches 1 when section top hits viewport top
+      const rawRatio = 1 - rect.top / viewportH
+      setScrollRatio(Math.max(0, Math.min(1, rawRatio)))
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
     <div className="min-h-screen bg-[#050508] text-gray-100 overflow-x-hidden">
-      <HackerAnimation />
+      <HackerAnimation scrollRatio={scrollRatio} />
 
       {/* ── NAV ── */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-green-900/30 bg-[#050508]/80 backdrop-blur-md">
@@ -304,7 +321,7 @@ export default function V4LandingPage() {
       </section>
 
       {/* ── THE SOLUTION ── */}
-      <section className="relative z-10 py-24 border-t border-green-900/20">
+      <section ref={solutionRef} className="relative z-10 py-24 border-t border-green-900/20">
         <div className="max-w-6xl mx-auto px-6">
           <RevealSection>
             <div className="text-center mb-16">
