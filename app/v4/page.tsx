@@ -214,7 +214,7 @@ export default function V4LandingPage() {
         <div className="max-w-6xl mx-auto px-6">
           <RevealSection>
             <div className="text-center mb-16">
-              <span className="text-red-500 font-mono text-sm tracking-widest uppercase">// The Problem</span>
+              <span className="text-red-500 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// The Problem</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
                 The AI Trust Crisis
               </h2>
@@ -439,7 +439,7 @@ export default function V4LandingPage() {
         <div className="max-w-6xl mx-auto px-6">
           <RevealSection>
             <div className="text-center mb-16">
-              <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// The Solution</span>
+              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// The Solution</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
                 Aqua V4: <span className="text-green-400">Trust Infrastructure</span>
               </h2>
@@ -547,7 +547,7 @@ export default function V4LandingPage() {
         <div className="max-w-6xl mx-auto px-6">
           <RevealSection>
             <div className="text-center mb-16">
-              <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// How It Works</span>
+              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// How It Works</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
                 Pillars of <span className="text-green-400">Verifiable Trust</span>
               </h2>
@@ -658,7 +658,7 @@ export default function V4LandingPage() {
         <div className="max-w-4xl mx-auto px-6">
           <RevealSection>
             <div className="text-center">
-              <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// Open Protocol</span>
+              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// Open Protocol</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
                 The <span className="text-green-400">Kubernetes</span> of AI Verification
               </h2>
@@ -697,7 +697,7 @@ export default function V4LandingPage() {
         <div className="max-w-6xl mx-auto px-6">
           <RevealSection>
             <div className="text-center mb-16">
-              <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// Who It&apos;s For</span>
+              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// Who It&apos;s For</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
                 One Protocol. <span className="text-green-400">Every Stakeholder.</span>
               </h2>
@@ -815,7 +815,7 @@ export default function V4LandingPage() {
         <div className="max-w-4xl mx-auto px-6">
           <RevealSection>
             <div className="text-center mb-16">
-              <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// See It In Action</span>
+              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// See It In Action</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
                 From <span className="text-red-500">Vulnerable</span> to <span className="text-green-400">Verified</span>
               </h2>
@@ -865,7 +865,7 @@ export default function V4LandingPage() {
         <div className="max-w-6xl mx-auto px-6">
           <RevealSection>
             <div className="text-center mb-16">
-              <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// The Difference</span>
+              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// The Difference</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
                 Without vs. With <span className="text-green-400">Aqua</span>
               </h2>
