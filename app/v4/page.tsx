@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Shield, Fingerprint, Lock, ArrowRight, ExternalLink, Eye, KeyRound, FileCheck, Bot, AlertTriangle, CheckCircle, Globe, Code, Scale, Landmark } from "lucide-react"
+import { Shield, Fingerprint, Lock, ArrowRight, ExternalLink, Eye, KeyRound, FileCheck, Bot, AlertTriangle, CheckCircle, Globe, Code, Scale, Landmark, Clock, LockKeyhole } from "lucide-react"
 import HackerAnimation from "./hacker-animation"
 import { useEffect, useState, useRef } from "react"
 
@@ -527,6 +527,94 @@ export default function V4LandingPage() {
         </div>
       </section>
 
+      {/* ── HOW IT WORKS — Conceptual ── */}
+      <section className="relative z-10 py-24 border-t border-green-900/20">
+        <div className="max-w-6xl mx-auto px-6">
+          <RevealSection>
+            <div className="text-center mb-16">
+              <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// How It Works</span>
+              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
+                Three Pillars of <span className="text-green-400">Verifiable Trust</span>
+              </h2>
+              <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">
+                Aqua combines cryptographic hash chains, optional timestamping, and decentralized verification
+                to create trust without central authorities.
+              </p>
+            </div>
+          </RevealSection>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <RevealSection delay={100}>
+              <div className="p-8 rounded-xl border border-green-500/15 bg-[#0a0a0f]/80 hover:border-green-500/30 transition-all group relative overflow-hidden h-full">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
+                <div className="relative">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-green-500/40 font-mono text-4xl font-bold">01</span>
+                  </div>
+                  <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
+                    <FileCheck className="h-6 w-6 text-green-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-green-400 font-mono mb-3">PORTABLE HASH-CHAINS</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    Aqua creates <span className="text-gray-300">AquaTrees</span> — portable data structures that record
+                    a complete history of revisions with cryptographic precision. Every change is chained, every version is preserved.
+                  </p>
+                  <div className="mt-5 font-mono text-xs text-green-500/50 border-t border-green-500/10 pt-4">
+                    &gt; Each revision linked by hash to its predecessor
+                  </div>
+                </div>
+              </div>
+            </RevealSection>
+
+            <RevealSection delay={200}>
+              <div className="p-8 rounded-xl border border-green-500/15 bg-[#0a0a0f]/80 hover:border-green-500/30 transition-all group relative overflow-hidden h-full">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
+                <div className="relative">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-green-500/40 font-mono text-4xl font-bold">02</span>
+                  </div>
+                  <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
+                    <Clock className="h-6 w-6 text-green-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-green-400 font-mono mb-3">IMMUTABLE TIMESTAMPS</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    Anchor your data to tamper-proof timelines — via <span className="text-gray-300">Ethereum blockchain</span>,
+                    {" "}<span className="text-gray-300">qualified TSA services</span> (eIDAS-compliant), or both.
+                    Blockchain is optional — Aqua integrates with existing institutional infrastructure and decentralized networks alike.
+                  </p>
+                  <div className="mt-5 font-mono text-xs text-green-500/50 border-t border-green-500/10 pt-4">
+                    &gt; Blockchain or TSA — choose your trust anchor
+                  </div>
+                </div>
+              </div>
+            </RevealSection>
+
+            <RevealSection delay={300}>
+              <div className="p-8 rounded-xl border border-green-500/15 bg-[#0a0a0f]/80 hover:border-green-500/30 transition-all group relative overflow-hidden h-full">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
+                <div className="relative">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-green-500/40 font-mono text-4xl font-bold">03</span>
+                  </div>
+                  <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
+                    <LockKeyhole className="h-6 w-6 text-green-400" />
+                  </div>
+                  <h3 className="text-lg font-bold text-green-400 font-mono mb-3">FLEXIBLE TRUST</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    Aqua bridges institutional and decentralized worlds. Use <span className="text-gray-300">enterprise registries</span> for
+                    regulatory compliance or <span className="text-gray-300">community-driven decentralized registries</span> for
+                    open verification — or combine both. One protocol, every trust model.
+                  </p>
+                  <div className="mt-5 font-mono text-xs text-green-500/50 border-t border-green-500/10 pt-4">
+                    &gt; Institutional or decentralized — works with both
+                  </div>
+                </div>
+              </div>
+            </RevealSection>
+          </div>
+        </div>
+      </section>
+
       {/* ── OPEN PROTOCOL ── */}
       <section className="relative z-10 py-24 border-t border-green-900/20">
         <div className="max-w-4xl mx-auto px-6">
@@ -566,12 +654,12 @@ export default function V4LandingPage() {
         </div>
       </section>
 
-      {/* ── HOW IT WORKS — Terminal Style ── */}
+      {/* ── SEE IT IN ACTION — Terminal Style ── */}
       <section className="relative z-10 py-24 border-t border-green-900/20">
         <div className="max-w-4xl mx-auto px-6">
           <RevealSection>
             <div className="text-center mb-16">
-              <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// How It Works</span>
+              <span className="text-green-400 font-mono text-sm tracking-widest uppercase">// See It In Action</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
                 From <span className="text-red-500">Vulnerable</span> to <span className="text-green-400">Verified</span>
               </h2>
