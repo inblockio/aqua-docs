@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
+    "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "build": "npm run generate:redirects && NEXT_BUILD_MODE=default next build",
     "build:export": "npm run generate:redirects && NEXT_BUILD_MODE=export next build && npm run generate:static-redirects",
     "start": "next start",
