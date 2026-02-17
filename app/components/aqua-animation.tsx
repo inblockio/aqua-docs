@@ -556,7 +556,7 @@ export default function AquaAnimation({
       window.removeEventListener("resize", handleResize)
       cancelAnimationFrame(animId)
     }
-  }, [reverse, laneCount, invertSpeed, topPadding])
+  }, [reverse, laneCount, invertSpeed, topPadding, fadeAboveSelector])
 
   return (
     <canvas

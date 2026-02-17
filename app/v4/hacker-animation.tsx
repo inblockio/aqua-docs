@@ -369,6 +369,11 @@ export default function HackerAnimation({ scrollRatioRef }: HackerAnimationProps
     return () => {
       window.removeEventListener("resize", handleResize)
       cancelAnimationFrame(animId)
+      // Release offscreen canvas pixel buffers immediately
+      hexCache.width = 0
+      hexCache.height = 0
+      scanCache.width = 0
+      scanCache.height = 0
     }
   }, [scrollRatioRef])
 
