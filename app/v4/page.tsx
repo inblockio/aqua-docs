@@ -105,7 +105,7 @@ export default function V4LandingPage() {
           <div className="flex items-center gap-4">
             <Link
               href="/docs/v4.0.0/en/welcome"
-              className="text-sm text-gray-400 hover:text-green-400 transition-colors font-mono"
+              className="hidden sm:block text-sm text-gray-400 hover:text-green-400 transition-colors font-mono"
             >
               DOCS
             </Link>
@@ -113,7 +113,7 @@ export default function V4LandingPage() {
               href="https://github.com/inblockio"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-gray-400 hover:text-green-400 transition-colors font-mono"
+              className="hidden sm:block text-sm text-gray-400 hover:text-green-400 transition-colors font-mono"
             >
               GITHUB
             </Link>
@@ -137,13 +137,13 @@ export default function V4LandingPage() {
               <span className="text-sm font-mono text-red-400">CRITICAL: AI Security Gap Detected</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-6">
               <span className="text-white">AI is moving fast.</span>
               <br />
               <span className="text-red-500">Security can&apos;t keep up.</span>
             </h1>
 
-            <div className="h-12 mb-8">
+            <div className="min-h-[3rem] mb-8">
               <p className="text-xl md:text-2xl text-gray-400 font-mono">
                 <span className="text-green-400">&gt;</span>{" "}
                 <Typewriter
@@ -252,7 +252,7 @@ export default function V4LandingPage() {
                     href="https://x.com/lexfridman/status/2023573186496037044"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs font-mono text-gray-600 hover:text-gray-400 transition-colors flex items-center gap-1 shrink-0"
+                    className="text-xs font-mono text-gray-600 hover:text-gray-400 transition-colors flex items-center gap-1 shrink-0 min-h-[44px] min-w-[44px] justify-center"
                   >
                     Source <ExternalLink className="h-3 w-3" />
                   </Link>
@@ -306,7 +306,7 @@ export default function V4LandingPage() {
                         href="https://www.federalregister.gov/documents/2023/04/13/2023-07776/ai-accountability-policy-request-for-comment"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1"
+                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1 min-h-[44px] px-2"
                       >
                         RFC <ExternalLink className="h-3 w-3" />
                       </Link>
@@ -314,7 +314,7 @@ export default function V4LandingPage() {
                         href="https://www.ntia.gov/issues/artificial-intelligence/ai-accountability-policy-report"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1"
+                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1 min-h-[44px] px-2"
                       >
                         Report <ExternalLink className="h-3 w-3" />
                       </Link>
@@ -350,7 +350,7 @@ export default function V4LandingPage() {
                         href="https://artificialintelligenceact.eu/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1"
+                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1 min-h-[44px] px-2"
                       >
                         Full text <ExternalLink className="h-3 w-3" />
                       </Link>

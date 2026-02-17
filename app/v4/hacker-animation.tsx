@@ -90,6 +90,8 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
     }
     window.addEventListener("resize", handleResize)
 
+    const isMobile = w < 640
+    const maxMessages = isMobile ? 20 : 50
     const messages: FloatingMessage[] = []
     let frameCount = 0
 
@@ -198,7 +200,7 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
     // Vertical data streams (matrix-like)
     const streams: { x: number; chars: string[]; y: number; speed: number; baseSpeed: number; opacity: number; baseOpacity: number }[] = []
     function initStreams() {
-      const count = Math.floor(w / 30)
+      const count = isMobile ? Math.floor(w / 60) : Math.floor(w / 30)
       for (let i = 0; i < count; i++) {
         const spd = rand(0.3, 1.5)
         const op = rand(0.02, 0.06)
@@ -263,10 +265,10 @@ export default function HackerAnimation({ scrollRatio = 0 }: HackerAnimationProp
 
       // Spawn rate decreases as page calms: every 25 frames at top, every 50 at bottom
       const spawnInterval = Math.round(25 + r * 25)
-      if (frameCount % spawnInterval === 0 && messages.length < 50) {
+      if (frameCount % spawnInterval === 0 && messages.length < maxMessages) {
         spawnMessage()
       }
-      if (frameCount % (spawnInterval + 15) === 0 && messages.length < 50) {
+      if (frameCount % (spawnInterval + 15) === 0 && messages.length < maxMessages) {
         spawnMessage()
       }
 
