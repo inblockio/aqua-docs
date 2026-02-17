@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
 2:I[339756,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/73e3194f06db260e.js"],"default"]
 3:I[837457,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/73e3194f06db260e.js"],"default"]
-4:I[839694,["/_next/static/chunks/220cd1d302b0fcc8.js","/_next/static/chunks/3b655325084dce12.js"],"VersionNotFound"]
-0:{"buildId":"0lv4V2IbYtxj-CFSPcjq_","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}],"notFound":[["$","$L4",null,{}],[]]}]]}],"loading":null,"isPartial":false}
+4:I[839694,["/_next/static/chunks/9eb1c473552970f7.js","/_next/static/chunks/6b58fd8858fa5e45.js"],"VersionNotFound"]
+0:{"buildId":"Wvwsg1u7-8cob0E1kTWhP","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}],"notFound":[["$","$L4",null,{}],[]]}]]}],"loading":null,"isPartial":false}
