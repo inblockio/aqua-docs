@@ -117,7 +117,7 @@ export default function V4LandingPage() {
           </Link>
           <div className="flex items-center gap-4">
             <Link
-              href="/docs/v4.0.0/en/welcome"
+              href="/docs/v4.0.0/welcome"
               className="hidden sm:block text-sm text-gray-400 hover:text-green-400 transition-colors font-mono"
             >
               DOCS
@@ -131,7 +131,7 @@ export default function V4LandingPage() {
               GITHUB
             </Link>
             <Link
-              href="/docs/v4.0.0/en/welcome"
+              href="/docs/v4.0.0/welcome"
               className="px-4 py-2 bg-green-500/10 border border-green-500/30 text-green-400 text-sm font-mono rounded hover:bg-green-500/20 transition-all"
             >
               GET STARTED
@@ -182,7 +182,7 @@ export default function V4LandingPage() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/docs/v4.0.0/en/welcome"
+                href="/docs/v4.0.0/welcome"
                 className="group px-8 py-4 bg-green-500 text-black font-bold font-mono rounded-lg hover:bg-green-400 transition-all flex items-center gap-2 text-lg"
               >
                 DOCUMENTATION
@@ -797,7 +797,7 @@ export default function V4LandingPage() {
                     cryptographic trust baked in from day one.
                   </p>
                   <Link
-                    href="/docs/v4.0.0/en/welcome"
+                    href="/docs/v4.0.0/welcome"
                     className="inline-flex items-center gap-2 px-5 py-2.5 border border-green-500/30 text-green-400 text-sm font-mono rounded-lg hover:bg-green-500/10 transition-all"
                   >
                     READ THE DOCS
@@ -975,7 +975,7 @@ export default function V4LandingPage() {
                     GET A DEMO
                   </Link>
                   <Link
-                    href="/docs/v4.0.0/en/welcome"
+                    href="/docs/v4.0.0/welcome"
                     className="flex flex-col items-center gap-2 px-4 py-4 border border-green-500/30 text-green-400 font-mono text-sm rounded-lg hover:bg-green-500/10 transition-all"
                   >
                     <Terminal className="h-5 w-5" />
@@ -1002,7 +1002,7 @@ export default function V4LandingPage() {
             <Link href="https://x.com/inblockio" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-400 transition-colors text-sm font-mono">
               X
             </Link>
-            <Link href="/docs/v4.0.0/en/welcome" className="text-gray-500 hover:text-green-400 transition-colors text-sm font-mono">
+            <Link href="/docs/v4.0.0/welcome" className="text-gray-500 hover:text-green-400 transition-colors text-sm font-mono">
               DOCS
             </Link>
           </div>
