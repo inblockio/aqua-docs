@@ -2,10 +2,10 @@ import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 
 // Note: Redirects from frontmatter are handled at build time via next.config.js
-// This middleware can be extended for dynamic redirects if needed
+// This proxy can be extended for dynamic redirects if needed
 
-export function middleware(request: NextRequest) {
-  // Add any runtime middleware logic here
+export function proxy(request: NextRequest) {
+  // Add any runtime proxy logic here
   return NextResponse.next()
 }
 

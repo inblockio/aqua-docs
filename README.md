@@ -1,47 +1,41 @@
-# Specra Documentation Site
+# Aqua Protocol Documentation
 
-Welcome to your new Specra documentation site! This project was created with `create-specra`.
+Documentation site for the [Aqua Protocol](https://aqua-protocol.org). An open-source cryptographic trust infrastructure for the AI era, providing verifiable identity, access control, and tamper-proof provenance.
+
+Built with [Specra](https://https://specra-docs.com/) and [Next.js](https://nextjs.org).
 
 ## Getting Started
 
-First, install dependencies and run the development server:
+Install dependencies and run the development server:
 
 ```bash
 npm install
 npm run dev
-# or
-yarn install
-yarn dev
-# or
-pnpm install
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see your documentation site.
+Open [http://localhost:3000](http://localhost:3000) to view the docs locally.
 
 ## Project Structure
 
 ```
-├── app/              # Next.js app directory
-│   ├── layout.tsx    # Root layout
-│   ├── page.tsx      # Home page
-│   └── docs/         # Documentation pages
-├── components/       # Reusable components
-│   ├── docs/        # Documentation-specific components
-│   └── ui/          # UI components
-├── docs/            # Your MDX documentation files
-│   └── v1.0.0/     # Version 1.0.0 docs
-├── lib/             # Utility functions
-│   ├── mdx.ts      # MDX processing
-│   ├── config.ts   # Configuration
-│   └── parsers/    # API parsers
-├── public/          # Static assets
-└── specra.config.json  # Specra configuration
+├── app/                    # Next.js app directory
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Landing page
+│   └── docs/               # Documentation pages
+├── docs/                   # MDX documentation files
+│   ├── v1.1.0/             # Version 1.1.0 docs
+│   ├── v2.0.2/             # Version 2.0.2 docs
+│   ├── v3.0.2/             # Version 3.0.2 docs
+│   └── v4.0.0/             # Version 4.0.0 docs (active)
+├── public/                 # Static assets
+├── scripts/                # Build & indexing scripts
+├── specra.config.json      # Site configuration
+└── next.config.mjs         # Next.js configuration
 ```
 
 ## Writing Documentation
 
-Add your MDX files in the `docs/v1.0.0/` directory:
+Add MDX files under the active version directory (`docs/v4.0.0`):
 
 ```mdx
 ---
@@ -54,79 +48,27 @@ description: This is my documentation page
 Your content here...
 ```
 
-### Using Components
-
-Import and use components in your MDX:
-
-```mdx
-import { Callout } from '@/components/docs/callout'
-import { CodeBlock } from '@/components/docs/code-block'
-import { Tabs, Tab } from '@/components/docs/tabs'
-
-<Callout type="info">
-  This is an info callout!
-</Callout>
-
-<Tabs>
-  <Tab title="JavaScript">
-    ```js
-    console.log('Hello World')
-    ```
-  </Tab>
-  <Tab title="TypeScript">
-    ```ts
-    console.log('Hello World')
-    ```
-  </Tab>
-</Tabs>
-```
-
 ## Configuration
 
-Edit `specra.config.json` to customize your site:
-
-```json
-{
-  "site": {
-    "title": "Your Docs",
-    "description": "Your documentation site",
-    "url": "https://yourdocs.com"
-  },
-  "navigation": {
-    "links": [
-      { "title": "Home", "href": "/" },
-      { "title": "Docs", "href": "/docs" }
-    ]
-  }
-}
-```
+Edit `specra.config.json` to customize the site (title, navigation, social links, footer, etc.).
 
 ## Building for Production
 
 ```bash
+# Standard build (server mode)
 npm run build
 npm run start
+
+# Static export (GitHub Pages)
+npm run build:export
 ```
-
-## Learn More
-
-- [Specra Documentation](https://specra.dev/docs)
-- [Next.js Documentation](https://nextjs.org/docs)
-- [MDX Documentation](https://mdxjs.com)
 
 ## Deployment
 
-Deploy your Specra documentation site to Vercel, Netlify, or any hosting platform that supports Next.js.
+The site is configured for GitHub Pages deployment with a custom domain at [aqua-protocol.org](https://aqua-protocol.org).
 
-### Vercel
+## Links
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
-
-### Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
-
-## Need Help?
-
-- Check the [documentation](https://specra.dev/docs)
-- Report issues on [GitHub](https://github.com/yourusername/specra/issues)
+- [Aqua Protocol](https://aqua-protocol.org)
+- [GitHub — inblockio](https://github.com/inblockio)
+- [Next.js Documentation](https://nextjs.org/docs)
