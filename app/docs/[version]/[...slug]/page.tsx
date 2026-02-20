@@ -204,7 +204,7 @@ export default async function DocPage({ params }: PageProps) {
               />
             )
           }
-          toc={showCategoryIndex ? <div /> : <TableOfContents items={toc} config={config} />}
+          toc={showCategoryIndex ? <div /> : <TableOfContents key={'full'} items={toc} config={config} />}
           config={config}
           currentPageTabGroup={currentPageTabGroup}
         />
