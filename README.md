@@ -48,6 +48,49 @@ description: This is my documentation page
 Your content here...
 ```
 
+## Redirects
+
+Redirects are managed in `redirects.json`. There are two ways to add redirects:
+
+### 1. Auto-generated redirects
+
+The script `scripts/generate-redirects.mjs` automatically generates redirects from:
+
+- **Frontmatter**: Add a `redirect_from` field to your MDX file:
+  ```mdx
+  ---
+  title: My Page
+  redirect_from:
+    - /docs/v3/old-path
+    - /docs/old/other-path
+  ---
+  ```
+- **Folder redirects**: Category folders automatically redirect to their first child page.
+
+Run the script to regenerate:
+```bash
+node scripts/generate-redirects.mjs
+```
+
+### 2. Manual redirects
+
+You can also add redirects directly to `redirects.json`. Manual entries are preserved when the script runs — it only adds or updates generated entries without removing manually added ones.
+
+Add an entry with the following format:
+```json
+{
+  "source": "/docs/v4/schema",
+  "destination": "/docs/v4.0.0/schema-reference/aqua-tree",
+  "permanent": false
+}
+```
+
+| Field         | Description                                                       |
+|---------------|-------------------------------------------------------------------|
+| `source`      | The old URL path that should redirect                             |
+| `destination` | The new URL path to redirect to                                   |
+| `permanent`   | `true` for 301 (permanent), `false` for 302 (temporary) redirect |
+
 ## Configuration
 
 Edit `specra.config.json` to customize the site (title, navigation, social links, footer, etc.).
