@@ -111,6 +111,7 @@ async function buildRedirects() {
 
 /**
  * Generate redirects and write to a JSON file
+ * Merges with existing redirects — adds new ones, updates changed ones, preserves manual entries
  */
 async function main() {
   const { redirects, folderRedirects } = await buildRedirects()
@@ -129,16 +130,43 @@ async function main() {
     }
   ]
 
-  const allRedirects = [...redirects, ...folderRedirects, ...manualRedirects]
-
-
   const outputPath = path.join(__dirname, "..", "redirects.json")
+
+  // Read existing redirects to preserve manually added entries
+  let existingRedirects = []
+  try {
+    const existing = fs.readFileSync(outputPath, "utf8")
+    existingRedirects = JSON.parse(existing)
+  } catch {
+    // File doesn't exist or is invalid — start fresh
+  }
+
+  // Index existing redirects by source for quick lookup
+  const existingBySource = new Map(
+    existingRedirects.map((r) => [r.source, r])
+  )
+
+  // Merge generated redirects: add new, update existing
+  const generatedRedirects = [...redirects, ...folderRedirects, ...manualRedirects]
+  const generatedSources = new Set()
+
+  for (const redirect of generatedRedirects) {
+    generatedSources.add(redirect.source)
+    existingBySource.set(redirect.source, redirect)
+  }
+
+  const allRedirects = Array.from(existingBySource.values())
+
   fs.writeFileSync(outputPath, JSON.stringify(allRedirects, null, 2))
 
+  const preserved = allRedirects.length - generatedRedirects.length
   console.log(`✅ Generated ${redirects.length} frontmatter redirects`)
   console.log(`✅ Generated ${folderRedirects.length} folder redirects`)
   console.log(`✅ Generated ${manualRedirects.length} manual redirects`)
-  console.log(`📝 Saved to: ${outputPath}`)
+  if (preserved > 0) {
+    console.log(`✅ Preserved ${preserved} manually added redirects`)
+  }
+  console.log(`📝 Total: ${allRedirects.length} redirects saved to: ${outputPath}`)
 }
 
 main().catch(console.error)
