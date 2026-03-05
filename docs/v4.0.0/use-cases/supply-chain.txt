@@ -10,7 +10,7 @@ f:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/73e
 :HL["/_next/static/chunks/5cbd65c3f6acde72.css","style"]
 :HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"P":null,"b":"g2f5Fq4cYd5iFAgWKl29d","c":["","docs","v4.0.0","use-cases","supply-chain"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v4.0.0","d"],{"children":[["slug","use-cases/supply-chain","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/5cbd65c3f6acde72.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/f6c89b1312bbb4b8.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/7f2f59f52b852b21.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Open-source cryptographic trust infrastructure for the AI era — verifiable identity, access control, and tamper-proof provenance.","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":{"dark":"/logo/aqua-logo.png","light":"/logo/aqua-logo.png"}},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./node_modules/specra/config/specra.config.schema.json","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","custom":[{"label":"Website","url":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2026 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/en/quickstart"},{"label":"API Reference","href":"/docs/v4.0.0/en/dev-tools/aquafier-api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"}]}]},"banner":{"enabled":false,"message":"🎉 Aqua protocol - Let us build privacy infra together!","type":"error","dismissible":true},"env":{"AQUAFIER_URL":"https://aquafier.inblock.io"},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen bg-background flex items-center justify-center px-6","children":["$","div",null,{"className":"max-w-2xl mx-auto text-center space-y-6","children":[["$","div",null,{"className":"space-y-2","children":[["$","h1",null,{"className":"text-6xl md:text-8xl font-bold text-primary","children":"404"}],["$","h2",null,{"className":"text-2xl md:text-3xl font-semibold text-foreground","children":"Page Not Found"}]]}],["$","p",null,{"className":"text-muted-foreground text-lg max-w-md mx-auto","children":"The page you're looking for doesn't exist or may have been moved."}],["$","div",null,{"className":"flex flex-col sm:flex-row items-center justify-center gap-4 pt-6","children":[["$","$L6",null,{"asChild":true,"size":"lg","children":["$","$L7",null,{"href":"/","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-house mr-2 h-4 w-4","children":[["$","path","5wwlr5",{"d":"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"}],["$","path","1d0kgt",{"d":"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"}],"$undefined"]}],"Go to Homepage"]}]}],["$","$L6",null,{"asChild":true,"variant":"outline","size":"lg","children":"$L8"}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":["$L9",{"children":["$La",{"children":["$Lb",{"children":["$Lc",{},null,false,false]},["$Ld",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$Le",false]],"m":"$undefined","G":["$f",[]],"S":true}
+0:{"P":null,"b":"JvtX_d64hZvkFAVjZ8pVN","c":["","docs","v4.0.0","use-cases","supply-chain"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v4.0.0","d"],{"children":[["slug","use-cases/supply-chain","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/a06cf6f745569492.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/5cbd65c3f6acde72.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/f6c89b1312bbb4b8.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/7f2f59f52b852b21.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Open-source cryptographic trust infrastructure for the AI era — verifiable identity, access control, and tamper-proof provenance.","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":{"dark":"/logo/aqua-logo.png","light":"/logo/aqua-logo.png"}},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./node_modules/specra/config/specra.config.schema.json","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","custom":[{"label":"Website","url":"https://dev.inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2026 Aqua. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/en/quickstart"},{"label":"API Reference","href":"/docs/v4.0.0/en/dev-tools/aquafier-api"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"}]}]},"banner":{"enabled":false,"message":"🎉 Aqua protocol - Let us build privacy infra together!","type":"error","dismissible":true},"env":{"AQUAFIER_URL":"https://aquafier.inblock.io"},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen bg-background flex items-center justify-center px-6","children":["$","div",null,{"className":"max-w-2xl mx-auto text-center space-y-6","children":[["$","div",null,{"className":"space-y-2","children":[["$","h1",null,{"className":"text-6xl md:text-8xl font-bold text-primary","children":"404"}],["$","h2",null,{"className":"text-2xl md:text-3xl font-semibold text-foreground","children":"Page Not Found"}]]}],["$","p",null,{"className":"text-muted-foreground text-lg max-w-md mx-auto","children":"The page you're looking for doesn't exist or may have been moved."}],["$","div",null,{"className":"flex flex-col sm:flex-row items-center justify-center gap-4 pt-6","children":[["$","$L6",null,{"asChild":true,"size":"lg","children":["$","$L7",null,{"href":"/","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-house mr-2 h-4 w-4","children":[["$","path","5wwlr5",{"d":"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"}],["$","path","1d0kgt",{"d":"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"}],"$undefined"]}],"Go to Homepage"]}]}],["$","$L6",null,{"asChild":true,"variant":"outline","size":"lg","children":"$L8"}]]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":["$L9",{"children":["$La",{"children":["$Lb",{"children":["$Lc",{},null,false,false]},["$Ld",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$Le",false]],"m":"$undefined","G":["$f",[]],"S":true}
 10:I[839694,["/_next/static/chunks/f6c89b1312bbb4b8.js","/_next/static/chunks/7f2f59f52b852b21.js","/_next/static/chunks/c6555158259ee219.js"],"VersionNotFound"]
 12:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/73e3194f06db260e.js"],"OutletBoundary"]
 13:"$Sreact.suspense"
@@ -4770,260 +4770,596 @@ Aqua Protocol v4 is designed for:
 - Read about specific use cases and implementation patterns
 
 For questions or feedback about v4, please visit the [Aqua Protocol GitHub repository](https://github.com/inblockio).
-2a:Tc7d,
+2a:T1beb,
+The Aqua CLI tooling ships **two binaries** built with Rust:
 
-The Aqua CLI is a command-line tool for creating, signing, witnessing, and verifying Aqua Protocol chains. Built with Rust, it provides a simple interface for working with Aqua chains without writing code.
-
-## Features
-
-- **Chain Validation**: Verify Aqua chain integrity and signatures
-- **Signing**: Add cryptographic signatures to revisions
-- **Witnessing**: Anchor chains to Ethereum networks (mainnet, Sepolia, Holesky)
-- **Batch Operations**: Process multiple chains efficiently
-- **Environment Configuration**: Flexible configuration via environment variables
+- **`aqua-cli`** - Full-featured tool for creating, signing, witnessing, verifying, and managing Aqua trees
+- **`aqua-notary`** - Simplified notary for signing files, linking identities, and publishing to a registry
 
 ## Installation
 
-### From Source
-
 ```bash
 git clone https://github.com/inblockio/aqua-cli-rs
-cd aqua-cli-rs
+cd aqua-cli-rs/aqua-rs-cli
 cargo build --release
 ```
 
-The binary will be available at `target/release/aqua-cli`
+After building, the binaries are located at:
 
-### Local Development
+- `./target/release/aqua-cli`
+- `./target/release/aqua-notary`
 
-```bash
-cargo build
-cd target/debug
-./aqua-cli --help
-```
+For development builds (`cargo build` without `--release`), use `./target/debug/` instead.
+
+Throughout this guide, commands are shown as `aqua-cli` and `aqua-notary` for brevity. Replace with the full path (e.g. `./target/release/aqua-cli`) when running locally.
 
 ## Configuration
 
-Configure the CLI using environment variables:
+### Keys File
 
-```bash
-# Optional: Domain identifier (auto-generated if not specified)
-export aqua_domain="your_domain"
-
-# Network for witnessing (default: sepolia)
-export aqua_network="sepolia"  # or "holesky" or "mainnet"
-
-# Verification platform (default: none)
-export verification_platform="alchemy"  # or "infura" or "self"
-
-# Blockchain for witnessing (default: none)
-export chain="sepolia"  # or "mainnet" or "holesky"
-
-# API key for Alchemy or Infura
-export api_key="your_api_key"
-
-# Path to keys file for signing
-export keys_file="path/to/keys.json"
-```
-
-## Basic Usage
-
-Get started with the CLI:
-
-```bash
-# Display help
-./aqua-cli --help
-
-# Verify an Aqua chain
-./aqua-cli verify --file chain.aqua.json
-
-# Sign a chain
-./aqua-cli sign --file chain.aqua.json --keys keys.json
-
-# Witness a chain on Sepolia testnet
-./aqua-cli witness --file chain.aqua.json --network sepolia
-```
-
-## Keys File Format
-
-Create a `keys.json` file for signing operations:
+Create a `keys.json` with the credentials you need:
 
 ```json
 {
-  "private_key": "your_private_key_hex",
-  "wallet_address": "0xYourEthereumAddress"
+  "signing": {
+    "mnemonic": "<BIP39 mnemonic phrase>",
+    "did_key": "<0x-prefixed Ed25519 private key>",
+    "p256_key": "<0x-prefixed P-256 private key>",
+    "secp256k1_key": "<0x-prefixed secp256k1 private key>"
+  },
+  "timestamp": {
+    "nostr_sk": "<Nostr secret key>"
+  }
 }
 ```
 
-**Security Note**: Use a wallet without MetaMask for CLI operations. Keep your keys file secure and never commit it to version control.
+You only need to populate the fields for the signing/witness methods you intend to use.
 
-## Versioning
+**Key resolution order:** `--keys-file` flag → `keys_file` env var → `keys.json` in the current directory.
 
-Ensure the CLI version matches your Aqua Protocol version:
-- Use CLI version `4.0.x` for Aqua Protocol v4 chains
-- Use CLI version `3.x.x` for Aqua Protocol v3 chains
+### Environment Variables
 
-## Testing
-
-The repository includes a test script for verifying functionality:
+Create a `.env` file (or export directly):
 
 ```bash
-# Grant execution permissions
-chmod +x test_aqua_cli.sh
+# Path to keys file
+keys_file=keys.json
 
-# Run tests
-./test_aqua_cli.sh
+# Ethereum witnessing
+alchemy_key=<your Alchemy API key>
+aqua_network=sepolia          # sepolia | holesky | mainnet
+rpc_url=<optional custom RPC URL>
+
+# TSA witnessing (optional)
+tsa_url=<custom TSA endpoint>
+
+# Twilio for email/phone verification (optional)
+TWILIO_ACCOUNT_SID=
+TWILIO_AUTH_TOKEN=
+TWILIO_VERIFY_SERVICE_SID=
 ```
 
-## Use Cases
+<Callout type="warning" title="Security Notice">Never commit your `keys.json` or `.env` files to version control.</Callout>
 
-- **Quick Verification**: Validate chain integrity without building applications
-- **CI/CD Integration**: Automate verification in deployment pipelines
-- **Batch Processing**: Process multiple chains in scripts
-- **Development Testing**: Quickly test chain creation and verification
-- **System Administration**: Manage Aqua chains from the command line
+---
+
+## aqua-cli
+
+### Notarize a File
+
+Create an Aqua tree from any source file:
+
+```bash
+aqua-cli -f document.pdf
+```
+
+This generates `document.pdf.aqua.json` containing the genesis revision. Use `--minimal` to skip anchor/template revisions and produce a single-revision genesis.
+
+### Verify
+
+```bash
+aqua-cli -a tree.aqua.json
+```
+
+Use `--level 1` for strict validation or `--level 2` (default) for standard validation. Add `-v` for verbose output.
+
+### Sign
+
+```bash
+# DID Ed25519 signing
+aqua-cli -s tree.aqua.json --sign-type did -k keys.json
+
+# BIP39 mnemonic signing
+aqua-cli -s tree.aqua.json --sign-type cli -k keys.json
+
+# P-256 signing
+aqua-cli -s tree.aqua.json --sign-type p256 -k keys.json
+
+# MetaMask-style secp256k1 signing
+aqua-cli -s tree.aqua.json --sign-type metamask -k keys.json
+```
+
+### Witness
+
+Anchor a tree to an external timestamping service:
+
+```bash
+# Ethereum on-chain (Sepolia, Holesky, or Mainnet)
+aqua-cli -w tree.aqua.json --witness-eth -k keys.json
+
+# Nostr network
+aqua-cli -w tree.aqua.json --witness-nostr -k keys.json
+
+# TSA (DigiCert timestamp authority)
+aqua-cli -w tree.aqua.json --witness-tsa
+```
+
+### Link Trees
+
+Combine child trees into a parent tree:
+
+```bash
+aqua-cli --link parent.aqua.json child1.aqua.json child2.aqua.json
+```
+
+### Delete Last Revision
+
+```bash
+aqua-cli -d tree.aqua.json
+```
+
+### Create Objects
+
+Create genesis object revisions from built-in templates:
+
+```bash
+# List available templates
+aqua-cli --list-templates
+
+# Create an object with a template and JSON payload
+aqua-cli --create-object --template-name email --payload '{"email":"user@example.com"}'
+
+# Or use a payload file
+aqua-cli --create-object --template-name file --payload data.json
+```
+
+Built-in templates include: `file`, `domain`, `email`, `name`, `phone`, `attestation`, `timestamp`, `multi-signer`, `trust-assertion`, `wallet-identification`, `access-grant`, `vendor-registration`, `template-registration`, `alias-registration`, `plugin-registration`.
+
+### DAG Branching
+
+Target a specific revision for branching with `--previous-hash`:
+
+```bash
+aqua-cli -s tree.aqua.json --sign-type did -k keys.json --previous-hash 0xabc123...
+```
+
+### Output Formats
+
+Export results as JSON, HTML, or PDF:
+
+```bash
+aqua-cli -a tree.aqua.json -o report.html
+aqua-cli -a tree.aqua.json -o report.pdf
+```
+
+---
+
+## Forest & Daemon
+
+The forest system lets you work with multiple Aqua trees simultaneously, resolving cross-tree dependencies like links, attestations, and templates.
+
+### Ephemeral Forest
+
+Load multiple trees into an in-memory forest:
+
+```bash
+aqua-cli --forest tree1.aqua.json tree2.aqua.json tree3.aqua.json
+```
+
+Add trust store entries with `--trust`:
+
+```bash
+aqua-cli --forest *.aqua.json --trust did:key:z6Mk... 3
+```
+
+Trust levels: `1` = marginal, `2` = full, `3` = ultimate.
+
+### Persistent Daemon
+
+Keep the forest alive as a background daemon with an idle timeout:
+
+```bash
+# Start daemon (default 600s idle timeout)
+aqua-cli --forest *.aqua.json --daemon
+
+# Custom timeout (seconds)
+aqua-cli --forest *.aqua.json --daemon 1800
+```
+
+The daemon listens on a Unix socket at `/tmp/aqua-forest-{PID}.sock` and provides an interactive REPL on stdin. Supported commands: `ingest`, `help`, `quit`.
+
+### Connect to a Daemon
+
+Open an interactive session to a running daemon:
+
+```bash
+aqua-cli --connect <PID>
+```
+
+### Push Results to a Daemon
+
+Send operation results from any `aqua-cli` command into a running daemon's forest:
+
+```bash
+aqua-cli -s tree.aqua.json --sign-type did -k keys.json --target <PID>
+```
+
+---
+
+## aqua-notary
+
+A simplified CLI for signing files, managing identity, and publishing to a notary registry.
+
+### Generate Keys
+
+```bash
+aqua-notary keygen
+```
+
+Generates an Ed25519 key pair and saves it to `~/.aqua/keys.json`. Use `--output` for a custom path or `--force` to overwrite existing keys.
+
+### Sign a File
+
+```bash
+aqua-notary sign document.pdf
+```
+
+Creates or updates `document.pdf.aqua.json`. Defaults to DID signing. Use `--sign-type` to choose `did`, `cli`, or `p256`.
+
+### Verify a File
+
+```bash
+aqua-notary verify document.pdf
+```
+
+### Inspect a Tree
+
+```bash
+aqua-notary inspect document.pdf
+```
+
+Displays the tree structure with all revisions, types, timestamps, and signers.
+
+### Link GitHub Identity
+
+Bind your GitHub account to your DID using the OAuth Device Flow:
+
+```bash
+aqua-notary identity github
+```
+
+This walks you through GitHub authentication, creates a public gist as verifiable proof, and saves the identity claim to `~/.aqua/identity_github.aqua.json`.
+
+### Publish to Registry
+
+```bash
+aqua-notary publish document.pdf
+```
+
+Signs the file (if not already signed), creates a GitHub gist, and submits to a notary server. Use `--server` to specify a custom registry URL (defaults to `http://localhost:1984`).
+
+Requires a GitHub identity claim - run `aqua-notary identity github` first.
+
+---
+
+## CLI Info
+
+```bash
+aqua-cli -i
+```
+
+Displays version, supported signing methods, witness types, and environment configuration.
 
 ## Repository
 
 **GitHub**: [github.com/inblockio/aqua-cli-rs](https://github.com/inblockio/aqua-cli-rs)
 
-## Documentation
+Built using the [Aqua Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) for Aqua Protocol v4.
+2b:T1beb,
+The Aqua CLI tooling ships **two binaries** built with Rust:
 
-For more information about Aqua Protocol v4:
-- [Schema Reference](/docs/v4.0.0/schema-reference/introduction)
-
-## Version
-
-**Current Version**: 4.0.0
-
-Built using the [Aqua Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) for Aqua Protocol v4 support.
-2b:Tc7d,
-
-The Aqua CLI is a command-line tool for creating, signing, witnessing, and verifying Aqua Protocol chains. Built with Rust, it provides a simple interface for working with Aqua chains without writing code.
-
-## Features
-
-- **Chain Validation**: Verify Aqua chain integrity and signatures
-- **Signing**: Add cryptographic signatures to revisions
-- **Witnessing**: Anchor chains to Ethereum networks (mainnet, Sepolia, Holesky)
-- **Batch Operations**: Process multiple chains efficiently
-- **Environment Configuration**: Flexible configuration via environment variables
+- **`aqua-cli`** - Full-featured tool for creating, signing, witnessing, verifying, and managing Aqua trees
+- **`aqua-notary`** - Simplified notary for signing files, linking identities, and publishing to a registry
 
 ## Installation
 
-### From Source
-
 ```bash
 git clone https://github.com/inblockio/aqua-cli-rs
-cd aqua-cli-rs
+cd aqua-cli-rs/aqua-rs-cli
 cargo build --release
 ```
 
-The binary will be available at `target/release/aqua-cli`
+After building, the binaries are located at:
 
-### Local Development
+- `./target/release/aqua-cli`
+- `./target/release/aqua-notary`
 
-```bash
-cargo build
-cd target/debug
-./aqua-cli --help
-```
+For development builds (`cargo build` without `--release`), use `./target/debug/` instead.
+
+Throughout this guide, commands are shown as `aqua-cli` and `aqua-notary` for brevity. Replace with the full path (e.g. `./target/release/aqua-cli`) when running locally.
 
 ## Configuration
 
-Configure the CLI using environment variables:
+### Keys File
 
-```bash
-# Optional: Domain identifier (auto-generated if not specified)
-export aqua_domain="your_domain"
-
-# Network for witnessing (default: sepolia)
-export aqua_network="sepolia"  # or "holesky" or "mainnet"
-
-# Verification platform (default: none)
-export verification_platform="alchemy"  # or "infura" or "self"
-
-# Blockchain for witnessing (default: none)
-export chain="sepolia"  # or "mainnet" or "holesky"
-
-# API key for Alchemy or Infura
-export api_key="your_api_key"
-
-# Path to keys file for signing
-export keys_file="path/to/keys.json"
-```
-
-## Basic Usage
-
-Get started with the CLI:
-
-```bash
-# Display help
-./aqua-cli --help
-
-# Verify an Aqua chain
-./aqua-cli verify --file chain.aqua.json
-
-# Sign a chain
-./aqua-cli sign --file chain.aqua.json --keys keys.json
-
-# Witness a chain on Sepolia testnet
-./aqua-cli witness --file chain.aqua.json --network sepolia
-```
-
-## Keys File Format
-
-Create a `keys.json` file for signing operations:
+Create a `keys.json` with the credentials you need:
 
 ```json
 {
-  "private_key": "your_private_key_hex",
-  "wallet_address": "0xYourEthereumAddress"
+  "signing": {
+    "mnemonic": "<BIP39 mnemonic phrase>",
+    "did_key": "<0x-prefixed Ed25519 private key>",
+    "p256_key": "<0x-prefixed P-256 private key>",
+    "secp256k1_key": "<0x-prefixed secp256k1 private key>"
+  },
+  "timestamp": {
+    "nostr_sk": "<Nostr secret key>"
+  }
 }
 ```
 
-**Security Note**: Use a wallet without MetaMask for CLI operations. Keep your keys file secure and never commit it to version control.
+You only need to populate the fields for the signing/witness methods you intend to use.
 
-## Versioning
+**Key resolution order:** `--keys-file` flag → `keys_file` env var → `keys.json` in the current directory.
 
-Ensure the CLI version matches your Aqua Protocol version:
-- Use CLI version `4.0.x` for Aqua Protocol v4 chains
-- Use CLI version `3.x.x` for Aqua Protocol v3 chains
+### Environment Variables
 
-## Testing
-
-The repository includes a test script for verifying functionality:
+Create a `.env` file (or export directly):
 
 ```bash
-# Grant execution permissions
-chmod +x test_aqua_cli.sh
+# Path to keys file
+keys_file=keys.json
 
-# Run tests
-./test_aqua_cli.sh
+# Ethereum witnessing
+alchemy_key=<your Alchemy API key>
+aqua_network=sepolia          # sepolia | holesky | mainnet
+rpc_url=<optional custom RPC URL>
+
+# TSA witnessing (optional)
+tsa_url=<custom TSA endpoint>
+
+# Twilio for email/phone verification (optional)
+TWILIO_ACCOUNT_SID=
+TWILIO_AUTH_TOKEN=
+TWILIO_VERIFY_SERVICE_SID=
 ```
 
-## Use Cases
+<Callout type="warning" title="Security Notice">Never commit your `keys.json` or `.env` files to version control.</Callout>
 
-- **Quick Verification**: Validate chain integrity without building applications
-- **CI/CD Integration**: Automate verification in deployment pipelines
-- **Batch Processing**: Process multiple chains in scripts
-- **Development Testing**: Quickly test chain creation and verification
-- **System Administration**: Manage Aqua chains from the command line
+---
+
+## aqua-cli
+
+### Notarize a File
+
+Create an Aqua tree from any source file:
+
+```bash
+aqua-cli -f document.pdf
+```
+
+This generates `document.pdf.aqua.json` containing the genesis revision. Use `--minimal` to skip anchor/template revisions and produce a single-revision genesis.
+
+### Verify
+
+```bash
+aqua-cli -a tree.aqua.json
+```
+
+Use `--level 1` for strict validation or `--level 2` (default) for standard validation. Add `-v` for verbose output.
+
+### Sign
+
+```bash
+# DID Ed25519 signing
+aqua-cli -s tree.aqua.json --sign-type did -k keys.json
+
+# BIP39 mnemonic signing
+aqua-cli -s tree.aqua.json --sign-type cli -k keys.json
+
+# P-256 signing
+aqua-cli -s tree.aqua.json --sign-type p256 -k keys.json
+
+# MetaMask-style secp256k1 signing
+aqua-cli -s tree.aqua.json --sign-type metamask -k keys.json
+```
+
+### Witness
+
+Anchor a tree to an external timestamping service:
+
+```bash
+# Ethereum on-chain (Sepolia, Holesky, or Mainnet)
+aqua-cli -w tree.aqua.json --witness-eth -k keys.json
+
+# Nostr network
+aqua-cli -w tree.aqua.json --witness-nostr -k keys.json
+
+# TSA (DigiCert timestamp authority)
+aqua-cli -w tree.aqua.json --witness-tsa
+```
+
+### Link Trees
+
+Combine child trees into a parent tree:
+
+```bash
+aqua-cli --link parent.aqua.json child1.aqua.json child2.aqua.json
+```
+
+### Delete Last Revision
+
+```bash
+aqua-cli -d tree.aqua.json
+```
+
+### Create Objects
+
+Create genesis object revisions from built-in templates:
+
+```bash
+# List available templates
+aqua-cli --list-templates
+
+# Create an object with a template and JSON payload
+aqua-cli --create-object --template-name email --payload '{"email":"user@example.com"}'
+
+# Or use a payload file
+aqua-cli --create-object --template-name file --payload data.json
+```
+
+Built-in templates include: `file`, `domain`, `email`, `name`, `phone`, `attestation`, `timestamp`, `multi-signer`, `trust-assertion`, `wallet-identification`, `access-grant`, `vendor-registration`, `template-registration`, `alias-registration`, `plugin-registration`.
+
+### DAG Branching
+
+Target a specific revision for branching with `--previous-hash`:
+
+```bash
+aqua-cli -s tree.aqua.json --sign-type did -k keys.json --previous-hash 0xabc123...
+```
+
+### Output Formats
+
+Export results as JSON, HTML, or PDF:
+
+```bash
+aqua-cli -a tree.aqua.json -o report.html
+aqua-cli -a tree.aqua.json -o report.pdf
+```
+
+---
+
+## Forest & Daemon
+
+The forest system lets you work with multiple Aqua trees simultaneously, resolving cross-tree dependencies like links, attestations, and templates.
+
+### Ephemeral Forest
+
+Load multiple trees into an in-memory forest:
+
+```bash
+aqua-cli --forest tree1.aqua.json tree2.aqua.json tree3.aqua.json
+```
+
+Add trust store entries with `--trust`:
+
+```bash
+aqua-cli --forest *.aqua.json --trust did:key:z6Mk... 3
+```
+
+Trust levels: `1` = marginal, `2` = full, `3` = ultimate.
+
+### Persistent Daemon
+
+Keep the forest alive as a background daemon with an idle timeout:
+
+```bash
+# Start daemon (default 600s idle timeout)
+aqua-cli --forest *.aqua.json --daemon
+
+# Custom timeout (seconds)
+aqua-cli --forest *.aqua.json --daemon 1800
+```
+
+The daemon listens on a Unix socket at `/tmp/aqua-forest-{PID}.sock` and provides an interactive REPL on stdin. Supported commands: `ingest`, `help`, `quit`.
+
+### Connect to a Daemon
+
+Open an interactive session to a running daemon:
+
+```bash
+aqua-cli --connect <PID>
+```
+
+### Push Results to a Daemon
+
+Send operation results from any `aqua-cli` command into a running daemon's forest:
+
+```bash
+aqua-cli -s tree.aqua.json --sign-type did -k keys.json --target <PID>
+```
+
+---
+
+## aqua-notary
+
+A simplified CLI for signing files, managing identity, and publishing to a notary registry.
+
+### Generate Keys
+
+```bash
+aqua-notary keygen
+```
+
+Generates an Ed25519 key pair and saves it to `~/.aqua/keys.json`. Use `--output` for a custom path or `--force` to overwrite existing keys.
+
+### Sign a File
+
+```bash
+aqua-notary sign document.pdf
+```
+
+Creates or updates `document.pdf.aqua.json`. Defaults to DID signing. Use `--sign-type` to choose `did`, `cli`, or `p256`.
+
+### Verify a File
+
+```bash
+aqua-notary verify document.pdf
+```
+
+### Inspect a Tree
+
+```bash
+aqua-notary inspect document.pdf
+```
+
+Displays the tree structure with all revisions, types, timestamps, and signers.
+
+### Link GitHub Identity
+
+Bind your GitHub account to your DID using the OAuth Device Flow:
+
+```bash
+aqua-notary identity github
+```
+
+This walks you through GitHub authentication, creates a public gist as verifiable proof, and saves the identity claim to `~/.aqua/identity_github.aqua.json`.
+
+### Publish to Registry
+
+```bash
+aqua-notary publish document.pdf
+```
+
+Signs the file (if not already signed), creates a GitHub gist, and submits to a notary server. Use `--server` to specify a custom registry URL (defaults to `http://localhost:1984`).
+
+Requires a GitHub identity claim - run `aqua-notary identity github` first.
+
+---
+
+## CLI Info
+
+```bash
+aqua-cli -i
+```
+
+Displays version, supported signing methods, witness types, and environment configuration.
 
 ## Repository
 
 **GitHub**: [github.com/inblockio/aqua-cli-rs](https://github.com/inblockio/aqua-cli-rs)
 
-## Documentation
-
-For more information about Aqua Protocol v4:
-- [Schema Reference](/docs/v4.0.0/schema-reference/introduction)
-
-## Version
-
-**Current Version**: 4.0.0
-
-Built using the [Aqua Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) for Aqua Protocol v4 support.
+Built using the [Aqua Rust SDK](/docs/v4.0.0/dev-tools/aqua-sdk) for Aqua Protocol v4.
 2c:Tebf,This Page contains sdk details of version 4 of the Aqua Protocol.To Use version 3 which is stable visit [quickstart](/docs/v4.0.0/quickstart)
 The Aqua SDK is a Rust library that provides the core functionality for creating, signing, witnessing, and verifying Aqua Protocol chains. It supports Aqua Protocol v4 and includes WebAssembly (WASM) bindings for cross-platform compatibility.
 
@@ -12086,7 +12422,7 @@ A: Verification of existing chains works offline using cryptographic signatures.
 - [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) - Verify credentials and certifications
 - [Quick Start](/docs/v4.0.0/quickstart) - Get started with supply chain tracking
 - [Schema Reference](/docs/v4.0.0/schema-reference/introduction) - Technical specifications
-11:["$","$13",null,{"fallback":["$","$L19",null,{}],"children":[["$","$L1a",null,{"header":["$","$L1b",null,{"currentVersion":"v4.0.0","versions":["v1.1.0","v2.0.2","v3.0.2","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$1c","reading_time":5,"word_count":888,"locale":"en"},"content":"$1d","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$1e","reading_time":5,"word_count":842,"locale":"en"},"content":"$1f"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$20","reading_time":7,"word_count":1244,"locale":"en"},"content":"$21"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$22","reading_time":5,"word_count":941,"locale":"en"},"content":"$23","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$24","reading_time":9,"word_count":1674,"locale":"en"},"content":"$25"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$26","reading_time":8,"word_count":1467,"locale":"en"},"content":"$27","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$28","reading_time":4,"word_count":686,"locale":"en"},"content":"$29"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Install a binary for notarization and verification","icon":"terminal","content":"$2a","reading_time":3,"word_count":406,"locale":"en"},"content":"$2b","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$2c","reading_time":2,"word_count":387,"locale":"en"},"content":"$2d","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$2e","reading_time":3,"word_count":573,"locale":"en"},"content":"$2f","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$30","reading_time":11,"word_count":2009,"locale":"en"},"content":"$31","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$32","reading_time":6,"word_count":1048,"locale":"en"},"content":"$33","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$34","reading_time":3,"word_count":461,"locale":"en"},"content":"$35","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$36","reading_time":7,"word_count":1393,"locale":"en"},"content":"$37","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$38","reading_time":7,"word_count":1369,"locale":"en"},"content":"$39","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$3a","reading_time":9,"word_count":1682,"locale":"en"},"content":"$3b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$3c","reading_time":10,"word_count":1863,"locale":"en"},"content":"$3d","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$3e","reading_time":5,"word_count":865,"locale":"en"},"content":"$3f","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$40","reading_time":6,"word_count":1189,"locale":"en"},"content":"$41","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$42","reading_time":12,"word_count":2274,"locale":"en"},"content":"$43","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"}],"version":"v4.0.0","children":"$L44","toc":"$L45","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L46","$L47","$L48"]}]
+11:["$","$13",null,{"fallback":["$","$L19",null,{}],"children":[["$","$L1a",null,{"header":["$","$L1b",null,{"currentVersion":"v4.0.0","versions":["v1.1.0","v2.0.2","v3.0.2","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"schema-reference/aqua-tree","filePath":"schema-reference/aqua-tree","title":"Aqua Tree","meta":{"title":"Aqua Tree","description":"The root data structure containing revisions and metadata","sidebar_position":1,"content":"$1c","reading_time":5,"word_count":888,"locale":"en"},"content":"$1d","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Account & verify data in seconds using cryptographic proof","icon":"door-open","sidebar_position":1,"content":"$1e","reading_time":5,"word_count":842,"locale":"en"},"content":"$1f"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"This guide will get you up and running with Aqua Protocol quickly. You'll create your first Aqua chain, sign it, and optionally witness it on a blockchain.","icon":"rocket","sidebar_position":2,"content":"$20","reading_time":7,"word_count":1244,"locale":"en"},"content":"$21"},{"slug":"schema-reference/file-index","filePath":"schema-reference/file-index","title":"File Index","meta":{"title":"File Index","description":"Mapping content hashes to human-readable filenames","sidebar_position":2,"content":"$22","reading_time":5,"word_count":941,"locale":"en"},"content":"$23","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"development","filePath":"development","title":"Development Guide","meta":{"title":"Development Guide","description":"This guide covers everything you need to develop applications with Aqua Protocol, including signing methods, witnessing options, and SDK usage.","icon":"code","sidebar_position":3,"content":"$24","reading_time":9,"word_count":1674,"locale":"en"},"content":"$25"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Aqua Protocol Schema Reference ","meta":{"title":"Aqua Protocol Schema Reference ","description":"Complete technical reference for Aqua Protocol v4","sidebar_position":3,"content":"$26","reading_time":8,"word_count":1467,"locale":"en"},"content":"$27","categoryLabel":"Schema Reference","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"version-info","filePath":"version-info","title":"Version v4 (beta)","meta":{"title":"Version v4 (beta)","description":"Concepts, protocol structure, and getting started with Aqua Protocol v4","sidebar_position":4,"icon":"git-commit-horizontal","content":"$28","reading_time":4,"word_count":686,"locale":"en"},"content":"$29"},{"slug":"dev-tools/aqua-cli","filePath":"dev-tools/aqua-cli","title":"Aqua CLI","meta":{"title":"Aqua CLI","description":"Command-line tools for notarization, signing, witnessing, and verification","icon":"terminal","content":"$2a","reading_time":5,"word_count":914,"locale":"en"},"content":"$2b","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aqua-sdk","filePath":"dev-tools/aqua-sdk","title":"Aqua SDK","meta":{"title":"Aqua SDK","description":"A library for use in a code base for  notarization and verification","icon":"code","content":"$2c","reading_time":2,"word_count":387,"locale":"en"},"content":"$2d","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"dev-tools/aquafier-api","filePath":"dev-tools/aquafier-api","title":"Aquafier API","meta":{"title":"Aquafier API","description":" A http API for notarization and verification ","icon":"code","content":"$2e","reading_time":3,"word_count":573,"locale":"en"},"content":"$2f","categoryLabel":"Development Tools","categoryPosition":3,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/link-revision","filePath":"schema-reference/revision/link-revision","title":"Link Revision","meta":{"title":"Link Revision","description":"Schema specification for Link Revisions in Aqua Protocol v4","content":"$30","reading_time":11,"word_count":2009,"locale":"en"},"content":"$31","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/object-revision","filePath":"schema-reference/revision/object-revision","title":"Object Revision","meta":{"title":"Object Revision","description":"Schema specification for Object Revisions in Aqua Protocol v4","content":"$32","reading_time":6,"word_count":1048,"locale":"en"},"content":"$33","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/revision","filePath":"schema-reference/revision/revision","title":"Aqua Protocol Revisions","meta":{"title":"Aqua Protocol Revisions","description":"What is a revision , what maked up a revision ?","content":"$34","reading_time":3,"word_count":461,"locale":"en"},"content":"$35","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/signing-revision","filePath":"schema-reference/revision/signing-revision","title":"Signature Revision","meta":{"title":"Signature Revision","description":"Schema specification for Signature Revisions in Aqua Protocol v4","content":"$36","reading_time":7,"word_count":1393,"locale":"en"},"content":"$37","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/template-revision","filePath":"schema-reference/revision/template-revision","title":"Template Revision","meta":{"title":"Template Revision","description":"Schema specification for Template Revisions in Aqua Protocol v4","content":"$38","reading_time":7,"word_count":1369,"locale":"en"},"content":"$39","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"schema-reference/revision/witness-revision","filePath":"schema-reference/revision/witness-revision","title":"Witness Revision","meta":{"title":"Witness Revision","description":"Schema specification for Witness Revisions in Aqua Protocol v4","content":"$3a","reading_time":9,"word_count":1682,"locale":"en"},"content":"$3b","categoryLabel":"Revision Types","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":true,"categoryIcon":"$undefined","categoryTabGroup":"$undefined"},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail.","content":"$3c","reading_time":10,"word_count":1863,"locale":"en"},"content":"$3d","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Establish trust with verifiable self-sovereign identity claims and attestations","content":"$3e","reading_time":5,"word_count":865,"locale":"en"},"content":"$3f","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.","content":"$40","reading_time":6,"word_count":1189,"locale":"en"},"content":"$41","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations","content":"$42","reading_time":12,"word_count":2274,"locale":"en"},"content":"$43","categoryLabel":"Use Cases","categoryPosition":2,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"}],"version":"v4.0.0","children":"$L44","toc":"$L45","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L46","$L47","$L48"]}]
 4f:I[839694,["/_next/static/chunks/f6c89b1312bbb4b8.js","/_next/static/chunks/7f2f59f52b852b21.js","/_next/static/chunks/c6555158259ee219.js"],"TableOfContents"]
 50:I[839694,["/_next/static/chunks/f6c89b1312bbb4b8.js","/_next/static/chunks/7f2f59f52b852b21.js","/_next/static/chunks/c6555158259ee219.js"],"MdxHotReload"]
 51:I[839694,["/_next/static/chunks/f6c89b1312bbb4b8.js","/_next/static/chunks/7f2f59f52b852b21.js","/_next/static/chunks/c6555158259ee219.js"],"HotReloadIndicator"]
