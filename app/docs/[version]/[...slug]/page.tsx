@@ -109,12 +109,20 @@ function V4StealthPage() {
         <p className="text-gray-500 font-mono text-sm leading-relaxed mb-8">
           Something is coming.<br />Stay tuned.
         </p>
-        <a
-          href="/v4"
-          className="inline-flex items-center gap-2 px-5 py-2.5 border border-green-500/30 text-green-400 font-mono text-sm rounded-lg hover:bg-green-500/10 transition-all"
-        >
-          LEARN MORE
-        </a>
+        <div className="flex flex-col items-center gap-3">
+          <a
+            href="/v4"
+            className="inline-flex items-center gap-2 px-5 py-2.5 border border-green-500/30 text-green-400 font-mono text-sm rounded-lg hover:bg-green-500/10 transition-all"
+          >
+            LEARN MORE
+          </a>
+          <a
+            href="/docs/v3.0.2/introduction"
+            className="text-xs font-mono text-gray-600 hover:text-gray-400 transition-colors underline underline-offset-2"
+          >
+            Read our older docs (v3)
+          </a>
+        </div>
       </div>
     </div>
   )
