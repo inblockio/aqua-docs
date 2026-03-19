@@ -16,6 +16,11 @@ export async function generateStaticParams() {
 
 export default async function VersionIndexPage({ params }: PageProps) {
   const { version } = await params
+
+  if (version === "v4.0.0") {
+    redirect("/v4")
+  }
+
   const docs = await getCachedAllDocs(version)
 
   if (docs.length === 0) {

@@ -38,6 +38,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { version, slug: slugArray } = await params
   const slug = slugArray.join("/")
 
+  if (version === "v4.0.0") {
+    return { title: "Aqua V4 — Coming Soon", description: "Something is coming. Stay tuned." }
+  }
+
   const doc = await getCachedDocBySlug(slug, version)
 
   if (!doc) {
@@ -91,9 +95,36 @@ export async function generateStaticParams() {
   return params
 }
 
+function V4StealthPage() {
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#050508] text-gray-100 px-6">
+      <div className="text-center max-w-md">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/20 bg-green-500/5 mb-8">
+          <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+          <span className="text-xs font-mono text-green-400/80 tracking-widest">IN DEVELOPMENT</span>
+        </div>
+        <h1 className="text-3xl font-bold text-white mb-4 font-mono">
+          AQUA <span className="text-green-400">V4</span>
+        </h1>
+        <p className="text-gray-500 font-mono text-sm leading-relaxed mb-8">
+          Something is coming.<br />Stay tuned.
+        </p>
+        <a
+          href="/v4"
+          className="inline-flex items-center gap-2 px-5 py-2.5 border border-green-500/30 text-green-400 font-mono text-sm rounded-lg hover:bg-green-500/10 transition-all"
+        >
+          LEARN MORE
+        </a>
+      </div>
+    </div>
+  )
+}
+
 export default async function DocPage({ params }: PageProps) {
   const { version, slug: slugArray } = await params
   const slug = slugArray.join("/")
+
+  if (version === "v4.0.0") return <V4StealthPage />
 
   const allDocs = await getCachedAllDocs(version)
   const versions = getCachedVersions()
