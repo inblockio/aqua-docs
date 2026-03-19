@@ -50,6 +50,11 @@
     "permanent": false
   },
   {
+    "source": "/docs/v4.0.0/:path*",
+    "destination": "/",
+    "permanent": false
+  },
+  {
     "source": "/docs",
     "destination": "/",
     "permanent": false

@@ -106,8 +106,24 @@ export default function V4LandingPage() {
     <div className="min-h-screen bg-[#050508] text-gray-100 overflow-x-hidden">
       <HackerAnimation scrollRatioRef={scrollRatioRef} />
 
+      {/* ── STEALTH BANNER ── */}
+      <div className="fixed top-0 left-0 right-0 z-[60] flex items-center justify-center gap-3 px-4 py-2 bg-green-500/10 border-b border-green-500/20 backdrop-blur-md">
+        <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse shrink-0" />
+        <p className="text-xs font-mono text-green-300/90 text-center">
+          V4 is going stealth — something big is building.{" "}
+          <Link
+            href="https://x.com/inblockio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:text-green-400 transition-colors"
+          >
+            Stay tuned.
+          </Link>
+        </p>
+      </div>
+
       {/* ── NAV ── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-green-900/30 bg-[#050508]/80 backdrop-blur-md">
+      <nav className="fixed top-[36px] left-0 right-0 z-50 border-b border-green-900/30 bg-[#050508]/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 h-16">
           <Link href="/" className="flex items-center gap-3 group">
             <img src="/logo/aqua-logo.png" alt="Aqua" className="h-8 w-auto" />
@@ -117,10 +133,12 @@ export default function V4LandingPage() {
           </Link>
           <div className="flex items-center gap-4">
             <Link
-              href="/docs/v4.0.0/welcome"
+              href="https://x.com/inblockio"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden sm:block text-sm text-gray-400 hover:text-green-400 transition-colors font-mono"
             >
-              DOCS
+              UPDATES
             </Link>
             <Link
               href="https://github.com/inblockio"
@@ -131,17 +149,19 @@ export default function V4LandingPage() {
               GITHUB
             </Link>
             <Link
-              href="/docs/v4.0.0/welcome"
+              href="https://calendly.com/tim-bansemer/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-4 py-2 bg-green-500/10 border border-green-500/30 text-green-400 text-sm font-mono rounded hover:bg-green-500/20 transition-all"
             >
-              GET STARTED
+              GET IN TOUCH
             </Link>
           </div>
         </div>
       </nav>
 
       {/* ── HERO ── */}
-      <section className="relative z-10 min-h-screen flex items-center justify-center pt-16">
+      <section className="relative z-10 min-h-screen flex items-center justify-center pt-28">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <div className={`transition-all duration-1000 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             {/* Alert badge */}
@@ -182,10 +202,12 @@ export default function V4LandingPage() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/docs/v4.0.0/welcome"
+                href="https://calendly.com/tim-bansemer/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group px-8 py-4 bg-green-500 text-black font-bold font-mono rounded-lg hover:bg-green-400 transition-all flex items-center gap-2 text-lg"
               >
-                DOCUMENTATION
+                GET IN TOUCH
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
@@ -797,11 +819,13 @@ export default function V4LandingPage() {
                     cryptographic trust baked in from day one.
                   </p>
                   <Link
-                    href="/docs/v4.0.0/welcome"
+                    href="https://github.com/inblockio"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-5 py-2.5 border border-green-500/30 text-green-400 text-sm font-mono rounded-lg hover:bg-green-500/10 transition-all"
                   >
-                    READ THE DOCS
-                    <ArrowRight className="h-4 w-4" />
+                    VIEW ON GITHUB
+                    <ExternalLink className="h-4 w-4" />
                   </Link>
                 </div>
               </div>
@@ -934,52 +958,36 @@ export default function V4LandingPage() {
               <div className="absolute inset-0 bg-gradient-to-b from-green-500/5 to-transparent" />
               <div className="relative">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/30 bg-green-500/5 mb-8">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span className="text-sm font-mono text-green-400">STATUS: READY TO DEPLOY</span>
+                  <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                  <span className="text-sm font-mono text-green-400">V4 IS GOING STEALTH — STAY TUNED</span>
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                  Secure the AI era.<br />
-                  <span className="text-green-400">Start with Aqua.</span>
+                  Something big<br />
+                  <span className="text-green-400">is building.</span>
                 </h2>
                 <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
-                  Open-source. Decentralized. Cryptographically sound.
+                  Want early access or a private briefing?
                   <br />
-                  <span className="text-green-400/80 font-mono">Build free. Deploy enterprise.</span>
+                  <span className="text-green-400/80 font-mono">Get in touch before we go dark.</span>
                 </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-                  <Link
-                    href="https://aquafier.inblock.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center gap-2 px-4 py-4 border border-sky-500/30 text-sky-400 font-mono text-sm rounded-lg hover:bg-sky-500/10 transition-all"
-                  >
-                    <MousePointerClick className="h-5 w-5" />
-                    EXPLORE
-                  </Link>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <Link
                     href="https://calendly.com/tim-bansemer/30min"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-col items-center gap-2 px-4 py-4 border border-amber-500/30 text-amber-400 font-mono text-sm rounded-lg hover:bg-amber-500/10 transition-all"
+                    className="px-8 py-4 bg-green-500 text-black font-bold font-mono rounded-lg hover:bg-green-400 transition-all flex items-center gap-2 text-lg"
                   >
-                    <TrendingUp className="h-5 w-5" />
-                    INVEST
+                    BOOK A CALL
+                    <ExternalLink className="h-5 w-5" />
                   </Link>
                   <Link
-                    href="https://calendly.com/tim-bansemer/30min"
+                    href="https://x.com/inblockio"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-col items-center gap-2 px-4 py-4 border border-violet-500/30 text-violet-400 font-mono text-sm rounded-lg hover:bg-violet-500/10 transition-all"
+                    className="px-8 py-4 border border-gray-600 text-gray-300 font-mono rounded-lg hover:border-green-500/50 hover:text-green-400 transition-all flex items-center gap-2 text-lg"
                   >
-                    <Building2 className="h-5 w-5" />
-                    GET A DEMO
-                  </Link>
-                  <Link
-                    href="/docs/v4.0.0/welcome"
-                    className="flex flex-col items-center gap-2 px-4 py-4 border border-green-500/30 text-green-400 font-mono text-sm rounded-lg hover:bg-green-500/10 transition-all"
-                  >
-                    <Terminal className="h-5 w-5" />
-                    BUILD
+                    FOLLOW UPDATES
+                    <ExternalLink className="h-5 w-5" />
                   </Link>
                 </div>
               </div>
@@ -1001,9 +1009,6 @@ export default function V4LandingPage() {
             </Link>
             <Link href="https://x.com/inblockio" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-400 transition-colors text-sm font-mono">
               X
-            </Link>
-            <Link href="/docs/v4.0.0/welcome" className="text-gray-500 hover:text-green-400 transition-colors text-sm font-mono">
-              DOCS
             </Link>
           </div>
           <div className="text-xs text-gray-600 font-mono">
