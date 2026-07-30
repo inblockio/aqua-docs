@@ -52,7 +52,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {
       title,
       description,
-      openGraph: { title, description, type: "website" },
+      // Every v4 slug renders the same teaser, so they share one canonical URL
+      // rather than presenting ~47 duplicate pages to crawlers.
+      alternates: { canonical: "/docs/v4.0.0/welcome" },
+      openGraph: { title, description, url: "/docs/v4.0.0/welcome", type: "website" },
       twitter: { card: "summary", title, description },
     }
   }
