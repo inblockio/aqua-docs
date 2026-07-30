@@ -37,4 +37,4 @@ Aqua uses a hash-chain data structure called an **Aqua Tree** where each revisio
 
 ## Organization
 
-Built by inBlock.io. Fully open source under a permissive license. Enterprises deploy with production-grade infrastructure, compliance, and SLAs.
+Built by inblock.io assets GmbH. Fully open source under a permissive license. Enterprises deploy with production-grade infrastructure, compliance, and SLAs.
