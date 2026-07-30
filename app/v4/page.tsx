@@ -1,49 +1,110 @@
 "use client"
 
 import Link from "next/link"
-import { Shield, Fingerprint, Lock, ArrowRight, ExternalLink, Eye, KeyRound, FileCheck, Bot, AlertTriangle, CheckCircle, Globe, Code, Scale, Landmark, Clock, LockKeyhole, MousePointerClick, TrendingUp, Building2, Terminal, Signature } from "lucide-react"
-import HackerAnimation from "./hacker-animation"
-import { useEffect, useState, useRef } from "react"
+import {
+  ArrowRight,
+  AlertTriangle,
+  Bot,
+  Building2,
+  CheckCircle,
+  Clock,
+  Code,
+  ExternalLink,
+  Eye,
+  FileCheck,
+  Fingerprint,
+  Globe,
+  KeyRound,
+  Landmark,
+  LockKeyhole,
+  Quote,
+  Scale,
+  Shield,
+  ShieldCheck,
+  Signature,
+  Terminal,
+  TrendingUp,
+} from "lucide-react"
+import { useEffect, useRef, useState } from "react"
 
-/* ─── Typewriter component ─── */
-function Typewriter({ texts, className }: { texts: string[]; className?: string }) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [displayText, setDisplayText] = useState("")
-  const [isDeleting, setIsDeleting] = useState(false)
+import AquaAnimation from "../components/aqua-animation"
+import { ThemeToggle } from "../components/theme-toggle-client"
 
-  useEffect(() => {
-    const text = texts[currentIndex]
-    const speed = isDeleting ? 30 : 70
+/**
+ * /v4 landing page. Same product, same voice as the v4 teaser rendered at
+ * /docs/v4.0.0/welcome: an open standard under active development, presented
+ * calmly. Design primitives (--v4-* tokens, .v4-* atmosphere classes) are
+ * global and defined in app/globals.css; fonts arrive as CSS variables from
+ * app/v4/layout.tsx because this file is a client component.
+ *
+ * Accent family: azure #1a7fe8. The only second colour is the muted warning
+ * register (--v4-warn-*), used for "unresolved", never as an alarm.
+ */
 
-    if (!isDeleting && displayText === text) {
-      const timeout = setTimeout(() => setIsDeleting(true), 2000)
-      return () => clearTimeout(timeout)
-    }
-
-    if (isDeleting && displayText === "") {
-      setIsDeleting(false)
-      setCurrentIndex((prev) => (prev + 1) % texts.length)
-      return
-    }
-
-    const timeout = setTimeout(() => {
-      setDisplayText(
-        isDeleting ? text.substring(0, displayText.length - 1) : text.substring(0, displayText.length + 1)
-      )
-    }, speed)
-    return () => clearTimeout(timeout)
-  }, [displayText, isDeleting, currentIndex, texts])
-
-  return (
-    <span className={className}>
-      {displayText}
-      <span className="animate-pulse">_</span>
-    </span>
-  )
+// Azure-family palette for the hash-chain canvas, identical to the teaser so
+// the two pages read as one system. Module scope keeps the reference stable
+// across renders (AquaAnimation lists nodeColors in its effect deps).
+const AZURE_NODE_COLORS: Partial<
+  Record<"genesis" | "revision" | "signature" | "witness", [number, number, number]>
+> = {
+  genesis: [26, 127, 232], // azure-500
+  revision: [76, 155, 239], // azure-400
+  signature: [18, 101, 196], // azure-700
+  witness: [124, 184, 242], // azure-300
 }
 
-/* ─── Scroll-reveal section ─── */
-function RevealSection({ children, className, delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
+/* Shared class recipes. Written out as literals so Tailwind's scanner sees
+   every utility, then composed by reference at the call sites. */
+const DISPLAY = "font-[family-name:var(--font-v4-display)]"
+
+const CARD =
+  "rounded-2xl border border-slate-900/15 bg-white/75 backdrop-blur-md dark:border-white/10 dark:bg-white/[0.04]"
+
+const CARD_HOVER =
+  "transition-all duration-300 hover:border-[#1a7fe8]/50 hover:shadow-[0_12px_40px_-10px_rgba(26,127,232,0.35)] dark:hover:border-[#1a7fe8]/60 dark:hover:shadow-[0_12px_40px_-10px_rgba(26,127,232,0.3)]"
+
+const WARN_CARD =
+  "rounded-2xl border border-[var(--v4-warn-border)] bg-[var(--v4-warn-bg)] backdrop-blur-md"
+
+const INNER_PANEL =
+  "rounded-xl border border-slate-900/10 bg-white/60 dark:border-white/10 dark:bg-white/[0.03]"
+
+const PANEL_HEADER =
+  "flex items-center gap-2 border-b border-slate-900/10 bg-slate-900/[0.03] px-5 py-3 dark:border-white/10 dark:bg-white/[0.03]"
+
+const SECTION = "relative border-t border-slate-900/10 py-20 dark:border-white/10 sm:py-24"
+
+const EYEBROW =
+  "text-sm font-semibold uppercase tracking-[0.25em] text-slate-500 dark:text-white/50"
+
+const ICON_TILE =
+  "flex items-center justify-center rounded-xl bg-[#1a7fe8]/10 dark:bg-[#1a7fe8]/15"
+
+const BODY = "text-slate-600 dark:text-white/70"
+const MUTED = "text-slate-500 dark:text-white/50"
+
+const GHOST_BUTTON =
+  "inline-flex min-h-[44px] items-center gap-2 rounded-full border border-slate-900/20 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-[#1a7fe8]/50 hover:text-[var(--v4-accent-text)] dark:border-white/20 dark:text-white/80 dark:hover:border-[#1a7fe8]/60 dark:hover:text-[var(--v4-azure-300)]"
+
+const HERO_QUESTIONS = [
+  "Who created this AI output?",
+  "Can I trust this data source?",
+  "Was this model tampered with?",
+  "Is this identity verified?",
+  "Who authorized this access?",
+]
+
+/* Scroll-reveal section. Under prefers-reduced-motion the content is simply
+   present: no transition, no dependence on the observer firing. */
+function RevealSection({
+  children,
+  className,
+  delay = 0,
+}: {
+  children: React.ReactNode
+  className?: string
+  delay?: number
+}) {
   const [visible, setVisible] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
@@ -74,7 +135,9 @@ function RevealSection({ children, className, delay = 0 }: { children: React.Rea
   return (
     <div
       ref={ref}
-      className={`transition-[opacity,transform] duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"} ${className ?? ""}`}
+      className={`transition-[opacity,transform] duration-700 motion-reduce:translate-y-0 motion-reduce:opacity-100 motion-reduce:transition-none ${
+        visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+      } ${className ?? ""}`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
@@ -82,940 +145,1104 @@ function RevealSection({ children, className, delay = 0 }: { children: React.Rea
   )
 }
 
-/* ─── Main Page ─── */
 export default function V4LandingPage() {
-  const [mounted, setMounted] = useState(false)
-  const scrollRatioRef = useRef(0)
-  const solutionRef = useRef<HTMLElement>(null)
-
-  useEffect(() => setMounted(true), [])
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!solutionRef.current) return
-      const rect = solutionRef.current.getBoundingClientRect()
-      const viewportH = window.innerHeight
-      const rawRatio = 1 - rect.top / viewportH
-      scrollRatioRef.current = Math.max(0, Math.min(1, rawRatio))
-    }
-    window.addEventListener("scroll", handleScroll, { passive: true })
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
   return (
-    <div className="min-h-screen bg-[#050508] text-gray-100 overflow-x-hidden">
-      <HackerAnimation scrollRatioRef={scrollRatioRef} />
-
-      {/* ── STEALTH BANNER ── */}
-      <div className="fixed top-0 left-0 right-0 z-[60] flex items-center justify-center gap-3 px-4 py-2 bg-green-500/10 border-b border-green-500/20 backdrop-blur-md">
-        <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse shrink-0" />
-        <p className="text-xs font-mono text-green-300/90 text-center">
-          V4 is going stealth — something big is building.{" "}
-          <Link
-            href="https://x.com/inblockio"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-2 hover:text-green-400 transition-colors"
-          >
-            Stay tuned.
-          </Link>
-        </p>
-      </div>
-
-      {/* ── NAV ── */}
-      <nav className="fixed top-[36px] left-0 right-0 z-50 border-b border-green-900/30 bg-[#050508]/80 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 h-16">
-          <Link href="/" className="flex items-center gap-3 group">
-            <img src="/logo/aqua-logo.png" alt="Aqua" className="h-8 w-auto" />
-            <span className="font-bold text-lg text-white">
-              AQUA<span className="text-green-400 font-mono ml-1">V4</span>
-            </span>
-          </Link>
-          <div className="flex items-center gap-4">
-            <Link
-              href="https://x.com/inblockio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:block text-sm text-gray-400 hover:text-green-400 transition-colors font-mono"
-            >
-              UPDATES
+    <div className="v4-page v4-bg v4-vignette relative min-h-screen overflow-x-hidden text-slate-900 dark:text-white">
+      <div className="relative z-10">
+        {/* Nav */}
+        <nav className="fixed left-0 right-0 top-0 z-50 border-b border-slate-900/10 bg-white/70 backdrop-blur-md dark:border-white/10 dark:bg-[#06080d]/80">
+          <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
+            <Link href="/" className="flex items-center gap-3">
+              <img src="/logo/aqua-logo.png" alt="Aqua" className="h-8 w-auto" />
+              <span className={`text-lg font-semibold text-slate-900 dark:text-white ${DISPLAY}`}>
+                Aqua <span className="text-[var(--v4-accent-text)]">V4</span>
+              </span>
             </Link>
-            <Link
-              href="https://github.com/inblockio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:block text-sm text-gray-400 hover:text-green-400 transition-colors font-mono"
-            >
-              GITHUB
-            </Link>
-            <Link
-              href="https://calendly.com/tim-bansemer/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-green-500/10 border border-green-500/30 text-green-400 text-sm font-mono rounded hover:bg-green-500/20 transition-all"
-            >
-              GET IN TOUCH
-            </Link>
-          </div>
-        </div>
-      </nav>
-
-      {/* ── HERO ── */}
-      <section className="relative z-10 min-h-screen flex items-center justify-center pt-28">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <div className={`transition-all duration-1000 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            {/* Alert badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-red-500/30 bg-red-500/5 mb-8">
-              <AlertTriangle className="h-4 w-4 text-red-500 animate-pulse" />
-              <span className="text-sm font-mono text-red-400">CRITICAL: AI Security Gap Detected</span>
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-6">
-              <span className="text-white">AI is moving fast.</span>
-              <br />
-              <span className="text-red-500">Security can&apos;t keep up.</span>
-            </h1>
-
-            <div className="min-h-[3rem] mb-8">
-              <p className="text-xl md:text-2xl text-gray-400 font-mono">
-                <span className="text-green-400">&gt;</span>{" "}
-                <Typewriter
-                  texts={[
-                    "Who created this AI output?",
-                    "Can I trust this data source?",
-                    "Was this model tampered with?",
-                    "Is this identity verified?",
-                    "Who authorized this access?",
-                  ]}
-                  className="text-gray-300"
-                />
-              </p>
-            </div>
-
-            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-              Aqua V4 is the <span className="text-green-400 font-semibold">trust infrastructure</span> for the AI era.
-              <br />
-              Identity. Access Control. Provenance.
-              <br />
-              <span className="text-gray-500">Cryptographic proof that the data you use, produce, and share is real.</span>
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4">
+              <Link
+                href="https://x.com/inblockio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`hidden min-h-[44px] items-center px-1 text-sm font-medium transition-colors hover:text-[var(--v4-accent-text)] sm:inline-flex ${BODY}`}
+              >
+                Updates
+              </Link>
+              <Link
+                href="https://github.com/inblockio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`hidden min-h-[44px] items-center px-1 text-sm font-medium transition-colors hover:text-[var(--v4-accent-text)] sm:inline-flex ${BODY}`}
+              >
+                GitHub
+              </Link>
               <Link
                 href="https://calendly.com/tim-bansemer/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group px-8 py-4 bg-green-500 text-black font-bold font-mono rounded-lg hover:bg-green-400 transition-all flex items-center gap-2 text-lg"
+                className="inline-flex min-h-[44px] items-center rounded-full bg-[var(--v4-azure-600)] px-5 text-sm font-semibold text-white shadow-sm shadow-[color:rgba(22,112,214,0.3)] transition hover:bg-[var(--v4-azure-700)]"
               >
-                GET IN TOUCH
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                Get in touch
               </Link>
+              <ThemeToggle />
+            </div>
+          </div>
+        </nav>
+
+        {/* Hero. The atmosphere (glow + hash-chain network) is bounded to this
+            section by two nested wrappers carrying a single mask each: outer
+            keeps the network off the copy, inner dissolves it before the hero's
+            bottom edge. Nothing below the hero ever has a line drawn over it. */}
+        <section className="relative overflow-hidden">
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+            <div className="v4-glow absolute inset-0" />
+            <div className="v4-net-outer absolute inset-0 motion-reduce:hidden">
+              <div className="v4-net-inner absolute inset-0">
+                <AquaAnimation
+                  laneCount={8}
+                  topPadding={16}
+                  fadeAboveSelector="#v4-hero-end"
+                  nodeColors={AZURE_NODE_COLORS}
+                />
+              </div>
+            </div>
+          </div>
+          <div aria-hidden="true" className="v4-veil pointer-events-none absolute inset-0" />
+
+          <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-32 sm:pt-40 lg:px-8">
+            <div className="v4-stagger max-w-[820px]">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
+                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-700 dark:text-white/90 sm:text-base">
+                  Aqua Protocol · <span className="text-[var(--v4-accent-text)]">Version 4</span>
+                </p>
+                <p className="inline-flex items-center gap-2.5 rounded-full border border-[#1265c4]/40 bg-[#1a7fe8]/[0.08] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.15em] text-[var(--v4-accent-text)] dark:border-[#1a7fe8]/50 dark:bg-[#1a7fe8]/[0.12] dark:text-[var(--v4-azure-300)]">
+                  <span
+                    aria-hidden="true"
+                    className="h-2 w-2 rounded-full bg-[var(--v4-azure-500)] dark:bg-[var(--v4-azure-400)]"
+                  />
+                  In development
+                </p>
+              </div>
+
+              <h1
+                className={`mt-6 text-balance text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl ${DISPLAY}`}
+              >
+                <span className="text-slate-900 dark:text-white">AI is moving fast.</span>
+                <br />
+                <span className="text-[var(--v4-warn-text)]">Security can&apos;t keep up.</span>
+              </h1>
+
+              <ul className={`mt-8 flex max-w-[640px] flex-wrap gap-x-6 gap-y-2 text-base ${BODY}`}>
+                {HERO_QUESTIONS.map((question) => (
+                  <li key={question} className="flex items-center gap-2.5">
+                    <span
+                      aria-hidden="true"
+                      className="h-1 w-1 shrink-0 rounded-full bg-[var(--v4-azure-500)]"
+                    />
+                    {question}
+                  </li>
+                ))}
+              </ul>
+
+              <p className={`mt-8 max-w-[640px] text-lg leading-relaxed sm:text-xl ${BODY}`}>
+                Aqua V4 is the{" "}
+                <span className="font-semibold text-[var(--v4-accent-text)]">
+                  trust infrastructure
+                </span>{" "}
+                for the AI era: identity, access control, and provenance.{" "}
+                <span className={MUTED}>
+                  Cryptographic proof that the data you use, produce, and share is real.
+                </span>
+              </p>
+
+              <div
+                id="v4-hero-end"
+                className="mt-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center"
+              >
+                <Link
+                  href="https://calendly.com/tim-bansemer/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--v4-azure-600)] px-7 py-3.5 text-base font-semibold text-white shadow-md shadow-[color:rgba(22,112,214,0.3)] transition hover:bg-[var(--v4-azure-700)] hover:shadow-lg hover:shadow-[color:rgba(22,112,214,0.4)]"
+                >
+                  <span>Get in touch</span>
+                  <ArrowRight
+                    aria-hidden="true"
+                    className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+                  />
+                </Link>
+                <Link
+                  href="https://agentic.inblock.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[44px] items-center gap-2 text-base font-medium text-[var(--v4-accent-text)] underline decoration-[#1a7fe8]/35 underline-offset-4 transition-colors hover:decoration-[#1a7fe8]"
+                >
+                  Aqua for AI agents
+                  <ExternalLink aria-hidden="true" className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* The problem */}
+        <section className={SECTION}>
+          <div className="mx-auto max-w-6xl px-6">
+            <RevealSection>
+              <div className="mb-14 max-w-3xl">
+                <h2 className={EYEBROW}>The problem</h2>
+                <p
+                  className={`mt-4 text-balance text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl ${DISPLAY}`}
+                >
+                  The AI trust crisis
+                </p>
+                <p className={`mt-4 text-lg leading-relaxed ${BODY}`}>
+                  AI is generating content, making decisions, and accessing systems at
+                  unprecedented scale. But there is no infrastructure to verify any of it.
+                </p>
+              </div>
+            </RevealSection>
+
+            {/* Industry signal */}
+            <RevealSection delay={200}>
+              <div className={`mb-10 overflow-hidden ${CARD}`}>
+                <div className={PANEL_HEADER}>
+                  <Quote aria-hidden="true" className="h-3.5 w-3.5 text-[var(--v4-accent-text)]" />
+                  <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-white/50">
+                    Industry signal · Lex Fridman
+                  </span>
+                </div>
+                <div className="p-6 md:p-8">
+                  <blockquote
+                    className={`mb-6 border-l-2 border-[#1a7fe8]/40 pl-5 text-base leading-relaxed md:text-lg ${BODY}`}
+                  >
+                    &ldquo;Very soon, if not already,{" "}
+                    <span className="font-semibold text-slate-900 dark:text-white">
+                      security will become THE bottleneck
+                    </span>{" "}
+                    for effectiveness and usefulness of AI agents as a whole, since
+                    intelligence is still rapidly scaling and is no longer an obvious
+                    bottleneck for many use-cases.&rdquo;
+                  </blockquote>
+                  <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+                    <div>
+                      <div className={`mb-3 text-sm ${MUTED}`}>
+                        Lex identifies three pillars of AI agent power:
+                      </div>
+                      <div className="grid grid-cols-1 gap-3 text-xs md:grid-cols-3">
+                        <div className={`flex items-center gap-2 px-3 py-2 ${INNER_PANEL}`}>
+                          <span className="text-slate-400 dark:text-white/40">1.</span>
+                          <span className={BODY}>Model intelligence</span>
+                          <span className="ml-auto font-semibold uppercase tracking-wider text-[var(--v4-accent-text)]">
+                            Scaling
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2 rounded-xl border border-[var(--v4-warn-border)] bg-[var(--v4-warn-bg)] px-3 py-2">
+                          <span className="text-[var(--v4-warn-text)]">2.</span>
+                          <span className={BODY}>Data access</span>
+                          <span className="ml-auto font-semibold uppercase tracking-wider text-[var(--v4-warn-text)]">
+                            Unsecured
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2 rounded-xl border border-[var(--v4-warn-border)] bg-[var(--v4-warn-bg)] px-3 py-2">
+                          <span className="text-[var(--v4-warn-text)]">3.</span>
+                          <span className={BODY}>Agent autonomy</span>
+                          <span className="ml-auto font-semibold uppercase tracking-wider text-[var(--v4-warn-text)]">
+                            Unsecured
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <Link
+                      href="https://x.com/lexfridman/status/2023573186496037044"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center gap-1 text-xs font-medium transition-colors hover:text-[var(--v4-accent-text)] ${MUTED}`}
+                    >
+                      Source <ExternalLink aria-hidden="true" className="h-3 w-3" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </RevealSection>
+
+            {/* Regulatory context */}
+            <RevealSection delay={300}>
+              <div className={`mb-14 overflow-hidden ${CARD}`}>
+                <div className={PANEL_HEADER}>
+                  <Scale aria-hidden="true" className="h-3.5 w-3.5 text-[var(--v4-accent-text)]" />
+                  <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-white/50">
+                    Regulatory context
+                  </span>
+                </div>
+                <div className="p-6 md:p-8">
+                  <p className={`mb-6 text-sm leading-relaxed ${BODY}`}>
+                    It is not just the market.{" "}
+                    <span className="font-semibold text-slate-900 dark:text-white">
+                      Regulators on both sides of the Atlantic are converging
+                    </span>{" "}
+                    on the same conclusion: AI systems need verifiable provenance, identity,
+                    and audit infrastructure. This is becoming law.
+                  </p>
+
+                  <div className="grid gap-6 md:grid-cols-2">
+                    {/* US: NTIA */}
+                    <div className={`p-5 ${INNER_PANEL}`}>
+                      <div className="mb-4 flex items-center gap-2">
+                        <Landmark
+                          aria-hidden="true"
+                          className="h-4 w-4 text-[var(--v4-accent-text)]"
+                        />
+                        <span className="text-sm font-bold text-slate-900 dark:text-white">
+                          US: NTIA RFC 2023-07776
+                        </span>
+                      </div>
+                      <p className={`mb-4 text-xs leading-relaxed ${BODY}`}>
+                        The National Telecommunications and Information Administration called
+                        for public input on AI accountability, receiving 1,400+ comments. The
+                        resulting 2024 report explicitly recommends investment in:
+                      </p>
+                      <div className="space-y-2 text-xs">
+                        <div className="flex items-start gap-2">
+                          <span
+                            aria-hidden="true"
+                            className="shrink-0 text-[var(--v4-azure-500)]"
+                          >
+                            &gt;
+                          </span>
+                          <span className={BODY}>
+                            <span className="font-semibold text-[var(--v4-accent-text)]">
+                              Rec. 5:
+                            </span>{" "}
+                            &ldquo;Provenance technologies&rdquo; to assess AI training data
+                            and usage
+                          </span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <span
+                            aria-hidden="true"
+                            className="shrink-0 text-[var(--v4-azure-500)]"
+                          >
+                            &gt;
+                          </span>
+                          <span className={BODY}>
+                            <span className="font-semibold text-[var(--v4-accent-text)]">
+                              Rec. 2:
+                            </span>{" "}
+                            Standard disclosures for AI architecture, data, and performance
+                          </span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <span
+                            aria-hidden="true"
+                            className="shrink-0 text-[var(--v4-azure-500)]"
+                          >
+                            &gt;
+                          </span>
+                          <span className={BODY}>
+                            <span className="font-semibold text-[var(--v4-accent-text)]">
+                              Rec. 6:
+                            </span>{" "}
+                            Independent evaluations of high-risk AI systems
+                          </span>
+                        </div>
+                      </div>
+                      <div className="mt-4 flex items-center gap-3">
+                        <Link
+                          href="https://www.federalregister.gov/documents/2023/04/13/2023-07776/ai-accountability-policy-request-for-comment"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`flex min-h-[44px] items-center gap-1 px-2 text-xs font-medium transition-colors hover:text-[var(--v4-accent-text)] ${MUTED}`}
+                        >
+                          RFC <ExternalLink aria-hidden="true" className="h-3 w-3" />
+                        </Link>
+                        <Link
+                          href="https://www.ntia.gov/issues/artificial-intelligence/ai-accountability-policy-report"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`flex min-h-[44px] items-center gap-1 px-2 text-xs font-medium transition-colors hover:text-[var(--v4-accent-text)] ${MUTED}`}
+                        >
+                          Report <ExternalLink aria-hidden="true" className="h-3 w-3" />
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* EU: AI Act */}
+                    <div className={`p-5 ${INNER_PANEL}`}>
+                      <div className="mb-4 flex items-center gap-2">
+                        <Scale aria-hidden="true" className="h-4 w-4 text-[var(--v4-accent-text)]" />
+                        <span className="text-sm font-bold text-slate-900 dark:text-white">
+                          EU: AI Act (2024/1689)
+                        </span>
+                      </div>
+                      <p className={`mb-4 text-xs leading-relaxed ${BODY}`}>
+                        The world&apos;s first comprehensive AI regulation. Entered into force
+                        August 2024, with obligations phasing in through 2026. Non-compliance
+                        carries severe penalties.
+                      </p>
+                      <div className="space-y-2 text-xs">
+                        <div className="flex items-start gap-2">
+                          <span
+                            aria-hidden="true"
+                            className="shrink-0 text-[var(--v4-azure-500)]"
+                          >
+                            &gt;
+                          </span>
+                          <span className={BODY}>
+                            <span className="font-semibold text-[var(--v4-accent-text)]">
+                              Art. 10:
+                            </span>{" "}
+                            Data governance: provenance documentation, source traceability
+                          </span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <span
+                            aria-hidden="true"
+                            className="shrink-0 text-[var(--v4-azure-500)]"
+                          >
+                            &gt;
+                          </span>
+                          <span className={BODY}>
+                            <span className="font-semibold text-[var(--v4-accent-text)]">
+                              Art. 12:
+                            </span>{" "}
+                            Automatic logging for traceability and post-market monitoring
+                          </span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <span
+                            aria-hidden="true"
+                            className="shrink-0 text-[var(--v4-azure-500)]"
+                          >
+                            &gt;
+                          </span>
+                          <span className={BODY}>
+                            <span className="font-semibold text-[var(--v4-accent-text)]">
+                              Art. 13:
+                            </span>{" "}
+                            Transparency obligations for AI system providers
+                          </span>
+                        </div>
+                      </div>
+                      <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
+                        <Link
+                          href="https://artificialintelligenceact.eu/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`flex min-h-[44px] items-center gap-1 px-2 text-xs font-medium transition-colors hover:text-[var(--v4-accent-text)] ${MUTED}`}
+                        >
+                          Full text <ExternalLink aria-hidden="true" className="h-3 w-3" />
+                        </Link>
+                        <span className="text-xs font-medium text-[var(--v4-warn-text)]">
+                          Penalty: up to 7% of global turnover
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </RevealSection>
+
+            {/* Open gaps */}
+            <div className="grid gap-6 md:grid-cols-3">
+              {[
+                {
+                  icon: Bot,
+                  title: "Identity crisis",
+                  body: "AI agents act on behalf of users, but there is no way to verify who they represent. Spoofed identities, unauthorized delegation, zero accountability.",
+                  code: "identity.verify() → UNDEFINED",
+                  delay: 100,
+                },
+                {
+                  icon: Eye,
+                  title: "Access chaos",
+                  body: "AI models consume data from everywhere. No granular access control. No audit trail. No way to know what data was used, when, or by whom.",
+                  code: "access.log() → NULL",
+                  delay: 200,
+                },
+                {
+                  icon: AlertTriangle,
+                  title: "Provenance gap",
+                  body: "Where did this data come from? Was it tampered with? Is this output real or generated? Without provenance, AI outputs are just noise.",
+                  code: "data.origin() → UNKNOWN",
+                  delay: 300,
+                },
+              ].map(({ icon: Icon, title, body, code, delay }) => (
+                <RevealSection key={title} delay={delay}>
+                  <div className={`h-full p-6 ${WARN_CARD}`}>
+                    <div className="mb-4 flex items-center gap-3">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--v4-warn-bg)] ring-1 ring-[var(--v4-warn-border)]">
+                        <Icon aria-hidden="true" className="h-5 w-5 text-[var(--v4-warn-text)]" />
+                      </div>
+                      <h3
+                        className={`text-lg font-semibold text-slate-900 dark:text-white ${DISPLAY}`}
+                      >
+                        {title}
+                      </h3>
+                    </div>
+                    <p className={`text-sm leading-relaxed ${BODY}`}>{body}</p>
+                    <div className="mt-4 font-mono text-xs text-[var(--v4-warn-text)]">
+                      &gt; {code}
+                    </div>
+                  </div>
+                </RevealSection>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* The solution */}
+        <section className={SECTION}>
+          <div className="mx-auto max-w-6xl px-6">
+            <RevealSection>
+              <div className="mb-14 max-w-3xl">
+                <h2 className={EYEBROW}>The solution</h2>
+                <p
+                  className={`mt-4 text-balance text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl ${DISPLAY}`}
+                >
+                  Aqua V4:{" "}
+                  <span className="text-[var(--v4-azure-700)] dark:text-[var(--v4-azure-500)]">
+                    trust infrastructure
+                  </span>
+                </p>
+                <p className={`mt-4 text-lg leading-relaxed ${BODY}`}>
+                  A cryptographic protocol that gives AI systems what they are missing:
+                  verifiable identity, granular access control, and tamper-proof provenance.
+                </p>
+              </div>
+            </RevealSection>
+
+            <div className="grid gap-6 md:grid-cols-3">
+              {[
+                {
+                  icon: Fingerprint,
+                  title: "Identity",
+                  body: "Self-sovereign identity with cryptographic attestation. Every agent, every model, every user, verified and accountable.",
+                  points: [
+                    "Peer-to-peer attestation",
+                    "Challenge-based verification",
+                    "No central authority needed",
+                  ],
+                  delay: 100,
+                },
+                {
+                  icon: KeyRound,
+                  title: "Access control",
+                  body: "Granular, cryptographic access policies. Control exactly who and what can read, write, or delegate across your data.",
+                  points: [
+                    "Revision-level permissions",
+                    "Auditable access trails",
+                    "Zero-trust architecture",
+                  ],
+                  delay: 200,
+                },
+                {
+                  icon: FileCheck,
+                  title: "Provenance",
+                  body: "Every piece of data carries its full history. Tamper-proof, portable, and independently verifiable, with no blockchain required.",
+                  points: [
+                    "Cryptographic hash chains",
+                    "Portable verification",
+                    "Instant tamper detection",
+                  ],
+                  delay: 300,
+                },
+              ].map(({ icon: Icon, title, body, points, delay }) => (
+                <RevealSection key={title} delay={delay}>
+                  <div className={`group h-full p-8 ${CARD} ${CARD_HOVER}`}>
+                    <div
+                      className={`mb-6 h-14 w-14 transition-colors group-hover:bg-[#1a7fe8]/15 ${ICON_TILE}`}
+                    >
+                      <Icon aria-hidden="true" className="h-7 w-7 text-[var(--v4-accent-text)]" />
+                    </div>
+                    <h3
+                      className={`mb-3 text-xl font-semibold text-slate-900 dark:text-white ${DISPLAY}`}
+                    >
+                      {title}
+                    </h3>
+                    <p className={`mb-5 leading-relaxed ${BODY}`}>{body}</p>
+                    <ul className="space-y-2 text-sm">
+                      {points.map((point) => (
+                        <li key={point} className="flex items-center gap-2">
+                          <CheckCircle
+                            aria-hidden="true"
+                            className="h-3.5 w-3.5 shrink-0 text-[var(--v4-accent-text)]"
+                          />
+                          <span className={BODY}>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </RevealSection>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* How it works */}
+        <section className={SECTION}>
+          <div className="mx-auto max-w-6xl px-6">
+            <RevealSection>
+              <div className="mb-14 max-w-3xl">
+                <h2 className={EYEBROW}>How it works</h2>
+                <p
+                  className={`mt-4 text-balance text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl ${DISPLAY}`}
+                >
+                  Pillars of{" "}
+                  <span className="text-[var(--v4-azure-700)] dark:text-[var(--v4-azure-500)]">
+                    verifiable trust
+                  </span>
+                </p>
+                <p className={`mt-4 text-lg leading-relaxed ${BODY}`}>
+                  Aqua combines cryptographic hash chains, modular signatures, optional
+                  timestamping, and decentralized verification to create trust without central
+                  authorities.
+                </p>
+              </div>
+            </RevealSection>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              {[
+                {
+                  number: "01",
+                  icon: FileCheck,
+                  title: "Portable hash-chains",
+                  body: (
+                    <>
+                      Aqua creates{" "}
+                      <span className="font-medium text-slate-900 dark:text-white">AquaTrees</span>,
+                      portable data structures that record a complete history of revisions with
+                      cryptographic precision. Every change is chained, every version is
+                      preserved.
+                    </>
+                  ),
+                  note: "Each revision linked by hash to its predecessor",
+                  delay: 100,
+                },
+                {
+                  number: "02",
+                  icon: Signature,
+                  title: "Modular signatures",
+                  body: (
+                    <>
+                      Aqua supports{" "}
+                      <span className="font-medium text-slate-900 dark:text-white">
+                        multiple signature schemes
+                      </span>
+                      : Ethereum wallets, DIDs, X.509 certificates, and more. The signature layer
+                      is modular by design: plug in the cryptographic paradigm that fits your
+                      security requirements without changing the protocol.
+                    </>
+                  ),
+                  note: "One protocol, any signature scheme",
+                  delay: 200,
+                },
+                {
+                  number: "03",
+                  icon: Clock,
+                  title: "Immutable timestamps",
+                  body: (
+                    <>
+                      Anchor your data to tamper-proof timelines via the{" "}
+                      <span className="font-medium text-slate-900 dark:text-white">
+                        Ethereum blockchain
+                      </span>
+                      ,{" "}
+                      <span className="font-medium text-slate-900 dark:text-white">
+                        qualified TSA services
+                      </span>{" "}
+                      (eIDAS-compliant), or both. Blockchain is optional; Aqua integrates with
+                      existing institutional infrastructure and decentralized networks alike.
+                    </>
+                  ),
+                  note: "Blockchain or TSA: choose your trust anchor",
+                  delay: 300,
+                },
+                {
+                  number: "04",
+                  icon: LockKeyhole,
+                  title: "Flexible trust",
+                  body: (
+                    <>
+                      Aqua bridges institutional and decentralized worlds. Use{" "}
+                      <span className="font-medium text-slate-900 dark:text-white">
+                        enterprise registries
+                      </span>{" "}
+                      for regulatory compliance or{" "}
+                      <span className="font-medium text-slate-900 dark:text-white">
+                        community-driven decentralized registries
+                      </span>{" "}
+                      for open verification, or combine both. One protocol, every trust model.
+                    </>
+                  ),
+                  note: "Institutional or decentralized: works with both",
+                  delay: 400,
+                },
+              ].map(({ number, icon: Icon, title, body, note, delay }) => (
+                <RevealSection key={number} delay={delay} className="h-full">
+                  <div className={`group h-full p-8 ${CARD} ${CARD_HOVER}`}>
+                    <span
+                      aria-hidden="true"
+                      className={`text-4xl font-bold text-slate-900/15 dark:text-white/15 ${DISPLAY}`}
+                    >
+                      {number}
+                    </span>
+                    <div
+                      className={`mb-5 mt-3 h-12 w-12 transition-colors group-hover:bg-[#1a7fe8]/15 ${ICON_TILE}`}
+                    >
+                      <Icon aria-hidden="true" className="h-6 w-6 text-[var(--v4-accent-text)]" />
+                    </div>
+                    <h3
+                      className={`mb-3 text-lg font-semibold text-slate-900 dark:text-white ${DISPLAY}`}
+                    >
+                      {title}
+                    </h3>
+                    <p className={`text-sm leading-relaxed ${BODY}`}>{body}</p>
+                    <div
+                      className={`mt-5 border-t border-slate-900/10 pt-4 font-mono text-xs dark:border-white/10 ${MUTED}`}
+                    >
+                      &gt; {note}
+                    </div>
+                  </div>
+                </RevealSection>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Open protocol */}
+        <section className={SECTION}>
+          <div className="mx-auto max-w-4xl px-6">
+            <RevealSection>
+              <div className="text-center">
+                <h2 className={EYEBROW}>Open protocol</h2>
+                <p
+                  className={`mt-4 text-balance text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl ${DISPLAY}`}
+                >
+                  The{" "}
+                  <span className="text-[var(--v4-azure-700)] dark:text-[var(--v4-azure-500)]">
+                    Kubernetes
+                  </span>{" "}
+                  of AI verification
+                </p>
+                <p className={`mx-auto mt-6 max-w-2xl text-lg leading-relaxed ${BODY}`}>
+                  Aqua V4 is fully open source. Trust infrastructure cannot depend on a single
+                  vendor; it must be auditable, forkable, and verifiable by anyone. Free to build
+                  on. Enterprises deploy with production-grade infrastructure, compliance, and
+                  SLAs.
+                </p>
+              </div>
+            </RevealSection>
+
+            <RevealSection delay={200}>
+              <div className="mt-12 grid gap-5 md:grid-cols-3">
+                {[
+                  {
+                    icon: Code,
+                    title: "Open spec",
+                    body: "Full protocol specification, verification trees, and SDK, all publicly auditable.",
+                  },
+                  {
+                    icon: Globe,
+                    title: "Open standard",
+                    body: "Interoperable by design. Every implementation strengthens the verification network.",
+                  },
+                  {
+                    icon: Shield,
+                    title: "Enterprise ready",
+                    body: "Build free. Deploy with production-grade infrastructure, SLAs, and compliance.",
+                  },
+                ].map(({ icon: Icon, title, body }) => (
+                  <div key={title} className={`p-6 text-center ${CARD}`}>
+                    <Icon
+                      aria-hidden="true"
+                      className="mx-auto mb-3 h-6 w-6 text-[var(--v4-accent-text)]"
+                    />
+                    <div
+                      className={`mb-1.5 text-sm font-semibold text-slate-900 dark:text-white ${DISPLAY}`}
+                    >
+                      {title}
+                    </div>
+                    <p className={`text-xs leading-relaxed ${MUTED}`}>{body}</p>
+                  </div>
+                ))}
+              </div>
+            </RevealSection>
+          </div>
+        </section>
+
+        {/* Who it is for */}
+        <section className={SECTION}>
+          <div className="mx-auto max-w-6xl px-6">
+            <RevealSection>
+              <div className="mb-14 max-w-3xl">
+                <h2 className={EYEBROW}>Who it&apos;s for</h2>
+                <p
+                  className={`mt-4 text-balance text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl ${DISPLAY}`}
+                >
+                  One protocol.{" "}
+                  <span className="text-[var(--v4-azure-700)] dark:text-[var(--v4-azure-500)]">
+                    Every stakeholder.
+                  </span>
+                </p>
+              </div>
+            </RevealSection>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              {[
+                {
+                  icon: ShieldCheck,
+                  title: "Operate",
+                  body: (
+                    <>
+                      Operational trust for AI agents. Identity proves{" "}
+                      <span className="font-medium text-slate-900 dark:text-white">who</span> an
+                      agent is; authorization defines{" "}
+                      <span className="font-medium text-slate-900 dark:text-white">what it may do</span>
+                      . Agents cannot exceed their boundaries, and every action leaves verifiable
+                      proof of what actually occurred.
+                    </>
+                  ),
+                  cta: "Explore operational trust",
+                  href: "https://agentic.inblock.io",
+                  delay: 100,
+                },
+                {
+                  icon: TrendingUp,
+                  title: "Invest",
+                  body: (
+                    <>
+                      Trust infrastructure for AI:{" "}
+                      <span className="font-medium text-slate-900 dark:text-white">
+                        regulatory tailwinds
+                      </span>
+                      , enterprise monetization, and a massive unmet market. The security layer AI
+                      has been missing.
+                    </>
+                  ),
+                  cta: "Book a call",
+                  href: "https://calendly.com/tim-bansemer/30min",
+                  delay: 200,
+                },
+                {
+                  icon: Building2,
+                  title: "License & integrate",
+                  body: (
+                    <>
+                      Enterprise-grade,{" "}
+                      <span className="font-medium text-slate-900 dark:text-white">
+                        compliance-ready
+                      </span>{" "}
+                      deployment. Custom integration, licensing, and production infrastructure for
+                      your organization.
+                    </>
+                  ),
+                  cta: "Request a demo",
+                  href: "https://calendly.com/tim-bansemer/30min",
+                  delay: 300,
+                },
+                {
+                  icon: Terminal,
+                  title: "Build",
+                  body: (
+                    <>
+                      Open protocol, open SDK. Ship{" "}
+                      <span className="font-medium text-slate-900 dark:text-white">
+                        verified AI applications
+                      </span>{" "}
+                      with cryptographic trust baked in from day one.
+                    </>
+                  ),
+                  cta: "View on GitHub",
+                  href: "https://github.com/inblockio",
+                  delay: 400,
+                },
+              ].map(({ icon: Icon, title, body, cta, href, delay }) => (
+                <RevealSection key={title} delay={delay} className="h-full">
+                  <div className={`group flex h-full flex-col p-8 ${CARD} ${CARD_HOVER}`}>
+                    <div
+                      className={`mb-5 h-12 w-12 transition-colors group-hover:bg-[#1a7fe8]/15 ${ICON_TILE}`}
+                    >
+                      <Icon aria-hidden="true" className="h-6 w-6 text-[var(--v4-accent-text)]" />
+                    </div>
+                    <h3
+                      className={`mb-3 text-lg font-semibold text-slate-900 dark:text-white ${DISPLAY}`}
+                    >
+                      {title}
+                    </h3>
+                    <p className={`mb-6 text-sm leading-relaxed ${BODY}`}>{body}</p>
+                    <Link
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`mt-auto self-start ${GHOST_BUTTON}`}
+                    >
+                      {cta}
+                      <ExternalLink aria-hidden="true" className="h-4 w-4" />
+                    </Link>
+                  </div>
+                </RevealSection>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* See it in action */}
+        <section className={SECTION}>
+          <div className="mx-auto max-w-4xl px-6">
+            <RevealSection>
+              <div className="mb-12 max-w-3xl">
+                <h2 className={EYEBROW}>See it in action</h2>
+                <p
+                  className={`mt-4 text-balance text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl ${DISPLAY}`}
+                >
+                  From{" "}
+                  <span className="text-[var(--v4-warn-text)]">vulnerable</span> to{" "}
+                  <span className="text-[var(--v4-azure-700)] dark:text-[var(--v4-azure-500)]">
+                    verified
+                  </span>
+                </p>
+              </div>
+            </RevealSection>
+
+            <RevealSection delay={100}>
+              <div className="overflow-hidden rounded-2xl border border-slate-900/15 bg-white/85 backdrop-blur-md dark:border-white/10 dark:bg-[#070b12]/85">
+                {/* Terminal chrome */}
+                <div className="flex items-center gap-2 border-b border-slate-900/10 bg-slate-900/[0.03] px-4 py-3 dark:border-white/10 dark:bg-white/[0.03]">
+                  <span
+                    aria-hidden="true"
+                    className="h-3 w-3 rounded-full bg-slate-900/15 dark:bg-white/15"
+                  />
+                  <span
+                    aria-hidden="true"
+                    className="h-3 w-3 rounded-full bg-slate-900/15 dark:bg-white/15"
+                  />
+                  <span
+                    aria-hidden="true"
+                    className="h-3 w-3 rounded-full bg-[var(--v4-azure-500)]/50"
+                  />
+                  <span className={`ml-2 font-mono text-xs ${MUTED}`}>
+                    aqua-v4 · trust-pipeline
+                  </span>
+                </div>
+                {/* Transcript */}
+                <div className="space-y-4 p-6 font-mono text-sm">
+                  <div>
+                    <span className="text-[var(--v4-accent-text)]">$</span>{" "}
+                    <span className="text-slate-800 dark:text-white/90">
+                      aqua init --protocol v4
+                    </span>
+                    <div className={`mt-1 ${MUTED}`}>Initializing Aqua trust chain...</div>
+                    <div className="mt-1 text-[var(--v4-accent-text)]">
+                      &#10003; Genesis revision created
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-[var(--v4-accent-text)]">$</span>{" "}
+                    <span className="text-slate-800 dark:text-white/90">
+                      aqua sign --identity did:aqua:0x7f3a...
+                    </span>
+                    <div className={`mt-1 ${MUTED}`}>Binding cryptographic identity...</div>
+                    <div className="mt-1 text-[var(--v4-accent-text)]">
+                      &#10003; Identity attested and sealed
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-[var(--v4-accent-text)]">$</span>{" "}
+                    <span className="text-slate-800 dark:text-white/90">
+                      aqua verify --file ai-output.json
+                    </span>
+                    <div className={`mt-1 ${MUTED}`}>Verifying provenance chain...</div>
+                    <div className={`mt-1 ${MUTED}`}>
+                      Checking 14 revisions across 3 witnesses...
+                    </div>
+                    <div className="mt-1 text-[var(--v4-accent-text)]">
+                      &#10003; INTEGRITY VERIFIED: all hashes match
+                    </div>
+                    <div className="text-[var(--v4-accent-text)]">
+                      &#10003; IDENTITY CONFIRMED: signer verified
+                    </div>
+                    <div className="text-[var(--v4-accent-text)]">
+                      &#10003; PROVENANCE VALID: complete chain from origin
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 border-t border-slate-900/10 pt-4 dark:border-white/10">
+                    <span className="text-[var(--v4-accent-text)]">$</span>
+                    <span
+                      aria-hidden="true"
+                      className="inline-block h-4 w-2 bg-[var(--v4-accent-text)]/50"
+                    />
+                  </div>
+                </div>
+              </div>
+            </RevealSection>
+          </div>
+        </section>
+
+        {/* The difference */}
+        <section className={SECTION}>
+          <div className="mx-auto max-w-6xl px-6">
+            <RevealSection>
+              <div className="mb-14 max-w-3xl">
+                <h2 className={EYEBROW}>The difference</h2>
+                <p
+                  className={`mt-4 text-balance text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl ${DISPLAY}`}
+                >
+                  Without vs. with{" "}
+                  <span className="text-[var(--v4-azure-700)] dark:text-[var(--v4-azure-500)]">
+                    Aqua
+                  </span>
+                </p>
+              </div>
+            </RevealSection>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              <RevealSection delay={100} className="h-full">
+                <div className={`h-full p-8 ${WARN_CARD}`}>
+                  <div className="mb-6 flex items-center gap-2">
+                    <AlertTriangle
+                      aria-hidden="true"
+                      className="h-5 w-5 text-[var(--v4-warn-text)]"
+                    />
+                    <h3
+                      className={`text-lg font-semibold text-slate-900 dark:text-white ${DISPLAY}`}
+                    >
+                      Without Aqua
+                    </h3>
+                  </div>
+                  <ul className="space-y-4">
+                    {[
+                      "AI outputs with no verifiable origin",
+                      "Identities that can be spoofed trivially",
+                      "No audit trail for data access",
+                      "Tampering is undetectable",
+                      "Trust based on faith, not proof",
+                      "Central authorities as single points of failure",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <span
+                          aria-hidden="true"
+                          className="mt-0.5 text-lg font-bold leading-none text-[var(--v4-warn-text)]"
+                        >
+                          &times;
+                        </span>
+                        <span className={`text-sm ${BODY}`}>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </RevealSection>
+
+              <RevealSection delay={200} className="h-full">
+                <div className={`h-full p-8 ${CARD}`}>
+                  <div className="mb-6 flex items-center gap-2">
+                    <Shield aria-hidden="true" className="h-5 w-5 text-[var(--v4-accent-text)]" />
+                    <h3
+                      className={`text-lg font-semibold text-slate-900 dark:text-white ${DISPLAY}`}
+                    >
+                      With Aqua V4
+                    </h3>
+                  </div>
+                  <ul className="space-y-4">
+                    {[
+                      "Every output carries cryptographic provenance",
+                      "Self-sovereign identity with peer attestation",
+                      "Complete, immutable access audit trail",
+                      "Instant tamper detection via hash verification",
+                      "Trust based on mathematics, not authority",
+                      "Decentralized, with no single point of failure",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <CheckCircle
+                          aria-hidden="true"
+                          className="mt-0.5 h-4 w-4 shrink-0 text-[var(--v4-accent-text)]"
+                        />
+                        <span className={`text-sm ${BODY}`}>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </RevealSection>
+            </div>
+          </div>
+        </section>
+
+        {/* Close */}
+        <section className={SECTION}>
+          <div className="mx-auto max-w-4xl px-6">
+            <RevealSection>
+              <div className={`relative overflow-hidden p-10 text-center md:p-14 ${CARD}`}>
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#1a7fe8]/[0.07] to-transparent"
+                />
+                <div className="relative">
+                  <h2
+                    className={`text-balance text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl ${DISPLAY}`}
+                  >
+                    Work with us on Aqua V4
+                  </h2>
+                  <p className={`mx-auto mt-6 max-w-2xl text-lg leading-relaxed ${BODY}`}>
+                    Version 4 is in active development as a proposed open standard. If you are
+                    evaluating it, integrating it, or would like a technical walkthrough, we are
+                    happy to talk.
+                  </p>
+                  <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                    <Link
+                      href="https://calendly.com/tim-bansemer/30min"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--v4-azure-600)] px-7 py-3.5 text-base font-semibold text-white shadow-md shadow-[color:rgba(22,112,214,0.3)] transition hover:bg-[var(--v4-azure-700)] hover:shadow-lg hover:shadow-[color:rgba(22,112,214,0.4)]"
+                    >
+                      Book a call
+                      <ExternalLink aria-hidden="true" className="h-4 w-4" />
+                    </Link>
+                    <Link
+                      href="https://x.com/inblockio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={GHOST_BUTTON}
+                    >
+                      Follow updates
+                      <ExternalLink aria-hidden="true" className="h-4 w-4" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </RevealSection>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="relative border-t border-slate-900/10 py-10 dark:border-white/10">
+          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 md:flex-row">
+            <div className="flex items-center gap-2">
+              <img src="/logo/aqua-logo.png" alt="Aqua" className="h-6 w-auto" />
+              <span className={`text-sm ${MUTED}`}>Aqua Protocol V4</span>
+            </div>
+            <div className="flex items-center gap-6">
               <Link
-                href="https://aquafier.inblock.io"
+                href="https://github.com/inblockio"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 border border-gray-600 text-gray-300 font-mono rounded-lg hover:border-green-500/50 hover:text-green-400 transition-all flex items-center gap-2 text-lg"
+                className={`inline-flex min-h-[44px] items-center text-sm font-medium transition-colors hover:text-[var(--v4-accent-text)] ${MUTED}`}
               >
-                LIVE DEMO
-                <ExternalLink className="h-5 w-5" />
+                GitHub
+              </Link>
+              <Link
+                href="https://x.com/inblockio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex min-h-[44px] items-center text-sm font-medium transition-colors hover:text-[var(--v4-accent-text)] ${MUTED}`}
+              >
+                X
               </Link>
             </div>
+            <p className="text-xs text-slate-500 dark:text-white/40">
+              &copy; 2026 inBlock.io. All rights reserved.
+            </p>
           </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-green-500/30 rounded-full flex items-start justify-center p-2">
-            <div className="w-1 h-2 bg-green-400 rounded-full animate-pulse" />
-          </div>
-        </div>
-      </section>
-
-      {/* ── THE PROBLEM ── */}
-      <section className="relative z-10 py-24 border-t border-red-900/20">
-        <div className="max-w-6xl mx-auto px-6">
-          <RevealSection>
-            <div className="text-center mb-16">
-              <span className="text-red-500 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// The Problem</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
-                The AI Trust Crisis
-              </h2>
-              <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">
-                AI is generating content, making decisions, and accessing systems at unprecedented scale.
-                But there&apos;s no infrastructure to verify any of it.
-              </p>
-            </div>
-          </RevealSection>
-
-          {/* Lex Fridman Signal */}
-          <RevealSection delay={200}>
-            <div className="mb-16 rounded-xl border border-red-500/15 bg-[#0a0a0f]/90 overflow-hidden">
-              {/* Header bar */}
-              <div className="flex items-center gap-2 px-5 py-3 border-b border-red-500/10 bg-red-500/[0.03]">
-                <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-                <span className="text-xs font-mono text-red-400/70 tracking-wider">SIGNAL DETECTED // SOURCE: @lexfridman</span>
-              </div>
-              {/* Quote body */}
-              <div className="p-6 md:p-8">
-                <blockquote className="text-gray-300 text-base md:text-lg leading-relaxed mb-6 border-l-2 border-red-500/40 pl-5">
-                  &ldquo;Very soon, if not already, <span className="text-red-400 font-semibold">security will become THE bottleneck</span> for
-                  effectiveness and usefulness of AI agents as a whole, since intelligence is still rapidly scaling
-                  and is no longer an obvious bottleneck for many use-cases.&rdquo;
-                </blockquote>
-                <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-                  <div>
-                    <div className="text-sm text-gray-500 mb-3">Lex identifies three pillars of AI agent power:</div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 font-mono text-xs">
-                      <div className="flex items-center gap-2 px-3 py-2 rounded border border-gray-700/50 bg-[#0a0a0f]">
-                        <span className="text-gray-500">1.</span>
-                        <span className="text-gray-400">Model intelligence</span>
-                        <span className="text-green-500/50 ml-auto">SCALING</span>
-                      </div>
-                      <div className="flex items-center gap-2 px-3 py-2 rounded border border-red-500/20 bg-red-500/[0.03]">
-                        <span className="text-red-400">2.</span>
-                        <span className="text-red-300">Data access</span>
-                        <span className="text-red-500 ml-auto">UNSECURED</span>
-                      </div>
-                      <div className="flex items-center gap-2 px-3 py-2 rounded border border-red-500/20 bg-red-500/[0.03]">
-                        <span className="text-red-400">3.</span>
-                        <span className="text-red-300">Agent autonomy</span>
-                        <span className="text-red-500 ml-auto">UNSECURED</span>
-                      </div>
-                    </div>
-                  </div>
-                  <Link
-                    href="https://x.com/lexfridman/status/2023573186496037044"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs font-mono text-gray-600 hover:text-gray-400 transition-colors flex items-center gap-1 shrink-0 min-h-[44px] min-w-[44px] justify-center"
-                  >
-                    Source <ExternalLink className="h-3 w-3" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </RevealSection>
-
-          {/* Regulatory Signal */}
-          <RevealSection delay={300}>
-            <div className="mb-16 rounded-xl border border-amber-500/15 bg-[#0a0a0f]/90 overflow-hidden">
-              {/* Header bar */}
-              <div className="flex items-center gap-2 px-5 py-3 border-b border-amber-500/10 bg-amber-500/[0.03]">
-                <Scale className="h-3.5 w-3.5 text-amber-500" />
-                <span className="text-xs font-mono text-amber-400/70 tracking-wider">REGULATORY SIGNAL // COMPLIANCE REQUIRED</span>
-              </div>
-              {/* Body */}
-              <div className="p-6 md:p-8">
-                <p className="text-gray-400 text-sm mb-6">
-                  It&apos;s not just the market — <span className="text-amber-300">regulators on both sides of the Atlantic are converging</span> on
-                  the same conclusion: AI systems need verifiable provenance, identity, and audit infrastructure. This is becoming law.
-                </p>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  {/* US — NTIA */}
-                  <div className="p-5 rounded-lg border border-amber-500/10 bg-amber-500/[0.02]">
-                    <div className="flex items-center gap-2 mb-4">
-                      <Landmark className="h-4 w-4 text-amber-400" />
-                      <span className="font-mono text-sm text-amber-300 font-bold">US: NTIA RFC 2023-07776</span>
-                    </div>
-                    <p className="text-gray-400 text-xs leading-relaxed mb-4">
-                      The National Telecommunications and Information Administration called for public input on AI accountability,
-                      receiving 1,400+ comments. The resulting 2024 report explicitly recommends investment in:
-                    </p>
-                    <div className="space-y-2 font-mono text-xs">
-                      <div className="flex items-start gap-2">
-                        <span className="text-amber-500 shrink-0">&gt;</span>
-                        <span className="text-amber-200/80"><span className="text-amber-400">Rec. 5:</span> &ldquo;Provenance technologies&rdquo; to assess AI training data and usage</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <span className="text-amber-500 shrink-0">&gt;</span>
-                        <span className="text-amber-200/80"><span className="text-amber-400">Rec. 2:</span> Standard disclosures for AI architecture, data, and performance</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <span className="text-amber-500 shrink-0">&gt;</span>
-                        <span className="text-amber-200/80"><span className="text-amber-400">Rec. 6:</span> Independent evaluations of high-risk AI systems</span>
-                      </div>
-                    </div>
-                    <div className="mt-4 flex items-center gap-3">
-                      <Link
-                        href="https://www.federalregister.gov/documents/2023/04/13/2023-07776/ai-accountability-policy-request-for-comment"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1 min-h-[44px] px-2"
-                      >
-                        RFC <ExternalLink className="h-3 w-3" />
-                      </Link>
-                      <Link
-                        href="https://www.ntia.gov/issues/artificial-intelligence/ai-accountability-policy-report"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1 min-h-[44px] px-2"
-                      >
-                        Report <ExternalLink className="h-3 w-3" />
-                      </Link>
-                    </div>
-                  </div>
-
-                  {/* EU — AI Act */}
-                  <div className="p-5 rounded-lg border border-amber-500/10 bg-amber-500/[0.02]">
-                    <div className="flex items-center gap-2 mb-4">
-                      <Scale className="h-4 w-4 text-amber-400" />
-                      <span className="font-mono text-sm text-amber-300 font-bold">EU: AI Act (2024/1689)</span>
-                    </div>
-                    <p className="text-gray-400 text-xs leading-relaxed mb-4">
-                      The world&apos;s first comprehensive AI regulation. Entered into force August 2024,
-                      with obligations phasing in through 2026. Non-compliance carries severe penalties.
-                    </p>
-                    <div className="space-y-2 font-mono text-xs">
-                      <div className="flex items-start gap-2">
-                        <span className="text-amber-500 shrink-0">&gt;</span>
-                        <span className="text-amber-200/80"><span className="text-amber-400">Art. 10:</span> Data governance — provenance documentation, source traceability</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <span className="text-amber-500 shrink-0">&gt;</span>
-                        <span className="text-amber-200/80"><span className="text-amber-400">Art. 12:</span> Automatic logging for traceability and post-market monitoring</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <span className="text-amber-500 shrink-0">&gt;</span>
-                        <span className="text-amber-200/80"><span className="text-amber-400">Art. 13:</span> Transparency obligations for AI system providers</span>
-                      </div>
-                    </div>
-                    <div className="mt-4 flex items-center justify-between">
-                      <Link
-                        href="https://artificialintelligenceact.eu/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs font-mono text-gray-600 hover:text-amber-400 transition-colors flex items-center gap-1 min-h-[44px] px-2"
-                      >
-                        Full text <ExternalLink className="h-3 w-3" />
-                      </Link>
-                      <span className="text-xs font-mono text-red-400/80">Penalty: up to 7% of global turnover</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </RevealSection>
-
-          {/* Threat cards */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <RevealSection delay={100}>
-              <div className="p-6 rounded-xl border border-red-500/20 bg-[#0a0a0f]/80 hover:border-red-500/40 transition-all group">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="h-10 w-10 rounded-lg bg-red-500/10 flex items-center justify-center">
-                    <Bot className="h-5 w-5 text-red-500" />
-                  </div>
-                  <h3 className="text-lg font-bold text-red-400 font-mono">IDENTITY CRISIS</h3>
-                </div>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  AI agents act on behalf of users, but there&apos;s no way to verify who they represent.
-                  Spoofed identities, unauthorized delegation, zero accountability.
-                </p>
-                <div className="mt-4 font-mono text-xs text-red-500/60">
-                  &gt; identity.verify() → UNDEFINED
-                </div>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={200}>
-              <div className="p-6 rounded-xl border border-red-500/20 bg-[#0a0a0f]/80 hover:border-red-500/40 transition-all group">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="h-10 w-10 rounded-lg bg-red-500/10 flex items-center justify-center">
-                    <Eye className="h-5 w-5 text-red-500" />
-                  </div>
-                  <h3 className="text-lg font-bold text-red-400 font-mono">ACCESS CHAOS</h3>
-                </div>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  AI models consume data from everywhere. No granular access control.
-                  No audit trail. No way to know what data was used, when, or by whom.
-                </p>
-                <div className="mt-4 font-mono text-xs text-red-500/60">
-                  &gt; access.log() → NULL
-                </div>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={300}>
-              <div className="p-6 rounded-xl border border-red-500/20 bg-[#0a0a0f]/80 hover:border-red-500/40 transition-all group">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="h-10 w-10 rounded-lg bg-red-500/10 flex items-center justify-center">
-                    <AlertTriangle className="h-5 w-5 text-red-500" />
-                  </div>
-                  <h3 className="text-lg font-bold text-red-400 font-mono">PROVENANCE GAP</h3>
-                </div>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Where did this data come from? Was it tampered with? Is this output real or generated?
-                  Without provenance, AI outputs are just noise.
-                </p>
-                <div className="mt-4 font-mono text-xs text-red-500/60">
-                  &gt; data.origin() → UNKNOWN
-                </div>
-              </div>
-            </RevealSection>
-          </div>
-        </div>
-      </section>
-
-      {/* ── THE SOLUTION ── */}
-      <section ref={solutionRef} className="relative z-10 py-24 border-t border-green-900/20">
-        <div className="max-w-6xl mx-auto px-6">
-          <RevealSection>
-            <div className="text-center mb-16">
-              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// The Solution</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
-                Aqua V4: <span className="text-green-400">Trust Infrastructure</span>
-              </h2>
-              <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">
-                A cryptographic protocol that gives AI systems what they&apos;re missing:
-                verifiable identity, granular access control, and tamper-proof provenance.
-              </p>
-            </div>
-          </RevealSection>
-
-          {/* Solution pillars */}
-          <div className="grid md:grid-cols-3 gap-8">
-            <RevealSection delay={100}>
-              <div className="p-8 rounded-xl border border-green-500/20 bg-[#0a0f0a]/80 hover:border-green-500/40 transition-all relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
-                <div className="relative">
-                  <div className="h-14 w-14 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-6">
-                    <Fingerprint className="h-7 w-7 text-green-400" />
-                  </div>
-                  <h3 className="text-xl font-bold text-green-400 font-mono mb-3">IDENTITY</h3>
-                  <p className="text-gray-400 leading-relaxed mb-4">
-                    Self-sovereign identity with cryptographic attestation. Every agent, every model, every user — verified and accountable.
-                  </p>
-                  <div className="space-y-2 font-mono text-xs">
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-3 w-3 text-green-500" />
-                      <span className="text-green-400/80">Peer-to-peer attestation</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-3 w-3 text-green-500" />
-                      <span className="text-green-400/80">Challenge-based verification</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-3 w-3 text-green-500" />
-                      <span className="text-green-400/80">No central authority needed</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={200}>
-              <div className="p-8 rounded-xl border border-green-500/20 bg-[#0a0f0a]/80 hover:border-green-500/40 transition-all relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
-                <div className="relative">
-                  <div className="h-14 w-14 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-6">
-                    <KeyRound className="h-7 w-7 text-green-400" />
-                  </div>
-                  <h3 className="text-xl font-bold text-green-400 font-mono mb-3">ACCESS CONTROL</h3>
-                  <p className="text-gray-400 leading-relaxed mb-4">
-                    Granular, cryptographic access policies. Control exactly who and what can read, write, or delegate across your data.
-                  </p>
-                  <div className="space-y-2 font-mono text-xs">
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-3 w-3 text-green-500" />
-                      <span className="text-green-400/80">Revision-level permissions</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-3 w-3 text-green-500" />
-                      <span className="text-green-400/80">Auditable access trails</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-3 w-3 text-green-500" />
-                      <span className="text-green-400/80">Zero-trust architecture</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={300}>
-              <div className="p-8 rounded-xl border border-green-500/20 bg-[#0a0f0a]/80 hover:border-green-500/40 transition-all relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
-                <div className="relative">
-                  <div className="h-14 w-14 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-6">
-                    <FileCheck className="h-7 w-7 text-green-400" />
-                  </div>
-                  <h3 className="text-xl font-bold text-green-400 font-mono mb-3">PROVENANCE</h3>
-                  <p className="text-gray-400 leading-relaxed mb-4">
-                    Every piece of data carries its full history. Tamper-proof, portable, and independently verifiable — no blockchain required.
-                  </p>
-                  <div className="space-y-2 font-mono text-xs">
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-3 w-3 text-green-500" />
-                      <span className="text-green-400/80">Cryptographic hash chains</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-3 w-3 text-green-500" />
-                      <span className="text-green-400/80">Portable verification</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-3 w-3 text-green-500" />
-                      <span className="text-green-400/80">Instant tamper detection</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-          </div>
-        </div>
-      </section>
-
-      {/* ── HOW IT WORKS — Conceptual ── */}
-      <section className="relative z-10 py-24 border-t border-green-900/20">
-        <div className="max-w-6xl mx-auto px-6">
-          <RevealSection>
-            <div className="text-center mb-16">
-              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// How It Works</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
-                Pillars of <span className="text-green-400">Verifiable Trust</span>
-              </h2>
-              <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">
-                Aqua combines cryptographic hash chains, modular signatures, optional timestamping, and
-                decentralized verification to create trust without central authorities.
-              </p>
-            </div>
-          </RevealSection>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <RevealSection delay={100}>
-              <div className="p-8 rounded-xl border border-green-500/15 bg-[#0a0a0f]/80 hover:border-green-500/30 transition-all group relative overflow-hidden h-full">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
-                <div className="relative">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="text-green-500/40 font-mono text-4xl font-bold">01</span>
-                  </div>
-                  <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
-                    <FileCheck className="h-6 w-6 text-green-400" />
-                  </div>
-                  <h3 className="text-lg font-bold text-green-400 font-mono mb-3">PORTABLE HASH-CHAINS</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Aqua creates <span className="text-gray-300">AquaTrees</span> — portable data structures that record
-                    a complete history of revisions with cryptographic precision. Every change is chained, every version is preserved.
-                  </p>
-                  <div className="mt-5 font-mono text-xs text-green-500/50 border-t border-green-500/10 pt-4">
-                    &gt; Each revision linked by hash to its predecessor
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={200}>
-              <div className="p-8 rounded-xl border border-green-500/15 bg-[#0a0a0f]/80 hover:border-green-500/30 transition-all group relative overflow-hidden h-full">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
-                <div className="relative">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="text-green-500/40 font-mono text-4xl font-bold">02</span>
-                  </div>
-                  <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
-                    <Signature className="h-6 w-6 text-green-400" />
-                  </div>
-                  <h3 className="text-lg font-bold text-green-400 font-mono mb-3">MODULAR SIGNATURES</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Aqua supports <span className="text-gray-300">multiple signature schemes</span> — Ethereum wallets,
-                    DIDs, X.509 certificates, and more. The signature layer is modular by design: plug in the
-                    cryptographic paradigm that fits your security requirements without changing the protocol.
-                  </p>
-                  <div className="mt-5 font-mono text-xs text-green-500/50 border-t border-green-500/10 pt-4">
-                    &gt; One protocol, any signature scheme
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={300}>
-              <div className="p-8 rounded-xl border border-green-500/15 bg-[#0a0a0f]/80 hover:border-green-500/30 transition-all group relative overflow-hidden h-full">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
-                <div className="relative">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="text-green-500/40 font-mono text-4xl font-bold">03</span>
-                  </div>
-                  <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
-                    <Clock className="h-6 w-6 text-green-400" />
-                  </div>
-                  <h3 className="text-lg font-bold text-green-400 font-mono mb-3">IMMUTABLE TIMESTAMPS</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Anchor your data to tamper-proof timelines — via <span className="text-gray-300">Ethereum blockchain</span>,
-                    {" "}<span className="text-gray-300">qualified TSA services</span> (eIDAS-compliant), or both.
-                    Blockchain is optional — Aqua integrates with existing institutional infrastructure and decentralized networks alike.
-                  </p>
-                  <div className="mt-5 font-mono text-xs text-green-500/50 border-t border-green-500/10 pt-4">
-                    &gt; Blockchain or TSA — choose your trust anchor
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={400}>
-              <div className="p-8 rounded-xl border border-green-500/15 bg-[#0a0a0f]/80 hover:border-green-500/30 transition-all group relative overflow-hidden h-full">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
-                <div className="relative">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="text-green-500/40 font-mono text-4xl font-bold">04</span>
-                  </div>
-                  <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
-                    <LockKeyhole className="h-6 w-6 text-green-400" />
-                  </div>
-                  <h3 className="text-lg font-bold text-green-400 font-mono mb-3">FLEXIBLE TRUST</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Aqua bridges institutional and decentralized worlds. Use <span className="text-gray-300">enterprise registries</span> for
-                    regulatory compliance or <span className="text-gray-300">community-driven decentralized registries</span> for
-                    open verification — or combine both. One protocol, every trust model.
-                  </p>
-                  <div className="mt-5 font-mono text-xs text-green-500/50 border-t border-green-500/10 pt-4">
-                    &gt; Institutional or decentralized — works with both
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-          </div>
-        </div>
-      </section>
-
-      {/* ── OPEN PROTOCOL ── */}
-      <section className="relative z-10 py-24 border-t border-green-900/20">
-        <div className="max-w-4xl mx-auto px-6">
-          <RevealSection>
-            <div className="text-center">
-              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// Open Protocol</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
-                The <span className="text-green-400">Kubernetes</span> of AI Verification
-              </h2>
-              <p className="text-gray-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
-                Aqua V4 is fully open source. Trust infrastructure cannot depend on a single vendor — it must be
-                auditable, forkable, and verifiable by anyone. Free to build on. Enterprises deploy with
-                production-grade infrastructure, compliance, and SLAs.
-              </p>
-            </div>
-          </RevealSection>
-
-          <RevealSection delay={200}>
-            <div className="grid md:grid-cols-3 gap-6 mt-12">
-              <div className="p-6 rounded-xl border border-green-500/10 bg-[#0a0f0a]/60 text-center">
-                <Code className="h-6 w-6 text-green-400 mx-auto mb-3" />
-                <div className="font-mono text-sm text-green-400 font-bold mb-1">OPEN SPEC</div>
-                <p className="text-xs text-gray-500">Full protocol specification, verification trees, and SDK — publicly auditable.</p>
-              </div>
-              <div className="p-6 rounded-xl border border-green-500/10 bg-[#0a0f0a]/60 text-center">
-                <Globe className="h-6 w-6 text-green-400 mx-auto mb-3" />
-                <div className="font-mono text-sm text-green-400 font-bold mb-1">OPEN STANDARD</div>
-                <p className="text-xs text-gray-500">Interoperable by design. Every implementation strengthens the verification network.</p>
-              </div>
-              <div className="p-6 rounded-xl border border-green-500/10 bg-[#0a0f0a]/60 text-center">
-                <Shield className="h-6 w-6 text-green-400 mx-auto mb-3" />
-                <div className="font-mono text-sm text-green-400 font-bold mb-1">ENTERPRISE READY</div>
-                <p className="text-xs text-gray-500">Build free. Deploy with production-grade infrastructure, SLAs, and compliance.</p>
-              </div>
-            </div>
-          </RevealSection>
-        </div>
-      </section>
-
-      {/* ── WHO IT'S FOR ── */}
-      <section className="relative z-10 py-24 border-t border-green-900/20">
-        <div className="max-w-6xl mx-auto px-6">
-          <RevealSection>
-            <div className="text-center mb-16">
-              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// Who It&apos;s For</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
-                One Protocol. <span className="text-green-400">Every Stakeholder.</span>
-              </h2>
-            </div>
-          </RevealSection>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Explore */}
-            <RevealSection delay={100}>
-              <div className="h-full p-8 rounded-xl border border-sky-500/20 bg-[#0a0a0f]/80 hover:border-sky-500/40 transition-all relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-sky-500/5 rounded-full blur-3xl group-hover:bg-sky-500/10 transition-all" />
-                <div className="relative">
-                  <div className="h-12 w-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mb-5">
-                    <MousePointerClick className="h-6 w-6 text-sky-400" />
-                  </div>
-                  <h3 className="text-lg font-bold text-sky-400 font-mono mb-3">EXPLORE</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                    Experience Aqua hands-on with <span className="text-gray-300">Aquafier</span> — no code, no setup.
-                    See how cryptographic provenance works in practice, right in your browser.
-                  </p>
-                  <Link
-                    href="https://aquafier.inblock.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 border border-sky-500/30 text-sky-400 text-sm font-mono rounded-lg hover:bg-sky-500/10 transition-all"
-                  >
-                    TRY AQUAFIER
-                    <ExternalLink className="h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-            </RevealSection>
-
-            {/* Invest */}
-            <RevealSection delay={200}>
-              <div className="h-full p-8 rounded-xl border border-amber-500/20 bg-[#0a0a0f]/80 hover:border-amber-500/40 transition-all relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full blur-3xl group-hover:bg-amber-500/10 transition-all" />
-                <div className="relative">
-                  <div className="h-12 w-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-5">
-                    <TrendingUp className="h-6 w-6 text-amber-400" />
-                  </div>
-                  <h3 className="text-lg font-bold text-amber-400 font-mono mb-3">INVEST</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                    Trust infrastructure for AI — <span className="text-gray-300">regulatory tailwinds</span>, enterprise
-                    monetization, and a massive unmet market. The security layer AI has been missing.
-                  </p>
-                  <Link
-                    href="https://calendly.com/tim-bansemer/30min"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 border border-amber-500/30 text-amber-400 text-sm font-mono rounded-lg hover:bg-amber-500/10 transition-all"
-                  >
-                    BOOK A CALL
-                    <ExternalLink className="h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-            </RevealSection>
-
-            {/* License & Integrate */}
-            <RevealSection delay={300}>
-              <div className="h-full p-8 rounded-xl border border-violet-500/20 bg-[#0a0a0f]/80 hover:border-violet-500/40 transition-all relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-violet-500/5 rounded-full blur-3xl group-hover:bg-violet-500/10 transition-all" />
-                <div className="relative">
-                  <div className="h-12 w-12 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center mb-5">
-                    <Building2 className="h-6 w-6 text-violet-400" />
-                  </div>
-                  <h3 className="text-lg font-bold text-violet-400 font-mono mb-3">LICENSE &amp; INTEGRATE</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                    Enterprise-grade, <span className="text-gray-300">compliance-ready</span> deployment.
-                    Custom integration, licensing, and production infrastructure for your organization.
-                  </p>
-                  <Link
-                    href="https://calendly.com/tim-bansemer/30min"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 border border-violet-500/30 text-violet-400 text-sm font-mono rounded-lg hover:bg-violet-500/10 transition-all"
-                  >
-                    REQUEST A DEMO
-                    <ExternalLink className="h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-            </RevealSection>
-
-            {/* Build */}
-            <RevealSection delay={400}>
-              <div className="h-full p-8 rounded-xl border border-green-500/20 bg-[#0a0a0f]/80 hover:border-green-500/40 transition-all relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/5 rounded-full blur-3xl group-hover:bg-green-500/10 transition-all" />
-                <div className="relative">
-                  <div className="h-12 w-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mb-5">
-                    <Terminal className="h-6 w-6 text-green-400" />
-                  </div>
-                  <h3 className="text-lg font-bold text-green-400 font-mono mb-3">BUILD</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                    Open protocol, open SDK. Ship <span className="text-gray-300">verified AI applications</span> with
-                    cryptographic trust baked in from day one.
-                  </p>
-                  <Link
-                    href="https://github.com/inblockio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 border border-green-500/30 text-green-400 text-sm font-mono rounded-lg hover:bg-green-500/10 transition-all"
-                  >
-                    VIEW ON GITHUB
-                    <ExternalLink className="h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-            </RevealSection>
-          </div>
-        </div>
-      </section>
-
-      {/* ── SEE IT IN ACTION — Terminal Style ── */}
-      <section className="relative z-10 py-24 border-t border-green-900/20">
-        <div className="max-w-4xl mx-auto px-6">
-          <RevealSection>
-            <div className="text-center mb-16">
-              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// See It In Action</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
-                From <span className="text-red-500">Vulnerable</span> to <span className="text-green-400">Verified</span>
-              </h2>
-            </div>
-          </RevealSection>
-
-          <RevealSection delay={100}>
-            <div className="rounded-xl border border-green-500/20 bg-[#0a0a0f]/90 overflow-hidden">
-              {/* Terminal header */}
-              <div className="flex items-center gap-2 px-4 py-3 border-b border-green-500/10 bg-[#0a0f0a]/50">
-                <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                <span className="ml-2 text-xs font-mono text-gray-500">aqua-v4 — trust-pipeline</span>
-              </div>
-              {/* Terminal body */}
-              <div className="p-6 font-mono text-sm space-y-4">
-                <div>
-                  <span className="text-green-400">$</span> <span className="text-gray-300">aqua init --protocol v4</span>
-                  <div className="text-gray-500 mt-1">Initializing Aqua trust chain...</div>
-                  <div className="text-green-400 mt-1">&#10003; Genesis revision created</div>
-                </div>
-                <div>
-                  <span className="text-green-400">$</span> <span className="text-gray-300">aqua sign --identity did:aqua:0x7f3a...</span>
-                  <div className="text-gray-500 mt-1">Binding cryptographic identity...</div>
-                  <div className="text-green-400 mt-1">&#10003; Identity attested and sealed</div>
-                </div>
-                <div>
-                  <span className="text-green-400">$</span> <span className="text-gray-300">aqua verify --file ai-output.json</span>
-                  <div className="text-gray-500 mt-1">Verifying provenance chain...</div>
-                  <div className="text-gray-500 mt-1">Checking 14 revisions across 3 witnesses...</div>
-                  <div className="text-green-400 mt-1">&#10003; INTEGRITY VERIFIED — All hashes match</div>
-                  <div className="text-green-400">&#10003; IDENTITY CONFIRMED — Signer: verified</div>
-                  <div className="text-green-400">&#10003; PROVENANCE VALID — Complete chain from origin</div>
-                </div>
-                <div className="border-t border-green-500/10 pt-4">
-                  <span className="text-green-400">$</span> <span className="text-gray-300 animate-pulse">_</span>
-                </div>
-              </div>
-            </div>
-          </RevealSection>
-        </div>
-      </section>
-
-      {/* ── BEFORE / AFTER ── */}
-      <section className="relative z-10 py-24 border-t border-green-900/20">
-        <div className="max-w-6xl mx-auto px-6">
-          <RevealSection>
-            <div className="text-center mb-16">
-              <span className="text-green-400 font-mono text-xl md:text-2xl font-bold tracking-widest uppercase">// The Difference</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-white">
-                Without vs. With <span className="text-green-400">Aqua</span>
-              </h2>
-            </div>
-          </RevealSection>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Without Aqua */}
-            <RevealSection delay={100}>
-              <div className="p-8 rounded-xl border border-red-500/20 bg-red-500/[0.02] h-full">
-                <div className="flex items-center gap-2 mb-6">
-                  <AlertTriangle className="h-5 w-5 text-red-500" />
-                  <h3 className="text-lg font-bold text-red-400 font-mono">WITHOUT AQUA</h3>
-                </div>
-                <ul className="space-y-4">
-                  {[
-                    "AI outputs with no verifiable origin",
-                    "Identities that can be spoofed trivially",
-                    "No audit trail for data access",
-                    "Tampering is undetectable",
-                    "Trust based on faith, not proof",
-                    "Central authorities as single points of failure",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <span className="text-red-500 mt-0.5 font-mono font-bold text-lg leading-none">&times;</span>
-                      <span className="text-gray-400 text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </RevealSection>
-
-            {/* With Aqua */}
-            <RevealSection delay={200}>
-              <div className="p-8 rounded-xl border border-green-500/20 bg-green-500/[0.02] h-full">
-                <div className="flex items-center gap-2 mb-6">
-                  <Shield className="h-5 w-5 text-green-400" />
-                  <h3 className="text-lg font-bold text-green-400 font-mono">WITH AQUA V4</h3>
-                </div>
-                <ul className="space-y-4">
-                  {[
-                    "Every output carries cryptographic provenance",
-                    "Self-sovereign identity with peer attestation",
-                    "Complete, immutable access audit trail",
-                    "Instant tamper detection via hash verification",
-                    "Trust based on mathematics, not authority",
-                    "Decentralized — no single point of failure",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
-                      <span className="text-gray-300 text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </RevealSection>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA ── */}
-      <section className="relative z-10 py-24 border-t border-green-900/20">
-        <div className="max-w-4xl mx-auto px-6">
-          <RevealSection>
-            <div className="text-center rounded-2xl border border-green-500/20 bg-[#0a0f0a]/80 p-12 md:p-16 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-b from-green-500/5 to-transparent" />
-              <div className="relative">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/30 bg-green-500/5 mb-8">
-                  <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                  <span className="text-sm font-mono text-green-400">V4 IS GOING STEALTH — STAY TUNED</span>
-                </div>
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                  Something big<br />
-                  <span className="text-green-400">is building.</span>
-                </h2>
-                <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
-                  Want early access or a private briefing?
-                  <br />
-                  <span className="text-green-400/80 font-mono">Get in touch before we go dark.</span>
-                </p>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                  <Link
-                    href="https://calendly.com/tim-bansemer/30min"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-8 py-4 bg-green-500 text-black font-bold font-mono rounded-lg hover:bg-green-400 transition-all flex items-center gap-2 text-lg"
-                  >
-                    BOOK A CALL
-                    <ExternalLink className="h-5 w-5" />
-                  </Link>
-                  <Link
-                    href="https://x.com/inblockio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-8 py-4 border border-gray-600 text-gray-300 font-mono rounded-lg hover:border-green-500/50 hover:text-green-400 transition-all flex items-center gap-2 text-lg"
-                  >
-                    FOLLOW UPDATES
-                    <ExternalLink className="h-5 w-5" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </RevealSection>
-        </div>
-      </section>
-
-      {/* ── FOOTER ── */}
-      <footer className="relative z-10 border-t border-green-900/20 py-8">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <img src="/logo/aqua-logo.png" alt="Aqua" className="h-6 w-auto" />
-            <span className="text-sm text-gray-500 font-mono">AQUA PROTOCOL V4</span>
-          </div>
-          <div className="flex items-center gap-6">
-            <Link href="https://github.com/inblockio" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-400 transition-colors text-sm font-mono">
-              GITHUB
-            </Link>
-            <Link href="https://x.com/inblockio" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-400 transition-colors text-sm font-mono">
-              X
-            </Link>
-          </div>
-          <div className="text-xs text-gray-600 font-mono">
-            &copy; 2026 inBlock.io — All rights reserved
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   )
 }
