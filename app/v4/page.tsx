@@ -1238,7 +1238,7 @@ export default function V4LandingPage() {
               </Link>
             </div>
             <p className="text-xs text-slate-500 dark:text-white/40">
-              &copy; 2026 inBlock.io. All rights reserved.
+              &copy; 2026 inblock.io assets GmbH. All rights reserved.
             </p>
           </div>
         </footer>
