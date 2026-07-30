@@ -26,3 +26,199 @@
     var(--pg-5) 100%
   ) !important;
 }
+
+/* =========================================================
+   V4 teaser page (azure #1A7FE8 accent family)
+   Scale (WCAG contrast, verified):
+     azure-300 #7cb8f2  9.19:1 on dark canvas  (pill text, dark)
+     azure-400 #4c9bef  6.66:1 on dark canvas  (eyebrow accent, dark)
+     azure-500 #1a7fe8  4.82:1 on dark canvas  (base: glow, borders, dots)
+     azure-600 #1670d6  4.86:1 under white     (CTA fill, both themes)
+     azure-700 #1265c4  5.16:1 on --pg-1       (ink accent text, light)
+   ========================================================= */
+:root {
+  --v4-azure-300: #7cb8f2;
+  --v4-azure-400: #4c9bef;
+  --v4-azure-500: #1a7fe8;
+  --v4-azure-600: #1670d6;
+  --v4-azure-700: #1265c4;
+  --v4-accent-text: var(--v4-azure-700);
+  --v4-ring: var(--v4-azure-700);
+}
+
+.dark {
+  --v4-accent-text: var(--v4-azure-400);
+  --v4-ring: var(--v4-azure-500);
+}
+
+/* Page canvas: paper in light, near-black with a navy undertone in dark */
+.v4-bg {
+  background: linear-gradient(to bottom, var(--pg-1) 0%, var(--pg-2) 45%, var(--pg-3) 100%);
+}
+.dark .v4-bg {
+  background: linear-gradient(to bottom, #06080d 0%, #0a0e16 55%, #0d1424 100%);
+}
+
+/* Radial accent glow behind the hero */
+.v4-glow {
+  background: radial-gradient(60% 55% at 50% 0%, rgba(26, 127, 232, 0.11), transparent 70%);
+}
+.dark .v4-glow {
+  background: radial-gradient(60% 55% at 50% 0%, rgba(26, 127, 232, 0.17), transparent 70%);
+}
+
+/* Feathered text-protection veil: a soft ellipse over the hero-copy zone,
+   feathered on all sides so it never reads as a box. Quiets the network
+   behind text. Centered on small screens, left-weighted on desktop. */
+.v4-veil {
+  background: radial-gradient(
+    ellipse 78% 54% at 50% 44%,
+    rgba(240, 244, 250, 0.9) 0%,
+    rgba(240, 244, 250, 0.55) 55%,
+    rgba(240, 244, 250, 0.14) 82%,
+    transparent 100%
+  );
+}
+.dark .v4-veil {
+  background: radial-gradient(
+    ellipse 78% 54% at 50% 44%,
+    rgba(7, 10, 16, 0.84) 0%,
+    rgba(7, 10, 16, 0.5) 55%,
+    rgba(7, 10, 16, 0.12) 82%,
+    transparent 100%
+  );
+}
+@media (min-width: 768px) {
+  .v4-veil {
+    background: radial-gradient(
+      ellipse 46% 60% at 30% 46%,
+      rgba(240, 244, 250, 0.88) 0%,
+      rgba(240, 244, 250, 0.52) 55%,
+      rgba(240, 244, 250, 0.12) 82%,
+      transparent 100%
+    );
+  }
+  .dark .v4-veil {
+    background: radial-gradient(
+      ellipse 46% 60% at 30% 46%,
+      rgba(7, 10, 16, 0.78) 0%,
+      rgba(7, 10, 16, 0.46) 55%,
+      rgba(7, 10, 16, 0.1) 82%,
+      transparent 100%
+    );
+  }
+}
+
+/* Containment masks for the hero network. Two nested wrappers, ONE mask each,
+   so the composite is a guaranteed intersection without mask-composite.
+   Mobile (default): copy spans the full width, so keep the network only in
+   thin bands at the very top and bottom edges, and quiet it overall.
+   Desktop (md+): copy owns the left ~62%, so ramp the network in from
+   near-zero on the left to full strength on the right (Echo grammar), and
+   dissolve it before the hero's bottom edge via the inner wrapper. */
+.v4-net-outer {
+  opacity: 0.55;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.35) 8%,
+    transparent 15%,
+    transparent 91%,
+    rgba(0, 0, 0, 0.5) 97%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.35) 8%,
+    transparent 15%,
+    transparent 91%,
+    rgba(0, 0, 0, 0.5) 97%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
+@media (min-width: 768px) {
+  .v4-net-outer {
+    opacity: 1;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.04) 0%,
+      rgba(0, 0, 0, 0.07) 45%,
+      rgba(0, 0, 0, 0.3) 62%,
+      rgba(0, 0, 0, 0.85) 78%,
+      #000 90%
+    );
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.04) 0%,
+      rgba(0, 0, 0, 0.07) 45%,
+      rgba(0, 0, 0, 0.3) 62%,
+      rgba(0, 0, 0, 0.85) 78%,
+      #000 90%
+    );
+  }
+  .v4-net-inner {
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 98%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 98%);
+  }
+}
+
+/* Soft edge vignette so the page never ends in a flat fill */
+.v4-vignette::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(ellipse 95% 90% at 50% 35%, transparent 60%, rgba(18, 42, 84, 0.07) 100%);
+}
+.dark .v4-vignette::after {
+  background: radial-gradient(ellipse 95% 90% at 50% 35%, transparent 55%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+/* Composed page-load moment: staggered fade-up of hero children */
+.v4-stagger > * {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: v4-fade-up 0.9s cubic-bezier(0.16, 0.84, 0.44, 1) forwards;
+}
+.v4-stagger > :nth-child(1) { animation-delay: 0.12s; }
+.v4-stagger > :nth-child(2) { animation-delay: 0.3s; }
+.v4-stagger > :nth-child(3) { animation-delay: 0.48s; }
+.v4-stagger > :nth-child(4) { animation-delay: 0.66s; }
+.v4-stagger > :nth-child(5) { animation-delay: 0.84s; }
+
+/* Sections below the hero arrive after it settles */
+.v4-late {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: v4-fade-up 0.9s cubic-bezier(0.16, 0.84, 0.44, 1) forwards;
+  animation-delay: 0.95s;
+}
+.v4-late-2 {
+  animation-delay: 1.15s;
+}
+
+@keyframes v4-fade-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v4-stagger > *,
+  .v4-late {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
+/* Azure focus-visible rings for every interactive element on the page */
+.v4-page a:focus-visible,
+.v4-page button:focus-visible {
+  outline: 2px solid var(--v4-ring);
+  outline-offset: 3px;
+  border-radius: 8px;
+}

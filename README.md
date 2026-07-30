@@ -26,12 +26,31 @@ Open [http://localhost:3000](http://localhost:3000) to view the docs locally.
 │   ├── v1.1.0/             # Version 1.1.0 docs
 │   ├── v2.0.2/             # Version 2.0.2 docs
 │   ├── v3.0.2/             # Version 3.0.2 docs
-│   └── v4.0.0/             # Version 4.0.0 docs (active)
+│   └── v4.0.0/             # Version 4.0.0 docs (written, not published: see Version 4 stealth)
 ├── public/                 # Static assets
 ├── scripts/                # Build & indexing scripts
 ├── specra.config.json      # Site configuration
 └── next.config.mjs         # Next.js configuration
 ```
+
+## Version 4 stealth
+
+Version 4 is not public. Every `/docs/v4.0.0/*` URL renders the teaser in
+`app/components/v4-teaser.tsx` instead of its MDX, via a version check in
+`app/docs/[version]/[...slug]/page.tsx`:
+
+```tsx
+if (version === "v4.0.0") return <V4Teaser ... />
+```
+
+That check is load-bearing and must stay in the component. The site is built
+with `output: "export"`, and Next.js drops `redirects()` in static export, so a
+redirect rule cannot gate these URLs. The v4 MDX under `docs/v4.0.0/` is still
+authored and still prerendered, it is simply never rendered to visitors. All v4
+slugs share one canonical URL (`/docs/v4.0.0/welcome`) and are excluded from the
+sitemap.
+
+To publish v4: delete the version check and the teaser component.
 
 ## Writing Documentation
 
