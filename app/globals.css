@@ -44,11 +44,23 @@
   --v4-azure-700: #1265c4;
   --v4-accent-text: var(--v4-azure-700);
   --v4-ring: var(--v4-azure-700);
+
+  /* Muted warning register for the /v4 problem sections. Azure stays the only
+     true accent; this reads as "unresolved", not as an alarm. Never paired with
+     a pulse or a siren dot. Contrast: #92610a 5.53:1 on --pg-1. */
+  --v4-warn-text: #92610a;
+  --v4-warn-border: rgba(146, 97, 10, 0.28);
+  --v4-warn-bg: rgba(146, 97, 10, 0.05);
 }
 
 .dark {
   --v4-accent-text: var(--v4-azure-400);
   --v4-ring: var(--v4-azure-500);
+
+  /* #f0b445 10.02:1 on the dark canvas */
+  --v4-warn-text: #f0b445;
+  --v4-warn-border: rgba(240, 180, 69, 0.3);
+  --v4-warn-bg: rgba(240, 180, 69, 0.07);
 }
 
 /* Page canvas: paper in light, near-black with a navy undertone in dark */
