@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Suspense } from "react"
+import { DM_Sans, Plus_Jakarta_Sans } from "next/font/google"
 import {
   extractTableOfContents,
   getAdjacentDocs,
@@ -26,6 +27,12 @@ import {
 import specraConfig from "./../../../../specra.config.json"
 import { CategoryIndex, DocLayout } from "specra/layouts"
 import { mdxComponents } from "specra/mdx-components"
+import V4Teaser from "./../../../components/v4-teaser"
+
+/* Fonts for the V4 teaser page (module scope, server component):
+   DM Sans for body/UI, Plus Jakarta Sans for display headlines. */
+const dmSans = DM_Sans({ subsets: ["latin"] })
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ["latin"] })
 
 interface PageProps {
   params: Promise<{
@@ -39,7 +46,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const slug = slugArray.join("/")
 
   if (version === "v4.0.0") {
-    return { title: "Aqua V4 — Coming Soon", description: "Something is coming. Stay tuned." }
+    const title = "Aqua Protocol V4: In Development"
+    const description =
+      "Version 4 of Aqua Protocol is in development. Aqua is an open protocol for verifiable data provenance, built on cryptographic proof. The v3 documentation remains the current reference."
+    return {
+      title,
+      description,
+      openGraph: { title, description, type: "website" },
+      twitter: { card: "summary", title, description },
+    }
   }
 
   const doc = await getCachedDocBySlug(slug, version)
@@ -95,44 +110,12 @@ export async function generateStaticParams() {
   return params
 }
 
-function V4StealthPage() {
-  return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#050508] text-gray-100 px-6">
-      <div className="text-center max-w-md">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/20 bg-green-500/5 mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-          <span className="text-xs font-mono text-green-400/80 tracking-widest">IN DEVELOPMENT</span>
-        </div>
-        <h1 className="text-3xl font-bold text-white mb-4 font-mono">
-          AQUA <span className="text-green-400">V4</span>
-        </h1>
-        <p className="text-gray-500 font-mono text-sm leading-relaxed mb-8">
-          Something is coming.<br />Stay tuned.
-        </p>
-        <div className="flex flex-col items-center gap-3">
-          <a
-            href="/v4"
-            className="inline-flex items-center gap-2 px-5 py-2.5 border border-green-500/30 text-green-400 font-mono text-sm rounded-lg hover:bg-green-500/10 transition-all"
-          >
-            LEARN MORE
-          </a>
-          <a
-            href="/docs/v3.0.2/introduction"
-            className="text-xs font-mono text-gray-600 hover:text-gray-400 transition-colors underline underline-offset-2"
-          >
-            Read our older docs (v3)
-          </a>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 export default async function DocPage({ params }: PageProps) {
   const { version, slug: slugArray } = await params
   const slug = slugArray.join("/")
 
-  if (version === "v4.0.0") return <V4StealthPage />
+  if (version === "v4.0.0")
+    return <V4Teaser sansClass={dmSans.className} displayClass={plusJakarta.className} />
 
   const allDocs = await getCachedAllDocs(version)
   const versions = getCachedVersions()

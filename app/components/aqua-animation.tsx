@@ -2,12 +2,19 @@
 
 import { useEffect, useRef } from "react"
 
+type AquaNodeType = "genesis" | "revision" | "signature" | "witness"
+
 interface AquaAnimationProps {
   reverse?: boolean
   laneCount?: number
   invertSpeed?: boolean
   fadeAboveSelector?: string
   topPadding?: number
+  /**
+   * Optional per-node-type color override ([r, g, b]). Omitted types keep the
+   * default palette, so existing call sites render exactly as before.
+   */
+  nodeColors?: Partial<Record<AquaNodeType, [number, number, number]>>
 }
 
 interface AquaNode {
@@ -53,6 +60,7 @@ export default function AquaAnimation({
   invertSpeed = false,
   fadeAboveSelector,
   topPadding = 0,
+  nodeColors,
 }: AquaAnimationProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
@@ -80,6 +88,7 @@ export default function AquaAnimation({
       revision: [239, 84, 1],
       signature: [40, 180, 80],
       witness: [50, 130, 220],
+      ...nodeColors,
     }
 
     const DRIFT_MIN = 0.4
@@ -556,7 +565,7 @@ export default function AquaAnimation({
       window.removeEventListener("resize", handleResize)
       cancelAnimationFrame(animId)
     }
-  }, [reverse, laneCount, invertSpeed, topPadding, fadeAboveSelector])
+  }, [reverse, laneCount, invertSpeed, topPadding, fadeAboveSelector, nodeColors])
 
   return (
     <canvas
