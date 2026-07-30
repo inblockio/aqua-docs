@@ -55,25 +55,12 @@ export default function V4Teaser({ sansClass, displayClass }: V4TeaserProps) {
     <div
       className={`v4-page v4-bg v4-vignette relative min-h-screen overflow-hidden text-slate-900 dark:text-white ${sansClass}`}
     >
-      {/* Atmosphere: radial azure glow + the aqua hash-chain network */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-        <div className="v4-glow absolute inset-0" />
-        <div className="absolute inset-0 motion-reduce:hidden">
-          <AquaAnimation
-            laneCount={14}
-            topPadding={72}
-            fadeAboveSelector="#v4-hero-end"
-            nodeColors={AZURE_NODE_COLORS}
-          />
-        </div>
-      </div>
-
       <div className="relative z-10">
         <header>
           <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
             <Link
               href="/"
-              className={`text-lg font-semibold tracking-tight text-slate-900 dark:text-white ${displayClass}`}
+              className={`text-lg font-semibold text-slate-900 dark:text-white ${displayClass}`}
             >
               Aqua Protocol
             </Link>
@@ -81,8 +68,26 @@ export default function V4Teaser({ sansClass, displayClass }: V4TeaserProps) {
           </div>
         </header>
 
-        {/* Hero */}
-        <section className="relative">
+        {/* Hero. The atmosphere (glow + hash-chain network) is bounded to this
+            section, mirroring the reference: nothing below the hero ever has a
+            line drawn over it. Two nested wrappers each carry a single mask
+            (reliable intersection without mask-composite): outer = keep the
+            network off the copy (horizontal ramp on desktop, edge bands on
+            mobile), inner = dissolve before the hero bottom edge. */}
+        <section className="relative overflow-hidden">
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+            <div className="v4-glow absolute inset-0" />
+            <div className="v4-net-outer absolute inset-0 motion-reduce:hidden">
+              <div className="v4-net-inner absolute inset-0">
+                <AquaAnimation
+                  laneCount={8}
+                  topPadding={16}
+                  fadeAboveSelector="#v4-hero-end"
+                  nodeColors={AZURE_NODE_COLORS}
+                />
+              </div>
+            </div>
+          </div>
           <div aria-hidden="true" className="v4-veil pointer-events-none absolute inset-0" />
           <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-20 sm:pt-28 lg:px-8">
             <div className="v4-stagger max-w-[820px]">
@@ -120,7 +125,7 @@ export default function V4Teaser({ sansClass, displayClass }: V4TeaserProps) {
                 </Link>
                 <Link
                   href="/v4"
-                  className="text-base font-medium text-slate-600 underline-offset-4 transition-colors hover:text-[var(--v4-accent-text)] hover:underline dark:text-white/60"
+                  className="inline-flex items-center gap-1.5 text-base font-medium text-[var(--v4-accent-text)] underline decoration-[#1a7fe8]/35 underline-offset-4 transition-colors hover:decoration-[#1a7fe8]"
                 >
                   Learn more
                 </Link>
@@ -148,7 +153,7 @@ export default function V4Teaser({ sansClass, displayClass }: V4TeaserProps) {
             {VALUE_CARDS.map(({ icon: Icon, title, body }) => (
               <div
                 key={title}
-                className="group rounded-2xl border border-slate-900/10 bg-white/60 p-6 backdrop-blur-md transition-all duration-300 hover:border-[#1a7fe8]/50 hover:shadow-[0_12px_40px_-10px_rgba(26,127,232,0.35)] dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-[#1a7fe8]/60 dark:hover:shadow-[0_12px_40px_-10px_rgba(26,127,232,0.3)]"
+                className="group rounded-2xl border border-slate-900/15 bg-white/75 p-6 backdrop-blur-md transition-all duration-300 hover:border-[#1a7fe8]/50 hover:shadow-[0_12px_40px_-10px_rgba(26,127,232,0.35)] dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-[#1a7fe8]/60 dark:hover:shadow-[0_12px_40px_-10px_rgba(26,127,232,0.3)]"
               >
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#1a7fe8]/10 transition-colors group-hover:bg-[#1a7fe8]/15 dark:bg-[#1a7fe8]/15">
                   <Icon aria-hidden="true" className="h-5 w-5 text-[var(--v4-accent-text)]" />

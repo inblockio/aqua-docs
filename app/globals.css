@@ -72,40 +72,94 @@
    behind text. Centered on small screens, left-weighted on desktop. */
 .v4-veil {
   background: radial-gradient(
-    ellipse 64% 44% at 50% 42%,
-    rgba(240, 244, 250, 0.85) 0%,
-    rgba(240, 244, 250, 0.5) 55%,
-    rgba(240, 244, 250, 0.12) 82%,
+    ellipse 78% 54% at 50% 44%,
+    rgba(240, 244, 250, 0.9) 0%,
+    rgba(240, 244, 250, 0.55) 55%,
+    rgba(240, 244, 250, 0.14) 82%,
     transparent 100%
   );
 }
 .dark .v4-veil {
   background: radial-gradient(
-    ellipse 64% 44% at 50% 42%,
-    rgba(7, 10, 16, 0.74) 0%,
-    rgba(7, 10, 16, 0.44) 55%,
-    rgba(7, 10, 16, 0.1) 82%,
+    ellipse 78% 54% at 50% 44%,
+    rgba(7, 10, 16, 0.84) 0%,
+    rgba(7, 10, 16, 0.5) 55%,
+    rgba(7, 10, 16, 0.12) 82%,
     transparent 100%
   );
 }
 @media (min-width: 768px) {
   .v4-veil {
     background: radial-gradient(
-      ellipse 40% 52% at 28% 50%,
-      rgba(240, 244, 250, 0.85) 0%,
-      rgba(240, 244, 250, 0.5) 55%,
+      ellipse 46% 60% at 30% 46%,
+      rgba(240, 244, 250, 0.88) 0%,
+      rgba(240, 244, 250, 0.52) 55%,
       rgba(240, 244, 250, 0.12) 82%,
       transparent 100%
     );
   }
   .dark .v4-veil {
     background: radial-gradient(
-      ellipse 40% 52% at 28% 50%,
-      rgba(7, 10, 16, 0.74) 0%,
-      rgba(7, 10, 16, 0.44) 55%,
+      ellipse 46% 60% at 30% 46%,
+      rgba(7, 10, 16, 0.78) 0%,
+      rgba(7, 10, 16, 0.46) 55%,
       rgba(7, 10, 16, 0.1) 82%,
       transparent 100%
     );
+  }
+}
+
+/* Containment masks for the hero network. Two nested wrappers, ONE mask each,
+   so the composite is a guaranteed intersection without mask-composite.
+   Mobile (default): copy spans the full width, so keep the network only in
+   thin bands at the very top and bottom edges, and quiet it overall.
+   Desktop (md+): copy owns the left ~62%, so ramp the network in from
+   near-zero on the left to full strength on the right (Echo grammar), and
+   dissolve it before the hero's bottom edge via the inner wrapper. */
+.v4-net-outer {
+  opacity: 0.55;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.35) 8%,
+    transparent 15%,
+    transparent 91%,
+    rgba(0, 0, 0, 0.5) 97%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.35) 8%,
+    transparent 15%,
+    transparent 91%,
+    rgba(0, 0, 0, 0.5) 97%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
+@media (min-width: 768px) {
+  .v4-net-outer {
+    opacity: 1;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.04) 0%,
+      rgba(0, 0, 0, 0.07) 45%,
+      rgba(0, 0, 0, 0.3) 62%,
+      rgba(0, 0, 0, 0.85) 78%,
+      #000 90%
+    );
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.04) 0%,
+      rgba(0, 0, 0, 0.07) 45%,
+      rgba(0, 0, 0, 0.3) 62%,
+      rgba(0, 0, 0, 0.85) 78%,
+      #000 90%
+    );
+  }
+  .v4-net-inner {
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 98%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 98%);
   }
 }
 
