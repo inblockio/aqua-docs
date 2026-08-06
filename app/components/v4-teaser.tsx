@@ -112,7 +112,7 @@ export default function V4Teaser({ sansClass, displayClass }: V4TeaserProps) {
                 documentation is the complete, current reference.
               </p>
 
-              <div className="mt-9 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
+              <div className="mt-9">
                 <Link
                   href="/docs/v3.0.2/introduction"
                   className="group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--v4-azure-600)] px-7 py-3.5 text-base font-semibold text-white shadow-md shadow-[color:rgba(22,112,214,0.3)] transition hover:bg-[var(--v4-azure-700)] hover:shadow-lg hover:shadow-[color:rgba(22,112,214,0.4)]"
@@ -122,12 +122,6 @@ export default function V4Teaser({ sansClass, displayClass }: V4TeaserProps) {
                     aria-hidden="true"
                     className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
                   />
-                </Link>
-                <Link
-                  href="/v4"
-                  className="inline-flex items-center gap-1.5 text-base font-medium text-[var(--v4-accent-text)] underline decoration-[#1a7fe8]/35 underline-offset-4 transition-colors hover:decoration-[#1a7fe8]"
-                >
-                  Learn more
                 </Link>
               </div>
 
