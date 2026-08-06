@@ -63,5 +63,10 @@
     "source": "/docs/v4/schema",
     "destination": "/docs/v4.0.0/schema-reference/aqua-tree",
     "permanent": false
+  },
+  {
+    "source": "/v4",
+    "destination": "/docs/v4.0.0/welcome",
+    "permanent": false
   }
 ]
