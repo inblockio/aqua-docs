@@ -50,6 +50,13 @@ authored and still prerendered, it is simply never rendered to visitors. All v4
 slugs share one canonical URL (`/docs/v4.0.0/welcome`) and are excluded from the
 sitemap.
 
+Two entry points funnel into that canonical URL rather than rendering anything
+of their own: `/docs/v4.0.0` (the bare version index, via the same version check
+in `app/docs/[version]/page.tsx`) and `/v4`, which used to serve a standalone v4
+landing page and is now a redirect entry in `redirects.json`. The `/v4` redirect
+is deliberately temporary, so the URL stays available for a real landing page
+when v4 publishes.
+
 To publish v4: delete the version check and the teaser component.
 
 ## Writing Documentation
