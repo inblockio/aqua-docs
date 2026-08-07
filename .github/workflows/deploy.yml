@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # Trigger deployment when pushing to 'main' branch
+  workflow_dispatch:  # Allow manual redeploys (e.g. after runner-acquisition failures)
 #   pull_request:
 #     branches:
 #       - main  # Validate documentation on pull requests
@@ -47,7 +48,7 @@ jobs:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     needs: validate
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
 
     permissions:
       contents: write  # Required for pushing to gh-pages branch
