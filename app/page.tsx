@@ -34,16 +34,15 @@ function XIcon({ className }: { className?: string }) {
  * (proposed standard, not yet ratified), and where the public resources live.
  * No product content; products built on the protocol belong to inblock.io.
  *
- * Design language mirrors the v4 teaser (azure accent family, DM Sans body,
- * Plus Jakarta display, bounded hero atmosphere) so the site reads as one
- * system. Shared constants stay duplicated from v4-teaser.tsx for now because
- * that file is being worked on in parallel; extract once it is open for edits.
+ * Design language: azure accent family (tokens and atmosphere classes in
+ * globals.css), DM Sans body, Plus Jakarta display, bounded hero atmosphere.
  */
 
 const dmSans = DM_Sans({ subsets: ["latin"] })
 const plusJakarta = Plus_Jakarta_Sans({ subsets: ["latin"] })
 
-// Azure-family palette for the hash-chain canvas (same values as the teaser).
+// Azure-family palette for the hash-chain canvas (mirrors the --v4-azure-*
+// tokens in globals.css).
 const AZURE_NODE_COLORS: Partial<
   Record<"genesis" | "revision" | "signature" | "witness", [number, number, number]>
 > = {
@@ -53,12 +52,13 @@ const AZURE_NODE_COLORS: Partial<
   witness: [124, 184, 242], // azure-300
 }
 
-// v4 is stealth-gated (see README), so every entry point stays pinned to the
-// newest published version until v4 goes public.
-const DOCS_URL = "/docs/v3.0.2/introduction"
-const SPEC_URL = "/docs/v3.0.2/schema"
+// Current published protocol version; bump alongside site.activeVersion in
+// specra.config.json when a new version is published.
+const CURRENT_VERSION = "v4.0.0"
+const DOCS_URL = `/docs/${CURRENT_VERSION}/welcome`
+const SPEC_URL = `/docs/${CURRENT_VERSION}/schema-reference/introduction`
 const WHITEPAPER_URL = "/docs/v1.1.0/whitepaper"
-const V4_STATUS_URL = "/docs/v4.0.0/welcome"
+const PREVIOUS_VERSION_URL = "/docs/v3.0.2/introduction"
 const GITHUB_ORG_URL = "https://github.com/inblockio"
 const AIP_URL = "https://github.com/inblockio/aqua-improvement-proposal"
 const EXAMPLES_URL = "https://github.com/inblockio/aqua-examples"
@@ -86,9 +86,9 @@ const RESOURCES = [
   {
     icon: FileText,
     title: "Specification",
-    body: "The data structures, revision schema, and verification rules of version 3, the current published protocol.",
+    body: "The data structures, revision schema, and verification rules of version 4, the current published protocol.",
     href: SPEC_URL,
-    label: "docs / v3.0.2 / schema",
+    label: `docs / ${CURRENT_VERSION} / schema-reference`,
     external: false,
   },
   {
@@ -96,7 +96,7 @@ const RESOURCES = [
     title: "Documentation",
     body: "Introduction, concepts, and tooling reference for implementers of the current protocol.",
     href: DOCS_URL,
-    label: "docs / v3.0.2",
+    label: `docs / ${CURRENT_VERSION}`,
     external: false,
   },
   {
@@ -317,16 +317,16 @@ export default function HomePage() {
           </div>
           <p className="mt-8 text-sm leading-relaxed text-slate-500 dark:text-white/50">
             <code className="rounded bg-[#1a7fe8]/10 px-1.5 py-0.5 font-mono text-[13px] text-[var(--v4-accent-text)] dark:bg-[#1a7fe8]/15 dark:text-[var(--v4-azure-300)]">
-              v3.0.2
+              {CURRENT_VERSION}
             </code>{" "}
-            is the current published version of the protocol.{" "}
+            is the current published version of the protocol. Previous versions, including{" "}
             <Link
-              href={V4_STATUS_URL}
-              className="underline decoration-[#1a7fe8]/40 underline-offset-4 transition-colors hover:text-[var(--v4-accent-text)]"
+              href={PREVIOUS_VERSION_URL}
+              className="font-mono text-[13px] underline decoration-[#1a7fe8]/40 underline-offset-4 transition-colors hover:text-[var(--v4-accent-text)]"
             >
-              Version 4
-            </Link>{" "}
-            is in development.
+              v3.0.2
+            </Link>
+            , remain available.
           </p>
         </section>
 
