@@ -1,0 +1,431 @@
+---
+title: "aqua-rs-sdk-core"
+description: 'Rust API reference for aqua-rs-sdk-core, the WASM-free core implementation of Aqua Protocol v4'
+icon: "code"
+sidebar_position: 1
+redirect_from:
+  - /docs/v4.0.0/dev-tools/aqua-sdk
+  - /docs/v4.0.0/development
+---
+
+`aqua-rs-sdk-core` is a minimal, WASM-free Rust implementation of the Aqua Protocol core: verifiable, portable data trees with anchors, typed objects, templates, cryptographic signatures, and selective disclosure. It is a **compatible subset** of the full `aqua-rs-sdk` (scheduled for a later publication): template hashes, canonicalization, and verification semantics are bit-for-bit identical, and that compatibility is not aspirational — it is enforced by a cross-implementation test suite (`compat-tests/`) that runs both crates side by side and cross-verifies signed trees in both directions.
+
+The crate builds as a plain `rlib` — no `wasm-bindgen`, no `wasmi`, no `cdylib` — with 18 runtime dependencies, licensed Apache-2.0. Source: [github.com/inblockio/aqua-rs-sdk-core](https://github.com/inblockio/aqua-rs-sdk-core).
+
+<Callout type="warning" title="Experimental release">
+Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+</Callout>
+
+The normative protocol specification ships in the same repository under [protocol-specification/](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification). The code is the reference implementation; the specification states the protocol a conforming producer or verifier must follow.
+
+## Installation
+
+The crate is not on crates.io yet (publication is planned); install it as a git dependency:
+
+```toml
+[dependencies]
+aqua-rs-sdk-core = { git = "https://github.com/inblockio/aqua-rs-sdk-core" }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] } # for the async API
+serde_json = "1"
+hex = "0.4"
+```
+
+`tokio` is only needed for the async signing and verification API; a fully synchronous verification path (`verify_tree_sync`) exists if you prefer not to pull in an async runtime.
+
+**Feature flags:**
+
+| Flag | Default | Purpose |
+|---|---|---|
+| `native` | on | Enables the EIP-191 secp256k1 signer (`SigningCredentials::Secp256k1`, `Secp256k1Signer`) |
+
+## The Aquafier entry point
+
+`Aquafier` is the SDK facade: a stateless, `Clone + Send + Sync` handle, safe to wrap in `Arc` and share across threads. Signing keys are passed per call as `SigningCredentials`; verification behavior is governed by a `VerificationPolicy`. Construct it with `Aquafier::new()` for defaults, or `Aquafier::builder()` for explicit configuration:
+
+| Builder option | Default | Effect |
+|---|---|---|
+| `default_object_method` | `Method::Tree` | Hashing method for object revisions; `Tree` enables field-level selective disclosure |
+| `default_signature_method` | `Method::Scalar` | Method for non-object revisions (signatures, anchors) |
+| `hash_type` | `HashType::Sha3_256` | Hash algorithm for new trees (`Blake3_256` is opt-in); existing trees keep the algorithm they were created with |
+| `verification_policy` | `VerificationPolicy::strict()` | Governs the relaxable verification decision points (`strict()`, `offline()`, `debug()`, or custom); structural validation and hash integrity always hard-fail regardless of policy |
+
+The method reference below follows the task flow: create, sign, verify, link, export, disclose. Examples are fragments (`// …` marks elided context); a complete runnable program is in the [Quickstart](/docs/v4.0.0/quickstart).
+
+---
+
+## Creating trees
+
+### create_genesis_revision()
+
+Creates the root revision of a new Aqua tree from file data (content hash, size, name).
+
+**Signature:**
+```rust
+pub fn create_genesis_revision(
+    &self,
+    file_data: FileData,
+    method: Option<Method>,
+) -> Result<Tree, MethodError>
+```
+
+**Parameters:**
+- `file_data`: `FileData::new(file_name, file_content, path)` — the content to anchor
+- `method`: `None` uses the configured default (`Tree`)
+
+**Returns:** the new `Tree`, or `MethodError` on failure.
+
+**Example:**
+```rust
+// … aquafier: Aquafier
+let file = FileData::new(
+    "hello.txt".to_string(),
+    b"hello world".to_vec(),
+    PathBuf::from("hello.txt"),
+);
+let tree = aquafier.create_genesis_revision(file, None)?;
+```
+
+Two variants cover special cases: `create_minimal_genesis_revision` (content hash only, no file metadata) and `create_genesis_revision_from_metadata` (takes a `FileMetadata` with a pre-computed content hash and size, avoiding a redundant hash pass).
+
+---
+
+### create_object()
+
+Creates a typed object revision. The `template_hash` identifies the template whose JSON Schema the payload must satisfy; it becomes the revision's `revision_type`.
+
+**Signature:**
+```rust
+pub fn create_object(
+    &self,
+    template_hash: RevisionLink,
+    previous_tree: Option<Tree>,
+    payload: serde_json::Value,
+    method: Option<Method>,
+) -> Result<Tree, MethodError>
+```
+
+**Parameters:**
+- `template_hash`: the template's `RevisionLink` (its multihash identity)
+- `previous_tree`: `Some(tree)` appends to an existing tree; `None` starts a new one
+- `payload`: the object's JSON payload
+- `method`: `None` uses the configured default (`Tree`)
+
+**Returns:** the updated `Tree`, or `MethodError` on failure.
+
+<Callout type="warning" title="Creation-time validation is only automatic for built-in templates">
+`create_object` validates the payload against the template's JSON Schema only when it can resolve the template — and it can only resolve this crate's built-ins. For a custom, imported, or registry-sourced type it creates the revision <strong>unvalidated</strong>, and the mistake surfaces later, at the receiver's verification. Use `create_object_validated` for every non-built-in type.
+</Callout>
+
+---
+
+### create_object_validated()
+
+Creates a typed object revision, validating the payload against a template resolved from **explicit sources**. This is the required creation path for custom, imported, and registry-sourced types.
+
+**Signature:**
+```rust
+pub fn create_object_validated(
+    &self,
+    template_hash: RevisionLink,
+    previous_tree: Option<Tree>,
+    payload: serde_json::Value,
+    method: Option<Method>,
+    template_sources: &[Tree],
+) -> Result<Tree, CreateObjectError>
+```
+
+**Parameters:**
+- `template_sources`: one-revision template trees, as produced by [`template_tree`](#template_tree) or handed out by a registry import store. Resolution order matches verification: the previous tree's own revisions, the built-in catalog, then these sources
+- remaining parameters: as in `create_object`
+
+**Returns:** the updated `Tree`. Fails closed: `CreateObjectError::TemplateNotFound` if no source supplies the template (never a silent unvalidated create), `AncestorTemplateNotFound` if an ancestor in the template's `derives_from` chain is missing, `SchemaViolation` with per-field errors if the payload does not satisfy the schema. The resulting tree is byte-identical to what `create_object` would produce for the same inputs — this adds a gate, not a different construction.
+
+**Example:**
+```rust
+// … my_template: Template, my_template_link: RevisionLink
+let source = aquafier.template_tree(&my_template, Some("my_template"))?;
+let tree = aquafier.create_object_validated(
+    my_template_link,
+    None,
+    serde_json::json!({ "field": "value" }),
+    None,
+    &[source],
+)?;
+```
+
+---
+
+## Templates
+
+### create_template()
+
+Creates a new template definition and registers it with this Aquafier instance. The template's SHA3-256 hash becomes its type identifier.
+
+**Signature:**
+```rust
+pub fn create_template(
+    &mut self,
+    json_schema: serde_json::Value,
+    template_name: String,
+    enable_scalar: bool,
+) -> Result<Tree, MethodError>
+```
+
+**Parameters:**
+- `json_schema`: the JSON Schema that objects of this type must satisfy
+- `template_name`: display name for the template
+- `enable_scalar`: allow `Scalar`-method objects of this type in addition to `Tree`-method
+
+**Returns:** a single-revision template `Tree`. Note the `&mut self`: the template is also registered on the instance and listed by `get_available_templates()`.
+
+**Example:** see [docs/template-authoring.md](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/docs/template-authoring.md) for the full authoring workflow (schema rules, hash pinning, shipping).
+
+---
+
+### template_tree()
+
+Wraps an existing template definition as a one-revision Aqua tree, keyed by the template's **full multihash** link. This is the portable-template shape: the unit a template author publishes, an import store keeps, `export_tree` accepts as a template source, and `verify_aqua_tree_with_linked_trees` resolves custom types from.
+
+**Signature:**
+```rust
+pub fn template_tree(
+    &self,
+    template: &schema::Template,
+    name: Option<&str>,
+) -> Result<Tree, MethodError>
+```
+
+**Parameters:**
+- `template`: the parsed template definition
+- `name`: label for the tree's `file_index` (organizational metadata, never hashed); `None` falls back to the built-in name or a `template_<hash prefix>` label
+
+**Returns:** the one-revision template `Tree`.
+
+**Example:**
+```rust
+// … registry_template_json: String from a registry import store
+let template: Template = serde_json::from_str(&registry_template_json)?;
+let source = aquafier.template_tree(&template, Some("audit_user_turn_marker"))?;
+```
+
+---
+
+## Signing
+
+### sign_aqua_tree()
+
+Signs the latest revision in an Aqua tree, appending a Signature revision that points at the tree's tip. The credentials determine the signature suite:
+
+| Variant | Field | Suite and identity |
+|---|---|---|
+| `SigningCredentials::Did` | `did_key: Vec<u8>` (32-byte Ed25519 secret) | Ed25519, `did:key:z6Mk…` |
+| `SigningCredentials::P256` | `p256_key: Vec<u8>` | ECDSA P-256, `did:key:zDn…` |
+| `SigningCredentials::Secp256k1` | `secp256k1_key: Vec<u8>` (32-byte scalar) | EIP-191, `did:pkh:eip155:…` — requires the `native` feature |
+
+**Signature:**
+```rust
+pub async fn sign_aqua_tree(
+    &self,
+    aqua_tree: AquaTreeWrapper,
+    credentials: &SigningCredentials,
+    method: Option<Method>,
+    ident_character: Option<String>,
+) -> Result<AquaOperationData, MethodError>
+```
+
+**Parameters:**
+- `aqua_tree`: `AquaTreeWrapper::new(tree, file_object, revision)` — `revision: None` targets the tree's tip
+- `credentials`: one of the variants above
+- `method`: `None` uses the configured default (`Scalar`)
+- `ident_character`: optional application-level label recorded in the signature revision's metadata (e.g. multi-signer workflows)
+
+**Returns:** `AquaOperationData` — the signed tree in `.aqua_tree`, plus diagnostic `log_data`.
+
+**Example:**
+```rust
+// … tree: Tree from a create call
+let (secret, _did) = aqua_rs_sdk_core::generate_ed25519();
+let creds = SigningCredentials::Did { did_key: secret.to_vec() };
+let signed = aquafier
+    .sign_aqua_tree(AquaTreeWrapper::new(tree, None, None), &creds, None, None)
+    .await?;
+```
+
+---
+
+## Verifying
+
+### verify_aqua_tree()
+
+Runs the full verification pipeline over a tree: structural validation, hash recomputation, type and schema checks, and signature verification for every revision.
+
+**Signature:**
+```rust
+pub async fn verify_aqua_tree(
+    &self,
+    aqua_tree_wrapper: AquaTreeWrapper,
+    file_objects: Vec<FileData>,
+) -> Result<VerificationResult, MethodError>
+```
+
+**Parameters:**
+- `aqua_tree_wrapper`: the tree to verify
+- `file_objects`: file contents for trees containing file genesis revisions (content hash verification)
+
+**Returns:** a `VerificationResult`:
+
+| Field | Type | Meaning |
+|---|---|---|
+| `outcome` | `VerificationOutcome` | `Verified`, `VerifiedWithWarnings` (carries the tolerated policy warnings), or `Failed` — the single source of truth |
+| `logs` | `Vec<LogData>` | Per-revision diagnostic log entries |
+| `wasm_outputs` | `HashMap<String, serde_json::Value>` | WASM outputs keyed by revision hash; populated only when WASM verification passed (core has no WASM runtime and rejects compute-bearing templates instead) |
+| `template_trust` | `HashMap<String, TemplateTrust>` | Template-trust labels keyed by revision hash; populated only for revisions whose WASM verification executed |
+
+`result.is_verified()` is true for `Verified` and `VerifiedWithWarnings`; `result.is_clean()` is true only for `Verified`.
+
+**Example:**
+```rust
+// … signed: AquaOperationData, file: FileData
+let result = aquafier
+    .verify_aqua_tree(
+        AquaTreeWrapper::new(signed.aqua_tree, Some(file.clone()), None),
+        vec![file],
+    )
+    .await?;
+assert!(result.is_verified());
+```
+
+**Variants:**
+- `verify_aqua_tree_with_linked_trees(wrapper, linked_trees, file_objects)` — additionally verifies `linked_trees` in topological order and resolves cross-tree references; this is how custom and registry-imported template trees are supplied to the verifier
+- `verify_tree_sync(wrapper, file_objects)` and `verify_tree_sync_with_linked_trees(wrapper, linked_trees, file_objects)` — the same pipeline with no async runtime required
+
+---
+
+### link_aqua_tree()
+
+Links one or more Aqua trees to the current tree via an Anchor revision whose `structural_links` contain the tip hashes of the linked trees, enabling cross-tree verification.
+
+**Signature:**
+```rust
+pub fn link_aqua_tree(
+    &self,
+    aqua_tree_wrapper: AquaTreeWrapper,
+    link_aqua_tree_wrapper: Vec<AquaTreeWrapper>,
+    method: Option<Method>,
+) -> Result<Tree, MethodError>
+```
+
+**Parameters:**
+- `aqua_tree_wrapper`: the tree receiving the anchor
+- `link_aqua_tree_wrapper`: the trees being linked
+- `method`: `None` uses the configured default (`Scalar`)
+
+**Returns:** the updated `Tree`. See [Anchors & Links](/docs/v4.0.0/schema-reference/anchors-and-links) for the structural-versus-compositional link semantics.
+
+---
+
+## Exporting
+
+### export_tree()
+
+Exports a tree as a **self-descriptive** artifact: embeds every template it references, plus those templates' full `derives_from` ancestry, so the result verifies on its own with no side inputs. This is the primary way to hand a tree to someone else.
+
+**Signature:**
+```rust
+pub fn export_tree(
+    &self,
+    tree: &Tree,
+    extra_template_sources: &[Tree],
+    options: &ExportOptions,
+) -> Result<Tree, ExportTreeError>
+```
+
+**Parameters:**
+- `tree`: the tree to export (never mutated; re-exporting an exported tree is a no-op)
+- `extra_template_sources`: additional template trees to resolve from (e.g. from a registry import store); consulted after the tree's own revisions and the built-in catalog
+- `options`: `ExportOptions::default()` / `::self_descriptive()` embeds everything, including built-ins ("built-in" is a property of the receiver, not the sender); `::non_builtin_only()` skips the catalog templates; `::bare()` embeds nothing — a plain clone
+
+**Returns:** the exported `Tree`. Fails closed with `ExportTreeError::UnresolvedTemplates` listing every hash no source could supply; nothing is embedded in that case.
+
+**Example:**
+```rust
+// … tree: Tree, my_template_tree: Tree
+let portable = aquafier.export_tree(&tree, &[my_template_tree], &ExportOptions::default())?;
+assert!(missing_templates(&portable).is_empty());
+
+let bare = aquafier.export_tree(&tree, &[], &ExportOptions::bare())?;
+```
+
+`missing_templates(&tree)` is the same resolution check as a standalone lint: receivers use it to triage an incoming tree, publishers use it in CI.
+
+---
+
+## Selective disclosure
+
+### redact_revision()
+
+Produces a `RedactedRevision` from a `Tree`-method revision, disclosing only the listed field paths; every other leaf is replaced by its value commitment. Only `method: "tree"` revisions can be field-redacted, and `/nonce` must never be disclosed (the request is refused).
+
+**Signature:**
+```rust
+pub fn redact_revision(
+    revision: &AnyRevision,
+    revision_hash: &RevisionLink,
+    disclosed_paths: &[String],
+) -> Result<RedactedRevision, RedactionError>
+```
+
+For whole-tree disclosure, `export_selective_tree(&tree, &policy)` applies a `DisclosurePolicy`: `DisclosurePolicy::full(&tree)` disclosing everything, `DisclosurePolicy::pseudonymous(&tree)` applying the normative per-template allow-lists for audit artifacts (payload facts stay verifiable, identifying fields stay sealed), or `DisclosurePolicy::with_profile(…)` for custom profiles. Verification counterparts: `verify_redacted_revision`, `verify_selective_tree`.
+
+**Returns / semantics:** see [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) for the redaction model, what redacted verification can and cannot check, and the disclosure presets.
+
+---
+
+## Helpers
+
+| Need | API |
+|---|---|
+| Every shipped template hash as data (19 entries, mirrors `tests/audit_template_hashes.txt`) | `Aquafier::shipped_template_hashes() -> &'static [(&'static str, [u8; 32])]` |
+| The verification catalog only (14 templates resolvable as object types) | `Aquafier::builtin_template_hashes()` |
+| A fresh signing identity (secret key plus its `did:key`) | `generate_ed25519() -> ([u8; 32], String)` |
+| Convert a wire link (`0x1620…`) to the bare 64-hex digest used by ledgers and `…_hash` payload fields | `RevisionLink::bare_digest()`, `bare_digest_hex()` |
+| A Merkle root over a possibly empty batch | `primitives::merkle::try_merkle_root(&[Vec<u8>], &HashType) -> Option<Vec<u8>>` |
+
+## Gotchas
+
+1. `merkle_root` **panics on an empty leaf slice**, by documented design: it is a byte-for-byte shared primitive with the full SDK and cannot change behavior without forking a hashing path. For caller- or network-supplied batches, use `try_merkle_root`, which returns `None` instead.
+2. **Template JSON files are byte-frozen.** A template's hash is its type identity: one changed byte, even reformatted whitespace, produces a different hash and therefore a different type. Never reformat a shipped or published template definition.
+3. **Linked and embedded template trees are keyed by the full multihash** (`0x` + 68 hex), never by the bare 64-hex digest. Bare-digest keying is an internal implementation detail of the built-in catalog and is not usable for a linked or embedded tree; `template_tree()` produces the correctly keyed shape.
+
+## Testing
+
+```bash
+cargo test                                               # unit tests, standalone
+cargo run --features native --bin verify-templates       # recompute and check the template hash ledger
+cargo run --example agent_audit_trail --features native  # end-to-end agent audit trail
+```
+
+`examples/agent_audit_trail.rs` is the full walkthrough of the audit template family: four `did:key` identities, T1–T8 artifacts as signed trees, a Merkle round anchor, session close, self-descriptive export, verification of every tree, and pseudonymous redaction — see [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails). The compat suite (`cargo test --manifest-path compat-tests/Cargo.toml`) requires a sibling checkout of the full `aqua-rs-sdk`, which is not yet public.
+
+## What is not included
+
+Excluded capabilities answer explicitly, never silently permissively:
+
+| Excluded | Behavior in core |
+|---|---|
+| WASM compute execution | Any template whose chain carries a `verification` section is rejected with `COMPUTE_UNSUPPORTED`; core has no WASM runtime and fails closed rather than guessing |
+| Known full-SDK templates | Hashes the full SDK publishes but core does not ship answer through a built-in lookup with an explicit "not supported for verification by aqua-rs-sdk-core: it depends on &lt;module&gt;" message, governed by the `template_not_found` policy decision |
+| Timestamping | No timestamp creation, no TSA or EVM providers; incoming timestamp revisions are still classified (`RevisionKind::Timestamp`), then `strict()` rejects and `offline()` tolerates with a warning |
+| Policy engine | Not included (the `VerificationPolicy` decision points are part of the verification pipeline, not the policy engine) |
+| Daemon / forest runtime | Not included |
+| Template registry client | Not bundled; template distribution is the separate [Template Registry](/docs/v4.0.0/dev-tools/template-registry) project |
+
+The invariant behind this table: **core is never more permissive than the full SDK under the same verification policy.**
+
+## See Also
+
+- [Quickstart](/docs/v4.0.0/quickstart) — a complete first program with this crate
+- [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publishing and importing templates
+- [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails) — the T1–T8 audit template family in practice
+- [Verification](/docs/v4.0.0/schema-reference/verification) — outcomes, stages, and policies in detail
+- [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — the redaction model behind the disclosure API

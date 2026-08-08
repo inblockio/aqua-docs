@@ -1,0 +1,219 @@
+---
+title: "Signatures"
+description: 'Signature revisions: wire form, the signing pre-image, the four signature suites, DID signer identity, and verification rules'
+icon: "file-signature"
+sidebar_position: 5
+redirect_from:
+  - /docs/v4.0.0/schema-reference/revision/signing-revision
+---
+
+A **signature revision** is a branch revision that cryptographically attests to another revision in the same tree. It records who signed, with which cryptographic suite, and carries the signature bytes themselves — all under the same tamper-evident hashing as every other revision.
+
+The normative definition is [04 — Signatures](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/04-signatures.md) in the protocol specification; the specification is authoritative, and this page is the readable reference.
+
+## The signature revision
+
+### Purpose
+
+A signature revision attests to the revision named by its `previous_revision` — its **target**. It is always a branch: it forks off its target rather than extending the chain, so multiple parties can sign the same revision independently. Nothing prevents a signature from targeting another signature revision (a counter-signature); the semantics of doing so are application-defined.
+
+### Fields
+
+A signature revision carries exactly eight fields, all required:
+
+| Field | Type | Required | Description |
+|---|---|---|---|
+| `previous_revision` | string (full multihash) | Yes | The target: the revision being signed. Must be present in the same tree; a signature revision can never be genesis. |
+| `revision_type` | string (full multihash) | Yes | The SHA3-256 multihash of the signature suite's template (see table below). Never a literal string. |
+| `nonce` | string | Yes | `0x` + exactly 32 lowercase hex characters (16 bytes); a per-revision random value. |
+| `local_timestamp` | number | Yes | Unix seconds. Must be greater than or equal to the target's `local_timestamp`. |
+| `version` | string | Yes | Exactly `https://aqua-protocol.org/docs/v4/schema`. |
+| `method` | string | Yes | SHOULD be `"scalar"`. A signature revision has no `leaves` field, and its fields are identity data with no meaningful per-field disclosure; `"tree"` gains nothing and SHOULD NOT be used. |
+| `signer` | string (DID) | Yes | The signer's identity in one of the four recognized DID forms (see [Signer identity](#signer-identity)). |
+| `signature` | object | Yes | The signature value object (next section). |
+
+`revision_type` must match the declared suite:
+
+| `signature_type` | `revision_type` (template multihash) |
+|---|---|
+| `ed25519` | `0x1620baf1d5d47eef50dcde3931956879bb30c5580064a92ce43ed4c6bd8b878b659a` |
+| `ethereum:eip-191` | `0x162057090c9095a2e9af36e9b6cb4574196fa973c44a210e703bd15dab2623dbd370` |
+| `ecdsa:p256` | `0x162023a2cdd4618224a67235321e2dfeffac9ab1809175549d8b5402dd5c5376d81c` |
+| `webauthn:p256` | `0x16202cdea1604c08b4e23f5415d8fcf885cf86d0a3e017cf4b7989c41aa99f3f2188` |
+
+### Example
+
+An Ed25519 signature revision from the SDK's seed corpus ([`src/tests/seed/sign_did_example.aqua.json`](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/src/tests/seed/sign_did_example.aqua.json)). Its target is a genesis anchor revision — the same tree appears as the worked example on the [Anchors & Links](/docs/v4.0.0/schema-reference/anchors-and-links) page:
+
+```json
+{
+  "previous_revision": "0x1620ce6f69b28e6dd3a1b02f107bc08a2316901dbd3c7d41d619bd7bb0bd49b7ce0b",
+  "revision_type": "0x1620baf1d5d47eef50dcde3931956879bb30c5580064a92ce43ed4c6bd8b878b659a",
+  "nonce": "0x43b3b02ccc27e2d194d88e61ce008f2e",
+  "local_timestamp": 1783616148,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "signer": "did:key:z6MkneMkZqwqRiU5mJzSG3kDwzt9P8C59N4NGTfBLfSGE7c7",
+  "signature": {
+    "signature_type": "ed25519",
+    "signature": "0xe52bceee7bdbc97d3e3a7818d6a047dab21831261bedc9794dc0cab6e7bab2db0138421cff61f177c742f8f484172be02d210a17c48b80a18e1afba2c170c20d",
+    "signature_public_identifier": "0x79b5562e8fe654f94078b112e8a98ba7901f853ae695bed7e0e3910bad049664"
+  }
+}
+```
+
+In its tree, this revision is stored under the key `0x16200ca0d8732000a8f6d68804281832b7c1479ec9d7e7cbb4eb45ff451090803609` — its own revision hash.
+
+### Validation rules
+
+1. Exactly the eight fields above are present; any unknown field is rejected.
+2. `previous_revision` is a key of the same tree's revision map (a signature revision is never genesis).
+3. `local_timestamp` is greater than or equal to the target revision's `local_timestamp`.
+4. `revision_type` is the full SHA3-256 multihash of the suite template matching `signature_type`; producers must keep the two consistent, and verifiers select the suite from `signature_type`.
+5. The `signature` object passes the value-object rules below.
+6. The cryptographic check and signer binding pass (see [Verification](#verification)).
+
+## The signature value object
+
+The `signature` object has a uniform shape; unknown members are rejected:
+
+| Member | Presence | Content |
+|---|---|---|
+| `signature_type` | Required | One of `"ed25519"`, `"ethereum:eip-191"`, `"ecdsa:p256"`, `"webauthn:p256"`. Any other value is rejected. |
+| `signature` | Required | `0x` + hex of the signature bytes. Exact length per suite (table below). |
+| `signature_public_identifier` | Required | `0x` + hex of the verification key material per suite (table below). |
+| `authenticator_data` | Required for `webauthn:p256`, absent otherwise | `0x` + hex of the WebAuthn authenticator data, at least 37 bytes. |
+| `client_data_json` | Required for `webauthn:p256`, absent otherwise | `0x` + hex of the UTF-8 client data JSON, non-empty. |
+
+Byte lengths per suite:
+
+| Suite | `signature` | `signature_public_identifier` |
+|---|---|---|
+| `ed25519` | 64 bytes (`R‖S`) | 32-byte raw Ed25519 public key |
+| `ethereum:eip-191` | 65 bytes (`r‖s‖v`) | 20-byte Ethereum address, EIP-55 mixed-case checksummed |
+| `ecdsa:p256` | 64 bytes (`r‖s`, big-endian fixed width) | 33-byte compressed SEC1 point |
+| `webauthn:p256` | 64 bytes (`r‖s`) | 33-byte compressed SEC1 point |
+
+All hex is emitted lowercase with a `0x` prefix, with one exception: producers must emit the EIP-191 `signature_public_identifier` as the EIP-55 mixed-case checksummed rendering of the address. Verifiers recover the 20 address bytes case-insensitively and canonicalize to the EIP-55 rendering before hashing, so the revision hash commits to the checksummed form regardless of the case supplied on the wire; the checksum itself is not validated.
+
+For the three suites other than `webauthn:p256`, the `authenticator_data` and `client_data_json` members must not be emitted; a verifier ignores them if present (they are not part of the revision's canonical form).
+
+The revision hash of a signature revision covers the complete `signature` object: the signature bytes are tamper-evident like any other content.
+
+## The signing pre-image
+
+Every suite signs (or, for WebAuthn, challenges over) the same message `M`: a **flat JSON object with exactly nine members**, keys sorted lexicographically (byte-wise), serialized compactly (no whitespace), UTF-8 encoded. The nine keys, in their sorted order:
+
+`hash_codec`, `local_timestamp`, `method`, `nonce`, `previous_revision`, `revision_type`, `signature_type`, `signer`, `version`
+
+The pre-image for the example revision above (line breaks for readability only — the real message has none):
+
+```json
+{"hash_codec":22,
+ "local_timestamp":1783616148,
+ "method":"scalar",
+ "nonce":"0x43b3b02ccc27e2d194d88e61ce008f2e",
+ "previous_revision":"0x1620ce6f69b28e6dd3a1b02f107bc08a2316901dbd3c7d41d619bd7bb0bd49b7ce0b",
+ "revision_type":"0x1620baf1d5d47eef50dcde3931956879bb30c5580064a92ce43ed4c6bd8b878b659a",
+ "signature_type":"ed25519",
+ "signer":"did:key:z6MkneMkZqwqRiU5mJzSG3kDwzt9P8C59N4NGTfBLfSGE7c7",
+ "version":"https://aqua-protocol.org/docs/v4/schema"}
+```
+
+Member semantics:
+
+- `hash_codec` — a JSON **number**: the decimal multicodec of the revision's hash algorithm, `22` (SHA3-256) or `30` (BLAKE3-256). It binds the signature to the algorithm; at verification it must be recovered from the signature revision's own addressing multihash, so a signature cannot be re-verified under a substituted algorithm. It is a pre-image-only member, never a wire field.
+- `signature_type` — the suite string, hoisted into the pre-image because the `signature` object does not yet exist when the message is built.
+- `previous_revision`, `revision_type`, `nonce`, `local_timestamp`, `method`, `signer`, `version` — copied verbatim from the revision.
+
+What the pre-image implies:
+
+- **A signature attests to a target hash**, not to the target's content directly: the target's fields never enter `M`. Content integrity flows through the target's own hash.
+- **A signature covers no other signatures.** Two signatures on the same target are independent siblings with no ordering. Distinctness comes from each signature revision's fresh `nonce` and timestamp inside `M`.
+- **Replay is impossible across targets and revisions**: the target hash and the fresh nonce are both signed.
+
+## Signer identity
+
+`signer` is a DID. Four forms are recognized:
+
+| DID form | Key material | Suite |
+|---|---|---|
+| `did:key:z6Mk…` | Ed25519 public key (multicodec prefix bytes `0xed 0x01`, 32-byte raw key, multibase base58btc) | `ed25519` |
+| `did:key:zDn…` | P-256 public key (multicodec prefix bytes `0x80 0x24`, 33-byte compressed SEC1, multibase base58btc) | `ecdsa:p256`, `webauthn:p256` |
+| `did:pkh:eip155:<chain_id>:0x<40 hex>` | 20-byte Ethereum address (CAIP-10) | `ethereum:eip-191` |
+| `did:pkh:ed25519:0x<64 hex>` | 32-byte Ed25519 public key (alternate form of the same identity as `did:key:z6Mk…`) | `ed25519` |
+
+A `did:key` must be encoded with multibase base58btc (`z` prefix); the multicodec must be one of the two registered forms and the key length must match the codec — anything else is rejected. Producers must not emit alternative multibase encodings.
+
+For `did:pkh:eip155`, identity binding uses only the address (the final colon-separated segment, compared as raw bytes — EIP-55 case does not affect binding). The chain id is carried but not verified: the same address on two chains is the same protocol identity.
+
+<Callout type="warning" title="Fail-closed rule">
+A verifier that cannot resolve the <code>signer</code> DID to key material — an unrecognized method, malformed encoding, or empty string — MUST reject the signature. Unknown DID methods are never a pass.
+</Callout>
+
+### Signer binding
+
+After the cryptographic check, the verifier must confirm that the key material resolved from `signer` **byte-equals** the key material in `signature_public_identifier` (for EIP-191: the address recovered from the signature). A cryptographically valid signature whose declared signer is a different key is rejected.
+
+Binding compares key bytes, not DID strings: `did:key:z6Mk…` and `did:pkh:ed25519:0x…` carrying the same 32 key bytes are the same identity. Cross-suite mismatches (for example an Ed25519 signature with an `eip155` signer) fail the binding by construction.
+
+## The four suites
+
+Let `M` be the pre-image bytes defined above.
+
+### ed25519
+
+- **Sign:** Ed25519 (RFC 8032, PureEdDSA) over `M` directly. No pre-hashing.
+- **Wire:** 64-byte `R‖S`; identifier = 32-byte raw public key.
+- **Verify:** strict RFC 8032 verification (small-order and mixed-order public keys and signatures are rejected) of `M` under the identifier key.
+
+### ethereum:eip-191
+
+- **Sign:** build `P = "\x19Ethereum Signed Message:\n" || decimal(len(M)) || M` where `len(M)` is the **byte** length of `M`; hash `h = Keccak-256(P)` (Keccak-256, not SHA3-256); recoverable ECDSA over secp256k1 on `h`; wire signature = `r ‖ s ‖ v`, 65 bytes, with `v ∈ {27, 28}`.
+- **Wire:** identifier = the 20-byte address `Keccak-256(uncompressed_pubkey[1..65])[12..32]`, EIP-55 checksummed.
+- **Verify:** normalize `v` by subtracting 27 when `v ≥ 27`; the result must be a valid secp256k1 recovery identifier. Recover the public key from `h`, derive the address, and require exact byte equality with the identifier.
+
+### ecdsa:p256
+
+- **Sign:** ECDSA over NIST P-256 with SHA-256 as the message digest of `M`; deterministic nonces (RFC 6979) recommended.
+- **Wire:** 64-byte fixed-width big-endian `r ‖ s`; identifier = 33-byte compressed SEC1 public key.
+- **Verify:** standard ECDSA verification of `M` under the identifier key. Low-`s` normalization is not required by this profile; signature malleability cannot alter verification outcomes because the signature bytes are committed by the revision hash.
+
+### webauthn:p256
+
+- **Sign (assertion):** the challenge is `SHA-256(M)` (32 bytes); a WebAuthn authenticator produces `authenticator_data` and `client_data_json` with `clientDataJSON.challenge` set to the base64url-without-padding encoding of the challenge; the authenticator's signature is ECDSA P-256 with SHA-256 over `authenticator_data || SHA-256(client_data_json)`.
+- **Wire:** the 64-byte `r ‖ s` signature, the 33-byte compressed SEC1 key, plus `authenticator_data` and `client_data_json` as hex.
+- **Verify**, in order, each step with a distinct failure:
+  1. `authenticator_data` is at least 37 bytes;
+  2. the User Present flag (bit 0 of byte 32) is set;
+  3. `client_data_json` parses as JSON;
+  4. its `type` member equals `"webauthn.get"`;
+  5. its `challenge` member decodes (base64url, no padding) to exactly `SHA-256(M)`;
+  6. ECDSA P-256/SHA-256 verification of `authenticator_data || SHA-256(client_data_json)` under the identifier key.
+
+<Callout type="note" title="WebAuthn scope">
+This profile authenticates the <em>key and challenge</em>, not the WebAuthn ceremony context: <code>rpIdHash</code>, <code>origin</code>, the User Verified flag, and <code>signCount</code> are not verified — the wire format carries no expected relying party to check against. Applications requiring RP binding must enforce it at the application layer.
+</Callout>
+
+## Verification
+
+Given a signature revision addressed by link `L` in a tree, all four steps must pass:
+
+1. **Integrity.** `L` is a well-formed Aqua multihash, and the recomputed revision hash equals `L`. This makes every field of the signature revision — including the signature bytes — tamper-evident before any cryptography runs.
+2. **Pre-image reconstruction.** Rebuild `M` from the revision's fields, with `hash_codec` taken from `L`'s multicodec and `signature_type` taken from the `signature` object.
+3. **Cryptographic check** per the suite selected by `signature_type`.
+4. **Signer binding** as described above.
+
+Signature verification failures are integrity failures: they are **never policy-relaxable** — no [verification policy](/docs/v4.0.0/schema-reference/verification) can downgrade them to warnings.
+
+Signature revisions are not schema-validated against their suite templates; the strict wire shape above is the enforced constraint, and the suite templates exist as the identity anchors for `revision_type` and revision-kind classification.
+
+Because a signature attests to its target's *hash*, [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) of the target does not invalidate the signature: a verifier that confirms the redacted target still matches its original hash retains the full force of the attestation. Disclosure policies must keep signature revisions fully disclosed if the attestation is to remain checkable.
+
+## See Also
+
+- [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, common fields, tree structure
+- [Hashing & Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how revision hashes and multihashes are computed
+- [Templates](/docs/v4.0.0/schema-reference/templates) — template identity and the shipped catalog, including the signature suite templates
+- [Anchors & Links](/docs/v4.0.0/schema-reference/anchors-and-links) — the branch revision kind that carries links instead of signatures
+- [Verification](/docs/v4.0.0/schema-reference/verification) — the full verification pipeline and policy decision points

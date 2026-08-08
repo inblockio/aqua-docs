@@ -1,6 +1,7 @@
 ---
 title: 'Aqua Protocol Use Cases'
-description: 'Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and blockchain anchoring, Aqua enables trust without centralized authorities.'
+description: 'Aqua Protocol provides cryptographic verification and provenance tracking for data across diverse industries and applications. By creating immutable chains of revisions with signatures and anchors, Aqua enables trust without centralized authorities.'
+sidebar_position: 1
 ---
 
 ## Why Aqua Protocol?
@@ -26,14 +27,14 @@ Aqua Protocol solves these problems through:
 ### Tamper-Proof Records
 Once data is recorded in an Aqua chain, modifications become immediately detectable. Cryptographic hashes ensure that any change to content, timestamps, or signatures invalidates the chain, providing mathematical proof of tampering.
 
-### Blockchain Timestamping
-Every critical revision can be anchored to Ethereum, Nostr, or TSA timestamping services. This provides cryptographic proof of when data existed, eliminating disputes about timing and preventing backdating.
+### Timestamping
+The full Aqua Protocol defines timestamping of revisions on blockchains and TSA services, providing proof of when data existed. This capability ships with the full SDK, scheduled for later publication; the published core provides signatures, hash-linked ordering, and verifiable structure today.
 
 ### Multi-Party Signatures
 Multiple parties can cryptographically sign revisions, establishing non-repudiation and accountability. Each signature is independently verifiable, proving who authorized what and when.
 
 ### Provenance Tracking
-Link revisions create relationships between chains, enabling complex provenance graphs. Track how data flows through systems, who touched it, and what transformations occurred.
+Anchor revisions with links create relationships between chains, enabling complex provenance graphs. Track how data flows through systems, who touched it, and what transformations occurred.
 
 ### Template-Based Validation
 Version 4's template system enforces data schemas with JSON Schema validation, ensuring consistent structure across revisions while maintaining cryptographic integrity.
@@ -43,7 +44,7 @@ Version 4's template system enforces data schemas with JSON Schema validation, e
 ### Legal and Compliance
 Legal documents, contracts, evidence, regulatory filings, and compliance records require guaranteed integrity and provable timestamps. Aqua Protocol provides:
 - Non-repudiation through cryptographic signatures
-- Defensible timestamps via blockchain anchoring
+- Signed, hash-linked revision history that fixes ordering of events
 - Complete audit trails for investigations
 - Chain of custody for evidence
 - Regulatory compliance documentation
@@ -59,7 +60,7 @@ Products moving through complex supply chains need provenance tracking from orig
 ### Identity and Credentials
 Educational institutions, professional organizations, and governments issue credentials that need verification. Aqua Protocol provides:
 - Instant verification of diplomas, certificates, and licenses
-- Revocation capability when credentials expire or are withdrawn
+- Status updates (expiry, withdrawal) recorded as later revisions
 - Portable credentials that individuals control
 - Elimination of credential fraud
 - Reduced verification costs and time
@@ -67,7 +68,7 @@ Educational institutions, professional organizations, and governments issue cred
 ### Financial Services
 Financial institutions require immutable audit trails for transactions, statements, and regulatory reports. Aqua Protocol offers:
 - Tamper-proof financial records
-- Provable submission timing for regulatory filings
+- Signed submission records for regulatory filings
 - Multi-party approval workflows for transactions
 - Audit-ready documentation for compliance
 - Fraud prevention through verification
@@ -81,8 +82,8 @@ Patient records, clinical trial data, and medical device tracking demand integri
 - Secure sharing between healthcare providers
 
 ### Intellectual Property
-Patents, copyrights, trade secrets, and creative works benefit from provable timestamps. Aqua Protocol provides:
-- Proof of creation date for prior art disputes
+Patents, copyrights, trade secrets, and creative works benefit from signed, tamper-evident version history. Aqua Protocol provides:
+- Timestamped proof of creation for prior art disputes (with the full SDK, scheduled for later publication)
 - Version tracking for creative works
 - Licensing and royalty audit trails
 - Collaborative creation with attribution
@@ -100,7 +101,7 @@ Patents, copyrights, trade secrets, and creative works benefit from provable tim
 ### Real Estate
 - Property title chains with verified transfers
 - Lease agreements with multi-party signatures
-- Inspection reports with tamper-proof timestamps
+- Inspection reports with tamper-evident revision history
 - Escrow milestone documentation
 - Regulatory compliance for transactions
 
@@ -122,11 +123,11 @@ Patents, copyrights, trade secrets, and creative works benefit from provable tim
 
 Aqua Protocol adapts to diverse requirements through:
 
-- **Multiple revision types**: Objects, templates, signatures, witnesses, and links
-- **Flexible signing methods**: RSA, Ethereum EIP-191, DID:JWS, and more
-- **Choice of witnesses**: Ethereum (mainnet, testnets), Nostr, TSA
-- **Scalar or tree methods**: Optimize for simplicity or selective disclosure
-- **Cross-platform SDKs**: Rust with WASM, JavaScript/TypeScript for any environment
+- **Four revision kinds**: Objects, templates, signatures, and anchors
+- **Flexible signing methods**: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn
+- **Timestamping**: Blockchain and TSA timestamping defined by the full protocol, shipping with the full SDK (scheduled for later publication)
+- **Scalar or tree methods**: Optimize for simplicity or [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure)
+- **Cross-platform SDKs**: Rust (the published core is WASM-free; WASM support returns with the full SDK) and JavaScript/TypeScript (v3)
 - **Template customization**: Define domain-specific schemas with JSON Schema
 
 ## Getting Started
@@ -165,15 +166,15 @@ Collect signatures from relevant parties:
 - Authorities sign for official endorsement
 - Each signature adds non-repudiation
 
-### 3. Blockchain Witnessing
-Anchor critical revisions to blockchain:
+### 3. Timestamping
+Timestamp critical revisions on a blockchain or TSA service (with the full SDK, scheduled for later publication):
 - Provides tamper-proof timestamps
 - Prevents backdating of revisions
 - Enables independent verification
 - Satisfies regulatory requirements
 
 ### 4. Provenance Linking
-Connect related chains:
+Connect related chains with anchor revisions and links:
 - Link components to assemblies
 - Reference supporting documents
 - Establish dependencies between datasets
@@ -198,10 +199,10 @@ Immutable audit trails satisfy regulators across industries. From SOX compliance
 Automated verification eliminates manual processes, reduces fraud losses, speeds up operations, and removes intermediary fees.
 
 ### Enhanced Security
-Cryptographic primitives (SHA3-256, ECDSA) provide security that cannot be achieved with traditional databases. Even system administrators cannot forge valid chains.
+Cryptographic primitives (SHA3-256, Ed25519, ECDSA) provide security that cannot be achieved with traditional databases. Even system administrators cannot forge valid chains.
 
 ### Future-Proof Design
-Protocol versioning, extensible revision types, and blockchain-agnostic witnessing ensure Aqua chains remain verifiable as technology evolves.
+Protocol versioning, template-defined revision types, and hash algorithm agility (SHA3-256 default, BLAKE3-256 optional) ensure Aqua chains remain verifiable as technology evolves.
 
 ## Next Steps
 
@@ -210,4 +211,4 @@ Ready to implement Aqua Protocol for your use case?
 - Review the detailed use case documentation above
 - Check out the [Quick Start Guide](/docs/v4.0.0/quickstart) for hands-on implementation
 - Explore the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) for technical specifications
-- Choose your SDK: [JavaScript (v3)](/docs/v3.0.2/introduction)
+- Choose your SDK: [Rust v4 quickstart](/docs/v4.0.0/quickstart) or the stable [JavaScript SDK (v3)](/docs/v3.0.2/introduction)

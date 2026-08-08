@@ -1,7 +1,1 @@
-{
-  "label": "Development Tools",
-  "position": 3,
-  "collapsible": true,
-  "collapsed": false,
-  "icon": "wrench"
-}
+{"label":"Developer Onboarding","position":4,"collapsible":true,"collapsed":false,"icon":"wrench"}

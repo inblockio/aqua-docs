@@ -1,0 +1,167 @@
+---
+title: "Anchors & Links"
+description: 'Anchor revisions: wire form, structural vs compositional links, genesis anchors, and cross-tree verification'
+icon: "anchor"
+sidebar_position: 6
+redirect_from:
+  - /docs/v4.0.0/schema-reference/revision/link-revision
+---
+
+An **anchor revision** is a branch revision that carries references to other revisions — inside its own tree, in other trees, or in template trees. Anchors are the protocol's only linking construct: they declare a tree's type at genesis, connect trees to one another, and mark deliberate attestation points.
+
+The normative definition is [05 — Anchor revisions and links](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/05-anchor-revisions-and-links.md) in the protocol specification; the specification is authoritative, and this page is the readable reference.
+
+## The anchor revision
+
+### Purpose
+
+Anchors have no payload. All semantic weight is in two link lists: `structural_links` (verification-relevant) and `compositional_links` (application data). An anchor revision is always a branch, except when it is the genesis revision of its tree.
+
+### Fields
+
+| Field | Type | Required | Description |
+|---|---|---|---|
+| `previous_revision` | string (full multihash) | Absent for a genesis anchor, otherwise required | The parent revision this anchor branches from. |
+| `revision_type` | string (full multihash) | Yes | The SHA3-256 multihash of the `anchor_template`: `0x1620479a304927c47f4308d027a858060ce287a9bdb45f2203f8130574a73511e899`. The legacy literal string `"anchor"` is retired and classifies as Unknown. |
+| `nonce` | string | Yes | `0x` + exactly 32 lowercase hex characters (16 bytes); a per-revision random value. |
+| `local_timestamp` | number | Yes | Unix seconds; monotone with respect to the parent. |
+| `version` | string | Yes | Exactly `https://aqua-protocol.org/docs/v4/schema`. |
+| `method` | string | Yes | `"scalar"` or `"tree"`. |
+| `structural_links` | array of strings | Yes (may be empty) | Verification-relevant links; also the wire discriminator that makes the revision an anchor. |
+| `compositional_links` | array of objects | Omitted when empty | Application-level links; each entry pairs a full multihash with a free-form `role` string. |
+| `leaves` | array | Present iff `method` is `"tree"` | Leaf commitments, exactly as on an object revision; anchors participate in tree-method hashing and selective disclosure like any other revision. |
+
+Wire shape (hashes elided except the real `anchor_template` value):
+
+```json
+{
+  "previous_revision": "0x1620…",
+  "revision_type": "0x1620479a304927c47f4308d027a858060ce287a9bdb45f2203f8130574a73511e899",
+  "nonce": "0x…",
+  "local_timestamp": 1783616147,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "structural_links": ["0x1620…"],
+  "compositional_links": [{ "hash": "0x1620…", "role": "composition" }]
+}
+```
+
+### Example
+
+The genesis anchor of the specification's worked example ([02 — Hashing §7](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/02-hashing-and-canonicalization.md)), also shipped in the SDK's seed corpus as `src/tests/seed/sign_did_example.aqua.json` — all values are real:
+
+```json
+{
+  "revision_type": "0x1620479a304927c47f4308d027a858060ce287a9bdb45f2203f8130574a73511e899",
+  "nonce": "0x1a5f49342762a8282bc53f736b96d580",
+  "local_timestamp": 1783616147,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "structural_links": [
+    "0x162000f3abb3d74fc9dfc2b961cea906b3211716188f4de6f588180fdfcbbfa3fe53"
+  ]
+}
+```
+
+Its revision hash — the key it is stored under and the `previous_revision` of its children — is `0x1620ce6f69b28e6dd3a1b02f107bc08a2316901dbd3c7d41d619bd7bb0bd49b7ce0b`. It has no `previous_revision` (genesis) and no `compositional_links` (omitted when empty). Its single structural link is the multihash of the `file` template from the shipped catalog, declaring the tree's type; the link resolves as a catalog template (target 4 below). The signature revision shown on the [Signatures](/docs/v4.0.0/schema-reference/signatures) page signs exactly this anchor.
+
+### Validation rules
+
+1. `revision_type` equals the `anchor_template` multihash given above.
+2. `structural_links` is present (it may be empty).
+3. Every entry of `structural_links` resolves to one of the four accepted targets (next section); otherwise the tree fails with `STRUCTURAL_VALIDATION_FAILED`.
+4. `compositional_links`, when present, is non-empty; each entry carries a full multihash `hash` and a string `role`. Entries are never resolved, and unknown roles are never a reason to reject.
+5. `leaves` is present exactly when `method` is `"tree"`.
+6. A genesis anchor's `local_timestamp` is at or before its child's — the general monotonicity rule; a genesis anchor dated after its child fails verification.
+
+## Structural vs compositional links
+
+| | `structural_links` | `compositional_links` |
+|---|---|---|
+| Meaning | "This content, by hash, is required to interpret or verify this tree" — the type template at genesis, a claim being attested, a dependency of a compute chain | Application-level bundling and citation data |
+| Verified? | Yes — every entry MUST resolve; an unresolvable entry fails the whole tree | No — never resolved, checked, or interpreted by the protocol |
+| Hashed? | Yes (part of revision content) | Yes (part of revision content) |
+| Entry shape | Bare full multihash string | Object `{ "hash": "0x1620…", "role": "…" }` |
+| Presence | Required, may be empty | Omitted when empty |
+
+Two conventional roles exist for compositional links; roles are free-form and applications may define others:
+
+| Role | Convention |
+|---|---|
+| `"composition"` | the linked tree is bundled/composed with this one |
+| `"reference"` | a citation or provenance pointer |
+
+## Structural link resolution
+
+For every anchor in a tree, every entry of `structural_links` must resolve to one of the following, checked in any order:
+
+1. **The zero sentinel** — 32 zero bytes (`0x` + 64 zero hex characters). It denotes a deliberately headless attestation ("no linked claim, by design") and passes resolution unconditionally.
+2. **A revision in the same tree** — the hash is a key of the tree's own revision map.
+3. **A revision in a supplied linked tree** — the hash is a key of any linked tree's revision map. Resolution is by **containment, not tip equality**: a template tree whose tip has grown (for example a vendor-signature branch) still resolves any of its contained revisions.
+4. **A catalog template** — the hash is the identity of a template in the verifier's catalog.
+
+If an entry resolves to none of these, the anchor — and with it the tree — is rejected with `STRUCTURAL_VALIDATION_FAILED`. There is no partial or policy-relaxed outcome: a verifier that was not given a required linked tree gets a hard failure, and the zero sentinel is the only sanctioned way to declare "nothing linked".
+
+The sentinel is a bare 32-byte zero value — deliberately not a valid multihash, so it can never collide with a real revision. It is admissible **only** as a `structural_links` entry; anywhere else a revision link is expected, it is rejected.
+
+## Genesis anchors and typed trees
+
+The normal shape of a typed tree is:
+
+```
+Anchor (genesis; structural_links = [ <template multihash> ])
+  └── Object (revision_type = <template multihash>, payloads = …)
+        └── … further revisions …
+```
+
+The genesis anchor declares the tree's type dependency before any content exists; the first object revision chains from it. The tree's type is thereby asserted twice — by the anchor's structural link and by the object's naming value. Both are independently resolved; no rule requires the two to name the same template.
+
+Producers may substitute other targets for the default template link — for example, an attestation tree whose genesis anchor structurally links the claim-signature hash it attests.
+
+Templates themselves are never anchored: a template tree is a single free-standing revision (see [Templates](/docs/v4.0.0/schema-reference/templates)).
+
+## Linking Aqua trees together
+
+A tree references another tree by anchoring a revision of it — normally its tip — via a structural link (verification-relevant) or a compositional link (application-level bundling):
+
+- Links are **one-directional**, linking tree → linked tree, and content-addressed: nothing is written into the linked tree.
+- When trees are linked for composition, each linked tree's tip is recorded as a compositional link with role `"composition"`, appended in a new anchor chained onto the linking tree's tip. The linked tree's display name may be recorded in the linking tree's `file_index` under the linked tip hash (informational only — `file_index` is never hashed).
+- What a structural link *claims* is containment: "the referenced revision exists in the linked tree, which is part of this verification context." Deeper semantics (state, payload interpretation) belong to richer profiles.
+
+### Cross-tree verification
+
+When a tree is verified together with linked trees:
+
+1. **Dependency ordering.** The verifier builds the dependency graph over the main tree and the linked trees from anchor structural links, then verifies linked trees in topological order, dependencies first. Each linked tree is verified by the full verification procedure, recursively, with the already-verified trees as its own linked context.
+2. **Cycles are fatal.** A cycle in the cross-tree dependency graph (including through the main tree) fails verification with `CROSS_TREE_CYCLE_DETECTED`.
+3. **Reachability.** Only linked trees reachable from the main tree's structural links participate; supplied-but-unreferenced trees are ignored and not verified.
+4. **Failure propagation.** If any participating linked tree fails its own verification, the main tree fails with `LINKED_TREE_RESOLUTION_FAILED`. This is not policy-relaxable.
+
+<Mermaid
+  chart={`
+    graph TD
+      M[Main tree] -->|structural link| A[Linked tree A]
+      M -->|structural link| B[Linked tree B]
+      A -->|structural link| T[Template tree]
+      X[Supplied but unreferenced tree]
+  `}
+  caption="Verification order is topological, dependencies first: T, then A and B, then M. The unreferenced tree is ignored and not verified."
+/>
+
+Note the two distinct failure surfaces: a structural link that resolves nowhere is a *structural* failure of the main tree (`STRUCTURAL_VALIDATION_FAILED`), while a link that resolves into a linked tree that itself fails verification is a *linked-tree* failure (`LINKED_TREE_RESOLUTION_FAILED`). Both are fatal; they differ in what they tell the caller to fix.
+
+In `aqua-rs-sdk-core`, this is surfaced as two `Aquafier` methods: `link_aqua_tree` appends an anchor revision whose `structural_links` carry the tip hashes of the supplied trees, and `verify_aqua_tree_with_linked_trees` runs the cross-tree verification described above. See [SDK Core](/docs/v4.0.0/dev-tools/sdk-core).
+
+## Boundary: anchors are not timestamps
+
+Anchoring in this profile is structural linking between trees. It is distinct from **timestamp revisions** — branch revisions that commit a revision hash to an external timestamping system. Timestamps are their own revision classification with their own foundation templates, none of which the core profile ships: a core-profile verifier treats a timestamp revision's unresolvable template as `TEMPLATE_NOT_FOUND` under the `template_not_found` policy decision (the strict policy rejects, the offline policy warns — see [Verification](/docs/v4.0.0/schema-reference/verification)). Anchor revisions carry no timestamping semantics, and no anchor sub-kinds exist.
+
+Similarly, the `audit_round_anchor` template is *not* an anchor revision: it is an ordinary typed **object** revision whose payload carries an application-level Merkle commitment. The word "anchor" in its name refers to closing a turn, not to this page's revision kind.
+
+## See Also
+
+- [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, common fields, genesis forms, branches and tips
+- [Templates](/docs/v4.0.0/schema-reference/templates) — template identity, the shipped catalog, and resolution order
+- [Signatures](/docs/v4.0.0/schema-reference/signatures) — the other branch revision kind, which attests instead of linking
+- [Verification](/docs/v4.0.0/schema-reference/verification) — the full pipeline, error vocabulary, and policy decision points
+- [SDK Core](/docs/v4.0.0/dev-tools/sdk-core) — `link_aqua_tree` and `verify_aqua_tree_with_linked_trees` in practice

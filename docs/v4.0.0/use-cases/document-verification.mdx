@@ -1,6 +1,7 @@
 ---
 title: "Document Verification"
-description: "Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is timestamped and permanently recorded, creating an immutable audit trail."
+description: "Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is recorded as a signed revision, creating an immutable audit trail."
+sidebar_position: 2
 ---
 
 ## Core Capabilities
@@ -9,10 +10,10 @@ description: "Aqua Protocol provides tamper-proof verification of document integ
 Once a document is notarized in the Aqua Protocol, any modification becomes immediately detectable. The cryptographic hash of the document content is stored in the revision chain, making it mathematically impossible to alter without detection.
 
 ### Timestamp Authentication
-Every document revision receives a blockchain-anchored timestamp, providing cryptographic proof of when the document was created or modified. This eliminates disputes about document timelines.
+Every document revision carries a local timestamp and a hash link to its predecessor, fixing the order of the document's history. Blockchain and TSA timestamping — cryptographic proof of when a document existed — is defined by the full protocol and ships with the full SDK, scheduled for later publication.
 
 ### Permanent Audit Trails
-All document revisions, signatures, and witnesses are permanently recorded in an immutable chain. This creates a complete history of the document lifecycle that can be independently verified.
+All document revisions, signatures, and anchors are permanently recorded in an immutable chain. This creates a complete history of the document lifecycle that can be independently verified.
 
 ### Decentralized Validation
 Verification happens cryptographically without requiring trust in intermediaries. Anyone with the document and its Aqua chain can independently verify authenticity and integrity.
@@ -22,7 +23,7 @@ Verification happens cryptographically without requiring trust in intermediaries
 ### Legal Documents
 
 **Contract Authenticity**
-- Prove when contracts were signed
+- Record when contracts were signed and in what order
 - Verify that contract terms haven't been altered
 - Establish non-repudiation through digital signatures
 - Maintain chain of custody for legal proceedings
@@ -35,13 +36,13 @@ Verification happens cryptographically without requiring trust in intermediaries
 
 **Notary Services**
 - Provide remote notarization with cryptographic proof
-- Replace traditional notary stamps with blockchain anchoring
+- Replace traditional notary stamps with cryptographic signatures
 - Enable verifiable notarization across jurisdictions
 - Reduce costs while increasing security
 
 **Legal Compliance**
 - Demonstrate compliance with document retention policies
-- Prove regulatory filings were submitted on time
+- Maintain signed records of regulatory filings
 - Maintain auditable records for investigations
 - Satisfy e-discovery requirements
 
@@ -66,7 +67,7 @@ Verification happens cryptographically without requiring trust in intermediaries
 - Maintain SOX compliance with immutable audit logs
 
 **Regulatory Reporting**
-- Prove timely submission of regulatory reports
+- Record submission of regulatory reports with signed revisions
 - Demonstrate report integrity over time
 - Satisfy audit requirements
 - Reduce compliance costs
@@ -154,15 +155,15 @@ When a document is first notarized:
 - The document content is hashed using SHA3-256
 - A genesis revision is created with the document hash
 - The revision is signed by the document creator
-- The signature is witnessed on a blockchain
 - All data is stored in an immutable Aqua chain
+- Blockchain or TSA timestamping can be added with the full SDK, scheduled for later publication
 
 ### 2. Document Updates
 When a document is modified:
 - A new revision is created referencing the previous revision
 - The new content hash is recorded
 - The update is signed by authorized parties
-- The signature is witnessed for timestamp proof
+- Each revision carries a local timestamp ordered after its parent
 - The revision chain grows, maintaining complete history
 
 ### 3. Multi-Party Signing
@@ -170,15 +171,15 @@ For documents requiring multiple signatures:
 - Each party adds their signature as a new revision
 - Signatures reference the document revision being signed
 - Order of signing is preserved in the chain
-- All signatures receive blockchain timestamps
-- Final witness anchors the complete signing process
+- Each signature is independently verifiable
+- An anchor revision can link the fully signed document to related records
 
 ### 4. Verification
 Anyone can verify a document by:
 - Computing the hash of the document content
 - Comparing it to the hash in the revision chain
 - Verifying all signatures cryptographically
-- Checking blockchain witness timestamps
+- Checking revision types and ordering against their templates
 - Validating the entire revision chain integrity
 
 ## Real-World Scenarios
@@ -190,11 +191,11 @@ Anyone can verify a document by:
 **Solution**:
 - Contract is notarized when drafted, creating the genesis revision
 - Each party reviews and signs, adding signature revisions
-- Final contract is witnessed on Ethereum mainnet
+- An anchor revision links the final contract to the firm's records
 - All parties receive the complete Aqua chain
-- Years later, if disputed, the contract's integrity and signing timeline can be cryptographically proven
+- Years later, if disputed, the contract's integrity and signing order can be cryptographically proven
 
-**Benefits**: Non-repudiation, tamper-proof records, defensible timestamps, reduced notary costs
+**Benefits**: Non-repudiation, tamper-proof records, verifiable signing order, reduced notary costs
 
 ### Scenario 2: Academic Credential Verification
 
@@ -203,7 +204,7 @@ Anyone can verify a document by:
 **Solution**:
 - University notarizes each diploma as it's issued
 - Diploma includes an Aqua chain with the university's signature
-- University witnesses the batch of diplomas on blockchain
+- University aggregates batches of diplomas under anchor revisions
 - Employers scan QR code or receive Aqua chain from candidate
 - Verification happens instantly using Aqua verification tools
 
@@ -216,7 +217,7 @@ Anyone can verify a document by:
 **Solution**:
 - Financial statements are notarized each quarter
 - CFO signs the statement, adding signature revision
-- External auditor witnesses the statement on blockchain
+- External auditor countersigns the statement
 - Audit trail is preserved permanently
 - Regulators can verify statement integrity independently
 
@@ -229,7 +230,7 @@ Anyone can verify a document by:
 **Solution**:
 - Permit applications are notarized when submitted
 - Permit approvals are signed by authorized officials
-- Approved permits are witnessed on blockchain
+- Approved permits are linked to the department's records with anchor revisions
 - QR codes on physical permits link to Aqua chains
 - Anyone can verify permit authenticity and status
 
@@ -241,10 +242,10 @@ Anyone can verify a document by:
 Integrate Aqua Protocol into existing DMS platforms to automatically notarize important documents. When documents are finalized, trigger Aqua notarization via SDK.
 
 ### E-Signature Platforms
-Enhance e-signature solutions with blockchain-anchored timestamps and cryptographic verification. Each signature becomes a verifiable revision in the Aqua chain.
+Enhance e-signature solutions with cryptographic signatures and independent verification. Each signature becomes a verifiable revision in the Aqua chain.
 
 ### CRM and Business Systems
-Add document verification to CRM, ERP, or custom business applications. Automatically notarize quotes, proposals, contracts, and invoices as they're generated.
+Add document verification to CRM, ERP, or custom business applications. Automatically notarize quotes, proposals, contracts, and invoices as they're generated. Automated pipelines and AI agents that generate or transform documents can record their own signed provenance the same way — see [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails).
 
 ### Educational Systems
 Integrate with student information systems to automatically notarize transcripts, diplomas, and certificates as they're issued.
@@ -263,7 +264,7 @@ Add Aqua Protocol to permit, license, and registration systems to provide instan
 ### Multi-Party Documents
 - Establish signing order and communicate to all parties
 - Each party should verify previous signatures before adding theirs
-- Witness after all signatures are collected
+- Verify the complete chain once all signatures are collected
 - Distribute complete Aqua chain to all parties
 
 ### Long-Term Storage
@@ -275,53 +276,53 @@ Add Aqua Protocol to permit, license, and registration systems to provide instan
 ### Verification
 - Always verify documents received from third parties
 - Check entire revision chain, not just the latest revision
-- Verify blockchain witnesses for important documents
+- Use the strict verification policy for important documents
 - Validate signatures match expected signers
 
 ### Privacy Considerations
 - Aqua chains don't contain document content by default
 - Share chains carefully as they prove document existence
-- Use private blockchains if public witnessing is problematic
+- Use the tree method for [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) of specific fields
 - Consider what metadata is included in revisions
 
 ## Technical Advantages
 
 ### Cryptographic Security
 - SHA3-256 hashing provides computational infeasibility of collision attacks
-- ECDSA signatures (65 bytes) provide 128-bit security level
-- Blockchain anchoring makes backdating mathematically impossible
+- Signature suites: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn
+- Hash-linked revisions make any alteration of history detectable
 
 ### Scalability
 - Document verification is O(n) where n is number of revisions
-- Merkle tree mode enables selective disclosure of large documents
-- Batch witnessing reduces blockchain transaction costs
+- Merkle tree mode enables [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) of specific fields
+- Anchor revisions aggregate many documents into one verifiable structure
 - Verification can happen offline after initial chain retrieval
 
 ### Interoperability
 - JSON-based format enables easy integration
-- Multiple SDK options (Rust, JavaScript/TypeScript)
+- Multiple SDK options (Rust for v4, JavaScript/TypeScript for v3)
 - Platform-agnostic verification
 - Standard cryptographic primitives
 
 ### Future-Proof
 - Protocol versioning supports evolution
-- Blockchain-agnostic witness mechanism
+- Hash algorithm agility (SHA3-256 default, BLAKE3-256 optional)
 - Multiple signature algorithm support
-- Extensible revision types
+- Extensible, template-defined revision types
 
 ## Common Questions
 
-**Q: What if the blockchain network goes offline?**
-A: Verification of existing documents still works using cryptographic verification of signatures and hashes. Only new witnessing requires blockchain access. Historical witnesses remain provable through transaction records.
+**Q: Does verification require network access?**
+A: No. Verification works offline using cryptographic verification of signatures and hashes against the chain and its files. No blockchain or server connection is needed.
 
 **Q: How long are documents stored?**
 A: Aqua Protocol stores only hashes and metadata, not document content. Document storage is separate and managed by users. Aqua chains are small (kilobytes) and can be stored indefinitely.
 
-**Q: Can witnesses be trusted?**
-A: Blockchain witnesses provide cryptographic proof of timestamp. As long as the blockchain network is secure and decentralized, witnesses cannot be backdated or falsified.
+**Q: Can revisions be timestamped on a blockchain?**
+A: The full protocol defines blockchain and TSA timestamping. This capability is not part of the currently published core components; it ships with the full SDK, scheduled for later publication.
 
 **Q: What about privacy?**
-A: By default, only document hashes are stored on-chain, not content. The document itself remains private. Share Aqua chains carefully as they prove document existence at specific times.
+A: By default, only document hashes are stored in the chain, not content. The document itself remains private. Share Aqua chains carefully as they prove document existence.
 
 **Q: How do I revoke a document?**
 A: Add a revocation revision to the chain. The document history remains (for audit purposes), but new revisions can indicate revoked status.

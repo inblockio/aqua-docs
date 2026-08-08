@@ -1,40 +1,48 @@
 # Aqua Protocol
 
-> Aqua is an open-source cryptographic protocol for AI-era trust infrastructure — providing verifiable identity, granular access control, and tamper-proof data provenance without requiring a blockchain.
+> Aqua is an open-source cryptographic protocol for verifiable, portable data trees: typed objects, templates, signatures, anchors, and selective disclosure — tamper-evident provenance without requiring a blockchain.
 
-## Overview
+## Status
 
-Aqua V4 solves the AI trust crisis: as AI agents generate content, make decisions, and access systems at scale, there is no infrastructure to verify identity, control access, or prove provenance. Aqua provides that infrastructure using cryptographic hash chains, self-sovereign identity with peer attestation, and revision-level access control.
+Aqua Protocol v4 is experimental and under active development. The published components — `aqua-rs-sdk-core` (protocol core) and `aqua-template-registry` (template distribution) — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full `aqua-rs-sdk` (WASM compute runtime, policy engine, daemon runtime, timestamping providers) is scheduled for a later publication. Aqua v3 (JavaScript SDK) remains the stable production release.
 
 ## Core Concepts
 
-- **Identity**: Self-sovereign, cryptographic identity attestation. Every agent, model, and user is verified and accountable via peer-to-peer attestation and challenge-based verification — no central authority required.
-- **Access Control**: Granular, cryptographic access policies with revision-level permissions, auditable access trails, and zero-trust architecture.
-- **Provenance**: Every piece of data carries its full history via cryptographic hash chains. Tamper-proof, portable, and independently verifiable.
+- **Aqua Tree**: a portable JSON structure of hash-linked revisions (`revisions` map keyed by multihash, plus an unhashed organizational `file_index`).
+- **Revision kinds (4)**: Object (typed payloads), Template (JSON Schema type definitions; the template hash is the type identity), Signature (Ed25519, Ethereum EIP-191, ECDSA P-256, WebAuthn P-256; signers identified by DID), Anchor (structural and compositional links between revisions and trees).
+- **Methods**: `scalar` (compact canonical JSON hash) or `tree` (Merkle-hashed fields, enabling field-level selective disclosure).
+- **Verification**: staged, fail-closed pipeline with policies (`strict`, `offline`, `debug`); outcomes are verified / verified_with_warnings / failed.
+- **Wire schema version**: every v4 revision carries `"version": "https://aqua-protocol.org/docs/v4/schema"`; that URL resolves to the protocol reference.
+
+## Published Components
+
+- aqua-rs-sdk-core (Rust, Apache-2.0): https://github.com/inblockio/aqua-rs-sdk-core — install via git dependency: `aqua-rs-sdk-core = { git = "https://github.com/inblockio/aqua-rs-sdk-core" }` (not yet on crates.io). Normative protocol specification: https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification
+- aqua-template-registry (Rust, Apache-2.0): https://github.com/inblockio/aqua-template-registry — publisher-DID scoped template distribution; hosted instance (no SLA, experimental): https://aqua-registry.inblock.io
 
 ## Key Links
 
-- Documentation: https://aqua-protocol.org/docs/v4.0.0/en/welcome
-- Quickstart: https://aqua-protocol.org/docs/v4.0.0/en/quickstart
-- Schema Reference: https://aqua-protocol.org/docs/v4.0.0/en/schema-reference/introduction
-- Use Cases: https://aqua-protocol.org/docs/v4.0.0/en/use-cases/introduction
-- Dev Tools (CLI): https://aqua-protocol.org/docs/v4.0.0/en/dev-tools/aqua-cli
-- Dev Tools (SDK): https://aqua-protocol.org/docs/v4.0.0/en/dev-tools/aqua-sdk
-- API Reference: https://aqua-protocol.org/docs/v4.0.0/en/dev-tools/aquafier-api
+- Documentation: https://aqua-protocol.org/docs/v4.0.0/welcome
+- Quickstart (Rust): https://aqua-protocol.org/docs/v4.0.0/quickstart
+- Core Concepts: https://aqua-protocol.org/docs/v4.0.0/concepts
+- Protocol Reference: https://aqua-protocol.org/docs/v4.0.0/schema-reference/introduction
+- SDK Onboarding: https://aqua-protocol.org/docs/v4.0.0/dev-tools/sdk-core
+- Template Registry: https://aqua-protocol.org/docs/v4.0.0/dev-tools/template-registry
+- Audit Trails for AI Agents: https://aqua-protocol.org/docs/v4.0.0/dev-tools/agent-audit-trails
+- Release Status & Versioning: https://aqua-protocol.org/docs/v4.0.0/version-info
+- Use Cases: https://aqua-protocol.org/docs/v4.0.0/use-cases/introduction
 - GitHub: https://github.com/inblockio
-- Live Demo (Aquafier): https://aquafier.inblock.io
+
+## For AI Agents
+
+Aqua v4 ships an audit-trail template family (11 data-only templates: user turn marker, user prompt, agent reasoning, tool call, attested API response, tool result, human approval, agent response, round anchor, session close) for recording what an agent did during a session as signed, verifiable, selectively disclosable Aqua trees. Start at https://aqua-protocol.org/docs/v4.0.0/dev-tools/agent-audit-trails
 
 ## Documentation Versions
 
-- V4.0.0 (latest): https://aqua-protocol.org/docs/v4.0.0/en/welcome
-- V3.0.2: https://aqua-protocol.org/docs/v3.0.2/en/introduction
-- V2.0.2: https://aqua-protocol.org/docs/v2.0.2/en/introduction
-- V1.1.0: https://aqua-protocol.org/docs/v1.1.0/en/introduction
-
-## Technical Details
-
-Aqua uses a hash-chain data structure called an **Aqua Tree** where each revision is cryptographically linked to its predecessor. Revision types include object revisions, signing revisions, witness revisions, link revisions, and template revisions. Verification is portable and works offline — no blockchain or central server required.
+- v4.0.0 (experimental, active): https://aqua-protocol.org/docs/v4.0.0/welcome
+- v3.0.2 (stable): https://aqua-protocol.org/docs/v3.0.2/introduction
+- v2.0.2: https://aqua-protocol.org/docs/v2.0.2/introduction
+- v1.1.0: https://aqua-protocol.org/docs/v1.1.0/introduction
 
 ## Organization
 
-Built by inblock.io assets GmbH. Fully open source under a permissive license. Enterprises deploy with production-grade infrastructure, compliance, and SLAs.
+Built by inblock.io assets GmbH. Open source under the Apache License 2.0. Contact: info@inblock.io

@@ -1,11 +1,10 @@
 ---
 title: "Supply Chain Tracking"
 description: "End-to-end traceability and provenance verification for supply chain operations"
+sidebar_position: 4
 ---
 
-# Supply Chain Tracking
-
-Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded with immutable timestamps, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
+Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded as a signed revision, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
 
 ## Core Capabilities
 
@@ -19,7 +18,7 @@ Supply chains involve manufacturers, distributors, retailers, regulators, and co
 Prove the origin and authenticity of products cryptographically. Consumers and businesses can verify that products are genuine, sourced ethically, and meet quality standards without trusting intermediaries.
 
 ### Real-Time Transparency
-All stakeholders can verify the current state and history of products in real-time. Blockchain witnesses provide tamper-proof timestamps, ensuring accurate tracking of supply chain events as they occur.
+All stakeholders can verify the current state and history of products in real-time. Hash-linked, signed revisions fix the order of supply chain events as they occur; blockchain timestamping is available with the full SDK, scheduled for later publication.
 
 ## Use Cases by Industry
 
@@ -107,7 +106,7 @@ All stakeholders can verify the current state and history of products in real-ti
 - Record custody transfers between carriers
 - Timestamp loading and unloading events
 - Track location updates throughout journey
-- Prove on-time delivery with blockchain witnesses
+- Document delivery with signed revision records
 
 **Customs and Border Control**
 - Provide immutable documentation for customs
@@ -153,8 +152,8 @@ Complete documentation of supply chain events reduces liability exposure. When d
 When a product enters the supply chain:
 - Genesis revision is created with product identifier
 - Initial metadata recorded (SKU, batch number, origin)
+- Product data is validated against a product template
 - Manufacturer signs the genesis revision
-- Signature is witnessed on blockchain for timestamp proof
 - Product receives unique Aqua chain
 
 ### 2. Supply Chain Events
@@ -162,7 +161,7 @@ As the product moves through the supply chain:
 - Each event creates a new revision (transfer, inspection, processing)
 - Event data includes timestamp, location, responsible party
 - Each party signs their contributions to the chain
-- Critical events are witnessed for regulatory proof
+- Related records are connected with anchor revisions and links
 - Chain grows to include complete product history
 
 ### 3. Multi-Party Signatures
@@ -170,14 +169,14 @@ When custody transfers between parties:
 - Sending party signs transfer revision
 - Receiving party verifies and countersigns
 - Both signatures reference the same state
-- Blockchain witness timestamps the transfer
-- Prevents disputes about transfer timing or condition
+- The chain preserves the order of both signatures
+- Prevents disputes about transfer content or order
 
 ### 4. Verification
 At any point, stakeholders can verify:
 - Scan product QR code to retrieve Aqua chain
 - Verify all cryptographic signatures
-- Check blockchain witnesses for timestamps
+- Check revision ordering and template conformance
 - Validate entire chain integrity
 - Confirm product authenticity and history
 
@@ -206,7 +205,7 @@ At any point, stakeholders can verify:
 - Certification body signs the certification revision
 - Each processing step is documented and signed
 - Distributors add transport and storage revisions
-- Retailers witness final product placement
+- Retailers sign final product placement
 - Consumers scan QR code to verify organic provenance
 
 **Benefits**: Verified organic claims, consumer confidence, brand differentiation, premium pricing justification
@@ -218,7 +217,7 @@ At any point, stakeholders can verify:
 **Solution**:
 - Tier 3 supplier creates genesis for raw materials
 - Tier 2 supplier adds processing revisions with quality checks
-- Tier 1 supplier integrates into assemblies with link revisions
+- Tier 1 supplier integrates components into assemblies with anchor revisions and links
 - OEM manufacturer links assemblies into final vehicles
 - Each VIN is linked to component Aqua chains
 - Defective component traced to exact source and all affected vehicles
@@ -259,8 +258,10 @@ Connect IoT devices to automatically record sensor data as revisions:
 - Weight scales for quantity verification
 - Quality inspection equipment for automated testing
 
-### Blockchain Oracles
-Use blockchain oracles to feed external data into supply chains:
+Automated recorders and AI agents can sign their own contributions, producing verifiable machine provenance — see [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails).
+
+### External Data Sources
+Feed external data into supply chain records:
 - Weather data for agricultural provenance
 - Customs clearance status
 - Regulatory database lookups
@@ -288,9 +289,9 @@ Create portals for suppliers to contribute to chains:
 ### Genesis Creation
 - Create genesis as early as possible in supply chain
 - Include comprehensive product metadata
-- Use template revisions for standardized data
+- Use templates for standardized, validated data
 - Sign genesis immediately to establish authenticity
-- Witness genesis for high-value or regulated products
+- Have auditors or regulators countersign genesis for high-value or regulated products
 
 ### Event Granularity
 - Balance detail with practical overhead
@@ -308,52 +309,52 @@ Create portals for suppliers to contribute to chains:
 
 ### Data Privacy
 - Aqua chains store hashes, not sensitive content
-- Use tree method for selective disclosure
+- Use the tree method for [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure)
 - Share chains only with authorized parties
 - Consider what metadata is included
-- Use private witnesses if public timestamps are problematic
+- Redact sensitive fields before sharing with external parties
 
 ### Verification Strategy
 - Verify products at key checkpoints
 - Check complete chain for high-value items
 - Spot-check for routine items
-- Validate blockchain witnesses for critical events
+- Use the strict verification policy for critical events
 - Train staff on verification procedures
 
 ### Batch Operations
-- Use batch witnessing to reduce costs
-- Group similar products in same witness transaction
-- Balance cost savings with timestamp precision
+- Aggregate related products under a shared anchor revision
+- Group similar products into one verifiable batch structure
+- Balance aggregation granularity with per-item traceability
 - Implement automated batching in integration systems
 - Monitor batch sizes for optimization
 
 ## Technical Advantages
 
 ### Scalability
-- Object revisions scale to billions of products
-- Link revisions enable hierarchical organization
-- Batch witnessing reduces blockchain costs
+- Object revisions are lightweight, one Aqua chain per product
+- Anchor revisions with links enable hierarchical organization
+- Batch anchors aggregate many items into one verifiable structure
 - Offline verification after chain retrieval
 - Distributed storage prevents bottlenecks
 
 ### Interoperability
 - JSON-based format for easy integration
-- Multiple SDK options (Rust, JavaScript)
+- Multiple SDK options (Rust for v4, JavaScript for v3)
 - Standard cryptographic primitives
 - Platform-agnostic verification
 - Compatible with existing supply chain systems
 
 ### Flexibility
 - Template system for industry-specific schemas
-- Custom revision types for unique requirements
+- Custom, template-defined revision types for unique requirements
 - Multiple signature methods for different parties
-- Choice of witnessing networks
+- Hash algorithm choice (SHA3-256 default, BLAKE3-256 optional)
 - Extensible for future needs
 
 ### Security
 - SHA3-256 hashing prevents collision attacks
-- ECDSA signatures provide strong authentication
-- Blockchain anchoring prevents backdating
+- Ed25519 and ECDSA signatures provide strong authentication
+- Hash-linked revisions make history tampering detectable
 - Merkle trees enable selective disclosure
 - Cryptographic proof instead of trust
 
@@ -377,8 +378,8 @@ A: Aqua chains contain only hashes by default, not business-sensitive data. Shar
 **Q: How do we handle lost or damaged products?**
 A: Add revision documenting loss or damage event with relevant details. The Aqua chain preserves the history up to that point, supporting insurance claims and investigations.
 
-**Q: What if blockchain networks fail?**
-A: Verification of existing chains works offline using cryptographic signatures. Only new witnessing requires blockchain access. Historical witnesses remain provable through blockchain transaction records.
+**Q: Does verification require a blockchain or network connection?**
+A: No. Verification of chains works offline using cryptographic signatures and hashes. Blockchain and TSA timestamping is defined by the full protocol and ships with the full SDK, scheduled for later publication.
 
 ## See Also
 

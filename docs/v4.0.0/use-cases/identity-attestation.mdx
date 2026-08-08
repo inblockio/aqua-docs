@@ -1,6 +1,7 @@
 ---
 title: "Identity Attestation"
 description: "Establish trust with verifiable self-sovereign identity claims and attestations"
+sidebar_position: 3
 ---
 
 The Aqua Protocol enables a robust **Self-Sovereign Identity (SSI)** framework where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. By leveraging cryptographic proofs and decentralized trust chains, Aqua allows users to own their data while enabling third parties to verify specific attributes with certainty.
@@ -11,13 +12,13 @@ The Aqua Protocol enables a robust **Self-Sovereign Identity (SSI)** framework w
 Users have full control over their identities. Identity claims are **self-issued** first, proving account ownership, and then enriched by **attestations** from trusted authorities. This ensures that the user is always the central point of their identity graph.
 
 ### Verifiable Attestations
-Third parties (Trust Authorities) can sign attestations that validate a user's specific claims (e.g., "Over 18", "Accredited Investor", "University Graduate"). These attestations are cryptographically linked to the user's identity chain and the authority's trust chain.
+Trusted third parties — universities, licensing boards, employers — can sign attestations that validate a user's specific claims (e.g., "Over 18", "Accredited Investor", "University Graduate"). These attestations are cryptographically linked to the user's identity chain and signed with the attester's key.
 
 ### Trust Chains
 Trust is transitive and transparent. A verifier doesn't just trust a claim; they verify the entire chain of authority. For example, a diploma is trusted because it's signed by a University, which is accredited by an Education Ministry, which is recognized by the Government.
 
 ### Selective Disclosure & Privacy
-Users can share specific attestations (e.g., "I am over 21") without revealing their entire identity or unrelated personal data. Data Vaults protect sensitive claims, ensuring they are only decrypted for authorized verifiers.
+Users can share specific attestations (e.g., "I am over 21") without revealing their entire identity or unrelated personal data. Tree-method revisions support field-level redaction, so a verifier sees only the disclosed fields — see [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure).
 
 ## Use Cases by Industry
 
@@ -41,7 +42,7 @@ Users can share specific attestations (e.g., "I am over 21") without revealing t
 - Citizens use digital wallets to prove citizenship or residency.
 - Streamlined visa and border entry processes.
 
-**Notary & Witnessing**
+**Notary Services**
 - Notaries attest to the identity of a signer on a document.
 - Creates a cryptographic link between the person, the document, and the notary.
 - Replaces physical stamps with digital signatures.
@@ -67,14 +68,15 @@ Users can share specific attestations (e.g., "I am over 21") without revealing t
 **Reputation & Social Proof**
 - Platforms attest to a user's reputation score or history.
 - Enables portable reputation across different marketplaces and communities.
+- The same attestation pattern gives AI agents verifiable, signed provenance for their actions — see [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails).
 
 ## Key Benefits
 
 ### User Privacy & Control
-Users store their own data in encrypted Data Vaults. They grant access only when necessary and can revoke it at any time. No centralized "honey pot" of user data to hack.
+Users hold their own claims and attestations and decide what to share, redacting sensitive fields with selective disclosure. No centralized "honey pot" of user data to hack.
 
 ### Fraud Reduction
-Cryptographic signatures make it impossible to forge attestations. 
+Cryptographic signatures make forged attestations computationally infeasible.
 
 ### Interoperability
 Built on standard cryptographic primitives, allowing identity claims to be used across different platforms, wallets, and services that support the Aqua Protocol.
@@ -91,10 +93,10 @@ The user creates a **Self-Issued Identity Claim**.
 - It serves as the "subject" for future attestations.
 
 ### 2. Attestation
-A **Trust Authority** (e.g., a University) verifies the claim off-chain (by checking real documents) and then issues an **Attestation**.
-- The Authority signs a statement referencing Alice's self-issued claim hash.
+A trusted party (e.g., a university) verifies the claim out of band (by checking real documents) and then issues an **Attestation**.
+- The attester signs a statement referencing Alice's self-issued claim hash.
 - "I, University X, attest that the claim [Hash] by Alice is true."
-- This attestation is recorded in the Authority's Aqua chain.
+- This attestation is recorded in the attester's Aqua chain.
 
 ### 3. Verification & Trust Chains
 A relying party (e.g., an Employer) verifies the diploma.
@@ -102,7 +104,6 @@ A relying party (e.g., an Employer) verifies the diploma.
 - They verify the University's signature on the attestation.
 - They verify the University's authority (e.g., by checking a "Ministry of Education" attestation on the University's identity).
 - If the chain of trust is valid, the diploma is accepted.
-
 
 ## Real-World Scenario: The "Trust Chain"
 
@@ -120,4 +121,5 @@ When an employer verifies Alice's degree, they trace this path back to a root of
 
 - [Document Verification](/docs/v4.0.0/use-cases/document-verification) - Verify the integrity of files and contracts.
 - [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) - Trace provenance of physical goods.
-- [Aqua CLI](/docs/v4.0.0/dev-tools/aqua-cli) - Tools for issuing and verifying claims.
+- [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) - Field-level redaction for privacy-preserving proofs.
+- [SDK Core](/docs/v4.0.0/dev-tools/sdk-core) - Tools for issuing and verifying claims.

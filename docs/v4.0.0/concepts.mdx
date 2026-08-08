@@ -1,0 +1,182 @@
+---
+title: "Core Concepts"
+description: 'The Aqua tree, the four revision kinds, multihash links, hashing methods, templates, signatures, anchors, selective disclosure, and verification.'
+icon: "brain"
+sidebar_position: 3
+---
+
+Aqua Protocol v4 models data as trees of hash-linked revisions. This page defines the working vocabulary; the [normative protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification) in the `aqua-rs-sdk-core` repository is authoritative, and each section links its detailed [Schema Reference](/docs/v4.0.0/schema-reference/introduction) page.
+
+## The Aqua Tree
+
+The **Aqua tree** is the container for revisions: a map of revisions plus an organizational name index.
+
+```json
+{
+  "revisions":  { "<revision link>": { "…revision…": "…" } },
+  "file_index": { "<revision link>": "<display name>" }
+}
+```
+
+- **The `revisions` key is normative.** Each revision is stored under its own revision hash, and a verifier recomputes every revision's hash and compares it to the key the revision is stored under. A mismatch fails verification.
+- **`file_index` is never hashed.** It maps revision links to display names, carries no integrity guarantee, and may contain keys that are not revisions of this tree (for example the tips of linked trees). Verifiers must not rely on it for any protocol decision.
+
+Full rules: [Data Model](/docs/v4.0.0/schema-reference/data-model).
+
+## Revisions
+
+A **revision** is a JSON object — the universal protocol object. Every revision carries these common fields:
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `previous_revision` | revision link | Signature: yes; others: optional | The parent revision this revision chains from. Omitted entirely when absent, never `null`. |
+| `revision_type` | revision link | Yes | The full multihash of the template that types this revision. |
+| `nonce` | string, `0x` + 32 hex chars | Yes | Per-revision random value; makes the hash unpredictable and seeds selective-disclosure salts. |
+| `local_timestamp` | number, Unix seconds | Yes | Producer-local creation time; ordered but not trusted evidence of real time. |
+| `version` | string | Yes | Exactly `https://aqua-protocol.org/docs/v4/schema`; any other value is rejected at parse. |
+| `method` | string | Yes | `"scalar"` or `"tree"` — selects the hashing method. |
+
+Field sets are strict: a revision carrying any field outside its kind's declared set is rejected. A revision has **no hash-algorithm field** — the algorithm is carried by the multihash that addresses it.
+
+### Kind discrimination
+
+`revision_type` is **always a template multihash** — the `0x`-prefixed, lowercase-hex full multihash of a template — never a literal string. The legacy literals `"anchor"` and `"template"` classify as Unknown, as does any value that is not a structurally valid multihash. The kind is determined by which foundation template `revision_type` names, and independently by the field set: `payloads` makes an object, `schema` a template, `signer` plus `signature` a signature, `structural_links` an anchor.
+
+### The four revision kinds
+
+Exactly four revision kinds exist on the wire.
+
+**Object** — typed application data. Its `payloads` member carries content that must conform to the JSON Schema of the template named by its `revision_type`. Tree-method objects also publish a `leaves` array of per-field digests. Details: [Data Model](/docs/v4.0.0/schema-reference/data-model).
+
+**Template** — a type declaration. It carries a JSON Schema (draft 2020-12) constraining the `payloads` of object revisions of its type, plus optional derivation metadata (`derives_from`, `ancestry`), optional shape `bounds`, and an optional compute declaration. Templates are distributed as single-revision trees. Details: [Templates](/docs/v4.0.0/schema-reference/templates).
+
+**Signature** — a cryptographic attestation over another revision. All eight of its fields are required, including `previous_revision`, which names the revision being signed. A signature is always a branch: it forks off its target rather than extending the chain. Details: [Signatures](/docs/v4.0.0/schema-reference/signatures).
+
+**Anchor** — a structural fork point carrying links to other revisions, and the protocol's only linking construct. Its required `structural_links` array (which may be empty) names verification-relevant dependencies; its optional `compositional_links` carry application-level references. Details: [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links).
+
+<Callout type="info" title="Timestamps are outside the core profile">
+Revisions whose `revision_type` names a timestamp foundation template are classified as timestamp revisions, but timestamping — creation and provider integration — is part of the full protocol, not the published core profile. A core verifier still checks a timestamp revision's batch inclusion proof when it can; unavailable timestamp capability fails under the `strict` policy and warns under `offline`.
+</Callout>
+
+## Genesis
+
+A **genesis revision** is a revision with no `previous_revision` whose kind admits genesis — only object and anchor revisions can be genesis; template and signature revisions never are. The protocol produces two genesis shapes:
+
+**Anchor genesis** — the normal form for typed trees. A genesis anchor declares the tree's type dependency before any content exists, and the first object revision chains from it:
+
+```
+Anchor (genesis; structural_links = [ <template multihash> ])
+  └── Object (revision_type = <template multihash>, payloads = …)
+        └── … further revisions …
+```
+
+The tree's type is asserted twice — by the anchor's structural link and by the object's naming value — and both are independently resolved.
+
+**Minimal genesis** — a single object revision with no `previous_revision`, for lightweight trees that need no anchor.
+
+Full rules: [Data Model](/docs/v4.0.0/schema-reference/data-model) and [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links).
+
+## Revision links and multihashes
+
+A **revision link** is the string form of a revision hash: `0x` followed by the lowercase hex encoding of a **multihash** — `varint(codec) || varint(length) || digest`. For the two registered algorithms every revision hash is 34 bytes, so the string form is 70 characters. Uppercase hex is rejected.
+
+| Algorithm | Multicodec | Digest length |
+|-----------|-----------|---------------|
+| SHA3-256 (FIPS 202) — default | `0x16` | 32 bytes |
+| BLAKE3-256 | `0x1e` | 32 bytes |
+
+The algorithm is recovered from the multihash that addresses a revision — there is no fallback, and no per-revision algorithm field. Two hash renderings coexist and must not be confused:
+
+| Rendering | Hex chars after `0x` | Used for |
+|-----------|---------------------|----------|
+| Full multihash | 68 | Revision map keys, `previous_revision`, `revision_type`, `derives_from`, `ancestry`, anchor `structural_links`, compositional link hashes |
+| Bare 32-byte digest | 64 | `leaves` entries, Merkle proof siblings, the zero sentinel, many payload hash fields |
+
+Full rules: [Hashing](/docs/v4.0.0/schema-reference/hashing).
+
+## Methods: scalar vs tree
+
+Both hashing methods start from the same canonical form — the revision flattened into a sorted map of RFC 6901 JSON Pointers (Aqua Pointer Form). They differ in what they trade:
+
+| Method | Hash construction | Trade-off |
+|--------|------------------|-----------|
+| `scalar` | One digest over the compact JSON of the sorted pointer map | Cheapest; the revision hashes as one opaque blob, so it can only be disclosed in full or hidden |
+| `tree` | Each pointer entry becomes a salted commitment leaf; the leaves reduce to a Merkle root | Per-field cost and a published `leaves` array, in exchange for **selective disclosure**: individual fields can later be revealed or sealed without breaking the hash |
+
+A tree-method revision's `leaves` array is derived data, excluded from hashing by construction, so the hash is identical before and after the array is populated. The per-leaf salts are derived from the revision's `nonce` with HKDF-SHA3-256.
+
+Full rules: [Hashing](/docs/v4.0.0/schema-reference/hashing) and [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure).
+
+## Templates: the type system
+
+A **template hash** is a template's identity: the hash of its own canonical form, computed **always with SHA3-256**, regardless of any tree's algorithm. There are no template names on the wire — names are a resolution convenience — and any change to a template, including its `nonce` or a description string, mints a new type. Template authors therefore pin `nonce` and `local_timestamp` to fixed literals.
+
+- **Derivation.** A template may derive from another via `derives_from` (the parent's full multihash) and `ancestry` (the chain `[root, …, parent]`, at most 3 entries — maximum derivation depth 4). On the wire, lineage asserts family membership, not schema subsumption.
+- **`template_meta`** is the template-of-templates: the naming value every template revision declares (full multihash `0x1620f3040850a8836717dd73e87d046723e11f9e9870e3b2e246803ad842fbf01155`).
+- **The shipped catalog.** The core profile ships 19 templates with normative identities: the machinery templates (`template_meta`, `anchor_template`, `file`), the signature suite templates, and the eleven-template audit family for AI-agent audit trails. The full hash table is in the [Templates](/docs/v4.0.0/schema-reference/templates) reference; the sanctioned distribution channel for the audit family is the [template registry](/docs/v4.0.0/dev-tools/template-registry).
+
+Full rules: [Templates](/docs/v4.0.0/schema-reference/templates).
+
+## Signatures
+
+A **signature revision** attests to the *hash* of its target — the revision named by its `previous_revision` — not to the target's content directly. Every suite signs the same message: a flat nine-key JSON pre-image containing the signature revision's identity fields and the target hash. Content integrity flows through the target's own hash, so selectively disclosing the target later does not invalidate the signature.
+
+Four signature suites exist; the `signer` field is a DID:
+
+| `signature_type` | Signer DID form | Key material |
+|------------------|----------------|--------------|
+| `ed25519` | `did:key:z6Mk…` or `did:pkh:ed25519:0x…` | 32-byte Ed25519 public key |
+| `ethereum:eip-191` | `did:pkh:eip155:<chain_id>:0x…` | 20-byte Ethereum address |
+| `ecdsa:p256` | `did:key:zDn…` | 33-byte compressed P-256 point |
+| `webauthn:p256` | `did:key:zDn…` | 33-byte compressed P-256 point |
+
+Verification is fail-closed: a `signer` DID that cannot be resolved to key material is rejected — unknown DID methods are never a pass — and the resolved key must byte-equal the signature's `signature_public_identifier`. Signature verification failures are never policy-relaxable.
+
+Full rules: [Signatures](/docs/v4.0.0/schema-reference/signatures).
+
+## Anchors and links
+
+An **anchor revision** carries the protocol's two link kinds, which differ in obligation:
+
+- **Structural links** are verification-relevant dependencies: every entry must resolve — to the zero sentinel (32 zero bytes, "deliberately headless"), a revision in the same tree, a revision in a supplied linked tree, or a catalog template — or the whole tree fails. This is how a genesis anchor declares its tree's type and how one tree makes another part of its verification context.
+- **Compositional links** are application data: `{ "hash": …, "role": … }` pairs that the protocol hashes and carries but never resolves, checks, or interprets. The conventional roles are `"composition"` (the linked tree is bundled with this one) and `"reference"` (a citation or provenance pointer); roles are free-form.
+
+When a tree is verified together with linked trees, the linked trees are verified first, recursively and in dependency order; cycles are fatal, and a failing linked tree fails the linking tree. Anchors carry no timestamping semantics — anchoring is structural linking, not proof of time.
+
+Full rules: [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links).
+
+## Selective disclosure
+
+**Selective disclosure** lets a tree's holder reveal a verifiable subset of a tree-method revision: each field is either disclosed (value plus salt) or sealed as a salted commitment, and a verifier recomputes the Merkle root to confirm the disclosed subset is exactly what the original revision hash commits to — with no trusted party. Pointer paths and the leaf count remain cleartext by design, so field *presence* is always public, and a redacted revision proves hash integrity only — schema validation and signature checks over sealed content are out of scope, not silently assumed.
+
+Full rules: [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure).
+
+## Verification
+
+Verification reduces a tree to one of three outcomes:
+
+| Outcome | Meaning |
+|---------|---------|
+| `verified` | Every check passed |
+| `verified_with_warnings` | Every non-relaxable check passed; policy-governed conditions were tolerated as warnings |
+| `failed` | At least one error |
+
+A **verification policy** assigns Fail or Warn to seven enumerated decision points, nothing more. `strict` (the default) fails on all of them; `offline` tolerates conditions caused by missing network access or optional capabilities — such as an unresolvable template or unavailable timestamp capability — while still failing broken proofs and missing template ancestors; `debug` tolerates everything tolerable, for diagnostics.
+
+Everything else is fail-closed and non-negotiable under any policy: structural validity, hash and leaf integrity, schema violations of a resolved template, timestamp monotonicity, and type-specific checks including signature validity. A core-profile verifier is never more permissive because a capability is missing — unsupported capabilities surface as governed conditions or hard failures, never as silent passes.
+
+Full rules: [Verification](/docs/v4.0.0/schema-reference/verification).
+
+## Portability
+
+A typed object names its type by hash only, so a tree is meaningless to a receiver who cannot resolve its templates. A **self-descriptive artifact** closes that gap: the export embeds every referenced template — and every ancestor of every referenced template — into the tree as ordinary template revisions under their own multihash keys. Embedding changes no revision, so every existing hash and signature remains valid. The export fails closed: if any template in the closure cannot be resolved, nothing is embedded and the unresolved identities are reported. The same closure walk, without embedding, is the `missing_templates` lint — it names the template hashes a receiver would fail on with `TEMPLATE_NOT_FOUND`.
+
+Full rules: [Templates](/docs/v4.0.0/schema-reference/templates) and the [SDK Core](/docs/v4.0.0/dev-tools/sdk-core) `export_tree` API.
+
+## See Also
+
+- [Quick Start](/docs/v4.0.0/quickstart) — create, sign, and verify a tree in one program
+- [Schema Reference](/docs/v4.0.0/schema-reference/introduction) — the readable wire-format reference
+- [Data Model](/docs/v4.0.0/schema-reference/data-model) — revisions and trees in full detail
+- [SDK Core](/docs/v4.0.0/dev-tools/sdk-core) — the Rust API implementing these concepts
+- [Protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification) — the normative source

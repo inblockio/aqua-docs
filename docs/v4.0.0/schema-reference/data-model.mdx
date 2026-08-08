@@ -1,0 +1,319 @@
+---
+title: "Data Model"
+description: 'The revision and tree wire formats of the Aqua Protocol v4 core profile: common fields, the four revision kinds, kind discrimination, genesis, and structural rules'
+icon: "database"
+sidebar_position: 2
+redirect_from:
+  - /docs/v4.0.0/schema-reference/aqua-tree
+  - /docs/v4.0.0/schema-reference/file-index
+  - /docs/v4.0.0/schema-reference/revision/revision
+  - /docs/v4.0.0/schema-reference/revision/object-revision
+---
+
+The **revision** is the universal protocol object; the **tree** is its container. This page specifies both wire formats, the four revision kinds, how a decoder tells the kinds apart, what a genesis revision is, and the structural rules every tree must satisfy. The normative source is [01 — Data model](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/01-data-model.md) in the protocol specification; on any disagreement, the specification wins.
+
+All examples on this page are real: they come from the specification's worked example, the `aqua-rs-sdk-core` test seeds, and the `aqua-template-registry` seed set. Hashes are shown in full; a value like `0x1620ce6f…` is abbreviated in prose only.
+
+## Trees on the wire
+
+A tree is a JSON object with two members:
+
+```text
+{
+  "revisions":  { "<revision link>": { …revision… }, … },
+  "file_index": { "<revision link>": "<name>", … }
+}
+```
+
+- `revisions` maps each revision's link to the revision itself. **The key is normative:** a verifier recomputes each revision's hash and compares it to the key under which the revision is stored. Where map ordering matters, it is byte-wise over the decoded multihash bytes.
+- `file_index` is organizational metadata: display names keyed by revision link. It is **never hashed**, carries no integrity guarantee, and MAY contain keys that are not revisions of this tree (for example the tips of linked trees). Verifiers MUST NOT rely on it for any protocol decision.
+
+The `file_index` of the signed-file example tree used throughout this page (from `src/tests/seed/sign_did_example.aqua.json` in the SDK repository) names two of that tree's three revisions:
+
+```json
+{
+  "0x1620ce6f69b28e6dd3a1b02f107bc08a2316901dbd3c7d41d619bd7bb0bd49b7ce0b": "anchor_0x1620ce",
+  "0x1620f7912b27263b2352d29ac5e0533a444799d45e835683104be8a3f3bb36d5ac28": "test.txt"
+}
+```
+
+## Common revision fields
+
+Exactly four revision kinds exist on the wire: **Object**, **Template**, **Signature**, and **Anchor**. Every revision carries these fields:
+
+| Field | Wire type | Presence | Description |
+|---|---|---|---|
+| `previous_revision` | string — revision link | OPTIONAL for object, template, and anchor revisions (omitted entirely when absent, never `null`); REQUIRED for signature revisions | The parent revision this revision chains from. |
+| `revision_type` | string — revision link | REQUIRED | The naming value: the full multihash of the template that types this revision. Always a multihash — never a literal string. |
+| `nonce` | string — `0x` + exactly 32 lowercase hex characters (16 bytes) | REQUIRED | Per-revision random value. Makes the revision hash unpredictable and, for tree-method revisions, seeds the selective-disclosure salts. |
+| `local_timestamp` | JSON number — unsigned integer, Unix seconds | REQUIRED | Producer-local creation time. Hashed and ordered, but not trusted evidence of real time. |
+| `version` | string | REQUIRED | MUST be exactly `https://aqua-protocol.org/docs/v4/schema`. A revision carrying any other value MUST be rejected at parse time. |
+| `method` | string | REQUIRED | MUST be `"scalar"` or `"tree"`. Selects the hashing method ([Hashing](/docs/v4.0.0/schema-reference/hashing)). |
+
+Three rules govern every revision:
+
+1. **No hash-algorithm field.** A revision does not carry a hash-algorithm field. The algorithm (SHA3-256 by default, BLAKE3-256 optionally) is carried by the multihash that addresses the revision.
+2. **Strict field sets.** A revision carrying any field outside its kind's declared set MUST be rejected. Unknown fields are never ignored.
+3. **Everything is hashed, except `leaves`.** Every field contributes to the revision hash, with one exception: a tree-method revision's `leaves` array is derived data excluded from hashing. Serialization order is irrelevant to the hash — canonicalization sorts.
+
+### Revision links
+
+A **revision link** is the string form of a revision hash: `0x` followed by the lowercase hex encoding of the full multihash — 70 characters for the registered algorithms. Parsers MUST reject uppercase hex.
+
+A distinguished **zero sentinel** exists: 32 zero bytes, rendered as `0x` + 64 zero hex characters. It is *not* a valid multihash and is legal in exactly one position: as an entry of an anchor's `structural_links`, where it denotes a deliberately headless attestation. It MUST NOT appear anywhere else a revision link is expected.
+
+## Object revisions
+
+**Purpose.** Typed application data. The `payloads` value is validated against the JSON Schema of the template named by `revision_type`.
+
+**Additional fields** (beyond the common set):
+
+| Field | Wire type | Presence | Description |
+|---|---|---|---|
+| `payloads` | any JSON value | REQUIRED | The typed content, validated against the template named by `revision_type`. |
+| `leaves` | array of strings (`0x` + hex, bare digests) | OPTIONAL | Published per-field leaf hashes. MUST be present when `method` is `"tree"`; producers MUST NOT emit it when `method` is `"scalar"`. Omitted entirely when absent, never `null`. |
+
+**Example** — the file revision of the signed-file example tree, stored under the key `0x1620f7912b27263b2352d29ac5e0533a444799d45e835683104be8a3f3bb36d5ac28`:
+
+```json
+{
+  "previous_revision": "0x1620ce6f69b28e6dd3a1b02f107bc08a2316901dbd3c7d41d619bd7bb0bd49b7ce0b",
+  "revision_type": "0x162000f3abb3d74fc9dfc2b961cea906b3211716188f4de6f588180fdfcbbfa3fe53",
+  "nonce": "0x4313fd67ac7d5b6bbd62abe5e8ec226e",
+  "local_timestamp": 1783616148,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "payloads": {
+    "type": "file",
+    "hash": "0xd87ca20fb47b105c59e46a63a86193a546b980991c86115a08da820304450b9d",
+    "hash_type": "FIPS_202-SHA3-256",
+    "descriptor": "",
+    "size": 12,
+    "content_type": "text/plain"
+  }
+}
+```
+
+**Notes.** `revision_type` names the shipped `file` template (bare digest `0x00f3ab…`); its `previous_revision` is the genesis anchor shown below. The `hash_type` inside `payloads` is a field of the *file template's payload schema* describing the file content hash — it is not a revision field; revisions themselves carry no hash-algorithm field. `method` is `"scalar"`, so `leaves` is absent.
+
+## Template revisions
+
+**Purpose.** A type declaration: a JSON Schema constraining the `payloads` of object revisions of this type, plus optional derivation metadata and shape bounds. A template is identified by its own content hash, which is always computed with SHA3-256, and a template tree is a single free-standing revision. Because the hash is the identity, template authors pin `nonce` and `local_timestamp` to fixed literals — a freshly generated value would mint a new type on every run.
+
+**Additional fields** (beyond the common set):
+
+| Field | Wire type | Presence | Description |
+|---|---|---|---|
+| `schema` | JSON object | REQUIRED | A JSON Schema (draft 2020-12) constraining the `payloads` of object revisions of this type. |
+| `verification` | JSON object | OPTIONAL | A compute declaration. The core profile does not execute compute; verification of such templates fails closed ([Verification](/docs/v4.0.0/schema-reference/verification)). |
+| `derives_from` | string — revision link | OPTIONAL | The direct parent template's identity (full multihash). |
+| `ancestry` | array of revision links | OPTIONAL | The derivation chain within the template's family, `[root, …, parent]`, root first. Its last element MUST equal `derives_from`. MUST NOT exceed 3 entries (maximum derivation depth 4). |
+| `bounds` | JSON object | OPTIONAL | Declared shape limits for trees of this type ([Templates](/docs/v4.0.0/schema-reference/templates)). |
+
+A template revision has no `leaves` field.
+
+**Example** — the `audit_artifact` template definition from the registry seed (`seed/audit-set-v1/definitions/audit_artifact.json` in the `aqua-template-registry` repository); its identity is the bare digest `0x431668e53b2181311ec43db30ff4d4cf738059051829a5a4f3398c22440a16f3`:
+
+```json
+{
+  "revision_type": "0x1620f3040850a8836717dd73e87d046723e11f9e9870e3b2e246803ad842fbf01155",
+  "nonce": "0x00000000000000000000000000000000",
+  "local_timestamp": 1747526400,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "signer_did": {
+        "type": "string",
+        "pattern": "^did:(pkh|key):",
+        "maxLength": 256,
+        "description": "The DID of the entity signing the artifact (server, user-session, agent, or API attestor)"
+      },
+      "created_at": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "Unix-seconds timestamp of artifact creation. T1 (audit_user_turn_marker) overrides this with opens_at."
+      }
+    },
+    "required": ["signer_did", "created_at"],
+    "additionalProperties": false
+  },
+  "bounds": {
+    "max_chain_depth": 2,
+    "structural_links": {
+      "required": 0,
+      "max": 4
+    },
+    "max_signature_branches": 6,
+    "max_timestamp_branches": 4,
+    "max_anchor_branches": 4,
+    "max_total_revisions": 16
+  }
+}
+```
+
+**Notes.** `revision_type` names the `template_meta` template (bare digest `0xf30408…`) — the template-of-templates. The `nonce` is pinned to all zeros and `local_timestamp` to a fixed literal, as required for a stable type identity. This template declares no `derives_from` or `ancestry` because it is its family's root.
+
+## Signature revisions
+
+**Purpose.** A cryptographic attestation over another revision — the revision named by `previous_revision`.
+
+**Additional fields** (beyond the common set):
+
+| Field | Wire type | Presence | Description |
+|---|---|---|---|
+| `signer` | string — a DID | REQUIRED | The claimed signer identity ([Signatures](/docs/v4.0.0/schema-reference/signatures)). |
+| `signature` | JSON object | REQUIRED | The signature value object; its members depend on the signature suite. |
+
+All **eight** fields of a signature revision are REQUIRED — including `previous_revision`, which names the revision being signed. A signature revision has no `leaves` field.
+
+**Example** — the Ed25519 signature from the registry seed's `audit_artifact` publication tree (`seed/audit-set-v1/02-template-audit_artifact.json`), signing the registration object `0x16208d9a…`:
+
+```json
+{
+  "previous_revision": "0x16208d9ad618a592fce2a37ca1b1ec169f7ddde25a024383bdac63bb17549c19c5e1",
+  "revision_type": "0x1620baf1d5d47eef50dcde3931956879bb30c5580064a92ce43ed4c6bd8b878b659a",
+  "nonce": "0x2f43837a3d63cf3a8952bc45f27fc141",
+  "local_timestamp": 1786094607,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "signer": "did:key:z6MkqDxSY5Z3gMNR2qKzV9ZwZDLwUYi5DqevZWhR7vaDWLCN",
+  "signature": {
+    "signature_type": "ed25519",
+    "signature": "0x9655b06d9ba57315d6f8d163dee67196e931a2d6547d5df06bd5f35939681375bb500f5809e5bba7e27a9a324ac366c5e1cfd5ef53270b81bfbb2d006808d508",
+    "signature_public_identifier": "0xa00819aee508a7471603abe925c8cc6e8d6b8e5374464b4e371a320ffac26f67"
+  }
+}
+```
+
+**Notes.** `revision_type` names the `signature_ed25519` template (bare digest `0xbaf1d5…`). The signer is the publisher's `did:key` identity. What the signature attests to (the signing pre-image), the four signature suites, and the per-suite members of the `signature` value object are specified on the [Signatures](/docs/v4.0.0/schema-reference/signatures) page.
+
+## Anchor revisions
+
+**Purpose.** A structural fork point carrying links to other revisions: verification-relevant dependencies (`structural_links`) and uninterpreted application references (`compositional_links`). Anchors form genesis heads and cross-tree references. Anchors are not timestamps.
+
+**Additional fields** (beyond the common set):
+
+| Field | Wire type | Presence | Description |
+|---|---|---|---|
+| `structural_links` | array of revision links | REQUIRED (MAY be empty) | Verification-relevant dependencies; a verifier MUST resolve every entry ([Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links)). The zero sentinel is legal here. |
+| `compositional_links` | array of `{ "hash": <revision link>, "role": <string> }` | OPTIONAL (omitted when empty) | Application-level references; carried, never interpreted by the protocol. The conventional roles are `"composition"` and `"reference"`. |
+| `leaves` | array of strings | OPTIONAL | As for object revisions: present iff `method` is `"tree"`. |
+
+**Example** — the specification's worked example ([02 — Hashing §7](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/02-hashing-and-canonicalization.md)): the genesis anchor of the signed-file example tree.
+
+```json
+{
+  "revision_type": "0x1620479a304927c47f4308d027a858060ce287a9bdb45f2203f8130574a73511e899",
+  "nonce": "0x1a5f49342762a8282bc53f736b96d580",
+  "local_timestamp": 1783616147,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "structural_links": [
+    "0x162000f3abb3d74fc9dfc2b961cea906b3211716188f4de6f588180fdfcbbfa3fe53"
+  ]
+}
+```
+
+Canonicalizing and hashing this revision yields its revision hash:
+
+```text
+0x1620ce6f69b28e6dd3a1b02f107bc08a2316901dbd3c7d41d619bd7bb0bd49b7ce0b
+```
+
+which is the key it is stored under in `revisions`, the `previous_revision` of its children, and the target hash a signature over it attests to.
+
+**Notes.** `revision_type` names the `anchor_template` template (bare digest `0x479a30…`). It has no `previous_revision`, making it a genesis anchor; its single structural link names the `file` template that types the tree's content. The full canonicalization walk-through for this exact revision is on the [Hashing](/docs/v4.0.0/schema-reference/hashing) page and in the specification.
+
+## Kind discrimination
+
+A decoder determines a revision's kind from two independent signals, both normative.
+
+**(a) The field set.** The kind-specific fields are disjoint, and the strict-field rule makes the discrimination unambiguous:
+
+| Distinguishing field(s) | Kind |
+|---|---|
+| `payloads` | Object |
+| `schema` | Template |
+| `signer` + `signature` | Signature |
+| `structural_links` | Anchor |
+
+When a decoder tries the kinds in order, the normative order is: object, template, signature, anchor.
+
+**(b) The naming value.** `revision_type` semantically classifies the revision by which foundation template it names:
+
+| `revision_type` names… | Classification |
+|---|---|
+| the `template_meta` template, or the genesis bootstrap hash | Template |
+| the `anchor_template` template | Anchor |
+| any of the five signature templates (`signature_base`, `signature_eip191`, `signature_ed25519`, `signature_p256`, `signature_webauthn`) | Signature |
+| any of the three timestamp foundation templates (`timestamp_base`, `timestamp_evm`, `timestamp_tsa`) | Timestamp — outside the core profile; see [Verification](/docs/v4.0.0/schema-reference/verification) |
+| any other structurally valid multihash | Object |
+| anything else | Unknown |
+
+Classification MUST require a structurally valid, `0x`-prefixed, lowercase-hex full multihash. A classifier MUST NOT accept uppercase hex, a bare 32-byte digest without the multihash prefix, or the legacy literal strings `"anchor"` and `"template"` — all of these classify as Unknown.
+
+Signature, anchor, and timestamp revisions are the **branch kinds** — a classification of the naming value used by disclosure presets and traversal metadata. Branch-kind membership is independent of tree position: topologically, a revision of any kind can sit on or off the chain.
+
+## Genesis
+
+A revision is a **genesis revision** iff it has no `previous_revision` *and* its kind admits genesis. Only object and anchor revisions can be genesis. Template and signature revisions are never genesis, even when `previous_revision` is absent — for templates it is routinely absent, since a template tree is a single free-standing revision.
+
+Two genesis shapes are produced by the protocol:
+
+1. **Anchor genesis (the normal form for typed trees).** The tree begins with an anchor revision (no `previous_revision`) whose `structural_links` name the tree's type template or other caller-chosen targets; the first object revision then chains from that anchor. Templates are referenced, never embedded, at creation time. The worked-example anchor above is exactly this shape.
+2. **Minimal genesis.** A single object revision with no `previous_revision`.
+
+The **genesis bootstrap type hash** is the SHA3-256 digest of the ASCII string `aqua:genesis:template_meta`, wrapped as a multihash:
+
+```text
+0x162087ea911a93f2698563b68b860f33fd7a568ca2391d4a227b532812d496039e74
+```
+
+It is the naming value that the `template_meta` template itself declares — a template-of-templates cannot reference its own content hash — and it classifies as Template.
+
+## Structural rules
+
+A tree is well-formed when all of the following hold. Each rule is a testable assertion; where each is enforced in the verification procedure is specified on the [Verification](/docs/v4.0.0/schema-reference/verification) page.
+
+1. **Strict parse.** Every revision parses under its kind's strict field set: all common fields present and well-formed, no field outside the kind's declared set.
+2. **Key integrity.** Every key in `revisions` equals the recomputed hash of the revision stored under it.
+3. **Acyclicity.** Walking `previous_revision` backward from any revision never revisits a revision.
+4. **Reference existence.** Every `previous_revision` names a revision present in the same tree.
+5. **Timestamp monotonicity.** For every revision whose parent is in the tree, `child.local_timestamp >= parent.local_timestamp`. Equal timestamps are allowed; a decrease is a hard failure.
+6. **Link resolution.** Every entry of every anchor's `structural_links` resolves ([Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links)).
+
+Each revision has at most one parent, so a tree's revisions form a forest of in-trees; multiple children of one parent are legal.
+
+## Chains, branches, and tips
+
+- The **chain** is the linear spine walked from a genesis revision by repeatedly following child links. The walk is kind-agnostic: where a revision has several children, the canonical traversal picks the child whose revision link is lowest in byte order of the decoded multihash, whatever its kind; when several genesis revisions exist, the one with the lowest link starts the chain. The tie-break makes traversal deterministic across implementations; it carries no semantic weight.
+- A **branch** is any revision not on that spine — the non-preferred children at each fork. This topological notion is distinct from the *branch kinds* above.
+- A **tip** is a revision that no other revision names as its `previous_revision`. Multiple tips are normal — every signature is typically a tip.
+- The **content tip** is the tip that is an object or template revision, with object preferred — the natural target for extending the tree.
+
+The signed-file example tree demonstrates all four notions. The genesis anchor has two children — the object revision shown above and an Ed25519 signature over the anchor (revision `0x16200ca0…` in the seed file):
+
+```text
+0x1620ce6f…  anchor (genesis — chain head)
+ ├─ 0x16200ca0…  signature   → on the chain (lowest child link wins the tie-break)
+ └─ 0x1620f791…  object      → branch; a tip; the content tip
+```
+
+The chain is anchor → signature, because `0x16200ca0…` sorts below `0x1620f791…` in byte order. Both children are tips; the content tip is the object revision. Given the same revision set, every conforming implementation MUST derive the same chain, the same branch assignment, and the same traversal order. A tree without any genesis revision has no defined chain; verification of the individual revisions is unaffected.
+
+`local_timestamp` deserves a final caution: it is hashed (so it cannot be altered after the fact) and it is ordered (rule 5 above), but it is **not** evidence of real time — nothing in the core profile ties it to an external clock.
+
+## Timestamp revisions
+
+Timestamp revisions are defined by the full Aqua protocol but sit **outside the published core profile**. The core profile classifies an incoming revision as a timestamp by its naming value (the three timestamp foundation templates) but neither creates nor verifies timestamp revisions; the verification policy governs the outcome — the strict policy rejects them, the offline policy accepts them with a warning. See [Verification](/docs/v4.0.0/schema-reference/verification).
+
+## See Also
+
+- [Hashing](/docs/v4.0.0/schema-reference/hashing) — how revision hashes and links are computed
+- [Templates](/docs/v4.0.0/schema-reference/templates) — type identity, derivation, and the shipped catalog
+- [Signatures](/docs/v4.0.0/schema-reference/signatures) — the signing pre-image and the four signature suites
+- [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) — structural link resolution and cross-tree references
+- [Verification](/docs/v4.0.0/schema-reference/verification) — the staged procedure that enforces the rules on this page
