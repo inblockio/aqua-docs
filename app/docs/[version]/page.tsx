@@ -17,9 +17,7 @@ export async function generateStaticParams() {
 export default async function VersionIndexPage({ params }: PageProps) {
   const { version } = await params
 
-  // Every /docs/v4.0.0/* URL renders the teaser and declares /docs/v4.0.0/welcome
-  // as its canonical. Send the bare version index straight there instead of
-  // falling through to the first MDX doc, so the entry point matches the canonical.
+  // Deterministic entry point for the active version, independent of doc ordering.
   if (version === "v4.0.0") {
     redirect("/docs/v4.0.0/welcome")
   }

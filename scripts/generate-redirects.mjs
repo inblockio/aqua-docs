@@ -35,13 +35,33 @@ function findMdxFiles(dir, baseDir = dir) {
 }
 
 /**
- * Get all folders (categories) that need redirect pages
+ * Get all folders (categories) that need redirect pages.
+ * Docs are ordered by frontmatter sidebar_position (then path) so a folder
+ * redirect targets the section's intended entry page, not the alphabetically
+ * first file.
  */
-function getFolderRedirects(mdxFiles, version) {
-  const folders = new Map() // folder path -> first doc in folder
-
+function getFolderRedirects(mdxFiles, version, versionDir) {
+  const UNPOSITIONED = 1e9
+  const positions = new Map()
   for (const file of mdxFiles) {
     const normalized = file.replace(/\\/g, '/')
+    let position = UNPOSITIONED
+    try {
+      const { data } = matter(fs.readFileSync(path.join(versionDir, file), "utf8"))
+      if (typeof data.sidebar_position === "number") position = data.sidebar_position
+    } catch {
+      // unreadable frontmatter — treat as unpositioned
+    }
+    positions.set(normalized, position)
+  }
+
+  const sorted = [...positions.keys()].sort(
+    (a, b) => positions.get(a) - positions.get(b) || a.localeCompare(b)
+  )
+
+  const folders = new Map() // folder path -> entry doc in folder
+
+  for (const normalized of sorted) {
     const parts = normalized.split('/')
 
     // For each level of nesting, track the folder
@@ -49,7 +69,6 @@ function getFolderRedirects(mdxFiles, version) {
       const folderPath = parts.slice(0, i + 1).join('/')
 
       if (!folders.has(folderPath)) {
-        // This is the first doc we've seen in this folder
         const docSlug = normalized.replace(/\.mdx$/, '').replace(/\/index$/, '')
         folders.set(folderPath, `/docs/${version}/${docSlug}`)
       }
@@ -76,7 +95,7 @@ async function buildRedirects() {
     const mdxFiles = findMdxFiles(versionDir)
 
     // Build folder redirects for static export
-    const folders = getFolderRedirects(mdxFiles, version)
+    const folders = getFolderRedirects(mdxFiles, version, versionDir)
     for (const [folderPath, destination] of folders.entries()) {
       const source = `/docs/${version}/${folderPath}`
       folderRedirects.push({

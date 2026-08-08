@@ -59,11 +59,11 @@
         "items": [
           {
             "label": "Getting Started",
-            "href": "/docs/v3.0.2/introduction"
+            "href": "/docs/v4.0.0/quickstart"
           },
           {
-            "label": "Specification",
-            "href": "/docs/v3.0.2/schema"
+            "label": "Protocol Reference",
+            "href": "/docs/v4.0.0/schema-reference/introduction"
           }
         ]
       },

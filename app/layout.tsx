@@ -44,7 +44,7 @@ export async function generateMetadata(): Promise<Metadata> {
       icon: config.site.favicon
         ? [{ url: getAssetPath(config.site.favicon) }]
         : [],
-      apple: getAssetPath("/apple-icon.png"),
+      apple: getAssetPath(config.site.favicon || "/logo/aqua-logo.png"),
     },
     openGraph: {
       title: config.site.title,

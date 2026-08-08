@@ -1,135 +1,92 @@
 ---
-title: "Version v4 (beta)"
-description: 'Concepts, protocol structure, and getting started with Aqua Protocol v4'
-sidebar_position: 4
-icon: git-commit-horizontal
+title: "Release Status & Versioning"
+description: 'What the Aqua Protocol v4 release contains, what it deliberately excludes, and which stability guarantees apply'
+icon: "git-commit-horizontal"
+sidebar_position: 7
+redirect_from:
+  - /docs/v4.0.0/dev-tools/aqua-cli
+  - /docs/v4.0.0/dev-tools/aquafier-api
 ---
 
-# Aqua Protocol v4
+This page is the definitive statement of the current status of Aqua Protocol v4: what is published, what is deliberately out of scope, and which guarantees do — and do not — apply.
 
-Aqua Protocol v4 is the latest version of the protocol, introducing significant improvements in structure, flexibility, and capabilities. This version is currently in beta.
+<Callout type="warning" title="Experimental release">
+Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+</Callout>
 
-## Overview
+## Specification status
 
-Aqua Protocol v4 provides a robust framework for creating cryptographically verifiable chains of revisions. Each revision in a chain can represent different types of operations, from storing data to signing, witnessing, and linking to other chains.
+The normative protocol specification has status **Draft**. It lives in the `aqua-rs-sdk-core` repository under [`protocol-specification/`](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification) and is the authoritative description of the v4 core profile: where the specification and an implementation disagree, the specification states the intended protocol. Revisions on the wire carry the schema version identifier `https://aqua-protocol.org/docs/v4/schema`.
 
-## Core Concepts
+## What this release contains
 
-### Revisions
+| Component | Version | Scope |
+|---|---|---|
+| [`aqua-rs-sdk-core`](https://github.com/inblockio/aqua-rs-sdk-core) | 0.1.0 | Protocol engine: object, template, signature, and anchor revisions; hashing and canonicalization (SHA3-256 default, BLAKE3-256 optional); four signature suites (Ed25519, Ethereum EIP-191, ECDSA P-256, WebAuthn P-256); selective disclosure; the verification pipeline; 19 shipped templates (machinery, file, signature, and audit families). Library only; ships zero WASM bytes. |
+| [`aqua-template-registry`](https://github.com/inblockio/aqua-template-registry) | 0.1.0 | Distribution layer: a publisher-DID-scoped template registry, as a Rust library and an HTTP service (`registryd`), with publisher tooling and a subscribing consumer client. A hosted instance runs at [aqua-registry.inblock.io](https://aqua-registry.inblock.io), provided without SLA. |
 
-A revision is the fundamental unit in Aqua Protocol. There are five types of revisions in v4:
+Both are licensed Apache-2.0. `aqua-rs-sdk-core` is a compatible subset of the full `aqua-rs-sdk`: trees created and signed with the core verify in the full SDK and vice versa, enforced by an integration test suite that runs both crates side by side.
 
-1. **Object Revision** - Stores data with an associated template
-2. **Template Revision** - Defines the schema for object revisions
-3. **Signature Revision** - Adds cryptographic signatures to verify authenticity
-4. **Witness Revision** - Provides timestamped proof of existence via blockchain
-5. **Link Revision** - Creates verifiable connections to other revision chains
+## What this release deliberately excludes
 
-### Revision Chains
+The core profile is explicit about what it does not do, and it is never silently permissive about it:
 
-Revisions form chains by referencing previous revisions through cryptographic hashes. The first revision in a chain is called the "genesis revision" and has no previous revision reference.
+| Excluded capability | Behavior in this release |
+|---|---|
+| WASM compute execution | Rejected, fail closed. Any template whose chain carries a `verification` (compute) section produces `COMPUTE_UNSUPPORTED`: the core has no WASM runtime and refuses to guess. The registry service likewise refuses definitions containing a WASM `verification` section. |
+| Full-SDK template set | Answered explicitly. Template hashes published by the full SDK but not shipped by the core sit in a built-in lookup; a resolution miss answers with an explicit "not supported for verification by aqua-rs-sdk-core: it depends on `<module>`" message instead of guessing. |
+| Timestamping | Not created; classified on input. The core creates no timestamp revisions and ships no TSA or EVM providers. Incoming timestamp revisions are still classified: the `strict()` policy rejects them, `offline()` tolerates them with a warning. |
+| Policy engine | Not included. The core's `VerificationPolicy` presets (`strict()`, `offline()`, `debug()`) are part of the verification pipeline, not a policy engine; the policy engine belongs to the full SDK. |
+| Daemon / forest runtime | Not included. The core is a library; there is no long-running service runtime. |
+| Template registry client | Not bundled. Template distribution is the separate `aqua-template-registry` project; retrieved templates are passed to the core as explicit template sources. |
 
-### Methods
+The invariant behind this table: **the core is never more permissive than the full SDK under the same verification policy.**
 
-Aqua Protocol v4 supports two canonicalization methods:
+## Registry scope
 
-- **scalar**: Direct JSON canonicalization (default for most use cases)
-- **tree**: Merkle tree-based canonicalization for large datasets
+The registry deliberately validates coherence, not trustworthiness: every write is a signed Aqua tree that authenticates itself, vendor namespaces are first-come-first-served, and templates are identified by hash — names are display data. In the registry's own words, "'this registration is coherent' and 'this publisher is someone you should trust' are different claims, and only the first is in scope for a registry." Out of scope by design: on-chain registration, trust stores or ENS/DNS resolution, freshness or liveness guarantees, cross-registry mirroring and federation, transport security in the built-in client, and plugin/WASM distribution. Templates on the hosted instance may be wiped without notice while it runs under experimental conditions.
 
-### Hash Types
+## Versioning policy
 
-Currently, v4 supports:
-- **FIPS_202-SHA3-256**: SHA-3 256-bit hashing algorithm
+- Both crates are at version **0.1.0**. Version numbers have not been increased since the initial release.
+- **No backward-compatibility guarantees** are provided yet. Breaking changes are expected and may occur without notice.
+- Neither repository carries release tags, a changelog, or a semantic-versioning policy yet.
+- **Not on crates.io yet.** Publication is planned; until then, install via git dependency:
 
-## Common Fields
+  ```toml
+  [dependencies]
+  aqua-rs-sdk-core = { git = "https://github.com/inblockio/aqua-rs-sdk-core" }
+  ```
 
-All revision types share these common fields:
+- **No MSRV commitment.** `aqua-rs-sdk-core` declares no minimum supported Rust version; `aqua-template-registry` currently sets `rust-version = "1.85"` in its manifest, but neither value is a compatibility commitment.
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `version` | string | Protocol version URL: `https://aqua-protocol.org/docs/v4/schema` |
-| `revision_type` | string/RevisionLink | Type identifier for the revision |
-| `nonce` | string | Random 16-byte hex string (prefixed with `0x`) for uniqueness |
-| `local_timestamp` | number | Unix timestamp when the revision was created |
-| `method` | string | Canonicalization method: `"scalar"` or `"tree"` |
-| `hash_type` | string | Hashing algorithm: `"FIPS_202-SHA3-256"` |
-| `previous_revision` | string | Hash reference to the previous revision (optional for genesis) |
+## Known upcoming changes
 
-## Schema Structure
+Two changes are already announced and worth planning for:
 
-The v4 schema is designed to be:
+1. **Audit templates move to registry-only distribution.** The sanctioned distribution channel for the audit/agent template family is the template registry. This release still carries in-crate copies (they back the compatibility test suite), so built-in resolution of these templates still succeeds today — do not depend on it: it is not part of the supported contract, and removal from the catalog is a tracked breaking change.
+2. **Audit-family harmonization will change template hashes.** The audit templates in this release are a deliberate, test-bounded fork of the full SDK's family, pending upstream harmonization. When the two families are reunified, the audit template hashes will change. Treat current audit template hashes as pinned per release, not as permanent identifiers.
 
-- **Extensible**: New revision types can be added without breaking existing chains
-- **Verifiable**: Every revision can be independently verified through hash computation
-- **Composable**: Chains can link to other chains, creating complex data structures
-- **Flexible**: Templates allow custom data structures while maintaining validation
+## Relationship to Aqua v3
 
-## Key Improvements from Previous Versions
+Aqua Protocol v3 is the stable, production release, built around a JavaScript/TypeScript SDK. It is documented under [v3 documentation](/docs/v3.0.2/introduction) and is unaffected by v4's experimental status.
 
-### 1. Unified Revision Structure
-All revision types follow a consistent structure with common fields, making implementation and validation simpler.
+| If you need | Use |
+|---|---|
+| A production deployment today | **v3** — stable JavaScript/TypeScript SDK |
+| Timestamping / witnessing today | **v3** — the published v4 core profile excludes timestamping |
+| The v4 data model in Rust: typed objects, selective disclosure, template distribution, agent audit trails | **v4** — accepting experimental status and breaking changes |
 
-### 2. Template-Based Validation
-Object revisions reference templates via hash, ensuring data conformity to predefined schemas.
+## Where future components will appear
 
-### 3. Multiple Signature Types
-Support for RSA, Ethereum (EIP-191), and DID-based signatures provides flexibility for different use cases.
+The full `aqua-rs-sdk` — which extends the published core with the WASM compute runtime, the policy engine, the daemon runtime, and timestamping providers — is scheduled for a later publication. Until then, the capabilities listed above remain outside the published surface, with the fail-closed behavior described.
 
-### 4. Enhanced Witnessing
-Improved witness structure with detailed transaction information and merkle proof support.
+The Aqua CLI and the hosted Aquafier application belong to the v3-era toolchain today; they are not part of the v4 release. For current CLI and Aquafier usage, see the [v3 tooling documentation](/docs/v3.0.2/tooling).
 
-### 5. Explicit Linking
-Link revisions create verifiable connections between separate revision chains.
+## See also
 
-## Getting Started
-
-To understand the v4 schema in detail, visit the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) section, where each revision type is documented with examples and field specifications.
-
-## Tooling
-
-### Aqua RS SDK
-
-The official Rust SDK for Aqua Protocol v4 provides:
-- Type-safe revision creation and validation
-- Cryptographic operations (signing, hashing)
-- Witnessing capabilities (Ethereum, Nostr, TSA)
-- WASM compilation for web applications
-
-**Repository**: [github.com/inblockio/aqua-rs-sdk](https://github.com/inblockio/aqua-rs-sdk)
-
-**Installation:**
-```bash
-# For Rust projects
-cargo add aqua-rs-sdk
-
-# For WASM builds
-wasm-pack build --target web --no-default-features --features wasm
-```
-
-### CLI Tools
-
-Command-line utilities built on the v4 SDK enable:
-- Creating and validating revision chains
-- Signing revisions with various methods
-- Witnessing to blockchain networks
-- Verifying complete chains
-
-## Use Cases
-
-Aqua Protocol v4 is designed for:
-
-- **Document Integrity**: Verifiable audit trails for documents and data
-- **Supply Chain**: Tracking provenance and authenticity
-- **Digital Identity**: Self-sovereign identity with verifiable credentials
-- **Notarization**: Timestamped proof of existence
-- **Data Provenance**: Complete history tracking with cryptographic guarantees
-- **Decentralized Attestations**: Peer-to-peer verification without central authorities
-
-## Next Steps
-
-- Explore the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) to understand each revision type
-- Review example revision chains in the SDK repository
-- Try the CLI tools to create your first revision chain
-- Read about specific use cases and implementation patterns
-
-For questions or feedback about v4, please visit the [Aqua Protocol GitHub repository](https://github.com/inblockio).
+- [Welcome](/docs/v4.0.0/welcome) — what Aqua Protocol v4 is
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the published crate in detail
+- [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — the distribution layer
+- [Verification](/docs/v4.0.0/schema-reference/verification) — policies and decision points in detail
+- [Aqua v3 introduction](/docs/v3.0.2/introduction) — the stable release

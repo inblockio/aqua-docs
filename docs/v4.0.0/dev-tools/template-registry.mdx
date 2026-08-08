@@ -1,0 +1,236 @@
+---
+title: "Template Registry"
+description: 'Publish, resolve, and subscribe to Aqua templates by publisher DID with aqua-template-registry'
+icon: "package"
+sidebar_position: 2
+---
+
+`aqua-template-registry` is the distribution layer that `aqua-rs-sdk-core` deliberately leaves out: core knows how to hash, sign, and verify a template, and says nothing about how you find one. Publishers register signed Aqua trees under their publisher DID; consumers resolve templates by qualified name (`<vendor>/<name>`) or subscribe to everything a publisher DID emits. The project is a Rust library, an HTTP service (`registryd`), a publisher tool (`publish-audit-set`), a consumer CLI (`subscribe`), a seeded template set (`seed/`), and trust policy examples (`trust/`). Apache-2.0, source: [github.com/inblockio/aqua-template-registry](https://github.com/inblockio/aqua-template-registry).
+
+<Callout type="warning" title="Experimental release">
+Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+</Callout>
+
+<Callout type="info" title="Hosted instance">
+A deployed registry is available, without SLA, at [aqua-registry.inblock.io](https://aqua-registry.inblock.io). It can be used to publish and retrieve community-developed templates. Because it runs under active development and experimental conditions, stored templates may be wiped without notice — keep your signed registration trees so you can republish.
+</Callout>
+
+## Identity and naming
+
+- **Templates are identified by hash, always.** Names are display data. The local import store is keyed by hash throughout, and using a template in application code is an explicit per-hash act.
+- **Qualified names** have the form `<vendor>/<name>`. Both components are NFC-normalized, must use characters from a single Unicode script (plus Common/Inherited, so digits and separators mix freely), and allow Unicode letters, digits, and the separators `-`, `_`, `.` — none leading or trailing. Vendor names are capped at 64 Unicode scalar values, template names at 128. Latin names are case-folded to lowercase. The rules are confusable-safe: `inblock` is fine, and so is a pure-Cyrillic or pure-Han name, but `inblоck` with a Cyrillic lookalike `о` (U+043E) is rejected for mixing scripts in one component.
+- **Versioning is a new hash.** Template hashes are immutable; a new version is registered as a new hash with an optional `supersedes` field naming its predecessor. The chain is kept linear (`409 UNKNOWN_SUPERSEDES` / `409 ALREADY_SUPERSEDED` otherwise), and `GET /resolve/{vendor}/{name}` returns the newest unsuperseded version plus the full `lineage`, oldest first.
+- **Namespaces are first come, first served** (case-folded). Vendor registrations are self-certifying — a key can only claim a namespace for itself — and only the namespace owner's DID may register templates or aliases into it.
+- **Writes are self-authenticating.** There are no API keys and no authentication on the write path: every write is a signed Aqua tree that authenticates itself, verified by the registry under a strict policy, and the publisher DID is read off the tree's signature — never from a header or a caller-settable field.
+- **Coherence, not trustworthiness.** "This registration is coherent" and "this publisher is someone you should trust" are different claims, and only the first is in scope for a registry. Deciding whom to trust belongs to the consumer's trust policy (below), where every default is deny.
+
+## Running a registry locally
+
+```bash
+cargo run --bin registryd
+```
+
+Defaults: data directory `./data`, bind address `127.0.0.1:8088`; override with the `REGISTRY_DATA_DIR` and `REGISTRY_BIND` environment variables. The crate currently uses a path dependency on `aqua-rs-sdk-core`, so a checkout of it must sit next to this one (`../aqua-rs-sdk-core`) until both crates are published.
+
+A Docker build is included: `docker/build.sh` produces a ~7 MB image — a multi-stage build ending in `scratch` with one statically linked musl binary, `REGISTRY_DATA_DIR=/data` and `REGISTRY_BIND=0.0.0.0:8088` baked in, port 8088 exposed, and no shell. There is no in-image health check; poll `GET /health` (returns the plain string `ok`) from your orchestrator or reverse proxy. `docker stop` shuts down cleanly via SIGTERM.
+
+```bash
+docker run -d --name aqua-registry \
+  -p 127.0.0.1:8088:8088 \
+  -v aqua-registry-data:/data \
+  aqua-template-registry:latest
+```
+
+## Publishing a template
+
+<Callout type="note" title="The bundled client is plain HTTP only">
+The registry's built-in Rust HTTP client — and therefore the <code>subscribe</code> CLI — accepts only <code>http://</code> URLs and refuses <code>https://</code> loudly rather than silently downgrading (it does no TLS; terminate TLS in a reverse proxy and point the client at the plaintext side). To talk to the hosted HTTPS endpoint, use <code>curl</code> or any HTTPS-capable client, as below.
+</Callout>
+
+Registration is not an API write: you build signed Aqua trees locally with your own key and POST them whole. The bundled example builds all three registration trees for you.
+
+<Steps>
+<Step title="Generate the signed registration trees">
+
+```bash
+cargo run --example publish -- ./out demo-vendor --seed 5
+```
+
+This writes `./out/vendor.json`, `./out/template.json` (registering a placeholder template hash under the name `invoice`), and `./out/alias.json` (alias `inv`), and prints the publisher DID. With `--seed 5` the key is deterministic, so the DID is always `did:key:z6MkmtWtY63GQVBrpMyRJWEzsnxfsGkemu6CtMDwGTv4RYj2`. In real use the template hash is the SHA3-256 identity of your own template definition, computed through `aqua-rs-sdk-core`.
+
+</Step>
+<Step title="Submit them, vendor first">
+
+The vendor registration must land first — it claims the namespace the other two write into.
+
+```bash
+curl -sS -X POST http://127.0.0.1:8088/vendors \
+     -H 'content-type: application/json' -d @out/vendor.json
+curl -sS -X POST http://127.0.0.1:8088/templates \
+     -H 'content-type: application/json' -d @out/template.json
+curl -sS -X POST http://127.0.0.1:8088/aliases \
+     -H 'content-type: application/json' -d @out/alias.json
+```
+
+Each accepted write returns a receipt with a registry-global sequence number (see the API reference below).
+
+</Step>
+<Step title="Resolve the name">
+
+```bash
+curl -sS http://127.0.0.1:8088/resolve/demo-vendor/invoice
+```
+
+Returns the resolution record mapping the qualified name to its template hash and lineage.
+
+</Step>
+</Steps>
+
+## Subscribing to a publisher
+
+The `subscribe` CLI polls a publisher's feed, verifies the publisher's signed feed head before importing anything, downloads each registration and its definition body, runs both through a seven-step verification chain, and files what passes into a local store. Against the seeded inblockio audit set:
+
+```bash
+cargo run --bin subscribe -- \
+    --registry http://127.0.0.1:8088 \
+    --publisher did:key:z6MkqDxSY5Z3gMNR2qKzV9ZwZDLwUYi5DqevZWhR7vaDWLCN \
+    --trust trust/inblockio-audit-set-v1.json \
+    --store ./imported \
+    --once
+```
+
+Drop `--once` to poll on an interval (`--interval`, default 30 seconds); `--list` prints the local store without network access; `--corroborate URL,URL` compares the signed feed heads served by independent mirrors and refuses to sync on equivocation.
+
+The trust policy is a committed JSON file. The essentials:
+
+- **`allowed_publishers` is required, and there is no trust-on-first-use.** An absent file is an error, an empty list imports nothing, and a publisher DID that is not written down is refused no matter how well-formed its registrations are. Entries may be bare DID strings or objects annotating where the DID came from (`source`, `verified_by`, `verified_on`) — advisory provenance for human review, never consulted by the import chain.
+- **`pins` is a lockfile** mapping qualified names to bare-digest hashes, with two modes.
+
+| Mode | Behavior |
+|---|---|
+| `PinnedOnly` (default) | Only templates whose name AND hash match an existing pin are imported |
+| `ApproveNew` (`--approve-new`) | Additionally imports unpinned templates from allowed publishers and appends each to the pin file — but still refuses a pinned name at a different hash |
+
+- **`max_head_age_secs`** (optional) refuses a feed head whose signed `covered_at` is older than the given age; a head dated more than 300 seconds in the future is refused regardless.
+- **The rehash step is built in.** Step six of the verification chain rehashes the definition body through core's `calculate_link` and compares it to the `template_hash` the registration claims — the step that is easy to omit and fatal to omit when hand-rolling a consumer, because a registration is only a signed claim that a name means a hash; it says nothing about whether the bytes you were handed are the bytes that hash to it.
+
+## Using an imported template with the SDK
+
+The payoff is the portable-template pattern: a consumer that never had a template compiled in can create objects of that type and hand any verifier what it needs. Adapted from the repository's `tests/full_loop.rs`, which runs this loop against a live registry and asserts the same object does **not** verify without the linked template tree:
+
+```rust
+use aqua_rs_sdk_core::{Aquafier, schema::AquaTreeWrapper};
+use aqua_template_registry::ImportStore;
+
+// … hash: the pinned template hash from your trust policy; payload: serde_json::Value
+// … link_of: converts the bare 0x<64hex> hash to the full multihash RevisionLink
+//   (hex-decode, then RevisionLink::from_bytes — as in tests/full_loop.rs); with the
+//   definition body at hand, templates::link_of_definition(&definition_json)? computes it directly
+let store = ImportStore::open("./imported")?;
+let aquafier = Aquafier::new();
+
+// Create an object of the imported type.
+let tree = aquafier.create_object(link_of(&hash), None, payload, None)?;
+
+// Ship the imported definition alongside so the type resolves for the verifier.
+let result = aquafier.verify_aqua_tree_with_linked_trees(
+    AquaTreeWrapper::new(tree, None, None),
+    vec![store.linked_tree(&hash)?],
+    vec![],
+).await?;
+assert!(result.is_verified());
+```
+
+For validated creation, pass the imported template tree to `create_object_validated` instead of `create_object` — see the [creation-time validation caveat](/docs/v4.0.0/dev-tools/sdk-core) in the SDK reference.
+
+## HTTP API
+
+Everything is `application/json` except `GET /health`, which returns the plain string `ok`. Condensed reference (full endpoint semantics in the [repository README](https://github.com/inblockio/aqua-template-registry)):
+
+| Method | Path | Purpose |
+|---|---|---|
+| GET | `/` | Service metadata |
+| GET | `/health` | Liveness check |
+| GET | `/stats` | Registry counters (`head_seq`, `vendors`, `templates`, `aliases`, `publishers`) |
+| GET | `/registration-templates` | The three vendored registration template definitions and hashes |
+| POST | `/vendors` | Submit a signed `vendor-registration` tree |
+| GET | `/vendors`, `/vendors/{vendor}`, `/vendors/{vendor}/tree` | List namespaces; one vendor's record; its full signed tree, verbatim |
+| POST | `/templates` | Submit a signed `template-registration` tree |
+| GET | `/templates/{hash}`, `/templates/{hash}/metadata` | The full signed registration tree for a template hash, verbatim; its decoded metadata |
+| POST | `/aliases` | Submit a signed `alias-registration` tree |
+| POST | `/definitions` | Upload a template definition body (unsigned, content-addressed, ≤ 262144 bytes, WASM `verification` sections refused) |
+| GET | `/definitions`, `/definitions/{hash}` | List stored definition hashes; the stored body, rehashed on read |
+| POST | `/heads` | Submit a publisher's signed feed head |
+| GET | `/publishers/{did}/head`, `…/heads`, `…/heads/{seq}` | The highest signed feed head; all stored head heights; one head |
+| GET | `/publishers/{did}/vendors`, `…/templates`, `…/aliases` | Everything a publisher DID owns or registered |
+| GET | `/publishers/{did}/feed?since=&limit=` | The subscription feed (default page 100 entries, max 1000) |
+| GET | `/resolve/{vendor}/{name}` | Resolve a qualified name to a template hash |
+
+The POST bodies are the full signed Aqua tree JSON, stored verbatim — never re-serialized, so the bytes on disk remain exactly what the publisher signed, and `GET /templates/{hash}` returns them byte-identical for independent re-verification with `aqua-rs-sdk-core`. `POST /definitions` needs no signature: the body is accepted only if it rehashes to a hash some publisher already registered, so a wrong body cannot be stored no matter who uploads it.
+
+An accepted registration returns a **Receipt**:
+
+```json
+{
+  "seq": 1,
+  "kind": "vendor",
+  "publisher_did": "did:key:z6MkmtWtY63GQVBrpMyRJWEzsnxfsGkemu6CtMDwGTv4RYj2",
+  "tree_tip": "0x1620fe2c172d0919cafd3b4264972870c98b478542ef3f15b805bb9b37dc82397af9",
+  "qualified_name": "demo-vendor"
+}
+```
+
+`GET /resolve/{vendor}/{name}` returns a **Resolution**:
+
+```json
+{
+  "qualified_name": "demo-vendor/invoice",
+  "template_hash": "0xabababababababababababababababababababababababababababababababab",
+  "via": "template",
+  "publisher_did": "did:key:z6MkmtWtY63GQVBrpMyRJWEzsnxfsGkemu6CtMDwGTv4RYj2",
+  "lineage": ["0xabababababababababababababababababababababababababababababababab"]
+}
+```
+
+Errors use one envelope with stable codes, from `MALFORMED_TREE` (400) through `TREE_NOT_VERIFIED` (422), `NOT_NAMESPACE_OWNER` (403), `DUPLICATE_TEMPLATE` (409), to `CORE_ERROR` (500) — the full table is in the repository README:
+
+```json
+{"error":{"code":"DUPLICATE_TEMPLATE","message":"template hash 0xabab... is already registered"}}
+```
+
+## Feed heads
+
+Publishers sign a **feed head**: a commitment to their own feed — how many of their entries exist, and a Merkle root over them (RFC 9162 prefixes (formerly RFC 6962), with each entry's ordinal inside the leaf so reordering changes the root). A subscriber verifies the head on every sync and fails closed: withholding, reordering or substitution, rollback, equivocation, and the disappearance of a previously seen head all abort the import without advancing the cursor.
+
+What a head does **not** guarantee: freshness. A head says "at least N entries existed when I signed this", not "nothing has been published since". Until a publisher signs their first head, withholding is undetectable (subscribers tolerate and report this bootstrapping state); on first contact a subscriber cannot distinguish a current head from a replayed older one without a mirror or an out-of-band copy; and collusion between the registry and the publisher's own signing key is out of scope by definition.
+
+## The seeded audit set
+
+The first template set published through the registry is `audit-set-v1`: vendor `inblockio`, publisher DID `did:key:z6MkqDxSY5Z3gMNR2qKzV9ZwZDLwUYi5DqevZWhR7vaDWLCN` — eleven data-only templates for recording what an agent did during a session, so the record can be verified afterwards by someone who was not there. `audit_artifact` is the abstract root; the other ten derive from it directly: `audit_user_turn_marker` (T1) through `audit_agent_response` (T8), plus `audit_round_anchor` and `audit_session_close`. All eleven are JSON Schema only — no WASM, no compute stage, nothing executes.
+
+A companion alias set (`audit-aliases-v1`) registers short names in the same namespace: `artifact`, `turn`, `prompt`, `thinking`, `tool_call`, `api_response`, `tool_result`, `approval`, `response`, `round`, `session`.
+
+```bash
+curl -sS http://127.0.0.1:8088/resolve/inblockio/audit_user_turn_marker
+```
+
+The registry is the **only sanctioned distribution channel** for this family — see [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) for how the templates are used, and `seed/audit-set-v1/` in the repository for replaying the committed set into your own registry.
+
+## Non-goals
+
+- No on-chain registry: registration state is an append-only log on disk in one service.
+- No content-addressed transport: storage is local, retrieval is HTTP.
+- No trust store in the registry and no ENS/DNS resolution of vendor names to DIDs: trust is the consumer's decision, written down by hand in a policy file.
+- No freshness or liveness guarantee (see feed heads above).
+- No cross-registry gossip, federation, or replication: corroboration compares mirrors and reports disagreement; it never reconciles or votes.
+- No transport security in the bundled client: terminate TLS in a reverse proxy.
+- No plugin or WASM module distribution.
+- No authentication or API keys on the write path: every write is a signed tree that authenticates itself.
+
+## See also
+
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the protocol engine the registry distributes templates for
+- [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family end to end
+- [Templates](/docs/v4.0.0/schema-reference/templates) — template identity, hashing, and derivation
+- [Quick Start](/docs/v4.0.0/quickstart) — first steps with the published components
+- [aqua-template-registry on GitHub](https://github.com/inblockio/aqua-template-registry) — source, seed set, and full API documentation

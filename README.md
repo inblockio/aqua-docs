@@ -2,7 +2,7 @@
 
 Documentation site for the [Aqua Protocol](https://aqua-protocol.org). An open-source cryptographic trust infrastructure for the AI era, providing verifiable identity, access control, and tamper-proof provenance.
 
-Built with [Specra](https://https://specra-docs.com/) and [Next.js](https://nextjs.org).
+Built with [Specra](https://specra-docs.com/) and [Next.js](https://nextjs.org).
 
 ## Getting Started
 
@@ -26,38 +26,29 @@ Open [http://localhost:3000](http://localhost:3000) to view the docs locally.
 │   ├── v1.1.0/             # Version 1.1.0 docs
 │   ├── v2.0.2/             # Version 2.0.2 docs
 │   ├── v3.0.2/             # Version 3.0.2 docs
-│   └── v4.0.0/             # Version 4.0.0 docs (written, not published: see Version 4 stealth)
+│   └── v4.0.0/             # Version 4.0.0 docs (active version, published)
 ├── public/                 # Static assets
 ├── scripts/                # Build & indexing scripts
 ├── specra.config.json      # Site configuration
 └── next.config.mjs         # Next.js configuration
 ```
 
-## Version 4 stealth
+## Version 4 status
 
-Version 4 is not public. Every `/docs/v4.0.0/*` URL renders the teaser in
-`app/components/v4-teaser.tsx` instead of its MDX, via a version check in
-`app/docs/[version]/[...slug]/page.tsx`:
+Version 4 is published (2026-08-08) and is the active version
+(`site.activeVersion` in `specra.config.json`). The former teaser gate in
+`app/docs/[version]/[...slug]/page.tsx` and the teaser component were removed
+when v4 went live; v4 pages render their MDX, carry per-page canonicals, and
+are included in the sitemap. `/docs/v4.0.0` redirects to `/docs/v4.0.0/welcome`
+as the deterministic entry point, and `/v4` remains a temporary redirect entry
+in `redirects.json` so the URL stays available for a dedicated landing page.
 
-```tsx
-if (version === "v4.0.0") return <V4Teaser ... />
-```
-
-That check is load-bearing and must stay in the component. The site is built
-with `output: "export"`, and Next.js drops `redirects()` in static export, so a
-redirect rule cannot gate these URLs. The v4 MDX under `docs/v4.0.0/` is still
-authored and still prerendered, it is simply never rendered to visitors. All v4
-slugs share one canonical URL (`/docs/v4.0.0/welcome`) and are excluded from the
-sitemap.
-
-Two entry points funnel into that canonical URL rather than rendering anything
-of their own: `/docs/v4.0.0` (the bare version index, via the same version check
-in `app/docs/[version]/page.tsx`) and `/v4`, which used to serve a standalone v4
-landing page and is now a redirect entry in `redirects.json`. The `/v4` redirect
-is deliberately temporary, so the URL stays available for a real landing page
-when v4 publishes.
-
-To publish v4: delete the version check and the teaser component.
+The v4 content documents an experimental protocol release: the wording around
+status (breaking changes expected, limited scope of the published crates, no
+backward-compatibility guarantees yet) is deliberate and should be kept intact
+when editing pages. The wire schema version URL every v4 revision carries,
+`https://aqua-protocol.org/docs/v4/schema`, must always resolve — it is a
+redirect entry in `redirects.json` pointing at the Protocol Reference.
 
 ## Writing Documentation
 
@@ -65,14 +56,27 @@ Add MDX files under the active version directory (`docs/v4.0.0`):
 
 ```mdx
 ---
-title: My Page
-description: This is my documentation page
+title: "My Page"
+description: 'One-line summary shown in search and cards'
+icon: "book-open"
+sidebar_position: 3
 ---
-
-# My Page
 
 Your content here...
 ```
+
+Conventions for v4 pages:
+
+- Frontmatter carries the title; do **not** repeat it as a leading `# H1`.
+- Always set `sidebar_position` (and `position` in `_category_.json` for
+  folders) — unordered pages fall back to filename order.
+- Icons are kebab-case [lucide](https://lucide.dev) names.
+- Available MDX components (from `specra/mdx-components`): `Callout`
+  (`type`: info | warning | note | tip), `Card`/`CardGrid`, `Steps`/`Step`,
+  `Tabs`/`Tab`, `Accordion`, `Badge`, `Mermaid`.
+- Technical claims about the protocol must be grounded in the normative
+  specification (`aqua-rs-sdk-core/protocol-specification/`) or the published
+  crates' code; end pages with a `## See Also` link list.
 
 ## Redirects
 
@@ -106,7 +110,7 @@ Add an entry with the following format:
 ```json
 {
   "source": "/docs/v4/schema",
-  "destination": "/docs/v4.0.0/schema-reference/aqua-tree",
+  "destination": "/docs/v4.0.0/schema-reference/introduction",
   "permanent": false
 }
 ```

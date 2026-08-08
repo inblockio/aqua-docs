@@ -12,7 +12,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const versions = getCachedVersions()
   for (const version of versions) {
-    if (version === "v4.0.0") continue
     const docs = await getCachedAllDocs(version)
     for (const doc of docs) {
       entries.push({
