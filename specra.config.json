@@ -2,7 +2,7 @@
   "$schema": "./node_modules/specra/config/specra.config.schema.json",
   "site": {
     "title": "Aqua Protocol",
-    "description": "Open-source cryptographic trust infrastructure for the AI era — verifiable identity, access control, and tamper-proof provenance.",
+    "description": "Aqua Protocol, an open protocol for verifiable data provenance and accountability. Developed in the open as a proposed standard, with public specification, documentation, and reference implementations.",
     "url": "https://aqua-protocol.org",
     "baseUrl": "/",
     "language": "en",
@@ -32,8 +32,8 @@
     "twitter": "https://x.com/inblockio",
     "custom": [
       {
-        "label": "Website",
-        "url": "https://dev.inblock.io"
+        "label": "inblock.io",
+        "url": "https://inblock.io"
       }
     ]
   },
@@ -91,9 +91,6 @@
     "showAuthors": false,
     "showTags": true,
     "versioning": true
-  },
-  "env": {
-    "AQUAFIER_URL": "https://aquafier.inblock.io"
   },
   "deployment": {
     "target": "github-pages",
