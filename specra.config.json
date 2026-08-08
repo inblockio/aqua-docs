@@ -59,11 +59,11 @@
         "items": [
           {
             "label": "Getting Started",
-            "href": "/docs/v4.0.0/en/quickstart"
+            "href": "/docs/v4.0.0/quickstart"
           },
           {
-            "label": "API Reference",
-            "href": "/docs/v4.0.0/en/dev-tools/aquafier-api"
+            "label": "Protocol Reference",
+            "href": "/docs/v4.0.0/schema-reference/introduction"
           }
         ]
       },

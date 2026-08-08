@@ -31,22 +31,22 @@
   },
   {
     "source": "/docs/v4.0.0/dev-tools",
-    "destination": "/docs/v4.0.0/dev-tools/aqua-cli",
+    "destination": "/docs/v4.0.0/dev-tools/sdk-core",
     "permanent": false
   },
   {
     "source": "/docs/v4.0.0/schema-reference",
-    "destination": "/docs/v4.0.0/schema-reference/aqua-tree",
+    "destination": "/docs/v4.0.0/schema-reference/introduction",
     "permanent": false
   },
   {
     "source": "/docs/v4.0.0/schema-reference/revision",
-    "destination": "/docs/v4.0.0/schema-reference/revision/link-revision",
+    "destination": "/docs/v4.0.0/schema-reference/data-model",
     "permanent": false
   },
   {
     "source": "/docs/v4.0.0/use-cases",
-    "destination": "/docs/v4.0.0/use-cases/document-verification",
+    "destination": "/docs/v4.0.0/use-cases/introduction",
     "permanent": false
   },
   {
@@ -61,12 +61,72 @@
   },
   {
     "source": "/docs/v4/schema",
-    "destination": "/docs/v4.0.0/schema-reference/aqua-tree",
+    "destination": "/docs/v4.0.0/schema-reference/introduction",
     "permanent": false
   },
   {
     "source": "/v4",
     "destination": "/docs/v4.0.0/welcome",
     "permanent": false
+  },
+  {
+    "source": "/docs/v4.0.0/dev-tools/aqua-sdk",
+    "destination": "/docs/v4.0.0/dev-tools/sdk-core",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v4.0.0/development",
+    "destination": "/docs/v4.0.0/dev-tools/sdk-core",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v4.0.0/schema-reference/revision/link-revision",
+    "destination": "/docs/v4.0.0/schema-reference/anchors-and-links",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v4.0.0/schema-reference/aqua-tree",
+    "destination": "/docs/v4.0.0/schema-reference/data-model",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v4.0.0/schema-reference/file-index",
+    "destination": "/docs/v4.0.0/schema-reference/data-model",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v4.0.0/schema-reference/revision/revision",
+    "destination": "/docs/v4.0.0/schema-reference/data-model",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v4.0.0/schema-reference/revision/object-revision",
+    "destination": "/docs/v4.0.0/schema-reference/data-model",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v4.0.0/schema-reference/revision/signing-revision",
+    "destination": "/docs/v4.0.0/schema-reference/signatures",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v4.0.0/schema-reference/revision/template-revision",
+    "destination": "/docs/v4.0.0/schema-reference/templates",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v4.0.0/schema-reference/revision/witness-revision",
+    "destination": "/docs/v4.0.0/schema-reference/verification",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v4.0.0/dev-tools/aqua-cli",
+    "destination": "/docs/v4.0.0/version-info",
+    "permanent": true
+  },
+  {
+    "source": "/docs/v4.0.0/dev-tools/aquafier-api",
+    "destination": "/docs/v4.0.0/version-info",
+    "permanent": true
   }
 ]

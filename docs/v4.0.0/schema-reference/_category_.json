@@ -1,7 +1,1 @@
-{
-  "label": "Schema Reference",
-  "position": 4,
-  "collapsible": true,
-  "collapsed": false,
-  "icon": "book"
-}
+{"label":"Protocol Reference","position":5,"collapsible":true,"collapsed":false,"icon":"book"}

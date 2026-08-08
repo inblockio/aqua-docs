@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import { Suspense } from "react"
-import { DM_Sans, Plus_Jakarta_Sans } from "next/font/google"
 import {
   extractTableOfContents,
   getAdjacentDocs,
@@ -27,12 +26,6 @@ import {
 import specraConfig from "./../../../../specra.config.json"
 import { CategoryIndex, DocLayout } from "specra/layouts"
 import { mdxComponents } from "specra/mdx-components"
-import V4Teaser from "./../../../components/v4-teaser"
-
-/* Fonts for the V4 teaser page (module scope, server component):
-   DM Sans for body/UI, Plus Jakarta Sans for display headlines. */
-const dmSans = DM_Sans({ subsets: ["latin"] })
-const plusJakarta = Plus_Jakarta_Sans({ subsets: ["latin"] })
 
 interface PageProps {
   params: Promise<{
@@ -44,21 +37,6 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { version, slug: slugArray } = await params
   const slug = slugArray.join("/")
-
-  if (version === "v4.0.0") {
-    const title = "Aqua Protocol V4: In Development"
-    const description =
-      "Version 4 of Aqua Protocol is in development. Aqua is an open protocol for verifiable data provenance, built on cryptographic proof. The v3 documentation remains the current reference."
-    return {
-      title,
-      description,
-      // Every v4 slug renders the same teaser, so they share one canonical URL
-      // rather than presenting ~47 duplicate pages to crawlers.
-      alternates: { canonical: "/docs/v4.0.0/welcome" },
-      openGraph: { title, description, url: "/docs/v4.0.0/welcome", type: "website" },
-      twitter: { card: "summary", title, description },
-    }
-  }
 
   const doc = await getCachedDocBySlug(slug, version)
 
@@ -116,9 +94,6 @@ export async function generateStaticParams() {
 export default async function DocPage({ params }: PageProps) {
   const { version, slug: slugArray } = await params
   const slug = slugArray.join("/")
-
-  if (version === "v4.0.0")
-    return <V4Teaser sansClass={dmSans.className} displayClass={plusJakarta.className} />
 
   const allDocs = await getCachedAllDocs(version)
   const versions = getCachedVersions()

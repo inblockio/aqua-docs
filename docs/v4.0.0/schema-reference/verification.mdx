@@ -1,0 +1,171 @@
+---
+title: "Verification"
+description: 'The staged verification procedure, verification policies, and error vocabulary of Aqua Protocol v4'
+icon: "shield-check"
+sidebar_position: 8
+redirect_from:
+  - /docs/v4.0.0/schema-reference/revision/witness-revision
+---
+
+Verification composes the per-topic rules of the data model, hashing, templates, signatures, and anchors into one ordered procedure over a tree (optionally with linked trees), and reduces the result to a single outcome.
+
+<Callout type="info" title="Normative source">
+The [protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification) is authoritative; this page is the readable reference. Verification is specified in [07-verification.md](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/07-verification.md).
+</Callout>
+
+## Outcomes
+
+| Outcome | Meaning |
+|---|---|
+| `verified` | every check passed |
+| `verified_with_warnings` | every non-relaxable check passed; one or more policy-governed conditions were tolerated as warnings |
+| `failed` | at least one error |
+
+Any error makes the outcome `failed`; otherwise any warning makes it `verified_with_warnings`; otherwise it is `verified`. A result reports its outcome together with its error codes (for errors) and decision-point identifiers (for warnings), plus diagnostic logs.
+
+Verification operates on parsed input. A document that violates the wire-form rules — a kind's strict field set, the fixed `version` string, unknown members — MUST be rejected at parse: a tree that does not parse fails verification as a whole, before the staged procedure begins.
+
+## The staged procedure
+
+| Stage | Name | What it checks | Error class |
+|---|---|---|---|
+| 0 | Structural | Every anchor structural link resolves; no `previous_revision` walk revisits a revision (acyclicity); every `previous_revision` names a revision in the tree. Linear time, no cryptography, never policy-governed; any failure short-circuits the whole verification. | `STRUCTURAL_VALIDATION_FAILED` |
+| 1 | Integrity | Per revision: the key decodes under the strict multihash rules (the decoded codec supplies the algorithm); the recomputed revision hash is byte-equal to the key; for tree-method object and anchor revisions, the published `leaves` array is present, every entry is a bare digest of exactly the algorithm's output length, and recomputed leaves match in count and value. Signature and template revisions carry no leaves and skip the leaf check. Never policy-governed. | `HASH_VERIFICATION_FAILED` |
+| 2 | Types and order | Per object revision: template resolution, type binding, and payload schema conformance. Timestamp monotonicity across the chain. Batch inclusion proofs of timestamp-typed revisions (see below). | `SCHEMA_OR_CHAIN_FAILED` |
+| 3 | Compute boundary | Per object revision with a resolved template: collect the template chain (declared ancestors root-first, each resolved by hash — content-addressed resolution is authentication). If the chain carries any compute (`verification`) declaration, the core profile fails the revision; a chain with no compute declarations passes silently. | `COMPUTE_UNSUPPORTED`, `ANCESTOR_TEMPLATE_NOT_FOUND` |
+| 4 | Type-specific | `file` objects: referenced content verified against the payload by size and content hash. Template revisions: static validation of any compute declaration. Signature revisions: pre-image reconstruction, cryptographic verification, signer binding. Anchor revisions: pass (links resolved in Stage 0, hash in Stage 1). Never policy-governed. | `VERIFICATION_FAILED` |
+
+Stage-2 details:
+
+- An unresolvable template is `TEMPLATE_NOT_FOUND` (policy-governed); a resolved template with a non-conforming payload is `SCHEMA_VALIDATION_FAILED` (never policy-governed). When `TEMPLATE_NOT_FOUND` is tolerated by policy, the affected revision is excused from the remainder of the per-revision procedure — batch inclusion, the compute boundary, and type-specific verification: its structure and hash are already verified, and without a template there is nothing further to evaluate.
+- Timestamp monotonicity — a child's `local_timestamp` must not precede its parent's — is never policy-governed.
+
+### Linked trees
+
+When linked trees are supplied, the verifier builds the cross-tree dependency graph from anchor structural links (a cycle fails with `CROSS_TREE_CYCLE_DETECTED`), verifies participating linked trees in topological order — dependencies first, each by the full procedure recursively — and fails the main verification with `LINKED_TREE_RESOLUTION_FAILED` if any participating linked tree fails. Neither condition is policy-relaxable. Warnings do not aggregate across trees: a linked tree that verifies with warnings counts as verified for the linking tree, and each tree's result carries its own warnings.
+
+## Verification policies
+
+A **verification policy** assigns one of two decisions — **Fail** or **Warn** — to each of seven decision points. Warn records a warning and continues; Fail records an error. The policy can only *relax* the specific conditions below; everything else is non-negotiable.
+
+| Decision point | Condition it governs | `strict` | `offline` | `debug` |
+|---|---|---|---|---|
+| `timestamp_unavailable` | a timestamp-typed revision's proof capability is unavailable (`COMPUTE_UNSUPPORTED` or a host-requirement condition on a timestamp-typed revision; a missing timestamp *template* is `template_not_found` like any other) | Fail | Warn | Warn |
+| `template_not_found` | an object's template is unresolvable | Fail | Warn | Warn |
+| `ancestor_template_not_found` | a resolved template's ancestor is unresolvable | Fail | **Fail** | Warn |
+| `wasm_execution_failed` | compute could not be evaluated (`COMPUTE_UNSUPPORTED` in this profile) | Fail | Warn | Warn |
+| `batch_proof_failed` | a batch inclusion proof failed | Fail | **Fail** | Warn |
+| `wasm_untrusted_signer` | a compute template's vendor is untrusted (richer profiles) | Fail | **Fail** | Warn |
+| `unsigned_template` | a compute template is unsigned (richer profiles) | Fail | **Fail** | Warn |
+
+`strict` is the default policy. Purpose-built profiles: `offline` tolerates conditions caused by working without network access or optional capabilities, while still refusing broken proofs and missing ancestors; `debug` tolerates everything tolerable for diagnostics.
+
+The last two decision points exist for cross-profile parity: a core-profile verifier never itself produces their conditions (it has no compute execution), but MUST route the corresponding codes correctly when they appear in embedded results. Capability codes route by revision type: `COMPUTE_UNSUPPORTED` and host-requirement conditions on a **timestamp-typed** revision route to `timestamp_unavailable`; on other revisions to `wasm_execution_failed`.
+
+**Secure deserialization default.** The five original decision points (`timestamp_unavailable`, `template_not_found`, `wasm_execution_failed`, `batch_proof_failed`, `wasm_untrusted_signer`) are REQUIRED members of a serialized policy — omitting one MUST be a parse error. Decision points added to the vocabulary later (`ancestor_template_not_found`, `unsigned_template`) MUST deserialize as **Fail** when absent, so policies serialized before their introduction stay secure. Both contracts are fail-closed.
+
+**What no policy can relax:** structural validity (Stage 0), cross-tree cycles and linked-tree failures, hash and leaf integrity (Stage 1), schema violations of a resolved template, timestamp monotonicity, and type-specific verification (file content, compute static checks, signature validity). A core-profile verifier under *any* policy is never more permissive than a full-profile verifier under the same policy: unsupported capabilities surface as governed conditions or hard failures, never as silent passes.
+
+## Error code vocabulary
+
+Tree-level codes:
+
+| Code | Raised when |
+|---|---|
+| `STRUCTURAL_VALIDATION_FAILED` | Stage 0 failed: an unresolvable anchor link, a `previous_revision` cycle, or a dangling `previous_revision` |
+| `CROSS_TREE_CYCLE_DETECTED` | the cross-tree dependency graph contains a cycle |
+| `LINKED_TREE_RESOLUTION_FAILED` | a participating linked tree failed verification |
+| `HASH_VERIFICATION_FAILED` | Stage 1 failed for at least one revision |
+| `SCHEMA_OR_CHAIN_FAILED` | Stage 2 failed: schema, ordering, or batch-inclusion conditions |
+
+Per-revision codes:
+
+| Code | Meaning |
+|---|---|
+| `INVALID_REVISION_HASH_ENCODING` | the revision key fails strict multihash decoding |
+| `HASH_COMPUTE_FAILED` | the revision hash could not be recomputed |
+| `HASH_MISMATCH` | the recomputed hash is not byte-equal to the key |
+| `LEAVES_MISSING` | a tree-method object or anchor revision has no `leaves` field |
+| `LEAF_NOT_BARE_DIGEST` | a `leaves` entry is not a bare digest of the algorithm's output length (multihash-shaped leaves are rejected) |
+| `LEAVES_COMPUTE_FAILED` | the leaves could not be recomputed |
+| `LEAVES_COUNT_MISMATCH` | recomputed and published leaf counts differ |
+| `LEAVES_MISMATCH` | recomputed and published leaf values differ |
+| `TEMPLATE_NOT_FOUND` | an object's template is unresolvable (policy-governed) |
+| `SCHEMA_VALIDATION_FAILED` | a payload does not conform to its resolved template (never policy-governed) |
+| `ANCESTOR_TEMPLATE_NOT_FOUND` | a declared template ancestor is unresolvable |
+| `COMPUTE_UNSUPPORTED` | the template chain declares compute; the core profile fails closed |
+| `VERIFICATION_FAILED` | a Stage 4 type-specific check failed |
+
+The Stage-1 integrity conditions (`INVALID_REVISION_HASH_ENCODING` through `LEAVES_MISMATCH`) and `SCHEMA_VALIDATION_FAILED` are aggregated into their tree-level codes in a reported result; they appear individually in diagnostics.
+
+Batch-inclusion codes (`MERKLE_ROOT_MISSING`, `BATCH_TREE_SIZE_MISSING`, `BATCH_LEAF_INDEX_MISSING`, `MERKLE_PROOF_MISSING`, `SHIELDING_NONCE_MISSING`, `BATCH_TREE_SIZE_ZERO`, `MERKLE_HEX_NOT_LOWERCASE`, `MERKLE_HEX_DECODE_FAILED`, `MERKLE_ROOT_BAD_CODEC`, `MERKLE_ROOT_BAD_MULTIHASH`, `MERKLE_ROOT_MISMATCH`, `MERKLE_LEAF_INDEX_OUT_OF_BOUNDS`, `MERKLE_INCLUSION_FAILED`) cover the batch-proof checks of the next section and are governed by the `batch_proof_failed` policy decision. Reserved codes (`WEB_HOST_REQUIRED`, `BLOCKCHAIN_HOST_REQUIRED`, `IDENTITY_HOST_REQUIRED`, `TRUST_STORE_REQUIRED`, `UNSIGNED_TEMPLATE`, `WASM_UNTRUSTED_SIGNER`) are produced by richer profiles and only routed by policy here.
+
+## Batch inclusion proofs
+
+A revision whose naming value classifies as Timestamp carries a batch inclusion proof in its payload, binding the revision it timestamps (its `previous_revision`) into an external Merkle batch. Although timestamp *creation* is outside the core profile, a core verifier MUST check the proof when it can.
+
+Required payload fields:
+
+| Field | Constraint |
+|---|---|
+| `merkle_root` | a **SHA3-256 multihash**; any other codec is `MERKLE_ROOT_BAD_CODEC` / `MERKLE_ROOT_BAD_MULTIHASH` |
+| `batch_tree_size` | must be non-zero (`BATCH_TREE_SIZE_ZERO`) |
+| `batch_leaf_index` | position of the leaf in the batch |
+| `merkle_proof` | array of **bare** 32-byte sibling digests |
+| `shielding_nonce` | producer-chosen bytes; length unconstrained by verification, SHOULD be at least 16 random bytes |
+
+A missing field fails with its `*_MISSING` code; `merkle_root`, `shielding_nonce`, and every sibling MUST be lowercase hex (`MERKLE_HEX_NOT_LOWERCASE`, `MERKLE_HEX_DECODE_FAILED`).
+
+The leaf construction is always SHA3-256, regardless of the revision's own algorithm:
+
+```text
+raw      = the 34 multihash bytes of the timestamped revision's link
+           (the timestamp revision's previous_revision, hex-decoded)
+shielded = SHA3-256( raw || shielding_nonce_bytes )
+leaf     = SHA3-256( 0x00 || shielded )
+```
+
+The shielding nonce prevents third parties from confirming a known revision hash's presence in a public batch. The verifier checks the RFC 9162 inclusion proof of `leaf` at `batch_leaf_index` in a tree of `batch_tree_size` against the root (`MERKLE_LEAF_INDEX_OUT_OF_BOUNDS`, `MERKLE_INCLUSION_FAILED`, `MERKLE_ROOT_MISMATCH`). A `batch_tree_size` of 1 degenerates to `leaf == root`. Batch-proof failure is governed by the `batch_proof_failed` policy decision; a revision failing it skips the compute boundary.
+
+## The `file` template payload
+
+Object revisions of the `file` template are verified against their referenced content in Stage 4. The payload contract:
+
+```json
+{
+  "type": "file",
+  "hash": "0x<hex digest>",
+  "hash_type": "FIPS_202-SHA3-256",
+  "descriptor": "report.pdf",
+  "size": 348160,
+  "content_type": "application/pdf"
+}
+```
+
+`hash_type` names the digest algorithm — `FIPS_202-SHA3-256` or `BLAKE3-256` — and `hash` is the digest of the file bytes under that algorithm. The file content MUST be verified by **size and content hash — never by filename**; `descriptor` is display metadata.
+
+## Timestamps and the core profile
+
+The v4 core profile has no "witness revision" kind — the four revision kinds are Object, Template, Signature, and Anchor, and anchors are structural links, not timestamps. The role the older docs called witnessing is filled by **timestamp revisions** in the full protocol, which batch revision hashes into external attestations through EVM and TSA providers.
+
+The published core profile (`aqua-rs-sdk-core`) neither creates nor verifies timestamps: it ships no TSA or EVM providers and none of the timestamp templates. An incoming timestamp-typed revision is still classified (`RevisionKind::Timestamp`), but its template resolves through the built-in lookup of known-but-unshipped templates and lands on the `template_not_found` policy decision: `strict` fails the tree; `offline` and `debug` record a warning carrying the explicit answer `not supported for verification by aqua-rs-sdk-core: it depends on <module>`. A tolerated `TEMPLATE_NOT_FOUND` also excuses the revision from batch-inclusion checking, so the payload-internal proof above is checked only when the timestamp template is supplied — for example as a linked tree. The full `aqua-rs-sdk` reaches the same strict/offline outcomes through its own `timestamp_unavailable` decision point. Full timestamping ships with the full `aqua-rs-sdk`, scheduled for a later publication — see [Release Status & Versioning](/docs/v4.0.0/version-info).
+
+## SDK API
+
+The verification API of [`aqua-rs-sdk-core`](/docs/v4.0.0/dev-tools/sdk-core):
+
+| API | Purpose |
+|---|---|
+| `Aquafier::verify_aqua_tree(wrapper, files)` | Verify one tree against its file contents (async). |
+| `Aquafier::verify_aqua_tree_with_linked_trees` | Verify with linked trees, topologically. |
+| `Aquafier::verify_tree_sync` / `verify_tree_sync_with_linked_trees` | Synchronous variants. |
+| `VerificationResult` | Carries `outcome`, `logs`, `wasm_outputs`, `template_trust`; read it via `is_verified()`, `is_clean()`, `warnings()`, `errors()`. |
+| `VerificationPolicy::strict()` / `offline()` / `debug()` | Policy constructors; set the active policy with `Aquafier::builder().verification_policy(…)`. `strict()` is the default. |
+
+## See also
+
+- [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, wire form, and chain ordering
+- [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — multihash rules, revision hashes, and Merkle construction
+- [Signatures](/docs/v4.0.0/schema-reference/signatures) — the Stage 4 signature procedure
+- [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) — structural links and cross-tree verification
+- [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — the reduced integrity procedure for selective artifacts

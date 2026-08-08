@@ -1,0 +1,336 @@
+---
+title: "Audit Trails for AI Agents"
+description: 'Record every step an AI agent takes as its own signed, verifiable, selectively disclosable Aqua tree using the audit template family'
+icon: "bot"
+sidebar_position: 3
+---
+
+An AI agent that reads prompts, reasons, calls tools, and acts on external systems produces claims that someone will later need to check: what did the user actually ask, what did the API actually return, who approved the risky action, what did the agent actually answer? Application logs cannot carry that burden — they are mutable, unsigned, and owned by the very operator whose conduct is in question.
+
+The audit template family — the headline use case of `aqua-rs-sdk-core` — turns each step of an agent session into its own **signed Aqua tree**, causally linked to the others by role-tagged links. The result is a tamper-evident record that any third party verifies without trusting the agent's operator, and that can be **selectively disclosed**: an auditor can confirm that a prompt was signed and belongs to a turn without ever reading the prompt text.
+
+## The audit template family
+
+Eleven data-only templates, rooted at the abstract `audit_artifact`:
+
+| Template | Role |
+|---|---|
+| `audit_artifact` | Abstract root of the family; every concrete template derives from it. Never instantiated directly. |
+| `audit_user_turn_marker` (T1) | Opens a user turn; its object revision hash becomes the `turn_id`. |
+| `audit_user_prompt` (T2) | The user's prompt, signed by the user's own session key. |
+| `audit_agent_thinking` (T3) | The agent's reasoning trace. |
+| `audit_agent_tool_call` (T4) | A tool invocation (tool name, arguments, risk level). |
+| `audit_api_response` (T5) | A third-party API response, attested by an independent signer. |
+| `audit_tool_result` (T6) | The tool result as the agent saw it. |
+| `audit_hitl_approval` (T7) | A human-in-the-loop decision, signed by the human's key. |
+| `audit_agent_response` (T8) | The agent's response; `is_final: true` closes the turn. |
+| `audit_round_anchor` | Merkle commitment closing a turn. Despite the name, a **typed object revision**, not an anchor revision. |
+| `audit_session_close` | Records the end of a session. |
+
+The normative template identities (bare SHA3-256 digests, per the [protocol specification §8](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/03-templates.md)) are listed in the [Templates](/docs/v4.0.0/schema-reference/templates) catalog.
+
+Three properties to keep in mind:
+
+- **Data-only.** Every template is a JSON Schema constraint set with no WASM `verification` section. Recording an artifact validates a payload against the schema and signs it — nothing executes, and the compute stage of verification is never involved.
+- **Identified by hash, not name.** `revision_type` on an audit object is the template's multihash; names are display data.
+- **A deliberate fork.** This family is re-rooted at `audit_artifact` rather than the identity-rooted family of richer Aqua profiles, so all eleven identities differ from their full-SDK counterparts even though the constraint content matches.
+
+## The session model
+
+### Identities
+
+Separate signing keys per role keep the record honest: the agent cannot forge the user's approval, and the attestor's signature pins what an external API actually returned. The canonical example uses four Ed25519 `did:key` identities (the SDK also supports EIP-191, P-256, and WebAuthn suites):
+
+| Identity | Signs | Purpose |
+|---|---|---|
+| Server (trust anchor) | T1, round anchors, session close | Opens turns, seals rounds and the session |
+| User session | T2, T7 | What the user asked and what the human approved |
+| Agent | T3, T4, T6, T8 | Reasoning, tool calls, tool results, answers |
+| API attestor | T5 | Independent observation of third-party API responses |
+
+### One tree per artifact
+
+Each artifact is its own small Aqua tree with the shape:
+
+```text
+Genesis Anchor -> Object (typed payload) -> Anchor (compositional links) -> Signature
+```
+
+The link anchor is present only when the artifact has links; T1, which opens the turn, carries none.
+
+Causality between artifacts is expressed by **compositional links** — `{hash, role}` pairs carried in an anchor revision. The SDK stores them but never resolves them during verification, so linking across trees needs no extra verification inputs. The audit example establishes this role vocabulary:
+
+| Role | Edge meaning |
+|---|---|
+| `aqua:in_user_turn` | Membership: this artifact belongs to the turn opened by T1 |
+| `aqua:prev_artifact_in_turn` | Ordering: the previous artifact within the turn |
+| `prov:used` | This artifact consumed another (T6 used the attested T5 observation) |
+| `prov:wasGeneratedBy` | This artifact was produced by another activity (the T5 response by the T4 call) |
+
+### One turn, end to end
+
+```text
+Every artifact (T2..T8, round anchor) links T1 with aqua:in_user_turn.
+The ^ arrows are aqua:prev_artifact_in_turn: each artifact points to
+its predecessor in the turn. Each line is its own signed Aqua tree.
+
+  T1  turn marker      (server key)     object revision hash = turn_id
+  T2  user prompt      (user key)
+   ^
+  T3  agent thinking   (agent key)
+   ^
+  T4  tool call        (agent key)
+   ^
+  T5  api response     (attestor key)   prov:wasGeneratedBy -> T4
+   ^
+  T6  tool result      (agent key)      prov:used -> T5
+   ^
+  T7  hitl approval    (user key)
+   ^
+  T8  agent response   (agent key)      prov:used -> T6, is_final: true
+
+  round anchor         (server key)     audit_round_anchor object:
+                                        merkle_root over the object
+                                        hashes of T2..T8
+  session close        (server key)     audit_session_close object:
+                                        last turn_id + round anchor hash
+```
+
+The T1 object's revision hash **is** the `turn_id` that every later artifact carries in its payload, pinning the whole turn to one content-addressed identifier. When the turn ends, the server emits an `audit_round_anchor` object whose `merkle_root` commits to the turn's artifact hashes; the verifier schema-validates its shape but does not recompute the root — auditors recompute it from the listed `leaf_hashes` when checking completeness. `audit_session_close` finally records the end of the session, referencing the last turn and round anchor.
+
+## Walkthrough
+
+The complete runnable version of everything below ships with the SDK:
+
+```bash
+cargo run --example agent_audit_trail --features native
+```
+
+It records one full turn of an order-processing assistant as ten trees (T1–T8, round anchor, session close), verifies all of them, and produces a pseudonymous redaction of the prompt. The snippets here are excerpts adapted from it; elisions are marked with `// …`.
+
+```toml
+[dependencies]
+aqua-rs-sdk-core = { git = "https://github.com/inblockio/aqua-rs-sdk-core" }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+serde_json = "1"
+hex = "0.4"
+```
+
+<Steps>
+  <Step title="Derive the signing identities">
+
+Each role gets its own Ed25519 seed (from a key store or HSM in production) and a `did:key` derived from it:
+
+```rust
+use aqua_rs_sdk_core::core::signature::sign_did::DIDSigner;
+use aqua_rs_sdk_core::schema::SigningCredentials;
+use aqua_rs_sdk_core::Aquafier;
+// …
+
+let aquafier = Aquafier::new();     // shared by all later snippets
+
+let seed: [u8; 32] = /* per-role key material */;
+let did = DIDSigner.derive_did(&seed)?;            // "did:key:z6Mk…"
+let credentials = SigningCredentials::Did { did_key: seed.to_vec() };
+```
+
+  </Step>
+  <Step title="Emit an artifact (T4 tool call)">
+
+Create a typed object from the template and payload, attach the compositional links via an anchor revision, and sign the tip once:
+
+```rust
+use aqua_rs_sdk_core::primitives::{HashType, Method, RevisionLink};
+use aqua_rs_sdk_core::schema::link::{Anchor, CompositionalLink};
+use aqua_rs_sdk_core::schema::template::BuiltInTemplate;
+use aqua_rs_sdk_core::schema::templates::AuditAgentToolCall;
+use aqua_rs_sdk_core::schema::{AnyRevision, AquaTreeWrapper};
+use aqua_rs_sdk_core::verification::Linkable;
+use serde_json::json;
+// …
+
+// Typed object revision in its own tree.
+let template_link = RevisionLink::from_bytes(AuditAgentToolCall::TEMPLATE_LINK);
+let mut tree = aquafier.create_object(
+    template_link,
+    None,
+    json!({
+        "signer_did": agent_did,
+        "turn_id": turn_id,          // = the T1 object's revision hash
+        "seq_in_turn": 2,
+        "tool_name": "inventory.order.status",
+        "tool_args": { "order_id": "ORD-1042" },
+        "risk_level": "low",
+        "created_at": now,
+    }),
+    None,
+)?;
+let t4_hash = tree.get_latest_revision_link().ok_or("created tree has no tip")?;
+
+// Anchor revision carrying the role-tagged compositional links.
+let mut anchor = Anchor::with_links(
+    t4_hash.clone(),
+    Method::Scalar,
+    Vec::new(),                      // structural links
+    vec![
+        CompositionalLink::new(t1_hash.clone(), "aqua:in_user_turn"),
+        CompositionalLink::new(t3_hash.clone(), "aqua:prev_artifact_in_turn"),
+    ],
+);
+let anchor_hash = anchor.calculate_link(HashType::Sha3_256)?;
+anchor.populate_leaves(HashType::Sha3_256)?;
+tree.revisions.insert(anchor_hash, AnyRevision::Anchor(anchor));
+
+// One signature over the tip, with the agent's key.
+let signed = aquafier
+    .sign_aqua_tree(AquaTreeWrapper::new(tree, None, None), &credentials, None, None)
+    .await?;
+let t4_tree = signed.aqua_tree;
+```
+
+The object's revision hash (`t4_hash`) is the artifact's stable content identity — the value later artifacts link to and the round anchor commits to. T1–T3 and T5–T8 follow the identical pattern with their own templates, payloads, links, and signers.
+
+  </Step>
+  <Step title="Close the turn with a round anchor">
+
+The server commits to the turn's artifact hashes with the SDK's domain-separated Merkle helpers (RFC 9162, formerly RFC 6962: leaf = `H(0x00 || data)`, node = `H(0x01 || left || right)`), then records the commitment as an `audit_round_anchor` object. Typed payload structs give compile-time field names plus a `validate()` pre-flight:
+
+```rust
+use aqua_rs_sdk_core::primitives::merkle;
+use aqua_rs_sdk_core::schema::templates::AuditRoundAnchor;
+// …
+
+let artifact_hashes = [&t2_hash, &t3_hash, &t4_hash, &t5_hash, &t6_hash, &t7_hash, &t8_hash];
+let leaves: Vec<Vec<u8>> = artifact_hashes
+    .iter()
+    .map(|h| merkle::batch_leaf_hash(&HashType::Sha3_256, h.as_ref()))
+    .collect();
+let merkle_root = format!(
+    "0x{}",
+    hex::encode(merkle::merkle_root(&leaves, &HashType::Sha3_256))
+);
+
+let round_anchor = AuditRoundAnchor {
+    signer_did: server_did.clone(),
+    session_id: session_id.to_string(),
+    turn_id: turn_id.clone(),
+    turn_index: 0,
+    artifact_count: artifact_hashes.len() as u64,
+    leaf_hashes: artifact_hashes.iter().map(|h| h.to_string()).collect(),
+    merkle_root,
+    closed_at: now,
+};
+round_anchor.validate()?;
+// then create_object + anchor + sign as in the previous step, using the
+// audit_round_anchor template — see the runnable example's template_source helper
+```
+
+`merkle::merkle_root` panics on an empty slice: a turn with no artifacts has nothing to anchor. When the session ends, the server emits an `audit_session_close` object the same way, referencing the last `turn_id` and round anchor hash.
+
+  </Step>
+  <Step title="Export self-descriptively">
+
+`audit_round_anchor` and `audit_session_close` are never resolvable from the verifier's built-in catalog, so trees using them must carry their template revisions. `export_tree` embeds them by default, and `missing_templates` is the lint publishers can run in CI over everything they ship:
+
+```rust
+use aqua_rs_sdk_core::{missing_templates, ExportOptions};
+// …
+
+let anchor_tree = aquafier.export_tree(
+    &anchor_tree,
+    std::slice::from_ref(&round_template_tree),   // the template's own single-revision tree
+    &ExportOptions::default(),
+)?;
+assert!(missing_templates(&anchor_tree).is_empty());
+```
+
+An exported tree references no type a receiver cannot resolve; it verifies standalone with no side inputs. Opt out per call with `ExportOptions::bare()`.
+
+  </Step>
+  <Step title="Verify every tree">
+
+Each artifact runs independently through the full pipeline — structure, hash integrity, template schema, signatures:
+
+```rust
+let result = aquafier
+    .verify_aqua_tree(AquaTreeWrapper::new(t4_tree.clone(), None, None), vec![])
+    .await?;
+assert!(result.is_verified());
+```
+
+In the runnable example all ten trees verify with no linked trees and no side inputs, and no compute stage is ever entered — the audit chain is pure data.
+
+  </Step>
+</Steps>
+
+## Selective disclosure for audit trails
+
+Object revisions use the tree hashing method by default, so every payload field is a salted Merkle leaf that can be redacted independently while the revision hash stays provable. The **pseudonymous preset** is a fixed policy for audit trees: reveal structure, identity, and chronology; seal content. Signature and anchor revisions stay full (attestations remain verifiable), T1 stays full (it carries no sensitive content), and T2–T8 become field-redacted by per-template allow-lists (all paths under `/payloads/`, plus the forced `/previous_revision`). Each allow-list discloses the pseudonymous skeleton — `signer_did`, `turn_id`, `created_at`, plus per-template structural facts such as T4's `tool_name` and `risk_level`, T5's `endpoint` and `status_code`, or T7's `decision` — while free-text content stays sealed. The normative per-template allow-lists are in [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure).
+
+Everything else is sealed as salted commitments: prompt text, thinking text, tool arguments and results, response bodies, HITL prompt and rationale, attachment names and sizes — and the revision's structural leaves. Redacting and verifying a single revision:
+
+```rust
+use aqua_rs_sdk_core::{redact_revision, verify_redacted_revision, DisclosurePolicy, RevisionDisclosure};
+// …
+
+let policy = DisclosurePolicy::pseudonymous(&t2_tree);
+let disclosed_paths = match policy.revisions.get(&t2_hash) {
+    Some(RevisionDisclosure::FieldRedacted(paths)) => paths.clone(),
+    other => return Err(format!("unexpected T2 disclosure policy: {other:?}").into()),
+};
+let t2_revision = t2_tree.revisions.get(&t2_hash).ok_or("revision missing")?;
+
+let redacted = redact_revision(t2_revision, &t2_hash, &disclosed_paths)?;
+verify_redacted_revision(&redacted)?;   // still proves the original revision hash
+```
+
+For mixed trees that contain non-audit templates, `DisclosureProfile::audit()` applies the same rules in a closed world: unknown template families are sealed, never disclosed by accident.
+
+<Callout type="warning" title="Know the limits">
+The `/nonce` leaf must never be disclosed — all per-leaf salts derive from it, and disclosing it makes every sealed low-entropy value brute-forceable; the exporter rejects any policy that lists it. Field <em>presence</em> is public by design: pointer paths, array cardinalities, and the leaf count stay cleartext. And redacted verification proves hash integrity of the disclosed subset only — it cannot re-validate the payload schema or verify a signature over sealed bytes. Never present a selectively disclosed artifact as having passed full verification. See [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure).
+</Callout>
+
+## Getting the templates
+
+The sanctioned distribution channel for the audit family is the [Template Registry](/docs/v4.0.0/dev-tools/template-registry). The family is published as **audit-set-v1** under the vendor `inblockio`, publisher DID `did:key:z6MkqDxSY5Z3gMNR2qKzV9ZwZDLwUYi5DqevZWhR7vaDWLCN`, with short aliases (`prompt`, `tool_call`, `approval`, …) alongside the full names. Subscribe with a pinned trust policy — there is no trust-on-first-use:
+
+```bash
+cargo run --bin subscribe -- \
+    --registry http://127.0.0.1:8088 \
+    --publisher did:key:z6MkqDxSY5Z3gMNR2qKzV9ZwZDLwUYi5DqevZWhR7vaDWLCN \
+    --trust trust/inblockio-audit-set-v1.json \
+    --store ./imported \
+    --once
+```
+
+A hosted registry runs without SLA at https://aqua-registry.inblock.io; note that the bundled subscribe client speaks plain `http://` only in this release, while the hosted HTTPS endpoint can be queried directly with `curl`.
+
+<Callout type="note" title="Transitional: built-in catalog resolution">
+In this release, <code>audit_artifact</code> and T1–T8 still resolve from the verifier's built-in catalog, which is why the example runs offline with no registry. This convenience is scheduled to be removed in favor of registry-only distribution — do not depend on it. <code>audit_round_anchor</code> and <code>audit_session_close</code> are already never catalog-resolved; self-descriptive export covers all cases either way.
+</Callout>
+
+## What to record, practically
+
+Mapping the event stream of a typical agent framework onto the family:
+
+| Agent-framework event | Record as | Signer |
+|---|---|---|
+| User message arrives (turn starts) | T1 `audit_user_turn_marker`, then T2 `audit_user_prompt` | Server, then user session |
+| Model emits reasoning | T3 `audit_agent_thinking` | Agent |
+| Agent invokes a tool | T4 `audit_agent_tool_call` | Agent |
+| External API call, independently observed | T5 `audit_api_response` (`prov:wasGeneratedBy` → T4) | API attestor |
+| Tool output returned to the agent | T6 `audit_tool_result` (`prov:used` → T5) | Agent |
+| Human approves or rejects an action | T7 `audit_hitl_approval` | User session |
+| Agent replies | T8 `audit_agent_response` (`is_final: true`) | Agent |
+| Turn complete | `audit_round_anchor` over the turn's artifact hashes | Server |
+| Session ends | `audit_session_close` | Server |
+
+Divergence between what an API returned (T5, attestor-signed) and what the agent claims it saw (T6, agent-signed) is detectable by construction — that is the point of splitting the two.
+
+## See also
+
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the crate that hashes, signs, verifies, and discloses these trees
+- [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publishing, resolving, and subscribing to the audit family
+- [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — redacted revisions, selective trees, and their verification rules
+- [Templates](/docs/v4.0.0/schema-reference/templates) — template identity, derivation, and the shipped catalog
+- [Quick Start](/docs/v4.0.0/quickstart) — first steps with `aqua-rs-sdk-core`

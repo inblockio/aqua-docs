@@ -1,0 +1,213 @@
+---
+title: "Hashing and Canonicalization"
+description: 'How Aqua Protocol v4 computes revision hashes: the algorithm registry, the Aqua multihash profile, Aqua Pointer Form, scalar and tree hashing, and the shared Merkle construction'
+icon: "hash"
+sidebar_position: 3
+---
+
+Every revision in an Aqua tree is addressed by the hash of its own canonical form. This page describes how that hash is computed: which algorithms are registered, how hashes are encoded on the wire, how a revision is canonicalized, and how the two hashing methods (`scalar` and `tree`) reduce the canonical form to a digest.
+
+The normative source is the protocol specification in the `aqua-rs-sdk-core` repository; this page is the readable reference. Where they disagree, [02 — Hashing and canonicalization](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/02-hashing-and-canonicalization.md) wins.
+
+## Algorithm registry
+
+Exactly two hash algorithms are registered:
+
+| Algorithm | Multicodec | Digest length | Codec (decimal) |
+|---|---|---|---|
+| SHA3-256 (FIPS 202) | `0x16` | 32 bytes | 22 |
+| BLAKE3-256 (default unkeyed 32-byte mode) | `0x1e` | 32 bytes | 30 |
+
+SHA3-256 is the default. There is no fallback: a multihash carrying any other codec MUST be rejected. Template identity is always computed with SHA3-256, regardless of the containing tree's algorithm (see [Templates](/docs/v4.0.0/schema-reference/templates)).
+
+Revisions carry no algorithm field. The algorithm used to verify a revision is recovered from the multicodec of the multihash that addresses it — its key in the tree's revision map. Consequently, the same revision content addressed under a different codec is a different revision hash, and a revision stored under a malformed multihash key is unverifiable and MUST be rejected.
+
+## The Aqua multihash profile
+
+A revision hash on the wire is a **multihash**:
+
+```text
+multihash = varint(codec) || varint(length) || digest
+```
+
+with multiformats unsigned varints (LEB128). For both registered algorithms each varint is a single byte, so every revision hash is 34 bytes: `0x16 0x20 <32-byte digest>` or `0x1e 0x20 <32-byte digest>`.
+
+The string form is `0x` followed by the lowercase hex of the 34 bytes — 70 characters. Uppercase hex MUST be rejected on parse.
+
+A decoder MUST enforce these rules, in this order of severity:
+
+1. **Minimal varints** — re-encode each decoded varint and require byte equality; a non-minimal encoding MUST be rejected.
+2. **Varint range** — each decoded varint value MUST be below 128 (both registered codecs and the length 32 are single-byte values); a larger value MUST be rejected as out of range.
+3. **Registered codec** — an unregistered codec MUST be rejected (before any length check).
+4. **Registry length** — the declared digest length MUST equal the registered length for the codec (32).
+5. **Exact framing** — the declared length MUST equal the number of remaining bytes exactly: fewer is a truncation error, more is a trailing-bytes error.
+
+Test vectors (informative):
+
+```text
+SHA3-256("aqua")   = 0e45033cba286c7dc85255b5d9dfe4ebde65bc6d477a6250d1784f5c0d5c1aa4
+multihash          = 0x16200e45033cba286c7dc85255b5d9dfe4ebde65bc6d477a6250d1784f5c0d5c1aa4
+BLAKE3-256("aqua") = 0x1e204a037f9e6c19d69462ead0049b51237a5da0c861e9edd7c0610e626ac093ddd5
+```
+
+### Full multihash vs bare digest
+
+Two hash renderings coexist in the protocol and MUST NOT be confused:
+
+| Rendering | Length (hex chars after `0x`) | Used for |
+|---|---|---|
+| **Full multihash** | 68 | revision map keys, `previous_revision`, `revision_type`, `derives_from`, `ancestry` entries, anchor `structural_links`, compositional link `hash` values, template identity in the template-tree key |
+| **Bare 32-byte digest** | 64 | entries of the `leaves` array, Merkle proof siblings, the zero sentinel, and many application-level payload hash fields (some payload fields carry full multihashes instead — for example audit turn ids and leaf-hash lists; each template's schema decides) |
+
+A verifier encountering a bare digest where a full multihash is required — or vice versa — MUST reject it.
+
+## Aqua Pointer Form
+
+Canonicalization proceeds in three steps, shared by both hashing methods:
+
+1. **Serialize.** Serialize the revision to JSON. Absent OPTIONAL fields are omitted entirely (never `null`); an empty `compositional_links` array is omitted. Non-ASCII characters are emitted as raw UTF-8, never `\uXXXX` escapes.
+2. **Flatten.** Flatten the JSON document into a single-level map from RFC 6901 JSON Pointers to values. The root object contributes the key `""` with value `{}`; every nested object contributes its own pointer with value `{}` (a container marker); every array contributes its own pointer with value `[]`, and each element appears at `/<...>/<decimal index>`; every scalar (null, boolean, number, string) appears at its pointer with the scalar itself as value. Member names are escaped per RFC 6901: `~` becomes `~0` first, then `/` becomes `~1`. Container markers are full participants in hashing, exactly like scalar entries.
+3. **Sort.** Sort the map by key, byte-wise over the UTF-8 encoding of the pointer strings. Note the consequence for arrays of ten or more elements: `/a/10` sorts before `/a/2`. This is the canonical order.
+
+Flattening the genesis anchor revision from the [worked example](#worked-example) below produces this sorted pointer map — note the root marker `""`, the array marker at `/structural_links`, and the array element at `/structural_links/0`:
+
+```text
+""                    -> {}
+"/local_timestamp"    -> 1783616147
+"/method"             -> "scalar"
+"/nonce"              -> "0x1a5f49342762a8282bc53f736b96d580"
+"/revision_type"      -> "0x1620479a304927c47f4308d027a858060ce287a9bdb45f2203f8130574a73511e899"
+"/structural_links"   -> []
+"/structural_links/0" -> "0x162000f3abb3d74fc9dfc2b961cea906b3211716188f4de6f588180fdfcbbfa3fe53"
+"/version"            -> "https://aqua-protocol.org/docs/v4/schema"
+```
+
+## Scalar hashing (`method: "scalar"`)
+
+```text
+bare_digest   = HASH( compact_json( sorted_pointer_map ) )
+revision_hash = multihash( bare_digest )
+```
+
+The serialized form is the flat pointer map itself: a single JSON object whose keys are the pointer strings and whose values are the flattened values (container markers as literal empty objects/arrays), in sorted key order, serialized with no whitespace and standard JSON string escaping. `HASH` is the revision's algorithm, recovered from its addressing multihash.
+
+The pointer map is hashed as one opaque blob; a scalar revision therefore supports no per-field disclosure. A scalar revision MUST NOT carry a `leaves` field. This is a producer obligation: verifiers do not recompute per-field leaves for scalar revisions, and a `leaves` member present on one would be hashed as ordinary content.
+
+## Tree hashing (`method: "tree"`)
+
+The sorted pointer map is committed per entry and reduced to a Merkle root:
+
+```text
+prk = HKDF-SHA3-256-Extract( salt = "AquaSD" (6 ASCII bytes),
+                             ikm  = nonce_bytes (16) )          # 32 bytes
+
+for each (pointer, value) in canonical order,
+        excluding every key that begins with the string "/leaves":
+    salt         = HKDF-SHA3-256-Expand( prk, info = utf8(pointer), length = 32 )
+    value_str    = compact JSON rendering of the value
+    label        = HASH( 0x03 || utf8(pointer) )
+    value_commit = HASH( 0x02 || salt || utf8(value_str) )
+    leaf         = HASH( 0x00 || label || value_commit )
+
+bare_digest   = merkle_root( leaves )      # the leaf list MUST be non-empty
+revision_hash = multihash( bare_digest )
+```
+
+Normative details:
+
+- **The KDF is always HKDF with SHA3-256**, even when the revision's hash algorithm is BLAKE3-256. Salt derivation is deliberately decoupled from the revision algorithm.
+- `HASH` in the leaf construction is the revision's algorithm.
+- `value_str` is the compact JSON rendering of the flattened value: strings keep their quotes and JSON escaping (`"foo"`), numbers are bare, booleans are `true`/`false`, null is `null`, container markers are the literal two-character strings `{}` and `[]`.
+- The domain tags are single bytes: `0x00` leaf, `0x01` internal node, `0x02` value commitment, `0x03` label commitment. They ensure a leaf can never collide with an internal node and a value commitment can never collide with a label commitment.
+- The `/leaves` exclusion makes the hash independent of the published `leaves` array, so the hash can be recomputed identically before and after the array is populated. The filter is a plain prefix match on the pointer string; implementations MUST use the prefix match to stay byte-compatible.
+- An empty leaf set is a protocol error; every revision flattens to at least the root pointer `""`, so this arises only from a defective input.
+
+**Producer ordering rule:** the revision hash MUST be computed while the `leaves` field is absent; the `leaves` array (the bare leaf digests, in canonical order, hex-encoded with `0x`) is populated afterwards. A verifier independently recomputes the leaves and compares them against the published array.
+
+## The Merkle construction
+
+One Merkle construction serves the whole protocol: tree-method hashing, [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure), and batch inclusion proofs.
+
+```text
+leaf     = HASH( 0x00 || data )                # data = label || value_commit for SD leaves,
+                                               #        or a shielded digest for batch leaves
+internal = HASH( 0x01 || left || right )       # order-sensitive: internal(a,b) != internal(b,a)
+```
+
+**Root:** reduce the leaf list bottom-up, pairing left to right. A trailing unpaired node is **promoted unchanged** to the next level — never duplicated. A single-leaf list's root is that leaf itself, with no additional hashing. The root of an empty list is undefined; producers MUST NOT construct one and verifiers MUST reject inputs that would require one.
+
+**Inclusion proofs** follow RFC 9162 §2.1.3: the proof path is generated by recursive splitting at `k` = the largest power of two strictly less than `n`, and verified with the iterative algorithm of RFC 9162 §2.1.3.2. A single-leaf tree has an empty proof. Leaves, internal nodes, and proof siblings are all **bare** 32-byte digests; revision hashes and batch roots on the wire are multihash-wrapped.
+
+Inclusion proofs are used by batch timestamp verification. Selective disclosure does not transmit proofs — it transmits the full leaf vector and recomputes the root.
+
+## What the revision hash covers
+
+| Item | Covered? |
+|---|---|
+| all serialized revision fields, including `nonce`, `local_timestamp`, `version`, `method`, `revision_type`, `previous_revision` | yes |
+| a signature revision's own `signature` object (type, bytes, public identifier, WebAuthn extras) | yes — the hash commits to the signature itself |
+| the `leaves` array of a tree-method revision | no (excluded by construction) |
+| the tree's `file_index` | no (tree-level metadata, never hashed) |
+| the revision-map key | no — it *is* the hash |
+
+## The signing pre-image is a different canonicalization
+
+The message signed by a signature revision is **not** the pointer-flattened form above. It is a flat JSON object with exactly nine members, keys sorted lexicographically (byte-wise), serialized compactly (no whitespace), UTF-8 encoded. The nine keys, in their sorted order:
+
+| Key | Content |
+|---|---|
+| `hash_codec` | a JSON **number**: the decimal multicodec of the revision's hash algorithm, `22` (SHA3-256) or `30` (BLAKE3-256). Pre-image-only — it is never a wire field; at verification it is recovered from the signature revision's own addressing multihash |
+| `local_timestamp` | copied verbatim from the signature revision |
+| `method` | copied verbatim from the signature revision |
+| `nonce` | copied verbatim from the signature revision |
+| `previous_revision` | the target hash — the full multihash of the revision being signed |
+| `revision_type` | copied verbatim from the signature revision |
+| `signature_type` | the suite string, hoisted into the pre-image because the `signature` object does not yet exist when the message is built |
+| `signer` | copied verbatim from the signature revision |
+| `version` | copied verbatim from the signature revision |
+
+The two canonical forms serve different purposes and MUST NOT be conflated:
+
+- **Aqua Pointer Form** answers "what bytes does a revision hash commit to" — it covers the whole revision.
+- **The signing pre-image** answers "what bytes does a signer attest to" — it covers the signature revision's identity fields and its target hash, and it exists before the signature bytes do.
+
+The full pre-image specification, including per-suite handling, is on the [Signatures](/docs/v4.0.0/schema-reference/signatures) page.
+
+## Worked example
+
+A genesis anchor revision with `method: "scalar"`. Its `revision_type` is the `anchor_template` multihash, and its single structural link names the `file` template (both appear in the [shipped catalog](/docs/v4.0.0/schema-reference/templates#the-shipped-catalog)):
+
+```json
+{
+  "revision_type": "0x1620479a304927c47f4308d027a858060ce287a9bdb45f2203f8130574a73511e899",
+  "nonce": "0x1a5f49342762a8282bc53f736b96d580",
+  "local_timestamp": 1783616147,
+  "version": "https://aqua-protocol.org/docs/v4/schema",
+  "method": "scalar",
+  "structural_links": [
+    "0x162000f3abb3d74fc9dfc2b961cea906b3211716188f4de6f588180fdfcbbfa3fe53"
+  ]
+}
+```
+
+Flattening and sorting produce the pointer map shown in [Aqua Pointer Form](#aqua-pointer-form) above. Serialized compactly, the exact hash pre-image is the following single line:
+
+```text
+{"":{},"/local_timestamp":1783616147,"/method":"scalar","/nonce":"0x1a5f49342762a8282bc53f736b96d580","/revision_type":"0x1620479a304927c47f4308d027a858060ce287a9bdb45f2203f8130574a73511e899","/structural_links":[],"/structural_links/0":"0x162000f3abb3d74fc9dfc2b961cea906b3211716188f4de6f588180fdfcbbfa3fe53","/version":"https://aqua-protocol.org/docs/v4/schema"}
+```
+
+SHA3-256 of those bytes, multihash-wrapped, yields the revision hash:
+
+```text
+0x1620ce6f69b28e6dd3a1b02f107bc08a2316901dbd3c7d41d619bd7bb0bd49b7ce0b
+```
+
+which is the key this revision is stored under, the `previous_revision` of its children, and the target hash a signature over it would attest to.
+
+## See also
+
+- [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, common fields, and tree structure
+- [Templates](/docs/v4.0.0/schema-reference/templates) — template identity and the SHA3-256 rule for type hashes
+- [Signatures](/docs/v4.0.0/schema-reference/signatures) — the signing pre-image in full, suites, and signer identity
+- [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — per-field redaction built on tree hashing
+- [Verification](/docs/v4.0.0/schema-reference/verification) — how hashes are recomputed and checked
