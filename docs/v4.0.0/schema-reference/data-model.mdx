@@ -48,7 +48,7 @@ Exactly four revision kinds exist on the wire: **Object**, **Template**, **Signa
 | `nonce` | string — `0x` + exactly 32 lowercase hex characters (16 bytes) | REQUIRED | Per-revision random value. Makes the revision hash unpredictable and, for tree-method revisions, seeds the selective-disclosure salts. |
 | `local_timestamp` | JSON number — unsigned integer, Unix seconds | REQUIRED | Producer-local creation time. Hashed and ordered, but not trusted evidence of real time. |
 | `version` | string | REQUIRED | MUST be exactly `https://aqua-protocol.org/docs/v4/schema`. A revision carrying any other value MUST be rejected at parse time. |
-| `method` | string | REQUIRED | MUST be `"scalar"` or `"tree"`. Selects the hashing method ([Hashing](/docs/v4.0.0/schema-reference/hashing)). |
+| `method` | string | REQUIRED | MUST be `"scalar"` or `"tree"`. Selects the hashing method ([Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing)). |
 
 Three rules govern every revision:
 
@@ -225,7 +225,7 @@ Canonicalizing and hashing this revision yields its revision hash:
 
 which is the key it is stored under in `revisions`, the `previous_revision` of its children, and the target hash a signature over it attests to.
 
-**Notes.** `revision_type` names the `anchor_template` template (bare digest `0x479a30…`). It has no `previous_revision`, making it a genesis anchor; its single structural link names the `file` template that types the tree's content. The full canonicalization walk-through for this exact revision is on the [Hashing](/docs/v4.0.0/schema-reference/hashing) page and in the specification.
+**Notes.** `revision_type` names the `anchor_template` template (bare digest `0x479a30…`). It has no `previous_revision`, making it a genesis anchor; its single structural link names the `file` template that types the tree's content. The full canonicalization walk-through for this exact revision is on the [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) page and in the specification.
 
 ## Kind discrimination
 
@@ -310,9 +310,9 @@ The chain is anchor → signature, because `0x16200ca0…` sorts below `0x1620f7
 
 Timestamp revisions are defined by the full Aqua protocol but sit **outside the published core profile**. The core profile classifies an incoming revision as a timestamp by its naming value (the three timestamp foundation templates) but neither creates nor verifies timestamp revisions; the verification policy governs the outcome — the strict policy rejects them, the offline policy accepts them with a warning. See [Verification](/docs/v4.0.0/schema-reference/verification).
 
-## See Also
+## See also
 
-- [Hashing](/docs/v4.0.0/schema-reference/hashing) — how revision hashes and links are computed
+- [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how revision hashes and links are computed
 - [Templates](/docs/v4.0.0/schema-reference/templates) — type identity, derivation, and the shipped catalog
 - [Signatures](/docs/v4.0.0/schema-reference/signatures) — the signing pre-image and the four signature suites
 - [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) — structural link resolution and cross-tree references

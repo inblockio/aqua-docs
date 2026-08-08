@@ -43,7 +43,7 @@ A signature revision carries exactly eight fields, all required:
 
 ### Example
 
-An Ed25519 signature revision from the SDK's seed corpus ([`src/tests/seed/sign_did_example.aqua.json`](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/src/tests/seed/sign_did_example.aqua.json)). Its target is a genesis anchor revision — the same tree appears as the worked example on the [Anchors & Links](/docs/v4.0.0/schema-reference/anchors-and-links) page:
+An Ed25519 signature revision from the SDK's seed corpus ([`src/tests/seed/sign_did_example.aqua.json`](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/src/tests/seed/sign_did_example.aqua.json)). Its target is a genesis anchor revision — the same tree appears as the worked example on the [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) page:
 
 ```json
 {
@@ -210,10 +210,10 @@ Signature revisions are not schema-validated against their suite templates; the 
 
 Because a signature attests to its target's *hash*, [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) of the target does not invalidate the signature: a verifier that confirms the redacted target still matches its original hash retains the full force of the attestation. Disclosure policies must keep signature revisions fully disclosed if the attestation is to remain checkable.
 
-## See Also
+## See also
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, common fields, tree structure
-- [Hashing & Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how revision hashes and multihashes are computed
+- [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how revision hashes and multihashes are computed
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity and the shipped catalog, including the signature suite templates
-- [Anchors & Links](/docs/v4.0.0/schema-reference/anchors-and-links) — the branch revision kind that carries links instead of signatures
+- [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) — the branch revision kind that carries links instead of signatures
 - [Verification](/docs/v4.0.0/schema-reference/verification) — the full verification pipeline and policy decision points

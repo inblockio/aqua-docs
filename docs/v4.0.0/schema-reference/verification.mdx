@@ -118,7 +118,7 @@ A missing field fails with its `*_MISSING` code; `merkle_root`, `shielding_nonce
 
 The leaf construction is always SHA3-256, regardless of the revision's own algorithm:
 
-```
+```text
 raw      = the 34 multihash bytes of the timestamped revision's link
            (the timestamp revision's previous_revision, hex-decoded)
 shielded = SHA3-256( raw || shielding_nonce_bytes )
@@ -148,7 +148,7 @@ Object revisions of the `file` template are verified against their referenced co
 
 The v4 core profile has no "witness revision" kind — the four revision kinds are Object, Template, Signature, and Anchor, and anchors are structural links, not timestamps. The role the older docs called witnessing is filled by **timestamp revisions** in the full protocol, which batch revision hashes into external attestations through EVM and TSA providers.
 
-The published core profile (`aqua-rs-sdk-core`) neither creates nor externally verifies timestamps: it ships no TSA or EVM providers. Incoming timestamp-typed revisions are classified (`RevisionKind::Timestamp`) and their payload-internal batch inclusion proof is checked as above, but the unavailable external proof capability routes to the `timestamp_unavailable` policy decision: `strict` fails the tree, `offline` and `debug` record a warning. Full timestamping ships with the later publication of the full `aqua-rs-sdk` — see [Version Info](/docs/v4.0.0/version-info).
+The published core profile (`aqua-rs-sdk-core`) neither creates nor verifies timestamps: it ships no TSA or EVM providers and none of the timestamp templates. An incoming timestamp-typed revision is still classified (`RevisionKind::Timestamp`), but its template resolves through the built-in lookup of known-but-unshipped templates and lands on the `template_not_found` policy decision: `strict` fails the tree; `offline` and `debug` record a warning carrying the explicit answer `not supported for verification by aqua-rs-sdk-core: it depends on <module>`. A tolerated `TEMPLATE_NOT_FOUND` also excuses the revision from batch-inclusion checking, so the payload-internal proof above is checked only when the timestamp template is supplied — for example as a linked tree. The full `aqua-rs-sdk` reaches the same strict/offline outcomes through its own `timestamp_unavailable` decision point. Full timestamping ships with the full `aqua-rs-sdk`, scheduled for a later publication — see [Release Status & Versioning](/docs/v4.0.0/version-info).
 
 ## SDK API
 
@@ -162,7 +162,7 @@ The verification API of [`aqua-rs-sdk-core`](/docs/v4.0.0/dev-tools/sdk-core):
 | `VerificationResult` | Carries `outcome`, `logs`, `wasm_outputs`, `template_trust`; read it via `is_verified()`, `is_clean()`, `warnings()`, `errors()`. |
 | `VerificationPolicy::strict()` / `offline()` / `debug()` | Policy constructors; set the active policy with `Aquafier::builder().verification_policy(…)`. `strict()` is the default. |
 
-## See Also
+## See also
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, wire form, and chain ordering
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — multihash rules, revision hashes, and Merkle construction

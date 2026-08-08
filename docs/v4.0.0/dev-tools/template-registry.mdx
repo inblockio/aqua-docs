@@ -12,7 +12,7 @@ Aqua Protocol v4 is under active development. The published components — <code
 </Callout>
 
 <Callout type="info" title="Hosted instance">
-A deployed registry is available, without SLA, at <a href="https://aqua-registry.inblock.io">aqua-registry.inblock.io</a>. It can be used to publish and retrieve community-developed templates. Because it runs under active development and experimental conditions, stored templates may be wiped without notice — keep your signed registration trees so you can republish.
+A deployed registry is available, without SLA, at [aqua-registry.inblock.io](https://aqua-registry.inblock.io). It can be used to publish and retrieve community-developed templates. Because it runs under active development and experimental conditions, stored templates may be wiped without notice — keep your signed registration trees so you can republish.
 </Callout>
 
 ## Identity and naming
@@ -104,12 +104,12 @@ Drop `--once` to poll on an interval (`--interval`, default 30 seconds); `--list
 The trust policy is a committed JSON file. The essentials:
 
 - **`allowed_publishers` is required, and there is no trust-on-first-use.** An absent file is an error, an empty list imports nothing, and a publisher DID that is not written down is refused no matter how well-formed its registrations are. Entries may be bare DID strings or objects annotating where the DID came from (`source`, `verified_by`, `verified_on`) — advisory provenance for human review, never consulted by the import chain.
-- **`pins` is a lockfile** mapping qualified names to bare-digest hashes:
+- **`pins` is a lockfile** mapping qualified names to bare-digest hashes, with two modes.
 
-  | Mode | Behaviour |
-  |---|---|
-  | `PinnedOnly` (default) | Only templates whose name AND hash match an existing pin are imported |
-  | `ApproveNew` (`--approve-new`) | Additionally imports unpinned templates from allowed publishers and appends each to the pin file — but still refuses a pinned name at a different hash |
+| Mode | Behavior |
+|---|---|
+| `PinnedOnly` (default) | Only templates whose name AND hash match an existing pin are imported |
+| `ApproveNew` (`--approve-new`) | Additionally imports unpinned templates from allowed publishers and appends each to the pin file — but still refuses a pinned name at a different hash |
 
 - **`max_head_age_secs`** (optional) refuses a feed head whose signed `covered_at` is older than the given age; a head dated more than 300 seconds in the future is refused regardless.
 - **The rehash step is built in.** Step six of the verification chain rehashes the definition body through core's `calculate_link` and compares it to the `template_hash` the registration claims — the step that is easy to omit and fatal to omit when hand-rolling a consumer, because a registration is only a signed claim that a name means a hash; it says nothing about whether the bytes you were handed are the bytes that hash to it.
@@ -123,6 +123,9 @@ use aqua_rs_sdk_core::{Aquafier, schema::AquaTreeWrapper};
 use aqua_template_registry::ImportStore;
 
 // … hash: the pinned template hash from your trust policy; payload: serde_json::Value
+// … link_of: converts the bare 0x<64hex> hash to the full multihash RevisionLink
+//   (hex-decode, then RevisionLink::from_bytes — as in tests/full_loop.rs); with the
+//   definition body at hand, templates::link_of_definition(&definition_json)? computes it directly
 let store = ImportStore::open("./imported")?;
 let aquafier = Aquafier::new();
 
@@ -197,7 +200,7 @@ Errors use one envelope with stable codes, from `MALFORMED_TREE` (400) through `
 
 ## Feed heads
 
-Publishers sign a **feed head**: a commitment to their own feed — how many of their entries exist, and a Merkle root over them (RFC 6962-style prefixes, with each entry's ordinal inside the leaf so reordering changes the root). A subscriber verifies the head on every sync and fails closed: withholding, reordering or substitution, rollback, equivocation, and the disappearance of a previously seen head all abort the import without advancing the cursor.
+Publishers sign a **feed head**: a commitment to their own feed — how many of their entries exist, and a Merkle root over them (RFC 9162 prefixes (formerly RFC 6962), with each entry's ordinal inside the leaf so reordering changes the root). A subscriber verifies the head on every sync and fails closed: withholding, reordering or substitution, rollback, equivocation, and the disappearance of a previously seen head all abort the import without advancing the cursor.
 
 What a head does **not** guarantee: freshness. A head says "at least N entries existed when I signed this", not "nothing has been published since". Until a publisher signs their first head, withholding is undetectable (subscribers tolerate and report this bootstrapping state); on first contact a subscriber cannot distinguish a current head from a replayed older one without a mirror or an out-of-band copy; and collusion between the registry and the publisher's own signing key is out of scope by definition.
 
@@ -211,7 +214,7 @@ A companion alias set (`audit-aliases-v1`) registers short names in the same nam
 curl -sS http://127.0.0.1:8088/resolve/inblockio/audit_user_turn_marker
 ```
 
-The registry is the **only sanctioned distribution channel** for this family — see [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails) for how the templates are used, and `seed/audit-set-v1/` in the repository for replaying the committed set into your own registry.
+The registry is the **only sanctioned distribution channel** for this family — see [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) for how the templates are used, and `seed/audit-set-v1/` in the repository for replaying the committed set into your own registry.
 
 ## Non-goals
 
@@ -224,10 +227,10 @@ The registry is the **only sanctioned distribution channel** for this family —
 - No plugin or WASM module distribution.
 - No authentication or API keys on the write path: every write is a signed tree that authenticates itself.
 
-## See Also
+## See also
 
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the protocol engine the registry distributes templates for
-- [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family end to end
+- [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family end to end
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity, hashing, and derivation
-- [Quickstart](/docs/v4.0.0/quickstart) — first steps with the published components
+- [Quick Start](/docs/v4.0.0/quickstart) — first steps with the published components
 - [aqua-template-registry on GitHub](https://github.com/inblockio/aqua-template-registry) — source, seed set, and full API documentation

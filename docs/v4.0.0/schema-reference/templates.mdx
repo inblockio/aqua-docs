@@ -11,32 +11,32 @@ A **template** declares a type. It is itself a revision: a JSON Schema for the p
 
 The normative source is the protocol specification in the `aqua-rs-sdk-core` repository; this page is the readable reference. Where they disagree, [03 — Templates](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/03-templates.md) wins.
 
-## Template Identity
+## Template identity
 
-The identity of a template — its **template hash** — is the hash of its own canonical form ([Hashing & Canonicalization](/docs/v4.0.0/schema-reference/hashing)), computed **always with SHA3-256**, regardless of any tree's algorithm and regardless of the template's own `method` field. The identity is used in two renderings:
+The identity of a template — its **template hash** — is the hash of its own canonical form ([Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing)), computed **always with SHA3-256**, regardless of any tree's algorithm and regardless of the template's own `method` field. The identity is used in two renderings:
 
 - the **bare digest** (32 bytes) in catalogs and ledgers;
 - the **full multihash** (`0x1620…`) everywhere on the wire: as the naming value (`revision_type`) of object revisions, in `derives_from` and `ancestry`, in anchor structural links, and as the template's key in its own tree.
 
 Because the identity is a content hash, *any* change to a template — schema, bounds, description strings, `nonce`, `local_timestamp` — mints a new type. Template authors MUST therefore pin `nonce` and `local_timestamp` to fixed literals; a freshly generated value would create a new type identity on every build.
 
-## Template Trees
+## Template trees
 
 A template is distributed as a **single-revision tree**: one template revision keyed by its full SHA3-256 multihash, with no anchor and no `previous_revision`. Derivation hierarchy is expressed *inside* the template, never through chain structure — chaining a template to any parent revision would change its content hash and destroy its identity.
 
 A template revision keyed under a BLAKE3-256 multihash is invalid: identity is SHA3-256, so hash verification fails.
 
-## `template_meta` and the Bootstrap
+## `template_meta` and the bootstrap
 
 `template_meta` is the template-of-templates. Every template revision declares as its naming value (`revision_type`) the full multihash of `template_meta`:
 
-```
+```text
 0x1620f3040850a8836717dd73e87d046723e11f9e9870e3b2e246803ad842fbf01155
 ```
 
 with exactly one exception: `template_meta` itself cannot name its own content hash, so it declares the **genesis bootstrap hash** — the SHA3-256 multihash of the ASCII string `aqua:genesis:template_meta`:
 
-```
+```text
 0x162087ea911a93f2698563b68b860f33fd7a568ca2391d4a227b532812d496039e74
 ```
 
@@ -103,14 +103,14 @@ Resolution is nearest-declaration-wins: a template's effective bounds are its ow
 
 **Enforcement status.** In the core profile, declared bounds and the ceilings above are normative limits on producers, but their enforcement is **advisory**: the core verification procedure does not count revisions, branches, or links against them. Runtime environments that admit revisions incrementally SHOULD enforce effective bounds at admission time; verifiers MAY enforce bounds and ceilings and reject trees that exceed them.
 
-## Typing Object Revisions
+## Typing object revisions
 
 An object revision claims its type through its naming value: `revision_type` = the template's full multihash. Verification of an object revision requires **both**:
 
 1. the naming value equals the resolved template's identity (recomputed, not trusted); and
 2. the object's `payloads` conforms to the template's `schema` (JSON Schema draft 2020-12).
 
-### Template Resolution
+### Template resolution
 
 Templates are resolved in this order, identical at creation and verification:
 
@@ -118,7 +118,7 @@ Templates are resolved in this order, identical at creation and verification:
 2. the verifier's **catalog** of built-in templates (keyed by bare SHA3-256 digest);
 3. supplied **linked trees** / template sources.
 
-At creation, typed trees reference their template via the genesis anchor's structural links and do **not** embed it; embedding happens only in export ([Self-Descriptive Artifacts](#self-descriptive-artifacts)).
+At creation, typed trees reference their template via the genesis anchor's structural links and do **not** embed it; embedding happens only in export ([Self-descriptive artifacts](#self-descriptive-artifacts)).
 
 Three failure conditions arise from resolution and validation:
 
@@ -130,7 +130,7 @@ Three failure conditions arise from resolution and validation:
 
 A verifier MAY recognize an unresolvable hash as a known template of a richer profile it does not implement and say so in its diagnostics, but the machine-readable outcome MUST remain `TEMPLATE_NOT_FOUND` — a verifier is never more permissive because the missing template is *known*-missing. `ANCESTOR_TEMPLATE_NOT_FOUND` exists because a child MUST NOT silently bypass invariants declared by a parent it cannot see.
 
-## Compute Declarations
+## Compute declarations
 
 A template MAY carry a `verification` member declaring computations to be executed by a WASM runtime (state machines over tree content). Its wire shape:
 
@@ -150,7 +150,7 @@ The core profile does not execute compute. Its obligations are:
 
 No template in the shipped catalog carries a compute declaration, so this rule fires only for third-party templates.
 
-## The Shipped Catalog
+## The shipped catalog
 
 The core profile ships 19 templates. Their identities (bare SHA3-256 digests) are normative:
 
@@ -178,11 +178,11 @@ The core profile ships 19 templates. Their identities (bare SHA3-256 digests) ar
 
 Of the 19, **14 are resolvable by naming value** in a core-profile verifier's catalog: `file`, the four concrete signature templates, `audit_artifact`, and T1–T8. The remaining five (`template_meta`, `anchor_template`, `signature_base`, `audit_round_anchor`, `audit_session_close`) are shipped and hash-pinned but deliberately outside the resolution catalog: nothing resolves an object's type through them by default. Trees using `audit_round_anchor` or `audit_session_close` carry or link their templates like any registry template.
 
-The eleven audit templates form one family rooted at `audit_artifact` (each concrete template derives from it with an ancestry of exactly one entry). They give AI-agent workflows verifiable, per-turn audit trails; see [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails). This family is a deliberate, bounded fork of the audit family published by richer Aqua profiles: the constraint content is identical, but the ancestry is re-rooted at `audit_artifact`, so all eleven identities differ from their full-profile counterparts. A verifier presented with a full-profile audit hash resolves nothing and reports `TEMPLATE_NOT_FOUND`.
+The eleven audit templates form one family rooted at `audit_artifact` (each concrete template derives from it with an ancestry of exactly one entry). They give AI-agent workflows verifiable, per-turn audit trails; see [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails). This family is a deliberate, bounded fork of the audit family published by richer Aqua profiles: the constraint content is identical, but the ancestry is re-rooted at `audit_artifact`, so all eleven identities differ from their full-profile counterparts. A verifier presented with a full-profile audit hash resolves nothing and reports `TEMPLATE_NOT_FOUND`.
 
 **Distribution.** The sanctioned distribution channel for the audit family is the [template registry](/docs/v4.0.0/dev-tools/template-registry) (`aqua-template-registry`); the catalog resolvability of `audit_artifact` and T1–T8 is a transitional convenience, not a protocol guarantee. Producers MUST NOT rely on any verifier's catalog beyond the machinery templates; the interoperable way to ship a tree is self-descriptive export or explicit template sources.
 
-## Authoring Your Own Template
+## Authoring your own template
 
 The condensed flow, from the SDK's [template authoring guide](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/docs/template-authoring.md) (data-only templates; WASM-carrying templates require the full `aqua-rs-sdk`):
 
@@ -207,7 +207,7 @@ For consumers beyond receivers of your exported trees, publish the template tree
 </Step>
 </Steps>
 
-## Self-Descriptive Artifacts
+## Self-descriptive artifacts
 
 A tree can be exported as a **self-descriptive artifact**: a tree into which every referenced template — and every ancestor of every referenced template — is embedded as an ordinary template revision, keyed by its full multihash. Five normative rules:
 
@@ -219,10 +219,10 @@ A tree can be exported as a **self-descriptive artifact**: a tree into which eve
 
 Embedding changes no revision: templates enter the artifact under their own identities, and every existing hash and signature remains valid.
 
-## See Also
+## See also
 
-- [Hashing & Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how the template hash is computed
+- [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how the template hash is computed
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds and how `revision_type` classifies them
 - [Verification](/docs/v4.0.0/schema-reference/verification) — policies, stages, and the error vocabulary
 - [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publishing and retrieving templates by hash
-- [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family in practice
+- [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family in practice

@@ -5,7 +5,7 @@ icon: "door-open"
 sidebar_position: 1
 ---
 
-**Aqua Protocol** is an open protocol for data accountability and provenance. It records data as **AquaTrees**: portable, cryptographically verifiable trees of revisions that can be exchanged across systems and checked by anyone who holds them — no central authority required.
+**Aqua Protocol** is an open protocol for data accountability and provenance. It records data as **Aqua trees**: portable, cryptographically verifiable trees of revisions that can be exchanged across systems and checked by anyone who holds them — no central authority required.
 
 <Callout type="warning" title="Experimental release">
 Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
@@ -13,7 +13,7 @@ Aqua Protocol v4 is under active development. The published components — <code
 
 ## What is Aqua Protocol?
 
-The Aqua Protocol is a foundational framework for building distributed trust networks. By leveraging hash chains and cryptographic signatures, Aqua enables scalable, trustless verification of data integrity and provenance. It empowers developers and innovators to create applications that certify, attest, and secure data in an open and decentralized way.
+Aqua Protocol is a framework for building distributed trust networks. It uses hash chains and cryptographic signatures to make data integrity and provenance verifiable without a trusted intermediary, and it is the foundation for applications that certify, attest to, and secure data in an open, decentralized way.
 
 Trust can be built by relying on hashing and signature mechanisms or by delegating to a mutually trusted party. Aqua Protocol handles both scenarios, giving you flexibility in how you establish and verify trust.
 
@@ -23,19 +23,19 @@ Aqua Protocol is made possible by crypto as in _cryptography_. The protocol neit
 
 ## How it works
 
-At its core, Aqua creates portable hash-linked structures called **AquaTrees** that record a gapless history of data revisions. Every revision is one of four kinds — **object** (typed data), **template** (the schema that defines a type), **signature** (a cryptographic endorsement), or **anchor** (a structural link between revisions and trees). Each revision references its predecessor by hash, so a modification anywhere in the history is immediately detectable.
+At its core, Aqua creates portable hash-linked structures called **Aqua trees** (written `AquaTree` in code) that record a gapless history of data revisions. Every revision is one of four kinds — **object** (typed data), **template** (the schema that defines a type), **signature** (a cryptographic endorsement), or **anchor** (a structural link between revisions and trees). Each revision after the first references its predecessor by hash, so a modification anywhere in the history is immediately detectable.
 
-AquaTrees are plain JSON. They can be stored, exchanged, and verified anywhere: verification is a local computation over the tree (and any trees it links to), not a call to a service.
+Aqua trees are plain JSON. They can be stored, exchanged, and verified anywhere: verification is a local computation over the tree (and any trees it links to), not a call to a service.
 
 Key capabilities of the v4 core profile:
 
-- **Tamper-evident history** — every revision embeds the hash of its predecessor; changing any byte anywhere breaks the chain.
+- **Tamper-evident history** — every revision after the first links to its predecessor by hash; a change to any byte anywhere breaks verification.
 - **Typed data** — object revisions conform to templates (JSON Schema) identified by hash, so both sides of an exchange agree on structure.
 - **Cryptographic signatures** — four suites: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn P-256, with signer identities expressed as DIDs.
 - **Selective disclosure** — tree-hashed revisions can be shared with individual fields redacted while the rest stays verifiable.
-- **Portable verification** — trees are self-contained; the verifier needs the data, not an account on a platform.
+- **Portable verification** — trees can be exported self-descriptively, so they verify anywhere; the verifier needs the data, not an account on a platform.
 
-The [Concepts](/docs/v4.0.0/concepts) page builds the full mental model; the [Schema Reference](/docs/v4.0.0/schema-reference/introduction) is the readable companion to the normative specification.
+The [Core Concepts](/docs/v4.0.0/concepts) page builds the full mental model; the [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) is the readable companion to the normative specification.
 
 ## What is available today
 
@@ -59,7 +59,7 @@ aqua-rs-sdk-core = { git = "https://github.com/inblockio/aqua-rs-sdk-core" }
 
 **Proof, not platforms.** Records are secured by hash chains and cryptographic signatures. Verification requires no blockchain and no central authority: anyone holding the data can check it independently.
 
-**Provenance that travels.** Every revision links to the one before it, forming a portable, gapless history of origin and change. Integrity stays checkable wherever the data goes.
+**Provenance that travels.** Each new revision links to the one before it, forming a portable, gapless history of origin and change. Integrity stays checkable wherever the data goes.
 
 **Open by design.** An open standard with open-source implementations. Only hashes ever need to leave your hands, so the data itself stays private and under your control.
 
@@ -70,38 +70,38 @@ aqua-rs-sdk-core = { git = "https://github.com/inblockio/aqua-rs-sdk-core" }
     icon="rocket"
     href="/docs/v4.0.0/quickstart"
   >
-    Create, sign, and verify your first AquaTree in Rust
+    Create, sign, and verify your first Aqua tree in Rust
   </Card>
 
-  <Card title="Concepts"
+  <Card title="Core Concepts"
     icon="brain"
     href="/docs/v4.0.0/concepts"
   >
     Revisions, trees, templates, and the trust model
   </Card>
 
-  <Card title="SDK Core"
-    icon="package"
+  <Card title="aqua-rs-sdk-core"
+    icon="code"
     href="/docs/v4.0.0/dev-tools/sdk-core"
   >
     The aqua-rs-sdk-core crate: API surface and usage
   </Card>
 
   <Card title="Template Registry"
-    icon="library"
+    icon="package"
     href="/docs/v4.0.0/dev-tools/template-registry"
   >
     Publish and resolve templates by publisher DID
   </Card>
 
-  <Card title="Agent Audit Trails"
+  <Card title="Audit Trails for AI Agents"
     icon="bot"
     href="/docs/v4.0.0/dev-tools/agent-audit-trails"
   >
     Record what an AI agent did as verifiable Aqua trees
   </Card>
 
-  <Card title="Schema Reference"
+  <Card title="Protocol Reference"
     icon="book-open"
     href="/docs/v4.0.0/schema-reference/introduction"
   >
@@ -135,10 +135,10 @@ Aqua Protocol is open source and community-driven. Feedback, bug reports, code, 
 - **Email**: [info@inblock.io](mailto:info@inblock.io) — reach the team directly
 - **X**: [x.com/inblockio](https://x.com/inblockio) — announcements and progress
 
-## See Also
+## See also
 
 - [Quick Start](/docs/v4.0.0/quickstart) — first steps with the Rust core
-- [Concepts](/docs/v4.0.0/concepts) — the v4 data model at a glance
+- [Core Concepts](/docs/v4.0.0/concepts) — the v4 data model at a glance
 - [Release Status & Versioning](/docs/v4.0.0/version-info) — scope and guarantees of this release
-- [SDK Core](/docs/v4.0.0/dev-tools/sdk-core) — the published crate in detail
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the published crate in detail
 - [Aqua v3 introduction](/docs/v3.0.2/introduction) — the stable release

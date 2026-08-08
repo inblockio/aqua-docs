@@ -83,7 +83,7 @@ A verifier MUST, in order:
 3. **Algorithm recovery** — decode `revision_hash` under the strict multihash rules; reject any malformation.
 4. **Leaf reconstruction** — for each entry, in `index` order:
 
-   ```
+   ```text
    Disclosed: leaf = HASH(0x00 || HASH(0x03 || path) || HASH(0x02 || salt || value))
    Redacted:  leaf = HASH(0x00 || HASH(0x03 || path) || value_commit)
    ```
@@ -197,7 +197,7 @@ Any other revision (non-audit content) is **Full**: the preset takes no position
 
 ### Derivation-aware profiles
 
-A **disclosure profile** generalizes the preset to a closed world with template-derivation awareness: an object revision whose template family is not named by the profile is *redacted*, not disclosed (disclosing unknown content is the failure mode being designed out), revisions are classified by walking the template's **verified** derivation lineage — resolving each ancestor by hash from verified sources, never trusting self-declared ancestry, and sealing the revision fail-closed if the lineage cannot be resolved — and every field-redacted object revision force-discloses `/revision_type` (it is a hash, not sensitive, and consumers need the type to interpret the artifact). Family rules apply to every descendant template, and a per-revision Full directive cannot override an inherited family redaction rule. See the [specification §5.3](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/06-selective-disclosure.md) for the full rules.
+A **disclosure profile** generalizes the preset to a closed world with template-derivation awareness: an object revision whose template family is not named by the profile is *redacted*, not disclosed (disclosing unknown content is the failure mode being designed out). Revisions are classified by walking the template's **verified** derivation lineage — resolving each ancestor by hash from verified sources, never trusting self-declared ancestry, and sealing the revision fail-closed if the lineage cannot be resolved. Every field-redacted object revision force-discloses `/revision_type` (it is a hash, not sensitive, and consumers need the type to interpret the artifact). Family rules apply to every descendant template, and a per-revision Full directive cannot override an inherited family redaction rule. See the [specification §5.3](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/06-selective-disclosure.md) for the full rules.
 
 ## Security rules
 
@@ -220,10 +220,10 @@ The disclosure API of [`aqua-rs-sdk-core`](/docs/v4.0.0/dev-tools/sdk-core):
 | `export_selective_tree` | Export a tree under a disclosure policy. |
 | `verify_selective_tree(&selective)` | Verify a selective tree's integrity and chain continuity. |
 
-## See Also
+## See also
 
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — the leaf commitments, salts, and Merkle construction that redaction is built on
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, methods, and tree structure
 - [Verification](/docs/v4.0.0/schema-reference/verification) — full verification and what selective artifacts opt out of
-- [SDK Core](/docs/v4.0.0/dev-tools/sdk-core) — installing and using the disclosure API
-- [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family the pseudonymous preset targets
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — installing and using the disclosure API
+- [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family the pseudonymous preset targets

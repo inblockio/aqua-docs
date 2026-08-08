@@ -65,7 +65,7 @@ The registry deliberately validates coherence, not trustworthiness: every write 
 Two changes are already announced and worth planning for:
 
 1. **Audit templates move to registry-only distribution.** The sanctioned distribution channel for the audit/agent template family is the template registry. This release still carries in-crate copies (they back the compatibility test suite), so built-in resolution of these templates still succeeds today — do not depend on it: it is not part of the supported contract, and removal from the catalog is a tracked breaking change.
-2. **Audit-family harmonisation will change template hashes.** The audit templates in this release are a deliberate, test-bounded fork of the full SDK's family, pending upstream harmonisation. When the two families are reunified, the audit template hashes will change. Treat current audit template hashes as pinned per release, not as permanent identifiers.
+2. **Audit-family harmonization will change template hashes.** The audit templates in this release are a deliberate, test-bounded fork of the full SDK's family, pending upstream harmonization. When the two families are reunified, the audit template hashes will change. Treat current audit template hashes as pinned per release, not as permanent identifiers.
 
 ## Relationship to Aqua v3
 
@@ -83,10 +83,10 @@ The full `aqua-rs-sdk` — which extends the published core with the WASM comput
 
 The Aqua CLI and the hosted Aquafier application belong to the v3-era toolchain today; they are not part of the v4 release. For current CLI and Aquafier usage, see the [v3 tooling documentation](/docs/v3.0.2/tooling).
 
-## See Also
+## See also
 
 - [Welcome](/docs/v4.0.0/welcome) — what Aqua Protocol v4 is
-- [SDK Core](/docs/v4.0.0/dev-tools/sdk-core) — the published crate in detail
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the published crate in detail
 - [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — the distribution layer
 - [Verification](/docs/v4.0.0/schema-reference/verification) — policies and decision points in detail
 - [Aqua v3 introduction](/docs/v3.0.2/introduction) — the stable release

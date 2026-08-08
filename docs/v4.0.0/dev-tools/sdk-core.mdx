@@ -8,7 +8,7 @@ redirect_from:
   - /docs/v4.0.0/development
 ---
 
-`aqua-rs-sdk-core` is a minimal, WASM-free Rust implementation of the Aqua Protocol core: verifiable, portable data trees with anchors, typed objects, templates, cryptographic signatures, and selective disclosure. It is a **compatible subset** of the full `aqua-rs-sdk` (scheduled for a later publication): template hashes, canonicalization, and verification semantics are bit-for-bit identical, and that compatibility is not aspirational — it is enforced by a cross-implementation test suite (`compat-tests/`) that runs both crates side by side and cross-verifies signed trees in both directions.
+`aqua-rs-sdk-core` is a minimal, WASM-free Rust implementation of the Aqua Protocol core: verifiable, portable data trees with anchors, typed objects, templates, cryptographic signatures, and selective disclosure. It is a **compatible subset** of the full `aqua-rs-sdk` (scheduled for a later publication): canonicalization and verification semantics are identical, and the machinery and signature templates it shares with the full SDK are byte-identical — the eleven audit templates, however, are a deliberate, test-bounded fork whose hashes differ from their full-SDK counterparts, pending upstream harmonization. That compatibility is not aspirational — it is enforced by a cross-implementation test suite (`compat-tests/`) that runs both crates side by side and cross-verifies signed trees in both directions.
 
 The crate builds as a plain `rlib` — no `wasm-bindgen`, no `wasmi`, no `cdylib` — with 18 runtime dependencies, licensed Apache-2.0. Source: [github.com/inblockio/aqua-rs-sdk-core](https://github.com/inblockio/aqua-rs-sdk-core).
 
@@ -36,7 +36,7 @@ hex = "0.4"
 
 | Flag | Default | Purpose |
 |---|---|---|
-| `native` | on | Enables the EIP-191 secp256k1 signer (`SigningCredentials::Secp256k1`, `Secp256k1Signer`) |
+| `native` | on | Enables the EIP-191 secp256k1 signer (`Secp256k1Signer`). The `SigningCredentials::Secp256k1` variant exists regardless of the feature; without `native`, signing with it fails at runtime with a `NotSupported` error |
 
 ## The Aquafier entry point
 
@@ -49,7 +49,7 @@ hex = "0.4"
 | `hash_type` | `HashType::Sha3_256` | Hash algorithm for new trees (`Blake3_256` is opt-in); existing trees keep the algorithm they were created with |
 | `verification_policy` | `VerificationPolicy::strict()` | Governs the relaxable verification decision points (`strict()`, `offline()`, `debug()`, or custom); structural validation and hash integrity always hard-fail regardless of policy |
 
-The method reference below follows the task flow: create, sign, verify, link, export, disclose. Examples are fragments (`// …` marks elided context); a complete runnable program is in the [Quickstart](/docs/v4.0.0/quickstart).
+The method reference below follows the task flow: create, sign, verify, link, export, disclose. Examples are fragments (`// …` marks elided context); a complete runnable program is in the [Quick Start](/docs/v4.0.0/quickstart).
 
 ---
 
@@ -301,6 +301,8 @@ assert!(result.is_verified());
 
 ---
 
+## Linking
+
 ### link_aqua_tree()
 
 Links one or more Aqua trees to the current tree via an Anchor revision whose `structural_links` contain the tip hashes of the linked trees, enabling cross-tree verification.
@@ -320,7 +322,7 @@ pub fn link_aqua_tree(
 - `link_aqua_tree_wrapper`: the trees being linked
 - `method`: `None` uses the configured default (`Scalar`)
 
-**Returns:** the updated `Tree`. See [Anchors & Links](/docs/v4.0.0/schema-reference/anchors-and-links) for the structural-versus-compositional link semantics.
+**Returns:** the updated `Tree`. See [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) for the structural-versus-compositional link semantics.
 
 ---
 
@@ -364,7 +366,7 @@ let bare = aquafier.export_tree(&tree, &[], &ExportOptions::bare())?;
 
 ### redact_revision()
 
-Produces a `RedactedRevision` from a `Tree`-method revision, disclosing only the listed field paths; every other leaf is replaced by its value commitment. Only `method: "tree"` revisions can be field-redacted, and `/nonce` must never be disclosed (the request is refused).
+Produces a `RedactedRevision` from a tree-method revision, disclosing only the listed field paths; every other leaf is replaced by its value commitment. Only `method: "tree"` revisions can be field-redacted, and `/nonce` must never be disclosed (the request is refused).
 
 **Signature:**
 ```rust
@@ -405,27 +407,16 @@ cargo run --features native --bin verify-templates       # recompute and check t
 cargo run --example agent_audit_trail --features native  # end-to-end agent audit trail
 ```
 
-`examples/agent_audit_trail.rs` is the full walkthrough of the audit template family: four `did:key` identities, T1–T8 artifacts as signed trees, a Merkle round anchor, session close, self-descriptive export, verification of every tree, and pseudonymous redaction — see [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails). The compat suite (`cargo test --manifest-path compat-tests/Cargo.toml`) requires a sibling checkout of the full `aqua-rs-sdk`, which is not yet public.
+`examples/agent_audit_trail.rs` is the full walkthrough of the audit template family: four `did:key` identities, T1–T8 artifacts as signed trees, a Merkle round anchor, session close, self-descriptive export, verification of every tree, and pseudonymous redaction — see [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails). The compat suite (`cargo test --manifest-path compat-tests/Cargo.toml`) requires a sibling checkout of the full `aqua-rs-sdk`, which is not yet public.
 
 ## What is not included
 
-Excluded capabilities answer explicitly, never silently permissively:
+WASM compute execution, the full-SDK template set, timestamping, the policy engine, the daemon/forest runtime, and a template registry client are outside this crate, and every exclusion answers explicitly — a fail-closed error, an explicit "not supported" message, or a policy-governed condition, never a silent pass. The exclusions table with the per-capability behavior lives in [Release Status & Versioning](/docs/v4.0.0/version-info). The invariant behind it: **core is never more permissive than the full SDK under the same verification policy.**
 
-| Excluded | Behavior in core |
-|---|---|
-| WASM compute execution | Any template whose chain carries a `verification` section is rejected with `COMPUTE_UNSUPPORTED`; core has no WASM runtime and fails closed rather than guessing |
-| Known full-SDK templates | Hashes the full SDK publishes but core does not ship answer through a built-in lookup with an explicit "not supported for verification by aqua-rs-sdk-core: it depends on &lt;module&gt;" message, governed by the `template_not_found` policy decision |
-| Timestamping | No timestamp creation, no TSA or EVM providers; incoming timestamp revisions are still classified (`RevisionKind::Timestamp`), then `strict()` rejects and `offline()` tolerates with a warning |
-| Policy engine | Not included (the `VerificationPolicy` decision points are part of the verification pipeline, not the policy engine) |
-| Daemon / forest runtime | Not included |
-| Template registry client | Not bundled; template distribution is the separate [Template Registry](/docs/v4.0.0/dev-tools/template-registry) project |
+## See also
 
-The invariant behind this table: **core is never more permissive than the full SDK under the same verification policy.**
-
-## See Also
-
-- [Quickstart](/docs/v4.0.0/quickstart) — a complete first program with this crate
+- [Quick Start](/docs/v4.0.0/quickstart) — a complete first program with this crate
 - [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publishing and importing templates
-- [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails) — the T1–T8 audit template family in practice
+- [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the T1–T8 audit template family in practice
 - [Verification](/docs/v4.0.0/schema-reference/verification) — outcomes, stages, and policies in detail
 - [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — the redaction model behind the disclosure API

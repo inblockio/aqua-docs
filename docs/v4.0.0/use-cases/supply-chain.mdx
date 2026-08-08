@@ -1,28 +1,29 @@
 ---
 title: "Supply Chain Tracking"
-description: "End-to-end traceability and provenance verification for supply chain operations"
+description: 'End-to-end traceability and provenance verification for supply chain operations.'
+icon: "truck"
 sidebar_position: 4
 ---
 
 Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded as a signed revision, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
 
-## Core Capabilities
+## Core capabilities
 
-### End-to-End Traceability
-Track products from origin to destination with cryptographic proof at each step. Every transfer, transformation, and quality check is recorded in an immutable chain, creating a complete product history that can be independently verified.
+### End-to-end traceability
+Track products from origin to destination with cryptographic proof at each step. Every transfer, transformation, and quality check is recorded in a tamper-evident Aqua tree, creating a complete product history that can be independently verified.
 
-### Multi-Party Coordination
-Supply chains involve manufacturers, distributors, retailers, regulators, and consumers. Aqua Protocol enables all parties to contribute to the chain while maintaining data integrity, without requiring a central authority.
+### Multi-party coordination
+Supply chains involve manufacturers, distributors, retailers, regulators, and consumers. Aqua Protocol enables all parties to contribute to the tree while maintaining data integrity, without requiring a central authority.
 
-### Provenance Verification
+### Provenance verification
 Prove the origin and authenticity of products cryptographically. Consumers and businesses can verify that products are genuine, sourced ethically, and meet quality standards without trusting intermediaries.
 
-### Real-Time Transparency
-All stakeholders can verify the current state and history of products in real-time. Hash-linked, signed revisions fix the order of supply chain events as they occur; blockchain timestamping is available with the full SDK, scheduled for later publication.
+### Real-time transparency
+All stakeholders can verify the current state and history of products in real time. Hash-linked, signed revisions fix the order of supply chain events as they occur; blockchain timestamping ships with the full aqua-rs-sdk, scheduled for a later publication.
 
-## Use Cases by Industry
+## Use cases by industry
 
-### Food & Agriculture
+### Food and agriculture
 
 **Farm-to-Table Tracking**
 - Record harvest timestamps and origin farm information
@@ -51,7 +52,7 @@ All stakeholders can verify the current state and history of products in real-ti
 ### Pharmaceuticals
 
 **Drug Authentication**
-- Prevent counterfeit medications from entering supply chain
+- Detect counterfeit medications in the supply chain
 - Verify pharmaceutical manufacturer and production batch
 - Track medication from factory to pharmacy
 - Enable patients to verify medication authenticity
@@ -80,7 +81,7 @@ All stakeholders can verify the current state and history of products in real-ti
 - Track components from suppliers to assembly
 - Verify authenticity of critical components
 - Manage bill of materials with cryptographic proof
-- Prevent counterfeit parts from entering production
+- Detect counterfeit parts before they enter production
 
 **Quality Control**
 - Record inspection results at each manufacturing stage
@@ -100,7 +101,7 @@ All stakeholders can verify the current state and history of products in real-ti
 - Prove ethical sourcing practices
 - Manage supplier risk with documented history
 
-### Logistics & Distribution
+### Logistics and distribution
 
 **Shipment Tracking**
 - Record custody transfers between carriers
@@ -109,7 +110,7 @@ All stakeholders can verify the current state and history of products in real-ti
 - Document delivery with signed revision records
 
 **Customs and Border Control**
-- Provide immutable documentation for customs
+- Provide tamper-evident documentation for customs
 - Prove product origin for tariff classification
 - Streamline border crossings with verified data
 - Reduce customs delays with cryptographic proof
@@ -126,65 +127,65 @@ All stakeholders can verify the current state and history of products in real-ti
 - Maintain lot and serial number traceability
 - Integrate with ERP systems for real-time updates
 
-## Key Benefits
+## Key benefits
 
-### Eliminate Counterfeits
-Counterfeit products cost industries billions annually. Aqua Protocol makes counterfeiting economically infeasible by requiring cryptographic proof at each supply chain step. Fake products cannot produce valid Aqua chains, making them easily identifiable.
+### Detect counterfeits
+Counterfeit products cost industries billions annually. A counterfeiter can produce a self-consistent Aqua tree of their own; what they cannot do is forge the legitimate manufacturer's signatures, because forging another party's signature is computationally infeasible. Verifiers who check that records are signed by the expected manufacturer keys can therefore identify fakes at any step of the supply chain.
 
-### Improve Recall Efficiency
+### Improve recall efficiency
 When safety issues arise, rapid recall is critical. Aqua Protocol enables precise identification of affected products, reducing recall scope and cost. Complete provenance data shows exactly which batches are impacted and where they were distributed.
 
-### Increase Consumer Trust
-Consumers increasingly demand transparency about product origins and manufacturing. Scannable QR codes linked to Aqua chains let customers verify authenticity, ethical sourcing, and quality standards, building brand trust.
+### Increase consumer trust
+Consumers increasingly demand transparency about product origins and manufacturing. Scannable QR codes linked to Aqua trees let customers verify authenticity, ethical sourcing, and quality standards, building brand trust.
 
-### Streamline Compliance
-Regulatory compliance requires extensive documentation and audit trails. Aqua Protocol automatically creates tamper-proof records that satisfy regulators, reducing compliance costs and audit preparation time.
+### Streamline compliance
+Regulatory compliance requires extensive documentation and audit trails. Aqua Protocol automatically creates tamper-evident records that support regulatory audits, reducing compliance costs and audit preparation time.
 
-### Enable Ethical Sourcing
-Prove that products meet ethical standards for labor practices, environmental impact, and sustainable sourcing. Immutable records prevent "ethics washing" and provide verifiable proof of responsible practices.
+### Enable ethical sourcing
+Prove that products meet ethical standards for labor practices, environmental impact, and sustainable sourcing. Signed, tamper-evident records counter "ethics washing" with verifiable documentation of responsible practices.
 
-### Reduce Liability
-Complete documentation of supply chain events reduces liability exposure. When disputes arise, cryptographic proof shows exactly what happened, when, and who was responsible.
+### Reduce liability
+Complete documentation of supply chain events reduces liability exposure. When disputes arise, the signed record shows what was recorded, when, and by whom.
 
-## How It Works
+## How it works
 
-### 1. Product Registration
+### 1. Product registration
 When a product enters the supply chain:
 - Genesis revision is created with product identifier
 - Initial metadata recorded (SKU, batch number, origin)
 - Product data is validated against a product template
 - Manufacturer signs the genesis revision
-- Product receives unique Aqua chain
+- Product receives its own Aqua tree
 
-### 2. Supply Chain Events
+### 2. Supply chain events
 As the product moves through the supply chain:
 - Each event creates a new revision (transfer, inspection, processing)
 - Event data includes timestamp, location, responsible party
-- Each party signs their contributions to the chain
+- Each party signs their contributions to the tree
 - Related records are connected with anchor revisions and links
-- Chain grows to include complete product history
+- The tree grows to include the complete product history
 
-### 3. Multi-Party Signatures
+### 3. Multi-party signatures
 When custody transfers between parties:
 - Sending party signs transfer revision
 - Receiving party verifies and countersigns
 - Both signatures reference the same state
-- The chain preserves the order of both signatures
-- Prevents disputes about transfer content or order
+- The tree preserves the order of both signatures
+- Reduces disputes about transfer content or order
 
 ### 4. Verification
 At any point, stakeholders can verify:
-- Scan product QR code to retrieve Aqua chain
+- Scan product QR code to retrieve the Aqua tree
 - Verify all cryptographic signatures
 - Check revision ordering and template conformance
-- Validate entire chain integrity
+- Validate the integrity of the entire tree
 - Confirm product authenticity and history
 
-## Real-World Scenarios
+## Real-world scenarios
 
-### Scenario 1: Pharmaceutical Supply Chain
+### Scenario 1: pharmaceutical supply chain
 
-**Challenge**: A pharmaceutical company must track medication from manufacturing through distribution to pharmacies while maintaining cold chain compliance and preventing counterfeits.
+**Challenge**: A pharmaceutical company must track medication from manufacturing through distribution to pharmacies while maintaining cold chain compliance and detecting counterfeits.
 
 **Solution**:
 - Each medication batch gets genesis revision when manufactured
@@ -192,11 +193,11 @@ At any point, stakeholders can verify:
 - Temperature monitors record readings as revisions
 - Each distributor transfer is signed by both parties
 - Pharmacies verify medication authenticity by scanning
-- Regulators can audit complete chain from manufacturer to patient
+- Regulators can audit the complete history from manufacturer to patient
 
-**Benefits**: Counterfeit prevention, cold chain compliance, regulatory audit trails, patient safety, streamlined recalls
+**Benefits**: Counterfeit detection, cold chain compliance, regulatory audit trails, patient safety, streamlined recalls
 
-### Scenario 2: Organic Food Certification
+### Scenario 2: organic food certification
 
 **Challenge**: Consumers want to verify that "organic" products are genuinely organic from farm to store, but current systems rely on paper certificates that can be forged.
 
@@ -210,7 +211,7 @@ At any point, stakeholders can verify:
 
 **Benefits**: Verified organic claims, consumer confidence, brand differentiation, premium pricing justification
 
-### Scenario 3: Automotive Parts Traceability
+### Scenario 3: automotive parts traceability
 
 **Challenge**: An automotive manufacturer needs to track critical safety components through multiple supplier tiers to ensure authenticity and enable recalls if defects are discovered.
 
@@ -219,12 +220,12 @@ At any point, stakeholders can verify:
 - Tier 2 supplier adds processing revisions with quality checks
 - Tier 1 supplier integrates components into assemblies with anchor revisions and links
 - OEM manufacturer links assemblies into final vehicles
-- Each VIN is linked to component Aqua chains
+- Each VIN is linked to component Aqua trees
 - Defective component traced to exact source and all affected vehicles
 
-**Benefits**: Counterfeit prevention, rapid recall execution, root cause analysis, supplier accountability, quality improvement
+**Benefits**: Counterfeit detection, rapid recall execution, root cause analysis, supplier accountability, quality improvement
 
-### Scenario 4: Coffee Supply Chain Transparency
+### Scenario 4: coffee supply chain transparency
 
 **Challenge**: Coffee roasters want to prove fair trade practices and sustainable sourcing to increasingly conscious consumers, but existing certification systems are opaque.
 
@@ -238,9 +239,9 @@ At any point, stakeholders can verify:
 
 **Benefits**: Verified ethical sourcing, consumer transparency, premium pricing, farmer accountability, brand storytelling
 
-## Integration Patterns
+## Integration patterns
 
-### ERP Systems
+### ERP systems
 Integrate Aqua Protocol with enterprise resource planning systems to automatically create revisions for inventory movements, production events, and quality checks.
 
 **Implementation**:
@@ -250,7 +251,7 @@ Integrate Aqua Protocol with enterprise resource planning systems to automatical
 - Shipping orders create transfer revisions
 - Quality inspections add signed quality revisions
 
-### IoT Sensors
+### IoT sensors
 Connect IoT devices to automatically record sensor data as revisions:
 - Temperature sensors for cold chain monitoring
 - GPS trackers for location updates
@@ -258,9 +259,9 @@ Connect IoT devices to automatically record sensor data as revisions:
 - Weight scales for quantity verification
 - Quality inspection equipment for automated testing
 
-Automated recorders and AI agents can sign their own contributions, producing verifiable machine provenance — see [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails).
+Automated recorders and AI agents can sign their own contributions, producing verifiable machine provenance — see [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails).
 
-### External Data Sources
+### External data sources
 Feed external data into supply chain records:
 - Weather data for agricultural provenance
 - Customs clearance status
@@ -268,7 +269,7 @@ Feed external data into supply chain records:
 - Third-party certification verification
 - Market pricing for timestamp-based valuation
 
-### Consumer Apps
+### Consumer apps
 Build consumer-facing applications that verify products:
 - Mobile apps with QR code scanning
 - Web portals for product history viewing
@@ -276,65 +277,65 @@ Build consumer-facing applications that verify products:
 - Smart packaging with NFC chips
 - Augmented reality product storytelling
 
-### Supplier Portals
-Create portals for suppliers to contribute to chains:
+### Supplier portals
+Create portals for suppliers to contribute to product trees:
 - Self-service revision creation
 - Document upload and signature
 - Certification management
 - Quality data submission
 - Real-time status visibility
 
-## Best Practices
+## Best practices
 
-### Genesis Creation
+### Genesis creation
 - Create genesis as early as possible in supply chain
 - Include comprehensive product metadata
 - Use templates for standardized, validated data
 - Sign genesis immediately to establish authenticity
 - Have auditors or regulators countersign genesis for high-value or regulated products
 
-### Event Granularity
+### Event granularity
 - Balance detail with practical overhead
 - Record all custody transfers
 - Document critical quality checkpoints
 - Capture regulatory compliance events
 - Skip routine events that don't add value
 
-### Multi-Party Coordination
+### Multi-party coordination
 - Establish clear protocols for handoffs
 - Both parties must sign custody transfers
 - Verify previous signatures before adding new ones
-- Communicate chain updates to all stakeholders
+- Communicate tree updates to all stakeholders
 - Maintain consistent timestamp standards
 
-### Data Privacy
-- Aqua chains store hashes, not sensitive content
+### Data privacy
+- Aqua trees store hashes, not sensitive content
 - Use the tree method for [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure)
-- Share chains only with authorized parties
+- Share trees only with authorized parties
 - Consider what metadata is included
 - Redact sensitive fields before sharing with external parties
 
-### Verification Strategy
+### Verification strategy
 - Verify products at key checkpoints
-- Check complete chain for high-value items
+- Check the complete tree for high-value items
 - Spot-check for routine items
 - Use the strict verification policy for critical events
 - Train staff on verification procedures
 
-### Batch Operations
+### Batch operations
 - Aggregate related products under a shared anchor revision
 - Group similar products into one verifiable batch structure
 - Balance aggregation granularity with per-item traceability
 - Implement automated batching in integration systems
 - Monitor batch sizes for optimization
 
-## Technical Advantages
+## Technical advantages
 
 ### Scalability
-- Object revisions are lightweight, one Aqua chain per product
+- Object revisions are lightweight, one Aqua tree per product
 - Anchor revisions with links enable hierarchical organization
 - Batch anchors aggregate many items into one verifiable structure
-- Offline verification after chain retrieval
+- Offline verification after tree retrieval
 - Distributed storage prevents bottlenecks
 
 ### Interoperability
@@ -346,44 +347,44 @@ Create portals for suppliers to contribute to chains:
 
 ### Flexibility
 - Template system for industry-specific schemas
-- Custom, template-defined revision types for unique requirements
+- Custom, template-defined revision kinds for unique requirements
 - Multiple signature methods for different parties
 - Hash algorithm choice (SHA3-256 default, BLAKE3-256 optional)
 - Extensible for future needs
 
 ### Security
-- SHA3-256 hashing prevents collision attacks
+- SHA3-256 hashing makes collision attacks computationally infeasible
 - Ed25519 and ECDSA signatures provide strong authentication
 - Hash-linked revisions make history tampering detectable
 - Merkle trees enable selective disclosure
 - Cryptographic proof instead of trust
 
-## Common Questions
+## Common questions
 
 **Q: How do we handle products without digital interfaces?**
-A: Use QR codes, NFC tags, or printed Aqua chain identifiers on packaging. The Aqua chain exists independently of the physical product. Low-cost printed codes work for most products.
+A: Use QR codes, NFC tags, or printed Aqua tree identifiers on packaging. The Aqua tree exists independently of the physical product. Low-cost printed codes work for most products.
 
 **Q: What if a supply chain participant doesn't want to use Aqua Protocol?**
-A: The chain can continue without them, but their contribution won't have cryptographic proof. This creates accountability - participants who don't use Aqua Protocol are less trustworthy. Market pressure encourages adoption.
+A: The record can continue without them, but their contribution won't carry cryptographic proof, and the gap is visible to anyone verifying the tree.
 
 **Q: How do we handle returns and reverse logistics?**
-A: Add revision documenting the return event, including reason and condition. The chain naturally grows to include forward and reverse movements, maintaining complete product history.
+A: Add revision documenting the return event, including reason and condition. The tree naturally grows to include forward and reverse movements, maintaining complete product history.
 
 **Q: Can we integrate with existing traceability systems?**
 A: Yes. Aqua Protocol can wrap existing systems, adding cryptographic proof to current tracking data. Legacy system data can be hashed and stored in revisions.
 
 **Q: What about supply chain privacy?**
-A: Aqua chains contain only hashes by default, not business-sensitive data. Share chains selectively with authorized parties. Use tree method for selective disclosure of specific fields to certain stakeholders.
+A: Aqua trees contain only hashes by default, not business-sensitive data. Share trees selectively with authorized parties. Use the tree method for selective disclosure of specific fields to certain stakeholders.
 
 **Q: How do we handle lost or damaged products?**
-A: Add revision documenting loss or damage event with relevant details. The Aqua chain preserves the history up to that point, supporting insurance claims and investigations.
+A: Add revision documenting loss or damage event with relevant details. The Aqua tree preserves the history up to that point, supporting insurance claims and investigations.
 
 **Q: Does verification require a blockchain or network connection?**
-A: No. Verification of chains works offline using cryptographic signatures and hashes. Blockchain and TSA timestamping is defined by the full protocol and ships with the full SDK, scheduled for later publication.
+A: No. Verification of trees works offline using cryptographic signatures and hashes. Blockchain and TSA timestamping is defined by the full protocol and ships with the full SDK, scheduled for a later publication.
 
-## See Also
+## See also
 
-- [Document Verification](/docs/v4.0.0/use-cases/document-verification) - Apply similar techniques to documents
-- [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) - Verify credentials and certifications
-- [Quick Start](/docs/v4.0.0/quickstart) - Get started with supply chain tracking
-- [Schema Reference](/docs/v4.0.0/schema-reference/introduction) - Technical specifications
+- [Document Verification](/docs/v4.0.0/use-cases/document-verification) — apply similar techniques to documents
+- [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) — verify credentials and certifications
+- [Quick Start](/docs/v4.0.0/quickstart) — get started with supply chain tracking
+- [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — technical specifications

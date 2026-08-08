@@ -1,26 +1,27 @@
 ---
 title: "Document Verification"
-description: "Aqua Protocol provides tamper-proof verification of document integrity through cryptographic proofs, enabling organizations to authenticate documents without relying on centralized authorities. Every document modification is recorded as a signed revision, creating an immutable audit trail."
+description: 'Tamper-evident document integrity and authenticity verification with hash-linked, signed revisions.'
+icon: "file-check"
 sidebar_position: 2
 ---
 
-## Core Capabilities
+## Core capabilities
 
-### Tamper-Proof Verification
-Once a document is notarized in the Aqua Protocol, any modification becomes immediately detectable. The cryptographic hash of the document content is stored in the revision chain, making it mathematically impossible to alter without detection.
+### Tamper-evident verification
+Once a document is recorded with the Aqua Protocol, any modification becomes detectable. The cryptographic hash of the document content is stored in the revision history, making the record tamper-evident: any alteration changes the hashes.
 
-### Timestamp Authentication
-Every document revision carries a local timestamp and a hash link to its predecessor, fixing the order of the document's history. Blockchain and TSA timestamping — cryptographic proof of when a document existed — is defined by the full protocol and ships with the full SDK, scheduled for later publication.
+### Timestamp authentication
+Every document revision carries a local timestamp and a hash link to its predecessor, fixing the order of the document's history. Blockchain and TSA timestamping — cryptographic proof of when a document existed — is defined by the full protocol and ships with the full SDK, scheduled for a later publication.
 
-### Permanent Audit Trails
-All document revisions, signatures, and anchors are permanently recorded in an immutable chain. This creates a complete history of the document lifecycle that can be independently verified.
+### Complete audit trails
+All document revisions, signatures, and anchors are recorded in a tamper-evident Aqua tree. This creates a complete history of the document lifecycle that can be independently verified.
 
-### Decentralized Validation
-Verification happens cryptographically without requiring trust in intermediaries. Anyone with the document and its Aqua chain can independently verify authenticity and integrity.
+### Decentralized validation
+Verification happens cryptographically without requiring trust in intermediaries. Anyone with the document and its Aqua tree can independently verify authenticity and integrity.
 
-## Use Cases by Industry
+## Use cases by industry
 
-### Legal Documents
+### Legal documents
 
 **Contract Authenticity**
 - Record when contracts were signed and in what order
@@ -29,7 +30,7 @@ Verification happens cryptographically without requiring trust in intermediaries
 - Maintain chain of custody for legal proceedings
 
 **Evidence Preservation**
-- Create tamper-proof records of digital evidence
+- Create tamper-evident records of digital evidence
 - Timestamp evidence collection
 - Maintain audit trails for admissibility
 - Prove evidence integrity in court
@@ -46,7 +47,7 @@ Verification happens cryptographically without requiring trust in intermediaries
 - Maintain auditable records for investigations
 - Satisfy e-discovery requirements
 
-### Business Applications
+### Business applications
 
 **Invoice Verification**
 - Authenticate invoices to prevent fraud
@@ -57,14 +58,14 @@ Verification happens cryptographically without requiring trust in intermediaries
 **Purchase Orders**
 - Verify PO authenticity between trading partners
 - Track PO modifications and approvals
-- Prevent unauthorized changes
+- Detect unauthorized changes
 - Create audit trails for procurement compliance
 
 **Financial Records**
 - Ensure integrity of financial statements
 - Track modifications to accounting records
 - Satisfy auditor requirements for record verification
-- Maintain SOX compliance with immutable audit logs
+- Maintain SOX compliance with tamper-evident audit logs
 
 **Regulatory Reporting**
 - Record submission of regulatory reports with signed revisions
@@ -72,18 +73,18 @@ Verification happens cryptographically without requiring trust in intermediaries
 - Satisfy audit requirements
 - Reduce compliance costs
 
-### Educational Credentials
+### Educational credentials
 
 **Diploma Authentication**
 - Provide instant verification of degree authenticity
-- Eliminate diploma mills and fraudulent credentials
+- Detect diploma-mill degrees and fraudulent credentials
 - Enable employers to verify qualifications
 - Reduce verification costs and time
 
 **Transcript Integrity**
-- Prevent transcript tampering
+- Detect transcript tampering
 - Allow secure sharing with third parties
-- Maintain permanent academic records
+- Maintain lasting academic records
 - Enable credential portability across institutions
 
 **Certificate Validation**
@@ -98,12 +99,12 @@ Verification happens cryptographically without requiring trust in intermediaries
 - Support credential stacking and micro-credentials
 - Facilitate credit transfers between institutions
 
-### Government Documents
+### Government documents
 
 **Identity Documents**
 - Authenticate passports and ID cards
 - Enable remote identity verification
-- Prevent identity fraud
+- Detect identity fraud
 - Support digital identity systems
 
 **License Verification**
@@ -122,181 +123,181 @@ Verification happens cryptographically without requiring trust in intermediaries
 - Ensure integrity of government records
 - Enable citizen verification of official documents
 - Maintain transparent government operations
-- Prevent records tampering
+- Detect records tampering
 
-## Key Benefits
+## Key benefits
 
-### Eliminate Single Points of Failure
-Traditional document verification systems rely on centralized databases that can fail, be hacked, or become unavailable. Aqua Protocol's decentralized approach distributes verification capability, ensuring documents can always be verified even if specific systems are offline.
+### No single point of failure
+Traditional document verification systems rely on centralized databases that can fail, be hacked, or become unavailable. Aqua Protocol's decentralized approach distributes verification capability, so documents can still be verified when specific systems are offline.
 
-### Maintain Document Provenance
-Every document modification is recorded with cryptographic proof of who made the change, when it occurred, and what was changed. This complete provenance trail answers questions about document history definitively.
+### Maintain document provenance
+Every document modification is recorded with cryptographic proof of who made the change, when it occurred, and what was changed. This complete provenance trail answers questions about document history.
 
-### Cryptographic Verification
-Verification relies on mathematical certainty rather than trust. Hashes, signatures, and blockchain anchors provide proof that can't be forged, even by system administrators.
+### Cryptographic verification
+Verification relies on cryptographic checks rather than trust: hash links and signatures make records tamper-evident, and forging another party's signature is computationally infeasible.
 
-### No Trusted Intermediaries Required
+### No trusted intermediaries required
 Unlike traditional notary or verification services, Aqua Protocol enables anyone to verify document authenticity independently. This reduces costs and increases accessibility.
 
-### Regulatory Compliance
+### Regulatory compliance
 Industries requiring regulatory compliance benefit from maintained audit trails:
 - **Legal firms**: Demonstrate evidence integrity and chain of custody
 - **Financial institutions**: Satisfy SOX, GDPR, and financial regulations
 - **Healthcare providers**: Maintain HIPAA-compliant document trails
 - **Educational institutions**: Provide verifiable credentials that meet accreditation standards
 
-### Cost Reduction
-Automated verification reduces manual processes, eliminates middlemen, speeds up verification times, and prevents fraud losses.
+### Cost reduction
+Automated verification reduces manual processes and reliance on intermediaries, speeds up verification times, and helps prevent fraud losses.
 
-## How It Works
+## How it works
 
-### 1. Document Notarization
-When a document is first notarized:
+### 1. Recording a document
+When a document is first recorded:
 - The document content is hashed using SHA3-256
 - A genesis revision is created with the document hash
 - The revision is signed by the document creator
-- All data is stored in an immutable Aqua chain
-- Blockchain or TSA timestamping can be added with the full SDK, scheduled for later publication
+- All data is stored in the Aqua tree
+- Blockchain or TSA timestamping can be added with the full SDK, scheduled for a later publication
 
-### 2. Document Updates
+### 2. Document updates
 When a document is modified:
 - A new revision is created referencing the previous revision
 - The new content hash is recorded
 - The update is signed by authorized parties
 - Each revision carries a local timestamp ordered after its parent
-- The revision chain grows, maintaining complete history
+- The revision history grows, maintaining a complete record
 
-### 3. Multi-Party Signing
+### 3. Multi-party signing
 For documents requiring multiple signatures:
 - Each party adds their signature as a new revision
 - Signatures reference the document revision being signed
-- Order of signing is preserved in the chain
+- Order of signing is preserved in the tree
 - Each signature is independently verifiable
 - An anchor revision can link the fully signed document to related records
 
 ### 4. Verification
 Anyone can verify a document by:
 - Computing the hash of the document content
-- Comparing it to the hash in the revision chain
+- Comparing it to the hash in the revision history
 - Verifying all signatures cryptographically
-- Checking revision types and ordering against their templates
-- Validating the entire revision chain integrity
+- Checking revision kinds and ordering against their templates
+- Validating the integrity of the entire revision history
 
-## Real-World Scenarios
+## Real-world scenarios
 
-### Scenario 1: Legal Contract Management
+### Scenario 1: legal contract management
 
-**Challenge**: A law firm needs to manage contracts with guaranteed integrity and provable signing timestamps for multiple parties.
+**Challenge**: A law firm needs to manage contracts with verifiable integrity and a provable signing order for multiple parties.
 
 **Solution**:
-- Contract is notarized when drafted, creating the genesis revision
+- Contract is recorded when drafted, creating the genesis revision
 - Each party reviews and signs, adding signature revisions
 - An anchor revision links the final contract to the firm's records
-- All parties receive the complete Aqua chain
+- All parties receive the complete Aqua tree
 - Years later, if disputed, the contract's integrity and signing order can be cryptographically proven
 
-**Benefits**: Non-repudiation, tamper-proof records, verifiable signing order, reduced notary costs
+**Benefits**: Non-repudiation, tamper-evident records, verifiable signing order, reduced notary costs
 
-### Scenario 2: Academic Credential Verification
+### Scenario 2: academic credential verification
 
 **Challenge**: Universities issue thousands of diplomas, and employers need to verify credentials quickly without calling the registrar.
 
 **Solution**:
-- University notarizes each diploma as it's issued
-- Diploma includes an Aqua chain with the university's signature
+- University records each diploma as it's issued
+- Diploma includes an Aqua tree with the university's signature
 - University aggregates batches of diplomas under anchor revisions
-- Employers scan QR code or receive Aqua chain from candidate
+- Employers scan QR code or receive the Aqua tree from the candidate
 - Verification happens instantly using Aqua verification tools
 
-**Benefits**: Instant verification, eliminated fraud, reduced administrative burden, improved candidate experience
+**Benefits**: Instant verification, reduced fraud, reduced administrative burden, improved candidate experience
 
-### Scenario 3: Financial Audit Trail
+### Scenario 3: financial audit trail
 
 **Challenge**: A public company must maintain auditable financial records that prove compliance with regulations.
 
 **Solution**:
-- Financial statements are notarized each quarter
+- Financial statements are recorded each quarter
 - CFO signs the statement, adding signature revision
 - External auditor countersigns the statement
-- Audit trail is preserved permanently
+- The complete audit trail is retained
 - Regulators can verify statement integrity independently
 
 **Benefits**: Regulatory compliance, reduced audit costs, defensible records, fraud prevention
 
-### Scenario 4: Government Permit Issuance
+### Scenario 4: government permit issuance
 
 **Challenge**: Building department issues permits that need to be verified by inspectors, contractors, and the public.
 
 **Solution**:
-- Permit applications are notarized when submitted
+- Permit applications are recorded when submitted
 - Permit approvals are signed by authorized officials
 - Approved permits are linked to the department's records with anchor revisions
-- QR codes on physical permits link to Aqua chains
+- QR codes on physical permits link to Aqua trees
 - Anyone can verify permit authenticity and status
 
 **Benefits**: Fraud prevention, instant verification, public transparency, reduced administrative overhead
 
-## Integration Patterns
+## Integration patterns
 
-### Document Management Systems
-Integrate Aqua Protocol into existing DMS platforms to automatically notarize important documents. When documents are finalized, trigger Aqua notarization via SDK.
+### Document management systems
+Integrate Aqua Protocol into existing DMS platforms to automatically record important documents. When documents are finalized, create and sign their Aqua trees via the SDK.
 
-### E-Signature Platforms
-Enhance e-signature solutions with cryptographic signatures and independent verification. Each signature becomes a verifiable revision in the Aqua chain.
+### E-signature platforms
+Enhance e-signature solutions with cryptographic signatures and independent verification. Each signature becomes a verifiable revision in the Aqua tree.
 
-### CRM and Business Systems
-Add document verification to CRM, ERP, or custom business applications. Automatically notarize quotes, proposals, contracts, and invoices as they're generated. Automated pipelines and AI agents that generate or transform documents can record their own signed provenance the same way — see [Agent Audit Trails](/docs/v4.0.0/dev-tools/agent-audit-trails).
+### CRM and business systems
+Add document verification to CRM, ERP, or custom business applications. Automatically record quotes, proposals, contracts, and invoices as they're generated. Automated pipelines and AI agents that generate or transform documents can record their own signed provenance the same way — see [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails).
 
-### Educational Systems
-Integrate with student information systems to automatically notarize transcripts, diplomas, and certificates as they're issued.
+### Educational systems
+Integrate with student information systems to automatically record transcripts, diplomas, and certificates as they're issued.
 
-### Government Systems
+### Government systems
 Add Aqua Protocol to permit, license, and registration systems to provide instant verification capability to citizens and businesses.
 
-## Best Practices
+## Best practices
 
-### Initial Notarization
-- Notarize documents as early as possible in their lifecycle
+### Initial recording
+- Record documents as early as possible in their lifecycle
 - Include relevant metadata (document type, parties, purpose)
 - Use appropriate method (scalar for small docs, tree for large)
 - Sign immediately after creation to establish authorship
 
-### Multi-Party Documents
+### Multi-party documents
 - Establish signing order and communicate to all parties
 - Each party should verify previous signatures before adding theirs
-- Verify the complete chain once all signatures are collected
-- Distribute complete Aqua chain to all parties
+- Verify the complete tree once all signatures are collected
+- Distribute the complete Aqua tree to all parties
 
-### Long-Term Storage
-- Store Aqua chains separately from documents
-- Back up chains to multiple locations
-- Include Aqua chain with document when transmitting
+### Long-term storage
+- Store Aqua trees separately from documents
+- Back up trees to multiple locations
+- Include the Aqua tree with the document when transmitting
 - Test verification periodically
 
 ### Verification
 - Always verify documents received from third parties
-- Check entire revision chain, not just the latest revision
+- Check the entire revision history, not just the latest revision
 - Use the strict verification policy for important documents
 - Validate signatures match expected signers
 
-### Privacy Considerations
-- Aqua chains don't contain document content by default
-- Share chains carefully as they prove document existence
+### Privacy considerations
+- Aqua trees don't contain document content by default
+- Share trees carefully as they prove document existence
 - Use the tree method for [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) of specific fields
 - Consider what metadata is included in revisions
 
-## Technical Advantages
+## Technical advantages
 
-### Cryptographic Security
+### Cryptographic security
 - SHA3-256 hashing provides computational infeasibility of collision attacks
 - Signature suites: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn
 - Hash-linked revisions make any alteration of history detectable
 
 ### Scalability
 - Document verification is O(n) where n is number of revisions
-- Merkle tree mode enables [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) of specific fields
+- The tree method enables [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) of specific fields
 - Anchor revisions aggregate many documents into one verifiable structure
-- Verification can happen offline after initial chain retrieval
+- Verification can happen offline after initial tree retrieval
 
 ### Interoperability
 - JSON-based format enables easy integration
@@ -304,32 +305,32 @@ Add Aqua Protocol to permit, license, and registration systems to provide instan
 - Platform-agnostic verification
 - Standard cryptographic primitives
 
-### Future-Proof
-- Protocol versioning supports evolution
+### Versioning and extensibility
+- Protocol versioning supports evolution (this experimental release reserves breaking changes)
 - Hash algorithm agility (SHA3-256 default, BLAKE3-256 optional)
 - Multiple signature algorithm support
-- Extensible, template-defined revision types
+- Extensible, template-defined revision kinds
 
-## Common Questions
+## Common questions
 
 **Q: Does verification require network access?**
-A: No. Verification works offline using cryptographic verification of signatures and hashes against the chain and its files. No blockchain or server connection is needed.
+A: No. Verification works offline using cryptographic verification of signatures and hashes against the tree and its files. No blockchain or server connection is needed.
 
 **Q: How long are documents stored?**
-A: Aqua Protocol stores only hashes and metadata, not document content. Document storage is separate and managed by users. Aqua chains are small (kilobytes) and can be stored indefinitely.
+A: Aqua Protocol stores only hashes and metadata, not document content. Document storage is separate and managed by users. Aqua trees are small (kilobytes), self-contained JSON files that are easy to archive and copy alongside the documents they describe.
 
 **Q: Can revisions be timestamped on a blockchain?**
-A: The full protocol defines blockchain and TSA timestamping. This capability is not part of the currently published core components; it ships with the full SDK, scheduled for later publication.
+A: The full protocol defines blockchain and TSA timestamping. This capability is not part of the currently published core components; it ships with the full SDK, scheduled for a later publication.
 
 **Q: What about privacy?**
-A: By default, only document hashes are stored in the chain, not content. The document itself remains private. Share Aqua chains carefully as they prove document existence.
+A: By default, only document hashes are stored in the tree, not content. The document itself remains private. Share Aqua trees carefully as they prove document existence.
 
 **Q: How do I revoke a document?**
-A: Add a revocation revision to the chain. The document history remains (for audit purposes), but new revisions can indicate revoked status.
+A: Add a revocation revision to the tree. The document history remains (for audit purposes), but new revisions can indicate revoked status.
 
-## See Also
+## See also
 
-- [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) - Apply similar verification to supply chain events
-- [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) - Verify identity credentials
-- [Quick Start](/docs/v4.0.0/quickstart) - Get started with document verification
-- [Schema Reference](/docs/v4.0.0/schema-reference/introduction) - Technical specifications
+- [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) — apply similar verification to supply chain events
+- [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) — verify identity credentials
+- [Quick Start](/docs/v4.0.0/quickstart) — get started with document verification
+- [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — technical specifications

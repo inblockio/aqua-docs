@@ -9,10 +9,6 @@ sidebar_position: 2
 Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
 </Callout>
 
-<Callout type="note">
-Looking for the stable JavaScript SDK? See the [v3 documentation](/docs/v3.0.2/introduction).
-</Callout>
-
 This guide goes from an empty directory to a verified Aqua tree in one small Rust program: create a genesis revision for a piece of content, sign it with an Ed25519 key, and run the full verification pipeline.
 
 <Steps>
@@ -96,13 +92,13 @@ This guide goes from an empty directory to a verified Aqua tree in one small Rus
 
     The first build fetches and compiles the SDK from GitHub. The program prints:
 
-    ```
+    ```text
     verified: true
     ```
 
-    `true` means the tree reached the `verified` outcome: every check passed — structural validity, recomputed revision hashes, payload schema conformance, file content (checked by size and content hash, never by filename), and the Ed25519 signature — under the default `strict` verification policy.
+    `true` means the tree verified — `is_verified()` accepts both the `verified` and `verified_with_warnings` outcomes, and this program produces no warnings. Every check passed — structural validity, recomputed revision hashes, payload schema conformance, file content (checked by size and content hash, never by filename), and the Ed25519 signature — under the default `strict` verification policy.
 
-    The tree itself is a plain JSON document. The example below is abridged from the SDK's deterministic test fixtures and has exactly the shape your program produced — a genesis anchor, a typed object revision, and a signature revision (hashes shortened with `…` for readability):
+    The tree itself is a plain JSON document. The example below is abridged from one of the SDK's deterministic test fixtures (`sign_did_example.aqua.json`) and shows the same three revision kinds your program produced — a genesis anchor, a typed object revision, and a signature revision (hashes shortened with `…` for readability):
 
     ```json
     {
@@ -155,12 +151,12 @@ This guide goes from an empty directory to a verified Aqua tree in one small Rus
     }
     ```
 
-    One difference in your run: the SDK hashes object revisions with the `tree` method by default, so your object revision also carries a `leaves` array of per-field digests (the fixture above was created with the `scalar` method, which has no `leaves`). To inspect your own tree, add `serde_json = "1"` to the dependencies and print `serde_json::to_string_pretty(&signed.aqua_tree)?` before the verification call.
+    Two differences in your run. First, the SDK hashes object revisions with the `tree` method by default, so your object revision also carries a `leaves` array of per-field digests — the fixture above was created with the `scalar` method, which has no `leaves`. Second, the fixture's signature revision targets the genesis anchor (its `previous_revision` names the anchor), while your program signed the tree's tip, so your signature's `previous_revision` names the object revision. To inspect your own tree, add `serde_json = "1"` to the dependencies and print `serde_json::to_string_pretty(&signed.aqua_tree)?` before the verification call.
   </Step>
 
   <Step title="What just happened">
     - **A genesis anchor declared the tree's type.** `create_genesis_revision` built a two-revision tree: a genesis anchor whose `structural_links` name the built-in `file` template, followed by an object revision typed by that template. The object's `payloads` records the content hash, size, and MIME type of `hello.txt` — not the content itself.
-    - **A signature revision attested to a revision hash.** `sign_aqua_tree` appended a signature revision branching off the tree's tip. Its `signer` is the `did:key` identity derived from the Ed25519 key, and what it signs includes the target's revision hash — so the signature covers the target's entire content indirectly.
+    - **A signature revision attested to a revision hash.** `sign_aqua_tree` appended a signature revision branching off the tree's tip — in your program, the object revision. Its `signer` is the `did:key` identity derived from the Ed25519 key, and what it signs includes the target's revision hash — so the signature covers the target's entire content indirectly.
     - **Every link is a multihash.** Each revision is stored under the hash of its own canonical form, rendered as `0x` + 68 hex characters. `previous_revision` and `revision_type` are such links, and the hash algorithm (SHA3-256 here, codec `0x16`) travels inside the multihash — revisions carry no algorithm field.
     - **`revision_type` is a template multihash, never a keyword.** The anchor names the `anchor_template`, the object names the `file` template, and the signature names the `signature_ed25519` template. Types are content hashes, not strings.
     - **Verification recomputed everything.** `verify_aqua_tree` resolved the anchor's structural links, recomputed every revision hash against its map key, validated the object's payload against the `file` template's JSON Schema, checked the file content by size and hash, and cryptographically verified the signature — failing closed on any mismatch.
@@ -171,16 +167,16 @@ This guide goes from an empty directory to a verified Aqua tree in one small Rus
       <Card title="Core Concepts" icon="brain" href="/docs/v4.0.0/concepts">
         The Aqua tree, the four revision kinds, templates, and verification — the mental model behind the three calls you just made
       </Card>
-      <Card title="SDK Core" icon="package" href="/docs/v4.0.0/dev-tools/sdk-core">
+      <Card title="aqua-rs-sdk-core" icon="code" href="/docs/v4.0.0/dev-tools/sdk-core">
         The full aqua-rs-sdk-core API: typed objects, custom templates, exports, and selective disclosure
       </Card>
-      <Card title="Template Registry" icon="database" href="/docs/v4.0.0/dev-tools/template-registry">
+      <Card title="Template Registry" icon="package" href="/docs/v4.0.0/dev-tools/template-registry">
         Publish and retrieve templates by publisher DID with aqua-template-registry
       </Card>
-      <Card title="Agent Audit Trails" icon="bot" href="/docs/v4.0.0/dev-tools/agent-audit-trails">
-        Record AI-agent sessions as chains of signed, individually verifiable artifacts
+      <Card title="Audit Trails for AI Agents" icon="bot" href="/docs/v4.0.0/dev-tools/agent-audit-trails">
+        Record AI-agent sessions as sequences of signed, individually verifiable artifacts
       </Card>
-      <Card title="Schema Reference" icon="book-open" href="/docs/v4.0.0/schema-reference/introduction">
+      <Card title="Protocol Reference" icon="book-open" href="/docs/v4.0.0/schema-reference/introduction">
         The readable reference for the v4 wire format, backed by the normative protocol specification
       </Card>
     </CardGrid>
@@ -212,10 +208,10 @@ This guide goes from an empty directory to a verified Aqua tree in one small Rus
   </AccordionItem>
 </Accordion>
 
-## See Also
+## See also
 
 - [Welcome](/docs/v4.0.0/welcome) — what Aqua Protocol v4 is and what is published today
 - [Core Concepts](/docs/v4.0.0/concepts) — the data model behind this example
-- [Version Info](/docs/v4.0.0/version-info) — release status and scope of the v4 components
+- [Release Status & Versioning](/docs/v4.0.0/version-info) — release status and scope of the v4 components
 - [v3 documentation](/docs/v3.0.2/introduction) — the stable JavaScript SDK
 - [aqua-rs-sdk-core on GitHub](https://github.com/inblockio/aqua-rs-sdk-core) — source, examples, and the normative protocol specification

@@ -1,5 +1,5 @@
 ---
-title: "Anchors & Links"
+title: "Anchors and Links"
 description: 'Anchor revisions: wire form, structural vs compositional links, genesis anchors, and cross-tree verification'
 icon: "anchor"
 sidebar_position: 6
@@ -70,7 +70,7 @@ Its revision hash — the key it is stored under and the `previous_revision` of 
 1. `revision_type` equals the `anchor_template` multihash given above.
 2. `structural_links` is present (it may be empty).
 3. Every entry of `structural_links` resolves to one of the four accepted targets (next section); otherwise the tree fails with `STRUCTURAL_VALIDATION_FAILED`.
-4. `compositional_links`, when present, is non-empty; each entry carries a full multihash `hash` and a string `role`. Entries are never resolved, and unknown roles are never a reason to reject.
+4. Producers omit `compositional_links` entirely when empty; an empty array would change the canonical form and thus the hash. Each entry carries a full multihash `hash` and a string `role`. Entries are never resolved, and unknown roles are never a reason to reject.
 5. `leaves` is present exactly when `method` is `"tree"`.
 6. A genesis anchor's `local_timestamp` is at or before its child's — the general monotonicity rule; a genesis anchor dated after its child fails verification.
 
@@ -108,7 +108,7 @@ The sentinel is a bare 32-byte zero value — deliberately not a valid multihash
 
 The normal shape of a typed tree is:
 
-```
+```text
 Anchor (genesis; structural_links = [ <template multihash> ])
   └── Object (revision_type = <template multihash>, payloads = …)
         └── … further revisions …
@@ -150,7 +150,7 @@ When a tree is verified together with linked trees:
 
 Note the two distinct failure surfaces: a structural link that resolves nowhere is a *structural* failure of the main tree (`STRUCTURAL_VALIDATION_FAILED`), while a link that resolves into a linked tree that itself fails verification is a *linked-tree* failure (`LINKED_TREE_RESOLUTION_FAILED`). Both are fatal; they differ in what they tell the caller to fix.
 
-In `aqua-rs-sdk-core`, this is surfaced as two `Aquafier` methods: `link_aqua_tree` appends an anchor revision whose `structural_links` carry the tip hashes of the supplied trees, and `verify_aqua_tree_with_linked_trees` runs the cross-tree verification described above. See [SDK Core](/docs/v4.0.0/dev-tools/sdk-core).
+In `aqua-rs-sdk-core`, this is surfaced as two `Aquafier` methods: `link_aqua_tree` appends an anchor revision whose `structural_links` carry the tip hashes of the supplied trees, and `verify_aqua_tree_with_linked_trees` runs the cross-tree verification described above. See [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core).
 
 ## Boundary: anchors are not timestamps
 
@@ -158,10 +158,10 @@ Anchoring in this profile is structural linking between trees. It is distinct fr
 
 Similarly, the `audit_round_anchor` template is *not* an anchor revision: it is an ordinary typed **object** revision whose payload carries an application-level Merkle commitment. The word "anchor" in its name refers to closing a turn, not to this page's revision kind.
 
-## See Also
+## See also
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, common fields, genesis forms, branches and tips
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity, the shipped catalog, and resolution order
 - [Signatures](/docs/v4.0.0/schema-reference/signatures) — the other branch revision kind, which attests instead of linking
 - [Verification](/docs/v4.0.0/schema-reference/verification) — the full pipeline, error vocabulary, and policy decision points
-- [SDK Core](/docs/v4.0.0/dev-tools/sdk-core) — `link_aqua_tree` and `verify_aqua_tree_with_linked_trees` in practice
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — `link_aqua_tree` and `verify_aqua_tree_with_linked_trees` in practice
