@@ -7,12 +7,12 @@ sidebar_position: 2
 
 `aqua-template-registry` is the distribution layer that `aqua-rs-sdk-core` deliberately leaves out: core knows how to hash, sign, and verify a template, and says nothing about how you find one. Publishers register signed Aqua trees under their publisher DID; consumers resolve templates by qualified name (`<vendor>/<name>`) or subscribe to everything a publisher DID emits. The project is a Rust library, an HTTP service (`registryd`), a publisher tool (`publish-audit-set`), a consumer CLI (`subscribe`), a seeded template set (`seed/`), and trust policy examples (`trust/`). Apache-2.0, source: [github.com/inblockio/aqua-template-registry](https://github.com/inblockio/aqua-template-registry).
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice. See [Release Status & Versioning](/docs/v4.0.0/version-info).
 </Callout>
 
 <Callout type="info" title="Hosted instance">
-A deployed registry is available, without SLA, at [aqua-registry.inblock.io](https://aqua-registry.inblock.io). It can be used to publish and retrieve community-developed templates. Because it runs under active development and experimental conditions, stored templates may be wiped without notice — keep your signed registration trees so you can republish.
+A deployed registry is available, without SLA, at [aqua-registry.inblock.io](https://aqua-registry.inblock.io). It can be used to publish and retrieve community-developed templates. Because it is alpha software, stored templates may be wiped without notice — keep your signed registration trees so you can republish.
 </Callout>
 
 ## Identity and naming
@@ -227,7 +227,7 @@ The registry is the **only sanctioned distribution channel** for this family —
 - No plugin or WASM module distribution.
 - No authentication or API keys on the write path: every write is a signed tree that authenticates itself.
 
-## See also
+## Next steps
 
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the protocol engine the registry distributes templates for
 - [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family end to end

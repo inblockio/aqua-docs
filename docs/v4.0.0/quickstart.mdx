@@ -5,8 +5,8 @@ icon: "rocket"
 sidebar_position: 2
 ---
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice. See [Release Status & Versioning](/docs/v4.0.0/version-info).
 </Callout>
 
 This guide goes from an empty directory to a verified Aqua tree in one small Rust program: create a genesis revision for a piece of content, sign it with an Ed25519 key, and run the full verification pipeline.
@@ -161,26 +161,6 @@ This guide goes from an empty directory to a verified Aqua tree in one small Rus
     - **`revision_type` is a template multihash, never a keyword.** The anchor names the `anchor_template`, the object names the `file` template, and the signature names the `signature_ed25519` template. Types are content hashes, not strings.
     - **Verification recomputed everything.** `verify_aqua_tree` resolved the anchor's structural links, recomputed every revision hash against its map key, validated the object's payload against the `file` template's JSON Schema, checked the file content by size and hash, and cryptographically verified the signature — failing closed on any mismatch.
   </Step>
-
-  <Step title="Next steps">
-    <CardGrid cols={2}>
-      <Card title="Core Concepts" icon="brain" href="/docs/v4.0.0/concepts">
-        The Aqua tree, the four revision kinds, templates, and verification — the mental model behind the three calls you just made
-      </Card>
-      <Card title="aqua-rs-sdk-core" icon="code" href="/docs/v4.0.0/dev-tools/sdk-core">
-        The full aqua-rs-sdk-core API: typed objects, custom templates, exports, and selective disclosure
-      </Card>
-      <Card title="Template Registry" icon="package" href="/docs/v4.0.0/dev-tools/template-registry">
-        Publish and retrieve templates by publisher DID with aqua-template-registry
-      </Card>
-      <Card title="Audit Trails for AI Agents" icon="bot" href="/docs/v4.0.0/dev-tools/agent-audit-trails">
-        Record AI-agent sessions as sequences of signed, individually verifiable artifacts
-      </Card>
-      <Card title="Protocol Reference" icon="book-open" href="/docs/v4.0.0/schema-reference/introduction">
-        The readable reference for the v4 wire format, backed by the normative protocol specification
-      </Card>
-    </CardGrid>
-  </Step>
 </Steps>
 
 ## Troubleshooting
@@ -208,10 +188,13 @@ This guide goes from an empty directory to a verified Aqua tree in one small Rus
   </AccordionItem>
 </Accordion>
 
-## See also
+## Next steps
 
+- [Core Concepts](/docs/v4.0.0/concepts) — the Aqua tree, the four revision kinds, templates, and verification: the mental model behind the three calls you just made
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the full aqua-rs-sdk-core API: typed objects, custom templates, exports, and selective disclosure
+- [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publish and retrieve templates by publisher DID with aqua-template-registry
+- [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — record AI-agent sessions as sequences of signed, individually verifiable artifacts
+- [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — the readable reference for the v4 wire format, backed by the normative protocol specification
 - [Welcome](/docs/v4.0.0/welcome) — what Aqua Protocol v4 is and what is published today
-- [Core Concepts](/docs/v4.0.0/concepts) — the data model behind this example
 - [Release Status & Versioning](/docs/v4.0.0/version-info) — release status and scope of the v4 components
-- [v3 documentation](/docs/v3.0.2/introduction) — the stable JavaScript SDK
 - [aqua-rs-sdk-core on GitHub](https://github.com/inblockio/aqua-rs-sdk-core) — source, examples, and the normative protocol specification

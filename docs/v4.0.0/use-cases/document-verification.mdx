@@ -301,12 +301,12 @@ Add Aqua Protocol to permit, license, and registration systems to provide instan
 
 ### Interoperability
 - JSON-based format enables easy integration
-- Multiple SDK options (Rust for v4, JavaScript/TypeScript for v3)
+- Rust SDK for building verification into applications
 - Platform-agnostic verification
 - Standard cryptographic primitives
 
 ### Versioning and extensibility
-- Protocol versioning supports evolution (this experimental release reserves breaking changes)
+- Protocol versioning supports evolution (this alpha release reserves breaking changes)
 - Hash algorithm agility (SHA3-256 default, BLAKE3-256 optional)
 - Multiple signature algorithm support
 - Extensible, template-defined revision kinds
@@ -328,7 +328,7 @@ A: By default, only document hashes are stored in the tree, not content. The doc
 **Q: How do I revoke a document?**
 A: Add a revocation revision to the tree. The document history remains (for audit purposes), but new revisions can indicate revoked status.
 
-## See also
+## Next steps
 
 - [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) — apply similar verification to supply chain events
 - [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) — verify identity credentials
