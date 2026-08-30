@@ -9,8 +9,8 @@ sidebar_position: 1
 
 Trust can be built by relying on hashing and signature mechanisms alone or by delegating to a mutually trusted party. Aqua Protocol handles both scenarios, giving you flexibility in how you establish and verify trust.
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication.
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice. See [Release Status & Versioning](/docs/v4.0.0/version-info).
 </Callout>
 
 At its core, Aqua creates portable hash-linked structures called **Aqua trees** that record a gapless history of data revisions. Every revision is one of four kinds — **object** (typed data), **template** (the schema that defines a type), **signature** (a cryptographic endorsement), or **anchor** (a structural link between revisions and trees). Each revision after the first references its predecessor by hash, so a modification anywhere in the history is immediately detectable.

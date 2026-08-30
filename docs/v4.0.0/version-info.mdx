@@ -10,8 +10,8 @@ redirect_from:
 
 This page is the definitive statement of the current status of Aqua Protocol v4: what is published, what is deliberately out of scope, and which guarantees do — and do not — apply.
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication.
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice.
 </Callout>
 
 ## Specification status
@@ -44,7 +44,7 @@ The invariant behind this table: **the core is never more permissive than the fu
 
 ## Registry scope
 
-The registry deliberately validates coherence, not trustworthiness: every write is a signed Aqua tree that authenticates itself, vendor namespaces are first-come-first-served, and templates are identified by hash — names are display data. In the registry's own words, "'this registration is coherent' and 'this publisher is someone you should trust' are different claims, and only the first is in scope for a registry." Out of scope by design: on-chain registration, trust stores or ENS/DNS resolution, freshness or liveness guarantees, cross-registry mirroring and federation, transport security in the built-in client, and plugin/WASM distribution. Templates on the hosted instance may be wiped without notice while it runs under experimental conditions.
+The registry deliberately validates coherence, not trustworthiness: every write is a signed Aqua tree that authenticates itself, vendor namespaces are first-come-first-served, and templates are identified by hash — names are display data. In the registry's own words, "'this registration is coherent' and 'this publisher is someone you should trust' are different claims, and only the first is in scope for a registry." Out of scope by design: on-chain registration, trust stores or ENS/DNS resolution, freshness or liveness guarantees, cross-registry mirroring and federation, transport security in the built-in client, and plugin/WASM distribution. Templates on the hosted instance may be wiped without notice while it runs as alpha software.
 
 ## Versioning policy
 
