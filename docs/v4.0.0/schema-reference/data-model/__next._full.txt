@@ -10,7 +10,7 @@ f:I[168027,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/73e
 :HL["/_next/static/chunks/f3d403ecd7142afe.css","style"]
 :HL["/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"P":null,"b":"L-tnAGvvvgPP-oDy24_an","c":["","docs","v4.0.0","schema-reference","data-model"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v4.0.0","d"],{"children":[["slug","schema-reference/data-model","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/c21748bf3f0cd810.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/f3d403ecd7142afe.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/f82b357a25abbfe1.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/5551bc5e94e30999.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua Protocol, an open protocol for verifiable data provenance and accountability. Developed in the open as a proposed standard, with public specification, documentation, and reference implementations.","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":{"dark":"/logo/aqua-logo.png","light":"/logo/aqua-logo.png"}},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./node_modules/specra/config/specra.config.schema.json","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","custom":[{"label":"inblock.io","url":"https://inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2026 inblock.io assets GmbH. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/quickstart"},{"label":"Protocol Reference","href":"/docs/v4.0.0/schema-reference/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"}]}]},"banner":{"enabled":false,"message":"🎉 Aqua protocol - Let us build privacy infra together!","type":"error","dismissible":true},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen bg-background flex items-center justify-center px-6","children":["$","div",null,{"className":"max-w-2xl mx-auto text-center space-y-6","children":[["$","div",null,{"className":"space-y-2","children":[["$","h1",null,{"className":"text-6xl md:text-8xl font-bold text-primary","children":"404"}],["$","h2",null,{"className":"text-2xl md:text-3xl font-semibold text-foreground","children":"Page Not Found"}]]}],["$","p",null,{"className":"text-muted-foreground text-lg max-w-md mx-auto","children":"The page you're looking for doesn't exist or may have been moved."}],["$","div",null,{"className":"flex flex-col sm:flex-row items-center justify-center gap-4 pt-6","children":[["$","$L6",null,{"asChild":true,"size":"lg","children":["$","$L7",null,{"href":"/","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-house mr-2 h-4 w-4","children":[["$","path","5wwlr5",{"d":"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"}],["$","path","1d0kgt",{"d":"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"}],"$undefined"]}],"Go to Homepage"]}]}],"$L8"]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":["$L9",{"children":["$La",{"children":["$Lb",{"children":["$Lc",{},null,false,false]},["$Ld",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$Le",false]],"m":"$undefined","G":["$f",[]],"S":true}
+0:{"P":null,"b":"xkT6Mq5jod6KH-inkqumW","c":["","docs","v4.0.0","schema-reference","data-model"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["version","v4.0.0","d"],{"children":[["slug","schema-reference/data-model","c"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/c21748bf3f0cd810.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/f3d403ecd7142afe.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/f82b357a25abbfe1.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/5551bc5e94e30999.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"config":{"site":{"title":"Aqua Protocol","description":"Aqua Protocol, an open protocol for verifiable data provenance and accountability. Developed in the open as a proposed standard, with public specification, documentation, and reference implementations.","baseUrl":"/","language":"en","url":"https://aqua-protocol.org","organizationName":"inblockio","projectName":"aqua-docs","activeVersion":"v4.0.0","favicon":"/logo/aqua-logo.png","logo":{"dark":"/logo/aqua-logo.png","light":"/logo/aqua-logo.png"}},"theme":{"defaultMode":"system","respectPrefersColorScheme":true},"navigation":{"showSidebar":true,"collapsibleSidebar":true,"showBreadcrumbs":true,"showTableOfContents":true,"tocPosition":"right","tocMaxDepth":3},"search":{"enabled":false,"provider":"meilisearch","placeholder":"Search documentation...","meilisearch":{"host":"http://localhost:7700","apiKey":"aSampleMasterKey","indexName":"docs"}},"features":{"showLastUpdated":true,"showReadingTime":true,"showAuthors":false,"showTags":true,"versioning":true,"i18n":false,"editUrl":"https://github.com/inblockio/aqua-docs/edit/main/docs"},"$schema":"./node_modules/specra/config/specra.config.schema.json","social":{"github":"https://github.com/inblockio","twitter":"https://x.com/inblockio","custom":[{"label":"inblock.io","url":"https://inblock.io"}]},"analytics":{"googleAnalytics":"","plausible":""},"footer":{"copyright":"Copyright © 2026 inblock.io assets GmbH. All rights reserved.","links":[{"title":"Documentation","items":[{"label":"Getting Started","href":"/docs/v4.0.0/quickstart"},{"label":"Protocol Reference","href":"/docs/v4.0.0/schema-reference/introduction"}]},{"title":"Community","items":[{"label":"GitHub","href":"https://github.com/inblockio"}]}]},"banner":{"enabled":false,"message":"🎉 Aqua protocol - Let us build privacy infra together!","type":"error","dismissible":true},"deployment":{"target":"github-pages","basePath":"","customDomain":true}},"children":["$","$L3",null,{"defaultTab":"","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"min-h-screen bg-background flex items-center justify-center px-6","children":["$","div",null,{"className":"max-w-2xl mx-auto text-center space-y-6","children":[["$","div",null,{"className":"space-y-2","children":[["$","h1",null,{"className":"text-6xl md:text-8xl font-bold text-primary","children":"404"}],["$","h2",null,{"className":"text-2xl md:text-3xl font-semibold text-foreground","children":"Page Not Found"}]]}],["$","p",null,{"className":"text-muted-foreground text-lg max-w-md mx-auto","children":"The page you're looking for doesn't exist or may have been moved."}],["$","div",null,{"className":"flex flex-col sm:flex-row items-center justify-center gap-4 pt-6","children":[["$","$L6",null,{"asChild":true,"size":"lg","children":["$","$L7",null,{"href":"/","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-house mr-2 h-4 w-4","children":[["$","path","5wwlr5",{"d":"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"}],["$","path","1d0kgt",{"d":"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"}],"$undefined"]}],"Go to Homepage"]}]}],"$L8"]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":["$L9",{"children":["$La",{"children":["$Lb",{"children":["$Lc",{},null,false,false]},["$Ld",[],[]],false,false]},null,false,false]},null,false,false]},null,false,false],"$Le",false]],"m":"$undefined","G":["$f",[]],"S":true}
 10:I[839694,["/_next/static/chunks/f82b357a25abbfe1.js","/_next/static/chunks/5551bc5e94e30999.js","/_next/static/chunks/c6555158259ee219.js"],"VersionNotFound"]
 12:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/73e3194f06db260e.js"],"OutletBoundary"]
 13:"$Sreact.suspense"
@@ -26,13 +26,13 @@ e:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","di
 19:I[839694,["/_next/static/chunks/f82b357a25abbfe1.js","/_next/static/chunks/5551bc5e94e30999.js","/_next/static/chunks/c6555158259ee219.js"],"DocLoading"]
 1a:I[839694,["/_next/static/chunks/f82b357a25abbfe1.js","/_next/static/chunks/5551bc5e94e30999.js","/_next/static/chunks/c6555158259ee219.js"],"DocLayoutWrapper"]
 1b:I[839694,["/_next/static/chunks/f82b357a25abbfe1.js","/_next/static/chunks/5551bc5e94e30999.js","/_next/static/chunks/c6555158259ee219.js"],"Header"]
-1c:T50d4,
+1c:T4fae,
 `aqua-rs-sdk-core` is a minimal, WASM-free Rust implementation of the Aqua Protocol core: verifiable, portable data trees with anchors, typed objects, templates, cryptographic signatures, and selective disclosure. It is a **compatible subset** of the full `aqua-rs-sdk` (scheduled for a later publication): canonicalization and verification semantics are identical, and the machinery and signature templates it shares with the full SDK are byte-identical — the eleven audit templates, however, are a deliberate, test-bounded fork whose hashes differ from their full-SDK counterparts, pending upstream harmonization. That compatibility is not aspirational — it is enforced by a cross-implementation test suite (`compat-tests/`) that runs both crates side by side and cross-verifies signed trees in both directions.
 
 The crate builds as a plain `rlib` — no `wasm-bindgen`, no `wasmi`, no `cdylib` — with 18 runtime dependencies, licensed Apache-2.0. Source: [github.com/inblockio/aqua-rs-sdk-core](https://github.com/inblockio/aqua-rs-sdk-core).
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice. See [Release Status & Versioning](/docs/v4.0.0/version-info).
 </Callout>
 
 The normative protocol specification ships in the same repository under [protocol-specification/](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification). The code is the reference implementation; the specification states the protocol a conforming producer or verifier must follow.
@@ -432,20 +432,20 @@ cargo run --example agent_audit_trail --features native  # end-to-end agent audi
 
 WASM compute execution, the full-SDK template set, timestamping, the policy engine, the daemon/forest runtime, and a template registry client are outside this crate, and every exclusion answers explicitly — a fail-closed error, an explicit "not supported" message, or a policy-governed condition, never a silent pass. The exclusions table with the per-capability behavior lives in [Release Status & Versioning](/docs/v4.0.0/version-info). The invariant behind it: **core is never more permissive than the full SDK under the same verification policy.**
 
-## See also
+## Next steps
 
 - [Quick Start](/docs/v4.0.0/quickstart) — a complete first program with this crate
 - [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publishing and importing templates
 - [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the T1–T8 audit template family in practice
 - [Verification](/docs/v4.0.0/schema-reference/verification) — outcomes, stages, and policies in detail
 - [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — the redaction model behind the disclosure API
-1d:T50d4,
+1d:T4fae,
 `aqua-rs-sdk-core` is a minimal, WASM-free Rust implementation of the Aqua Protocol core: verifiable, portable data trees with anchors, typed objects, templates, cryptographic signatures, and selective disclosure. It is a **compatible subset** of the full `aqua-rs-sdk` (scheduled for a later publication): canonicalization and verification semantics are identical, and the machinery and signature templates it shares with the full SDK are byte-identical — the eleven audit templates, however, are a deliberate, test-bounded fork whose hashes differ from their full-SDK counterparts, pending upstream harmonization. That compatibility is not aspirational — it is enforced by a cross-implementation test suite (`compat-tests/`) that runs both crates side by side and cross-verifies signed trees in both directions.
 
 The crate builds as a plain `rlib` — no `wasm-bindgen`, no `wasmi`, no `cdylib` — with 18 runtime dependencies, licensed Apache-2.0. Source: [github.com/inblockio/aqua-rs-sdk-core](https://github.com/inblockio/aqua-rs-sdk-core).
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice. See [Release Status & Versioning](/docs/v4.0.0/version-info).
 </Callout>
 
 The normative protocol specification ships in the same repository under [protocol-specification/](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification). The code is the reference implementation; the specification states the protocol a conforming producer or verifier must follow.
@@ -845,14 +845,14 @@ cargo run --example agent_audit_trail --features native  # end-to-end agent audi
 
 WASM compute execution, the full-SDK template set, timestamping, the policy engine, the daemon/forest runtime, and a template registry client are outside this crate, and every exclusion answers explicitly — a fail-closed error, an explicit "not supported" message, or a policy-governed condition, never a silent pass. The exclusions table with the per-capability behavior lives in [Release Status & Versioning](/docs/v4.0.0/version-info). The invariant behind it: **core is never more permissive than the full SDK under the same verification policy.**
 
-## See also
+## Next steps
 
 - [Quick Start](/docs/v4.0.0/quickstart) — a complete first program with this crate
 - [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publishing and importing templates
 - [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the T1–T8 audit template family in practice
 - [Verification](/docs/v4.0.0/schema-reference/verification) — outcomes, stages, and policies in detail
 - [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — the redaction model behind the disclosure API
-1e:T1665,
+1e:T1667,
 This section is the readable reference for the **Aqua Protocol v4 core profile** — the protocol subset implemented by [`aqua-rs-sdk-core`](https://github.com/inblockio/aqua-rs-sdk-core). It covers the wire formats, the algorithms, and the rules a conforming producer or verifier follows: revisions and trees, hashing and canonicalization, templates, signatures, anchors and links, selective disclosure, and the verification procedure.
 
 <Callout type="info" title="The specification is authoritative">
@@ -912,14 +912,14 @@ The [Data Model](/docs/v4.0.0/schema-reference/data-model) page defines all of t
 | [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) | Field-level redaction with salted commitments, selective trees, and the disclosure presets. |
 | [Verification](/docs/v4.0.0/schema-reference/verification) | The staged verification procedure, verification policies, and the error vocabulary. |
 
-## See also
+## Next steps
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — the revision and tree wire formats
 - [Verification](/docs/v4.0.0/schema-reference/verification) — how a conforming verifier checks a tree
 - [Core Concepts](/docs/v4.0.0/concepts) — the ideas behind the protocol, informally
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the Rust implementation of this profile
 - [Quick Start](/docs/v4.0.0/quickstart) — create and verify your first tree
-1f:T1665,
+1f:T1667,
 This section is the readable reference for the **Aqua Protocol v4 core profile** — the protocol subset implemented by [`aqua-rs-sdk-core`](https://github.com/inblockio/aqua-rs-sdk-core). It covers the wire formats, the algorithms, and the rules a conforming producer or verifier follows: revisions and trees, hashing and canonicalization, templates, signatures, anchors and links, selective disclosure, and the verification procedure.
 
 <Callout type="info" title="The specification is authoritative">
@@ -979,14 +979,14 @@ The [Data Model](/docs/v4.0.0/schema-reference/data-model) page defines all of t
 | [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) | Field-level redaction with salted commitments, selective trees, and the disclosure presets. |
 | [Verification](/docs/v4.0.0/schema-reference/verification) | The staged verification procedure, verification policies, and the error vocabulary. |
 
-## See also
+## Next steps
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — the revision and tree wire formats
 - [Verification](/docs/v4.0.0/schema-reference/verification) — how a conforming verifier checks a tree
 - [Core Concepts](/docs/v4.0.0/concepts) — the ideas behind the protocol, informally
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the Rust implementation of this profile
 - [Quick Start](/docs/v4.0.0/quickstart) — create and verify your first tree
-20:T2a15,
+20:T29df,
 ## Why Aqua Protocol?
 
 Traditional systems for tracking data provenance, verifying authenticity, and maintaining audit trails rely on centralized databases and trusted intermediaries. These approaches introduce:
@@ -1110,7 +1110,7 @@ Aqua Protocol adapts to diverse requirements through:
 - **Flexible signing methods**: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn
 - **Timestamping**: Blockchain and TSA timestamping defined by the full protocol, shipping with the full SDK (scheduled for a later publication)
 - **Scalar or tree methods**: Optimize for simplicity or [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure)
-- **Cross-platform SDKs**: Rust (the published core is WASM-free; WASM support returns with the full SDK) and JavaScript/TypeScript (v3)
+- **Rust SDK**: The published core is WASM-free; WASM support returns with the full SDK
 - **Template customization**: Define domain-specific schemas with JSON Schema
 
 ## Getting started
@@ -1185,16 +1185,16 @@ Automated verification reduces manual processes, fraud losses, turnaround times,
 Cryptographic primitives (SHA3-256, Ed25519, ECDSA) make recorded history tamper-evident: modifying a recorded revision is detectable because the hashes no longer match, and forging another party's signature is computationally infeasible.
 
 ### Portability and offline verification
-Aqua trees are small, self-contained JSON structures built on standard cryptographic primitives, so they can be verified offline without contacting any service. Protocol versioning, template-defined revision kinds, and hash algorithm agility (SHA3-256 default, BLAKE3-256 optional) support evolution of the format; note that this experimental release reserves the right to make breaking changes — see [Release Status & Versioning](/docs/v4.0.0/version-info).
+Aqua trees are small, self-contained JSON structures built on standard cryptographic primitives, so they can be verified offline without contacting any service. Protocol versioning, template-defined revision kinds, and hash algorithm agility (SHA3-256 default, BLAKE3-256 optional) support evolution of the format; note that this alpha release reserves the right to make breaking changes — see [Release Status & Versioning](/docs/v4.0.0/version-info).
 
-## See also
+## Next steps
 
 - [Document Verification](/docs/v4.0.0/use-cases/document-verification) — tamper-evident document records in depth
 - [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) — provenance across multi-party supply chains
 - [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) — claims, attestations, and trust chains
 - [Quick Start](/docs/v4.0.0/quickstart) — hands-on implementation with the Rust core
 - [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — technical specifications
-21:T2a15,
+21:T29df,
 ## Why Aqua Protocol?
 
 Traditional systems for tracking data provenance, verifying authenticity, and maintaining audit trails rely on centralized databases and trusted intermediaries. These approaches introduce:
@@ -1318,7 +1318,7 @@ Aqua Protocol adapts to diverse requirements through:
 - **Flexible signing methods**: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn
 - **Timestamping**: Blockchain and TSA timestamping defined by the full protocol, shipping with the full SDK (scheduled for a later publication)
 - **Scalar or tree methods**: Optimize for simplicity or [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure)
-- **Cross-platform SDKs**: Rust (the published core is WASM-free; WASM support returns with the full SDK) and JavaScript/TypeScript (v3)
+- **Rust SDK**: The published core is WASM-free; WASM support returns with the full SDK
 - **Template customization**: Define domain-specific schemas with JSON Schema
 
 ## Getting started
@@ -1393,45 +1393,35 @@ Automated verification reduces manual processes, fraud losses, turnaround times,
 Cryptographic primitives (SHA3-256, Ed25519, ECDSA) make recorded history tamper-evident: modifying a recorded revision is detectable because the hashes no longer match, and forging another party's signature is computationally infeasible.
 
 ### Portability and offline verification
-Aqua trees are small, self-contained JSON structures built on standard cryptographic primitives, so they can be verified offline without contacting any service. Protocol versioning, template-defined revision kinds, and hash algorithm agility (SHA3-256 default, BLAKE3-256 optional) support evolution of the format; note that this experimental release reserves the right to make breaking changes — see [Release Status & Versioning](/docs/v4.0.0/version-info).
+Aqua trees are small, self-contained JSON structures built on standard cryptographic primitives, so they can be verified offline without contacting any service. Protocol versioning, template-defined revision kinds, and hash algorithm agility (SHA3-256 default, BLAKE3-256 optional) support evolution of the format; note that this alpha release reserves the right to make breaking changes — see [Release Status & Versioning](/docs/v4.0.0/version-info).
 
-## See also
+## Next steps
 
 - [Document Verification](/docs/v4.0.0/use-cases/document-verification) — tamper-evident document records in depth
 - [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) — provenance across multi-party supply chains
 - [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) — claims, attestations, and trust chains
 - [Quick Start](/docs/v4.0.0/quickstart) — hands-on implementation with the Rust core
 - [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — technical specifications
-22:T1e91,
-**Aqua Protocol** is an open protocol for data accountability and provenance. It records data as **Aqua trees**: portable, cryptographically verifiable trees of revisions that can be exchanged across systems and checked by anyone who holds them — no central authority required.
+22:T1618,
+**Aqua Protocol** is an open protocol for data accountability and provenance. It records data as **Aqua trees**: portable trees of revisions secured by hash chains and cryptographic signatures, which can be exchanged across systems and checked by anyone who holds them. No central authority or trusted intermediary is required, which makes the protocol a foundation for applications that certify, attest to, and secure data in an open, decentralized way.
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+Trust can be built by relying on hashing and signature mechanisms alone or by delegating to a mutually trusted party. Aqua Protocol handles both scenarios, giving you flexibility in how you establish and verify trust.
+
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice. See [Release Status & Versioning](/docs/v4.0.0/version-info).
 </Callout>
 
-## What is Aqua Protocol?
-
-Aqua Protocol is a framework for building distributed trust networks. It uses hash chains and cryptographic signatures to make data integrity and provenance verifiable without a trusted intermediary, and it is the foundation for applications that certify, attest to, and secure data in an open, decentralized way.
-
-Trust can be built by relying on hashing and signature mechanisms or by delegating to a mutually trusted party. Aqua Protocol handles both scenarios, giving you flexibility in how you establish and verify trust.
-
-<Callout type="info" title="Powered by cryptography, not blockchain">
-Aqua Protocol is made possible by crypto as in _cryptography_. The protocol neither is nor requires blockchain technology: records are secured by hash chains and digital signatures, and anyone holding the data can verify it independently.
-</Callout>
-
-## How it works
-
-At its core, Aqua creates portable hash-linked structures called **Aqua trees** (written `AquaTree` in code) that record a gapless history of data revisions. Every revision is one of four kinds — **object** (typed data), **template** (the schema that defines a type), **signature** (a cryptographic endorsement), or **anchor** (a structural link between revisions and trees). Each revision after the first references its predecessor by hash, so a modification anywhere in the history is immediately detectable.
+At its core, Aqua creates portable hash-linked structures called **Aqua trees** that record a gapless history of data revisions. Every revision is one of four kinds — **object** (typed data), **template** (the schema that defines a type), **signature** (a cryptographic endorsement), or **anchor** (a structural link between revisions and trees). Each revision after the first references its predecessor by hash, so a modification anywhere in the history is immediately detectable.
 
 Aqua trees are plain JSON. They can be stored, exchanged, and verified anywhere: verification is a local computation over the tree (and any trees it links to), not a call to a service.
 
 Key capabilities of the v4 core profile:
 
-- **Tamper-evident history** — every revision after the first links to its predecessor by hash; a change to any byte anywhere breaks verification.
-- **Typed data** — object revisions conform to templates (JSON Schema) identified by hash, so both sides of an exchange agree on structure.
-- **Cryptographic signatures** — four suites: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn P-256, with signer identities expressed as DIDs.
-- **Selective disclosure** — tree-hashed revisions can be shared with individual fields redacted while the rest stays verifiable.
-- **Portable verification** — trees can be exported self-descriptively, so they verify anywhere; the verifier needs the data, not an account on a platform.
+- **Tamper-evident history**: every revision after the first links to its predecessor by hash; a change to any byte anywhere breaks verification.
+- **Typed data**: object revisions conform to templates (JSON Schema) identified by hash, so both sides of an exchange agree on structure.
+- **Cryptographic signatures**: four suites: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn P-256, with signer identities expressed as DIDs.
+- **Selective disclosure**: tree-hashed revisions can be shared with individual fields redacted while the rest stays verifiable.
+- **Portable verification**: trees can be exported self-descriptively, so they verify anywhere; the verifier needs the data, not an account on a platform.
 
 The [Core Concepts](/docs/v4.0.0/concepts) page builds the full mental model; the [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) is the readable companion to the normative specification.
 
@@ -1439,12 +1429,10 @@ The [Core Concepts](/docs/v4.0.0/concepts) page builds the full mental model; th
 
 Two components are published, both under the Apache-2.0 license:
 
-| Component | What it does |
-|---|---|
-| [`aqua-rs-sdk-core`](https://github.com/inblockio/aqua-rs-sdk-core) | The protocol core: anchor, object, and template primitives, four signature suites, selective disclosure, and the verification pipeline. Also home of the [protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification). |
-| [`aqua-template-registry`](https://github.com/inblockio/aqua-template-registry) | Template distribution: publish, resolve, and subscribe to Aqua templates by publisher DID, as a Rust library and an HTTP service. A hosted instance runs at [aqua-registry.inblock.io](https://aqua-registry.inblock.io), provided without SLA. |
+- **[`aqua-rs-sdk-core`](https://github.com/inblockio/aqua-rs-sdk-core)** — the protocol core: revision primitives, the four signature suites, selective disclosure, and the verification pipeline. Also home of the [protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification).
+- **[`aqua-template-registry`](https://github.com/inblockio/aqua-template-registry)** — template distribution: publish, resolve, and subscribe to templates by publisher DID, as a Rust library and an HTTP service. Hosted instance at [aqua-registry.inblock.io](https://aqua-registry.inblock.io), without SLA.
 
-Neither crate is on crates.io yet (publication is planned). Install the core as a git dependency:
+Neither crate is on crates.io yet. Install the core as a git dependency:
 
 ```toml
 [dependencies]
@@ -1461,70 +1449,6 @@ aqua-rs-sdk-core = { git = "https://github.com/inblockio/aqua-rs-sdk-core" }
 
 **Open by design.** An open standard with open-source implementations. Only hashes ever need to leave your hands, so the data itself stays private and under your control.
 
-## Where to go next
-
-<CardGrid cols={2}>
-  <Card title="Quick Start"
-    icon="rocket"
-    href="/docs/v4.0.0/quickstart"
-  >
-    Create, sign, and verify your first Aqua tree in Rust
-  </Card>
-
-  <Card title="Core Concepts"
-    icon="brain"
-    href="/docs/v4.0.0/concepts"
-  >
-    Revisions, trees, templates, and the trust model
-  </Card>
-
-  <Card title="aqua-rs-sdk-core"
-    icon="code"
-    href="/docs/v4.0.0/dev-tools/sdk-core"
-  >
-    The aqua-rs-sdk-core crate: API surface and usage
-  </Card>
-
-  <Card title="Template Registry"
-    icon="package"
-    href="/docs/v4.0.0/dev-tools/template-registry"
-  >
-    Publish and resolve templates by publisher DID
-  </Card>
-
-  <Card title="Audit Trails for AI Agents"
-    icon="bot"
-    href="/docs/v4.0.0/dev-tools/agent-audit-trails"
-  >
-    Record what an AI agent did as verifiable Aqua trees
-  </Card>
-
-  <Card title="Protocol Reference"
-    icon="book-open"
-    href="/docs/v4.0.0/schema-reference/introduction"
-  >
-    The readable reference to the normative protocol specification
-  </Card>
-
-  <Card title="Use Cases"
-    icon="lightbulb"
-    href="/docs/v4.0.0/use-cases/introduction"
-  >
-    Document verification, identity attestation, supply chain
-  </Card>
-
-  <Card title="Release Status & Versioning"
-    icon="git-commit-horizontal"
-    href="/docs/v4.0.0/version-info"
-  >
-    What this release contains, excludes, and guarantees
-  </Card>
-</CardGrid>
-
-## Aqua v3 (stable)
-
-Aqua Protocol v3 is the stable, production-ready release, built around a JavaScript/TypeScript SDK. If you are building for production today, start with the [v3 documentation](/docs/v3.0.2/introduction). The v4 release documented here is the experimental successor and does not yet replace it.
-
 ## Community & contact
 
 Aqua Protocol is open source and community-driven. Feedback, bug reports, code, and documentation contributions are welcome.
@@ -1533,43 +1457,36 @@ Aqua Protocol is open source and community-driven. Feedback, bug reports, code, 
 - **Email**: [info@inblock.io](mailto:info@inblock.io) — reach the team directly
 - **X**: [x.com/inblockio](https://x.com/inblockio) — announcements and progress
 
-## See also
+## Next steps
 
-- [Quick Start](/docs/v4.0.0/quickstart) — first steps with the Rust core
-- [Core Concepts](/docs/v4.0.0/concepts) — the v4 data model at a glance
-- [Release Status & Versioning](/docs/v4.0.0/version-info) — scope and guarantees of this release
-- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the published crate in detail
-- [Aqua v3 introduction](/docs/v3.0.2/introduction) — the stable release
-23:T1e91,
-**Aqua Protocol** is an open protocol for data accountability and provenance. It records data as **Aqua trees**: portable, cryptographically verifiable trees of revisions that can be exchanged across systems and checked by anyone who holds them — no central authority required.
+- [Quick Start](/docs/v4.0.0/quickstart) — create, sign, and verify your first Aqua tree in Rust
+- [Core Concepts](/docs/v4.0.0/concepts) — revisions, trees, templates, and the trust model
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the aqua-rs-sdk-core crate: API surface and usage
+- [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publish and resolve templates by publisher DID
+- [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — record what an AI agent did as verifiable Aqua trees
+- [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — the readable reference to the normative protocol specification
+- [Use Cases](/docs/v4.0.0/use-cases/introduction) — document verification, identity attestation, supply chain
+- [Release Status & Versioning](/docs/v4.0.0/version-info) — what this release contains, excludes, and guarantees
+23:T1618,
+**Aqua Protocol** is an open protocol for data accountability and provenance. It records data as **Aqua trees**: portable trees of revisions secured by hash chains and cryptographic signatures, which can be exchanged across systems and checked by anyone who holds them. No central authority or trusted intermediary is required, which makes the protocol a foundation for applications that certify, attest to, and secure data in an open, decentralized way.
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+Trust can be built by relying on hashing and signature mechanisms alone or by delegating to a mutually trusted party. Aqua Protocol handles both scenarios, giving you flexibility in how you establish and verify trust.
+
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice. See [Release Status & Versioning](/docs/v4.0.0/version-info).
 </Callout>
 
-## What is Aqua Protocol?
-
-Aqua Protocol is a framework for building distributed trust networks. It uses hash chains and cryptographic signatures to make data integrity and provenance verifiable without a trusted intermediary, and it is the foundation for applications that certify, attest to, and secure data in an open, decentralized way.
-
-Trust can be built by relying on hashing and signature mechanisms or by delegating to a mutually trusted party. Aqua Protocol handles both scenarios, giving you flexibility in how you establish and verify trust.
-
-<Callout type="info" title="Powered by cryptography, not blockchain">
-Aqua Protocol is made possible by crypto as in _cryptography_. The protocol neither is nor requires blockchain technology: records are secured by hash chains and digital signatures, and anyone holding the data can verify it independently.
-</Callout>
-
-## How it works
-
-At its core, Aqua creates portable hash-linked structures called **Aqua trees** (written `AquaTree` in code) that record a gapless history of data revisions. Every revision is one of four kinds — **object** (typed data), **template** (the schema that defines a type), **signature** (a cryptographic endorsement), or **anchor** (a structural link between revisions and trees). Each revision after the first references its predecessor by hash, so a modification anywhere in the history is immediately detectable.
+At its core, Aqua creates portable hash-linked structures called **Aqua trees** that record a gapless history of data revisions. Every revision is one of four kinds — **object** (typed data), **template** (the schema that defines a type), **signature** (a cryptographic endorsement), or **anchor** (a structural link between revisions and trees). Each revision after the first references its predecessor by hash, so a modification anywhere in the history is immediately detectable.
 
 Aqua trees are plain JSON. They can be stored, exchanged, and verified anywhere: verification is a local computation over the tree (and any trees it links to), not a call to a service.
 
 Key capabilities of the v4 core profile:
 
-- **Tamper-evident history** — every revision after the first links to its predecessor by hash; a change to any byte anywhere breaks verification.
-- **Typed data** — object revisions conform to templates (JSON Schema) identified by hash, so both sides of an exchange agree on structure.
-- **Cryptographic signatures** — four suites: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn P-256, with signer identities expressed as DIDs.
-- **Selective disclosure** — tree-hashed revisions can be shared with individual fields redacted while the rest stays verifiable.
-- **Portable verification** — trees can be exported self-descriptively, so they verify anywhere; the verifier needs the data, not an account on a platform.
+- **Tamper-evident history**: every revision after the first links to its predecessor by hash; a change to any byte anywhere breaks verification.
+- **Typed data**: object revisions conform to templates (JSON Schema) identified by hash, so both sides of an exchange agree on structure.
+- **Cryptographic signatures**: four suites: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn P-256, with signer identities expressed as DIDs.
+- **Selective disclosure**: tree-hashed revisions can be shared with individual fields redacted while the rest stays verifiable.
+- **Portable verification**: trees can be exported self-descriptively, so they verify anywhere; the verifier needs the data, not an account on a platform.
 
 The [Core Concepts](/docs/v4.0.0/concepts) page builds the full mental model; the [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) is the readable companion to the normative specification.
 
@@ -1577,12 +1494,10 @@ The [Core Concepts](/docs/v4.0.0/concepts) page builds the full mental model; th
 
 Two components are published, both under the Apache-2.0 license:
 
-| Component | What it does |
-|---|---|
-| [`aqua-rs-sdk-core`](https://github.com/inblockio/aqua-rs-sdk-core) | The protocol core: anchor, object, and template primitives, four signature suites, selective disclosure, and the verification pipeline. Also home of the [protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification). |
-| [`aqua-template-registry`](https://github.com/inblockio/aqua-template-registry) | Template distribution: publish, resolve, and subscribe to Aqua templates by publisher DID, as a Rust library and an HTTP service. A hosted instance runs at [aqua-registry.inblock.io](https://aqua-registry.inblock.io), provided without SLA. |
+- **[`aqua-rs-sdk-core`](https://github.com/inblockio/aqua-rs-sdk-core)** — the protocol core: revision primitives, the four signature suites, selective disclosure, and the verification pipeline. Also home of the [protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification).
+- **[`aqua-template-registry`](https://github.com/inblockio/aqua-template-registry)** — template distribution: publish, resolve, and subscribe to templates by publisher DID, as a Rust library and an HTTP service. Hosted instance at [aqua-registry.inblock.io](https://aqua-registry.inblock.io), without SLA.
 
-Neither crate is on crates.io yet (publication is planned). Install the core as a git dependency:
+Neither crate is on crates.io yet. Install the core as a git dependency:
 
 ```toml
 [dependencies]
@@ -1599,70 +1514,6 @@ aqua-rs-sdk-core = { git = "https://github.com/inblockio/aqua-rs-sdk-core" }
 
 **Open by design.** An open standard with open-source implementations. Only hashes ever need to leave your hands, so the data itself stays private and under your control.
 
-## Where to go next
-
-<CardGrid cols={2}>
-  <Card title="Quick Start"
-    icon="rocket"
-    href="/docs/v4.0.0/quickstart"
-  >
-    Create, sign, and verify your first Aqua tree in Rust
-  </Card>
-
-  <Card title="Core Concepts"
-    icon="brain"
-    href="/docs/v4.0.0/concepts"
-  >
-    Revisions, trees, templates, and the trust model
-  </Card>
-
-  <Card title="aqua-rs-sdk-core"
-    icon="code"
-    href="/docs/v4.0.0/dev-tools/sdk-core"
-  >
-    The aqua-rs-sdk-core crate: API surface and usage
-  </Card>
-
-  <Card title="Template Registry"
-    icon="package"
-    href="/docs/v4.0.0/dev-tools/template-registry"
-  >
-    Publish and resolve templates by publisher DID
-  </Card>
-
-  <Card title="Audit Trails for AI Agents"
-    icon="bot"
-    href="/docs/v4.0.0/dev-tools/agent-audit-trails"
-  >
-    Record what an AI agent did as verifiable Aqua trees
-  </Card>
-
-  <Card title="Protocol Reference"
-    icon="book-open"
-    href="/docs/v4.0.0/schema-reference/introduction"
-  >
-    The readable reference to the normative protocol specification
-  </Card>
-
-  <Card title="Use Cases"
-    icon="lightbulb"
-    href="/docs/v4.0.0/use-cases/introduction"
-  >
-    Document verification, identity attestation, supply chain
-  </Card>
-
-  <Card title="Release Status & Versioning"
-    icon="git-commit-horizontal"
-    href="/docs/v4.0.0/version-info"
-  >
-    What this release contains, excludes, and guarantees
-  </Card>
-</CardGrid>
-
-## Aqua v3 (stable)
-
-Aqua Protocol v3 is the stable, production-ready release, built around a JavaScript/TypeScript SDK. If you are building for production today, start with the [v3 documentation](/docs/v3.0.2/introduction). The v4 release documented here is the experimental successor and does not yet replace it.
-
 ## Community & contact
 
 Aqua Protocol is open source and community-driven. Feedback, bug reports, code, and documentation contributions are welcome.
@@ -1671,22 +1522,25 @@ Aqua Protocol is open source and community-driven. Feedback, bug reports, code, 
 - **Email**: [info@inblock.io](mailto:info@inblock.io) — reach the team directly
 - **X**: [x.com/inblockio](https://x.com/inblockio) — announcements and progress
 
-## See also
+## Next steps
 
-- [Quick Start](/docs/v4.0.0/quickstart) — first steps with the Rust core
-- [Core Concepts](/docs/v4.0.0/concepts) — the v4 data model at a glance
-- [Release Status & Versioning](/docs/v4.0.0/version-info) — scope and guarantees of this release
-- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the published crate in detail
-- [Aqua v3 introduction](/docs/v3.0.2/introduction) — the stable release
-24:T44af,
+- [Quick Start](/docs/v4.0.0/quickstart) — create, sign, and verify your first Aqua tree in Rust
+- [Core Concepts](/docs/v4.0.0/concepts) — revisions, trees, templates, and the trust model
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the aqua-rs-sdk-core crate: API surface and usage
+- [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publish and resolve templates by publisher DID
+- [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — record what an AI agent did as verifiable Aqua trees
+- [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — the readable reference to the normative protocol specification
+- [Use Cases](/docs/v4.0.0/use-cases/introduction) — document verification, identity attestation, supply chain
+- [Release Status & Versioning](/docs/v4.0.0/version-info) — what this release contains, excludes, and guarantees
+24:T4361,
 `aqua-template-registry` is the distribution layer that `aqua-rs-sdk-core` deliberately leaves out: core knows how to hash, sign, and verify a template, and says nothing about how you find one. Publishers register signed Aqua trees under their publisher DID; consumers resolve templates by qualified name (`<vendor>/<name>`) or subscribe to everything a publisher DID emits. The project is a Rust library, an HTTP service (`registryd`), a publisher tool (`publish-audit-set`), a consumer CLI (`subscribe`), a seeded template set (`seed/`), and trust policy examples (`trust/`). Apache-2.0, source: [github.com/inblockio/aqua-template-registry](https://github.com/inblockio/aqua-template-registry).
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice. See [Release Status & Versioning](/docs/v4.0.0/version-info).
 </Callout>
 
 <Callout type="info" title="Hosted instance">
-A deployed registry is available, without SLA, at [aqua-registry.inblock.io](https://aqua-registry.inblock.io). It can be used to publish and retrieve community-developed templates. Because it runs under active development and experimental conditions, stored templates may be wiped without notice — keep your signed registration trees so you can republish.
+A deployed registry is available, without SLA, at [aqua-registry.inblock.io](https://aqua-registry.inblock.io). It can be used to publish and retrieve community-developed templates. Because it is alpha software, stored templates may be wiped without notice — keep your signed registration trees so you can republish.
 </Callout>
 
 ## Identity and naming
@@ -1901,22 +1755,22 @@ The registry is the **only sanctioned distribution channel** for this family —
 - No plugin or WASM module distribution.
 - No authentication or API keys on the write path: every write is a signed tree that authenticates itself.
 
-## See also
+## Next steps
 
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the protocol engine the registry distributes templates for
 - [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family end to end
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity, hashing, and derivation
 - [Quick Start](/docs/v4.0.0/quickstart) — first steps with the published components
 - [aqua-template-registry on GitHub](https://github.com/inblockio/aqua-template-registry) — source, seed set, and full API documentation
-25:T44af,
+25:T4361,
 `aqua-template-registry` is the distribution layer that `aqua-rs-sdk-core` deliberately leaves out: core knows how to hash, sign, and verify a template, and says nothing about how you find one. Publishers register signed Aqua trees under their publisher DID; consumers resolve templates by qualified name (`<vendor>/<name>`) or subscribe to everything a publisher DID emits. The project is a Rust library, an HTTP service (`registryd`), a publisher tool (`publish-audit-set`), a consumer CLI (`subscribe`), a seeded template set (`seed/`), and trust policy examples (`trust/`). Apache-2.0, source: [github.com/inblockio/aqua-template-registry](https://github.com/inblockio/aqua-template-registry).
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice. See [Release Status & Versioning](/docs/v4.0.0/version-info).
 </Callout>
 
 <Callout type="info" title="Hosted instance">
-A deployed registry is available, without SLA, at [aqua-registry.inblock.io](https://aqua-registry.inblock.io). It can be used to publish and retrieve community-developed templates. Because it runs under active development and experimental conditions, stored templates may be wiped without notice — keep your signed registration trees so you can republish.
+A deployed registry is available, without SLA, at [aqua-registry.inblock.io](https://aqua-registry.inblock.io). It can be used to publish and retrieve community-developed templates. Because it is alpha software, stored templates may be wiped without notice — keep your signed registration trees so you can republish.
 </Callout>
 
 ## Identity and naming
@@ -2131,16 +1985,16 @@ The registry is the **only sanctioned distribution channel** for this family —
 - No plugin or WASM module distribution.
 - No authentication or API keys on the write path: every write is a signed tree that authenticates itself.
 
-## See also
+## Next steps
 
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the protocol engine the registry distributes templates for
 - [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family end to end
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity, hashing, and derivation
 - [Quick Start](/docs/v4.0.0/quickstart) — first steps with the published components
 - [aqua-template-registry on GitHub](https://github.com/inblockio/aqua-template-registry) — source, seed set, and full API documentation
-26:T2e0f,
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+26:T2ae8,
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice. See [Release Status & Versioning](/docs/v4.0.0/version-info).
 </Callout>
 
 This guide goes from an empty directory to a verified Aqua tree in one small Rust program: create a genesis revision for a piece of content, sign it with an Ed25519 key, and run the full verification pipeline.
@@ -2295,26 +2149,6 @@ This guide goes from an empty directory to a verified Aqua tree in one small Rus
     - **`revision_type` is a template multihash, never a keyword.** The anchor names the `anchor_template`, the object names the `file` template, and the signature names the `signature_ed25519` template. Types are content hashes, not strings.
     - **Verification recomputed everything.** `verify_aqua_tree` resolved the anchor's structural links, recomputed every revision hash against its map key, validated the object's payload against the `file` template's JSON Schema, checked the file content by size and hash, and cryptographically verified the signature — failing closed on any mismatch.
   </Step>
-
-  <Step title="Next steps">
-    <CardGrid cols={2}>
-      <Card title="Core Concepts" icon="brain" href="/docs/v4.0.0/concepts">
-        The Aqua tree, the four revision kinds, templates, and verification — the mental model behind the three calls you just made
-      </Card>
-      <Card title="aqua-rs-sdk-core" icon="code" href="/docs/v4.0.0/dev-tools/sdk-core">
-        The full aqua-rs-sdk-core API: typed objects, custom templates, exports, and selective disclosure
-      </Card>
-      <Card title="Template Registry" icon="package" href="/docs/v4.0.0/dev-tools/template-registry">
-        Publish and retrieve templates by publisher DID with aqua-template-registry
-      </Card>
-      <Card title="Audit Trails for AI Agents" icon="bot" href="/docs/v4.0.0/dev-tools/agent-audit-trails">
-        Record AI-agent sessions as sequences of signed, individually verifiable artifacts
-      </Card>
-      <Card title="Protocol Reference" icon="book-open" href="/docs/v4.0.0/schema-reference/introduction">
-        The readable reference for the v4 wire format, backed by the normative protocol specification
-      </Card>
-    </CardGrid>
-  </Step>
 </Steps>
 
 ## Troubleshooting
@@ -2342,16 +2176,19 @@ This guide goes from an empty directory to a verified Aqua tree in one small Rus
   </AccordionItem>
 </Accordion>
 
-## See also
+## Next steps
 
+- [Core Concepts](/docs/v4.0.0/concepts) — the Aqua tree, the four revision kinds, templates, and verification: the mental model behind the three calls you just made
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the full aqua-rs-sdk-core API: typed objects, custom templates, exports, and selective disclosure
+- [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publish and retrieve templates by publisher DID with aqua-template-registry
+- [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — record AI-agent sessions as sequences of signed, individually verifiable artifacts
+- [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — the readable reference for the v4 wire format, backed by the normative protocol specification
 - [Welcome](/docs/v4.0.0/welcome) — what Aqua Protocol v4 is and what is published today
-- [Core Concepts](/docs/v4.0.0/concepts) — the data model behind this example
 - [Release Status & Versioning](/docs/v4.0.0/version-info) — release status and scope of the v4 components
-- [v3 documentation](/docs/v3.0.2/introduction) — the stable JavaScript SDK
 - [aqua-rs-sdk-core on GitHub](https://github.com/inblockio/aqua-rs-sdk-core) — source, examples, and the normative protocol specification
-27:T2e0f,
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+27:T2ae8,
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice. See [Release Status & Versioning](/docs/v4.0.0/version-info).
 </Callout>
 
 This guide goes from an empty directory to a verified Aqua tree in one small Rust program: create a genesis revision for a piece of content, sign it with an Ed25519 key, and run the full verification pipeline.
@@ -2506,26 +2343,6 @@ This guide goes from an empty directory to a verified Aqua tree in one small Rus
     - **`revision_type` is a template multihash, never a keyword.** The anchor names the `anchor_template`, the object names the `file` template, and the signature names the `signature_ed25519` template. Types are content hashes, not strings.
     - **Verification recomputed everything.** `verify_aqua_tree` resolved the anchor's structural links, recomputed every revision hash against its map key, validated the object's payload against the `file` template's JSON Schema, checked the file content by size and hash, and cryptographically verified the signature — failing closed on any mismatch.
   </Step>
-
-  <Step title="Next steps">
-    <CardGrid cols={2}>
-      <Card title="Core Concepts" icon="brain" href="/docs/v4.0.0/concepts">
-        The Aqua tree, the four revision kinds, templates, and verification — the mental model behind the three calls you just made
-      </Card>
-      <Card title="aqua-rs-sdk-core" icon="code" href="/docs/v4.0.0/dev-tools/sdk-core">
-        The full aqua-rs-sdk-core API: typed objects, custom templates, exports, and selective disclosure
-      </Card>
-      <Card title="Template Registry" icon="package" href="/docs/v4.0.0/dev-tools/template-registry">
-        Publish and retrieve templates by publisher DID with aqua-template-registry
-      </Card>
-      <Card title="Audit Trails for AI Agents" icon="bot" href="/docs/v4.0.0/dev-tools/agent-audit-trails">
-        Record AI-agent sessions as sequences of signed, individually verifiable artifacts
-      </Card>
-      <Card title="Protocol Reference" icon="book-open" href="/docs/v4.0.0/schema-reference/introduction">
-        The readable reference for the v4 wire format, backed by the normative protocol specification
-      </Card>
-    </CardGrid>
-  </Step>
 </Steps>
 
 ## Troubleshooting
@@ -2553,14 +2370,17 @@ This guide goes from an empty directory to a verified Aqua tree in one small Rus
   </AccordionItem>
 </Accordion>
 
-## See also
+## Next steps
 
+- [Core Concepts](/docs/v4.0.0/concepts) — the Aqua tree, the four revision kinds, templates, and verification: the mental model behind the three calls you just made
+- [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the full aqua-rs-sdk-core API: typed objects, custom templates, exports, and selective disclosure
+- [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publish and retrieve templates by publisher DID with aqua-template-registry
+- [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — record AI-agent sessions as sequences of signed, individually verifiable artifacts
+- [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — the readable reference for the v4 wire format, backed by the normative protocol specification
 - [Welcome](/docs/v4.0.0/welcome) — what Aqua Protocol v4 is and what is published today
-- [Core Concepts](/docs/v4.0.0/concepts) — the data model behind this example
 - [Release Status & Versioning](/docs/v4.0.0/version-info) — release status and scope of the v4 components
-- [v3 documentation](/docs/v3.0.2/introduction) — the stable JavaScript SDK
 - [aqua-rs-sdk-core on GitHub](https://github.com/inblockio/aqua-rs-sdk-core) — source, examples, and the normative protocol specification
-28:T535b,
+28:T535d,
 The **revision** is the universal protocol object; the **tree** is its container. This page specifies both wire formats, the four revision kinds, how a decoder tells the kinds apart, what a genesis revision is, and the structural rules every tree must satisfy. The normative source is [01 — Data model](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/01-data-model.md) in the protocol specification; on any disagreement, the specification wins.
 
 All examples on this page are real: they come from the specification's worked example, the `aqua-rs-sdk-core` test seeds, and the `aqua-template-registry` seed set. Hashes are shown in full; a value like `0x1620ce6f…` is abbreviated in prose only.
@@ -2861,14 +2681,14 @@ The chain is anchor → signature, because `0x16200ca0…` sorts below `0x1620f7
 
 Timestamp revisions are defined by the full Aqua protocol but sit **outside the published core profile**. The core profile classifies an incoming revision as a timestamp by its naming value (the three timestamp foundation templates) but neither creates nor verifies timestamp revisions; the verification policy governs the outcome — the strict policy rejects them, the offline policy accepts them with a warning. See [Verification](/docs/v4.0.0/schema-reference/verification).
 
-## See also
+## Next steps
 
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how revision hashes and links are computed
 - [Templates](/docs/v4.0.0/schema-reference/templates) — type identity, derivation, and the shipped catalog
 - [Signatures](/docs/v4.0.0/schema-reference/signatures) — the signing pre-image and the four signature suites
 - [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) — structural link resolution and cross-tree references
 - [Verification](/docs/v4.0.0/schema-reference/verification) — the staged procedure that enforces the rules on this page
-29:T535b,
+29:T535d,
 The **revision** is the universal protocol object; the **tree** is its container. This page specifies both wire formats, the four revision kinds, how a decoder tells the kinds apart, what a genesis revision is, and the structural rules every tree must satisfy. The normative source is [01 — Data model](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/01-data-model.md) in the protocol specification; on any disagreement, the specification wins.
 
 All examples on this page are real: they come from the specification's worked example, the `aqua-rs-sdk-core` test seeds, and the `aqua-template-registry` seed set. Hashes are shown in full; a value like `0x1620ce6f…` is abbreviated in prose only.
@@ -3169,14 +2989,14 @@ The chain is anchor → signature, because `0x16200ca0…` sorts below `0x1620f7
 
 Timestamp revisions are defined by the full Aqua protocol but sit **outside the published core profile**. The core profile classifies an incoming revision as a timestamp by its naming value (the three timestamp foundation templates) but neither creates nor verifies timestamp revisions; the verification policy governs the outcome — the strict policy rejects them, the offline policy accepts them with a warning. See [Verification](/docs/v4.0.0/schema-reference/verification).
 
-## See also
+## Next steps
 
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how revision hashes and links are computed
 - [Templates](/docs/v4.0.0/schema-reference/templates) — type identity, derivation, and the shipped catalog
 - [Signatures](/docs/v4.0.0/schema-reference/signatures) — the signing pre-image and the four signature suites
 - [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) — structural link resolution and cross-tree references
 - [Verification](/docs/v4.0.0/schema-reference/verification) — the staged procedure that enforces the rules on this page
-2a:T39ac,
+2a:T399b,
 ## Core capabilities
 
 ### Tamper-evident verification
@@ -3473,12 +3293,12 @@ Add Aqua Protocol to permit, license, and registration systems to provide instan
 
 ### Interoperability
 - JSON-based format enables easy integration
-- Multiple SDK options (Rust for v4, JavaScript/TypeScript for v3)
+- Rust SDK for building verification into applications
 - Platform-agnostic verification
 - Standard cryptographic primitives
 
 ### Versioning and extensibility
-- Protocol versioning supports evolution (this experimental release reserves breaking changes)
+- Protocol versioning supports evolution (this alpha release reserves breaking changes)
 - Hash algorithm agility (SHA3-256 default, BLAKE3-256 optional)
 - Multiple signature algorithm support
 - Extensible, template-defined revision kinds
@@ -3500,13 +3320,13 @@ A: By default, only document hashes are stored in the tree, not content. The doc
 **Q: How do I revoke a document?**
 A: Add a revocation revision to the tree. The document history remains (for audit purposes), but new revisions can indicate revoked status.
 
-## See also
+## Next steps
 
 - [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) — apply similar verification to supply chain events
 - [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) — verify identity credentials
 - [Quick Start](/docs/v4.0.0/quickstart) — get started with document verification
 - [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — technical specifications
-2b:T39ac,
+2b:T399b,
 ## Core capabilities
 
 ### Tamper-evident verification
@@ -3803,12 +3623,12 @@ Add Aqua Protocol to permit, license, and registration systems to provide instan
 
 ### Interoperability
 - JSON-based format enables easy integration
-- Multiple SDK options (Rust for v4, JavaScript/TypeScript for v3)
+- Rust SDK for building verification into applications
 - Platform-agnostic verification
 - Standard cryptographic primitives
 
 ### Versioning and extensibility
-- Protocol versioning supports evolution (this experimental release reserves breaking changes)
+- Protocol versioning supports evolution (this alpha release reserves breaking changes)
 - Hash algorithm agility (SHA3-256 default, BLAKE3-256 optional)
 - Multiple signature algorithm support
 - Extensible, template-defined revision kinds
@@ -3830,13 +3650,13 @@ A: By default, only document hashes are stored in the tree, not content. The doc
 **Q: How do I revoke a document?**
 A: Add a revocation revision to the tree. The document history remains (for audit purposes), but new revisions can indicate revoked status.
 
-## See also
+## Next steps
 
 - [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) — apply similar verification to supply chain events
 - [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) — verify identity credentials
 - [Quick Start](/docs/v4.0.0/quickstart) — get started with document verification
 - [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — technical specifications
-2c:T3d4d,
+2c:T3d4f,
 Aqua Protocol v4 models data as trees of hash-linked revisions. This page defines the working vocabulary; the [normative protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification) in the `aqua-rs-sdk-core` repository is authoritative, and each section links its detailed [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) page.
 
 ## The Aqua tree
@@ -4005,14 +3825,14 @@ A typed object names its type by hash only, so a tree is meaningless to a receiv
 
 Full rules: [Templates](/docs/v4.0.0/schema-reference/templates) and the [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) `export_tree` API.
 
-## See also
+## Next steps
 
 - [Quick Start](/docs/v4.0.0/quickstart) — create, sign, and verify a tree in one program
 - [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — the readable wire-format reference
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revisions and trees in full detail
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the Rust API implementing these concepts
 - [Protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification) — the normative source
-2d:T3d4d,
+2d:T3d4f,
 Aqua Protocol v4 models data as trees of hash-linked revisions. This page defines the working vocabulary; the [normative protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification) in the `aqua-rs-sdk-core` repository is authoritative, and each section links its detailed [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) page.
 
 ## The Aqua tree
@@ -4181,14 +4001,14 @@ A typed object names its type by hash only, so a tree is meaningless to a receiv
 
 Full rules: [Templates](/docs/v4.0.0/schema-reference/templates) and the [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) `export_tree` API.
 
-## See also
+## Next steps
 
 - [Quick Start](/docs/v4.0.0/quickstart) — create, sign, and verify a tree in one program
 - [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — the readable wire-format reference
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revisions and trees in full detail
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the Rust API implementing these concepts
 - [Protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification) — the normative source
-2e:T4824,
+2e:T4826,
 An AI agent that reads prompts, reasons, calls tools, and acts on external systems produces claims that someone will later need to check: what did the user actually ask, what did the API actually return, who approved the risky action, what did the agent actually answer? Application logs cannot carry that burden — they are mutable, unsigned, and owned by the very operator whose conduct is in question.
 
 The audit template family — the headline use case of `aqua-rs-sdk-core` — turns each step of an agent session into its own **signed Aqua tree**, causally linked to the others by role-tagged links. The result is a tamper-evident record that any third party verifies without trusting the agent's operator, and that can be **selectively disclosed**: an auditor can confirm that a prompt was signed and belongs to a turn without ever reading the prompt text.
@@ -4511,14 +4331,14 @@ Mapping the event stream of a typical agent framework onto the family:
 
 Divergence between what an API returned (T5, attestor-signed) and what the agent claims it saw (T6, agent-signed) is detectable by construction — that is the point of splitting the two.
 
-## See also
+## Next steps
 
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the crate that hashes, signs, verifies, and discloses these trees
 - [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publishing, resolving, and subscribing to the audit family
 - [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — redacted revisions, selective trees, and their verification rules
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity, derivation, and the shipped catalog
 - [Quick Start](/docs/v4.0.0/quickstart) — first steps with `aqua-rs-sdk-core`
-2f:T4824,
+2f:T4826,
 An AI agent that reads prompts, reasons, calls tools, and acts on external systems produces claims that someone will later need to check: what did the user actually ask, what did the API actually return, who approved the risky action, what did the agent actually answer? Application logs cannot carry that burden — they are mutable, unsigned, and owned by the very operator whose conduct is in question.
 
 The audit template family — the headline use case of `aqua-rs-sdk-core` — turns each step of an agent session into its own **signed Aqua tree**, causally linked to the others by role-tagged links. The result is a tamper-evident record that any third party verifies without trusting the agent's operator, and that can be **selectively disclosed**: an auditor can confirm that a prompt was signed and belongs to a turn without ever reading the prompt text.
@@ -4841,14 +4661,14 @@ Mapping the event stream of a typical agent framework onto the family:
 
 Divergence between what an API returned (T5, attestor-signed) and what the agent claims it saw (T6, agent-signed) is detectable by construction — that is the point of splitting the two.
 
-## See also
+## Next steps
 
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the crate that hashes, signs, verifies, and discloses these trees
 - [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publishing, resolving, and subscribing to the audit family
 - [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — redacted revisions, selective trees, and their verification rules
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity, derivation, and the shipped catalog
 - [Quick Start](/docs/v4.0.0/quickstart) — first steps with `aqua-rs-sdk-core`
-30:T399d,
+30:T399f,
 Every revision in an Aqua tree is addressed by the hash of its own canonical form. This page describes how that hash is computed: which algorithms are registered, how hashes are encoded on the wire, how a revision is canonicalized, and how the two hashing methods (`scalar` and `tree`) reduce the canonical form to a digest.
 
 The normative source is the protocol specification in the `aqua-rs-sdk-core` repository; this page is the readable reference. Where they disagree, [02 — Hashing and canonicalization](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/02-hashing-and-canonicalization.md) wins.
@@ -5048,14 +4868,14 @@ SHA3-256 of those bytes, multihash-wrapped, yields the revision hash:
 
 which is the key this revision is stored under, the `previous_revision` of its children, and the target hash a signature over it would attest to.
 
-## See also
+## Next steps
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, common fields, and tree structure
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity and the SHA3-256 rule for type hashes
 - [Signatures](/docs/v4.0.0/schema-reference/signatures) — the signing pre-image in full, suites, and signer identity
 - [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — per-field redaction built on tree hashing
 - [Verification](/docs/v4.0.0/schema-reference/verification) — how hashes are recomputed and checked
-31:T399d,
+31:T399f,
 Every revision in an Aqua tree is addressed by the hash of its own canonical form. This page describes how that hash is computed: which algorithms are registered, how hashes are encoded on the wire, how a revision is canonicalized, and how the two hashing methods (`scalar` and `tree`) reduce the canonical form to a digest.
 
 The normative source is the protocol specification in the `aqua-rs-sdk-core` repository; this page is the readable reference. Where they disagree, [02 — Hashing and canonicalization](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/02-hashing-and-canonicalization.md) wins.
@@ -5255,14 +5075,14 @@ SHA3-256 of those bytes, multihash-wrapped, yields the revision hash:
 
 which is the key this revision is stored under, the `previous_revision` of its children, and the target hash a signature over it would attest to.
 
-## See also
+## Next steps
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, common fields, and tree structure
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity and the SHA3-256 rule for type hashes
 - [Signatures](/docs/v4.0.0/schema-reference/signatures) — the signing pre-image in full, suites, and signer identity
 - [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — per-field redaction built on tree hashing
 - [Verification](/docs/v4.0.0/schema-reference/verification) — how hashes are recomputed and checked
-32:T1b93,
+32:T1b95,
 The Aqua Protocol supports a **Self-Sovereign Identity (SSI)** pattern where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. Using cryptographic proofs and decentralized trust chains, Aqua lets users hold their own data while enabling third parties to verify the specific attributes that are disclosed.
 
 The flows on this page are built from custom templates: the published core release ships no identity, claim, or attestation templates (the full SDK's identity template family is scheduled for a later publication). See [Templates](/docs/v4.0.0/schema-reference/templates) for authoring your own.
@@ -5378,14 +5198,14 @@ Consider verifying a **University Degree**:
 
 When an employer verifies Alice's degree, they trace this path back to a root of trust they recognize (e.g., the Ministry of Education), establishing the credential's provenance without needing to call the university.
 
-## See also
+## Next steps
 
 - [Document Verification](/docs/v4.0.0/use-cases/document-verification) — verify the integrity of files and contracts
 - [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) — trace provenance of physical goods
 - [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — field-level redaction for privacy-preserving proofs
 - [Templates](/docs/v4.0.0/schema-reference/templates) — authoring the custom templates these flows rely on
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — tools for issuing and verifying claims
-33:T1b93,
+33:T1b95,
 The Aqua Protocol supports a **Self-Sovereign Identity (SSI)** pattern where individuals and organizations can issue, attest, and verify identity claims without relying on centralized identity providers. Using cryptographic proofs and decentralized trust chains, Aqua lets users hold their own data while enabling third parties to verify the specific attributes that are disclosed.
 
 The flows on this page are built from custom templates: the published core release ships no identity, claim, or attestation templates (the full SDK's identity template family is scheduled for a later publication). See [Templates](/docs/v4.0.0/schema-reference/templates) for authoring your own.
@@ -5501,14 +5321,14 @@ Consider verifying a **University Degree**:
 
 When an employer verifies Alice's degree, they trace this path back to a root of trust they recognize (e.g., the Ministry of Education), establishing the credential's provenance without needing to call the university.
 
-## See also
+## Next steps
 
 - [Document Verification](/docs/v4.0.0/use-cases/document-verification) — verify the integrity of files and contracts
 - [Supply Chain Tracking](/docs/v4.0.0/use-cases/supply-chain) — trace provenance of physical goods
 - [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — field-level redaction for privacy-preserving proofs
 - [Templates](/docs/v4.0.0/schema-reference/templates) — authoring the custom templates these flows rely on
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — tools for issuing and verifying claims
-34:T4c8c,
+34:T4c8e,
 A **template** declares a type. It is itself a revision: a JSON Schema for the payloads of object revisions of that type, plus optional derivation metadata, optional shape bounds, and an optional compute declaration. Templates are identified by content hash — there are no template names on the wire; names are a resolution convenience only.
 
 The normative source is the protocol specification in the `aqua-rs-sdk-core` repository; this page is the readable reference. Where they disagree, [03 — Templates](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/03-templates.md) wins.
@@ -5721,14 +5541,14 @@ A tree can be exported as a **self-descriptive artifact**: a tree into which eve
 
 Embedding changes no revision: templates enter the artifact under their own identities, and every existing hash and signature remains valid.
 
-## See also
+## Next steps
 
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how the template hash is computed
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds and how `revision_type` classifies them
 - [Verification](/docs/v4.0.0/schema-reference/verification) — policies, stages, and the error vocabulary
 - [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publishing and retrieving templates by hash
 - [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family in practice
-35:T4c8c,
+35:T4c8e,
 A **template** declares a type. It is itself a revision: a JSON Schema for the payloads of object revisions of that type, plus optional derivation metadata, optional shape bounds, and an optional compute declaration. Templates are identified by content hash — there are no template names on the wire; names are a resolution convenience only.
 
 The normative source is the protocol specification in the `aqua-rs-sdk-core` repository; this page is the readable reference. Where they disagree, [03 — Templates](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/03-templates.md) wins.
@@ -5941,14 +5761,14 @@ A tree can be exported as a **self-descriptive artifact**: a tree into which eve
 
 Embedding changes no revision: templates enter the artifact under their own identities, and every existing hash and signature remains valid.
 
-## See also
+## Next steps
 
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how the template hash is computed
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds and how `revision_type` classifies them
 - [Verification](/docs/v4.0.0/schema-reference/verification) — policies, stages, and the error vocabulary
 - [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — publishing and retrieving templates by hash
 - [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family in practice
-36:T43e4,
+36:T43e5,
 Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded as a signed revision, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
 
 ## Core capabilities
@@ -6284,7 +6104,7 @@ Create portals for suppliers to contribute to product trees:
 
 ### Interoperability
 - JSON-based format for easy integration
-- Multiple SDK options (Rust for v4, JavaScript for v3)
+- Rust SDK for building traceability into applications
 - Standard cryptographic primitives
 - Platform-agnostic verification
 - Compatible with existing supply chain systems
@@ -6326,13 +6146,13 @@ A: Add revision documenting loss or damage event with relevant details. The Aqua
 **Q: Does verification require a blockchain or network connection?**
 A: No. Verification of trees works offline using cryptographic signatures and hashes. Blockchain and TSA timestamping is defined by the full protocol and ships with the full SDK, scheduled for a later publication.
 
-## See also
+## Next steps
 
 - [Document Verification](/docs/v4.0.0/use-cases/document-verification) — apply similar techniques to documents
 - [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) — verify credentials and certifications
 - [Quick Start](/docs/v4.0.0/quickstart) — get started with supply chain tracking
 - [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — technical specifications
-37:T43e4,
+37:T43e5,
 Aqua Protocol provides cryptographic provenance tracking for supply chain operations, enabling end-to-end traceability from raw materials to finished products. Each step in the supply chain is recorded as a signed revision, creating a verifiable chain of custody that proves authenticity and tracks movement across multiple parties.
 
 ## Core capabilities
@@ -6668,7 +6488,7 @@ Create portals for suppliers to contribute to product trees:
 
 ### Interoperability
 - JSON-based format for easy integration
-- Multiple SDK options (Rust for v4, JavaScript for v3)
+- Rust SDK for building traceability into applications
 - Standard cryptographic primitives
 - Platform-agnostic verification
 - Compatible with existing supply chain systems
@@ -6710,13 +6530,13 @@ A: Add revision documenting loss or damage event with relevant details. The Aqua
 **Q: Does verification require a blockchain or network connection?**
 A: No. Verification of trees works offline using cryptographic signatures and hashes. Blockchain and TSA timestamping is defined by the full protocol and ships with the full SDK, scheduled for a later publication.
 
-## See also
+## Next steps
 
 - [Document Verification](/docs/v4.0.0/use-cases/document-verification) — apply similar techniques to documents
 - [Identity Attestation](/docs/v4.0.0/use-cases/identity-attestation) — verify credentials and certifications
 - [Quick Start](/docs/v4.0.0/quickstart) — get started with supply chain tracking
 - [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) — technical specifications
-38:T3e02,
+38:T3e04,
 A **signature revision** is a branch revision that cryptographically attests to another revision in the same tree. It records who signed, with which cryptographic suite, and carries the signature bytes themselves — all under the same tamper-evident hashing as every other revision.
 
 The normative definition is [04 — Signatures](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/04-signatures.md) in the protocol specification; the specification is authoritative, and this page is the readable reference.
@@ -6920,14 +6740,14 @@ Signature revisions are not schema-validated against their suite templates; the 
 
 Because a signature attests to its target's *hash*, [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) of the target does not invalidate the signature: a verifier that confirms the redacted target still matches its original hash retains the full force of the attestation. Disclosure policies must keep signature revisions fully disclosed if the attestation is to remain checkable.
 
-## See also
+## Next steps
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, common fields, tree structure
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how revision hashes and multihashes are computed
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity and the shipped catalog, including the signature suite templates
 - [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) — the branch revision kind that carries links instead of signatures
 - [Verification](/docs/v4.0.0/schema-reference/verification) — the full verification pipeline and policy decision points
-39:T3e02,
+39:T3e04,
 A **signature revision** is a branch revision that cryptographically attests to another revision in the same tree. It records who signed, with which cryptographic suite, and carries the signature bytes themselves — all under the same tamper-evident hashing as every other revision.
 
 The normative definition is [04 — Signatures](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/04-signatures.md) in the protocol specification; the specification is authoritative, and this page is the readable reference.
@@ -7131,14 +6951,14 @@ Signature revisions are not schema-validated against their suite templates; the 
 
 Because a signature attests to its target's *hash*, [selective disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) of the target does not invalidate the signature: a verifier that confirms the redacted target still matches its original hash retains the full force of the attestation. Disclosure policies must keep signature revisions fully disclosed if the attestation is to remain checkable.
 
-## See also
+## Next steps
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, common fields, tree structure
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — how revision hashes and multihashes are computed
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity and the shipped catalog, including the signature suite templates
 - [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) — the branch revision kind that carries links instead of signatures
 - [Verification](/docs/v4.0.0/schema-reference/verification) — the full verification pipeline and policy decision points
-3a:T3105,
+3a:T3107,
 An **anchor revision** is a branch revision that carries references to other revisions — inside its own tree, in other trees, or in template trees. Anchors are the protocol's only linking construct: they declare a tree's type at genesis, connect trees to one another, and mark deliberate attestation points.
 
 The normative definition is [05 — Anchor revisions and links](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/05-anchor-revisions-and-links.md) in the protocol specification; the specification is authoritative, and this page is the readable reference.
@@ -7290,14 +7110,14 @@ Anchoring in this profile is structural linking between trees. It is distinct fr
 
 Similarly, the `audit_round_anchor` template is *not* an anchor revision: it is an ordinary typed **object** revision whose payload carries an application-level Merkle commitment. The word "anchor" in its name refers to closing a turn, not to this page's revision kind.
 
-## See also
+## Next steps
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, common fields, genesis forms, branches and tips
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity, the shipped catalog, and resolution order
 - [Signatures](/docs/v4.0.0/schema-reference/signatures) — the other branch revision kind, which attests instead of linking
 - [Verification](/docs/v4.0.0/schema-reference/verification) — the full pipeline, error vocabulary, and policy decision points
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — `link_aqua_tree` and `verify_aqua_tree_with_linked_trees` in practice
-3b:T3105,
+3b:T3107,
 An **anchor revision** is a branch revision that carries references to other revisions — inside its own tree, in other trees, or in template trees. Anchors are the protocol's only linking construct: they declare a tree's type at genesis, connect trees to one another, and mark deliberate attestation points.
 
 The normative definition is [05 — Anchor revisions and links](https://github.com/inblockio/aqua-rs-sdk-core/blob/main/protocol-specification/05-anchor-revisions-and-links.md) in the protocol specification; the specification is authoritative, and this page is the readable reference.
@@ -7449,14 +7269,14 @@ Anchoring in this profile is structural linking between trees. It is distinct fr
 
 Similarly, the `audit_round_anchor` template is *not* an anchor revision: it is an ordinary typed **object** revision whose payload carries an application-level Merkle commitment. The word "anchor" in its name refers to closing a turn, not to this page's revision kind.
 
-## See also
+## Next steps
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, common fields, genesis forms, branches and tips
 - [Templates](/docs/v4.0.0/schema-reference/templates) — template identity, the shipped catalog, and resolution order
 - [Signatures](/docs/v4.0.0/schema-reference/signatures) — the other branch revision kind, which attests instead of linking
 - [Verification](/docs/v4.0.0/schema-reference/verification) — the full pipeline, error vocabulary, and policy decision points
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — `link_aqua_tree` and `verify_aqua_tree_with_linked_trees` in practice
-3c:T3e2e,
+3c:T3e30,
 Selective disclosure lets a tree's holder reveal a verifiable subset of its content: hidden fields are replaced by salted commitments, and a verifier confirms — with no side channel and no trusted party — that what was disclosed is exactly what the original revision hashes commit to.
 
 Disclosure operates at two levels:
@@ -7672,14 +7492,14 @@ The disclosure API of [`aqua-rs-sdk-core`](/docs/v4.0.0/dev-tools/sdk-core):
 | `export_selective_tree` | Export a tree under a disclosure policy. |
 | `verify_selective_tree(&selective)` | Verify a selective tree's integrity and chain continuity. |
 
-## See also
+## Next steps
 
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — the leaf commitments, salts, and Merkle construction that redaction is built on
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, methods, and tree structure
 - [Verification](/docs/v4.0.0/schema-reference/verification) — full verification and what selective artifacts opt out of
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — installing and using the disclosure API
 - [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family the pseudonymous preset targets
-3d:T3e2e,
+3d:T3e30,
 Selective disclosure lets a tree's holder reveal a verifiable subset of its content: hidden fields are replaced by salted commitments, and a verifier confirms — with no side channel and no trusted party — that what was disclosed is exactly what the original revision hashes commit to.
 
 Disclosure operates at two levels:
@@ -7895,18 +7715,18 @@ The disclosure API of [`aqua-rs-sdk-core`](/docs/v4.0.0/dev-tools/sdk-core):
 | `export_selective_tree` | Export a tree under a disclosure policy. |
 | `verify_selective_tree(&selective)` | Verify a selective tree's integrity and chain continuity. |
 
-## See also
+## Next steps
 
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — the leaf commitments, salts, and Merkle construction that redaction is built on
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, methods, and tree structure
 - [Verification](/docs/v4.0.0/schema-reference/verification) — full verification and what selective artifacts opt out of
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — installing and using the disclosure API
 - [Audit Trails for AI Agents](/docs/v4.0.0/dev-tools/agent-audit-trails) — the audit template family the pseudonymous preset targets
-3e:T2047,
+3e:T1b90,
 This page is the definitive statement of the current status of Aqua Protocol v4: what is published, what is deliberately out of scope, and which guarantees do — and do not — apply.
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice.
 </Callout>
 
 ## Specification status
@@ -7939,7 +7759,7 @@ The invariant behind this table: **the core is never more permissive than the fu
 
 ## Registry scope
 
-The registry deliberately validates coherence, not trustworthiness: every write is a signed Aqua tree that authenticates itself, vendor namespaces are first-come-first-served, and templates are identified by hash — names are display data. In the registry's own words, "'this registration is coherent' and 'this publisher is someone you should trust' are different claims, and only the first is in scope for a registry." Out of scope by design: on-chain registration, trust stores or ENS/DNS resolution, freshness or liveness guarantees, cross-registry mirroring and federation, transport security in the built-in client, and plugin/WASM distribution. Templates on the hosted instance may be wiped without notice while it runs under experimental conditions.
+The registry deliberately validates coherence, not trustworthiness: every write is a signed Aqua tree that authenticates itself, vendor namespaces are first-come-first-served, and templates are identified by hash — names are display data. In the registry's own words, "'this registration is coherent' and 'this publisher is someone you should trust' are different claims, and only the first is in scope for a registry." Out of scope by design: on-chain registration, trust stores or ENS/DNS resolution, freshness or liveness guarantees, cross-registry mirroring and federation, transport security in the built-in client, and plugin/WASM distribution. Templates on the hosted instance may be wiped without notice while it runs as alpha software.
 
 ## Versioning policy
 
@@ -7962,34 +7782,23 @@ Two changes are already announced and worth planning for:
 1. **Audit templates move to registry-only distribution.** The sanctioned distribution channel for the audit/agent template family is the template registry. This release still carries in-crate copies (they back the compatibility test suite), so built-in resolution of these templates still succeeds today — do not depend on it: it is not part of the supported contract, and removal from the catalog is a tracked breaking change.
 2. **Audit-family harmonization will change template hashes.** The audit templates in this release are a deliberate, test-bounded fork of the full SDK's family, pending upstream harmonization. When the two families are reunified, the audit template hashes will change. Treat current audit template hashes as pinned per release, not as permanent identifiers.
 
-## Relationship to Aqua v3
-
-Aqua Protocol v3 is the stable, production release, built around a JavaScript/TypeScript SDK. It is documented under [v3 documentation](/docs/v3.0.2/introduction) and is unaffected by v4's experimental status.
-
-| If you need | Use |
-|---|---|
-| A production deployment today | **v3** — stable JavaScript/TypeScript SDK |
-| Timestamping / witnessing today | **v3** — the published v4 core profile excludes timestamping |
-| The v4 data model in Rust: typed objects, selective disclosure, template distribution, agent audit trails | **v4** — accepting experimental status and breaking changes |
-
 ## Where future components will appear
 
 The full `aqua-rs-sdk` — which extends the published core with the WASM compute runtime, the policy engine, the daemon runtime, and timestamping providers — is scheduled for a later publication. Until then, the capabilities listed above remain outside the published surface, with the fail-closed behavior described.
 
-The Aqua CLI and the hosted Aquafier application belong to the v3-era toolchain today; they are not part of the v4 release. For current CLI and Aquafier usage, see the [v3 tooling documentation](/docs/v3.0.2/tooling).
+The Aqua CLI and the hosted Aquafier application are not part of the v4 release.
 
-## See also
+## Next steps
 
 - [Welcome](/docs/v4.0.0/welcome) — what Aqua Protocol v4 is
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the published crate in detail
 - [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — the distribution layer
 - [Verification](/docs/v4.0.0/schema-reference/verification) — policies and decision points in detail
-- [Aqua v3 introduction](/docs/v3.0.2/introduction) — the stable release
-3f:T2047,
+3f:T1b90,
 This page is the definitive statement of the current status of Aqua Protocol v4: what is published, what is deliberately out of scope, and which guarantees do — and do not — apply.
 
-<Callout type="warning" title="Experimental release">
-Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication. For production use today, refer to the stable [v3 documentation](/docs/v3.0.2/introduction).
+<Callout type="warning" title="Alpha software">
+Aqua Protocol v4 is alpha software. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — have a deliberately limited scope, and breaking changes may occur without notice.
 </Callout>
 
 ## Specification status
@@ -8022,7 +7831,7 @@ The invariant behind this table: **the core is never more permissive than the fu
 
 ## Registry scope
 
-The registry deliberately validates coherence, not trustworthiness: every write is a signed Aqua tree that authenticates itself, vendor namespaces are first-come-first-served, and templates are identified by hash — names are display data. In the registry's own words, "'this registration is coherent' and 'this publisher is someone you should trust' are different claims, and only the first is in scope for a registry." Out of scope by design: on-chain registration, trust stores or ENS/DNS resolution, freshness or liveness guarantees, cross-registry mirroring and federation, transport security in the built-in client, and plugin/WASM distribution. Templates on the hosted instance may be wiped without notice while it runs under experimental conditions.
+The registry deliberately validates coherence, not trustworthiness: every write is a signed Aqua tree that authenticates itself, vendor namespaces are first-come-first-served, and templates are identified by hash — names are display data. In the registry's own words, "'this registration is coherent' and 'this publisher is someone you should trust' are different claims, and only the first is in scope for a registry." Out of scope by design: on-chain registration, trust stores or ENS/DNS resolution, freshness or liveness guarantees, cross-registry mirroring and federation, transport security in the built-in client, and plugin/WASM distribution. Templates on the hosted instance may be wiped without notice while it runs as alpha software.
 
 ## Versioning policy
 
@@ -8045,30 +7854,19 @@ Two changes are already announced and worth planning for:
 1. **Audit templates move to registry-only distribution.** The sanctioned distribution channel for the audit/agent template family is the template registry. This release still carries in-crate copies (they back the compatibility test suite), so built-in resolution of these templates still succeeds today — do not depend on it: it is not part of the supported contract, and removal from the catalog is a tracked breaking change.
 2. **Audit-family harmonization will change template hashes.** The audit templates in this release are a deliberate, test-bounded fork of the full SDK's family, pending upstream harmonization. When the two families are reunified, the audit template hashes will change. Treat current audit template hashes as pinned per release, not as permanent identifiers.
 
-## Relationship to Aqua v3
-
-Aqua Protocol v3 is the stable, production release, built around a JavaScript/TypeScript SDK. It is documented under [v3 documentation](/docs/v3.0.2/introduction) and is unaffected by v4's experimental status.
-
-| If you need | Use |
-|---|---|
-| A production deployment today | **v3** — stable JavaScript/TypeScript SDK |
-| Timestamping / witnessing today | **v3** — the published v4 core profile excludes timestamping |
-| The v4 data model in Rust: typed objects, selective disclosure, template distribution, agent audit trails | **v4** — accepting experimental status and breaking changes |
-
 ## Where future components will appear
 
 The full `aqua-rs-sdk` — which extends the published core with the WASM compute runtime, the policy engine, the daemon runtime, and timestamping providers — is scheduled for a later publication. Until then, the capabilities listed above remain outside the published surface, with the fail-closed behavior described.
 
-The Aqua CLI and the hosted Aquafier application belong to the v3-era toolchain today; they are not part of the v4 release. For current CLI and Aquafier usage, see the [v3 tooling documentation](/docs/v3.0.2/tooling).
+The Aqua CLI and the hosted Aquafier application are not part of the v4 release.
 
-## See also
+## Next steps
 
 - [Welcome](/docs/v4.0.0/welcome) — what Aqua Protocol v4 is
 - [aqua-rs-sdk-core](/docs/v4.0.0/dev-tools/sdk-core) — the published crate in detail
 - [Template Registry](/docs/v4.0.0/dev-tools/template-registry) — the distribution layer
 - [Verification](/docs/v4.0.0/schema-reference/verification) — policies and decision points in detail
-- [Aqua v3 introduction](/docs/v3.0.2/introduction) — the stable release
-40:T3cb1,
+40:T3cb3,
 Verification composes the per-topic rules of the data model, hashing, templates, signatures, and anchors into one ordered procedure over a tree (optionally with linked trees), and reduces the result to a single outcome.
 
 <Callout type="info" title="Normative source">
@@ -8224,14 +8022,14 @@ The verification API of [`aqua-rs-sdk-core`](/docs/v4.0.0/dev-tools/sdk-core):
 | `VerificationResult` | Carries `outcome`, `logs`, `wasm_outputs`, `template_trust`; read it via `is_verified()`, `is_clean()`, `warnings()`, `errors()`. |
 | `VerificationPolicy::strict()` / `offline()` / `debug()` | Policy constructors; set the active policy with `Aquafier::builder().verification_policy(…)`. `strict()` is the default. |
 
-## See also
+## Next steps
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, wire form, and chain ordering
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — multihash rules, revision hashes, and Merkle construction
 - [Signatures](/docs/v4.0.0/schema-reference/signatures) — the Stage 4 signature procedure
 - [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) — structural links and cross-tree verification
 - [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — the reduced integrity procedure for selective artifacts
-41:T3cb1,
+41:T3cb3,
 Verification composes the per-topic rules of the data model, hashing, templates, signatures, and anchors into one ordered procedure over a tree (optionally with linked trees), and reduces the result to a single outcome.
 
 <Callout type="info" title="Normative source">
@@ -8387,20 +8185,20 @@ The verification API of [`aqua-rs-sdk-core`](/docs/v4.0.0/dev-tools/sdk-core):
 | `VerificationResult` | Carries `outcome`, `logs`, `wasm_outputs`, `template_trust`; read it via `is_verified()`, `is_clean()`, `warnings()`, `errors()`. |
 | `VerificationPolicy::strict()` / `offline()` / `debug()` | Policy constructors; set the active policy with `Aquafier::builder().verification_policy(…)`. `strict()` is the default. |
 
-## See also
+## Next steps
 
 - [Data Model](/docs/v4.0.0/schema-reference/data-model) — revision kinds, wire form, and chain ordering
 - [Hashing and Canonicalization](/docs/v4.0.0/schema-reference/hashing) — multihash rules, revision hashes, and Merkle construction
 - [Signatures](/docs/v4.0.0/schema-reference/signatures) — the Stage 4 signature procedure
 - [Anchors and Links](/docs/v4.0.0/schema-reference/anchors-and-links) — structural links and cross-tree verification
 - [Selective Disclosure](/docs/v4.0.0/schema-reference/selective-disclosure) — the reduced integrity procedure for selective artifacts
-11:["$","$13",null,{"fallback":["$","$L19",null,{}],"children":[["$","$L1a",null,{"header":["$","$L1b",null,{"currentVersion":"v4.0.0","versions":["v1.1.0","v2.0.2","v3.0.2","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"dev-tools/sdk-core","filePath":"dev-tools/sdk-core","title":"aqua-rs-sdk-core","meta":{"title":"aqua-rs-sdk-core","description":"Rust API reference for aqua-rs-sdk-core, the WASM-free core implementation of Aqua Protocol v4","icon":"code","sidebar_position":1,"redirect_from":["/docs/v4.0.0/dev-tools/aqua-sdk","/docs/v4.0.0/development"],"content":"$1c","reading_time":13,"word_count":2483,"locale":"en"},"content":"$1d","categoryLabel":"Developer Onboarding","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Protocol Reference","meta":{"title":"Protocol Reference","description":"Readable reference for the Aqua Protocol v4 core profile: data model, hashing, templates, signatures, anchors, selective disclosure, and verification","icon":"book-open","sidebar_position":1,"content":"$1e","reading_time":4,"word_count":743,"locale":"en"},"content":"$1f","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"How cryptographic verification and provenance tracking with Aqua trees apply across industries.","icon":"lightbulb","sidebar_position":1,"content":"$20","reading_time":7,"word_count":1330,"locale":"en"},"content":"$21","categoryLabel":"Use Cases","categoryPosition":6,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Portable, verifiable data trees built on cryptography — what Aqua Protocol v4 is and where to start","icon":"door-open","sidebar_position":1,"content":"$22","reading_time":5,"word_count":978,"locale":"en"},"content":"$23"},{"slug":"dev-tools/template-registry","filePath":"dev-tools/template-registry","title":"Template Registry","meta":{"title":"Template Registry","description":"Publish, resolve, and subscribe to Aqua templates by publisher DID with aqua-template-registry","icon":"package","sidebar_position":2,"content":"$24","reading_time":12,"word_count":2356,"locale":"en"},"content":"$25","categoryLabel":"Developer Onboarding","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"Create, sign, and verify your first Aqua tree in Rust with aqua-rs-sdk-core.","icon":"rocket","sidebar_position":2,"content":"$26","reading_time":7,"word_count":1328,"locale":"en"},"content":"$27"},{"slug":"schema-reference/data-model","filePath":"schema-reference/data-model","title":"Data Model","meta":{"title":"Data Model","description":"The revision and tree wire formats of the Aqua Protocol v4 core profile: common fields, the four revision kinds, kind discrimination, genesis, and structural rules","icon":"database","sidebar_position":2,"redirect_from":["/docs/v4.0.0/schema-reference/aqua-tree","/docs/v4.0.0/schema-reference/file-index","/docs/v4.0.0/schema-reference/revision/revision","/docs/v4.0.0/schema-reference/revision/object-revision"],"content":"$28","reading_time":14,"word_count":2705,"locale":"en"},"content":"$29","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Tamper-evident document integrity and authenticity verification with hash-linked, signed revisions.","icon":"file-check","sidebar_position":2,"content":"$2a","reading_time":11,"word_count":2011,"locale":"en"},"content":"$2b","categoryLabel":"Use Cases","categoryPosition":6,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"concepts","filePath":"concepts","title":"Core Concepts","meta":{"title":"Core Concepts","description":"The Aqua tree, the four revision kinds, multihash links, hashing methods, templates, signatures, anchors, selective disclosure, and verification.","icon":"brain","sidebar_position":3,"content":"$2c","reading_time":11,"word_count":2125,"locale":"en"},"content":"$2d"},{"slug":"dev-tools/agent-audit-trails","filePath":"dev-tools/agent-audit-trails","title":"Audit Trails for AI Agents","meta":{"title":"Audit Trails for AI Agents","description":"Record every step an AI agent takes as its own signed, verifiable, selectively disclosable Aqua tree using the audit template family","icon":"bot","sidebar_position":3,"content":"$2e","reading_time":12,"word_count":2339,"locale":"en"},"content":"$2f","categoryLabel":"Developer Onboarding","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"schema-reference/hashing","filePath":"schema-reference/hashing","title":"Hashing and Canonicalization","meta":{"title":"Hashing and Canonicalization","description":"How Aqua Protocol v4 computes revision hashes: the algorithm registry, the Aqua multihash profile, Aqua Pointer Form, scalar and tree hashing, and the shared Merkle construction","icon":"hash","sidebar_position":3,"content":"$30","reading_time":10,"word_count":1998,"locale":"en"},"content":"$31","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Self-sovereign identity claims and attestations built from custom Aqua templates.","icon":"id-card","sidebar_position":3,"content":"$32","reading_time":5,"word_count":965,"locale":"en"},"content":"$33","categoryLabel":"Use Cases","categoryPosition":6,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"schema-reference/templates","filePath":"schema-reference/templates","title":"Templates","meta":{"title":"Templates","description":"Templates declare types in Aqua Protocol v4: identity by content hash, derivation and narrowing, bounds, template resolution, compute declarations, and the shipped catalog","icon":"layout-template","sidebar_position":4,"redirect_from":["/docs/v4.0.0/schema-reference/revision/template-revision"],"content":"$34","reading_time":13,"word_count":2584,"locale":"en"},"content":"$35","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations.","icon":"truck","sidebar_position":4,"content":"$36","reading_time":12,"word_count":2387,"locale":"en"},"content":"$37","categoryLabel":"Use Cases","categoryPosition":6,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"schema-reference/signatures","filePath":"schema-reference/signatures","title":"Signatures","meta":{"title":"Signatures","description":"Signature revisions: wire form, the signing pre-image, the four signature suites, DID signer identity, and verification rules","icon":"file-signature","sidebar_position":5,"redirect_from":["/docs/v4.0.0/schema-reference/revision/signing-revision"],"content":"$38","reading_time":11,"word_count":2032,"locale":"en"},"content":"$39","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"schema-reference/anchors-and-links","filePath":"schema-reference/anchors-and-links","title":"Anchors and Links","meta":{"title":"Anchors and Links","description":"Anchor revisions: wire form, structural vs compositional links, genesis anchors, and cross-tree verification","icon":"anchor","sidebar_position":6,"redirect_from":["/docs/v4.0.0/schema-reference/revision/link-revision"],"content":"$3a","reading_time":9,"word_count":1700,"locale":"en"},"content":"$3b","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"schema-reference/selective-disclosure","filePath":"schema-reference/selective-disclosure","title":"Selective Disclosure","meta":{"title":"Selective Disclosure","description":"Field-level redaction and selective trees: revealing a verifiable subset of an Aqua tree","icon":"eye-off","sidebar_position":7,"content":"$3c","reading_time":11,"word_count":2192,"locale":"en"},"content":"$3d","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"version-info","filePath":"version-info","title":"Release Status & Versioning","meta":{"title":"Release Status & Versioning","description":"What the Aqua Protocol v4 release contains, what it deliberately excludes, and which stability guarantees apply","icon":"git-commit-horizontal","sidebar_position":7,"redirect_from":["/docs/v4.0.0/dev-tools/aqua-cli","/docs/v4.0.0/dev-tools/aquafier-api"],"content":"$3e","reading_time":6,"word_count":1124,"locale":"en"},"content":"$3f"},{"slug":"schema-reference/verification","filePath":"schema-reference/verification","title":"Verification","meta":{"title":"Verification","description":"The staged verification procedure, verification policies, and error vocabulary of Aqua Protocol v4","icon":"shield-check","sidebar_position":8,"redirect_from":["/docs/v4.0.0/schema-reference/revision/witness-revision"],"content":"$40","reading_time":11,"word_count":2005,"locale":"en"},"content":"$41","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"}],"version":"v4.0.0","children":"$L42","toc":"$L43","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L44","$L45","$L46"]}]
+11:["$","$13",null,{"fallback":["$","$L19",null,{}],"children":[["$","$L1a",null,{"header":["$","$L1b",null,{"currentVersion":"v4.0.0","versions":["v1.1.0","v2.0.2","v3.0.2","v4.0.0"],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}],"docs":[{"slug":"dev-tools/sdk-core","filePath":"dev-tools/sdk-core","title":"aqua-rs-sdk-core","meta":{"title":"aqua-rs-sdk-core","description":"Rust API reference for aqua-rs-sdk-core, the WASM-free core implementation of Aqua Protocol v4","icon":"code","sidebar_position":1,"redirect_from":["/docs/v4.0.0/dev-tools/aqua-sdk","/docs/v4.0.0/development"],"content":"$1c","reading_time":13,"word_count":2442,"locale":"en"},"content":"$1d","categoryLabel":"Developer Onboarding","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"schema-reference/introduction","filePath":"schema-reference/introduction","title":"Protocol Reference","meta":{"title":"Protocol Reference","description":"Readable reference for the Aqua Protocol v4 core profile: data model, hashing, templates, signatures, anchors, selective disclosure, and verification","icon":"book-open","sidebar_position":1,"content":"$1e","reading_time":4,"word_count":743,"locale":"en"},"content":"$1f","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"use-cases/introduction","filePath":"use-cases/introduction","title":"Aqua Protocol Use Cases","meta":{"title":"Aqua Protocol Use Cases","description":"How cryptographic verification and provenance tracking with Aqua trees apply across industries.","icon":"lightbulb","sidebar_position":1,"content":"$20","reading_time":7,"word_count":1326,"locale":"en"},"content":"$21","categoryLabel":"Use Cases","categoryPosition":6,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"welcome","filePath":"welcome","title":"Welcome to Aqua Protocol","meta":{"title":"Welcome to Aqua Protocol","description":"Portable, verifiable data trees built on cryptography — what Aqua Protocol v4 is and where to start","icon":"door-open","sidebar_position":1,"content":"$22","reading_time":4,"word_count":713,"locale":"en"},"content":"$23"},{"slug":"dev-tools/template-registry","filePath":"dev-tools/template-registry","title":"Template Registry","meta":{"title":"Template Registry","description":"Publish, resolve, and subscribe to Aqua templates by publisher DID with aqua-template-registry","icon":"package","sidebar_position":2,"content":"$24","reading_time":12,"word_count":2311,"locale":"en"},"content":"$25","categoryLabel":"Developer Onboarding","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"quickstart","filePath":"quickstart","title":"Quick Start","meta":{"title":"Quick Start","description":"Create, sign, and verify your first Aqua tree in Rust with aqua-rs-sdk-core.","icon":"rocket","sidebar_position":2,"content":"$26","reading_time":7,"word_count":1251,"locale":"en"},"content":"$27"},{"slug":"schema-reference/data-model","filePath":"schema-reference/data-model","title":"Data Model","meta":{"title":"Data Model","description":"The revision and tree wire formats of the Aqua Protocol v4 core profile: common fields, the four revision kinds, kind discrimination, genesis, and structural rules","icon":"database","sidebar_position":2,"redirect_from":["/docs/v4.0.0/schema-reference/aqua-tree","/docs/v4.0.0/schema-reference/file-index","/docs/v4.0.0/schema-reference/revision/revision","/docs/v4.0.0/schema-reference/revision/object-revision"],"content":"$28","reading_time":14,"word_count":2705,"locale":"en"},"content":"$29","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"use-cases/document-verification","filePath":"use-cases/document-verification","title":"Document Verification","meta":{"title":"Document Verification","description":"Tamper-evident document integrity and authenticity verification with hash-linked, signed revisions.","icon":"file-check","sidebar_position":2,"content":"$2a","reading_time":11,"word_count":2009,"locale":"en"},"content":"$2b","categoryLabel":"Use Cases","categoryPosition":6,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"concepts","filePath":"concepts","title":"Core Concepts","meta":{"title":"Core Concepts","description":"The Aqua tree, the four revision kinds, multihash links, hashing methods, templates, signatures, anchors, selective disclosure, and verification.","icon":"brain","sidebar_position":3,"content":"$2c","reading_time":11,"word_count":2125,"locale":"en"},"content":"$2d"},{"slug":"dev-tools/agent-audit-trails","filePath":"dev-tools/agent-audit-trails","title":"Audit Trails for AI Agents","meta":{"title":"Audit Trails for AI Agents","description":"Record every step an AI agent takes as its own signed, verifiable, selectively disclosable Aqua tree using the audit template family","icon":"bot","sidebar_position":3,"content":"$2e","reading_time":12,"word_count":2339,"locale":"en"},"content":"$2f","categoryLabel":"Developer Onboarding","categoryPosition":4,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"wrench","categoryTabGroup":"$undefined"},{"slug":"schema-reference/hashing","filePath":"schema-reference/hashing","title":"Hashing and Canonicalization","meta":{"title":"Hashing and Canonicalization","description":"How Aqua Protocol v4 computes revision hashes: the algorithm registry, the Aqua multihash profile, Aqua Pointer Form, scalar and tree hashing, and the shared Merkle construction","icon":"hash","sidebar_position":3,"content":"$30","reading_time":10,"word_count":1998,"locale":"en"},"content":"$31","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"use-cases/identity-attestation","filePath":"use-cases/identity-attestation","title":"Identity Attestation","meta":{"title":"Identity Attestation","description":"Self-sovereign identity claims and attestations built from custom Aqua templates.","icon":"id-card","sidebar_position":3,"content":"$32","reading_time":5,"word_count":965,"locale":"en"},"content":"$33","categoryLabel":"Use Cases","categoryPosition":6,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"schema-reference/templates","filePath":"schema-reference/templates","title":"Templates","meta":{"title":"Templates","description":"Templates declare types in Aqua Protocol v4: identity by content hash, derivation and narrowing, bounds, template resolution, compute declarations, and the shipped catalog","icon":"layout-template","sidebar_position":4,"redirect_from":["/docs/v4.0.0/schema-reference/revision/template-revision"],"content":"$34","reading_time":13,"word_count":2584,"locale":"en"},"content":"$35","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"use-cases/supply-chain","filePath":"use-cases/supply-chain","title":"Supply Chain Tracking","meta":{"title":"Supply Chain Tracking","description":"End-to-end traceability and provenance verification for supply chain operations.","icon":"truck","sidebar_position":4,"content":"$36","reading_time":12,"word_count":2385,"locale":"en"},"content":"$37","categoryLabel":"Use Cases","categoryPosition":6,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"lightbulb","categoryTabGroup":"$undefined"},{"slug":"schema-reference/signatures","filePath":"schema-reference/signatures","title":"Signatures","meta":{"title":"Signatures","description":"Signature revisions: wire form, the signing pre-image, the four signature suites, DID signer identity, and verification rules","icon":"file-signature","sidebar_position":5,"redirect_from":["/docs/v4.0.0/schema-reference/revision/signing-revision"],"content":"$38","reading_time":11,"word_count":2032,"locale":"en"},"content":"$39","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"schema-reference/anchors-and-links","filePath":"schema-reference/anchors-and-links","title":"Anchors and Links","meta":{"title":"Anchors and Links","description":"Anchor revisions: wire form, structural vs compositional links, genesis anchors, and cross-tree verification","icon":"anchor","sidebar_position":6,"redirect_from":["/docs/v4.0.0/schema-reference/revision/link-revision"],"content":"$3a","reading_time":9,"word_count":1700,"locale":"en"},"content":"$3b","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"schema-reference/selective-disclosure","filePath":"schema-reference/selective-disclosure","title":"Selective Disclosure","meta":{"title":"Selective Disclosure","description":"Field-level redaction and selective trees: revealing a verifiable subset of an Aqua tree","icon":"eye-off","sidebar_position":7,"content":"$3c","reading_time":11,"word_count":2192,"locale":"en"},"content":"$3d","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"},{"slug":"version-info","filePath":"version-info","title":"Release Status & Versioning","meta":{"title":"Release Status & Versioning","description":"What the Aqua Protocol v4 release contains, what it deliberately excludes, and which stability guarantees apply","icon":"git-commit-horizontal","sidebar_position":7,"redirect_from":["/docs/v4.0.0/dev-tools/aqua-cli","/docs/v4.0.0/dev-tools/aquafier-api"],"content":"$3e","reading_time":5,"word_count":959,"locale":"en"},"content":"$3f"},{"slug":"schema-reference/verification","filePath":"schema-reference/verification","title":"Verification","meta":{"title":"Verification","description":"The staged verification procedure, verification policies, and error vocabulary of Aqua Protocol v4","icon":"shield-check","sidebar_position":8,"redirect_from":["/docs/v4.0.0/schema-reference/revision/witness-revision"],"content":"$40","reading_time":11,"word_count":2005,"locale":"en"},"content":"$41","categoryLabel":"Protocol Reference","categoryPosition":5,"categoryCollapsible":true,"categoryCollapsed":false,"categoryIcon":"book","categoryTabGroup":"$undefined"}],"version":"v4.0.0","children":"$L42","toc":"$L43","config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config","currentPageTabGroup":"$undefined"}],"$L44","$L45","$L46"]}]
 4d:I[839694,["/_next/static/chunks/f82b357a25abbfe1.js","/_next/static/chunks/5551bc5e94e30999.js","/_next/static/chunks/c6555158259ee219.js"],"TableOfContents"]
 4e:I[839694,["/_next/static/chunks/f82b357a25abbfe1.js","/_next/static/chunks/5551bc5e94e30999.js","/_next/static/chunks/c6555158259ee219.js"],"MdxHotReload"]
 4f:I[839694,["/_next/static/chunks/f82b357a25abbfe1.js","/_next/static/chunks/5551bc5e94e30999.js","/_next/static/chunks/c6555158259ee219.js"],"HotReloadIndicator"]
 50:I[839694,["/_next/static/chunks/f82b357a25abbfe1.js","/_next/static/chunks/5551bc5e94e30999.js","/_next/static/chunks/c6555158259ee219.js"],"DevModeBadge"]
 42:["$","article",null,{"className":"flex-1 min-w-0","children":[["$","nav",null,{"className":"flex items-center gap-2 text-sm text-muted-foreground mb-4","aria-label":"Breadcrumb","children":[["$","div","/docs/v4.0.0",{"className":"flex items-center gap-2","children":[false,["$","$L7",null,{"href":"/docs/v4.0.0","className":"hover:text-foreground transition-colors","children":"Docs"}]]}],["$","div","/docs/v4.0.0/schema-reference",{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","$L7",null,{"href":"/docs/v4.0.0/schema-reference","className":"hover:text-foreground transition-colors","children":"Schema Reference"}]]}],["$","div","/docs/v4.0.0/schema-reference/data-model",{"className":"flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}],["$","span",null,{"className":"text-foreground font-medium","children":"Data Model"}]]}]]}],false,["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight mb-3 text-foreground","children":"Data Model"}],["$","p",null,{"className":"text-lg text-muted-foreground leading-relaxed","children":"The revision and tree wire formats of the Aqua Protocol v4 core profile: common fields, the four revision kinds, kind discrimination, genesis, and structural rules"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-4 mb-6","children":[["$","div",null,{"className":"flex items-center gap-1.5","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-clock h-4 w-4","children":[["$","circle","1mglay",{"cx":"12","cy":"12","r":"10"}],["$","polyline","68esgv",{"points":"12 6 12 12 16 14"}],"$undefined"]}],["$","span",null,{"children":[14," min read"]}]]}],"$undefined",false]}],["$","div",null,{"className":"prose prose-slate dark:prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-7 prose-p:text-muted-foreground prose-p:mb-4 prose-a:font-normal prose-a:transition-all prose-code:text-primary prose-code:bg-muted/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-[13px] prose-code:font-mono prose-code:border prose-code:border-border/50 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-transparent prose-pre:p-0 prose-ul:list-disc prose-ul:list-inside prose-ul:space-y-2 prose-ul:mb-4 prose-ol:list-decimal prose-ol:list-inside prose-ol:space-y-2 prose-ol:mb-4 prose-li:leading-7 prose-li:text-muted-foreground prose-strong:text-foreground prose-strong:font-semibold","children":"$L47"}],"$undefined",["$","div",null,{"className":"mt-12 pt-6 border-t border-border flex items-center justify-between","children":[["$","a",null,{"href":"https://github.com/inblockio/aqua-docs/edit/main/docs/v4.0.0/schema-reference/data-model.mdx","target":"_blank","rel":"noopener noreferrer","className":"flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-pen h-4 w-4","children":["$L48","$L49","$L4a","$undefined"]}],"Edit this page"]}],"$L4b"]}],"$L4c"]}]
-43:["$","$L4d","full",{"items":[{"id":"trees-on-the-wire","title":"Trees on the wire","level":2},{"id":"common-revision-fields","title":"Common revision fields","level":2},{"id":"revision-links","title":"Revision links","level":3},{"id":"object-revisions","title":"Object revisions","level":2},{"id":"template-revisions","title":"Template revisions","level":2},{"id":"signature-revisions","title":"Signature revisions","level":2},{"id":"anchor-revisions","title":"Anchor revisions","level":2},{"id":"kind-discrimination","title":"Kind discrimination","level":2},{"id":"genesis","title":"Genesis","level":2},{"id":"structural-rules","title":"Structural rules","level":2},{"id":"chains-branches-and-tips","title":"Chains, branches, and tips","level":2},{"id":"timestamp-revisions","title":"Timestamp revisions","level":2},{"id":"see-also","title":"See also","level":2}],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
+43:["$","$L4d","full",{"items":[{"id":"trees-on-the-wire","title":"Trees on the wire","level":2},{"id":"common-revision-fields","title":"Common revision fields","level":2},{"id":"revision-links","title":"Revision links","level":3},{"id":"object-revisions","title":"Object revisions","level":2},{"id":"template-revisions","title":"Template revisions","level":2},{"id":"signature-revisions","title":"Signature revisions","level":2},{"id":"anchor-revisions","title":"Anchor revisions","level":2},{"id":"kind-discrimination","title":"Kind discrimination","level":2},{"id":"genesis","title":"Genesis","level":2},{"id":"structural-rules","title":"Structural rules","level":2},{"id":"chains-branches-and-tips","title":"Chains, branches, and tips","level":2},{"id":"timestamp-revisions","title":"Timestamp revisions","level":2},{"id":"next-steps","title":"Next steps","level":2}],"config":"$0:f:0:1:0:props:children:1:props:children:props:children:props:config"}]
 44:["$","$L4e",null,{}]
 45:["$","$L4f",null,{}]
 46:["$","$L50",null,{}]
@@ -8517,7 +8315,7 @@ a1:T47e,{
 95:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":[["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]," deserves a final caution: it is hashed (so it cannot be altered after the fact) and it is ordered (rule 5 above), but it is ",["$","strong",null,{"children":"not"}]," evidence of real time — nothing in the core profile ties it to an external clock."]}]
 96:["$","h2",null,{"id":"timestamp-revisions","className":"text-2xl font-semibold tracking-tight mt-10 mb-4 text-foreground scroll-mt-24","children":"Timestamp revisions"}]
 97:["$","p",null,{"className":"text-base leading-7 text-muted-foreground mb-4","children":["Timestamp revisions are defined by the full Aqua protocol but sit ",["$","strong",null,{"children":"outside the published core profile"}],". The core profile classifies an incoming revision as a timestamp by its naming value (the three timestamp foundation templates) but neither creates nor verifies timestamp revisions; the verification policy governs the outcome — the strict policy rejects them, the offline policy accepts them with a warning. See ",["$","a",null,{"href":"/docs/v4.0.0/schema-reference/verification","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Verification"}],"."]}]
-98:["$","h2",null,{"id":"see-also","className":"text-2xl font-semibold tracking-tight mt-10 mb-4 text-foreground scroll-mt-24","children":"See also"}]
+98:["$","h2",null,{"id":"next-steps","className":"text-2xl font-semibold tracking-tight mt-10 mb-4 text-foreground scroll-mt-24","children":"Next steps"}]
 99:["$","ul",null,{"className":"list-disc list-outside pl-5 space-y-2 mb-4 text-muted-foreground [&_p]:mb-0 [&_p]:inline [&_ul]:ml-6 [&_ol]:ml-6","children":["\n",["$","li",null,{"className":"leading-7 [&>p]:mb-0 [&>p]:inline","children":[["$","a",null,{"href":"/docs/v4.0.0/schema-reference/hashing","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Hashing and Canonicalization"}]," — how revision hashes and links are computed"]}],"\n",["$","li",null,{"className":"leading-7 [&>p]:mb-0 [&>p]:inline","children":[["$","a",null,{"href":"/docs/v4.0.0/schema-reference/templates","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Templates"}]," — type identity, derivation, and the shipped catalog"]}],"\n",["$","li",null,{"className":"leading-7 [&>p]:mb-0 [&>p]:inline","children":[["$","a",null,{"href":"/docs/v4.0.0/schema-reference/signatures","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Signatures"}]," — the signing pre-image and the four signature suites"]}],"\n",["$","li",null,{"className":"leading-7 [&>p]:mb-0 [&>p]:inline","children":[["$","a",null,{"href":"/docs/v4.0.0/schema-reference/anchors-and-links","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Anchors and Links"}]," — structural link resolution and cross-tree references"]}],"\n",["$","li",null,{"className":"leading-7 [&>p]:mb-0 [&>p]:inline","children":[["$","a",null,{"href":"/docs/v4.0.0/schema-reference/verification","className":"text-primary hover:underline font-medium","target":"$undefined","rel":"$undefined","children":"Verification"}]," — the staged procedure that enforces the rules on this page"]}],"\n"]}]
 9a:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"local_timestamp"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"JSON number — unsigned integer, Unix seconds"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"REQUIRED"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"Producer-local creation time. Hashed and ordered, but not trusted evidence of real time."}]]}]
 9b:["$","tr",null,{"children":[["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"version"}]}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"string"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":"REQUIRED"}],["$","td",null,{"className":"border-b border-r border-border px-4 py-2 text-muted-foreground last:border-r-0","children":["MUST be exactly ",["$","code",null,{"className":"px-1.5 py-0.5 rounded-md bg-muted/50 text-primary font-mono text-[13px] border border-border/50","children":"https://aqua-protocol.org/docs/v4/schema"}],". A revision carrying any other value MUST be rejected at parse time."]}]]}]
