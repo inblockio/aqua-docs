@@ -13,19 +13,17 @@ Trust can be built by relying on hashing and signature mechanisms alone or by de
 Aqua Protocol v4 is under active development. The published components — <code>aqua-rs-sdk-core</code> and <code>aqua-template-registry</code> — are an early community release with a deliberately limited functionality scope. Version numbers have not yet been increased, backward compatibility is not yet provided, and breaking changes are expected and may occur without notice. The full <code>aqua-rs-sdk</code>, which extends this core, is scheduled for a later publication.
 </Callout>
 
-## How it works
-
-At its core, Aqua creates portable hash-linked structures called **Aqua trees** (written `AquaTree` in code) that record a gapless history of data revisions. Every revision is one of four kinds — **object** (typed data), **template** (the schema that defines a type), **signature** (a cryptographic endorsement), or **anchor** (a structural link between revisions and trees). Each revision after the first references its predecessor by hash, so a modification anywhere in the history is immediately detectable.
+At its core, Aqua creates portable hash-linked structures called **Aqua trees** that record a gapless history of data revisions. Every revision is one of four kinds — **object** (typed data), **template** (the schema that defines a type), **signature** (a cryptographic endorsement), or **anchor** (a structural link between revisions and trees). Each revision after the first references its predecessor by hash, so a modification anywhere in the history is immediately detectable.
 
 Aqua trees are plain JSON. They can be stored, exchanged, and verified anywhere: verification is a local computation over the tree (and any trees it links to), not a call to a service.
 
 Key capabilities of the v4 core profile:
 
-- **Tamper-evident history** — every revision after the first links to its predecessor by hash; a change to any byte anywhere breaks verification.
-- **Typed data** — object revisions conform to templates (JSON Schema) identified by hash, so both sides of an exchange agree on structure.
-- **Cryptographic signatures** — four suites: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn P-256, with signer identities expressed as DIDs.
-- **Selective disclosure** — tree-hashed revisions can be shared with individual fields redacted while the rest stays verifiable.
-- **Portable verification** — trees can be exported self-descriptively, so they verify anywhere; the verifier needs the data, not an account on a platform.
+- **Tamper-evident history**: every revision after the first links to its predecessor by hash; a change to any byte anywhere breaks verification.
+- **Typed data**: object revisions conform to templates (JSON Schema) identified by hash, so both sides of an exchange agree on structure.
+- **Cryptographic signatures**: four suites: Ed25519, Ethereum EIP-191, ECDSA P-256, and WebAuthn P-256, with signer identities expressed as DIDs.
+- **Selective disclosure**: tree-hashed revisions can be shared with individual fields redacted while the rest stays verifiable.
+- **Portable verification**: trees can be exported self-descriptively, so they verify anywhere; the verifier needs the data, not an account on a platform.
 
 The [Core Concepts](/docs/v4.0.0/concepts) page builds the full mental model; the [Protocol Reference](/docs/v4.0.0/schema-reference/introduction) is the readable companion to the normative specification.
 
@@ -33,12 +31,10 @@ The [Core Concepts](/docs/v4.0.0/concepts) page builds the full mental model; th
 
 Two components are published, both under the Apache-2.0 license:
 
-| Component | What it does |
-|---|---|
-| [`aqua-rs-sdk-core`](https://github.com/inblockio/aqua-rs-sdk-core) | The protocol core: anchor, object, and template primitives, four signature suites, selective disclosure, and the verification pipeline. Also home of the [protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification). |
-| [`aqua-template-registry`](https://github.com/inblockio/aqua-template-registry) | Template distribution: publish, resolve, and subscribe to Aqua templates by publisher DID, as a Rust library and an HTTP service. A hosted instance runs at [aqua-registry.inblock.io](https://aqua-registry.inblock.io), provided without SLA. |
+- **[`aqua-rs-sdk-core`](https://github.com/inblockio/aqua-rs-sdk-core)** — the protocol core: revision primitives, the four signature suites, selective disclosure, and the verification pipeline. Also home of the [protocol specification](https://github.com/inblockio/aqua-rs-sdk-core/tree/main/protocol-specification).
+- **[`aqua-template-registry`](https://github.com/inblockio/aqua-template-registry)** — template distribution: publish, resolve, and subscribe to templates by publisher DID, as a Rust library and an HTTP service. Hosted instance at [aqua-registry.inblock.io](https://aqua-registry.inblock.io), without SLA.
 
-Neither crate is on crates.io yet (publication is planned). Install the core as a git dependency:
+Neither crate is on crates.io yet. Install the core as a git dependency:
 
 ```toml
 [dependencies]
