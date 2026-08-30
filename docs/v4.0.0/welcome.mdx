@@ -17,10 +17,6 @@ Aqua Protocol is a framework for building distributed trust networks. It uses ha
 
 Trust can be built by relying on hashing and signature mechanisms or by delegating to a mutually trusted party. Aqua Protocol handles both scenarios, giving you flexibility in how you establish and verify trust.
 
-<Callout type="info" title="Powered by cryptography, not blockchain">
-Aqua Protocol is made possible by crypto as in _cryptography_. The protocol neither is nor requires blockchain technology: records are secured by hash chains and digital signatures, and anyone holding the data can verify it independently.
-</Callout>
-
 ## How it works
 
 At its core, Aqua creates portable hash-linked structures called **Aqua trees** (written `AquaTree` in code) that record a gapless history of data revisions. Every revision is one of four kinds — **object** (typed data), **template** (the schema that defines a type), **signature** (a cryptographic endorsement), or **anchor** (a structural link between revisions and trees). Each revision after the first references its predecessor by hash, so a modification anywhere in the history is immediately detectable.
