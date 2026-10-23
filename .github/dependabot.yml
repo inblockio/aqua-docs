@@ -1,0 +1,24 @@
+# Dependabot (inblock security track, M2; template: aqua-ops security/response/dependabot/).
+# Version updates: weekly, minor and patch grouped per ecosystem, majors one PR each, 7-day
+# cooldown (a poisoned release is usually caught within days). Security updates: one PR per
+# advisory, opened at once; the cooldown does not hold them.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule: {interval: weekly, day: monday, time: "05:00", timezone: Europe/Berlin}
+    cooldown: {default-days: 7}
+    open-pull-requests-limit: 5
+    groups:
+      npm-minor-patch:
+        applies-to: version-updates
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: {interval: weekly, day: monday, time: "05:00", timezone: Europe/Berlin}
+    cooldown: {default-days: 7}
+    groups:
+      actions:
+        applies-to: version-updates
+        patterns: ["*"]
