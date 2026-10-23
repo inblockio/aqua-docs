@@ -14,16 +14,16 @@
     "test:search": "tsx scripts/test-search.ts"
   },
   "dependencies": {
-    "lightningcss": "^1.30.2",
+    "lightningcss": "^1.33.0",
     "lucide-react": "^0.454.0",
-    "next": "^16.1.0",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "specra": "0.1.14"
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "specra": "0.2.68"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.9",
-    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@tailwindcss/typography": "^0.5.20",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
